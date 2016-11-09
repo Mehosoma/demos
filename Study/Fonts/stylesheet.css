@@ -1,0 +1,151 @@
+@font-face {
+font-family: "myFontIcon";
+  src:	url("/fonts/myfonts_icons-webfont.eot") format('embedded-opentype');
+  src:	url('/fonts/myfonts_icons-webfont.woff') format('woff'),
+    	url('/fonts/myfonts_icons-webfont.ttf') format('truetype');
+  src: local('☺'), 
+  
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+font-family: "myFontIcon2";
+  src:	url("/fonts/myfonts_icons2-webfont.eot") format('embedded-opentype');
+  src:	url('/fonts/myfonts_icons2-webfont.woff') format('woff'),
+    	url('/fonts/myfonts_icons2-webfont.ttf') format('truetype');
+  src: local('☺'), 
+  
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+font-family: "myFontIcon3";
+  src:	url("/fonts/myfonts_icons3-webfont.eot") format('embedded-opentype');
+  src:	url('/fonts/myfonts_icons3-webfont.woff') format('woff'),
+    	url('/fonts/myfonts_icons3-webfont.ttf') format('truetype');
+  src: local('☺'), 
+  
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+font-family: "arrowfont";
+  src:	url("/fonts/arrow_font-webfont.eot") format('embedded-opentype');
+  src:	url('/fonts/arrow_font-webfont.woff') format('woff'),
+    	url('/fonts/arrow_font-webfont.ttf') format('truetype');
+  src: local('☺'), 
+  
+  font-weight: normal;
+  font-style: normal;
+}
+
+.myfont{
+	font-family: 'myFontIcon';
+	font-size: 32px;
+	display: inline-block;
+	font-style: normal;
+	text-rendering: auto;
+	text-transform: none;
+	-webkit-font-smoothing: antialiased; 
+	-moz-osx-font-smothing: grayscale;	
+}
+
+.myfont2{
+	font-family: 'myFontIcon2';
+	font-size: 32px;
+	display: inline-block;
+	font-style: normal;
+	text-rendering: auto;
+	text-transform: none;
+	-webkit-font-smoothing: antialiased; 
+	-moz-osx-font-smothing: grayscale;	
+}
+
+.myfont3{
+	font-family: 'myFontIcon3';
+	font-size: 32px;
+	display: inline-block;
+	font-style: normal;
+	text-rendering: auto;
+	text-transform: none;
+	-webkit-font-smoothing: antialiased; 
+	-moz-osx-font-smothing: grayscale;	
+}
+
+.myfont4{
+	font-family: 'arrowfont';
+	font-size: 32px;
+	display: inline-block;
+	font-style: normal;
+	text-rendering: auto;
+	text-transform: none;
+	-webkit-font-smoothing: antialiased; 
+	-moz-osx-font-smothing: grayscale;	
+}
+
+.myfont.my_a::before{
+	content: 'a';
+}
+
+.myfont.my_b::before{
+	content: 'b';
+}
+
+.myfont.my_c::before{
+	content: 'c';
+}
+
+.myfont.my_d::before{
+	content: 'd';
+}
+
+.myfont.my_e::before{
+	content: 'e';
+}
+
+.myfont.my_f::before{
+	content: 'f';
+}
+
+.myfont2.my_a::before{
+	content: 'a';
+}
+
+.myfont2.my_b::before{
+	content: 'b';
+}
+
+.myfont2.my_c::before{
+	content: 'c';
+}
+
+.myfont2.my_d::before{
+	content: 'd';
+}
+
+.myfont2.my_e::before{
+	content: 'e';
+}
+
+.myfont2.my_f::before{
+	content: 'f';
+}
+
+.myfont2.my_g::before{
+	content: 'g';
+}
+
+.myfont2.my_i::before{
+	content: 'i';
+}
+
+.myfont3.my_cc::before{
+	content: 'a';
+}
+
+.myfont4.my_a::before{
+	content: 'a';
+}
