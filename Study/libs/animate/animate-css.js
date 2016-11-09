@@ -8,16 +8,16 @@
 								$(this).removeClass(outEffect).addClass(inEffect).css("opacity", "1");
 						} else {
 								$(this).removeClass(inEffect).addClass(outEffect).css("opacity", "1");
-								$('.about').css("background-image", "url(/images/background3.jpg)");
-								$('.response').css("background-image", "url(/images/second_background.jpg)");
+								$('.about').css("background-image", "url(../Images/background3.jpg)");
+								$('.response').css("background-image", "url(../Images/second_background.jpg)");
 						};
 				}, {
 						offset: "80%"
 				}).waypoint(function(dir) {
 						if (dir === "down") {
 								$(this).removeClass(inEffect).addClass(outEffect).css("opacity", "1");
-								$('.about').css("background-image", "url(/images/background3.jpg)");
-								$('.response').css("background-image", "url(/images/second_background.jpg)");
+								$('.about').css("background-image", "url(../Images/background3.jpg)");
+								$('.response').css("background-image", "url(../Images/second_background.jpg)");
 						} else {
 								$(this).removeClass(outEffect).addClass(inEffect).css("opacity", "1");
 						};
