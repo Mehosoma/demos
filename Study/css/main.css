@@ -42,7 +42,7 @@ section h2 {
 header {
   min-height: 800px;
   background-repeat: no-repeat;
-  background-image: url(/images/background2.jpg);
+  background-image: url(images/background2.jpg);
   background-position: top center;
   background-size: cover;
   color: #fff;
