@@ -1,8 +1,8 @@
 @font-face {
 font-family: "myFontIcon";
-  src:	url("/fonts/myfonts_icons-webfont.eot") format('embedded-opentype');
-  src:	url('/fonts/myfonts_icons-webfont.woff') format('woff'),
-    	url('/fonts/myfonts_icons-webfont.ttf') format('truetype');
+  src:	url("fonts/myfonts_icons-webfont.eot") format('embedded-opentype');
+  src:	url('fonts/myfonts_icons-webfont.woff') format('woff'),
+    	url('fonts/myfonts_icons-webfont.ttf') format('truetype');
   src: local('☺'), 
   
   font-weight: normal;
@@ -11,9 +11,9 @@ font-family: "myFontIcon";
 
 @font-face {
 font-family: "myFontIcon2";
-  src:	url("/fonts/myfonts_icons2-webfont.eot") format('embedded-opentype');
-  src:	url('/fonts/myfonts_icons2-webfont.woff') format('woff'),
-    	url('/fonts/myfonts_icons2-webfont.ttf') format('truetype');
+  src:	url("fonts/myfonts_icons2-webfont.eot") format('embedded-opentype');
+  src:	url('fonts/myfonts_icons2-webfont.woff') format('woff'),
+    	url('fonts/myfonts_icons2-webfont.ttf') format('truetype');
   src: local('☺'), 
   
   font-weight: normal;
@@ -22,9 +22,9 @@ font-family: "myFontIcon2";
 
 @font-face {
 font-family: "myFontIcon3";
-  src:	url("/fonts/myfonts_icons3-webfont.eot") format('embedded-opentype');
-  src:	url('/fonts/myfonts_icons3-webfont.woff') format('woff'),
-    	url('/fonts/myfonts_icons3-webfont.ttf') format('truetype');
+  src:	url("fonts/myfonts_icons3-webfont.eot") format('embedded-opentype');
+  src:	url('fonts/myfonts_icons3-webfont.woff') format('woff'),
+    	url('fonts/myfonts_icons3-webfont.ttf') format('truetype');
   src: local('☺'), 
   
   font-weight: normal;
@@ -33,9 +33,9 @@ font-family: "myFontIcon3";
 
 @font-face {
 font-family: "arrowfont";
-  src:	url("/fonts/arrow_font-webfont.eot") format('embedded-opentype');
-  src:	url('/fonts/arrow_font-webfont.woff') format('woff'),
-    	url('/fonts/arrow_font-webfont.ttf') format('truetype');
+  src:	url("fonts/arrow_font-webfont.eot") format('embedded-opentype');
+  src:	url('fonts/arrow_font-webfont.woff') format('woff'),
+    	url('fonts/arrow_font-webfont.ttf') format('truetype');
   src: local('☺'), 
   
   font-weight: normal;
