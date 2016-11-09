@@ -1,8 +1,8 @@
 @font-face {
 font-family: "myFontIcon";
-  src:	url("Fonts/myfonts_icons-webfont.eot") format('embedded-opentype');
-  src:	url('Fonts/myfonts_icons-webfont.woff') format('woff'),
-    	url('Fonts/myfonts_icons-webfont.ttf') format('truetype');
+  src:	url("myfonts_icons-webfont.eot") format('embedded-opentype');
+  src:	url('myfonts_icons-webfont.woff') format('woff'),
+    	url('myfonts_icons-webfont.ttf') format('truetype');
   src: local('☺'), 
   
   font-weight: normal;
