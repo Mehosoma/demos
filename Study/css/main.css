@@ -42,7 +42,7 @@ section h2 {
 header {
   min-height: 800px;
   background-repeat: no-repeat;
-  background-image: url(Images/background2.jpg);
+  background-image: url(./Images/background2.jpg);
   background-position: top center;
   background-size: cover;
   color: #fff;
@@ -417,7 +417,7 @@ p strong {
 }
 
 .response {
-  background-image: url(Images/second_background.jpg);
+  background-image: url(./Images/second_background.jpg);
   background-repeat: repeat-x;
   background-attachment: fixed;
   min-height: 600px;
@@ -574,7 +574,7 @@ p strong {
 }
 
 .about {
-  background-image: url(/images/background3.jpg);
+  background-image: url(./Images/background3.jpg);
   background-repeat: repeat-x;
   background-attachment: fixed;
   min-height: 400px;
