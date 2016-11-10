@@ -51,13 +51,14 @@
 		font-size: 40px;
 	}
 
-	.text_block h2{
+	.text_block p{
 		font-size: 16px;
 		line-height: 16px;				
 	}
 
 	.text_block span{
-		margin: 20px 0
+		font-size: 16px;
+		margin: 20px 0;
 	}
 
 	.sheme_descr{
@@ -176,13 +177,14 @@
 		padding: 0 5px;
 	}
 
-	.text_block h2{
+	.text_block p{
 		font-size: 20px;
 		line-height: 20px;				
 	}
 
 	.text_block span{
-		margin: 20px 0
+		font-size: 20px;
+		margin: 20px 0;
 	}
 
 	.sheme_descr{
@@ -245,7 +247,11 @@
 		text-align: left;
 	}
 
-	.text_block h2{
+	.text_block p{
+		font-size: 22px;
+	}
+
+	.text_block span{
 		font-size: 22px;
 	}
 
