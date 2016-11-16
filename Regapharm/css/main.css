@@ -51,7 +51,7 @@ header hr {
 }
 
 header .menu_line {
-  background-image: url(img/topmenu.png);
+  background-image: url(/img/topmenu.png);
   background-repeat: repeat-x;
   height: 70px;
   background-position: top center;
