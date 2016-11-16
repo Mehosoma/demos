@@ -1,0 +1,102 @@
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 320px) and (max-width : 479px) {
+
+	.logo{
+		width: 100%;
+		text-align: center;
+	}
+
+	.top_line .marker{
+		width: 100%;
+		text-align: center;
+		margin-left: 0;
+	}
+
+	.top_line .marker span{
+		text-align: left;
+	}
+
+	.top_line hr{
+		width: 100%;
+		height: 1px;
+		position: static;
+		margin: 0;
+		padding: 0;
+	}
+
+	.top_line .trubka{
+		display: block;
+		text-align: center;
+		margin-left: 0;
+	}	
+
+
+}
+	
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 480px) and (max-width : 767px){ 
+
+	.logo{
+		width: 100%;
+		text-align: center;
+	}
+
+	.adress{
+		padding-left: 0!important;
+		text-align: center;
+	}
+
+	.top_line .marker{
+		margin-left: 0;
+	}
+
+	.top_line hr{
+		left: 430px;
+	}
+
+	.top_line .trubka{
+
+	}	
+
+}
+
+@media only screen and (min-width : 768px) and (max-width : 991px){
+
+	.logo{
+		width: 100%;
+		text-align: center;
+	}
+
+	.top_line hr{
+		left: 430px;
+	}
+
+	.adress{
+		padding-left: 0!important;
+		text-align: center;
+	}
+
+	.top_line .marker{
+		margin-left: 0px!important;
+	}
+} 
+
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+
+.top_line .marker{
+	margin-left: -50px!important;
+}
+
+.top_line .trubka{
+	margin-left: 0!important;	
+}
+
+.top_line hr{
+	left: 320px;
+}
+
+
+}
+
+	
