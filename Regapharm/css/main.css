@@ -50,25 +50,6 @@ header hr {
   left: 410px;
 }
 
-header .menu_line {
-  background-image: url(../img/topmenu.png);
-  background-repeat: repeat-x;
-  height: 70px;
-  background-position: top center;
-  background-size: cover;
-}
-
-header .menu_line li {
-  padding: 28px 70px 25px 0;
-  display: inline-block;
-  list-style: none;
-  font-family: "Roboto-Condensed";
-  font-size: 18px;
-  color: #fff;
-  text-transform: uppercase;
-  letter-spacing: 0.1px;
-}
-
 header .col-md-12 {
   padding: 0;
 }
@@ -464,4 +445,36 @@ body textarea:required:valid {
 
 .hidden {
   display: none;
+}
+
+.navbar-default {
+  background-image: url(../img/topmenu.png);
+  background-repeat: repeat-x;
+  position: top center;
+  width: 100%;
+}
+
+.navbar {
+  position: relative;
+  min-height: 70px;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #fff;
+  background-color: #076d6d;
+}
+
+.nav > li > a {
+  position: relative;
+  display: block;
+  padding: 25px 35px;
+  font-family: "Roboto-Condensed", sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.nav > li > img {
+  padding-top: 20px;
 }

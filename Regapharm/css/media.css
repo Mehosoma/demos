@@ -28,7 +28,15 @@
 		display: block;
 		text-align: center;
 		margin-left: 0;
-	}	
+	}
+
+	.nav > li {
+		background-color: #06a2a6;
+	}
+
+	.nav  > li > img {
+		display: none;
+	}
 
 
 }
@@ -59,6 +67,13 @@
 
 	}	
 
+	.nav > li {
+		background-color: #06a2a6;
+	}
+
+	.nav  > li > img {
+		display: none;
+	}
 }
 
 @media only screen and (min-width : 768px) and (max-width : 991px){
@@ -80,6 +95,11 @@
 	.top_line .marker{
 		margin-left: 0px!important;
 	}
+
+	.nav > li > a {
+  		padding: 25px 20px;
+  		font-size: 16px;
+ 	}
 } 
 
 @media only screen and (min-width: 992px) and (max-width: 1199px){
@@ -95,6 +115,11 @@
 .top_line hr{
 	left: 320px;
 }
+
+.nav > li > a {
+   padding: 25px 20px
+
+ }
 
 
 }
