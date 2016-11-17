@@ -218,6 +218,10 @@
 	font-size: 22px!important;
 }
 
+	header.sticky .adress{
+		display: none;
+	}
+
 }
 	
 
@@ -401,6 +405,10 @@
 	padding: 40px 0 40px 10px!important;
 }
 
+	header.sticky .adress{
+		display: none;
+	}
+
 
 }
 
@@ -492,6 +500,15 @@
 
 	.row > div:nth-child(22) > .part_logo{
 		border-bottom: 1px #dedede solid!important
+	}
+
+	header.sticky .nav > li > a{
+		padding: 15px 20px;
+		font-size: 16px!important;
+	}
+
+	header.sticky .adress{
+		display: none;
 	}
 
 
@@ -601,6 +618,14 @@
 	line-height: 80px;
 	text-align: center;
 	background: #06a2a6;
+}
+
+header.sticky .nav > li > a{
+	padding: 15px 25px
+}
+
+header.sticky hr{
+	left: 306px;
 }
 
 	
