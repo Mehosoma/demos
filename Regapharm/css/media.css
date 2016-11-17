@@ -182,13 +182,44 @@
 		line-height: 40px;
 	}
 
-	.col-md-4{
-		width: 100%
-	}
-
 	.row > div:nth-child(22) > .part_logo{
 		border-bottom: 1px #dedede solid!important
 	}
+
+	.serv_desc p{
+		font-size: 10px!important;
+		margin-left: 10px!important;			
+	}
+
+
+.serv_img img{
+	width: 40%;
+}
+
+.row > div:nth-child(2) > .serv_img img{
+	width: 70%;
+}
+
+.list_serv .serv_img{
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+	border-radius: 25px;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	-khtml-border-radius: 25px;
+	line-height: 50px;
+	text-align: center;
+	background: #06a2a6;	
+}
+
+.list_serv .col-md-6{
+	padding: 20px 0 20px 10px!important;
+}
+
+.list_serv{
+	padding-top: 30px;
+}
 
 }
 	
@@ -344,6 +375,36 @@
 		border-bottom: none
 	}
 
+	.serv_desc p{
+	margin-left: 10px!important;
+	font-size: 16px!important;	
+}
+
+.serv_img img{
+	width: 50%;
+}
+
+.row > div:nth-child(2) > .serv_img img{
+	width: 70%;
+}
+
+.list_serv .serv_img{
+	width: 80px;
+	height: 80px;
+	display: inline-block;
+	border-radius: 40px;
+	-moz-border-radius: 40px;
+	-webkit-border-radius: 40px;
+	-khtml-border-radius: 40px;
+	line-height: 80px;
+	text-align: center;
+	background: #06a2a6;
+}
+
+.list_serv .col-md-6{
+	padding: 20px 0 20px 10px!important;
+}
+
 
 }
 
@@ -437,7 +498,7 @@
 		border-bottom: 1px #dedede solid!important
 	}
 
-		
+
 
 } 
 
@@ -519,6 +580,33 @@
 .mission_zagol span{
 	font-size: 32px!important;
 }
+
+.serv_desc p{
+	margin-left: 10px!important;
+	font-size: 16px!important;	
+}
+
+.serv_img img{
+	width: 50%;
+}
+
+.row > div:nth-child(2) > .serv_img img{
+	width: 70%;
+}
+
+.list_serv .serv_img{
+	width: 80px;
+	height: 80px;
+	display: inline-block;
+	border-radius: 40px;
+	-moz-border-radius: 40px;
+	-webkit-border-radius: 40px;
+	-khtml-border-radius: 40px;
+	line-height: 80px;
+	text-align: center;
+	background: #06a2a6;
+}
+
 	
 }
 
