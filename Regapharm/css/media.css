@@ -6,14 +6,19 @@
 		text-align: center;
 	}
 
+	.adress{
+		padding-left: 0!important;
+	}
+
 	.top_line .marker{
 		width: 100%;
 		text-align: center;
-		margin-left: 0;
+		margin-left: 0;		
 	}
 
 	.top_line .marker span{
 		text-align: left;
+		font-size: 12px;
 	}
 
 	.top_line hr{
@@ -38,6 +43,112 @@
 		display: none;
 	}
 
+	header h1{
+		font-size: 35px!important;
+	}
+
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+	    color: #fff;
+	    margin-left: 0px!important;
+	    background-color: rgba(37,186,186,0.5);
+	    font-size: 12px;
+	}
+
+	.services_img img{
+ 		top: 0;
+ 		bottom: 0;
+ 		left: 0!important;
+ 		right: 0;
+ 		margin: auto; 				
+ 	}
+
+ 	.services_img_descr{
+ 		text-align: center; 				
+ 	}
+
+ 	.services p{
+ 		display: block;
+ 		margin: 25px auto 0!important;
+ 		text-align: center;
+ 	}
+
+ 	.services_podr{
+ 		margin: 20px auto 30px!important;
+ 		text-align: center!important;
+ 	}
+
+ 	.articles img{
+		display: block;
+		margin: 0 auto;
+	}
+
+	.zagol, .zagol_two{
+		display: block!important;
+		text-align: center;
+		margin: 0 auto;	
+		padding-top: 40px;	
+		padding-left: 0!important;
+	}
+
+	.zagol h3, .zagol_two h3{
+		text-align: left;
+		font-size: 14px;
+	}
+
+	.zagol p, .zagol_two p{
+		padding-bottom: 40px;
+		text-align: left;
+		font-size: 12px;
+	}
+
+	.feed .button{
+	text-align: center;
+	}
+
+	.sign{
+	text-align: center;
+	padding-top: 50px;
+	margin: 0!important;	
+	}
+
+	.sign p{
+		display: block!important;
+		margin: 0!important;
+		width: 100%!important;
+		padding-top: 20px;
+	}
+
+	.feed .first_row {
+    display: inline-block;
+    width: 80%;
+	}
+
+	.uslugi .marker{
+		padding-top: 0;
+		text-align: center;
+	}
+
+	.uslugi .marker span{
+		text-align: left;
+		font-size: 12px;
+		width: 85%!important;
+	}
+
+	.uslugi .marker i{
+		padding-left: 0;
+	}
+
+	footer p{
+		float: none!important;
+		text-align: center;
+	}
+
+	footer span{
+		display: block;
+		float: none!important;
+		text-align: center;
+	}
+
 
 }
 	
@@ -57,15 +168,26 @@
 
 	.top_line .marker{
 		margin-left: 0;
+		float: left;
+	}
+
+	.trubka{
+		float: right;
+		margin-left: 0!important;
+	}
+
+	.trubka span{
+		font-size: 20px!important;
+	}
+
+	.top_line .marker span{
+		padding-right: 0;
+		font-size: 13px;
 	}
 
 	.top_line hr{
-		left: 430px;
+		left: 55%;
 	}
-
-	.top_line .trubka{
-
-	}	
 
 	.nav > li {
 		background-color: #06a2a6;
@@ -73,6 +195,89 @@
 
 	.nav  > li > img {
 		display: none;
+	}
+
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+	    color: #fff;
+	    margin-left: 20px!important;
+	    background-color: rgba(37,186,186,0.5);
+	    font-size: 14px;
+	}
+
+	.services_img img{
+ 		top: 0;
+ 		bottom: 0;
+ 		left: 0;
+ 		right: 0;
+ 		margin: auto;
+ 	}
+
+ 	.services_img_descr{
+ 		text-align: center;
+ 		margin-left: 6%; 		
+ 	}
+
+ 	.services p{
+ 		display: block;
+ 		margin: 25px auto 0!important;
+ 		text-align: center;
+ 	}
+
+ 	.services_podr{
+ 		margin: 20px auto 30px!important;
+ 		text-align: center!important;
+ 	}
+
+ 	.registr h2{
+		font-size: 28px;
+		padding-left: 5px;
+	}
+
+	.registr_content img{
+		width: 5%;
+		padding-bottom: 10px;
+	}
+
+	.articles img{
+		display: block;
+		margin: 0 auto;
+	}
+
+	.zagol, .zagol_two{
+		display: block!important;
+		text-align: center;
+		margin: 0 auto;	
+		padding-top: 40px;	
+	}
+
+	.zagol h3, .zagol_two h3{
+		text-align: left;
+	}
+
+	.zagol p, .zagol_two p{
+		padding-bottom: 40px;
+	}
+
+	.feed .button{
+	text-align: center;
+	}
+
+	.sign{
+	padding-top: 50px;
+	margin: 0!important;
+	}
+
+	.uslugi .marker{
+		padding-top: 0;
+		text-align: center;
+	}
+
+	.uslugi .marker span{
+		text-align: left;
+	}
+
+	.uslugi .marker i{
+		padding-left: 0;
 	}
 }
 
@@ -100,6 +305,57 @@
   		padding: 25px 20px;
   		font-size: 16px;
  	}
+
+ 	.services_img img{
+ 		left: 29%!important;
+ 	}
+
+ 	.services p{
+ 		display: block;
+ 		margin: 25px auto 0!important;
+ 		text-align: center;
+ 	}
+
+ 	.services_podr{
+ 		margin: 20px auto 30px!important;
+ 		text-align: center!important;
+ 	}
+
+ 	.registr h2{
+		font-size: 30px;
+	}
+
+	.articles .zagol{
+		padding-bottom: 50px;
+	}
+
+	.articles{
+	padding-bottom: 100px;
+	}
+
+	.feed .button{
+	text-align: center;
+	}
+
+	.sign{
+	padding-top: 50px;
+	margin: 0!important;	
+	}
+
+	.uslugi .marker{
+		padding-top: 0;
+		text-align: center;
+	}
+
+	.uslugi .marker span{
+		text-align: left;
+	}
+
+	.uslugi .marker i{
+		padding-left: 0;
+	}
+
+
 } 
 
 @media only screen and (min-width: 992px) and (max-width: 1199px){
@@ -118,8 +374,82 @@
 
 .nav > li > a {
    padding: 25px 20px
-
  }
+
+.services p{
+	margin-left: 0;
+}
+
+.services_img img{
+	left: 0!important;
+}
+
+.services_podr{
+	margin-left: 0!important;
+}
+
+.registr h2{
+	font-size: 34px;
+}
+
+.articles{
+	padding-bottom: 100px;
+}
+
+.articles .zagol, .zagol_two{
+	display: block;
+	padding-top: 30px; 
+	width: 100%!important;
+	
+}
+
+.articles img{
+	display: block;
+	margin: 0 auto;
+}
+
+.feed .button{
+	text-align: center;
+}
+
+.sign p{
+	width: 60%!important;
+}
+
+.sign{
+	padding-top: 50px;
+	margin: 0!important;	
+}
+
+}
+
+@media only screen and (min-width : 320px) and (max-width : 580px) {
+
+	.top_line .marker{
+		width: 100%;
+		text-align: center;
+	}
+
+	.top_line hr{
+		width: 80%;
+		height: 1px;
+		position: static;
+		margin: 0 auto;		
+	}
+
+	.top_line .trubka{
+		text-align: center;
+		float: none;
+	}
+
+	.registr h2{
+		font-size: 26px;
+		padding-left: 5px;
+	}
+
+	.registr_content img{
+		display: none;
+	}
 
 
 }
