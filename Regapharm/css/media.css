@@ -221,6 +221,19 @@
 	padding-top: 30px;
 }
 
+.coordinaty .button{
+	text-align: center;
+}
+
+.coordinaty .first_row {
+    display: inline-block;
+    width: 80%;
+}
+
+.coordinaty_desc span{
+	font-size: 22px!important;
+}
+
 }
 	
 
@@ -402,7 +415,7 @@
 }
 
 .list_serv .col-md-6{
-	padding: 20px 0 20px 10px!important;
+	padding: 40px 0 40px 10px!important;
 }
 
 
