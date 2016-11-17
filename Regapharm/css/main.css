@@ -478,11 +478,11 @@ body textarea:required:valid {
 .navbar-default {
   background-color: #06a2a6;
   width: 100%;
-  background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 70%, rgba(255, 255, 255, 0.7) 90%, rgba(255, 255, 255, 0.2) 100%);
+  background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 70%, rgba(255, 255, 255, 0.5) 90%, rgba(255, 255, 255, 0.2) 100%);
   /* FF3.6-15 */
-  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 70%, rgba(255, 255, 255, 0.7) 90%, rgba(255, 255, 255, 0.2) 100%);
+  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 70%, rgba(255, 255, 255, 0.5) 90%, rgba(255, 255, 255, 0.2) 100%);
   /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to right, rgba(255, 255, 255, 0) 70%, rgba(255, 255, 255, 0.7) 90%, rgba(255, 255, 255, 0.2) 100%);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 70%, rgba(255, 255, 255, 0.5) 90%, rgba(255, 255, 255, 0.2) 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#abffffff', endColorstr='#bdffffff',GradientType=1 );
   /* IE6-9 */
@@ -689,11 +689,25 @@ body textarea:required:valid {
 }
 
 .partners {
-  padding: 100px 0 60px;
+  padding: 50px 0 20px;
+}
+
+.partners .col-md-4 {
+  height: 170px;
+  display: table;
 }
 
 .partners .part_logo {
-  display: block;
+  display: table-cell;
   text-align: center;
   vertical-align: middle;
+  border-bottom: 1px #dedede solid;
+}
+
+.partners .row > div:nth-child(22) > .part_logo {
+  border-bottom: none;
+}
+
+.partners .row > div:nth-child(23) > .part_logo {
+  border-bottom: none;
 }
