@@ -47,13 +47,14 @@ header
 		padding-left: 20px
 	.menu_line li:nth-child(6)
 		padding-right: 35px
-	.main_pic
-		background-image: url(../img/bg.png)
-		background-repeat: repeat-x
-		height: 354px
-		background-position: top center
-		background-size: cover
-		width: 100%
+
+.main_pic
+	background-image: url(../img/bg.png)
+	background-repeat: repeat-x
+	height: 354px
+	background-position: top center
+	background-size: cover
+	width: 100%
 	h1
 		color: #fff
 		font-family: "Roboto-BoldCondensed", sans-serif
@@ -359,7 +360,7 @@ body textarea:required:valid
 .navbar-default  
 .navbar 
   position: relative
-  min-height: 70px
+  height: 70px
   background-color: #06a2a6
 
 .navbar-default .navbar-nav > .active > a,
@@ -633,9 +634,60 @@ body textarea:required:valid
 		border: none
 		background-color: #b1b1b1
 
-
-
-
-
-
-
+header.sticky
+	position: fixed
+	top: 0px
+	left: 0px	
+	width: 100%
+	background-color: #fff
+	z-index:99999
+	height: 100px
+	.top_line
+		height: 60px		
+	.logo
+		margin-top: 0px
+		img
+			width: 50%
+	.trubka, .marker
+		padding: 15px 0
+	.marker
+		margin-left: 20px
+		display: inline-block
+		span
+			text-align: left
+	.trubka
+		display: inline-block
+		margin-left: 43px
+		span
+			font-family: "Roboto-Light"
+			font-size: 22px
+			line-height: 28px
+			font-weight: 600
+			border: none	
+	hr
+		margin-top: 15px
+		width: 1px
+		height: 40px
+		position: absolute
+		background-color: #cacaca
+		top: 0px
+		left: 410px
+	.col-md-12
+		padding: 0
+	.col-md-5
+		padding-left: 0
+	.adress
+		padding-left: 20px
+	.menu_line li:nth-child(6)
+		padding-right: 35px
+	.navbar
+		height: 40px
+	.nav > li > a 
+		position: relative
+		display: block
+		padding: 15px 35px
+		font-family: "Roboto-Condensed", sans-serif
+		font-size: 18px
+		text-transform: uppercase
+	.nav  > li > img
+		padding-top: 10px
