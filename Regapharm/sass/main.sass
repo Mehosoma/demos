@@ -168,10 +168,11 @@ header
 	i
 		display: block
 		font-style: normal
-		font-family: "Arial Bold"
+		font-family: "Arial", arial, sans-serif
 		font-size: 12px
 		font-weight: 600
 		padding-left: 2px
+		font-style: bold
 	p
 		font-family: Arial
 		font-size: 14px
@@ -287,7 +288,6 @@ header
 		font-family: "Roboto-Condensed", sans-serif
 		font-size: 14px
 		color: #06a2a6
-		padding-bottom: 20px
 		font-weight: 600
 	.marker
 		padding-top: 82px
@@ -296,6 +296,8 @@ header
 			font-weight: 600
 			padding-top: 22px
 			padding-left: 40px	
+	hr
+		margin: 8px 0
 			
 .marker
 	img
@@ -340,16 +342,21 @@ body textarea:required:valid
 
 
 .navbar-default
-	background-image: url(../img/topmenu.png)
-	background-repeat: repeat-x
-	position: top center
+	
+	background-color: #06a2a6
 	width: 100%	
+	background: -moz-linear-gradient(left,  rgba(255,255,255,0) 70%, rgba(255,255,255,0.7) 90%, rgba(255,255,255,0.2) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left,  rgba(255,255,255,0) 70%,rgba(255,255,255,0.7) 90%,rgba(255,255,255,0.2) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right,  rgba(255,255,255,0) 70%,rgba(255,255,255,0.7) 90%,rgba(255,255,255,0.2) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#abffffff', endColorstr='#bdffffff',GradientType=1 ); /* IE6-9 */
+
+	
 
 .navbar-default  
 .navbar 
   position: relative
   min-height: 70px
-  
+  background-color: #06a2a6
 
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
@@ -494,5 +501,13 @@ body textarea:required:valid
 			font-weight: 600
 			color: #585858
 			padding-bottom: 17px
+
+.partners
+	padding: 100px 0 60px
+	.part_logo
+		display: block
+		text-align: center
+		vertical-align: middle
+
 		
 
