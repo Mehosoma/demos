@@ -1,3 +1,10 @@
+@media only screen and (max-width: 480px){ 
+.list_serv .serv_desc{
+	max-width: 150px; 
+}
+
+} 
+
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 320px) and (max-width : 479px) {
 
@@ -12,7 +19,6 @@
 
 	.top_line .marker{
 		width: 100%;
-		text-align: center;
 		margin-left: 0;		
 	}
 
@@ -31,7 +37,6 @@
 
 	.top_line .trubka{
 		display: block;
-		text-align: center;
 		margin-left: 0;
 	}
 
@@ -187,31 +192,10 @@
 	}
 
 	.serv_desc p{
-		font-size: 10px!important;
+		font-size: 18px!important;
 		margin-left: 10px!important;			
 	}
 
-
-.serv_img img{
-	width: 40%;
-}
-
-.row > div:nth-child(2) > .serv_img img{
-	width: 70%;
-}
-
-.list_serv .serv_img{
-	width: 50px;
-	height: 50px;
-	display: inline-block;
-	border-radius: 25px;
-	-moz-border-radius: 25px;
-	-webkit-border-radius: 25px;
-	-khtml-border-radius: 25px;
-	line-height: 50px;
-	text-align: center;
-	background: #06a2a6;	
-}
 
 .list_serv .col-md-6{
 	padding: 20px 0 20px 10px!important;
@@ -246,8 +230,7 @@
 	}
 
 	.adress{
-		padding-left: 0!important;
-		text-align: center;
+		padding-left: 0!important;		
 	}
 
 	.top_line .marker{
@@ -626,8 +609,7 @@
 @media only screen and (min-width : 320px) and (max-width : 580px) {
 
 	.top_line .marker{
-		width: 100%;
-		text-align: center;
+		width: 100%;		
 	}
 
 	.top_line hr{
@@ -638,7 +620,6 @@
 	}
 
 	.top_line .trubka{
-		text-align: center;
 		float: none;
 	}
 
@@ -654,4 +635,3 @@
 
 }
 
-	

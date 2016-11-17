@@ -439,6 +439,14 @@ header h1 {
   font-style: normal;
 }
 
+.marker a {
+  color: #06a2a6 !important;
+}
+
+.marker a:visited {
+  color: #06a2a6 !important;
+}
+
 footer {
   height: 170px;
   font-family: "Roboto-Condensed", sans-serif;
@@ -650,7 +658,7 @@ body textarea:required:valid {
 .mission .mission_descr p {
   font-family: "Roboto-Regular", sans-serif;
   font-size: 14px;
-  line-height: 14px;
+  line-height: 1.3em;
   font-weight: 600;
   color: #585858;
   padding-bottom: 20px;
@@ -766,10 +774,18 @@ body textarea:required:valid {
   padding-left: 40px;
 }
 
+.coordinaty .coordinaty_desc a {
+  color: #06a2a6;
+}
+
+.coordinaty .coordinaty_desc a:visited {
+  color: #06a2a6;
+}
+
 .coordinaty .coordinaty_desc p {
   font-family: "Roboto-Condensed", sans-serif;
   font-size: 16px;
-  line-height: 16px;
+  line-height: 1.3em;
   font-weight: 600;
   margin: 0;
 }
