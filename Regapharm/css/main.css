@@ -106,6 +106,10 @@ header .menu_line li:nth-child(6) {
   padding: 65px 0 110px 0;
 }
 
+.services .services_circle_t {
+  overflow: hidden;
+}
+
 .services .services_circle:hover .anim {
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
@@ -116,6 +120,12 @@ header .menu_line li:nth-child(6) {
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
   -o-transform: scale(1.1);
+}
+
+.services .services_circle_t:hover .anim {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
 }
 
 .services .services_circle,
@@ -136,10 +146,6 @@ header .menu_line li:nth-child(6) {
 
 .services .services_circle_s {
   background-image: url("../img/s2.png");
-}
-
-.services .services_circle_t {
-  background-image: url("../img/s3.png");
 }
 
 .services .services_circle2 {
