@@ -596,6 +596,13 @@ body textarea:required:valid {
   padding-top: 20px;
 }
 
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #fff;
+  background-color: transparent;
+  background-color: #076d6d;
+}
+
 .bg_vtor {
   background-image: url(../img/bg_vtor.png);
   background-repeat: repeat;
