@@ -11,6 +11,18 @@ body {
   overflow-x: hidden;
 }
 
+a {
+  color: #06a2a6;
+}
+
+a:visited {
+  color: #06a2a6;
+}
+
+a:hover {
+  color: #06a2a6;
+}
+
 header .top_line {
   height: 116px;
 }
@@ -94,6 +106,18 @@ header .menu_line li:nth-child(6) {
   padding: 65px 0 110px 0;
 }
 
+.services .services_circle:hover .anim {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+.services .services_circle_s:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
 .services .services_circle,
 .services .services_circle_s,
 .services .services_circle_t {
@@ -106,7 +130,6 @@ header .menu_line li:nth-child(6) {
   -webkit-border-radius: 146px;
   -khtml-border-radius: 146px;
   line-height: 292px;
-  background-image: url("../img/s1.png");
   background-repeat: no-repeat;
   background-position: top, center;
 }
