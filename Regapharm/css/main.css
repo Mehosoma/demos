@@ -443,6 +443,10 @@ header .menu_line li:nth-child(6) {
   text-transform: uppercase;
 }
 
+.feed .button:hover input {
+  background-color: #076d6d;
+}
+
 .feed .sign {
   margin: 20px 0 90px 20px;
 }
