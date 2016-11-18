@@ -110,7 +110,12 @@ header .menu_line li:nth-child(6) {
   overflow: hidden;
 }
 
+.services .services_circle .anim {
+  transition: all 0.5s ease;
+}
+
 .services .services_circle:hover .anim {
+  transition: all 0.5s ease;
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
   -o-transform: scale(1.1);
@@ -161,8 +166,7 @@ header .menu_line li:nth-child(6) {
   z-index: 99;
   left: 50%;
   margin-left: -135px;
-  top: 4%;
-  top: 10px;
+  top: 11px;
 }
 
 .services .services_circle2 img {
@@ -434,6 +438,7 @@ header .menu_line li:nth-child(6) {
 }
 
 .feed .button input {
+  transition: all 0.5s ease;
   padding: 10px 50px;
   font-family: "Roboto-Regular", sans-serif;
   font-size: 18px;
@@ -443,7 +448,8 @@ header .menu_line li:nth-child(6) {
   text-transform: uppercase;
 }
 
-.feed .button:hover input {
+.feed .button input:hover {
+  transition: all 0.5s ease;
   background-color: #076d6d;
 }
 
