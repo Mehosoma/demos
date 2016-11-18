@@ -76,23 +76,18 @@ header
 
 .services
 	padding: 65px 0 110px 0
-	.services_circle_t
-		overflow: hidden
-	.services_circle .anim
-		transition: all 0.5s ease
-	.services_circle:hover .anim
-		transition: all 0.5s ease
+	.services_circle .anim,
+	.services_circle_s .anim,
+	.services_circle_t .anim
+		transition: 0.5s ease
+		-moz-transition: 0.5s ease
+		-webkit-transition: 0.5s ease
+	.services_circle:hover .anim,
+	.services_circle_s:hover .anim,
+	.services_circle_t:hover .anim
 		-webkit-transform:	scale(1.1)
 		-moz-transform: scale(1.1)
-		-o-transform: scale(1.1)
-	.services_circle_s:hover
-		-webkit-transform: scale(1.1)
-		-moz-transform: scale(1.1)
-		-o-transform: scale(1.1) 	
-	.services_circle_t:hover .anim
-		-webkit-transform: scale(1.2)
-		-moz-transform: scale(1.2)
-		-o-transform: scale(1.2) 
+		-o-transform: scale(1.1)	
 	.services_circle,
 	.services_circle_s,
 	.services_circle_t
@@ -107,9 +102,6 @@ header
 		line-height: 292px
 		background-repeat: no-repeat
 		background-position: top, center		
-	.services_circle_s
-		background-image: url("../img/s2.png")
-	
 	.services_circle2
 		width: 270px
 		height: 270px

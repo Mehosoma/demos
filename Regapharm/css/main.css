@@ -106,31 +106,20 @@ header .menu_line li:nth-child(6) {
   padding: 65px 0 110px 0;
 }
 
-.services .services_circle_t {
-  overflow: hidden;
+.services .services_circle .anim,
+.services .services_circle_s .anim,
+.services .services_circle_t .anim {
+  transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
 }
 
-.services .services_circle .anim {
-  transition: all 0.5s ease;
-}
-
-.services .services_circle:hover .anim {
-  transition: all 0.5s ease;
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -o-transform: scale(1.1);
-}
-
-.services .services_circle_s:hover {
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -o-transform: scale(1.1);
-}
-
+.services .services_circle:hover .anim,
+.services .services_circle_s:hover .anim,
 .services .services_circle_t:hover .anim {
-  -webkit-transform: scale(1.2);
-  -moz-transform: scale(1.2);
-  -o-transform: scale(1.2);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
 }
 
 .services .services_circle,
@@ -147,10 +136,6 @@ header .menu_line li:nth-child(6) {
   line-height: 292px;
   background-repeat: no-repeat;
   background-position: top, center;
-}
-
-.services .services_circle_s {
-  background-image: url("../img/s2.png");
 }
 
 .services .services_circle2 {
