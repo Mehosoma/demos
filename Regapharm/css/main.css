@@ -40,7 +40,7 @@ header .trubka {
 }
 
 header .trubka span {
-  font-family: "Roboto-Light";
+  font-family: "Roboto-Light", sans-serif;
   font-size: 22px;
   line-height: 28px;
   font-weight: 600;
@@ -225,7 +225,7 @@ header .menu_line li:nth-child(6) {
 }
 
 .registr p {
-  font-family: "Roboto-Regular";
+  font-family: "Roboto-Regular", sans-serif;
   font-size: 18px;
   width: 85%;
   margin: 30px auto 0;
