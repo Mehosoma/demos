@@ -132,8 +132,8 @@ header .menu_line li:nth-child(6) {
   z-index: 99;
   left: 50%;
   margin-left: -135px;
-  top: 50%;
-  margin-top: -135px;
+  top: 4%;
+  top: 10px;
 }
 
 .services .services_circle2 img {
