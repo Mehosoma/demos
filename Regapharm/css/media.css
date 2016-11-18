@@ -49,7 +49,7 @@
 	}
 
 	.main_pic h1{
-		font-size: 35px!important;
+		font-size: 30px!important;
 	}
 
 	.navbar-default .navbar-nav .open .dropdown-menu > li > a {
@@ -59,19 +59,7 @@
 	    font-size: 12px;
 	}
 
-	.services_img img{
- 		top: 0;
- 		bottom: 0;
- 		left: 0!important;
- 		right: 0;
- 		margin: auto; 				
- 	}
-
- 	.services_img_descr{
- 		text-align: center; 				
- 	}
-
- 	.services p{
+	.services p{
  		display: block;
  		margin: 25px auto 0!important;
  		text-align: center;
@@ -89,7 +77,6 @@
 
 	.zagol, .zagol_two{
 		display: block!important;
-		text-align: center;
 		margin: 0 auto;	
 		padding-top: 40px;	
 		padding-left: 0!important;
@@ -316,7 +303,6 @@
 
 	.zagol, .zagol_two{
 		display: block!important;
-		text-align: center;
 		margin: 0 auto;	
 		padding-top: 40px;	
 	}

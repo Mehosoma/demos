@@ -87,14 +87,86 @@ header .menu_line li:nth-child(6) {
   font-size: 40px;
   line-height: 45px;
   margin-top: 100px;
+  margin-left: 40px;
 }
 
 .services {
-  padding: 60px 0 110px 0;
+  padding: 65px 0 110px 0;
 }
 
-.services .col-md-4 {
+.services .services_circle,
+.services .services_circle_s,
+.services .services_circle_t {
+  width: 292px;
+  height: 292px;
+  display: table-cell;
+  position: relative;
+  border-radius: 146px;
+  -moz-border-radius: 146px;
+  -webkit-border-radius: 146px;
+  -khtml-border-radius: 146px;
+  line-height: 292px;
+  background-image: url("../img/s1.png");
+  background-repeat: no-repeat;
+  background-position: top, center;
+}
+
+.services .services_circle_s {
+  background-image: url("../img/s2.png");
+}
+
+.services .services_circle_t {
+  background-image: url("../img/s3.png");
+}
+
+.services .services_circle2 {
+  width: 270px;
+  height: 270px;
+  position: absolute;
+  border-radius: 135px;
+  -moz-border-radius: 135px;
+  -webkit-border-radius: 135px;
+  -khtml-border-radius: 135px;
+  line-height: 270px;
+  border: 3px #fff solid;
+  z-index: 99;
+  left: 50%;
+  margin-left: -135px;
+  top: 50%;
+  margin-top: -135px;
+}
+
+.services .services_circle2 img {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 45px;
+}
+
+.services .services_circle2 h3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -84px;
+  color: #fff;
+  font-family: "Roboto-Medium", sans-serif;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.services .services_circle2 .h3_s {
+  margin-left: -72px;
+}
+
+.services .services_circle2 .h3_t {
+  margin-left: -73.5px;
+}
+
+.services .obertka {
   text-align: center;
+  display: table;
+  position: relative;
+  left: 50%;
+  margin-left: -146px;
 }
 
 .services p {
@@ -102,39 +174,14 @@ header .menu_line li:nth-child(6) {
   font-size: 16px;
   font-weight: 600;
   color: #626262;
-  margin: 25px 0 0 39px;
+  margin: 25px 0 0 40px;
   text-align: left;
-}
-
-.services .services_img {
-  text-align: center;
-  position: relative;
-  height: 292px;
-}
-
-.services .services_img img {
-  display: block;
-  position: absolute;
-  left: 39px;
-}
-
-.services .services_img_descr {
-  display: block;
-  position: relative;
-  top: 150px;
-  text-align: center;
-}
-
-.services .services_img_descr h3 {
-  color: #fff;
-  font-family: "Roboto-Medium", sans-serif;
-  font-size: 24px;
-  font-weight: normal;
+  width: 80%;
 }
 
 .services .services_podr {
   text-align: left;
-  margin: 20px 0 0 39px;
+  margin: 20px 0 0 40px;
 }
 
 .services .services_podr span {
@@ -665,7 +712,7 @@ body textarea:required:valid {
   line-height: 1.3em;
   font-weight: 600;
   color: #585858;
-  padding-bottom: 20px;
+  margin: 0;
 }
 
 .prior span {
