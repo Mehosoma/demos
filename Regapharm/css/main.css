@@ -611,6 +611,18 @@ body textarea:required:valid {
   line-height: 25.6px;
 }
 
+.navbar-brand {
+  color: #fff !important;
+  padding: 25px 0;
+  font-family: "Roboto-Condensed", sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  transition: 0.5s ease;
+  height: 70px;
+  line-height: 25.6px;
+  padding-left: 20px;
+}
+
 .nav > li > a > img {
   position: relative;
   bottom: 3px;
@@ -1072,6 +1084,11 @@ header.sticky .nav > li > a {
   font-size: 18px;
   text-transform: uppercase;
   height: 50px;
+}
+
+header.sticky .navbar-brand {
+  height: 50px;
+  padding: 15px 0 15px 20px;
 }
 
 .usluga {

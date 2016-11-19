@@ -605,8 +605,15 @@
 		left: 306px;
 	}
 
-	
+		
 }
+
+@media only screen and (min-width : 768px) {
+	.navbar-brand{
+		display: none!important;
+	}	
+}
+
 
 @media only screen and (min-width : 320px) and (max-width : 580px) {
 
