@@ -43,20 +43,16 @@
 	.nav > li {
 		background-color: #06a2a6;
 	}
-
-	.nav  > li > img {
-		display: none;
-	}
-
+	
 	.main_pic h1{
 		font-size: 30px!important;
 	}
 
 	.navbar-default .navbar-nav .open .dropdown-menu > li > a {
-	    color: #fff;
 	    margin-left: 0px!important;
-	    background-color: rgba(37,186,186,0.5);
 	    font-size: 12px;
+	    background-color: #fff;
+	    color: #000;
 	}
 
 	.services p{
@@ -250,16 +246,13 @@
 	.nav > li {
 		background-color: #06a2a6;
 	}
-
-	.nav  > li > img {
-		display: none;
-	}
+	
 
 	.navbar-default .navbar-nav .open .dropdown-menu > li > a {
-	    color: #fff;
-	    margin-left: 20px!important;
-	    background-color: rgba(37,186,186,0.5);
-	    font-size: 14px;
+	    margin-left: 0px!important;
+	    font-size: 12px;
+	    background-color: #fff;
+	    color: #000;
 	}
 
 	.services_img img{

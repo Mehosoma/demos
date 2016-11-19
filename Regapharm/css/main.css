@@ -28,7 +28,7 @@ header .top_line {
 }
 
 header .logo {
-  margin-top: 21px;
+  margin-top: 15px;
   transition: 0.5s ease;
 }
 
@@ -104,6 +104,10 @@ header .menu_line li:nth-child(6) {
 
 .services {
   padding: 65px 0 110px 0;
+}
+
+.services a {
+  text-decoration: none !important;
 }
 
 .services .services_circle .anim,
@@ -464,6 +468,18 @@ header .menu_line li:nth-child(6) {
   font-weight: 600;
 }
 
+.feed .sign a {
+  color: #fff;
+}
+
+.feed .sign a:hover {
+  color: #fff;
+}
+
+.feed .sign a:visited {
+  color: #fff;
+}
+
 .uslugi ul {
   padding: 82px 0 68px 0;
   list-style: none;
@@ -573,6 +589,7 @@ body textarea:required:valid {
   position: relative;
   height: 70px;
   background-color: #06a2a6;
+  z-index: 2;
 }
 
 .navbar-default .navbar-nav > .active > a,
@@ -590,16 +607,19 @@ body textarea:required:valid {
   font-size: 18px;
   text-transform: uppercase;
   transition: 0.5s ease;
+  height: 70px;
+  line-height: 25.6px;
 }
 
-.nav > li > img {
-  padding-top: 20px;
+.nav > li > a > img {
+  position: relative;
+  bottom: 3px;
+  left: 20px;
 }
 
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
   color: #fff;
-  background-color: transparent;
   background-color: #076d6d;
 }
 
@@ -753,7 +773,7 @@ body textarea:required:valid {
 .prior p {
   font-family: "Roboto-Regular", sans-serif;
   font-size: 14px;
-  line-height: 14px;
+  line-height: 1.3em;
   font-weight: 600;
   color: #585858;
   padding-bottom: 20px;
@@ -773,7 +793,7 @@ body textarea:required:valid {
   line-height: 14px;
   font-weight: 600;
   color: #585858;
-  padding-bottom: 17px;
+  padding-bottom: 24px;
 }
 
 .partners {
@@ -973,11 +993,11 @@ header.sticky {
   width: 100%;
   background-color: #fff;
   z-index: 99999;
-  height: 100px;
+  height: 116px;
 }
 
 header.sticky .top_line {
-  height: 60px;
+  height: 66px;
 }
 
 header.sticky .logo {
@@ -1041,7 +1061,7 @@ header.sticky .menu_line li:nth-child(6) {
 }
 
 header.sticky .navbar {
-  height: 40px;
+  height: 50px;
 }
 
 header.sticky .nav > li > a {
@@ -1051,10 +1071,7 @@ header.sticky .nav > li > a {
   font-family: "Roboto-Condensed", sans-serif;
   font-size: 18px;
   text-transform: uppercase;
-}
-
-header.sticky .nav > li > img {
-  padding-top: 10px;
+  height: 50px;
 }
 
 .usluga {
@@ -1081,5 +1098,41 @@ header.sticky .nav > li > img {
 }
 
 .usluga hr {
+  margin: 0px;
+}
+
+.article {
+  padding: 60px 0 0;
+}
+
+.article h2 {
+  display: block;
+  font-family: "Roboto-Light", sans-serif;
+  font-size: 36px;
+  color: #06a2a6;
+  font-weight: normal;
+  line-height: 20px;
+}
+
+.article span {
+  font-family: "Roboto-Condensed", sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  display: block;
+  padding-bottom: 36px;
+  color: #AFAFAF;
+}
+
+.article p {
+  font-family: "Roboto-Regular", sans-serif;
+  margin: 0px;
+  font-size: 14px;
+  line-height: 1.3em;
+  font-weight: 600;
+  color: #585858;
+  padding-bottom: 30px;
+}
+
+.article hr {
   margin: 0px;
 }
