@@ -1085,6 +1085,8 @@ header.sticky .nav > li > a {
   color: #06a2a6;
   font-weight: normal;
   margin-bottom: 30px;
+  margin-top: 0px;
+  line-height: 30px;
 }
 
 .usluga p {
@@ -1111,7 +1113,8 @@ header.sticky .nav > li > a {
   font-size: 36px;
   color: #06a2a6;
   font-weight: normal;
-  line-height: 20px;
+  line-height: 30px;
+  margin-top: 0px;
 }
 
 .article span {
