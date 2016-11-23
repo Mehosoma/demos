@@ -2529,7 +2529,7 @@ output {
   display: block;
   width: 215px;
   height: 22px;
-  margin: 11.5px 13px;
+  margin: 11.5px 0;
   font-size: 14px;
   line-height: 22px;
   padding: 3px 6px;
@@ -4369,7 +4369,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
   .navbar-right {
     float: right !important;
-    margin-right: -15px;
+   
   }
   .navbar-right ~ .navbar-right {
     margin-right: 0;
