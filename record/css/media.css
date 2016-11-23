@@ -181,6 +181,10 @@
 		margin-bottom: 40px
 	}
 
+	.shema .shema_descr{
+		margin-bottom: 50px
+	}
+
 	.slider .left{
 		display: none;
 	}
@@ -338,9 +342,6 @@
 
 	.shema .line {
 		width: 70%;
-	}
-
-	.shema .line{
 		margin-bottom: 40px
 	}
 
@@ -367,36 +368,35 @@
 		padding-top: 40px;
 	}
 
-	.slider .right_text,
+	.slider .right_text{
+		width: 100%
+	}
+
 	.slider .slider_wrap{
-		margin-left: 46px;
 		width: 100%
 	}
 
 	.slider .right_text h3{
 		font-size: 18px;
 		text-align: center;
-		width: 73%;
+		
 	}
 
 	.slider .right_text p{
 		display: block;
 		font-size: 14px;
 		line-height: 1.3em;
-		text-align: center;			
-		width: 73%;
+		text-align: center;
+		margin-left: 46px;
+		width: 72%;			
+		
 	}
 
 	.slider .right_text span{
 		display: block;
 		font-size: 22px;
 		line-height: 1.3em;
-		text-align: center;	
-		width: 73%;	
-	}
-
-	.slider .slider_wrap{
-		width: 73%;
+		text-align: center;			
 	}
 
 	.content .right_content h2{
