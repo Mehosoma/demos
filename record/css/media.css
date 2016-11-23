@@ -359,11 +359,11 @@
 	.banner .main_banner .response .top_line,
 	.banner .main_banner .response .response_form,
 	.banner .main_banner .response .bottom_line {
-		width: 280px;
+		width: 97%;
 	}
 
 	.banner .main_banner .response .response_form input{
-		width: 200px;
+		width: 100%;
 	}
 
 	.shema .line {
