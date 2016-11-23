@@ -16,6 +16,7 @@ body h2 {
   color: #fff;
 }
 
+/* Header */
 header .col-md-7 {
   width: 56.57142%;
 }
@@ -100,6 +101,7 @@ header .contacts span {
   margin-bottom: 12px;
 }
 
+/* Menu */
 .navbar-default,
 .navbar {
   position: relative;
@@ -159,6 +161,7 @@ header .contacts span {
   color: #fff;
 }
 
+/* Main Banner */
 .main_banner {
   background-image: url("../img/bg.png");
   background-repeat: no-repeat;
@@ -225,6 +228,7 @@ header .contacts span {
   margin-top: 15px;
 }
 
+/* Work Sheme */
 .shema {
   padding-bottom: 45px;
 }
@@ -248,7 +252,7 @@ header .contacts span {
 }
 
 .shema .shema_block1 {
-  margin-top: 9px;
+  margin-top: 8px;
 }
 
 .shema .shema_block3 {
@@ -277,6 +281,7 @@ header .contacts span {
   line-height: 1.3em;
 }
 
+/* Slider */
 .slider .left {
   background-image: url("../img/left.png");
   height: 266px;
@@ -388,6 +393,7 @@ header .contacts span {
   padding: 0 45px;
 }
 
+/* Content */
 .content .content_menu {
   background-color: #2796cf;
   height: 100%;
@@ -468,6 +474,7 @@ header .contacts span {
   margin: 0;
 }
 
+/* News */
 .news .news_header {
   height: 45px;
   background-color: #bedff1;
@@ -570,6 +577,7 @@ header .contacts span {
   height: 100%;
 }
 
+/* Footer */
 footer {
   height: 70px;
   background-color: #fff;
