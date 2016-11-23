@@ -1579,7 +1579,7 @@ pre code {
 }
 @media (min-width: 1200px) {
   .container {
-    width: 1400px;
+    width: 100%
   }
 }
 .container-fluid {
@@ -2529,7 +2529,7 @@ output {
   display: block;
   width: 215px;
   height: 22px;
-  margin: 11.5px 42px;
+  margin: 11.5px 13px;
   font-size: 14px;
   line-height: 22px;
   padding: 3px 6px;
@@ -4064,8 +4064,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-collapse {
-  padding-right: 15px;
-  padding-left: 15px;
   overflow-x: visible;
   -webkit-overflow-scrolling: touch;
   border-top: 1px solid transparent;

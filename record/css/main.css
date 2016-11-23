@@ -16,6 +16,18 @@ body h2 {
   color: #fff;
 }
 
+header .col-md-7 {
+  width: 59.28571%;
+}
+
+header .col-md-2 {
+  width: 17.85714%;
+}
+
+header .col-md-3 {
+  width: 22.85714%;
+}
+
 header .podl {
   background-image: url("../img/top_bg.png");
   height: 108px;
@@ -64,26 +76,26 @@ header .telephone a {
 }
 
 header .fa-volume-control-phone {
-  font-size: 20px;
-  margin-right: 10px;
+  font-size: 18px;
+  padding-right: 5px;
 }
 
 header .contacts {
-  padding: 15px 40px 20px 39px;
+  padding: 19px 30px 20px 45px;
   height: 108px;
 }
 
 header .contacts .fa-map-pin,
 header .contacts .fa-paper-plane {
-  font-size: 18px;
-  margin-right: 10px;
+  font-size: 16px;
+  margin-right: 5px;
   color: #2796cf;
 }
 
 header .contacts span {
   display: block;
   font-family: "RobotoLight", sans-serif;
-  font-size: 13px;
+  font-size: 12px;
   text-align: right;
   margin-bottom: 12px;
 }
@@ -143,7 +155,7 @@ header .contacts span {
 .form-group i {
   position: absolute;
   top: 15.5px;
-  right: 80px;
+  right: 50px;
   color: #fff;
 }
 
@@ -151,31 +163,33 @@ header .contacts span {
   background-image: url("../img/bg.png");
   background-repeat: no-repeat;
   height: 492px;
+  width: 100%;
   background-position: top center;
   background-size: cover;
 }
 
 .main_banner .top_line {
-  width: 480px;
-  height: 80px;
+  width: 477px;
+  height: 88px;
   background-color: #2796cf;
   text-align: center;
 }
 
 .main_banner .top_line h2 {
   margin: 0;
-  line-height: 80px;
+  line-height: 24px;
+  padding-top: 45px;
 }
 
 .main_banner .response {
-  padding: 65px 0 0 10px;
+  padding: 67px 0 0 10px;
 }
 
 .main_banner .response_form {
   background-color: rgba(39, 150, 207, 0.5);
-  width: 480px;
+  width: 477px;
   height: 150px;
-  padding: 16px 45px;
+  padding: 19px 45px;
 }
 
 .main_banner .response_form input {
@@ -184,18 +198,17 @@ header .contacts span {
   font-family: "RobotoLight", sans-serif;
   font-size: 14px;
   color: #2796cf;
-  margin-bottom: 20px;
-  width: 380px;
-  height: 40px;
+  margin-bottom: 21px;
+  width: 385px;
+  height: 45px;
   padding: 15px 13px;
 }
 
 .main_banner .bottom_line {
-  width: 480px;
+  width: 477px;
   height: 105px;
   background-color: #2796cf;
   text-align: center;
-  padding-top: 12px;
 }
 
 .main_banner .bottom_line input {
@@ -207,10 +220,13 @@ header .contacts span {
   width: 175px;
   height: 45px;
   line-height: 45px;
+  padding: 0 45px;
+  margin-bottom: 45px;
+  margin-top: 15px;
 }
 
 .shema {
-  padding-bottom: 40px;
+  padding-bottom: 45px;
 }
 
 .shema .line {
@@ -228,7 +244,15 @@ header .contacts span {
 }
 
 .shema .shema_block {
-  margin-top: 32px;
+  margin-top: 45px;
+}
+
+.shema .shema_block1 {
+  margin-top: 9px;
+}
+
+.shema .shema_block3 {
+  margin-top: 14px;
 }
 
 .shema .shema_img {
@@ -255,14 +279,15 @@ header .contacts span {
 
 .slider .left {
   background-image: url("../img/left.png");
-  height: 248px;
-  background-position: top center;
+  height: 266px;
+  background-position: top left;
   background-repeat: no-repeat;
+  width: 100%;
 }
 
 .slider .right {
   background-color: #2796cf;
-  height: 248px;
+  height: 266px;
 }
 
 .slider .right h3 {
@@ -296,7 +321,7 @@ header .contacts span {
 
 .slider .line_left {
   width: 45px;
-  height: 248px;
+  height: 266px;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -308,7 +333,7 @@ header .contacts span {
 
 .slider .line_right {
   width: 45px;
-  height: 248px;
+  height: 266px;
   float: right;
   background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
@@ -360,6 +385,7 @@ header .contacts span {
   font-family: "RobotoThin", sans-serif;
   font-size: 14px;
   line-height: 45px;
+  padding: 0 45px;
 }
 
 .content .content_menu {
@@ -373,7 +399,7 @@ header .contacts span {
   font-family: "RobotoBlack", sans-serif;
   font-size: 24px;
   line-height: 36px;
-  padding: 40px 0 12px 42px;
+  padding: 45px 0 12px 45px;
 }
 
 .content .col-md-3 > .menu_links:nth-child(7) {
@@ -390,7 +416,7 @@ header .contacts span {
   font-family: "RobotoRegular", sans-serif;
   font-size: 14px;
   line-height: 42px;
-  padding-left: 42px;
+  padding-left: 45px;
   margin: 0;
 }
 
@@ -401,7 +427,7 @@ header .contacts span {
 
 .content .menu_links ul {
   list-style-type: none;
-  padding: 15px 42px;
+  padding: 15px 45px;
   margin-bottom: 0;
 }
 
@@ -422,15 +448,16 @@ header .contacts span {
 }
 
 .content .right_content {
-  padding: 30px 45px 28px 45px;
+  padding: 45px 45px 28px 45px;
 }
 
 .content .right_content h2 {
   color: #2796cf;
   font-family: "RobotoLight", sans-serif;
   font-size: 30px;
+  line-height: 30px;
   padding-bottom: 15px;
-  margin: 20px 0 0 0;
+  margin: 0;
 }
 
 .content .right_content p {
@@ -492,7 +519,8 @@ header .contacts span {
   background-image: url("../img/bg_small1.png");
   height: 163px;
   width: 100%;
-  background-position: top right;
+  background-position: top center;
+  background-repeat: no-repeat;
 }
 
 .news .news_image2 {
@@ -532,6 +560,7 @@ header .contacts span {
   font-family: "RobotoThin", sans-serif;
   font-size: 14px;
   line-height: 45px;
+  padding: 0 45px;
 }
 
 .news .wrap {

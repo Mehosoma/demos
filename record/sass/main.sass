@@ -22,6 +22,13 @@ body
 
 
 header	
+	.col-md-7
+		width: 59.28571%
+	.col-md-2
+		width: 17.85714%
+	.col-md-3
+		width: 22.85714%
+
 	.podl
 		background-image: url("../img/top_bg.png")
 		height: 108px		
@@ -58,20 +65,22 @@ header
 			line-height: 28px
 			vertical-align: middle	
 	.fa-volume-control-phone
-		font-size: 20px
-		margin-right: 10px
+		font-size: 18px
+		padding-right: 5px
+
+		
 	.contacts
-		padding: 15px 40px 20px 39px
+		padding: 19px 30px 20px 45px
 		height: 108px
 		.fa-map-pin,
 		.fa-paper-plane
-			font-size: 18px
-			margin-right: 10px
+			font-size: 16px
+			margin-right: 5px
 			color: $blue-color
 		span
 			display: block
 			font-family: "RobotoLight", sans-serif
-			font-size: 13px
+			font-size: 12px
 			text-align: right
 			margin-bottom: 12px
 
@@ -124,46 +133,48 @@ header
 	i
 		position: absolute
 		top: 15.5px
-		right: 80px		
+		right: 50px		
 		color: #fff
 
 .main_banner
 	background-image: url("../img/bg.png")
 	background-repeat: no-repeat
 	height: 492px
+	width: 100%
 	background-position: top center
 	background-size: cover
 	.top_line
-		width: 480px
-		height: 80px
+		width: 477px
+		height: 88px
 		background-color: $blue-color
 		text-align: center
 		h2
 			margin: 0
-			line-height: 80px
+			line-height: 24px
+			padding-top: 45px
+			
 	.response
-		padding: 65px 0 0 10px 
+		padding: 67px 0 0 10px 
 	.response_form
 		background-color: rgba(39,150,207,0.5)
-		width: 480px
+		width: 477px
 		height: 150px
-		padding: 16px 45px
+		padding: 19px 45px
 		input
 			display: block
 			border: none
 			font-family: "RobotoLight", sans-serif
 			font-size: 14px
 			color: $blue-color
-			margin-bottom: 20px
-			width: 380px
-			height: 40px
+			margin-bottom: 21px
+			width: 385px
+			height: 45px
 			padding: 15px 13px
 	.bottom_line
-		width: 480px
+		width: 477px
 		height: 105px
 		background-color: $blue-color
-		text-align: center
-		padding-top: 12px
+		text-align: center		
 		input
 			border: none
 			background-color: $dark_blue
@@ -173,10 +184,14 @@ header
 			width: 175px
 			height: 45px
 			line-height: 45px
+			padding: 0 45px
+			margin-bottom: 45px
+			margin-top: 15px
+
 
 
 .shema
-	padding-bottom: 40px
+	padding-bottom: 45px
 	.line
 		background-color: $blue-color
 		height: 45px
@@ -188,7 +203,11 @@ header
 			font-size: 30px
 			line-height: 45px
 	.shema_block
-		margin-top: 32px		
+		margin-top: 45px
+	.shema_block1
+		margin-top: 9px
+	.shema_block3
+		margin-top: 14px		
 	.shema_img
 		text-align: center
 	.shema_descr
@@ -206,12 +225,13 @@ header
 .slider
 	.left
 		background-image: url("../img/left.png")
-		height: 248px
-		background-position: top center
+		height: 266px
+		background-position: top left
 		background-repeat: no-repeat
+		width: 100%
 	.right
 		background-color: $blue-color
-		height: 248px
+		height: 266px
 		h3
 			margin: 0
 			font-family: "RobotoBlack", sans-serif
@@ -235,7 +255,7 @@ header
 		text-align: center
 	.line_left
 		width: 45px
-		height: 248px
+		height: 266px
 		background-color: rgba(0,0,0,0.5)
 		img
 			display: block
@@ -243,7 +263,7 @@ header
 			padding-top: 100.5px
 	.line_right
 		width: 45px
-		height: 248px
+		height: 266px
 		float: right
 		background-color: rgba(0,0,0,0.5)
 		position: absolute
@@ -285,6 +305,7 @@ header
 			font-family: "RobotoThin", sans-serif
 			font-size: 14px
 			line-height: 45px
+			padding: 0 45px
 
 .content
 	.content_menu
@@ -296,7 +317,7 @@ header
 			font-family: "RobotoBlack", sans-serif
 			font-size: 24px
 			line-height: 36px
-			padding: 40px 0 12px 42px
+			padding: 45px 0 12px 45px
 	.col-md-3 > .menu_links:nth-child(7)
 		padding-bottom: 60px
 	.menu_line
@@ -307,14 +328,14 @@ header
 			font-family: "RobotoRegular", sans-serif
 			font-size: 14px
 			line-height: 42px
-			padding-left: 42px
+			padding-left: 45px
 			margin: 0
 	.menu_links
 		background-color: $blue-color
 		height: 100%
 		ul
 			list-style-type: none
-			padding: 15px 42px
+			padding: 15px 45px
 			margin-bottom: 0
 		a
 			font-family: "RobotoLight", sans-serif
@@ -329,13 +350,14 @@ header
 			font-style: normal
 			color: #fff
 	.right_content
-		padding: 30px 45px 28px 45px
+		padding: 45px 45px 28px 45px
 		h2
 			color: $blue-color
 			font-family: "RobotoLight", sans-serif
 			font-size: 30px
+			line-height: 30px
 			padding-bottom: 15px
-			margin: 20px 0 0 0 
+			margin: 0			 
 		p
 			font-family: "RobotoLight", sans-serif
 			font-size: 14px
@@ -381,7 +403,8 @@ header
 		background-image: url("../img/bg_small1.png")
 		height: 163px
 		width: 100%		
-		background-position: top right
+		background-position: top center
+		background-repeat: no-repeat
 	.news_image2
 		position: relative
 		background-image: url("../img/bg_small2.png")
@@ -413,6 +436,7 @@ header
 			font-family: "RobotoThin", sans-serif
 			font-size: 14px
 			line-height: 45px
+			padding: 0 45px
 	.wrap
 		display: block
 		position: static
