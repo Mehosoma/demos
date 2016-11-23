@@ -104,7 +104,11 @@
 
 	footer .navbar-collapse{
 		padding: 0;
-	}	
+	}
+
+	.news .date_header{
+		margin-bottom: 20px;
+	}
 
 }
 
