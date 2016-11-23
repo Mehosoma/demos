@@ -402,6 +402,7 @@ header .contacts span {
 .content .menu_links ul {
   list-style-type: none;
   padding: 15px 42px;
+  margin-bottom: 0;
 }
 
 .content .menu_links a {
