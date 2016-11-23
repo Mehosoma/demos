@@ -1,0 +1,48 @@
+@font-face {
+  font-family: "RobotoBlack";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/RobotoBlack/Roboto-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBlack/Roboto-Black.woff") format("woff"), url("../fonts/RobotoBlack/Roboto-Black.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "RobotoBold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/RobotoBold/Roboto-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBold/Roboto-Bold.woff") format("woff"), url("../fonts/RobotoBold/Roboto-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "RobotoLight";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/RobotoLight/Roboto-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoLight/Roboto-Light.woff") format("woff"), url("../fonts/RobotoLight/Roboto-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "RobotoRegular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/RobotoRegular/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/Roboto-Regular.woff") format("woff"), url("../fonts/RobotoRegular/Roboto-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "RobotoThin";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/RobotoThin/Roboto-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoThin/Roboto-Thin.woff") format("woff"), url("../fonts/RobotoThin/Roboto-Thin.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "RobotoCondensed";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/RobotoCondensed/Roboto-Condensed.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoCondensed/Roboto-Condensed.woff") format("woff"), url("../fonts/RobotoCondensed/Roboto-Condensed.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MinionPro";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/MinionPro/MinionPro-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/MinionPro/MinionPro-Regular.woff") format("woff"), url("../fonts/MinionPro/MinionPro-Regular.ttf") format("truetype");
+}
