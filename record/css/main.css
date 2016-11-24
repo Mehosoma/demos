@@ -7,6 +7,7 @@ body {
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 body h2 {
@@ -150,6 +151,10 @@ header .contacts span {
   background-color: #2268af;
 }
 
+.form-group {
+  position: relative;
+}
+
 .form-group input {
   display: inline-block;
 }
@@ -157,7 +162,7 @@ header .contacts span {
 .form-group i {
   position: absolute;
   top: 15.5px;
-  right: 50px;
+  right: 10px;
   color: #fff;
 }
 
@@ -609,15 +614,15 @@ footer .nav > li > a {
 }
 
 footer .nav > li > a:hover {
-  background-color: #fff;
+  background-color: #2796cf;
 }
 
 footer .nav > li > a:visited {
-  background-color: #fff;
+  background-color: #2796cf;
 }
 
 footer .nav > li > a:focus {
-  background-color: #fff;
+  background-color: #2796cf;
 }
 
 footer span {
