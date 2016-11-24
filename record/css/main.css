@@ -18,18 +18,6 @@ body h2 {
 }
 
 /* Header */
-header .col-md-7 {
-  width: 56.57142%;
-}
-
-header .col-md-2 {
-  width: 17.85714%;
-}
-
-header .col-md-3 {
-  width: 25.5714%;
-}
-
 header .podl {
   background-image: url("../img/top_bg.png");
   height: 108px;

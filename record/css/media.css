@@ -42,6 +42,10 @@
 		white-space: pre-line;	
 	}
 
+	header .telephone a{
+		margin-left: 40px;
+	}
+
 	.top_menu .nav > li > a {
 		padding: 12px 15px;
 	}
@@ -489,9 +493,16 @@
 	}
 }
 
-@media only screen and (min-width : 767px) and (max-width : 820px){
+@media only screen and (min-width : 767px) and (max-width : 860px){
 	header .telephone a{
-		margin-left: 40px;
+		margin-left: 20px;
+	}
+
+}
+
+@media only screen and (min-width : 767px) and (max-width : 900px){
+	header .telephone span{
+		font-size: 14px;
 	}
 
 }
