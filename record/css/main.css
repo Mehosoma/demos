@@ -602,15 +602,15 @@ footer .nav > li > a {
 }
 
 footer .nav > li > a:hover {
-  background-color: #2796cf;
+  background-color: #fff;
 }
 
 footer .nav > li > a:visited {
-  background-color: #2796cf;
+  background-color: #fff;
 }
 
 footer .nav > li > a:focus {
-  background-color: #2796cf;
+  background-color: #fff;
 }
 
 footer span {
