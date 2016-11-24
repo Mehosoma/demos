@@ -1583,6 +1583,13 @@ pre code {
     width: 100%
   }
 }
+
+@media (min-width: 1500px) {
+  .container {
+    width: 1440px
+  }
+}
+
 .container-fluid {
   padding-right: 15px;
   padding-left: 15px;
