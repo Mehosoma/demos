@@ -1568,6 +1568,12 @@ pre code {
   margin-left: auto;
 }
 
+@media (max-width: 319px) {
+  .container {
+    width: 1440px;
+  }
+}
+
 @media (min-width: 768px) {
   .container {
     width: 100%;
