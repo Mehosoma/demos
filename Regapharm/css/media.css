@@ -225,6 +225,10 @@
 		float: left;
 	}
 
+	header .marker_hr{
+		width: 60%;
+	}
+
 	.trubka{
 		float: right;
 		margin-left: 0!important;
@@ -237,10 +241,6 @@
 	.top_line .marker span{
 		padding-right: 0;
 		font-size: 13px;
-	}
-
-	.top_line hr{
-		left: 55%;
 	}
 
 	.nav > li {
@@ -399,7 +399,7 @@
 	}
 
 	.top_line hr{
-		left: 430px;
+		right: 0px;
 	}
 
 	.adress{
@@ -494,16 +494,28 @@
 
 @media only screen and (min-width: 992px) and (max-width: 1199px){
 
-	.top_line .marker{
-		margin-left: -50px!important;
+	header.sticky .logo img{
+		width: 70%
 	}
 
-	.top_line .trubka{
-		margin-left: 0!important;	
+	header .adress,
+	header.sticky .adress{
+		padding-left: 40px;
 	}
 
-	.top_line hr{
-		left: 310px;
+	header .trubka,
+	header.sticky .trubka{
+		margin-left: 10px;
+	}
+
+	header .marker,
+	header.sticky .marker{
+		margin-left: 0;
+	}
+
+	header .marker_hr,
+	header.sticky .marker_hr{
+		width: 340px;
 	}
 
 	.nav > li > a {
@@ -601,10 +613,6 @@
 		padding: 15px 25px
 	}
 
-	header.sticky hr{
-		left: 306px;
-	}
-
 		
 }
 
@@ -617,15 +625,15 @@
 
 @media only screen and (min-width : 320px) and (max-width : 580px) {
 
-	.top_line .marker{
+	.top_line .marker_hr{
 		width: 100%;		
 	}
 
-	.top_line hr{
-		width: 80%;
+	header hr{
+		width: 100%;
 		height: 1px;
-		position: static;
-		margin: 0 auto;		
+		margin: 0px;
+		top: 116px; 		
 	}
 
 	.top_line .trubka{

@@ -37,6 +37,12 @@ header .trubka, header .marker {
   padding: 40px 0;
 }
 
+header .marker_hr {
+  display: inline-block;
+  position: relative;
+  width: 370px;
+}
+
 header .marker {
   margin-left: 20px;
   display: inline-block;
@@ -48,7 +54,7 @@ header .marker span {
 
 header .trubka {
   display: inline-block;
-  margin-left: 43px;
+  margin-left: 30px;
 }
 
 header .trubka span {
@@ -64,8 +70,8 @@ header hr {
   height: 47px;
   position: absolute;
   background-color: #cacaca;
-  top: 20px;
-  left: 410px;
+  top: 10px;
+  right: 0px;
 }
 
 header .col-md-12 {
@@ -346,7 +352,7 @@ header .menu_line li:nth-child(6) {
 
 .feed {
   background-image: url(../img/bg2.png);
-  background-repeat: repeat;
+  background-repeat: repeat-x;
   min-height: 593px;
   background-position: top center;
   background-size: cover;
@@ -637,7 +643,7 @@ body textarea:required:valid {
 
 .bg_vtor {
   background-image: url(../img/bg_vtor.png);
-  background-repeat: repeat;
+  background-repeat: repeat-x;
   min-height: 160px;
   background-position: top center;
   background-size: cover;
@@ -1033,9 +1039,15 @@ header.sticky .marker span {
   text-align: left;
 }
 
+header.sticky .marker_hr {
+  display: inline-block;
+  position: relative;
+  width: 370px;
+}
+
 header.sticky .trubka {
   display: inline-block;
-  margin-left: 43px;
+  margin-left: 30px;
 }
 
 header.sticky .trubka span {
@@ -1047,13 +1059,13 @@ header.sticky .trubka span {
 }
 
 header.sticky hr {
-  margin-top: 15px;
   width: 1px;
   height: 40px;
   position: absolute;
   background-color: #cacaca;
-  top: 0px;
-  left: 410px;
+  top: 10px !important;
+  right: 0px !important;
+  margin: 0;
 }
 
 header.sticky .col-md-12 {
