@@ -82,6 +82,12 @@ header .right_contacts i {
   margin-right: 10px;
 }
 
+header .wrap_i {
+  display: inline-block;
+  width: 15px;
+  margin-right: 10px;
+}
+
 header .top_menu {
   display: block;
 }

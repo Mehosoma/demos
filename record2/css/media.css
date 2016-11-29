@@ -1,6 +1,6 @@
 /*==========  Desktop First Method  ==========*/
 
-@media only screen and (min-width: 1200px) and (max-width: 1270px) {
+@media only screen and (min-width: 1200px) and (max-width: 1272px) {
 	.services .col-lg-3{
 		height: 650px;
 	}
@@ -97,6 +97,10 @@
 
 	footer .copy{
 		text-align: center;
+	}
+
+	.services .col-sm-4{
+		width: 100%;
 	}
 }
 
@@ -219,7 +223,11 @@
 
 	header .right_contacts{
 		float: left;
-		margin-left: 28px;
+		margin-left: 10px;
+	}
+
+	header .left_contacts{
+		margin-left: 10px;
 	}
 
 	header .logo{
@@ -287,7 +295,7 @@
 	}
 
 	header .navbar .navbar-nav li a{
-			padding: 10px 15px;
+			padding: 10px 20px;
 	}
 	
 	
@@ -301,7 +309,7 @@
 	}
 
 	header .navbar .navbar-nav li a{
-			padding: 10px 10px;
+			padding: 10px 12px;
 	}
 
 	header .search{
@@ -314,7 +322,7 @@
 	}
 
 
-@media only screen and (max-width : 1080px) {
+@media only screen and (max-width : 1090px) {
 
 	header .navbar .navbar-nav{
 			margin-left: 0px;
@@ -322,7 +330,7 @@
 	}
 
 	header .navbar .navbar-nav li a{
-			padding: 10px 10px;
+			padding: 10px 12px;
 			font-size: 14px;
 
 	}	
