@@ -1,0 +1,27 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+	
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+
+	
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 320px) and (max-width : 479px) {
+	
+	.banner img{
+		width: 100%;
+		height: auto;
+	}
+
+}
