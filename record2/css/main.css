@@ -348,7 +348,7 @@ header .search1 i {
   color: #fff;
 }
 
-.reklama .reklama_content .button input {
+.reklama .reklama_content .button {
   border: none;
   background-color: #ed353f;
   color: #fff;
@@ -356,11 +356,14 @@ header .search1 i {
   height: 50px;
   line-height: 45px;
   padding: 0 45px;
-  margin-bottom: 45px;
-  margin-top: 15px;
+  margin: 15px auto;
   font-family: "RobotoLight", sans-serif;
   font-size: 24px;
   text-decoration: underline;
+}
+
+.reklama .reklama_content .button a {
+  color: #fff;
 }
 
 footer {
