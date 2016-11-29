@@ -99,7 +99,8 @@
 		text-align: center;
 	}
 
-	.services .col-sm-4{
+	.services .col-sm-4,
+	.services .col-sm-8{
 		width: 100%;
 	}
 }
