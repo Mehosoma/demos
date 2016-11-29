@@ -170,14 +170,14 @@ header .navbar-collapse {
   z-index: 9999;
 }
 
-header .search {
+header .search1 {
   position: relative;
   width: 195px;
   line-height: 80px;
   margin: 0 auto;
 }
 
-header .search input {
+header .search1 input {
   height: 19px;
   width: 195px;
   padding: 10px 8px;
@@ -185,7 +185,7 @@ header .search input {
   border: 1px #e2e2e2 solid;
 }
 
-header .search i {
+header .search1 i {
   position: absolute;
   top: 33px;
   right: 5px;
