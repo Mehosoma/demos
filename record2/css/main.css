@@ -246,6 +246,10 @@ header .search1 i {
   display: inline-block;
 }
 
+.services {
+  padding-bottom: 30px;
+}
+
 .services .services_header {
   background-color: #ed353f;
 }
