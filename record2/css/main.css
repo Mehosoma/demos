@@ -299,6 +299,10 @@ header .search1 i {
   color: #fff;
 }
 
+.services .services_content {
+  padding-bottom: 20px;
+}
+
 .services .services_content h3 {
   font-family: "RobotoLight", sans-serif;
   font-size: 24px;
@@ -356,7 +360,7 @@ header .search1 i {
   color: #fff;
 }
 
-.reklama .reklama_content .button {
+.reklama .reklama_content .button span {
   border: none;
   background-color: #ed353f;
   color: #fff;
@@ -368,10 +372,6 @@ header .search1 i {
   font-family: "RobotoLight", sans-serif;
   font-size: 24px;
   text-decoration: underline;
-}
-
-.reklama .reklama_content .button a {
-  color: #fff;
 }
 
 footer {

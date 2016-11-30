@@ -11,16 +11,7 @@
 		width: 150px;
 	}
 
-	.services .row{
-		display:table;
-        min-height:1px;       
-	}	
-
-	.services .col-lg-3{
-		display:table-cell;
-        height:inherit;           
-	}
-
+	
 }
 
 /* Large Devices, Wide Screens */
@@ -196,6 +187,10 @@
 		display: none;
 	}
 
+	.reklama .button  span{
+		display: block;
+	}
+
 	.reklama .reklama_content h2{
 		padding: 20px 0;
 	}
@@ -307,6 +302,10 @@
 		display: none;
 	}
 
+	.reklama .button  span{
+		display: block;
+	}
+
 	.reklama .reklama_content h2{
 		padding: 20px 0;
 	}
@@ -381,7 +380,7 @@
 	}	
 }
 
-@media only screen and (min-width: 480px) and (max-width: 992px) {
+@media only screen and (min-width: 480px) and (max-width: 991px) {
 
 	.services_li li {
 		display: block;
