@@ -133,14 +133,20 @@
 	header .fa-map-pin{
 		position: absolute;
 		top: 18px;
-		left: 35px;
+		left: 20px;
+	}
 
+	header .wrap_i{
+		margin-right: 10px;
+	}
 
+	header .left_contacts{
+		margin-left: 15px;
 	}
 
 	header .right_contacts{
 		float: left;
-		margin-left: 28px;
+		margin-left: 15px;
 	}
 
 	header .logo{
@@ -238,6 +244,16 @@
 
 	header .left_contacts{
 		margin-left: 10px;
+	}
+
+	header .wrap_i{
+		margin-right: 10px;
+	}
+	
+	header .fa-map-pin{
+		position: absolute;
+		top: 18px;
+		left: 15px;
 	}
 
 	header .logo{
