@@ -133,6 +133,15 @@
 		margin-left: 0px;
 	}
 
+	
+	header .fa-map-pin{
+		position: absolute;
+		top: 18px;
+		left: 35px;
+
+
+	}
+
 	header .right_contacts{
 		float: left;
 		margin-left: 28px;
@@ -258,7 +267,7 @@
 		display: none;
 	}
 
-	
+
 	header .navbar .navbar-nav li{
 		display: block
 	}
