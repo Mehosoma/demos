@@ -253,10 +253,6 @@ header .search1 i {
   display: inline-block;
 }
 
-.services {
-  padding-bottom: 30px;
-}
-
 .services .services_header {
   background-color: #ed353f;
 }
@@ -276,10 +272,11 @@ header .search1 i {
 }
 
 .services ul {
-  padding: 0 0 12px 20px;
+  padding: 0 0 12px 0px;
 }
 
 .services ul .wrap_aw {
+  margin-left: 20px;
   width: 14px;
   display: inline-block;
 }
