@@ -1,5 +1,43 @@
 /*==========  Desktop First Method  ==========*/
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+	.services .row {
+		position: relative;
+		width: 100%
+		height: auto;
+		min-height: 300px;
+	}
 
+	.services .child {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+	}
+
+	.services .parent {
+		left: 33.333333333333%;
+		
+	}
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1640px) {
+	.services .row {
+		position: relative;
+		width: 100%
+		height: auto;
+		min-height: 300px;
+	}
+
+	.services .child {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+	}
+
+	.services .parent {
+		left: 25%;
+		
+	}
+}
 
 
 @media only screen and (min-width: 1200px) and (max-width: 1400px) {
@@ -10,7 +48,6 @@
 	header .search1 input{
 		width: 150px;
 	}
-
 	
 }
 
