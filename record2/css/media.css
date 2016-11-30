@@ -156,6 +156,10 @@
 		display: none
 	}
 
+	header .navbar .navbar-nav li{
+		display: block
+	}
+
 	.main_banner .banner_header,
 	.main_banner .banner_foto{
 		display: none;
@@ -254,6 +258,11 @@
 		display: none;
 	}
 
+	
+	header .navbar .navbar-nav li{
+		display: block
+	}
+
 	.reklama .reklama_content{
 		right:0;
 		left: 0;
@@ -306,7 +315,7 @@
 
 	header .navbar .navbar-nav{
 			margin-left: 0px;
-			padding: 20px 0;
+			padding: 20px 0;			
 	}
 
 	header .navbar .navbar-nav li a{

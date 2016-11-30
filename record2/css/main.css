@@ -135,6 +135,13 @@ header .navbar {
 header .navbar .navbar-nav {
   margin-left: 25px;
   padding: 20px 0;
+  float: none;
+  text-align: center;
+}
+
+header .navbar .navbar-nav li {
+  float: none;
+  display: inline-block;
 }
 
 header .navbar .navbar-nav li a {
