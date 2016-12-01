@@ -348,6 +348,10 @@
 		min-height: 0px;
 	}
 
+	header .navbar .navbar-nav li{
+		display: block
+	}
+
 	header .navbar-header .navbar-brand{
 		display: block;		
 	}
