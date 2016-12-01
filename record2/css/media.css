@@ -135,6 +135,21 @@
 		text-align: center;
 	}
 
+	footer .navbar{
+		text-align: center;
+	}
+
+	footer .left_footer .navbar .navbar-nav{
+		float: none;
+		margin-left: 0px;
+	}
+
+	footer .navbar-nav li{
+		float: none;
+		display: inline-block;
+		padding: 0px 5px;			
+	}
+
 	.services .col-sm-4,
 	.services .col-sm-8{
 		width: 100%;

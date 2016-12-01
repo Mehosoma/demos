@@ -23,7 +23,7 @@
   font-family: "RobotoRegular";
   font-style: normal;
   font-weight: normal;
-  src: url("../fonts/RobotoRegular/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/Roboto-Regular.woff") format("woff"), url("../fonts/RobotoRegular/Roboto-Regular.ttf") format("truetype");
+  src: url("../fonts/RobotoRegular/Roboto-Regular.ttf") format("truetype");
 }
 
 @font-face {
