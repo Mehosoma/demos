@@ -41,26 +41,27 @@
 
 
 @media only screen and (min-width: 1200px) and (max-width: 1400px) {
-	header .search1{		
+	
+	header .search1{
 		width: 150px;
 	}
 
 	header .search1 input{
 		width: 150px;
-	}
+	}	
 	
 }
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
 	
-	header .search1{		
+	header .search1{
 		width: 130px;
-	}
+	}	
 
 	header .search1 input{
 		width: 130px;
-	}
+	}	
 
 	.main_banner .banner_header{
 		top: 220px;
@@ -142,6 +143,12 @@
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 480px) and (max-width : 767px) {
+	
+	header .top_menu .hidden-col{
+		min-height: 0px;
+		display: none;
+	}	
+
 	header .contacts{
 		height: 150px;
 	}
@@ -202,6 +209,15 @@
 		display: block;		
 	}
 
+	header .navbar-brand{
+		display: block;
+		float: right
+	}
+
+	header .navbar-header{
+		padding-right: 30px;
+	}
+
 	header .search1{
 		display: none
 	}
@@ -254,6 +270,11 @@
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 320px) and (max-width : 479px) {
 	
+	header .top_menu .hidden-col{
+		min-height: 0px;
+		display: none;
+	}	
+
 	header .contacts{
 		height: 150px;
 	}
