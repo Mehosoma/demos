@@ -55,6 +55,14 @@
 	    color: #000;
 	}
 
+	.services{
+		padding: 65px 0 30px 0;
+	}
+
+	.registr{
+		padding: 0 0 50px 0
+	}
+
 	.services p{
  		display: block;
  		margin: 25px auto 0!important;
@@ -69,6 +77,10 @@
  	.articles img{
 		display: block;
 		margin: 0 auto;
+	}
+
+	.articles h2{
+		padding: 40px 0 50px;
 	}
 
 	.zagol, .zagol_two{
@@ -91,6 +103,10 @@
 
 	.feed .button{
 	text-align: center;
+	}
+
+	.feed h2{
+		padding: 40px 0;
 	}
 
 	.sign{
