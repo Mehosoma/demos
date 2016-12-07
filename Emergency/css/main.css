@@ -65,7 +65,7 @@ header .top_line .phone span {
 header .main_banner {
   background-image: url("../img/main_banner.png");
   width: 100%;
-  height: 505px;
+  height: 504px;
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -73,10 +73,10 @@ header .main_banner {
 
 header .main_banner .banner_dekor {
   background-image: url("../img/lesenka.png");
-  background-repeat: repeat-x;
-  background-position: bottom left;
+  background-repeat: no-repeat;
+  background-position: bottom center;
   width: 100%;
-  height: 505px;
+  height: 504px;
 }
 
 header .main_banner .wrap_banner {
@@ -427,13 +427,13 @@ nav .menu .menu_button a {
   font-size: 30px;
   line-height: 30px;
   color: #115a84;
-  text-shadow: rgba(0, 0, 0, 0.4) 1px 1px 0px;
+  text-shadow: rgba(0, 0, 0, 0.2) 1px 1px 1px;
 }
 
 #seo .seo_left p {
   font-size: 15px;
   color: #115a84;
-  text-shadow: rgba(0, 0, 0, 0.4) 1px 1px 0px;
+  text-shadow: rgba(0, 0, 0, 0.2) 1px 1px 1px;
   margin-top: 30px;
 }
 
