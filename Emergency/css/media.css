@@ -285,6 +285,10 @@
 		padding-bottom: 30px
 	}
 
+	nav .menu h2{
+		line-height: 28px;
+	}
+
 	#buisness .buisness_descr{
 		margin-top: 80px;
 	}
@@ -319,11 +323,13 @@
 	#clients .clients_right h2{
 		margin-bottom: 5px;
 		font-size: 22px;
+		line-height: 22px;
+		margin: 5px 0;
 	}
 
 	#clients .clients_right p{
-		font-size: 12px;
-		line-height: 16px;
+		font-size: 14px;
+		line-height: 15px;
 		margin-bottom: 5px;
 	}
 
