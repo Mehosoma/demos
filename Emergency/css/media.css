@@ -1,0 +1,412 @@
+/*==========  Desktop First Method  ==========*/
+
+@media only screen and (min-width : 1920px) {
+
+	header .top_line{
+		width: 1920px;
+		margin: 0 auto;
+	}
+
+	header .main_banner{
+		width: 1920px;
+		margin: 0 auto;	
+	}
+
+	nav .menu{
+		width: 1920px;
+		margin: 0 auto;
+	}
+
+	#buisness .dekor_buisness{
+		width: 1920px;
+		margin: 0 auto;	
+	}
+
+	#site{
+		width: 1920px;
+		margin: 0 auto;		
+	}
+
+	#clients{
+		width: 1920px;
+		margin: 0 auto;		
+	}
+
+	#seo{
+		width: 1920px;
+		margin: 0 auto;		
+	}
+
+	footer{
+		width: 1920px;
+		margin: 0 auto;		
+	}
+
+
+
+}
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+	#site .numeral .numeral_header p{
+		font-size: 14px;
+	}
+
+	#clients .clients_right{
+		margin-top: 50px;
+	}
+
+	#seo{
+		padding-bottom: 30px;
+	}
+}
+
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+	header .top_line{
+		height: 96px;
+	}
+	
+	header .top_line .logo,
+	header .top_line .phone,
+	header .top_line .quick{
+		float: none;
+		text-align: center;
+	}
+
+	header .main_banner .banner_dekor .zagol h1{
+		font-size: 80px;
+		line-height: 80px;
+		margin: 20px 0 20px;
+	}
+
+	header .main_banner .banner_descr span{
+		font-size: 22px;
+		line-height: 25px;		
+	}
+
+	nav .menu {
+		padding-bottom: 30px
+	}
+
+	#buisness{
+		background-position: top right 40%;
+
+	}
+
+	#buisness .buisness_right{
+		margin-top: 190px;
+		margin-left: 10px;
+		-webkit-transform: rotate(-29deg); //Chrome, Safari
+		-moz-transform: rotate(-29deg); //Firefox
+		-o-transform: rotate(-29deg); //Opera
+		-ms-transform: rotate(-29deg); //IE
+		transform: rotate(-29deg); //браузеры без префексов
+	}
+
+	#buisness .buisness_right p{
+		
+		font-size: 20px;
+		line-height: 24px;		
+	}
+
+	#site{
+		padding-bottom: 30px; 
+	}
+
+	#site .numeral{
+		height: 350px;
+	}
+
+	#clients .clients_left{
+		margin-top: 40px;
+		margin-right: 200px;		
+		float: right;
+		-webkit-transform: rotate(-13deg); //Chrome, Safari
+		-moz-transform: rotate(-13deg); //Firefox
+		-o-transform: rotate(-13deg); //Opera
+		-ms-transform: rotate(-13deg); //IE
+		transform: rotate(-13deg); //браузеры без префексов
+	}
+
+	#clients .clients_right{
+		margin-top: 40px;
+		float: right;
+	}
+
+	#seo{
+		padding-bottom: 30px;
+	}
+
+	#seo .seo_right{
+		text-align: center;
+	}
+
+}
+
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+
+	header .top_line{
+		height: 96px;
+	}
+	
+	header .top_line .logo,
+	header .top_line .phone,
+	header .top_line .quick{
+		float: none;
+		text-align: center;
+	}
+
+	header .main_banner .banner_dekor .zagol h1{
+		font-size: 66px;
+		line-height: 66px;
+		margin: 20px 0 20px;
+	}
+
+	header .main_banner .banner_descr span{
+		font-size: 25px;
+		line-height: 35px;		
+	}
+
+	nav .menu {
+		padding-bottom: 30px
+	}
+
+	#buisness .buisness_descr{
+		margin-top: 110px;
+	}
+
+	#buisness .buisness_right{
+		margin-top: 0px;
+		margin-left: 0px;
+		float: none;
+		-webkit-transform: rotate(0deg); //Chrome, Safari
+		-moz-transform: rotate(0deg); //Firefox
+		-o-transform: rotate(0deg); //Opera
+		-ms-transform: rotate(0deg); //IE
+		transform: rotate(0deg); //браузеры без префексов
+		margin: 0 auto;
+	}
+
+	#site{
+		padding-bottom: 30px; 
+	}
+
+	#site .numeral p{
+		width: 70%;
+		margin: 0 auto;
+	}
+
+	#site .numeral{
+		height: 300px;
+	}
+
+	#clients .clients_left{
+		margin-top: 30px;
+		margin-right: 120px;		
+		float: right;
+		-webkit-transform: rotate(-5deg); //Chrome, Safari
+		-moz-transform: rotate(-5deg); //Firefox
+		-o-transform: rotate(-5deg); //Opera
+		-ms-transform: rotate(-5deg); //IE
+		transform: rotate(-5deg); //браузеры без префексов
+	}
+
+	#clients .clients_right h2{
+		margin-bottom: 20px;
+		font-size: 30px;
+	}
+
+	#clients .clients_right p{
+		font-size: 15px;
+		line-height: 22px;
+		margin-bottom: 16px;
+	}
+
+	#clients .clients_right{
+		margin-top: 40px;
+		float: right;
+	}
+
+	#seo{
+		padding-bottom: 30px;
+	}
+
+	#seo .seo_right{
+		text-align: center;
+	}
+
+	footer .logo{
+		text-align: center;
+		margin-left: 0px;
+		margin-top: 30px;
+	}
+
+	footer .contacts,
+	footer .adres{
+		margin-left: 40px;
+	}	
+}
+
+@media only screen and (min-width : 320px) and (max-width : 479px){
+
+	header .top_line{
+		height: 144px;
+	}
+	
+	header .top_line .logo,
+	header .top_line .phone,
+	header .top_line .quick{
+		float: none;
+		text-align: center;
+	}
+
+	header .col-xs-6{
+		width: 100%;
+	}
+
+	header .top_line .quick a{
+		line-height: 12px;
+	}
+
+	header .main_banner .banner_dekor .zagol h1{
+		font-size: 32px;
+		line-height: 32px;
+		margin: 20px 0 20px;
+	}
+
+	header .main_banner .banner_descr span{
+		font-size: 14px;
+		line-height: 22px;		
+	}
+
+	nav .menu {
+		padding-bottom: 30px
+	}
+
+	#buisness .buisness_descr{
+		margin-top: 80px;
+	}
+
+	#buisness .buisness_right{
+		display: none;
+	}
+
+	#site{
+		padding-bottom: 30px; 
+	}
+	
+	#site .site_descr{
+		margin-top: 80px;
+	}
+
+	#site .numeral{
+		height: 300px;
+	}
+
+	#clients .clients_left{
+		margin-top: 40px;
+		margin-right: 0px;		
+		float: right;
+		-webkit-transform: rotate(-5deg); //Chrome, Safari
+		-moz-transform: rotate(-5deg); //Firefox
+		-o-transform: rotate(-5deg); //Opera
+		-ms-transform: rotate(-5deg); //IE
+		transform: rotate(-5deg); //браузеры без префексов
+	}
+
+	#clients .clients_right h2{
+		margin-bottom: 5px;
+		font-size: 22px;
+	}
+
+	#clients .clients_right p{
+		font-size: 12px;
+		line-height: 16px;
+		margin-bottom: 5px;
+	}
+
+	#clients .clients_right{
+		margin-top: 40px;
+		float: right;
+	}
+
+	#seo{
+		padding-bottom: 30px;
+	}
+
+	#seo .seo_left{
+		margin-top: 80px;
+	}
+
+	#seo .seo_right{
+		text-align: center;
+	}
+
+	.seo_right img{
+		width: 100%;
+	}
+
+	footer .logo{
+		text-align: center;
+		margin-left: 0px;
+		margin-top: 30px;
+	}
+
+	footer .col-xs-6{
+		width: 100%;
+	}
+	
+	footer .adres{
+		margin-left: 0px;
+		padding-bottom: 30px;
+	}
+}
+
+
+@media only screen and (min-width : 480px) and (max-width : 600px) {
+
+	header .main_banner .banner_dekor .zagol h1{
+		font-size: 50px;
+		line-height: 50px;
+		margin: 20px 0 20px;
+	}
+
+	header .main_banner .banner_descr span{
+		font-size: 20px;
+		line-height: 25px;		
+	}
+
+	#buisness .buisness_descr{
+		margin-top: 70px;
+	}
+
+	#clients .clients_left{
+		margin-top: 40px;
+		margin-right: 50px;		
+		float: right;
+		-webkit-transform: rotate(-5deg); //Chrome, Safari
+		-moz-transform: rotate(-5deg); //Firefox
+		-o-transform: rotate(-5deg); //Opera
+		-ms-transform: rotate(-5deg); //IE
+		transform: rotate(-5deg); //браузеры без префексов
+	}
+
+	#clients .clients_right h2{
+		margin-bottom: 20px;
+		font-size: 26px;
+	}
+
+	#clients .clients_right p{
+		font-size: 14px;
+		line-height: 20px;
+		margin-bottom: 16px;
+	}
+
+	#clients .clients_right{
+		margin-top: 40px;
+		float: right;
+	}
+}
+
