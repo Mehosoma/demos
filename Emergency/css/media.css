@@ -17,6 +17,11 @@
 		margin: 0 auto;
 	}
 
+	#buisness{
+		width: 1920px;
+		margin: 0 auto;	
+	}
+
 	#buisness .dekor_buisness{
 		width: 1920px;
 		margin: 0 auto;	
@@ -25,6 +30,10 @@
 	#site{
 		width: 1920px;
 		margin: 0 auto;		
+	}
+
+	#site .numeral{
+		height: 350px;
 	}
 
 	#clients{
