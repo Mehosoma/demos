@@ -125,21 +125,21 @@ body {
       display: inline-block;
       padding: 0 3px; }
       .category_banner .category_banner_header li a {
-        color: #fff;
+        color: #93939a;
         border: 1px #93939a solid;
         -webkit-border-radius: 20px;
                 border-radius: 20px;
         padding: 10px 25px;
-        font-family: "Fedra",sans-serif;
+        font-family: "FedraNormal",sans-serif;
         font-weight: normal;
         font-size: 14px; }
       .category_banner .category_banner_header li a:hover {
         background-color: #fff;
-        font-family: "FedraBold", sans-serif;
+        font-family: "FedraNormal", sans-serif;
         color: #000;
         text-decoration: none;
         font-weight: bold;
-        border: none; }
+        border: 1px #fff solid; }
     .category_banner .category_banner_header .category_main_banner {
       background-image: url("../img/category_main_banner_bg.png");
       height: 407px;

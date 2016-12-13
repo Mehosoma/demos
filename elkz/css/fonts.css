@@ -35,6 +35,12 @@
   src: url("../fonts/Merriweather-Bold/Merriweather-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Merriweather-Bold/Merriweather-Bold.woff") format("woff"), url("../fonts/Merriweather-Bold/Merriweather-Bold.ttf") format("truetype"), url("../fonts/Merriweather-Bold/Merriweather-Bold.svg#MerriweatherBold") format("svg"); }
 
 @font-face {
+  font-family: "MerriweatherItalic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/Merriweather-Italic/Merriweather-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/Merriweather-Italic/Merriweather-Italic.woff") format("woff"), url("../fonts/Merriweather-Italic/Merriweather-Italic.ttf") format("truetype"), url("../fonts/Merriweather-Italic/Merriweather-Italic.svg#MerriweatherItalic") format("svg"); }
+
+@font-face {
   font-family: "MaterialIconic";
   font-style: normal;
   font-weight: normal;
