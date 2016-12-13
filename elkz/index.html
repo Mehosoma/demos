@@ -16,6 +16,7 @@
 	<link rel="stylesheet" href="css/libs.min.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/media.css">	
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
 
 </head>
@@ -55,7 +56,7 @@
                 					<li><a href="#">Английский</a></li>                					
               					</ul>
             				</li>
-							<li><a href="#">города</a></li>
+							<li><a href="category.html">города</a></li>
 							<li class="dropdown">
              					 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">точки над i<span class="zmdi zmdi-chevron-down"></span></a>
               					<ul class="dropdown-menu">
@@ -77,10 +78,7 @@
 	</div>	
 	<!--Main Nav End-->
 
-	<!--Top Slider-->
-
-
-	
+	<!--Top Slider-->	
 	<div class="slider_wrap">
 		<div class="left_overlay"></div>
 		<div class="right_overlay"></div>
@@ -89,6 +87,9 @@
 				<div class="top_slider_news_img">
 					<img src="img/slider_1.png">
 					<div class="top_slider_news_overlay"></div>
+				</div>
+				<div class="top_slider_news_date">
+					<span>11.09.2016</span>
 				</div>
 				<div class="top_slider_news_descr">
 					<h3>Гордость народа на чемпионате мира по боксу</h3>
@@ -102,6 +103,9 @@
 					<img src="img/slider_2.png">
 					<div class="top_slider_news_overlay"></div>
 				</div>
+				<div class="top_slider_news_date">
+					<span>11.09.2016</span>
+				</div>
 				<div class="top_slider_news_descr">
 					<h3>Результаты исследования рынка от НИИ Т. Рыскулова</h3>
 					<div class="top_slider_news_tag">
@@ -114,6 +118,9 @@
 					<img src="img/slider_3.png">
 					<div class="top_slider_news_overlay"></div>
 				</div>
+				<div class="top_slider_news_date">
+					<span>11.09.2016</span>
+				</div>
 				<div class="top_slider_news_descr">
 					<h3>Природа Алма-Аты с 1970-1990 годы</h3>
 					<div class="top_slider_news_tag">
@@ -121,10 +128,13 @@
 					</div>
 				</div>												
 			</div>	
-				<div class="top_slider_news">
+			<div class="top_slider_news">
 				<div class="top_slider_news_img">
 					<img src="img/slider_4.png">
 					<div class="top_slider_news_overlay"></div>
+				</div>
+				<div class="top_slider_news_date">
+					<span>11.09.2016</span>
 				</div>
 				<div class="top_slider_news_descr">
 					<h3>Прекрасная дама в красном</h3>
@@ -138,6 +148,9 @@
 					<img src="img/slider_5.png">
 					<div class="top_slider_news_overlay"></div>
 				</div>
+				<div class="top_slider_news_date">
+					<span>11.09.2016</span>
+				</div>
 				<div class="top_slider_news_descr">
 					<h3>Вот это супер папа у нас!</h3>
 					<div class="top_slider_news_tag">
@@ -146,7 +159,6 @@
 				</div>												
 			</div>
 		</div>
-
 	</div>
 	<!--Top Slider End-->
 
@@ -267,14 +279,24 @@
 				<div class="week_photo_header">
 					<h3>Фото недели</h3>
 					<h2>Серые будни<br>тибетского воина</h2>
-					<span>1\17</span>					
+					<div class="swiper-pagination"></div>
 				</div>
-				<div class="week_photo_slider">
-					<img src="img/week_photo_slider_1.png">					
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img src="img/week_photo_slider_1.png">
+						</div>
+						<div class="swiper-slide">
+							<img src="img/week_photo_slider_2.png">
+						</div>
+						<div class="swiper-slide">
+							<img src="img/week_photo_slider_3.png">
+						</div>						
+					</div>
 				</div>			
 				<div class="week_photo_slider_navigation">
-					<img src="img/navigation_slider_left.png">
-					<img src="img/navigation_slider_right.png">
+					<div class="swiper-button-prev"></div>					
+					<div class="swiper-button-next"></div>
 				</div>
 			</div>
 		</div>
@@ -378,51 +400,59 @@
 			</div>
 		</div>
 	</div>
-	<div class="container poster_block_wrap">
-		<div class="row">
-			<div class="col-xs-4">
-				<div class="poster_block">
-					<div class="poster_block_img">
-						<img src="img/poster_1.png">						
+	<div class="slider_wrap">
+		<div class="left_overlay"></div>
+		<div class="right_overlay"></div>
+		<div class="poster_block_wrap">		
+			<div class="poster_block">
+				<div class="poster_block_img">
+					<img src="img/poster_1.png">						
+				</div>
+				<div class="poster_date">
+					<span>11.09.2016</span>
+				</div>
+				<div class="poster_block_descr">
+					<h3>Название публикации и дата проведения</h3>
+					<span>21.12 - 22.12</span>
+					<div class="poster_block_tag">
+						<span>афиша</span>
 					</div>
-					<div class="poster_block_descr">
-						<h3>Название публикации и дата проведения</h3>
-						<span>21.12 - 22.12</span>
-						<div class="poster_block_tag">
-							<span>афиша</span>
-						</div>
-					</div>												
-				</div>					
-			</div>
-			<div class="col-xs-4">
-				<div class="poster_block">
-					<div class="poster_block_img">
-						<img src="img/poster_2.png">						
+				</div>												
+			</div>					
+		
+			<div class="poster_block">
+				<div class="poster_block_img">
+					<img src="img/poster_2.png">						
+				</div>
+				<div class="poster_date">
+					<span>11.09.2016</span>
+				</div>
+				<div class="poster_block_descr">
+					<h3>Название публикации и дата проведения</h3>
+					<span>21.12 - 22.12</span>
+					<div class="poster_block_tag">
+						<span>афиша</span>
 					</div>
-					<div class="poster_block_descr">
-						<h3>Название публикации и дата проведения</h3>
-						<span>21.12 - 22.12</span>
-						<div class="poster_block_tag">
-							<span>афиша</span>
-						</div>
-					</div>												
-				</div>					
-			</div>
-			<div class="col-xs-4">
-				<div class="poster_block">
-					<div class="poster_block_img">
-						<img src="img/poster_3.png">						
+				</div>												
+			</div>					
+			
+			<div class="poster_block">
+				<div class="poster_block_img">
+					<img src="img/poster_3.png">						
+				</div>
+				<div class="poster_date">
+					<span>11.09.2016</span>
+				</div>
+				<div class="poster_block_descr">
+					<h3>Название публикации и дата проведения</h3>
+					<span>21.12 - 22.12</span>
+					<div class="poster_block_tag">
+						<span>афиша</span>
 					</div>
-					<div class="poster_block_descr">
-						<h3>Название публикации и дата проведения</h3>
-						<span>21.12 - 22.12</span>
-						<div class="poster_block_tag">
-							<span>афиша</span>
-						</div>
-					</div>												
-				</div>					
+				</div>												
 			</div>
-		</div>
+
+		</div>		
 	</div>
 	<!--Poster End-->
 
@@ -433,14 +463,28 @@
 				<div class="week_video_header">
 					<h3>Видео недели</h3>
 					<h2>Выращивание<br>плантаций</h2>
-					<span>1\17</span>					
+					<div class="swiper-pagination"></div>					
 				</div>
-				<div class="week_video_slider">
-					<img src="img/week_video_slider_1.png">					
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<video width="859" height="522" controls>
+							<source src="https://youtu.be/z16V0OFxbxQ" type="video/mp4" />
+							<source src="https://youtu.be/z16V0OFxbxQ" type="video/webm"/>
+							<source src="https://youtu.be/z16V0OFxbxQ" type="video/ogg"/>							
+							</video>
+						</div>
+						<div class="swiper-slide">
+							<img src="img/week_photo_slider_2.png">
+						</div>
+						<div class="swiper-slide">
+							<img src="img/week_photo_slider_3.png">
+						</div>						
+					</div>
 				</div>			
-				<div class="week_video_slider_navigation">
-					<img src="img/navigation_slider_left.png">
-					<img src="img/navigation_slider_right.png">
+				<div class="video_slider_navigation">
+					<div class="swiper-button-prev"></div>					
+					<div class="swiper-button-next"></div>
 				</div>
 			</div>
 		</div>
@@ -514,13 +558,19 @@
 						<input type="text" placeholder="Поиск"></input>
 						<i class="zmdi zmdi-search"></i>
 					</div>
-					<div class="language">
-						<div class="language_block">
-							<i class="zmdi zmdi-globe-alt"></i>
+					<div class="btn-group dropup language">
+   						 <button type="button" data-toggle="dropdown" class="btn btn-info dropdown-toggle" aria-expanded="false">
+      						<i class="zmdi zmdi-globe-alt"></i>
 							<span>рус</span>
-							<i class="zmdi zmdi-chevron-down"></i>
-						</div>
-					</div>
+							<i class="zmdi zmdi-chevron-down"></i>      					
+    					</button>
+					    <!-- Выпадающее меню -->
+					    <ul class="dropdown-menu dropup">
+					      <!-- Пункты меню -->
+					      <li><a href="#">Пункт 1</a></li>
+					      <li><a href="#">Пункт 2</a></li>					      
+					    </ul>
+					</div>            				
 				</div>
 			</div>
 		</div>
@@ -530,7 +580,7 @@
 
 
 	<script src="js/libs.min.js"></script>
-	<script src="js/common.js"></script>
+	<script src="js/common.js"></script> 
 
 </body>
 </html>

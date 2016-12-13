@@ -131,6 +131,14 @@ body {
   .top_slider .top_slider_news {
     margin-top: 45px;
     position: relative; }
+    .top_slider .top_slider_news .top_slider_news_date {
+      position: absolute;
+      top: 20px;
+      left: 20px; }
+      .top_slider .top_slider_news .top_slider_news_date span {
+        font-family: "Merriweather", sans-serif;
+        font-size: 18px;
+        color: #fff; }
     .top_slider .top_slider_news .top_slider_news_img img {
       max-width: 370px;
       height: 320px; }
@@ -255,7 +263,12 @@ body {
   .week_photo .week_photo_header {
     margin-top: 178px;
     position: relative;
-    z-index: 99; }
+    z-index: 9; }
+    .week_photo .week_photo_header .swiper-pagination {
+      text-align: left;
+      position: absolute;
+      top: 200px;
+      left: 0; }
     .week_photo .week_photo_header h3 {
       font-family: "Fedra", sans-serif;
       font-size: 30px;
@@ -272,16 +285,23 @@ body {
       font-family: "Fedra", sans-serif;
       font-size: 30px;
       color: #1342d7; }
-  .week_photo .week_photo_slider {
+  .week_photo .swiper-container {
     position: absolute;
     top: 0;
-    right: 15px; }
+    right: 15px;
+    width: 859px;
+    height: 522px;
+    overflow: hidden; }
   .week_photo .week_photo_slider_navigation {
     position: absolute;
-    top: 390px;
+    top: 410px;
     left: 275px; }
-    .week_photo .week_photo_slider_navigation img {
-      margin-right: 50px; }
+    .week_photo .week_photo_slider_navigation .swiper-button-prev {
+      left: 0;
+      right: 0; }
+    .week_photo .week_photo_slider_navigation .swiper-button-next {
+      left: 70px;
+      right: 0; }
 
 /* Week Photo End */
 /*Week Interesting*/
@@ -392,6 +412,25 @@ body {
   height: 3px;
   margin: 0 0 20px 0; }
 
+.slider_wrap {
+  position: relative; }
+  .slider_wrap .left_overlay {
+    width: 110px;
+    height: 595px;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999; }
+  .slider_wrap .right_overlay {
+    width: 110px;
+    height: 595px;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 999; }
+
 .poster_block_wrap {
   background-color: #050a1a;
   height: 595px; }
@@ -399,6 +438,14 @@ body {
     height: 595px;
     background-color: #050a1a;
     position: relative; }
+    .poster_block_wrap .poster_block .poster_date {
+      position: absolute;
+      top: 75px;
+      left: 20px; }
+      .poster_block_wrap .poster_block .poster_date span {
+        font-family: "Merriweather", sans-serif;
+        font-size: 18px;
+        color: #fff; }
     .poster_block_wrap .poster_block .poster_block_img {
       padding-top: 45px; }
       .poster_block_wrap .poster_block .poster_block_img img {
@@ -451,7 +498,12 @@ body {
   .week_video .week_video_header {
     margin-top: 178px;
     position: relative;
-    z-index: 99; }
+    z-index: 9; }
+    .week_video .week_video_header .swiper-pagination {
+      text-align: left;
+      position: absolute;
+      top: 200px;
+      left: 0; }
     .week_video .week_video_header h3 {
       font-family: "Fedra", sans-serif;
       font-size: 30px;
@@ -468,16 +520,23 @@ body {
       font-family: "Fedra", sans-serif;
       font-size: 30px;
       color: #1342d7; }
-  .week_video .week_video_slider {
+  .week_video .swiper-container {
     position: absolute;
     top: 0;
-    right: 15px; }
-  .week_video .week_video_slider_navigation {
+    right: 15px;
+    width: 859px;
+    height: 522px;
+    overflow: hidden; }
+  .week_video .video_slider_navigation {
     position: absolute;
-    top: 390px;
+    top: 410px;
     left: 275px; }
-    .week_video .week_video_slider_navigation img {
-      margin-right: 50px; }
+    .week_video .video_slider_navigation .swiper-button-prev {
+      left: 0;
+      right: 0; }
+    .week_video .video_slider_navigation .swiper-button-next {
+      left: 70px;
+      right: 0; }
 
 /* Week video End */
 /*Footer*/
@@ -506,7 +565,8 @@ footer {
       list-style-type: none;
       font-family: "FedraNormal", sans-serif;
       font-size: 18px;
-      padding: 12px 0; }
+      padding: 12px 0;
+      color: #898b90; }
   footer .footer_social ul {
     padding-top: 15px; }
   footer .footer_social li {
@@ -553,15 +613,32 @@ footer {
       top: 0;
       bottom: 0; }
   footer .language {
-    float: right;
-    position: relative;
-    height: 80px; }
+    position: absolute;
+    top: 23.5px;
+    right: 0; }
+    footer .language button {
+      background-color: #080e23;
+      background-image: none;
+      border: none;
+      -webkit-box-shadow: none;
+              box-shadow: none;
+      color: #898b90; }
+    footer .language .btn-info.active,
+    footer .language .btn-info:active,
+    footer .language .btn-info.focus,
+    footer .language .btn-info:focus,
+    footer .language .btn-info:hover,
+    footer .language .open > .dropdown-toggle.btn-info {
+      background-color: #080e23 !important;
+      background-image: none !important;
+      border: none;
+      -webkit-box-shadow: none;
+              box-shadow: none;
+      color: #898b90 !important; }
     footer .language i {
       font-size: 20px;
       vertical-align: middle; }
     footer .language .zmdi-globe-alt {
       margin-right: 5px; }
-    footer .language .language_block {
-      padding-top: 30px; }
 
 /*Footer End*/
