@@ -6,6 +6,18 @@ body {
   margin: 0 auto;
   font-family: "Open Sans", sans-serif;
   font-size: 14px; }
+  body input:focus {
+    outline: none; }
+  body span.highlight {
+    background-color: #5c58ff;
+    cursor: pointer; }
+  body span.splink {
+    color: #0A5794;
+    cursor: pointer; }
+  body a:hover {
+    opacity: 0.75;
+    outline: none;
+    text-decoration: none; }
 
 .container {
   width: 1170px !important;
@@ -75,19 +87,43 @@ body {
     height: 97px;
     position: relative;
     text-align: right; }
-    .menu .search a {
+    .menu .search input {
       font-family: "FedraBold", sans-serif;
       font-size: 16px;
       line-height: 16px;
-      color: #000;
+      color: #999999;
       position: absolute;
-      height: 20px;
       margin: auto;
+      height: 42.5px;
       top: 0;
-      bottom: 0;
       right: 60px;
       left: 0;
-      text-decoration: none; }
+      bottom: 0;
+      text-decoration: none;
+      text-align: right;
+      background-color: #f2f0f7;
+      padding: 10px 10px 10px 15px;
+      border: none; }
+    .menu .search input::-webkit-input-placeholder {
+      color: #000; }
+    .menu .search input:-moz-placeholder {
+      color: #000; }
+    .menu .search input:hover,
+    .menu .search input:focus,
+    .menu .search input:active {
+      border: 1px #999999 solid;
+      -webkit-border-radius: 20px;
+              border-radius: 20px;
+      text-align: left;
+      outline: none; }
+    .menu .search input:hover::-webkit-input-placeholder {
+      color: #999999; }
+    .menu .search input:focus::-webkit-input-placeholder {
+      color: #999999; }
+    .menu .search input:hover:-moz-placeholder {
+      color: #999999; }
+    .menu .search input:focus:-moz-placeholder {
+      color: #999999; }
     .menu .search img {
       position: absolute;
       height: 23px;
@@ -96,6 +132,10 @@ body {
       top: 0;
       bottom: 0;
       right: 25px; }
+    .menu .search #spresult {
+      position: absolute;
+      bottom: 10px;
+      right: 60px; }
 
 .menu .navbar-nav > li:nth-child(1) {
   margin-left: 45px; }
@@ -160,6 +200,8 @@ body {
         font-size: 22px;
         line-height: 28px;
         color: #fff; }
+        .top_slider .top_slider_news .top_slider_news_descr h3 a {
+          color: #fff; }
       .top_slider .top_slider_news .top_slider_news_descr .top_slider_news_tag {
         position: absolute;
         bottom: 30px;
@@ -173,6 +215,8 @@ body {
           padding: 10px 15px;
           -webkit-border-radius: 20px;
                   border-radius: 20px; }
+          .top_slider .top_slider_news .top_slider_news_descr .top_slider_news_tag span a {
+            color: #fff; }
 
 /* Top Slider End */
 /* News Pack */
@@ -201,6 +245,8 @@ body {
     font-size: 22px;
     line-height: 28px;
     color: #000; }
+    .news_pack .news_pack_descr h3 a {
+      color: #000; }
   .news_pack .news_pack_descr p {
     font-family: "Merriweather", sans-serif;
     font-size: 16px;
@@ -219,6 +265,8 @@ body {
       padding: 10px 15px;
       -webkit-border-radius: 20px;
               border-radius: 20px; }
+      .news_pack .news_pack_descr .news_pack_tag span a {
+        color: #fff; }
   .news_pack .news_pack_block_special {
     position: relative; }
     .news_pack .news_pack_block_special .news_pack_special_img img {
@@ -235,6 +283,8 @@ body {
         font-size: 28px;
         line-height: 32px;
         color: #fff; }
+        .news_pack .news_pack_block_special .news_pack_special_descr h3 a {
+          color: #fff; }
     .news_pack .news_pack_block_special .news_pack_special_tag {
       position: absolute;
       bottom: 30px;
@@ -248,6 +298,8 @@ body {
         padding: 10px 15px;
         -webkit-border-radius: 20px;
                 border-radius: 20px; }
+        .news_pack .news_pack_block_special .news_pack_special_tag span a {
+          color: #fff; }
   .news_pack .second_row {
     margin-top: 25px; }
   .news_pack .second_row > div:nth-child(2) h3 {
@@ -274,6 +326,8 @@ body {
       font-size: 30px;
       color: #727273;
       margin: 0; }
+      .week_photo .week_photo_header h3 a {
+        color: #727273; }
     .week_photo .week_photo_header h2 {
       margin: 10px 0 40px 0;
       font-family: "Merriweather", sans-serif;
@@ -292,6 +346,8 @@ body {
     width: 859px;
     height: 522px;
     overflow: hidden; }
+    .week_photo .swiper-container a:hover {
+      opacity: 1; }
   .week_photo .week_photo_slider_navigation {
     position: absolute;
     top: 410px;
@@ -307,25 +363,47 @@ body {
 /*Week Interesting*/
 .week_int {
   padding: 35px 0; }
-  .week_int .week_int_header h3 {
-    font-family: "MerriweatherBold", sans-serif;
-    font-size: 20px;
-    margin: 0; }
-  .week_int .week_int_header a {
-    font-family: "MerriweatherBold", sans-serif;
-    font-size: 20px;
-    color: #1342d7; }
-  .week_int .week_int_header span {
-    color: #1342d7;
-    font-size: 40px;
-    vertical-align: middle;
-    margin-left: 5px; }
-  .week_int .week_int_header hr {
+  .week_int .week_int_header {
+    position: relative; }
+    .week_int .week_int_header h3 {
+      font-family: "MerriweatherBold", sans-serif;
+      font-size: 20px;
+      margin: 0;
+      float: left;
+      color: #000; }
+    .week_int .week_int_header .navbar-collapse {
+      float: left; }
+    .week_int .week_int_header .navbar-nav li a {
+      font-family: "MerriweatherBold", sans-serif;
+      font-size: 20px;
+      line-height: 20px;
+      color: #1342d7;
+      border-bottom: 1px #1342d7 dashed;
+      padding: 0;
+      top: 3px; }
+    .week_int .week_int_header .navbar-nav .zmdi {
+      line-height: 20px; }
+    .week_int .week_int_header .navbar-nav .dropdown-menu a {
+      color: #000;
+      border-bottom: none;
+      padding: 10px; }
+    .week_int .week_int_header a:active {
+      border-bottom: 1px #1342d7 dashed;
+      text-decoration: none; }
+    .week_int .week_int_header a:focus {
+      border-bottom: 1px #1342d7 dashed;
+      text-decoration: none; }
+    .week_int .week_int_header span {
+      color: #1342d7;
+      font-size: 40px;
+      vertical-align: middle;
+      margin-left: 5px; }
+  .week_int .hr hr {
     color: #383540;
     background-color: #383540;
     border: none;
     height: 3px;
-    margin: 0 0 20px 0; }
+    margin: 10px 0 20px 0; }
   .week_int .week_int_block {
     height: 480px;
     background-color: #fff;
@@ -349,6 +427,8 @@ body {
     font-size: 22px;
     line-height: 28px;
     color: #000; }
+    .week_int .week_int_descr h3 a {
+      color: #000; }
   .week_int .week_int_descr p {
     font-family: "Merriweather", sans-serif;
     font-size: 16px;
@@ -367,6 +447,8 @@ body {
       padding: 10px 30px;
       -webkit-border-radius: 20px;
               border-radius: 20px; }
+      .week_int .week_int_descr .week_int_tag span a {
+        color: #fff; }
 
 /*Week Interesting End*/
 /*Advertising*/
@@ -464,6 +546,8 @@ body {
         font-size: 22px;
         line-height: 28px;
         color: #fff; }
+        .poster_block_wrap .poster_block .poster_block_descr h3 a {
+          color: #fff; }
       .poster_block_wrap .poster_block .poster_block_descr span {
         width: 80%;
         margin: 0 0 0 20px;
@@ -471,7 +555,10 @@ body {
         font-family: "FedraBold", sans-serif;
         font-size: 22px;
         line-height: 28px;
-        color: #fff; }
+        color: #fff;
+        padding: 0; }
+        .poster_block_wrap .poster_block .poster_block_descr span a {
+          color: #fff; }
       .poster_block_wrap .poster_block .poster_block_descr .poster_block_tag {
         position: absolute;
         bottom: 30px;
@@ -509,6 +596,8 @@ body {
       font-size: 30px;
       color: #727273;
       margin: 0; }
+      .week_video .week_video_header h3 a {
+        color: #727273; }
     .week_video .week_video_header h2 {
       margin: 10px 0 40px 0;
       font-family: "Merriweather", sans-serif;
@@ -527,6 +616,8 @@ body {
     width: 859px;
     height: 522px;
     overflow: hidden; }
+    .week_video .swiper-container a:hover {
+      opacity: 1; }
   .week_video .video_slider_navigation {
     position: absolute;
     top: 410px;
@@ -556,6 +647,9 @@ footer {
       color: #fff;
       margin: 0;
       text-transform: uppercase; }
+      footer .footer_links h4 a,
+      footer .footer_social h4 a {
+        color: #fff; }
     footer .footer_links ul,
     footer .footer_social ul {
       padding: 38px 0 0 0;
@@ -567,6 +661,9 @@ footer {
       font-size: 18px;
       padding: 12px 0;
       color: #898b90; }
+      footer .footer_links li a,
+      footer .footer_social li a {
+        color: #898b90; }
   footer .footer_social ul {
     padding-top: 15px; }
   footer .footer_social li {
