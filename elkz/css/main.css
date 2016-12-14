@@ -175,7 +175,8 @@ body {
         line-height: 28px;
         color: #fff; }
         .top_slider .top_slider_news .top_slider_news_descr h3 a {
-          color: #fff; }
+          color: #fff;
+          width: 100%; }
       .top_slider .top_slider_news .top_slider_news_descr .top_slider_news_tag {
         position: absolute;
         bottom: 30px;

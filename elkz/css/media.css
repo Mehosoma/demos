@@ -11,6 +11,7 @@
 
 	.owl-stage{
 		width: 10000px!important;
+		-webkit-perspective: 1000;
 	}
 
 	}
