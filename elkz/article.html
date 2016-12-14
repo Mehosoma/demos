@@ -16,63 +16,60 @@
 	<link rel="stylesheet" href="css/libs.min.css">	
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/media.css">	
-	<link rel="stylesheet" href="css/article.css">
-	<link rel="stylesheet" href="css/component.css">
+	<link rel="stylesheet" href="css/article.css">	
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
 
 </head>
 <body>
 
 	<!--Main Nav-->
-	<div class="container article_menu">
-		<div class="row">
-			<div class="col-xs-12">
-				<div class="menu_logo">
-					<a href="index.html"><img src="img/logo.png" alt="logo"></a>
-				</div>
-				<nav role="navigation" class="navbar navbar-default">					
-					<div class="navbar-header">
-						<button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						</button>						
+	<div class="article_menu_wrap">
+		<div class="container article_menu">
+			<div class="row">
+				<div class="col-xs-12">
+					<div id="article_search_wrap">
+	  					<form action="" autocomplete="on">
+	  						<input id="article_search" name="search" type="text">
+	  						<input id="article_search_submit" value="Rechercher" type="submit">
+	  					</form>
+					</div>		
+					<div class="menu_logo">
+						<a href="index.html"><img src="img/logo.png" alt="logo"></a>
 					</div>
-					<div id="navbarCollapse" class="collapse navbar-collapse">
-						<ul class="nav navbar-nav">
-						 	<li class="dropdown">
-             					 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">рус<span class="zmdi zmdi-chevron-down"></span></a>
-              					<ul class="dropdown-menu">
-                					<li><a href="#">Русский</a></li>
-                					<li><a href="#">Казахский</a></li>
-                					<li><a href="#">Английский</a></li>                					
-              					</ul>
-            				</li>
-						    <li><a href="#">лица Казахстана</a></li>
-             				<li><a href="#">наука и техника</a></li>
-             				<li><a href="#">раздел</a></li>
-             				<li><a href="#">шоу-бизнес</a></li>
-             				<li><a href="#">культура</a></li>
-             				<li><a href="#">спорт</a></li>
-             				<li><a href="#">медиатека</a></li>							
-							<li><a href="#" class="special"><span>спец-проекты</span></a></li>
-							<div id="sb-search" class="sb-search">
-    							<form>
-        							<input class="sb-search-input" placeholder="Что будете искать?" type="text" value="" name="search" id="search">
-        							<input class="sb-search-submit" type="submit" value="">
-        							<div class="search_icon">
-        								<span class="sb-icon-search"></span>
-        								<img src="img/search.png" alt="search">
-        							</div>
-    							</form>
-							</div>
-						</ul>								
-					</div>	
-				</nav>
-			</div>			
-		</div>	
-	</div>	
+					<nav role="navigation" class="navbar navbar-default">					
+						<div class="navbar-header">
+							<button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							</button>						
+						</div>
+						<div id="navbarCollapse" class="collapse navbar-collapse">
+							<ul class="nav navbar-nav">
+							 	<li class="dropdown">
+	             					 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">рус<span class="zmdi zmdi-chevron-down"></span></a>
+	              					<ul class="dropdown-menu">
+	                					<li><a href="#">Русский</a></li>
+	                					<li><a href="#">Казахский</a></li>
+	                					<li><a href="#">Английский</a></li>                					
+	              					</ul>
+	            				</li>
+							    <li><a href="#">лица Казахстана</a></li>
+	             				<li><a href="#">наука и техника</a></li>
+	             				<li><a href="#">раздел</a></li>
+	             				<li><a href="#">шоу-бизнес</a></li>
+	             				<li><a href="#">культура</a></li>
+	             				<li><a href="#">спорт</a></li>
+	             				<li><a href="#">медиатека</a></li>							
+								<li><a href="#" class="special"><span>спец-проекты</span></a></li>	
+							</ul>								
+						</div>	
+					</nav>
+				</div>			
+			</div>	
+		</div>
+	</div>
 	<!--Main Nav End-->
 
 	<!--Main Banner-->
@@ -227,7 +224,7 @@
 			<div class="col-xs-12">
 				<div class="article_bottom_news_header">				
 					<div class="article_bottom_news_header_content">
-						<h3>Афиша</h3>
+						<h3>Читайте также</h3>
 						<hr />	
 					</div>
 				</div>
@@ -244,9 +241,9 @@
 					</div>
 					<div class="article_bottom_news_descr">
 						<h3><a href="#">Революционеры научной культуры Казахстана</a></h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+						<p><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</a></p>
 						<div class="article_bottom_news_tag">
-							<span><a href="#">лица Казахстана</a></span>
+							<a href="#"><span>лица Казахстана</span></a>
 						</div>
 					</div>	
 				</div>											
@@ -261,9 +258,9 @@
 					</div>
 					<div class="article_bottom_news_descr">
 						<h3><a href="#">Революционеры научной культуры Казахстана</a></h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+						<p><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</a></p>
 						<div class="article_bottom_news_tag">
-							<span><a href="#">лица Казахстана</a></span>
+							<a href="#"><span>лица Казахстана</span></a>
 						</div>
 					</div>	
 				</div>											
@@ -278,9 +275,9 @@
 					</div>
 					<div class="article_bottom_news_descr">
 						<h3><a href="#">Революционеры научной культуры Казахстана</a></h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+						<p><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</a></p>
 						<div class="article_bottom_news_tag">
-							<span><a href="#">лица Казахстана</a></span>
+							<a href="#"><span>лица Казахстана</span></a>
 						</div>
 					</div>	
 				</div>											
@@ -293,6 +290,9 @@
 
 	<!--Footer-->
 	<footer>
+		<div class="footer_hr">
+			<hr />
+		</div>
 		<div class="container footer_block">
 			<div class="row">
 				<div class="col-xs-3">
@@ -355,8 +355,10 @@
 				</div>
 				<div class="col-xs-4">
 					<div class="search">
-						<input type="text" class="" placeholder="Поиск"></input>
-						<i class="zmdi zmdi-search"></i>
+						<form action="">
+							<input type="text" id="search_form_bottom" class="" placeholder="Поиск"></input>
+							<input id="search_submit_bottom" value="" type="submit">							
+						</form>
 					</div>
 					<div class="btn-group dropup language">
    						 <button type="button" data-toggle="dropdown" class="btn btn-info dropdown-toggle" aria-expanded="false">
@@ -381,10 +383,7 @@
 
 	<script src="js/libs.min.js"></script>
 	<script src="js/common.js"></script>
-
-	<script>
-		new UISearch( document.getElementById( 'sb-search' ) );
-	</script> 
+	
 
 </body>
 </html>

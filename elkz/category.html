@@ -16,63 +16,60 @@
 	<link rel="stylesheet" href="css/libs.min.css">	
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/media.css">	
-	<link rel="stylesheet" href="css/category.css">
-	<link rel="stylesheet" href="css/component.css">
+	<link rel="stylesheet" href="css/category.css">	
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
 
 </head>
 <body>
 
 	<!--Main Nav-->
-	<div class="container category_menu">
-		<div class="row">
-			<div class="col-xs-12">
-				<div class="menu_logo">
-					<a href="index.html"><img src="img/logo.png" alt="logo"></a>
-				</div>
-				<nav role="navigation" class="navbar navbar-default">					
-					<div class="navbar-header">
-						<button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						</button>						
+	<div class="category_menu_wrap">
+		<div class="container category_menu">
+			<div class="row">
+				<div class="col-xs-12">
+					<div id="category_search_wrap">
+	  					<form action="" autocomplete="on">
+	  						<input id="category_search" name="search" type="text">
+	  						<input id="category_search_submit" value="Rechercher" type="submit">
+	  					</form>
+					</div>		
+					<div class="menu_logo">
+						<a href="index.html"><img src="img/logo.png" alt="logo"></a>
 					</div>
-					<div id="navbarCollapse" class="collapse navbar-collapse">
-						<ul class="nav navbar-nav">
-						 	<li class="dropdown">
-             					 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">рус<span class="zmdi zmdi-chevron-down"></span></a>
-              					<ul class="dropdown-menu">
-                					<li><a href="#">Русский</a></li>
-                					<li><a href="#">Казахский</a></li>
-                					<li><a href="#">Английский</a></li>                					
-              					</ul>
-            				</li>
-						    <li><a href="#">лица Казахстана</a></li>
-             				<li><a href="#">наука и техника</a></li>
-             				<li><a href="#">раздел</a></li>
-             				<li><a href="#">шоу-бизнес</a></li>
-             				<li><a href="#">культура</a></li>
-             				<li><a href="#">спорт</a></li>
-             				<li><a href="#">медиатека</a></li>							
-							<li><a href="#" class="special"><span>спец-проекты</span></a></li>
-							<div id="sb-search" class="sb-search">
-    							<form>
-        							<input class="sb-search-input" placeholder="Что будете искать?" type="text" value="" name="search" id="search">
-        							<input class="sb-search-submit" type="submit" value="">
-        							<div class="search_icon">
-        								<span class="sb-icon-search"></span>
-        								<img src="img/search.png" alt="search">
-        							</div>
-    							</form>
-							</div>
-						</ul>								
-					</div>	
-				</nav>
-			</div>			
-		</div>	
-	</div>	
+					<nav role="navigation" class="navbar navbar-default">					
+						<div class="navbar-header">
+							<button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							</button>						
+						</div>
+						<div id="navbarCollapse" class="collapse navbar-collapse">
+							<ul class="nav navbar-nav">
+							 	<li class="dropdown">
+	             					 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">рус<span class="zmdi zmdi-chevron-down"></span></a>
+	              					<ul class="dropdown-menu">
+	                					<li><a href="#">Русский</a></li>
+	                					<li><a href="#">Казахский</a></li>
+	                					<li><a href="#">Английский</a></li>                					
+	              					</ul>
+	            				</li>
+							    <li><a href="#">лица Казахстана</a></li>
+	             				<li><a href="#">наука и техника</a></li>
+	             				<li><a href="#">раздел</a></li>
+	             				<li><a href="#">шоу-бизнес</a></li>
+	             				<li><a href="#">культура</a></li>
+	             				<li><a href="#">спорт</a></li>
+	             				<li><a href="#">медиатека</a></li>							
+								<li><a href="#" class="special"><span>спец-проекты</span></a></li>						
+							</ul>								
+						</div>	
+					</nav>
+				</div>			
+			</div>	
+		</div>
+	</div>
 	<!--Main Nav End-->
 
 	<!--Category Banner-->
@@ -100,7 +97,7 @@
 										<span>17.09.2016</span>
 										<h2><a href="">Зимний Медео открывает свои двери перед гостями города</a></h2>
 										<div class="category_main_banner_tag">
-											<span><a href="#">спорт</a></span>
+											<a href="#"><span>спорт</span></a>
 										</div>
 									</div>
 								</div>								
@@ -126,9 +123,9 @@
 					</div>
 					<div class="category_news_descr">
 						<h3><a href="">Заголовок новостной плитки в пару тройку текстовых строк</a></h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+						<p><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</a></p>
 						<div class="category_news_tag">
-							<span><a href="">технологии</a></span>
+							<a href="#"><span>технологии</span></a>
 						</div>
 					</div>	
 				</div>											
@@ -143,9 +140,9 @@
 					</div>
 					<div class="category_news_descr">
 						<h3><a href="">Заголовок новостной плитки в пару тройку текстовых строк</a></h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+						<p><a href="">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p></a>
 						<div class="category_news_tag">
-							<span><a href="">технологии</a></span>
+							<a href="#"><span>технологии</span></a>
 						</div>
 					</div>	
 				</div>											
@@ -160,9 +157,9 @@
 					</div>
 					<div class="category_news_descr">
 						<h3><a href="">Заголовок новостной плитки в пару тройку текстовых строк</a></h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+						<p><a href="">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</a></p>
 						<div class="category_news_tag">
-							<span><a href="">технологии</a></span>
+							<a href="#"><span>технологии</span></a>
 						</div>
 					</div>	
 				</div>											
@@ -191,9 +188,9 @@
 					</div>
 					<div class="category_news_block_descr">
 						<h3><a href="">Заголовок блока</a></h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+						<p><a href="">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</a></p>
 						<div class="category_news_block_tag">
-							<span><a href="">рубрика</a></span>
+							<a href="#"><span>рубрика</span></a>
 						</div>
 					</div>	
 				</div>											
@@ -205,9 +202,9 @@
 					</div>
 					<div class="category_news_block_descr">
 						<h3><a href="">Заголовок блока</a></h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+						<p><a href="">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</a></p>
 						<div class="category_news_block_tag">
-							<span><a href="">рубрика</a></span>
+							<a href="#"><span>рубрика</span></a>
 						</div>
 					</div>	
 				</div>											
@@ -219,7 +216,7 @@
 					<span>11.09.2016</span>
 					<h4><a href="">Заголовок посредственной новости, где нет изображения или новость не акцентирует на себе</a></h4>
 					<div class="category_news_block_simple_tag">
-						<span><a href="">рубрика</a></span>
+						<a href=""><span>рубрика</span></a>
 					</div>
 				</div>				
 			</div>
@@ -228,7 +225,7 @@
 					<span>11.09.2016</span>
 					<h4><a href="">Заголовок посредственной новости, где нет изображения или новость не акцентирует на себе</a></h4>
 					<div class="category_news_block_simple_tag">
-						<span><a href="">рубрика</a></span>
+						<a href=""><span>рубрика</span></a>
 					</div>
 				</div>				
 			</div>
@@ -237,7 +234,7 @@
 					<span>11.09.2016</span>
 					<h4><a href="">Заголовок посредственной новости, где нет изображения или новость не акцентирует на себе</a></h4>
 					<div class="category_news_block_simple_tag">
-						<span><a href="">рубрика</a></span>
+						<a href=""><span>рубрика</span></a>
 					</div>
 				</div>				
 			</div>
@@ -248,7 +245,7 @@
 					<span>11.09.2016</span>
 					<h4><a href="">Заголовок посредственной новости, где нет изображения или новость не акцентирует на себе</a></h4>
 					<div class="category_news_block_simple_tag">
-						<span><a href="">рубрика</a></span>
+						<a href=""><span>рубрика</span></a>
 					</div>
 				</div>				
 			</div>
@@ -257,7 +254,7 @@
 					<span>11.09.2016</span>
 					<h4><a href="">Заголовок посредственной новости, где нет изображения или новость не акцентирует на себе</a></h4>
 					<div class="category_news_block_simple_tag">
-						<span><a href="">рубрика</a></span>
+						<a href=""><span>рубрика</span></a>
 					</div>
 				</div>				
 			</div>
@@ -266,7 +263,7 @@
 					<span>11.09.2016</span>
 					<h4><a href="">Заголовок посредственной новости, где нет изображения или новость не акцентирует на себе</a></h4>
 					<div class="category_news_block_simple_tag">
-						<span><a href="">рубрика</a></span>
+						<a href=""><span>рубрика</span></a>
 					</div>
 				</div>				
 			</div>
@@ -288,9 +285,9 @@
 					</div>
 					<div class="category_news_block_image_descr">
 						<h3><a href="">Заголовок новости в несколько текстовых строк</a></h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+						<p><a href="">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</a></p>
 						<div class="category_news_block_image_tag">
-							<span><a href="">рубрика</a></span>
+							<a href=""><span>рубрика</span></a>
 						</div>
 					</div>	
 				</div>											
@@ -305,9 +302,9 @@
 					</div>
 					<div class="category_news_block_image_descr">
 						<h3><a href="">Заголовок новости в несколько текстовых строк</a></h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+						<p><a href="">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</a></p>
 						<div class="category_news_block_image_tag">
-							<span><a href="">рубрика</a></span>
+							<a href=""><span>рубрика</span></a>
 						</div>
 					</div>	
 				</div>											
@@ -322,9 +319,9 @@
 					</div>
 					<div class="category_news_block_image_descr">
 						<h3><a href="">Заголовок новости в несколько текстовых строк</a></h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+						<p><a href="">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</a></p>
 						<div class="category_news_block_image_tag">
-							<span><a href="">рубрика</a></span>
+							<a href=""><span>рубрика</span></a>
 						</div>
 					</div>	
 				</div>											
@@ -341,9 +338,9 @@
 					</div>
 					<div class="category_news_block_image_descr">
 						<h3><a href="">Заголовок новости в несколько текстовых строк</a></h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+						<p><a href="">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</a></p>
 						<div class="category_news_block_image_tag">
-							<span><a href="">рубрика</a></span>
+							<a href=""><span>рубрика</span></a>
 						</div>
 					</div>	
 				</div>											
@@ -358,9 +355,9 @@
 					</div>
 					<div class="category_news_block_image_descr">
 						<h3><a href="">Заголовок новости в несколько текстовых строк</a></h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+						<p><a href="">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</a></p>
 						<div class="category_news_block_image_tag">
-							<span><a href="">рубрика</a></span>
+							<a href=""><span>рубрика</span></a>
 						</div>
 					</div>	
 				</div>											
@@ -375,9 +372,9 @@
 					</div>
 					<div class="category_news_block_image_descr">
 						<h3><a href="">Заголовок новости в несколько текстовых строк</a></h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+						<p><a href="">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</a></p>
 						<div class="category_news_block_image_tag">
-							<span><a href="">рубрика</a></span>
+							<a href=""><span>рубрика</span></a>
 						</div>
 					</div>	
 				</div>											
@@ -396,6 +393,9 @@
 	
 	<!--Footer-->
 	<footer>
+		<div class="footer_hr">
+			<hr />
+		</div>
 		<div class="container footer_block">
 			<div class="row">
 				<div class="col-xs-3">
@@ -458,8 +458,10 @@
 				</div>
 				<div class="col-xs-4">
 					<div class="search">
-						<input type="text" class="" placeholder="Поиск"></input>
-						<i class="zmdi zmdi-search"></i>
+						<form action="">
+							<input type="text" id="search_form_bottom" class="" placeholder="Поиск"></input>
+							<input id="search_submit_bottom" value="" type="submit">							
+						</form>
 					</div>
 					<div class="btn-group dropup language">
    						 <button type="button" data-toggle="dropdown" class="btn btn-info dropdown-toggle" aria-expanded="false">
@@ -481,11 +483,8 @@
 	<!--Footer End-->
 
 	<script src="js/libs.min.js"></script>
-	<script src="js/common.js"></script> 
+	<script src="js/common.js"></script> 	
 	
-	<script>
-		new UISearch( document.getElementById( 'sb-search' ) );
-	</script>
 
 </body>
 </html>

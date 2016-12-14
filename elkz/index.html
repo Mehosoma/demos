@@ -23,70 +23,78 @@
 <body>
 
 	<!--Main Nav-->
-	<div class="container menu">
-		<div class="row">
-			<div class="col-xs-9">
-				<div class="menu_logo">
-					<img src="img/logo.png" alt="logo">
-				</div>
-				<nav role="navigation" class="navbar navbar-default">					
-					<div class="navbar-header">
-						<button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						</button>						
+	<div class="menu_wrap">
+		<div class="container menu">
+			<div class="row">
+				<div class="col-xs-9">
+					<div class="menu_logo">
+						<img src="img/logo.png" alt="logo">
 					</div>
-					<div id="navbarCollapse" class="collapse navbar-collapse">
-						<ul class="nav navbar-nav">
-						 	<li class="dropdown">
-             					 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">рус<span class="zmdi zmdi-chevron-down"></span></a>
-              					<ul class="dropdown-menu">
-                					<li><a href="#">Русский</a></li>
-                					<li><a href="#">Казахский</a></li>
-                					<li><a href="#">Английский</a></li>                					
-              					</ul>
-            				</li>
-						    <li class="dropdown">
-             					 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">лица<span class="zmdi zmdi-chevron-down"></span></a>
-              					<ul class="dropdown-menu">
-                					<li><a href="#">Русский</a></li>
-                					<li><a href="#">Казахский</a></li>
-                					<li><a href="#">Английский</a></li>                					
-              					</ul>
-            				</li>
-							<li><a href="category.html">города</a></li>
-							<li class="dropdown">
-             					 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">точки над i<span class="zmdi zmdi-chevron-down"></span></a>
-              					<ul class="dropdown-menu">
-                					<li><a href="#">Русский</a></li>
-                					<li><a href="#">Казахский</a></li>
-                					<li><a href="#">Английский</a></li>                					
-              					</ul>
-            				</li>
-							<li><a href="article.html" class="special"><span>спец-проекты</span></a></li>		
-						</ul>								
-					</div>	
-				</nav>
-			</div>
-			<div class="search col-xs-3">
-				<a href="#" class="open">поиск по сайту</a>
+					<nav role="navigation" class="navbar navbar-default">					
+						<div class="navbar-header">
+							<button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							</button>						
+						</div>
+						<div id="navbarCollapse" class="collapse navbar-collapse">
+							<ul class="nav navbar-nav">
+							 	<li class="dropdown">
+	             					 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">рус<span class="zmdi zmdi-chevron-down"></span></a>
+	              					<ul class="dropdown-menu">
+	                					<li><a href="#">Русский</a></li>
+	                					<li><a href="#">Казахский</a></li>
+	                					<li><a href="#">Английский</a></li>                					
+	              					</ul>
+	            				</li>
+							    <li class="dropdown">
+	             					 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">лица<span class="zmdi zmdi-chevron-down"></span></a>
+	              					<ul class="dropdown-menu">
+	                					<li><a href="#">Русский</a></li>
+	                					<li><a href="#">Казахский</a></li>
+	                					<li><a href="#">Английский</a></li>                					
+	              					</ul>
+	            				</li>
+								<li><a href="category.html">города</a></li>
+								<li class="dropdown">
+	             					 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">точки над i<span class="zmdi zmdi-chevron-down"></span></a>
+	              					<ul class="dropdown-menu">
+	                					<li><a href="#">Русский</a></li>
+	                					<li><a href="#">Казахский</a></li>
+	                					<li><a href="#">Английский</a></li>                					
+	              					</ul>
+	            				</li>
+								<li><a href="article.html" class="special"><span>спец-проекты</span></a></li>		
+							</ul>								
+						</div>	
+					</nav>
+				</div>
+
 				
-				<div class="hidden_form">
-					<input type="text" id="spterm" name="spterm" placeholder="Что ищем?"></input>
-					<div id="spresult">&nbsp;</div>	
-				</div>	
-				<img src="img/search.png" alt="search">			
-			</div>			
+				<div class="search col-xs-3">
+					<div class="search_wrap">
+						<a href="#">поиск по сайту</a>
+					</div>
+					<div id="wrap">
+  						<form action="" autocomplete="on">
+  							<input id="search" name="search" type="text">
+  							<input id="search_submit" value="Rechercher" type="submit">
+  						</form>
+					</div>			
+				</div>			
+			</div>
 		</div>	
 	</div>	
 	<!--Main Nav End-->
 
-	<!--Top Slider-->	
+	<!--Top Slider-->		
 	<div class="slider_wrap">
+
 		<div class="left_overlay"></div>
 		<div class="right_overlay"></div>
+						
 		<div class="top_slider">
 			<div class="top_slider_news">
 				<div class="top_slider_news_img">
@@ -99,7 +107,7 @@
 				<div class="top_slider_news_descr">
 					<h3><a href="#">Гордость народа на чемпионате мира по боксу</a></h3>
 					<div class="top_slider_news_tag">
-						<span><a href="#">лица Казахстана</a></span>
+						<a href="#"><span>лица Казахстана</span></a>
 					</div>
 				</div>												
 			</div>						
@@ -114,7 +122,7 @@
 				<div class="top_slider_news_descr">
 					<h3><a href="#">Результаты исследования рынка от НИИ Т. Рыскулова</a></h3>
 					<div class="top_slider_news_tag">
-						<span><a href="#">наука и техника</a></span>
+						<a href="#"><span>наука и техника</span></a>
 					</div>
 				</div>												
 			</div>
@@ -129,7 +137,7 @@
 				<div class="top_slider_news_descr">
 					<h3><a href="#">Природа Алма-Аты с 1970-1990 годы</a></h3>
 					<div class="top_slider_news_tag">
-						<span><a href="#">туризм</a></span>
+						<a href="#"><span>туризм</span></a>
 					</div>
 				</div>												
 			</div>	
@@ -144,7 +152,7 @@
 				<div class="top_slider_news_descr">
 					<h3><a href="#">Прекрасная дама в красном</a></h3>
 					<div class="top_slider_news_tag">
-						<span><a href="#">культура</a></span>
+						<a href="#"><span>культура</span></a>
 					</div>
 				</div>												
 			</div>		
@@ -159,15 +167,15 @@
 				<div class="top_slider_news_descr">
 					<h3><a href="#">Вот это супер папа у нас!</a></h3>
 					<div class="top_slider_news_tag">
-						<span><a href="#">культура</a></span>
+						<a href="#"><span>культура</span></a>
 					</div>
 				</div>												
 			</div>
 		</div>
+
+
 	</div>
 	<!--Top Slider End-->
-
-<div class="search_wrap">
 
 	<!--News Pack-->
 	<div class="container news_pack">
@@ -182,9 +190,9 @@
 					</div>
 					<div class="news_pack_descr">
 						<h3><a href="#">Революционеры научной культуры Казахстана</a></h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+						<p><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</a></p>
 						<div class="news_pack_tag">
-							<span><a href="#">лица Казахстана</a></span>
+							<a href="#"><span>лица Казахстана</span></a>
 						</div>
 					</div>	
 				</div>											
@@ -199,9 +207,9 @@
 					</div>
 					<div class="news_pack_descr">
 						<h3><a href="#">Медеуский мед с целебной силой</a></h3>
-						<p>Как наш родной мед спасает от простуды в осеннее время</p>
+						<p><a href="#">Как наш родной мед спасает от простуды в осеннее время</a></p>
 						<div class="news_pack_tag">
-							<span><a href="#">рецепты</a></span>
+							<a href="#"><span>рецепты</span></a>
 						</div>
 					</div>	
 				</div>											
@@ -218,7 +226,7 @@
 						<h3><a href="#">История молодого певца в настоящей культуре</a></h3>						
 					</div>	
 					<div class="news_pack_special_tag">
-							<span><a href="#">лица Казахстана</a></span>
+							<a href="#"><span>лица Казахстана</span></a>
 					</div>
 				</div>											
 			</div>											
@@ -234,9 +242,9 @@
 					</div>
 					<div class="news_pack_descr">
 						<h3><a href="#">Заголовок новости в несколько текстовых строк</a></h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+						<p><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</a></p>
 						<div class="news_pack_tag">
-							<span><a href="#">лица Казахстана</a></span>
+							<a href="#"><span>лица Казахстана</span></a>
 						</div>
 					</div>	
 				</div>											
@@ -251,9 +259,9 @@
 					</div>
 					<div class="news_pack_descr">
 						<h3><a href="#">Заголовок новости в несколько текстовых строк</a></h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+						<p><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</a></p>
 						<div class="news_pack_tag">
-							<span><a href="#">рецепты</a></span>
+							<a href="#"><span>рецепты</span></a>
 						</div>
 					</div>	
 				</div>											
@@ -268,9 +276,9 @@
 					</div>
 					<div class="news_pack_descr">
 						<h3><a href="#">Заголовок новости в несколько текстовых строк</a></h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+						<p><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</a></p>
 						<div class="news_pack_tag">
-							<span><a href="#">лица Казахстана</a></span>
+							<a href="#"><span>лица Казахстана</span></a>
 						</div>
 					</div>	
 				</div>											
@@ -348,9 +356,9 @@
 					</div>
 					<div class="week_int_descr">
 						<h3><a href="">5 Reasons To Choose A Notebook Over A Computer Desktop</a></h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+						<p><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</a></p>
 						<div class="week_int_tag">
-							<span><a href="">технологии</a></span>
+							<a href="#"><span>технологии</span></a>
 						</div>
 					</div>	
 				</div>											
@@ -365,9 +373,9 @@
 					</div>
 					<div class="week_int_descr">
 						<h3><a href="">Increasing Prosperity With Positive Thinking</a></h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+						<p><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</a></p>
 						<div class="week_int_tag">
-							<span><a href="">лайфхаки</a></span>
+							<a href="#"><span>лайфхаки</span></a>
 						</div>
 					</div>	
 				</div>											
@@ -382,9 +390,9 @@
 					</div>
 					<div class="week_int_descr">
 						<h3><a href="">Going Wireless With Your Headphones</a></h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+						<p><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</a></p>
 						<div class="week_int_tag">
-							<span><a href="">афиша</a></span>
+							<a href="#"><span>афиша</span></a>
 						</div>
 					</div>	
 				</div>											
@@ -425,8 +433,8 @@
 		</div>
 	</div>
 	<div class="slider_wrap">
-		<div class="left_overlay"></div>
-		<div class="right_overlay"></div>
+		<div class="left_overlay1"></div>
+		<div class="right_overlay1"></div>
 		<div class="poster_block_wrap">		
 			<div class="poster_block">
 				<div class="poster_block_img">
@@ -437,9 +445,9 @@
 				</div>
 				<div class="poster_block_descr">
 					<h3><a href="">Название публикации и дата проведения</a></h3>
-					<span>21.12 - 22.12</span>
+					<span><a href="#">21.12 - 22.12</a></span>
 					<div class="poster_block_tag">
-						<span><a href="">афиша</a></span>
+						<a href="#"><span>афиша</span></a>
 					</div>
 				</div>												
 			</div>					
@@ -453,9 +461,9 @@
 				</div>
 				<div class="poster_block_descr">
 					<h3><a href="">Название публикации и дата проведения</a></h3>
-					<span>21.12 - 22.12</span>
+					<span><a href="#">21.12 - 22.12</a></span>
 					<div class="poster_block_tag">
-						<span><a href="">афиша</a></span>
+						<a href="#"><span>афиша</span></a>
 					</div>
 				</div>												
 			</div>					
@@ -469,9 +477,9 @@
 				</div>
 				<div class="poster_block_descr">
 					<h3><a href="">Название публикации и дата проведения</a></h3>
-					<span>21.12 - 22.12</span>
+					<span><a href="#">21.12 - 22.12</a></span>
 					<div class="poster_block_tag">
-						<span><a href="">афиша</a></span>
+						<a href="#"><span>афиша</span></a>
 					</div>
 				</div>												
 			</div>			
@@ -516,6 +524,9 @@
 
 	<!--Footer-->
 	<footer>
+		<div class="footer_hr">
+			<hr />
+		</div>
 		<div class="container footer_block">
 			<div class="row">
 				<div class="col-xs-3">
@@ -578,8 +589,10 @@
 				</div>
 				<div class="col-xs-4">
 					<div class="search">
-						<input type="text" class="" placeholder="Поиск"></input>
-						<i class="zmdi zmdi-search"></i>
+						<form action="">
+							<input type="text" id="search_form_bottom" class="" placeholder="Поиск"></input>
+							<input id="search_submit_bottom" value="" type="submit">							
+						</form>
 					</div>
 					<div class="btn-group dropup language">
    						 <button type="button" data-toggle="dropdown" class="btn btn-info dropdown-toggle" aria-expanded="false">
@@ -599,7 +612,7 @@
 		</div>
 	</footer>
 	<!--Footer End-->
-</div>
+
 
 
 	<script src="js/libs.min.js"></script>
