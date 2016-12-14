@@ -59,6 +59,14 @@ $('.poster_block_wrap').owlCarousel({
 })
 
 
+$(document).ready(function(){
+ $('.open').click(function(){
+  $(this).parent().children('.hidden_form').slideToggle(500);
+  return false;
+ });
+});
+
+
 
 jQuery(document).ready(function(){
  var minlen = 3; // минимальная длина слова
@@ -127,3 +135,4 @@ jQuery(document).ready(function(){
   jQuery('#spgo').click(); // переходим к первому фрагменту
  } 
 });
+

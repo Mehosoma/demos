@@ -6,6 +6,12 @@ body {
   margin: 0 auto;
   font-family: "Open Sans", sans-serif;
   font-size: 14px; }
+  body input:focus {
+    outline: none; }
+  body a:hover {
+    opacity: 0.75;
+    outline: none;
+    text-decoration: none; }
 
 .container {
   width: 1170px !important;
@@ -46,7 +52,8 @@ body {
     background-color: transparent; }
   .category_menu .nav li a:hover {
     background-color: transparent;
-    color: #1342d7; }
+    color: #1342d7;
+    opacity: 1; }
   .category_menu .nav .open a:hover {
     background-color: transparent; }
   .category_menu .nav .open a:focus {
@@ -87,7 +94,7 @@ body {
     background-image: url("../img/category_banner.png");
     height: 275px;
     width: 100%;
-    background-position: top center;
+    background-position: bottom center;
     position: relative; }
   .category_banner .overlay {
     height: 275px;
@@ -139,7 +146,8 @@ body {
         color: #000;
         text-decoration: none;
         font-weight: bold;
-        border: 1px #fff solid; }
+        border: 1px #fff solid;
+        opacity: 1; }
     .category_banner .category_banner_header .category_main_banner {
       background-image: url("../img/category_main_banner_bg.png");
       height: 407px;
@@ -152,6 +160,41 @@ body {
         position: absolute;
         top: -105px;
         left: 30px; }
+      .category_banner .category_banner_header .category_main_banner .category_main_banner_descr {
+        position: absolute;
+        bottom: 100px;
+        left: 60px; }
+        .category_banner .category_banner_header .category_main_banner .category_main_banner_descr span {
+          display: block;
+          color: #fff;
+          text-align: left;
+          font-family: "Merriweather", sans-serif;
+          font-size: 16px;
+          line-height: 16px; }
+        .category_banner .category_banner_header .category_main_banner .category_main_banner_descr h2 {
+          color: #fff;
+          width: 55%;
+          margin: 0;
+          text-align: left;
+          font-family: "FedraBold", sans-serif;
+          font-size: 30px;
+          margin: 10px 0 20px 0; }
+          .category_banner .category_banner_header .category_main_banner .category_main_banner_descr h2 a {
+            color: #fff; }
+        .category_banner .category_banner_header .category_main_banner .category_main_banner_descr .category_main_banner_tag {
+          position: absolute;
+          top: 120px; }
+          .category_banner .category_banner_header .category_main_banner .category_main_banner_descr .category_main_banner_tag span {
+            font-family: "FedraBook", sans-serif;
+            font-size: 14px;
+            line-height: 14px;
+            color: #fff;
+            background-color: rgba(14, 15, 20, 0.5);
+            padding: 10px 30px;
+            -webkit-border-radius: 20px;
+                    border-radius: 20px; }
+          .category_banner .category_banner_header .category_main_banner .category_main_banner_descr .category_main_banner_tag a {
+            color: #fff; }
 
 /* Category_Banner End*/
 /* Category News*/
@@ -180,6 +223,8 @@ body {
     font-size: 22px;
     line-height: 28px;
     color: #000; }
+    .category_news .category_news_descr h3 a {
+      color: #000; }
   .category_news .category_news_descr p {
     font-family: "Merriweather", sans-serif;
     font-size: 16px;
@@ -198,6 +243,8 @@ body {
       padding: 10px 30px;
       -webkit-border-radius: 20px;
               border-radius: 20px; }
+      .category_news .category_news_descr .category_news_tag span a {
+        color: #fff; }
 
 /* Category News End*/
 /* Category News Block*/
@@ -251,6 +298,8 @@ body {
     font-size: 22px;
     line-height: 28px;
     color: #fff; }
+    .category_news_block .category_news_block_descr h3 a {
+      color: #fff; }
   .category_news_block .category_news_block_descr p {
     width: 70%;
     font-family: "Merriweather", sans-serif;
@@ -271,6 +320,8 @@ body {
       padding: 10px 30px;
       -webkit-border-radius: 20px;
               border-radius: 20px; }
+      .category_news_block .category_news_block_descr .category_news_block_tag span a {
+        color: #fff; }
 
 .category_news_block .category_news_block_simple {
   padding-top: 35px;
@@ -286,6 +337,8 @@ body {
     font-size: 18px;
     line-height: 28px;
     color: #000; }
+    .category_news_block .category_news_block_simple h4 a {
+      color: #000; }
   .category_news_block .category_news_block_simple .category_news_block_simple_tag {
     margin-bottom: 32px; }
     .category_news_block .category_news_block_simple .category_news_block_simple_tag span {
@@ -297,6 +350,8 @@ body {
       padding: 10px 45px;
       -webkit-border-radius: 30px;
               border-radius: 30px; }
+      .category_news_block .category_news_block_simple .category_news_block_simple_tag span a {
+        color: #fff; }
 
 .category_news_block .second .category_news_block_simple {
   border-bottom: none; }
@@ -331,6 +386,8 @@ body {
     font-size: 22px;
     line-height: 28px;
     color: #000; }
+    .category_news_block_image .category_news_block_image_descr h3 a {
+      color: #000; }
   .category_news_block_image .category_news_block_image_descr p {
     font-family: "Merriweather", sans-serif;
     font-size: 16px;
@@ -349,6 +406,8 @@ body {
       padding: 10px 20px;
       -webkit-border-radius: 20px;
               border-radius: 20px; }
+      .category_news_block_image .category_news_block_image_descr .category_news_block_image_tag span a {
+        color: #fff; }
   .category_news_block_image .second_row {
     margin-top: 25px; }
   .category_news_block_image .loading {
@@ -382,6 +441,9 @@ footer {
       color: #fff;
       margin: 0;
       text-transform: uppercase; }
+      footer .footer_links h4 a,
+      footer .footer_social h4 a {
+        color: #fff; }
     footer .footer_links ul,
     footer .footer_social ul {
       padding: 38px 0 0 0;
@@ -393,6 +455,9 @@ footer {
       font-size: 18px;
       padding: 12px 0;
       color: #898b90; }
+      footer .footer_links li a,
+      footer .footer_social li a {
+        color: #898b90; }
   footer .footer_social ul {
     padding-top: 15px; }
   footer .footer_social li {

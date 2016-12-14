@@ -70,10 +70,14 @@
 					</div>	
 				</nav>
 			</div>
-			<div class="search col-xs-3">				
-				<input type="text" id="spterm" name="spterm" placeholder="поиск по сайту"></input>
-				<img src="img/search.png" alt="search">	
-				<div id="spresult">&nbsp;</div>			
+			<div class="search col-xs-3">
+				<a href="#" class="open">поиск по сайту</a>
+				
+				<div class="hidden_form">
+					<input type="text" id="spterm" name="spterm" placeholder="Что ищем?"></input>
+					<div id="spresult">&nbsp;</div>	
+				</div>	
+				<img src="img/search.png" alt="search">			
 			</div>			
 		</div>	
 	</div>	
@@ -277,13 +281,16 @@
 
 	<!--Week Photo-->
 	<div class="container week_photo">
+		<div class="week_photo_bg">
+			<img src="img/week_photo_bg.png">
+		</div>
 		<div class="row">
 			<div class="col-xs-12">
 				<div class="week_photo_header">
 					<h3><a href="#">Фото недели</a></h3>
 					<h2>Серые будни<br>тибетского воина</h2>
 					<div class="swiper-pagination"></div>
-				</div>
+				</div>				
 				<div class="swiper-container">
 					<div class="swiper-wrapper">
 						<div class="swiper-slide">
@@ -423,7 +430,7 @@
 		<div class="poster_block_wrap">		
 			<div class="poster_block">
 				<div class="poster_block_img">
-					<a href=""><img src="img/poster_1.png"></a>					
+					<a href="#"><img src="img/poster_1.png"></a>					
 				</div>
 				<div class="poster_date">
 					<span>11.09.2016</span>
@@ -439,7 +446,7 @@
 		
 			<div class="poster_block">
 				<div class="poster_block_img">
-					<a href=""><img src="img/poster_2.png"></a>				
+					<a href="#"><img src="img/poster_2.png"></a>				
 				</div>
 				<div class="poster_date">
 					<span>11.09.2016</span>
@@ -455,7 +462,7 @@
 			
 			<div class="poster_block">
 				<div class="poster_block_img">
-					<a href=""><img src="img/poster_3.png"></a>						
+					<a href="#"><img src="img/poster_3.png"></a>				
 				</div>
 				<div class="poster_date">
 					<span>11.09.2016</span>
@@ -467,7 +474,7 @@
 						<span><a href="">афиша</a></span>
 					</div>
 				</div>												
-			</div>
+			</div>			
 
 		</div>		
 	</div>
@@ -475,6 +482,9 @@
 
 	<!--Week Video-->
 	<div class="container week_video">
+		<div class="week_video_bg">
+			<img src="img/week_photo_bg.png">
+		</div>
 		<div class="row">
 			<div class="col-xs-12">
 				<div class="week_video_header">
@@ -568,7 +578,7 @@
 				</div>
 				<div class="col-xs-4">
 					<div class="search">
-						<input type="text" placeholder="Поиск"></input>
+						<input type="text" class="" placeholder="Поиск"></input>
 						<i class="zmdi zmdi-search"></i>
 					</div>
 					<div class="btn-group dropup language">
