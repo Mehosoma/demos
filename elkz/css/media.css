@@ -1,0 +1,17 @@
+/*==========  Desktop First Method  ==========*/
+
+@media only screen and (min-width : 320px) {
+	.owl-item{
+		width: 370px!important;
+	}
+
+	.cloned{
+		width: 370px!important;
+	}
+
+	.owl-stage{
+		width: 10000px!important;
+		-webkit-perspective: 1000;
+	}
+
+	}
