@@ -588,6 +588,7 @@ body {
     right: 30px; }
   .week_video .week_video_header {
     margin-top: 173px;
+    width: 300px;
     position: relative;
     z-index: 9; }
     .week_video .week_video_header .swiper-pagination {
@@ -620,11 +621,31 @@ body {
     width: 859px;
     height: 522px;
     overflow: hidden; }
+    .week_video .swiper-container .iframe_overlay {
+      position: absolute;
+      top: 0;
+      width: 859px;
+      height: 522px;
+      background-color: rgba(0, 0, 0, 0.5); }
+    .week_video .swiper-container .iframe_overlay_vis .iframe_overlay {
+      display: none; }
+    .week_video .swiper-container .iframe_overlay_vis a {
+      display: none; }
+    .week_video .swiper-container .play_button {
+      width: 80px;
+      height: 90px;
+      background-color: transparent;
+      background-image: url(../img/play.png);
+      background-position: center center;
+      background-repeat: no-repeat;
+      position: absolute;
+      margin: auto;
+      top: 223px;
+      left: 0;
+      right: 0;
+      cursor: pointer; }
     .week_video .swiper-container a:hover {
       opacity: 1; }
-    .week_video .swiper-container .play_button {
-      width: 60px;
-      height: 60px; }
   .week_video .video_slider_navigation {
     position: absolute;
     top: 410px;

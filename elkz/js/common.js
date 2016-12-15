@@ -2,7 +2,7 @@ $(document).ready(function () {
    var tileSlider = $('.swiper-container');
 	tileSlider.each(function(){
     var mySwiper = new Swiper(this, {
-        loop: true,        
+             
         pagination: $(this).parent().find('.swiper-pagination')[0],
         paginationType: 'fraction',
         nextButton: $(this).parent().find('.swiper-button-next')[0],
@@ -61,4 +61,44 @@ $('.poster_block_wrap').owlCarousel({
     }
 })
 
- 
+$(document).ready(function(){
+    $('.click').on('click', function(){
+
+         $(".iframe_overlay").css({
+        'display' : 'none'        
+        });       
+    });
+});
+
+
+
+$(document).ready(function() {
+  $('.swiper-button-next').on('click', function() {
+    
+    $('.play').each(function(){
+        var el_src = $(this).attr("src");
+        $(this).attr("src",el_src);
+      });
+
+    $(".iframe_overlay").css({
+        'display' : 'block'        
+    });
+
+
+});
+  });
+
+$(document).ready(function() {
+  $('.swiper-button-prev').on('click', function() {
+    
+    $('.play').each(function(){
+        var el_src = $(this).attr("src");
+        $(this).attr("src",el_src);
+      });
+
+    $(".iframe_overlay").css({
+        'display' : 'block'        
+    });
+
+    });
+}); 
