@@ -14,4 +14,18 @@
 		-webkit-perspective: 1000;
 	}
 
+	
+}
+
+@media only screen and (min-width : 1920px) {
+	
+	.slider_wrap .owl-next{
+		width: 360px;
+	}
+
+	.slider_wrap .owl-prev{
+		width: 360px;
+	}
+	
+
 	}

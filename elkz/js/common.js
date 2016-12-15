@@ -18,6 +18,7 @@ $('.top_slider').owlCarousel({
     stagePadding: 120,
     loop:true,
     margin:30,
+    nav: true,
     center: true,
        
     autoWidth: true,
@@ -41,6 +42,7 @@ $('.poster_block_wrap').owlCarousel({
     stagePadding: 120,
     loop:true,
     margin:30,
+    nav: true,
     center: true,
     autoWidth: true,
     responsive:{
