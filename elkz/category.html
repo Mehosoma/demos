@@ -14,7 +14,7 @@
 	<meta name="format-detection" content="telephone=no">
 
 	<link rel="stylesheet" href="css/libs.min.css">
-	<link rel="stylesheet" href="css/main_style.min.css">
+	<link rel="stylesheet" href="css/main.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
 
 </head>
@@ -46,22 +46,26 @@
 							</div>
 							<div id="navbarCollapse" class="collapse navbar-collapse">
 								<ul class="nav navbar-nav">
-								 	<li class="dropdown">
-		             					 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">рус<span class="zmdi zmdi-chevron-down"></span></a>
-		              					<ul class="dropdown-menu">
-		                					<li><a href="#">Русский</a></li>
-		                					<li><a href="#">Казахский</a></li>
-		                					<li><a href="#">Английский</a></li>                					
-		              					</ul>
-		            				</li>
-								    <li><a href="#">лица Казахстана</a></li>
+									<div class="dropdown_wrap">
+									 	<li class="dropdown">
+			             					 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">рус<span class="zmdi zmdi-chevron-down"></span></a>
+			              					<ul class="dropdown-menu">
+			                					<li><a href="#">Русский</a></li>
+			                					<li><a href="#">Казахский</a></li>
+			                					<li><a href="#">Английский</a></li>                					
+			              					</ul>
+			            				</li>
+			            			</div>
+								    <li><a href="#">лица Кaзахстана</a></li>
 		             				<li><a href="#">наука и техника</a></li>
 		             				<li><a href="#">раздел</a></li>
 		             				<li><a href="#">шоу-бизнес</a></li>
 		             				<li><a href="#">культура</a></li>
 		             				<li><a href="#">спорт</a></li>
-		             				<li><a href="#">медиатека</a></li>							
-									<li><a href="#" class="special"><span>спец-проекты</span></a></li>						
+		             				<li><a href="#">медиатека</a></li>
+		             				<div class="special">
+										<li><a href="#"><span>спец-проекты</span></a></li>
+									</div>	
 								</ul>								
 							</div>	
 						</nav>
@@ -488,7 +492,7 @@
 	<!--Footer End-->
 
 	<script src="js/libs.min.js"></script>
-	<script src="js/common.js"></script> 	
+	<script src="js/common.js"></script>
 	
 
 </body>

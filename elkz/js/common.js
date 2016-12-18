@@ -64,12 +64,33 @@ $('.poster_block_wrap').owlCarousel({
 $(document).ready(function(){
     $('.click').on('click', function(){
 
-         $(".iframe_overlay").css({
+        $(this).parents(".iframe_overlay").addClass("active"); //добавляем класс текущей (нажатой)
+        
+
+         $(".active").css({
         'display' : 'none'        
-        });       
+        }); 
+
+        $(this).parents(".iframe_overlay").removeClass("active"); //добавляем класс текущей (нажатой)      
     });
 });
 
+$(document).ready(function(){
+    $('.click_media').on('click', function(){
+
+        $(this).parents(".iframe_overlay").addClass("active"); //добавляем класс текущему родителю
+
+         $(".active").css({
+        'display' : 'none'        
+        });
+
+        $(".active").css({
+        'display' : 'none'        
+        }); 
+
+        $(this).parents(".iframe_overlay").removeClass("active"); //удаляем класс текущего родителя
+    });
+});
 
 
 $(document).ready(function() {
