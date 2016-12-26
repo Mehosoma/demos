@@ -115,7 +115,7 @@ $(document).ready(function(){
         320:{
             items:1
         },
-        600:{
+        768:{
             items:2
         },
         1000:{
@@ -137,7 +137,7 @@ $(document).ready(function(){
         320:{
             items:1
         },
-        600:{
+        768:{
             items:2
         },
         1000:{
