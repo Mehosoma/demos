@@ -97,11 +97,11 @@
 	}
 
 	.partners .col-lg-8{
-		width: 56%;
+		width: 100%;
 	}
 
 	.partners #partners_carousel .carousel-control.left{
-		left: 377px;
+		left: 908px;
 	}
 
 	.projects .owl-dots{
@@ -145,6 +145,12 @@
 
 	footer .footer_adress .cover{
 		right: 63px;
+	}
+
+	.partners .partners_left{
+		width: 100%;
+		border-right: none;
+		border-bottom: 1px #afafaf solid
 	}
 	
 
