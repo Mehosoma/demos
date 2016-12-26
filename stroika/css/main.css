@@ -149,6 +149,8 @@ header .contacts .feedback .callback a {
   font-size: 14px;
   font-weight: 300;
   color: #647882;
+  margin-left: 0px;
+  margin-top: 0px;
 }
 
 header .adress {
