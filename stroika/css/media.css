@@ -161,14 +161,14 @@
 	}
 
 	.main_banner{
-		height: 901px;
+		height: 717px;
 		width: 100%;
 	}
 
 	.main_banner .col-sm-9{
 		position: absolute;
 		left: 0;
-		top: 389px;
+		top: 205px;
 		width: 100%;
 	}
 
@@ -179,9 +179,7 @@
 	}
 
 	.main_banner #leftcanvas{
-		height: 410px;
-		right: 0;
-		width: 1020px;
+		display: none;
 	}
 
 	.main_banner .adv .adv_wrap{
@@ -191,6 +189,29 @@
 	.main_banner .adv {
 		padding-bottom: 31px;
 	}
+
+	.main_banner .adv .adv_wrap{
+		width: 20%;
+		float: left;
+		position: relative;
+		text-align: center;
+	}
+
+	.main_banner .adv .adv_wrap object{
+		position: absolute;
+		top: 0;
+		left: 50%;
+		margin-left: -25px;
+	}
+
+	.main_banner .adv .adv_wrap span{
+		margin-top: 70px;
+		position: static;
+		display: inline-block;
+		transform: translateY(0%);
+		width: 100%;	
+	}
+
 
 	header .navbar-default .navbar-nav {
 		margin-bottom: 25px;
@@ -366,6 +387,10 @@
 
 }
 @media only screen and (min-width : 480px) and (max-width : 767px) {
+
+	.partners #partners_carousel .carousel-control.left{
+		left: 0;
+	}
 }
 
 @media only screen and (min-width : 320px) and (max-width : 479px) {
