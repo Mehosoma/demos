@@ -691,17 +691,36 @@
 		width: 240px;
 	}
 
+	.col_adress{
+		margin-top: 30px;
+	}
+
+	header hr{
+		display: none;
+	}
+
 	header .contacts .feedback{
 		width: 100%;
 		display: block;
 	}
 
+	header .contacts .phone_wrap span{
+		text-align: left;
+		margin-left: 20px;
+	}
+
 	header .contacts .feedback .social_wrap{
 		margin-left: 0px;
+		display: inline-block;
+		position: relative;
+		left: 50%;
+		margin-left: -32px;		
 	}
 
 	header .contacts .feedback .callback{
-		margin-left: 0px;
+		margin-left: 0px;		
+		float: none;
+		text-align: center;
 	}
 
 	header .adress .marker{		
@@ -715,6 +734,13 @@
 	header .adress hr{
 		display: none;
 	}
+
+	header .contacts .phone_wrap{
+		width: 100%;
+		margin-top: 20px;
+
+	}
+
 
 	.main_banner{
 		height: 450px;
