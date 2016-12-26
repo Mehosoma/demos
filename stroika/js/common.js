@@ -38,10 +38,10 @@ $(document).ready(function(){
 
     contextr.beginPath();
     contextr.moveTo(0, 190);
-    var controlX1 = 470;
-    var controlY1 = 154;
+    var controlX1 = 370;
+    var controlY1 = 188;
     var controlX2 = 778;
-    var controlY2 = 112;
+    var controlY2 = 140;
     var endX = 1156;
     var endY = 0;  
     contextr.bezierCurveTo(controlX1, controlY1, controlX2,

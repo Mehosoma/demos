@@ -35,7 +35,7 @@
 	<header>
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-4">
+				<div class="col-lg-4 col-sm-12">
 					<div class="logo_menu_wrap">
 						<ul class="logo_menu clearfix">
 							<li><a href="">О компании</a></li>
@@ -46,22 +46,24 @@
 						<hr />
 					</div>
 					<div class="logo">
-						<img src="images/logo.png">
+						<object type="image/svg+xml" data="images/logo_header.svg"  >
+		   					Your browser does not support SVG
+						</object>
 					</div>
 				</div>
-				<div class="col-lg-5 contacts">
+				<div class="col-lg-5 col-sm-7 contacts">
 					<div class="phone_wrap">
-						<span>+7 (495) 785-37-44</span>
-						<span>+7 (495) 507-23-25</span>
+						<a href="tel:+74957853744"><span>+7 (495) 785-37-44</span></a>
+						<a href="tel:+74955072325"><span>+7 (495) 507-23-25</span></a>
 					</div>
 					<div class="feedback">
-						<div class="social_wrap">
-							<object type="image/svg+xml" data="images/vk.svg" width="30" height="30" >
-	   							Your browser does not support SVG
-							</object>
-							<object type="image/svg+xml" data="images/facebook.svg" width="30" height="30" >
-	   							Your browser does not support SVG
-							</object>
+						<div class="social_wrap clearfix">
+							<a href="">
+								<div class="header_vk"></div>
+							</a>
+							<a href="">
+								<div class="header_face"></div>
+							</a>							
 						</div>
 						<div class="callback">
 							<span>Пн - Пт с 9:00 до 18:00</span>
@@ -69,7 +71,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-3">
+				<div class="col-lg-3 col-sm-5">
 					<div class="adress">
 						<span>Адрес: 129626, г. Самара,<br> Проспект Мира, д. 106</span>
 						<span class="email">Email: <a href="mailto:info@asklogistic.ru">info@asklogistic.ru</a></span>
@@ -82,7 +84,7 @@
 						</object>
 					</div>
 				</div>
-				<div class="col-lg-8">
+				<div class="col-lg-8 col-sm-12">
 					<nav role="navigation" class="navbar navbar-default">					
 							<div class="navbar-header">
 								<button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
@@ -134,7 +136,7 @@
 	<section class="main_banner clearfix">	
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-4">
+				<div class="col-lg-4 col-sm-3">
 					<canvas id="leftcanvas" width="764" height="512"></canvas>
 					<div class="adv">
 						<div class="adv_wrap">
@@ -169,19 +171,37 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-8">
+				<div class="col-lg-8 col-sm-9">
 					<canvas id="rightcanvas" width="1156" height="190"></canvas>
-					<div class="carousel carousel-showsixmoveone slide" id="carousel123">
+					<div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
         			<div class="carousel-inner">
-          				<div class="item active">
+          				<div class="active item">
             				<img src="images/banner_bg.png">
          				</div>
           				<div class="item">
             				<img src="images/123.jpg">
-						</div>          				
+						</div> 
+						<div class="item">
+            				<img src="images/banner_bg.png">
+         				</div>
+          				<div class="item">
+            				<img src="images/123.jpg">
+						</div>    
+						<div class="item">
+            				<img src="images/banner_bg.png">
+         				</div>
+          				<div class="item">
+            				<img src="images/123.jpg">
+						</div>    
+						<div class="item">
+            				<img src="images/banner_bg.png">
+         				</div>
+          				<div class="item">
+            				<img src="images/123.jpg">
+						</div>            				
         			</div>
-        			<a class="left carousel-control" href="#carousel123" data-slide="prev"></a>
-        			<a class="right carousel-control" href="#carousel123" data-slide="next"></a>
+        			<a class="left carousel-control" href="#myCarousel" data-slide="prev"></a>
+        			<a class="right carousel-control" href="#myCarousel" data-slide="next"></a>
       				<div class="banner_bg_overlay">
 						<img src="images/banner_bg_overlay.png">
 					</div>
@@ -203,21 +223,23 @@
 
 <!-- Shelves -->
 	<section class="shelves">
+		<hr class="top_line_hr" />
 		<div class="container">
 			<div class="row first">
-				<div class="col-lg-4">
+				<div class="col-lg-4 col-sm-5">
 					<div class="shelves_header_wrap">
 						<h2>Металлические стеллажи для склада</h2>
 					</div>
 				</div>
-				<div class="col-lg-8">
+				<div class="col-lg-8 col-sm-7">
 					<div class="shelves_descr_wrap">
 						<p>Компания «ПромСтеллаж» более 15 лет производит надежные металлические стеллажи для склада и предлагает услуги для комплексного оснащения складских помещений. За годы работы компания сформировала большой и профессиональный коллектив, имеющий солидный стаж работы в области производства и монтажа стеллажного оборудования.</p>
 					</div>
 				</div>
 			</div>
 			<div class="row second">
-				<div class="col-lg-4">
+				<div class="col-lg-4 col-sm-4">
+					<a href="">
 					<div class="shelves_block">
 						<img src="images/shelves_img.jpg">
 						<div class="shelves_block_overlay"></div>
@@ -226,9 +248,11 @@
 						<hr />
 						<span>стеллажи<br>палетные</span>
 						<hr />
-					</div>				
+					</div>
+					</a>
 				</div>
-				<div class="col-lg-4">
+				<div class="col-lg-4 col-sm-4">
+					<a href="">
 					<div class="shelves_block">
 						<img src="images/shelves_img_2.jpg">
 						<div class="shelves_block_overlay"></div>
@@ -237,9 +261,11 @@
 						<hr />
 						<span>стеллажи<br>полочные</span>
 						<hr />
-					</div>				
+					</div>
+					</a>		
 				</div>
-				<div class="col-lg-4">
+				<div class="col-lg-4 col-sm-4">
+					<a href="">
 					<div class="shelves_block">
 						<img src="images/shelves_img_3.jpg">
 						<div class="shelves_block_overlay"></div>
@@ -248,9 +274,11 @@
 						<hr />
 						<span>самонесущие<br>склады</span>
 						<hr />
-					</div>				
+					</div>
+					</a>		
 				</div>
-				<div class="col-lg-4">
+				<div class="col-lg-4 col-sm-4">
+					<a href="">
 					<div class="shelves_block">
 						<img src="images/shelves_img_4.jpg">
 						<div class="shelves_block_overlay"></div>
@@ -259,9 +287,11 @@
 						<hr />
 						<span>металлические<br>стеллажи</span>
 						<hr />
-					</div>				
+					</div>
+					</a>
 				</div>
-				<div class="col-lg-4">
+				<div class="col-lg-4 col-sm-4">
+					<a href="">
 					<div class="shelves_block">
 						<img src="images/shelves_img_5.jpg">
 						<div class="shelves_block_overlay"></div>
@@ -270,9 +300,11 @@
 						<hr />
 						<span>мезонинные<br>стеллажи</span>
 						<hr />
-					</div>				
+					</div>
+					</a>		
 				</div>
-				<div class="col-lg-4">
+				<div class="col-lg-4 col-sm-4">
+					<a href="">
 					<div class="shelves_block">
 						<img src="images/shelves_img_6.jpg">
 						<div class="shelves_block_overlay"></div>
@@ -281,18 +313,19 @@
 						<hr />
 						<span>стеллажи<br>мобильные</span>
 						<hr />
-					</div>				
+					</div>
+					</a>		
 				</div>				
 			</div>
 		</div>		
 	</section>
-<!-- Shelces End -->
+<!-- Shelves End -->
 
 <!-- Automat -->
 	<section class="automat">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-12">
+				<div class="col-lg-12 col-sm-12">
 					<div class="automat_header">
 						<hr class="left" />
 						<h2>Автоматизированные<br>складские системы</h2>
@@ -301,28 +334,32 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-lg-12">
+				<div class="col-lg-12 col-sm-12">
 					<p>Автоматизированные складские системы служат для извлечения и хранения грузов. Их использование оправдано в том случае работы с большими объемами грузов. Автоматизированные комплексы включают в себя сразу несколько программных управляемых систем, которые в автоматическом режиме извлекают грузы из мест хранения и размещают их там же.</p>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-lg-6">
+				<div class="col-lg-6 col-sm-6">
+					<a href="">
 					<div class="automat_block">
 						<img src="images/automat_img.jpg">
 						<div class="automat_block_overlay"></div>
 					</div>
 					<div class="automat_block_descr">
 						<span>Автоматизированные<br>системы для паллет</span>						
-					</div>					
+					</div>
+					</a>			
 				</div>
-				<div class="col-lg-6">
+				<div class="col-lg-6 col-sm-6">
+					<a href="">
 					<div class="automat_block">
 						<img src="images/automat_img_2.jpg">
 						<div class="automat_block_overlay"></div>
 					</div>
 					<div class="automat_block_descr">
 						<span>Автоматизированные<br>системы для коробов</span>						
-					</div>					
+					</div>
+					</a>			
 				</div>
 			</div>
 		</div>
@@ -334,29 +371,30 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
+
 					<div class="partners_left">
 						<h2>Среди наших партнёров</h2>						
 					</div>
-					<div class="col-lg-8">
+					<div class="col-lg-8 col-sm-8">
 						<div class="carousel carousel-showsixmoveone slide" id="partners_carousel">
 		        			<div class="carousel-inner">
 		          				<div class="item active">
-		          					<div class="col-lg-2">
+		          					<div class="col-lg-2 col-sm-6">
 		            					<img src="images/partners_1.jpg">
 		            				</div>
 		         				</div>
 		          				<div class="item">
-		          					<div class="col-lg-2">
+		          					<div class="col-lg-2 col-sm-6">
 		            					<img src="images/partners_2.jpg">
 		            				</div>
 								</div> 
 								<div class="item">
-		            				<div class="col-lg-2">
+		            				<div class="col-lg-2 col-sm-6">
 		            					<img src="images/partners_3.jpg">
 		            				</div>
 								</div> 
 								<div class="item">
-		            				<div class="col-lg-2">
+		            				<div class="col-lg-2 col-sm-6">
 		            					<img src="images/partners_4.jpg">
 		            				</div>
 								</div>          				
@@ -374,14 +412,15 @@
 		<canvas id="projectscanvas" width="1920" height="351"></canvas>
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-12">
+				<div class="col-lg-12 col-sm-12">
 					<h2>Последние проекты</h2>
 					<hr />
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-lg-12">
+				<div class="col-lg-12 col-sm-12">
 					<div class="projects_slider">
+						<a href="">
 						<div class="projects_block clearfix">
 		        			<div class="projects_img">
 			           			<img src="images/projects_img_1.jpg">
@@ -391,6 +430,8 @@
 			           			<p>С момента основания в 1885 г. компания Johnson Controls развилась в мирового лидера в области поставок систем для автомобилей, повышения эффективности зданий и разработки энергетических решений.</p>
 			           		</div>			           		
 			           	</div>
+			           	</a>
+			           	<a href="">
 			           	<div class="projects_block clearfix">
 		        			<div class="projects_img">
 			           			<img src="images/projects_img_2.jpg">
@@ -400,6 +441,8 @@
 			           			<p>С момента основания в 1885 г. компания Johnson Controls развилась в мирового лидера в области поставок систем для автомобилей, повышения эффективности зданий и разработки энергетических решений.</p>
 			           		</div>			           		
 			           	</div>
+			           	</a>
+			           	<a href="">
 			           	<div class="projects_block clearfix">
 		        			<div class="projects_img">
 			           			<img src="images/projects_img_1.jpg">
@@ -409,6 +452,8 @@
 			           			<p>С момента основания в 1885 г. компания Johnson Controls развилась в мирового лидера в области поставок систем для автомобилей, повышения эффективности зданий и разработки энергетических решений.</p>
 			           		</div>			           		
 			           	</div>
+			           	</a>
+			           	<a href="">
 			           	<div class="projects_block clearfix">
 		        			<div class="projects_img">
 			           			<img src="images/projects_img_2.jpg">
@@ -418,6 +463,8 @@
 			           			<p>С момента основания в 1885 г. компания Johnson Controls развилась в мирового лидера в области поставок систем для автомобилей, повышения эффективности зданий и разработки энергетических решений.</p>
 			           		</div>			           		
 			           	</div>
+			           	</a>
+			           	<a href="">
 			           	<div class="projects_block clearfix">
 		        			<div class="projects_img">
 			           			<img src="images/projects_img_1.jpg">
@@ -427,6 +474,8 @@
 			           			<p>С момента основания в 1885 г. компания Johnson Controls развилась в мирового лидера в области поставок систем для автомобилей, повышения эффективности зданий и разработки энергетических решений.</p>
 			           		</div>			           		
 			           	</div>
+			           	</a>
+			           	<a href="">
 			           	<div class="projects_block clearfix">
 		        			<div class="projects_img">
 			           			<img src="images/projects_img_2.jpg">
@@ -436,6 +485,8 @@
 			           			<p>С момента основания в 1885 г. компания Johnson Controls развилась в мирового лидера в области поставок систем для автомобилей, повышения эффективности зданий и разработки энергетических решений.</p>
 			           		</div>			           		
 			           	</div>
+			           	</a>
+			           	<a href="">
 			           	<div class="projects_block clearfix">
 		        			<div class="projects_img">
 			           			<img src="images/projects_img_1.jpg">
@@ -445,6 +496,8 @@
 			           			<p>С момента основания в 1885 г. компания Johnson Controls развилась в мирового лидера в области поставок систем для автомобилей, повышения эффективности зданий и разработки энергетических решений.</p>
 			           		</div>			           		
 			           	</div>
+			           	</a>
+			           	<a href="">
 			           	<div class="projects_block clearfix">
 		        			<div class="projects_img">
 			           			<img src="images/projects_img_2.jpg">
@@ -454,6 +507,7 @@
 			           			<p>С момента основания в 1885 г. компания Johnson Controls развилась в мирового лидера в области поставок систем для автомобилей, повышения эффективности зданий и разработки энергетических решений.</p>
 			           		</div>			           		
 			           	</div>
+			           	</a>
 			        </div>
 				</div>
 			</div>
@@ -467,10 +521,10 @@
 	<section class="information">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-6">
+				<div class="col-lg-6 col-sm-5">
 					<img src="images/information.jpg">
 				</div>
-				<div class="col-lg-6">
+				<div class="col-lg-6 col-sm-7">
 					<div class="information_descr">
 						<p>Правильно подобранные стеллажи для хранения – это половина успеха Вашего бизнеса. Существуют разнообразные виды: фронтальные, универсальные, набивные, гравитационные, консольные, мезонинные, передвижные и другие. Все они имеют общее строение – это многоуровневые системы с вертикальными стойками и горизонтальными балками, то есть полками. Крепления бывают двух видов: на болтах или зацепах. Первый вид крепления позволяет добиться более жесткого и устойчивого соединения на неровных полах. Второй вид – позволяет быстрее изменить конструкцию и отрегулировать уровень полок.</p>
 						<p>В конструкции рамы применяется стальной профиль. Его сложная геометрическая форма повышает механическую прочность элементов стеллажа. Если толщина металла тоньше, то и цена на него меньше. Все элементы обязательно окрашиваются долговечной полимерно-порошковой краской, нанесенной методом напыления, но по желанию заказчика возможна окраска в цвет, который указал заказчик.</p>
@@ -484,16 +538,18 @@
 
 <!-- News -->
 	<section class="news">
+		<hr class="news_line_hr" />
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-12">
+				<div class="col-lg-12 col-sm-12">
 					<h2>Новости</h2>
 					<hr />
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-lg-12">
+				<div class="col-lg-12 col-sm-12">
 					<div class="news_slider">
+						<a href="">
 						<div class="news_block clearfix">
 		        			<div class="news_img">			           			
 			           		</div>
@@ -502,24 +558,9 @@
 			           			<span>18 января 2017</span>
 			           			<p>С момента основания в 1885 г. компания Johnson Controls развилась в мирового лидера в области поставок систем для автомобилей, повышения эффективности зданий ...>>></p>
 			           		</div>			           		
-			           	</div>			      
-						<div class="news_block clearfix">
-		        			<div class="news_img second_img"></div>
-			           		<div class="news_desc">
-			           			<h4>Стеллажи для Johnson Controls</h4>
-			           			<span>18 января 2017</span>
-			           			<p>С момента основания в 1885 г. компания Johnson Controls развилась в мирового лидера в области поставок систем для автомобилей, повышения эффективности зданий ...>>></p>
-			           		</div>			           		
-			           	</div>			        
-						<div class="news_block clearfix">
-		        			<div class="news_img">			           			
-			           		</div>
-			           		<div class="news_desc">
-			           			<h4>Стеллажи для Johnson Controls</h4>
-			           			<span>18 января 2017</span>
-			           			<p>С момента основания в 1885 г. компания Johnson Controls развилась в мирового лидера в области поставок систем для автомобилей, повышения эффективности зданий ...>>></p>
-			           		</div>			           		
-			           	</div>			       
+			           	</div>
+			           	</a>
+			           	<a href="">      
 						<div class="news_block clearfix">
 		        			<div class="news_img second_img"></div>
 			           		<div class="news_desc">
@@ -528,6 +569,28 @@
 			           			<p>С момента основания в 1885 г. компания Johnson Controls развилась в мирового лидера в области поставок систем для автомобилей, повышения эффективности зданий ...>>></p>
 			           		</div>			           		
 			           	</div>
+			           	</a>
+			           	<a href="">	        
+						<div class="news_block clearfix">
+		        			<div class="news_img">			           			
+			           		</div>
+			           		<div class="news_desc">
+			           			<h4>Стеллажи для Johnson Controls</h4>
+			           			<span>18 января 2017</span>
+			           			<p>С момента основания в 1885 г. компания Johnson Controls развилась в мирового лидера в области поставок систем для автомобилей, повышения эффективности зданий ...>>></p>
+			           		</div>			           		
+			           	</div>
+			           	</a>
+			           	<a href="">	       
+						<div class="news_block clearfix">
+		        			<div class="news_img second_img"></div>
+			           		<div class="news_desc">
+			           			<h4>Стеллажи для Johnson Controls</h4>
+			           			<span>18 января 2017</span>
+			           			<p>С момента основания в 1885 г. компания Johnson Controls развилась в мирового лидера в области поставок систем для автомобилей, повышения эффективности зданий ...>>></p>
+			           		</div>			           		
+			           	</div>
+			           	</a>
 			        </div>
 			    </div>
 			</div>
@@ -541,13 +604,15 @@
 		<div class="right_footer"></div>
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-8">
+				<div class="col-lg-8 col-sm-8">
 					<div class="logo_contacts">
 						<div class="first_line clearfix">
-							<img src="images/logo_footer.png">
+							<object type="image/svg+xml" data="images/logo_footer.svg" width="342" height="70" >
+		   						Your browser does not support SVG
+							</object>
 							<div class="phone_wrap">
-								<span>+7 (495) 785-37-44</span>
-								<span>+7 (495) 507-23-25</span>
+								<a href="tel:+74957853744"><span>+7 (495) 785-37-44</span></a>
+								<a href="tel:+74955072325"><span>+7 (495) 507-23-25</span></a>
 							</div>
 							<hr />
 						</div>
@@ -561,17 +626,17 @@
 						<div class="copyright_social clearfix">
 							<span>Copyright © 2016 – продажа стеллажей от компании ООО "Меториентир"</span>
 							<div class="footer_soc_icons">
-								<object type="image/svg+xml" data="images/footer_vk.svg" width="30" height="30" >
-	   								Your browser does not support SVG
-								</object>
-								<object type="image/svg+xml" data="images/footer_face.svg" width="30" height="30" >
-	   								Your browser does not support SVG
-								</object>								
+								<a href="">
+									<div class="footer_vk"></div>
+								</a>
+								<a href="">
+									<div class="footer_face"></div>
+								</a>								
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-4">
+				<div class="col-lg-4 col-sm-4">
 					<div class="right_footer_content">
 						<div class="right_footer_menu clearfix">
 							<ul class="r_f_m">

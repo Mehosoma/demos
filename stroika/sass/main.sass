@@ -15,6 +15,7 @@ body
 a:hover
 	outline: none
 	text-decoration: none
+	opacity: 0.75
 a:focus
 	outline: none
 	text-decoration: none
@@ -52,7 +53,7 @@ header
 		border: none
 		margin-top: 3px
 	.logo
-		margin-top: 31px
+		margin-top: 28px
 	.contacts
 		height: 105px
 		.phone_wrap
@@ -78,8 +79,21 @@ header
 			.social_wrap
 				margin-top: 18px
 				margin-left: 22px
-				object
+				.header_vk
+					width: 30px
+					height: 30px
+					background-image: url('../images/vk.svg')
+					background-position: center center
 					margin-right: 4px
+					float: left
+					background-repeat: no-repeat
+				.header_face
+					width: 30px
+					height: 30px
+					background-image: url('../images/facebook.svg')
+					background-position: center center
+					background-repeat: no-repeat
+					float: left				
 			.callback
 				float: left
 				margin-left: 22px
@@ -242,7 +256,25 @@ header
 				position: relative
 				top: 3px
 	.col-lg-8
-		padding: 0		
+		padding: 0
+		.carousel-control.left
+			position: absolute
+			width: 47px
+			height: 47px
+			top: 363px
+			left: 570px
+			z-index: 5
+			background-image: url('../images/next.png')
+			background-repeat: no-repeat
+		.carousel-control.right
+			width: 47px
+			height: 47px
+			position: absolute
+			top: 363px
+			left: 512px
+			z-index: 5
+			background-image: url('../images/prev.png')
+			background-repeat: no-repeat
 		.right_header
 			position: absolute
 			top: 35px
@@ -296,6 +328,16 @@ header
 /** Shelves **/
 .shelves
 	padding: 20px 0
+	position: relative
+	.top_line_hr
+		width: 100%
+		height: 1px
+		background: #afafaf
+		background-color: #afafaf
+		margin: 0
+		border: none
+		position: absolute
+		top: 452px
 	.first
 		margin-bottom: 36px		
 		.col-lg-4
@@ -326,7 +368,7 @@ header
 			padding: 0
 		img
 			float: left
-			width: 100%
+			width: 100%			
 		.shelves_block_overlay
 			position: absolute
 			top: 0
@@ -334,6 +376,8 @@ header
 			width: 100%
 			height: 100%
 			background-color: rgba(0,0,0,0.4)
+		a:hover .shelves_block_overlay
+			background-color: rgba(0,0,0,0.2)
 		.shelves_block_descr
 			position: absolute
 			width: 320px
@@ -413,6 +457,10 @@ header
 			width: 100%
 			height: 100%
 			background-color: rgba(0,0,0,0.4)
+	a:hover .automat_block_overlay
+		background-color: rgba(0,0,0,0.3)
+	a:hover
+		opacity: 1
 	.automat_block_descr
 		position: absolute
 		width: 320px
@@ -484,7 +532,7 @@ header
 		position: absolute
 		margin-top: -68px
 		top: 0
-		right: 7px
+		left: 1039px
 		width: 120px
 	.owl-dots span
 		float: left
@@ -492,7 +540,7 @@ header
 		width: 15px!important
 		height: 15px!important
 		border-radius: 50%!important
-		border: 1px #fff solid
+		border: 1px rgba(255,255,255,0.4) solid
 		margin-left: 10px
 	.active span
 		float: left
@@ -565,13 +613,22 @@ header
 /** News **/
 .news
 	padding: 10px 0 40px 0
+	position: relative
+	.news_line_hr
+		height: 1px
+		background: #afafaf
+		background-color: #afafaf
+		border: none
+		position: absolute
+		top: 77px
+		width: 100%		
 	h2
 		font-family: "Roboto", sans-serif
 		font-weight: 700
 		font-size: 38px
 		line-height: 47px
 		color: #2c638c
-		text-transform: uppercase		
+		text-transform: uppercase
 	hr
 		height: 1px
 		background: #afafaf
@@ -647,7 +704,7 @@ footer
 	overflow: hidden	
 	canvas
 		width: 100%
-		height: 217px
+		height: 155px
 		position: absolute
 		top: 0
 		left: 0		
@@ -714,9 +771,21 @@ footer
 			.footer_soc_icons
 				float: right
 				margin-right: 42px
-
-				object
-					ma
+				.footer_vk
+					width: 30px
+					height: 30px
+					background-image: url('../images/footer_vk.svg')
+					background-position: center center
+					margin-right: 4px
+					display: inline-block
+					background-repeat: no-repeat					
+				.footer_face
+					width: 30px
+					height: 30px
+					background-image: url('../images/footer_face.svg')
+					background-position: center center
+					display: inline-block
+					background-repeat: no-repeat
 	.right_footer_menu
 		margin-top: 188px
 		hr
@@ -769,12 +838,6 @@ footer
 		.cover
 			top: 45px
 			right: 119px
-
-				
-
-
-				
-
 /** Footer End **/
 
 
