@@ -168,6 +168,7 @@ header .adress hr {
   background-color: #afafaf;
   margin-top: 7px;
   border: none;
+  float: left;
 }
 
 header .adress span {
