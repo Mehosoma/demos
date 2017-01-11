@@ -56,7 +56,7 @@ header .logo_menu_wrap .logo_menu a {
 }
 
 header .logo_menu_wrap .logo_menu > li + li:before {
-  padding: 0 4px;
+  padding: 0 3.5px;
   color: #000;
   content: "/";
 }
