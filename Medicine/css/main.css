@@ -207,11 +207,13 @@ header #fn-headercall a span {
   border: 1px solid #bbbbbb;
 }
 
-#fn-context #fn-sidebar .sidebar-banner .banner-coop img {
-  margin: 19px 0 0 27px;
+#fn-context #fn-sidebar .banner-coop {
+  background-image: url("../img/banner_coop.png");
+  background-position: center left 30px;
+  background-repeat: no-repeat;
 }
 
-#fn-context #fn-sidebar .sidebar-banner .banner-coop span {
+#fn-context #fn-sidebar .banner-coop span {
   font-family: 'arial', sans-serif;
   font-size: 18px;
   color: #337160;
@@ -277,6 +279,10 @@ header #fn-headercall a span {
   line-height: 1.3;
 }
 
+#fn-anonses .fn-anons .fn-anons-content a {
+  text-decoration: none;
+}
+
 #fn-free {
   height: 175px;
 }
@@ -295,6 +301,7 @@ header #fn-headercall a span {
 }
 
 #fn-footer .footercontact {
+  width: 100%;
   background: #fff;
   padding: 0 15px;
   height: 130px;
@@ -311,7 +318,13 @@ header #fn-headercall a span {
   margin-left: 5px;
 }
 
-#fn-footer .footercontact .footercontact-office span {
+#fn-footer .footercontact-office {
+  background-image: url("../img/footer-office.png");
+  background-position: bottom 20px right 33px;
+  background-repeat: no-repeat;
+}
+
+#fn-footer .footercontact-office span {
   font-family: 'arial', sans-serif;
   font-size: 14px;
   color: #1e1e1e;
@@ -321,13 +334,19 @@ header #fn-headercall a span {
   margin-left: 9px;
 }
 
-#fn-footer .footercontact .footercontact-office img {
+#fn-footer .footercontact-office img {
   float: right;
   margin-top: 30px;
   margin-right: 18px;
 }
 
-#fn-footer .footercontact .footercontact-phone span {
+#fn-footer .footercontact-phone {
+  background-image: url("../img/footer_phone.png");
+  background-position: bottom 20px right 24px;
+  background-repeat: no-repeat;
+}
+
+#fn-footer .footercontact-phone span {
   font-family: 'arial', sans-serif;
   font-size: 14px;
   color: rgba(30, 30, 30, 0.55);
@@ -337,19 +356,25 @@ header #fn-headercall a span {
   margin-left: 9px;
 }
 
-#fn-footer .footercontact .footercontact-phone span strong {
+#fn-footer .footercontact-phone span strong {
   font-family: 'arial', sans-serif;
   font-size: 24px;
   color: #1e1e1e;
 }
 
-#fn-footer .footercontact .footercontact-phone img {
+#fn-footer .footercontact-phone img {
   float: right;
   margin-top: 30px;
   margin-right: 10px;
 }
 
-#fn-footer .footercontact .footercontact-email a {
+#fn-footer .footercontact-email {
+  background-image: url("../img/footer-email.png");
+  background-position: bottom 24px right 12px;
+  background-repeat: no-repeat;
+}
+
+#fn-footer .footercontact-email a {
   font-family: 'arial', sans-serif;
   font-size: 18px;
   color: #3790a6;
@@ -360,13 +385,13 @@ header #fn-headercall a span {
   margin-left: 5px;
 }
 
-#fn-footer .footercontact .footercontact-email a strong {
+#fn-footer .footercontact-email a strong {
   font-family: 'arial', sans-serif;
   font-size: 24px;
   color: #1e1e1e;
 }
 
-#fn-footer .footercontact .footercontact-email img {
+#fn-footer .footercontact-email img {
   float: right;
   margin-top: 30px;
 }
