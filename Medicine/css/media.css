@@ -1,76 +1,85 @@
-/*==========  Desktop First Method  ==========*/
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
 
-/* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px) {
-
-}
-
-/* Medium Devices, Desktops */
-@media only screen and (max-width : 992px) {
-
-}
-
-/* Small Devices, Tablets */
-@media only screen and (max-width : 768px) {
-
-	/*Disable Animation on Mobile Devices*/
-	.animated {
-		/*CSS transitions*/
-		-o-transition-property: none !important;
-		-moz-transition-property: none !important;
-		-ms-transition-property: none !important;
-		-webkit-transition-property: none !important;
-		transition-property: none !important;
-		/*CSS transforms*/
-		-o-transform: none !important;
-		-moz-transform: none !important;
-		-ms-transform: none !important;
-		-webkit-transform: none !important;
-		transform: none !important;
-		/*CSS animations*/
-		-webkit-animation: none !important;
-		-moz-animation: none !important;
-		-o-animation: none !important;
-		-ms-animation: none !important;
-		animation: none !important;
+	#fn-anonses{
+		padding: 30px 0;
 	}
 
 }
 
-/* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px) {
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+	header #fn-headercall a{
+		padding: 6px 10px 6px 5px
+	}
 
+	header #fn-headercall a img{
+		margin-right: 10px;
+	}
+
+	#fn-topmenu .nav > li > a{
+		padding: 18px 25px;
+	}
+
+	#fn-anonses{
+		padding: 30px 0;
+	}
 }
 
-/* Custom, iPhone Retina */
-@media only screen and (max-width : 320px) {
+@media only screen and (min-width : 480px) and (max-width : 767px) {
 
+	#fn-logo{
+		text-align: center;
+	}
+
+	header #fn-headercall{
+		text-align: center;
+	}
+
+	#fn-topmenu .navbar-nav li{
+		display: block;
+		border-bottom: 1px solid #d6d6d6;
+		z-index: 1;
+	}
+
+	#fn-topmenu .nav > li > a{
+		background-color: #fff;
+		z-index: 10;
+	}
+
+	#fn-anonses{
+		padding: 30px 0;
+	}
+
+	#fn-footer .footercontact{
+		margin: 40px auto;
+	}
 }
 
+@media only screen and (min-width : 0px) and (max-width : 479px) {
 
-/*==========  Mobile First Method  ==========*/
+	#fn-logo{
+		text-align: center;
+	}
 
-/* Custom, iPhone Retina */
-@media only screen and (min-width : 320px) {
+	header #fn-headercall{
+		text-align: center;
+	}
 
-}
+	#fn-topmenu .navbar-nav li{
+		display: block;
+		border-bottom: 1px solid #d6d6d6;
+		z-index: 1;
+	}
 
-/* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px) {
+	#fn-topmenu .nav > li > a{
+		background-color: #fff;
+		z-index: 10;
+	}
 
-}
+	#fn-anonses{
+		padding: 30px 0;
+	}
 
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px) {
-
-}
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px) {
-
-}
-
- /* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px) {
-
+	#fn-footer .footercontact{
+		margin: 40px auto;
+	}
 }
