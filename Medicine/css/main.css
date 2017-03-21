@@ -111,6 +111,10 @@ header #fn-headercall a span {
   border-bottom: 2px solid #337160;
 }
 
+#fn-topmenu .navbar {
+  border: none;
+}
+
 #fn-titleblock {
   background: url("../img/banner.png");
   width: 100%;
