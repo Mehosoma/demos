@@ -619,11 +619,10 @@ header #fn-headercall a span {
   list-style-type: none;
   padding: 0 0 18px 0;
   list-style-position: outside;
-  padding-left: 16px;
 }
 
 #fn-service-context #fn-service-sidebar .service-sidebar-menu li {
-  padding: 6px 0;
+  padding: 6px 16px;
 }
 
 #fn-service-context #fn-service-sidebar .service-sidebar-menu li a {
