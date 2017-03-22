@@ -400,6 +400,141 @@ header #fn-headercall a span {
   margin-top: 30px;
 }
 
+/*Section contacts*/
+#fn-contacts-content {
+  min-height: 350px;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+#fn-contacts-content .contacts-contact {
+  padding: 3px 0 26px 1px;
+  border-bottom: 1px solid #d8d8d8;
+}
+
+#fn-contacts-content .contacts-contact span {
+  font-family: 'arial', sans-serif;
+  font-size: 12px;
+  color: #515050;
+  line-height: 1.3;
+  display: block;
+}
+
+#fn-contacts-content .contacts-contact strong {
+  font-family: 'arial', sans-serif;
+  font-size: 18px;
+  color: #2d2c2c;
+  line-height: 1.3;
+  font-weight: normal;
+}
+
+#fn-contacts-content .contacts-phone {
+  height: 104px;
+  background-image: url("../img/contacts-phone.png");
+  background-position: center left;
+  background-repeat: no-repeat;
+  background-size: 41px 41px;
+  padding-top: 32px;
+}
+
+#fn-contacts-content .contacts-phone span {
+  padding: 4px 0 0 62px;
+  font-family: 'arial', sans-serif;
+  font-size: 12px;
+  color: #515050;
+  line-height: 1.3;
+  display: block;
+}
+
+#fn-contacts-content .contacts-phone strong {
+  display: block;
+  font-family: 'arial', sans-serif;
+  font-size: 18px;
+  color: #515050;
+  line-height: 1.3;
+  font-weight: normal;
+}
+
+#contacts-dep {
+  min-height: 518px;
+}
+
+#contacts-dep .contacts-dep-block {
+  width: 293px;
+  height: 159px;
+  background: #fff;
+  box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.1);
+}
+
+#contacts-dep .contacts-dep-block .contacts-dep-header {
+  height: 63px;
+  border-bottom: 1px solid #adc6bf;
+}
+
+#contacts-dep .contacts-dep-block .contacts-dep-header h3 {
+  font-family: 'arial', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #337160;
+  line-height: 63px;
+  padding-left: 30px;
+}
+
+#contacts-dep .contacts-dep-block .contacts-dep-farm {
+  padding: 16px 0 0 30px;
+}
+
+#contacts-dep .contacts-dep-block .contacts-dep-farm strong {
+  font-family: 'arial', sans-serif;
+  font-size: 18px;
+  color: #515050;
+  line-height: 1.3;
+  font-weight: normal;
+  display: block;
+  padding-bottom: 9px;
+}
+
+#contacts-dep .contacts-dep-block .contacts-dep-farm a {
+  font-family: 'arial', sans-serif;
+  font-size: 12px;
+  color: #818181;
+  text-decoration: none;
+}
+
+#contacts-dep .contacts-dep-block .contacts-dep-clin {
+  padding: 16px 0 0 30px;
+}
+
+#contacts-dep .contacts-dep-block .contacts-dep-clin strong {
+  font-family: 'arial', sans-serif;
+  font-size: 18px;
+  color: #515050;
+  line-height: 1.3;
+  font-weight: normal;
+  display: block;
+  padding-bottom: 9px;
+}
+
+#contacts-dep .contacts-dep-block .contacts-dep-clin span {
+  font-family: 'arial', sans-serif;
+  font-size: 12px;
+  color: #818181;
+  line-height: 1.3;
+  text-decoration: none;
+}
+
+#contacts-dep .contacts-dep-block .contacts-dep-etic {
+  padding: 16px 0 0 30px;
+}
+
+#contacts-dep .contacts-dep-block .contacts-dep-etic span {
+  display: block;
+  font-family: 'arial', sans-serif;
+  font-size: 12px;
+  color: #505050;
+  line-height: 1.3;
+}
+
 .hidden {
   display: none;
 }
