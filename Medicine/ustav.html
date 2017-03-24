@@ -18,6 +18,7 @@
 	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css">
 	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.css">
 	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-theme.css">
+	<link rel="stylesheet" type="text/css" href="libs/dist/magnific-popup.css"/>
 
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/media.css">
@@ -35,7 +36,7 @@
 				<div id="fn-header">
 					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
 						<div id="fn-logo">
-							<a href="index.html"><img src="img/logo.png" alt="logotip"></a>						
+							<a href="index.html"><img src="img/logo.png" alt="logotip"></a>
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
@@ -124,80 +125,50 @@
 			<div class="row">
 				<div class="col-lg-12">
 					<div id="fn-breadcrumbs">
-						<ol class="breadcrumb">
+						<ol class="breadcrumb ustav-bread">
 				  			<li><a href="index.html">Главная</a></li>
-				  			<li class="active"></li>
+				  			<li><a href="about.html">О нас</a></li>
 						</ol>						
 					</div>
-					<h1>Контакты</h1>
+					<h1 class="ustav-title">Уставные документы</h1>
 				</div>
 			</div>
 		</div>		
 	</section>
 	<!--EndTopBanner-->
 
-	<!--ContactsContent-->
-	<section id="fn-contacts-content">
+	<!--Ustav Content-->
+	<section id="fn-ustav-content">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-					<div class="contacts-contact">
-						<span>Наш адрес:</span>
-						<strong>Москва, ул. 1-я<br>Тверская-Ямская, 45, 505</strong>
-					</div>
-					<div class="contacts-phone">
-						<span>Круглосуточный телефон:
-						<strong>8 800 2000333</strong></span>
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+					<div class="ustav-content-block">
+						<a href="img/lic-1.png" class="popup">
+							<img src="img/lic-1.png" alt="licen" class="miniature">
+						</a>						
+						<span>Свидетельство <br>о ведении научно-исследовательской<br> деятельности</span>
 					</div>
 				</div>
-				<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-					<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A69bedfd4b3f2a2f0f43b9b3d2bfa897e16970b42667aad943a857e2e9af28a86&amp;width=100%&amp;height=270&amp;lang=ru_RU&amp;scroll=true"></script>
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+					<div class="ustav-content-block">
+						<a href="img/lic-2.png" class="popup">
+							<img src="img/lic-2.png" alt="licen" class="miniature">
+						</a>	
+						<span>Лицензия <br>Интерфейс личного кабинета<br> администратора рабочей </span>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+					<div class="ustav-content-block">
+						<a href="img/lic-3.png" class="popup">
+							<img src="img/lic-3.png" alt="licen" class="miniature">
+						</a>	
+						<span>Разрешение <br>на ведение научно-исследовательской<br> деятельности</span>
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	<!--EndContactsContent-->
-
-	<!--ContactsDep-->
-	<section id="contacts-dep">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-					<div class="contacts-dep-block">
-						<div class="contacts-dep-header">
-							<h3>Отдел фармаконадзора</h3>
-						</div>
-						<div class="contacts-dep-farm">
-							<strong>+7(495)234-22-55</strong>							
-							<a href="mailto:info@farmaco.com">info@farmaco.com</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-					<div class="contacts-dep-block">
-						<div class="contacts-dep-header">
-							<h3>Отдел клинических испытаний</h3>
-						</div>
-						<div class="contacts-dep-clin">
-							<strong>+7(495)234-22-55</strong>							
-							<span>Пн-Пт 9:00-18:00</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-					<div class="contacts-dep-block">
-						<div class="contacts-dep-header">
-							<h3>Этический комитет</h3>
-						</div>
-						<div class="contacts-dep-etic">
-							<span>Разрешение<br>на ведение научно-исследовательской<br>деятельности</span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>		
-	</section>
-	<!--EndContactsDep-->
+	<!--End Ustav Content-->
 
 	<!--Footer-->
 	<footer id="fn-footer">
@@ -245,7 +216,9 @@
 
 	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
 	<script src="libs/bootstrap/js/bootstrap.js"></script>
+	<script src="libs/dist/jquery.magnific-popup.min.js"></script>
 	<script src="js/common.js"></script>
+
 	
 </body>
 </html>

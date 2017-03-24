@@ -35,6 +35,18 @@
 	#fn-soft-content .soft-cont-desc span{
 		width: 80%;
 	}
+
+	#fn-history-content .leftimg{
+		margin: 0px 30px 20px 0px;
+	}
+
+	#fn-history-content .rightimg{
+		margin: 0px 0px 20px 30px
+	}
+
+	#fn-expert-content .expert-content-foto{
+		height: 208.73px
+	}
 }
 
 @media only screen and (min-width : 480px) and (max-width : 767px) {
@@ -79,7 +91,43 @@
 
 	#contacts-dep .col-xs-12{
 		width: 50%;
-	}	
+	}
+
+	#fn-history-content .leftimg{
+		margin: 0px 30px 20px 0px;
+	}
+
+	#fn-history-content .rightimg{
+		margin: 0px 0px 20px 30px
+	}
+
+	#fn-ustav-content{
+		padding-top: 27px;
+	}
+
+	#fn-ustav-content .ustav-content-block{
+		margin-top: 40px;
+	}
+
+	#fn-titleblock .expert-title{
+		font-size: 36px;
+	}
+
+
+	#fn-expert-content .expert-content-foto{
+		width: 220px;
+		height: 208.73px;
+		float: left;
+	}
+
+	#fn-expert-content .expert-content-foto{
+		margin-right: 20px;
+		margin-bottom: 30px;
+	}
+
+	#fn-expert-content h2{
+		margin-top: 5px;
+	}
 
 }
 
@@ -139,6 +187,65 @@
 		width: 90%;
 	}
 
+	#fn-history-content .leftimg{
+		margin: 0px 30px 20px 0px;
+	}
+
+	#fn-history-content .rightimg{
+		margin: 0px 0px 20px 30px
+	}
+
+	#fn-ustav-content .col-xs-6{
+		width: 100%;
+	}
+
+	#fn-ustav-content{
+		padding-top: 27px;
+	}
+
+	#fn-ustav-content .ustav-content-block{
+		margin-top: 40px;
+	}
+
+	#fn-titleblock .ustav-title{
+		font-size: 32px;
+	}
+
+	#fn-titleblock .expert-bread{
+		margin-top: 0px;
+	}
+
+	#fn-titleblock .expert-title{
+		font-size: 30px;
+	}
+
+	#fn-expert-content .col-xs-6{
+		width: 100%;
+	}
+
+	#fn-expert-content .expert-content-foto{
+		margin-bottom: 40px;
+		width: 290px;
+		height: 274px;
+	}
+
+	#fn-expert-content hr{
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+	#fn-expert-content .expert-foto-desc{
+		margin-bottom: 30px;
+	}
+
+	#fn-experts .col-xs-6{
+		width: 100%;
+	}
+
+	#fn-titleblock .experts-title{
+		font-size: 34px;
+	}
+
 }
 
 @media only screen and (min-width : 480px) and (max-width : 600px){
@@ -162,6 +269,31 @@
 
 	#fn-soft-content .soft-cont-desc span{
 		width: 50%;
+	}
+
+	#fn-ustav-content .col-xs-6{
+		width: 100%;
+	}
+
+	#fn-ustav-content{
+		padding-top: 27px;
+	}
+
+	#fn-ustav-content .ustav-content-block{
+		margin-top: 40px;
+	}
+
+	#fn-titleblock .ustav-title{
+		font-size: 46px;
+	}
+
+	#fn-titleblock .expert-bread{
+		margin-top: 0px;
+	}
+
+	#fn-expert-content hr{
+		margin-top: 10px;
+		margin-bottom: 10px;
 	}
 
 }
