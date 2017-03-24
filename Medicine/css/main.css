@@ -868,12 +868,13 @@ header #fn-headercall a span {
 }
 
 #fn-ustav-content .ustav-content-block img {
+  width: 90px;
   display: block;
   margin: 0 auto;
-  -moz-transition: all 1s ease-out;
-  -o-transition: all 1s ease-out;
-  -webkit-transition: all 1s ease-out;
-  transition: all 1s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 #fn-ustav-content .ustav-content-block .miniature:hover {
@@ -955,11 +956,16 @@ header #fn-headercall a span {
 
 #fn-experts a:hover span {
   color: #30b566;
-  transition: 1s linear;
+  transition: 0.3s linear;
 }
 
 #fn-experts a:hover img {
   opacity: 1;
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
   filter: saturate(150%);
   -webkit-filter: saturate(150%);
   -moz-filter: saturate(150%);
@@ -982,12 +988,14 @@ header #fn-headercall a span {
 }
 
 #fn-experts .expert-content-block img {
+  width: 90px;
+  height: auto;
   display: block;
   margin: 0 auto;
-  -moz-transition: all 1s ease-out;
-  -o-transition: all 1s ease-out;
-  -webkit-transition: all 1s ease-out;
-  transition: all 1s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
   opacity: 0.9;
 }
 
