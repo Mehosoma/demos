@@ -1,9 +1,5 @@
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
 
-	#fn-anonses{
-		padding: 30px 0;
-	}
-
 }
 
 @media only screen and (min-width : 768px) and (max-width : 991px) {
@@ -19,10 +15,7 @@
 		padding: 18px 23px;
 	}
 
-	#fn-anonses{
-		padding: 30px 0;
-	}
-
+	
 	#contacts-dep .contacts-dep-block .contacts-dep-header h3{
 		padding-left: 10px;
 		font-size: 13px;
@@ -46,6 +39,20 @@
 
 	#fn-expert-content .expert-content-foto{
 		height: 208.73px
+	}
+
+	#fn-banner-desc .sidebar-banner{		
+		display: block;
+		margin-top: 20px;
+	}
+
+	#fn-index-content #fn-index-right h4{
+		margin: 60px 0 19px 0
+	}
+
+	#fn-index-content #fn-index-middle .middle-news-block .middle-news-zagol{
+		width: 58%;
+		float: right;
 	}
 }
 
@@ -72,10 +79,7 @@
 		z-index: 1000;
 	}
 
-	#fn-anonses{
-		padding: 30px 0;
-	}
-
+	
 	#fn-footer .footercontact{
 		margin: 40px auto;
 	}
@@ -129,6 +133,29 @@
 		margin-top: 5px;
 	}
 
+	#fn-banner-desc .sidebar-banner{		
+		display: block;
+		margin-top: 20px;
+	}
+
+	#fn-index-content #fn-index-right h4{
+		margin: 60px 0 19px 0
+	}
+
+	#fn-index-content #fn-index-middle .middle-news-block img{
+		float: none;
+	}
+
+	#fn-index-content #fn-index-middle .middle-news-block .middle-news-zagol{
+		float: none;
+		width: 100%;			
+	}
+
+	#fn-index-content #fn-index-middle .middle-news-block .middle-news-zagol h5{
+		margin-top: 15px;
+	}
+
+
 }
 
 @media only screen and (min-width : 0px) and (max-width : 479px) {
@@ -155,9 +182,7 @@
 		z-index: 1000;
 	}
 
-	#fn-anonses{
-		padding: 30px 0;
-	}
+	
 
 	#fn-footer .footercontact{
 		margin: 40px auto;
@@ -246,6 +271,24 @@
 		font-size: 34px;
 	}
 
+	#fn-banner-desc .sidebar-banner{		
+		display: block;
+		margin-top: 20px;
+	}
+	
+	#fn-index-content .col-xs-6{
+		width: 100%;
+	}
+
+	#fn-index-content #fn-index-middle .middle-news-block .middle-news-zagol{
+		width: 100%;
+		float: none;
+		padding-left: 140px;
+	}
+
+	#fn-index-content #fn-index-right h4{
+		margin: 40px 0 19px 0
+	}
 }
 
 @media only screen and (min-width : 480px) and (max-width : 600px){
@@ -294,9 +337,11 @@
 	#fn-expert-content hr{
 		margin-top: 10px;
 		margin-bottom: 10px;
-	}
+	}	
 
 }
+
+
 
 
 
