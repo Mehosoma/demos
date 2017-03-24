@@ -961,11 +961,11 @@ header #fn-headercall a span {
 
 #fn-experts a:hover img {
   opacity: 1;
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -o-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
+  -webkit-transform: scale(1.24);
+  -moz-transform: scale(1.24);
+  -o-transform: scale(1.24);
+  -ms-transform: scale(1.24);
+  transform: scale(1.24);
   filter: saturate(150%);
   -webkit-filter: saturate(150%);
   -moz-filter: saturate(150%);
