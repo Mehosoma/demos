@@ -1,4 +1,7 @@
-$(document).ready(function() {
+jQuery.noConflict()
+
+
+jQuery(function($) {
 
 	$('.popup').magnificPopup({
 		type: 'image',
@@ -12,9 +15,11 @@ $(document).ready(function() {
 
 	$(".popup_form").magnificPopup();
 
+
+
 });
 
-( function( window ) {
+(function(window) {
 
 'use strict';
 
