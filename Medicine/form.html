@@ -18,6 +18,8 @@
 	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css">
 	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.css">
 	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-theme.css">
+	<link rel="stylesheet" type="text/css" href="libs/dist/magnific-popup.css"/>
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/media.css">
@@ -141,22 +143,183 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">					
-          			<div class="acc">
-            			<dl>
-              			<dt><a class="acc_title" href="#">Информация о пациенте</a></dt>
-	              			<dd class="acc_panel acc_panel_col">
-	                		<p>123</p>
-	              			</dd>
-              			<dt><a href="#" class="acc_title">Информация о лекарственном средстве</a></dt>
-              			<dd class="acc_panel acc_panel_col">
-	                		<p>234</p>
-	              			</dd>
-              			<dt><a href="#" class="acc_title">Другие лекарственные средства</a></dt>
-	              			<dd class="acc_panel acc_panel_col">
-	                		<p>345 </p>
-              			</dd>
-            			</dl>
-          			</div>					
+          			<div id="accordion">
+						<h3>Информация о пациенте</h3>
+						<div>
+						    <p>Имя пациента</p>
+						    <input type="" name="">
+						    <p>Номер истории болезни или аммбулаторной карты</p>
+						    <input type="" name="">
+						    <p>Дата рождения</p>
+						    <input type="" name="" id="datepicker">
+						    <p>Возраст на момент начала реакции</p>
+						    <input type="" name="">
+						    <select>
+						    	<option>Год</option>
+						    	<option>Месяц</option>
+						    	<option>Неделя</option>
+						    	<option>День</option>
+						    	<option>Час</option>
+						    </select>
+						   	<p>Пол</p>
+						   	<p><input name="pol" type="radio" value="mug" checked="">Мужской</p>
+    						<p><input name="pol" type="radio" value="gen">Женский</p>
+    						<p><input name="pol" type="radio" value="drug">Другое</p>
+    						<p>Масса тела в кг.</p>
+						    <input type="" name="">
+						    <p>Рост в см.</p>
+						    <input type="" name="">
+						    <p>Беременность</p>
+						    <p><input name="berem" type="radio" value="da">Да</p>
+						    <p><input name="berem" type="radio" value="net" checked="">Нет</p>
+						    <p>Срок беременности на момент реакции</p>
+						    <input type="" name="">
+						    <select>
+						    	<option>Триместр</option>
+						    	<option>Месяц</option>
+						    	<option>Неделя</option>
+						    	<option>День</option>						    	
+						    </select>
+						    <p>Дата последнего менструального кровотечения</p>
+						    <input type="" name="" id="datemen">
+						    <p>Нарушения функциии печени</p>
+						   	<p><input name="pech" type="radio" value="da" checked="">Да</p>
+    						<p><input name="pech" type="radio" value="net">Нет</p>
+    						<p><input name="pech" type="radio" value="drug">Другое</p>
+    						<p>Нарушения функциии почек</p>
+						   	<p><input name="poch" type="radio" value="da" checked="">Да</p>
+    						<p><input name="poch" type="radio" value="net">Нет</p>
+    						<p><input name="poch" type="radio" value="drug">Другое</p>
+    						<p>Наличие аллергии</p>
+    						<textarea></textarea>
+					  	</div>
+						<h3>Информация о лекарственном средстве</h3>
+							<div>
+							   	<p>Лекарство было назначено врачом?</p>
+						   		<p><input name="lek" type="radio" value="da" checked="">Да</p>
+    							<p><input name="lek" type="radio" value="net">Нет</p>
+    							<p>Название лекарства</p>
+						    	<input type="" name="">
+						    	<p>Торговое название</p>
+						    	<input type="" name="">
+						    	<p>Действующее вещество/МНН</p>
+						    	<input type="" name="">
+						    	<p>Дозировка</p>
+						    	<input type="" name="">
+						    	<select>
+							    	<option>Таблетки</option>
+							    	<option>Капли</option>							    	
+						    	</select>
+						    	<p>Кратность использования</p>
+						    	<input type="" name="">
+						    	<p>Лекарственная форма</p>
+						    	<input type="" name="">
+						    	<p>Производитель</p>
+						    	<input type="" name="">
+						    	<p>Страна производства</p>
+						    	<input type="" name="">
+						    	<p>Серия</p>
+						    	<input type="" name="">
+						    	<p>Показание к использованию</p>
+						    	<input type="" name="">
+						    	<p>Диагноз, по поводу которого назначено лекарство</p>
+						    	<input type="" name="">
+						    	<p>Способ применения</p>
+						    	<input type="" name="">
+						    	<p>Дата начала использования препарата</p>
+						    	<input type="" name="" id="datenachprep">
+						    	<p>Время начала использования препарата (если известно)</p>
+						    	<input type="" name="">
+						    	<p>Дата окончания использования препарата</p>
+						    	<input type="" name="" id="dateprepkon">
+						    	<p>Время окончания использования препарата (если известно)</p>
+						    	<input type="" name="">
+						    	<p>Продолжаю принимать лекарство</p>
+						   		<p><input name="lek_prod" type="radio" value="da" checked="">Да</p>
+    							<p><input name="lek_prod" type="radio" value="net">Нет</p>
+    							
+							</div>
+					  	<h3>Другие лекарственные средства</h3>
+					  		<div>
+					  			<p>Название лекарства</p>
+						    	<input type="" name="">						    	
+						    	<p>Действующее вещество/МНН</p>
+						    	<input type="" name="">
+						    	<p>Путь введения</p>
+						    	<input type="" name="">
+						    	<p>Дата начала приема</p>
+						    	<input type="" name="" id="datenach">
+						    	<p>Время начала приема (если известно)</p>
+						    	<input type="" name="">				    	
+						    	<p>Дата окончания приема</p>
+						    	<input type="" name="" id="datekonec">
+						    	<p>Время окончания приема (если известно)</p>
+						    	<input type="" name="">
+						    	<p>Продолжаю принимать лекарство</p>
+						   		<p><input name="lek_prod_dr" type="radio" value="da" checked="">Да</p>
+    							<p><input name="lek_prod_dr" type="radio" value="net">Нет</p>
+    							<button>Добавить лекарственное средство</button>	 
+							</div>
+						<h3>Описание побочной реакции</h3>
+					  		<div>
+						    	<p>Место развития реакции</p>
+						   		<p><input name="mesto" type="radio" value="da" checked="">В медицинском учреждении</p>
+	    						<p><input name="mesto" type="radio" value="net">Амбулаторно</p>
+	    						<p>Если реакция развилась в медицинском учреждении, укажите его название</p>
+						    	<input type="" name="">
+						    	<p>Описание реакции</p>
+    							<textarea></textarea>
+    							<p>Дата начала реакции</p>
+						    	<input type="" name="" id="datenachreak">
+						    	<p>Время начала реакции (если известно)</p>
+						    	<input type="" name="">
+						    	<p>Дата окончания реакции</p>
+						    	<input type="" name="" id="datekonecreak">
+						    	<p>Время окончания реакции (если известно)</p>
+						    	<input type="" name="">
+						    	<p>Реакция продолжается</p>
+						   		<p><input name="reak_prod" type="radio" value="da" checked="">Да</p>
+	    						<p><input name="reak_prod" type="radio" value="net">Нет</p>
+	    						<p>Повторилась ли реакция после повторного назначения подозреваемого лекарства?</p>
+						   		<p><input name="reak_povt" type="radio" value="da" checked="">Да</p>
+	    						<p><input name="reak_povt" type="radio" value="net">Нет</p>
+	    						<p><input name="reak_povt" type="radio" value="nenaz">Повторно не назначалось</p>
+	    						<p><input name="reak_povt" type="radio" value="neiz">Неизвестно</p>
+	    						<p>Это лекарство принималось ранее?</p>
+						   		<p><input name="ranee" type="radio" value="da" checked="">Да</p>
+	    						<p><input name="renee" type="radio" value="net">Нет</p>
+	    						<p><input name="ranee" type="radio" value="neiz">Неизвестно</p>
+	    						<p>Если принималось, это лекарство уже вызывало побочные реакции?</p>
+						   		<p><input name="reak_ranee" type="radio" value="net" checked="">Не вызывало</p>
+	    						<p><input name="reak_renee" type="radio" value="da">Вызывало похожие</p>
+	    						<p><input name="reak_ranee" type="radio" value="dadrug">Вызывало другие</p>
+	    						<p><input name="reak_ranee" type="radio" value="neiz">Неизвестно</p>
+	    						<p>Какие меры были предприняты?</p>
+						    	<p><input type="checkbox" name="" value="">Никакие</p>
+						    	<p><input type="checkbox" name="" value="" checked>Отмена подозреваемого лекарства</p>
+						   		<p><input type="checkbox" name="" value="">Снижение дозы подозреваемого проепарата </p>
+						   		<p>Укажите на сколько</p>
+						   		<input type="" name="">
+						   		<p><input type="checkbox" name="" value="">Отмена других препаратов</p>
+						   		<p>Укажите какие</p>
+						   		<input type="" name="">
+						   		<p><input type="checkbox" name="" value="">Назначение лечения</p>
+						   		<p>Укажите какие препараты или вмешательства использовались</p>
+						   		<input type="" name="">
+						   		<p><input type="checkbox" name="" value="">Другое</p>
+						   		<p>Укажите</p>
+						   		<input type="" name="">						    	
+							</div>
+						<h3>Section 3</h3>
+					  		<div>
+						    	<p>
+							    Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+							    Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+							    ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+							    lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+							    </p>
+							</div>
+					</div>	
 				</div>
 			</div>
 		</div>
@@ -210,7 +373,11 @@
 
 	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
 	<script src="libs/bootstrap/js/bootstrap.js"></script>
+	<script src="libs/dist/jquery.magnific-popup.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<script src="js/common.js"></script>
+
+
 	
 </body>
 </html>
