@@ -18,12 +18,23 @@
 	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css">
 	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.css">
 	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-theme.css">
+	<link rel="stylesheet" type="text/css" href="libs/dist/magnific-popup.css"/>
 
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/media.css">
 
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+
+	<script>
+   		function agreeForm(f) {
+    	// Если поставлен флажок, снимаем блокирование кнопки
+    	if (f.disclaim.checked) f.submit.disabled = 0 
+    	// В противном случае вновь блокируем кнопку
+    	else f.submit.disabled = 1
+   		}
+  	</script>
+
 
 </head>
 
@@ -57,7 +68,7 @@
 					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 call">
 						<div id="fn-headercall" class="clearfix">
 							<div class="headercall-button">
-								<a href="#"><img src="img/megafon.png"><span>Сообщить <br>
+								<a href="#hidden_form" class="popup_form"><img src="img/megafon.png"><span>Сообщить <br>
 								о нежелательной реакции</span></a>
 							</div>
 						</div>
@@ -357,10 +368,32 @@
 	</footer>
 	<!--EndFooter-->
 
-	<div class="hidden"></div>
+	<div class="hidden">
+		<form id="hidden_form" action="form.html">
+			<h3>Выберите необходимое поле и нажмите кнопку продолжить</h3>
+			<div class="popup-choice clearfix">
+				<div class="popup-left">
+					<img src="img/doctor.png">
+					<p><input name="choice" type="radio" value="vrach">Я - врач</p>
+				</div>
+				<div class="popup-right">
+					<img src="img/pacient.png">
+					<p><input name="choice" type="radio" value="pacient">Я - пациент</p>
+				</div>
+			</div>
+			<p><input type="checkbox" name="disclaim" onclick="agreeForm(this.form)">Даю согласие на обработку персональных данных</p>
+			<div class="button_form">
+			    <button type="submit" class="popup-submit" name="submit" disabled>Отправить</button>    	
+			</div>		
+		</form>
+	</div>
+
+
+	
 
 	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
 	<script src="libs/bootstrap/js/bootstrap.js"></script>
+	<script src="libs/dist/jquery.magnific-popup.min.js"></script>
 	<script src="js/common.js"></script>
 	
 </body>
