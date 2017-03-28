@@ -982,49 +982,27 @@ header
 /*FormPage*/
 #fn-send-form
 	padding: 50px 0	
-	.acc
+	.accordion
 		position: relative
 		background-color: #fff
 		dl
-		box-shadow: 0 0 20px rgba(0, 0, 0, 0.2)
-		&:after 
-			content: ""
-			display: block
-			height: 1em
-			width: 100%
-			background-color: #2980b9
-		dt > a
+			box-shadow: 0 0 20px rgba(0, 0, 0, 0.2)
+		dt
+			cursor: pointer
 			text-align: center
-			font-weight: 300
-			padding: 2em
-			display: block
-			text-decoration: none
+			padding: 0.5em
 			color: #fff
-			-webkit-transition: background-color 0.5s ease-in-out
+			transition-duration: 1s
+			transition-property: background
+			background: #e04836
+		dt:hover
+			background: #ff8080
 		dd
-			background-color: #fff
-			font-size: 1em
-			line-height: 1.5em			
-	.acc_title
-		background-color: #3498db
-		border-bottom: 1px solid #258cd1
-		&:before
-			content: "+"
-			font-size: 1.5em
-			line-height: 0.5em
-			float: left
-			transition: transform 0.3s ease-in-out
-		&:hover
-			background-color: #2980b9
-	.acc_title_active
-		background-color: #2980b9
-		&:before
-			transform: rotate(-225deg)
-	.acc_panel
-		height: auto
-		overflow: hidden
-	.acc_panel_col
-		max-height: 0
+			display: none
+			height: auto
+			margin-left: 0
+			padding: 1em		
+	
 
 
 .hidden

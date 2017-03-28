@@ -1329,72 +1329,34 @@ header #fn-headercall a span {
   padding: 50px 0;
 }
 
-#fn-send-form .acc {
+#fn-send-form .accordion {
   position: relative;
   background-color: #fff;
+}
+
+#fn-send-form .accordion dl {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
-#fn-send-form .acc:after {
-  content: "";
-  display: block;
-  height: 1em;
-  width: 100%;
-  background-color: #2980b9;
-}
-
-#fn-send-form .acc dt > a {
+#fn-send-form .accordion dt {
+  cursor: pointer;
   text-align: center;
-  font-weight: 300;
-  padding: 2em;
-  display: block;
-  text-decoration: none;
+  padding: 0.5em;
   color: #fff;
-  -webkit-transition: background-color 0.5s ease-in-out;
+  transition-duration: 1s;
+  transition-property: background;
+  background: #e04836;
 }
 
-#fn-send-form .acc dd {
-  background-color: #fff;
-  font-size: 1em;
-  line-height: 1.5em;
+#fn-send-form .accordion dt:hover {
+  background: #ff8080;
 }
 
-#fn-send-form .acc_title {
-  background-color: #3498db;
-  border-bottom: 1px solid #258cd1;
-}
-
-#fn-send-form .acc_title:before {
-  content: "+";
-  font-size: 1.5em;
-  line-height: 0.5em;
-  float: left;
-  transition: -webkit-transform 0.3s ease-in-out;
-  transition: transform 0.3s ease-in-out;
-  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
-}
-
-#fn-send-form .acc_title:hover {
-  background-color: #2980b9;
-}
-
-#fn-send-form .acc_title_active {
-  background-color: #2980b9;
-}
-
-#fn-send-form .acc_title_active:before {
-  -webkit-transform: rotate(-225deg);
-  -ms-transform: rotate(-225deg);
-  transform: rotate(-225deg);
-}
-
-#fn-send-form .acc_panel {
+#fn-send-form .accordion dd {
+  display: none;
   height: auto;
-  overflow: hidden;
-}
-
-#fn-send-form .acc_panel_col {
-  max-height: 0;
+  margin-left: 0;
+  padding: 1em;
 }
 
 .hidden {

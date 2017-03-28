@@ -142,60 +142,63 @@
 	<section id="fn-send-form">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-12">					
-          			<div id="accordion">
-						<h3>Информация о пациенте</h3>
-						<div>
-						    <p>Имя пациента</p>
-						    <input type="" name="">
-						    <p>Номер истории болезни или аммбулаторной карты</p>
-						    <input type="" name="">
-						    <p>Дата рождения</p>
-						    <input type="" name="" id="datepicker">
-						    <p>Возраст на момент начала реакции</p>
-						    <input type="" name="">
-						    <select>
-						    	<option>Год</option>
-						    	<option>Месяц</option>
-						    	<option>Неделя</option>
-						    	<option>День</option>
-						    	<option>Час</option>
-						    </select>
-						   	<p>Пол</p>
-						   	<p><input name="pol" type="radio" value="mug" checked="">Мужской</p>
-    						<p><input name="pol" type="radio" value="gen">Женский</p>
-    						<p><input name="pol" type="radio" value="drug">Другое</p>
-    						<p>Масса тела в кг.</p>
-						    <input type="" name="">
-						    <p>Рост в см.</p>
-						    <input type="" name="">
-						    <p>Беременность</p>
-						    <p><input name="berem" type="radio" value="da">Да</p>
-						    <p><input name="berem" type="radio" value="net" checked="">Нет</p>
-						    <p>Срок беременности на момент реакции</p>
-						    <input type="" name="">
-						    <select>
-						    	<option>Триместр</option>
-						    	<option>Месяц</option>
-						    	<option>Неделя</option>
-						    	<option>День</option>						    	
-						    </select>
-						    <p>Дата последнего менструального кровотечения</p>
-						    <input type="" name="" id="datemen">
-						    <p>Нарушения функциии печени</p>
-						   	<p><input name="pech" type="radio" value="da" checked="">Да</p>
-    						<p><input name="pech" type="radio" value="net">Нет</p>
-    						<p><input name="pech" type="radio" value="drug">Другое</p>
-    						<p>Нарушения функциии почек</p>
-						   	<p><input name="poch" type="radio" value="da" checked="">Да</p>
-    						<p><input name="poch" type="radio" value="net">Нет</p>
-    						<p><input name="poch" type="radio" value="drug">Другое</p>
-    						<p>Наличие аллергии</p>
-    						<textarea></textarea>
-					  	</div>
-						<h3>Информация о лекарственном средстве</h3>
-							<div>
-							   	<p>Лекарство было назначено врачом?</p>
+				<div class="col-lg-12">				
+				    <div class="accordion">
+            			<dl>
+              				<dt>Информация о пациенте</dt>
+              				<dd>
+	                			<p>Имя пациента</p>
+							    <input type="" name="">
+							    <p>Номер истории болезни или аммбулаторной карты</p>
+							    <input type="" name="">
+							    <p>Дата рождения</p>
+							    <input type="" name="" id="datepicker">
+							    <p>Возраст на момент начала реакции</p>
+							    <input type="" name="">
+							    <select>
+							    	<option>Год</option>
+							    	<option>Месяц</option>
+							    	<option>Неделя</option>
+							    	<option>День</option>
+							    	<option>Час</option>
+							    </select>
+							    <div class="sex">
+							   	<p>Пол</p>
+								   	<p><input name="pol" type="radio" value="mug" checked="">Мужской</p>
+		    						<p><input name="pol" type="radio" value="gen">Женский</p>
+		    						<p><input name="pol" type="radio" value="drug">Другое</p>
+	    						</div>
+	    						<p>Масса тела в кг.</p>
+							    <input type="" name="">
+							    <p>Рост в см.</p>
+							    <input type="" name="">
+							    <p>Беременность</p>
+							    <p><input name="berem" type="radio" value="yes">Да</p>
+							    <p><input name="berem" type="radio" value="no" checked="">Нет</p>	
+							    <p>Срок беременности на момент реакции</p>
+							    <input type="" name="">
+							    <select>
+							    	<option>Триместр</option>
+							    	<option>Месяц</option>
+							    	<option>Неделя</option>
+							    	<option>День</option>						    	
+							    </select>
+							    <p>Дата последнего менструального кровотечения</p>
+							    <input type="" name="" id="datemen">
+							    <p>Нарушения функциии печени</p>
+							   	<p><input name="pech" type="radio" value="da" checked="">Да</p>
+	    						<p><input name="pech" type="radio" value="net">Нет</p>
+	    						<p><input name="pech" type="radio" value="drug">Другое</p>
+	    						<p>Нарушения функциии почек</p>
+							   	<p><input name="poch" type="radio" value="da" checked="">Да</p>
+	    						<p><input name="poch" type="radio" value="net">Нет</p>
+	    						<p><input name="poch" type="radio" value="drug">Другое</p>
+	    						<p>Наличие аллергии</p>
+	    						<textarea></textarea>
+             				</dd>
+              				<dt>Информация о подозреваемом лекарственном средстве</dt>
+                			<dd>
+                				<p>Лекарство было назначено врачом?</p>
 						   		<p><input name="lek" type="radio" value="da" checked="">Да</p>
     							<p><input name="lek" type="radio" value="net">Нет</p>
     							<p>Название лекарства</p>
@@ -236,12 +239,11 @@
 						    	<input type="" name="">
 						    	<p>Продолжаю принимать лекарство</p>
 						   		<p><input name="lek_prod" type="radio" value="da" checked="">Да</p>
-    							<p><input name="lek_prod" type="radio" value="net">Нет</p>
-    							
-							</div>
-					  	<h3>Другие лекарственные средства</h3>
-					  		<div>
-					  			<p>Название лекарства</p>
+    							<p><input name="lek_prod" type="radio" value="net">Нет</p>                
+              				</dd>
+              				<dt>Другие лекарственные средства</dt>
+              				<dd>
+                				<p>Название лекарства</p>
 						    	<input type="" name="">						    	
 						    	<p>Действующее вещество/МНН</p>
 						    	<input type="" name="">
@@ -259,10 +261,10 @@
 						   		<p><input name="lek_prod_dr" type="radio" value="da" checked="">Да</p>
     							<p><input name="lek_prod_dr" type="radio" value="net">Нет</p>
     							<button>Добавить лекарственное средство</button>	 
-							</div>
-						<h3>Описание побочной реакции</h3>
-					  		<div>
-						    	<p>Место развития реакции</p>
+              				</dd>
+              				<dt>Описание побочной реакции</dt>
+              				<dd>
+              					<p>Место развития реакции</p>
 						   		<p><input name="mesto" type="radio" value="da" checked="">В медицинском учреждении</p>
 	    						<p><input name="mesto" type="radio" value="net">Амбулаторно</p>
 	    						<p>Если реакция развилась в медицинском учреждении, укажите его название</p>
@@ -308,17 +310,64 @@
 						   		<input type="" name="">
 						   		<p><input type="checkbox" name="" value="">Другое</p>
 						   		<p>Укажите</p>
-						   		<input type="" name="">						    	
-							</div>
-						<h3>Section 3</h3>
-					  		<div>
-						    	<p>
-							    Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
-							    Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
-							    ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
-							    lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
-							    </p>
-							</div>
+						   		<input type="" name="">
+				            </dd>
+				            <dt>Серьезность реакции</dt>
+              				<dd>
+              					<p>Серьезность реакции</p>
+						   		<p><input name="reak_ser" type="radio" value="net" checked="">Смерть</p>
+						   		<input type="" name="" id="datedeath">
+	    						<p><input name="reak_ser" type="radio" value="da">Угроза жизни</p>
+	    						<p><input name="reak_ser" type="radio" value="dadrug">Госпитализация</p>
+	    						<p><input name="reak_ser" type="radio" value="neiz">Продление госпитализации</p>
+	    						<p><input name="reak_ser" type="radio" value="neiz">Инвалидность</p>
+	    						<p><input name="reak_ser" type="radio" value="neiz">Нетрудоспособность</p>
+	    						<p><input name="reak_ser" type="radio" value="neiz">Врожденные нарушения развития</p>
+	    						<p><input name="reak_ser" type="radio" value="neiz">Другая важная медицинская информация</p>
+	    						<p>Укажите какая</p>
+	    						<input type="" name="" id="datedeath">
+              				</dd>
+              				<dt>Другая важная информация</dt>
+              				<dd>
+                				<p>Другая важная информация, имеющая отношение к реакции</p>
+	    						<input type="" name="">
+	    						<p>Комментарии</p>
+	    						<input type="" name="">
+	    						<p>Доступны ли дополнительные документы по данному случаю</p>
+						   		<p><input name="doc" type="radio" value="da" checked="">Да</p>
+						   		<p><input name="doc" type="radio" value="net">Нет</p>
+						   		<p>Дополнительные файлы</p>
+						   		<input type="" name="">
+						   		<button>Загрузить</button>
+              				</dd>
+				            <dt>Информация о сообщившем</dt>
+				            <dd>
+				            	<p>Фамилия сообщившего</p>
+	    						<input type="" name="">	
+	    						<p>Имя сообщившего</p>
+	    						<input type="" name="">	
+	    						<p>Отчество сообщившего</p>
+	    						<input type="" name="">
+	    						<p>Сообщение подано</p>
+						   		<p><input name="mess" type="radio" value="da" checked="">Врачом</p>
+						   		<p><input name="mess" type="radio" value="net">Представителем компании</p>
+						   		<p><input name="mess" type="radio" value="net">Провизором</p>
+						   		<p><input name="mess" type="radio" value="net">Фельдшером</p>
+						   		<p><input name="mess" type="radio" value="net">Фармацевтом</p>
+						   		<p><input name="mess" type="radio" value="net">Медсестрой/Медбратом</p>
+						   		<p><input name="mess" type="radio" value="net">Акушеркой</p>
+						   		<p><input name="mess" type="radio" value="net">Другое</p>
+						   		<p>Место работы</p>
+	    						<input type="" name="">
+	    						<p>Контактные данные (адрес)</p>
+	    						<input type="" name="">
+	    						<p>Контактный телефон</p>
+	    						<input type="" name="">
+	    						<p>Контактный e-mail</p>
+	    						<input type="" name="">
+	    						<p><input type="checkbox" name="" value="">Я даю свое согласие на то, чтобы в случае необходимости уточнения представленной информации, представитель Центра связался со мной</p>
+				            </dd>
+            			</dl>
 					</div>	
 				</div>
 			</div>
