@@ -149,6 +149,39 @@ jQuery(function($){
     }); 
 });
 
+jQuery(function($){ 
+    $("input[name='reac_ser']").click(function() {
+        var test = $(this).val();
+        if (test=="reac-ser-death") {
+       		document.getElementById("date-death").style.display='block';
+   		} else {
+       		document.getElementById("date-death").style.display='none';
+   		}         
+    }); 
+});
+
+jQuery(function($){ 
+    $("input[name='reac_ser']").click(function() {
+        var test = $(this).val();
+        if (test=="reac-ser-oth-inf") {
+       		document.getElementById("reac-ser-oth-info").style.display='block';
+   		} else {
+       		document.getElementById("reac-ser-oth-info").style.display='none';
+   		}         
+    }); 
+});
+
+jQuery(function($){ 
+    $("input[name='info-doc']").click(function() {
+        var test = $(this).val();
+        if (test=="info-doc-yes") {
+       		document.getElementById("doc-load").style.display='block';
+   		} else {
+       		document.getElementById("doc-load").style.display='none';
+   		}         
+    }); 
+});
+
 //Hide-show block in action section
 jQuery(function($){ 
     $("input[name='action-react-3']").click(function() {

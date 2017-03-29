@@ -421,59 +421,90 @@
 							   	</div>
 				            </dd>
 				            <dt>Серьезность реакции</dt>
-              				<dd>
-              					<p>Серьезность реакции</p>
-						   		<p><input name="reak_ser" type="radio" value="net" checked="">Смерть</p>
-						   		<input type="" name="" id="datedeath">
-	    						<p><input name="reak_ser" type="radio" value="da">Угроза жизни</p>
-	    						<p><input name="reak_ser" type="radio" value="dadrug">Госпитализация</p>
-	    						<p><input name="reak_ser" type="radio" value="neiz">Продление госпитализации</p>
-	    						<p><input name="reak_ser" type="radio" value="neiz">Инвалидность</p>
-	    						<p><input name="reak_ser" type="radio" value="neiz">Нетрудоспособность</p>
-	    						<p><input name="reak_ser" type="radio" value="neiz">Врожденные нарушения развития</p>
-	    						<p><input name="reak_ser" type="radio" value="neiz">Другая важная медицинская информация</p>
-	    						<p>Укажите какая</p>
-	    						<input type="" name="" id="datedeath">
+              				<dd id="fn-serious-react">
+              					<div class="react-ser">
+	              					<p>Серьезность реакции</p>
+							   		<p><input name="reac_ser" type="radio" value="reac-ser-death">Смерть</p>
+								   	<div id="date-death">
+								   		<p>Укажите дату смерти</p>
+							   			<input type="" name="" id="datedeath">
+							   		</div>
+		    						<p><input name="reac_ser" type="radio" value="reac-ser-threat" checked="">Угроза жизни</p>
+		    						<p><input name="reac_ser" type="radio" value="reac-ser-hosp">Госпитализация</p>
+		    						<p><input name="reac_ser" type="radio" value="reac-ser-hosp-cont">Продление госпитализации</p>
+		    						<p><input name="reac_ser" type="radio" value="reac-ser-disab">Инвалидность</p>
+		    						<p><input name="reac_ser" type="radio" value="reac-ser-incap">Нетрудоспособность</p>
+		    						<p><input name="reac_ser" type="radio" value="reac-ser-defect">Врожденные нарушения развития</p>
+		    						<p><input name="reac_ser" type="radio" value="reac-ser-oth-inf">Другая важная медицинская информация</p>
+		    						<div id="reac-ser-oth-info">
+			    						<p>Укажите какая</p>
+			    						<input type="" name="" id="datedeath">
+			    					</div>
+		    					</div>
               				</dd>
               				<dt>Другая важная информация</dt>
-              				<dd>
-                				<p>Другая важная информация, имеющая отношение к реакции</p>
-	    						<input type="" name="">
-	    						<p>Комментарии</p>
-	    						<input type="" name="">
-	    						<p>Доступны ли дополнительные документы по данному случаю</p>
-						   		<p><input name="doc" type="radio" value="da" checked="">Да</p>
-						   		<p><input name="doc" type="radio" value="net">Нет</p>
-						   		<p>Дополнительные файлы</p>
-						   		<input type="" name="">
-						   		<button>Загрузить</button>
+              				<dd id="other-imp-info">
+              					<div class="other-info-imp">
+	                				<p>Другая важная информация, имеющая отношение к реакции</p>
+		    						<input type="text" name="other-info">
+		    					</div>
+		    					<div class="other-info-comment">
+		    						<p>Комментарии</p>
+		    						<input type="text" name="other-info-comm">
+		    					</div>
+		    					<div class="other-info-doc">
+		    						<p>Доступны ли дополнительные документы по данному случаю</p>
+							   		<p><input name="info-doc" type="radio" value="info-doc-yes">Да</p>
+							   		<p><input name="info-doc" type="radio" value="info-doc-no"  checked="">Нет</p>
+							   		<div id="doc-load">
+								   		<p>Дополнительные файлы</p>
+								   		<input type="text" name="load-doc">
+								   		<button>Загрузить</button>
+								   	</div>
+							   	</div>
               				</dd>
 				            <dt>Информация о сообщившем</dt>
-				            <dd>
-				            	<p>Фамилия сообщившего</p>
-	    						<input type="" name="">	
-	    						<p>Имя сообщившего</p>
-	    						<input type="" name="">	
-	    						<p>Отчество сообщившего</p>
-	    						<input type="" name="">
-	    						<p>Сообщение подано</p>
-						   		<p><input name="mess" type="radio" value="da" checked="">Врачом</p>
-						   		<p><input name="mess" type="radio" value="net">Представителем компании</p>
-						   		<p><input name="mess" type="radio" value="net">Провизором</p>
-						   		<p><input name="mess" type="radio" value="net">Фельдшером</p>
-						   		<p><input name="mess" type="radio" value="net">Фармацевтом</p>
-						   		<p><input name="mess" type="radio" value="net">Медсестрой/Медбратом</p>
-						   		<p><input name="mess" type="radio" value="net">Акушеркой</p>
-						   		<p><input name="mess" type="radio" value="net">Другое</p>
-						   		<p>Место работы</p>
-	    						<input type="" name="">
-	    						<p>Контактные данные (адрес)</p>
-	    						<input type="" name="">
-	    						<p>Контактный телефон</p>
-	    						<input type="" name="">
-	    						<p>Контактный e-mail</p>
-	    						<input type="" name="">
-	    						<p><input type="checkbox" name="" value="">Я даю свое согласие на то, чтобы в случае необходимости уточнения представленной информации, представитель Центра связался со мной</p>
+				            <dd id="info-message">
+				            	<div class="surname-info">
+					            	<p>Фамилия сообщившего</p>
+		    						<input type="text" name="surn-info">	
+		    					</div>
+		    					<div class="name-info">
+		    						<p>Имя сообщившего</p>
+		    						<input type="text" name="nam-info">	
+		    					</div>
+		    					<div class="patronymic-info">
+		    						<p>Отчество сообщившего</p>
+		    						<input type="text" name="pat-info">
+		    					</div>
+		    					<div class="message-get">
+		    						<p>Сообщение подано</p>
+							   		<p><input name="mess-get" type="radio" value="mess-get-doc" checked="">Врачом</p>
+							   		<p><input name="mess-get" type="radio" value="mess-get-comp">Представителем компании</p>
+							   		<p><input name="mess-get" type="radio" value="mess-get-prov">Провизором</p>
+							   		<p><input name="mess-get" type="radio" value="mess-get-feld">Фельдшером</p>
+							   		<p><input name="mess-get" type="radio" value="mess-get-farm">Фармацевтом</p>
+							   		<p><input name="mess-get" type="radio" value="mess-get-nurse">Медсестрой/Медбратом</p>
+							   		<p><input name="mess-get" type="radio" value="mess-get-ak">Акушеркой</p>
+							   		<p><input name="mess-get" type="radio" value="mess-get-oth">Другое</p>
+							   	</div>
+							   	<div class="place-work">
+							   		<p>Место работы</p>
+		    						<input type="text" name="work-place">
+		    					</div>
+		    					<div class="adress">
+		    						<p>Контактные данные (адрес)</p>
+		    						<input type="text" name="adr">
+		    					</div>
+		    					<div class="phone">
+		    						<p>Контактный телефон</p>
+		    						<input type="text" name="tel">
+		    					</div>
+		    					<div class="e-mail">
+		    						<p>Контактный e-mail</p>
+		    						<input type="text" name="mail">
+		    					</div>
+	    						<p><input type="checkbox" name="agree" value="ag" id="agree-form">Я даю свое согласие на то, чтобы в случае необходимости уточнения представленной информации, представитель Центра связался со мной</p>
 				            </dd>
             			</dl>
 					</div>	
