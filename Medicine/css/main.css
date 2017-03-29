@@ -1334,6 +1334,10 @@ header #fn-headercall a span {
   background-color: #fff;
 }
 
+#fn-send-form .accordion div {
+  margin: 20px 0;
+}
+
 #fn-send-form .accordion dl {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
@@ -1345,11 +1349,11 @@ header #fn-headercall a span {
   color: #fff;
   transition-duration: 1s;
   transition-property: background;
-  background: #e04836;
+  background: #337160;
 }
 
 #fn-send-form .accordion dt:hover {
-  background: #ff8080;
+  background: #94d4ca;
 }
 
 #fn-send-form .accordion dd {
@@ -1357,6 +1361,244 @@ header #fn-headercall a span {
   height: auto;
   margin-left: 0;
   padding: 1em;
+}
+
+#fn-send-form .accordion dd p {
+  font-family: "arial", sans-serif;
+  font-size: 14px;
+  margin: 0 0 5px;
+}
+
+#fn-send-form .accordion dd input {
+  padding: 5px;
+  width: 300px;
+}
+
+#fn-send-form .accordion dd select {
+  padding: 5px;
+  height: 34px;
+}
+
+#fn-send-form .accordion dd textarea {
+  padding: 5px;
+  width: 300px;
+  height: 150px;
+  resize: none;
+}
+
+#fn-send-form .accordion dd label {
+  font-weight: normal;
+}
+
+#fn-send-form .accordion input:active,
+#fn-send-form .accordion input:focus,
+#fn-send-form .accordion select:active,
+#fn-send-form .accordion select:focus,
+#fn-send-form .accordion textarea:active,
+#fn-send-form .accordion textarea:focus {
+  outline: none;
+  text-decoration: none;
+}
+
+#fn-send-form #fn-about-patient,
+#fn-send-form #fn-about-medicament,
+#fn-send-form #fn-other-preparation,
+#fn-send-form #fn-descr {
+  padding: 20px 30px;
+}
+
+#fn-send-form #fn-about-patient #datepicker,
+#fn-send-form #fn-about-medicament #datepicker,
+#fn-send-form #fn-other-preparation #datepicker,
+#fn-send-form #fn-descr #datepicker {
+  width: 150px;
+}
+
+#fn-send-form #fn-about-patient #age-in,
+#fn-send-form #fn-about-medicament #age-in,
+#fn-send-form #fn-other-preparation #age-in,
+#fn-send-form #fn-descr #age-in {
+  width: 100px;
+}
+
+#fn-send-form #fn-about-patient .sex input,
+#fn-send-form #fn-about-patient #pregnant input,
+#fn-send-form #fn-about-patient .liver-failure input,
+#fn-send-form #fn-about-patient .kidney-failure input,
+#fn-send-form #fn-about-patient .who-presc input,
+#fn-send-form #fn-about-patient .cont-prep input,
+#fn-send-form #fn-about-patient .cont-prep-others input,
+#fn-send-form #fn-about-patient .place-react input,
+#fn-send-form #fn-about-patient .cont-react input,
+#fn-send-form #fn-about-patient .repeat-react input,
+#fn-send-form #fn-about-patient .prev-prep input,
+#fn-send-form #fn-about-patient .prev-prep-react input,
+#fn-send-form #fn-about-patient .action-react input,
+#fn-send-form #fn-about-medicament .sex input,
+#fn-send-form #fn-about-medicament #pregnant input,
+#fn-send-form #fn-about-medicament .liver-failure input,
+#fn-send-form #fn-about-medicament .kidney-failure input,
+#fn-send-form #fn-about-medicament .who-presc input,
+#fn-send-form #fn-about-medicament .cont-prep input,
+#fn-send-form #fn-about-medicament .cont-prep-others input,
+#fn-send-form #fn-about-medicament .place-react input,
+#fn-send-form #fn-about-medicament .cont-react input,
+#fn-send-form #fn-about-medicament .repeat-react input,
+#fn-send-form #fn-about-medicament .prev-prep input,
+#fn-send-form #fn-about-medicament .prev-prep-react input,
+#fn-send-form #fn-about-medicament .action-react input,
+#fn-send-form #fn-other-preparation .sex input,
+#fn-send-form #fn-other-preparation #pregnant input,
+#fn-send-form #fn-other-preparation .liver-failure input,
+#fn-send-form #fn-other-preparation .kidney-failure input,
+#fn-send-form #fn-other-preparation .who-presc input,
+#fn-send-form #fn-other-preparation .cont-prep input,
+#fn-send-form #fn-other-preparation .cont-prep-others input,
+#fn-send-form #fn-other-preparation .place-react input,
+#fn-send-form #fn-other-preparation .cont-react input,
+#fn-send-form #fn-other-preparation .repeat-react input,
+#fn-send-form #fn-other-preparation .prev-prep input,
+#fn-send-form #fn-other-preparation .prev-prep-react input,
+#fn-send-form #fn-other-preparation .action-react input,
+#fn-send-form #fn-descr .sex input,
+#fn-send-form #fn-descr #pregnant input,
+#fn-send-form #fn-descr .liver-failure input,
+#fn-send-form #fn-descr .kidney-failure input,
+#fn-send-form #fn-descr .who-presc input,
+#fn-send-form #fn-descr .cont-prep input,
+#fn-send-form #fn-descr .cont-prep-others input,
+#fn-send-form #fn-descr .place-react input,
+#fn-send-form #fn-descr .cont-react input,
+#fn-send-form #fn-descr .repeat-react input,
+#fn-send-form #fn-descr .prev-prep input,
+#fn-send-form #fn-descr .prev-prep-react input,
+#fn-send-form #fn-descr .action-react input {
+  width: 30px;
+}
+
+#fn-send-form #fn-about-patient .weight-patient input,
+#fn-send-form #fn-about-patient .height input,
+#fn-send-form #fn-about-patient #pregnant-date input,
+#fn-send-form #fn-about-patient #menstruation-date input,
+#fn-send-form #fn-about-patient .dose input,
+#fn-send-form #fn-about-patient .date-begin input,
+#fn-send-form #fn-about-patient .time-begin input,
+#fn-send-form #fn-about-patient .date-end input,
+#fn-send-form #fn-about-patient .time-end input,
+#fn-send-form #fn-about-patient .date-begin-others input,
+#fn-send-form #fn-about-patient .time-begin-others input,
+#fn-send-form #fn-about-patient .date-end-others input,
+#fn-send-form #fn-about-patient .time-end-others input,
+#fn-send-form #fn-about-patient .date-begin-react input,
+#fn-send-form #fn-about-patient .time-begin-react input,
+#fn-send-form #fn-about-patient .date-end-react input,
+#fn-send-form #fn-about-patient .time-end-react input,
+#fn-send-form #fn-about-medicament .weight-patient input,
+#fn-send-form #fn-about-medicament .height input,
+#fn-send-form #fn-about-medicament #pregnant-date input,
+#fn-send-form #fn-about-medicament #menstruation-date input,
+#fn-send-form #fn-about-medicament .dose input,
+#fn-send-form #fn-about-medicament .date-begin input,
+#fn-send-form #fn-about-medicament .time-begin input,
+#fn-send-form #fn-about-medicament .date-end input,
+#fn-send-form #fn-about-medicament .time-end input,
+#fn-send-form #fn-about-medicament .date-begin-others input,
+#fn-send-form #fn-about-medicament .time-begin-others input,
+#fn-send-form #fn-about-medicament .date-end-others input,
+#fn-send-form #fn-about-medicament .time-end-others input,
+#fn-send-form #fn-about-medicament .date-begin-react input,
+#fn-send-form #fn-about-medicament .time-begin-react input,
+#fn-send-form #fn-about-medicament .date-end-react input,
+#fn-send-form #fn-about-medicament .time-end-react input,
+#fn-send-form #fn-other-preparation .weight-patient input,
+#fn-send-form #fn-other-preparation .height input,
+#fn-send-form #fn-other-preparation #pregnant-date input,
+#fn-send-form #fn-other-preparation #menstruation-date input,
+#fn-send-form #fn-other-preparation .dose input,
+#fn-send-form #fn-other-preparation .date-begin input,
+#fn-send-form #fn-other-preparation .time-begin input,
+#fn-send-form #fn-other-preparation .date-end input,
+#fn-send-form #fn-other-preparation .time-end input,
+#fn-send-form #fn-other-preparation .date-begin-others input,
+#fn-send-form #fn-other-preparation .time-begin-others input,
+#fn-send-form #fn-other-preparation .date-end-others input,
+#fn-send-form #fn-other-preparation .time-end-others input,
+#fn-send-form #fn-other-preparation .date-begin-react input,
+#fn-send-form #fn-other-preparation .time-begin-react input,
+#fn-send-form #fn-other-preparation .date-end-react input,
+#fn-send-form #fn-other-preparation .time-end-react input,
+#fn-send-form #fn-descr .weight-patient input,
+#fn-send-form #fn-descr .height input,
+#fn-send-form #fn-descr #pregnant-date input,
+#fn-send-form #fn-descr #menstruation-date input,
+#fn-send-form #fn-descr .dose input,
+#fn-send-form #fn-descr .date-begin input,
+#fn-send-form #fn-descr .time-begin input,
+#fn-send-form #fn-descr .date-end input,
+#fn-send-form #fn-descr .time-end input,
+#fn-send-form #fn-descr .date-begin-others input,
+#fn-send-form #fn-descr .time-begin-others input,
+#fn-send-form #fn-descr .date-end-others input,
+#fn-send-form #fn-descr .time-end-others input,
+#fn-send-form #fn-descr .date-begin-react input,
+#fn-send-form #fn-descr .time-begin-react input,
+#fn-send-form #fn-descr .date-end-react input,
+#fn-send-form #fn-descr .time-end-react input {
+  width: 100px;
+}
+
+#fn-send-form #fn-about-patient #pregnant,
+#fn-send-form #fn-about-patient #pregnant-date,
+#fn-send-form #fn-about-patient #menstruation-date,
+#fn-send-form #fn-about-medicament #pregnant,
+#fn-send-form #fn-about-medicament #pregnant-date,
+#fn-send-form #fn-about-medicament #menstruation-date,
+#fn-send-form #fn-other-preparation #pregnant,
+#fn-send-form #fn-other-preparation #pregnant-date,
+#fn-send-form #fn-other-preparation #menstruation-date,
+#fn-send-form #fn-descr #pregnant,
+#fn-send-form #fn-descr #pregnant-date,
+#fn-send-form #fn-descr #menstruation-date {
+  display: none;
+}
+
+#fn-send-form #fn-about-patient #a-r-1,
+#fn-send-form #fn-about-patient #a-r-2,
+#fn-send-form #fn-about-patient #a-r-3,
+#fn-send-form #fn-about-patient #a-r-4,
+#fn-send-form #fn-about-medicament #a-r-1,
+#fn-send-form #fn-about-medicament #a-r-2,
+#fn-send-form #fn-about-medicament #a-r-3,
+#fn-send-form #fn-about-medicament #a-r-4,
+#fn-send-form #fn-other-preparation #a-r-1,
+#fn-send-form #fn-other-preparation #a-r-2,
+#fn-send-form #fn-other-preparation #a-r-3,
+#fn-send-form #fn-other-preparation #a-r-4,
+#fn-send-form #fn-descr #a-r-1,
+#fn-send-form #fn-descr #a-r-2,
+#fn-send-form #fn-descr #a-r-3,
+#fn-send-form #fn-descr #a-r-4 {
+  display: none;
+  margin-left: 30px;
+}
+
+#fn-send-form #fn-about-patient #a-r-1 input,
+#fn-send-form #fn-about-patient #a-r-2 input,
+#fn-send-form #fn-about-patient #a-r-3 input,
+#fn-send-form #fn-about-patient #a-r-4 input,
+#fn-send-form #fn-about-medicament #a-r-1 input,
+#fn-send-form #fn-about-medicament #a-r-2 input,
+#fn-send-form #fn-about-medicament #a-r-3 input,
+#fn-send-form #fn-about-medicament #a-r-4 input,
+#fn-send-form #fn-other-preparation #a-r-1 input,
+#fn-send-form #fn-other-preparation #a-r-2 input,
+#fn-send-form #fn-other-preparation #a-r-3 input,
+#fn-send-form #fn-other-preparation #a-r-4 input,
+#fn-send-form #fn-descr #a-r-1 input,
+#fn-send-form #fn-descr #a-r-2 input,
+#fn-send-form #fn-descr #a-r-3 input,
+#fn-send-form #fn-descr #a-r-4 input {
+  width: 300px;
 }
 
 .hidden {

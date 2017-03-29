@@ -985,6 +985,8 @@ header
 	.accordion
 		position: relative
 		background-color: #fff
+		div
+			margin: 20px 0
 		dl
 			box-shadow: 0 0 20px rgba(0, 0, 0, 0.2)
 		dt
@@ -994,16 +996,94 @@ header
 			color: #fff
 			transition-duration: 1s
 			transition-property: background
-			background: #e04836
+			background: #337160
 		dt:hover
-			background: #ff8080
+			background: #94d4ca
 		dd
 			display: none
 			height: auto
 			margin-left: 0
-			padding: 1em		
-	
-
+			padding: 1em
+			p
+				font-family: "arial", sans-serif
+				font-size: 14px
+				margin: 0 0 5px
+			input
+				padding: 5px
+				width: 300px
+			select
+				padding: 5px
+				height: 34px
+			textarea
+				padding: 5px
+				width: 300px
+				height: 150px
+				resize: none
+			label
+				font-weight: normal
+		input:active,
+		input:focus,
+		select:active,
+		select:focus,
+		textarea:active,
+		textarea:focus
+			outline: none
+			text-decoration: none
+	#fn-about-patient,
+	#fn-about-medicament,
+	#fn-other-preparation,
+	#fn-descr
+		padding: 20px 30px
+		#datepicker
+			width: 150px
+		#age-in		
+			width: 100px
+		.sex,
+		#pregnant,
+		.liver-failure,
+		.kidney-failure,
+		.who-presc,
+		.cont-prep,
+		.cont-prep-others,
+		.place-react,
+		.cont-react,
+		.repeat-react,
+		.prev-prep,
+		.prev-prep-react,
+		.action-react
+			input
+				width: 30px
+		.weight-patient,
+		.height,
+		#pregnant-date,
+		#menstruation-date,
+		.dose,
+		.date-begin,
+		.time-begin,
+		.date-end,
+		.time-end,
+		.date-begin-others,
+		.time-begin-others,
+		.date-end-others,
+		.time-end-others,
+		.date-begin-react,
+		.time-begin-react,
+		.date-end-react,
+		.time-end-react		
+			input
+				width: 100px
+		#pregnant,
+		#pregnant-date,
+		#menstruation-date
+			display: none
+		#a-r-1,
+		#a-r-2,
+		#a-r-3,
+		#a-r-4
+			display: none
+			margin-left: 30px
+			input
+				width: 300px
 
 .hidden
 	display: none
