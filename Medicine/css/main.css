@@ -1356,16 +1356,25 @@ header #fn-headercall a span {
 
 #fn-send-form .accordion dt {
   cursor: pointer;
-  text-align: center;
+  text-align: left;
   padding: 0.5em;
-  color: #fff;
+  padding-left: 20px;
+  color: #31443f;
   transition-duration: 1s;
   transition-property: background;
-  background: #337160;
+  background: #94d4ca;
+  border-bottom: 1px solid #fff;
+  font-size: 16px;
 }
 
 #fn-send-form .accordion dt:hover {
-  background: #94d4ca;
+  background: #337160;
+  color: #fff;
+}
+
+#fn-send-form .accordion .dt-active {
+  background: #337160;
+  color: #fff;
 }
 
 #fn-send-form .accordion dd {

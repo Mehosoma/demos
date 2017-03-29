@@ -91,7 +91,7 @@ $.noConflict();
 //AccordeonScript
 		jQuery(function($){
 		$('.accordion dt').on('click', function () {
-		        var current_dt = $(this);
+		        var current_dt = $(this);		        	        
 		        
 		        //dd of just clicked dt not active - direct sibling
 		        if (!$(this).next('dd').hasClass('active')){
@@ -100,25 +100,30 @@ $.noConflict();
 		            //checking if any other sibling dd's active
 		            if (current_dt.siblings('dd.active').length) {
 		                //find dd with a class of active before sliding up
-		                current_dt
+		                current_dt		                	
 		                  .siblings('dd.active')
-		                  .slideUp(function() {
+		                  .slideUp(function() {	
+		                  	current_dt.addClass('dt-active')	                  	
 		                  	current_dt
 		                      .next('dd')
 		                      .slideDown()
 		                      .addClass('active');
-		                	})
+		                	})		                 
 		                  .removeClass('active')
 		                  .find('dd.active')
 		                  	.hide()
-		                  	.removeClass('active');
+		                  	.removeClass('active')
+		                $('div dt').removeClass('dt-active')
+		                	
 
 		             } else {
-		                current_dt.next('dd').slideDown().addClass('active');       
+		                current_dt.next('dd').slideDown().addClass('active');
+		                $(this).addClass('dt-active');	              
 		             }
 		        } else {
 		            //dd of just clicked dt is active - close form
 		            current_dt.next('dd').slideUp().removeClass('active');
+		            $(this).removeClass('dt-active');
 		        }
 		    });
 		  });
@@ -224,7 +229,7 @@ jQuery(function($){
 });
 
 
-//Hide-show block in action section
+//Disabled button
 
 jQuery(function($){ 
     $("input[name='disclaim']").click(function() {

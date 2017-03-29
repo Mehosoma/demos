@@ -1000,14 +1000,21 @@ header
 			box-shadow: 0 0 20px rgba(0, 0, 0, 0.2)
 		dt
 			cursor: pointer
-			text-align: center
+			text-align: left
 			padding: 0.5em
-			color: #fff
+			padding-left: 20px
+			color: #31443f
 			transition-duration: 1s
 			transition-property: background
-			background: #337160
-		dt:hover
 			background: #94d4ca
+			border-bottom: 1px solid #fff
+			font-size: 16px
+		dt:hover
+			background: #337160
+			color: #fff
+		.dt-active
+			background: #337160
+			color: #fff
 		dd
 			display: none
 			height: auto
