@@ -1296,37 +1296,49 @@ header #fn-headercall a span {
   width: 50%;
   margin: 0 auto;
   position: relative;
+  padding: 20px 10px;
 }
 
-#hidden_form h3 {
-  margin-bottom: 50px;
+#hidden_form div {
+  margin: 20px 0;
 }
 
-#hidden_form .popup-left {
-  float: left;
-  width: 50%;
-  text-align: center;
+#hidden_form input {
+  display: inline-block;
 }
 
-#hidden_form .popup-left img {
-  width: 200px;
-  height: auto;
+#hidden_form p {
+  display: inline-block;
+  margin-left: 5px;
 }
 
-#hidden_form .popup-right {
-  float: right;
-  width: 50%;
-  text-align: center;
+#hidden_form a {
+  background-color: #c73468;
+  padding: 10px 10px;
+  font-family: 'arial', sans-serif;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 5px;
 }
 
-#hidden_form .popup-right img {
-  width: 200px;
-  height: auto;
+#hidden_form a:hover {
+  outline: none;
+  text-decoration: none;
+  background-color: #337160;
+}
+
+#hidden_form .disabled {
+  pointer-events: none;
+  background-color: #d6d6d6;
 }
 
 /*FormPage*/
 #fn-send-form {
   padding: 50px 0;
+}
+
+#fn-send-form #fn-main-form {
+  display: none;
 }
 
 #fn-send-form .accordion {
@@ -1793,6 +1805,16 @@ header #fn-headercall a span {
   width: 300px;
 }
 
+#fn-send-form #fn-about-patient #date-death input,
+#fn-send-form #fn-about-medicament #date-death input,
+#fn-send-form #fn-other-preparation #date-death input,
+#fn-send-form #fn-descr #date-death input,
+#fn-send-form #fn-serious-react #date-death input,
+#fn-send-form #other-imp-info #date-death input,
+#fn-send-form #info-message #date-death input {
+  width: 100px;
+}
+
 #fn-send-form #fn-about-patient #doc-load input,
 #fn-send-form #fn-about-medicament #doc-load input,
 #fn-send-form #fn-other-preparation #doc-load input,
@@ -1811,6 +1833,43 @@ header #fn-headercall a span {
 #fn-send-form #other-imp-info #agree-form,
 #fn-send-form #info-message #agree-form {
   width: 30px;
+}
+
+#fn-send-form #fn-about-patient #for-doctor,
+#fn-send-form #fn-about-medicament #for-doctor,
+#fn-send-form #fn-other-preparation #for-doctor,
+#fn-send-form #fn-descr #for-doctor,
+#fn-send-form #fn-serious-react #for-doctor,
+#fn-send-form #other-imp-info #for-doctor,
+#fn-send-form #info-message #for-doctor {
+  margin: 0;
+}
+
+#fn-send-form #post-form {
+  margin: 0 auto;
+  text-align: center;
+  display: none;
+  margin-top: 60px;
+}
+
+#fn-send-form #post-form a {
+  font-family: 'arial', sans-serif;
+  font-size: 20px;
+  color: #fff;
+  background-color: #c73468;
+  padding: 15px 30px;
+  border-radius: 20px;
+}
+
+#fn-send-form #post-form a:hover {
+  outline: none;
+  text-decoration: none;
+  background-color: #337160;
+}
+
+#fn-send-form #post-form .disabled {
+  pointer-events: none;
+  background-color: #d6d6d6;
 }
 
 .hidden {

@@ -142,372 +142,384 @@
 	<section id="fn-send-form">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-12">				
-				    <div class="accordion">
-            			<dl>
-              				<dt>Информация о пациенте</dt>
-              				<dd id="fn-about-patient">
-              					<div class="name">
-		                			<p>Имя пациента</p>
-								    <input type="text" name="fio">
-								</div>
-								<div class="number-history">
-								    <p>Номер истории болезни или аммбулаторной карты</p>
-								    <input type="text" name="number">
-								</div>
-								<div class="birthday">
-								    <p>Дата рождения</p>
-								    <input type="text" name="birthday" id="datepicker">
-								</div>
-								<div class="age-patient">
-								    <p>Возраст на момент начала реакции</p>
-								    <input type="text" name="age" id="age-in">
-								    <select name="age-opt">
-								    	<option>Год</option>
-								    	<option>Месяц</option>
-								    	<option>Неделя</option>
-								    	<option>День</option>
-								    	<option>Час</option>
-								    </select>
-							    </div>
-							    <div class="sex">
-							   		<p>Пол</p>
-								   	<p><label><input name="pol" type="radio" value="men" checked="" onChange="Selected(this)">Мужской</label></p>
-		    						<p><label><input name="pol" type="radio" value="women" onChange="Selected(this)">Женский</label></p>
-		    						<p><label><input name="pol" type="radio" value="sex-other" onChange="Selected(this)">Другое</label></p>
-	    						</div>
-	    						<div class="weight-patient">
-		    						<p>Масса тела в кг.</p>
-								    <input type="text" name="weight">
-								</div>
-								<div class="height">
-							    	<p>Рост в см.</p>
-								    <input type="text" name="height">
-								</div>
-								<div id="pregnant">
-									<p>Беременность</p>
-								    <p><input name="pregnant" type="radio" value="pr-yes">Да</p>
-								    <p><input name="pregnant" type="radio" value="pr-no" checked="">Нет</p>
-								</div>
-								<div id="pregnant-date">
-								    <p>Срок беременности на момент реакции</p>
-								    <input type="text" name="pregnant-date">
-								    <select name="preg-opt">
-								    	<option>Триместр</option>
-								    	<option>Месяц</option>
-								    	<option>Неделя</option>
-								    	<option>День</option>						    	
-								    </select>
-							   	</div>
-							   	<div id="menstruation-date">
-								    <p>Дата последнего менструального кровотечения</p>
-								    <input type="text" name="menstr-date" id="datemen">
-								</div>
-								<div class="liver-failure">
-								    <p>Нарушения функциии печени</p>
-								   	<p><input name="liver" type="radio" value="yes-liv" checked="">Да</p>
-		    						<p><input name="liver" type="radio" value="no-liv">Нет</p>
-		    						<p><input name="liver" type="radio" value="other-liv">Другое</p>
-		    					</div>
-		    					<div class="kidney-failure">
-		    						<p>Нарушения функциии почек</p>
-								   	<p><input name="kidney" type="radio" value="yes-kidn" checked="">Да</p>
-		    						<p><input name="kidney" type="radio" value="no-kidn">Нет</p>
-		    						<p><input name="kidney" type="radio" value="other-kidn">Другое</p>
-		    					</div>
-		    					<div class="allergy">
-		    						<p>Наличие аллергии</p>
-		    						<textarea name="allergy-info"></textarea>
-		    					</div>
-             				</dd>
-              				<dt>Информация о подозреваемом лекарственном средстве</dt>
-                			<dd id="fn-about-medicament">
-                				<div class="who-presc">
-	                				<p>Лекарство было назначено врачом?</p>
-							   		<p><input name="presc" type="radio" value="yes-presc" checked="">Да</p>
-	    							<p><input name="presc" type="radio" value="no-presc">Нет</p>
-	    						</div>
-	    						<div class="prep-name">
-	    							<p>Название лекарства</p>
-							    	<input type="text" name="name-prep">
-							    </div>
-							    <div class="trade-name">
-							    	<p>Торговое название</p>
-							    	<input type="text" name="name-trade">
-							    </div>
-							    <div class="active-subs">
-							    	<p>Действующее вещество/МНН</p>
-							    	<input type="text" name="subs-active">
-							    </div>
-							    <div class="dose">
-							    	<p>Дозировка</p>
-							    	<input type="text" name="dose-prep">
-							    	<select class="dose-opt">
-								    	<option>Таблетки</option>
-								    	<option>Капли</option>							    	
-							    	</select>
-							    </div>
-							    <div class="when-use">
-							    	<p>Кратность использования</p>
-							    	<input type="text" name="use-prep">
-							    </div>
-							    <div class="form-prep">
-							    	<p>Лекарственная форма</p>
-							    	<input type="text" name="prep-form">
-							    </div>
-							    <div class="maker-prep">
-							    	<p>Производитель</p>
-							    	<input type="text" name="prep-maker">
-							    </div>
-							    <div class="country">
-							    	<p>Страна производства</p>
-							    	<input type="text" name="count-prep">
-							    </div>
-							    <div class="serial">
-							    	<p>Серия</p>
-							    	<input type="text" name="ser-number">
-							    </div>
-							    <div class="simpt">
-							    	<p>Показание к использованию</p>
-							    	<input type="text" name="simpt-prep">
-							    </div>
-							    <div class="diag-prep">
-							    	<p>Диагноз, по поводу которого назначено лекарство</p>
-							    	<input type="text" name="prep-diag">
-							    </div>
-							    <div class="method-use">
-							    	<p>Способ применения</p>
-							    	<input type="text" name="use-meth">
-							    </div>
-							    <div class="date-begin">
-							    	<p>Дата начала использования препарата</p>
-							    	<input type="text" name="begin-date" id="datenachprep">
-							    </div>
-							    <div class="time-begin">
-							    	<p>Время начала использования препарата (если известно)</p>
-							    	<input type="text" name="begin-time">
-							    </div>
-							    <div class="date-end">
-							    	<p>Дата окончания использования препарата</p>
-							    	<input type="text" name="end-date" id="dateprepkon">
-							    </div>
-							    <div class="time-end">
-							    	<p>Время окончания использования препарата (если известно)</p>
-							    	<input type="text" name="end-time">
-							    </div>
-							    <div class="cont-prep">
-							    	<p>Продолжаю принимать лекарство</p>
-							   		<p><input name="prep_cont" type="radio" value="cont-yes" checked="">Да</p>
-	    							<p><input name="prep_cont" type="radio" value="cont-no">Нет</p>
-	    						</div>
-              				</dd>
-              				<dt>Другие лекарственные средства</dt>
-              				<dd id="fn-other-preparation">
-              					<div class="name-others-prep">
-	                				<p>Название лекарства</p>
-							    	<input type="text" name="name-others">
-							    </div>
-							    <div class="active-subs-others">
-							    	<p>Действующее вещество/МНН</p>
-							    	<input type="text" name="other-active-subs">
-							    </div>
-							    <div class="use-others-prep">
-							    	<p>Путь введения</p>
-							    	<input type="text" name="use-prep-others">
-							    </div>
-							    <div class="date-begin-others">
-							    	<p>Дата начала приема</p>
-							    	<input type="text" name="begin-date-others" id="datenach">
-							    </div>
-							    <div class="time-begin-others">
-							    	<p>Время начала приема (если известно)</p>
-							    	<input type="text" name="begin-time-others">
-							    </div>
-							    <div class="date-end-others">
-							    	<p>Дата окончания приема</p>
-							    	<input type="text" name="end-date-others" id="datekonec">
-							    </div>
-							    <div class="time-end-others">
-							    	<p>Время окончания приема (если известно)</p>
-							    	<input type="text" name="end-time-others">
-							    </div>
-							    <div class="cont-prep-others">
-							    	<p>Продолжаю принимать лекарство</p>
-							   		<p><input name="cont-prep-oth" type="radio" value="cont-oth-yes" checked="">Да</p>
-	    							<p><input name="cont-prep-oth" type="radio" value="cont-oth-no">Нет</p>
-	    						</div>
-    							<button>Добавить лекарственное средство</button>	 
-              				</dd>
-              				<dt>Описание побочной реакции</dt>
-              				<dd id="fn-descr">
-              					<div class="place-react">
-	              					<p>Место развития реакции</p>
-							   		<p><input name="place" type="radio" value="place-med">В медицинском учреждении</p>
-		    						<p><input name="place" type="radio" value="place-amb" checked="">Амбулаторно</p>
-		    					</div>
-		    					<div class="name-med">
-		    						<p>Если реакция развилась в медицинском учреждении, укажите его название</p>
-							    	<input type="text" name="med-name" disabled id="dis-name">
-							    </div>
-							    <div class="react-descr">
-							    	<p>Описание реакции</p>
-	    							<textarea name="descr-react"></textarea>
-	    						</div>
-	    						<div class="date-begin-react">
-	    							<p>Дата начала реакции</p>
-							    	<input type="text" name="begin-date-react" id="datenachreak">
-							    </div>
-							    <div class="time-begin-react">
-							    	<p>Время начала реакции (если известно)</p>
-							    	<input type="text" name="begin-time-react">
-							    </div>
-							    <div class="date-end-react">
-							    	<p>Дата окончания реакции</p>
-							    	<input type="text" name="end-date-react" id="datekonecreak">
-							    </div>
-							    <div class="time-end-react">
-							    	<p>Время окончания реакции (если известно)</p>
-							    	<input type="text" name="end-time-react">
-							    </div>
-							    <div class="cont-react">
-							    	<p>Реакция продолжается</p>
-							   		<p><input name="react-cont" type="radio" value="react-cont-yes" checked="">Да</p>
-		    						<p><input name="react-cont" type="radio" value="react-cont-no">Нет</p>
-		    					</div>
-		    					<div class="repeat-react">
-		    						<p>Повторилась ли реакция после повторного назначения подозреваемого лекарства?</p>
-							   		<p><input name="react_repeat" type="radio" value="repeat-react-yes" checked="">Да</p>
-		    						<p><input name="react_repeat" type="radio" value="repeat-react-no">Нет</p>
-		    						<p><input name="react_repeat" type="radio" value="repeat-react-nenaz">Повторно не назначалось</p>
-		    						<p><input name="react_repeat" type="radio" value="repeat-react-unknown">Неизвестно</p>
-		    					</div>
-		    					<div class="prev-prep">
-		    						<p>Это лекарство принималось ранее?</p>
-							   		<p><input name="prep-prev" type="radio" value="prep-prev-yes" checked="">Да</p>
-		    						<p><input name="prep-prev" type="radio" value="prep-prev-no">Нет</p>
-		    						<p><input name="prep-prev" type="radio" value="prep-prev-unknown">Неизвестно</p>
-		    					</div>
-		    					<div class="prev-prep-react">
-		    						<p>Если принималось, это лекарство уже вызывало побочные реакции?</p>
-							   		<p><input name="prev-prep-react" type="radio" value="prev-prep-react-no" checked="">Не вызывало</p>
-		    						<p><input name="prev-prep-react" type="radio" value="prev-prep-react-yes">Вызывало похожие</p>
-		    						<p><input name="prev-prep-react" type="radio" value="prev-prep-react-oth">Вызывало другие</p>
-		    						<p><input name="prev-prep-react" type="radio" value="prev-prep-react-unknown">Неизвестно</p>
-		    					</div>
-		    					<div class="action-react">
-		    						<p>Какие меры были предприняты?</p>
-							    	<p><input type="checkbox" name="action-react-1" value="a1">Никакие</p>
-							    	<p><input type="checkbox" name="action-react-2" value="a2">Отмена подозреваемого лекарства</p>
-							   		<p><input type="checkbox" name="action-react-3" value="a3">Снижение дозы подозреваемого препарата </p>
-							   		<div id="a-r-1">
-								   		<p>Укажите на сколько</p>
-								   		<input type="text" name="action-react-hid1">
+				<div class="col-lg-12">
+					<div class="choice">
+						<p>Выберите нужный пункт</p>
+						<p><input name="choice" type="radio" value="doctor">Вы - доктор</p>
+						<p><input name="choice" type="radio" value="patient">Вы - пациент</p>
+		    		</div>
+					<form action="" method="post" id="fn-main-form">
+					    <div class="accordion">
+	            			<dl>
+	              				<dt>Информация о пациенте</dt>
+	              				<dd id="fn-about-patient">
+	              					<div class="name">
+			                			<p>Имя пациента</p>
+									    <input type="text" name="fio">
+									</div>
+									<div id="number-history">
+									    <p>Номер истории болезни или аммбулаторной карты</p>
+									    <input type="text" name="number">
+									</div>
+									<div class="birthday">
+									    <p>Дата рождения</p>
+									    <input type="text" name="birthday" id="datepicker">
+									</div>
+									<div class="age-patient">
+									    <p>Возраст на момент начала реакции</p>
+									    <input type="text" name="age" id="age-in">
+									    <select name="age-opt">
+									    	<option>Год</option>
+									    	<option>Месяц</option>
+									    	<option>Неделя</option>
+									    	<option>День</option>
+									    	<option>Час</option>
+									    </select>
+								    </div>
+								    <div class="sex">
+								   		<p>Пол</p>
+									   	<p><label><input name="pol" type="radio" value="men" checked="" onChange="Selected(this)">Мужской</label></p>
+			    						<p><label><input name="pol" type="radio" value="women" onChange="Selected(this)">Женский</label></p>
+			    						<p><label><input name="pol" type="radio" value="sex-other" onChange="Selected(this)">Другое</label></p>
+		    						</div>
+		    						<div class="weight-patient">
+			    						<p>Масса тела в кг.</p>
+									    <input type="text" name="weight">
+									</div>
+									<div class="height">
+								    	<p>Рост в см.</p>
+									    <input type="text" name="height">
+									</div>
+									<div id="pregnant">
+										<p>Беременность</p>
+									    <p><input name="pregnant" type="radio" value="pr-yes">Да</p>
+									    <p><input name="pregnant" type="radio" value="pr-no" checked="">Нет</p>
+									</div>
+									<div id="pregnant-date">
+									    <p>Срок беременности на момент реакции</p>
+									    <input type="text" name="pregnant-date">
+									    <select name="preg-opt">
+									    	<option>Триместр</option>
+									    	<option>Месяц</option>
+									    	<option>Неделя</option>
+									    	<option>День</option>						    	
+									    </select>
 								   	</div>
-							   		<p><input type="checkbox" name="action-react-4" value="a4">Отмена других препаратов</p>
-							   		<div id="a-r-2">
-								   		<p>Укажите какие</p>
-								   		<input type="text" name="action-react-hid2">
-								   	</div>
-							   		<p><input type="checkbox" name="action-react-5" value="a5">Назначение лечения</p>
-							   		<div id="a-r-3">
-								   		<p>Укажите какие препараты или вмешательства использовались</p>
-								   		<input type="text" name="action-react-hid3">
-								   	</div>
-							   		<p><input type="checkbox" name="action-react-6" value="a6">Другое</p>
-							   		<div id="a-r-4">
-								   		<p>Укажите</p>
-								   		<input type="text" name="action-react-hid4">
-								   	</div>
-							   	</div>
-				            </dd>
-				            <dt>Серьезность реакции</dt>
-              				<dd id="fn-serious-react">
-              					<div class="react-ser">
-	              					<p>Серьезность реакции</p>
-							   		<p><input name="reac_ser" type="radio" value="reac-ser-death">Смерть</p>
-								   	<div id="date-death">
-								   		<p>Укажите дату смерти</p>
-							   			<input type="" name="" id="datedeath">
-							   		</div>
-		    						<p><input name="reac_ser" type="radio" value="reac-ser-threat" checked="">Угроза жизни</p>
-		    						<p><input name="reac_ser" type="radio" value="reac-ser-hosp">Госпитализация</p>
-		    						<p><input name="reac_ser" type="radio" value="reac-ser-hosp-cont">Продление госпитализации</p>
-		    						<p><input name="reac_ser" type="radio" value="reac-ser-disab">Инвалидность</p>
-		    						<p><input name="reac_ser" type="radio" value="reac-ser-incap">Нетрудоспособность</p>
-		    						<p><input name="reac_ser" type="radio" value="reac-ser-defect">Врожденные нарушения развития</p>
-		    						<p><input name="reac_ser" type="radio" value="reac-ser-oth-inf">Другая важная медицинская информация</p>
-		    						<div id="reac-ser-oth-info">
-			    						<p>Укажите какая</p>
-			    						<input type="" name="" id="datedeath">
+								   	<div id="menstruation-date">
+									    <p>Дата последнего менструального кровотечения</p>
+									    <input type="text" name="menstr-date" id="datemen">
+									</div>
+									<div class="liver-failure">
+									    <p>Нарушения функциии печени</p>
+									   	<p><input name="liver" type="radio" value="yes-liv" checked="">Да</p>
+			    						<p><input name="liver" type="radio" value="no-liv">Нет</p>
+			    						<p><input name="liver" type="radio" value="other-liv">Другое</p>
 			    					</div>
-		    					</div>
-              				</dd>
-              				<dt>Другая важная информация</dt>
-              				<dd id="other-imp-info">
-              					<div class="other-info-imp">
-	                				<p>Другая важная информация, имеющая отношение к реакции</p>
-		    						<input type="text" name="other-info">
-		    					</div>
-		    					<div class="other-info-comment">
-		    						<p>Комментарии</p>
-		    						<input type="text" name="other-info-comm">
-		    					</div>
-		    					<div class="other-info-doc">
-		    						<p>Доступны ли дополнительные документы по данному случаю</p>
-							   		<p><input name="info-doc" type="radio" value="info-doc-yes">Да</p>
-							   		<p><input name="info-doc" type="radio" value="info-doc-no"  checked="">Нет</p>
-							   		<div id="doc-load">
-								   		<p>Дополнительные файлы</p>
-								   		<input type="text" name="load-doc">
-								   		<button>Загрузить</button>
+			    					<div class="kidney-failure">
+			    						<p>Нарушения функциии почек</p>
+									   	<p><input name="kidney" type="radio" value="yes-kidn" checked="">Да</p>
+			    						<p><input name="kidney" type="radio" value="no-kidn">Нет</p>
+			    						<p><input name="kidney" type="radio" value="other-kidn">Другое</p>
+			    					</div>
+			    					<div class="allergy">
+			    						<p>Наличие аллергии</p>
+			    						<textarea name="allergy-info"></textarea>
+			    					</div>
+	             				</dd>
+	              				<dt>Информация о подозреваемом лекарственном средстве</dt>
+	                			<dd id="fn-about-medicament">
+	                				<div class="who-presc">
+		                				<p>Лекарство было назначено врачом?</p>
+								   		<p><input name="presc" type="radio" value="yes-presc" checked="">Да</p>
+		    							<p><input name="presc" type="radio" value="no-presc">Нет</p>
+		    						</div>
+		    						<div class="prep-name">
+		    							<p>Название лекарства</p>
+								    	<input type="text" name="name-prep">
+								    </div>
+								    <div id="trade-name">
+								    	<p>Торговое название</p>
+								    	<input type="text" name="name-trade">
+								    </div>
+								    <div id="active-subs">
+								    	<p>Действующее вещество/МНН</p>
+								    	<input type="text" name="subs-active">
+								    </div>
+								    <div class="dose">
+								    	<p>Дозировка</p>
+								    	<input type="text" name="dose-prep">
+								    	<select class="dose-opt">
+									    	<option>Таблетки</option>
+									    	<option>Капли</option>							    	
+								    	</select>
+								    </div>
+								    <div class="when-use">
+								    	<p>Кратность использования</p>
+								    	<input type="text" name="use-prep">
+								    </div>
+								    <div class="form-prep">
+								    	<p>Лекарственная форма</p>
+								    	<input type="text" name="prep-form">
+								    </div>
+								    <div class="maker-prep">
+								    	<p>Производитель</p>
+								    	<input type="text" name="prep-maker">
+								    </div>
+								    <div class="country">
+								    	<p>Страна производства</p>
+								    	<input type="text" name="count-prep">
+								    </div>
+								    <div class="serial">
+								    	<p>Серия</p>
+								    	<input type="text" name="ser-number">
+								    </div>
+								    <div class="simpt">
+								    	<p>Показание к использованию</p>
+								    	<input type="text" name="simpt-prep">
+								    </div>
+								    <div id="diag-prep">
+								    	<p>Диагноз, по поводу которого назначено лекарство</p>
+								    	<input type="text" name="prep-diag">
+								    </div>
+								    <div class="method-use">
+								    	<p>Способ применения</p>
+								    	<input type="text" name="use-meth">
+								    </div>
+								    <div class="date-begin">
+								    	<p>Дата начала использования препарата</p>
+								    	<input type="text" name="begin-date" id="datenachprep">
+								    </div>
+								    <div class="time-begin">
+								    	<p>Время начала использования препарата (если известно)</p>
+								    	<input type="text" name="begin-time">
+								    </div>
+								    <div class="date-end">
+								    	<p>Дата окончания использования препарата</p>
+								    	<input type="text" name="end-date" id="dateprepkon">
+								    </div>
+								    <div class="time-end">
+								    	<p>Время окончания использования препарата (если известно)</p>
+								    	<input type="text" name="end-time">
+								    </div>
+								    <div class="cont-prep">
+								    	<p>Продолжаю принимать лекарство</p>
+								   		<p><input name="prep_cont" type="radio" value="cont-yes" checked="">Да</p>
+		    							<p><input name="prep_cont" type="radio" value="cont-no">Нет</p>
+		    						</div>
+	              				</dd>
+	              				<dt>Другие лекарственные средства</dt>
+	              				<dd id="fn-other-preparation">
+	              					<div class="name-others-prep">
+		                				<p>Название лекарства</p>
+								    	<input type="text" name="name-others">
+								    </div>
+								    <div id="active-subs-others">
+								    	<p>Действующее вещество/МНН</p>
+								    	<input type="text" name="other-active-subs">
+								    </div>
+								    <div class="use-others-prep">
+								    	<p>Путь введения</p>
+								    	<input type="text" name="use-prep-others">
+								    </div>
+								    <div class="date-begin-others">
+								    	<p>Дата начала приема</p>
+								    	<input type="text" name="begin-date-others" id="datenach">
+								    </div>
+								    <div class="time-begin-others">
+								    	<p>Время начала приема (если известно)</p>
+								    	<input type="text" name="begin-time-others">
+								    </div>
+								    <div class="date-end-others">
+								    	<p>Дата окончания приема</p>
+								    	<input type="text" name="end-date-others" id="datekonec">
+								    </div>
+								    <div class="time-end-others">
+								    	<p>Время окончания приема (если известно)</p>
+								    	<input type="text" name="end-time-others">
+								    </div>
+								    <div class="cont-prep-others">
+								    	<p>Продолжаю принимать лекарство</p>
+								   		<p><input name="cont-prep-oth" type="radio" value="cont-oth-yes" checked="">Да</p>
+		    							<p><input name="cont-prep-oth" type="radio" value="cont-oth-no">Нет</p>
+		    						</div>
+	    							<button>Добавить лекарственное средство</button>	 
+	              				</dd>
+	              				<dt>Описание побочной реакции</dt>
+	              				<dd id="fn-descr">
+	              					<div class="place-react">
+		              					<p>Место развития реакции</p>
+								   		<p><input name="place" type="radio" value="place-med">В медицинском учреждении</p>
+			    						<p><input name="place" type="radio" value="place-amb" checked="">Амбулаторно</p>
+			    					</div>
+			    					<div class="name-med">
+			    						<p>Если реакция развилась в медицинском учреждении, укажите его название</p>
+								    	<input type="text" name="med-name" disabled id="dis-name">
+								    </div>
+								    <div class="react-descr">
+								    	<p>Описание реакции</p>
+		    							<textarea name="descr-react"></textarea>
+		    						</div>
+		    						<div class="date-begin-react">
+		    							<p>Дата начала реакции</p>
+								    	<input type="text" name="begin-date-react" id="datenachreak">
+								    </div>
+								    <div class="time-begin-react">
+								    	<p>Время начала реакции (если известно)</p>
+								    	<input type="text" name="begin-time-react">
+								    </div>
+								    <div class="date-end-react">
+								    	<p>Дата окончания реакции</p>
+								    	<input type="text" name="end-date-react" id="datekonecreak">
+								    </div>
+								    <div class="time-end-react">
+								    	<p>Время окончания реакции (если известно)</p>
+								    	<input type="text" name="end-time-react">
+								    </div>
+								    <div class="cont-react">
+								    	<p>Реакция продолжается</p>
+								   		<p><input name="react-cont" type="radio" value="react-cont-yes" checked="">Да</p>
+			    						<p><input name="react-cont" type="radio" value="react-cont-no">Нет</p>
+			    					</div>
+			    					<div class="repeat-react">
+			    						<p>Повторилась ли реакция после повторного назначения подозреваемого лекарства?</p>
+								   		<p><input name="react_repeat" type="radio" value="repeat-react-yes" checked="">Да</p>
+			    						<p><input name="react_repeat" type="radio" value="repeat-react-no">Нет</p>
+			    						<p><input name="react_repeat" type="radio" value="repeat-react-nenaz">Повторно не назначалось</p>
+			    						<p><input name="react_repeat" type="radio" value="repeat-react-unknown">Неизвестно</p>
+			    					</div>
+			    					<div class="prev-prep">
+			    						<p>Это лекарство принималось ранее?</p>
+								   		<p><input name="prep-prev" type="radio" value="prep-prev-yes" checked="">Да</p>
+			    						<p><input name="prep-prev" type="radio" value="prep-prev-no">Нет</p>
+			    						<p><input name="prep-prev" type="radio" value="prep-prev-unknown">Неизвестно</p>
+			    					</div>
+			    					<div class="prev-prep-react">
+			    						<p>Если принималось, это лекарство уже вызывало побочные реакции?</p>
+								   		<p><input name="prev-prep-react" type="radio" value="prev-prep-react-no" checked="">Не вызывало</p>
+			    						<p><input name="prev-prep-react" type="radio" value="prev-prep-react-yes">Вызывало похожие</p>
+			    						<p><input name="prev-prep-react" type="radio" value="prev-prep-react-oth">Вызывало другие</p>
+			    						<p><input name="prev-prep-react" type="radio" value="prev-prep-react-unknown">Неизвестно</p>
+			    					</div>
+			    					<div class="action-react">
+			    						<p>Какие меры были предприняты?</p>
+								    	<p><input type="checkbox" name="action-react-1" value="a1">Никакие</p>
+								    	<p><input type="checkbox" name="action-react-2" value="a2">Отмена подозреваемого лекарства</p>
+								   		<p><input type="checkbox" name="action-react-3" value="a3">Снижение дозы подозреваемого препарата </p>
+								   		<div id="a-r-1">
+									   		<p>Укажите на сколько</p>
+									   		<input type="text" name="action-react-hid1">
+									   	</div>
+								   		<p><input type="checkbox" name="action-react-4" value="a4">Отмена других препаратов</p>
+								   		<div id="a-r-2">
+									   		<p>Укажите какие</p>
+									   		<input type="text" name="action-react-hid2">
+									   	</div>
+								   		<p><input type="checkbox" name="action-react-5" value="a5">Назначение лечения</p>
+								   		<div id="a-r-3">
+									   		<p>Укажите какие препараты или вмешательства использовались</p>
+									   		<input type="text" name="action-react-hid3">
+									   	</div>
+								   		<p><input type="checkbox" name="action-react-6" value="a6">Другое</p>
+								   		<div id="a-r-4">
+									   		<p>Укажите</p>
+									   		<input type="text" name="action-react-hid4">
+									   	</div>
 								   	</div>
-							   	</div>
-              				</dd>
-				            <dt>Информация о сообщившем</dt>
-				            <dd id="info-message">
-				            	<div class="surname-info">
-					            	<p>Фамилия сообщившего</p>
-		    						<input type="text" name="surn-info">	
-		    					</div>
-		    					<div class="name-info">
-		    						<p>Имя сообщившего</p>
-		    						<input type="text" name="nam-info">	
-		    					</div>
-		    					<div class="patronymic-info">
-		    						<p>Отчество сообщившего</p>
-		    						<input type="text" name="pat-info">
-		    					</div>
-		    					<div class="message-get">
-		    						<p>Сообщение подано</p>
-							   		<p><input name="mess-get" type="radio" value="mess-get-doc" checked="">Врачом</p>
-							   		<p><input name="mess-get" type="radio" value="mess-get-comp">Представителем компании</p>
-							   		<p><input name="mess-get" type="radio" value="mess-get-prov">Провизором</p>
-							   		<p><input name="mess-get" type="radio" value="mess-get-feld">Фельдшером</p>
-							   		<p><input name="mess-get" type="radio" value="mess-get-farm">Фармацевтом</p>
-							   		<p><input name="mess-get" type="radio" value="mess-get-nurse">Медсестрой/Медбратом</p>
-							   		<p><input name="mess-get" type="radio" value="mess-get-ak">Акушеркой</p>
-							   		<p><input name="mess-get" type="radio" value="mess-get-oth">Другое</p>
-							   	</div>
-							   	<div class="place-work">
-							   		<p>Место работы</p>
-		    						<input type="text" name="work-place">
-		    					</div>
-		    					<div class="adress">
-		    						<p>Контактные данные (адрес)</p>
-		    						<input type="text" name="adr">
-		    					</div>
-		    					<div class="phone">
-		    						<p>Контактный телефон</p>
-		    						<input type="text" name="tel">
-		    					</div>
-		    					<div class="e-mail">
-		    						<p>Контактный e-mail</p>
-		    						<input type="text" name="mail">
-		    					</div>
-	    						<p><input type="checkbox" name="agree" value="ag" id="agree-form">Я даю свое согласие на то, чтобы в случае необходимости уточнения представленной информации, представитель Центра связался со мной</p>
-				            </dd>
-            			</dl>
-					</div>	
+					            </dd>
+					            <dt>Серьезность реакции</dt>
+	              				<dd id="fn-serious-react">
+	              					<div class="react-ser">
+		              					<p>Серьезность реакции</p>
+								   		<p><input name="reac_ser" type="radio" value="reac-ser-death">Смерть</p>
+									   	<div id="date-death">
+									   		<p>Укажите дату смерти</p>
+								   			<input type="" name="" id="datedeath">
+								   		</div>
+			    						<p><input name="reac_ser" type="radio" value="reac-ser-threat" checked="">Угроза жизни</p>
+			    						<p><input name="reac_ser" type="radio" value="reac-ser-hosp">Госпитализация</p>
+			    						<p><input name="reac_ser" type="radio" value="reac-ser-hosp-cont">Продление госпитализации</p>
+			    						<p><input name="reac_ser" type="radio" value="reac-ser-disab">Инвалидность</p>
+			    						<p><input name="reac_ser" type="radio" value="reac-ser-incap">Нетрудоспособность</p>
+			    						<p><input name="reac_ser" type="radio" value="reac-ser-defect">Врожденные нарушения развития</p>
+			    						<div id="for-doctor">
+				    						<p><input name="reac_ser" type="radio" value="reac-ser-oth-inf">Другая важная медицинская информация</p>
+				    						<div id="reac-ser-oth-info">
+					    						<p>Укажите какая</p>
+					    						<input type="" name="" id="datedeath">
+					    					</div>
+				    					</div>
+			    					</div>
+	              				</dd>
+	              				<dt>Другая важная информация</dt>
+	              				<dd id="other-imp-info">
+	              					<div class="other-info-imp">
+		                				<p>Другая важная информация, имеющая отношение к реакции</p>
+			    						<input type="text" name="other-info">
+			    					</div>
+			    					<div class="other-info-comment">
+			    						<p>Комментарии</p>
+			    						<textarea name="other-info-comm"></textarea>
+			    					</div>
+			    					<div class="other-info-doc" id="for-doctor2">
+			    						<p>Доступны ли дополнительные документы по данному случаю</p>
+								   		<p><input name="info-doc" type="radio" value="info-doc-yes">Да</p>
+								   		<p><input name="info-doc" type="radio" value="info-doc-no"  checked="">Нет</p>
+								   		<div id="doc-load">
+									   		<p>Дополнительные файлы</p>
+									   		<input type="text" name="load-doc">
+									   		<button>Загрузить</button>
+									   	</div>
+								   	</div>
+	              				</dd>
+					            <dt>Информация о сообщившем</dt>
+					            <dd id="info-message">
+					            	<div class="surname-info">
+						            	<p>Фамилия сообщившего</p>
+			    						<input type="text" name="surn-info">	
+			    					</div>
+			    					<div class="name-info">
+			    						<p>Имя сообщившего</p>
+			    						<input type="text" name="nam-info">	
+			    					</div>
+			    					<div class="patronymic-info">
+			    						<p>Отчество сообщившего</p>
+			    						<input type="text" name="pat-info">
+			    					</div>
+			    					<div class="message-get" id="for-doctor3">
+			    						<p>Сообщение подано</p>
+								   		<p><input name="mess-get" type="radio" value="mess-get-doc" checked="">Врачом</p>
+								   		<p><input name="mess-get" type="radio" value="mess-get-comp">Представителем компании</p>
+								   		<p><input name="mess-get" type="radio" value="mess-get-prov">Провизором</p>
+								   		<p><input name="mess-get" type="radio" value="mess-get-feld">Фельдшером</p>
+								   		<p><input name="mess-get" type="radio" value="mess-get-farm">Фармацевтом</p>
+								   		<p><input name="mess-get" type="radio" value="mess-get-nurse">Медсестрой/Медбратом</p>
+								   		<p><input name="mess-get" type="radio" value="mess-get-ak">Акушеркой</p>
+								   		<p><input name="mess-get" type="radio" value="mess-get-oth">Другое</p>
+								   	</div>
+								   	<div class="place-work" id="for-doctor4">
+								   		<p>Место работы</p>
+			    						<input type="text" name="work-place">
+			    					</div>
+			    					<div class="adress" id="for-doctor5">
+			    						<p>Контактные данные (адрес)</p>
+			    						<input type="text" name="adr">
+			    					</div>
+			    					<div class="phone">
+			    						<p>Контактный телефон</p>
+			    						<input type="text" name="tel">
+			    					</div>
+			    					<div class="e-mail">
+			    						<p>Контактный e-mail</p>
+			    						<input type="text" name="mail">
+			    					</div>
+		    						<p><input type="checkbox" name="agree" value="ag" id="agree-form">Я даю свое согласие на то, чтобы в случае необходимости уточнения представленной информации, представитель Центра связался со мной</p>
+					            </dd>
+	            			</dl>
+						</div>	
+					</form>
+					<div id="post-form">
+						<a href="#" id="block-form" class="disabled" onclick="document.getElementById('fn-main-form').submit(); return false;">Отправить форму</a>
+					</div>
 				</div>
 			</div>
 		</div>

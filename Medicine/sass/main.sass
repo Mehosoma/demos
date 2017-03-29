@@ -962,26 +962,35 @@ header
 	width: 50%
 	margin: 0 auto
 	position: relative
-	h3
-		margin-bottom: 50px
-	.popup-left
-		float: left
-		width: 50%
-		text-align: center
-		img
-			width: 200px
-			height: auto
-	.popup-right
-		float: right
-		width: 50%
-		text-align: center
-		img
-			width: 200px
-			height: auto
+	padding: 20px 10px
+	div
+		margin: 20px 0
+	input
+		display: inline-block
+	p 
+		display: inline-block
+		margin-left: 5px		
+	a
+		background-color: #c73468
+		padding: 10px 10px
+		font-family: 'arial', sans-serif
+		color: #fff
+		font-size: 16px
+		border-radius: 5px
+	a:hover
+		outline: none
+		text-decoration: none
+		background-color: #337160
+	.disabled
+		pointer-events: none
+		background-color: #d6d6d6
+
 
 /*FormPage*/
 #fn-send-form
-	padding: 50px 0	
+	padding: 50px 0
+	#fn-main-form
+		display: none
 	.accordion
 		position: relative
 		background-color: #fff
@@ -1092,11 +1101,35 @@ header
 			margin-left: 30px
 			input
 				width: 300px
+		#date-death
+			input
+				width: 100px
 		#doc-load
 			input
 				height: 26px
 		#agree-form
 			width: 30px
+		#for-doctor
+			margin: 0
+	#post-form
+		margin: 0 auto
+		text-align: center
+		display: none
+		margin-top: 60px
+		a
+			font-family: 'arial', sans-serif
+			font-size: 20px
+			color: #fff
+			background-color: #c73468
+			padding: 15px 30px
+			border-radius: 20px
+		a:hover
+			outline: none
+			text-decoration: none
+			background-color: #337160
+		.disabled
+			pointer-events: none
+			background-color: #d6d6d6
 
 .hidden
 	display: none

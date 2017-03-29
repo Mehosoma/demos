@@ -222,3 +222,63 @@ jQuery(function($){
    		}         
     }); 
 });
+
+
+//Hide-show block in action section
+
+jQuery(function($){ 
+    $("input[name='disclaim']").click(function() {
+        if (this.checked) {
+       		$('#block').removeClass('disabled');
+   		} else {
+       		$('#block').addClass('disabled');
+   		}         
+    }); 
+});
+
+jQuery(function($){ 
+    $("input[name='agree']").click(function() {
+        if (this.checked) {
+       		$('#block-form').removeClass('disabled');
+   		} else {
+       		$('#block-form').addClass('disabled');
+   		}         
+    }); 
+});
+
+
+//Doctor-Patien choice
+
+jQuery(function($){ 
+    $("input[name='choice']").click(function() {
+        var test = $(this).val();
+        if (test=="patient") {
+       		document.getElementById("fn-main-form").style.display='block';
+       		document.getElementById("post-form").style.display='block';
+       		document.getElementById("number-history").style.display='none';
+       		document.getElementById("trade-name").style.display='none';
+       		document.getElementById("active-subs").style.display='none';
+       		document.getElementById("diag-prep").style.display='none';
+       		document.getElementById("active-subs-others").style.display='none';
+       		document.getElementById("for-doctor").style.display='none';
+       		document.getElementById("for-doctor2").style.display='none';
+       		document.getElementById("for-doctor3").style.display='none';
+       		document.getElementById("for-doctor4").style.display='none';
+       		document.getElementById("for-doctor5").style.display='none';
+
+   		} else {
+       		document.getElementById("fn-main-form").style.display='block';
+       		document.getElementById("post-form").style.display='block';
+       		document.getElementById("number-history").style.display='block';
+       		document.getElementById("trade-name").style.display='block';
+       		document.getElementById("active-subs").style.display='block';
+       		document.getElementById("diag-prep").style.display='block';
+       		document.getElementById("active-subs-others").style.display='block';
+       		document.getElementById("for-doctor").style.display='block';
+       		document.getElementById("for-doctor2").style.display='block';
+       		document.getElementById("for-doctor3").style.display='block';
+       		document.getElementById("for-doctor4").style.display='block';
+       		document.getElementById("for-doctor5").style.display='block';
+   		}         
+    }); 
+});

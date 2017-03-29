@@ -19,6 +19,7 @@
 	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.css">
 	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-theme.css">
 	<link rel="stylesheet" type="text/css" href="libs/dist/magnific-popup.css"/>
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/media.css">
@@ -370,21 +371,10 @@
 
 	<div class="hidden">
 		<form id="hidden_form" action="form.html">
-			<h3>Выберите необходимое поле и нажмите кнопку продолжить</h3>
-			<div class="popup-choice clearfix">
-				<div class="popup-left">
-					<img src="img/doctor.png">
-					<p><input name="choice" type="radio" value="vrach">Я - врач</p>
-				</div>
-				<div class="popup-right">
-					<img src="img/pacient.png">
-					<p><input name="choice" type="radio" value="pacient">Я - пациент</p>
-				</div>
+			<div>
+				<input type="checkbox" name="disclaim"><p>Нажимая кнопку продолжить, вы даете согласие на обработку своих персональных данных</p>
 			</div>
-			<p><input type="checkbox" name="disclaim" onclick="agreeForm(this.form)">Даю согласие на обработку персональных данных</p>
-			<div class="button_form">
-			    <button type="submit" class="popup-submit" name="submit" disabled>Отправить</button>    	
-			</div>		
+			<a href="form.html" id="block" class="disabled">Продолжить</a>			
 		</form>
 	</div>
 
@@ -394,6 +384,7 @@
 	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
 	<script src="libs/bootstrap/js/bootstrap.js"></script>
 	<script src="libs/dist/jquery.magnific-popup.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<script src="js/common.js"></script>	
 	
 </body>
