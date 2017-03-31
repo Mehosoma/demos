@@ -255,9 +255,9 @@ jQuery(function($){
 //Doctor-Patien choice
 
 jQuery(function($){ 
-    $("input[name='choice']").click(function() {
+    $("input[name='switch_2']").click(function() {
         var test = $(this).val();
-        if (test=="patient") {
+        if (test=="switch-no") {
        		document.getElementById("fn-main-form").style.display='block';
        		document.getElementById("post-form").style.display='block';
        		document.getElementById("number-history").style.display='none';

@@ -10,11 +10,10 @@ body
 	max-width: 1920px
 	margin: 0 auto
 
-
 /*Index page*/
 
 #fn-index-banner
-	background: url('../img/slider.png')
+	background: url('../images/slider.png')
 	width: 100%
 	height: 265px
 	background-position: center top 328px
@@ -79,7 +78,7 @@ body
 		height: 90px
 		border: 1px solid #bbbbbb						
 	.banner-index
-		background-image: url('../img/banner_coop.png')
+		background-image: url('../images/banner_coop.png')
 		background-position: center left 30px
 		background-repeat: no-repeat
 		span
@@ -217,11 +216,11 @@ body
 			.small-banner:hover
 				background-color: #e6f8f6
 			.small-banner-down
-				background-image: url('../img/download-icon.png')
+				background-image: url('../images/download-icon.png')
 				background-position: center left 7px
 				background-repeat: no-repeat
 			.small-banner-podr
-				background-image: url('../img/podr.png')
+				background-image: url('../images/podr.png')
 				background-position: center left 7px
 				background-repeat: no-repeat
 .anons-index
@@ -325,10 +324,20 @@ header
 	.navbar-nav > li > .dropdown-menu
 		padding-top: 0px
 		padding-bottom: 0px
-		border: 0px	
-
+		border: 0px
+	.navbar-default .navbar-nav > .active > a	
+		background-image: none
+		background-color: transparent		
+		box-shadow: none
+		border-bottom: 2px solid #337160
+	.dropdown-menu > .active > a
+		background-color: #def5f1
+		background-image: none			
+		box-shadow: none
+	.navbar-default .navbar-nav > .active:hover
+		border-bottom: none
 #fn-titleblock	
-	background: url('../img/banner.png')
+	background: url('../images/banner.png')
 	width: 100%
 	height: 105px
 	background-position: top center
@@ -396,7 +405,7 @@ header
 			height: 90px
 			border: 1px solid #bbbbbb
 		.banner-coop
-			background-image: url('../img/banner_coop.png')
+			background-image: url('../images/banner_coop.png')
 			background-position: center left 30px
 			background-repeat: no-repeat
 			span
@@ -476,7 +485,7 @@ header
 			margin-top: 21px
 			margin-left: 5px
 	.footercontact-office
-		background-image: url('../img/footer-office.png')
+		background-image: url('../images/footer-office.png')
 		background-position: bottom 20px right 33px
 		background-repeat: no-repeat
 		span
@@ -492,7 +501,7 @@ header
 			margin-top: 30px
 			margin-right: 18px
 	.footercontact-phone
-		background-image: url('../img/footer_phone.png')
+		background-image: url('../images/footer_phone.png')
 		background-position: bottom 20px right 24px
 		background-repeat: no-repeat
 		span
@@ -512,7 +521,7 @@ header
 			margin-top: 30px
 			margin-right: 10px
 	.footercontact-email
-		background-image: url('../img/footer-email.png')
+		background-image: url('../images/footer-email.png')
 		background-position: bottom 24px right 12px
 		background-repeat: no-repeat
 		a
@@ -561,7 +570,7 @@ header
 			font-weight: normal
 	.contacts-phone
 		height: 104px
-		background-image: url('../img/contacts-phone.png')
+		background-image: url('../images/contacts-phone.png')
 		background-position: center left
 		background-repeat: no-repeat
 		background-size: 41px 41px
@@ -717,7 +726,7 @@ header
 			height: 90px
 			border: 1px solid #bbbbbb
 		.service-banner-coop
-			background-image: url('../img/banner_coop.png')
+			background-image: url('../images/banner_coop.png')
 			background-position: center left 30px
 			background-repeat: no-repeat
 			span
@@ -741,14 +750,14 @@ header
 	.fn-soft-con-header
 		width: 100%
 		height: 83px
-		background-image: url('../img/soft-comp.png')
+		background-image: url('../images/soft-comp.png')
 		background-position: center left 25px
 		background-repeat: no-repeat
 		border-bottom: 2px solid #000		
 	.fn-soft2-con-header
 		width: 100%
 		height: 83px
-		background-image: url('../img/soft-smart.png')
+		background-image: url('../images/soft-smart.png')
 		background-position: center left 43px
 		background-repeat: no-repeat
 		border-bottom: 2px solid #000			
@@ -810,7 +819,7 @@ header
 			height: 90px
 			border: 1px solid #bbbbbb
 		.soft-banner-coop
-			background-image: url('../img/banner_coop.png')
+			background-image: url('../images/banner_coop.png')
 			background-position: center left 30px
 			background-repeat: no-repeat
 			span
@@ -972,21 +981,23 @@ header
 	width: 50%
 	margin: 0 auto
 	position: relative
-	padding: 20px 10px
+	padding: 20px 10px	
 	div
-		margin: 20px 0
+		display: block
+		text-align: center
+		margin: 20px auto	
 	input
 		display: inline-block
-	p 
-		display: inline-block
-		margin-left: 5px		
+		vertical-align: top		
+	.butt-dis
+		margin: 0 auto	
 	a
 		background-color: #c73468
 		padding: 10px 10px
 		font-family: 'arial', sans-serif
 		color: #fff
 		font-size: 16px
-		border-radius: 5px
+		border-radius: 5px			
 	a:hover
 		outline: none
 		text-decoration: none
@@ -1149,10 +1160,11 @@ header
 			background-color: #d6d6d6
 	.switch-field
 		font-family: "Lucida Grande", Tahoma, Verdana, sans-serif
-		padding: 40px
+		padding-bottom: 20px
 		overflow: hidden
 	.switch-title
-		margin-bottom: 6px;
+		margin-bottom: 6px
+		font-size: 16px
 	.switch-field input
 		position: absolute !important
 		clip: rect(0, 0, 0, 0)

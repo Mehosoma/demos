@@ -289,6 +289,44 @@
 	#fn-index-content #fn-index-right h4{
 		margin: 40px 0 19px 0
 	}
+
+	#hidden_form{
+		width: 70%;
+	}
+
+	#fn-titleblock .form-title{
+		font-size: 38px;
+	}
+
+	#fn-send-form .accordion dd input{
+		width: 230px;
+	}
+
+	#fn-send-form .accordion dd textarea{
+		width: 230px;
+	}
+
+	#fn-send-form #fn-serious-react #reac-ser-oth-info,
+	#fn-send-form #fn-descr #a-r-1,
+	#fn-send-form #fn-descr #a-r-2,
+	#fn-send-form #fn-descr #a-r-3,
+	#fn-send-form #fn-descr #a-r-4,
+	#fn-send-form #other-imp-info #doc-load {
+		margin-left: 15px;
+	}
+
+	#fn-send-form #fn-serious-react #reac-ser-oth-info input,
+	#fn-send-form #fn-descr #a-r-1 input,
+	#fn-send-form #fn-descr #a-r-2 input,
+	#fn-send-form #fn-descr #a-r-3 input,
+	#fn-send-form #fn-descr #a-r-4 input,
+	#fn-send-form #other-imp-info #doc-load input {
+		width: 230px!important
+	}
+
+	#fn-send-form #other-imp-info #doc-load input{
+		margin-bottom: 20px;
+	}
 }
 
 @media only screen and (min-width : 480px) and (max-width : 600px){

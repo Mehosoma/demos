@@ -9,7 +9,7 @@
 	<meta name="Главная" content="">
 	<meta name="keywords" content="" />
 	
-	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -26,17 +26,6 @@
 
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
-
-	<script>
-   		function agreeForm(f) {
-    	// Если поставлен флажок, снимаем блокирование кнопки
-    	if (f.disclaim.checked) f.submit.disabled = 0 
-    	// В противном случае вновь блокируем кнопку
-    	else f.submit.disabled = 1
-   		}
-  	</script>
-
-
 </head>
 
 <body>
@@ -57,7 +46,7 @@
 				<div id="fn-header">
 					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
 						<div id="fn-logo">
-							<a href="index.html"><img src="img/logo.png" alt="logotip"></a>						
+							<a href="index.html"><img src="images/logo.png" alt="logotip"></a>						
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
@@ -69,7 +58,7 @@
 					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 call">
 						<div id="fn-headercall" class="clearfix">
 							<div class="headercall-button">
-								<a href="#hidden_form" class="popup_form"><img src="img/megafon.png"><span>Сообщить <br>
+								<a href="#hidden_form" class="popup_form"><img src="images/megafon.png" alt="megaf-pict"><span>Сообщить <br>
 								о нежелательной реакции</span></a>
 							</div>
 						</div>
@@ -98,8 +87,8 @@
 	   					</div>
 	    				<div id="navbarCollapse" class="collapse navbar-collapse">
 	  	  					<ul class="nav navbar-nav">
-	  	  					 	<li><a href="#">Главная</a></li>
-							    <li><a href="#">О нас</a></li>
+	  	  					 	<li class="active"><a href="#">Главная</a></li>
+							    <li><a href="about.html">О нас</a></li>
 							    <li class="dropdown">
        								<a data-toggle="dropdown" class="dropdown-toggle" href="#">Полезная информация<b class="caret"></b></a>
 									    <ul role="menu" class="dropdown-menu">
@@ -107,7 +96,7 @@
 									       	<li><a href="#">Отзывы</a></li>
 									       	<li><a href="#">Ресурсы</a></li>
 									       	<li><a href="#">Публикации</a></li>
-									       	<li><a href="#">История</a></li>
+									       	<li><a href="history.html">История</a></li>
 									       	<li><a href="#">Митинги</a></li>
 									       	<li><a href="#">Партнерство</a></li>
 									    </ul>
@@ -132,7 +121,7 @@
 									    </ul>
 								</li>
 						    </ul>
-						</div>				
+						</div>
 					</div>
 				</div>
 			</div>
@@ -146,7 +135,7 @@
 			<div class="row">
 				<div class="col-lg-12">
 					<a href="">
-					<img src="img/citata.png" class="citata">
+					<img src="images/citata.png" class="citata" alt="banner-pict">
 					<h1 class="cit-title">Сообщите<br>о нежелательной<br>реакции</h1>					
 					<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 					viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
@@ -195,7 +184,7 @@
 						<h2>Новости центра</h2>
 						<a href="">
 							<div class="left-news-block">
-								<img src="img/news-foto.png">
+								<img src="images/news-foto.png" alt="news-foto">
 								<h3>Повседневная практика показывает, что сложившаяся структура организации влечет за собой</h3>
 								<span>04.03.2017</span>
 							</div>						
@@ -209,7 +198,7 @@
 						<h4>Новости индустрии</h4>
 						<a href="">
 							<div class="middle-news-block clearfix">
-								<img src="img/middle-foto1.png">
+								<img src="images/middle-foto1.png" alt="news-foto">
 								<div class="middle-news-zagol">
 									<h5>Повседневная практика показывает, что сложившаяся структура организации влечет за собой</h5>
 									<span>14.03.2017</span>
@@ -220,7 +209,7 @@
 						<hr />
 						<a href="">
 							<div class="middle-news-block clearfix">
-								<img src="img/middle-foto2.png">
+								<img src="images/middle-foto2.png" alt="news-foto">
 								<div class="middle-news-zagol">
 									<h5>Повседневная практика показывает, что сложившаяся структура организации влечет за собой</h5>
 									<span>14.03.2017</span>
@@ -377,14 +366,13 @@
 	<div class="hidden">
 		<form id="hidden_form" action="form.html">
 			<div>
-				<input type="checkbox" name="disclaim"><p>Нажимая кнопку продолжить, вы даете согласие на обработку своих персональных данных</p>
+				<input type="checkbox" name="disclaim">&nbspНажимая кнопку продолжить, вы даете согласие на обработку своих персональных данных
 			</div>
-			<a href="form.html" id="block" class="disabled">Продолжить</a>			
+			<div class="butt-dis">
+				<a href="form.html" id="block" class="disabled">Продолжить</a>
+			</div>
 		</form>
-	</div>
-
-
-	
+	</div>	
 
 	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
 	<script src="libs/bootstrap/js/bootstrap.js"></script>

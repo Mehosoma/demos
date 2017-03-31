@@ -9,7 +9,7 @@
 	<meta name="Главная" content="">
 	<meta name="keywords" content="" />
 	
-	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -38,7 +38,7 @@
 				<div id="fn-header">
 					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
 						<div id="fn-logo">
-							<a href="index.html"><img src="img/logo.png" alt="logotip"></a>
+							<a href="index.html"><img src="images/logo.png" alt="logotip"></a>						
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
@@ -50,7 +50,7 @@
 					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 call">
 						<div id="fn-headercall" class="clearfix">
 							<div class="headercall-button">
-								<a href="#"><img src="img/megafon.png"><span>Сообщить <br>
+								<a href="#hidden_form" class="popup_form"><img src="images/megafon.png" alt="megaf-pict"><span>Сообщить <br>
 								о нежелательной реакции</span></a>
 							</div>
 						</div>
@@ -145,24 +145,24 @@
 			<div class="row">
 				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
 					<div class="ustav-content-block">
-						<a href="img/lic-1.png" class="popup">
-							<img src="img/lic-1.png" alt="licen" class="miniature">
+						<a href="images/lic-1.png" class="popup">
+							<img src="images/lic-1.png" alt="licen" class="miniature">
 						</a>						
 						<span>Свидетельство <br>о ведении научно-исследовательской<br> деятельности</span>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
 					<div class="ustav-content-block">
-						<a href="img/lic-2.png" class="popup">
-							<img src="img/lic-2.png" alt="licen" class="miniature">
+						<a href="images/lic-2.png" class="popup">
+							<img src="images/lic-2.png" alt="licen" class="miniature">
 						</a>	
 						<span>Лицензия <br>Интерфейс личного кабинета<br> администратора рабочей </span>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
 					<div class="ustav-content-block">
-						<a href="img/lic-3.png" class="popup">
-							<img src="img/lic-3.png" alt="licen" class="miniature">
+						<a href="images/lic-3.png" class="popup">
+							<img src="images/lic-3.png" alt="licen" class="miniature">
 						</a>	
 						<span>Разрешение <br>на ведение научно-исследовательской<br> деятельности</span>
 					</div>
@@ -214,13 +214,22 @@
 	</footer>
 	<!--EndFooter-->
 
-<div class="hidden"></div>
+	<div class="hidden">
+		<form id="hidden_form" action="form.html">
+			<div>
+				<input type="checkbox" name="disclaim">&nbspНажимая кнопку продолжить, вы даете согласие на обработку своих персональных данных
+			</div>
+			<div class="butt-dis">
+				<a href="form.html" id="block" class="disabled">Продолжить</a>
+			</div>
+		</form>
+	</div>	
 
 	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
 	<script src="libs/bootstrap/js/bootstrap.js"></script>
 	<script src="libs/dist/jquery.magnific-popup.min.js"></script>
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-	<script src="js/common.js"></script>
+	<script src="js/common.js"></script>	
 
 	
 </body>
