@@ -80,17 +80,19 @@ $(document).ready(function(){
 
 $(window).load(function() {
  
- 
+ 	
+	
     var windowWidth = $(window).width();
-    
-    if(windowWidth < 768){
+    if(windowWidth >= 767){
+    	$(".blocks").removeClass("slick");
+    	$(".item").removeClass("slick_content");    	
+    }
+    else {
     	$(".blocks").addClass("slick");
     	$(".item").addClass("slick_content");
     }
-    else {
-    	$(".blocks").removeClass("slick");
-    	$(".item").removeClass("slick_content");
-    }
+
+  
 
 
     $('.slick').slick({
