@@ -83,7 +83,7 @@ $(window).load(function() {
  
     var windowWidth = $(window).width();
     
-    if(windowWidth < 480){
+    if(windowWidth < 768){
     	$(".blocks").addClass("slick");
     	$(".item").addClass("slick_content");
     }
