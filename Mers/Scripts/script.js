@@ -80,9 +80,7 @@ $(document).ready(function(){
 
 $(window).load(function() {
  
- 	
-	
-    var windowWidth = $(window).width();
+ 	var windowWidth = $(window).width();
     if(windowWidth >= 767){
     	$(".blocks").removeClass("slick");
     	$(".item").removeClass("slick_content");    	
@@ -92,8 +90,6 @@ $(window).load(function() {
     	$(".item").addClass("slick_content");
     }
 
-  
-
 
     $('.slick').slick({
         accessibility: false,  
@@ -101,5 +97,6 @@ $(window).load(function() {
         dots: true,
         fade: true,
     });
+
   
 });
