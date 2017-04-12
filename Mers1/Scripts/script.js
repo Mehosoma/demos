@@ -69,14 +69,11 @@ $(window).load(function() {
 	$(".anim_cons").animated("fadeInRight", "fadeOut");
 	$(".anim_expert").animated("fadeInLeft", "fadeOut");
 	$(".anim_trening").animated("fadeInRight", "fadeOut");
-	$(".anim_sopr").animated("fadeInLeft", "fadeOut")
+	$(".anim_sopr").animated("fadeInLeft", "fadeOut");
+	$(".anim_mobile").animated("fadeInRight", "fadeOut")
 
 });
 
-
-$(document).ready(function(){
-      
-});
 
 $(window).load(function() {
  
