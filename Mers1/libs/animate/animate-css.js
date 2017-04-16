@@ -7,22 +7,20 @@
 						if (dir === "down") {
 								$(this).removeClass(outEffect).addClass(inEffect).css("opacity", "1");
 						} else {
-								$(this).removeClass(inEffect).addClass(outEffect).css("opacity", "1");
-								$('.about').css("background-image", "url(./Images/background3.jpg)");
-								$('.response').css("background-image", "url(./Images/second_background.jpg)");
+								$(this).removeClass(inEffect).addClass(outEffect).css("opacity", "1");								
 						};
 				}, {
 						offset: "80%"
 				}).waypoint(function(dir) {
 						if (dir === "down") {
-								$(this).removeClass(inEffect).addClass(outEffect).css("opacity", "1");
-								$('.about').css("background-image", "url(./Images/background3.jpg)");
-								$('.response').css("background-image", "url(./Images/second_background.jpg)");
+								$(this).removeClass(inEffect).addClass(outEffect).css("opacity", "1");								
 						} else {
 								$(this).removeClass(outEffect).addClass(inEffect).css("opacity", "1");
 						};
 				}, {
-						offset: -$(window).height()
+						offset: -200
 				});
 		};
 })(jQuery);
+
+

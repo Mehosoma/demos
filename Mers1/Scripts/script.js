@@ -75,16 +75,18 @@ $(window).load(function() {
 });
 
 
-$(window).load(function() {
+$(window).resize(function() {
  
  	var windowWidth = $(window).width();
-    if(windowWidth >= 767){
+    if(windowWidth >= 768){
     	$(".blocks").removeClass("slick");
-    	$(".item").removeClass("slick_content");    	
+    	$(".item").removeClass("slick_content"); 
+    	location.reload();  	
     }
     else {
     	$(".blocks").addClass("slick");
     	$(".item").addClass("slick_content");
+
     }
 
 
@@ -93,7 +95,7 @@ $(window).load(function() {
         arrows: false,
         dots: true,
         fade: true,
-    });
+    });      
 
-  
 });
+
