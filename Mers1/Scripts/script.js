@@ -135,7 +135,9 @@ window.addEventListener("orientationchange", function(e) {
 			$('.page-tren').css({'opacity':'1', 'display':'block'});
 			$('.page-sopr').css({'opacity':'1', 'display':'block'});
 			$('.page-mero').css({'opacity':'1', 'display':'block'});
-			$('.page-mobi').css({'opacity':'1', 'display':'block'});			
+			$('.page-mobi').css({'opacity':'1', 'display':'block'});
+			$('.event').css({'opacity':'1', 'display':'block'});
+			$('.events-list').css({'opacity':'1', 'display':'block'});
 		} else {
 			$(this).addClass('open');
 			$('.navbar-collapse').removeClass("collapse in");
@@ -150,7 +152,9 @@ window.addEventListener("orientationchange", function(e) {
 					$('.page-sopr').css({'opacity':'1', 'display':'none'});
 					$('.page-mero').css({'opacity':'1', 'display':'none'});
 					$('.page-mobi').css({'opacity':'1', 'display':'none'});
-					$('.page-mobi').css({'opacity':'1', 'display':'none'});					
+					$('.page-mobi').css({'opacity':'1', 'display':'none'});
+					$('.event').css({'opacity':'1', 'display':'none'});
+					$('.events-list').css({'opacity':'1', 'display':'none'});
 				}
 			$('.hidden-page').css({'opacity':'1', 'display':'block'})
 		}
