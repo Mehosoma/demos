@@ -127,8 +127,31 @@ window.addEventListener("orientationchange", function(e) {
 			e.preventDefault();
 			$('.hidden-page').css({'opacity':'1', 'display':'none'});
 			$(this).removeClass('open');
+			$('.navbar-collapse').removeClass("collapse in");
+			$('.page-head').css({'opacity':'1', 'display':'block'});
+			$('.page-cons').css({'opacity':'1', 'display':'block'});
+			$('.page-exp').css({'opacity':'1', 'display':'block'});
+			$('.page-obsl').css({'opacity':'1', 'display':'block'});
+			$('.page-tren').css({'opacity':'1', 'display':'block'});
+			$('.page-sopr').css({'opacity':'1', 'display':'block'});
+			$('.page-mero').css({'opacity':'1', 'display':'block'});
+			$('.page-mobi').css({'opacity':'1', 'display':'block'});			
 		} else {
 			$(this).addClass('open');
+			$('.navbar-collapse').removeClass("collapse in");
+				var windowWidth = $(window).width();
+	    		if(windowWidth >= 480){
+	    		} else{
+					$('.page-head').css({'opacity':'1', 'display':'none'});
+					$('.page-cons').css({'opacity':'1', 'display':'none'});
+					$('.page-exp').css({'opacity':'1', 'display':'none'});
+					$('.page-obsl').css({'opacity':'1', 'display':'none'});
+					$('.page-tren').css({'opacity':'1', 'display':'none'});
+					$('.page-sopr').css({'opacity':'1', 'display':'none'});
+					$('.page-mero').css({'opacity':'1', 'display':'none'});
+					$('.page-mobi').css({'opacity':'1', 'display':'none'});
+					$('.page-mobi').css({'opacity':'1', 'display':'none'});					
+				}
 			$('.hidden-page').css({'opacity':'1', 'display':'block'})
 		}
 	});
