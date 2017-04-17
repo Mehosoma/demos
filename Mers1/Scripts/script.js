@@ -61,6 +61,15 @@ intra = {
 }
 
 
+// Css animation
+
+$(window).load(function() {
+
+	$(".anim_phone").animated("fadeInLeft", "fadeOut");	
+
+});
+
+
 // Сбор иконок в слайдер при масштабировании
 
 $(window).load(function() {
@@ -100,6 +109,10 @@ $(window).load(function() {
     });      
 
 });
+
+window.addEventListener("orientationchange", function() {
+    	location.reload();
+    }, false);
 
 
 
