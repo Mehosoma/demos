@@ -127,7 +127,7 @@ window.addEventListener("orientationchange", function(e) {
 			e.preventDefault();
 			$('.hidden-page').css({'opacity':'1', 'display':'none'});
 			$(this).removeClass('open');
-			$('.navbar-collapse').removeClass("collapse in");
+			$('.navbar-collapse').removeClass("in");
 			$('.page-head').css({'opacity':'1', 'display':'block'});
 			$('.page-cons').css({'opacity':'1', 'display':'block'});
 			$('.page-exp').css({'opacity':'1', 'display':'block'});
@@ -140,7 +140,7 @@ window.addEventListener("orientationchange", function(e) {
 			$('.events-list').css({'opacity':'1', 'display':'block'});
 		} else {
 			$(this).addClass('open');
-			$('.navbar-collapse').removeClass("collapse in");
+			$('.navbar-collapse').removeClass("in");
 				var windowWidth = $(window).width();
 	    		if(windowWidth >= 480){
 	    		} else{
