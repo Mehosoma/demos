@@ -125,7 +125,9 @@ window.addEventListener("orientationchange", function(e) {
 		var item_2 = $(this);
 		if ($(this).hasClass('open')){
 			e.preventDefault();
-			$('.hidden-page').css({'opacity':'0', 'display':'none'});
+			$('.hidden-page').fadeOut(60, function () {
+                    $('.hidden-page').css({'opacity':'0', 'display':'none'});
+                  });
 			$(this).removeClass('open');
 			$('.navbar-collapse').removeClass("in");
 			$('.page-head').css({'opacity':'1', 'display':'block'});
@@ -156,7 +158,9 @@ window.addEventListener("orientationchange", function(e) {
 					$('.event').css({'opacity':'1', 'display':'none'});
 					$('.events-list').css({'opacity':'1', 'display':'none'});
 				}
-			$('.hidden-page').css({'opacity':'1', 'display':'block'})
+			$('.hidden-page').fadeIn(60, function () {
+                    $('.hidden-page').css({'opacity':'1', 'display':'block'});
+                  });
 		}
 	});
 
