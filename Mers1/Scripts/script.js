@@ -110,9 +110,12 @@ $(window).load(function() {
 
 });
 
-window.addEventListener("orientationchange", function() {
+window.addEventListener("orientationchange", function(e) {
+		 e.preventDefault();
+    	$('body,html').animate({scrollTop: 0}, 400);    
     	location.reload();
     }, false);
+
 
 
 
