@@ -360,3 +360,9 @@ footer p {line-height:30px;font-size:13px;text-align:center;}
 	}
 }
 
+@media (min-width: 1500px) {
+	.hidden-page{
+		width: 70%;
+	}
+}
+
