@@ -366,3 +366,16 @@ footer p {line-height:30px;font-size:13px;text-align:center;}
 	}
 }
 
+@media (min-width: 1920px) {
+	.events-list .container{
+		width: 1600px;
+	}
+
+	.navbar-nav{
+		margin-left: 490px;
+	}
+
+	.events-list-cont{
+		width: 1600px;
+	}
+}
