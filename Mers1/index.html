@@ -10,6 +10,7 @@
 	<link rel="shortcut icon" href="favicon.ico" />
 	<link href="Styles/bootstrap.min.css" rel="stylesheet" />
 	<link rel="stylesheet" type="text/css" href="libs/slick/slick-theme.css"/>
+	<link rel="stylesheet" type="text/css" href="libs/slider/lightslider.css"/>
 	<link rel="stylesheet" type="text/css" href="libs/animate/animate.min.css"/>
 	<link href="Styles/fonts.css" rel="stylesheet" />
 	<link href="Styles/style.css" rel="stylesheet" />
@@ -22,6 +23,48 @@
 	<div class="body">
 
 		<header class="navbar navbar-inverse" role="navigation">
+			<div class="hidden-page clearfix">
+				<a href="" class="close-btn"></a>
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-4 col-md-4 preim-block">
+							<img src="Images/cons.png" alt="cons-img">
+							<hr>
+							<span>Консьерж</span>
+						</div>
+						<div class="col-lg-4 col-md-4 preim-block">
+							<img src="Images/expert.png" alt="expert-img">
+							<hr>
+							<span>Эксперт</span>
+						</div>
+						<div class="col-lg-4 col-md-4 preim-block">
+							<img src="Images/service.png" alt="service-img">
+							<hr>
+							<span>Обслуживание</span>
+						</div>
+						<div class="col-lg-4 col-md-4 preim-block">
+							<img src="Images/trening.png" alt="trening-img">
+							<hr>
+							<span>Тренинги</span>
+						</div>
+						<div class="col-lg-4 col-md-4 preim-block">
+							<img src="Images/sopr.png" alt="sopr-img">
+							<hr>
+							<span>Сопровождение</span>
+						</div>
+						<div class="col-lg-4 col-md-4 preim-block">
+							<img src="Images/events.png" alt="events-img">
+							<hr>
+							<span>Мероприятия</span>
+						</div>
+						<div class="col-lg-4 col-md-4 preim-block">
+							<img src="Images/mobil.png" alt="mobil-img">
+							<hr>
+							<span>Мобильность</span>
+						</div>
+					</div>
+				</div>
+			</div>
 			<div class="container">
 				<div class="header-phone hidden-xs"><p>Телефон: <span>8 800 700 02 06</span></p></div>
 				<div class="navbar-header">
@@ -36,7 +79,7 @@
 				<div class="navbar-collapse collapse">
 					<ul class="nav navbar-nav">
 						<li class="item-1 active"><a href="#">Мероприятия</a></li>
-						<li class="item-2"><a href="#">Преимущества</a></li>
+						<li class="item-2 item_2"><a href="#">Преимущества</a></li>
 						<li class="item-3"><a href="#">Дилеры</a></li>
 					</ul>
 				</div>
@@ -83,20 +126,20 @@
 					</div>
 				</div>
 				<p class="phone anim_phone">8 800 700 02 06</p>
-				<div class="row blocks anim_cons">
-					<div class="col-xs-12 col-sm-4 col-md-3 item">
-						<img src="Images/block1.png" alt="" />
+				<div class="row blocks slick anim_right">
+					<div class="col-xs-12 col-sm-4 col-md-3 item slick_content anim1">
+						<img src="Images/block1.png" alt="icon" />
 						<p>Круглосуточная горячая линия</p>
 					</div>
-					<div class="col-xs-12 col-sm-4 col-md-3 item">
-						<img src="Images/block2.png" alt="" />
+					<div class="col-xs-12 col-sm-4 col-md-3 item slick_content anim2">
+						<img src="Images/block2.png" alt="icon" />
 						<p>Профессиональная поддержка</p>
 					</div>
-					<div class="col-xs-12 col-sm-4 col-md-3 item">
-						<img src="Images/block3.png" alt="" />
+					<div class="col-xs-12 col-sm-4 col-md-3 item slick_content anim3">
+						<img src="Images/block3.png" alt="icon" />
 						<p>Незамедлительное решение Ваших задач</p>
 					</div>
-				</div>
+				</div>				
 			</div>
 		</section>
 		
@@ -108,17 +151,17 @@
 						<p class="desc">Только высококвалифицированные и мотивированные сотрудники могут обеспечить ни с чем не сравнимый уровень обслуживания, достойный Вас. Наши S-Эксперты проходят тщательный отбор и долгое обучение, чтобы их работа превзошла  все Ваши ожидания.</p>
 					</div>
 				</div>
-				<div class="row blocks anim_expert">
-					<div class="col-xs-12 col-sm-4 col-md-3 item">
-						<img src="Images/block4.png" alt="" />
+				<div class="row blocks anim_left slick">
+					<div class="col-xs-12 col-sm-4 col-md-3 item anim4 slick_content">
+						<img src="Images/block4.png" alt="icon" />
 						<p>Персонально</p>
 					</div>
-					<div class="col-xs-12 col-sm-4 col-md-3 item">
-						<img src="Images/block5.png" alt="" />
+					<div class="col-xs-12 col-sm-4 col-md-3 item anim5 slick_content">
+						<img src="Images/block5.png" alt="icon" />
 						<p>Премиально</p>
 					</div>
-					<div class="col-xs-12 col-sm-4 col-md-3 item">
-						<img src="Images/block6.png" alt="" />
+					<div class="col-xs-12 col-sm-4 col-md-3 item anim6 slick_content">
+						<img src="Images/block6.png" alt="icon" />
 						<p>Профессионально</p>
 					</div>
 				</div>
@@ -134,16 +177,16 @@
 						<p class="desc">Владельцы флагманских автомобилей семейства S-Класса заслуживают особого внимания. Мы тщательно отобрали и обучили наших лучших российских специалистов по обслуживанию, чтобы они сделали все возможное для эффективной заботы о Вас и Вашем автомобиле.</p>
 					</div>
 				</div>
-				<div class="row blocks">
-					<div class="col-xs-12 col-sm-4 col-md-3 item">
+				<div class="row blocks slick">
+					<div class="col-xs-12 col-sm-4 col-md-3 item slick_content">
 						<img src="Images/block7.png" alt="" />
 						<p>Персональный S-Эксперт по обслуживанию</p>
 					</div>
-					<div class="col-xs-12 col-sm-4 col-md-3 item">
+					<div class="col-xs-12 col-sm-4 col-md-3 item slick_content">
 						<img src="Images/block8.png" alt="" />
 						<p>Проверки качества обслуживания</p>
 					</div>
-					<div class="col-xs-12 col-sm-4 col-md-3 item">
+					<div class="col-xs-12 col-sm-4 col-md-3 item slick_content">
 						<img src="Images/block9.png" alt="" />
 						<p>Быстрая процедура получения автомобиля после обслуживания</p>
 					</div>
@@ -159,16 +202,16 @@
 						<p class="desc">Эксклюзивный тренинг, включающий теорию и практику, позволит Вашему персональному водителю в тонкостях освоить специфику управления автомобилем столь высокого уровня.</p>
 					</div>
 				</div>
-				<div class="row blocks anim_trening">
-					<div class="col-xs-12 col-sm-4 col-md-3 item">
+				<div class="row blocks anim_right slick">
+					<div class="col-xs-12 col-sm-4 col-md-3 item slick_content anim1">
 						<img src="Images/block10.png" alt="" />
 						<p>Участники программы научатся использовать все возможности мультимедиа систем и систем-ассистентов</p>
 					</div>
-					<div class="col-xs-12 col-sm-4 col-md-3 item">
+					<div class="col-xs-12 col-sm-4 col-md-3 item slick_content anim2">
 						<img src="Images/block11.png" alt="" />
 						<p>Водители освоят тонкости управления автомобилем в сложной дорожной ситуации</p>
 					</div>
-					<div class="col-xs-12 col-sm-4 col-md-3 item">
+					<div class="col-xs-12 col-sm-4 col-md-3 item slick_content anim3">
 						<img src="Images/block12.png" alt="" />
 						<p>Посетители тренинга достигнут совершенства в обеспечении комфорта пассажира при движении</p>
 					</div>
@@ -184,16 +227,16 @@
 						<p class="desc">Все процессы продаж и обслуживания были пересмотрены и оптимизированы для того, чтобы не отнимать у Вас времени больше, чем это действительно необходимо.</p>
 					</div>
 				</div>
-				<div class="row blocks anim_sopr">
-					<div class="col-xs-12 col-sm-4 col-md-3 item">
+				<div class="row blocks anim_left slick">
+					<div class="col-xs-12 col-sm-4 col-md-3 item slick_content anim4">
 						<img src="Images/block13.png" alt="" />
 						<p>Тест-драйв и заключение контрактов там, где Вам удобно</p>
 					</div>
-					<div class="col-xs-12 col-sm-4 col-md-3 item">
+					<div class="col-xs-12 col-sm-4 col-md-3 item slick_content anim5">
 						<img src="Images/block14.png" alt="" />
 						<p>Максимальное сокращение времени доставки</p>
 					</div>
-					<div class="col-xs-12 col-sm-4 col-md-3 item">
+					<div class="col-xs-12 col-sm-4 col-md-3 item slick_content anim6">
 						<img src="Images/block15.png" alt="" />
 						<p>Особые предложения по трейд-ин</p>
 					</div>
@@ -210,16 +253,16 @@
 						<p class="desc">Участники программы S-Lounge получат доступ к многочисленным и самым разнообразным мероприятиям, у которых есть одна общая черта — эксклюзивность.</p>
 					</div>
 				</div>
-				<div class="row blocks">
-					<div class="col-xs-12 col-sm-4 col-md-3 item">
+				<div class="row blocks slick">
+					<div class="col-xs-12 col-sm-4 col-md-3 item slick_content">
 						<img src="Images/block16.png" alt="" />
 						<p>Приглашения на самые эксклюзивные мероприятия</p>
 					</div>
-					<div class="col-xs-12 col-sm-4 col-md-3 item">
+					<div class="col-xs-12 col-sm-4 col-md-3 item slick_content">
 						<img src="Images/block17.png" alt="" />
 						<p>Премьеры новых моделей Mercedes-Benz в России</p>
 					</div>
-					<div class="col-xs-12 col-sm-4 col-md-3 item">
+					<div class="col-xs-12 col-sm-4 col-md-3 item slick_content">
 						<img src="Images/block18.png" alt="" />
 						<p>Посещение гоночных мероприятий</p>
 					</div>
@@ -235,16 +278,16 @@
 						<p class="desc">Чтобы Вы при визите в сервисный центр Вы сохранили максимальную мобильность, мы позаботились о том, чтобы предельно сократить время обслуживания Вашего S-Класса и обеспечить Вас высококлассными подменным автомобилем.</p>
 					</div>
 				</div>
-				<div class="row blocks anim_mobile">
-					<div class="col-xs-12 col-sm-4 col-md-3 item">
+				<div class="row blocks anim_right">
+					<div class="col-xs-12 col-sm-4 col-md-3 item slick_content anim1">
 						<img src="Images/block19.png" alt="" />
 						<p>Приоритет при назначении времени обслуживания в сервисном центре</p>
 					</div>
-					<div class="col-xs-12 col-sm-4 col-md-3 item">
+					<div class="col-xs-12 col-sm-4 col-md-3 item slick_content anim2">
 						<img src="Images/block20.png" alt="" />
 						<p>Максимальное сокращение времени ожидания </p>
 					</div>
-					<div class="col-xs-12 col-sm-4 col-md-3 item">
+					<div class="col-xs-12 col-sm-4 col-md-3 item slick_content anim3">
 						<img src="Images/block21.png" alt="" />
 						<p>Оптимизированная доставка запчастей и экспертиза мастеров</p>
 					</div>
@@ -267,6 +310,7 @@
 	<script src="Scripts/bootstrap.min.js"></script>
 	<script src="libs/animate/animate-css.js"></script>
 	<script src="libs/slick/slick.min.js"></script>
+	<script src="libs/slider/lightslider.min.js"></script>
 	<script src="Scripts/script.js"></script>
 </body>
 </html>

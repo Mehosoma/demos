@@ -66,7 +66,6 @@ intra = {
 $(window).load(function() {
 
 	$(".anim_phone").animated("fadeInLeft", "fadeOut");
-	$(".anim_cons").animated("fadeInRight", "fadeOut");
 	$(".anim_expert").animated("fadeInLeft", "fadeOut");
 	$(".anim_trening").animated("fadeInRight", "fadeOut");
 	$(".anim_sopr").animated("fadeInLeft", "fadeOut");
@@ -75,18 +74,34 @@ $(window).load(function() {
 });
 
 
-$(window).resize(function() {
+// Сбор иконок в слайдер при масштабировании
+
+$(window).load(function() {
  
  	var windowWidth = $(window).width();
     if(windowWidth >= 768){
     	$(".blocks").removeClass("slick");
-    	$(".item").removeClass("slick_content"); 
-    	location.reload();  	
+    	$(".item").removeClass("slick_content");
+    	$(".blocks").removeClass("anim_right");
+    	$(".anim1").addClass("anim_right");
+    	$(".anim2").addClass("anim_right2");
+    	$(".anim3").addClass("anim_right3");
+    	$(".anim_right").animated("fadeInRight", "fadeOut");
+    	$(".anim_right2").animated("fadeInRight", "fadeOut");
+		$(".anim_right3").animated("fadeInRight", "fadeOut");
+		$(".blocks").removeClass("anim_left");
+    	$(".anim4").addClass("anim_left");
+    	$(".anim5").addClass("anim_left2");
+    	$(".anim6").addClass("anim_left3");
+    	$(".anim_left").animated("fadeInLeft", "fadeOut");
+    	$(".anim_left2").animated("fadeInLeft", "fadeOut");
+		$(".anim_left3").animated("fadeInLeft", "fadeOut");
+
+    		
     }
     else {
-    	$(".blocks").addClass("slick");
-    	$(".item").addClass("slick_content");
-
+    	$(".anim_right").animated("fadeInRight", "fadeOut");
+    	$(".anim_left").animated("fadeInLeft", "fadeOut");
     }
 
 
@@ -99,3 +114,73 @@ $(window).resize(function() {
 
 });
 
+$(window).resize(function() {
+		location.reload(); 
+});
+
+
+//Показ формы при клике на ссылку "Мероприятия"
+
+	$('.item-2').click(function (e){
+		var item_2 = $(this);
+		if ($(this).hasClass('open')){
+			e.preventDefault();
+			$('.hidden-page').css({'opacity':'1', 'display':'none'});
+			$(this).removeClass('open');
+		} else {
+			$(this).addClass('open');
+			$('.hidden-page').css({'opacity':'1', 'display':'block'})
+		}
+	});
+
+// Slider
+
+$(document).ready(function(){
+	$('#lightslider').lightSlider({
+  		item: 1,
+        autoWidth: false,
+        slideMove: 1, // slidemove will be 1 if loop is true
+        slideMargin: 10,
+        loop: true,
+        controls: true,
+        prevHtml: '',
+        nextHtml: '',
+        gallery: true,
+        responsive : [
+        	{
+                breakpoint:1500,
+                settings: {
+                    item:1,
+                    slideMove:1,
+                    thumbItem:8
+                  }
+            },
+        	{
+                breakpoint:992,
+                settings: {
+                    item:1,
+                    slideMove:1,
+                    thumbItem:7                   
+                  }
+            },
+            {
+                breakpoint:768,
+                settings: {
+                    item:1,
+                    slideMove:1,
+                    thumbItem:5                   
+                  }
+            },
+            {
+                breakpoint:480,
+                settings: {
+                    item:1,
+                    slideMove:1,
+                    thumbItem:3,
+                    controls: true,
+                  }
+            }
+        ]        
+	});
+	
+});

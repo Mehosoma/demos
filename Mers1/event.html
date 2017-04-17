@@ -9,6 +9,9 @@
 	<title>S-Lounge</title>
 	<link rel="shortcut icon" href="favicon.ico" />
 	<link href="Styles/bootstrap.min.css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="libs/slick/slick-theme.css"/>
+	<link rel="stylesheet" type="text/css" href="libs/slider/lightslider.css"/>
+	<link rel="stylesheet" type="text/css" href="libs/animate/animate.min.css"/>
 	<link href="Styles/fonts.css" rel="stylesheet" />
 	<link href="Styles/style.css" rel="stylesheet" />
 	<!--[if lt IE 9]>
@@ -42,7 +45,32 @@
 		</header>
 		
 		<section class="event">
-			<div class="image" style="background-image:url(http://s-lounge.test.intravision.ru/Image/Index/3)"></div>
+			<ul id="lightslider">
+				<li data-thumb="Images/slide1.jpeg">
+					<img src="Images/slide1.jpeg" class="slide">
+				</li>
+				<li data-thumb="Images/slide2.jpg">
+					<img src="Images/slide2.jpg" class="slide">
+				</li>
+				<li data-thumb="Images/slide1.jpeg">
+					<img src="Images/slide1.jpeg" class="slide">
+				</li>
+				<li data-thumb="Images/slide2.jpg">
+					<img src="Images/slide2.jpg" class="slide">
+				</li>
+				<li data-thumb="Images/slide1.jpeg">
+					<img src="Images/slide1.jpeg" class="slide">
+				</li>
+				<li data-thumb="Images/slide2.jpg">
+					<img src="Images/slide2.jpg" class="slide">
+				</li>
+				<li data-thumb="Images/slide1.jpeg">
+					<img src="Images/slide1.jpeg" class="slide">
+				</li>
+				<li data-thumb="Images/slide2.jpg">
+					<img src="Images/slide2.jpg" class="slide">
+				</li>
+			</ul>
 			<div class="container">
 				<h1>Отель Ритц-Карлтон</h1>
 				<div class="row">
@@ -68,7 +96,11 @@
 		
 	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="libs/waypoints/waypoints.min.js"></script>
 	<script src="Scripts/bootstrap.min.js"></script>
+	<script src="libs/animate/animate-css.js"></script>
+	<script src="libs/slick/slick.min.js"></script>
+	<script src="libs/slider/lightslider.min.js"></script>
 	<script src="Scripts/script.js"></script>
 </body>
 </html>
