@@ -49,7 +49,12 @@ body {font:18px/1.38 'ArialNarrow';background:#000;}
 	display: none;
 	opacity: 0;
 	padding: 40px 50px;
-	transition: opacity 0.4s ease
+	-webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.block-h{
+	display: block;
 }
 
 .hidden-page:before{
@@ -176,32 +181,41 @@ body {font:18px/1.38 'ArialNarrow';background:#000;}
 .events-list h1 {font-family:'CorpA_condensed_Regular';font-size:42px;color:#fff;margin:60px 0 40px 0;}
 .events-list .row > a {padding:0;text-decoration:none;}
 .events-list .event-box {height:370px;background:#050505;margin:3px;}
-.events-list .img-box {height:150px;background-position:50% 50%;background-size:cover;}
+.events-list .img-box {width: 100%; height:auto; position: relative;}
+.events-list .img-box img{width: 100%; height:auto}
 .events-list .text-box {padding:30px 20px;}
-.events-list .text-box h2 {font-family:Arial;font-size:20px;margin:0 0 20px 0;padding:0;color:#fff;}
-.events-list .text-box p {font-family:Arial;font-size:14px;padding:0;color:#d7d7d7;}
+.events-list .text-box h2 {font-family:'CorpA_condensed_Regular';font-size:24px;margin:0 0 20px 0;padding:0;color:#fff;}
+.events-list .text-box p {font-family:Arial;font-size:14px;padding:0;color:#666666;}
 
 .img-box-overlay{
 	background-color: rgba(0,0,0,0.6);
 	position: absolute;
 	width: 100%;
-	height: 150px;	
+	height: 100%;	
 	opacity: 0;	
+	top: 0;		
 }
 
 .img-box-overlay span{
 	display: block;
 	font-family: 'ArialNarrow';
 	font-size: 16px;
-	color: #fff;
-	line-height: 150px;
-	text-align: center;	
+	color: #fff;		
+	text-align: center;
+	height: 22px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+
 }
 
 .event-box:hover .img-box-overlay{
 	opacity: 1;
-	transition: opacity 0.25s ease-out;
-	-webkit-transition: opacity 0.25s ease-out;
+	transition: opacity 0.3s ease-out;
+	-webkit-transition: opacity 0.3s ease-out;
 }
 
 .event {margin-bottom:70px;}
@@ -371,6 +385,11 @@ footer p {line-height:30px;font-size:13px;text-align:center;}
 @media (min-width: 1920px) {
 	.events-list .container{
 		width: 1600px;
+	}
+
+	.img-box-overlay span{
+		font-size: 22px;
+		height: 30px;
 	}
 	
 }
