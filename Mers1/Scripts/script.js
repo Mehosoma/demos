@@ -114,9 +114,6 @@ $(window).load(function() {
 
 });
 
-$(window).resize(function() {
-		location.reload(); 
-});
 
 
 //Показ формы при клике на ссылку "Мероприятия"
