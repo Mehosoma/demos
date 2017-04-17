@@ -61,19 +61,6 @@ intra = {
 }
 
 
-// Css animation
-
-$(window).load(function() {
-
-	$(".anim_phone").animated("fadeInLeft", "fadeOut");
-	$(".anim_expert").animated("fadeInLeft", "fadeOut");
-	$(".anim_trening").animated("fadeInRight", "fadeOut");
-	$(".anim_sopr").animated("fadeInLeft", "fadeOut");
-	$(".anim_mobile").animated("fadeInRight", "fadeOut")
-
-});
-
-
 // Сбор иконок в слайдер при масштабировании
 
 $(window).load(function() {

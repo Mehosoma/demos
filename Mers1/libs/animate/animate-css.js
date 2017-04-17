@@ -18,7 +18,7 @@
 								$(this).removeClass(outEffect).addClass(inEffect).css("opacity", "1");
 						};
 				}, {
-						offset: -150
+						offset: -$(window).height()
 				});
 		};
 })(jQuery);
