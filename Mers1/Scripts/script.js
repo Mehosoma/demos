@@ -139,8 +139,10 @@ window.addEventListener("orientationchange", function(e) {
 			$('.page-mero').css({'opacity':'1', 'display':'block'});
 			$('.page-mobi').css({'opacity':'1', 'display':'block'});
 			$('.event').css({'opacity':'1', 'display':'block'});
-			$('.events-list').css({'opacity':'1', 'display':'block'});  
-            location.reload();         
+			$('.events-list').css({'opacity':'1', 'display':'block'}); 
+            if(windowWidth <= 480){
+                location.reload();
+            }         
 		} else {
 			$(this).addClass('open');
 			$('.navbar-collapse').removeClass("in");
