@@ -138,10 +138,8 @@ window.addEventListener("orientationchange", function(e) {
 			$('.page-sopr').css({'opacity':'1', 'display':'block'});
 			$('.page-mero').css({'opacity':'1', 'display':'block'});
 			$('.page-mobi').css({'opacity':'1', 'display':'block'});
-			$('.event').css({'opacity':'1', 'display':'block'});
-			$('.events-list').css({'opacity':'1', 'display':'block'});
-            var slider = $("#light-slider").lightSlider();
-            slider.refresh();
+			$('.event').css({'height':'auto', 'overflow':'auto','margin-bottom':'70px'});
+			$('.events-list').css({'opacity':'1', 'display':'block'});                   
 		} else {
 			$(this).addClass('open');
 			$('.navbar-collapse').removeClass("in");
@@ -157,7 +155,7 @@ window.addEventListener("orientationchange", function(e) {
 					$('.page-mero').css({'opacity':'0', 'display':'none'});
 					$('.page-mobi').css({'opacity':'0', 'display':'none'});
 					$('.page-mobi').css({'opacity':'0', 'display':'none'});
-					$('.event').css({'opacity':'0', 'display':'none'});
+					$('.event').css({'height':'0px', 'overflow':'hidden', 'margin-bottom':'0'});
 					$('.events-list').css({'opacity':'0', 'display':'none'});
 				}
 			$('.hidden-page').fadeIn(60, function () {
