@@ -184,7 +184,7 @@ $(document).ready(function(){
                 settings: {
                     item:1,
                     slideMove:1,
-                    thumbItem:6
+                    thumbItem:7
                   }
             },
 
@@ -193,7 +193,7 @@ $(document).ready(function(){
                 settings: {
                     item:1,
                     slideMove:1,
-                    thumbItem:5
+                    thumbItem:6
                   }
             },
 
@@ -202,7 +202,7 @@ $(document).ready(function(){
                 settings: {
                     item:1,
                     slideMove:1,
-                    thumbItem:4
+                    thumbItem:5
                   }
             },
 
@@ -211,7 +211,7 @@ $(document).ready(function(){
                 settings: {
                     item:1,
                     slideMove:1,
-                    thumbItem:3                   
+                    thumbItem:4                   
                   }
             },
             {
@@ -219,7 +219,7 @@ $(document).ready(function(){
                 settings: {
                     item:1,
                     slideMove:1,
-                    thumbItem:2                  
+                    thumbItem:3                  
                   }
             },
             {
@@ -227,7 +227,7 @@ $(document).ready(function(){
                 settings: {
                     item:1,
                     slideMove:1,
-                    thumbItem:2,
+                    thumbItem:3,
                     controls: true,
                   }
             }
