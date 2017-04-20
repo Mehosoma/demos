@@ -139,10 +139,9 @@ window.addEventListener("orientationchange", function(e) {
 			$('.page-mero').css({'opacity':'1', 'display':'block'});
 			$('.page-mobi').css({'opacity':'1', 'display':'block'});
 			$('.event').css({'opacity':'1', 'display':'block'});
-			$('.events-list').css({'opacity':'1', 'display':'block'}); 
-            if(windowWidth <= 480){
-                location.reload();
-            }         
+			$('.events-list').css({'opacity':'1', 'display':'block'});
+            var slider = $("#light-slider").lightSlider();
+            slider.refresh();
 		} else {
 			$(this).addClass('open');
 			$('.navbar-collapse').removeClass("in");
