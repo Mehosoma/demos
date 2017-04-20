@@ -139,8 +139,8 @@ window.addEventListener("orientationchange", function(e) {
 			$('.page-mero').css({'opacity':'1', 'display':'block'});
 			$('.page-mobi').css({'opacity':'1', 'display':'block'});
 			$('.event').css({'opacity':'1', 'display':'block'});
-			$('.events-list').css({'opacity':'1', 'display':'block'});
-            $('.event').html(newContent);
+			$('.events-list').css({'opacity':'1', 'display':'block'});  
+            location.reload();         
 		} else {
 			$(this).addClass('open');
 			$('.navbar-collapse').removeClass("in");
