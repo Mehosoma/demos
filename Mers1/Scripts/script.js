@@ -146,17 +146,17 @@ window.addEventListener("orientationchange", function(e) {
 				var windowWidth = $(window).width();
 	    		if(windowWidth >= 480){
 	    		} else{
-					$('.page-head').css({'opacity':'1', 'display':'none'});
-					$('.page-cons').css({'opacity':'1', 'display':'none'});
-					$('.page-exp').css({'opacity':'1', 'display':'none'});
-					$('.page-obsl').css({'opacity':'1', 'display':'none'});
-					$('.page-tren').css({'opacity':'1', 'display':'none'});
-					$('.page-sopr').css({'opacity':'1', 'display':'none'});
-					$('.page-mero').css({'opacity':'1', 'display':'none'});
-					$('.page-mobi').css({'opacity':'1', 'display':'none'});
-					$('.page-mobi').css({'opacity':'1', 'display':'none'});
-					$('.event').css({'opacity':'1', 'display':'none'});
-					$('.events-list').css({'opacity':'1', 'display':'none'});
+					$('.page-head').css({'opacity':'0', 'display':'none'});
+					$('.page-cons').css({'opacity':'0', 'display':'none'});
+					$('.page-exp').css({'opacity':'0', 'display':'none'});
+					$('.page-obsl').css({'opacity':'0', 'display':'none'});
+					$('.page-tren').css({'opacity':'0', 'display':'none'});
+					$('.page-sopr').css({'opacity':'0', 'display':'none'});
+					$('.page-mero').css({'opacity':'0', 'display':'none'});
+					$('.page-mobi').css({'opacity':'0', 'display':'none'});
+					$('.page-mobi').css({'opacity':'0', 'display':'none'});
+					$('.event').css({'opacity':'0', 'display':'none'});
+					$('.events-list').css({'opacity':'0', 'display':'none'});
 				}
 			$('.hidden-page').fadeIn(60, function () {
                     $('.hidden-page').css({'opacity':'1', 'display':'block'});
@@ -179,11 +179,11 @@ $(document).ready(function(){
         gallery: true,
         responsive : [
         	{
-                breakpoint:1500,
+                breakpoint:2560,
                 settings: {
                     item:1,
                     slideMove:1,
-                    thumbItem:8
+                    thumbItem:5
                   }
             },
         	{
@@ -191,7 +191,7 @@ $(document).ready(function(){
                 settings: {
                     item:1,
                     slideMove:1,
-                    thumbItem:7                   
+                    thumbItem:4                   
                   }
             },
             {
@@ -199,7 +199,7 @@ $(document).ready(function(){
                 settings: {
                     item:1,
                     slideMove:1,
-                    thumbItem:5                   
+                    thumbItem:3                  
                   }
             },
             {
@@ -207,7 +207,7 @@ $(document).ready(function(){
                 settings: {
                     item:1,
                     slideMove:1,
-                    thumbItem:3,
+                    thumbItem:2,
                     controls: true,
                   }
             }
