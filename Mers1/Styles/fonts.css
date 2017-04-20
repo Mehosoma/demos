@@ -32,17 +32,14 @@
 
 }
 
-@font-face {
-    font-family: 'CorporateSRegular';
-    src: url('../fonts/CorporateS-Regular.eot');
-    font-weight: normal;
-    font-style: normal;
-
-}
 
 @font-face {
-    font-family: 'CorporateSRegular1';
-    src: url('../fonts/CorporateS-Regular.otf');
+    font-family: 'corporate_sregular';
+    src: url('../fonts/corporates-regular.eot');
+    src: url('../fonts/corporates-regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/corporates-regular.woff2') format('woff2'),
+         url('../fonts/corporates-regular.woff') format('woff'),
+         url('../fonts/corporates-regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 
