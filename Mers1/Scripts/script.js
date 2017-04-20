@@ -177,21 +177,41 @@ $(document).ready(function(){
         prevHtml: '',
         nextHtml: '',
         gallery: true,
+        adaptiveHeight: true,
         responsive : [
         	{
                 breakpoint:2560,
                 settings: {
                     item:1,
                     slideMove:1,
+                    thumbItem:6
+                  }
+            },
+
+            {
+                breakpoint:1500,
+                settings: {
+                    item:1,
+                    slideMove:1,
                     thumbItem:5
                   }
             },
+
+            {
+                breakpoint:1199,
+                settings: {
+                    item:1,
+                    slideMove:1,
+                    thumbItem:4
+                  }
+            },
+
         	{
                 breakpoint:992,
                 settings: {
                     item:1,
                     slideMove:1,
-                    thumbItem:4                   
+                    thumbItem:3                   
                   }
             },
             {
@@ -199,7 +219,7 @@ $(document).ready(function(){
                 settings: {
                     item:1,
                     slideMove:1,
-                    thumbItem:3                  
+                    thumbItem:2                  
                   }
             },
             {

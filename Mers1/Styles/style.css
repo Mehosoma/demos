@@ -228,25 +228,22 @@ body {font:18px/1.38 'ArialNarrow';background:#000;}
 .event dl.meta dd.map:before {background-position:0 -30px;} 
 
 
-
 .lSSlideOuter .lSPager.lSGallery li{
 	width: 100%;	
-	height: 106px;
+	height: 106px;	
 }
 
 .lSSlideOuter .lSPager.lSGallery img{
 	width: 100%;	
-	height: 106px;
+	height: 100%;	
 }
 
 .li_slide{
-	width: 100%;
-	height: 440px;	
+	width: 100%;	
 }
 
 .li_slide img{
-	width: 100%;
-	height: 440px;	
+	width: 100%;	
 }
 
 
@@ -324,23 +321,14 @@ footer p {line-height:30px;font-size:13px;text-align:center;}
 
 	.lSSlideOuter .lSPager.lSGallery li{
 		width: 100%;	
-		height: 80px;
+		height: 70px;	
 	}
 
 	.lSSlideOuter .lSPager.lSGallery img{
 		width: 100%;	
-		height: 80px;
+		height: 100%;	
 	}
-
-	.li_slide{
-		width: 100%;
-		height: auto;	
-	}
-
-	.li_slide img{
-		width: 100%;
-		height: auto;	
-	}
+	
 
 }
 
@@ -375,25 +363,7 @@ footer p {line-height:30px;font-size:13px;text-align:center;}
 		white-space: nowrap;
 	}
 
-	.lSSlideOuter .lSPager.lSGallery li{
-		width: 100%;	
-		height: 80px;
-	}
-
-	.lSSlideOuter .lSPager.lSGallery img{
-		width: 100%;	
-		height: 80px;
-	}
-
-	.li_slide{
-		width: 100%;
-		height: auto;	
-	}
-
-	.li_slide img{
-		width: 100%;
-		height: auto;	
-	}
+	
 
 }
 
@@ -432,29 +402,10 @@ footer p {line-height:30px;font-size:13px;text-align:center;}
 	.event dl.meta {border-top:1px solid #1c1c1c;border-bottom:1px solid #1c1c1c;}
 	.hidden-page{
 		top: 109px;
-	}
-
-	.lSSlideOuter .lSPager.lSGallery li{
-		width: 100%;	
-		height: 80px;
-	}
-
-	.lSSlideOuter .lSPager.lSGallery img{
-		width: 100%;	
-		height: 80px;
-	}
-
-	.li_slide{
-		width: 100%;
-		height: auto;	
-	}
-
-	.li_slide img{
-		width: 100%;
-		height: auto;	
-	}
 	
 }
+
+
 @media (min-width: 992px) and (max-width: 1199px) {
 	
 
@@ -462,18 +413,9 @@ footer p {line-height:30px;font-size:13px;text-align:center;}
 		right: 57%;
 	}
 
-	.li_slide{
-		width: 100%;
-		height: 350px;	
-	}
-
-	.li_slide img{
-		width: 100%;
-		height: 350px;	
-	}
-
-	
 }
+
+
 @media (min-width: 1200px) {
 	.navbar-nav{
 		margin-left: 250px;
@@ -498,24 +440,6 @@ footer p {line-height:30px;font-size:13px;text-align:center;}
 		height: 30px;
 	}
 
-	.lSSlideOuter .lSPager.lSGallery li{
-		width: 100%;	
-		height: 150px;
-	}
-
-	.lSSlideOuter .lSPager.lSGallery img{
-		width: 100%;	
-		height: 150px;
-	}
-
-	.li_slide{
-		width: 100%;
-		height: 600px;	
-	}
-
-	.li_slide img{
-		width: 100%;
-		height: 600px;	
-	}
+	
 
 }
