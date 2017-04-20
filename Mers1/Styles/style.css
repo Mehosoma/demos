@@ -356,7 +356,7 @@ footer p {line-height:30px;font-size:13px;text-align:center;}
 
 }
 
-	@media only screen and (min-width : 480px) and (max-width : 600px) {
+@media only screen and (min-width : 480px) and (max-width : 600px) {
 
 	.hidden-page .col-xs-6{
 		width: 100%;
@@ -391,6 +391,7 @@ footer p {line-height:30px;font-size:13px;text-align:center;}
 	.event dl.meta {border-top:1px solid #1c1c1c;border-bottom:1px solid #1c1c1c;}
 	.hidden-page{
 		top: 109px;
+	}
 	
 }
 
@@ -406,9 +407,11 @@ footer p {line-height:30px;font-size:13px;text-align:center;}
 
 
 @media (min-width: 1200px) {
-	.navbar-nav{
-		margin-left: 250px;
+	
+	.navbar .navbar-nav {
+		margin: 43px auto 0 250px;
 	}
+
 }
 
 @media (min-width: 1500px) {

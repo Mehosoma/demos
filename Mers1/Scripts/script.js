@@ -140,6 +140,7 @@ window.addEventListener("orientationchange", function(e) {
 			$('.page-mobi').css({'opacity':'1', 'display':'block'});
 			$('.event').css({'opacity':'1', 'display':'block'});
 			$('.events-list').css({'opacity':'1', 'display':'block'});
+            $('.event').html(newContent);
 		} else {
 			$(this).addClass('open');
 			$('.navbar-collapse').removeClass("in");
