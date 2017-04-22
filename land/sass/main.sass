@@ -1,0 +1,698 @@
+@import "bourbon/bourbon"
+
+
+body
+	min-width: 320px
+	max-width: 1920px
+	position: relative
+	line-height: 1.6
+	-webkit-font-smoothing: antialiased
+	overflow-x: hidden
+	margin: 0 auto
+	a:hover, a:focus, a:active
+		text-decoration: none
+		outline: none
+	input:focus, input:active
+		text-decoration: none
+		outline: none
+
+.container
+	padding: 0
+
+
+/**Header**/
+header
+	position: absolute	
+	height: 70px
+	z-index: 99
+	width: 1300px
+	margin: auto
+	right: 0
+	left: 0	
+	overflow: hidden	
+	.header-menu
+		margin-top: 7px
+		min-height: 70px
+		position: relative
+	.header-phone
+		margin-left: 28px
+		span
+			line-height: 70px
+			font-family: 'PT Sans', sans-serif
+			color: #fff
+			font-size: 20px
+			font-weight: 700
+			letter-spacing: 3px
+			img
+				margin-right: 16px
+	.button-order
+		a
+			text-align: center
+			color:#acd373
+			background: #fff
+			line-height: 37px			
+			border-radius: 30px
+			font-family: 'NeoSansProBold', sans-serif
+			font-size: 16px
+			text-transform: uppercase
+			letter-spacing: 2px
+			position: absolute
+			width: 152px
+			height: 37px
+			margin: auto
+			top: 0
+			bottom: 0
+			right: 0
+			left: 0			
+	.navbar
+		background: transparent
+	.navbar-nav
+		float: right
+		li
+			height: 70px
+			padding: 25px 7px
+		a
+			font-family: 'PT Sans', sans-serif
+			font-size: 16px
+			color: #fff
+			text-shadow: none		
+			padding: 0 10px
+			font-weight: 700
+			letter-spacing: 1px			
+	.navbar-collapse
+		padding: 0
+
+
+/**MainBanner**/
+#banner
+	.slide-item
+		background-image: url('../img/main-bg.jpg')
+		width: 100%
+		height: 678px
+		background-position: top center
+		background-repeat: no-repeat
+	.lSSlideOuter		
+		position: relative
+	.bg-content
+		margin-top: 100px
+		h1
+			color: #fff
+			text-transform: uppercase
+			font-family: 'NeoSansProRegular', sans-serif
+			font-size: 36px
+			margin: 82px auto 0
+			text-align: center
+			letter-spacing: 6px
+			line-height: 43px
+			i
+				font-family: 'NeoSansProBold', sans-serif
+				font-size: 36px
+				font-style: normal
+		.banner-list
+			list-style-type: none
+			padding: 0
+			position: relative
+			display: block
+			width: 38%
+			margin: 57px auto 0			
+			li
+				color: #fff
+				text-transform: uppercase
+				font-family: 'NeoSansProRegular', sans-serif
+				font-size: 16px
+				margin-bottom: 10px
+				i
+					color: #acd373
+					font-size: 16px
+					margin-right: 10px
+				a
+					color: #acd373
+					border-bottom: 1px dashed #acd373
+					font-weight: normal
+		.button-bg
+			display: block
+			background: #acd373
+			color: #fff
+			font-family: 'PT Sans', sans-serif
+			font-size: 21px
+			padding: 15px 0
+			border-radius: 120px
+			width: 474px
+			text-align: center
+			margin: 72px auto
+			font-weight: 700
+			letter-spacing: 2px
+	.lSPager
+		position: absolute
+		top: 92%
+		left: 50%
+	.lSSlideOuter .lSPager.lSpg > li a
+		width: 10px
+		height: 10px
+		background-color: #acd373
+	.lSSlideOuter .lSPager.lSpg > li.active a
+		background-color: transparent		
+		border: 2px solid #acd373
+		border-radius: 50%
+	.lSAction > .lSPrev
+		background-image: url('../img/banner-left-arrow.png')
+		width: 24px
+		height: 42px
+		background-repeat: no-repeat
+		background-position: center center
+		left: 15%
+	.lSAction > .lSNext
+		background-image: url('../img/banner-right-arrow.png')
+		width: 24px
+		height: 42px
+		background-repeat: no-repeat
+		background-position: center center
+		right: 15%
+
+
+/**Benefits**/
+#benefits
+	padding: 100px 0
+	.img-box
+		width: 190px
+		height: 145px
+		border: 1px dashed #000
+		border-radius: 30px
+		position: relative
+		margin: 0 auto
+		img
+			width: 126px
+			height: 97px
+			position: absolute
+			margin: auto
+			top: 0
+			bottom: 0
+			left: 0
+			right: 0
+		.second
+			width: 87px
+			height: 103px
+		.thied
+			width: 117px
+			height: 111px
+		.four
+			width: 107px
+			height: 107px
+	.text-box
+		span
+			display: block
+			color: #5b80e0
+			font-family: 'NeoSansProBold', sans-serif
+			font-size: 20px
+			text-align: center
+		p
+			color: #000
+			font-family: 'PT Sans', sans-serif
+			font-size: 16px
+			text-align: center
+			font-weight: 400
+		a
+			color: #5b80e0
+
+
+/**SendForm**/
+#action
+	background-image: url('../img/action-bg.jpg')
+	width: 100%
+	height: 557px
+	background-repeat: no-repeat
+	background-position: top center
+	background-size: cover
+	.action-box
+		width: 100%
+		min-height: 360px
+		border: 5px solid #fff
+		margin-top: 100px
+		position: relative
+		span
+			display: block
+			color: #fff
+			font-family: 'NeoSansProRegular', sans-serif
+			font-size: 40px			
+			letter-spacing: 7px
+			margin-left: 110px
+			strong
+				font-family: 'NeoSansProBold', sans-serif
+		p
+			color: #fff
+			font-family: 'PT Sans', sans-serif
+			font-size: 20px	
+			margin-left: 110px		
+		#action-form
+			background-color: #fff
+			width: 900px
+			min-height: 80px
+			margin: 100px 0 0 110px
+			input
+				border: 1px solid #cbcbcb
+				border-radius: 30px
+				height: 40px
+				padding-left: 20px
+				display: inline-block				
+				font-family: 'PT Sans', sans-serif
+				font-size: 16px
+				font-weight: 700				
+			button
+				border: none
+				background: #acd373
+				height: 40px
+				color: #fff				
+				font-family: 'PT Sans', sans-serif
+				font-size: 20px
+				font-weight: 700
+				text-align: center
+				padding: 0 50px
+				border-radius: 50px
+				letter-spacing: 2px
+				display: inline-block
+
+
+/**Thesis**/
+#thesis
+	background-image: url('../img/thesis-bg.jpg')
+	width: 100%
+	height: 1460px
+	background-repeat: no-repeat
+	background-position: top center
+	background-size: cover
+	h3
+		color: #fff
+		font-family: 'NeoSansProRegular', sans-serif
+		font-size: 40px			
+		letter-spacing: 3px
+		text-align: center		
+		strong
+			font-family: 'NeoSansProBold', sans-serif
+	.thesis-box
+		margin-top: 50px
+		margin-bottom: 50px
+	.thesis-img-box
+		width: 130px
+		height: 130px
+		background: rgba(53,82,124,0.2)
+		border-radius: 50%
+		position: relative
+		margin: 0 auto
+		i
+			color: #fff				
+			font-family: 'PT Sans', sans-serif
+			font-size: 130px
+			font-weight: 700
+			font-style: normal
+			position: absolute
+			top: 0
+			right: 10px
+			line-height: 100px
+	.thesis-text-box
+		span
+			display: block
+			color: #fff
+			font-family: 'NeoSansProBold', sans-serif
+			font-size: 20px
+		p
+			color: #fff				
+			font-family: 'PT Sans', sans-serif
+			font-size: 16px
+			line-height: 1.3
+	.thesis-button
+		text-align: center
+		a
+			color: #fff				
+			font-family: 'PT Sans', sans-serif
+			font-size: 21px
+			font-weight: 700			
+			background: #acd373
+			padding: 20px 100px
+			border-radius: 50px
+			box-shadow: 0px 0px 30px rgba(0,0,0,0.3)
+
+/**People**/
+#people
+	background: #dee8ea
+	background-image: url('../img/people-bg.png')
+	width: 100%
+	height: 1106px
+	background-repeat: no-repeat
+	background-position: top right
+	h3
+		color: #9ec283
+		font-family: 'NeoSansProRegular', sans-serif
+		font-size: 40px			
+		letter-spacing: 3px
+		text-align: center		
+		strong
+			font-family: 'NeoSansProBold', sans-serif
+	.people-block
+		text-align: center
+		.people-block-img
+			display: inline-block		
+		.people-block-text
+			display: inline-block		
+			width: 40%
+			text-align: left
+			margin-left: 50px
+			span
+				color: #000
+				font-family: 'NeoSansProRegular', sans-serif
+				font-size: 20px	
+			p
+				color: #000
+				font-family: 'PT Sans', sans-serif
+				font-size: 16px
+				line-height: 1.3
+
+
+/**Services**/
+#services
+	background-image: url('../img/services-bg.jpg')
+	width: 100%
+	height: 2089px
+	background-repeat: no-repeat
+	background-position: top center
+	background-size: cover
+	h3
+		color: #fff
+		font-family: 'NeoSansProRegular', sans-serif
+		font-size: 40px			
+		letter-spacing: 3px
+		text-align: center		
+		strong
+			font-family: 'NeoSansProBold', sans-serif
+	.services-text
+		span
+			display: block
+			color: #fff
+			font-family: 'NeoSansProBold', sans-serif
+			font-size: 24px
+		p
+			color: #fff				
+			font-family: 'PT Sans', sans-serif
+			font-size: 16px
+		.services-list
+			list-style-type: none
+			padding: 0
+			position: relative
+			display: block			
+			li
+				color: #fff				
+				font-family: 'PT Sans', sans-serif
+				font-size: 16px
+				margin-bottom: 10px
+				i
+					color: #acd373
+					font-size: 16px
+					margin-right: 10px
+		.services-button
+			text-align: center
+			a
+				color: #fff				
+				font-family: 'PT Sans', sans-serif
+				font-size: 21px
+				font-weight: 700			
+				background: #acd373
+				padding: 10px 100px
+				border-radius: 50px
+				box-shadow: 0px 0px 30px rgba(0,0,0,0.3)
+
+/**Process**/
+#process
+	.process-text
+		span
+			display: inline-block
+			vertical-align: top
+			color: #000			
+			font-family: 'PT Sans', sans-serif
+			font-size: 40px
+			font-weight: 700						
+		h4
+			display: inline-block
+			color: #000			
+			font-family: 'PT Sans', sans-serif
+			font-size: 40px
+			font-weight: 700
+		p					
+			color: #000			
+			font-family: 'PT Sans', sans-serif
+			font-size: 24px
+	.process-img
+		width: 100%
+		height: 378px
+		img
+			width: 100%
+			height: 100%
+
+/**Command**/
+#command
+	background: #dee8ea
+	background-image: url('../img/command-bg.png')
+	width: 100%
+	height: 580px
+	background-repeat: no-repeat
+	background-position: top left
+	h3
+		color: #000
+		font-family: 'NeoSansProRegular', sans-serif
+		font-size: 40px			
+		letter-spacing: 3px
+		text-align: center		
+		strong
+			font-family: 'NeoSansProBold', sans-serif
+	.command-block
+		text-align: center
+		.command-img, .command-img-two, .command-img-three, .command-img-four	
+			width: 250px
+			height: 250px
+			border-radius: 50%
+			background-image: url('../img/command-one.png')
+			background-position: center center
+			background-repeat: no-repeat
+			margin: 0 auto
+		.command-img-two
+			background-image: url('../img/command-two.png')
+		.command-img-three
+			background-image: url('../img/command-three.png')
+		.command-img-four
+			background-image: url('../img/command-four.png')
+		.command-text
+			span
+				display: block				
+				color: #385157
+				font-family: 'PT Sans', sans-serif
+				font-size: 20px
+				font-weight: 700
+			p
+				display: block				
+				color: #385157
+				font-family: 'PT Sans', sans-serif
+				font-size: 16px
+
+/**Feed**/
+#feed
+	h3
+		color: #000
+		font-family: 'NeoSansProRegular', sans-serif
+		font-size: 40px			
+		letter-spacing: 3px
+		text-align: center		
+		strong
+			font-family: 'NeoSansProBold', sans-serif
+	.feed-left
+		text-align: center
+		.feed-image
+			width: 231px
+			height: 231px
+			margin: 0 auto
+		.feed-image-text
+			span				
+				display: block				
+				color: #385157
+				font-family: 'PT Sans', sans-serif
+				font-size: 20px
+				font-weight: 700
+			p				
+				display: block				
+				color: #385157
+				font-family: 'PT Sans', sans-serif
+				font-size: 16px
+	.feed-right
+		border: 3px solid #385157
+		border-radius: 10px
+		width: 60%
+		span
+			color: #385157
+			font-family: 'NeoSansProRegular', sans-serif
+			font-size: 20px
+		p			
+			color: #000
+			font-family: 'PT Sans', sans-serif
+			font-size: 14px
+
+/**Order**/
+#order
+	background-image: url('../img/order-bg.jpg')
+	width: 100%
+	height: 850px
+	background-repeat: no-repeat
+	background-position: top center
+	background-size: cover
+	padding: 100px
+	#order-form
+		background: #fff
+		width: 565px
+		height: 640px
+		position: relative
+		strong
+			display: block
+			color: #acd373
+			font-family: 'NeoSansProBold', sans-serif
+			font-size: 40px			
+			letter-spacing: 3px
+			text-align: center
+		span
+			width: 57%
+			display: block							
+			color: #000
+			font-family: 'PT Sans', sans-serif
+			font-size: 20px
+			margin: 0 auto
+			text-align: center
+		p
+			display: block							
+			color: #000
+			font-family: 'PT Sans', sans-serif
+			font-size: 14px
+			text-transform: uppercase
+		input
+			width: 332px
+			height: 42px
+			background: #fcfcfc
+			border: 1px solid #e0e0e0
+			border-radius: 20px							
+			color: #919191
+			font-family: 'PT Sans', sans-serif
+			font-size: 14px
+			padding-left: 20px
+			font-style: italic
+		button
+			display: block
+			width: 325px
+			height: 55px
+			background: #acd373
+			border: 2px solid #fff
+			border-radius: 30px
+			position: absolute
+			margin: auto
+			left: 0
+			right: 0
+			top: 610px
+			font-family: 'PT Sans', sans-serif
+			font-size: 21px
+			padding-left: 20px
+			font-weight: 700
+			color: #fff
+			letter-spacing: 3px
+
+/**About**/
+#about
+	position: relative
+	width: 100%
+	height: 720px
+	position: relative
+	.map
+		position: absolute
+		width: 100%
+		height: 100%
+	.about-block
+		width: 700px
+		height: 480px
+		background: #fff
+		.about-block-left
+			width: 50%
+			float: left
+			span
+				display: block
+				color: #000
+				font-family: 'NeoSansProBold', sans-serif
+				font-size: 16px
+			p
+				display: block
+				color: #000
+				font-family: 'NeoSansProRegular', sans-serif
+				font-size: 16px
+		.about-block-right
+			width: 50%
+			display: inline-block
+			background: #76c6d7
+			height: 100%
+			text-align: center
+			span
+				display: block
+				color: #fff
+				font-family: 'NeoSansProBold', sans-serif
+				font-size: 20px
+				letter-spacing: 2px
+				text-align: left
+			p
+				display: block
+				color: #fff
+				font-family: 'NeoSansProRegular', sans-serif
+				font-size: 20px
+				letter-spacing: 2px
+				text-align: left
+				a
+					color: #fff
+					font-size: 20px
+				.dashed-link
+					border-bottom: 1px dashed #fff
+			.about-order
+				color: #fff
+				font-family: 'NeoSansProRegular', sans-serif
+				font-size: 18px
+				letter-spacing: 2px
+				padding: 10px 50px
+				border: 1px solid #fff
+				border-radius: 20px
+
+/**Footer**/
+footer
+	min-height: 185px
+	background: #000
+	.copy
+		span
+			color: #acd373
+			display: block
+			font-family: 'Open Sans', sans-serif
+			font-size: 14px
+		.dashed
+			border-bottom: 1px dashed
+			width: 58%
+	.media
+		ul
+			list-style-type: none
+			padding: 0
+			li
+				font-size: 30px
+				color: #acd373
+				display: inline-block
+	.contacts
+		span
+			display: block
+			color: #acd373
+			display: block
+			font-family: 'Open Sans', sans-serif
+			font-size: 20px
+		a
+			display: block
+			color: #acd373
+			display: block
+			font-family: 'Open Sans', sans-serif
+			font-size: 14px
+			border: 2px solid #ffcc66
+			width: 185px
+			text-align: center
+			padding: 10px 0
