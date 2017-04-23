@@ -444,6 +444,12 @@
 		color: #6baad8;
 	}
 
+	header .header-phone{
+		margin-left: 0px;
+		margin-right: 15px;
+		text-align: right;
+	}
+
 	#banner .bg-content{
 		margin-top: 0px;
 	}
