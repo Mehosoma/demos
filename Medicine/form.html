@@ -156,20 +156,21 @@
 	              				<dt>Информация о пациенте</dt>
 	              				<dd id="fn-about-patient">
 	              					<div class="name">
-			                			<p>Имя пациента</p>
-									    <input type="text" name="fio">
+			                			<p>Имя пациента*</p>
+									    <input type="text" name="fio" required>
 									</div>
 									<div id="number-history">
-									    <p>Номер истории болезни или аммбулаторной карты</p>
-									    <input type="text" name="number">
+									    <p>Номер истории болезни или аммбулаторной карты*</p>
+									    <input type="text" name="number" required>
 									</div>
 									<div class="birthday">
-									    <p>Дата рождения</p>
-									    <input type="text" name="birthday" id="datepicker">
+									    <p>Дата рождения*</p>
+									    <input type="text" name="birthday" required id="datepicker">
+									    <img src="images/date.png">
 									</div>
 									<div class="age-patient">
-									    <p>Возраст на момент начала реакции</p>
-									    <input type="text" name="age" id="age-in">
+									    <p>Возраст на момент начала реакции*</p>
+									    <input type="text" name="age" required id="age-in">
 									    <select name="age-opt">
 									    	<option>Год</option>
 									    	<option>Месяц</option>
@@ -185,12 +186,12 @@
 			    						<p><label><input name="pol" type="radio" value="sex-other" onChange="Selected(this)">Другое</label></p>
 		    						</div>
 		    						<div class="weight-patient">
-			    						<p>Масса тела в кг.</p>
-									    <input type="text" name="weight">
+			    						<p>Масса тела в кг.*</p>
+									    <input type="text" name="weight" required>
 									</div>
 									<div class="height">
-								    	<p>Рост в см.</p>
-									    <input type="text" name="height">
+								    	<p>Рост в см.*</p>
+									    <input type="text" name="height" required>
 									</div>
 									<div id="pregnant">
 										<p>Беременность</p>
@@ -224,8 +225,8 @@
 			    						<p><input name="kidney" type="radio" value="other-kidn">Другое</p>
 			    					</div>
 			    					<div class="allergy">
-			    						<p>Наличие аллергии</p>
-			    						<textarea name="allergy-info"></textarea>
+			    						<p>Наличие аллергии*</p>
+			    						<textarea name="allergy-info" required></textarea>
 			    					</div>
 	             				</dd>
 	              				<dt>Информация о подозреваемом лекарственном средстве</dt>
@@ -290,6 +291,7 @@
 								    <div class="date-begin">
 								    	<p>Дата начала использования препарата</p>
 								    	<input type="text" name="begin-date" id="datenachprep">
+								    	<img src="images/date.png">
 								    </div>
 								    <div class="time-begin">
 								    	<p>Время начала использования препарата (если известно)</p>
@@ -298,6 +300,7 @@
 								    <div class="date-end">
 								    	<p>Дата окончания использования препарата</p>
 								    	<input type="text" name="end-date" id="dateprepkon">
+								    	<img src="images/date.png">
 								    </div>
 								    <div class="time-end">
 								    	<p>Время окончания использования препарата (если известно)</p>
@@ -326,6 +329,7 @@
 								    <div class="date-begin-others">
 								    	<p>Дата начала приема</p>
 								    	<input type="text" name="begin-date-others" id="datenach">
+								    	<img src="images/date.png">
 								    </div>
 								    <div class="time-begin-others">
 								    	<p>Время начала приема (если известно)</p>
@@ -334,6 +338,7 @@
 								    <div class="date-end-others">
 								    	<p>Дата окончания приема</p>
 								    	<input type="text" name="end-date-others" id="datekon">
+								    	<img src="images/date.png">
 								    </div>
 								    <div class="time-end-others">
 								    	<p>Время окончания приема (если известно)</p>
@@ -364,6 +369,7 @@
 		    						<div class="date-begin-react">
 		    							<p>Дата начала реакции</p>
 								    	<input type="text" name="begin-date-react" id="datenachreak">
+								    	<img src="images/date.png">
 								    </div>
 								    <div class="time-begin-react">
 								    	<p>Время начала реакции (если известно)</p>
@@ -372,6 +378,7 @@
 								    <div class="date-end-react">
 								    	<p>Дата окончания реакции</p>
 								    	<input type="text" name="end-date-react" id="datekonecreak">
+								    	<img src="images/date.png">
 								    </div>
 								    <div class="time-end-react">
 								    	<p>Время окончания реакции (если известно)</p>
@@ -436,6 +443,7 @@
 									   	<div id="date-death">
 									   		<p>Укажите дату смерти</p>
 								   			<input type="" name="" id="datedeath">
+								   			<img src="images/date.png">
 								   		</div>
 			    						<p><input name="reac_ser" type="radio" value="reac-ser-threat" checked="">Угроза жизни</p>
 			    						<p><input name="reac_ser" type="radio" value="reac-ser-hosp">Госпитализация</p>
