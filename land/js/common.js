@@ -49,7 +49,7 @@ $(document).ready(function(){
                 settings: {
                     item:1,
                     slideMove:1,                   
-                    controls: true,
+                    controls: false,
                   }
             }
         ]        
@@ -78,8 +78,7 @@ $(document).ready(function(){
                 breakpoint:1500,
                 settings: {
                     item:1,
-                    slideMove:1,
-                    thumbItem:6
+                    slideMove:1,                  
                   }
             },
 
@@ -87,8 +86,7 @@ $(document).ready(function(){
                 breakpoint:1199,
                 settings: {
                     item:1,
-                    slideMove:1,
-                    thumbItem:5
+                    slideMove:1,                    
                   }
             },
 
@@ -96,8 +94,7 @@ $(document).ready(function(){
                 breakpoint:992,
                 settings: {
                     item:1,
-                    slideMove:1,
-                    thumbItem:4                   
+                    slideMove:1,                                     
                   }
             },
             {
@@ -105,16 +102,15 @@ $(document).ready(function(){
                 settings: {
                     item:1,
                     slideMove:1,
-                    thumbItem:3                  
+                    controls: false,                 
                   }
             },
             {
                 breakpoint:480,
                 settings: {
                     item:1,
-                    slideMove:1,
-                    thumbItem:3,
-                    controls: true,
+                    slideMove:1,                    
+                    controls: false,
                   }
             }
         ]        
