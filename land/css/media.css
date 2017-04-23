@@ -4,24 +4,25 @@
 
 @media only screen and (min-width : 480px) and (max-width : 767px){
 
-	.container{
-		padding: 0 10px;
-	}
-
 	header{
 		position: static;
 		background-color: #6baad8;
 	}
 
 	header .button-order a{
+		top: 90px;
+		left: 15px;
 		margin: 0;
-		left: 230px;
-		top: 17px;
+		z-index: 999;
 	}
 
 	header .navbar-nav{
 		float: none;
 		text-align: center;
+	}
+
+	header .logo{
+		margin-left: 15px;
 	}
 	
 
@@ -43,6 +44,18 @@
 		color: #6baad8;
 	}
 
+	#banner .bg-content{
+		margin-top: 0px;
+	}
+
+	#banner .bg-content h1{
+		font-size: 30px;
+		letter-spacing: 2px;
+	}
+
+	#banner .bg-content .banner-list{
+		width: 95%;
+	}
 
 
 }

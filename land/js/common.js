@@ -40,7 +40,8 @@ $(document).ready(function(){
                 breakpoint:768,
                 settings: {
                     item:1,
-                    slideMove:1                                   
+                    slideMove:1,
+                    controls: false,                                 
                   }
             },
             {
