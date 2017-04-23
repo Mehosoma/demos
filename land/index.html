@@ -19,6 +19,7 @@
 	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.css">
 	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-theme.css">
 	<link rel="stylesheet" type="text/css" href="libs/slider/lightslider.css"/>
+	<link rel="stylesheet" type="text/css" href="libs/magnific/magnific-popup.css"/>
 
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/main.css">
@@ -36,25 +37,28 @@
 		<div class="container">
 			<div class="row">
 				<div class="header-menu">
-					<div class="col-lg-2">
+					<div class="col-lg-2 col-md-2 col-sm-3 col-xs-5">
 						<img src="img/logo.png" alt="logo">
 					</div>
-					<div class="col-lg-3">
-						<div class="header-phone">
+					<div class="col-lg-3 col-md-3 col-sm-5 col-xs-7">
+						<div class="header-phone hidden-xs">
 							<span><img src="img/header-phone.png" alt="phone-icon">8(800) 200 05 00</span>
 						</div>
 					</div>
 					<div class="button-order">
-						<a href="">Заказать</a>
+						<a href="#hidden_form" class="popup_form">Заказать</a>
 					</div>
-					<div class="col-lg-5 col-lg-offset-2 navbar" role="navigation">
+					<div class="col-lg-5 col-lg-offset-2 col-md-5 col-md-offset-2 col-sm-12 col-xs-12 navbar" role="navigation">
 						<div class="navbar-header">
-							<button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" style="">
 						    <span class="sr-only">Toggle navigation</span>
 						    <span class="icon-bar"></span>
 						    <span class="icon-bar"></span>
 						    <span class="icon-bar"></span>
-							</button>    							 
+							</button>    
+							<div class="header-phone">
+								<span><img src="img/header-phone.png" alt="phone-icon">8(800) 200 05 00</span>
+							</div>							 
 						</div>
 						<div class="navbar-collapse collapse">
 							<ul class="nav navbar-nav">
@@ -76,7 +80,7 @@
 			<li class="slide-item">
 				<div class="container">
 					<div class="row">
-						<div class="col-lg-12 bg-content">
+						<div class="col-lg-12 col-md-12 col-sm-12 bg-content">
 							<h1><i>Надежный помощник</i> - помощник<br> вашего бизнеса</h1>
 							<ul class="banner-list">
 								<li><i class="fa fa-check" aria-hidden="true"></i>100% на все обращения</li>
@@ -84,12 +88,12 @@
 								<li><i class="fa fa-check" aria-hidden="true"></i>Многоканальный номер любого региона, АПК АТ.</li>
 								<li><i class="fa fa-check" aria-hidden="true"></i><a href="">и многое другое</a></li>
 							</ul>
-							<a href="" class="button-bg">Узнать подробности</a>
+							<a href="#hidden_form" class="button-bg popup_form">Узнать подробности</a>
 						</div>
 					</div>
 				</div>
 			</li>
-			<li class="slide-item">
+			<li class="slide-item2">
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-12 bg-content">
@@ -100,7 +104,7 @@
 								<li><i class="fa fa-check" aria-hidden="true"></i>Многоканальный номер любого региона, АПК АТ.</li>
 								<li><i class="fa fa-check" aria-hidden="true"></i><a href="">и многое другое</a></li>
 							</ul>
-							<a href="" class="button-bg">Узнать подробности</a>
+							<a href="#hidden_form" class="button-bg popup_form">Узнать подробности</a>
 						</div>
 					</div>
 				</div>
@@ -112,7 +116,7 @@
 	<section id="benefits">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-3">
+				<div class="col-lg-3 col-md-3 col-sm-6">
 					<div class="img-box">
 						<img src="img/benefits-one.png" alt="benef-icon">
 					</div>
@@ -121,7 +125,7 @@
 						<p>для своих клиентов, партнеров и заказчиков. 100% ответов на все обращения</p>
 					</div>
 				</div>
-				<div class="col-lg-3">
+				<div class="col-lg-3 col-md-3 col-sm-6">
 					<div class="img-box">
 						<img src="img/benefits-two.png" class="second" alt="benef-icon">
 					</div>
@@ -130,7 +134,7 @@
 						<p>выполнение ваших поручений за <a hfer="">1 час</a> рабочего времени</p>
 					</div>
 				</div>
-				<div class="col-lg-3">
+				<div class="col-lg-3 col-md-3 col-sm-6">
 					<div class="img-box">
 						<img src="img/benefits-three.png" class="thied" alt="benef-icon">
 					</div>
@@ -139,7 +143,7 @@
 						<p>отсутствие затрат на организацию рабочего места, поиск, обучение персонала.</p>
 					</div>
 				</div>
-				<div class="col-lg-3">
+				<div class="col-lg-3 col-md-3 col-sm-6">
 					<div class="img-box">
 						<img src="img/benefits-four.png" class="four" alt="benef-icon">
 					</div>
@@ -157,8 +161,11 @@
 	<section id="action">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-12">
+				<div class="col-lg-12 col-md-12">
 					<div class="action-box">
+						<div class="action-arrow">
+							<img src="img/action-arrow.png" alt="action-arrow">
+						</div>
 						<span>Попробовать <strong>2 недели</strong> бесплатно</span>
 						<p>Акция действует до 01 мая!</p>
 						<form id="action-form" method="post">
@@ -177,80 +184,80 @@
 	<section id="thesis">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-12">
+				<div class="col-lg-12 col-md-12 col-sm-12">
 					<h3>Что включает в себя услуга<br><strong>«Надежный помощник»</strong> за 599 руб./сутки?</h3>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-lg-4">
+				<div class="col-lg-4 col-md-4 col-sm-6">
 					<div class="thesis-box">
 						<div class="thesis-img-box">
 							<i>1</i>
 						</div>
 						<div class="thesis-text-box">
 							<span>Выделенные номера</span>
-							<p>Мы регистрируем и предоставляем полный доступ к специальному выделенному многоканальному номеру для компании</p>
+							<p>Мы регистрируем и предо&shyставляем полный доступ к специальному выделенному многоканальному номеру для компании</p>
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-4">
+				<div class="col-lg-4 col-md-4 col-sm-6">
 					<div class="thesis-box">
 						<div class="thesis-img-box">
 							<i>2</i>
 						</div>
 						<div class="thesis-text-box">
 							<span>Запись приветствия</span>
-							<p>Напишем сценарий приветствия и запишем голосовое сообщение для всех входящих</p>
+							<p>Напишем сценарий привет&shyствия и запишем голосовое сообщение для всех входящих</p>
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-4">
+				<div class="col-lg-4 col-md-4 col-sm-6">
 					<div class="thesis-box">
 						<div class="thesis-img-box">
 							<i>3</i>
 						</div>
 						<div class="thesis-text-box">
 							<span>Обработка входящих</span>
-							<p>Помощник может принимать и обрабатывать сообщения из любых источников - вконтакте, фейсбук, инстаграм директ и прочие</p>
+							<p>Помощник может принимать и обрабатывать сообщения из любых источников - вконтак&shyте, фейсбук, инстаграм директ и прочие</p>
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-4">
+				<div class="col-lg-4 col-md-4 col-sm-6">
 					<div class="thesis-box">
 						<div class="thesis-img-box">
 							<i>4</i>
 						</div>
 						<div class="thesis-text-box">
 							<span>Скрипты разговора</span>
-							<p>Помощник отвечает на сообщения, как по заранее подготовленным шаблонам, так и в нестандартных ситуациях</p>
+							<p>Помощник отвечает на сооб&shyщения, как по заранее подго&shyтовленным шаблонам, так и в нестандартных ситуациях</p>
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-4">
+				<div class="col-lg-4 col-md-4 col-sm-6">
 					<div class="thesis-box">
 						<div class="thesis-img-box">
 							<i>5</i>
 						</div>
 						<div class="thesis-text-box">
 							<span>Ведение CRM</span>
-							<p>Вся информация о клиентах будет храниться в карточках CRM системы - имена, компании, номера телефонов, точки контактов</p>
+							<p>Вся информация о клиентах будет храниться в карточках CRM системы - имена, компа&shyнии, номера телефонов, точки контактов</p>
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-4">
+				<div class="col-lg-4 col-md-4 col-sm-6">
 					<div class="thesis-box">
 						<div class="thesis-img-box">
 							<i>6</i>
 						</div>
 						<div class="thesis-text-box">
 							<span>Ведение документации</span>
-							<p>Заполнение таблиц, отчетов, ведение рутинных дел на которые обычно не хватает времени</p>
+							<p>Заполнение таблиц, отчетов, ведение рутинных дел на ко&shyторые обычно не хватает времени</p>
 						</div>
 					</div>
 				</div>				
 			</div>
 			<div class="row">
-				<div class="col-lg-4">
+				<div class="col-lg-4 col-lg-offset-2 col-md-4 col-md-offset-2 col-sm-6">
 					<div class="thesis-box">
 						<div class="thesis-img-box">
 							<i>7</i>
@@ -261,14 +268,14 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-4">
+				<div class="col-lg-4 col-md-4 col-sm-6">
 					<div class="thesis-box">
 						<div class="thesis-img-box">
 							<i>8</i>
 						</div>
 						<div class="thesis-text-box">
 							<span>Запись разговоров</span>
-							<p>Все записи разговоров хранятся у нас на сервере, вы можете прослушать их в любой момент</p>
+							<p>Все записи разговоров хра&shyнятся у нас на сервере, вы можете прослушать их в любой момент</p>
 						</div>
 					</div>
 				</div>
@@ -276,7 +283,7 @@
 			<div class="row">
 				<div class="col-lg-12">
 					<div class="thesis-button">
-						<a href="">Нанять помощника</a>
+						<a href="#hidden_form" class="popup_form">Нанять помощника</a>
 					</div>
 				</div>
 			</div>
@@ -288,10 +295,10 @@
 	<section id="people">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-12">
+				<div class="col-lg-12 col-md-12 col-sm-12">
 					<h3>Кому будет <strong>полезен</strong><br> «Надежный помощник»?</h3>
 				</div>
-				<div class="col-lg-12">
+				<div class="col-lg-12 col-md-12">
 					<div class="people-block">
 						<div class="people-block-img">
 							<img src="img/people-1.png" alt="people-icon">
@@ -302,7 +309,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-12">
+				<div class="col-lg-12 col-md-12 col-sm-12">
 					<div class="people-block">
 						<div class="people-block-img">
 							<img src="img/people-2.png" alt="people-icon">
@@ -313,7 +320,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-12">
+				<div class="col-lg-12 col-md-12 col-sm-12">
 					<div class="people-block">
 						<div class="people-block-img">
 							<img src="img/people-3.png" alt="people-icon">
@@ -332,20 +339,20 @@
 	<section id="services">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-12">
-					<h3>Наши <strong>Услуги</strong></h3>
+				<div class="col-lg-12 col-md-12 col-sm-12">
+					<h3>Наши <strong>услуги</strong></h3>
 				</div>
-				<div class="col-lg-12 services-block">
-					<div class="col-lg-6">
+				<div class="col-lg-12 col-md-12 col-sm-12 services-block">
+					<div class="col-lg-6 col-md-6 col-sm-6">
 						<div class="services-img">
 							<img src="img/services-1.png" alt="services-img"> 
 						</div>
 					</div>
-					<div class="col-lg-6">
+					<div class="col-lg-6 col-md-6 col-sm-6">
 						<div class="services-text">
 							<span>Удаленный отдел продаж</span>
-							<p>И если его не переписали, то живет он там до сих пор. Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана.</p>
-							<p>И если его не переписали, то живет он там до сих пор. Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана.</p>
+							<p>И если его не переписали, то живет он там до сих пор. Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика боль&shyшого языкового океана.</p>
+							<p>И если его не переписали, то живет он там до сих пор. Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика боль&shyшого языкового океана.</p>
 							<ul class="services-list">
 								<li><i class="fa fa-check" aria-hidden="true"></i>Работаем 24/7</li>
 								<li><i class="fa fa-check" aria-hidden="true"></i>Штат специалистов</li>
@@ -353,18 +360,18 @@
 								<li><i class="fa fa-check" aria-hidden="true"></i>Штат специалистов</li>
 							</ul>
 							<div class="services-button">
-								<a href="">Сделать заказ</a>
+								<a href="#hidden_form" class="popup_form">Сделать заказ</a>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-12 services-block">
-					<div class="col-lg-6">
+				<div class="col-lg-12 col-md-12 col-sm-12 services-block">
+					<div class="col-lg-6 col-md-6 col-sm-6">
 						<div class="services-img">
 							<img src="img/services-2.png" alt="services-img"> 
 						</div>
 					</div>
-					<div class="col-lg-6">
+					<div class="col-lg-6 col-md-6 col-sm-6">
 						<div class="services-text">
 							<span>Надежный помощник</span>
 							<p>И если его не переписали, то живет он там до сих пор. Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана.</p>
@@ -376,20 +383,20 @@
 								<li><i class="fa fa-check" aria-hidden="true"></i>Штат специалистов</li>
 							</ul>
 							<div class="services-button">
-								<a href="">Сделать заказ</a>
+								<a href="#hidden_form" class="popup_form">Сделать заказ</a>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-12 services-block">
-					<div class="col-lg-6">
+				<div class="col-lg-12 col-md-12 col-sm-12 services-block">
+					<div class="col-lg-6 col-md-6 col-sm-6">
 						<div class="services-img">
 							<img src="img/services-3.png" alt="services-img"> 
 						</div>
 					</div>
-					<div class="col-lg-6">
+					<div class="col-lg-6 col-md-6 col-sm-6">
 						<div class="services-text">
-							<span>Горячая линия/сервисная поддержка</span>
+							<span>Горячая линия/<br>сервисная поддержка</span>
 							<p>И если его не переписали, то живет он там до сих пор. Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана.</p>
 							<p>И если его не переписали, то живет он там до сих пор. Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана.</p>
 							<ul class="services-list">
@@ -399,7 +406,7 @@
 								<li><i class="fa fa-check" aria-hidden="true"></i>Штат специалистов</li>
 							</ul>
 							<div class="services-button">
-								<a href="">Сделать заказ</a>
+								<a href="#hidden_form" class="popup_form">Сделать заказ</a>
 							</div>
 						</div>
 					</div>
@@ -411,27 +418,27 @@
 	<!--Process-->
 	<section id="process">
 		<div class="row">
-			<div class="col-lg-12">
-				<div class="col-lg-6">
+			<div class="col-lg-12 col-md-12 col-sm-12">
+				<div class="col-lg-6 col-md-6 col-sm-6">
 					<div class="process-text">
 						<span>.01</span>
 						<h4>Получаем<br>заявку</h4>
 						<p>Вы оставляете заявку на сайте или звоните нам.</p>
 					</div>					
 				</div>
-				<div class="col-lg-6">
+				<div class="col-lg-6 col-md-6 col-sm-6">
 					<div class="process-img">
 						<img src="img/process-1.png" alt="process-image">
 					</div>
 				</div>
 			</div>
-			<div class="col-lg-12">				
-				<div class="col-lg-6">
+			<div class="col-lg-12 col-md-12 col-sm-12">				
+				<div class="col-lg-6 col-md-6 col-sm-6">
 					<div class="process-img">
 						<img src="img/process-2.png" alt="process-image">
 					</div>
 				</div>
-				<div class="col-lg-6">
+				<div class="col-lg-6 col-md-6 col-sm-6">
 					<div class="process-text">
 						<span>.02</span>
 						<h4>Согласовываем<br>проект</h4>
@@ -439,27 +446,27 @@
 					</div>
 				</div>
 			</div>				
-			<div class="col-lg-12">
-				<div class="col-lg-6">
+			<div class="col-lg-12 col-lg-12 col-sm-12">
+				<div class="col-lg-6 col-md-6 col-sm-6">
 					<div class="process-text">
 						<span>.03</span>
 						<h4>Согласование<br>тех. деталей</h4>
 						<p>Вы оставляете заявку на сайте или звоните нам</p>
 					</div>					
 				</div>
-				<div class="col-lg-6">
+				<div class="col-lg-6 col-md-6 col-sm-6">
 					<div class="process-img">
 						<img src="img/process-3.png" alt="process-image">
 					</div>
 				</div>
 			</div>
-			<div class="col-lg-12">				
-				<div class="col-lg-6">
+			<div class="col-lg-12 col-md-12 col-sm-12">				
+				<div class="col-lg-6 col-md-6 col-sm-6">
 					<div class="process-img">
 						<img src="img/process-4.png" alt="process-image">
 					</div>
 				</div>
-				<div class="col-lg-6">
+				<div class="col-lg-6 col-md-6 col-sm-6">
 					<div class="process-text">
 						<span>.04</span>
 						<h4>Тестирование<br>проекта</h4>
@@ -474,12 +481,12 @@
 	<section id="command">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-12">
+				<div class="col-lg-12 col-md-12 col-sm-12">
 					<h3>Наша<strong>команда</strong></h3>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-lg-3">
+				<div class="col-lg-3 col-md-6 col-sm-6">
 					<div class="command-block">
 						<div class="command-img">						
 						</div>
@@ -489,7 +496,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-3">
+				<div class="col-lg-3 col-md-6 col-sm-6">
 					<div class="command-block">
 						<div class="command-img-two">						
 						</div>
@@ -499,7 +506,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-3">
+				<div class="col-lg-3 col-md-6 col-sm-6">
 					<div class="command-block">
 						<div class="command-img-three">						
 						</div>
@@ -509,7 +516,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-3">
+				<div class="col-lg-3 col-md-6 col-sm-6">
 					<div class="command-block">
 						<div class="command-img-four">						
 						</div>
@@ -527,44 +534,40 @@
 	<section id="feed">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-12">
+				<div class="col-lg-12 col-md-12 col-sm-12">
 					<h3>Что <strong>о нас говорят</strong> клиенты?</h3>
 				</div>
 			</div>
 			<div class="row">
 				<ul id="feed-slider">
 					<li class="feed-slider-slide">
-						<div class="col-lg-3">
+						<div class="col-lg-4 col-md-4 col-sm-4">
 							<div class="feed-left">
-								<div class="feed-image">
-									<img src="img/feedbacks-1.png" alt="avatar">						
-								</div>
+								<div class="feed-image"></div>
 								<div class="feed-image-text">
 									<span>Антон</span>
 									<p>Компания "Карат"</p>
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-9">
+						<div class="col-lg-8 col-md-8 col-sm-8">
 							<div class="feed-right">
 								<span>«Перепоручил все задачи коммуникации на внешних сотрудников»</span>
-								<p>И если его не переписали, то живет он там до сих пор. Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. </p>
+								<p>И если его не переписали, то живет он там до сих пор. Да&shyлеко-далеко за словесными горами в стране гласных и со&shyгласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. </p>
 							</div>
 						</div>
 					</li>
 					<li class="feed-slider-slide">
-						<div class="col-lg-3">
+						<div class="col-lg-4 col-md-4 col-sm-4">
 							<div class="feed-left">
-								<div class="feed-image">
-									<img src="img/feedbacks-1.png" alt="avatar">						
-								</div>
+								<div class="feed-image2"></div>
 								<div class="feed-image-text">
 									<span>Антон</span>
 									<p>Компания "Карат"</p>
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-9">
+						<div class="col-lg-8 col-md-8 col-sm-8">
 							<div class="feed-right">
 								<span>«Перепоручил все задачи коммуникации на внешних сотрудников»</span>
 								<p>И если его не переписали, то живет он там до сих пор. Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. </p>
@@ -580,19 +583,21 @@
 	<section id="order">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-12">
+				<div class="col-lg-12 col-md-12 col-sm-12">
 					<form id="order-form" method="post">
 						<strong>Оставить заявку</strong>
 						<span>Мы свяжемся с вами в течении рабочего дня.</span>
-						<p>Имя и фамилия*</p>
-						<input type="text" name="fio" value="Напр. Сергей Иванов" onfocus="this.value=''" required="" >
-						<p>Название компании</p>
-						<input type="text" name="company-name" value="Напр. ООО Вектор" onfocus="this.value=''">
-						<p>Телефон*</p>
-						<input type="text" name="phone" value="Напр. 79211234567" onfocus="this.value=''" required="" >
-						<p>Электронная почта*</p>
-						<input type="text" name="email" value="Напр. sergey@vector.ru" onfocus="this.value=''" required="" >
-						<button type="submit">Отправить</button>
+						<div class="form-field">
+							<p>Имя и фамилия*</p>
+							<input type="text" name="fio" value="Напр. Сергей Иванов" onfocus="this.value=''" required="" >
+							<p>Название компании</p>
+							<input type="text" name="company-name" value="Напр. ООО Вектор" onfocus="this.value=''">
+							<p>Телефон*</p>
+							<input type="text" name="phone" value="Напр. 79211234567" onfocus="this.value=''" required="" >
+							<p>Электронная почта*</p>
+							<input type="text" name="email" value="Напр. sergey@vector.ru" onfocus="this.value=''" required="" >
+							<button type="submit">Отправить заявку</button>
+						</div>
 					</form>
 				</div>
 			</div>
@@ -606,7 +611,7 @@
 		</div>
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-6">
+				<div class="col-lg-6 col-md-6 col-sm-6">
 					<div class="about-block clearfix">
 						<div class="about-block-left">
 							<span>«Надежный помощник»</span>
@@ -614,15 +619,21 @@
 							<p>Возвращайся ты лучше в свою безопасную страну». Не послушавшись рукописи, наш текст продолжил свой путь. Вскоре ему повстречался коварный составитель.</p>
 						</div>
 						<div class="about-block-right">
-							<span>Адрес:</span>
-							<p>г. Москва</p>
-							<p>ул. Рощинская, д. 5</p>
-							<span>Телефон:</span>
-							<p>+7 495 644-03-00</p>
-							<p>+7 495 654-13-04</p>
-							<p><a href="mailto:info@site.com">info@site.com</a></p>
-							<p><i class="fa fa-file-pdf-o" aria-hidden="true"></i><a href="" class="dashed-link">Скачать реквизиты</a></p>
-							<a href="" class="about-order">заказать звонок</a>
+							<div class="adr">
+								<span>Адрес:</span>
+								<p>г. Москва</p>
+								<p>ул. Рощинская, д. 5</p>
+							</div>
+							<div class="about-phone">
+								<span>Телефон:</span>
+								<p>+7 495 644-03-00</p>
+								<p>+7 495 654-13-04</p>
+								<p><a href="mailto:info@site.com">info@site.com</a></p>
+							</div>
+							<div class="download">
+								<p><i class="fa fa-file-pdf-o" aria-hidden="true"></i><a href="" class="dashed-link">Скачать реквизиты</a></p>
+							</div>
+							<a href="#hidden_form" class="about-order popup_form">заказать звонок</a>
 						</div>				
 					</div>
 				</div>
@@ -635,31 +646,47 @@
 	<footer>
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-4">
+				<div class="col-lg-4 col-md-4 col-sm-4">
 					<div class="copy">
 						<span>2017 Помощник</span>
-						<span class="dashed">Политика конфиденциальности</span>
+						<span><a href="">Политика конфиденциальности</a></span>
 					</div>
 				</div>
-				<div class="col-lg-5">
+				<div class="col-lg-5 col-md-5 col-sm-5">
 					<div class="media">
 						<ul>
-							<li><i class="fa fa-vk" aria-hidden="true"></i></li>
-							<li><i class="fa fa-instagram" aria-hidden="true"></i></li>
-							<li><i class="fa fa-google-plus" aria-hidden="true"></i></li>
-							<li><i class="fa fa-facebook-official" aria-hidden="true"></i></li>
+							<li><a href=""><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+							<li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+							<li><a href=""><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+							<li><a href=""><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
 						</ul>
 					</div>
 				</div>
-				<div class="col-lg-3">
+				<div class="col-lg-3 col-md-3 col-sm-3">
 					<div class="contacts">
 						<span>8(921)386-67-12</span>
-						<a href="">Заказать звонок</a>
+						<a href="#hidden_form" class="popup_form">Заказать звонок</a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</footer>
+
+	<div class="hidden">
+		<form id="hidden_form" class="send" method="post">
+			<strong>Оставьте заявку</strong>
+			<span>Мы свяжемся с вами в течении рабочего дня.</span>
+			<div class="form-field">
+				<p>Имя и фамилия*</p>
+				<input type="text" name="fio" value="Напр. Сергей Иванов" onfocus="this.value=''" required="" >
+				<p>Телефон*</p>
+				<input type="text" name="phone" value="Напр. 79211234567" onfocus="this.value=''" required="" >
+				<p>Электронная почта*</p>
+				<input type="text" name="email" value="Напр. sergey@vector.ru" onfocus="this.value=''" required="" >
+				<button type="submit">Отправить заявку</button>
+			</div>
+		</form>
+	</div>
 
 	
 
@@ -667,6 +694,7 @@
 	<script src="libs/bootstrap/js/bootstrap.js"></script>
 	<script src="libs/owl/owl.carousel.js"></script>
 	<script src="libs/slider/lightslider.min.js"></script>
+	<script src="libs/magnific/jquery.magnific-popup.js"></script>
 	<script src="js/common.js"></script>
 	
 </body>

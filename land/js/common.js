@@ -1,4 +1,7 @@
 $(document).ready(function(){
+
+    $(".popup_form").magnificPopup();
+
 	$('#lightslider').lightSlider({
   		item: 1,
         autoWidth: false,
@@ -22,8 +25,7 @@ $(document).ready(function(){
                 breakpoint:1199,
                 settings: {
                     item:1,
-                    slideMove:1,
-                    thumbItem:5
+                    slideMove:1                   
                   }
             },
 
@@ -31,24 +33,21 @@ $(document).ready(function(){
                 breakpoint:992,
                 settings: {
                     item:1,
-                    slideMove:1,
-                    thumbItem:4                   
+                    slideMove:1                                     
                   }
             },
             {
                 breakpoint:768,
                 settings: {
                     item:1,
-                    slideMove:1,
-                    thumbItem:3                  
+                    slideMove:1                                   
                   }
             },
             {
                 breakpoint:480,
                 settings: {
                     item:1,
-                    slideMove:1,
-                    thumbItem:3,
+                    slideMove:1,                   
                     controls: true,
                   }
             }
