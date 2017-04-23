@@ -1,8 +1,16 @@
 @media only screen and (min-width : 320px) and (max-width : 479px) {
 
+	.container{
+		padding: 0 10px;
+	}
+
 	header{
 		position: static;
 		background-color: #6baad8;
+	}
+
+	header .header-phone span{
+		letter-spacing: 2px
 	}
 
 	header .col-xs-7{
@@ -147,9 +155,16 @@
 	}
 
 	#people .people-block{
-		margin-left: 10px;
+		margin-left: 0px;
 		text-align: left;
 	}
+
+	#people .people-block .people-block-img{
+		margin-left: 0;
+		width: 100%;
+		text-align: center;
+	}
+
 
 	#people .people-block .people-block-text{
 		margin-left: 10px;
@@ -163,6 +178,10 @@
 
 	#people .people-block .people-block-text p{
 		letter-spacing: 1px;
+	}
+
+	#people h3{
+		font-size: 35px;
 	}
 
 	#services{		
@@ -201,6 +220,9 @@
 		background-repeat: no-repeat;
 		background-position: center center;
 		background-size: 100%;
+		padding: 10px;
+		margin-top: 5px;
+		margin-bottom: 0px;
 	}
 
 	#process .proc-two{
@@ -213,7 +235,7 @@
 
 	#process .proc-four{
 		background-image: url('../img/process-4.png');
-		margin-bottom: 0px;
+		margin-bottom: 5px		
 	}
 
 	#process .process-text span{
@@ -293,20 +315,21 @@
 	}
 
 
-	#about{
-		height: 1086px;
-	}
-
+	
 
 	#about .about-block{
 		width: 100%;
+		height: 100%;
+		margin-top: 20px;
 	}
 
+
 	#about .map{
-		width: 100%;
-		height: 200px;
+		width: 100%;	
 		position: static;
 	}
+
+
 
 	#about .about-block .about-block-left, #about .about-block .about-block-right{
 		padding: 20px;
@@ -320,7 +343,7 @@
 	
 
 	#about .about-block .about-block-right{
-		border-radius: 0 0 15px 15px;
+		border-radius: 0;
 	}
 
 	footer .col-xs-6{
@@ -382,6 +405,10 @@
 		background-color: #6baad8;
 	}
 
+	.container{
+		padding: 0 10px;
+	}
+
 	header .button-order a{
 		top: 90px;
 		left: 15px;
@@ -428,6 +455,10 @@
 
 	#banner .bg-content .banner-list{
 		width: 95%;
+	}
+
+	#banner .bg-content .button-bg{
+		width: 450px;
 	}
 
 	#benefits .col-xs-12{
@@ -491,8 +522,14 @@
 	}
 
 	#people .people-block{
-		margin-left: 10px;
+		margin-left: 0px;
 		text-align: left;
+	}
+
+	#people .people-block .people-block-img{
+		margin-left: 0;
+		width: 100%;
+		text-align: center;
 	}
 
 	#people .people-block .people-block-text{
@@ -529,13 +566,16 @@
 	#process .process-text, #process .proc-two, #process .proc-three, #process .proc-four {
 		background-image: url('../img/process-1.png');
 		width: 100%;
-		height: 280px;
+		height: 186px;
 		margin-top: 0px;
 		margin-bottom: 30px;
 		margin-left: 0px;
 		background-repeat: no-repeat;
 		background-position: center center;
 		background-size: 100%;
+		padding: 10px;
+		margin-top: 5px;
+		margin-bottom: 0px;
 	}
 
 	#process .proc-two{
@@ -548,22 +588,26 @@
 
 	#process .proc-four{
 		background-image: url('../img/process-4.png');
-		margin-bottom: 0px;
+		margin-bottom: 5px		
 	}
 
 	#process .process-text p{
 		margin-left: 10px;
-		letter-spacing: 2px;
+		letter-spacing: 1px;
 		width: 97%;
 		color: #fff;
 	}
 
 	#process .process-text h4{
 		color: #fff;
+		font-size: 32px;
+		margin-left: 10px;		
+		line-height: 30px;
 	}
 
 	#process .process-text span{
 		color: #fff;
+		font-size: 32px;
 	}
 
 	#command{
@@ -615,6 +659,10 @@
 		padding: 20px 
 	}
 
+	#about .about-block .about-block-right{
+		border-radius: 0 15px 0 0;
+	}
+
 	#about .about-block .about-block-left p{
 		letter-spacing: 0
 	}
@@ -625,11 +673,12 @@
 	}
 
 	#about .about-block .about-block-right p .dashed-link{
-		font-size: 18px;
+		font-size: 17px;
+		margin-left: 5px;
 	}
 
 	#about .about-block .about-block-right .about-order{
-		padding: 10px 15px;
+		padding: 10px 10px;
 	}
 
 	footer .copy{
@@ -644,6 +693,10 @@
 	footer .contacts a{
 		display: block;
 		margin: 0 auto;
+	}
+
+	footer{
+		padding-bottom: 20px;
 	}
 
 
