@@ -529,7 +529,7 @@
 	#process .process-text, #process .proc-two, #process .proc-three, #process .proc-four {
 		background-image: url('../img/process-1.png');
 		width: 100%;
-		height: 320px;
+		height: 280px;
 		margin-top: 0px;
 		margin-bottom: 30px;
 		margin-left: 0px;
@@ -555,6 +555,15 @@
 		margin-left: 10px;
 		letter-spacing: 2px;
 		width: 97%;
+		color: #fff;
+	}
+
+	#process .process-text h4{
+		color: #fff;
+	}
+
+	#process .process-text span{
+		color: #fff;
 	}
 
 	#command{
