@@ -1,0 +1,505 @@
+@import "bourbon/bourbon"
+
+
+body
+	font-weight: normal
+	font-size: 14px
+	min-width: 320px
+	max-width: 1920px
+	margin: 0 auto
+	position: relative
+	line-height: 1.6
+	-webkit-font-smoothing: antialiased
+	overflow-x: hidden
+	background-color: #f2f2f2
+	a:hover, a:focus, a:active
+		text-decoration: none
+		outline: none
+	input:focus, input:active
+		text-decoration: none
+		outline: none
+	select:focus, select:active
+		text-decoration: none
+		outline: none
+
+
+
+/*Header*/
+header
+	width: 100%
+	min-height: 64px
+	background-color: #fff
+	vertical-align: bottom
+	position: relative
+	.logo
+		float: left
+		margin-top: 27px
+	.icons
+		float: right
+		margin-top: 27px
+	.navbar
+		background-image: none
+		background-color: #fff
+		box-shadow: none
+		border: none
+		height: 64px
+		margin-bottom: 0px
+		border-bottom: 5px solid #b2b2b2
+		margin-left: -70px
+	.navbar-nav
+		background-color: #fff
+		background-image: none
+	.navbar li
+		height: 64px
+		padding: 0
+		background-color: #fff				
+	.grey
+		border-bottom: 5px solid #aaa38e		
+	.yellow
+		border-bottom: 5px solid #fecb00
+	.blue
+		border-bottom: 5px solid #92a2bd
+	.dark
+		border-bottom: 5px solid #444444
+	.green
+		border-bottom: 5px solid #a2ad00
+	.orang
+		border-bottom: 5px solid #ff9100
+	.separator
+		border-bottom: 5px solid #fff
+		width: 2px
+	.navbar li a
+		padding: 0 30px
+		line-height: 64px
+		background-image: none
+		background-color: transparent
+		text-shadow: none		
+	.navbar-collapse
+		padding: 0			
+	.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus
+		background-color: transparent
+		background-image: none
+		box-shadow: none
+		text-shadow: none 
+
+/*MainBanner*/
+#main-banner
+	background-image: url('../img/main-bg.png')
+	width: 100%
+	height: 578px
+	background-repeat: no-repeat
+	background-position: center center
+	.bg-desc
+		margin-left: 94px
+		margin-top: 130px
+		color: #fff
+		h1
+			font-size: 50px
+			text-transform: uppercase
+		p
+			font-family: 'Arial', sans-serif
+			font-size: 16px
+			width: 55%
+			margin: 20px 0 36px 0
+			line-height: 22px	
+		span
+			display: block
+			font-size: 18px
+			margin-bottom: 13px
+
+
+/*About*/
+#about
+	.about-head
+		display: block
+		padding: 30px 0 15px 0
+		h2
+			font-size: 32px
+			text-transform: uppercase
+			color: #444444
+			float: left
+			font-weight: bold
+		span
+			float: right
+			font-size: 16px
+			color: #444444
+			line-height: 65px
+	.about-content
+		background-color: #fff
+		padding: 40px
+	.about-content-desc
+		font-size: 15px
+		color: #444444
+		width: 44%
+		float: left
+	.about-content-foto
+		float: right
+
+/*Calendar-events*/
+#calendar-events
+	.calendar-events-head
+		padding: 30px 0 15px 0
+		h2
+			font-size: 32px
+			text-transform: uppercase
+			color: #444444
+			float: left
+			font-weight: bold
+		span
+			float: right
+			font-size: 16px
+			color: #444444
+			line-height: 65px
+	.calendar-events-block
+		background-color: #fff
+		min-height: 100px		
+		.ce-block-foto
+			width: 100%
+			height: 100%
+			border-bottom: 5px solid #fecb00
+			img
+				width: 100%
+				height: 100%
+		.ce-block-desc
+			padding: 12px 25px 30px 40px
+			h3
+				font-size: 18px
+				text-transform: uppercase
+				color: #444444
+				font-weight: bold
+			span
+				font-size: 14px
+				color: #b4b4b4
+				img
+					margin-right: 8px
+			.sp-left
+				float: left
+			.sp-right
+				float: right
+			p				
+				font-size: 15px
+				color: #444444
+				line-height: 22px
+				margin-top: 18px
+				margin-bottom: 23px
+			.ce-learnmore
+				width: 327px
+				height: 50px
+				background-color: #fecb00
+				position: relative
+				background-image: url('../img/arrow-right-small.png')
+				background-size: 7px 13px
+				background-position: center right 30px
+				background-repeat: no-repeat
+				span
+					font-size: 18px
+					line-height: 50px
+					color: #444444
+					text-transform: uppercase
+					padding-left: 27px
+					font-weight: bold
+
+/*Calendar-events*/
+#partners	
+	padding: 0 0 75px 0
+	.partners-head
+		padding: 40px 0 25px 0
+		h2
+			font-size: 32px
+			text-transform: uppercase
+			color: #444444
+			float: left
+			font-weight: bold
+	.partners-block, .partners-block2
+		width: 100%
+		height: 110px
+		background-color: #fff
+		background-image: url('../img/partners1.png')
+		background-position: center center
+		background-repeat: no-repeat
+	.partners-block2
+		background-image: url('../img/partners2.png')
+
+
+/*Calendar-events*/
+#school
+	background-image: url('../img/school-bg.png')
+	width: 100%
+	height: 390px
+	background-repeat: no-repeat
+	background-position: top center
+	.school-block
+		margin-top: 90px
+		h2
+			font-size: 50px
+			text-transform: uppercase
+			color: #444444
+			font-weight: bold
+		p
+			font-size: 15px			
+			color: #444444	
+			width: 83%
+			line-height: 22px
+			margin-top: 11px
+			margin-bottom: 27px
+		.school-button
+			width: 272px
+			height: 50px
+			background-color: #a2ad00
+			position: relative
+			background-image: url('../img/arrow-right.png')
+			background-size: 7px 13px
+			background-position: center right 30px
+			background-repeat: no-repeat
+			span
+				font-size: 18px
+				line-height: 50px
+				color: #444444
+				text-transform: uppercase
+				padding-left: 27px
+				font-weight: bold
+
+/*Footer*/
+footer
+	width: 100%
+	height: 35px
+	background-color: #aaa48e
+	span
+		color: #fff
+		font-size: 16px
+		line-height: 35px
+	.footer-left
+		float: left
+	.footer-right
+		float: right
+
+
+/*********************************************InfoPage*******************************************/
+
+#info-banner
+	background-image: url('../img/info-bg.png')
+	width: 100%
+	height: 299px
+	background-repeat: no-repeat
+	background-position: center center
+	.info-desc		
+		margin-top: 53px
+		color: #444444
+		h2
+			font-size: 32px
+			text-transform: uppercase
+			font-weight: bold		
+		p
+			font-family: 'Arial', sans-serif
+			font-size: 16px
+			width: 55%
+			margin: 38px 0 36px 0
+			line-height: 22px
+#info-form
+	padding: 42px 0 40px 0
+	span
+		font-size: 15px
+		color: #9a9898
+	form
+		padding: 35px 0
+		width: 730px
+		span
+			font-size: 15px
+			color: #444444
+			font-weight: bold
+			text-transform: uppercase
+			float: left
+		select
+			background-color: #dcd9da
+			height: 50px
+			width: 420px
+			border: 1px solid #999a9c
+			font-size: 15px
+			text-transform: uppercase
+			color: #9a9898
+			font-weight: bold
+			padding: 15px 20px			
+		input
+			width: 420px
+			height: 50px
+			border: 1px solid #999a9c
+			font-size: 15px
+			color: #9a9898
+			padding: 15px 20px
+		button
+			width: 270px
+			height: 50px
+			background-color: #a2ad00
+			position: relative
+			background-image: url('../img/arrow-right.png')
+			background-size: 7px 13px
+			background-position: center right 30px
+			background-repeat: no-repeat
+			font-size: 14px
+			line-height: 50px
+			color: #444444
+			text-transform: uppercase
+			padding-left: 27px
+			font-weight: bold
+			text-align: left
+			color: #fff
+			border: none
+			display: block
+			margin-top: 30px
+		.pref-phone
+			width: 100px
+			text-align: center
+			float: none!important
+		.number-phone
+			float: none!important
+			width: 316px
+		.info-phone			
+			float: right
+		.check
+			width: 16px
+			height: 16px
+		.rail-select
+			position: relative			
+		.select-side
+			pointer-events: none
+			width: 31px
+			position: absolute
+			top: 15px
+			background-color: #dcd9da
+			height: 29%
+			left: 693px
+			i
+      			left: 14%
+      			top: 0px
+		.disabled
+			pointer-events: none
+			background-color: #d6d6d6
+		.form-field
+			margin: 20px 0
+			span
+				line-height: 50px
+			input, select
+				float: right
+		hr
+			width: 100%
+			height: 1px
+			background-color: #dcd9da
+			background: #dcd9da
+			border: none	
+			margin-top: 30px
+			margin-bottom: 25px
+
+
+/*********************************************CalendarEvents*******************************************/
+
+.calendar-page .calendar-events-block
+	margin-bottom: 30px
+
+.calendar-page
+	padding-bottom: 46px
+
+
+/*********************************************EventPage*******************************************/
+#event
+	padding: 39px 0
+	h2
+		font-size: 32px
+		color: #444444
+		font-weight: bold
+		text-transform: uppercase
+		margin-bottom: 43px
+	span
+		font-size: 14px
+		color: #b4b4b4
+		img
+			margin-right: 8px
+	p
+		font-size: 15px
+		line-height: 22px
+		color: #444444
+		margin-bottom: 22px
+	.date-marker
+		margin-bottom: 33px
+	.images-event
+		margin-top: 12px
+		margin-bottom: 32px
+		img
+			width: 100%
+			height: 100%
+		.foto3
+			margin-top: 27px
+	.soc-icons
+		span
+			font-size: 14px
+			color: #b4b4b4
+			display: inline-block
+		ul
+			list-style-type: none
+			display: inline-block
+			padding-left: 17px
+			li
+				display: inline-block
+				padding: 0 10px
+	hr
+		width: 100%
+		height: 1px
+		background-color: #dcd9da
+		background: #dcd9da
+		border: none	
+		margin-top: 16px
+		margin-bottom: 30px
+
+/*********************************************Gallery*******************************************/
+#gallery
+	padding: 9px 0 45px 0
+	.gallery-head
+		padding: 30px 0 35px 0
+		h2
+			font-size: 32px
+			text-transform: uppercase
+			color: #444444
+			float: left
+			font-weight: bold		
+	.gallery-block
+		background-color: #fff
+		min-height: 100px
+		margin-bottom: 20px;		
+		.gallery-foto
+			width: 100%
+			height: 100%
+			border-bottom: 5px solid #fecb00
+			img
+				width: 100%
+				height: 100%
+		.gallery-desc			
+			height: 80px
+			span
+				font-size: 18px
+				color: #444444			
+				text-transform: uppercase
+				line-height: 80px
+				padding-left: 40px
+				font-weight: bold
+
+/*********************************************Album*******************************************/
+#album
+	padding: 9px 0 45px 0
+	.album-head
+		padding: 30px 0 35px 0
+		h2
+			font-size: 32px
+			text-transform: uppercase
+			color: #444444
+			float: left
+			font-weight: bold		
+	.album-block
+		background-color: #fff
+		min-height: 100px
+		margin-bottom: 20px;		
+		.album-foto
+			width: 100%
+			height: 100%
+			border-bottom: 5px solid #fecb00
+			img
+				width: 100%
+				height: 100%		

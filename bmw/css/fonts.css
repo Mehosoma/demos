@@ -1,0 +1,11 @@
+@font-face {
+  font-family: "bmw_groupbold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/bmwgroup-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/bmwgroup-bold.woff") format("woff"), url("../fonts/bmwgroup-bold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "bmw_groupregular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/bmwgroup-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/bmwgroup-regular.woff") format("woff"), url("../fonts/bmwgroup-regular.ttf") format("truetype"); }
