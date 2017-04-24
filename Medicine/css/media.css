@@ -1,5 +1,18 @@
+
+@media only screen and (min-width: 1200px) and (max-width: 1920px) {
+
+	#fn-titleblock .big-title{
+		font-size: 36px;
+	}
+
+}
+
+
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
 
+	#fn-titleblock .big-title{
+		font-size: 30px;
+	}
 }
 
 @media only screen and (min-width : 768px) and (max-width : 991px) {
@@ -53,6 +66,10 @@
 	#fn-index-content #fn-index-middle .middle-news-block .middle-news-zagol{
 		width: 58%;
 		float: right;
+	}
+
+	#fn-titleblock .big-title{
+		font-size: 30px;
 	}
 }
 
@@ -153,6 +170,10 @@
 
 	#fn-index-content #fn-index-middle .middle-news-block .middle-news-zagol h5{
 		margin-top: 15px;
+	}
+
+	#fn-titleblock .big-title{
+		font-size: 30px;
 	}
 
 
@@ -330,6 +351,11 @@
 	#fn-send-form #other-imp-info #doc-load input{
 		margin-bottom: 20px;
 	}
+
+	#fn-titleblock .big-title{
+		font-size: 24px;
+	}
+
 }
 
 @media only screen and (min-width : 480px) and (max-width : 600px){
