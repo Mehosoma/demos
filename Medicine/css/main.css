@@ -463,7 +463,7 @@ header #fn-headercall a span {
   min-height: 105px;
   background-image: url("../images/banner.png");
   background-position: bottom center;
-  background-size: 100% 105px;
+  background-size: cover 105px;
   background-repeat: no-repeat;
   position: relative;
 }
