@@ -1,4 +1,4 @@
-@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
 
 	#calendar-events .calendar-events-block .ce-block-desc .ce-learnmore{
 		width: 280px;
@@ -8,19 +8,32 @@
 		width: 42%;
 	}
 
+	header .navbar{
+		width: 1170px;
+	}
+
+	header .navbar-nav > li > a{
+
+		font-size: 14px;
+	}
+	
+
 
 }
 
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
 
-	header .navbar li a{
-		padding: 0 10px;
+	header .navbar{
+		width: 970px;
 	}
 
-	header .navbar{
-		margin-left: -30px;
+	header .navbar-nav > li > a{
+
+		font-size: 14px;
+		padding: 20px 14px;
 	}
+	
 
 	#calendar-events .calendar-events-block{
 		margin-bottom: 30px;
@@ -48,13 +61,19 @@
 
 @media only screen and (min-width : 768px) and (max-width : 991px) {
 	
-	header .navbar li a{
-		padding: 0 5px;
-		font-size: 12px;
+	header .navbar{
+		width: 752px;
+		padding: 0
 	}
 
-	header .navbar{
-		margin-left: -15px;
+	header .navbar-nav > li > a{
+
+		font-size: 12px;
+		padding: 20px 5px;
+	}
+
+	header .navbar-nav{
+		margin-left: 0px
 	}
 
 	#main-banner .bg-desc p{
@@ -101,23 +120,77 @@
 @media only screen and (min-width : 480px) and (max-width : 767px) {
 
 	header .navbar{
-		margin-left: 0px;
-		z-index: 10;
-		border-radius: 0px;
+		width: 100%;
+		padding: 0 15px
 	}
 
-	header .navbar .separator{
+	header .navbar{
+		position: relative;
+		height: 64px;
+	}
+
+	header #slide-nav .navbar-header{
+		height: 64px;
+	}
+
+	#slide-nav .navbar-toggle > .icon-bar{
+		background: #000
+	}
+
+	header #slide-nav .navbar-header .logo-block{
+		float: left;
+	}
+
+	header #slide-nav .navbar-header .logo-block .icons{
+		margin-left: 50px
+	}
+
+	header .grey{
+		border-bottom: none;
+		border-left: 5px solid #aaa38e		
+	}
+
+	header .yellow{
+		border-bottom: none;
+		border-left: 5px solid #fecb00
+	}
+	
+	header .blue{
+		border-bottom: none;
+		border-left: 5px solid #92a2bd
+	}
+	
+	header .dark{
+		border-bottom: none;
+		border-left: 5px solid #444444
+	}
+	
+	header .green{
+		border-bottom: none;
+		border-left: 5px solid #a2ad00
+	}
+	header .orang{
+		border-bottom: none;
+		border-left: 5px solid #ff9100	
+	}
+	
+	header .left-bot{
+		border-left: none
+	}
+
+	header .exit{
 		display: none;
 	}
 
-	.navbar-default .navbar-collapse{
-		background-color: #fff;		
+	header .navbar-nav .dropdown-menu .submenu{
+		margin-top: 0px;
 	}
 
-	.navbar-nav{
-		background-color: #fff;
+	header #slide-nav .navbar-header .logo-block .logo, header #slide-nav .navbar-header .logo-block .icons {
+		margin-top: 18px;
 	}
-
+	
+	
 	#main-banner .bg-desc{
 		margin-left: 30px;
 	}
@@ -204,23 +277,88 @@
 @media only screen and (min-width : 0px) and (max-width : 479px) {
 
 	header .navbar{
-		margin-left: 0px;
-		z-index: 10;
-		border-radius: 0px;
+		width: 100%;
+		padding: 0 15px
 	}
 
-	header .navbar .separator{
+	header .navbar{
+		position: relative;
+		height: 64px;
+	}
+
+	header #slide-nav .navbar-header{
+		height: 64px;
+		padding: 0px
+	}
+
+	#slide-nav .navbar-toggle > .icon-bar{
+		background: #000;
+	}
+
+	header #slide-nav .navbar-header .logo-block{
+		float: left;
+		width: 70%;
+	}
+
+
+	header #slide-nav .navbar-header .logo-block .icons{
+		margin-left: 20px;
+	}
+
+	header .grey{
+		border-bottom: none;
+		border-left: 5px solid #aaa38e		
+	}
+
+	header .yellow{
+		border-bottom: none;
+		border-left: 5px solid #fecb00
+	}
+	
+	header .blue{
+		border-bottom: none;
+		border-left: 5px solid #92a2bd
+	}
+	
+	header .dark{
+		border-bottom: none;
+		border-left: 5px solid #444444
+	}
+	
+	header .green{
+		border-bottom: none;
+		border-left: 5px solid #a2ad00
+	}
+	header .orang{
+		border-bottom: none;
+		border-left: 5px solid #ff9100	
+	}
+	
+	header .left-bot{
+		border-left: none
+	}
+
+	header .exit{
 		display: none;
 	}
 
-	.navbar-default .navbar-collapse{
-		background-color: #fff;		
+	header .navbar-nav .dropdown-menu .submenu{
+		margin-top: 0px;
 	}
 
-	.navbar-nav{
-		background-color: #fff;
+	header #slide-nav .navbar-header .logo-block .logo, header #slide-nav .navbar-header .logo-block .icons {
+		margin-top: 18px;
+		width: 45%;
+		float: left;
 	}
 
+	header #slide-nav .navbar-header .logo-block .logo img, header #slide-nav .navbar-header .logo-block .icons img {
+		width: 100%;
+		height: auto;
+	}
+	
+
+	
 	#main-banner .bg-desc{
 		margin-left: 30px;
 		margin-top: 35px
@@ -338,5 +476,152 @@
 	#gallery .gallery-block .gallery-desc span{
 		font-size: 15px;
 	}
+	
 
+}
+
+
+
+
+/* adjust body when menu is open */
+body.slide-active {
+    overflow-x: hidden
+}
+/*first child of #page-content so it doesn't shift around*/
+.no-margin-top {
+    margin-top: 0px!important
+}
+/*wrap the entire page content but not nav inside this div if not a fixed top, don't add any top padding */
+#page-content {
+    position: relative;
+    padding-top: 70px;
+    left: 0;
+}
+#page-content.slide-active {
+    padding-top: 0
+}
+
+
+
+/* put toggle bars on the left :: not using button */
+#slide-nav .navbar-toggle {
+    cursor: pointer;
+    position: relative;
+    line-height: 0;
+    float: right;
+    margin: 0;
+    width: 30px;
+    height: 40px;
+    padding: 10px 0 0 0;
+    border: 0;
+    background: transparent;
+    border-left: 1px solid #000;
+    border-radius: 0px;
+    width: 50px; 
+    margin-top: 10px;  
+    height: 50px;
+}
+/* icon bar prettyup - optional */
+#slide-nav .navbar-toggle > .icon-bar {
+    width: 100%;
+    display: block;
+    height: 3px;
+    margin: 5px 0 0 0;
+    width: 21px;
+    margin-left: 21px
+}
+#slide-nav .navbar-toggle.slide-active .icon-bar {
+    background: orange
+}
+.navbar-header {
+    position: relative
+}
+/* un fix the navbar when active so that all the menu items are accessible */
+.navbar.navbar-fixed-top.slide-active {
+    position: relative
+}
+/* screw writing importants and shit, just stick it in max width since these classes are not shared between sizes */
+@media (max-width:767px) { 
+	#slide-nav .container {
+	    margin: 0!important;
+	    padding: 0!important;
+      height:100%;
+	}
+	#slide-nav .navbar-header {
+	    margin: 0 auto;
+	    padding: 0 15px;
+	}
+	#slide-nav .navbar.slide-active {
+	    position: absolute;
+	    width: 80%;
+	    top: -1px;
+	    z-index: 1000;
+	}
+	#slide-nav #slidemenu {
+	    background: #f7f7f7;
+	    right: -100%;
+	    width: 80%;
+	    min-width: 0;
+	    position: absolute;
+	    padding-right: 0px;
+	    z-index: 2;
+	    top: -8px;
+	    margin: 0;
+	    top: 69px;	   
+	}
+	#slide-nav #slidemenu .navbar-nav {
+	    min-width: 0;
+	    width: 100%;
+	    margin: 0;
+	}
+	#slide-nav #slidemenu .navbar-nav .dropdown-menu li a {
+	    min-width: 0;
+	    width: 80%;
+	    white-space: normal;
+	}
+	#slide-nav {
+	    border-top: 0
+	}
+	#slide-nav.navbar-inverse #slidemenu {
+	    background: #333
+	}
+	/* this is behind the navigation but the navigation is not inside it so that the navigation is accessible and scrolls*/
+	#navbar-height-col {
+	 
+	    top: 0;
+	    height: 100%;
+      bottom:0;
+	    width: 80%;
+	    right: -80%;
+	    background: #f7f7f7;
+	}
+	#navbar-height-col.inverse {
+	    background: #333;
+	    z-index: 1;
+	    border: 0;
+	}
+	#slide-nav .navbar-form {
+	    width: 100%;
+	    margin: 8px 0;
+	    text-align: center;
+	    overflow: hidden;
+	    /*fast clearfixer*/
+	}
+	#slide-nav .navbar-form .form-control {
+	    text-align: center
+	}
+	#slide-nav .navbar-form .btn {
+	    width: 100%
+	}
+}
+@media (min-width:768px) { 
+	#page-content {
+	    right: 0!important
+	}
+	.navbar.navbar-fixed-top.slide-active {
+	   
+	}
+	.navbar-header {
+	    right: 0!important
+	}
 }

@@ -1,11 +1,9 @@
 @font-face {
-  font-family: "bmw_groupbold";
-  font-style: normal;
-  font-weight: normal;
-  src: url("../fonts/bmwgroup-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/bmwgroup-bold.woff") format("woff"), url("../fonts/bmwgroup-bold.ttf") format("truetype"); }
-
-@font-face {
-  font-family: "bmw_groupregular";
-  font-style: normal;
-  font-weight: normal;
-  src: url("../fonts/bmwgroup-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/bmwgroup-regular.woff") format("woff"), url("../fonts/bmwgroup-regular.ttf") format("truetype"); }
+    font-family: 'BMWGroup_Global_Regular';
+    src: url('../fonts/BMWGroup_Global_Regular.eot');
+    src: url('../fonts/BMWGroup_Global_Regular.eot') format('embedded-opentype'),
+         url('../fonts/BMWGroup_Global_Regular.woff2') format('woff2'),
+         url('../fonts/BMWGroup_Global_Regular.woff') format('woff'),
+         url('../fonts/BMWGroup_Global_Regular.ttf') format('truetype'),
+         url('../fonts/BMWGroup_Global_Regular.svg#BMWGroup_Global_Regular') format('svg');
+}

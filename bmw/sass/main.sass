@@ -37,22 +37,29 @@ header
 	.icons
 		float: right
 		margin-top: 27px
+	.inner
+		border-bottom: 5px solid #b2b2b2	
 	.navbar
 		background-image: none
 		background-color: #fff
 		box-shadow: none
 		border: none
-		height: 64px
-		margin-bottom: 0px
-		border-bottom: 5px solid #b2b2b2
-		margin-left: -70px
+		min-height: 32px
+		margin-bottom: 0px				
+		position: static	
+		border-radius: 0px
+		width: 1290px
+		margin: 0 auto
+		padding: 0 15px
 	.navbar-nav
 		background-color: #fff
 		background-image: none
-	.navbar li
-		height: 64px
+		margin-left: -35px
+	.navbar li		
 		padding: 0
-		background-color: #fff				
+		background-color: #fff	
+		margin-bottom: -5px
+		border-right: 5px solid #fff		
 	.grey
 		border-bottom: 5px solid #aaa38e		
 	.yellow
@@ -64,26 +71,57 @@ header
 	.green
 		border-bottom: 5px solid #a2ad00
 	.orang
-		border-bottom: 5px solid #ff9100
-	.separator
-		border-bottom: 5px solid #fff
-		width: 2px
+		border-bottom: 5px solid #ff9100	
+	.left-bot
+		border-left: 5px solid #fff
 	.navbar li a
-		padding: 0 30px
-		line-height: 64px
+		font-family: 'BMWGroup_Global_Regular', sans-serif
+		font-size: 16px
+		padding: 20px 30px		
 		background-image: none
-		background-color: transparent
-		text-shadow: none		
-	.navbar-collapse
-		padding: 0			
-	.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus
-		background-color: transparent
+		background-color: #fff
+		text-shadow: none
+		color: #444444
+		text-shadow: 1px 0 0
+	.nav > .open > a, .nav > .open > a:hover, .nav > .open > a:focus
+		background-color: #fff
 		background-image: none
 		box-shadow: none
 		text-shadow: none
+	.nav > li > a:hover, .nav > li > a:focus
+		background-color: #fff
+	.navbar-nav .dropdown-menu
+		border: none
+		box-shadow: none
+		border-radius: 0
+	.navbar-nav .dropdown-menu .exit
+		min-height: 100px
+		border-right: 2px solid #92a2bd
+		cursor: pointer
+		float: left
+		margin-top: 40px
+	.navbar-nav .dropdown-menu .exit img
+		margin-right: 20px			
+	.navbar-nav .dropdown-menu .submenu
+		padding-left: 0px
+		margin-top: 35px
+		margin-left: 40px
+	.navbar-nav .dropdown-menu .submenu li
+		display: block
+		font-size: 15px
+		margin: 20px 0
+	.navbar-nav .dropdown-menu .submenu li a
+		font-size: 15px
+		font-family: 'Arial', sans-serif
+		text-shadow: none		
+		padding:  0 30px
+	.small
+		opacity: 1
 
 
 
+		
+		
 
 /*MainBanner*/
 #main-banner
@@ -113,11 +151,10 @@ header
 			margin-bottom: 13px
 	.polygon-container
 		position: absolute
-		z-index: 10
 		left: 0
 		top: 0
 		right: 0
-		bottom: 0
+		bottom: 0		
 		.polygon-left
 			position: absolute
 			width: 300%
@@ -540,4 +577,26 @@ footer
 			border-bottom: 5px solid #fecb00
 			img
 				width: 100%
-				height: 100%		
+				height: 100%	
+
+
+
+.anim_1
+	-webkit-animation-delay: 0ms;
+	-moz-animation-delay: 0ms;
+	-o-animation-delay: 0ms;
+	animation-delay: 0ms;
+
+
+.anim_2
+	-webkit-animation-delay: 200ms;
+	-moz-animation-delay: 200ms;
+	-o-animation-delay: 200ms;
+	animation-delay: 200ms;
+
+
+.anim_3
+	-webkit-animation-delay: 400ms;
+	-moz-animation-delay: 400ms;
+	-o-animation-delay: 400ms;
+	animation-delay: 400ms;
