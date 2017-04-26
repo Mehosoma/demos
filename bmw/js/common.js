@@ -62,9 +62,22 @@ $('.dropdown').on('hide.bs.dropdown', function(e){
    
 });
 
+
+//Css animation
+
+
+
 $(window).load(function() {
 
-    $(".calendar-events-block").animated("fadeInUp", "fadeOut"); 
+    var windowWidth = $(window).width();
+    if(windowWidth >= 768){
+
+        $(".calendar-events-block").animated("fadeInUp"); 
+
+    }else {
+
+        $(".calendar-events-block").animated("fadeInLeft");         
+    }
 
 });
 
