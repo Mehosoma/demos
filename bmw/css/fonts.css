@@ -7,3 +7,35 @@
          url('../fonts/BMWGroup_Global_Regular.ttf') format('truetype'),
          url('../fonts/BMWGroup_Global_Regular.svg#BMWGroup_Global_Regular') format('svg');
 }
+
+@font-face {
+    font-family: 'BMWGroup_Global_Bold';
+    src: url('../fonts/BMWGroup_Global_Bold.eot');
+    src: url('../fonts/BMWGroup_Global_Bold.eot') format('embedded-opentype'),
+         url('../fonts/BMWGroup_Global_Bold.woff2') format('woff2'),
+         url('../fonts/BMWGroup_Global_Bold.woff') format('woff'),
+         url('../fonts/BMWGroup_Global_Bold.ttf') format('truetype'),
+         url('../fonts/BMWGroup_Global_Bold.svg#BMWGroup_Global_Regular') format('svg');
+}
+
+@font-face {
+    font-family: 'BMWGlobal_Pro_bold';
+    src: url('../fonts/BMWGlobal_Pro_bold.eot');
+    src: url('../fonts/BMWGlobal_Pro_bold.eot') format('embedded-opentype'),
+         url('../fonts/BMWGlobal_Pro_bold.woff2') format('woff2'),
+         url('../fonts/BMWGlobal_Pro_bold.woff') format('woff'),
+         url('../fonts/BMWGlobal_Pro_bold.ttf') format('truetype'),
+         url('../fonts/BMWGlobal_Pro_bold.svg#BMWGlobal_Pro_bold') format('svg');
+}
+
+@font-face {
+    font-family: 'bmwbor';
+    src: url('../fonts/bmwbor.eot');
+    src: url('../fonts/bmwbor.eot') format('embedded-opentype'),
+         url('../fonts/bmwbor.woff2') format('woff2'),
+         url('../fonts/bmwbor.woff') format('woff'),
+         url('../fonts/bmwbor.ttf') format('truetype'),
+         url('../fonts/bmwbor.svg#bmwbor') format('svg');
+}
+
+

@@ -5,7 +5,7 @@
 	}
 
 	#about .about-content-desc{
-		width: 42%;
+		width: 40%;
 	}
 
 	header .navbar{
@@ -126,6 +126,10 @@
 		right: 0;
 		z-index: 10;
 		height: 64px;
+	}
+
+	header .inner{
+		border-bottom: none;
 	}
 
 	header #slide-nav #slidemenu {
@@ -288,6 +292,10 @@
 		height: 64px;		
 	}
 
+	header .inner{
+		border-bottom: none;
+	}
+
 	
 	header #slide-nav .navbar-header{
 		height: 64px;
@@ -298,14 +306,8 @@
 		background: #000;
 	}
 
-	header #slide-nav .navbar-header .logo-block{
-		float: left;
-		width: 70%;
-	}
-
-
 	header #slide-nav .navbar-header .logo-block .icons{
-		margin-left: 20px;
+		margin-left: 15px;
 	}
 
 	header .grey{
@@ -349,16 +351,20 @@
 		margin-top: 0px;
 	}
 
-	header #slide-nav .navbar-header .logo-block .logo, header #slide-nav .navbar-header .logo-block .icons {
-		margin-top: 18px;
-		width: 45%;
+	header #slide-nav .navbar-header .logo-block{
 		float: left;
+		width: 82%;
 	}
 
-	header #slide-nav .navbar-header .logo-block .logo img, header #slide-nav .navbar-header .logo-block .icons img {
-		width: 100%;
-		height: auto;
+	header #slide-nav .navbar-header .logo-block .logo, header #slide-nav .navbar-header .logo-block .icons {
+		margin-top: 18px;		
+		float: left;		
 	}
+
+	header #slide-nav .navbar-header .logo-block .logo img{
+		width: 118px;
+		height: auto;
+	}	
 	
 	#slide-nav #slidemenu .navbar-nav .dropdown-menu li a{
 		padding: 0;
@@ -379,6 +385,16 @@
 	#main-banner .bg-desc p{
 		width: 90%;
 	}
+
+	#about .about-content-foto{
+		float: none;
+		text-align: center;
+	}
+
+	#about .about-content-foto img{
+		margin-left: 0px;		
+	}
+
 
 	#calendar-events .calendar-events-block{
 		margin-bottom: 30px;

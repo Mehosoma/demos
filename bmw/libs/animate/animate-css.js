@@ -7,13 +7,13 @@
 						if (dir === "down") {
 								$(this).removeClass(outEffect).addClass(inEffect).css("opacity", "1");
 						} else {
-								$(this).removeClass(inEffect).addClass(outEffect).css("opacity", "1");								
+								$(this).removeClass(inEffect).addClass(outEffect).css("opacity", "0");								
 						};
 				}, {
-						offset: "80%"
+						offset: "85%"
 				}).waypoint(function(dir) {
 						if (dir === "down") {
-								$(this).removeClass(inEffect).addClass(outEffect).css("opacity", "1");								
+								$(this).removeClass(inEffect).addClass(outEffect).css("opacity", "0");								
 						} else {
 								$(this).removeClass(outEffect).addClass(inEffect).css("opacity", "1");
 						};
