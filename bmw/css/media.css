@@ -16,8 +16,14 @@
 
 		font-size: 14px;
 	}
-	
 
+	#materials .materials-block .materials-block-desc .materials-learnmore{
+		width: 250px;
+	}
+
+	#progr-det .progr-det-block .progr-det-desc .progr-det-learnmore{
+		width: 250px;
+	}
 
 }
 
@@ -57,6 +63,33 @@
 	#event .images-event .foto3{
 		float: right;
 	}
+
+	#news-article .news-article-event .foto2, #news-article .news-article-event .foto3{
+		width: 49%;
+		float: left;
+		margin-top: 28px;
+		margin: 
+	}
+
+	#news-article .news-article-event .foto3{
+		float: right;
+	}
+
+	#team #lightslider .li_slide .li-slide-name span{
+		font-size: 16px;
+	}
+
+	#programm .programm-event .foto2, #programm .programm-event .foto3{
+		width: 49%;
+		float: left;
+		margin-top: 28px;
+		margin: 
+	}
+
+	#programm .programm-event .foto3{
+		float: right;
+	}
+
 }
 
 @media only screen and (min-width : 768px) and (max-width : 991px) {
@@ -113,6 +146,47 @@
 
 	#event .images-event .foto3{
 		float: right;
+	}
+
+	#world .world-block .world-block-desc .world-learnmore{
+		width: 280px;
+	}
+
+	#news .news-block .news-desc .news-learnmore{
+		width: 280px;
+	}
+
+	#news-article .news-article-event .foto2, #news-article .news-article-event .foto3{
+		width: 49%;
+		float: left;
+		margin-top: 28px;
+		margin: 
+	}
+
+	#news-article .news-article-event .foto3{
+		float: right;
+	}
+
+	#materials .materials-block .materials-block-desc .materials-learnmore{
+		width: 250px;
+	}
+
+	#team #lightslider .li_slide .li-slide-name span{
+		font-size: 16px;
+	}
+
+	#programm .programm-event .foto2, #programm .programm-event .foto3{
+		width: 49%;
+		float: left;
+		margin-top: 28px;	
+	}
+
+	#programm .programm-event .foto3{
+		float: right;
+	}
+
+	#progr-det .progr-det-block .progr-det-desc .progr-det-learnmore{
+		width: 280px;
 	}
 
 }
@@ -279,6 +353,36 @@
 		float: right;
 	}
 
+	#news-article .news-article-event .foto2, #news-article .news-article-event .foto3{
+		width: 49%;
+		float: left;
+		margin-top: 28px;
+		margin: 
+	}
+
+	#news-article .news-article-event .foto3{
+		float: right;
+	}
+
+	#partners-page .partners-page-block, #partners-page .partners-page-block2{
+		margin-bottom: 30px;
+	}
+
+	#team #lightslider .li_slide .li-slide-name span{
+		font-size: 15px;
+	}
+
+	#programm .programm-event .foto2, #programm .programm-event .foto3{
+		width: 49%;
+		float: left;
+		margin-top: 28px;
+		margin: 
+	}
+
+	#programm .programm-event .foto3{
+		float: right;
+	}
+
 }
 
 @media only screen and (min-width : 0px) and (max-width : 479px) {
@@ -374,8 +478,6 @@
 	header #slide-nav #slidemenu {
 		top: 64px;
 	}
-
-
 	
 	#main-banner .bg-desc{
 		margin-left: 30px;
@@ -504,11 +606,60 @@
 	#gallery .gallery-block .gallery-desc span{
 		font-size: 15px;
 	}
+
+	#world .world-block .world-block-desc .world-learnmore{
+		width: 235px;
+	}
+
+	#contacts span img{
+		margin-right: 7px
+	}
 	
+	#contacts span{
+		font-size: 14px;
+	}
+
+	#news .news-block .news-desc .news-learnmore{
+		width: 235px;
+		background-position: center right 15px;
+	}
+
+	#news-article .news-article-event .foto1{
+		margin-bottom: 27px;
+	}
+
+	#news-article .news-article-icons span{
+		font-size: 9px;
+	}
+
+	#partners-page .partners-page-block, #partners-page .partners-page-block2{
+		margin-bottom: 30px;
+	}
+
+	#materials .materials-block .materials-block-desc .materials-learnmore{
+		width: 236px;
+	}
+
+	#team h3{
+		font-size: 30px;
+	}
+
+	#programm h2{
+		font-size: 21px
+	}
+
+	#programm .programm-event .foto1{
+		margin-bottom: 27px;
+	}
+
+	#progr-det .progr-det-block .progr-det-desc .progr-det-learnmore{
+		width: 235px;
+		background-position: center right 15px
+	}
 
 }
 
-
+/******************************************SliderStyles********************************************/
 
 
 /* adjust body when menu is open */
