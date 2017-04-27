@@ -360,7 +360,7 @@ footer {
     #info-banner .info-desc h2 {
       font-size: 32px;
       text-transform: uppercase;
-      font-weight: bold; }
+      font-family: 'BMWGroup_Global_Bold', sans-serif; }
     #info-banner .info-desc p {
       font-family: 'Arial', sans-serif;
       font-size: 16px;
@@ -413,7 +413,7 @@ footer {
       color: #444444;
       text-transform: uppercase;
       padding-left: 27px;
-      font-weight: bold;
+      font-family: 'BMWGroup_Global_Bold', sans-serif;
       text-align: left;
       color: #fff;
       border: none;
@@ -475,7 +475,7 @@ footer {
   #event h2 {
     font-size: 32px;
     color: #444444;
-    font-weight: bold;
+    font-family: 'BMWGroup_Global_Bold', sans-serif;
     text-transform: uppercase;
     margin-bottom: 43px; }
   #event span {
@@ -528,7 +528,7 @@ footer {
       text-transform: uppercase;
       color: #444444;
       float: left;
-      font-weight: bold; }
+      font-family: 'BMWGroup_Global_Bold', sans-serif; }
   #gallery .gallery-block {
     background-color: #fff;
     min-height: 100px;
@@ -548,7 +548,7 @@ footer {
         text-transform: uppercase;
         line-height: 80px;
         padding-left: 40px;
-        font-weight: bold; }
+        font-family: 'BMWGroup_Global_Bold', sans-serif; }
 
 /*********************************************Album*******************************************/
 #album {
@@ -556,11 +556,10 @@ footer {
   #album .album-head {
     padding: 30px 0 35px 0; }
     #album .album-head h2 {
+      font-family: 'BMWGroup_Global_Bold', sans-serif;
       font-size: 32px;
       text-transform: uppercase;
-      color: #444444;
-      float: left;
-      font-weight: bold; }
+      color: #444444; }
   #album .album-block {
     background-color: #fff;
     min-height: 100px;
