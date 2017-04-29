@@ -122,9 +122,11 @@ header {
   position: relative;
   overflow: hidden; }
   #main-banner .bg-desc {
-    margin-left: 94px;
-    margin-top: 130px;
-    color: #fff; }
+    color: #fff;
+    position: absolute;
+    left: 94px;
+    top: 130px;
+    z-index: 2; }
     #main-banner .bg-desc h1 {
       font-family: 'BMWGroup_Global_Bold', arial, helvetica, sans-serif;
       font-size: 50px;
@@ -135,11 +137,12 @@ header {
       width: 55%;
       margin: 20px 0 36px 0;
       line-height: 22px; }
-    #main-banner .bg-desc span {
+    #main-banner .bg-desc a {
       font-family: 'BMWGroup_Global_Bold', arial, helvetica, sans-serif;
       display: block;
       font-size: 18px;
-      margin-bottom: 13px; }
+      margin-bottom: 13px;
+      color: #fff; }
   #main-banner .polygon-container {
     position: absolute;
     left: 0;
@@ -185,7 +188,7 @@ header {
     text-transform: uppercase;
     color: #444444;
     float: left; }
-  #about .about-head span {
+  #about .about-head a {
     font-family: 'bmwbor', sans-serif;
     float: right;
     font-size: 16px;
@@ -218,7 +221,7 @@ header {
     text-transform: uppercase;
     color: #444444;
     float: left; }
-  #calendar-events .calendar-events-head span {
+  #calendar-events .calendar-events-head a {
     font-family: 'bmwbor', sans-serif;
     float: right;
     font-size: 16px;
@@ -227,21 +230,24 @@ header {
 
 #calendar-events .calendar-events-block {
   background-color: #fff;
-  min-height: 100px; }
+  height: 100%;
+  position: relative; }
   #calendar-events .calendar-events-block .ce-block-foto {
     width: 100%;
-    height: 100%;
+    height: 255px;
     border-bottom: 5px solid #fecb00; }
     #calendar-events .calendar-events-block .ce-block-foto img {
       width: 100%;
       height: 100%; }
   #calendar-events .calendar-events-block .ce-block-desc {
-    padding: 12px 25px 30px 40px; }
+    padding: 12px 25px 0px 40px;
+    margin-bottom: 100px; }
     #calendar-events .calendar-events-block .ce-block-desc h3 {
       font-size: 18px;
       text-transform: uppercase;
       color: #444444;
-      font-family: 'bmwbor', sans-serif; }
+      font-family: 'bmwbor', sans-serif;
+      line-height: 25px; }
     #calendar-events .calendar-events-block .ce-block-desc span {
       font-size: 14px;
       color: #b4b4b4; }
@@ -255,17 +261,18 @@ header {
       font-size: 15px;
       color: #444444;
       line-height: 22px;
-      margin-top: 18px;
-      margin-bottom: 23px; }
+      margin-top: 18px; }
     #calendar-events .calendar-events-block .ce-block-desc .ce-learnmore {
       width: 327px;
       height: 50px;
       background-color: #fecb00;
-      position: relative;
+      position: absolute;
       background-image: url("../img/arrow-right-small.png");
       background-size: 7px 13px;
       background-position: center right 30px;
-      background-repeat: no-repeat; }
+      background-repeat: no-repeat;
+      left: 40px;
+      bottom: 30px; }
       #calendar-events .calendar-events-block .ce-block-desc .ce-learnmore span {
         font-size: 18px;
         line-height: 50px;
@@ -483,6 +490,8 @@ footer {
     color: #b4b4b4; }
     #event span img {
       margin-right: 8px; }
+  #event .marker-right {
+    margin-left: 76px; }
   #event p {
     font-size: 15px;
     line-height: 22px;
