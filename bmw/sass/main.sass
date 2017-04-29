@@ -229,6 +229,8 @@ header
 			font-size: 16px
 			color: #444444
 			line-height: 65px
+	.col-eq .col-lg-4, .col-eq .col-md-6, .col-eq .col-sm-6, .col-eq .col-xs-12
+			margin-bottom: 20px	
 	.calendar-events-block
 		background-color: #fff
 		height: 100%
@@ -237,9 +239,23 @@ header
 			width: 100%
 			height: 255px
 			border-bottom: 5px solid #fecb00
+			overflow: hidden
+			-moz-transition: all 1s ease-out;
+			-o-transition: all 1s ease-out;
+			-webkit-transition: all 1s ease-out;
+			transition: all 1s ease-out;
 			img
+				-moz-transition: all 1s ease-out
+				-o-transition: all 1s ease-out
+				-webkit-transition: all 1s ease-out
+				transition: all 1s ease-out
 				width: 100%
 				height: 100%
+		.ce-block-foto:hover img
+			-webkit-transform: scale(1.2)
+			-moz-transform: scale(1.2)
+			-o-transform: scale(1.2)
+			transform: scale(1.2)
 		.ce-block-desc
 			padding: 12px 25px 0px 40px
 			margin-bottom: 100px
@@ -282,7 +298,7 @@ header
 					padding-left: 27px
 					font-weight: bold
 
-						
+
 /*Partners*/
 #partners	
 	padding: 0 0 75px 0
@@ -478,9 +494,6 @@ footer
 /*********************************************CalendarEvents*******************************************/
 
 
-.calendar-page .calendar-events-block
-	margin-bottom: 30px
-
 .calendar-page
 	padding-bottom: 46px
 
@@ -539,7 +552,7 @@ footer
 
 /*********************************************Gallery*******************************************/
 #gallery
-	padding: 9px 0 45px 0
+	padding: 9px 0 45px 0	
 	.gallery-head
 		padding: 30px 0 35px 0
 		h2
@@ -547,26 +560,29 @@ footer
 			text-transform: uppercase
 			color: #444444
 			float: left
-			font-family: 'BMWGroup_Global_Bold', sans-serif	
+			font-family: 'BMWGroup_Global_Bold', sans-serif
+	.col-eq .col-lg-4, .col-eq .col-md-6, .col-eq .col-sm-6, .col-eq .col-xs-12
+			margin-bottom: 20px			
 	.gallery-block
 		background-color: #fff
-		min-height: 100px
-		margin-bottom: 20px;		
+		height: 100%
 		.gallery-foto
 			width: 100%
-			height: 100%
+			height: 255px
 			border-bottom: 5px solid #fecb00
 			img
 				width: 100%
 				height: 100%
 		.gallery-desc			
-			height: 80px
+			min-height: 80px
+
 			span
+				display: block
 				font-size: 18px
 				color: #444444			
 				text-transform: uppercase
-				line-height: 80px
-				padding-left: 40px
+				line-height: 30px
+				margin: 30px 0 30px 40px
 				font-family: 'BMWGroup_Global_Bold', sans-serif
 
 /*********************************************Album*******************************************/
@@ -601,19 +617,22 @@ footer
 			text-transform: uppercase
 			color: #444444
 			float: left
+	.col-eq .col-lg-4, .col-eq .col-md-6, .col-eq .col-sm-6, .col-eq .col-xs-12
+			margin-bottom: 20px		
 	.world-block
 		background-color: #fff
-		min-height: 100px
-		margin-bottom: 30px		
+		height: 100%
+		position: relative
 		.world-block-foto
 			width: 100%
-			height: 100%
+			height: 255px
 			border-bottom: 5px solid #fecb00
 			img
 				width: 100%
 				height: 100%
 		.world-block-desc
-			padding: 6px 25px 30px 35px
+			padding: 6px 25px 0px 40px
+			margin-bottom: 100px
 			h3
 				font-size: 18px
 				text-transform: uppercase
@@ -624,12 +643,14 @@ footer
 			.world-learnmore
 				width: 327px
 				height: 50px
-				background-color: #fecb00
-				position: relative
+				background-color: #fecb00				
 				background-image: url('../img/arrow-right-small.png')
 				background-size: 7px 13px
 				background-position: center right 30px
-				background-repeat: no-repeat				
+				background-repeat: no-repeat
+				position: absolute
+				bottom: 30px
+				left: 40px			
 				span
 					font-size: 18px
 					line-height: 50px
@@ -673,25 +694,27 @@ footer
 			color: #444444
 			float: left	
 			margin-bottom: 27px
+	.col-eq .col-lg-4, .col-eq .col-md-6, .col-eq .col-sm-6, .col-eq .col-xs-12
+		margin-bottom: 20px		
 	.news-block
 		background-color: #fff
-		min-height: 100px
-		margin-bottom: 20px		
+		height: 100%
+		position: relative
 		.news-foto
 			width: 100%
-			height: 100%
+			height: 255px
 			border-bottom: 5px solid #fecb00
 			img
 				width: 100%
 				height: 100%
 		.news-desc
-			padding: 12px 25px 30px 40px
+			padding: 12px 25px 0px 40px
+			margin-bottom: 100px
 			h3
 				font-size: 18px
 				text-transform: uppercase
 				color: #444444				
-				font-family: 'bmwbor', sans-serif
-				
+				font-family: 'bmwbor', sans-serif				
 			span
 				font-size: 14px
 				color: #b4b4b4
@@ -708,12 +731,14 @@ footer
 			.news-learnmore
 				width: 327px
 				height: 50px
-				background-color: #fecb00
-				position: relative
+				background-color: #fecb00				
 				background-image: url('../img/arrow-right-small.png')
 				background-size: 7px 13px
 				background-position: center right 30px
 				background-repeat: no-repeat
+				position: absolute
+				left: 40px
+				bottom: 30px
 				span
 					font-size: 18px
 					line-height: 50px
@@ -806,21 +831,22 @@ footer
 			text-transform: uppercase
 			color: #444444
 			float: left
+	.col-eq .col-lg-4, .col-eq .col-md-6, .col-eq .col-sm-6, .col-eq .col-xs-12
+			margin-bottom: 20px	
 	.materials-block
 		background-color: #fff
-		min-height: 100px
-		margin-bottom: 30px		
+		height: 100%		
+		position: relative	
 		.materials-block-foto
 			width: 100%
-			height: 100%
+			height: 255px
 			border-bottom: 5px solid #fecb00
 			img
 				width: 100%
 				height: 100%
 		.materials-block-desc
-			padding: 6px 25px 30px 35px
-			height: 222px
-			position: relative	
+			padding: 6px 25px 0px 35px
+			margin-bottom: 100px			
 			h3
 				font-size: 18px
 				text-transform: uppercase
@@ -975,20 +1001,23 @@ footer
 		font-size: 32px
 		text-transform: uppercase
 		color: #444444
-		margin-bottom: 43px					
+		margin-bottom: 43px
+	.col-eq .col-lg-4, .col-eq .col-md-6, .col-eq .col-sm-6, .col-eq .col-xs-12
+			margin-bottom: 20px					
 	.progr-det-block
 		background-color: #fff
-		min-height: 100px
-		margin-bottom: 30px		
+		height: 100%
+		position: relative
 		.progr-det-foto
 			width: 100%
-			height: 100%
+			height: 255px
 			border-bottom: 5px solid #fecb00
 			img
 				width: 100%
 				height: 100%
 		.progr-det-desc
-			padding: 12px 25px 30px 40px
+			padding: 12px 25px 0px 40px
+			margin-bottom: 100px
 			h3
 				font-family: 'BMWGroup_Global_Bold', sans-serif
 				font-size: 18px
@@ -1014,11 +1043,13 @@ footer
 				width: 327px
 				height: 50px
 				background-color: #fecb00
-				position: relative
 				background-image: url('../img/arrow-right-small.png')
 				background-size: 7px 13px
 				background-position: center right 30px
 				background-repeat: no-repeat
+				position: absolute
+				bottom: 30px
+				left: 40px
 				span
 					font-size: 18px
 					line-height: 50px

@@ -65,19 +65,6 @@ $('.dropdown').on('hide.bs.dropdown', function(e){
 
 //Css animation
 
-$(window).load(function() {
-
-    var windowWidth = $(window).width();
-    if(windowWidth >= 768){
-
-        $(".calendar-events-block").animated("zoomIn", "fadeInOut");        
-
-    }else {
-
-        $(".calendar-events-block").animated("fadeInLeft", "fadeInOut");         
-    }
-
-});
 
 
 // Выравниваем блоки по высоте

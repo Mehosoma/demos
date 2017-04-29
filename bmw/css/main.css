@@ -228,6 +228,9 @@ header {
     color: #444444;
     line-height: 65px; }
 
+#calendar-events .col-eq .col-lg-4, #calendar-events .col-eq .col-md-6, #calendar-events .col-eq .col-sm-6, #calendar-events .col-eq .col-xs-12 {
+  margin-bottom: 20px; }
+
 #calendar-events .calendar-events-block {
   background-color: #fff;
   height: 100%;
@@ -235,10 +238,25 @@ header {
   #calendar-events .calendar-events-block .ce-block-foto {
     width: 100%;
     height: 255px;
-    border-bottom: 5px solid #fecb00; }
+    border-bottom: 5px solid #fecb00;
+    overflow: hidden;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
+    transition: all 1s ease-out; }
     #calendar-events .calendar-events-block .ce-block-foto img {
+      -moz-transition: all 1s ease-out;
+      -o-transition: all 1s ease-out;
+      -webkit-transition: all 1s ease-out;
+      transition: all 1s ease-out;
       width: 100%;
       height: 100%; }
+  #calendar-events .calendar-events-block .ce-block-foto:hover img {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2); }
   #calendar-events .calendar-events-block .ce-block-desc {
     padding: 12px 25px 0px 40px;
     margin-bottom: 100px; }
@@ -470,9 +488,6 @@ footer {
       margin-bottom: 25px; }
 
 /*********************************************CalendarEvents*******************************************/
-.calendar-page .calendar-events-block {
-  margin-bottom: 30px; }
-
 .calendar-page {
   padding-bottom: 46px; }
 
@@ -538,25 +553,27 @@ footer {
       color: #444444;
       float: left;
       font-family: 'BMWGroup_Global_Bold', sans-serif; }
+  #gallery .col-eq .col-lg-4, #gallery .col-eq .col-md-6, #gallery .col-eq .col-sm-6, #gallery .col-eq .col-xs-12 {
+    margin-bottom: 20px; }
   #gallery .gallery-block {
     background-color: #fff;
-    min-height: 100px;
-    margin-bottom: 20px; }
+    height: 100%; }
     #gallery .gallery-block .gallery-foto {
       width: 100%;
-      height: 100%;
+      height: 255px;
       border-bottom: 5px solid #fecb00; }
       #gallery .gallery-block .gallery-foto img {
         width: 100%;
         height: 100%; }
     #gallery .gallery-block .gallery-desc {
-      height: 80px; }
+      min-height: 80px; }
       #gallery .gallery-block .gallery-desc span {
+        display: block;
         font-size: 18px;
         color: #444444;
         text-transform: uppercase;
-        line-height: 80px;
-        padding-left: 40px;
+        line-height: 30px;
+        margin: 30px 0 30px 40px;
         font-family: 'BMWGroup_Global_Bold', sans-serif; }
 
 /*********************************************Album*******************************************/
@@ -591,19 +608,23 @@ footer {
     color: #444444;
     float: left; }
 
+#world .col-eq .col-lg-4, #world .col-eq .col-md-6, #world .col-eq .col-sm-6, #world .col-eq .col-xs-12 {
+  margin-bottom: 20px; }
+
 #world .world-block {
   background-color: #fff;
-  min-height: 100px;
-  margin-bottom: 30px; }
+  height: 100%;
+  position: relative; }
   #world .world-block .world-block-foto {
     width: 100%;
-    height: 100%;
+    height: 255px;
     border-bottom: 5px solid #fecb00; }
     #world .world-block .world-block-foto img {
       width: 100%;
       height: 100%; }
   #world .world-block .world-block-desc {
-    padding: 6px 25px 30px 35px; }
+    padding: 6px 25px 0px 40px;
+    margin-bottom: 100px; }
     #world .world-block .world-block-desc h3 {
       font-size: 18px;
       text-transform: uppercase;
@@ -615,11 +636,13 @@ footer {
       width: 327px;
       height: 50px;
       background-color: #fecb00;
-      position: relative;
       background-image: url("../img/arrow-right-small.png");
       background-size: 7px 13px;
       background-position: center right 30px;
-      background-repeat: no-repeat; }
+      background-repeat: no-repeat;
+      position: absolute;
+      bottom: 30px;
+      left: 40px; }
       #world .world-block .world-block-desc .world-learnmore span {
         font-size: 18px;
         line-height: 50px;
@@ -662,19 +685,22 @@ footer {
       color: #444444;
       float: left;
       margin-bottom: 27px; }
+  #news .col-eq .col-lg-4, #news .col-eq .col-md-6, #news .col-eq .col-sm-6, #news .col-eq .col-xs-12 {
+    margin-bottom: 20px; }
   #news .news-block {
     background-color: #fff;
-    min-height: 100px;
-    margin-bottom: 20px; }
+    height: 100%;
+    position: relative; }
     #news .news-block .news-foto {
       width: 100%;
-      height: 100%;
+      height: 255px;
       border-bottom: 5px solid #fecb00; }
       #news .news-block .news-foto img {
         width: 100%;
         height: 100%; }
     #news .news-block .news-desc {
-      padding: 12px 25px 30px 40px; }
+      padding: 12px 25px 0px 40px;
+      margin-bottom: 100px; }
       #news .news-block .news-desc h3 {
         font-size: 18px;
         text-transform: uppercase;
@@ -697,11 +723,13 @@ footer {
         width: 327px;
         height: 50px;
         background-color: #fecb00;
-        position: relative;
         background-image: url("../img/arrow-right-small.png");
         background-size: 7px 13px;
         background-position: center right 30px;
-        background-repeat: no-repeat; }
+        background-repeat: no-repeat;
+        position: absolute;
+        left: 40px;
+        bottom: 30px; }
         #news .news-block .news-desc .news-learnmore span {
           font-size: 18px;
           line-height: 50px;
@@ -790,21 +818,23 @@ footer {
     color: #444444;
     float: left; }
 
+#materials .col-eq .col-lg-4, #materials .col-eq .col-md-6, #materials .col-eq .col-sm-6, #materials .col-eq .col-xs-12 {
+  margin-bottom: 20px; }
+
 #materials .materials-block {
   background-color: #fff;
-  min-height: 100px;
-  margin-bottom: 30px; }
+  height: 100%;
+  position: relative; }
   #materials .materials-block .materials-block-foto {
     width: 100%;
-    height: 100%;
+    height: 255px;
     border-bottom: 5px solid #fecb00; }
     #materials .materials-block .materials-block-foto img {
       width: 100%;
       height: 100%; }
   #materials .materials-block .materials-block-desc {
-    padding: 6px 25px 30px 35px;
-    height: 222px;
-    position: relative; }
+    padding: 6px 25px 0px 35px;
+    margin-bottom: 100px; }
     #materials .materials-block .materials-block-desc h3 {
       font-size: 18px;
       text-transform: uppercase;
@@ -955,19 +985,22 @@ footer {
     text-transform: uppercase;
     color: #444444;
     margin-bottom: 43px; }
+  #progr-det .col-eq .col-lg-4, #progr-det .col-eq .col-md-6, #progr-det .col-eq .col-sm-6, #progr-det .col-eq .col-xs-12 {
+    margin-bottom: 20px; }
   #progr-det .progr-det-block {
     background-color: #fff;
-    min-height: 100px;
-    margin-bottom: 30px; }
+    height: 100%;
+    position: relative; }
     #progr-det .progr-det-block .progr-det-foto {
       width: 100%;
-      height: 100%;
+      height: 255px;
       border-bottom: 5px solid #fecb00; }
       #progr-det .progr-det-block .progr-det-foto img {
         width: 100%;
         height: 100%; }
     #progr-det .progr-det-block .progr-det-desc {
-      padding: 12px 25px 30px 40px; }
+      padding: 12px 25px 0px 40px;
+      margin-bottom: 100px; }
       #progr-det .progr-det-block .progr-det-desc h3 {
         font-family: 'BMWGroup_Global_Bold', sans-serif;
         font-size: 18px;
@@ -993,11 +1026,13 @@ footer {
         width: 327px;
         height: 50px;
         background-color: #fecb00;
-        position: relative;
         background-image: url("../img/arrow-right-small.png");
         background-size: 7px 13px;
         background-position: center right 30px;
-        background-repeat: no-repeat; }
+        background-repeat: no-repeat;
+        position: absolute;
+        bottom: 30px;
+        left: 40px; }
         #progr-det .progr-det-block .progr-det-desc .progr-det-learnmore span {
           font-size: 18px;
           line-height: 50px;
