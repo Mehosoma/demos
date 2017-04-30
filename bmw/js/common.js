@@ -63,9 +63,19 @@ $('.dropdown').on('hide.bs.dropdown', function(e){
 });
 
 
-//Css animation
+//carret меню на маленьких разрешениях
 
+$(window).load(function() {
+ 
+    var windowWidth = $(window).width();
+    if(windowWidth >= 768){
+        $('.navbar li a').css({'background-image':'none'});
+        $('.nav .open a').css({'background-image':'none'});
+    } else {
+        false    
+    }        
 
+});
 
 // Выравниваем блоки по высоте
 $(document).ready(function(){

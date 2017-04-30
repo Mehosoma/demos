@@ -896,3 +896,18 @@ body.slide-active {
 	    left: 0!important
 	}
 }
+
+
+
+
+/**General**/
+@media (min-width:768px) { 
+	@keyframes borderanimation_hover{
+	0%{padding-bottom:20px;border-bottom-width:5px}
+	100%{padding-bottom:17px;border-bottom-width: 8px}
+	}
+	.navbar li a {animation:borderanimation .15s 0s ease-out forwards}
+	.navbar li a:hover {animation:borderanimation_hover .15s 0s ease-out forwards}
+	}
+}
+
