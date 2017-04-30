@@ -428,6 +428,22 @@
 		height: auto;
 	}
 
+	header .navbar li a{
+		background-image: url('../img/arrow-bottom.png')!important;
+		background-position: center right 10px;
+		background-repeat: no-repeat;
+	}
+
+	header .nav > .open > a{
+		background-image: url('../img/arrow-up.png')!important;
+		background-position: center right 10px;
+		background-repeat: no-repeat;
+	}
+
+	#slide-nav #slidemenu .navbar-nav .dropdown-menu li a{
+		background-image: none!important;
+	}
+
 }
 
 @media only screen and (min-width : 0px) and (max-width : 479px) {
@@ -750,6 +766,22 @@
 		height: auto;
 	}
 
+	header .navbar li a{
+		background-image: url('../img/arrow-bottom.png')!important;
+		background-position: center right 10px;
+		background-repeat: no-repeat;
+	}
+
+	header .nav > .open > a{
+		background-image: url('../img/arrow-up.png')!important;
+		background-position: center right 10px;
+		background-repeat: no-repeat;
+	}
+
+	#slide-nav #slidemenu .navbar-nav .dropdown-menu li a{
+		background-image: none!important;
+	}
+
 }
 
 /******************************************SliderStyles********************************************/
@@ -910,4 +942,3 @@ body.slide-active {
 	.navbar li a:hover {animation:borderanimation_hover .15s 0s ease-out forwards}
 	}
 }
-

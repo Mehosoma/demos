@@ -79,6 +79,7 @@ header {
     text-shadow: 1px 0 0; }
   header .nav > .open > a, header .nav > .open > a:hover, header .nav > .open > a:focus {
     background-color: #fff;
+    background-image: none;
     box-shadow: none;
     text-shadow: none; }
   header .nav > li > a:hover, header .nav > li > a:focus {
@@ -110,16 +111,6 @@ header {
     padding: 0 30px; }
   header .small {
     opacity: 1; }
-  header .navbar li a {
-    background-image: url("../img/arrow-bottom.png");
-    background-position: center right 10px;
-    background-repeat: no-repeat; }
-  header #slide-nav #slidemenu .navbar-nav .dropdown-menu li a {
-    background-image: none; }
-  header .nav > .open > a {
-    background-image: url("../img/arrow-up.png");
-    background-position: center right 10px;
-    background-repeat: no-repeat; }
 
 /*MainBanner*/
 #main-banner {
