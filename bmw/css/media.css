@@ -444,6 +444,14 @@
 		background-image: none!important;
 	}
 
+	#info-form form .form-field input, #info-form form .form-field select{
+		margin-top: 20px;
+	}
+
+	#info-form form .select-side{
+		top: 84px;
+	}
+
 }
 
 @media only screen and (min-width : 0px) and (max-width : 479px) {
@@ -640,7 +648,7 @@
 
 	#info-form form .form-field input, #info-form form .form-field select, #info-form form .info-phone{
 		float: none;
-		width: 300px;	
+		width: 100%;	
 	}
 
 	#info-form form .info-phone{
@@ -652,12 +660,11 @@
 	}
 
 	#info-form form{
-		width: 300px;
+		width: 100%;
 	}
 
 	#info-form form .select-side{
-		top: 63px;
-		left: 263px;
+		top: 84px;			
 	}
 
 	#info-form form .info-phone .pref-phone{
@@ -666,7 +673,7 @@
 
 
 	#info-form form .info-phone .number-phone{
-		width: 216px;
+		width: 205px;
 	}
 
 	#event .images-event .foto1{
@@ -781,6 +788,25 @@
 	#slide-nav #slidemenu .navbar-nav .dropdown-menu li a{
 		background-image: none!important;
 	}
+
+	#hidden_form {
+		width: 100%;
+	}
+
+	#hidden_form span{
+		font-size: 16px
+	}
+
+	#info-form form .form-field input, #info-form form .form-field select{
+		margin-top: 20px;
+	}
+	
+
+	#info-form .dis-button .text-danger{
+		top: 45px;
+	}
+
+	
 
 }
 

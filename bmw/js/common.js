@@ -1,4 +1,9 @@
 
+//ModalWindow
+$(document).ready(function(){
+     $(".popup_form").magnificPopup();
+});
+
 // Кнопка заблокирована/активна
 jQuery(function($){ 
     $("input[name='disclaim']").click(function() {

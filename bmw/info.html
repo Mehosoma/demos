@@ -22,6 +22,7 @@
 	<link rel="stylesheet" type="text/css" href="libs/slider/lightslider.css"/>
 	<link rel="stylesheet" href="libs/yamm.css">
 	<link rel="stylesheet" type="text/css" href="libs/animate/animate.min.css"/>
+	<link rel="stylesheet" type="text/css" href="libs/magnific/magnific-popup.css"/>
 
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/main.css">
@@ -125,8 +126,8 @@
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 					<span>Поля отмеченные * - обязательны для заполнения.</span>
 					<form id="info-forma" method="post">
-						<div class="form-field">
-							<span>Формат проекта*</span>
+						<div class="form-field clearfix">
+							<span>Формат проекта*</span>							
 							<div class="rail-select clearfix">
   								<div class="select-side">
     								<i class="glyphicon glyphicon-menu-down"></i>
@@ -135,7 +136,8 @@
 		  							<option value="f1">Экспериментариум</option>
 		  							<option value="f2">Пункт 2</option> 
 								</select>
-							</div>							
+							</div>
+							<i class="field-validation-error text-danger" data-valmsg-for="Requester" data-valmsg-replace="true">Поле обязательно для заполнения</i>
 						</div>
 						<div class="form-field">
 							<span>Предпочтительная программа*</span>
@@ -147,7 +149,8 @@
 		  							<option value="p1">Безопасность дорожного движения</option>
 		  							<option value="p2">Пункт 2</option> 
 								</select>
-							</div>							
+							</div>
+							<i class="field-validation-error text-danger" data-valmsg-for="Requester" data-valmsg-replace="true">Поле обязательно для заполнения</i>						
 						</div>
 						<div class="form-field">
 							<span>Возраст группы*</span>
@@ -159,7 +162,8 @@
 		  							<option value="a1">6-8 лет</option>
 		  							<option value="a2">Пункт 2</option> 
 								</select>
-							</div>							
+							</div>
+							<i class="field-validation-error text-danger" data-valmsg-for="Requester" data-valmsg-replace="true">Поле обязательно для заполнения</i>							
 						</div>
 						<div class="form-field">
 							<span>Тип посещения*</span>
@@ -171,19 +175,23 @@
 		  							<option value="t1">Индивидуальное</option>
 		  							<option value="t2">Пункт 2</option> 
 								</select>
-							</div>							
+							</div>
+							<i class="field-validation-error text-danger" data-valmsg-for="Requester" data-valmsg-replace="true">Поле обязательно для заполнения</i>							
 						</div>
 						<div class="form-field clearfix">
 							<span>Заявитель/учреждение*</span>
 							<input type="text" name="who" value="Школа №2" onfocus="this.value=''" required>
+							<i class="field-validation-error text-danger" data-valmsg-for="Requester" data-valmsg-replace="true">Поле обязательно для заполнения</i>
 						</div>
 						<div class="form-field clearfix">
 							<span>Город*</span>
 							<input type="text" name="city" value="Москва" onfocus="this.value=''" required>
+							<i class="field-validation-error text-danger" data-valmsg-for="Requester" data-valmsg-replace="true">Поле обязательно для заполнения</i>
 						</div>
 						<div class="form-field clearfix">
 							<span>Контактное лицо*</span>
 							<input type="text" name="fio" value="Сергей" onfocus="this.value=''" required>
+							<i class="field-validation-error text-danger" data-valmsg-for="Requester" data-valmsg-replace="true">Поле обязательно для заполнения</i>
 						</div>
 						<div class="form-field clearfix">
 							<span>Телефон*</span>
@@ -191,14 +199,18 @@
 								<input class="pref-phone" type="text" name="phone-pref" value="+7" onfocus="this.value=''" required>
 								<input class="number-phone" type="text" name="phone" value="1234567" onfocus="this.value=''" required>
 							</div>
+							<i class="field-validation-error text-danger" data-valmsg-for="Requester" data-valmsg-replace="true">Поле обязательно для заполнения</i>
 						</div>
 						<div class="form-field clearfix">
 							<span>Email*</span>
 							<input type="text" name="email" value="serg@mail.ru" onfocus="this.value=''" required>
+							<i class="field-validation-error text-danger" data-valmsg-for="Requester" data-valmsg-replace="true">Поле обязательно для заполнения</i>
 						</div>
 						<hr />
 						<div class="dis-button">
-							<input type="checkbox" name="disclaim" class="check">&nbsp;Согласен на обработку персональных данных*
+							<input type="checkbox" name="disclaim" class="check">&nbsp;Согласие на обработку персональных данных*<br>
+							<i class="field-validation-error text-danger" data-valmsg-for="Requester" data-valmsg-replace="true">Необходимо ваше согласие на обработку данных</i>
+							<div class="modal-link"><a href="#hidden_form" class="popup_form">Условия и способы обработки и хранения персональных данных</a></div>
 							 <button type="submit" class="button-info disabled" id="block">Отправить заявку</button>  
 						</div>
 					</form>
@@ -218,6 +230,26 @@
 			</div>			
 		</div>
 	</footer>
+
+	<!--ModalWindow-->
+	<div class="hidden">		
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div id="hidden_form">
+						<span>УСЛОВИЯ И СПОСОБЫ ОБРАБОТКИ И ХРАНЕНИЯ ПЕРСОНАЛЬНЫХ ДАННЫХ</span>
+						<p>Защита и целостность Ваших персональных данных очень важны для нас. По этой причине мы будем использовать Вашу информацию исключительно в соответствии с применимым законодательством.</p>
+						<p>Мы собираем, обрабатываем и используем персональные данные, которые Вы предоставляете нам, исключительно с целью возможности оказания информационной поддержки.</p>
+						<p>Предоставляя Ваши персональные данные компании BMW Group в России для обработки (включая систематизацию; накопление; хранение; уточнение — обновление, изменение; использование; передачу (в том числе распространение, предоставление, доступ), обезличивание; блокирование; уничтожение; сбор; запись; накопление; извлечение; использование; удаление, а также автоматизированные и иные способы обработки), Вы выражаете согласие с тем, что указанная информация будет использоваться компанией ООО «БМВ Русланд Трейдинг», компанией «БМВ Банк» ООО, официальными дилерами BMW (MINI, Motorrad) в России, а также компаниями, входящими в группу компаний BMW и другими компаниями-партнерами BMW Group в России и за рубежом**, исключительно с целью оказания Вам информационной поддержки (в том числе, но не ограничиваясь: приглашения на мероприятия, предоставление информации о новых продуктах и услугах, и прочей информации, имеющей отношение к BMW Group), а также при проведении исследований мнений клиентов об обслуживании и о продукции BMW Group.</p>
+						<p>Предоставляя Ваши персональные данные в соответствии с целями и условиями выше, Вы подтверждаете свое согласие на трансграничную передачу и распространение Ваших персональных данных и выражаете Ваше предварительное согласие на обработку персональных данных в целях, предусмотренных выше, в том числе для продвижения и совершенствования товаров и услуг BMW Group, путем прямых контактов с помощью средств связи.</p>
+						<p>Ваше согласие дается на неопределенный срок.</p>
+						<span>ОТКАЗ ОТ ПОЛУЧЕНИЯ ИНФОРМАЦИИ:</span>
+						<p>Ваше согласие может быть в любое время отозвано путем уведомления Вашего официального дилера BMW на территории России, либо Службы клиентской поддержки BMW по адресу</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	
 
 	<script src="libs/jquery/jquery-1.11.2.min.js"></script>	
@@ -226,6 +258,7 @@
 	<script src="libs/slider/lightslider.min.js"></script>
 	<script src="libs/cole/bootstrap-colequalizer.js"></script>
 	<script src="libs/wow.js"></script>
+	<script src="libs/magnific/jquery.magnific-popup.js"></script>
 	<script src="js/common.js"></script>
 
 	<script>
