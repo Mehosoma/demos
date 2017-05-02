@@ -53,23 +53,32 @@ $(document).on('click', '[data-toggle="lightbox"]', function(event) {
 
 //Анимация Dropdown
 
-$('.dropdown').on('show.bs.dropdown', function(e){
+var windowWidth = $(window).width();
+    if(windowWidth >= 991){
 
-    $('.body-overlay').css({'opacity':'1'});
-  
-    $(this).find('.dropdown-menu').first().stop(true, true).slideDown(1000, function(){    
-    });
+        $('.dropdown').on('show.bs.dropdown', function(e){
+
+            $('.body-overlay').css({'opacity':'1'});
+          
+            $(this).find('.dropdown-menu').first().stop(true, true).slideDown(1000, function(){    
+            });
 
 
-});
+        });
 
-$('.dropdown').on('hide.bs.dropdown', function(e){
+        $('.dropdown').on('hide.bs.dropdown', function(e){
 
-    $('.body-overlay').css({'opacity':'0'});
-  $(this).find('.dropdown-menu').first().stop(true, true).slideUp(500, function(){   
-  }); 
-   
-});
+            $('.body-overlay').css({'opacity':'0'});
+          $(this).find('.dropdown-menu').first().stop(true, true).slideUp(500, function(){   
+          }); 
+           
+        });
+
+    }else{
+         false
+    }
+
+
 
 
 // Выравниваем блоки по высоте
