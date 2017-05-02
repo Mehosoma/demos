@@ -88,6 +88,7 @@ header {
   header .navbar li a {
     font-family: 'BMWGroup_Global_Regular', sans-serif;
     font-size: 15px;
+    line-height: 10px;
     padding: 15px 30px;
     background-image: none;
     background-color: #fff;
