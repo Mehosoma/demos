@@ -14,7 +14,7 @@
 
 	header .navbar-nav > li > a{
 
-		font-size: 14px;
+		padding: 15px 28px
 	}
 
 	#materials .materials-block .materials-block-desc .materials-learnmore{
@@ -42,10 +42,14 @@
 		width: 970px;
 	}
 
+	header .navbar-nav{
+		margin-left: -15px;
+	}
+
 	header .navbar-nav > li > a{
 
-		font-size: 14px;
-		padding: 20px 14px;
+		font-size: 15px;
+		padding: 15px 10px;
 	}
 	
 	
@@ -103,20 +107,120 @@
 
 @media only screen and (min-width : 768px) and (max-width : 991px) {
 	
-	header .navbar{
-		width: 752px;
-		padding: 0
+		header .navbar{
+		width: 100%;
+		padding: 0 15px;
+		position: fixed;
+		right:0;
+		z-index: 10;
+		height: 64px;		
 	}
 
-	header .navbar-nav > li > a{
-
-		font-size: 12px;
-		padding: 20px 5px;
+	header .inner{
+		border-bottom: none;
 	}
 
-	header .navbar-nav{
-		margin-left: 0px
+	
+	header #slide-nav .navbar-header{
+		height: 64px;
+		padding: 0px
 	}
+
+	#slide-nav .navbar-toggle > .icon-bar{
+		background: #000;
+	}
+
+	header #slide-nav .navbar-header .logo-block .icons{
+		margin-left: 15px;
+	}
+
+	header .grey{
+		border-bottom: none;
+		border-left: 5px solid #aaa38e		
+	}
+
+	header .yellow{
+		border-bottom: none;
+		border-left: 5px solid #fecb00
+	}
+	
+	header .blue{
+		border-bottom: none;
+		border-left: 5px solid #92a2bd
+	}
+	
+	header .dark{
+		border-bottom: none;
+		border-left: 5px solid #444444
+	}
+	
+	header .green{
+		border-bottom: none;
+		border-left: 5px solid #a2ad00
+	}
+	header .orang{
+		border-bottom: none;
+		border-left: 5px solid #ff9100	
+	}
+	
+	header .left-bot{
+		border-left: none
+	}
+
+	header .exit{
+		display: none;
+	}
+
+	header .navbar-nav .dropdown-menu .submenu{
+		margin-top: 0px;
+	}
+
+	header #slide-nav .navbar-header .logo-block{
+		float: left;
+		width: 90%;
+	}
+
+	header #slide-nav .navbar-header .logo-block .logo{
+		margin-top: 18px;		
+		float: left;		
+	}
+
+	header #slide-nav .navbar-header .logo-block .icons {
+		margin-top: 18px;
+		float: right;
+	}
+
+	header #slide-nav .navbar-header .logo-block .logo img{
+		width: 118px;
+		height: auto;
+	}	
+	
+	header #slide-nav #slidemenu {
+		top: 64px;
+	}
+
+	header .navbar .dropdown a{
+		background-image: url('../img/arrow-bottom.png')!important;
+		background-position: center right 20px;
+		background-repeat: no-repeat;
+	}
+
+	header .nav > .open > a{
+		background-image: url('../img/arrow-up.png')!important;
+		background-position: center right 20px;
+		background-repeat: no-repeat;
+	}
+
+	.navbar-nav .open .dropdown-menu{
+		background-color: #f2f2f2
+	}
+
+	#slide-nav #slidemenu .navbar-nav .dropdown-menu li a {
+
+		background-image: none!important;
+
+	}
+	
 
 	#main-banner .bg-desc p{
 		width: 88%;
@@ -199,6 +303,11 @@
 		width: 280px;
 	}
 
+	.custom .collapse.navbar-collapse {
+    	display: block !important;
+        visibility: visible !important;
+  }
+
 
 	
 
@@ -206,37 +315,31 @@
 
 @media only screen and (min-width : 480px) and (max-width : 767px) {
 
-	header .navbar{
+		header .navbar{
 		width: 100%;
 		padding: 0 15px;
 		position: fixed;
-		right: 0;
+		right:0;
 		z-index: 10;
-		height: 64px;
+		height: 64px;		
 	}
 
 	header .inner{
 		border-bottom: none;
 	}
 
-	header #slide-nav #slidemenu {
-		top: 64px;
-	}
-
+	
 	header #slide-nav .navbar-header{
 		height: 64px;
+		padding: 0px
 	}
 
 	#slide-nav .navbar-toggle > .icon-bar{
-		background: #000
-	}
-
-	header #slide-nav .navbar-header .logo-block{
-		float: left;
+		background: #000;
 	}
 
 	header #slide-nav .navbar-header .logo-block .icons{
-		margin-left: 50px
+		margin-left: 15px;
 	}
 
 	header .grey{
@@ -280,10 +383,50 @@
 		margin-top: 0px;
 	}
 
-	header #slide-nav .navbar-header .logo-block .logo, header #slide-nav .navbar-header .logo-block .icons {
+	header #slide-nav .navbar-header .logo-block{
+		float: left;
+		width: 82%;
+	}
+
+	header #slide-nav .navbar-header .logo-block .logo{
+		margin-top: 18px;		
+		float: left;		
+	}
+
+	header #slide-nav .navbar-header .logo-block .icons {
 		margin-top: 18px;
 	}
+
+	header #slide-nav .navbar-header .logo-block .logo img{
+		width: 118px;
+		height: auto;
+	}	
 	
+	header #slide-nav #slidemenu {
+		top: 64px;
+	}
+
+	header .navbar .dropdown a{
+		background-image: url('../img/arrow-bottom.png')!important;
+		background-position: center right 20px;
+		background-repeat: no-repeat;
+	}
+
+	header .nav > .open > a{
+		background-image: url('../img/arrow-up.png')!important;
+		background-position: center right 20px;
+		background-repeat: no-repeat;
+	}
+
+	.navbar-nav .open .dropdown-menu{
+		background-color: #f2f2f2
+	}
+
+	#slide-nav #slidemenu .navbar-nav .dropdown-menu li a {
+
+		background-image: none!important;
+
+	}
 	
 	#main-banner .bg-desc{
 		left: 30px;
@@ -428,22 +571,7 @@
 		height: auto;
 	}
 
-	header .navbar li a{
-		background-image: url('../img/arrow-bottom.png')!important;
-		background-position: center right 10px;
-		background-repeat: no-repeat;
-	}
-
-	header .nav > .open > a{
-		background-image: url('../img/arrow-up.png')!important;
-		background-position: center right 10px;
-		background-repeat: no-repeat;
-	}
-
-	#slide-nav #slidemenu .navbar-nav .dropdown-menu li a{
-		background-image: none!important;
-	}
-
+	
 	#info-form form .form-field input, #info-form form .form-field select{
 		margin-top: 20px;
 	}
@@ -456,7 +584,7 @@
 
 @media only screen and (min-width : 0px) and (max-width : 479px) {
 
-	header .navbar{
+			header .navbar{
 		width: 100%;
 		padding: 0 15px;
 		position: fixed;
@@ -539,13 +667,34 @@
 		height: auto;
 	}	
 	
-	#slide-nav #slidemenu .navbar-nav .dropdown-menu li a{
-		padding: 0;
-		font-size: 14px;
-	}
-
 	header #slide-nav #slidemenu {
 		top: 64px;
+	}
+
+	header .navbar .dropdown a{
+		background-image: url('../img/arrow-bottom.png')!important;
+		background-position: center right 20px;
+		background-repeat: no-repeat;
+	}
+
+	header .nav > .open > a{
+		background-image: url('../img/arrow-up.png')!important;
+		background-position: center right 20px;
+		background-repeat: no-repeat;
+	}
+
+	.navbar-nav .open .dropdown-menu{
+		background-color: #f2f2f2
+	}
+
+	#slide-nav #slidemenu .navbar-nav .dropdown-menu li a {
+
+		background-image: none!important;
+
+	}
+
+	#slide-nav #slidemenu{
+		width: 95%!important;
 	}
 	
 	#main-banner .bg-desc{
@@ -771,19 +920,7 @@
 
 	#world .world-block .world-block-foto{
 		height: auto;
-	}
-
-	header .navbar li a{
-		background-image: url('../img/arrow-bottom.png')!important;
-		background-position: center right 10px;
-		background-repeat: no-repeat;
-	}
-
-	header .nav > .open > a{
-		background-image: url('../img/arrow-up.png')!important;
-		background-position: center right 10px;
-		background-repeat: no-repeat;
-	}
+	}	
 
 	#slide-nav #slidemenu .navbar-nav .dropdown-menu li a{
 		background-image: none!important;
@@ -871,7 +1008,7 @@ body.slide-active {
     position: relative
 }
 /* screw writing importants and shit, just stick it in max width since these classes are not shared between sizes */
-@media (max-width:767px) { 
+@media (max-width:991px) { 
 	#slide-nav .container {
 	    margin: 0!important;
 	    padding: 0!important;
@@ -887,8 +1024,7 @@ body.slide-active {
 	    top: -1px;
 	    z-index: 1000;
 	}
-	#slide-nav #slidemenu {
-	    background: #f7f7f7;
+	#slide-nav #slidemenu {	  
 	    right: -100%;
 	    width: 80%;
 	    min-width: 0;
@@ -904,9 +1040,9 @@ body.slide-active {
 	    margin: 0;
 	}
 	#slide-nav #slidemenu .navbar-nav .dropdown-menu li a {
-	    min-width: 0;
-	    width: 80%;
-	    white-space: normal;
+	   
+		display: block;
+	   	white-space: normal;
 	}
 	#slide-nav {
 	    border-top: 0
@@ -943,7 +1079,7 @@ body.slide-active {
 	    width: 100%
 	}
 }
-@media (min-width:768px) { 
+@media (min-width:992px) { 
 	#page-content {
 	    left: 0!important
 	}
@@ -959,10 +1095,10 @@ body.slide-active {
 
 
 /**General**/
-@media (min-width:768px) { 
+@media (min-width:992px) { 
 	@keyframes borderanimation_hover{
-	0%{padding-bottom:20px;border-bottom-width:5px}
-	100%{padding-bottom:17px;border-bottom-width: 8px}
+	0%{padding-bottom:15px;border-bottom-width:5px}
+	100%{padding-bottom:12px;border-bottom-width: 8px}
 	}
 	.navbar li a {animation:borderanimation .15s 0s ease-out forwards}
 	.navbar li a:hover {animation:borderanimation_hover .15s 0s ease-out forwards}

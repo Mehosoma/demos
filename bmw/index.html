@@ -32,11 +32,12 @@
 
 <body>
 
+	
 	<!--Header-->
 	<header>
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-12 hidden-xs">
+				<div class="col-lg-12 hidden-xs hidden-sm">
 					<div class="logo">
 						<img src="img/bmw-group.png" alt="logo">
 					</div>
@@ -49,7 +50,7 @@
 		<div class="inner">
 			<div class="navbar yamm" role="navigation" id="slide-nav">
 				<div class="navbar-header">
-					<div class="logo-block hidden-sm hidden-md hidden-lg">
+					<div class="logo-block hidden-md hidden-lg">
 				      		<div class="logo">
 								<img src="img/bmw-group.png" alt="logo">
 							</div>
@@ -71,10 +72,13 @@
 							<ul role="menu" class="dropdown-menu">
 							   	<div class="container small">
 							       	<div class="exit dropdown-toggle"><img src="img/exit.png" alt="exit-icon"></div>
-							       	<ul class="submenu">
-							       		<li><a href="">Устойчивое развитие</a></li>
-							      		<li><a href="">Дорожная безопасность</a></li>
-							       		<li><a href="">Основы автомобилестроения</a></li>
+							       	<ul class="submenu submenu-border-grey">
+							       		<li><a href="">О проекте</a></li>
+							       		<li class="about-sub"><a href="">Стационарная версия</a></li>
+							       		<li class="about-sub"><a href="">Мобильная версия</a></li>					      		
+							       		<li><a href="">Команда проекта</a></li>
+							       		<li><a href="">Партнеры</a></li>
+							       		<li><a href="">Junior Campus в мире</a></li>
 							       	</ul>
 							   	</div>
 							</ul>
@@ -84,19 +88,27 @@
 							<ul role="menu" class="dropdown-menu">
 							   	<div class="container small clearfix">
 							       	<div class="exit dropdown-toggle"><img src="img/exit.png" alt="exit-icon"></div>
-							    	<ul class="submenu">
-							      		<li><a href="">Дорожная безопасность</a></li>
-							       		<li><a href="">Основы автомобилестроения</a></li>
-							       		<li><a href="">Устойчивое развитие</a></li>
-							       		<li><a href="">Дорожная безопасность</a></li>
-							       		<li><a href="">Основы автомобилестроения</a></li>
-							       		<li><a href="">Устойчивое развитие</a></li>
+							    	<ul class="submenu submenu-border-yellow">
+							      		<li><a href="">Новости</a></li>
+							       		<li><a href="">Календарь событий</a></li>
+							       		<li><a href="">Фотогалерея</a></li>
 							       	</ul>						      						    
 							   	</div>
 							</ul>
 			  		 	</li>
 					    <li ><a href="#" class="blue">Содержание программ</a></li>
-					    <li><a href="#" class="dark">Полезные материалы</a></li>
+					    <li class="dropdown yamm-fw">
+			  		 	<a data-toggle="dropdown" class="dropdown-toggle dark" href="#">Полезные материалы</a>
+							<ul role="menu" class="dropdown-menu">
+							   	<div class="container small clearfix">
+							       	<div class="exit dropdown-toggle"><img src="img/exit.png" alt="exit-icon"></div>
+							    	<ul class="submenu submenu-border-dark">
+							      		<li><a href="">Информация для преподавателей</a></li>
+							       		<li><a href="">Информация для родителей</a></li>							       		
+							       	</ul>						      						    
+							   	</div>
+							</ul>
+			  		 	</li>
 					    <li><a href="#" class="green">Как попасть в Junior Campus</a></li>
 					    <li><a href="#" class="orang">Контактная информация</a></li>
 				    </ul>
@@ -283,6 +295,8 @@
 			</div>			
 		</div>
 	</footer>
+
+	<div class="body-overlay"></div>
 	
 
 	<script src="libs/jquery/jquery-1.11.2.min.js"></script>	

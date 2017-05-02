@@ -21,8 +21,19 @@ body
 	select:focus, select:active
 		text-decoration: none
 		outline: none
-
-
+.body-overlay
+	position: fixed
+	z-index: 3
+	background: rgba(0,0,0,0.85)
+	bottom: 0
+	left: 0
+	right: 0
+	top: 0
+	opacity: 0
+	-moz-transition: all 1s ease-out
+	-o-transition: all 1s ease-out
+	-webkit-transition: all 1s ease-out
+	transition: all 1s ease-out
 
 /*Header*/
 header
@@ -31,9 +42,11 @@ header
 	background-color: #fff
 	vertical-align: bottom
 	position: relative
+	z-index: 10
 	.logo
 		float: left
-		margin-top: 27px
+		margin-top: 32px
+		margin-bottom: 17px
 	.icons
 		float: right
 		margin-top: 27px
@@ -54,12 +67,12 @@ header
 	.navbar-nav
 		background-color: #fff
 		background-image: none
-		margin-left: -35px
+		margin-left: -30px
 	.navbar li		
 		padding: 0
 		background-color: #fff	
 		margin-bottom: -5px
-		border-right: 5px solid #fff			
+		border-right: 2px solid #fff			
 	.grey
 		border-bottom: 5px solid #aaa38e	
 	.yellow
@@ -73,11 +86,11 @@ header
 	.orang
 		border-bottom: 5px solid #ff9100	
 	.left-bot
-		border-left: 5px solid #fff
+		border-left: 2px solid #fff
 	.navbar li a
 		font-family: 'BMWGroup_Global_Regular', sans-serif
-		font-size: 16px
-		padding: 20px 30px		
+		font-size: 15px
+		padding: 15px 30px		
 		background-image: none
 		background-color: #fff		
 		color: #444444
@@ -86,34 +99,42 @@ header
 		background-color: #fff
 		background-image: none
 		box-shadow: none
-		text-shadow: none
+		text-shadow: 1px 0 0
 	.nav > li > a:hover, .nav > li > a:focus
 		background-color: #fff
 	.navbar-nav .dropdown-menu
 		border: none
 		box-shadow: none
 		border-radius: 0
+		background-color: #f2f2f2
 	.navbar-nav .dropdown-menu .exit
-		min-height: 100px
-		border-right: 2px solid #92a2bd
 		cursor: pointer
 		float: left
-		margin-top: 40px
-	.navbar-nav .dropdown-menu .exit img
-		margin-right: 20px			
+		margin-top: 40px				
 	.navbar-nav .dropdown-menu .submenu
 		padding-left: 0px
 		margin-top: 35px
-		margin-left: 40px
+		margin-left: 49px		
+	.navbar-nav .dropdown-menu .submenu-border-grey
+		border-left: 2px solid #aaa38e
+	.navbar-nav .dropdown-menu .submenu-border-yellow
+		border-left: 2px solid #fecb00
+	.navbar-nav .dropdown-menu .submenu-border-dark
+		border-left: 2px solid #444444
+	.navbar-nav .dropdown-menu .submenu .about-sub
+		margin-left: 20px
 	.navbar-nav .dropdown-menu .submenu li
 		display: block
 		font-size: 15px
-		margin: 20px 0
+		margin: 10px 0
+		background-color: #f2f2f2
+		border-right: none
 	.navbar-nav .dropdown-menu .submenu li a
 		font-size: 15px
 		font-family: 'Arial', sans-serif
 		text-shadow: none		
 		padding:  0 30px
+		background-color: #f2f2f2
 	.small
 		opacity: 1
 
@@ -166,8 +187,7 @@ header
 			max-width: none
 			opacity: 0				
 			transition: all 1s ease	
-			transform: translateX(-500px) translateY(175px)
-					
+			transform: translateX(-500px) translateY(175px)					
 		.polygon-right
 			position: absolute
 			width: 300%
@@ -181,8 +201,6 @@ header
 			transition: all 1s ease				
 			transform: translateX(500px) translateY(-250px)
 		
-
-
 /*About*/
 #about
 	.about-head
@@ -480,6 +498,7 @@ footer
 			position: absolute
 			top: 35px
 			left: 0	
+			font-style: normal
 		.form-field
 			margin: 20px 0
 			position: relative
@@ -607,7 +626,6 @@ footer
 				height: 100%
 		.gallery-desc			
 			min-height: 80px
-
 			span
 				display: block
 				font-size: 18px

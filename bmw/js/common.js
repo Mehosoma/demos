@@ -55,13 +55,17 @@ $(document).on('click', '[data-toggle="lightbox"]', function(event) {
 
 $('.dropdown').on('show.bs.dropdown', function(e){
 
-  $(this).find('.dropdown-menu').first().stop(true, true).slideDown(1000, function(){    
+    $('.body-overlay').css({'opacity':'1'});
+  
+    $(this).find('.dropdown-menu').first().stop(true, true).slideDown(1000, function(){    
     });
+
 
 });
 
 $('.dropdown').on('hide.bs.dropdown', function(e){
 
+    $('.body-overlay').css({'opacity':'0'});
   $(this).find('.dropdown-menu').first().stop(true, true).slideUp(500, function(){   
   }); 
    
@@ -74,7 +78,7 @@ $(document).ready(function(){
 });
 
 
-// Слайдер на мобильных разрешениях
+// Меню на мобильных разрешениях
 $(document).ready(function () {
 
 
@@ -128,12 +132,18 @@ $(document).ready(function () {
 
     $(window).on("resize", function () {
 
-        if ($(window).width() > 767 && $('.navbar-toggle').is(':hidden')) {
+        if ($(window).width() > 991 && $('.navbar-toggle').is(':hidden')) {
             $(selected).removeClass('slide-active');           
         }
     });
 });
 
+
+window.addEventListener("orientationchange", function(e) {
+         e.preventDefault();
+        $('body,html').animate({scrollTop: 0}, 400);    
+        location.reload();
+    }, false);
 
 // Slider
 $(document).ready(function(){
