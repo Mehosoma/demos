@@ -212,7 +212,7 @@
 	}
 
 	.navbar-nav .open .dropdown-menu{
-		background-color: #f2f2f2
+		background-color: #fff
 	}
 
 	#slide-nav #slidemenu .navbar-nav .dropdown-menu li a {
@@ -221,8 +221,25 @@
 
 	}
 
+	header .navbar li{
+		border-right: none;
+	}
+
 	header .navbar li a{
 		line-height: 20px;
+		background-color: #f2f2f2
+	}
+
+	header .nav > .open > a, header .nav > .open > a:hover, header .nav > .open > a:focus{
+		background-color: #f2f2f2
+	}
+
+	header .navbar-nav .dropdown-menu .submenu li a{
+		background-color: #fff
+	}
+
+	header .nav > li > a:hover, header .nav > li > a:focus{
+		background-color: #f2f2f2
 	}
 	
 
@@ -307,11 +324,9 @@
 		width: 280px;
 	}
 
-	.custom .collapse.navbar-collapse {
-    	display: block !important;
-        visibility: visible !important;
-  }
+	
 
+ 
 
 	
 
@@ -423,7 +438,7 @@
 	}
 
 	.navbar-nav .open .dropdown-menu{
-		background-color: #f2f2f2
+		background-color: #fff
 	}
 
 	#slide-nav #slidemenu .navbar-nav .dropdown-menu li a {
@@ -432,8 +447,25 @@
 
 	}
 
+	header .navbar li{
+		border-right: none;
+	}
+
 	header .navbar li a{
 		line-height: 20px;
+		background-color: #f2f2f2
+	}
+
+	header .nav > .open > a, header .nav > .open > a:hover, header .nav > .open > a:focus{
+		background-color: #f2f2f2
+	}
+
+	header .navbar-nav .dropdown-menu .submenu li a{
+		background-color: #fff
+	}
+
+	header .nav > li > a:hover, header .nav > li > a:focus{
+		background-color: #f2f2f2
 	}
 	
 	#main-banner .bg-desc{
@@ -584,11 +616,14 @@
 		top: 84px;
 	}
 
+
+	
+
 }
 
 @media only screen and (min-width : 0px) and (max-width : 479px) {
 
-			header .navbar{
+	header .navbar{
 		width: 100%;
 		padding: 0 15px;
 		position: fixed;
@@ -688,7 +723,7 @@
 	}
 
 	.navbar-nav .open .dropdown-menu{
-		background-color: #f2f2f2
+		background-color: #fff
 	}
 
 	#slide-nav #slidemenu .navbar-nav .dropdown-menu li a {
@@ -701,8 +736,25 @@
 		width: 95%!important;
 	}
 
+	header .navbar li{
+		border-right: none;
+	}
+
 	header .navbar li a{
 		line-height: 20px;
+		background-color: #f2f2f2
+	}
+
+	header .nav > .open > a, header .nav > .open > a:hover, header .nav > .open > a:focus{
+		background-color: #f2f2f2
+	}
+
+	header .navbar-nav .dropdown-menu .submenu li a{
+		background-color: #fff
+	}
+
+	header .nav > li > a:hover, header .nav > li > a:focus{
+		background-color: #f2f2f2
 	}
 	
 	#main-banner .bg-desc{
@@ -949,6 +1001,8 @@
 
 	
 
+	
+
 }
 
 /******************************************SliderStyles********************************************/
@@ -1036,7 +1090,9 @@ body.slide-active {
 	    padding-left: 0px;
 	    z-index: 2;	  
 	    margin: 0;
-	    top: 69px;	   
+	    top: 69px;
+	    max-height: 500px;
+	    overflow-y: auto;  
 	}
 	#slide-nav #slidemenu .navbar-nav {
 	    min-width: 0;

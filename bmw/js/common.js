@@ -121,9 +121,8 @@ $(document).ready(function () {
         $(this).toggleClass('slide-active', !selected);
         $('#slidemenu').toggleClass('slide-active');
 
+        $('#page-content, .navbar, body').toggleClass('slide-active');      
 
-        $('#page-content, .navbar, body').toggleClass('slide-active');
-        $('#page-content, .navbar, body').toggleClass('pos-relative');
   
 
 
@@ -141,11 +140,14 @@ $(document).ready(function () {
 });
 
 
+//перезагрузка страницы при смене ориентации экрана
+
 window.addEventListener("orientationchange", function(e) {
          e.preventDefault();
         $('body,html').animate({scrollTop: 0}, 400);    
         location.reload();
     }, false);
+
 
 // Slider
 $(document).ready(function(){

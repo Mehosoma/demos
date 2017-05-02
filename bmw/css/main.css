@@ -1121,3 +1121,6 @@ footer {
 
 .pos-relative {
   position: relative !important; }
+
+.disp-vis {
+  display: block !important; }
