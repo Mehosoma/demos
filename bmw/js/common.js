@@ -67,7 +67,7 @@ $(document).on('click', '[data-toggle="lightbox"]', function(event) {
         $('.dropdown').on('hide.bs.dropdown', function(e){
 
             $('.body-overlay').css({'opacity':'0'});
-            $('.body-overlay').css({'z-index':'0'});
+            $('.body-overlay').css({'z-index':'-1'});            
           $(this).find('.dropdown-menu').first().stop(true, true).slideUp(500, function(){   
           }); 
            
