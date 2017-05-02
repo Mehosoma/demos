@@ -14,7 +14,7 @@
 
 	header .navbar-nav > li > a{
 
-		padding: 15px 28px
+		padding: 15px 27px
 	}
 
 	#materials .materials-block .materials-block-desc .materials-learnmore{
@@ -219,6 +219,10 @@
 
 		background-image: none!important;
 
+	}
+
+	header .navbar li a{
+		line-height: 20px;
 	}
 	
 
@@ -426,6 +430,10 @@
 
 		background-image: none!important;
 
+	}
+
+	header .navbar li a{
+		line-height: 20px;
 	}
 	
 	#main-banner .bg-desc{
@@ -691,6 +699,10 @@
 
 	#slide-nav #slidemenu{
 		width: 95%!important;
+	}
+
+	header .navbar li a{
+		line-height: 20px;
 	}
 	
 	#main-banner .bg-desc{
