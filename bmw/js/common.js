@@ -56,8 +56,8 @@ $(document).on('click', '[data-toggle="lightbox"]', function(event) {
 
         $('.dropdown').on('show.bs.dropdown', function(e){
 
+            $('.body-overlay').css({'z-index':'3'});
             $('.body-overlay').css({'opacity':'1'});
-          
             $(this).find('.dropdown-menu').first().stop(true, true).slideDown(1000, function(){    
             });
 
@@ -67,6 +67,7 @@ $(document).on('click', '[data-toggle="lightbox"]', function(event) {
         $('.dropdown').on('hide.bs.dropdown', function(e){
 
             $('.body-overlay').css({'opacity':'0'});
+            $('.body-overlay').css({'z-index':'0'});
           $(this).find('.dropdown-menu').first().stop(true, true).slideUp(500, function(){   
           }); 
            
