@@ -53,8 +53,6 @@ $(document).on('click', '[data-toggle="lightbox"]', function(event) {
 
 //Анимация Dropdown
 
-var windowWidth = $(window).width();
-    if(windowWidth >= 991){
 
         $('.dropdown').on('show.bs.dropdown', function(e){
 
@@ -73,12 +71,6 @@ var windowWidth = $(window).width();
           }); 
            
         });
-
-    }else{
-         false
-    }
-
-
 
 
 // Выравниваем блоки по высоте
