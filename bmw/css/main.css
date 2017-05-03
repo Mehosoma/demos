@@ -675,7 +675,7 @@ footer {
     font-family: 'BMWGroup_Global_Bold', sans-serif;
     font-size: 32px;
     text-transform: uppercase;
-    color: #444444;
+    color: #aaa38e;
     float: left; }
 
 #world .col-eq .col-lg-4, #world .col-eq .col-md-6, #world .col-eq .col-sm-6, #world .col-eq .col-xs-12 {
@@ -688,7 +688,7 @@ footer {
   #world .world-block .world-block-foto {
     width: 100%;
     height: 255px;
-    border-bottom: 5px solid #fecb00; }
+    border-bottom: 5px solid #aaa38e; }
     #world .world-block .world-block-foto img {
       width: 100%;
       height: 100%; }
@@ -705,7 +705,7 @@ footer {
     #world .world-block .world-block-desc .world-learnmore {
       width: 327px;
       height: 50px;
-      background-color: #fecb00;
+      background-color: #aaa38e;
       background-image: url("../img/arrow-right-small.png");
       background-size: 7px 13px;
       background-position: center right 30px;
@@ -752,7 +752,7 @@ footer {
       font-family: 'BMWGroup_Global_Bold', sans-serif;
       font-size: 32px;
       text-transform: uppercase;
-      color: #444444;
+      color: #fecb00;
       float: left;
       margin-bottom: 27px; }
   #news .col-eq .col-lg-4, #news .col-eq .col-md-6, #news .col-eq .col-sm-6, #news .col-eq .col-xs-12 {
@@ -814,7 +814,7 @@ footer {
   padding: 39px 0; }
   #news-article h2 {
     font-size: 32px;
-    color: #444444;
+    color: #fecb00;
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 43px; }
@@ -867,7 +867,7 @@ footer {
       font-family: 'BMWGroup_Global_Bold', sans-serif;
       font-size: 32px;
       text-transform: uppercase;
-      color: #444444;
+      color: #aaa38e;
       float: left; }
   #partners-page .partners-page-block, #partners-page .partners-page-block2 {
     width: 100%;
@@ -931,7 +931,7 @@ footer {
     font-family: 'BMWGroup_Global_Bold', sans-serif;
     font-size: 32px;
     text-transform: uppercase;
-    color: #444444;
+    color: #aaa38e;
     margin-bottom: 36px; }
   #team span {
     display: block;
@@ -939,7 +939,7 @@ footer {
     font-size: 15px;
     color: #444; }
   #team .team-block {
-    border: 3px solid #a2ad00;
+    border: 3px solid #aaa38e;
     padding: 12px 24px;
     margin: 32px 0; }
     #team .team-block p {
@@ -967,14 +967,14 @@ footer {
     font-family: 'BMWGroup_Global_Bold', sans-serif;
     font-size: 32px;
     text-transform: uppercase;
-    color: #444444;
+    color: #aaa38e;
     margin-top: 42px;
     margin-bottom: 40px; }
   #team #lightslider .li_slide {
     width: 300px; }
     #team #lightslider .li_slide .li-slide-photo {
       width: 100%;
-      border-bottom: 5px solid #fecb00; }
+      border-bottom: 5px solid #aaa38e; }
       #team #lightslider .li_slide .li-slide-photo img {
         width: 100%;
         height: 100%; }
@@ -1000,7 +1000,7 @@ footer {
     font-family: 'BMWGroup_Global_Bold', sans-serif;
     font-size: 32px;
     text-transform: uppercase;
-    color: #444444;
+    color: #92a2bd;
     margin-bottom: 38px; }
   #programm .programm-desc h4 {
     font-family: 'BMWGroup_Global_Bold', sans-serif;
@@ -1045,7 +1045,7 @@ footer {
     font-family: 'BMWGroup_Global_Bold', sans-serif;
     font-size: 32px;
     text-transform: uppercase;
-    color: #444444;
+    color: #92a2bd;
     margin-bottom: 43px; }
   #progr-det .col-eq .col-lg-4, #progr-det .col-eq .col-md-6, #progr-det .col-eq .col-sm-6, #progr-det .col-eq .col-xs-12 {
     margin-bottom: 20px; }
@@ -1056,7 +1056,7 @@ footer {
     #progr-det .progr-det-block .progr-det-foto {
       width: 100%;
       height: 255px;
-      border-bottom: 5px solid #fecb00; }
+      border-bottom: 5px solid #92a2bd; }
       #progr-det .progr-det-block .progr-det-foto img {
         width: 100%;
         height: 100%; }
@@ -1087,7 +1087,7 @@ footer {
       #progr-det .progr-det-block .progr-det-desc .progr-det-learnmore {
         width: 327px;
         height: 50px;
-        background-color: #fecb00;
+        background-color: #92a2bd;
         background-image: url("../img/arrow-right-small.png");
         background-size: 7px 13px;
         background-position: center right 30px;
