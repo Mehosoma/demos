@@ -253,7 +253,7 @@ header {
     font-family: 'bmwbor', sans-serif;
     font-size: 32px;
     text-transform: uppercase;
-    color: #fecb00;
+    color: #444;
     float: left; }
   #calendar-events .calendar-events-head a {
     font-family: 'bmwbor', sans-serif;
@@ -493,6 +493,34 @@ footer {
     #info-form form .check {
       width: 16px;
       height: 16px; }
+    #info-form form input[type=checkbox] {
+      display: none; }
+    #info-form form .dis-button label:before {
+      content: "";
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+      background-color: #fff;
+      border: 1px solid #999a9c;
+      border-bottom: 3px solid #999a9c;
+      position: absolute;
+      top: 2px;
+      left: 0; }
+    #info-form form .dis-button label span {
+      margin-left: 30px;
+      font-size: 15px;
+      font-weight: normal;
+      font-family: 'arial', sans-serif;
+      text-shadow: none;
+      text-transform: none; }
+    #info-form form input[type=checkbox]:checked + label:before {
+      content: "\2713";
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+      font-size: 15px;
+      color: #999a9c;
+      text-align: center;
+      line-height: 15px; }
     #info-form form .rail-select {
       position: relative; }
     #info-form form .select-side {
@@ -513,7 +541,8 @@ footer {
       position: absolute;
       top: 35px;
       left: 0;
-      font-style: normal; }
+      font-style: normal;
+      color: #cc3333; }
     #info-form form .form-field {
       margin: 20px 0;
       position: relative; }
@@ -562,6 +591,9 @@ footer {
 .calendar-page {
   padding-bottom: 46px; }
 
+.calendar-page .calendar-events-head h2 {
+  color: #fecb00 !important; }
+
 /*********************************************EventPage*******************************************/
 #event {
   padding: 39px 0; }
@@ -596,11 +628,15 @@ footer {
   #event .soc-icons span {
     font-size: 14px;
     color: #b4b4b4;
-    display: inline-block; }
+    display: inline-block;
+    line-height: 14px;
+    vertical-align: bottom; }
   #event .soc-icons ul {
     list-style-type: none;
     display: inline-block;
-    padding-left: 17px; }
+    padding-left: 17px;
+    margin: 0;
+    vertical-align: bottom; }
     #event .soc-icons ul li {
       display: inline-block;
       padding: 0 10px; }
@@ -842,11 +878,15 @@ footer {
   #news-article .news-article-icons span {
     font-size: 14px;
     color: #b4b4b4;
-    display: inline-block; }
+    display: inline-block;
+    line-height: 14px;
+    vertical-align: bottom; }
   #news-article .news-article-icons ul {
     list-style-type: none;
     display: inline-block;
-    padding-left: 17px; }
+    padding-left: 17px;
+    margin: 0;
+    vertical-align: bottom; }
     #news-article .news-article-icons ul li {
       display: inline-block;
       padding: 0 10px; }
@@ -940,11 +980,10 @@ footer {
     font-size: 15px;
     color: #444; }
   #team .team-block {
-    padding: 12px 0;
-    margin: 32px 0; }
+    padding: 20px 0; }
     #team .team-block p {
       font-family: 'Arial', sans-serif;
-      font-size: 20px;
+      font-size: 15px;
       font-weight: bold;
       line-height: 33px;
       margin: 0; }
@@ -952,17 +991,18 @@ footer {
     list-style-type: none;
     padding: 0; }
     #team ul li {
-      margin-bottom: 22px; }
-    #team ul img {
-      vertical-align: top;
-      margin-top: 5px;
-      margin-right: 22px; }
+      margin-bottom: 22px;
+      background-image: url("../img/square.svg");
+      background-size: 5px 5px;
+      background-repeat: no-repeat;
+      background-position: left 10px; }
     #team ul span {
       display: inline-block;
       width: 90%;
       font-family: 'arial', sans-serif;
       font-size: 15px;
-      color: #444; }
+      color: #444;
+      padding-left: 15px; }
   #team h3 {
     font-family: 'BMWGroup_Global_Bold', sans-serif;
     font-size: 32px;
