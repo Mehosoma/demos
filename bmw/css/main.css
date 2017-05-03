@@ -149,8 +149,8 @@ header {
   #main-banner .bg-desc {
     color: #fff;
     position: absolute;
-    left: 94px;
-    top: 130px;
+    left: 96px;
+    top: 114px;
     z-index: 2; }
     #main-banner .bg-desc h1 {
       font-family: 'BMWGroup_Global_Bold', arial, helvetica, sans-serif;
@@ -160,18 +160,18 @@ header {
       font-family: 'Arial', sans-serif;
       font-size: 15px;
       width: 55%;
-      margin: 20px 0 36px 0;
+      margin: 22px 0 32px 0;
       line-height: 22px; }
     #main-banner .bg-desc a {
       font-family: 'BMWGroup_Global_Bold', arial, helvetica, sans-serif;
       display: block;
       font-size: 16px;
-      margin-bottom: 13px;
+      margin-bottom: 20px;
       color: #fff;
       line-height: 20px; }
       #main-banner .bg-desc a img {
         margin-top: -3px;
-        margin-right: 10px; }
+        margin-right: 6px; }
   #main-banner .polygon-container {
     position: absolute;
     left: 0;
@@ -290,7 +290,7 @@ header {
     padding: 12px 25px 0px 40px;
     margin-bottom: 100px; }
     #calendar-events .calendar-events-block .ce-block-desc h3 {
-      font-size: 18px;
+      font-size: 16px;
       text-transform: uppercase;
       color: #444444;
       font-family: 'bmwbor', sans-serif;
