@@ -31,7 +31,8 @@ body {
   right: 0;
   top: 0;
   opacity: 0;
-  z-index: -1;
+  z-index: 3;
+  visibility: hidden;
   -moz-transition: all 1s ease-out;
   -o-transition: all 1s ease-out;
   -webkit-transition: all 1s ease-out;
@@ -939,8 +940,7 @@ footer {
     font-size: 15px;
     color: #444; }
   #team .team-block {
-    border: 3px solid #aaa38e;
-    padding: 12px 24px;
+    padding: 12px 0;
     margin: 32px 0; }
     #team .team-block p {
       font-family: 'Arial', sans-serif;
