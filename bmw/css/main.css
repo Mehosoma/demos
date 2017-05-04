@@ -303,21 +303,25 @@ header {
       text-transform: uppercase;
       color: #444444;
       font-family: 'bmwbor', sans-serif;
-      line-height: 30px; }
+      line-height: 18px; }
     #calendar-events .calendar-events-block .ce-block-desc span {
       font-size: 14px;
       color: #b4b4b4; }
       #calendar-events .calendar-events-block .ce-block-desc span img {
         margin-right: 8px; }
     #calendar-events .calendar-events-block .ce-block-desc .sp-left {
-      float: left; }
+      float: left;
+      margin-right: 50px;
+      margin-bottom: 10px; }
     #calendar-events .calendar-events-block .ce-block-desc .sp-right {
-      float: right; }
+      float: left;
+      margin-bottom: 10px;
+      padding-left: 2px; }
     #calendar-events .calendar-events-block .ce-block-desc p {
       font-size: 15px;
       color: #444444;
       line-height: 22px;
-      margin-top: 18px; }
+      margin-top: 10px; }
     #calendar-events .calendar-events-block .ce-block-desc .ce-learnmore {
       width: 327px;
       height: 50px;
@@ -598,6 +602,8 @@ footer {
   #info-form input:-ms-input-placeholder {
     font-size: 15px;
     color: #9a9898; }
+  #info-form .dropup .caret, #info-form .navbar-fixed-bottom .dropdown .caret {
+    border-bottom: none; }
 
 #hidden_form {
   background: #fff;
@@ -708,8 +714,8 @@ footer {
         font-size: 16px;
         color: #444444;
         text-transform: uppercase;
-        line-height: 30px;
-        margin: 30px 0 30px 40px;
+        line-height: 18px;
+        margin: 30px 0 0px 40px;
         font-family: 'BMWGroup_Global_Bold', sans-serif; }
 
 /*********************************************Album*******************************************/
@@ -766,7 +772,7 @@ footer {
       text-transform: uppercase;
       color: #444444;
       font-family: 'BMWGroup_Global_Bold', sans-serif;
-      line-height: 30px;
+      line-height: 18px;
       margin-bottom: 20px; }
     #world .world-block .world-block-desc .world-learnmore {
       width: 327px;
@@ -842,7 +848,7 @@ footer {
         text-transform: uppercase;
         color: #444444;
         font-family: 'bmwbor', sans-serif;
-        line-height: 30px; }
+        line-height: 18px; }
       #news .news-block .news-desc span {
         font-size: 14px;
         color: #b4b4b4; }
@@ -1154,7 +1160,7 @@ footer {
         text-transform: uppercase;
         color: #444444;
         font-family: 'bmwbor', sans-serif;
-        line-height: 30px;
+        line-height: 18px;
         margin-bottom: 20px; }
       #progr-det .progr-det-block .progr-det-desc span {
         font-family: 'arial', sans-serif;

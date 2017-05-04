@@ -76,7 +76,12 @@ $(document).on('click', '[data-toggle="lightbox"]', function(event) {
 
 // Выравниваем блоки по высоте
 $(document).ready(function(){
+    var windowWidth = $(window).width();
+    if(windowWidth >= 768){
    $('.col-eq').colequalizer();
+    } else {
+        false
+    }
 });
 
 
