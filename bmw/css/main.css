@@ -53,6 +53,10 @@ header {
   header .icons {
     float: right;
     margin-top: 27px; }
+    header .icons .bmw-logo {
+      width: 33px; }
+    header .icons .mini-logo {
+      width: 53px; }
   header .inner {
     border-bottom: 5px solid #b2b2b2; }
   header .navbar {
@@ -1229,6 +1233,24 @@ footer {
   padding: 30px 0;
   font-size: 15px;
   line-height: 22px; }
+
+/*********************************************AboutPageGeneral*******************************************/
+#about-page {
+  padding: 40px 0; }
+  #about-page h2 {
+    font-family: 'BMWGroup_Global_Bold', sans-serif;
+    font-size: 32px;
+    text-transform: uppercase;
+    color: #aaa38e;
+    padding-bottom: 30px; }
+  #about-page p {
+    padding: 10px 0;
+    font-size: 15px;
+    line-height: 22px; }
+  #about-page img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px; }
 
 /*********************************************General*******************************************/
 .anim_1 {
