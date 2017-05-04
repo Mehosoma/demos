@@ -22,7 +22,7 @@ body
 		outline: none
 	select:focus, select:active
 		text-decoration: none
-		outline: none
+		outline: none	
 .body-overlay
 	position: fixed	
 	background: rgba(0,0,0,0.85)
@@ -295,7 +295,7 @@ header
 				line-height: 30px				
 			span
 				font-size: 14px
-				color: #b4b4b4
+				color: #b4b4b4				
 				img
 					margin-right: 8px
 			.sp-left
@@ -429,36 +429,62 @@ footer
 			line-height: 22px
 #info-form
 	padding: 42px 0 40px 0
-	span
-		font-size: 15px
-		color: #9a9898
 	form
 		padding: 35px 0
 		width: 730px
-		span
+		.form-field-head
 			font-size: 15px
 			color: #444444
 			font-weight: bold
 			text-transform: uppercase
 			float: left
-		select
+			line-height: 50px
+		.btn
 			background-color: #dcd9da
 			height: 50px
 			width: 420px
 			border: 1px solid #999a9c
 			font-size: 15px
 			text-transform: uppercase
-			color: #9a9898
+			color: #444444
 			font-weight: bold
-			padding: 15px 20px			
+			padding: 15px 20px
+			float: right!important
+			background-image: none	
+		.bootstrap-select
+			float: right
+			width: 420px
+		.bootstrap-select>.dropdown-toggle.bs-placeholder
+			font-size: 15px
+			text-transform: uppercase
+			color: #9a9898
+			text-shadow: none
+		.bootstrap-select.btn-group .dropdown-menu li a
+			font-size: 15px
+			text-transform: uppercase
+			color: #444
+			text-shadow: none
+			font-weight: bold
+		.bootstrap-select.btn-group .dropdown-toggle .caret
+			font-family: 'Glyphicons Halflings'
+			width: 15px
+			height: 18px
+			position: absolute
+			margin: auto
+			top: 0
+			bottom: 0			
+		.bootstrap-select.btn-group .dropdown-toggle .caret:before 
+			content: "\e259"
+		.glyphicon-ok
+			display: none!important
 		input
 			width: 420px
 			height: 50px
 			border: 1px solid #999a9c
 			font-size: 15px
-			color: #9a9898
+			color: #444
 			padding: 15px 20px
-		button
+		.button-info
 			width: 270px
 			height: 50px
 			background-color: #a2ad00
@@ -520,17 +546,6 @@ footer
 			line-height: 15px
 		.rail-select
 			position: relative			
-		.select-side
-			pointer-events: none
-			width: 31px
-			position: absolute
-			top: 15px
-			background-color: #dcd9da
-			height: 29%
-			right: 4px
-			i
-      			left: 14%
-      			top: 0px
 		.disabled
 			pointer-events: none
 			background-color: #d6d6d6
@@ -542,9 +557,7 @@ footer
 			color: #cc3333
 		.form-field
 			margin: 20px 0
-			position: relative
-			span
-				line-height: 50px						
+			position: relative								
 			input, select
 				float: right					
 		hr
@@ -566,6 +579,19 @@ footer
 			line-height: 20px
 			border-bottom: 1px dashed
 			margin-top: 20px
+	input::-webkit-input-placeholder
+		font-size: 15px
+		color: #9a9898
+	input:-moz-placeholder
+		font-size: 15px
+		color: #9a9898
+	input::-moz-placeholder
+		font-size: 15px
+		color: #9a9898
+	input:-ms-input-placeholder
+		font-size: 15px
+		color: #9a9898
+
 #hidden_form
 	background: #fff
 	padding: 40px
@@ -1085,6 +1111,22 @@ footer
 		background: #dcd9da
 		border: none	
 		margin: 40px 0
+	.programm-button-order
+		width: 272px
+		height: 50px
+		background-color: #92a2bd
+		position: relative
+		background-image: url('../img/arrow-right.png')
+		background-size: 7px 13px
+		background-position: center right 30px
+		background-repeat: no-repeat
+		span
+			font-family: 'bmwbor', sans-serif
+			font-size: 18px
+			line-height: 50px
+			color: #ffffff
+			text-transform: uppercase
+			padding-left: 27px		
 
 
 /*********************************************ProgrammDetails*******************************************/	

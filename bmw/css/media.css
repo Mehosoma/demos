@@ -612,12 +612,13 @@
 	}
 
 	
-	#info-form form .form-field input, #info-form form .form-field select{
+	#info-form form .form-field input{
 		margin-top: 20px;
 	}
 
-	#info-form form .select-side{
-		top: 84px;
+	#info-form form .bootstrap-select{
+		float: none;
+		margin-top: 20px;
 	}
 
 
@@ -994,7 +995,7 @@
 		font-size: 16px
 	}
 
-	#info-form form .form-field input, #info-form form .form-field select{
+	#info-form form .form-field input{
 		margin-top: 20px;
 	}
 	
@@ -1003,7 +1004,15 @@
 		top: 45px;
 	}
 
-	
+	#info-form form .bootstrap-select{
+		float: none;
+		margin-top: 20px;
+		width: 290px;
+	}
+
+	#info-form form .btn{
+		width: 290px;
+	}
 
 	
 
@@ -1154,6 +1163,7 @@ body.slide-active {
 	    left: 0!important
 	}
 }
+
 
 
 
