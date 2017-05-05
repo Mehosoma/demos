@@ -221,3 +221,139 @@ $(document).ready(function(){
     
 });
 
+// Slider
+$(document).ready(function(){
+    $('#slider-stat').lightSlider({
+        item: 1,
+        autoWidth: false,       
+        slideMove: 1, // slidemove will be 1 if loop is true
+        slideMargin: 10,
+        loop: true,
+        controls: true,
+        prevHtml: '',
+        nextHtml: '',  
+        responsive : [
+            {
+                breakpoint:2560,
+                settings: {
+                    item:1,
+                    slideMove:1,                   
+                  }
+            },
+
+            {
+                breakpoint:1500,
+                settings: {
+                    item:1,
+                    slideMove:1,
+                    
+                  }
+            },
+
+            {
+                breakpoint: 1200,
+                settings: {
+                    item:1,
+                    slideMove:1,
+                    
+                  }
+            },
+
+            {
+                breakpoint:992,
+                settings: {
+                    item:1,
+                    slideMove:1,
+                                       
+                  }
+            },
+            {
+                breakpoint:768,
+                settings: {
+                    item:1,
+                    slideMove:1,
+                                     
+                  }
+            },
+            {
+                breakpoint:480,
+                settings: {
+                    item:1,
+                    slideMove:1,                   
+                  
+                  }
+            }
+        ]        
+    });
+    
+});
+
+
+// Slider
+$(document).ready(function(){
+    $('#slider-mobile').lightSlider({
+        item: 1,
+        autoWidth: false,       
+        slideMove: 1, // slidemove will be 1 if loop is true
+        slideMargin: 10,
+        loop: true,
+        controls: true,
+        prevHtml: '',
+        nextHtml: '',  
+        responsive : [
+            {
+                breakpoint:2560,
+                settings: {
+                    item:1,
+                    slideMove:1,                   
+                  }
+            },
+
+            {
+                breakpoint:1500,
+                settings: {
+                    item:1,
+                    slideMove:1,
+                    
+                  }
+            },
+
+            {
+                breakpoint: 1200,
+                settings: {
+                    item:1,
+                    slideMove:1,
+                    
+                  }
+            },
+
+            {
+                breakpoint:992,
+                settings: {
+                    item:1,
+                    slideMove:1,
+                                       
+                  }
+            },
+            {
+                breakpoint:768,
+                settings: {
+                    item:1,
+                    slideMove:1,
+                                     
+                  }
+            },
+            {
+                breakpoint:480,
+                settings: {
+                    item:1,
+                    slideMove:1,                   
+                  
+                  }
+            }
+        ]        
+    });
+    
+});
+
+

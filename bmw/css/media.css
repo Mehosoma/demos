@@ -107,6 +107,13 @@
 		float: right;
 	}
 
+	#about-page p{
+		margin-top: 0px;
+		font-size: 13px;
+		line-height: 20px;
+		margin-top: 23px;
+	}
+
 }
 
 @media only screen and (min-width : 768px) and (max-width : 991px) {
@@ -253,7 +260,8 @@
 	}
 
 	header .navbar-nav .dropdown-menu .submenu li a{
-		background-color: #f2f2f2
+		background-color: #f2f2f2;
+		padding: 0 30px 0 0;
 	}
 
 	header .nav > li > a:hover, header .nav > li > a:focus{
@@ -494,7 +502,8 @@
 	}
 
 	header .navbar-nav .dropdown-menu .submenu li a{
-		background-color: #f2f2f2
+		background-color: #f2f2f2;
+		padding: 0 30px 0 0;
 	}
 
 	header .nav > li > a:hover, header .nav > li > a:focus{
@@ -804,7 +813,8 @@
 	}
 
 	header .navbar-nav .dropdown-menu .submenu li a{
-		background-color: #f2f2f2
+		background-color: #f2f2f2;
+		padding: 0 30px 0 0;
 	}
 
 	header .nav > li > a:hover, header .nav > li > a:focus{
@@ -816,7 +826,7 @@
 	}
 	
 	#main-banner{
-		background-position: center right 20%;
+		background-position: center right 40%;
 	}
 
 	#main-banner .bg-desc{
@@ -851,8 +861,7 @@
 	}
 
 	#calendar-events .calendar-events-block .ce-block-desc .sp-right{
-		width: 100%;
-		margin-top: 10px;
+		width: 100%;		
 	}
 
 	#calendar-events .calendar-events-block .ce-block-desc .ce-learnmore{
@@ -924,6 +933,12 @@
 
 	#info-form form .form-field span{
 		display: block;
+		text-overflow: ellipsis;
+		width: 97%;
+	}
+
+	.bootstrap-select.btn-group .dropdown-menu{
+		width: 100%;
 	}
 
 	#info-form form{
@@ -1085,6 +1100,10 @@
 
 	#about-page .col-xs-6{
 		width: 100%;
+	}
+
+	.ma-teachers-header h2, .ma-parents-header h2{
+		font-size: 25px;
 	}
 
 	
