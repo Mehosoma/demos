@@ -87,6 +87,10 @@
 
 	}
 
+	#goToNextSlide,	#goToPrevSlide{
+		display: none;
+	}
+
 }
 
 @media only screen and (min-width : 480px) and (max-width : 767px){
@@ -149,6 +153,10 @@
 		margin-left: 0px;
 		left: 0px;
 
+	}
+
+	#goToNextSlide,	#goToPrevSlide{
+		display: none;
 	}
 
 
