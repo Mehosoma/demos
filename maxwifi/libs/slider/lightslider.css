@@ -177,7 +177,7 @@
     width: 51px;
     height: 51px;
     position: absolute;
-    background-image: url('/img/slider-left.png');
+    background-image: url('slider-left.png');
     background-position: center center; 
     background-repeat: no-repeat;
     right: 100px;
@@ -193,7 +193,7 @@
     width: 51px;
     height: 51px;
     position: absolute;
-    background-image: url('/img/slider-right.png');
+    background-image: url('slider-right.png');
     background-position: center center; 
     background-repeat: no-repeat;
     left: 100px;
