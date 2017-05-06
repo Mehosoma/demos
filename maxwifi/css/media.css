@@ -1,6 +1,11 @@
 @media only screen and (min-width : 0px) and (max-width : 479px) {
 
 	header{
+		background-image: url('../img/main-bg-small.png')!important;
+		background-position: top center!important;
+	}
+
+	header{
 		overflow: hidden;
 	}
 
@@ -85,6 +90,14 @@
 		margin-left: 0px;
 		left: 0px;
 
+	}
+
+	#princeples .principles-block .arrow{
+		display: none;
+	}
+
+	#princeples .third{
+		margin: 40px auto 0px;
 	}
 
 	#goToNextSlide,	#goToPrevSlide{
@@ -274,6 +287,10 @@
 		overflow: hidden;
 	}
 
+	header p{
+		width: 90%;
+	}
+
 	header .navbar{
 		margin-left: 0px;
 		width: 100%;		
@@ -328,6 +345,10 @@
 		margin-left: 0px;
 		left: 0px;
 
+	}
+
+	#princeples .third{
+		margin: 40px auto 0px;
 	}
 
 	#goToNextSlide,	#goToPrevSlide{
@@ -467,6 +488,10 @@
 	#princeples .third{
 		margin-top: 50px;
 		margin-left: 0px;
+	}
+
+	#princeples .third{
+		margin: 40px auto 0px;
 	}
 
 	#goToNextSlide{

@@ -23,8 +23,7 @@ header {
   background-position: center center;
   width: 100%;
   height: 678px;
-  background-repeat: no-repeat;
-  background-size: cover; }
+  background-repeat: no-repeat; }
   header .header-wrap {
     margin-top: 31px; }
   header .navbar {
@@ -695,15 +694,17 @@ header {
     #tarifs .tarifs-block-middle .tarifs-button:hover a {
       background-color: #fff;
       color: #1d8dff; }
-  #tarifs .remarks ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    text-align: center; }
-  #tarifs .remarks li {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 9px;
-    color: #acacac; }
+  #tarifs .remarks {
+    margin-top: 20px; }
+    #tarifs .remarks ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      text-align: center; }
+    #tarifs .remarks li {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 9px;
+      color: #acacac; }
 
 /******************************************Orders*****************************/
 #order {
@@ -782,6 +783,8 @@ footer {
       text-transform: uppercase;
       color: #444;
       letter-spacing: 2px; }
+  footer .footer-menu li a:hover {
+    border-bottom: 2px solid #444; }
   footer .polite {
     margin-top: 31px; }
   footer .soc-icons ul {
@@ -791,10 +794,21 @@ footer {
   footer .soc-icons li {
     display: inline-block;
     padding: 0 0 0 60px; }
+  footer .soc-icons a {
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out; }
+  footer .soc-icons a:hover {
+    opacity: 0.5; }
+  footer .polite {
+    display: inline-block; }
   footer .polite a {
     color: #4d4d4d;
     font-size: 14px;
     border-bottom: 1px solid #4d4d4d; }
+  footer .polite:hover a {
+    border-bottom: none; }
 
 /******************************ModalForms********************************/
 #hidden_form, #hidden_form2 {
