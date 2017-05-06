@@ -137,7 +137,7 @@ header {
       line-height: 25px;
       width: 62%; }
   #princeples .second-pr-block {
-    margin-left: 64px; }
+    margin-left: 44px; }
     #princeples .second-pr-block .arrow {
       left: 190px; }
     #princeples .second-pr-block p {
@@ -303,52 +303,72 @@ header {
         background-repeat: no-repeat !important; }
         #one-seven .one-seven-block .one-seven-block-desc .one-seven-content .one-seven-button:hover a {
           color: #fff; }
-    #one-seven .one-seven-block .one-seven-block-desc .third-block p {
-      margin-bottom: 0;
-      width: 98%; }
-    #one-seven .one-seven-block .one-seven-block-desc .third-block .one-seven-button {
-      margin-top: 20px; }
-    #one-seven .one-seven-block .one-seven-block-desc .fourth-block p {
-      margin-bottom: 0; }
-    #one-seven .one-seven-block .one-seven-block-desc .fourth-block .one-seven-button {
-      margin-top: 20px; }
-  #one-seven .one-seven-block .five-block {
-    width: 58%; }
-    #one-seven .one-seven-block .five-block .one-seven-content {
-      left: 96px; }
-      #one-seven .one-seven-block .five-block .one-seven-content p {
-        margin-bottom: 39px; }
-      #one-seven .one-seven-block .five-block .one-seven-content ul {
-        padding-left: 20px; }
-        #one-seven .one-seven-block .five-block .one-seven-content ul li {
-          line-height: 35px; }
-      #one-seven .one-seven-block .five-block .one-seven-content .one-seven-button {
-        margin-top: 30px; }
-  #one-seven .one-seven-block .six-block strong {
-    margin-left: -50px; }
-  #one-seven .one-seven-block .six-block .one-seven-content {
-    left: 18px; }
-    #one-seven .one-seven-block .six-block .one-seven-content p {
-      width: 100%;
-      margin-bottom: 0px; }
-    #one-seven .one-seven-block .six-block .one-seven-content ul {
-      padding-left: 20px; }
-      #one-seven .one-seven-block .six-block .one-seven-content ul li {
-        line-height: 35px; }
-    #one-seven .one-seven-block .six-block .one-seven-content .one-seven-button {
-      margin-top: 30px; }
-  #one-seven .one-seven-block .seven-block strong {
-    margin-top: 6px; }
+
+#one-seven .third-block img {
+  width: 383px;
+  height: 514px;
+  margin: auto;
+  right: 0;
+  left: 0; }
+
+#one-seven .third-block p {
+  margin-bottom: 0 !important;
+  width: 98% !important; }
+
+#one-seven .third-block .one-seven-button {
+  margin-top: 20px !important; }
+
+#one-seven .five-block img {
+  width: 383px;
+  height: 514px;
+  margin: auto;
+  right: 0;
+  left: 0; }
+
+#one-seven .five-block .one-seven-content p {
+  margin-bottom: 39px !important; }
+
+#one-seven .five-block .one-seven-content ul {
+  padding-left: 20px !important; }
+  #one-seven .five-block .one-seven-content ul li {
+    line-height: 35px !important; }
+
+#one-seven .five-block .one-seven-content .one-seven-button {
+  margin-top: 30px !important; }
+
+#one-seven #six-block strong {
+  margin-left: -50px; }
+
+#one-seven #six-block .one-seven-content {
+  margin-left: 30px;
+  margin-top: -215px; }
+  #one-seven #six-block .one-seven-content p {
+    width: 100%;
+    margin-bottom: 0px; }
+  #one-seven #six-block .one-seven-content ul {
+    padding-left: 20px;
+    margin-top: 30px; }
+    #one-seven #six-block .one-seven-content ul li {
+      line-height: 35px; }
+  #one-seven #six-block .one-seven-content .one-seven-button {
+    margin-top: 30px; }
+
+#one-seven #seven-block strong {
+  margin-top: 6px; }
 
 #one-seven .one-seven-block:nth-child(2n) {
   background-color: #fff; }
+  #one-seven .one-seven-block:nth-child(2n) .one-seven-block-desc {
+    margin-left: 0px;
+    margin-right: 50px; }
 
 /******************************************Law*****************************/
 #law {
   width: 100%;
-  height: 594px;
+  min-height: 594px;
   background-position: center center;
-  background-repeat: no-repeat; }
+  background-repeat: repeat-y;
+  overflow: hidden; }
   #law h3 {
     font-family: 'GilroyBold', sans-serif;
     margin-top: 118px;
@@ -377,7 +397,8 @@ header {
 /******************************************MaxComfort*****************************/
 #max-comfort {
   width: 100%;
-  background-color: #fff; }
+  background-color: #fff;
+  overflow: hidden; }
   #max-comfort img {
     margin-left: -80px;
     margin-top: 6px; }
@@ -450,7 +471,10 @@ header {
 /******************************************News*****************************/
 #news {
   width: 100%;
-  height: 849px; }
+  min-height: 849px;
+  background-repeat: repeat-y;
+  background-color: #f2f2f2;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2); }
   #news h2 {
     font-family: 'GilroyBold', sans-serif;
     font-size: 53px;
@@ -587,7 +611,10 @@ header {
   #tarifs .tarifs-block-middle {
     background-color: #ac2821;
     border-radius: 10px 10px 0 0;
-    height: 610px; }
+    height: 610px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%; }
     #tarifs .tarifs-block-middle .popular {
       text-align: right;
       padding-top: 20px;
@@ -658,7 +685,8 @@ header {
 #order {
   background-position: center center;
   width: 100%;
-  height: 678px; }
+  height: 678px;
+  overflow: hidden; }
   #order .order-left-block {
     margin-top: 232px; }
     #order .order-left-block strong {
@@ -710,7 +738,7 @@ header {
 
 /******************************************Footer*****************************/
 footer {
-  height: 200px; }
+  min-height: 200px; }
   footer .footer-one-left {
     margin-top: 48px; }
   footer .footer-menu ul {
@@ -734,7 +762,7 @@ footer {
     margin-top: 22px; }
   footer .soc-icons li {
     display: inline-block;
-    padding: 0 43px; }
+    padding: 0 0 0 60px; }
   footer .polite a {
     color: #4d4d4d;
     font-size: 14px;
