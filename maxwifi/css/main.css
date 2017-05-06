@@ -41,7 +41,7 @@ header {
     text-transform: uppercase;
     letter-spacing: 1px; }
   header .nav > li > a {
-    padding: 15px 16px; }
+    padding: 15px 15px; }
   header .button-order {
     float: right; }
   header .button-order:hover a {
@@ -293,7 +293,7 @@ header {
         color: #8a8a8a;
         line-height: 25px; }
       #one-seven .one-seven-block .one-seven-block-desc .one-seven-content .one-seven-button {
-        width: 220px;
+        width: 222px;
         background: #fff;
         border: 3px solid #ac2821;
         padding: 9px 60px 9px 20px;
@@ -481,7 +481,8 @@ header {
       text-align: center;
       font-size: 21px;
       top: 10px;
-      background-color: #fff; }
+      background-color: #fff;
+      padding: 2px 0; }
 
 /******************************************News*****************************/
 #news {

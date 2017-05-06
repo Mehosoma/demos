@@ -230,6 +230,7 @@
 
 	footer .polite{
 		text-align: center;
+		display: block;
 	}
 
 	footer .soc-icons li{
@@ -457,7 +458,9 @@
 		margin-top: 14px;
 	}
 
-
+	footer .footer-menu li{
+		padding-right: 0;
+	}
 
 }
 
@@ -666,6 +669,17 @@
 	footer .footer-menu ul{
 		padding-left: 0px;
 	}
+
+	.footer-menu li:nth-child(6){
+		padding-right: 0px
+	}
 	
 }
 
+
+@media only screen and (min-width: 1200px) and (max-width: 1920px){
+
+	.footer-menu li:nth-child(6){
+		padding-right: 0px
+	}
+}
