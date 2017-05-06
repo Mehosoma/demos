@@ -180,7 +180,7 @@
     background-image: url('slider-left.png');
     background-position: center center; 
     background-repeat: no-repeat;
-    right: 100px;
+    right: 2%;
     top: 245px;
     border: none;   
     background-color: transparent;  
@@ -196,7 +196,7 @@
     background-image: url('slider-right.png');
     background-position: center center; 
     background-repeat: no-repeat;
-    left: 100px;
+    left: 2%;
     top: 245px;
     border: none;   
     background-color: transparent;  
