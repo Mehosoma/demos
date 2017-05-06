@@ -24,6 +24,8 @@
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/media.css">
 
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans&amp;subset=cyrillic" rel="stylesheet">
+
 </head>
 
 <body style="background-image: url('img/principles-bg.png');">
@@ -79,8 +81,8 @@
 	<section id="princeples">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-12">
-					<h2>Принципы работы нашего сервиса:</h2>
+				<div class="col-lg-12 .prin-head">
+					<h2>Принцип работы нашего сервиса<strong>:</strong></h2>
 				</div>				
 			</div>
 			<div class="row">
@@ -89,17 +91,17 @@
 						<i>1</i>
 						<img src="img/prin-1.png">
 						<img src="img/arrow-right.png" class="arrow">
-						<strong>Подключение к Wi-Fi</strong>
+						<strong>Подключение<br> к Wi-Fi</strong>
 						<p>Гостю достаточно подключиться к сети с помощью своего устройства</p>
 					</div>
 				</div>
 				<div class="col-lg-4">
-					<div class="principles-block">
+					<div class="principles-block second-pr-block">
 						<i>2</i>
 						<img src="img/prin-2.png">
 						<img src="img/arrow-right.png" class="arrow">
-						<strong>Подключение к Wi-Fi</strong>
-						<p>Гостю достаточно подключиться к сети с помощью своего устройства</p>
+						<strong>Идентификация<br>гостя ПО SMS ИЛИ<br> ЗВОНКУ</strong>
+						<p>Гость проходит обязательную идентификацию согласно закону</p>
 					</div>
 				</div>
 				<div class="col-lg-4">
@@ -107,9 +109,9 @@
 						<i>3</i>
 						<span>Вариант доступа в интернет выбирает гость</span>
 						<ul>
-							<li><img src="img/subscribe.png"><strong>Подписаться на вашу страницу</strong></li>
-							<li><img src="img/post.png"><strong>Подписаться на вашу страницу</strong></li>
-							<li><img src="img/opros.png"><strong>Подписаться на вашу страницу</strong></li>			
+							<li><img src="img/subscribe.png"><strong>Подписаться<br> на вашу страницу</strong></li>
+							<li><img src="img/post.png"><strong>Разместить пост <br> в социальной сети</strong></li>
+							<li><img src="img/opros.png" class="opros"><strong>Пройти опрос<br>или оставить отзыв</strong></li>			
 						</ul>
 						<div class="principles-button" style="background-image: url('img/arrow-right-third.png')">
 							<a href="">Смотреть презентацию</a>							
@@ -135,7 +137,9 @@
 					<li><img src="img/logo-slider-2.png"></li>
 					<li><img src="img/logo-slider-3.png"></li>
 					<li><img src="img/logo-slider-4.png"></li>
-				</ul>				
+				</ul>
+				<button type="button" id="goToPrevSlide"></button>
+				<button type="button" id="goToNextSlide"></button>				
 			</div>
 		</div>
 	</section>
@@ -192,7 +196,7 @@
 					</div>
 					<div class="one-seven-block-desc">
 						<strong>03</strong>
-						<div class="one-seven-content">
+						<div class="one-seven-content third-block">
 							<h3>Создайте положительное мнение о себе в сети</h3>
 							<p>Уменьшить влияние негативных отзывов, как и замечаний по поводу качества услуг, можно очень просто. </p>
 							<p>Ваш гость оставляет отзыв при подключении к WIFI, вы видите замечания и сразу на них реагируете еще до размещения материала в сети: вы не теряете посетителя и одновременно улучшаете сервис.</p>
@@ -212,7 +216,7 @@
 					</div>
 					<div class="one-seven-block-desc">
 						<strong>04</strong>
-						<div class="one-seven-content">
+						<div class="one-seven-content fourth-block">
 							<h3>Поможем привлечь гостя в ваше заведение с помощью подарка</h3>
 							<p>Подарок новому пользователю вашей сети – это десятки и сотни его друзей, которые сразу узнают о приятном презенте.</p>
 							<p>Сделайте подарок в соцсети сегодня, и завтра вы получите новых гостей</p>
@@ -230,7 +234,7 @@
 					<div class="one-seven-block-image">
 						<img src="img/iphone-five.png">
 					</div>
-					<div class="one-seven-block-desc">
+					<div class="one-seven-block-desc five-block">
 						<strong>05</strong>
 						<div class="one-seven-content">
 							<h3>Баннерная реклама при подключении к WIFI</h3>
@@ -254,7 +258,7 @@
 					<div class="one-seven-block-image">
 						<img src="img/iphone-six.png">
 					</div>
-					<div class="one-seven-block-desc">
+					<div class="one-seven-block-desc six-block">
 						<strong>06</strong>
 						<div class="one-seven-content">
 							<h3>Фильтрация контента</h3>
@@ -279,7 +283,7 @@
 					<div class="one-seven-block-image">
 						<img src="img/iphone-seven.png">
 					</div>
-					<div class="one-seven-block-desc">
+					<div class="one-seven-block-desc seven-block">
 						<strong>07</strong>
 						<div class="one-seven-content">
 							<h3>Системы лояльности: интеграция и напоминание</h3>
@@ -302,7 +306,7 @@
 					<h3>Соблюдение закона и экономия на штрафах</h3>
 					<p>SMS-идентификация, как законное требование к пользователям публичного WIFI, позволит избежать штрафов. 
 					Один бесплатный звонок, и ваш телефон – в сети.</p>
-					<span>*В соответствии с постановлением Правительства РФ №758 от 31 июля 2014 г., а также №801 от 12 августа 2014 г., согласно которым пользователи публичных WiFi-сетей должны в обязательном порядке проходить идентификацию с помощью SMS-авторизации.</span>
+					<blockquote>*В соответствии с постановлением Правительства РФ №758 от 31 июля 2014 г., а также №801 от 12 августа 2014 г., согласно которым пользователи публичных WiFi-сетей должны в обязательном порядке проходить идентификацию с помощью SMS-авторизации.</blockquote>
 				</div>
 				<div class="col-lg-5">
 					<img src="img/law-image.png">
@@ -323,13 +327,16 @@
 			<div class="row">
 				<div class="col-lg-5">					
 					<div class="max-comfort-left">
-					<hr />
+					
 						<ol>
+							<hr />
 							<li>Панель управления понятна и удобна для использования</li>
 							<li>Аналитические отчеты позволят контролировать нужные параметры</li>
 							<li>Календарь с возможностью поздравить гостя на день рождения</li>
 							<li>Доступно ежедневное планирование своих действий</li>
-							<li>Вы можете управлять своим ресурсом с любого устройства</li>
+							<li>Вы можете управлять своим ресурсом с любого устройства</li>	
+							<li>Вы можете управлять своим ресурсом с любого устройства</li>	
+							<li>Вы можете управлять своим ресурсом с любого устройства</li>						
 						</ol>
 					</div>
 				</div>
@@ -517,7 +524,7 @@
 						<span>И наш менеджер свяжется с вами MAXимально быстро</span>
 						<form id="order-left" method="post">
 							<input type="text" name="fio" value="Ваше имя" onfocus="this.value=''" required="" style="background-image: url('img/face.png');">
-							<input type="text" name="phone" value="7(__)__-__-__" onfocus="this.value=''" required="" style="background-image: url('img/phone.png');" >
+							<input type="text" name="phone" value="7( __ )__-__-__" onfocus="this.value=''" required="" style="background-image: url('img/phone.png');" >
 							<input type="text" name="city" value="Ваш город" onfocus="this.value=''" required="" style="background-image: url('img/city.png');" >
 							<button type="submit" style="background-image: url('img/arrow-right-white.png');">Оставить заявку</button>
 						</form>
