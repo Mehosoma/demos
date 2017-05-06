@@ -16,6 +16,12 @@ $(document).ready(function(){
       $('.col-eq').colequalizer();   
 });
 
+$(document).ready(function(){
+    $(".popup_form").magnificPopup();
+});
+
+
+
 // Slider
 var slider = $('#slider').lightSlider({
     controls: false,

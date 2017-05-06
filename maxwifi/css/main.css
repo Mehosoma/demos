@@ -15,6 +15,9 @@ body {
   body input:focus, body input:active {
     text-decoration: none;
     outline: none; }
+  body button:focus, body button:active {
+    text-decoration: none;
+    outline: none; }
 
 header {
   background-position: center center;
@@ -54,7 +57,11 @@ header {
     line-height: 50px;
     font-size: 12px;
     letter-spacing: 2px;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out; }
   header h1 {
     font-family: 'GilroyBold', sans-serif;
     color: #fff;
@@ -68,7 +75,8 @@ header {
     line-height: 30px;
     width: 60%; }
   header .banner-button {
-    margin-top: 69px; }
+    margin-top: 69px;
+    display: inline-block; }
     header .banner-button a {
       font-family: 'ProbaProBold', sans-serif;
       font-size: 13px;
@@ -78,7 +86,11 @@ header {
       border: 3px solid #fff;
       border-radius: 30px;
       background-color: #1d8dff;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      -moz-transition: all 0.5s ease-out;
+      -o-transition: all 0.5s ease-out;
+      -webkit-transition: all 0.5s ease-out;
+      transition: all 0.5s ease-out; }
   header .banner-button:hover a {
     background: #fff;
     color: #ac2821; }
@@ -295,7 +307,11 @@ header {
           color: #ac2821;
           font-size: 12px;
           letter-spacing: 3px;
-          text-transform: uppercase; }
+          text-transform: uppercase;
+          -moz-transition: all 0.5s ease-out;
+          -o-transition: all 0.5s ease-out;
+          -webkit-transition: all 0.5s ease-out;
+          transition: all 0.5s ease-out; }
       #one-seven .one-seven-block .one-seven-block-desc .one-seven-content .one-seven-button:hover {
         background: #ac2821;
         background-image: url("../img/arrow-right-white.png") !important;
@@ -603,7 +619,11 @@ header {
         color: #474747;
         text-transform: uppercase;
         font-size: 13px;
-        letter-spacing: 3px; }
+        letter-spacing: 3px;
+        -moz-transition: all 0.5s ease-out;
+        -o-transition: all 0.5s ease-out;
+        -webkit-transition: all 0.5s ease-out;
+        transition: all 0.5s ease-out; }
     #tarifs .tarifs-block .tarifs-button:hover a {
       background-color: #ac2821;
       color: #fff;
@@ -667,7 +687,11 @@ header {
         text-transform: uppercase;
         font-size: 13px;
         letter-spacing: 3px;
-        background-color: #1d8dff; }
+        background-color: #1d8dff;
+        -moz-transition: all 0.5s ease-out;
+        -o-transition: all 0.5s ease-out;
+        -webkit-transition: all 0.5s ease-out;
+        transition: all 0.5s ease-out; }
     #tarifs .tarifs-block-middle .tarifs-button:hover a {
       background-color: #fff;
       color: #1d8dff; }
@@ -726,7 +750,11 @@ header {
       background-repeat: no-repeat;
       margin-top: 13px;
       text-align: left;
-      padding-left: 40px; }
+      padding-left: 40px;
+      -moz-transition: all 0.5s ease-out;
+      -o-transition: all 0.5s ease-out;
+      -webkit-transition: all 0.5s ease-out;
+      transition: all 0.5s ease-out; }
     #order .order-left-block button:hover {
       background-color: #fff;
       color: #ac2821;
@@ -767,6 +795,67 @@ footer {
     color: #4d4d4d;
     font-size: 14px;
     border-bottom: 1px solid #4d4d4d; }
+
+/******************************ModalForms********************************/
+#hidden_form, #hidden_form2 {
+  background-color: #fff;
+  width: 100%;
+  height: 360px; }
+  #hidden_form .wrap-content, #hidden_form2 .wrap-content {
+    position: relative; }
+    #hidden_form .wrap-content .decor, #hidden_form2 .wrap-content .decor {
+      position: absolute;
+      top: 29px;
+      left: -90px; }
+  #hidden_form strong, #hidden_form2 strong {
+    font-family: 'GilroyBold', sans-serif;
+    font-size: 34px;
+    color: #ac2821;
+    display: block;
+    line-height: 25px; }
+  #hidden_form span, #hidden_form2 span {
+    font-family: 'GilroyBold', sans-serif;
+    font-size: 34px;
+    color: #242424; }
+  #hidden_form input, #hidden_form2 input {
+    width: 510px;
+    height: 50px;
+    display: inline-block;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+    border: none;
+    padding: 0 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    color: #646464;
+    background-position: center right 15px;
+    background-repeat: no-repeat;
+    margin-right: 12px;
+    margin-top: 32px; }
+  #hidden_form .submit-button, #hidden_form2 .submit-button {
+    width: 190px;
+    height: 50px;
+    display: inline-block;
+    border: none;
+    background-color: #ac2821;
+    color: #fff;
+    letter-spacing: 2px;
+    font-family: 'ProbaProBold', sans-serif;
+    font-size: 17px;
+    text-transform: uppercase; }
+  #hidden_form p, #hidden_form2 p {
+    font-family: 'GilroyBold', sans-serif;
+    font-size: 17px;
+    color: #676767;
+    display: block;
+    float: left; }
+  #hidden_form hr, #hidden_form2 hr {
+    width: 580px;
+    float: left;
+    margin-top: 34px;
+    margin-bottom: 10px; }
+  #hidden_form .wrap-content, #hidden_form2 .wrap-content {
+    margin-left: 140px;
+    margin-top: 65px; }
 
 .hidden {
   display: none; }

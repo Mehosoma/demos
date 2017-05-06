@@ -17,6 +17,9 @@ body
 	input:focus, input:active
 		text-decoration: none
 		outline: none
+	button:focus, button:active
+		text-decoration: none
+		outline: none
 
 header
 	background-position: center center
@@ -57,6 +60,10 @@ header
 		font-size: 12px
 		letter-spacing: 2px
 		text-transform: uppercase
+		-moz-transition: all 0.5s ease-out
+		-o-transition: all 0.5s ease-out
+		-webkit-transition: all 0.5s ease-out
+		transition: all 0.5s ease-out 			
 	h1
 		font-family: 'GilroyBold', sans-serif
 		color: #fff
@@ -71,6 +78,7 @@ header
 		width: 60%
 	.banner-button
 		margin-top: 69px
+		display: inline-block
 		a
 			font-family: 'ProbaProBold', sans-serif
 			font-size: 13px
@@ -81,9 +89,14 @@ header
 			border-radius: 30px
 			background-color: #1d8dff
 			text-transform: uppercase
+			-moz-transition: all 0.5s ease-out
+			-o-transition: all 0.5s ease-out
+			-webkit-transition: all 0.5s ease-out
+			transition: all 0.5s ease-out 
 	.banner-button:hover a
 		background: #fff
-		color: #ac2821 			
+		color: #ac2821
+		
 
 /******************************************PrinceplesBlock*****************************/
 #princeples
@@ -303,6 +316,10 @@ header
 						font-size: 12px
 						letter-spacing: 3px
 						text-transform: uppercase
+						-moz-transition: all 0.5s ease-out
+						-o-transition: all 0.5s ease-out
+						-webkit-transition: all 0.5s ease-out
+						transition: all 0.5s ease-out 			
 				.one-seven-button:hover
 					background: #ac2821
 					background-image: url('../img/arrow-right-white.png')!important
@@ -606,6 +623,10 @@ header
 				text-transform: uppercase
 				font-size: 13px
 				letter-spacing: 3px
+				-moz-transition: all 0.5s ease-out
+				-o-transition: all 0.5s ease-out
+				-webkit-transition: all 0.5s ease-out
+				transition: all 0.5s ease-out 			
 		.tarifs-button:hover a
 			background-color: #ac2821
 			color: #fff
@@ -671,6 +692,10 @@ header
 				font-size: 13px
 				letter-spacing: 3px
 				background-color: #1d8dff
+				-moz-transition: all 0.5s ease-out
+				-o-transition: all 0.5s ease-out
+				-webkit-transition: all 0.5s ease-out
+				transition: all 0.5s ease-out 			
 		.tarifs-button:hover a
 			background-color: #fff
 			color: #1d8dff 
@@ -731,6 +756,10 @@ header
 			margin-top: 13px
 			text-align: left
 			padding-left: 40px
+			-moz-transition: all 0.5s ease-out
+			-o-transition: all 0.5s ease-out
+			-webkit-transition: all 0.5s ease-out
+			transition: all 0.5s ease-out 			
 		button:hover
 			background-color: #fff
 			color: #ac2821
@@ -773,6 +802,71 @@ footer
 		color: #4d4d4d
 		font-size: 14px
 		border-bottom: 1px solid #4d4d4d
+
+/******************************ModalForms********************************/
+#hidden_form, #hidden_form2
+	background-color: #fff
+	width: 100%
+	height: 360px	
+	.wrap-content
+		position: relative
+		.decor
+			position: absolute
+			top: 29px
+			left: -90px
+	strong
+		font-family: 'GilroyBold', sans-serif
+		font-size: 34px
+		color: #ac2821		
+		display: block
+		line-height: 25px
+	span
+		font-family: 'GilroyBold', sans-serif
+		font-size: 34px
+		color: #242424
+	input
+		width: 510px
+		height: 50px
+		display: inline-block
+		box-shadow: inset 0 0 10px rgba(0,0,0,0.2)
+		border: none
+		padding: 0 16px
+		font-family: 'Open Sans', sans-serif
+		font-size: 17px
+		color: #646464
+		background-position: center right 15px
+		background-repeat: no-repeat
+		margin-right: 12px
+		margin-top: 32px
+	.submit-button
+		width: 190px
+		height: 50px
+		display: inline-block
+		border: none
+		background-color: #ac2821
+		color: #fff
+		letter-spacing: 2px
+		font-family: 'ProbaProBold', sans-serif
+		font-size: 17px
+		text-transform: uppercase
+	p
+		font-family: 'GilroyBold', sans-serif
+		font-size: 17px
+		color: #676767
+		display: block
+		float: left
+
+	hr
+		width: 580px
+		float: left
+		margin-top: 34px
+		margin-bottom: 10px
+	.wrap-content
+		margin-left: 140px
+		margin-top: 65px
+
+
+
 
 
 

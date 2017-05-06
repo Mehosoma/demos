@@ -99,7 +99,8 @@
 	#one-seven .one-seven-block .one-seven-block-image img{
 		position: static;
 		margin-top: 40px;
-		width: 100%;		
+		width: 100%;
+		height: auto;		
 	}
 
 	#one-seven .one-seven-block .one-seven-block-desc .one-seven-content .one-seven-button{
@@ -222,6 +223,48 @@
 		padding: 0 20px;		
 	}
 
+	#one-seven #six-block strong{
+		margin-left: -10px!important;
+	}
+
+	#hidden_form .decor, #hidden_form2 .decor{
+		display: none;
+	}
+
+	#hidden_form .wrap-content, #hidden_form2 .wrap-content{
+		margin-left: 0px;
+		margin-top: 32px;
+	}
+
+	#hidden_form span, #hidden_form2 span{
+		font-size: 32px;
+	}
+
+	#hidden_form input, #hidden_form2 input{
+		width: 100%;
+	}
+
+	#hidden_form .submit-button, #hidden_form2 .submit-button{
+		margin-top: 15px;
+	}
+
+	#hidden_form hr, #hidden_form2 hr{
+		width: 100%;
+		margin-top: 10px;
+	}
+
+	#hidden_form p, #hidden_form2 p{
+		font-size: 15px;
+	}
+
+	#hidden_form strong, #hidden_form2 strong{
+		font-size: 30px;
+	}
+
+	#hidden_form span, #hidden_form2 span{
+		font-size: 28px;
+	}
+
 
 }
 
@@ -308,6 +351,11 @@
 		margin-left: 0px;
 	}
 
+	#one-seven #six-block strong{
+		margin-left: -10px!important;
+	}
+
+
 	#law h3{
 		margin-top: 0px;
 	}
@@ -327,6 +375,11 @@
 
 	#news .col-xs-12{
 		margin-bottom: 20px;
+	}
+
+	#news .news-block-image{
+		width: 100%;
+		height: auto;
 	}
 
 	#tarifs h2{		
@@ -364,6 +417,25 @@
 	footer .soc-icons li{
 		padding: 0 0 0 53px;
 	}
+
+	#hidden_form input, #hidden_form2 input{
+		width: 100%;
+	}
+
+	#hidden_form .wrap-content, #hidden_form2 .wrap-content{
+		margin-left: 76px;
+		margin-top: 30px;
+	}
+
+	#hidden_form .submit-button, #hidden_form2 .submit-button{
+		margin-top: 20px;
+	}
+
+	#hidden_form hr, #hidden_form2 hr{
+		width: 100%;
+		margin-top: 14px;
+	}
+
 
 
 }
@@ -486,6 +558,15 @@
 	footer .footer-one-left{
 		text-align: center;
 	}
+
+	#hidden_form input, #hidden_form2 input{
+		width: 370px;
+	}
+
+	#hidden_form .wrap-content, #hidden_form2 .wrap-content{
+		margin-left: 77px;
+	}
+
 
 
 }
