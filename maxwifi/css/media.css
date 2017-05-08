@@ -373,6 +373,12 @@
 		padding: 23px 15px;
 	}
 
+	#article-content .article-soc a{
+		display: block;
+		border-bottom: none;
+		margin: 0;
+	}
+
 }
 
 @media only screen and (min-width : 480px) and (max-width : 767px){
