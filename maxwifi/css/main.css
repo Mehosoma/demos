@@ -881,7 +881,7 @@ footer {
     letter-spacing: 2px;
     padding: 0; }
   #blog-page header .navbar li {
-    padding: 15px 15px; }
+    padding: 15px 14px; }
   #blog-page header .navbar li a:hover {
     border-bottom: 2px solid #444;
     color: #fff; }
@@ -985,7 +985,7 @@ footer {
         opacity: 0.9;
         width: 100%;
         height: 100%; }
-      #blog-main-content .blog-news-block .blog-news-block-image strong {
+      #blog-main-content .blog-news-block .blog-news-block-image .news-image-text {
         position: absolute;
         bottom: 68px;
         padding: 0 43px;
@@ -994,12 +994,12 @@ footer {
         color: #000000;
         font-weight: normal;
         line-height: 38px; }
-  #blog-main-content .second-news strong {
+  #blog-main-content .second-news .news2 {
     top: 145px;
     font-family: "GilroyRegular", sans-serif !important;
     font-size: 38px;
     letter-spacing: 1px; }
-    #blog-main-content .second-news strong i {
+    #blog-main-content .second-news .news2 i {
       text-transform: uppercase;
       font-style: normal; }
   #blog-main-content .second-news h4 {
