@@ -8,9 +8,21 @@
 	<meta name="keywords" content="репетитор по математике в Туле, репетитор по физике в Туле, решение контрольных по математике, решение контрольных по физике, подготовка к ЕГЭ, подготовка к ГИА" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta name="format-detection" content="telephone=no">
-	<link rel="shortcut icon" href="Images/favicon.ico" />	
-	<link rel="stylesheet" href="css/libs.min.css" />
-	<link rel="stylesheet" href="css/main.min.css" />	
+	<link rel="shortcut icon" href="Images/favicon.ico" />
+	<script>
+    if (window.XMLHttpRequest) {
+      xhr = new XMLHttpRequest();    
+    } else {
+      xhr = new ActiveXObject("Microsoft.XMLHTTP");
+    }
+    xhr.open("GET",'css/main.min.css',false);
+    xhr.send();
+    var lazyStyle = document.createElement('style');
+    lazyStyle.innerHTML = xhr.responseText;
+    document.head.appendChild(lazyStyle);
+
+  </script>
+
 </head>
 <body>	
 	<!--Header-->
