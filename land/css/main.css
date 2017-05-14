@@ -108,6 +108,14 @@ header .navbar-collapse {
   padding: 0;
 }
 
+header .navbar-toggle {
+  border: 1px solid #fff;
+}
+
+header .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+
 /**MainBanner**/
 #banner .slide-item, #banner .slide-item2 {
   background-image: url("../img/top-slider/slide1/main-bg.jpg");
