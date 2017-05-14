@@ -768,7 +768,8 @@ header {
 
 /******************************************Footer*****************************/
 footer {
-  min-height: 200px; }
+  min-height: 200px;
+  padding-bottom: 10px; }
   footer .footer-one-left {
     margin-top: 48px; }
   footer .footer-menu ul {
