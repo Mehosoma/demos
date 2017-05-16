@@ -8,3 +8,11 @@ function checkParams() {
         $('#button-header-form').addClass('disabled');
     }
 }
+
+$(document).ready(function(){
+
+$("#tel-modal").on('hidden.bs.modal', function(){
+    $('#tel-header-form').find('input[type=text], textarea').val('');
+  });
+
+});

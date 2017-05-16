@@ -423,9 +423,12 @@ header #fn-headertel .tel-button:hover{
   background-color: #337160;
 }
 
-#tel-modal .modal-dialog .modal-body a{
-  display: block;
+#tel-modal .modal-dialog .modal-body .bott-links{
   text-align: left;
+}
+
+#tel-modal .modal-dialog .modal-body a{
+  display: inline-block;  
 }
 
 #tel-modal .modal-dialog .modal-body .disabled{
