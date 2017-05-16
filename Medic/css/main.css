@@ -379,17 +379,23 @@ header #fn-headertel .tel-button:hover{
   background-color: #337160;
 }
 
+#tel-modal{
+  padding-right: 0px!important;
+}
+
 #tel-modal .modal-dialog{
   background-color: #fff;
   width: 300px;  
+  margin: 30px auto;
 }
 
 #tel-modal .modal-dialog .modal-header{
   border-bottom: none;
+  text-align: center;
 }
 
-#tel-modal .modal-dialog .modal-body{
-  text-align: center;
+#tel-modal .modal-dialog .modal-body{  
+  padding: 0 52px 15px;
 }
 
 #tel-modal .modal-dialog .modal-body form{
@@ -417,23 +423,34 @@ header #fn-headertel .tel-button:hover{
   -o-transition: all 0.3s ease-out;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
+  width: 196px;
 }
 
 #tel-modal .modal-dialog .modal-body button:hover{
   background-color: #337160;
 }
 
-#tel-modal .modal-dialog .modal-body .bott-links{
-  text-align: left;
-}
 
 #tel-modal .modal-dialog .modal-body a{
-  display: inline-block;  
+  display: inline-block; 
+  font-size: 12px;  
+}
+
+#tel-modal .modal-dialog .modal-body .modal-links a:hover{
+  text-decoration: underline;
 }
 
 #tel-modal .modal-dialog .modal-body .disabled{
   pointer-events: none;
   background-color: #d6d6d6;
+}
+
+#tel-modal .modal-dialog .modal-body .reg {
+  float: left;
+}
+
+#tel-modal .modal-dialog .modal-body .pass {
+  float: right;
 }
 
 
