@@ -1,0 +1,775 @@
+@import "bourbon/bourbon"
+
+*
+	margin: 0
+	padding: 0
+
+body
+	min-width: 1230px
+	max-width: 1920px
+	line-height: 1.5
+	-webkit-font-smoothing: antialiased	
+	background-color: #fff	
+	margin: 0 auto
+	a:hover, a:focus, a:active
+		text-decoration: none
+		outline: none
+	input:focus, input:active
+		text-decoration: none
+		outline: none
+	button:hover, button:focus, button:active
+		text-decoration: none
+		outline: none
+	select:hover, select:focus, select:active
+		text-decoration: none
+		outline: none
+
+/***********************************************************General************************************************************/
+.container
+	width: 1200px
+	margin: 0 auto
+	padding: 0 15px
+.clearfix:after
+	content: ""
+	display: table
+	clear: both
+h2
+	font-family: 'ProximaNovaBlack', sans-serif
+	font-size: 36px
+	color: #343434
+	text-transform: uppercase
+
+/***********************************************************Header*************************************************************/
+header	
+	border-bottom: 1px solid #383f44
+	position: absolute
+	width: 100%
+	height: 60px
+	margin: auto
+	top: 0	
+	right: 0
+	left: 0
+	z-index: 2
+	.main-menu
+		margin-left: 60px		
+		ul
+			list-style-type: none
+			padding: 0
+			margin: 0		
+			li
+				display: inline-block
+				padding: 18px 25px			
+				a
+					color: #fff
+					text-decoration: none
+					font-family: 'ProximaNovaRegular', sans-serif
+					font-size: 16px					
+					padding: 0
+			li:hover
+				border-bottom: 1px solid red
+
+/***********************************************************MainBanner*********************************************************/
+#mainbanner
+	.li-slide1, .li-slide2
+		background-image: url('../images/slider/slide1/main-banner.jpg')
+		width: 100%
+		height: 900px
+		background-position: center center
+		background-repeat: no-repeat		
+	.li-slide2
+		background-image: url('../images/slider/slide2/slide.jpg')		
+	.lSSlideOuter .lSPager.lSpg
+		display: none
+	.container-arrow
+		position: absolute
+		z-index: 100
+		width: 1200px
+		height: 60px
+		top: 425px
+		margin: auto
+		left: 0
+		right: 0
+	.lSAction > .lSPrev, .lSAction > .lSNext
+		display: none
+	h1
+		color: #fff
+		font-family: 'ProximaNovaRegular', sans-serif
+		font-size: 56px
+		text-transform: uppercase		
+		font-weight: normal		
+		margin-top: 410px
+		margin-left: 100px
+		letter-spacing: -3px
+	.header-logo
+		position: absolute
+		top: 92px
+		margin-left: 77px
+	a
+		background-color: #ff1515
+		padding: 15px 65px 15px 38px
+		color: #fff
+		text-decoration: none
+		font-family: 'ProximaNovaRegular', sans-serif
+		font-size: 18px
+		background-image: url('../images/check-button-bg.png')
+		background-position: right 33px center
+		background-repeat: no-repeat
+		position: absolute
+		bottom: 180px
+		left: 588px
+
+/***********************************************************How Work*********************************************************/
+#work
+	padding: 55px 0 60px 0
+	position: relative
+	h2
+		text-align: center
+		margin-bottom: 7px
+	span
+		font-family: 'ProximaNovaRegular', sans-serif
+		font-size: 22px
+		color: #808080
+		text-align: center
+		display: block
+		margin-bottom: 61px
+	strong
+		font-family: 'ProximaNovaBlack', sans-serif
+		font-size: 147px
+		color: rgba(246,244,244,0.6)
+		position: absolute
+		top: 9px
+		z-index: -1	
+	.work-block
+		width: 33%
+		display: inline-block	
+		.work-block-square
+			width: 30px
+			height: 30px
+			background-color: #ff1515
+			color: #fff
+			font-family: 'ProximaNovaExtrabold', sans-serif
+			font-size: 18px
+			text-align: center
+			line-height: 30px
+			position: absolute
+			z-index: 2
+		.work-block-circle
+			position: relative
+			width: 120px
+			height: 120px
+			border-radius: 50%
+			background-color: #fff
+			box-shadow: 0 0 20px rgba(0,0,0,0.2)
+			background-image: url('../images/money.png')
+			background-size: 50px 45px
+			background-position: center center
+			background-repeat: no-repeat
+			margin: 0 auto	
+		p
+			text-align: center
+			font-family: 'ProximaNovaExtrabold', sans-serif
+			font-size: 18px			
+			line-height: 30px
+			color: #343434
+			margin-top: 25px
+			text-transform: uppercase
+	.icon-2 
+		.work-block-circle
+			background-image: url('../images/graphic.png')
+			background-size: 47px 47px	
+	.icon-3
+		.work-block-circle
+			background-image: url('../images/money-gold.png')
+			background-size: 37px 57px
+
+/***********************************************************Check*********************************************************/
+#check
+	width: 100%
+	height: 665px
+	background-color: #f4f4f4
+	position: relative
+	overflow: hidden
+	h2
+		margin-top: 54px		
+	.check-left
+		width: 50%
+		height: 100%
+		margin-left: 40px
+		ul
+			list-style-type: none	
+			margin-top: 14px
+			margin-bottom: 49px		
+			li
+				background-image: url('../images/check-icon.png')
+				background-position: left center
+				background-repeat: no-repeat
+				padding-left: 30px
+				font-family: 'ProximaNovaRegular', sans-serif
+				font-size: 18px
+				padding: 10px 0 10px 30px
+		a
+			background-color: #ff1515
+			padding: 18px 68px 18px 28px
+			color: #fff
+			text-decoration: none
+			font-family: 'ProximaNovaRegular', sans-serif
+			font-size: 18px
+			background-image: url('../images/check-button-bg.png')
+			background-position: right 29px center
+			background-repeat: no-repeat
+	.check-right
+		position: absolute
+		top: 0
+		left: 50%	
+
+/***********************************************************Statistic*********************************************************/
+#statistic
+	background-image: url('../images/statistic-bg.jpg')
+	width: 100%
+	height: 500px
+	background-position: center center
+	background-repeat: no-repeat
+	text-align: center
+	.statistic-block	
+		width: 22%
+		text-align: center
+		margin-top: 167px
+		float: left
+		margin-left: 35px
+		.statistic-block-icon
+			width: 30%
+			height: 77px
+			border-bottom: 1px solid #fff
+			margin: 0 auto
+		.statistic-block-desc
+			margin-top: 20px			
+			span
+				font-family: 'ProximaNovaBlack', sans-serif
+				color: #fff
+				font-size: 42px
+			p
+				font-family: 'ProximaNovaRegular', sans-serif
+				color: #fff
+				font-size: 18px
+				width: 70%
+				margin: 0 auto
+
+/***********************************************************About*********************************************************/
+#about
+	height: 411px
+	position: relative
+	padding: 50px 0
+	h2
+		text-align: center
+		margin-bottom: 36px
+	.about-left	
+		margin-left: 50px	
+		p
+			font-family: 'ProximaNovaRegular', sans-serif
+			color: #343434
+			font-size: 18px
+		ul
+			list-style-type: none	
+			padding-top: 14px
+			margin-left: -5px		
+			li
+				margin: 30px 0
+				display: table				
+			span
+				font-family: 'ProximaNovaRegular', sans-serif
+				color: #343434
+				font-size: 24px
+				text-transform: uppercase								
+				position: relative							
+				display: table-cell	
+				line-height: 30px
+				padding-left: 27px					
+			.about-image
+				width: 50px
+				text-align: center				
+				display: inline-block				
+				display: table-cell
+				vertical-align: middle
+
+			img
+				vertical-align: middle				
+
+	.about-right
+		position: absolute
+		top: 86px
+		left: 50%
+
+/***********************************************************BonusPlan*********************************************************/
+#bonus
+	background-image: url('../images/bonus-bg.jpg')
+	width: 100%
+	height: 442px
+	background-position: center center
+	background-repeat: no-repeat
+	.bonus-wrap
+		padding: 28px	
+	.bonus-block
+		background-color: #fff
+		width: 270px
+		margin: 0 auto	
+		padding: 38px 0
+		.bonus-block-header
+			background-color: #f4f4f4	
+			padding: 6px 40px
+			text-align: center
+			span
+				font-family: 'ProximaNovaBlack', sans-serif
+				color: #ff1515
+				font-size: 20px
+				text-transform: uppercase
+			p
+				font-family: 'ProximaNovaRegularItalic', sans-serif
+				color: #343434
+				font-size: 14px
+				i
+					font-size: 24px
+		.bonus-block-content
+			text-align: center
+			span
+				font-family: 'ProximaNovaLight', sans-serif
+				color: #ff1515
+				font-size: 30px
+				i
+					font-size: 72px
+					font-style: normal
+			p
+				font-family: 'ProximaNovaRegularItalic', sans-serif
+				color: #ff1515
+				font-size: 24px
+				text-decoration: underline
+		.bonus-block-footer
+			margin-top: 54px 
+			text-align: center
+			a
+				font-family: 'ProximaNovaRegular', sans-serif
+				color: #ff1515
+				font-size: 18px
+				text-decoration: none
+				border: 1px solid #e6e6e6
+				padding: 12px 29px
+
+/***********************************************************Calc*********************************************************/
+#calc
+	padding: 45px 0
+	height: 307px
+	.calc-header
+		text-align: center
+		h2
+			line-height: 48px
+		span
+			font-family: 'ProximaNovaRegular', sans-serif
+			color: #343434
+			font-size: 18px	
+			text-transform: uppercase
+			line-height: 23px
+	.calc-block
+		.calc-choice
+			text-align: center
+			margin-top: 34px
+			select
+				width: 253px
+				height: 30px
+				font-family: 'ProximaNovaRegular', sans-serif
+				color: #343434
+				font-size: 18px	
+				padding-left: 7px
+				border: 1px solid #e8e8e8
+				margin-right: 5px
+			input
+				width: 253px
+				height: 28px
+				border: 1px solid #e8e8e8
+				color: rgba(0,0,0,0.5)
+				padding-left: 10px
+				font-family: 'ProximaNovaRegular', sans-serif				
+				font-size: 18px	
+		.calc-scale
+			width: 700px
+			margin: 0 auto
+			margin-top: 30px
+		.scale-choice
+			display: block
+		.scale-left, .scale-right
+			font-family: 'ProximaNovaRegular', sans-serif
+			color: #343434
+			font-size: 18px	
+		.scale-left
+			float: left
+		.scale-right
+			float: right
+		.range
+			display: block
+		#calc-range
+			height: 16px
+			padding: 0
+			border: 1px solid #c6c6c6
+			border-radius: 10px				
+			width: 100%
+			position: relative
+		#calc-thumb
+			width: 56px
+			height: 24px
+			position: absolute
+			margin: auto
+			top: 0
+			bottom: 0
+			left: 0
+			right: 0
+			.thumb-circle
+				width: 20px
+				height: 20px
+				border: 1px solid #c6c6c6
+				background-color: #fff
+				border-radius: 50%
+				margin: 0 auto				
+			span				
+				text-align: center
+				padding-top: 20px								
+				font-family: 'ProximaNovaRegular', sans-serif
+				color: #ff1515
+				font-size: 18px
+		.calc-footer
+			text-align: center
+			margin-top: 25px
+			span
+				font-family: 'ProximaNovaRegular', sans-serif
+				color: #343434
+				font-size: 46px
+				text-transform: uppercase
+				letter-spacing: -2px
+				strong
+					font-style: normal
+					font-weight: normal
+					color: #ff1515
+					i
+						font-style: normal
+						font-size: 60px
+
+/***********************************************************Calc*********************************************************/
+#tarifs
+	background-image: url('../images/tarifs-bg.jpg')
+	width: 100%
+	height: 1212px
+	background-position: center center
+	background-repeat: no-repeat	
+	h2
+		color: #fff
+		text-align: center	
+		padding-top: 25px
+		margin-bottom: 20px		
+	.stage
+		width: 100%
+		height: 550px
+		border: 1px dashed #fff
+		text-align: center		
+		span
+			font-family: 'ProximaNovaRegular', sans-serif
+			color: #fff
+			font-size: 24px
+			display: block
+			margin-top: 15px
+		img
+			display: block
+			margin: 0 auto
+	.stage-block-wrap		
+		float: none
+		display: block
+		width: 832px
+		margin: 0 auto
+		margin-top: 26px				
+	.stage-block
+		background-color: #fff
+		width: 261px
+		height: 380px
+		padding: 26px 0	
+		box-sizing: border-box
+		float: left		
+		margin-top: 30px	
+		.stage-block-header
+			background-color: #f4f4f4	
+			padding: 0 40px
+			text-align: center
+			span
+				font-family: 'ProximaNovaBlack', sans-serif
+				color: #ff1515
+				font-size: 20px
+				text-transform: uppercase
+				line-height: 34px
+			p
+				font-family: 'ProximaNovaRegularItalic', sans-serif
+				color: #343434
+				font-size: 14px
+				i
+					font-size: 24px
+		.stage-block-content
+			text-align: center
+			span
+				font-family: 'ProximaNovaLight', sans-serif
+				color: #ff1515
+				font-size: 30px
+				margin-top: 8px
+				margin-bottom: 14px
+				i
+					font-size: 72px
+					font-style: normal
+			p
+				font-family: 'ProximaNovaRegularItalic', sans-serif
+				color: #343434
+				font-size: 16px				
+		.stage-block-footer
+			margin: 49px 0 0 0
+			text-align: center
+			a
+				font-family: 'ProximaNovaRegular', sans-serif
+				color: #ff1515
+				font-size: 18px
+				text-decoration: none
+				border: 1px solid #e6e6e6
+				padding: 13px 29px
+	.central-block
+		border: 1px solid red
+		width: 310px
+		height: 420px
+		background-image: url('../images/central-block-bg.jpg')
+		background-size: 279px 372px
+		background-position: center center
+		background-repeat: no-repeat	
+		.stage-block-header
+			background-color: transparent
+			padding-top: 19px
+		.stage-block-footer
+			a
+				background-color:#ff1515
+				color: #fff
+	.side-block
+		margin-top: 50px
+	#second-stage
+		width: 100%
+		height: 505px
+		border: 1px dashed #fff
+		text-align: center
+		margin-top: 35px
+		.decor
+			margin-top: 11px
+		.stage-block-wrap
+			width: 100%
+		.stage-block
+			float: none
+			display: inline-block
+			width: 270px
+			margin-right: 10px
+			margin-top: 35px
+		.central-block
+			background-image: none
+			border: none
+			height: 380px
+		.stage-block-header
+			background-color: #f4f4f4
+		.stage-block-footer
+			a
+				background-color: #fff
+				color: #ff1515	
+
+/***********************************************************Statisctic-Main*********************************************************/	
+#statistic-main
+	padding: 49px 0 86px 0
+	text-align: center
+	table
+		width: 930px
+		margin: 0 auto
+		border-collapse: collapse
+		margin-top: 35px		
+		td
+			font-family: 'ProximaNovaRegular', sans-serif
+			color: #343434
+			font-size: 16px
+			text-align: left
+			padding: 16px 0 0px 28px
+			img
+				margin-right: 6px	
+		.summ			
+			text-align: right
+			padding-right: 60px	
+		.pay-icon img
+			vertical-align: middle
+		.table-header
+			font-family: 'ProximaNovaRegular', sans-serif
+			color: #343434
+			font-size: 18px
+			text-transform: uppercase			
+			td
+				text-align: left
+				border-bottom: 2px solid #c6c6c6
+				padding: 5px 0 5px 28px			
+
+/***********************************************************News*********************************************************/	
+#news
+	background-image: url('../images/news-bg.jpg')
+	width: 100%
+	height: 534px
+	background-position: center center
+	background-repeat: no-repeat	
+	h2
+		text-align: center
+		padding-top: 56px
+		margin-bottom: 15px
+	.lSSlideOuter .lSPager.lSpg
+		display: none
+	.lSSlideOuter
+		text-align: center	
+	.news-overlay	
+		width: 1076px
+		height: 65px
+		background-color: rgba(0,0,0,0.5)
+		position: absolute		
+		margin-left: 62px
+		bottom: 17px
+		h4
+			font-family: 'ProximaNovaBlack', sans-serif
+			color: #fff
+			font-size: 24px
+			line-height: 20px
+			text-align: left
+			text-transform: uppercase
+			padding-left: 25px
+			margin-top: 5px
+		span
+			font-family: 'ProximaNovaRegular', sans-serif
+			color: #fff
+			font-size: 24px
+			text-align: left
+			text-transform: uppercase
+			display: block
+			padding-left: 25px
+
+/***********************************************************Response*********************************************************/	
+#response
+	text-align: center
+	padding: 63px 0 93px 0
+	h2
+		text-align: center
+		margin-bottom: 15px
+
+/***********************************************************Partners*********************************************************/		
+#partners
+	background-image: url('../images/partners-bg.jpg')
+	width: 100%
+	height: 325px
+	background-position: center center
+	background-repeat: no-repeat
+	text-align: center	
+	h2 
+		padding-top: 56px	
+	ul
+		list-style-type: none
+		margin-top: 60px		
+		li
+			display: inline-block
+			padding: 0 25px			
+		img
+			vertical-align: middle
+
+
+/***********************************************************But2*********************************************************/	
+#but2
+	padding: 83px 0
+	text-align: center
+	span
+		font-family: 'ProximaNovaRegular', sans-serif
+		color: #343434
+		font-size: 55px
+		display: block
+		line-height: 72px
+		margin-bottom: 61px
+		strong
+			font-size: 60px
+	a
+		background-color: #ff1515
+		padding: 19px 68px 19px 30px
+		color: #fff
+		text-decoration: none
+		font-family: 'ProximaNovaRegular', sans-serif
+		font-size: 18px
+		background-image: url('../images/check-button-bg.png')
+		background-position: right 30px center
+		background-repeat: no-repeat
+
+/***********************************************************Footer*********************************************************/	
+footer
+	background-image: url('../images/footer-bg.jpg')
+	width: 100%
+	height: 400px
+	background-position: center center
+	background-repeat: no-repeat
+	.top-footer-left
+		width: 568px
+		display: inline-block
+		padding-top: 36px
+		padding-left: 50px
+		box-sizing: border-box
+		p
+			font-family: 'ProximaNovaRegular', sans-serif
+			color: #fff
+			font-size: 12px
+			margin-top: 5px
+			width: 93%
+	.top-footer-middle
+		width: 430px
+		display: inline-block
+		padding-left: 50px
+		box-sizing: border-box
+		ul
+			list-style-type: none
+			display: inline-block
+			li
+				margin-top: 7px
+			a
+				font-family: 'ProximaNovaRegular', sans-serif
+				color: #fff
+				font-size: 16px
+				text-decoration: none
+			.red-link a
+				color: #ff1515
+		.left-list
+			margin-right: 35px
+	.top-footer-right
+		width: 190px		
+		display: inline-block
+		position: relative
+		ul
+			list-style-type: none
+			position: absolute
+			top: -77px
+			li
+				display: inline-block
+				padding: 0 12px
+				img
+					vertical-align: middle
+	hr
+		width: 1100px
+		margin: 0 auto
+		height: 1px
+		border: none
+		background-color: #eee
+		background: #eee
+		margin-top: 38px
+		margin-bottom: 30px
+	span
+		font-family: 'ProximaNovaRegular', sans-serif
+		color: #fff
+		font-size: 16px
+		text-align: center
+		display: block
+	.bottom-footer
+		text-align: center
+		margin-top: 48px
+		img
+			padding: 0 45px	
+			vertical-align: middle	
+
+
