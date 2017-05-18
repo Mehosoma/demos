@@ -1203,7 +1203,8 @@ footer {
         padding: 0 3px;
         color: #000; }
       #news-page-content .pages ul .active {
-        background-color: red; }
+        background-color: red;
+        color: #fff; }
     #news-page-content .pages img {
       position: absolute;
       width: 7px;
