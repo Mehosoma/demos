@@ -54,6 +54,35 @@
 		width: 58%;
 		float: right;
 	}
+
+	#presentation .slide-5 .pres-text-block ul{
+		padding-right: 20px;
+	}
+
+	#presentation .slide-5 .risks{
+		margin: 0 auto;
+	}
+
+	#presentation .slide-5 .col-lg-8{
+		padding-bottom: 20px;
+		padding-top: 20px;
+	}
+
+	#presentation .slide-5 .summ{
+		margin-top: 15px;
+	}
+
+	#presentation .slide-5 .man{
+		position: absolute;
+		top: 0;
+		right: 20px;
+	}
+
+	#presentation .slide-9 img, #presentation .slide-10 img{
+		width: 100%;
+		height: auto;
+		margin-top: 0px;
+	}
 }
 
 @media only screen and (min-width : 480px) and (max-width : 767px) {
@@ -153,6 +182,66 @@
 
 	#fn-index-content #fn-index-middle .middle-news-block .middle-news-zagol h5{
 		margin-top: 15px;
+	}
+
+	#presentation .slide-2 .pres-text-block{
+		padding-left: 70px;
+	}
+
+	#presentation .slide-2 .pres-text-block2{
+		margin-left: 70px;
+		width: 80%;
+		padding-bottom: 20px;
+	}
+
+	#presentation .slide-3 .pres-text-block{
+		padding-left: 20px;
+	}
+
+	#presentation .slide-3 .pres-text-block2 ul{
+		padding: 0 20px;
+	}
+
+	#presentation .slide-4 .pres-text-block ul{
+		padding-right: 20px;
+		padding-bottom: 20px;
+	}
+
+	#presentation .slide-5 .pres-text-block ul{
+		padding-right: 20px;
+	}
+
+	#presentation .slide-5 .risks{
+		margin: 0 auto;
+	}
+
+	#presentation .slide-5 .col-lg-8{
+		padding-bottom: 20px;
+		padding-top: 20px;
+	}
+
+	#presentation .slide-5 .summ{
+		margin-top: 15px;
+	}
+
+	#presentation .slide-5 .man{
+		position: absolute;
+		top: 0;
+		right: 20px;
+	}
+
+	#presentation .slide-7 strong{
+		padding-left: 10px;
+	}
+
+	#presentation .slide-10 img{
+		margin-top: 0px;
+	}
+
+	#presentation .slide-9 img, #presentation .slide-10 img{
+		width: 100%;
+		height: auto;
+		margin-top: 0px;
 	}
 
 
@@ -327,6 +416,85 @@
 	#fn-send-form #other-imp-info #doc-load input{
 		margin-bottom: 20px;
 	}
+
+	#presentation .slide-2 .pres-text-block{
+		padding-left: 20px;
+		font-size: 30px;
+	}
+
+	#presentation .slide-2 .pres-text-block2{
+		margin-left: 20px;
+		width: 90%;
+		padding-bottom: 20px;
+	}
+
+	#presentation .slide-3 .pres-text-block{
+		padding-left: 20px;
+	}
+
+	#presentation .slide-3 .pres-text-block2 ul{
+		padding: 0 20px;
+	}
+
+	#presentation .slide-4 .pres-text-block .triangle span{
+		padding-right: 20px;
+	}
+
+	#presentation .slide-4 .pres-text-block ul{
+		padding-right: 20px;
+		padding-bottom: 20px;
+	}
+
+	#presentation .slide-5 .pres-text-block ul{
+		padding-right: 20px;
+	}
+
+	#presentation .slide-5 .risks{
+		margin: 0 auto;
+	}
+
+	#presentation .slide-5 .col-lg-8{
+		padding-bottom: 20px;
+		padding-top: 20px;
+	}
+
+	#presentation .slide-5 .summ{
+		margin-top: 15px;
+		padding-left: 9px;
+	}
+
+	#presentation .slide-5 .man{
+		position: absolute;
+		top: 0;
+		right: 20px;
+	}
+
+	#presentation .slide-7 strong{
+		padding-left: 10px;
+	}
+
+	#presentation .slide-10 img{
+		margin-top: 0px;
+	}
+
+	#presentation .slide-9 img, #presentation .slide-10 img{
+		width: 100%;
+		height: auto;
+		margin-top: 0px;
+	}
+
+	#presentation .slide-10 strong{
+		font-size: 22px;
+	}
+
+	#presentation .slide-8 strong{
+		padding-left: 0px;
+	}
+
+	#presentation .slide-4 .pres-text-block strong{
+		padding-left: 10px;
+	}
+
 }
 
 @media only screen and (min-width : 480px) and (max-width : 600px){
