@@ -398,7 +398,8 @@ header #fn-headertel .tel-button:hover{
   padding: 0 52px 15px;
 }
 
-#tel-modal .modal-dialog .modal-body form{
+#tel-modal .modal-dialog .modal-body #tel-header-form{
+  display: block;
   margin-bottom: 20px;
 }
 
@@ -2085,3 +2086,4 @@ header #fn-headercall a span {
 .hidden {
   display: none;
 }
+
