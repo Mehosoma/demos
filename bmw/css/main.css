@@ -217,6 +217,25 @@ header {
       transform: translateX(500px) translateY(-250px); }
 
 /*About*/
+#about .about-podr a {
+  position: relative; }
+
+#about .about-podr img {
+  position: absolute;
+  width: 7px;
+  height: 13px;
+  margin: auto;
+  top: 0;
+  bottom: 0; }
+
+#about .about-podr span {
+  font-family: 'bmwbor', sans-serif;
+  font-size: 16px;
+  color: #444444;
+  line-height: 65px;
+  position: relative;
+  padding-left: 13px; }
+
 #about .about-head {
   display: block;
   padding: 30px 0 15px 0; }
@@ -1258,6 +1277,34 @@ footer {
   #about-page img {
     width: 100%;
     height: auto; }
+
+#about-tizers {
+  background-color: #fff;
+  padding-bottom: 40px; }
+  #about-tizers .tizers-block-wrap h3 {
+    font-family: 'BMWGroup_Global_Bold', sans-serif;
+    text-transform: uppercase;
+    color: #aaa38e;
+    padding-bottom: 30px;
+    margin-top: 40px; }
+  #about-tizers .tizers-block-wrap .tizer-block {
+    position: relative;
+    border-bottom: 5px solid #aaa38e;
+    display: table;
+    margin-bottom: 20px; }
+    #about-tizers .tizers-block-wrap .tizer-block img {
+      width: 400px;
+      height: 400px; }
+    #about-tizers .tizers-block-wrap .tizer-block .tizer-block-header {
+      text-align: center;
+      width: 400px;
+      position: absolute;
+      top: 40px; }
+    #about-tizers .tizers-block-wrap .tizer-block span {
+      font-family: 'BMWGroup_Global_Bold', sans-serif;
+      text-transform: uppercase;
+      font-size: 24px;
+      color: #fff; }
 
 /*********************************************MaterialsTeachers*******************************************/
 #ma-teachers-banner {
