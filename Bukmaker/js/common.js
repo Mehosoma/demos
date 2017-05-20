@@ -29,6 +29,29 @@ var slider1 = $('#news-lightslider').lightSlider({
 });
 
 
+$(document).ready(function(){
+    $('.click').on('click', function(){
+
+        $("#video-main").css({
+        'display' : 'block'        
+        }); 
+        
+    });
+});
+
+$(document).ready(function(){
+    $('.close-video').on('click', function(){
+
+        $("#video-main").css({
+        'display' : 'none'        
+        }); 
+
+       $('iframe').attr('src', $('iframe').attr('src'));
+        
+    });
+});
+
+
 
 
     
