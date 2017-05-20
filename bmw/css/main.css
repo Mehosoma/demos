@@ -479,7 +479,6 @@ footer {
       top: 50px;
       z-index: -999;
       cursor: default;
-      max-width: 100%;
       transition: opacity 0.3s; }
     #info-form form .info-popover2 {
       left: 113px; }
