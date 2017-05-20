@@ -41,11 +41,6 @@ $(window).scroll(function() {
 });
 
 
-//Альбом-галерея
-
-
-
-
 //Анимация Dropdown
 
 
@@ -349,6 +344,69 @@ $(document).ready(function(){
         ]        
     });
     
+});
+
+//Подсказки
+$(document).ready(function(){
+
+    $('.comm').hover(function(){
+
+            $(".info-popover").css({
+            'opacity' : '1',
+            'z-index': '1000'
+            });
+
+            $(".info-popover").addClass('active-popover');
+
+            $(".info-popover2").css({
+            'opacity' : '0',
+            'z-index': '-999'
+            });
+
+            $(".info-popover2").removeClass('active-popover');  
+    }); 
+
+    $('.comm2').hover(function(){
+
+            $(".info-popover").css({
+            'opacity' : '0',
+            'z-index': '-999'
+            });
+
+            $(".info-popover").removeClass('active-popover'); 
+
+            $(".info-popover2").css({
+            'opacity' : '1',
+            'z-index': '1000'
+            });
+
+            $(".info-popover2").addClass('active-popover'); 
+    });
+
+    $('.info-popover-content .info-popover-close').on('click', function(){
+
+        $(".info-popover").css({
+            'opacity' : '0',
+            'z-index': '-999'
+            });
+
+            $(".info-popover").removeClass('active-popover'); 
+        
+    });
+
+    $('.info-popover-content2 .info-popover-close').on('click', function(){
+
+        $(".info-popover2").css({
+            'opacity' : '0',
+            'z-index': '-999'
+            });
+
+            $(".info-popover2").removeClass('active-popover'); 
+        
+    });
+
+
+
 });
 
 

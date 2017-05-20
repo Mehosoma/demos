@@ -142,43 +142,51 @@
 					<span>Поля отмеченные * - обязательны для заполнения.</span>
 					<form id="info-forma" method="post">
 						<div class="form-field clearfix">
-							<span class="form-field-head">Формат проекта*</span>							
-							<div class="rail-select clearfix">  								
+							<span class="form-field-head">Формат проекта*<img src="img/comm.svg" class="comm"></span>
+							<div class="info-popover">
+								<div class="info-popover-arrow"></div>
+								<div class="info-popover-content">
+									<div class="info-popover-close"></div>
+									<span>Подробнее о форматах проекта</span>
+									<a href="AboutMobile">Мобильная версия</a>
+									<a href="AboutStationar">Стационарная версия</a>
+								</div>
+							</div>	
 								<select name="format" class="selectpicker" title="Экспериментариум">
 									<option value="f1">Экспериментариум</option>
 		  							<option value="f2">Пункт 2</option> 
 								</select>
-							</div>
 							<i class="field-validation-error text-danger" data-valmsg-for="Requester" data-valmsg-replace="true">Поле обязательно для заполнения</i>
 						</div>
-						<div class="form-field">
-							<span class="form-field-head">Предпочтительная программа*</span>
-							<div class="rail-select clearfix">
+						<div class="form-field clearfix">
+							<span class="form-field-head">Предпочтительная программа* <img src="img/comm.svg" class="comm2"></span>
+								<div class="info-popover2">
+									<div class="info-popover-arrow2"></div>
+									<div class="info-popover-content2">
+										<div class="info-popover-close"></div>
+										<span>Перейти в раздел <a href="ProjectPrograms">"Содержание программ"</a></span>
+									</div>
+								</div>	
 								<select name="programma" class="selectpicker" title="Безопасность дорожного движения">
 									<option value="p1">Безопасность дорожного движения</option>
 		  							<option value="p2">Пункт 2</option> 
 								</select>
-							</div>
 							<i class="field-validation-error text-danger" data-valmsg-for="Requester" data-valmsg-replace="true">Поле обязательно для заполнения</i>						
 						</div>
-						<div class="form-field">
+						<div class="form-field clearfix">
 							<span class="form-field-head">Возраст группы*</span>
-							<div class="rail-select clearfix">
 								<select name="age_gr" class="selectpicker" title="6-8 лет">
 									<option value="a1">6-8 лет</option>
 		  							<option value="a2">Пункт 2</option> 
-								</select>
-							</div>
+								</select>							
 							<i class="field-validation-error text-danger" data-valmsg-for="Requester" data-valmsg-replace="true">Поле обязательно для заполнения</i>							
 						</div>
-						<div class="form-field">
+						<div class="form-field clearfix">
 							<span class="form-field-head">Тип посещения*</span>
-							<div class="rail-select clearfix">
 								<select name="type" class="selectpicker" title="Индивидуальное">
 									<option value="t1">Индивидуальное</option>
 		  							<option value="t2">Пункт 2</option> 
-								</select>  								
-							</div>
+								</select>
 							<i class="field-validation-error text-danger" data-valmsg-for="Requester" data-valmsg-replace="true">Поле обязательно для заполнения</i>							
 						</div>
 						<div class="form-field clearfix">
