@@ -1115,7 +1115,11 @@
 	}
 
 	#info-form form .info-popover-arrow2{
-		right: 39px;
+		right: 49px;
+	}
+
+	#info-form form .info-popover-arrow{
+		right: 142px;
 	}
 
 	
