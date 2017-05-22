@@ -1136,6 +1136,20 @@
 		margin-left: 10px;
 	} 	
 
+	#about-tizers .tizers-block-wrap .tizer-block img{
+		width: 100%;
+		height: auto;
+	}
+
+	#about-tizers .tizers-block-wrap .tizer-block .tizer-block-header{
+		width: 270px;
+	}
+
+	#about-tizers{
+		padding-bottom: 0px;
+	}
+
+
 }
 
 /******************************************SliderStyles********************************************/
