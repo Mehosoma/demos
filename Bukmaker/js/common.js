@@ -29,7 +29,12 @@ var slider1 = $('#news-lightslider').lightSlider({
 });
 
 
+
+//VideoResponse
 $(document).ready(function(){
+
+    $('iframe').attr('src', $('iframe').attr('src'));
+
     $('.click').on('click', function(){
 
         $("#video-main").css({
