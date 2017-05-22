@@ -674,11 +674,55 @@ header {
 
 /***********************************************************Response*********************************************************/
 #response {
-  text-align: center;
   padding: 63px 0 93px 0; }
   #response h2 {
     text-align: center;
     margin-bottom: 15px; }
+  #response .response-video {
+    position: relative;
+    min-height: 360px; }
+    #response .response-video .video-block-wrap-resp {
+      padding-top: 86px; }
+    #response .response-video .video-block {
+      box-sizing: border-box;
+      float: left; }
+      #response .response-video .video-block span {
+        display: block;
+        color: #343434;
+        font-family: 'ProximaNovaRegular', sans-serif;
+        font-size: 16px;
+        line-height: 18px;
+        text-transform: uppercase;
+        text-shadow: 0.5px 0 0 #343434;
+        text-align: left; }
+    #response .response-video .video-block2 {
+      float: right; }
+      #response .response-video .video-block2 span {
+        display: block;
+        color: #343434;
+        font-family: 'ProximaNovaRegular', sans-serif;
+        font-size: 16px;
+        line-height: 18px;
+        text-transform: uppercase;
+        text-shadow: 0.5px 0 0 #343434;
+        text-align: left; }
+    #response .response-video #response-main {
+      position: absolute;
+      width: 700px;
+      height: 350px;
+      margin: auto;
+      right: 0;
+      left: 0;
+      top: 0; }
+      #response .response-video #response-main span {
+        display: block;
+        color: #343434;
+        font-family: 'ProximaNovaRegular', sans-serif;
+        font-size: 16px;
+        line-height: 18px;
+        text-transform: uppercase;
+        text-shadow: 0.5px 0 0 #343434;
+        text-align: left; }
 
 /***********************************************************Partners*********************************************************/
 #partners {
@@ -1459,7 +1503,7 @@ footer {
       right: 0;
       left: 0;
       top: 35px;
-      display: block;
+      display: none;
       -moz-transition: all 0.5s ease-out;
       -o-transition: all 0.5s ease-out;
       -webkit-transition: all 0.5s ease-out;
