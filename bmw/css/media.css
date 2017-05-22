@@ -668,9 +668,13 @@
 	}
 
 
-	#info-form form .comm, #info-form form .comm2{
+	#info-form form .comm{
 		margin-left: 10px;
 	} 
+
+	 #info-form form .comm2{
+	 	margin-left: 20px;
+	 }
 }
 
 @media only screen and (min-width : 0px) and (max-width : 479px) {
