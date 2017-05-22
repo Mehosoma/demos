@@ -1117,6 +1117,7 @@
 
 	#info-form form .info-popover2{
 		left: 0px;
+		width: 290px;
 	}
 
 	#info-form form .info-popover-arrow2{
@@ -1126,6 +1127,10 @@
 	#info-form form .info-popover-arrow{
 		left: 121px;
 	}
+
+	#info-form form .comm, #info-form form .comm2{
+		margin-left: 10px;
+	} 
 
 	
 
