@@ -250,7 +250,8 @@ header {
   #check .check-right {
     position: absolute;
     top: 0;
-    left: 50%; }
+    left: 50%;
+    width: 50%; }
 
 /***********************************************************Statistic*********************************************************/
 #statistic {
@@ -261,11 +262,12 @@ header {
   background-repeat: no-repeat;
   text-align: center; }
   #statistic .statistic-block {
-    width: 22%;
+    width: 30%;
     text-align: center;
     margin-top: 167px;
     float: left;
-    margin-left: 35px; }
+    margin-left: 35px;
+    box-sizing: border-box; }
     #statistic .statistic-block .statistic-block-icon {
       width: 30%;
       height: 77px;
@@ -335,12 +337,39 @@ header {
   background-position: center center;
   background-repeat: no-repeat; }
   #bonus .bonus-wrap {
-    padding: 28px; }
+    padding: 28px;
+    width: 40%;
+    float: left;
+    padding-left: 100px;
+    box-sizing: border-box; }
+  #bonus .bonus-right {
+    text-align: center;
+    padding-top: 100px; }
+    #bonus .bonus-right h2 {
+      color: #fff;
+      text-transform: none;
+      font-size: 30px;
+      line-height: 42px;
+      padding-bottom: 30px; }
+      #bonus .bonus-right h2 i {
+        font-size: 48px; }
+    #bonus .bonus-right span {
+      font-size: 30px;
+      color: #ff1515;
+      font-family: 'ProximaNovaBlack', sans-serif;
+      letter-spacing: 1px; }
+    #bonus .bonus-right p {
+      padding-top: 30px;
+      font-size: 30px;
+      color: #fff;
+      font-family: 'ProximaNovaBlack', sans-serif;
+      letter-spacing: 1px; }
   #bonus .bonus-block {
     background-color: #fff;
     width: 270px;
-    margin: 0 auto;
-    padding: 38px 0; }
+    padding: 38px 0;
+    border: 3px solid #ff1515;
+    box-sizing: border-box; }
     #bonus .bonus-block .bonus-block-header {
       background-color: #f4f4f4;
       padding: 6px 40px;
@@ -353,7 +382,7 @@ header {
       #bonus .bonus-block .bonus-block-header p {
         font-family: 'ProximaNovaRegularItalic', sans-serif;
         color: #343434;
-        font-size: 14px; }
+        font-size: 18px; }
         #bonus .bonus-block .bonus-block-header p i {
           font-size: 24px; }
     #bonus .bonus-block .bonus-block-content {
@@ -530,7 +559,7 @@ header {
       #tarifs .stage-block .stage-block-header p {
         font-family: 'ProximaNovaRegularItalic', sans-serif;
         color: #343434;
-        font-size: 14px; }
+        font-size: 18px; }
         #tarifs .stage-block .stage-block-header p i {
           font-size: 24px; }
     #tarifs .stage-block .stage-block-content {
@@ -547,7 +576,8 @@ header {
       #tarifs .stage-block .stage-block-content p {
         font-family: 'ProximaNovaRegularItalic', sans-serif;
         color: #343434;
-        font-size: 16px; }
+        font-size: 20px;
+        line-height: 24px; }
     #tarifs .stage-block .stage-block-footer {
       margin: 49px 0 0 0;
       text-align: center; }
@@ -745,8 +775,10 @@ header {
 
 /***********************************************************But2*********************************************************/
 #but2 {
+  width: 100%;
   padding: 83px 0;
-  text-align: center; }
+  text-align: center;
+  background-color: #f1f1f1; }
   #but2 span {
     font-family: 'ProximaNovaRegular', sans-serif;
     color: #343434;
@@ -1422,6 +1454,39 @@ footer {
     padding: 0 100px;
     letter-spacing: -1px; }
 
+.partners-page-tarifs #tarifs h2 {
+  margin-bottom: 0px;
+  padding-top: 15px; }
+
+.partners-page-tarifs #tarifs .stage-block-content span {
+  line-height: 30px;
+  margin: 0; }
+  .partners-page-tarifs #tarifs .stage-block-content span i {
+    line-height: 72px; }
+
+.partners-page-tarifs #tarifs .stage-block-content p {
+  margin-top: 10px; }
+
+.partners-page-tarifs #tarifs .stage-block-content .procent {
+  padding-top: 15px; }
+
+.partners-page-tarifs #tarifs .stage-block-footer {
+  margin-top: 29px; }
+
+.partners-page-tarifs #tarifs #second-stage {
+  margin-top: 15px; }
+
+.partners-page-tarifs #tarifs .referal-program-block {
+  text-align: center;
+  padding-top: 15px; }
+  .partners-page-tarifs #tarifs .referal-program-block span {
+    color: #fff;
+    font-family: 'ProximaNovaBlack', sans-serif;
+    font-size: 36px;
+    line-height: 40px; }
+    .partners-page-tarifs #tarifs .referal-program-block span i {
+      color: #ff1515; }
+
 /***********************************************************ResponsePage************************************************************/
 #mainbanner-other-response {
   background-image: url("../images/response-bg.jpg");
@@ -1512,3 +1577,15 @@ footer {
         position: absolute;
         top: -15px;
         right: -15px; }
+
+
+@media (min-width: 1900px) { 
+
+    .check-right {
+      width: 50%      
+    }
+
+    .check-right img{
+      width: 100%;
+    }
+  }
