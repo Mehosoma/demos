@@ -293,15 +293,15 @@ table {
   #lk-invest .stage-block {
     background-color: #fff;
     width: 192px;
-    height: 278px;
-    padding: 29px 0	0 0;
+    height: 315px;
+    padding: 15px 0	0 0;
     box-sizing: border-box;
     float: left;
     margin-top: 6px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); }
     #lk-invest .stage-block .stage-block-header {
       background-color: #f4f4f4;
-      padding: 0 40px;
+      padding: 0 25px;
       text-align: center; }
       #lk-invest .stage-block .stage-block-header span {
         font-family: 'ProximaNovaBlack', sans-serif;
@@ -320,24 +320,30 @@ table {
         #lk-invest .stage-block .stage-block-header p i {
           font-size: 18px; }
     #lk-invest .stage-block .stage-block-content {
-      text-align: center;
-      padding-top: 24px; }
+      text-align: center; }
       #lk-invest .stage-block .stage-block-content span {
         font-family: 'ProximaNovaLight', sans-serif;
         color: #ff1515;
         font-size: 30px;
         margin-top: 8px;
-        margin-bottom: 14px; }
+        margin-bottom: 14px;
+        line-height: 30px;
+        margin: 0; }
         #lk-invest .stage-block .stage-block-content span i {
           font-size: 56px;
-          font-style: normal; }
+          font-style: normal;
+          line-height: 30px; }
       #lk-invest .stage-block .stage-block-content p {
         font-family: 'ProximaNovaRegularItalic', sans-serif;
         color: #343434;
-        font-size: 12px; }
+        font-size: 12px;
+        margin-top: 10px; }
+    #lk-invest .stage-block .procent {
+      padding-top: 15px; }
     #lk-invest .stage-block .stage-block-footer {
       margin: 4px 0 0 0;
-      text-align: center; }
+      text-align: center;
+      margin-top: 15px; }
       #lk-invest .stage-block .stage-block-footer input {
         border: 1px solid #e6e6e6;
         width: 147px;
@@ -362,10 +368,11 @@ table {
   #lk-invest .central-block {
     border: 1px solid red;
     width: 227px;
-    height: 308px;
-    background-image: url("../images/lk/central-lk.jpg");
+    height: 345px;
+    background-image: url("../images/central-block-bg.jpg");
     background-position: center center;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    background-size: 90% 90%; }
     #lk-invest .central-block .stage-block-header {
       background-color: transparent;
       padding-top: 14px; }
@@ -376,18 +383,20 @@ table {
     margin-top: 22px; }
   #lk-invest .stage2 {
     height: 347px;
-    margin-top: 5px; }
+    margin-top: 35px; }
     #lk-invest .stage2 .stage-block:nth-child(3) {
       float: right; }
     #lk-invest .stage2 .stage-block:nth-child(2) {
       margin-left: 20px; }
     #lk-invest .stage2 .side-block {
       margin-top: 6px; }
+  #lk-invest .active-deposit {
+    margin-top: 20px; }
   #lk-invest .right-content-invest {
     background-color: #fff;
     padding: 31px 0 5px 0; }
     #lk-invest .right-content-invest #active-deposit-invest {
-      margin-top: 16px; }
+      margin-top: 5px; }
   #lk-invest footer {
     height: 92px; }
 
