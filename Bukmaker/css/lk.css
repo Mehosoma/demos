@@ -1,0 +1,568 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  min-width: 1230px;
+  max-width: 1920px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background-color: #fff;
+  margin: 0 auto;
+  position: relative; }
+  body a:hover, body a:focus, body a:active {
+    text-decoration: none;
+    outline: none; }
+  body a {
+    text-decoration: none; }
+  body input:focus, body input:active {
+    text-decoration: none;
+    outline: none; }
+  body button:hover, body button:focus, body button:active {
+    text-decoration: none;
+    outline: none; }
+  body select:hover, body select:focus, body select:active {
+    text-decoration: none;
+    outline: none; }
+
+/***********************************************************General************************************************************/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+h2 {
+  font-family: 'ProximaNovaBlack', sans-serif;
+  font-size: 18px;
+  color: #333;
+  text-align: center;
+  text-transform: uppercase; }
+
+table {
+  width: 700px;
+  border: none;
+  border-collapse: collapse;
+  box-sizing: border-box; }
+  table tr {
+    text-align: center; }
+  table tr:nth-child(even) {
+    background-color: #f4f4f4; }
+  table td {
+    border: none;
+    font-family: 'ProximaNovaRegular', sans-serif;
+    font-size: 12px;
+    color: #333333;
+    padding: 9px 18px; }
+  table th {
+    font-family: 'ProximaNovaBold', sans-serif;
+    font-size: 12px;
+    color: #333333;
+    padding: 9px 18px;
+    vertical-align: top; }
+  table .big-td {
+    width: 400px; }
+
+.lk-main {
+  background-image: url("../images/lk/lk-bg.jpg");
+  width: 100%;
+  height: 997px;
+  padding-top: 20px;
+  box-sizing: border-box;
+  background-position: center center; }
+  .lk-main .lk-overlay {
+    position: absolute;
+    width: 100%;
+    height: 997px;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7); }
+
+#header-lk .grid_3 {
+  padding-left: 15px;
+  box-sizing: border-box; }
+
+#header-lk .username span {
+  font-family: 'ProximaNovaRegular', sans-serif;
+  font-size: 14px;
+  color: #1bbecb;
+  line-height: 20px; }
+
+#header-lk .total {
+  margin-top: 3px; }
+  #header-lk .total span {
+    font-family: 'ProximaNovaRegular', sans-serif;
+    font-size: 18px;
+    color: #fff;
+    line-height: 20px;
+    text-transform: uppercase; }
+
+#header-lk .country {
+  position: relative;
+  margin-top: -6px;
+  padding-left: 9px; }
+  #header-lk .country img {
+    width: 20px;
+    height: 11px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0; }
+  #header-lk .country span {
+    font-family: 'ProximaNovaRegular', sans-serif;
+    font-size: 12px;
+    color: #fff;
+    line-height: 20px;
+    text-transform: uppercase;
+    padding-left: 27px; }
+
+#header-lk #lk-nav {
+  background-color: #fff;
+  height: 90px;
+  text-align: center;
+  margin-top: 12px; }
+  #header-lk #lk-nav ul {
+    list-style-type: none; }
+    #header-lk #lk-nav ul li {
+      padding: 15px 26px;
+      display: inline-block;
+      height: 60px;
+      line-height: 60px;
+      float: left; }
+  #header-lk #lk-nav .lk-circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    float: left;
+    background-image: url(../images/lk/balans.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative; }
+  #header-lk #lk-nav li:nth-child(2) .lk-circle {
+    background-image: url(../images/lk/active-dep.png); }
+  #header-lk #lk-nav li:nth-child(3) .lk-circle {
+    background-image: url(../images/lk/money.png); }
+  #header-lk #lk-nav li:nth-child(4) .lk-circle {
+    background-image: url(../images/lk/partners.png); }
+  #header-lk #lk-nav a {
+    font-family: 'ProximaNovaRegular', sans-serif;
+    font-size: 14px;
+    color: #333333;
+    line-height: 14px;
+    display: inline-block;
+    text-shadow: 0.5px 0 0 #333333;
+    vertical-align: middle;
+    margin-left: 7px; }
+  #header-lk #lk-nav a:hover {
+    color: #ff1515;
+    text-shadow: 0.5px 0 0 #ff1515; }
+  #header-lk #lk-nav .active-nav {
+    color: #ff1515;
+    text-shadow: 0.5px 0 0 #ff1515; }
+
+#lk-content {
+  margin-top: 22px; }
+  #lk-content .grid_3 {
+    padding-right: 20px;
+    box-sizing: border-box; }
+  #lk-content .left-menu {
+    height: 525px;
+    background-color: #1dbfcb; }
+    #lk-content .left-menu ul {
+      list-style-type: none; }
+      #lk-content .left-menu ul .image-menu {
+        width: 40px;
+        height: 35px;
+        background-image: url(../images/lk/cabin.png);
+        background-position: center left 12px;
+        background-repeat: no-repeat;
+        display: inline-block;
+        float: left;
+        margin-right: 12px; }
+      #lk-content .left-menu ul li {
+        width: 100%;
+        display: inline-block;
+        line-height: 35px;
+        float: left;
+        box-sizing: border-box;
+        width: 90%;
+        margin: 0 5%; }
+      #lk-content .left-menu ul a {
+        font-family: 'ProximaNovaBlack', sans-serif;
+        font-size: 14px;
+        color: #fff;
+        display: block;
+        line-height: 35px;
+        border-bottom: 1px solid #fff; }
+      #lk-content .left-menu ul .active-left-menu {
+        background-color: #d0df40;
+        margin: 0;
+        width: 100%;
+        height: 42px; }
+        #lk-content .left-menu ul .active-left-menu .image-menu {
+          height: 42px; }
+      #lk-content .left-menu ul .active-left-menu a {
+        color: #333;
+        padding-left: 10px;
+        border-bottom: none;
+        line-height: 42px; }
+      #lk-content .left-menu ul li:nth-child(2) .image-menu {
+        background-image: url(../images/lk/invest.png); }
+      #lk-content .left-menu ul li:nth-child(3) .image-menu {
+        background-image: url(../images/lk/plusbal.png); }
+      #lk-content .left-menu ul li:nth-child(4) .image-menu {
+        background-image: url(../images/lk/minusbal.png); }
+      #lk-content .left-menu ul li:nth-child(5) .image-menu {
+        background-image: url(../images/lk/referals.png); }
+      #lk-content .left-menu ul li:nth-child(6) .image-menu {
+        background-image: url(../images/lk/exit.png); }
+      #lk-content .left-menu ul li:nth-child(6) a {
+        border-bottom: none; }
+    #lk-content .left-menu .dpodown-menu li {
+      margin: 0;
+      width: 100%; }
+    #lk-content .left-menu .dpodown-menu a {
+      padding-left: 65px;
+      font-family: 'ProximaNovaRegular', sans-serif;
+      font-size: 14px;
+      color: #fff; }
+      #lk-content .left-menu .dpodown-menu a i {
+        font-family: 'ProximaNovaBlack', sans-serif;
+        font-style: normal; }
+  #lk-content .right-content {
+    background-color: #fff;
+    height: 525px;
+    padding-top: 26px;
+    box-sizing: border-box; }
+    #lk-content .right-content h2 {
+      margin-bottom: 5px; }
+    #lk-content .right-content .last-deposits {
+      margin-top: 30px; }
+
+#lk-footer {
+  width: 100%;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 0;
+  z-index: 10;
+  border-top: 1px solid #000;
+  box-sizing: border-box; }
+  #lk-footer .footer-lk-logo {
+    padding-top: 23px; }
+  #lk-footer .footer-copy {
+    text-align: center;
+    margin-top: 44px; }
+    #lk-footer .footer-copy span {
+      font-family: 'ProximaNovaRegular', sans-serif;
+      font-size: 16px;
+      color: #fff; }
+  #lk-footer .footer-social {
+    margin-top: 41px;
+    padding-left: 86px; }
+    #lk-footer .footer-social ul {
+      list-style-type: none; }
+      #lk-footer .footer-social ul li {
+        display: inline-block;
+        padding: 0 12px; }
+        #lk-footer .footer-social ul li img {
+          vertical-align: middle; }
+
+/***********************************************************Invest************************************************************/
+#lk-invest {
+  background-image: url("../images/lk/lk-bg2.jpg");
+  height: 1300px;
+  background-position: top center; }
+  #lk-invest .lk-overlay {
+    height: 1300px; }
+  #lk-invest .stage {
+    width: 100%;
+    height: 350px;
+    text-align: center; }
+    #lk-invest .stage span {
+      font-family: 'ProximaNovaRegular', sans-serif;
+      color: #dadada;
+      font-size: 18px;
+      display: block;
+      line-height: 22px; }
+  #lk-invest .stage-block-wrap {
+    float: none;
+    display: block;
+    width: 613px;
+    margin: 0 auto; }
+  #lk-invest .stage-block {
+    background-color: #fff;
+    width: 192px;
+    height: 278px;
+    padding: 29px 0	0 0;
+    box-sizing: border-box;
+    float: left;
+    margin-top: 6px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); }
+    #lk-invest .stage-block .stage-block-header {
+      background-color: #f4f4f4;
+      padding: 0 40px;
+      text-align: center; }
+      #lk-invest .stage-block .stage-block-header span {
+        font-family: 'ProximaNovaBlack', sans-serif;
+        color: #ff1515;
+        font-size: 15px;
+        text-transform: uppercase;
+        line-height: 15px;
+        padding-top: 5px;
+        padding-bottom: 12px; }
+      #lk-invest .stage-block .stage-block-header p {
+        font-family: 'ProximaNovaRegularItalic', sans-serif;
+        color: #343434;
+        font-size: 12px;
+        line-height: 12px;
+        padding-bottom: 1px; }
+        #lk-invest .stage-block .stage-block-header p i {
+          font-size: 18px; }
+    #lk-invest .stage-block .stage-block-content {
+      text-align: center;
+      padding-top: 24px; }
+      #lk-invest .stage-block .stage-block-content span {
+        font-family: 'ProximaNovaLight', sans-serif;
+        color: #ff1515;
+        font-size: 30px;
+        margin-top: 8px;
+        margin-bottom: 14px; }
+        #lk-invest .stage-block .stage-block-content span i {
+          font-size: 56px;
+          font-style: normal; }
+      #lk-invest .stage-block .stage-block-content p {
+        font-family: 'ProximaNovaRegularItalic', sans-serif;
+        color: #343434;
+        font-size: 12px; }
+    #lk-invest .stage-block .stage-block-footer {
+      margin: 4px 0 0 0;
+      text-align: center; }
+      #lk-invest .stage-block .stage-block-footer input {
+        border: 1px solid #e6e6e6;
+        width: 147px;
+        box-sizing: border-box;
+        height: 37px;
+        font-family: 'ProximaNovaRegular', sans-serif;
+        color: #343434;
+        font-size: 14px;
+        text-align: center;
+        margin-bottom: 8px; }
+      #lk-invest .stage-block .stage-block-footer button {
+        font-family: 'ProximaNovaRegular', sans-serif;
+        color: #ff1515;
+        font-size: 13px;
+        text-decoration: none;
+        border: 1px solid #ff1515;
+        background-color: #fff;
+        width: 147px;
+        height: 37px;
+        box-sizing: border-box;
+        cursor: pointer; }
+  #lk-invest .central-block {
+    border: 1px solid red;
+    width: 227px;
+    height: 308px;
+    background-image: url("../images/lk/central-lk.jpg");
+    background-position: center center;
+    background-repeat: no-repeat; }
+    #lk-invest .central-block .stage-block-header {
+      background-color: transparent;
+      padding-top: 14px; }
+    #lk-invest .central-block .stage-block-footer button {
+      background-color: #ff1515;
+      color: #fff; }
+  #lk-invest .side-block {
+    margin-top: 22px; }
+  #lk-invest .stage2 {
+    height: 347px;
+    margin-top: 5px; }
+    #lk-invest .stage2 .stage-block:nth-child(3) {
+      float: right; }
+    #lk-invest .stage2 .stage-block:nth-child(2) {
+      margin-left: 20px; }
+    #lk-invest .stage2 .side-block {
+      margin-top: 6px; }
+  #lk-invest .right-content-invest {
+    background-color: #fff;
+    padding: 31px 0 5px 0; }
+    #lk-invest .right-content-invest #active-deposit-invest {
+      margin-top: 16px; }
+  #lk-invest footer {
+    height: 92px; }
+
+/***********************************************************Balans************************************************************/
+.right-content-balans {
+  height: 525px;
+  background-color: #fff;
+  padding: 18px 0;
+  box-sizing: border-box; }
+  .right-content-balans .systems {
+    margin-top: 7px; }
+    .right-content-balans .systems span {
+      font-family: 'ProximaNovaRegular', sans-serif;
+      color: #333333;
+      font-size: 14px;
+      text-shadow: 0.5px 0 0 #333;
+      padding-left: 24px; }
+    .right-content-balans .systems .systems-wrap {
+      margin-top: 13px; }
+      .right-content-balans .systems .systems-wrap ul {
+        list-style-type: none;
+        text-align: center; }
+      .right-content-balans .systems .systems-wrap li {
+        width: 165px;
+        height: 50px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        background-image: url("../images/lk/bitcoin.png");
+        background-position: center center;
+        background-repeat: no-repeat;
+        display: inline-block;
+        margin-right: -4px;
+        margin: 0 1px; }
+        .right-content-balans .systems .systems-wrap li a {
+          width: 100%;
+          display: block;
+          height: 50px; }
+      .right-content-balans .systems .systems-wrap li:nth-child(2) {
+        background-image: url("../images/lk/perfect.png"); }
+      .right-content-balans .systems .systems-wrap li:nth-child(3) {
+        background-image: url("../images/lk/payeer2.png"); }
+      .right-content-balans .systems .systems-wrap li:nth-child(4) {
+        background-image: url("../images/lk/cash.png"); }
+  .right-content-balans .invest-block {
+    padding: 0 10px;
+    margin-top: 10px; }
+    .right-content-balans .invest-block input {
+      width: 480px;
+      height: 42px;
+      background-image: none;
+      background-color: #f4f4f4;
+      font-family: 'ProximaNovaRegular', sans-serif;
+      color: #333333;
+      font-size: 14px;
+      border: none;
+      text-shadow: 0.5px 0 0 #333;
+      float: left;
+      padding-left: 20px;
+      box-sizing: border-box; }
+    .right-content-balans .invest-block button {
+      width: 186px;
+      height: 42px;
+      border: none;
+      background-image: none;
+      background-color: #ff1515;
+      font-family: 'ProximaNovaRegular', sans-serif;
+      color: #fff;
+      font-size: 18px;
+      float: right; }
+    .right-content-balans .invest-block p {
+      font-family: 'ProximaNovaRegular', sans-serif;
+      color: #333;
+      font-size: 12px;
+      text-shadow: 0.5px 0 0 #333;
+      margin-top: 14px;
+      padding-left: 17px; }
+  .right-content-balans .history-paiment {
+    margin-top: 33px; }
+    .right-content-balans .history-paiment #history-payment {
+      margin-top: 15px; }
+
+/***********************************************************Referals************************************************************/
+.right-content-referals {
+  background-color: #fff;
+  height: 525px;
+  box-sizing: border-box;
+  padding: 26px 0; }
+  .right-content-referals .referals-block {
+    margin-top: 9px;
+    padding: 0 14px; }
+    .right-content-referals .referals-block span {
+      font-family: 'ProximaNovaRegular', sans-serif;
+      color: #333;
+      font-size: 14px;
+      text-shadow: 0.5px 0 0 #333;
+      display: block;
+      padding-left: 12px;
+      margin-bottom: 11px; }
+    .right-content-referals .referals-block p {
+      background-color: #f4f4f4;
+      display: inline-block;
+      font-family: 'ProximaNovaRegular', sans-serif;
+      color: #333;
+      font-size: 14px;
+      text-shadow: 0.5px 0 0 #333;
+      padding: 11px 45px 11px 19px;
+      box-sizing: border-box;
+      float: left;
+      margin-right: 13px; }
+    .right-content-referals .referals-block .copy {
+      background-color: #fff;
+      display: inline-block;
+      font-family: 'ProximaNovaRegular', sans-serif;
+      color: #ff1515;
+      font-size: 18px;
+      text-shadow: 0.5px 0 0 #ff1515;
+      padding: 7px 38px;
+      box-sizing: border-box;
+      border: 1px solid #ff1515; }
+    .right-content-referals .referals-block .ref-social-icons {
+      float: right;
+      margin-top: 4px; }
+      .right-content-referals .referals-block .ref-social-icons ul {
+        list-style-type: none; }
+      .right-content-referals .referals-block .ref-social-icons li {
+        display: inline-block; }
+  .right-content-referals .ref-table {
+    margin-top: 33px; }
+    .right-content-referals .ref-table #ref-page-table {
+      margin-top: 12px; }
+
+/***********************************************************Options************************************************************/
+.right-content-options {
+  background-color: #fff;
+  min-height: 525px;
+  box-sizing: border-box;
+  padding: 30px 80px 38px 80px; }
+  .right-content-options .password {
+    margin-top: 35px; }
+  .right-content-options #options-form, .right-content-options #password-form {
+    margin-top: 25px; }
+  .right-content-options .options-row, .right-content-options .password-row {
+    width: 460px;
+    margin-bottom: 20px; }
+    .right-content-options .options-row span, .right-content-options .password-row span {
+      font-family: 'ProximaNovaBlack', sans-serif;
+      color: #333;
+      font-size: 14px;
+      float: left;
+      line-height: 35px; }
+    .right-content-options .options-row input, .right-content-options .password-row input {
+      width: 300px;
+      height: 35px;
+      border: none;
+      background-image: none;
+      background-color: #f4f4f4;
+      font-family: 'ProximaNovaRegular', sans-serif;
+      color: #333;
+      font-size: 14px;
+      text-shadow: 0.5px 0 0 #333;
+      float: right;
+      padding-left: 69px;
+      box-sizing: border-box; }
+  .right-content-options .options-row:nth-child(4) {
+    margin-bottom: 12px; }
+  .right-content-options .password-row:nth-child(3) {
+    margin-bottom: 12px; }
+  .right-content-options button {
+    box-sizing: border-box;
+    width: 185px;
+    height: 40px;
+    background-image: none;
+    background-color: #fff;
+    border: 1px solid #ff1515;
+    font-family: 'ProximaNovaRegular', sans-serif;
+    color: #ff1515;
+    font-size: 18px;
+    display: block;
+    margin-left: 160px; }

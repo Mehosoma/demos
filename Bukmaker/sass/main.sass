@@ -246,7 +246,8 @@ header
 	.check-right
 		position: absolute
 		top: 0
-		left: 50%	
+		left: 50%
+		width: 50%				
 
 /***********************************************************Statistic*********************************************************/
 #statistic
@@ -257,11 +258,12 @@ header
 	background-repeat: no-repeat
 	text-align: center
 	.statistic-block	
-		width: 22%
+		width: 30%
 		text-align: center
 		margin-top: 167px
 		float: left
 		margin-left: 35px
+		box-sizing: border-box
 		.statistic-block-icon
 			width: 30%
 			height: 77px
@@ -323,7 +325,7 @@ header
 	.about-right
 		position: absolute
 		top: 86px
-		left: 50%
+		left: 50%		
 
 /***********************************************************BonusPlan*********************************************************/
 #bonus
@@ -331,18 +333,46 @@ header
 	width: 100%
 	height: 442px
 	background-position: center center
-	background-repeat: no-repeat
+	background-repeat: no-repeat	
 	.bonus-wrap
-		padding: 28px	
+		padding: 28px
+		width: 40%
+		float: left	
+		padding-left: 100px
+		box-sizing: border-box
+	.bonus-right		
+		text-align: center
+		padding-top: 100px		
+		h2
+			color: #fff
+			text-transform: none
+			font-size: 30px
+			line-height: 42px
+			padding-bottom: 30px			
+			i
+				font-size: 48px
+		span
+			font-size: 30px
+			color: #ff1515
+			font-family: 'ProximaNovaBlack', sans-serif
+			letter-spacing: 1px
+
+		p
+			padding-top: 30px
+			font-size: 30px
+			color: #fff
+			font-family: 'ProximaNovaBlack', sans-serif
+			letter-spacing: 1px
 	.bonus-block
 		background-color: #fff
-		width: 270px
-		margin: 0 auto	
+		width: 270px		
 		padding: 38px 0
+		border: 3px solid #ff1515
+		box-sizing: border-box
 		.bonus-block-header
 			background-color: #f4f4f4	
 			padding: 6px 40px
-			text-align: center
+			text-align: center			
 			span
 				font-family: 'ProximaNovaBlack', sans-serif
 				color: #ff1515
@@ -351,7 +381,7 @@ header
 			p
 				font-family: 'ProximaNovaRegularItalic', sans-serif
 				color: #343434
-				font-size: 14px
+				font-size: 18px
 				i
 					font-size: 24px
 		.bonus-block-content
@@ -529,7 +559,7 @@ header
 			p
 				font-family: 'ProximaNovaRegularItalic', sans-serif
 				color: #343434
-				font-size: 14px
+				font-size: 18px
 				i
 					font-size: 24px
 		.stage-block-content
@@ -546,7 +576,8 @@ header
 			p
 				font-family: 'ProximaNovaRegularItalic', sans-serif
 				color: #343434
-				font-size: 16px				
+				font-size: 20px
+				line-height: 24px						
 		.stage-block-footer
 			margin: 49px 0 0 0
 			text-align: center
@@ -674,12 +705,57 @@ header
 			padding-left: 25px
 
 /***********************************************************Response*********************************************************/	
-#response
-	text-align: center
+#response	
 	padding: 63px 0 93px 0
 	h2
 		text-align: center
 		margin-bottom: 15px
+	.response-video
+		position: relative
+		min-height: 360px
+		.video-block-wrap-resp
+			padding-top: 86px				
+		.video-block			
+			box-sizing: border-box
+			float: left	
+			span			
+				display: block
+				color: #343434				
+				font-family: 'ProximaNovaRegular', sans-serif
+				font-size: 16px
+				line-height: 18px
+				text-transform: uppercase
+				text-shadow: 0.5px 0 0 #343434	
+				text-align: left				
+		.video-block2
+			float: right
+			span			
+				display: block
+				color: #343434				
+				font-family: 'ProximaNovaRegular', sans-serif
+				font-size: 16px
+				line-height: 18px
+				text-transform: uppercase
+				text-shadow: 0.5px 0 0 #343434	
+				text-align: left					
+		#response-main
+			position: absolute
+			width: 700px
+			height: 350px
+			margin: auto
+			right: 0
+			left: 0
+			top: 0			
+			span			
+				display: block
+				color: #343434				
+				font-family: 'ProximaNovaRegular', sans-serif
+				font-size: 16px
+				line-height: 18px
+				text-transform: uppercase
+				text-shadow: 0.5px 0 0 #343434	
+				text-align: left		
+			
 
 /***********************************************************Partners*********************************************************/		
 #partners
@@ -703,8 +779,10 @@ header
 
 /***********************************************************But2*********************************************************/	
 #but2
+	width: 100%
 	padding: 83px 0
 	text-align: center
+	background-color: #f1f1f1
 	span
 		font-family: 'ProximaNovaRegular', sans-serif
 		color: #343434
@@ -1377,6 +1455,35 @@ footer
 		line-height: 30px
 		padding: 0 100px
 		letter-spacing: -1px
+.partners-page-tarifs
+	#tarifs
+		h2
+			margin-bottom: 0px
+			padding-top: 15px
+		.stage-block-content
+			span
+				line-height: 30px
+				margin: 0				
+				i
+					line-height: 72px				
+			p
+				margin-top: 10px				
+			.procent
+				padding-top: 15px
+		.stage-block-footer
+			margin-top: 29px
+		#second-stage
+			margin-top: 15px
+		.referal-program-block
+			text-align: center
+			padding-top: 15px
+			span
+				color: #fff
+				font-family: 'ProximaNovaBlack', sans-serif
+				font-size: 36px
+				line-height: 40px
+				i
+					color: #ff1515
 
 /***********************************************************ResponsePage************************************************************/
 #mainbanner-other-response
@@ -1458,7 +1565,7 @@ footer
 			right: 0
 			left: 0
 			top: 35px
-			display: block
+			display: none
 			-moz-transition: all 0.5s ease-out
 			-o-transition: all 0.5s ease-out
 			-webkit-transition: all 0.5s ease-out
