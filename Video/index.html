@@ -5,7 +5,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<html lang="ru">
 
-	<title>MaxWi-Fi</title>
+	<title>Video</title>
 	<meta name="Главная" content="">
 	<meta name="keywords" content=""/>
 	
@@ -19,6 +19,8 @@
 	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.css">	
 	<link rel="stylesheet" type="text/css" href="libs/magnific/magnific-popup.css"/>
 	<link rel="stylesheet" type="text/css" href="libs/slider/lightslider.css"/>
+	<link rel="stylesheet" type="text/css" href="libs/swiper/css/swiper.css"/>
+
 
 	<link rel="stylesheet" href="css/font-awesome.css">
 	<link rel="stylesheet" href="css/fonts.css">
@@ -57,7 +59,7 @@
 				</div>
 				<div class="col-lg-2 col-xs-12">
 					<div class="callback">
-						<a href="">Обратный звонок</a>
+						<a href="#hidden_form" class="popup_form">Обратный звонок</a>
 					</div>
 				</div>
 			</div>
@@ -159,7 +161,7 @@
 							<img src="img/benefits__quarantee.png" alt="benefits-icon">
 						</div>
 						<span>6 месяцев</span>
-						<p>техническое поддержки после монтажа</p>
+						<p>технической поддержки после монтажа</p>
 					</div>
 				</div>
 				<div class="col-lg-4">
@@ -224,41 +226,55 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-lg-4">
-					<div class="decisions-block clearfix">
-						<div class="decisions-block-image">
-							<i class="fa fa-lock" aria-hidden="true"></i>
+				<div class="decisions-block-wrap">
+					<div class="col-lg-4">
+						<div class="decisions-left">
+							<div class="decisions-block clearfix">
+								<div class="decisions-block-text">
+									<span>Безопасность</span>						
+									<p>Обеспечивает безопасность объектов охраны</p>
+									<div class="decisions-block-image">
+									<i class="fa fa-lock" aria-hidden="true"></i>
+									</div>	
+								</div>											
+							</div>
+							<div class="decisions-block clearfix">
+								<div class="decisions-block-text">
+									<span>Эффективность</span>						
+									<p>Повышает эффективность производства</p>
+									<div class="decisions-block-image">
+										<i class="fa fa-line-chart" aria-hidden="true"></i>
+									</div>
+								</div>
+							</div>
 						</div>
-						<span>Безопасность</span>						
-						<p>Обеспечивает безопасность объектов охраны</p>						
 					</div>
-					<div class="decisions-block">
-						<div class="decisions-block-image">
-							<i class="fa fa-line-chart" aria-hidden="true"></i>
+					<div class="col-lg-4">
+						<div class="decisions-centr-image">
+							<img src="img/decisions-cam.png">
 						</div>
-						<span>Эффективность</span>						
-						<p>Повышает эффективность производства</p>						
 					</div>
-				</div>
-				<div class="col-lg-4">
-					<div class="decisions-centr-image">
-						<img src="img/decisions-cam.png">
-					</div>
-				</div>
-				<div class="col-lg-4">
-					<div class="decisions-block">
-						<div class="decisions-block-image">
-							<i class="fa fa-clock-o" aria-hidden="true"></i>
+					<div class="col-lg-4">
+						<div class="decisions-right">
+							<div class="decisions-block clearfix">
+								<div class="decisions-block-text">
+									<span>Снижение издержек</span>						
+									<p>Оптимизация процессов работы</p>
+									<div class="decisions-block-image">
+										<i class="fa fa-clock-o" aria-hidden="true"></i>
+									</div>
+								</div>
+							</div>
+							<div class="decisions-block clearfix">
+								<div class="decisions-block-text">
+									<span>Без воровства</span>						
+									<p>Предотвращает воровство в компании</p>
+									<div class="decisions-block-image">
+										<i class="fa fa-ban" aria-hidden="true"></i>
+									</div>
+								</div>
+							</div>
 						</div>
-						<span>Снижение издержек</span>						
-						<p>Оптимизация процессов работы</p>						
-					</div>
-					<div class="decisions-block">
-						<div class="decisions-block-image">
-							<i class="fa fa-ban" aria-hidden="true"></i>
-						</div>
-						<span>Без воровства</span>						
-						<p>Предотвращает воровство в компании</p>						
 					</div>
 				</div>
 			</div>
@@ -281,10 +297,10 @@
 						</div>
 						<div class="cards-block-image">
 							<img src="img/cards__img-flat.jpg">
-							<img src="img/cards__hd.png">
+							<img src="img/cards__hd.png" class="image-hd">
 						</div>
 						<div class="cards-block-footer">
-							<a href="Заказать"></a>
+							<a href="">Заказать</a>
 							<p>от 4000.-</p>
 						</div>
 					</div>
@@ -296,10 +312,10 @@
 						</div>
 						<div class="cards-block-image">
 							<img src="img/cards__img-houses.jpg">
-							<img src="img/cards__hd.png">
+							<img src="img/cards__hd.png" class="image-hd">
 						</div>
 						<div class="cards-block-footer">
-							<a href="Заказать"></a>
+							<a href="">Заказать</a>
 							<p>от 6000.-</p>
 						</div>
 					</div>
@@ -311,11 +327,11 @@
 						</div>
 						<div class="cards-block-image">
 							<img src="img/cards__img-shops.jpg">
-							<img src="img/cards__hd.png">
-							<img src="img/cards-best.png">
+							<img src="img/cards__hd.png" class="image-hd">
+							<img src="img/cards-best.png" class="cards-best">
 						</div>
 						<div class="cards-block-footer">
-							<a href="Заказать"></a>
+							<a href="">Заказать</a>
 							<p>от 12000.-</p>
 						</div>
 					</div>
@@ -327,10 +343,10 @@
 						</div>
 						<div class="cards-block-image">
 							<img src="img/cards__img-office.jpg">
-							<img src="img/cards__hd.png">							
+							<img src="img/cards__hd.png" class="image-hd">							
 						</div>
 						<div class="cards-block-footer">
-							<a href="Заказать"></a>
+							<a href="">Заказать</a>
 							<p>от 15000.-</p>
 						</div>
 					</div>
@@ -342,10 +358,10 @@
 						</div>
 						<div class="cards-block-image">
 							<img src="img/cards__img-auto.jpg">
-							<img src="img/cards__hd.png">							
+							<img src="img/cards__hd.png" class="image-hd">							
 						</div>
 						<div class="cards-block-footer">
-							<a href="Заказать"></a>
+							<a href="">Заказать</a>
 							<p>от 18000.-</p>
 						</div>
 					</div>
@@ -357,10 +373,10 @@
 						</div>
 						<div class="cards-block-image">
 							<img src="img/cards__img-building.jpg">
-							<img src="img/cards__hd.png">							
+							<img src="img/cards__hd.png" class="image-hd">							
 						</div>
 						<div class="cards-block-footer">
-							<a href="Заказать"></a>
+							<a href="">Заказать</a>
 							<p>от 23000.-</p>
 						</div>
 					</div>
@@ -380,11 +396,11 @@
 			<div class="row">
 				<div class="col-lg-12">
 					<div class="sets-choice">
-						<ul>
-							<li>Easy</li>
-							<li>House</li>
-							<li><img src="img/sets__best.png">Pro</li>
-							<li>Expert</li>
+						<ul class="clearfix">
+							<li><a href="">Easy</a></li>
+							<li><a href="">House</a></li>
+							<li><a href=""><img src="img/sets__best.png">Pro</a></li>
+							<li><a href="">Expert</a></li>
 						</ul>	
 					</div>
 				</div>
@@ -397,23 +413,23 @@
 				</div>
 				<div class="col-lg-6">
 					<div class="sets-card-desc">
-						<div class="sets-card-desc-top">
-							<div class="sets-type"></div>
+						<div class="sets-card-desc-top clearfix">
+							<div class="sets-type"><span>Expert</span></div>
 							<div class="sets-price">
 								<span>59 900 руб.</span>
-								<p>Цена без скидки: 69 900 руб.</p>
+								<p>Цена без скидки: <strike>69 900 руб.</strike></p>
 							</div>
 						</div>
 						<div class="sets-card-desc-middle">
 							<span>В комплект входит:</span>
 							<ul>
-								<li><i class="fa fa-question-circle" aria-hidden="true"></i><p>Цветная купольная видеокамера SVC-D16_ _ _ _x10</p></li>
-								<li><i class="fa fa-question-circle" aria-hidden="true"></i><p>Цветная уличная видеокамера с фиксированным объективом SVC-S121_ _ _ _x7</p></li>
-								<li><i class="fa fa-question-circle" aria-hidden="true"></i><p>Видеорегистратор SVR-8325AH_ _ _ _x4</p></li>
+								<li><i class="fa fa-question-circle" aria-hidden="true"></i><p>Цветная купольная видеокамера SVC-D16_ _ _x10</p></li>
+								<li><i class="fa fa-question-circle" aria-hidden="true"></i><p>Цветная уличная видеокамера с<br> фиксированным объективом SVC-S121_ _ _ _ _ _x7</p></li>
+								<li><i class="fa fa-question-circle" aria-hidden="true"></i><p>Видеорегистратор SVR-8325AH_ _ _ _ _ _ _ _ _ _ _x4</p></li>
 							</ul>
 						</div>
 						<div class="sets-card-desc-footer">
-							<a href="">Заказать</a>
+							<a href="">Заказать комплект</a>
 						</div>
 					</div>
 				</div>
@@ -447,25 +463,33 @@
 
 	<!--Scheme-->
 	<section class="scheme">
+		<div class="dotted">
+			<img src="img/doted.png">	
+		</div>
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
-					<h2>Схема <strong>Работы</strong></h2>					
+					<h2>Схема <strong>Работы</strong></h2>								
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-lg-12">
+				<div class="col-lg-6">					
 					<div class="scheme-block">
-						<div class="scheme-block-desc">
+						<div class="scheme-block-desc first-block">
 							<span>Заявка на сайте</span>
 							<a href="">Оставить заявку</a>
 						</div>
 						<div class="scheme-block-img">
 							<img src="img/scheme__icon-order.png">
 						</div>
-					</div>
+						<div class="sheme-circle">
+							<span>1</span>
+						</div>
+					</div>					
 				</div>
-				<div class="col-lg-12">
+			</div>
+			<div class="row">
+				<div class="col-lg-6 col-lg-offset-6">
 					<div class="scheme-block">
 						<div class="scheme-block-desc">
 							<span>Выезд специалиста</span>
@@ -474,19 +498,29 @@
 						<div class="scheme-block-img">
 							<img src="img/scheme__icon-person.png">
 						</div>
+						<div class="sheme-circle">
+							<span>2</span>
+						</div>
 					</div>
 				</div>
-				<div class="col-lg-12">
+			</div>
+			<div class="row">
+				<div class="col-lg-6">
 					<div class="scheme-block">
-						<div class="scheme-block-desc">
+						<div class="scheme-block-desc third-deck">
 							<span>Установка систем</span>							
 						</div>
 						<div class="scheme-block-img">
 							<img src="img/scheme__icon-install.png">
 						</div>
+						<div class="sheme-circle">
+							<span>3</span>
+						</div>
 					</div>
 				</div>
-				<div class="col-lg-12">
+			</div>
+			<div class="row">
+				<div class="col-lg-6 col-lg-offset-6">
 					<div class="scheme-block">
 						<div class="scheme-block-desc">
 							<span>гарантийное обслуживание</span>
@@ -495,23 +529,109 @@
 						<div class="scheme-block-img">
 							<img src="img/scheme__icon-quarantee.png">
 						</div>
+						<div class="sheme-circle">
+							<span>4</span>
+						</div>
 					</div>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-lg-12">
-					<a href="">Сделать заказ</a>
+					<div class="button-scheme">
+						<a href="">Сделать заказ</a>
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 
 	<!--FAQ-->
-	<section class="faq">
+	<section class="faq" style="background-image: url('img/faq__back.jpg');">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
-					<h2>Вопросы и <strong>ответы</strong></h2>					
+					<div class="acc-wrap">
+						<h2>Вопросы и <strong>ответы</strong></h2>
+						<div class="panel-group" id="accordion">
+						  <!-- 1 панель -->
+							<div class="panel panel-default">
+						    <!-- Заголовок 1 панели -->
+						    	<div class="panel-heading">
+						      		<h4 class="panel-title">
+						        		<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Сколько стоит дом?</a>
+						        		<img src="img/arrow-down.png" class="accordion-icon">
+						      		</h4>
+						    	</div>
+								<div id="collapseOne" class="panel-collapse collapse in">
+								    <!-- Содержимое 1 панели -->
+								    <div class="panel-body">
+								    	<p>Грустный реторический вопрос скатился по его щеке и он продолжил свой путь. По дороге встретил текст рукопись. Грустный реторический вопрос скатился по его щеке и он продолжил свой путь. По дороге встретил текст рукопись.</p>
+								    </div>
+								</div>
+							</div>
+							 <!-- 2 панель -->
+							<div class="panel panel-default">
+							<!-- Заголовок 2 панели -->
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Где можно посмотреть готовые работы?</a>
+										<img src="img/arrow-down.png" class="accordion-icon">
+									</h4>
+								</div>
+								<div id="collapseTwo" class="panel-collapse collapse">
+								<!-- Содержимое 2 панели -->
+									<div class="panel-body">
+										<p>Грустный реторический вопрос скатился по его щеке и он продолжил свой путь. По дороге встретил текст рукопись. Грустный реторический вопрос скатился по его щеке и он продолжил свой путь. По дороге встретил текст рукопись.</p>
+									</div>
+								</div>
+							</div>
+							<div class="panel panel-default">
+							<!-- Заголовок 3 панели -->
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Сколько стоит отдельный проект без монтажа?</a>
+										<img src="img/arrow-down.png" class="accordion-icon">
+									</h4>
+								</div>
+								<div id="collapseThree" class="panel-collapse collapse">
+								<!-- Содержимое 3 панели -->
+									<div class="panel-body">
+										<p>Грустный реторический вопрос скатился по его щеке и он продолжил свой путь. По дороге встретил текст рукопись. Грустный реторический вопрос скатился по его щеке и он продолжил свой путь. По дороге встретил текст рукопись.</p>
+									</div>
+								</div>
+							</div>
+							<div class="panel panel-default">
+							<!-- Заголовок 3 панели -->
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordion" href="#collapsefour">Где можно посмотреть готовые работы?</a>
+										<img src="img/arrow-down.png" class="accordion-icon">
+									</h4>
+								</div>
+								<div id="collapsefour" class="panel-collapse collapse">
+								<!-- Содержимое 3 панели -->
+									<div class="panel-body">
+										<p>Грустный реторический вопрос скатился по его щеке и он продолжил свой путь. По дороге встретил текст рукопись. Грустный реторический вопрос скатился по его щеке и он продолжил свой путь. По дороге встретил текст рукопись.</p>
+									</div>
+								</div>
+							</div>
+							<div class="panel panel-default">
+							<!-- Заголовок 3 панели -->
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordion" href="#collapsefive">Где можно посмотреть готовые работы?</a>
+										<img src="img/arrow-down.png" class="accordion-icon">
+									</h4>
+								</div>
+								<div id="collapsefive" class="panel-collapse collapse">
+								<!-- Содержимое 3 панели -->
+									<div class="panel-body">
+										<p>Грустный реторический вопрос скатился по его щеке и он продолжил свой путь. По дороге встретил текст рукопись. Грустный реторический вопрос скатился по его щеке и он продолжил свой путь. По дороге встретил текст рукопись.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -525,11 +645,38 @@
 					<h2>Наши <strong>партнеры</strong></h2>					
 				</div>
 			</div>
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<img src="img/partners__subway.png" alt="week-slider">
+							</div>
+							<div class="swiper-slide">
+								<img src="img/partners__telt2.png" alt="week-slider">
+							</div>
+							<div class="swiper-slide">
+								<img src="img/partners__zaim.png" alt="week-slider">
+							</div>	
+							<div class="swiper-slide">
+								<img src="img/partners__guver.png" alt="week-slider">
+							</div>	
+							<div class="swiper-slide">
+								<img src="img/partners__dodo.png" alt="week-slider">
+							</div>						
+						</div>
+						<div class="swiper-pagination"></div>						
+						<div class="swiper-button-prev"></div>					
+						<div class="swiper-button-next"></div>
+					</div>
+					</div>					
+				</div>
+			</div>
 		</div>
 	</section>
 
 	<!--Form-->
-	<section class="form-q">
+	<section class="form-q" style="background-image: url('img/form__back.jpg');">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
@@ -548,7 +695,7 @@
 							<a href="mailto:sales@lookathome.me">sales@lookathome.me</a>
 						</div>
 						<div class="form-contacts-block">
-							<span>наши реквизиты</span>
+							<span>Наши реквизиты</span>
 							<i class="fa fa-file-pdf-o" aria-hidden="true"></i><a href="">Скачать реквизиты</a>
 						</div>
 					</div>
@@ -568,39 +715,52 @@
 		</div>
 	</section>
 
+	<!--Order-->
 	<footer>
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-4">
-					<div class="copy-block">
-						<span>2017 project</span>
-						<span>Политика конфиденциальности</span>
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+					<div class="copy">
+						<span>2017 Помощник</span>
+						<span><a href="">Политика конфиденциальности</a></span>
 					</div>
 				</div>
-				<div class="col-lg-4">
-					<div class="social-icons">
+				<div class="col-lg-5 col-md-5 col-sm-5 col-xs-6">
+					<div class="media">
 						<ul>
-							<li><i class="fa fa-vk" aria-hidden="true"></i></li>
-							<li><i class="fa fa-instagram" aria-hidden="true"></i></li>
-							<li><i class="fa fa-google-plus" aria-hidden="true"></i></li>
-							<li><i class="fa fa-facebook-official" aria-hidden="true"></i></li>
+							<li><a href=""><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+							<li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+							<li><a href=""><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+							<li><a href=""><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
 						</ul>
 					</div>
 				</div>
-				<div class="col-lg-4">
-					<div class="footer-contacts">
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+					<div class="contacts">
 						<span>8(921)386-67-12</span>
-						<a href="">Заказать звонок</a>
+						<a href="#hidden_form" class="popup_form">Заказать звонок</a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</footer>
 
+	<div class="hidden">
+		<form id="hidden_form" method="post">			
+			<span>Форма обратной связи</span>
+			<div class="form-field">
+				<input type="text" name="fio" placeholder="Имя" required="">
+				<input type="text" name="phone" placeholder="Телефон" required="">
+				<textarea name="form-c" placeholder="Вопрос" required=""></textarea>
+				<button type="submit" class="hid-form-but">Отправить</button>
+			</div>
+		</form>
+	</div>
+
 	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
 	<script src="libs/bootstrap/js/bootstrap.js"></script>
 	<script src="libs/slider/lightslider.min.js"></script>
-	<script src="libs/cole/bootstrap-colequalizer.js"></script>
+	<script src="libs/swiper/js/swiper.jquery.js"></script>
 	<script src="libs/magnific/jquery.magnific-popup.js"></script>
 	<script src="js/common.js"></script>
 	

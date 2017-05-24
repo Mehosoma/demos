@@ -16,4 +16,21 @@ $('#goToNextSlide').on('click', function () {
     slider.goToNextSlide();
 });
 
+
+var mySwiper = new Swiper('.swiper-container', {
+    speed: 400,
+    spaceBetween: 100,
+    slidesPerView: 5,
+    pagination: '.swiper-pagination',
+    loop: true,
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+});   
+
+
+$(document).ready(function(){
+    $(".popup_form").magnificPopup();
+});
+
+
 	

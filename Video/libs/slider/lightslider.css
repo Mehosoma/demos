@@ -206,6 +206,43 @@
     transition: opacity 0.35s linear 0s; 
     margin-left: -40px;  
 }
+
+#goToNextSlide1{
+    width: 21px;
+    height: 40px;
+    position: absolute;
+    background-image: url('arrow-red__right.png');
+    background-position: center center; 
+    background-repeat: no-repeat;
+    right: 2%;
+    top: 166px;
+    border: none;   
+    background-color: transparent;  
+    opacity: 0.5;
+    -webkit-transition: opacity 0.35s linear 0s;
+    transition: opacity 0.35s linear 0s;     
+    margin-right: -40px;  
+}
+
+#goToPrevSlide1{
+    width: 21px;
+    height: 40px;
+    position: absolute;
+    background-image: url('arrow-red__left.png');
+    background-position: center center; 
+    background-repeat: no-repeat;
+    left: 2%;
+    top: 166px;
+    border: none;   
+    background-color: transparent;  
+    opacity: 0.5;
+    -webkit-transition: opacity 0.35s linear 0s;
+    transition: opacity 0.35s linear 0s; 
+    margin-left: -40px;  
+}
+
+
+
 .lSAction > a.disabled {
     pointer-events: none;
 }
