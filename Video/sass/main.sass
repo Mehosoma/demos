@@ -119,11 +119,10 @@ h1
 	strong		
 		color: #f87e47
 	i
-		font-family: 'EmojiOneColor', sans-serif
-	i:after
-		content: "\1F44D"
-		font-style: normal
-		border: none				
+		margin-left: 10px
+		img
+			margin-bottom: 10px		
+
 
 .cat-left, .cat-right
 	ul
@@ -312,6 +311,7 @@ h1
 		color: #000
 		text-shadow: 1px 0 0 #000
 		padding-left: 96px
+		position: relative
 .video-phone
 	width: 100%
 	height: 338px
@@ -327,8 +327,37 @@ h1
 	margin-right: 88px
 	padding-top: 27px
 
-.lSSlideOuter .lSPager
-	margin-top: 20px!important
+
+.owl-next
+	position: absolute
+	width: 21px
+	height: 40px
+	background-image: url('../img/arrow-red__right.png')!important
+	top: 189px
+	right: 0
+	cursor: pointer
+	z-index: 100
+	margin-right: -20px
+.owl-next:hover
+	opacity: 0.7
+.owl-prev
+	position: absolute
+	top: 189px
+	width: 21px
+	height: 40px
+	background-image: url('../img/arrow-red__left.png')!important	
+	left: 0
+	margin-left: -20px
+	cursor: pointer
+
+.owl-prev:hover
+	opacity: 0.7
+
+.owl-dot
+	span
+		padding-left: 0px
+
+
 
 /*****************************************************Decisions**************************************************/
 .decisions
@@ -426,6 +455,7 @@ h1
 	height: 200px
 	position: relative
 	margin-bottom: 23px
+	box-shadow: 0 0 20px rgba(0,0,0,0.3)
 	img
 		width: 100%
 		height: 200px
@@ -769,6 +799,7 @@ h1
 		font-family: 'PT Sans', sans-serif
 		font-size: 30px
 		color: #bf5d31
+		display: block
 .panel-body
 	p	
 		font-family: 'GothamProRegular', sans-serif

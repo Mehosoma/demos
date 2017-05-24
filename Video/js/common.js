@@ -1,20 +1,3 @@
-var slider = $('#video-slider').lightSlider({
-        item: 1,
-        autoWidth: true,       
-        slideMove: 1, // slidemove will be 1 if loop is true
-        slideMargin: 0,
-        loop: true,
-        controls: true,
-        prevHtml: '',
-        nextHtml: ''
-});
-
-$('#goToPrevSlide').on('click', function () {
-    slider.goToPrevSlide();
-});
-$('#goToNextSlide').on('click', function () {
-    slider.goToNextSlide();
-});
 
 
 var mySwiper = new Swiper('.swiper-container', {
@@ -54,24 +37,31 @@ $(document).ready(function(){
 
 
 $(document).ready(function() {
-  $('#goToPrevSlide').on('click', function() {
-    
-    $('.play-main').each(function(){
-        var el_src = $(this).attr("src");
-        $(this).attr("src",el_src);
-      });   
-	});
+  $('.owl-carousel').owlCarousel({
+        items:1,
+        merge:true,
+        loop:true,
+        margin:10,
+        video:true,
+        videoWidth: 500,
+        videoHeight: 280,
+        lazyLoad:true,
+        center:false,
+        nav: true,
+        dots: true,       
+        navContainer: '.slider-arrow',
+        responsive:{
+            480:{
+                items:1
+            },
+            600:{
+                items:1
+            }
+        }
+    })
 });
 
-$(document).ready(function() {
-  $('#goToNextSlide').on('click', function() {
-    
-    $('.play-main').each(function(){
-        var el_src = $(this).attr("src");
-        $(this).attr("src",el_src);
-      });
-    });
-});
+
 
 
  $(document).ready(function(){
