@@ -446,7 +446,8 @@ h1 {
   width: 280px;
   border-radius: 5px;
   margin: 0 auto;
-  margin-bottom: 75px; }
+  margin-bottom: 75px;
+  overflow: hidden; }
 
 .cards-block-header span {
   font-family: 'GothamProBlack', sans-serif;
@@ -1050,9 +1051,10 @@ footer {
     margin-top: 14px; }
 
 .hidden_form2 {
+  width: 790px;
   background-color: #fff;
   text-align: center;
-  padding: 46px 20px;
+  padding: 46px 0;
   margin: 60px 290px;
   position: relative; }
   .hidden_form2 h3 {
@@ -1060,10 +1062,12 @@ footer {
     font-size: 24px;
     line-height: 29px;
     color: #f87e47;
-    text-align: left; }
+    text-align: left;
+    padding: 0 45px; }
 
 .order-descr {
-  margin-top: 68px; }
+  margin-top: 68px;
+  padding: 0 45px; }
   .order-descr img {
     float: left;
     margin-right: 28px; }
@@ -1073,12 +1077,12 @@ footer {
     color: #000;
     text-align: left;
     display: block;
-    width: 60%;
     margin-top: 45px;
     letter-spacing: 1px; }
 
 .order-table {
-  margin-top: 68px; }
+  margin-top: 68px;
+  padding: 0 45px; }
   .order-table p {
     font-family: 'Open Sans', sans-serif;
     font-size: 22px;
@@ -1099,29 +1103,31 @@ footer {
     .order-table table tr td:nth-child(1) {
       width: 400px; }
 
-.order-video span {
-  display: block;
-  text-align: left;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 22px;
-  color: #000;
-  font-weight: 700;
-  margin: 40px 0; }
-
-.order-video iframe {
-  margin-bottom: 120px;
-  text-align: left;
-  display: block; }
+.order-video {
+  padding: 0 45px; }
+  .order-video span {
+    display: block;
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+    color: #000;
+    font-weight: 700;
+    margin: 40px 0; }
+  .order-video iframe {
+    text-align: left;
+    display: block;
+    margin-bottom: 40px; }
 
 .order-footer {
   display: block;
   text-align: left;
   font-family: 'Open Sans', sans-serif;
   font-size: 22px;
-  color: #000; }
+  color: #000;
+  background-color: #fbfbfb;
+  padding: 50px 45px 0 45px; }
   .order-footer span {
     display: block;
-    width: 60%;
     letter-spacing: 2px;
     margin-bottom: 30px; }
   .order-footer a {
