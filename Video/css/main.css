@@ -490,6 +490,9 @@ h1 {
     border-left: none;
     width: 193px;
     position: relative; }
+  .sets-choice .active-link {
+    background-color: #f87e47;
+    color: #fff; }
   .sets-choice li:hover {
     background-color: #f87e47; }
   .sets-choice li:hover a {
