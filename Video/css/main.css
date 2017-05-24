@@ -263,7 +263,8 @@ h1 {
     padding-top: 5px; }
   .smeta .smeta-content {
     float: left;
-    margin-left: 32px; }
+    margin-left: 32px;
+    text-align: left; }
   .smeta span {
     font-family: 'GothamProBlack', sans-serif;
     font-size: 20px;
@@ -1016,6 +1017,91 @@ footer {
     color: #fff;
     text-transform: uppercase;
     margin-top: 14px; }
+
+.hidden_form2 {
+  background-color: #fff;
+  text-align: center;
+  padding: 46px 20px;
+  margin: 60px 290px;
+  position: relative; }
+  .hidden_form2 h3 {
+    font-family: 'GothamProBlack', sans-serif;
+    font-size: 24px;
+    line-height: 29px;
+    color: #f87e47;
+    text-align: left; }
+
+.order-descr {
+  margin-top: 68px; }
+  .order-descr img {
+    float: left;
+    margin-right: 28px; }
+  .order-descr span {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #000;
+    text-align: left;
+    display: block;
+    width: 60%;
+    margin-top: 45px;
+    letter-spacing: 1px; }
+
+.order-table {
+  margin-top: 68px; }
+  .order-table p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+    color: #000;
+    text-align: left;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 40px; }
+  .order-table table {
+    text-align: left; }
+    .order-table table td {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 16px;
+      color: #000;
+      padding: 5px 0; }
+      .order-table table td strong {
+        font-weight: 700; }
+    .order-table table tr td:nth-child(1) {
+      width: 400px; }
+
+.order-video span {
+  display: block;
+  text-align: left;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 22px;
+  color: #000;
+  font-weight: 700;
+  margin: 40px 0; }
+
+.order-video iframe {
+  margin-bottom: 120px;
+  text-align: left;
+  display: block; }
+
+.order-footer {
+  display: block;
+  text-align: left;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 22px;
+  color: #000; }
+  .order-footer span {
+    display: block;
+    width: 60%;
+    letter-spacing: 2px;
+    margin-bottom: 30px; }
+  .order-footer a {
+    display: inline-block;
+    font-size: 16px;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: #f87e47;
+    letter-spacing: 2px;
+    padding: 5px 10px;
+    border-radius: 5px; }
 
 .hidden {
   display: none; }
