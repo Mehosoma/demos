@@ -99,7 +99,7 @@
     transition: all 0.5s linear 0s;
 }
 .lSSlideOuter .lSPager.lSpg > li:hover a, .lSSlideOuter .lSPager.lSpg > li.active a {
-    background-color: #428bca;
+    background-color: #f87e47;
 }
 .lSSlideOuter .media {
     opacity: 0.8;
@@ -181,7 +181,7 @@
     background-position: center center; 
     background-repeat: no-repeat;
     right: 2%;
-    top: 166px;
+    top: 190px;
     border: none;   
     background-color: transparent;  
     opacity: 0.5;
@@ -198,7 +198,7 @@
     background-position: center center; 
     background-repeat: no-repeat;
     left: 2%;
-    top: 166px;
+    top: 190px;
     border: none;   
     background-color: transparent;  
     opacity: 0.5;
