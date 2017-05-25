@@ -1,16 +1,3 @@
-
-
-var mySwiper = new Swiper('.swiper-container', {
-    speed: 400,
-    spaceBetween: 100,  
-    slidesPerView: 4,
-    pagination: '.swiper-pagination',
-    loop: true,
-    nextButton: '.swiper-button-next',
-    prevButton: '.swiper-button-prev',   
-});   
-
-
 $(document).ready(function(){
     $(".popup_form").magnificPopup();
     $('.col-eq').colequalizer(); 
@@ -51,14 +38,96 @@ $(document).ready(function() {
         dots: true,       
         navContainer: '.slider-arrow',
         responsive:{
-            480:{
-                items:1
+        	320:{
+                items:1,
+                videoWidth: 290,
+                videoHeight: 200,
             },
-            600:{
-                items:1
-            }
+
+            480:{
+                items:1,
+                
+                videoHeight: 250,
+            },
+            700:{
+                items:1,
+              
+                videoHeight: 300,
+            },
+            
+            768:{
+                items:1,
+              	videoWidth: 372,
+                videoHeight: 239,  
+            },
+
+             1200:{
+                items:1,
+              	videoWidth: 500,
+                videoHeight: 280,  
+            },
         }
     })
+});
+
+
+// Slider
+// Slider
+var slider = $('#lightSlider').lightSlider({
+    controls: false,
+    loop: true,
+    item: 4,
+    slideMove: 1,
+    responsive : [
+            {
+                breakpoint:1500,
+                settings: {
+                    item:4,
+                    slideMove:1,
+                    
+                  }
+            },
+
+            {
+                breakpoint: 1200,
+                settings: {
+                    item:4,
+                    slideMove:1,
+                    
+                  }
+            },
+
+            {
+                breakpoint:992,
+                settings: {
+                    item:2,
+                    slideMove:1,
+                                       
+                  }
+            },
+            {
+                breakpoint:768,
+                settings: {
+                    item:1,
+                    slideMove:1,
+                                     
+                  }
+            },
+            {
+                breakpoint:480,
+                settings: {
+                    item:1,
+                    slideMove:1,                   
+                  
+                  }
+            }
+        ]        
+});
+$('#goToPrevSlide').on('click', function () {
+    slider.goToPrevSlide();
+});
+$('#goToNextSlide').on('click', function () {
+    slider.goToNextSlide();
 });
 
 

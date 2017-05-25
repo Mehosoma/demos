@@ -174,14 +174,14 @@
     left: 10px;
 }
 #goToNextSlide{
-    width: 21px;
+    width: 25px;
     height: 40px;
     position: absolute;
-    background-image: url('arrow-red__right.png');
+    background-image: url('arrow-black__right.png');
     background-position: center center; 
     background-repeat: no-repeat;
     right: 2%;
-    top: 190px;
+    top: 16px;
     border: none;   
     background-color: transparent;  
     opacity: 0.5;
@@ -191,14 +191,14 @@
 }
 
 #goToPrevSlide {
-    width: 21px;
+    width: 25px;
     height: 40px;
     position: absolute;
-    background-image: url('arrow-red__left.png');
+    background-image: url('arrow-black__left.png');
     background-position: center center; 
     background-repeat: no-repeat;
     left: 2%;
-    top: 190px;
+    top: 16px;
     border: none;   
     background-color: transparent;  
     opacity: 0.5;
@@ -208,13 +208,13 @@
 }
 
 #goToNextSlide1{
-    width: 21px;
+    width: 26px;
     height: 40px;
     position: absolute;
-    background-image: url('arrow-red__right.png');
+    background-image: url('arrow-black__right.png');
     background-position: center center; 
     background-repeat: no-repeat;
-    right: 2%;
+    right: 3%;
     top: 166px;
     border: none;   
     background-color: transparent;  

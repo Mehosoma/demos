@@ -18,6 +18,9 @@ body {
   body button:focus, body button:active {
     text-decoration: none;
     outline: none; }
+  body textarea:focus, body textarea:active {
+    text-decoration: none;
+    outline: none; }
   body ul {
     list-style-type: none;
     padding: 0; }
@@ -111,7 +114,7 @@ h1 {
   padding: 0 44px;
   text-align: center;
   letter-spacing: 3px;
-  height: 121px !important; }
+  min-height: 121px !important; }
   h1 strong {
     color: #f87e47; }
   h1 i {
@@ -846,27 +849,13 @@ h1 {
   height: 375px;
   padding: 42px 0; }
   .partners h2 {
+    text-align: center;
+    margin-bottom: 60px; }
+  .partners #lightSlider {
+    height: 65px !important;
     text-align: center; }
-
-.swiper-container {
-  margin-top: 30px;
-  line-height: 53px; }
-
-.swiper-button-prev {
-  margin-left: -80px;
-  top: 75%; }
-
-.swiper-button-next {
-  margin-right: -80px;
-  top: 75%; }
-
-.swiper-pagination {
-  top: 150px;
-  left: 50%; }
-
-.swiper-pagination-bullet {
-  margin: 0 5px;
-  background-color: #413f3f; }
+  .partners .lSSlideWrapper {
+    line-height: 65px; }
 
 /*****************************************************Form**************************************************/
 #form-q {
@@ -969,15 +958,15 @@ footer {
   footer .copy a {
     color: #fff;
     border-bottom: 1px dashed #fff; }
-  footer .media ul {
+  footer .social-media ul {
     list-style-type: none;
     padding: 0;
     margin-left: 65px; }
-    footer .media ul li {
+    footer .social-media ul li {
       font-size: 30px;
       display: inline-block;
       padding-right: 32px; }
-    footer .media ul a {
+    footer .social-media ul a {
       color: #fff; }
   footer .contacts {
     margin-left: 87px;

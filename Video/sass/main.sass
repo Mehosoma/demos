@@ -20,6 +20,9 @@ body
 	button:focus, button:active
 		text-decoration: none
 		outline: none
+	textarea:focus, textarea:active
+		text-decoration: none
+		outline: none
 	ul
 		list-style-type: none
 		padding: 0
@@ -94,8 +97,6 @@ header
 	a:hover
 		opacity: 0.7
 
-
-
 /*****************************************************First**************************************************/
 .first
 	width: 100%
@@ -115,7 +116,7 @@ h1
 	padding: 0 44px
 	text-align: center
 	letter-spacing: 3px
-	height: 121px!important
+	min-height: 121px!important
 	strong		
 		color: #f87e47
 	i
@@ -819,21 +820,13 @@ h1
 	padding: 42px 0
 	h2
 		text-align: center
-.swiper-container
-	margin-top: 30px
-	line-height: 53px
-.swiper-button-prev
-	margin-left: -80px
-	top: 75%
-.swiper-button-next
-	margin-right: -80px
-	top: 75%
-.swiper-pagination
-	top: 150px
-	left: 50%
-.swiper-pagination-bullet
-	margin: 0 5px
-	background-color: #413f3f	
+		margin-bottom: 60px
+
+	#lightSlider
+		height: 65px!important	
+		text-align: center
+	.lSSlideWrapper	
+		line-height: 65px
 
 /*****************************************************Form**************************************************/
 #form-q
@@ -936,7 +929,7 @@ footer
 		a
 			color: #fff
 			border-bottom: 1px dashed #fff
-	.media
+	.social-media
 		ul
 			list-style-type: none
 			padding: 0
