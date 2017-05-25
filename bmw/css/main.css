@@ -1373,16 +1373,13 @@ footer {
     padding-bottom: 30px;
     margin-top: 40px; }
   #about-tizers .tizers-block-wrap .tizer-block {
-    position: relative;
     border-bottom: 5px solid #aaa38e;
-    display: table;
     margin-bottom: 20px; }
     #about-tizers .tizers-block-wrap .tizer-block img {
-      width: 400px;
-      height: 400px; }
+      width: 100%;
+      height: auto; }
     #about-tizers .tizers-block-wrap .tizer-block .tizer-block-header {
       margin-left: 20px;
-      width: 400px;
       position: absolute;
       top: 40px; }
     #about-tizers .tizers-block-wrap .tizer-block span {

@@ -114,6 +114,10 @@
 		margin-top: 23px;
 	}
 
+	#about-tizers .tizers-block-wrap .tizer-block span{
+		font-size: 25px;
+	}
+
 }
 
 @media only screen and (min-width : 768px) and (max-width : 991px) {
@@ -352,6 +356,10 @@
 
 	#progr-det .progr-det-block .progr-det-desc .progr-det-learnmore{
 		width: 280px;
+	}
+
+	#about-tizers .tizers-block-wrap .tizer-block span{
+		font-size: 25px;
 	}
 
 }
@@ -686,7 +694,7 @@
 	}
 
 	footer .col-xs-12{
-		border-bottom: 1px solid #fff;
+		border-bottom: 1px solid #cac1a4;
 	}
 }
 
@@ -1186,7 +1194,7 @@
 	}
 
 	footer .col-xs-12{
-		border-bottom: 1px solid #fff;
+		border-bottom: 1px solid #cac1a4;
 	}
 
 
