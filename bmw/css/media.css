@@ -675,6 +675,19 @@
 	 #info-form form .comm2{
 	 	margin-left: 20px;
 	 }
+
+	body{
+	 	margin-bottom: 70px!important
+	}
+
+	footer .col-sm-7{
+		padding: 0 15px;
+
+	}
+
+	footer .col-xs-12{
+		border-bottom: 1px solid #fff;
+	}
 }
 
 @media only screen and (min-width : 0px) and (max-width : 479px) {
@@ -1147,6 +1160,33 @@
 
 	#about-tizers{
 		padding-bottom: 0px;
+	}
+
+	body{
+	 	margin-bottom: 95px!important
+	}
+
+	footer .col-sm-7{
+		padding: 0 15px;
+
+	}
+
+	footer .footer-social span{
+		float: none;		
+	}
+
+	footer .footer-social{
+		text-align: center;
+	}
+
+	footer .footer-social ul{
+		margin: 0;
+		padding: 0;
+		float: none;
+	}
+
+	footer .col-xs-12{
+		border-bottom: 1px solid #fff;
 	}
 
 

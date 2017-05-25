@@ -422,7 +422,7 @@ header {
 /*Footer*/
 footer {
   width: 100%;
-  height: 35px;
+  min-height: 35px;
   background-color: #aaa48e;
   position: absolute;
   bottom: 0; }
@@ -434,6 +434,30 @@ footer {
     float: left; }
   footer .footer-right {
     float: right; }
+  footer .footer-social span {
+    float: left; }
+  footer .footer-social ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 5px;
+    display: block;
+    float: left;
+    margin-left: 30px; }
+  footer .footer-social li {
+    display: inline-block;
+    padding: 0 5px; }
+  footer .footer-social .footer-vk {
+    width: 23px;
+    height: 25px; }
+  footer .footer-social .footer-face {
+    width: 26px;
+    height: 22px; }
+  footer .footer-social .footer-insta {
+    width: 22px;
+    height: 22px; }
+  footer .col-sm-7 {
+    padding: 0;
+    padding-left: 25px; }
 
 /*********************************************InfoPage*******************************************/
 #info-banner {
