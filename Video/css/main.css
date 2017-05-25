@@ -585,10 +585,11 @@ h1 {
   font-size: 14px;
   letter-spacing: 3px; }
 
-.sets-price strike {
+.sets-price i {
   font-style: normal;
   font-weight: 700;
-  color: #000; }
+  color: #000;
+  text-decoration: line-through; }
 
 .sets-card-desc-middle {
   margin-top: 38px; }
@@ -636,7 +637,7 @@ h1 {
 /*****************************************************Project**************************************************/
 .project {
   width: 100%;
-  height: 438px;
+  min-height: 438px;
   background-position: center center;
   background-repeat: no-repeat;
   position: relative;
