@@ -288,6 +288,9 @@ h1 {
   position: relative;
   padding-top: 100px; }
 
+.owl-video-tn {
+  background-size: 100% !important; }
+
 .video-left {
   margin-top: 101px; }
   .video-left span {

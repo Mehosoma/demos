@@ -79,7 +79,7 @@
 	#form-banner{
 		width: 290px;
 		text-align: center;	
-		padding: 10px 20px;	
+		padding: 20px 20px;	
 	}
 
 	#form-banner input{
@@ -499,8 +499,9 @@
 	}
 
 	#form-banner input{
-		width: 156px;
+		width: 150px;
 	}
+
 
 	.smeta{
 		top: 100%;
@@ -1028,6 +1029,11 @@
 		margin-top: 74px;
 	}
 
+	.sets-choice img{
+		left: 22px;
+	}
+
+
 
 }
 
@@ -1161,15 +1167,15 @@
 
 @media only screen and (min-width : 480px) and (max-width : 650px) {
 
-#cards .col-xs-6{
-	width: 100%;
-}
+	#cards .col-xs-6{
+		width: 100%;
+	}
 
-.first .col-xs-12{
-	width: 100%!important;
-}
+	.first .col-xs-12{
+		width: 100%!important;
+	}
 
-.first{
+	.first{
 		padding-top: 20px;
 	}
 
@@ -1194,12 +1200,30 @@
 	.banner-form-header{
 		margin-top: 10px;
 		font-size: 18px;
+	}	
+
+	.sets-card-image img{
+		width: 100%;
+		height: auto;
+	}
+
+	.cat-left, .cat-right{
+		text-align: center;
+	}
+
+}
+
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+
+	.banner-form-header{
+		margin-top: 10px;
+		font-size: 18px;
 	}
 
 	#form-banner{
 		width: 290px;
 		text-align: center;	
-		padding: 10px 20px;	
+		padding: 20px 20px;	
 	}
 
 	#form-banner input{
@@ -1214,5 +1238,11 @@
 	#form-banner button{
 		width: 180px;
 	}
+
+	#form-banner input{
+		width: 180px;
+	}
+
+
 
 }
