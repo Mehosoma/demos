@@ -57,6 +57,20 @@ $(document).ready(function(){
 });
 
 
+$(window).load(function() {
+
+    $(".work-block").animated("fadeInRight", "fadeOut");
+    $(".stage").animated("zoomIn", "fadeOut");
+    $("#response-main").animated("zoomIn", "fadeOut");
+    $(".video-block").animated("fadeInLeft", "fadeOut");
+    $(".video-block2").animated("fadeInRight", "fadeOut");
+
+    
+    
+
+});
+
+
 
 
     
