@@ -65,12 +65,8 @@ $(window).load(function() {
     $(".video-block").animated("fadeInLeft", "fadeOut");
     $(".video-block2").animated("fadeInRight", "fadeOut");
 
-    
-    
-
 });
 
-
-
-
-    
+$(document).ready(function(){
+    $(".popup_form").magnificPopup();   
+});

@@ -391,14 +391,20 @@ table {
     #lk-invest .stage2 .side-block {
       margin-top: 6px; }
   #lk-invest .active-deposit {
-    margin-top: 20px; }
+    margin-top: 15px; }
   #lk-invest .right-content-invest {
     background-color: #fff;
-    padding: 31px 0 5px 0; }
+    padding: 20px 0 5px 0; }
     #lk-invest .right-content-invest #active-deposit-invest {
       margin-top: 5px; }
   #lk-invest footer {
     height: 92px; }
+
+.dop-opt-lk {
+  color: #000;
+  font-family: 'ProximaNovaRegular', sans-serif;
+  font-size: 12px;
+  padding-left: 60px; }
 
 /***********************************************************Balans************************************************************/
 .right-content-balans {

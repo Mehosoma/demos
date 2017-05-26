@@ -67,19 +67,23 @@ h2 {
     padding-left: 54px;
     font-weight: 600; }
 
-
-
-.anim_left2 {
+.anim_left1 {
   -webkit-animation-delay: 200ms;
   -moz-animation-delay: 200ms;
   -o-animation-delay: 200ms;
   animation-delay: 200ms; }
 
-.anim_left3 {
+.anim_left2 {
   -webkit-animation-delay: 400ms;
   -moz-animation-delay: 400ms;
   -o-animation-delay: 400ms;
   animation-delay: 400ms; }
+
+.anim_left3 {
+  -webkit-animation-delay: 600ms;
+  -moz-animation-delay: 600ms;
+  -o-animation-delay: 600ms;
+  animation-delay: 600ms; }
 
 /***********************************************************Header*************************************************************/
 header {
@@ -188,6 +192,97 @@ header {
   background-image: url("../images/check-button-bg.png");
   background-position: right 33px center;
   background-repeat: no-repeat; }
+
+#button-in a {
+  position: absolute;
+  top: 100px;
+  right: 130px;
+  background-image: none;
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 10px 30px; }
+
+#hidden_form {
+  height: 255px;
+  width: 315px;
+  background-color: #476680;
+  text-align: center;
+  margin-top: 60px;
+  padding: 35px 0 26px 0;
+  margin: 0 auto;
+  position: relative;
+  -moz-placeholder-color: #c4c4c4;
+  -moz-placeholder-letter-spacing: 1px;
+  -moz-placeholder-text-transform: uppercase;
+  -ms-input-placeholder-color: #c4c4c4;
+  -ms-input-placeholder-letter-spacing: 1px;
+  -ms-input-placeholder-text-transform: uppercase; }
+  #hidden_form span {
+    font-family: 'GothamProBlack', sans-serif;
+    font-size: 16px;
+    line-height: 31px;
+    color: #fff;
+    text-transform: uppercase; }
+  #hidden_form input {
+    width: 250px;
+    height: 40px;
+    border: 2px solid #e3e0d6;
+    padding-left: 15px;
+    margin-top: 16px;
+    border: none;
+    border-radius: 5px; }
+  #hidden_form ::-webkit-input-placeholder {
+    color: #c4c4c4;
+    letter-spacing: 1px;
+    text-transform: uppercase; }
+  #hidden_form ::-moz-placeholder {
+    color: #c4c4c4;
+    letter-spacing: 1px;
+    text-transform: uppercase; }
+  #hidden_form .hid-form-reg {
+    width: 150px;
+    height: 40px;
+    background-image: none;
+    background-color: #ff1515;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 14px;
+    float: left;
+    margin-left: 25px;
+    border-radius: 5px;
+    cursor: pointer; }
+  #hidden_form .hid-form-in {
+    width: 100px;
+    height: 40px;
+    background-image: none;
+    background-color: #f87e47;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 14px;
+    float: right;
+    border-radius: 5px;
+    margin-right: 25px;
+    cursor: pointer; }
+
+#rem-pass {
+  font-family: 'GothamPro', sans-serif;
+  font-size: 14px;
+  line-height: 31px;
+  color: #fff;
+  text-decoration: underline;
+  margin-top: 30px;
+  display: inline-block; }
+
+.mfp-close-btn-in .mfp-close {
+  color: #fff;
+  opacity: 1; }
 
 /***********************************************************How Work*********************************************************/
 #work {
@@ -655,7 +750,7 @@ header {
     height: 505px;
     border: 1px dashed #fff;
     text-align: center;
-    margin-top: 35px; }
+    margin-top: 20px; }
     #tarifs #second-stage .decor {
       margin-top: 11px; }
     #tarifs #second-stage .stage-block-wrap {
@@ -677,6 +772,12 @@ header {
     #tarifs #second-stage .stage-block-footer a {
       background-color: #fff;
       color: #ff1515; }
+
+.dop-opt {
+  color: #fff;
+  font-family: 'ProximaNovaRegular', sans-serif;
+  font-size: 12px;
+  padding-left: 30px; }
 
 /***********************************************************Statisctic-Main*********************************************************/
 #statistic-main {
@@ -1525,13 +1626,12 @@ footer {
   margin-top: 15px; }
 
 .partners-page-tarifs #tarifs .referal-program-block {
-  text-align: center;
-  padding-top: 15px; }
+  text-align: center; }
   .partners-page-tarifs #tarifs .referal-program-block span {
     color: #fff;
     font-family: 'ProximaNovaBlack', sans-serif;
     font-size: 36px;
-    line-height: 40px; }
+    line-height: 30px; }
     .partners-page-tarifs #tarifs .referal-program-block span i {
       color: #ff1515; }
 
@@ -1626,6 +1726,8 @@ footer {
         top: -15px;
         right: -15px; }
 
+.hidden {
+  display: none; }
 
 
 @media (min-width: 1900px) { 

@@ -15,6 +15,7 @@
 
 	<link rel="stylesheet" type="text/css" href="libs/slider/lightslider.css"/>
 	<link rel="stylesheet" type="text/css" href="libs/animate/animate.min.css"/>
+	<link rel="stylesheet" type="text/css" href="libs/magnific/magnific-popup.css"/>
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/main.css">	
 
@@ -77,7 +78,10 @@
 		<div class="container-arrow">
 			<button type="button" id="goToPrevSlide"></button>
 			<button type="button" id="goToNextSlide"></button>
-		</div>		
+		</div>
+		<div id="button-in">
+			<a href="#hidden_form" class="popup_form">Войти</a>
+		</div>	
 	</section>
 
 	<!--HowWork-->
@@ -357,6 +361,7 @@
 					</div>
 				</div>		
 			</div>
+			<span class="dop-opt">* По тарифным планам 5 и 6 выплата процентов производится только по будням</span>
 		</div>
 	</section>
 
@@ -525,10 +530,24 @@
 		</div>
 	</footer>
 
+	<div class="hidden">
+		<form id="hidden_form" method="post">			
+			<span>Вход в личный кабинет</span>
+			<div class="form-field">
+				<input type="text" name="fio" placeholder="Логин или E-mail" required="">
+				<input type="password" name="phone" placeholder="Пароль" required="">				
+				<button type="submit" class="hid-form-reg">Регистрация</button>
+				<button type="submit" class="hid-form-in">Войти</button>
+				<a href="" id="rem-pass">Забыли пароль?</a>
+			</div>
+		</form>
+	</div>
+
 	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
 	<script src="libs/slider/lightslider.min.js"></script>
 	<script src="libs/waypoints/waypoints.min.js"></script>
 	<script src="libs/animate/animate-css.js"></script>
+	<script src="libs/magnific/jquery.magnific-popup.js"></script>
 	<script src="js/common.js"></script>
 
 </body>
