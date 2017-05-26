@@ -306,7 +306,7 @@ header {
     top: 9px;
     z-index: -1; }
   #work .work-block {
-    width: 33%;
+    width: 32.4%;
     display: inline-block; }
     #work .work-block .work-block-square {
       width: 30px;
@@ -1728,15 +1728,3 @@ footer {
 
 .hidden {
   display: none; }
-
-
-@media (min-width: 1900px) { 
-
-    .check-right {
-      width: 50%      
-    }
-
-    .check-right img{
-      width: 100%;
-    }
-  }
