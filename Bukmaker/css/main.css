@@ -1631,5 +1631,10 @@ footer {
 @media (min-width: 1900px) { 
 
     .check-right {
-       width: 50%      
-}
+      width: 50%      
+    }
+
+    .check-right img{
+      width: 100%;
+    }
+  }
