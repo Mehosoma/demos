@@ -8,7 +8,8 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   background-color: #fff;
-  margin: 0 auto; }
+  margin: 0 auto;
+  position: relative; }
   body a:hover, body a:focus, body a:active {
     text-decoration: none;
     outline: none; }
@@ -97,7 +98,7 @@ header {
   left: 0;
   z-index: 2; }
   header .main-menu {
-    margin-left: 60px; }
+    text-align: center; }
     header .main-menu ul {
       list-style-type: none;
       padding: 0;
