@@ -1629,3 +1629,11 @@ footer {
         position: absolute;
         top: -15px;
         right: -15px; }
+
+
+
+@media (min-width: 1900px) { 
+
+    .check-right {
+       width: 50%      
+}
