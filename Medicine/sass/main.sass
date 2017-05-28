@@ -1221,6 +1221,22 @@ header
 
 
 /*******************************************NewsPage*************************************/
+
+a:hover, a:focus, a:active
+		text-decoration: none
+		outline: none	
+a
+	text-decoration: none
+input:focus, input:active
+	text-decoration: none
+	outline: none
+button:hover, button:focus, button:active
+	text-decoration: none
+	outline: none
+select:hover, select:focus, select:active
+	text-decoration: none
+	outline: none
+
 #news-page
 	padding: 40px 0
 	h2
@@ -1242,11 +1258,13 @@ header
 			color: #2d2d2d
 			font-weight: bold
 			line-height: 1.25
-			margin-bottom: 6px
+			margin-bottom: 0px
 		span
 			font-family: 'arial', sans-serif
 			font-size: 12px
 			color: #a1a1a1
+	p
+		margin: 10px 0
 	.read-button
 		display: inline-block
 		background-color: #c73468
@@ -1259,3 +1277,4 @@ header
 		margin-top: 19px
 	.read-button:hover
 		background-color: #337160	
+		text-decoration: none

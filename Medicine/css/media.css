@@ -71,6 +71,10 @@
 	#fn-titleblock .big-title{
 		font-size: 30px;
 	}
+
+	#news-page .news-page-block-desc h3{
+		margin-top: 30px;
+	}
 }
 
 @media only screen and (min-width : 480px) and (max-width : 767px) {
@@ -174,6 +178,10 @@
 
 	#fn-titleblock .big-title{
 		font-size: 30px;
+	}
+
+	#news-page .news-page-block-desc h3{
+		margin-top: 30px;
 	}
 
 
@@ -354,6 +362,10 @@
 
 	#fn-titleblock .big-title{
 		font-size: 24px;
+	}
+
+	#news-page .news-page-block-desc h3{
+		margin-top: 30px;
 	}
 
 }
