@@ -16,7 +16,7 @@ var slider = $('.slider').lightSlider({
                 settings: {
                     item:3,
                     slideMove:3,
-                    
+                    slideMargin: 0,                      
                   }
             },
 
@@ -24,7 +24,7 @@ var slider = $('.slider').lightSlider({
                 breakpoint:992,
                 settings: {
                     item:2,
-                    slideMove:1,
+                    slideMove:2,
                                        
                   }
             },
@@ -52,4 +52,23 @@ $('#goToPrevSlide').on('click', function () {
 });
 $('#goToNextSlide').on('click', function () {
     slider.goToNextSlide();
+});
+
+
+//ModalWindow
+$(document).ready(function(){
+    $(".popup_form").magnificPopup();   
+});
+
+
+//links on block
+$('a[href^="#"]').click(function(){
+//Сохраняем значение атрибута href в переменной:
+var target = $(this).attr('href');
+$('html, body').animate({scrollTop: $(target).offset().top}, 800);
+return false;
+});
+
+jQuery(function($){
+   $("#order-phone").mask("(999) 999-9999");   
 });

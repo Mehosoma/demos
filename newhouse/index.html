@@ -34,12 +34,18 @@
 	<header>
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-2">
+				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-5">
 					<div class="logo">
 						<img src="img/logo.png" alt="site-logo">
 					</div>
 				</div>
-				<div class="col-lg-5">
+				<div class="hidden-lg hidden-md hidden-sm col-xs-7">
+					<div class="contacts-phones">
+						<a href="">+7(343) 250-50-23</a>
+						<a href="">+7(922) 222-22-20</a>
+					</div>
+				</div>				
+				<div class="col-lg-5 col-md-5 col-sm-7 col-xs-12">
 					<nav role="navigation" class="navbar navbar-default">
 						<div class="navbar-header">
 		  					<button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
@@ -47,29 +53,34 @@
 							    <span class="icon-bar"></span>
 							    <span class="icon-bar"></span>
 							    <span class="icon-bar"></span>
-		    				</button>    							 
+		    				</button>	
+		    				<div class="hidden-lg hidden-md hidden-sm">
+								<div class="header-button">
+									<a href=".hidden_form" class="popup_form">заказать звонок</a>
+								</div>
+							</div>	    						 
 		   				</div>
 		    			<div id="navbarCollapse" class="collapse navbar-collapse">
 		  	  				<ul class="nav navbar-nav">
-		  	  				 	<li><a href="#">Стоимость</a></li>
-							    <li><a href="">Проекты</a></li>
-							    <li><a href="">Сроки</a></li>
-							    <li><a href="">Контакты</a></li>								    
+		  	  				 	<li><a href="#calc">Стоимость</a></li>
+							    <li><a href="#projects">Проекты</a></li>
+							    <li><a href="#view">Сроки</a></li>
+							    <li><a href="#map">Контакты</a></li>								    
 						    </ul>
 						</div>			
 					</nav>
 				</div>
-				<div class="col-lg-3">
-					<div class="header-button">
-						<a href="">заказать звонок</a>
-					</div>
-				</div>
-				<div class="col-lg-2">
+				<div class="col-lg-2 col-md-2 col-md-push-3 col-sm-3 hidden-xs">
 					<div class="contacts-phones">
 						<a href="">+7(343) 250-50-23</a>
 						<a href="">+7(922) 222-22-20</a>
 					</div>
 				</div>
+				<div class="col-lg-3 col-md-3 col-md-pull-2 col-sm-12 hidden-xs">
+					<div class="header-button">
+						<a href=".hidden_form" class="popup_form">заказать звонок</a>
+					</div>
+				</div>				
 			</div>
 		</div>
 	</header>
@@ -81,20 +92,15 @@
 				<h1>Загородный дом за 3 месяца с гарантией 15 лет!</h1>
 				<span>Проектирование и строительство коттеджей в Крыму и Краснодарском крае</span>
 				<div class="banner-button">
-					<a href="">Получить консультацию</a>
+					<a href=".hidden_form" class="popup_form">Получить консультацию</a>
 				</div>
 			</div>
 		</div>
 	</section>
 
 	<!--Projects-->
-	<section class="projects">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<h2>Наши проекты</h2>
-				</div>
-			</div>
+	<section id="projects">				
+			<h2>Наши проекты</h2>	
 			<div class="slider-wrap">
 				<ul class="slider">
 					<li>					
@@ -436,15 +442,14 @@
 				</ul>
 				<button type="button" id="goToPrevSlide"></button>
 				<button type="button" id="goToNextSlide"></button>	
-			</div>
-		</div>
+			</div>		
 	</section>
 
 	<!--Calc-->
-	<section class="calc">
+	<section id="calc">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-9">
+				<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
 					<div class="calc-block">
 						<p>Выберите этажность</p>
 						<div class="calc-fields">
@@ -472,7 +477,7 @@
 						<span>м2 <strong>= 1 200 000 р</strong></span>
 					</div>
 				</div>
-				<div class="col-lg-3">
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
 					<div class="calc-send-button">
 						<button type="submit">Получить смету бесплатно</button>
 					</div>
@@ -490,47 +495,47 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-lg-4">
+				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
 					<div class="ready-house-block left-col">
 						<img src="img/ready-house1.jpg" alt="ready-house-foto">
 					</div>
 				</div>
-				<div class="col-lg-4">
+				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
 					<div class="ready-house-block central-col">
 						<img src="img/ready-house2.jpg" alt="ready-house-foto">
 					</div>
 				</div>
-				<div class="col-lg-4">
+				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
 					<div class="ready-house-block right-col">
 						<img src="img/ready-house3.jpg" alt="ready-house-foto">
 					</div>
 				</div>
-				<div class="col-lg-4">
+				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
 					<div class="ready-house-block left-col">
 						<img src="img/ready-house1.jpg" alt="ready-house-foto">
 					</div>
 				</div>
-				<div class="col-lg-4">
+				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
 					<div class="ready-house-block central-col">
 						<img src="img/ready-house2.jpg" alt="ready-house-foto">
 					</div>
 				</div>
-				<div class="col-lg-4">
+				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
 					<div class="ready-house-block right-col">
 						<img src="img/ready-house3.jpg" alt="ready-house-foto">
 					</div>
 				</div>
-				<div class="col-lg-4">
+				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
 					<div class="ready-house-block left-col">
 						<img src="img/ready-house1.jpg" alt="ready-house-foto">
 					</div>
 				</div>
-				<div class="col-lg-4">
+				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
 					<div class="ready-house-block central-col">
 						<img src="img/ready-house2.jpg" alt="ready-house-foto">
 					</div>
 				</div>
-				<div class="col-lg-4">
+				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
 					<div class="ready-house-block right-col">
 						<img src="img/ready-house3.jpg" alt="ready-house-foto">
 					</div>
@@ -544,7 +549,7 @@
 	<section class="stages">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-3">
+				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
 					<div class="stages-block">
 						<div class="stages-block-img">
 							<img src="img/stage-1.png" alt="stage-image">
@@ -556,7 +561,7 @@
 						<span>Оставляете заявку на сайте</span>
 					</div>
 				</div>
-				<div class="col-lg-3">
+				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
 					<div class="stages-block">
 						<div class="stages-block-img">
 							<img src="img/stage-2.png" alt="stage-image">
@@ -568,7 +573,7 @@
 						<span>Создаем проект и<br>согласовываем смету</span>
 					</div>
 				</div>
-				<div class="col-lg-3">
+				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
 					<div class="stages-block">
 						<div class="stages-block-img">
 							<img src="img/stage-3.png" alt="stage-image">
@@ -580,7 +585,7 @@
 						<span>Подписываем договор</span>
 					</div>
 				</div>
-				<div class="col-lg-3">
+				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
 					<div class="stages-block">
 						<div class="stages-block-img">
 							<img src="img/stage-4.png" alt="stage-image">
@@ -594,13 +599,13 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-lg-5 col-lg-offset-2">
+				<div class="col-lg-5 col-lg-offset-2 col-md-5 col-md-offset-1 col-sm-7 col-xs-12">
 					<div class="stage-main-block">
 						<img src="img/stage-main.png" alt="stage-main-image">
 						<div class="number-stage"><span>5</span></div>	
 					</div>
 				</div>
-				<div class="col-lg-5">
+				<div class="col-lg-5 col-md-6 col-sm-5 col-xs-12">
 					<div class="stage-main-desc">
 						<span>Проверка дома на соответствие<br>всех договоренностей<br>Подписание акта сдачи - приема</span>
 					</div>
@@ -619,12 +624,12 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-lg-5 col-lg-offset-1">
+				<div class="col-lg-5 col-lg-offset-1 col-md-6 col-sm-12 col-xs-12">
 					<div class="changes-img">
 						<img src="img/changes-img.png" alt="changes-image">
 					</div>					
 				</div>
-				<div class="col-lg-6">
+				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 					<div class="changes-right">
 						<ul class="changes-list">
 							<li><span>Изменить габариты дома</span></li>
@@ -633,7 +638,7 @@
 							<li><span>Добавить или убрать комнаты и санузлы</span></li>
 						</ul>
 						<p>Вы можете менять планировку и прочее столько раз, сколько необходимо!</p>
-						<a href="">Получить консультацию архитектора</a>
+						<a href=".hidden_form" class="popup_form">Получить консультацию архитектора</a>
 					</div>
 				</div>
 			</div>			
@@ -641,13 +646,16 @@
 	</section>
 
 	<!--View-->
-	<section class="view">
+	<section id="view">
 		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="view-left">
-						<span>Следите за стройкой в режиме online</span>
-						<p>Мы предоставляем видеонаблюдение за объектом<br>Вы можете наблюдать за ходом строительства своего дома из любой точки мира!</p>
+			<div class="row">				
+				<div class="view-left">		
+				<div class="col-lg-12 col-md-12 col-sm-12">				
+						<div class="col-lg-10 col-md-7 col-sm-6 col-xs-12">
+							<span>Следите за стройкой в режиме online</span>
+							<p>Мы предоставляем видеонаблюдение за объектом<br>Вы можете наблюдать за ходом строительства своего дома из любой точки мира!</p>
+						</div>
+					
 					</div>
 					<div class="view-right">
 						<img src="img/view-right.png" alt="hand-image">
@@ -675,7 +683,7 @@
 								<img src="img/fio-input.png" alt="input-image">
 							</div>
 							<div class="form-field">
-								<input type="text" name="phone" placeholder="Ваш телефон" required="">
+								<input type="text" name="phone" placeholder="Ваш телефон" required="" id="order-phone">
 								<img src="img/phone-input.png" alt="input-image" class="phone-input-img">								
 							</div>
 							<div class="button-order-form">
@@ -689,13 +697,13 @@
 	</section>
 
 	<!--Map-->
-	<section class="map">
+	<section id="map">
 		<div class="map-block">
 			<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9d404be596ccfb5fcbb47e50be5b3435fbea07cec181630a4c768d0d2bdbf168&amp;width=100%25&amp;height=468&amp;lang=ru_RU&amp;scroll=true"></script>
 		</div>
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-4 col-lg-offset-7">
+				<div class="col-lg-4 col-lg-offset-7 col-md-5 col-md-offset-7 col-sm-6 col-sm-offset-6 col-xs-12">
 					<div class="map-text-block">
 						<span>г. Екатеринбург</span>
 						<span>ул. Красноармейская, д.10, оф.18.08</span>
@@ -720,7 +728,7 @@
 						<img src="img/footer-logo.png" alt="footer-logo">
 						<span>Остались вопросы?</span>
 						<p>Задайте их в <strong>форме ниже</strong> либо по телефону <i>+7 (922) 222-22-22</i></p>
-						<a href="">Задать вопрос</a>
+						<a href=".hidden_form" class="popup_form">Задать вопрос</a>
 						<div class="copy">
 							<span>&copy; Copyright Industrial company “New House”, 2017</span>
 						</div>
@@ -730,11 +738,23 @@
 		</div>
 	</footer>
 
+	<div class="hidden">
+		<form class="hidden_form" method="post">			
+			<span>Форма заказа</span>
+			<div class="form-field">
+				<input type="text" name="fio" placeholder="Имя" required="">
+				<input type="text" name="phone" placeholder="Телефон" required="">
+				<textarea name="form-c" placeholder="Вопрос" required=""></textarea>
+				<button type="submit" class="hid-form-but">Отправить</button>
+			</div>
+		</form>
+	</div>
+
 	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
 	<script src="libs/bootstrap/js/bootstrap.js"></script>	
 	<script src="libs/slider/lightslider.min.js"></script>
 	<script src="libs/magnific/jquery.magnific-popup.js"></script>	
-	<script src="libs/cole/bootstrap-colequalizer.js"></script>	
+	<script src="libs/mask.js"></script>	
 	<script src="js/common.js"></script>
 
 </body>

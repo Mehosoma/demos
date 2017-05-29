@@ -40,7 +40,10 @@ h2 {
 /********************************************************Header******************************/
 header {
   min-height: 100px;
-  background-color: #fff; }
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 100; }
 
 .logo {
   text-align: right;
@@ -97,7 +100,8 @@ header {
   width: 100%;
   height: 733px;
   background-position: top -25px center;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-size: cover; }
   .main-banner h1 {
     font-family: 'PT Sans', sans-serif;
     font-size: 60px;
@@ -135,9 +139,9 @@ header {
     opacity: 0.7; }
 
 /********************************************************Projects******************************/
-.projects {
+#projects {
   padding: 18px 0 0 0; }
-  .projects h2 {
+  #projects h2 {
     margin-bottom: 5px; }
 
 .project-block {
@@ -201,11 +205,11 @@ header {
   display: none; }
 
 /********************************************************Calc******************************/
-.calc {
+#calc {
   width: 100%;
-  height: 292px;
+  min-height: 292px;
   background-color: #f9f9f9;
-  padding: 20px; }
+  padding: 20px 0px; }
 
 .calc-block {
   margin-left: 144px;
@@ -229,6 +233,8 @@ header {
     margin-right: 0px; }
   .calc-block input[type=radio]:checked + label:before {
     background-color: #bababa; }
+  .calc-block label:hover:before {
+    background-color: #d8d8d8; }
   .calc-block label:before {
     content: "";
     border: 2px solid #bababa;
@@ -276,6 +282,9 @@ header {
     color: #000;
     text-transform: uppercase; }
 
+.calc-send-button:hover {
+  opacity: 0.7; }
+
 .area {
   margin-left: 252px;
   margin-top: 16px; }
@@ -302,7 +311,7 @@ header {
       color: #e2574c;
       margin-left: 9px; }
 
-/********************************************************Calc*******************************************/
+/********************************************************ReadyHouse*******************************************/
 .ready-house {
   padding: 14px 0 11px 0; }
   .ready-house h2 {
@@ -495,13 +504,14 @@ header {
 /********************************************************View*******************************************/
 .view-left {
   background-image: url("../img/view-bg.png");
-  width: 954px;
+  width: 100%;
   height: 587px;
   background-position: left center;
   background-repeat: no-repeat;
   text-align: center;
   position: relative;
-  margin-top: -10px; }
+  margin-top: -10px;
+  background-size: cover; }
   .view-left span {
     font-family: 'PT Sans', sans-serif;
     font-size: 28px;
@@ -535,8 +545,9 @@ header {
   padding: 70px 0; }
   .order h2 {
     color: #fff;
-    margin-right: 360px;
-    margin-left: 360px;
+    width: 420px;
+    margin-right: auto;
+    margin-left: auto;
     margin-bottom: 66px; }
 
 .order-block p {
@@ -553,12 +564,10 @@ header {
   margin: 0 15px;
   -moz-placeholder-font-family: 'PT Sans', sans-serif;
   -moz-placeholder-font-size: 14px;
-  -moz-placeholder-letter-spacing: 0.5px;
   -moz-placeholder-font-weight: 400;
   -moz-placeholder-color: #9d9d9d;
   -ms-input-placeholder-font-family: 'PT Sans', sans-serif;
   -ms-input-placeholder-font-size: 14px;
-  -ms-input-placeholder-letter-spacing: 0.5px;
   -ms-input-placeholder-color: #9d9d9d;
   -ms-input-placeholder-font-weight: 400; }
   .form-field input {
@@ -566,22 +575,20 @@ header {
     height: 34px;
     font-family: 'PT Sans', sans-serif;
     font-size: 14px;
-    letter-spacing: 0.5px;
     color: #000;
     font-weight: 400;
     padding-left: 33px;
     border-radius: 5px;
-    border: none; }
+    border: none;
+    letter-spacing: 0px; }
   .form-field ::-webkit-input-placeholder {
     font-family: 'PT Sans', sans-serif;
     font-size: 14px;
-    letter-spacing: 0.5px;
     color: #9d9d9d;
     font-weight: 400; }
   .form-field ::-moz-placeholder {
     font-family: 'PT Sans', sans-serif;
     font-size: 14px;
-    letter-spacing: 0.5px;
     color: #9d9d9d;
     font-weight: 400; }
   .form-field img {
@@ -618,9 +625,9 @@ header {
     opacity: 0.7; }
 
 /********************************************************Map*******************************************/
-.map {
+#map {
   width: 100%;
-  height: 468px;
+  min-height: 468px;
   position: relative; }
 
 .map-block {
@@ -703,6 +710,57 @@ footer {
       letter-spacing: 0.5px;
       font-weight: 400;
       text-shadow: 0.3px 0 0 #000; }
+
+/********************************************************ModalForm*******************************************/
+.hidden_form {
+  height: 355px;
+  width: 315px;
+  background-color: #fff;
+  text-align: center;
+  margin-top: 60px;
+  padding: 20px 0 26px 0;
+  margin: 0 auto;
+  position: relative;
+  -moz-placeholder-color: #c4c4c4;
+  -moz-placeholder-letter-spacing: 1px;
+  -ms-input-placeholder-color: #c4c4c4;
+  -ms-input-placeholder-letter-spacing: 1px; }
+  .hidden_form span {
+    font-family: 'GothamProBlack', sans-serif;
+    font-size: 16px;
+    line-height: 31px; }
+  .hidden_form input {
+    width: 250px;
+    height: 40px;
+    border: 2px solid #e3e0d6;
+    padding-left: 15px;
+    margin-top: 16px; }
+  .hidden_form ::-webkit-input-placeholder {
+    color: #c4c4c4;
+    letter-spacing: 1px; }
+  .hidden_form ::-moz-placeholder {
+    color: #c4c4c4;
+    letter-spacing: 1px; }
+  .hidden_form textarea {
+    resize: none;
+    width: 250px;
+    height: 80px;
+    border: 2px solid #e3e0d6;
+    margin-top: 26px;
+    padding-left: 15px; }
+  .hidden_form .hid-form-but {
+    width: 150px;
+    height: 40px;
+    background-image: none;
+    background-color: #edae2c;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 14px; }
+  .hidden_form .hid-form-but:hover {
+    opacity: 0.7; }
 
 .hidden {
   display: none; }
