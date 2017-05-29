@@ -99,7 +99,7 @@ header {
   background-image: url("../img/main-bg.jpg");
   width: 100%;
   height: 733px;
-  background-position: top -25px center;
+  background-position: top 80px center;
   background-repeat: no-repeat;
   background-size: cover; }
   .main-banner h1 {
@@ -109,7 +109,7 @@ header {
     color: #fff;
     font-weight: 700;
     text-align: center;
-    margin-top: 136px;
+    margin-top: 231px;
     line-height: 70px;
     padding: 0 150px; }
   .main-banner span {
