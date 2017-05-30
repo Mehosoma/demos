@@ -3,7 +3,7 @@ body {
   font-weight: normal;
   font-size: 14px;
   min-width: 320px;
-  max-width: 1680px;
+  max-width: 1920px;
   position: relative;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
@@ -542,7 +542,8 @@ header {
   height: 553px;
   background-position: center center;
   background-repeat: no-repeat;
-  padding: 70px 0; }
+  padding: 70px 0;
+  background-size: cover; }
   .order h2 {
     color: #fff;
     width: 420px;
