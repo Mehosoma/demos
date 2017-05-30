@@ -25,6 +25,15 @@ body {
     text-decoration: none;
     outline: none; }
 
+a, button {
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out; }
+
+button {
+  cursor: pointer; }
+
 /***********************************************************General************************************************************/
 .container {
   width: 1200px;
@@ -112,6 +121,8 @@ header {
           font-family: 'ProximaNovaRegular', sans-serif;
           font-size: 16px;
           padding: 0; }
+        header .main-menu ul li a:hover {
+          opacity: 1; }
       header .main-menu ul li:hover {
         border-bottom: 1px solid red; }
 
@@ -194,6 +205,9 @@ header {
   background-position: right 33px center;
   background-repeat: no-repeat; }
 
+#mainbanner a:hover {
+  background-color: #c50000; }
+
 #button-in {
   position: absolute;
   top: 93px;
@@ -204,6 +218,8 @@ header {
     color: #fff;
     border: 1px solid #fff;
     padding: 10px 30px; }
+  #button-in a:hover {
+    background-color: rgba(0, 0, 0, 0.5); }
 
 #hidden_form {
   height: 255px;
@@ -383,6 +399,8 @@ header {
       background-image: url("../images/check-button-bg.png");
       background-position: right 29px center;
       background-repeat: no-repeat; }
+    #check .check-left a:hover {
+      background-color: #c50000; }
   #check .check-right {
     position: absolute;
     top: 0;
@@ -730,7 +748,11 @@ header {
         font-size: 18px;
         text-decoration: none;
         border: 1px solid #e6e6e6;
-        padding: 13px 29px; }
+        padding: 13px 29px;
+        display: inline; }
+      #tarifs .stage-block .stage-block-footer a:hover {
+        background-color: #ff1515;
+        color: #fff; }
   #tarifs .central-block {
     border: 1px solid red;
     width: 310px;
@@ -745,6 +767,8 @@ header {
     #tarifs .central-block .stage-block-footer a {
       background-color: #ff1515;
       color: #fff; }
+    #tarifs .central-block .stage-block-footer a:hover {
+      background-color: #c50000; }
   #tarifs .side-block {
     margin-top: 50px; }
   #tarifs #second-stage {
@@ -774,6 +798,9 @@ header {
     #tarifs #second-stage .stage-block-footer a {
       background-color: #fff;
       color: #ff1515; }
+    #tarifs #second-stage .stage-block-footer a:hover {
+      background-color: #ff1515;
+      color: #fff; }
 
 .dop-opt {
   color: #fff;
@@ -949,6 +976,8 @@ header {
     background-image: url("../images/check-button-bg.png");
     background-position: right 30px center;
     background-repeat: no-repeat; }
+  #but2 a:hover {
+    background-color: #c50000; }
 
 /***********************************************************Footer*********************************************************/
 footer {
@@ -957,6 +986,8 @@ footer {
   height: 400px;
   background-position: center center;
   background-repeat: no-repeat; }
+  footer a:hover {
+    opacity: 0.7; }
   footer .top-footer-left {
     width: 568px;
     display: inline-block;
@@ -1045,6 +1076,8 @@ footer {
     background-image: url("../images/check-button-bg.png");
     background-position: right 47px center;
     background-repeat: no-repeat; }
+  #mainbanner-other-page a:hover {
+    background-color: #c50000; }
   #mainbanner-other-page h1 {
     color: #fff;
     font-family: 'ProximaNovaRegular', sans-serif;
@@ -1150,6 +1183,8 @@ footer {
       position: relative;
       margin-top: 13px;
       margin-left: 20px; }
+    #feed .form-sub button:hover {
+      background-color: #c50000; }
 
 #registr {
   background-image: url("../images/registr-bg.jpg");
@@ -1182,6 +1217,8 @@ footer {
     position: absolute;
     top: 80px;
     right: 61px; }
+  #registr a:hover {
+    background-color: #c50000; }
   #registr .reg-desc-wrap {
     padding-top: 80px;
     padding-left: 43px; }
@@ -1238,6 +1275,8 @@ footer {
       float: right;
       margin-right: 30px;
       margin-top: 13px; }
+    #partn-programm .part-prog-left button:hover {
+      background-color: #c50000; }
   #partn-programm .part-prog-right {
     float: left;
     width: 500px;
@@ -1415,6 +1454,8 @@ footer {
       background-image: url("../images/check-button-bg.png");
       background-position: right 33px center;
       background-repeat: no-repeat; }
+    #news-page-content .news-button a:hover {
+      background-color: #c50000; }
   #news-page-content .pages {
     position: relative;
     text-align: center;
@@ -1584,6 +1625,9 @@ footer {
         text-decoration: none;
         border: 1px solid #e6e6e6;
         padding: 12px 29px; }
+      #bonus-page .bonus-block .bonus-block-footer a:hover {
+        background-color: #ff1515;
+        color: #fff; }
 
 .calc-page {
   padding-top: 16px !important; }
@@ -1659,6 +1703,8 @@ footer {
     background-image: url("../images/check-button-bg.png");
     background-position: right 47px center;
     background-repeat: no-repeat; }
+  #mainbanner-other-response a:hover {
+    background-color: #c50000; }
   #mainbanner-other-response h1 {
     color: #fff;
     font-family: 'ProximaNovaRegular', sans-serif;
@@ -1687,6 +1733,8 @@ footer {
       background-image: url("../images/check-button-bg.png");
       background-position: right 47px center;
       background-repeat: no-repeat; }
+    #resp-video .video-button a:hover {
+      background-color: #c50000; }
   #resp-video .video-content {
     position: relative;
     min-height: 500px; }
