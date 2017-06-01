@@ -68,6 +68,18 @@ $('.proj-modal, .proj15-modal, .proj16-modal, .proj18-modal, .proj20-modal, .pro
     thumbItem:6,
     loop: true,    
     responsive : [
+
+            {
+                breakpoint:3000,
+                settings: {
+                    item:1,
+                    slideMove:1, 
+                    slideMargin: 0,  
+                    loop: false, 
+                    currentPagerPosition: 'middle',                
+                  }
+            },
+
             {
                 breakpoint:1500,
                 settings: {
