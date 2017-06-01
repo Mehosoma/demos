@@ -3,6 +3,14 @@ var slider = $('.slider').lightSlider({
     loop: false,
     responsive : [
             {
+                breakpoint:3000,
+                settings: {
+                    item:4,
+                    slideMove:4, 
+                    slideMargin: 0,                   
+                  }
+            },
+            {
                 breakpoint:1500,
                 settings: {
                     item:4,
