@@ -299,6 +299,14 @@
 		height: 86px;
 	}
 
+	.slider-for .slick-prev, .slider-for .slick-next{
+		display: none!important;
+	} 
+
+	.slider-nav .slick-prev, .slider-nav .slick-next{
+		display: none!important;
+	}
+
 }
 
 @media only screen and (min-width : 480px) and (max-width : 767px){
@@ -553,6 +561,14 @@
 	.slider-nav .slick-slide{
 		width: 171px;
 		
+	}
+
+	.slider-for .slick-prev, .slider-for .slick-next{
+		display: none!important;
+	} 
+
+	.slider-nav .slick-prev, .slider-nav .slick-next{
+		display: none!important;
 	}
 
 }
