@@ -279,6 +279,26 @@
 		width: 100%;
 	}
 
+	.modal.in .modal-dialog{
+		margin: 10px auto;
+	}
+
+	.slider-for .slick-slide img{
+		margin: 0 auto;
+		width: 100%;
+	}
+
+	.slider-nav{
+		width: 100%;
+		margin: 30px auto;
+		height: 90px;
+	}
+
+	.slider-nav .slick-slide{
+		width: 100px;
+		height: 86px;
+	}
+
 }
 
 @media only screen and (min-width : 480px) and (max-width : 767px){
@@ -515,6 +535,26 @@
 		margin: 0 auto;
 	}
 
+	.modal.in .modal-dialog{
+		margin: 10px auto;
+	}
+
+	.slider-for .slick-slide img{
+		margin: 0 auto;
+		width: 100%;
+	}
+
+	.slider-nav{
+		width: 100%;
+		margin: 30px auto;
+		
+	}
+
+	.slider-nav .slick-slide{
+		width: 171px;
+		
+	}
+
 }
 
 @media only screen and (min-width : 768px) and (max-width : 991px){
@@ -629,6 +669,22 @@
 		margin-bottom: 30px;
 	}
 
+	.slider-for .slick-slide img{
+		margin: 0 auto;
+		width: 100%;
+	}
+
+	.slider-nav{
+		width: 690px;
+		margin: 30px auto;
+		height: 135px;
+	}
+
+	.slider-nav .slick-slide{
+		width: 171px;
+		height: 131px;
+	}
+
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px){
@@ -704,6 +760,21 @@
 	.stage-main-block .number-stage{
 		margin-right: -100px;
 		top: 106px;
+	}
+
+	.slider-for .slick-slide img{
+		margin: 0 auto;
+	}
+
+	.slider-nav{
+		width: 838px;
+		margin: 30px auto;
+		height: 135px;
+	}
+
+	.slider-nav .slick-slide{
+		width: 171px;
+		height: 131px;
 	}
 
 	

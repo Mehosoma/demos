@@ -64,77 +64,75 @@ $('#goToNextSlide').on('click', function () {
 
 
 
-
-
 $(document).ready(function(){
 
 $('.proj-modal, .proj15-modal, .proj16-modal, .proj18-modal, .proj20-modal, .proj26-modal, .proj28-modal, .proj33-modal, .proj41-modal, .proj43-modal, .proj46-modal, .proj57-modal, .proj68-modal, .proj74-modal, .proj75-modal, .proj76-modal, .proj80-modal, .proj82-modal, .proj89-modal, .proj104-modal, .proj111-modal, .proj135-modal, .proj139-modal, .proj140-modal').on('shown.bs.modal', function(){ 
 
-    var slider1 = $('.modal-slider').lightSlider({
-    controls: true,
-    gallery: true,    
-    thumbItem:6,
-    loop: true,    
-    responsive : [
-
-            {
-                breakpoint:3000,
-                settings: {
-                    item:1,
-                    slideMove:1, 
-                    slideMargin: 0,  
-                    loop: false, 
-                    currentPagerPosition: 'middle',                
-                  }
-            },
-
-            {
-                breakpoint:1500,
-                settings: {
-                    item:1,
-                    slideMove:1, 
-                    slideMargin: 0,  
-                    loop: false, 
-                    currentPagerPosition: 'middle',                
-                  }
-            },
-
-            {
-                breakpoint: 1200,
-                settings: {
-                    item:3,
-                    slideMove:3,
-                    slideMargin: 0,                      
-                  }
-            },
-
-            {
-                breakpoint:992,
-                settings: {
-                    item:2,
-                    slideMove:2,
-                                       
-                  }
-            },
-            {
-                breakpoint:768,
-                settings: {
-                    item:1,
-                    slideMove:1,
-                                     
-                  }
-            },
-            {
-                breakpoint:480,
-                settings: {
-                    item:1,
-                    slideMove:1,                   
-                  
-                  }
-            }
-        ]        
+$('.slider-for').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: true,
+  fade: true,
+  asNavFor: '.slider-nav',
+  initialSlide: 0
 });
-
+$('.slider-nav').slick({
+  slidesToShow: 5,
+  slidesToScroll: 1,
+  asNavFor: '.slider-for',
+  dots: false,
+  centerMode: false,
+  focusOnSelect: true,
+  arrows: true,  
+  variableWidth: true,
+  initialSlide: 0,
+  responsive: [
+    {
+      breakpoint: 1199,
+      settings: {
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        centerMode: false,        
+      }
+    },
+    {
+      breakpoint: 991,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 1,        
+        centerMode: false,
+      }
+    },    
+    {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 479,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 319,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    }   
+  ]
+});
 
 }); 
 
@@ -145,8 +143,11 @@ $(document).ready(function(){
 
 $('.proj-modal, .proj15-modal, proj16-modal, .proj18-modal, .proj20-modal, .proj26-modal, .proj28-modal, .proj33-modal, .proj41-modal, .proj43-modal, .proj46-modal, .proj57-modal, .proj68-modal, .proj74-modal, .proj75-modal, .proj76-modal, .proj80-modal, .proj82-modal, .proj89-modal, .proj104-modal, .proj111-modal, .proj135-modal, .proj139-modal, .proj140-modal').on('hidden.bs.modal', function(){
 
-    $('.lSGallery').remove();
-
+  $('.slider-for').slick('unslick');
+  $('.slider-nav').slick('unslick');
+  $('.slider-for').slick('setPosition');
+  $('.slider-nav').slick('setPosition');
+ 
 }); 
 
 });   
