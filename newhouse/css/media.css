@@ -779,7 +779,7 @@
 	}
 
 	.slider-nav{
-		width: 838px;
+		width: 800px;
 		margin: 30px auto;
 		height: 135px;
 	}
@@ -787,6 +787,14 @@
 	.slider-nav .slick-slide{
 		width: 171px;
 		height: 131px;
+	}
+
+	.slider-for .slick-next{
+		right: 100px;	
+	}
+
+	.slider-for .slick-prev{
+		left: 85px;
 	}
 
 	
