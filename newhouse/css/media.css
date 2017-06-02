@@ -290,13 +290,11 @@
 
 	.slider-nav{
 		width: 100%;
-		margin: 30px auto;
-		height: 90px;
+		margin: 30px auto;		
 	}
 
 	.slider-nav .slick-slide{
-		width: 100px;
-		height: 86px;
+		width: 100px;		
 	}
 
 	.slider-for .slick-prev, .slider-for .slick-next{
@@ -688,14 +686,9 @@
 
 	.slider-nav{
 		width: 690px;
-		margin: 30px auto;
-		height: 135px;
+		margin: 30px auto;		
 	}
-
-	.slider-nav .slick-slide{
-		width: 171px;
-		height: 131px;
-	}
+	
 
 }
 
@@ -780,14 +773,10 @@
 
 	.slider-nav{
 		width: 800px;
-		margin: 30px auto;
-		height: 135px;
+		margin: 30px auto;		
 	}
 
-	.slider-nav .slick-slide{
-		width: 171px;
-		height: 131px;
-	}
+	
 
 	.slider-for .slick-next{
 		right: 100px;	
