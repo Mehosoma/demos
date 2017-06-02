@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "WhitneyBook";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/WhitneyBook.eot?#iefix") format("embedded-opentype"), url("../fonts/WhitneyBook.woff") format("woff"), url("../fonts/WhitneyBook.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "WhitneySemiBold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/WhitneySemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/WhitneySemiBold.woff") format("woff"), url("../fonts/WhitneySemiBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "IntroInline";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/IntroInline.eot?#iefix") format("embedded-opentype"), url("../fonts/IntroInline.woff") format("woff"), url("../fonts/IntroInline.ttf") format("truetype"); }
