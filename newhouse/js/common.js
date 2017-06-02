@@ -64,7 +64,7 @@ $('#goToNextSlide').on('click', function () {
 
 
 
-$(document).ready(function(){
+
 
 $('.proj-modal, .proj15-modal, .proj16-modal, .proj18-modal, .proj20-modal, .proj26-modal, .proj28-modal, .proj33-modal, .proj41-modal, .proj43-modal, .proj46-modal, .proj57-modal, .proj68-modal, .proj74-modal, .proj75-modal, .proj76-modal, .proj80-modal, .proj82-modal, .proj89-modal, .proj104-modal, .proj111-modal, .proj135-modal, .proj139-modal, .proj140-modal').on('shown.bs.modal', function(){ 
 
@@ -106,29 +106,33 @@ $('.slider-nav').slick({
     {
       breakpoint: 767,
       settings: {
-        slidesToShow: 4,
-        slidesToScroll: 1
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        variableWidth: false,
       }
     },
     {
       breakpoint: 600,
       settings: {
         slidesToShow: 4,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        variableWidth: false,
       }
     },
     {
       breakpoint: 479,
       settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        variableWidth: false,
       }
     },
     {
-      breakpoint: 319,
+      breakpoint: 400,
       settings: {
         slidesToShow: 2,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        variableWidth: false,
       }
     }   
   ]
@@ -136,7 +140,7 @@ $('.slider-nav').slick({
 
 }); 
 
-});
+
 
 
 $(document).ready(function(){
