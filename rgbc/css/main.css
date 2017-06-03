@@ -247,7 +247,7 @@ header {
   width: 100%;
   position: absolute;
   top: 0;
-  z-index: 1; }
+  z-index: 100; }
   .triangle #triangle {
     width: 100%; }
 
@@ -366,8 +366,8 @@ header {
 
 /*******************************************************Transition*****************************************/
 .transition {
-  padding: 8px 0 40px 0;
-  min-height: 400px; }
+  padding: 8px 0px 0px 0px;
+  min-height: 332px; }
   .transition h2 {
     position: relative;
     margin-bottom: 15px;
@@ -445,23 +445,307 @@ header {
       .transition-block .form-wrap form button:hover {
         opacity: 0.7; }
 
+/*******************************************************Scheme*****************************************/
 .scheme {
   width: 100%;
   height: 678px;
   background-repeat: no-repeat;
-  background-size: 100% 100%; }
+  background-size: 100% 100%;
+  position: relative;
+  padding-top: 121px; }
+  .scheme h2 {
+    color: #fff; }
+  .scheme hr {
+    width: 190px;
+    height: 4px;
+    text-align: left;
+    margin: 0px;
+    background: #acb5d3;
+    background-color: #acb5d3;
+    margin: 32px auto 40px auto;
+    border: none; }
 
+.triangle-scheme {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 100; }
+  .triangle-scheme #triangle-scheme {
+    width: 100%; }
+
+.scheme-block-icon {
+  position: relative; }
+
+.icon-wrap {
+  width: 155px;
+  height: 155px;
+  background-color: rgba(255, 255, 255, 0.35);
+  border-radius: 50%;
+  position: relative;
+  margin: 0 auto; }
+
+.icon-main {
+  width: 130px;
+  height: 130px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0; }
+  .icon-main img {
+    width: 76px;
+    height: 73px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0; }
+
+.scheme .col-lg-five:nth-child(2) img {
+  width: 62px;
+  height: 92px;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0; }
+
+.scheme .col-lg-five:nth-child(3) img {
+  width: 92px;
+  height: 91px;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0; }
+
+.scheme .col-lg-five:nth-child(4) img {
+  width: 77px;
+  height: 77px;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0; }
+
+.scheme .col-lg-five:nth-child(5) img {
+  width: 70px;
+  height: 90px;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0; }
+
+.icon-hover {
+  position: absolute;
+  width: 185px;
+  height: 185px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0; }
+
+.icon-hover {
+  opacity: 0;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out; }
+
+.icon-hover:hover {
+  opacity: 1; }
+
+.scheme-block-text {
+  text-align: center;
+  margin-top: 34px; }
+  .scheme-block-text span {
+    font-family: 'WhitneySemiBold', sans-serif;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 2px;
+    color: #fff;
+    text-transform: uppercase; }
+
+/*******************************************************Photos*****************************************/
 .photos {
   width: 100%;
-  height: 999px; }
+  height: 999px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  margin-top: -160px; }
+  .photos h2 {
+    margin-top: 192px;
+    margin-bottom: 14px; }
+  .photos span {
+    font-family: 'WhitneyBook', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 2px;
+    color: #000;
+    text-transform: uppercase;
+    text-align: center;
+    display: block; }
 
+.photos-block-wrap {
+  text-align: center;
+  margin-top: 40px; }
+
+.photos-block {
+  display: inline-block;
+  width: 212px;
+  height: 171px;
+  margin-bottom: 5px;
+  position: relative; }
+  .photos-block img {
+    width: 100%;
+    height: 100%; }
+
+.photos-block-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out; }
+  .photos-block-overlay p {
+    border-left: 3px solid #fff;
+    text-align: left;
+    margin: 21px 0px 21px 21px;
+    padding: 30px 10px;
+    color: #fff;
+    font-family: 'WhitneySemiBold', sans-serif;
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: 1.5px; }
+
+.photos-block:hover .photos-block-overlay {
+  opacity: 1; }
+
+.photos-button {
+  text-align: center;
+  margin-top: 35px; }
+  .photos-button a {
+    font-family: 'WhitneyBook', sans-serif;
+    font-size: 16px;
+    line-height: 40px;
+    letter-spacing: 2px;
+    color: #fff;
+    display: inline-block;
+    background-color: #3f51b5;
+    padding: 0 20px 0 20px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 0 30px rgba(49, 87, 138, 0.15);
+    box-shadow: 0 0 30px rgba(49, 87, 138, 0.15); }
+  .photos-button i {
+    margin-left: 20px; }
+
+/*******************************************************FAQ*****************************************/
 .faq {
   width: 100%;
-  height: 777px;
-  background-color: #304691; }
+  min-height: 777px;
+  background-color: #304691;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  padding-bottom: 72px; }
+  .faq h2 {
+    text-align: left;
+    color: #fff; }
+  .faq hr {
+    width: 190px;
+    height: 4px;
+    text-align: left;
+    margin: 0px;
+    background: #d3a154;
+    background-color: #d3a154;
+    margin: 32px 0px 22px 0;
+    border: none; }
 
 .acc-wrap {
-  background-color: #3a53a7; }
+  background-color: #3a53a7;
+  margin-top: 56px;
+  width: 1025px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 42px 60px;
+  min-height: 680px; }
+  .acc-wrap .more a {
+    color: #edb660;
+    font-family: 'WhitneySemiBold', sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 2px;
+    text-transform: uppercase; }
+
+#accordion {
+  width: 880px; }
+
+.panel {
+  border: none;
+  border-radius: 0px;
+  border-bottom: 1px solid #5e6faa; }
+
+.panel-default > .panel-heading {
+  background-color: #3a53a7;
+  background-repeat: no-repeat;
+  background-position: right 28px center;
+  border: none;
+  border-radius: 0px;
+  padding: 0px 0px;
+  height: 68px; }
+
+.panel-title > a, .panel-title > small, .panel-title > .small, .panel-title > small > a, .panel-title > .small > a {
+  font-family: 'WhitneyBook', sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 2px;
+  color: #fff;
+  display: block;
+  line-height: 68px; }
+
+.faq-contact {
+  width: 880px;
+  background-color: #3e58b0;
+  position: relative;
+  height: 75px;
+  line-height: 75px;
+  margin-top: 55px; }
+  .faq-contact span {
+    font-family: 'WhitneyBook', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    letter-spacing: 2px;
+    color: #fff;
+    text-transform: none;
+    padding-left: 127px; }
+  .faq-contact img {
+    position: absolute;
+    width: 57px;
+    height: 57px;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 27px; }
 
 .articles {
   width: 100%;

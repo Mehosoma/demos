@@ -347,7 +347,9 @@
 
 	<!--Scheme-->
 	<section class="scheme" style="background-image: url('img/sheme-bg.png');">
-		<div class="triangle-scheme"></div>
+		<div class="triangle-scheme">
+			<canvas id="triangle-scheme" width="1440" height="110">Triangle</canvas>
+		</div>
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
@@ -361,12 +363,13 @@
 						<div class="scheme-block-icon">
 							<div class="icon-wrap">
 								<div class="icon-main">
-									<img src="img/post.png" alt="sheme-icon-post">
+									<img src="img/post.png" alt="sheme-icon-post">										
 								</div>							
 							</div>
+							<div class="icon-hover"></div>
 						</div>
 						<div class="scheme-block-text">
-							<span>Заявка на сайте</span>
+							<span>Заявка на<br>сайте</span>
 						</div>
 					</div>
 				</div>				
@@ -378,9 +381,10 @@
 									<img src="img/micro.png" alt="sheme-icon-micro">
 								</div>							
 							</div>
+							<div class="icon-hover"></div>
 						</div>
 						<div class="scheme-block-text">
-							<span>Бесплатная диагностика</span>
+							<span>Бесплатная<br>диагностика</span>
 						</div>
 					</div>
 				</div>	
@@ -392,6 +396,7 @@
 									<img src="img/box.png" alt="sheme-icon-box">
 								</div>							
 							</div>
+							<div class="icon-hover"></div>
 						</div>
 						<div class="scheme-block-text">
 							<span>Прием деталей</span>
@@ -406,6 +411,7 @@
 									<img src="img/repair-scheme.png" alt="sheme-icon-repair">
 								</div>							
 							</div>
+							<div class="icon-hover"></div>
 						</div>
 						<div class="scheme-block-text">
 							<span>Ремонт</span>
@@ -420,6 +426,7 @@
 									<img src="img/test.png" alt="sheme-icon-test">
 								</div>							
 							</div>
+							<div class="icon-hover"></div>
 						</div>
 						<div class="scheme-block-text">
 							<span>Тестирование</span>
@@ -432,7 +439,7 @@
 
 	<!--Photos-->
 	<section class="photos" style="background-image: url(img/photos-bg.jpg);">
-		<div class="container">
+		<div class="container-small">
 			<div class="row">
 				<div class="col-lg-12">
 					<h2>Фотографии нашей работы</h2>
@@ -441,19 +448,51 @@
 			</div>
 			<div class="row">
 				<div class="col-lg-12">
-					<div class="photos-block">
-						<img src="img/photos-1.jpg">
-						<img src="img/photos-2.jpg">
-						<img src="img/photos-3.jpg">
-						<img src="img/photos-4.jpg">
-						<img src="img/photos-5.jpg">
-						<img src="img/photos-6.jpg">
+					<div class="photos-block-wrap">
+						<div class="photos-block">
+							<img src="img/photos-1.jpg">
+							<div class="photos-block-overlay">
+								<p>Шлифовка<br>головки блока<br>цилиндра</p>
+							</div>
+						</div>
+						<div class="photos-block">
+							<img src="img/photos-2.jpg">
+							<div class="photos-block-overlay">
+								<p>Шлифовка<br>головки блока<br>цилиндра</p>
+							</div>
+						</div>
+						<div class="photos-block">
+							<img src="img/photos-3.jpg">
+							<div class="photos-block-overlay">
+								<p>Шлифовка<br>головки блока<br>цилиндра</p>
+							</div>
+						</div>
+						<div class="photos-block">
+							<img src="img/photos-4.jpg">
+							<div class="photos-block-overlay">
+								<p>Шлифовка<br>головки блока<br>цилиндра</p>
+							</div>
+						</div>
+						<div class="photos-block">
+							<img src="img/photos-5.jpg">
+							<div class="photos-block-overlay">
+								<p>Шлифовка<br>головки блока<br>цилиндра</p>
+							</div>
+						</div>
+						<div class="photos-block">
+							<img src="img/photos-6.jpg">
+							<div class="photos-block-overlay">
+								<p>Шлифовка<br>головки блока<br>цилиндра</p>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-lg-12">
-					<a href="">Загрузить еще</a>
+					<div class="photos-button">
+						<a href="">Загрузить еще<i class="fa fa-refresh" aria-hidden="true"></i></a>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -466,13 +505,14 @@
 				<div class="col-lg-12">
 					<div class="acc-wrap">
 						<h2>Вопросы и <strong>ответы</strong></h2>
+						<hr />
 						<div class="panel-group" id="accordion">
 						  <!-- 1 панель -->
 							<div class="panel panel-default" >
 						    <!-- Заголовок 1 панели -->
-						    	<div class="panel-heading" style="background-image: url('img/arrow-down.png');">
+						    	<div class="panel-heading" style="background-image: url('img/plus.png');">
 						      		<h4 class="panel-title">
-						        		<a data-toggle="collapse" data-parent="#accordion" href=".collapseOne">Сколько стоит дом?</a>
+						        		<a data-toggle="collapse" data-parent="#accordion" href=".collapseOne">Какая гора самая крупная на планете?</a>
 						      		</h4>
 						    	</div>
 								<div class="collapseOne panel-collapse collapse in">
@@ -485,9 +525,9 @@
 							 <!-- 2 панель -->
 							<div class="panel panel-default">
 							<!-- Заголовок 2 панели -->
-								<div class="panel-heading" style="background-image: url('img/arrow-down.png');" >
+								<div class="panel-heading" style="background-image: url('img/plus.png');" >
 									<h4 class="panel-title">
-										<a data-toggle="collapse" data-parent="#accordion" href=".collapseTwo">Где можно посмотреть готовые работы?</a>
+										<a data-toggle="collapse" data-parent="#accordion" href=".collapseTwo">Что тяжелее - киллограм пуха или киллограм свинца?</a>
 									</h4>
 								</div>
 								<div class="collapseTwo panel-collapse collapse">
@@ -499,9 +539,9 @@
 							</div>
 							<div class="panel panel-default">
 							<!-- Заголовок 3 панели -->
-								<div class="panel-heading" style="background-image: url('img/arrow-down.png');">
+								<div class="panel-heading" style="background-image: url('img/plus.png');">
 									<h4 class="panel-title">
-										<a data-toggle="collapse" data-parent="#accordion" href=".collapseThree">Сколько стоит отдельный проект без монтажа?</a>
+										<a data-toggle="collapse" data-parent="#accordion" href=".collapseThree">Что тяжелее - киллограм пуха или киллограм свинца?</a>
 									</h4>
 								</div>
 								<div class="collapseThree panel-collapse collapse">
@@ -513,7 +553,7 @@
 							</div>
 							<div class="panel panel-default">
 							<!-- Заголовок 3 панели -->
-								<div class="panel-heading" style="background-image: url('img/arrow-down.png');">
+								<div class="panel-heading" style="background-image: url('img/plus.png');">
 									<h4 class="panel-title">
 										<a data-toggle="collapse" data-parent="#accordion" href=".collapsefour">Где можно посмотреть готовые работы?</a>
 										
@@ -525,25 +565,14 @@
 										<p>Грустный реторический вопрос скатился по его щеке и он продолжил свой путь. По дороге встретил текст рукопись. Грустный реторический вопрос скатился по его щеке и он продолжил свой путь. По дороге встретил текст рукопись.</p>
 									</div>
 								</div>
-							</div>
-							<div class="panel panel-default">
-							<!-- Заголовок 3 панели -->
-								<div class="panel-heading" style="background-image: url('img/arrow-down.png');">
-									<h4 class="panel-title">
-										<a data-toggle="collapse" data-parent="#accordion" href=".collapsefive">Где можно посмотреть готовые работы?</a>
-										
-									</h4>
-								</div>
-								<div class="collapsefive panel-collapse collapse">
-								<!-- Содержимое 3 панели -->
-									<div class="panel-body">
-										<p>Грустный реторический вопрос скатился по его щеке и он продолжил свой путь. По дороге встретил текст рукопись. Грустный реторический вопрос скатился по его щеке и он продолжил свой путь. По дороге встретил текст рукопись.</p>
-									</div>
-								</div>
-							</div>
+							</div>														
+						</div>
+						<div class="more">
+							<a>Показать все вопросы</a>
 						</div>
 						<div class="faq-contact">
-							<span>Вы можете задать свои вопросы в форме ниже или по телефону 7 (921) 472 14 23</span>
+							<img src="img/question.png" alt="question-icon">
+							<span>Вы можете задать свои вопросы в форме ниже<br>или по телефону 7 (921) 472 14 23</span>
 						</div>
 					</div>					
 				</div>
