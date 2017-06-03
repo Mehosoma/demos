@@ -8,7 +8,8 @@ body {
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
-  margin: 0 auto; }
+  margin: 0 auto;
+  background-color: #fcfcfc; }
   body a:hover, body a:focus, body a:active {
     text-decoration: none;
     outline: none; }
@@ -26,28 +27,423 @@ body {
     padding: 0; }
   body a:hover {
     opacity: 0.7; }
+  body h2 {
+    font-family: '8289', sans-serif;
+    font-size: 40px;
+    letter-spacing: 3px;
+    color: #000;
+    text-align: center; }
+  body .container-small {
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 830px; }
+
+/*******************************************************HEADER*****************************************/
+header {
+  position: absolute;
+  top: 0;
+  height: 50px;
+  width: 100%;
+  z-index: 1;
+  border: none; }
+  header .col-lg-2, header .col-lg-3, header .col-lg-4 {
+    padding: 0px; }
+
+.navbar {
+  margin-bottom: 0px;
+  background-color: transparent;
+  background-image: none;
+  border: none;
+  margin-left: -32px; }
+
+.navbar-default .navbar-nav > li > a {
+  color: #fff;
+  font-family: 'WhitneySemiBold', sans-serif;
+  font-size: 14px;
+  text-transform: uppercase; }
+
+.navbar-default .navbar-nav > li > a:hover {
+  color: #edb660;
+  opacity: 1; }
+
+.logo {
+  margin-top: 18px; }
+
+.phone {
+  line-height: 50px;
+  text-align: center;
+  margin-left: 5px; }
+  .phone span {
+    font-family: 'WhitneyBook', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    margin-left: 7px;
+    border-bottom: 1px dashed #fff;
+    letter-spacing: 1.5px; }
+
+.mail {
+  line-height: 50px;
+  text-align: center;
+  margin-left: -115px; }
+  .mail img {
+    position: relative;
+    margin-top: -3px; }
+  .mail a {
+    font-family: 'WhitneyBook', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    margin-left: 7px;
+    letter-spacing: 1.5px; }
 
 /*******************************************************FIRST*****************************************/
 .first {
   width: 100%;
-  height: 686px;
+  height: 701px;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 100% 100%; }
+  .first h1 {
+    margin-top: 117px;
+    margin-bottom: 0px;
+    font-family: '8289', sans-serif;
+    color: #fff;
+    font-size: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 0 #000;
+    line-height: 46px;
+    letter-spacing: 3px; }
+  .first span {
+    font-family: 'WhitneyBook', sans-serif;
+    font-size: 20px;
+    color: #edde60;
+    text-align: center;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 46px; }
+
+.first-center-wrap {
+  height: 321px;
+  width: 700px;
+  margin: 0 auto;
+  background: -webkit-gradient(linear, right top, left top, color-stop(0, #edb660), color-stop(10%, #edb660), color-stop(10%, transparent), to(transparent)), -webkit-gradient(linear, left top, right top, from(#edb660), color-stop(10%, #edb660), color-stop(10%, transparent), to(transparent)) no-repeat border-box;
+  background: -webkit-linear-gradient(right, #edb660 0, #edb660 10%, transparent 10%, transparent 100%), -webkit-linear-gradient(left, #edb660 0%, #edb660 10%, transparent 10%, transparent 100%) no-repeat border-box;
+  background: -o-linear-gradient(right, #edb660 0, #edb660 10%, transparent 10%, transparent 100%), -o-linear-gradient(left, #edb660 0%, #edb660 10%, transparent 10%, transparent 100%) no-repeat border-box;
+  background: linear-gradient(to left, #edb660 0, #edb660 10%, transparent 10%, transparent 100%), linear-gradient(to right, #edb660 0%, #edb660 10%, transparent 10%, transparent 100%) no-repeat border-box;
+  background-size: 100% 4px;
+  background-repeat: no-repeat;
+  margin-top: -69px; }
+
+.first-center-block {
+  width: auto;
+  margin: 0 auto;
+  border: 4px solid #edb660;
+  border-top: 0px;
+  padding: 85px 20px 20px 25px; }
+
+.left-first {
+  float: left; }
+
+.right-firts {
+  padding-top: 46px;
+  padding-left: 12px;
+  float: left; }
+  .right-firts ul {
+    padding: 0; }
+    .right-firts ul li {
+      position: relative;
+      margin-bottom: 30px; }
+      .right-firts ul li img {
+        position: absolute;
+        width: 56px;
+        height: 56px;
+        margin: auto;
+        top: 0;
+        bottom: 0;
+        left: 0; }
+      .right-firts ul li span {
+        text-align: left;
+        display: inline-block;
+        font-family: 'WhitneyBook', sans-serif;
+        font-size: 14px;
+        color: #fff;
+        text-transform: none;
+        text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.28);
+        letter-spacing: 1.5px;
+        position: relative;
+        padding-left: 67px;
+        line-height: 20px; }
+
+.mouse {
+  display: block;
+  text-align: center;
+  margin-top: 130px; }
+
+/*******************************************************Services*****************************************/
+.services {
+  background-color: #fcfcfc;
+  padding: 42px 0 25px 0; }
+  .services hr {
+    width: 190px;
+    height: 4px;
+    background: #3f51b5;
+    background-color: #3f51b5;
+    margin-top: 30px;
+    margin-bottom: 57px; }
+  .services .col-lg-4 {
+    margin-bottom: 50px; }
+
+.services-block {
+  width: 210px;
+  height: 250px;
+  margin: 0 auto;
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); }
+  .services-block hr {
+    width: 65px;
+    height: 2px;
+    text-align: left;
+    margin: 4px 0 7px 0;
+    margin-left: 16px; }
+  .services-block span {
+    font-family: '8289', sans-serif;
+    font-size: 15px;
+    line-height: 22px;
+    color: #000;
+    padding-top: 16px;
+    margin-left: 16px;
+    display: block; }
+  .services-block a {
+    font-family: 'WhitneySemiBold', sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    color: #3f51b5;
+    margin-left: 16px; }
+
+.services-button {
+  text-align: center;
+  margin-top: 14px; }
+  .services-button a {
+    font-family: 'WhitneyBook', sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    color: #3f51b5;
+    text-transform: uppercase;
+    text-decoration: underline; }
+
+/*******************************************************Desc*****************************************/
+.desc {
+  background-color: #fff;
+  position: relative; }
+  .desc .container {
+    width: 100%; }
+  .desc h2 {
+    text-align: left; }
+
+.triangle {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 1; }
+  .triangle #triangle {
+    width: 100%; }
+
+.desc-slider-wrap {
+  width: 100%; }
+  .desc-slider-wrap img {
+    width: 100%;
+    float: right;
+    margin-right: 42px; }
+
+.desc-right {
+  margin-left: 40px; }
+  .desc-right h2 {
+    margin-top: 143px; }
+  .desc-right hr {
+    width: 190px;
+    height: 4px;
+    text-align: left;
+    margin: 0px;
+    background: #3f51b5;
+    background-color: #3f51b5;
+    margin-top: 35px;
+    margin-bottom: 35px; }
+  .desc-right p {
+    font-family: 'WhitneyBook', sans-serif;
+    font-size: 16px;
+    line-height: 18.8px;
+    color: #000;
+    width: 75%;
+    letter-spacing: 1.5px;
+    margin-bottom: 22px; }
+
+/*******************************************************Price*****************************************/
+.price {
+  background-repeat: no-repeat;
+  background-position: top right;
+  -webkit-box-shadow: 20px -20px 20px -20px rgba(0, 0, 0, 0.3);
+  box-shadow: 20px -20px 20px -20px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 10;
+  padding: 42px 0; }
+  .price hr {
+    width: 190px;
+    height: 4px;
+    text-align: left;
+    margin: 0px;
+    background: #3f51b5;
+    background-color: #3f51b5;
+    margin: 30px auto 40px auto; }
+  .price ul {
+    background-color: #fff;
+    padding: 0px;
+    width: 970px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 10; }
+    .price ul li {
+      border: 1px solid #e5e5e5;
+      border-bottom: none;
+      padding: 0 70px;
+      letter-spacing: 1.5px; }
+    .price ul li:last-child {
+      border-bottom: 1px solid #e5e5e5; }
+    .price ul span {
+      font-family: 'WhitneySemiBold', sans-serif;
+      font-size: 16px;
+      color: #000;
+      line-height: 56px; }
+    .price ul li div:nth-child(1) {
+      width: 52%;
+      float: left; }
+      .price ul li div:nth-child(1) span {
+        font-family: 'WhitneyBook', sans-serif;
+        font-size: 16px;
+        color: #000;
+        line-height: 56px;
+        letter-spacing: 1.5px; }
+    .price ul li div:nth-child(2) {
+      float: left;
+      width: 28%;
+      text-align: center;
+      letter-spacing: 1.5px; }
+    .price ul li div:nth-child(3) {
+      float: left;
+      width: 20%;
+      text-align: center; }
+      .price ul li div:nth-child(3) a {
+        font-family: 'WhitneySemiBold', sans-serif;
+        font-size: 16px;
+        color: #3f51b5;
+        line-height: 56px;
+        letter-spacing: 1.5px; }
+    .price ul li:after {
+      content: "";
+      display: table;
+      clear: both; }
+  .price p {
+    font-family: 'WhitneyBook', sans-serif;
+    font-size: 16px;
+    color: #000;
+    padding-left: 115px;
+    margin-top: 28px;
+    letter-spacing: 1.5px; }
 
 .price-cont {
   position: relative; }
 
 .motor-img {
   position: absolute;
-  top: 850px;
+  top: 955px;
   right: 0;
-  margin-right: -200px;
+  margin-right: -136px;
   width: 300px;
-  overflow: hidden; }
+  overflow: hidden;
+  z-index: 0; }
 
+/*******************************************************Transition*****************************************/
 .transition {
+  padding: 8px 0 40px 0;
   min-height: 400px; }
+  .transition h2 {
+    position: relative;
+    margin-bottom: 15px;
+    z-index: 20; }
+  .transition span {
+    font-family: 'WhitneyBook', sans-serif;
+    font-size: 20px;
+    color: #000;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+    position: relative;
+    z-index: 20;
+    letter-spacing: 2px; }
+
+.transition-block {
+  height: 217px;
+  width: 920px;
+  margin: 0 auto;
+  background: -webkit-gradient(linear, right top, left top, color-stop(0, #edb660), color-stop(10%, #edb660), color-stop(10%, transparent), to(transparent)), -webkit-gradient(linear, left top, right top, from(#edb660), color-stop(10%, #edb660), color-stop(10%, transparent), to(transparent)) no-repeat border-box;
+  background: -webkit-linear-gradient(right, #edb660 0, #edb660 10%, transparent 10%, transparent 100%), -webkit-linear-gradient(left, #edb660 0%, #edb660 10%, transparent 10%, transparent 100%) no-repeat border-box;
+  background: -o-linear-gradient(right, #edb660 0, #edb660 10%, transparent 10%, transparent 100%), -o-linear-gradient(left, #edb660 0%, #edb660 10%, transparent 10%, transparent 100%) no-repeat border-box;
+  background: linear-gradient(to left, #edb660 0, #edb660 10%, transparent 10%, transparent 100%), linear-gradient(to right, #edb660 0%, #edb660 10%, transparent 10%, transparent 100%) no-repeat border-box;
+  background-size: 100% 4px;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 10;
+  background-color: #fcfcfc;
+  margin-top: -70px;
+  border: 4px solid #edb660;
+  border-top: 0px;
+  padding-top: 4px; }
+  .transition-block .form-wrap {
+    width: auto;
+    margin: 0 auto;
+    padding-top: 88px; }
+    .transition-block .form-wrap form {
+      width: 768px;
+      margin: 0 auto;
+      height: 80px;
+      background-color: #fff;
+      padding: 22px 30px;
+      -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+      -moz-placeholder-color: #a3a199;
+      -moz-placeholder-letter-spacing: 1px;
+      -ms-input-placeholder-color: #a3a199;
+      -ms-input-placeholder-letter-spacing: 1px; }
+      .transition-block .form-wrap form input {
+        width: 250px;
+        height: 36px;
+        border: 2px solid #e3e0d6;
+        border-radius: 5px;
+        padding-left: 15px;
+        margin-right: 17px;
+        font-family: 'WhitneyBook', sans-serif;
+        font-size: 16px; }
+      .transition-block .form-wrap form ::-webkit-input-placeholder {
+        color: #a3a199;
+        letter-spacing: 1px; }
+      .transition-block .form-wrap form ::-moz-placeholder {
+        color: #a3a199;
+        letter-spacing: 1px; }
+      .transition-block .form-wrap form button {
+        width: 160px;
+        height: 36px;
+        border: none;
+        background-image: none;
+        background-color: #3f51b5;
+        color: #fff;
+        font-family: 'WhitneyBook', sans-serif;
+        font-size: 14.5px;
+        letter-spacing: 1.5px;
+        border-radius: 5px; }
+      .transition-block .form-wrap form button:hover {
+        opacity: 0.7; }
 
 .scheme {
   width: 100%;
