@@ -703,30 +703,323 @@ header
 		bottom: 0
 		left: 27px
 
-
-
-
-
-
+/*******************************************************Articles*****************************************/
 .articles
 	width: 100%
-	height: 740px
+	min-height: 740px
+	background-color: #f8f8f8
+	padding: 40px 0
+	hr
+		width: 190px
+		height: 4px		
+		margin: 0px
+		background: #3f51b5
+		background-color: #3f51b5
+		margin: 32px auto 40px auto
+		border: none
+.articles-block-image
+	width: 100%
+	height: 200px
+	img
+		width: 100%
+		height: 100%
+.articles-block
+	background-color: #fff
+	height: 100%
+	padding-bottom: 20px
+	box-shadow: 2px 5px 5px rgba(0,0,0,0.2)
+.articles-block-text
+	padding: 3px 0 0 17px
+	h3
+		font-family: '8289', sans-serif
+		font-size: 16px
+		line-height: 22px
+		color: #000				
+		letter-spacing: 2px
+		text-transform: uppercase
+	p
+		font-family: 'WhitneyBook', sans-serif
+		font-size: 12px
+		line-height: 16px
+		color: #a3a199	
+		letter-spacing: 1.5px
+		padding-right: 50px
+.articles-block-footer	
+	padding-left: 19px
+	margin-top: 43px
+	a
+		font-family: 'WhitneyBook', sans-serif
+		font-size: 14px
+		line-height: 22px
+		color: #000	
+		letter-spacing: 1.5px
+		border: 2px solid #3f51b5 
+		border-radius: 5px
+		padding: 7px 7px 5px 5px
+		text-shadow: 0.5px 0 0 #000
+	i
+		margin-left: 16px
+		color: #000
+		font-size: 12px
+.read-more
+	padding: 40px 0 32px 0
+	text-align: center
+	margin-top: 35px
+	a
+		font-family: 'WhitneyBook', sans-serif
+		font-size: 14px
+		line-height: 22px
+		color: #fff	
+		letter-spacing: 3px
+		background-color: #3f51b5
+		border-radius: 5px
+		padding: 12px 40px 12px 40px
+		text-shadow: 0.5px 0 0 #fff
+	i
+		margin-left: 18px
+		color: #fff		
+		font-size: 16px		
 
-
+/*******************************************************Questions*****************************************/
 .questions
 	width: 100%
 	height: 355px
+	background-repeat: no-repeat
+	background-position: center center
+	background-size: 100% 100%
+	position: relative
+	z-index: 10	
+	h2
+		color: #fff
+		text-align: left
+	span
+		font-family: 'WhitneyBook', sans-serif
+		font-size: 20px
+		line-height: 46px
+		color: #fff	
+		letter-spacing: 3px
+.questions-content
+	margin-top: 92px
+	margin-left: 77px
 
+/*******************************************************Contacts*****************************************/
 .contacts
 	width: 100%
-	height: 663px
+	min-height: 663px
+	background-repeat: no-repeat
+	background-position: center center
+	margin-top: -100px
+	padding-bottom: 75px
+.contacts-block
+	width: 970px
+	min-height: 505px
+	margin: 0 auto
+	margin-top: 142px
+	background-color: #fff
+	padding: 53px 60px 40px 60px
+	box-shadow: 0 0 20px rgba(0,0,0,0.2)
+.contacts-block-left
+	float: left
+	width: 50%
+	padding-right: 10px
+	hr
+		width: 190px
+		height: 4px		
+		margin: 0px
+		background: #3f51b5
+		background-color: #3f51b5
+		margin: 32px 0 32px 0
+		border: none
+	h2
+		text-align: left
+	span
+		font-family: 'WhitneyBook', sans-serif
+		font-size: 20px
+		line-height: 30px
+		color: #000
+		letter-spacing: 2px
+		display: block
+		margin-bottom: 28px
+	strong
+		font-family: 'WhitneySemiBold', sans-serif
+		font-size: 20px
+		line-height: 30px
+		color: #000
+		letter-spacing: 2px
+	i
+		font-style: normal
+		border-bottom: 1px dashed #000
+.contacts-block-right
+	float: right
+	width: 50%
+	padding-left: 20px
+	margin-top: -13px
+	form
+		width: 370px
+		background-color: #3a53a7
+		border-radius: 5px
+		text-align: center
+		padding: 40px 0
+	span
+		font-family: '8289', sans-serif
+		font-size: 20px
+		line-height: 24px
+		color: #fff
+		letter-spacing: 2px
+	p
+		font-family: 'WhitneyBook', sans-serif
+		font-size: 15px
+		line-height: 24px
+		color: #fff
+		letter-spacing: 1.5px
+		margin-bottom: 30px
+	input
+		width: 250px
+		height: 40px
+		margin-bottom: 20px
+		border: 2px solid #fff
+		border-radius: 5px
+		background-color: transparent
+		padding-left: 15px
+		font-family: 'WhitneyBook', sans-serif
+		font-size: 14px
+		letter-spacing: 2px		
+		color: #fff
+	::-webkit-input-placeholder 
+		color: #fff
+		letter-spacing: 1.5px
+	::-moz-placeholder
+		color: #fff
+		letter-spacing: 1.5px
+	:-moz-placeholder 
+		color: #fff
+		letter-spacing: 1.5px
+	:-ms-input-placeholder      
+		color: #fff
+		letter-spacing: 1.5px		
+	i
+		font-style: normal
+		display: block
+		font-family: 'WhitneyBook', sans-serif
+		font-size: 12px		
+		color: #a3a199
+		line-height: 16px
+		margin: 0 10%
+	button
+		width: 160px
+		height: 40px		
+		background-image: none
+		background-color: #fff
+		border: none
+		border-radius: 5px
+		font-family: 'WhitneySemiBold', sans-serif
+		font-size: 14.5px		
+		color: #000		
+		letter-spacing: 1.5px
+		box-shadow: 0 0 24px rgba(0,0,0,0.3)
+		margin-top: 20px
+	button:hover
+		opacity: 0.7
+	form input:nth-child(5)
+		margin-bottom: 13px
 
+/*******************************************************brands*****************************************/
+.brands
+	width: 100%
+	height: 180px
+	background-color: #fff
+	.slider-wrap
+		width: 970px
+		margin: 0 auto
+		margin-top: 25px
+		height: 130px
+		.lslide, .clone
+			text-align: center
+			line-height: 130px
+		.lSPager
+			display: none
 
-
+/*******************************************************Footer*****************************************/
 footer
 	width: 100%
 	height: 288px
 	background-color: #304691
+	padding-top: 50px
+	.copy
+		font-family: 'WhitneyBook', sans-serif
+		font-size: 16px		
+		line-height: 18px
+		color: #fff
+		letter-spacing: 1.5px		
+		span
+			text-transform: uppercase
+		p
+			font-size: 12px
+			margin-top: 18px
+	.footer-services
+		span
+			font-family: 'WhitneySemiBold', sans-serif
+			font-size: 20px		
+			line-height: 18px
+			color: #fff	
+			letter-spacing: 2px
+			text-transform: uppercase
+			display: block
+			margin-bottom: 17px
+		a
+			font-family: 'WhitneyBook', sans-serif
+			font-size: 16px		
+			line-height: 28px
+			color: #fff
+			letter-spacing: 1.5px	
+	.materials
+		span
+			font-family: 'WhitneySemiBold', sans-serif
+			font-size: 20px		
+			line-height: 18px
+			color: #fff	
+			letter-spacing: 2px
+			text-transform: uppercase
+			display: block
+			margin-bottom: 17px
+		a
+			font-family: 'WhitneyBook', sans-serif
+			font-size: 16px		
+			line-height: 18px
+			color: #fff
+			letter-spacing: 1.5px
+			display: block
+			margin-bottom: 17px
+		a:hover
+			text-decoration: underline
+	.footer-contacts
+		span
+			font-family: 'WhitneyBook', sans-serif
+			font-size: 16px		
+			line-height: 18px
+			color: #fff
+			letter-spacing: 1.5px
+			display: block
+			margin-bottom: 24px
+		p
+			font-family: 'WhitneySemiBold', sans-serif
+			font-size: 24px		
+			line-height: 20px
+			color: #fff	
+			letter-spacing: 2px
+		a
+			font-family: 'WhitneyBook', sans-serif
+			font-size: 16px					
+			color: #fff
+			letter-spacing: 1.5px
+			border: 2px solid #fff
+			border-radius: 5px
+			padding: 10px 20px
+			display: inline-block
+			margin-top: 13px			
+
+
+
 
 
 
