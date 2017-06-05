@@ -25,6 +25,21 @@ context.closePath();
 context.fillStyle = "rgb(252, 252, 252)";
 context.fill();
 
+//Triangle Canvas
+var canvas = document.getElementById('triangle-photos');
+var context = canvas.getContext('2d');
+context.beginPath();
+context.moveTo(0, 0);
+context.lineTo(1440, 0);
+context.lineTo(720, 100);
+context.closePath();
+context.shadowColor = 'rgba(0,0,0,0.5)';
+context.shadowBlur = 10;
+context.shadowOffsetX = 0;
+context.shadowOffsetY = 0;
+context.fillStyle = "rgb(48, 70, 145)";
+context.fill();
+
 // Выравниваем блоки по высоте
 $(document).ready(function(){
     $(".popup_form").magnificPopup();
@@ -50,7 +65,7 @@ var slider = $('.partners-slider').lightSlider({
             {
                 breakpoint: 1200,
                 settings: {
-                    item:4,
+                    item:5,
                     slideMove:1,
                     
                   }
@@ -111,7 +126,7 @@ var slider1 = $('.desc-slider-wrap ul').lightSlider({
             {
                 breakpoint: 1200,
                 settings: {
-                    item:4,
+                    item:1,
                     slideMove:1,
                     
                   }
@@ -120,7 +135,7 @@ var slider1 = $('.desc-slider-wrap ul').lightSlider({
             {
                 breakpoint:992,
                 settings: {
-                    item:3,
+                    item:1,
                     slideMove:1,
                                        
                   }
@@ -128,7 +143,7 @@ var slider1 = $('.desc-slider-wrap ul').lightSlider({
             {
                 breakpoint:768,
                 settings: {
-                    item:2,
+                    item:1,
                     slideMove:1,
                                      
                   }

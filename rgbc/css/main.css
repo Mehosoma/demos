@@ -44,7 +44,7 @@ body {
 header {
   position: absolute;
   top: 0;
-  height: 50px;
+  min-height: 50px;
   width: 100%;
   z-index: 1;
   border: none; }
@@ -56,7 +56,8 @@ header {
   background-color: transparent;
   background-image: none;
   border: none;
-  margin-left: -42px; }
+  margin-left: -42px;
+  border-radius: 0px; }
 
 .navbar-default .navbar-nav > li > a {
   color: #fff;
@@ -108,7 +109,7 @@ header {
 /*******************************************************FIRST*****************************************/
 .first {
   width: 100%;
-  height: 701px;
+  min-height: 701px;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 100% 100%; }
@@ -266,7 +267,8 @@ header {
   width: 100%;
   position: absolute;
   top: 0;
-  z-index: 100; }
+  z-index: 100;
+  margin-top: -1px; }
   .triangle #triangle {
     width: 100%; }
 
@@ -275,20 +277,20 @@ header {
   height: 812px;
   position: relative;
   padding-right: 42px; }
+  .desc-slider-wrap p {
+    font-family: 'WhitneySemiBold', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    bottom: 90px;
+    text-align: center;
+    letter-spacing: 3px;
+    display: block;
+    z-index: 101;
+    position: relative; }
   .desc-slider-wrap .lslide, .desc-slider-wrap .clone {
     width: 100%;
     height: 812px;
     position: relative; }
-    .desc-slider-wrap .lslide p, .desc-slider-wrap .clone p {
-      font-family: 'WhitneySemiBold', sans-serif;
-      font-size: 16px;
-      color: #fff;
-      bottom: 90px;
-      text-align: center;
-      letter-spacing: 3px;
-      position: relative;
-      display: block;
-      z-index: 101; }
     .desc-slider-wrap .lslide img, .desc-slider-wrap .clone img {
       float: right;
       width: 100%;
@@ -498,8 +500,8 @@ header {
 /*******************************************************Scheme*****************************************/
 #scheme {
   width: 100%;
-  height: 678px;
-  background-repeat: no-repeat;
+  min-height: 591px;
+  background-repeat: repeat-y;
   background-size: 100% 100%;
   position: relative;
   padding-top: 121px; }
@@ -519,7 +521,8 @@ header {
   width: 100%;
   position: absolute;
   top: 0;
-  z-index: 100; }
+  z-index: 100;
+  margin-top: -1px; }
   .triangle-scheme #triangle-scheme {
     width: 100%; }
 
@@ -628,14 +631,25 @@ header {
     color: #fff;
     text-transform: uppercase; }
 
+.scheme-block {
+  position: relative;
+  height: 245px; }
+  .scheme-block i {
+    position: absolute;
+    font-size: 30px;
+    color: #9ea7d4;
+    right: 0;
+    top: 61px;
+    margin-right: -21px; }
+
 /*******************************************************Photos*****************************************/
 .photos {
   width: 100%;
   height: 999px;
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
   background-position: center center;
-  background-size: 100% 100%;
-  margin-top: -160px; }
+  background-size: cover;
+  position: relative; }
   .photos h2 {
     margin-top: 192px;
     margin-bottom: 14px; }
@@ -648,6 +662,15 @@ header {
     text-transform: uppercase;
     text-align: center;
     display: block; }
+
+.triangle-photos {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 100;
+  margin-top: -1px; }
+  .triangle-photos #triangle-photos {
+    width: 100%; }
 
 .photos-block-wrap {
   text-align: center;
@@ -703,11 +726,21 @@ header {
     display: inline-block;
     background-color: #3f51b5;
     padding: 0 20px 0 20px;
-    border-radius: 10px;
+    border-radius: 5px;
     -webkit-box-shadow: 0 0 30px rgba(49, 87, 138, 0.3);
     box-shadow: 0 0 30px rgba(49, 87, 138, 0.3); }
   .photos-button i {
     margin-left: 20px; }
+
+.motor2 {
+  position: absolute;
+  width: 600px;
+  height: 200px;
+  bottom: 0;
+  overflow: hidden;
+  margin: auto;
+  right: 0;
+  left: 0; }
 
 /*******************************************************FAQ*****************************************/
 .faq {
@@ -761,8 +794,7 @@ header {
   background-position: right 28px center;
   border: none;
   border-radius: 0px;
-  padding: 0px 0px;
-  height: 68px; }
+  padding: 20px 0px; }
 
 .panel-title > a, .panel-title > small, .panel-title > .small, .panel-title > small > a, .panel-title > .small > a {
   font-family: 'WhitneyBook', sans-serif;
@@ -770,8 +802,7 @@ header {
   line-height: 22px;
   letter-spacing: 2px;
   color: #fff;
-  display: block;
-  line-height: 68px; }
+  display: block; }
 
 .panel-body {
   background-color: #3a53a7; }
@@ -786,7 +817,7 @@ header {
   width: 880px;
   background-color: #3e58b0;
   position: relative;
-  height: 75px;
+  min-height: 75px;
   line-height: 75px;
   margin-top: 55px; }
   .faq-contact span {
@@ -798,7 +829,8 @@ header {
     letter-spacing: 2px;
     color: #fff;
     text-transform: none;
-    padding-left: 127px; }
+    padding-left: 127px;
+    padding-right: 280px; }
   .faq-contact img {
     position: absolute;
     width: 57px;
@@ -1063,7 +1095,7 @@ header {
 /*******************************************************Footer*****************************************/
 footer {
   width: 100%;
-  height: 288px;
+  min-height: 288px;
   background-color: #304691;
   padding-top: 50px; }
   footer .copy {
@@ -1094,54 +1126,58 @@ footer {
     line-height: 28px;
     color: #fff;
     letter-spacing: 1.5px; }
-  footer .materials span {
-    font-family: 'WhitneySemiBold', sans-serif;
-    font-size: 20px;
-    line-height: 18px;
-    color: #fff;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    display: block;
-    margin-bottom: 17px; }
-  footer .materials a {
-    font-family: 'WhitneyBook', sans-serif;
-    font-size: 16px;
-    line-height: 18px;
-    color: #fff;
-    letter-spacing: 1.5px;
-    display: block;
-    margin-bottom: 17px; }
-  footer .materials a:hover {
-    text-decoration: underline; }
-  footer .footer-contacts span {
-    font-family: 'WhitneyBook', sans-serif;
-    font-size: 16px;
-    line-height: 18px;
-    color: #fff;
-    letter-spacing: 1.5px;
-    display: block;
-    margin-bottom: 24px; }
-  footer .footer-contacts p {
-    font-family: 'WhitneySemiBold', sans-serif;
-    font-size: 24px;
-    line-height: 20px;
-    color: #fff;
-    letter-spacing: 2px; }
-  footer .footer-contacts a {
-    font-family: 'WhitneyBook', sans-serif;
-    font-size: 16px;
-    color: #fff;
-    letter-spacing: 1.5px;
-    border: 2px solid #fff;
-    border-radius: 5px;
-    padding: 10px 20px;
-    display: inline-block;
-    margin-top: 13px; }
+  footer .materials {
+    padding-right: 20px; }
+    footer .materials span {
+      font-family: 'WhitneySemiBold', sans-serif;
+      font-size: 20px;
+      line-height: 18px;
+      color: #fff;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      display: block;
+      margin-bottom: 17px; }
+    footer .materials a {
+      font-family: 'WhitneyBook', sans-serif;
+      font-size: 16px;
+      line-height: 18px;
+      color: #fff;
+      letter-spacing: 1.5px;
+      display: block;
+      margin-bottom: 17px; }
+    footer .materials a:hover {
+      text-decoration: underline; }
+  footer .footer-contacts {
+    margin-left: 5px; }
+    footer .footer-contacts span {
+      font-family: 'WhitneyBook', sans-serif;
+      font-size: 16px;
+      line-height: 18px;
+      color: #fff;
+      letter-spacing: 1.5px;
+      display: block;
+      margin-bottom: 24px; }
+    footer .footer-contacts p {
+      font-family: 'WhitneySemiBold', sans-serif;
+      font-size: 24px;
+      line-height: 20px;
+      color: #fff;
+      letter-spacing: 2px; }
+    footer .footer-contacts a {
+      font-family: 'WhitneyBook', sans-serif;
+      font-size: 16px;
+      color: #fff;
+      letter-spacing: 1.5px;
+      border: 2px solid #fff;
+      border-radius: 5px;
+      padding: 10px 20px;
+      display: inline-block;
+      margin-top: 13px; }
 
 /*******************************************************Service*****************************************/
 .service {
   width: 100%;
-  height: 835px;
+  min-height: 835px;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 100% 100%;
@@ -1183,7 +1219,7 @@ footer {
 
 /*******************************************************ModalFull*****************************************/
 .hidden_form {
-  height: 440px;
+  min-height: 440px;
   width: 590px;
   background-color: #fff;
   text-align: center;
@@ -1297,14 +1333,15 @@ footer {
   padding: 8px 10px 30px 20px; }
 
 .hidden_form_small {
-  height: 440px;
+  height: 100%;
   width: 340px;
-  background-color: #fff;
+  background-color: #f7f7f7;
   text-align: center;
   margin-top: 60px;
   margin: 0 auto;
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  padding-bottom: 20px; }
 
 .hidden {
   display: none; }
