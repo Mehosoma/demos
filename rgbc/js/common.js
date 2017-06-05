@@ -156,10 +156,11 @@ return false;
 
 //Замена номера
 
-$(".phone span").click(
+$(".phone span, .contacts-block-left i").click(
 	function () {
 	    $(this).stop().css('opacity', '0').html(function (_, oldText) {
-	        return oldText == '8 (800) 400 10' ? 'показать телефон' : '8 (800) 400 10'
+	        $(this).html('8 (800) 400 10 56');
+	        $(this).css('pointer-events','none');
 	    }).animate({
 	        opacity: 1
 	    }, 1000);
