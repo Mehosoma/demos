@@ -74,6 +74,14 @@ header {
   color: #edb660;
   opacity: 1; }
 
+.navbar-collapse {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: none; }
+
+.navbar-toggle {
+  margin-right: 0px; }
+
 .logo {
   margin-top: 17px; }
 

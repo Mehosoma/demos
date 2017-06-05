@@ -40,8 +40,7 @@
 
 	.navbar{
 		margin-left: 0px;
-		text-align: center;
-		border-bottom: 1px solid #fff;
+		text-align: center;	
 	}
 
 	.navbar li{
@@ -50,8 +49,11 @@
 	}
 
 	.navbar ul{
-		float: none;
-		border-top: 1px solid #fff;
+		float: none;	
+	}
+
+	.navbar-nav{
+		margin: 0 -15px;
 	}
 
 	.mail{
@@ -103,7 +105,7 @@
 	}
 
 	.right-firts{
-		padding-left: 26px;
+		padding-left: 10px;
 	}
 
 	.first-center-wrap{
@@ -301,6 +303,8 @@
 
 	.faq-contact{
 		width: 100%;
+		padding-top: 10px;
+		padding-bottom: 10px;
 	}
 
 	.faq-contact span{
@@ -369,6 +373,7 @@
 
 	.contacts-block-left strong{
 		font-size: 17px;
+		display: block;
 	}
 
 	.contacts-block-right input{
@@ -523,8 +528,7 @@
 
 	.navbar{
 		margin-left: 0px;
-		text-align: center;
-		border-bottom: 1px solid #fff;
+		text-align: center;		
 	}
 
 	.navbar li{
@@ -538,12 +542,12 @@
 
 	.mail{
 		margin-left: 0px;
-		text-align: right;
+		
 	}
 
 	.phone{
 		margin-left: 0px;
-		text-align: left;		
+				
 	}
 
 	.logo{
