@@ -64,7 +64,7 @@ header
 	font-family: 'WhitneySemiBold', sans-serif
 	font-size: 14px
 	text-transform: uppercase
-.navbar-default .navbar-nav > li > a:hover
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:active
 	color: #edb660
 	opacity: 1
 .logo
@@ -80,6 +80,11 @@ header
 		margin-left: 7px
 		border-bottom: 1px dashed #fff
 		letter-spacing: 1.5px
+		display: inline
+		position: relative
+		z-index: 100
+		cursor: pointer	
+		opacity: 1	
 .mail
 	line-height: 50px
 	text-align: center
@@ -176,6 +181,8 @@ header
 .services
 	background-color: #fcfcfc
 	padding: 42px 0 25px 0
+	background-repeat: no-repeat
+	background-position: center center	
 	hr
 		width: 190px
 		height: 4px
@@ -191,6 +198,7 @@ header
 	margin: 0 auto	
 	box-shadow: 0 0 15px rgba(0,0,0,0.3)	
 	position: relative
+	background-color: #fff
 	hr
 		width: 65px
 		height: 2px
@@ -213,6 +221,8 @@ header
 		margin-left: 16px
 		position: absolute
 		bottom: 14px
+	img
+		width: 100%
 .services-button
 	text-align: center
 	margin-top: 14px
@@ -232,6 +242,8 @@ header
 		width: 100%
 	h2
 		text-align: left
+	.row .col-lg-6:nth-child(1)		
+		padding: 0
 .triangle
 	width: 100%	
 	position: absolute
@@ -241,10 +253,39 @@ header
 		width: 100%
 .desc-slider-wrap
 	width: 100%
-	img
+	height: 812px
+	position: relative	
+	padding-right: 42px
+	.lslide, .clone
 		width: 100%
-		float: right
-		margin-right: 42px
+		height: 812px
+		position: relative
+		p
+			font-family: 'WhitneySemiBold', sans-serif
+			font-size: 16px			
+			color: #fff
+			bottom: 90px
+			text-align: center
+			letter-spacing: 3px
+			position: relative
+			display: block
+			z-index: 101
+		img
+			float: right
+			width: 100%
+			height: 100%	
+	.lSPager
+		position: relative
+		bottom: 50px		
+.shadow
+	width: 100%
+	position: absolute
+	bottom: 0
+	height: 223px	
+	z-index: 100
+	background: -moz-linear-gradient(bottom, rgba(0,0,0,0.70) 0%, rgba(0,0,0,0) 100%)
+	background: -webkit-linear-gradient(bottom, rgba(0,0,0,0.70) 0%,rgba(0,0,0,0) 100%)
+	background: linear-gradient(to top, rgba(0,0,0,0.70) 0%,rgba(0,0,0,0) 100%)
 .desc-right
 	margin-left: 40px
 	h2
@@ -269,7 +310,7 @@ header
 		margin-bottom: 22px
 		
 /*******************************************************Price*****************************************/	
-.price
+#price
 	background-repeat: no-repeat
 	background-position: top right
 	box-shadow: 20px -20px 20px -20px rgba(0,0,0,0.3)
@@ -304,7 +345,7 @@ header
 			color: #000
 			line-height: 56px
 		li div:nth-child(1)
-			width: 52%
+			width: 60%
 			float: left
 			span
 				font-family: 'WhitneyBook', sans-serif
@@ -314,8 +355,8 @@ header
 				letter-spacing: 1.5px
 		li div:nth-child(2)
 			float: left
-			width: 28%
-			text-align: center
+			width: 20%
+			text-align: left
 			letter-spacing: 1.5px
 		li div:nth-child(3)
 			float: left
@@ -428,7 +469,7 @@ header
 				opacity: 0.7
 
 /*******************************************************Scheme*****************************************/	
-.scheme
+#scheme
 	width: 100%
 	height: 678px
 	background-repeat: no-repeat
@@ -482,7 +523,7 @@ header
 		bottom: 0
 		right: 0
 		left: 0
-.scheme .col-lg-five:nth-child(2) img
+#scheme .col-lg-five:nth-child(2) img
 	width: 62px
 	height: 92px				
 	position: absolute
@@ -491,7 +532,7 @@ header
 	bottom: 0
 	right: 0
 	left: 0
-.scheme .col-lg-five:nth-child(3) img
+#scheme .col-lg-five:nth-child(3) img
 	width: 92px
 	height: 91px				
 	position: absolute
@@ -500,7 +541,7 @@ header
 	bottom: 0
 	right: 0
 	left: 0
-.scheme .col-lg-five:nth-child(4) img
+#scheme .col-lg-five:nth-child(4) img
 	width: 77px
 	height: 77px				
 	position: absolute
@@ -509,7 +550,7 @@ header
 	bottom: 0
 	right: 0
 	left: 0
-.scheme .col-lg-five:nth-child(5) img
+#scheme .col-lg-five:nth-child(5) img
 	width: 70px
 	height: 90px				
 	position: absolute
@@ -580,6 +621,8 @@ header
 	img
 		width: 100%
 		height: 100%
+	a:hover
+		opacity: 1
 .photos-block-overlay
 	position: absolute
 	width: 100%
@@ -617,7 +660,7 @@ header
 		background-color: #3f51b5
 		padding: 0 20px 0 20px
 		border-radius: 10px
-		box-shadow: 0 0 30px rgba(49,87,138, 0.15)
+		box-shadow: 0 0 30px rgba(49,87,138, 0.30)
 	i
 		margin-left: 20px
 
@@ -680,6 +723,14 @@ header
 	color: #fff		
 	display: block
 	line-height: 68px
+.panel-body
+	background-color: #3a53a7
+	p
+		font-family: 'WhitneyBook', sans-serif
+		font-size: 16px	
+		line-height: 20px
+		letter-spacing: 1.5px		
+		color: #fff				
 .faq-contact
 	width: 880px
 	background-color: #3e58b0
@@ -778,6 +829,7 @@ header
 		border-radius: 5px
 		padding: 12px 40px 12px 40px
 		text-shadow: 0.5px 0 0 #fff
+		box-shadow: 0 0 30px rgba(49,87,138, 0.3)
 	i
 		margin-left: 18px
 		color: #fff		
@@ -806,7 +858,7 @@ header
 	margin-left: 77px
 
 /*******************************************************Contacts*****************************************/
-.contacts
+#contacts
 	width: 100%
 	min-height: 663px
 	background-repeat: no-repeat
@@ -835,7 +887,7 @@ header
 		border: none
 	h2
 		text-align: left
-	span
+	p
 		font-family: 'WhitneyBook', sans-serif
 		font-size: 20px
 		line-height: 30px
@@ -863,12 +915,13 @@ header
 		border-radius: 5px
 		text-align: center
 		padding: 40px 0
-	span
+	strong
 		font-family: '8289', sans-serif
 		font-size: 20px
 		line-height: 24px
 		color: #fff
 		letter-spacing: 2px
+		font-style: normal
 	p
 		font-family: 'WhitneyBook', sans-serif
 		font-size: 15px
@@ -919,7 +972,7 @@ header
 		font-size: 14.5px		
 		color: #000		
 		letter-spacing: 1.5px
-		box-shadow: 0 0 24px rgba(0,0,0,0.3)
+		box-shadow: 0 0 24px rgba(0,0,0,0.5)
 		margin-top: 20px
 	button:hover
 		opacity: 0.7
@@ -932,10 +985,11 @@ header
 	height: 180px
 	background-color: #fff
 	.slider-wrap
-		width: 970px
+		width: 1050px
 		margin: 0 auto
 		margin-top: 25px
 		height: 130px
+		position: relative
 		.lslide, .clone
 			text-align: center
 			line-height: 130px
@@ -956,9 +1010,11 @@ footer
 		letter-spacing: 1.5px		
 		span
 			text-transform: uppercase
-		p
+		a
+			display: block
 			font-size: 12px
 			margin-top: 18px
+			color: #fff
 	.footer-services
 		span
 			font-family: 'WhitneySemiBold', sans-serif
@@ -1019,7 +1075,171 @@ footer
 			border-radius: 5px
 			padding: 10px 20px
 			display: inline-block
-			margin-top: 13px			
+			margin-top: 13px
+
+/*******************************************************Service*****************************************/
+.service
+	width: 100%
+	height: 835px
+	background-repeat: no-repeat
+	background-position: center center
+	background-size: 100% 100%
+	padding-top: 150px
+	h2
+		color: #fff
+		text-shadow: 2px 2px 0 #000
+		text-align: left
+		line-height: 54px
+		margin-top: -13px
+		letter-spacing: 5px
+	hr
+		width: 268px
+		height: 2px		
+		margin: 0px
+		background: #edb660
+		background-color: #edb660
+		margin: 32px 0 38px 0
+		border: none
+	p
+		font-family: 'WhitneyBook', sans-serif
+		font-size: 16px
+		line-height: 20px
+		color: #fff
+		letter-spacing: 1.5px
+	a
+		font-family: 'WhitneySemiBold', sans-serif
+		font-size: 14.55px		
+		line-height: 18px
+		color: #000
+		letter-spacing: 2px		
+		background-color: #edb660
+		border-radius: 5px
+		padding: 12px 40px
+		display: inline-block
+		margin-top: 20px
+	.col-lg-5
+		text-align: right
+
+
+		
+/*******************************************************ModalFull*****************************************/
+.hidden_form
+	height: 440px	
+	width: 590px
+	background-color: #fff
+	text-align: center
+	margin-top: 60px	
+	margin: 0 auto
+	position: relative
+	overflow: hidden
+	.row
+		margin: 0px
+	.col-lg-6
+		padding: 0px
+.right-modal
+	padding: 20px 0
+	hr
+		width: 60px
+		height: 2px		
+		margin: 0px
+		background: #3f51b5
+		background-color: #3f51b5
+		margin: 14px auto 20px
+		border: none		
+	h5
+		font-family: '8289', sans-serif
+		font-size: 20px
+		line-height: 24px
+		color: #000
+		letter-spacing: 1.5px	
+		margin-top: 35px		
+	input
+		width: 220px
+		height: 40px
+		margin-bottom: 20px
+		border: 2px solid #e3e0d6
+		border-radius: 5px
+		background-color: transparent
+		padding-left: 15px
+		font-family: 'WhitneyBook', sans-serif
+		font-size: 14px
+		letter-spacing: 2px		
+		color: #e3e0d6
+	::-webkit-input-placeholder 
+		color: #e3e0d6
+		letter-spacing: 1.5px
+	::-moz-placeholder
+		color: #e3e0d6
+		letter-spacing: 1.5px
+	:-moz-placeholder 
+		color: #e3e0d6
+		letter-spacing: 1.5px
+	:-ms-input-placeholder      
+		color: #e3e0d6
+		letter-spacing: 1.5px		
+	i
+		font-style: normal
+		display: block
+		font-family: 'WhitneyBook', sans-serif
+		font-size: 12px		
+		color: #a3a199
+		line-height: 16px
+		margin: 0 15%
+	button
+		width: 160px
+		height: 40px		
+		background-image: none
+		background-color: #3f51b5
+		border: none
+		border-radius: 5px
+		font-family: 'WhitneySemiBold', sans-serif
+		font-size: 14.5px		
+		color: #fff	
+		letter-spacing: 1.5px
+		box-shadow: 0 0 24px rgba(49,87,138,0.5)
+		margin-top: 20px
+	button:hover
+		opacity: 0.7
+.left-modal
+	box-shadow: 0 0 20px rgba(0,0,0,0.3)
+	img
+		width: 100%
+		height: 178px
+	hr
+		width: 60px
+		height: 2px		
+		margin: 0px
+		background: #3f51b5
+		background-color: #3f51b5
+		margin: 14px 0px
+		border: none
+		text-align: left
+	h5
+		font-family: '8289', sans-serif
+		font-size: 20px
+		line-height: 24px
+		color: #000
+		letter-spacing: 1.5px
+		text-align: left
+	p		
+		font-family: 'WhitneyBook', sans-serif
+		font-size: 14px
+		line-height: 19px
+		color: #000		
+		text-align: left
+.left-modal-content
+	padding: 8px 10px 30px 20px
+
+
+.hidden_form_small
+	height: 440px	
+	width: 340px
+	background-color: #fff
+	text-align: center
+	margin-top: 60px	
+	margin: 0 auto
+	position: relative
+	overflow: hidden
 
 
 

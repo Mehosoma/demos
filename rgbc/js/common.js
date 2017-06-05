@@ -27,7 +27,8 @@ context.fill();
 
 // Выравниваем блоки по высоте
 $(document).ready(function(){
-      $('.col-eq').colequalizer();   
+    $(".popup_form").magnificPopup();
+    $('.col-eq').colequalizer(); 
 });
 
 // Slider
@@ -89,3 +90,77 @@ $('#goToNextSlide').on('click', function () {
 });
 
 
+//Desc Slider
+// Slider
+var slider1 = $('.desc-slider-wrap ul').lightSlider({
+    controls: false,
+    loop: true,
+    item: 4,
+    slideMargin: 0,
+    slideMove: 1,    
+    responsive : [
+            {
+                breakpoint:3000,
+                settings: {
+                    item:1,
+                    slideMove:1,
+                    
+                  }
+            },
+
+            {
+                breakpoint: 1200,
+                settings: {
+                    item:4,
+                    slideMove:1,
+                    
+                  }
+            },
+
+            {
+                breakpoint:992,
+                settings: {
+                    item:3,
+                    slideMove:1,
+                                       
+                  }
+            },
+            {
+                breakpoint:768,
+                settings: {
+                    item:2,
+                    slideMove:1,
+                                     
+                  }
+            },
+            {
+                breakpoint:480,
+                settings: {
+                    item:1,
+                    slideMove:1,                   
+                  
+                  }
+            }
+        ]        
+});
+
+
+//Переход по ссылкам
+$('a[href^="#"]').click(function(){
+//Сохраняем значение атрибута href в переменной:
+var target = $(this).attr('href');
+$('html, body').animate({scrollTop: $(target).offset().top}, 800);
+return false;
+});
+
+
+//Замена номера
+
+$(".phone span").click(
+	function () {
+	    $(this).stop().css('opacity', '0').html(function (_, oldText) {
+	        return oldText == '8 (800) 400 10' ? 'показать телефон' : '8 (800) 400 10'
+	    }).animate({
+	        opacity: 1
+	    }, 1000);
+});

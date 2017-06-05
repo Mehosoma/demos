@@ -82,24 +82,36 @@
 }
 .lSSlideOuter .lSPager.lSpg > li {
     cursor: pointer;
-    display: inline-block;
-    padding: 0 5px;
+    display: inline-block;    
+    width: 12px;
+    height: 12px; 
+    position: relative; 
+    margin: 0 5px;   
 }
-.lSSlideOuter .lSPager.lSpg > li a {
-    background-color: #222222;
-    border-radius: 30px;
-    display: inline-block;
+
+.lSSlideOuter .lSPager.lSpg > li.active{
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+.lSSlideOuter .lSPager.lSpg > li a {    
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-block;        
     height: 8px;
     overflow: hidden;
     text-indent: -999em;
     width: 8px;
     position: relative;
+    bottom: 7px;
     z-index: 99;
     -webkit-transition: all 0.5s linear 0s;
-    transition: all 0.5s linear 0s;
+    transition: all 0.5s linear 0s;     
 }
-.lSSlideOuter .lSPager.lSpg > li:hover a, .lSSlideOuter .lSPager.lSpg > li.active a {
-    background-color: #f87e47;
+.lSSlideOuter .lSPager.lSpg > li.active a {
+    background-color: transparent;
+    border: 2px solid #fff;
+
 }
 .lSSlideOuter .media {
     opacity: 0.8;
@@ -180,8 +192,8 @@
     background-image: url('arrow-black__right.png');
     background-position: center center; 
     background-repeat: no-repeat;
-    right: 2%;
-    top: 16px;
+    right: 0%;
+    top: 50px;
     border: none;   
     background-color: transparent;  
     opacity: 0.5;
@@ -197,8 +209,8 @@
     background-image: url('arrow-black__left.png');
     background-position: center center; 
     background-repeat: no-repeat;
-    left: 2%;
-    top: 16px;
+    left: 0%;
+    top: 50px;
     border: none;   
     background-color: transparent;  
     opacity: 0.5;
