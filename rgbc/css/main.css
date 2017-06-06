@@ -511,8 +511,7 @@ header {
 #scheme {
   width: 100%;
   min-height: 591px;
-  background-repeat: repeat-y;
-  background-size: 100% 100%;
+  background-repeat: repeat;
   position: relative;
   padding-top: 121px; }
   #scheme h2 {
@@ -676,12 +675,14 @@ header {
 
 .triangle-photos {
   width: 100%;
+  height: 97px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
   position: absolute;
   top: 0;
   z-index: 100;
   margin-top: -2px; }
-  .triangle-photos #triangle-photos {
-    width: 100%; }
 
 .photos-block-wrap {
   text-align: center;
@@ -878,7 +879,9 @@ header {
   height: 100%;
   padding-bottom: 20px;
   -webkit-box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
-  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2); }
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
+  position: relative;
+  padding-bottom: 50px; }
 
 .articles-block-text {
   padding: 3px 0 0 17px; }
@@ -898,8 +901,10 @@ header {
     padding-right: 50px; }
 
 .articles-block-footer {
-  padding-left: 19px;
-  margin-top: 43px; }
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  left: 17px; }
   .articles-block-footer a {
     font-family: 'WhitneyBook', sans-serif;
     font-size: 14px;
@@ -908,10 +913,10 @@ header {
     letter-spacing: 1.5px;
     border: 2px solid #3f51b5;
     border-radius: 5px;
-    padding: 7px 7px 5px 5px;
+    padding: 7px 7px 5px 15px;
     text-shadow: 0.5px 0 0 #000; }
   .articles-block-footer i {
-    margin-left: 16px;
+    margin-left: 10px;
     color: #000;
     font-size: 12px; }
 
@@ -1188,10 +1193,10 @@ footer {
 /*******************************************************Service*****************************************/
 .service {
   width: 100%;
-  min-height: 835px;
+  min-height: 890px;
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: 100% 100%;
+  background-size: cover;
   padding-top: 150px; }
   .service h2 {
     color: #fff;
@@ -1367,29 +1372,10 @@ footer {
   .others .logo {
     margin-top: 0px;
     line-height: 60px; }
-  .others .phone-others {
-    padding-left: 20px; }
-    .others .phone-others span {
-      cursor: default;
-      font-family: '8289', sans-serif;
-      font-size: 20px;
-      letter-spacing: 2px;
-      line-height: 60px;
-      border-bottom: none; }
-    .others .phone-others strong {
-      color: #edb660; }
-    .others .phone-others img {
-      position: relative;
-      bottom: 2px; }
-  .others .call {
-    padding-left: 20px; }
-    .others .call a {
-      font-family: 'WhitneyBook', sans-serif;
-      color: #fff;
-      font-size: 14px;
-      line-height: 60px;
-      letter-spacing: 2px;
-      text-transform: uppercase; }
+  .others .phone {
+    line-height: 60px; }
+  .others .mail {
+    line-height: 60px; }
 
 .blog-main-content {
   padding-bottom: 92px;

@@ -47,31 +47,6 @@ context.fill();
 });
 
 
-$(document).ready(function(){
-//Triangle Canvas
-var canvas = document.getElementById('triangle-photos');
-
-if (canvas == null){
-        return false;
-    }
-        else {
-
-var context = canvas.getContext('2d');
-context.beginPath();
-context.moveTo(0, 0);
-context.lineTo(1440, 0);
-context.lineTo(720, 100);
-context.closePath();
-context.shadowColor = 'rgba(0,0,0,0.5)';
-context.shadowBlur = 10;
-context.shadowOffsetX = 0;
-context.shadowOffsetY = 0;
-context.fillStyle = "rgb(48, 70, 145)";
-context.fill();
-}
-
-});
-
 
 
 // Выравниваем блоки по высоте
