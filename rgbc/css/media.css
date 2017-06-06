@@ -537,6 +537,16 @@
 		padding: 0px;
 	}
 
+	#scheme{
+		background-image: url(../img/sheme-bg-small.png)!important;
+		background-repeat: repeat-y;
+		background-size: auto;
+	}
+
+	.photos{
+		margin-top: 0px;
+	}
+
 }
 
 @media only screen and (min-width : 480px) and (max-width : 767px){
@@ -930,6 +940,17 @@
 		margin-left: auto;
 	}
 
+	#scheme{
+		background-image: url(../img/sheme-bg-small.png)!important;
+		background-repeat: repeat-y;
+		background-size: auto;
+	}
+
+	.photos{
+		margin-top: 0px;
+	}
+
+
 }
 
 
@@ -1181,6 +1202,9 @@
 		padding-right: 200px;
 	}
 		
+	#scheme{
+		min-height: 900px;
+	}
 
 }
 
