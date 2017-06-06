@@ -1,6 +1,12 @@
 
+$(document).ready(function(){
+
 //Triangle Canvas
 var canvas = document.getElementById('triangle');
+if (canvas == null){
+        return false;
+    }
+        else {
 var context = canvas.getContext('2d');
 context.beginPath();
 context.moveTo(0, 0);
@@ -13,9 +19,20 @@ context.shadowOffsetX = 0;
 context.shadowOffsetY = 0;
 context.fillStyle = "rgb(252, 252, 252)";
 context.fill();
+}
 
+});
+
+
+$(document).ready(function(){
 //Triangle Canvas
 var canvas = document.getElementById('triangle-scheme');
+
+if (canvas == null){
+        return false;
+    }
+        else {
+
 var context = canvas.getContext('2d');
 context.beginPath();
 context.moveTo(0, 0);
@@ -25,8 +42,20 @@ context.closePath();
 context.fillStyle = "rgb(252, 252, 252)";
 context.fill();
 
+}
+
+});
+
+
+$(document).ready(function(){
 //Triangle Canvas
 var canvas = document.getElementById('triangle-photos');
+
+if (canvas == null){
+        return false;
+    }
+        else {
+
 var context = canvas.getContext('2d');
 context.beginPath();
 context.moveTo(0, 0);
@@ -39,6 +68,11 @@ context.shadowOffsetX = 0;
 context.shadowOffsetY = 0;
 context.fillStyle = "rgb(48, 70, 145)";
 context.fill();
+}
+
+});
+
+
 
 // Выравниваем блоки по высоте
 $(document).ready(function(){

@@ -85,11 +85,11 @@ header {
 .logo {
   margin-top: 17px; }
 
-.phone {
+.phone, .phone-others {
   line-height: 50px;
   text-align: center;
   margin-left: 8px; }
-  .phone span {
+  .phone span, .phone-others span {
     font-family: 'WhitneyBook', sans-serif;
     font-size: 16px;
     color: #fff;
@@ -655,11 +655,12 @@ header {
 /*******************************************************Photos*****************************************/
 .photos {
   width: 100%;
-  height: 999px;
+  min-height: 999px;
   background-repeat: repeat-y;
   background-position: center center;
   background-size: cover;
-  position: relative; }
+  position: relative;
+  padding-bottom: 240px; }
   .photos h2 {
     margin-top: 192px;
     margin-bottom: 14px; }
@@ -1352,6 +1353,148 @@ footer {
   position: relative;
   overflow: hidden;
   padding-bottom: 20px; }
+
+/*******************************************************Archive*****************************************/
+.others {
+  position: static;
+  background-color: #494949;
+  min-height: 60px; }
+  .others .navbar {
+    margin-left: -90px; }
+  .others .navbar-default .navbar-nav > li > a {
+    padding-top: 20px;
+    padding-bottom: 20px; }
+  .others .logo {
+    margin-top: 0px;
+    line-height: 60px; }
+  .others .phone-others {
+    padding-left: 20px; }
+    .others .phone-others span {
+      cursor: default;
+      font-family: '8289', sans-serif;
+      font-size: 20px;
+      letter-spacing: 2px;
+      line-height: 60px;
+      border-bottom: none; }
+    .others .phone-others strong {
+      color: #edb660; }
+    .others .phone-others img {
+      position: relative;
+      bottom: 2px; }
+  .others .call {
+    padding-left: 20px; }
+    .others .call a {
+      font-family: 'WhitneyBook', sans-serif;
+      color: #fff;
+      font-size: 14px;
+      line-height: 60px;
+      letter-spacing: 2px;
+      text-transform: uppercase; }
+
+.blog-main-content {
+  padding-bottom: 92px;
+  padding-top: 20px; }
+  .blog-main-content .blog-block {
+    margin-top: 66px;
+    margin-bottom: 10px; }
+    .blog-main-content .blog-block p {
+      font-family: 'WhitneyBook', sans-serif;
+      color: #c1c1c1;
+      font-size: 12px;
+      display: inline-block;
+      margin-right: 14px; }
+      .blog-main-content .blog-block p i {
+        margin-right: 5px; }
+    .blog-main-content .blog-block h3 {
+      font-family: '8289', sans-serif;
+      font-size: 36px;
+      line-height: 42px;
+      color: #000;
+      margin-bottom: 15px;
+      letter-spacing: 3px; }
+    .blog-main-content .blog-block .blog-news-block-image {
+      width: 660px;
+      height: 370px;
+      position: relative;
+      margin-top: 17px;
+      margin-bottom: 14px;
+      -webkit-box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.3);
+      box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.3); }
+      .blog-main-content .blog-block .blog-news-block-image img {
+        width: 100%;
+        height: 100%; }
+    .blog-main-content .blog-block .blog-block-text p {
+      font-family: 'WhitneyBook', sans-serif;
+      color: #000;
+      font-size: 12px;
+      line-height: 16px;
+      letter-spacing: 1.2px;
+      text-shadow: 0.5px 0 0 #000;
+      margin-top: 14px;
+      padding-right: 200px;
+      margin-right: 0px; }
+  .blog-main-content .top-banner-block {
+    width: 100%;
+    height: 100%;
+    margin-top: 75px; }
+    .blog-main-content .top-banner-block img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px; }
+  .blog-main-content .last-article-block {
+    text-align: center;
+    margin-top: 65px; }
+    .blog-main-content .last-article-block p {
+      font-family: '8289', sans-serif;
+      font-size: 26px;
+      color: #000;
+      text-transform: uppercase;
+      letter-spacing: 2px; }
+    .blog-main-content .last-article-block hr {
+      width: 165px;
+      height: 2px;
+      margin: 0px;
+      background: #304691;
+      background-color: #304691;
+      margin: 19px auto 17px;
+      border: none; }
+    .blog-main-content .last-article-block .last-articles {
+      margin-top: 20px;
+      float: left;
+      text-align: left; }
+      .blog-main-content .last-article-block .last-articles img {
+        float: left;
+        margin-right: 27px; }
+      .blog-main-content .last-article-block .last-articles a {
+        font-family: 'WhitneySemiBold', sans-serif;
+        font-size: 18px;
+        line-height: 24px;
+        color: #000;
+        display: inline;
+        letter-spacing: 1.5px; }
+
+.blog-block-footer {
+  margin-top: 10px; }
+  .blog-block-footer a {
+    font-family: 'WhitneyBook', sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    color: #000;
+    letter-spacing: 1.5px;
+    border: 2px solid #3f51b5;
+    border-radius: 5px;
+    padding: 7px 7px 5px 10px;
+    text-shadow: 0.5px 0 0 #000; }
+  .blog-block-footer i {
+    margin-left: 11px;
+    color: #000;
+    font-size: 12px; }
+
+/*******************************************************Single*****************************************/
+.single-text p {
+  padding-right: 50px !important;
+  letter-spacing: 2px !important;
+  margin-bottom: 2px; }
 
 .hidden {
   display: none; }
