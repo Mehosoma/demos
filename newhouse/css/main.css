@@ -47,13 +47,14 @@ header {
 
 .logo {
   text-align: right;
-  padding-top: 6px; }
+  line-height: 100px; }
 
 .navbar-default {
   background-image: none;
   border: none;
   background-color: #fff;
-  margin-bottom: 0px; }
+  margin-bottom: 0px;
+  margin-left: 30px; }
 
 .navbar-default .navbar-nav > li > a {
   font-family: 'PT Sans', sans-serif;
@@ -67,21 +68,20 @@ header {
 .navbar-nav li {
   padding: 25px 0; }
 
-.header-button {
+.header-button a {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  color: #000;
+  background-color: #f3b22d;
+  padding: 11px 40px;
+  border-radius: 5px;
   line-height: 100px; }
-  .header-button a {
-    font-family: 'PT Sans', sans-serif;
-    font-size: 18px;
-    letter-spacing: 0.5px;
-    color: #000;
-    background-color: #f3b22d;
-    padding: 11px 40px;
-    border-radius: 5px; }
-  .header-button a:hover {
-    opacity: 0.7; }
+
+.header-button a:hover {
+  opacity: 0.7; }
 
 .contacts-phones {
-  margin-top: 26px;
   margin-left: -62px; }
   .contacts-phones a {
     font-family: 'PT Sans', sans-serif;
@@ -90,7 +90,7 @@ header {
     color: #00a8ff;
     text-decoration: underline;
     display: block;
-    line-height: 22px; }
+    line-height: 100px; }
   .contacts-phones a:hover {
     opacity: 0.7; }
 

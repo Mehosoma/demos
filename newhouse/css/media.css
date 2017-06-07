@@ -37,8 +37,7 @@
 		background-color: transparent;
 	}
 
-	.header-button{
-		line-height: 50px;
+	.header-button{	
 		margin-left: 20px		
 	}
 
@@ -48,7 +47,8 @@
 		padding: 5px 10px;
 		border: 1px solid #fff;
 		background-color: transparent;
-		font-size: 17px
+		font-size: 17px;
+		line-height: 50px;
 	}
 
 	.navbar-nav li{
@@ -301,6 +301,11 @@
 		display: none!important;
 	} 
 
+	.navbar-default{
+		margin-left: 0px;	
+	}
+
+
 	
 
 }
@@ -318,12 +323,10 @@
 
 	.contacts-phones{
 		margin-left: 0px;	
-		text-align: right;
-		margin-top: 13px;
+		text-align: right;		
 	}	
 
-	.contacts-phones a{
-		line-height: 36px;
+	.contacts-phones a{		
 		font-size: 24px;
 	}
 
@@ -351,8 +354,7 @@
 		background-color: transparent;
 	}
 
-	.header-button{
-		line-height: 50px;
+	.header-button{		
 		margin-left: 20px		
 	}
 
@@ -362,7 +364,8 @@
 		padding: 5px 10px;
 		border: 1px solid #fff;
 		background-color: transparent;
-		font-size: 17px
+		font-size: 17px;
+		line-height: 50px;
 	}
 
 	.navbar-nav li{
@@ -563,6 +566,10 @@
 		display: none!important;
 	} 
 
+	.navbar-default{
+		margin-left: 0px;	
+	}
+
 	
 
 }
@@ -579,13 +586,36 @@
 
 	.contacts-phones{
 		margin-left: 0px;
+		text-align: center;
+	}	
+
+	.navbar-default{
+		margin-left: 0px;
+		float: none;
 	}
 
-	.nav > li > a{
-		padding: 15px 10px;
+	.navbar-collapse.collapse{
+		padding: 0px
+	}
+
+	.navbar-nav{
+		float: none;
+	}
+
+	.nav li{
+		float: none;
+		display: inline-block;
+	}
+
+	.header-button{
+		text-align: center;
 	}
 
 	header .col-sm-12{
+		text-align: center;
+	}
+
+	.logo{
 		text-align: center;
 	}
 
@@ -694,8 +724,17 @@
 
 @media only screen and (min-width: 992px) and (max-width: 1199px){
 
-	header .col-md-5, header .col-md-3{
+	header .col-md-5, header .col-md-3, header .col-md-6{
 		padding: 0px;
+	}
+
+	.navbar-default{
+		margin-left: 45px
+	}
+
+	.nav > li > a{
+		padding-left: 8px;
+		padding-right: 8px;
 	}
 
 	header .navbar-collapse{
