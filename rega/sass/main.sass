@@ -866,12 +866,12 @@ header.sticky
 	.news-anons-head
 		padding: 30px 0 15px 0
 		h2
-			font-family: 'Roboto-Condensed', sans-serif
-			font-size: 32px
-			text-transform: uppercase
-			color: #00a3a8
-			float: left
-		    						
+			display: inline-block
+			font-family: "Roboto-Light", sans-serif
+			font-size: 36px
+			color: #06a2a6
+			padding-left: 30px
+			font-weight: normal	
 		a
 			font-family: 'Roboto-Regular', sans-serif
 			float: right
@@ -889,73 +889,73 @@ header.sticky
 			height: 150px
 			border-bottom: 5px solid #00a3a8
 			overflow: hidden
-			-moz-transition: all 1s ease-out;
-			-o-transition: all 1s ease-out;
-			-webkit-transition: all 1s ease-out;
-			transition: all 1s ease-out;
-			img
-				-moz-transition: all 1s ease-out
-				-o-transition: all 1s ease-out
-				-webkit-transition: all 1s ease-out
-				transition: all 1s ease-out
+			-moz-transition: all 0.3s ease-out
+			-o-transition: all 0.3s ease-out
+			-webkit-transition: all 0.3s ease-out
+			transition: all 0.3s ease-out 			
+			img				
 				width: 100%
 				height: 100%
-		.na-block-foto:hover img
-			-webkit-transform: scale(1.05)
-			-moz-transform: scale(1.05)
-			-o-transform: scale(1.05)
-			transform: scale(1.05)
+		.na-block-foto:hover
+			-webkit-filter: brightness(80%)
 		.na-block-desc
 			padding: 12px 25px 0px 40px
 			margin-bottom: 100px
 			h3
-				font-size: 18px				
-				color: #444444				
-				font-family: 'Roboto-Light', sans-serif
-				line-height: 18px				
+				display: inline-block
+				line-height: 20px
+				font-family: "Roboto-Medium", sans-serif
+				font-size: 16px
+				color: #06a2a6
+				font-weight: normal				
+				vertical-align: top
+				-moz-transition: all 0.3s ease-out
+				-o-transition: all 0.3s ease-out
+				-webkit-transition: all 0.3s ease-out
+				transition: all 0.3s ease-out 
+			h3:hover
+				color: #ff8a38 
 			span
 				font-size: 14px
 				color: #b4b4b4				
 				img
 					margin-right: 8px
+					position: relative
+					top: -2px
 			.sp-left
 				float: left
 				margin-right: 50px
-				margin-bottom: 10px
-			.sp-right
-				float: left
-				margin-bottom: 10px
-				padding-left: 2px
-			p	
-				font-family: 'Roboto-Regular', sans-serif			
-				font-size: 13px
-				color: #444444
-				line-height: 22px
-				margin-top: 10px							
+				margin-bottom: 10px									
 			.na-learnmore				
-				background-color: #00a3a8
-				position: absolute				
-				left: 20px
-				bottom: 30px				
-				font-size: 18px				
-				color: #ffffff
-				text-transform: uppercase				
+				background-color: #06a2a6
+				display: inline-block				
+				color: #fff
+				padding: 6px 17px
+				font-family: 'arial', sans-serif
+				font-size: 14px
 				font-weight: bold
-				padding: 10px 30px
-				border: 1px solid #fff
+				text-transform: uppercase
+				margin-top: 19px
+				border: 1px solid #06a2a6
+				-moz-transition: all 0.3s ease-out
+				-o-transition: all 0.3s ease-out
+				-webkit-transition: all 0.3s ease-out
+				transition: all 0.3s ease-out
+				position: absolute
+				bottom: 30px
+				left: 20px 
 
 #news-anons .news-anons-block .na-block-desc
 	padding-left: 20px
 
 #news-anons .news-anons-block .na-block-desc .na-learnmore:hover
 	text-decoration: none
-	background-color: #fff!important
-	border: 1px solid #00a3a8
-	color: #00a3a8
-	-moz-transition: all 0.5s ease-out
-	-o-transition: all 0.5s ease-out
-	-webkit-transition: all 0.5s ease-out
-	transition: all 0.5s ease-out 
+	background-color: #ff8a38
+	border: 1px solid #ff8a38	
+	-moz-transition: all 0.3s ease-out
+	-o-transition: all 0.3s ease-out
+	-webkit-transition: all 0.3s ease-out
+	transition: all 0.3s ease-out 
 
 
 #news-page
@@ -969,20 +969,34 @@ header.sticky
 		margin-bottom: 36px
 		margin: 20px 0
 	.news-page-block
-		padding: 20px 0
+		padding: 30px 0
 		border-bottom: 1px solid #a1a1a1
 	.news-page-block-image img
 		width: 100%
 		height: auto	
+	.news-page-block-image
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out 
+	.news-page-block-image:hover
+		-webkit-filter: brightness(80%)
 	.news-page-block-desc
-		h3
+		h2
+			display: block
+			font-family: "Roboto-Light", sans-serif
+			font-size: 36px
+			color: #06a2a6
+			font-weight: normal
+			margin-bottom: 20px
 			margin-top: 0px
-			font-family: 'Roboto-Bold', sans-serif
-			font-size: 24px
-			color: #2d2d2d
-			font-weight: bold
-			line-height: 1.25
-			margin-bottom: 0px
+			line-height: 1em
+			-moz-transition: all 0.3s ease-out
+			-o-transition: all 0.3s ease-out
+			-webkit-transition: all 0.3s ease-out
+			transition: all 0.3s ease-out 
+		h2:hover
+			color: #ff8a38
 		span
 			font-family: 'arial', sans-serif
 			font-size: 12px
@@ -991,7 +1005,7 @@ header.sticky
 		margin: 10px 0
 	.read-button
 		display: inline-block
-		background-color: #c73468
+		background-color: #06a2a6
 		color: #fff
 		padding: 6px 17px
 		font-family: 'arial', sans-serif
@@ -999,12 +1013,12 @@ header.sticky
 		font-weight: bold
 		text-transform: uppercase
 		margin-top: 19px
-		-moz-transition: all 0.5s ease-out
-		-o-transition: all 0.5s ease-out
-		-webkit-transition: all 0.5s ease-out
-		transition: all 0.5s ease-out 
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out 
 	.read-button:hover
-		background-color: #00a3a8	
+		background-color: #ff8a38	
 		text-decoration: none
 
 
