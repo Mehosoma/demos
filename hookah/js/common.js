@@ -19,7 +19,7 @@ $(window).resize( setHeiHeight );
 
                 function setHeiHeight() {
     $('.slider-wrap, .slider-wrap li, .slide-overlay').css({
-        height: $(window).height() - 208 + 'px' 
+        height: $(window).height() - 160 + 'px' 
     });
 }
 setHeiHeight();  

@@ -59,7 +59,10 @@ header {
     height: 118px; }
 
 .logo {
-  text-align: center; }
+  width: 100%;
+  height: 103px;
+  background-repeat: no-repeat;
+  background-position: center center; }
 
 .phone {
   margin-top: 35px; }
@@ -86,7 +89,18 @@ header {
   margin-top: 35px; }
   .social li {
     display: inline-block;
-    padding: 0 10px; }
+    height: 40px;
+    width: 60px; }
+  .social li {
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: 34px 34px; }
+  .social a:nth-child(2) li {
+    background-size: 16px 34px; }
+  .social a:nth-child(3) li {
+    background-size: 28px 33px; }
+  .social a:nth-child(4) li {
+    background-size: 56px 34px; }
 
 .navbar-default {
   background-color: #fff;
@@ -98,7 +112,7 @@ header {
   padding: 0px; }
 
 .navbar-default .navbar-nav > li > a {
-  font-family: 'CodeProBoldLC', sans-serif;
+  font-family: 'CodeProLC', sans-serif;
   font-size: 20px;
   color: #48423b;
   letter-spacing: 3px;
