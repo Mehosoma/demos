@@ -1,0 +1,72 @@
+
+@media only screen and (min-width : 0px) and (max-width : 479px) {
+
+}
+
+@media only screen and (min-width : 480px) and (max-width : 767px){
+
+	
+}
+
+@media only screen and (min-width : 768px) and (max-width : 991px){
+
+	
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+
+	
+
+}
+
+
+@media only screen and (min-width: 1200px) and (max-width: 1600px){
+
+	header{
+		padding-top: 10px;
+		height: 208px;
+	}
+
+	.navbar-default .navbar-nav > li{
+		padding: 15px 64px
+	}
+
+	.navbar-default{
+		height: 80px;
+	}
+
+	.slider-wrap .main-header{
+		width: 1330px;
+		top: 60px;
+		left: 60px;
+	}
+
+	.form-header{
+		width: 1330px;
+	}
+
+	.form-header form input{
+		width: 434px;
+	}
+
+	.services strong{
+		display: block;
+		text-align: center;
+	}
+
+	.services-block p{
+		padding: 0px 200px;
+	}
+
+	.insta-block{
+		height: 277px;
+	}
+
+	.contacts-data .col-lg-4:nth-child(2){
+		padding-left: 115px;
+	}
+
+
+}
+
+

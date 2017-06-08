@@ -1,0 +1,558 @@
+@import "bourbon/bourbon"
+
+body
+	font-family: "CodeProLC", sans-serif
+	font-weight: normal
+	font-size: 14px
+	min-width: 320px
+	max-width: 1920px
+	position: relative
+	line-height: 1.6
+	-webkit-font-smoothing: antialiased
+	overflow-x: hidden
+	overflow-y: auto	
+	margin: 0 auto		
+	a:hover, a:focus, a:active
+		text-decoration: none
+		outline: none
+	input:focus, input:active
+		text-decoration: none
+		outline: none
+	button:focus, button:active
+		text-decoration: none
+		outline: none
+	textarea:focus, textarea:active
+		text-decoration: none
+		outline: none
+	ul
+		list-style-type: none
+		padding: 0
+	a:hover
+		opacity: 0.7
+
+/********************************************************General******************************************/
+ul
+	padding: 0
+	list-style-type: none
+hr
+	border: none
+
+h2
+	font-family: 'CodeProBoldLC', sans-serif
+	font-size: 40px
+	line-height: 48px
+	color: #48423b
+	font-style: normal
+	text-align: center
+	float: none
+	letter-spacing: 3px	
+	text-transform: uppercase
+
+
+/********************************************************FirstScreen******************************************/
+.first-screen
+	height: 100vh	
+header
+	height: 280px
+	background-color: #fff	
+	padding-top: 38px
+	.col-lg-4
+		height: 118px
+.logo
+	text-align: center
+.phone
+	margin-top: 35px
+	a
+		background-color: #b492c1
+		font-family: 'CodeProBoldLC', sans-serif
+		font-size: 23px
+		color: #fff
+		letter-spacing: 4px
+		padding: 13px 45px 13px 76px
+		position: relative
+		img
+			width: 30px
+			height: 30px
+			position: absolute
+			margin-right: 30px	
+			left: 10px	
+			margin: auto
+			top: 0
+			bottom: 0
+.social
+	text-align: right
+	margin-top: 35px
+	li
+		display: inline-block
+		padding: 0 10px	
+
+.navbar-default
+	background-color: #fff
+	border: none
+	margin: 0px
+	height: 118px
+.navbar-default .navbar-collapse, .navbar-default .navbar-form
+	padding: 0px
+.navbar-default .navbar-nav > li > a
+	font-family: 'CodeProBoldLC', sans-serif
+	font-size: 20px
+	color: #48423b
+	letter-spacing: 3px	
+	padding-left: 10px
+	padding-right: 10px
+.navbar-default .navbar-nav > li
+	padding: 34px 102px
+.navbar-default .navbar-nav > li:first-child, .navbar-default .navbar-nav > li:first-child a
+	padding-left: 0px
+.navbar-default .navbar-nav > li:last-child, .navbar-default .navbar-nav > li:last-child a
+	padding-right: 0px
+.slider-wrap
+	width: 100%	
+	position: relative		
+	.lSPager
+		display: none
+	li
+		position: relative	
+		width: 100%	
+		overflow: hidden		
+		img
+			width: 100%
+			height: 100%
+	.slide-overlay
+		position: absolute
+		width: 100%		
+		background-color: rgba(0,0,0,0.4)
+		top: 0
+		left: 0
+		z-index: 1
+	.main-header
+		width: 1440px
+		position: absolute
+		margin: auto
+		top: 260px
+		left: 0
+		right: 0
+		z-index: 10
+		display: inline-block
+		h1	
+			font-family: 'CodeProBoldLC', sans-serif
+			font-size: 47px
+			line-height: 56px
+			color: #fff
+			letter-spacing: 7px
+			position: relative	
+			display: inline-block			
+	h1:after
+		content: url('../img/decor.png')
+		position: absolute
+		bottom: 0		
+		right: 0px
+		margin-bottom: -32px
+		margin-right: -27px
+
+.form-header
+	position: absolute
+	bottom: 20px	
+	z-index: 10	
+	width: 1440px
+	margin: auto
+	left: 0
+	right: 0
+	.form-overlay
+		height: 80px
+		background-color: rgba(0,0,0,0.40)
+		text-align: right
+		padding-right: 20px
+		width: 100%
+		a
+			line-height: 80px
+			font-family: 'CodeProBoldLC', sans-serif
+			font-size: 24px			
+			color: #fff
+			letter-spacing: 2px	
+	form		
+		height: 80px
+		input
+			width: 480px
+			height: 80px
+			border: none
+			font-family: 'CodeProLC', sans-serif
+			font-size: 25px
+			color: #a8a8a8
+			letter-spacing: 3px
+			padding-left: 30px		
+			float: left	
+			margin-right: 1px			
+		#date
+			width: 278px
+			background-repeat: no-repeat
+			background-position: left 20px center
+			padding-left: 80px			
+		::-webkit-input-placeholder 
+			color: #a8a8a8			
+		::-moz-placeholder
+			color: #a8a8a8			
+		:-moz-placeholder 
+			color: #a8a8a8 			
+		:-ms-input-placeholder      
+			color: #a8a8a8
+		button
+			width: 180px
+			height: 80px
+			border: none
+			background-color: #49a1c0
+			font-family: 'CodeProLC', sans-serif
+			font-size: 21px
+			color: #fff
+			letter-spacing: 3px
+			text-transform: uppercase
+		button:hover
+			opacity: 0.7
+
+
+/********************************************************Services******************************************/
+.services
+	padding: 70px 0 100px
+	strong
+		font-family: 'CodeProBoldLC', sans-serif
+		font-size: 36px
+		line-height: 43px
+		color: #a8a8a8
+		letter-spacing: 7px		
+	p	
+		font-family: 'CodeProBoldLC', sans-serif
+		font-size: 25px
+		line-height: 30px
+		color: #49a1c0
+		letter-spacing: 5px			
+		text-align: center
+		margin-top: 30px		
+		img
+			margin-right: 20px
+	hr
+		width: 269px
+		height: 5px
+		background: #b492c1
+		background-color: #b492c1
+		margin: 65px auto 55px
+.services-block
+	text-align: center
+	margin-top: 84px
+	.icon-serv
+		width: 125px
+		height: 154px
+		margin: 0 auto
+		display: block
+	.icon-serv2
+		width: 98px
+		height: 154px
+		margin: 0 auto
+		display: block		
+	.cls-1, .cls-10, .cls-13, .cls-14
+		-moz-transition: all 0.5s ease-out
+		-o-transition: all 0.5s ease-out
+		-webkit-transition: all 0.5s ease-out
+		transition: all 0.5s ease-out 	
+	.decor-serv
+		width: 17px!important
+		height: 15px!important
+		position: absolute
+		top: 30px
+		right: 0
+		margin-right: -10px
+	i
+		font-family: 'CodeProLC', sans-serif
+		font-size: 30px
+		line-height: 36px
+		color: #a8a8a8
+		display: inline-block
+		position: relative
+		letter-spacing: 2px
+		font-style: normal
+		margin-top: 70px
+		-moz-transition: all 0.5s ease-out
+		-o-transition: all 0.5s ease-out
+		-webkit-transition: all 0.5s ease-out
+		transition: all 0.5s ease-out 			
+	p
+		font-family: 'CodeProBoldLC', sans-serif
+		font-size: 19px
+		line-height: 22px
+		color: #48423b		
+		letter-spacing: 2px
+		padding: 0 280px
+.service-block-button
+	margin-top: 45px
+	a
+		font-family: 'CodeProLC', sans-serif
+		font-size: 16px		
+		color: #fff		
+		letter-spacing: 2px
+		background-color: #a8a8a8
+		padding: 20px 45px
+		-moz-transition: all 0.5s ease-out
+		-o-transition: all 0.5s ease-out
+		-webkit-transition: all 0.5s ease-out
+		transition: all 0.5s ease-out
+		display: inline-block
+.services-block:hover svg .cls-1	
+	fill: #49a1c0!important
+.services-block:hover svg .cls-13
+	stroke: #49a1c0
+.services-block:hover svg .cls-14
+	fill: #49a1c0
+.services-block:hover svg .cls-10	
+	stroke: #49a1c0!important
+.services-block:hover i
+	color: #49a1c0
+.services-block:hover .service-block-button a
+	background-color: #49a1c0
+	opacity: 1
+
+/********************************************************Watch******************************************/
+.watch
+	width: 100%
+	img
+		width: 100%
+
+/********************************************************Benefits******************************************/
+.benefits
+	padding: 90px 0 135px
+	h2
+		margin-bottom: 100px
+.benefits-icon
+	margin: 55px 0px
+.benefits .col-lg-4:nth-child(1) img
+	position: relative
+	margin-top: -5px
+.benefits-block
+	text-align: center
+	strong
+		font-family: 'CodeProLC', sans-serif
+		font-size: 30px		
+		line-height: 36px
+		color: #49a1c0	
+		letter-spacing: 3px
+		text-transform: uppercase
+		font-style: normal
+		font-weight: normal
+	p
+		font-family: 'CodeProLC', sans-serif
+		font-size: 19px		
+		line-height: 22px
+		color: #a8a8a8	
+		letter-spacing: 5px		
+	p:after
+		content: url('../img/benef-decor.png')
+		position: relative
+		bottom: -15px
+		right: 4px		
+	
+/********************************************************Benefits******************************************/
+.insta
+	width: 100%
+.insta-block
+	width: 19.73%
+	height: 370px
+	background-color: #b492c1
+	float: left
+	margin-right: 0.33333%	
+.insta-block:last-child
+	margin-right: 0px
+	float: right
+	
+/********************************************************FeedBack******************************************/
+.feedback
+	padding: 130px 0px 75px
+.feedback-form
+	margin-top: 120px
+	p
+		font-family: 'CodeProLC', sans-serif
+		font-size: 25px		
+		line-height: 30px
+		color: #a8a8a8	
+		letter-spacing: 3px
+		margin-top: 35px
+.text-field
+	width: 300px
+	text-align: center
+	display: inline-block
+	input
+		width: 100%
+		height: 70px
+		border: 1px solid #a8a8a8
+		border-radius: 10px
+		font-family: 'CodeProLC', sans-serif
+		font-size: 25px		
+		color: #49a1c0
+		letter-spacing: 3px
+		margin-top: 30px
+		text-align: center
+		-moz-transition: all 0.5s ease-out
+		-o-transition: all 0.5s ease-out
+		-webkit-transition: all 0.5s ease-out
+		transition: all 0.5s ease-out		
+	input:hover, input:focus, input:active
+		border: 1px solid #49a1c0 
+.form-top-left
+	float: left
+	width: 60%
+.form-top-left .text-field:nth-child(2)
+	float: right
+	display: inline-block
+.form-top-right
+	float: right
+.footer-form
+	width: 100%
+	margin-top: 50px
+	textarea
+		width: 100%
+		height: 156px
+		resize: none
+		border: 1px solid #a8a8a8
+		border-radius: 10px
+		font-family: 'CodeProLC', sans-serif
+		font-size: 25px		
+		color: #49a1c0
+		letter-spacing: 3px
+		padding: 20px
+	textarea:hover, textarea:focus, textarea:active
+		border: 1px solid #49a1c0 
+	button
+		width: 300px
+		height: 70px
+		background-color: #49a1c0
+		border-radius: 10px
+		font-family: 'CodeProLC', sans-serif
+		font-size: 23px				
+		color: #fff
+		letter-spacing: 2px
+		border: none
+		box-shadow: 3px 3px 3px rgba(0,0,0,0.5)	
+		margin-top: 40px
+	button:hover
+		opacity: 0.7
+.footer-form-left
+	width: 60%
+	float: left
+	text-align: center
+.footer-form-right
+	float: right	
+
+/********************************************************Contacts******************************************/
+.contacts
+	padding: 40px 0
+	p
+		font-family: 'CodeProBoldLC', sans-serif
+		font-size: 25px		
+		line-height: 30px
+		color: #a8a8a8	
+		letter-spacing: 3px
+		text-align: center
+	hr
+		width: 230px
+		height: 2px
+		background-color: #49a1c0
+		background: #49a1c0
+		border: none
+		margin: 75px auto
+.contacts-data
+	margin-top: 40px
+	strong
+		font-family: 'CodeProBoldLC', sans-serif
+		font-size: 20px		
+		line-height: 23px
+		color: #48423b	
+		letter-spacing: 3px
+		margin-bottom: 46px
+		display: block
+	p
+		font-family: 'CodeProLC', sans-serif
+		font-size: 16px		
+		line-height: 20px
+		color: #48423b	
+		letter-spacing: 3px	
+		text-align: left
+		margin-bottom: 0px
+	li
+		display: inline-block
+		padding: 0 10px
+.contacts-data .col-lg-4:nth-child(3)
+	text-align: right
+.contacts-data .col-lg-4:nth-child(2)
+	padding-left: 180px
+
+
+/********************************************************Footer******************************************/
+footer
+	width: 100%
+	min-height: 374px
+	background-color: #f4f4f4
+	hr
+		width: 100%
+		height: 1px
+		background: #a8a8a8
+		background-color: #a8a8a8
+		margin: 0px
+.footer-logo
+	text-align: center
+	margin-top: 45px
+.footer-nav
+	text-align: center
+	height: 140px
+	ul
+		margin: 0px
+	li
+		display: inline-block		
+		padding: 0px 30px
+		height: 30px
+		line-height: 30px
+		border-right: 1px solid #49a1c0
+		margin: 55px 0
+		a
+			font-family: 'CodeProLC', sans-serif
+			font-size: 20px					
+			color: #48423b	
+			letter-spacing: 5px	
+	li:last-child
+		border-right: none
+.footer-bottom
+	p
+		font-family: 'CodeProLC', sans-serif
+		font-size: 15px		
+		line-height: 85px
+		color: #48423b	
+		letter-spacing: 3px	
+		float: left
+		margin: 0px;
+	i
+		font-family: 'CodeProLC', sans-serif
+		font-size: 15px		
+		line-height: 85px
+		color: #48423b	
+		letter-spacing: 3px	
+		float: right
+		font-style: normal
+
+
+
+
+
+
+	
+		
+		
+
+
+
+
+
+
+
+
+
+
+
+
+.hidden
+	display: none
