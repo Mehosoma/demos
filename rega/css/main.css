@@ -899,11 +899,12 @@ header.sticky {
   #news-anons .news-anons-head {
     padding: 30px 0 15px 0; }
     #news-anons .news-anons-head h2 {
-      font-family: 'Roboto-Condensed', sans-serif;
-      font-size: 32px;
-      text-transform: uppercase;
-      color: #00a3a8;
-      float: left; }
+      display: inline-block;
+      font-family: "Roboto-Light", sans-serif;
+      font-size: 36px;
+      color: #06a2a6;
+      padding-left: 30px;
+      font-weight: normal; }
     #news-anons .news-anons-head a {
       font-family: 'Roboto-Regular', sans-serif;
       float: right;
@@ -921,15 +922,15 @@ header.sticky {
       height: 150px;
       border-bottom: 5px solid #00a3a8;
       overflow: hidden;
-      -moz-transition: all 1s ease-out;
-      -o-transition: all 1s ease-out;
-      -webkit-transition: all 1s ease-out;
-      transition: all 1s ease-out; }
+      -moz-transition: all 0.5s ease-out;
+      -o-transition: all 0.5s ease-out;
+      -webkit-transition: all 0.5s ease-out;
+      transition: all 0.5s ease-out; }
       #news-anons .news-anons-block .na-block-foto img {
-        -moz-transition: all 1s ease-out;
-        -o-transition: all 1s ease-out;
-        -webkit-transition: all 1s ease-out;
-        transition: all 1s ease-out;
+        -moz-transition: all 0.5s ease-out;
+        -o-transition: all 0.5s ease-out;
+        -webkit-transition: all 0.5s ease-out;
+        transition: all 0.5s ease-out;
         width: 100%;
         height: 100%; }
     #news-anons .news-anons-block .na-block-foto:hover img {
@@ -966,29 +967,32 @@ header.sticky {
         line-height: 22px;
         margin-top: 10px; }
       #news-anons .news-anons-block .na-block-desc .na-learnmore {
-        background-color: #00a3a8;
-        position: absolute;
-        left: 20px;
-        bottom: 30px;
-        font-size: 18px;
-        color: #ffffff;
-        text-transform: uppercase;
+        background-color: #06a2a6;
+        display: inline-block;
+        color: #fff;
+        padding: 6px 17px;
+        font-family: 'arial', sans-serif;
+        font-size: 14px;
         font-weight: bold;
-        padding: 10px 30px;
-        border: 1px solid #fff; }
+        text-transform: uppercase;
+        margin-top: 19px;
+        border: 1px solid #06a2a6;
+        -moz-transition: all 0.3s ease-out;
+        -o-transition: all 0.3s ease-out;
+        -webkit-transition: all 0.3s ease-out;
+        transition: all 0.3s ease-out; }
 
 #news-anons .news-anons-block .na-block-desc {
   padding-left: 20px; }
 
 #news-anons .news-anons-block .na-block-desc .na-learnmore:hover {
   text-decoration: none;
-  background-color: #fff !important;
-  border: 1px solid #00a3a8;
-  color: #00a3a8;
-  -moz-transition: all 0.5s ease-out;
-  -o-transition: all 0.5s ease-out;
-  -webkit-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out; }
+  background-color: #ff8a38;
+  border: 1px solid #ff8a38;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out; }
 
 #news-page {
   padding: 40px 0; }
@@ -1006,14 +1010,15 @@ header.sticky {
   #news-page .news-page-block-image img {
     width: 100%;
     height: auto; }
-  #news-page .news-page-block-desc h3 {
+  #news-page .news-page-block-desc h2 {
+    display: block;
+    font-family: "Roboto-Light", sans-serif;
+    font-size: 36px;
+    color: #06a2a6;
+    font-weight: normal;
+    margin-bottom: 30px;
     margin-top: 0px;
-    font-family: 'Roboto-Bold', sans-serif;
-    font-size: 24px;
-    color: #2d2d2d;
-    font-weight: bold;
-    line-height: 1.25;
-    margin-bottom: 0px; }
+    line-height: 1em; }
   #news-page .news-page-block-desc span {
     font-family: 'arial', sans-serif;
     font-size: 12px;
@@ -1022,7 +1027,7 @@ header.sticky {
     margin: 10px 0; }
   #news-page .read-button {
     display: inline-block;
-    background-color: #c73468;
+    background-color: #06a2a6;
     color: #fff;
     padding: 6px 17px;
     font-family: 'arial', sans-serif;
@@ -1030,10 +1035,10 @@ header.sticky {
     font-weight: bold;
     text-transform: uppercase;
     margin-top: 19px;
-    -moz-transition: all 0.5s ease-out;
-    -o-transition: all 0.5s ease-out;
-    -webkit-transition: all 0.5s ease-out;
-    transition: all 0.5s ease-out; }
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out; }
   #news-page .read-button:hover {
-    background-color: #00a3a8;
+    background-color: #ff8a38;
     text-decoration: none; }
