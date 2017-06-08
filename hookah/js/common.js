@@ -3,7 +3,7 @@ $(document).ready(function(){
     $('.col-eq').colequalizer(); 
 });
 
-$(document).ready(function(){
+ $(document).ready(function(){
 
     if ($(window).width() > 1600) {
 
@@ -32,7 +32,7 @@ $(window).resize( setHeiHeight );
 });
 
 
-$(document).ready(function(){
+$(window).load(function(){
 // Slider
 var slider = $('.slider-wrap ul').lightSlider({
     controls: false,
