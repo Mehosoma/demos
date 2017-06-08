@@ -517,6 +517,14 @@ header {
     letter-spacing: 3px;
     text-align: left;
     margin-bottom: 0px; }
+  .contacts-data a {
+    font-family: 'CodeProLC', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    color: #48423b;
+    letter-spacing: 3px;
+    text-align: left;
+    margin-bottom: 0px; }
   .contacts-data li {
     display: inline-block;
     padding: 0 10px; }
