@@ -131,7 +131,14 @@
 		font-size: 35px;
 	}
 
+	.form-header .form-overlay{
+		height: 50px;
+	}
 
+	.form-header .form-overlay a{
+		line-height: 50px;
+		font-size: 20px;
+	}
 	
 
 
