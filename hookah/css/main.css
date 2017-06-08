@@ -86,7 +86,8 @@ header {
 
 .social {
   text-align: right;
-  margin-top: 35px; }
+  margin-top: 35px;
+  margin-right: 5px; }
   .social li {
     display: inline-block;
     height: 40px;
@@ -120,7 +121,7 @@ header {
   padding-right: 10px; }
 
 .navbar-default .navbar-nav > li {
-  padding: 34px 102px; }
+  padding: 34px 104px; }
 
 .navbar-default .navbar-nav > li:first-child, .navbar-default .navbar-nav > li:first-child a {
   padding-left: 0px; }
