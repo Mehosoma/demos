@@ -91,7 +91,7 @@ header {
   .social li {
     display: inline-block;
     height: 40px;
-    width: 60px; }
+    min-width: 56px; }
   .social li {
     background-position: bottom center;
     background-repeat: no-repeat;
@@ -101,7 +101,8 @@ header {
   .social a:nth-child(3) li {
     background-size: 28px 33px; }
   .social a:nth-child(4) li {
-    background-size: 56px 34px; }
+    background-size: 56px 34px;
+    margin-left: 10px; }
 
 .navbar-default {
   background-color: #fff;
@@ -198,7 +199,7 @@ header {
     -moz-placeholder-color: #a8a8a8;
     -ms-input-placeholder-color: #a8a8a8; }
     .form-header form input {
-      width: 480px;
+      width: 489px;
       height: 80px;
       border: none;
       font-family: 'CodeProLC', sans-serif;
@@ -259,42 +260,6 @@ header {
 .services-block {
   text-align: center;
   margin-top: 84px; }
-  .services-block .icon-serv {
-    width: 125px;
-    height: 154px;
-    margin: 0 auto;
-    display: block; }
-  .services-block .icon-serv2 {
-    width: 98px;
-    height: 154px;
-    margin: 0 auto;
-    display: block; }
-  .services-block .cls-1, .services-block .cls-10, .services-block .cls-13, .services-block .cls-14 {
-    -moz-transition: all 0.5s ease-out;
-    -o-transition: all 0.5s ease-out;
-    -webkit-transition: all 0.5s ease-out;
-    transition: all 0.5s ease-out; }
-  .services-block .decor-serv {
-    width: 17px !important;
-    height: 15px !important;
-    position: absolute;
-    top: 30px;
-    right: 0;
-    margin-right: -10px; }
-  .services-block i {
-    font-family: 'CodeProLC', sans-serif;
-    font-size: 30px;
-    line-height: 36px;
-    color: #a8a8a8;
-    display: inline-block;
-    position: relative;
-    letter-spacing: 2px;
-    font-style: normal;
-    margin-top: 70px;
-    -moz-transition: all 0.5s ease-out;
-    -o-transition: all 0.5s ease-out;
-    -webkit-transition: all 0.5s ease-out;
-    transition: all 0.5s ease-out; }
   .services-block p {
     font-family: 'CodeProBoldLC', sans-serif;
     font-size: 19px;
@@ -302,6 +267,46 @@ header {
     color: #48423b;
     letter-spacing: 2px;
     padding: 0 280px; }
+
+.services-block-image, .services-block-image2 {
+  width: 100%;
+  min-height: 156px;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out; }
+
+.sb-first {
+  background-size: 126px 154px; }
+
+.services-block-second .services-block-image {
+  background-size: 98px 156px; }
+
+.decor-text {
+  margin-top: 70px; }
+  .decor-text i {
+    font-family: 'CodeProLC', sans-serif;
+    font-size: 30px;
+    line-height: 36px;
+    color: #a8a8a8;
+    display: inline;
+    position: relative;
+    letter-spacing: 5px;
+    font-style: normal;
+    margin-top: 70px;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out; }
+  .decor-text i:after {
+    content: url("../img/service-decor.png");
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: -15px;
+    margin-right: -9px; }
 
 .service-block-button {
   margin-top: 45px; }
@@ -318,17 +323,8 @@ header {
     transition: all 0.5s ease-out;
     display: inline-block; }
 
-.services-block:hover svg .cls-1 {
-  fill: #49a1c0 !important; }
-
-.services-block:hover svg .cls-13 {
-  stroke: #49a1c0; }
-
-.services-block:hover svg .cls-14 {
-  fill: #49a1c0; }
-
-.services-block:hover svg .cls-10 {
-  stroke: #49a1c0 !important; }
+.services-block:hover .services-block-image {
+  background-image: url("../img/services-1-hover.png") !important; }
 
 .services-block:hover i {
   color: #49a1c0; }
@@ -336,6 +332,20 @@ header {
 .services-block:hover .service-block-button a {
   background-color: #49a1c0;
   opacity: 1; }
+
+.services-block-second:hover .services-block-image {
+  background-image: url("../img/services-2-hover.png") !important;
+  background-size: 98px 156px; }
+
+.services-block-second .decor-text i:after {
+  content: url("../img/service-decor-2.png"); }
+
+.services-block-second:hover .service-block-button a {
+  background-color: #b492c1;
+  opacity: 1; }
+
+.services-block-second:hover i {
+  color: #b492c1; }
 
 /********************************************************Watch******************************************/
 .watch {
@@ -350,11 +360,35 @@ header {
     margin-bottom: 100px; }
 
 .benefits-icon {
-  margin: 55px 0px; }
+  margin: 55px 0px;
+  min-height: 135px;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out; }
 
-.benefits .col-lg-4:nth-child(1) img {
-  position: relative;
-  margin-top: -5px; }
+.benefits .col-lg-4:nth-child(1) .benefits-icon {
+  background-size: 186px 134px; }
+
+.benefits .col-lg-4:nth-child(2) .benefits-icon {
+  background-size: 96px 130px; }
+
+.benefits .col-lg-4:nth-child(3) .benefits-icon {
+  background-size: 133px 130px; }
+
+.benefits .col-lg-4:nth-child(1) .benefits-block:hover .benefits-icon {
+  background-size: 186px 134px;
+  background-image: url("../img/benefits-1-hover.png") !important; }
+
+.benefits .col-lg-4:nth-child(2) .benefits-block:hover .benefits-icon {
+  background-size: 96px 130px;
+  background-image: url("../img/benefits-2-hover.png") !important; }
+
+.benefits .col-lg-4:nth-child(3) .benefits-block:hover .benefits-icon {
+  background-size: 133px 130px;
+  background-image: url("../img/benefits-3-hover.png") !important; }
 
 .benefits-block {
   text-align: center; }
@@ -372,12 +406,16 @@ header {
     font-size: 19px;
     line-height: 22px;
     color: #a8a8a8;
-    letter-spacing: 5px; }
+    letter-spacing: 4px;
+    display: inline;
+    position: relative; }
   .benefits-block p:after {
     content: url("../img/benef-decor.png");
-    position: relative;
-    bottom: -15px;
-    right: 4px; }
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: -16px;
+    margin-right: -16px; }
 
 /********************************************************Benefits******************************************/
 .insta {
@@ -535,17 +573,20 @@ header {
 .contacts-data .col-lg-4:nth-child(2) {
   padding-left: 180px; }
 
+.contacts-data .col-lg-4:nth-child(3) li:last-child {
+  padding-right: 0px; }
+
 /********************************************************Footer******************************************/
 footer {
   width: 100%;
   min-height: 374px;
   background-color: #f4f4f4; }
   footer hr {
-    width: 100%;
+    width: 90%;
     height: 1px;
     background: #a8a8a8;
     background-color: #a8a8a8;
-    margin: 0px; }
+    margin: 0px auto; }
 
 .footer-logo {
   text-align: center;
@@ -571,23 +612,25 @@ footer {
   .footer-nav li:last-child {
     border-right: none; }
 
-.footer-bottom p {
-  font-family: 'CodeProLC', sans-serif;
-  font-size: 15px;
-  line-height: 85px;
-  color: #48423b;
-  letter-spacing: 3px;
-  float: left;
-  margin: 0px; }
-
-.footer-bottom i {
-  font-family: 'CodeProLC', sans-serif;
-  font-size: 15px;
-  line-height: 85px;
-  color: #48423b;
-  letter-spacing: 3px;
-  float: right;
-  font-style: normal; }
+.footer-bottom {
+  width: 90%;
+  margin: 0 auto; }
+  .footer-bottom p {
+    font-family: 'CodeProLC', sans-serif;
+    font-size: 15px;
+    line-height: 85px;
+    color: #48423b;
+    letter-spacing: 3px;
+    float: left;
+    margin: 0px; }
+  .footer-bottom i {
+    font-family: 'CodeProLC', sans-serif;
+    font-size: 15px;
+    line-height: 85px;
+    color: #48423b;
+    letter-spacing: 3px;
+    float: right;
+    font-style: normal; }
 
 .hidden {
   display: none; }
