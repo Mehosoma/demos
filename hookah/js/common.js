@@ -26,9 +26,6 @@ setHeiHeight();
 $(window).resize( setHeiHeight ); 
         }
 
-
-
-
 });
 
 
@@ -93,4 +90,21 @@ $('#goToNextSlide').on('click', function () {
     slider.goToNextSlide();
 });
 
+});
+
+
+$('.selectpicker').selectpicker({
+  style: 'btn-info',
+  size: 4
+});
+
+$(document).ready(function(){
+    $('.ejuice-slider').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      arrows: true,
+      fade: false,
+      dots: true,
+      centerMode: false
+    });
 });
