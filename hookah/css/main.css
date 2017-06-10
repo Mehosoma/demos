@@ -924,7 +924,7 @@ footer {
   .gallery .col-lg-6 {
     margin-bottom: 10px; }
 
-/********************************************************Gallery******************************************/
+/********************************************************ContactsPage******************************************/
 .contacts-page {
   padding: 75px 0px 0px; }
   .contacts-page hr {
@@ -1090,7 +1090,8 @@ footer {
     line-height: 23px;
     color: #a8a8a8;
     letter-spacing: 3px;
-    text-align: center; }
+    text-align: center;
+    position: relative; }
   .ejuice ol {
     list-style-type: none;
     counter-reset: li; }
@@ -1112,11 +1113,22 @@ footer {
     letter-spacing: 3px;
     display: block; }
 
+.ejuice ol li p {
+  display: inline; }
+
 .ejuice ol li:before {
   content: counter(li) ". ";
   counter-increment: li;
   color: #49a1c0;
   font-size: 19px; }
+
+.ejuice ol li:nth-child(4) p:after {
+  content: url("../img/benef-decor.png");
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-bottom: -16px;
+  margin-right: -16px; }
 
 .ejuice-slider {
   margin-top: 80px; }
