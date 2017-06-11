@@ -111,7 +111,11 @@
 						<div class="second-form-row">
 							<input type="text" name="contacts-page-fate" required="" placeholder="Date" id="contact-date" data-init-set="false" style="background-image: url('img/date.png')">
 							<input type="text" name="contacts-page-time" required="" placeholder="Time" id="contact-time" style="background-image: url('img/time.png')">
-							<input type="text" name="contacts-page-packages" placeholder="Packages" style="background-image: url('img/packages.png')">
+							<select class="selectpicker" name="contacts-page-packages" title="Packages")">
+								<option>Nicotine</option>
+		  						<option>Option1</option>
+		  						<option>Option2</option>
+							</select>							
 						</div>
 					</div>
 				</div>
@@ -210,8 +214,10 @@
 	</script>
 
 	<script type="text/javascript">
-		$('#contact-time').timeDropper({			
-		setCurrentTime: true,
+		$('#contact-time').click(function(){
+			$('#contact-time').timeDropper({			
+			setCurrentTime: false,
+			});
 		});
 	</script>
 

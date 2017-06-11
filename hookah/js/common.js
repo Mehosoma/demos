@@ -108,3 +108,82 @@ $(document).ready(function(){
       centerMode: false
     });
 });
+
+
+$(document).ready(function(){
+
+    $('.catering-block').on('click',function(e){
+        
+                
+        if($(this).hasClass('active-ca-block')) {
+
+        }
+    else {   
+
+        $('body .catering-block').removeClass('active-ca-block');
+         
+         $(this).addClass('active-ca-block');
+
+        }
+  e.preventDefault();
+});
+
+});
+
+$(document).ready(function(){
+ $('.btn-group').on('click',function(i){
+                
+        if($(this).hasClass('passiv')) {
+            $(this).removeClass('passiv'),
+            $(this).addClass('active-field');
+            }
+        else { 
+        }
+  i.preventDefault();
+});
+});
+
+$(document).ready(function(){
+ $('.picker-one').on('click',function(i){
+        $(".color-line").css("width", '165px' );
+        $(".one .circle").css("background-color", '#49a1c0');
+        $(".one span").css("color", '#49a1c0');
+  i.preventDefault();
+});
+
+ $('.picker-two').on('click',function(i){
+         $(".one .circle").css("background-color", '#49a1c0');
+        $(".one span").css("color", '#49a1c0');
+        $(".color-line").css("width", '550px' );
+        $(".two .circle").css("background-color", '#49a1c0');
+        $(".two span").css("color", '#49a1c0');
+  i.preventDefault();
+});
+
+  $('.picker-three').on('click',function(i){
+         $(".one .circle").css("background-color", '#49a1c0');
+        $(".one span").css("color", '#49a1c0');
+        $(".color-line").css("width", '880px' );
+        $(".two .circle").css("background-color", '#49a1c0');
+        $(".two span").css("color", '#49a1c0');
+         $(".three .circle").css("background-color", '#49a1c0');
+        $(".three span").css("color", '#49a1c0');
+  i.preventDefault();
+});
+
+  $('.picker-four').on('click',function(i){
+         $(".one .circle").css("background-color", '#49a1c0');
+        $(".one span").css("color", '#49a1c0');
+        $(".color-line").css("width", '1250px' );
+        $(".two .circle").css("background-color", '#49a1c0');
+        $(".two span").css("color", '#49a1c0');
+         $(".three .circle").css("background-color", '#49a1c0');
+        $(".three span").css("color", '#49a1c0');
+        $(".four .circle").css("background-color", '#49a1c0');
+        $(".four span").css("color", '#49a1c0');
+  i.preventDefault();
+});
+
+});
+
+
