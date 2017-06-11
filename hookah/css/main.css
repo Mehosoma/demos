@@ -581,10 +581,9 @@ header {
   text-align: right; }
 
 .contacts-data .central-text {
-  width: 265px;
   display: block;
   text-align: left;
-  margin: 0 auto; }
+  margin-left: 166px; }
 
 .contacts-data .col-lg-4:nth-child(3) li:last-child {
   padding-right: 0px; }
