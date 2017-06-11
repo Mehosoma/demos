@@ -580,8 +580,11 @@ header {
 .contacts-data .col-lg-4:nth-child(3) {
   text-align: right; }
 
-.contacts-data .col-lg-4:nth-child(2) {
-  padding-left: 180px; }
+.contacts-data .central-text {
+  width: 265px;
+  display: block;
+  text-align: left;
+  margin: 0 auto; }
 
 .contacts-data .col-lg-4:nth-child(3) li:last-child {
   padding-right: 0px; }
@@ -1253,6 +1256,9 @@ footer {
     outline: none;
     border-color: #49a1c0 !important;
     color: #49a1c0 !important; }
+  .ejuice-slider .bootstrap-select.btn-group .inner {
+    max-height: 120px !important;
+    overflow-y: auto !important; }
 
 .slide-bottom {
   margin-top: 40px; }
@@ -1268,8 +1274,11 @@ footer {
   .slide-bottom .basket {
     position: relative;
     left: 20px;
-    top: 5px;
+    top: 10px;
     display: inline-block; }
+    .slide-bottom .basket a {
+      background-color: transparent;
+      display: block; }
 
 .ejuice-slider-wrapper {
   width: 100%;
@@ -1302,7 +1311,7 @@ footer {
     margin: 0 auto; }
 
 .slick-dots {
-  bottom: -20px; }
+  bottom: -65px; }
 
 .slick-dots li button:before {
   font-size: 11px;
@@ -1313,7 +1322,14 @@ footer {
   opacity: 1 !important; }
 
 .comment {
-  margin-top: 30px; }
+  margin-top: 80px; }
+
+.arrows {
+  z-index: 1000; }
+  .arrows .slick-next {
+    right: 50px; }
+  .arrows .slick-prev {
+    left: 50px; }
 
 /********************************************************Catering******************************************/
 .catering {
@@ -1448,7 +1464,7 @@ footer {
     font-family: 'CodeProBoldLC', sans-serif;
     font-size: 25px;
     line-height: 30px;
-    color: #a8a8a8;
+    color: #fff;
     letter-spacing: 5px;
     margin-bottom: 20px;
     -moz-transition: all 0.3s ease-out;
@@ -1475,7 +1491,7 @@ footer {
     font-family: 'CodeProLC', sans-serif;
     font-size: 19px;
     line-height: 40px;
-    color: #a8a8a8;
+    color: #fff;
     letter-spacing: 3px;
     padding-left: 50px;
     margin: 0px;
@@ -1486,10 +1502,11 @@ footer {
     transition: all 0.3s ease-out; }
   .catering-slide-maintext hr {
     width: 200px;
-    height: 1px;
-    background: #a8a8a8;
-    background-color: #a8a8a8;
+    height: 2px;
+    background: #fff;
+    background-color: #fff;
     margin: 30px 0px 20px;
+    border: none;
     -moz-transition: all 0.3s ease-out;
     -o-transition: all 0.3s ease-out;
     -webkit-transition: all 0.3s ease-out;
@@ -1499,7 +1516,7 @@ footer {
   font-family: 'CodeProLC', sans-serif;
   font-size: 19px;
   line-height: 60px;
-  color: #a8a8a8;
+  color: #fff;
   letter-spacing: 3px;
   display: block;
   float: left;
@@ -1512,10 +1529,11 @@ footer {
   transition: all 0.3s ease-out; }
   .catering-price p strong {
     float: right;
-    font-family: 'CodeProBoldLC', sans-serif;
+    font-family: 'CodeProLC', sans-serif;
+    text-shadow: 1px 0 0 #fff;
     font-size: 50px;
     line-height: 60px;
-    color: #a8a8a8;
+    color: #fff;
     letter-spacing: 3px;
     -moz-transition: all 0.3s ease-out;
     -o-transition: all 0.3s ease-out;
@@ -1529,11 +1547,11 @@ footer {
     font-family: 'CodeProLC', sans-serif;
     font-size: 16px;
     line-height: 19px;
-    color: #a8a8a8;
+    color: #49a1c0;
     letter-spacing: 4px;
     text-transform: uppercase;
     padding: 15px 60px;
-    border: 1px solid #a8a8a8;
+    background-color: #fff;
     -moz-transition: all 0.3s ease-out;
     -o-transition: all 0.3s ease-out;
     -webkit-transition: all 0.3s ease-out;
@@ -1559,7 +1577,7 @@ footer {
     font-family: 'CodeProLC', sans-serif;
     font-size: 19px;
     line-height: 23px;
-    color: #a8a8a8;
+    color: #fff;
     letter-spacing: 3px;
     width: 100%;
     position: absolute;
@@ -1585,32 +1603,6 @@ footer {
   -o-transition: all 0.3s ease-out;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out; }
-
-.catering-slide-block:hover p, .catering-slide-block:hover h4, .catering-slide-block:hover strong {
-  color: #fff; }
-
-.catering-slide-block:hover a {
-  background-color: #fff;
-  border-color: #fff;
-  color: #49a1c0; }
-
-.catering-slide-block:hover .catering-list li:nth-child(1) {
-  background-image: url("../img/catering-slide-icon1-hover.png") !important; }
-
-.catering-slide-block:hover .catering-list li:nth-child(2) {
-  background-image: url("../img/catering-slide-icon2-hover.png") !important; }
-
-.catering-slide-block:hover .catering-list li:nth-child(3) {
-  background-image: url("../img/catering-slide-icon3-hover.png") !important; }
-
-.catering-slide-block:hover .catering-list li:nth-child(4) {
-  background-image: url("../img/catering-slide-icon4-hover.png") !important; }
-
-.catering-slide-block:hover .catering-right-top {
-  background-image: url("../img/catering-right-top-hover.png") !important; }
-
-.catering-slide-block:hover .catering-right-bottom {
-  background-image: url("../img/catering-right-bottom-hover.png") !important; }
 
 .active-ca-block p {
   color: #49a1c0; }
@@ -1828,6 +1820,63 @@ footer {
     letter-spacing: 4px;
     display: block;
     margin: 0px; }
+
+.hidden_form {
+  width: 436px;
+  height: 537px;
+  position: relative;
+  background-color: #fff;
+  margin: 0 auto;
+  text-align: center;
+  padding: 80px 50px; }
+  .hidden_form i {
+    font-family: 'CodeProLC', sans-serif;
+    font-size: 30px;
+    line-height: 36px;
+    color: #a8a8a8;
+    letter-spacing: 5px;
+    font-style: normal;
+    text-align: center; }
+  .hidden_form hr {
+    width: 80px;
+    height: 5px;
+    background: #b492c1;
+    background-color: #b492c1;
+    margin: 25px auto 30px; }
+  .hidden_form input {
+    width: 210px;
+    height: 50px;
+    border: 1px solid #a8a8a8;
+    border-radius: 10px;
+    font-family: 'CodeProLC', sans-serif;
+    text-shadow: 1px 0 0 #49a1c0;
+    font-size: 17px;
+    color: #49a1c0;
+    letter-spacing: 5px;
+    text-align: center;
+    margin-bottom: 50px; }
+  .hidden_form input:hover, .hidden_form input:focus, .hidden_form input:active {
+    border-color: #49a1c0; }
+  .hidden_form p {
+    font-family: 'CodeProLC', sans-serif;
+    font-size: 17px;
+    line-height: 21px;
+    color: #a8a8a8;
+    letter-spacing: 5px;
+    margin-bottom: 15px; }
+  .hidden_form .modal-button {
+    width: 145px;
+    height: 35px;
+    background-color: #49a1c0;
+    border-radius: 5px;
+    border: none;
+    -webkit-box-shadow: 2px 2px 1px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 1px 0px rgba(0, 0, 0, 0.3);
+    font-family: 'CodeProLC', sans-serif;
+    font-size: 20px;
+    text-shadow: 1px 0 0 #fff;
+    color: #fff;
+    letter-spacing: 3px; }
 
 .hidden {
   display: none; }

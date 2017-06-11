@@ -95,7 +95,7 @@ $('#goToNextSlide').on('click', function () {
 
 $('.selectpicker').selectpicker({
   style: 'btn-info',
-  size: 4
+  size: 4,
 });
 
 $(document).ready(function(){
@@ -105,15 +105,17 @@ $(document).ready(function(){
       arrows: true,
       fade: false,
       dots: true,
-      centerMode: false
-    });
+      appendArrows: ".arrows", 
+      prevArrow: ".slick-prev",
+      nextArrow: ".slick-next",     
+      centerMode: false,
+    });   
 });
 
 
 $(document).ready(function(){
 
     $('.catering-block').on('click',function(e){
-        
                 
         if($(this).hasClass('active-ca-block')) {
 
@@ -132,7 +134,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
  $('.btn-group').on('click',function(i){
-                
+
         if($(this).hasClass('passiv')) {
             $(this).removeClass('passiv'),
             $(this).addClass('active-field');
@@ -174,7 +176,7 @@ $(document).ready(function(){
   $('.picker-four').on('click',function(i){
          $(".one .circle").css("background-color", '#49a1c0');
         $(".one span").css("color", '#49a1c0');
-        $(".color-line").css("width", '1250px' );
+        $(".color-line").css("width", '100%' );
         $(".two .circle").css("background-color", '#49a1c0');
         $(".two span").css("color", '#49a1c0');
          $(".three .circle").css("background-color", '#49a1c0');

@@ -1,7 +1,7 @@
 @font-face {
   font-family: "CodeProBoldLC";
   font-style: normal;
-  font-weight: normal;
+  font-weight: bold;
   src: url("../fonts/CodeProBoldLC.eot?#iefix") format("embedded-opentype"), url("../fonts/CodeProBoldLC.woff") format("woff"), url("../fonts/CodeProBoldLC.ttf") format("truetype"), url("../fonts/CodeProBoldLC.svg#CodeProBoldLC") format("svg"); }
 
 @font-face {

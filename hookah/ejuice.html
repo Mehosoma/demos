@@ -109,7 +109,11 @@
 			</div>
 			<div class="row">
 				<div class="ejuice-slider-wrapper">
-					<div class="ejuice-slider">
+					<div class="arrows">
+						<div class="slick-next"><img src="img/next-arrow.png"></div>
+						<div class="slick-prev"><img src="img/prev-arrow.png"></div>
+					</div>
+					<div class="ejuice-slider">						
 						<div class="e-slide">
 							<div class="e-slide-cont">
 								<div class="eslide-image">
@@ -119,6 +123,9 @@
 								<select class="selectpicker">
 									<option>Nicotine</option>
 		  							<option>Option1</option>
+		  							<option>Option2</option>
+		  							<option>Option2</option>
+		  							<option>Option2</option>
 		  							<option>Option2</option>
 								</select>
 								<select class="selectpicker">
@@ -131,7 +138,7 @@
 										<a href="">$7</a>
 									</div>
 									<div class="basket">
-										<img src="img/basket.png">
+										<a href=".hidden_form" class="popup_form"><img src="img/basket.png"></a>
 									</div>
 								</div>
 							</div>
@@ -157,7 +164,7 @@
 										<a href="">$5</a>
 									</div>
 									<div class="basket">
-										<img src="img/basket.png">
+										<a href=".hidden_form" class="popup_form"><img src="img/basket.png"></a>
 									</div>
 								</div>
 							</div>
@@ -183,7 +190,7 @@
 										<a href="">$7.5</a>
 									</div>
 									<div class="basket">
-										<img src="img/basket.png">
+										<a href=".hidden_form" class="popup_form"><img src="img/basket.png"></a>
 									</div>
 								</div>
 							</div>
@@ -209,7 +216,7 @@
 										<a href="">$7</a>
 									</div>
 									<div class="basket">
-										<img src="img/basket.png">
+										<a href=".hidden_form" class="popup_form"><img src="img/basket.png"></a>
 									</div>
 								</div>
 							</div>
@@ -235,7 +242,7 @@
 										<a href="">$5</a>
 									</div>
 									<div class="basket">
-										<img src="img/basket.png">
+										<a href=".hidden_form" class="popup_form"><img src="img/basket.png"></a>
 									</div>
 								</div>
 							</div>
@@ -249,7 +256,7 @@
 								<select class="selectpicker">
 									<option>Nicotine</option>
 		  							<option>Option1</option>
-		  							<option>Option2</option>
+		  							<option>Option2</option>		  							
 								</select>
 								<select class="selectpicker">
 									<option>Flavor</option>
@@ -261,7 +268,7 @@
 										<a href="">$7.5</a>
 									</div>
 									<div class="basket">
-										<img src="img/basket.png">
+										<a href=".hidden_form" class="popup_form"><img src="img/basket.png"></a>
 									</div>
 								</div>
 							</div>
@@ -270,8 +277,8 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-lg-12">
-					<div class="comment">
+				<div class="col-lg-12 comment">
+					<div>
 						<span>* All sales are final</span>
 						<span>** We’re not responsible for any troubles with logistics and customs clearance</span>
 					</div>
@@ -296,8 +303,10 @@
 						<a href="mailto:companymail@gmail.com">companymail@gmail.com</a>
 					</div>
 					<div class="col-lg-4">
-						<strong>New Business</strong>
-						<a href="mailto:nikitasukho@gmail.com">nikitasukho@gmail.com</a>						
+						<div class="central-text">
+							<strong>New Business</strong>
+							<a href="mailto:nikitasukho@gmail.com">nikitasukho@gmail.com</a>						
+						</div>						
 					</div>
 					<div class="col-lg-4">
 						<strong>Let’s Connect</strong>
@@ -339,6 +348,20 @@
 			<i>Designed by Zavod.Media</i>
 		</div>
 	</footer>
+
+	<div class="hidden">
+		<div class="hidden_form">
+			<form>
+				<i>Send you order</i>
+				<hr>
+				<p>Your name</p>
+				<input type="text" name="modal-fio" required="">
+				<p>Phone number</p>
+				<input type="text" name="modal-phone" required="">
+				<button type="submit" class="modal-button">Send</button>
+			</form>
+		</div>		
+	</div>
 	
 	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
 	<script src="libs/bootstrap/js/bootstrap.js"></script>	
