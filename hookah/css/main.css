@@ -179,9 +179,15 @@ header {
     color: #fff;
     letter-spacing: 7px;
     position: relative;
-    display: inline; }
+    display: inline;
+    z-index: 100; }
   .main-header h1:after {
-    content: url("../img/decor.png");
+    content: '';
+    width: 40px;
+    height: 47px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url("../img/decor.png");
     position: absolute;
     bottom: 0;
     right: 0px;
@@ -314,7 +320,13 @@ header {
     -webkit-transition: all 0.5s ease-out;
     transition: all 0.5s ease-out; }
   .decor-text i:after {
-    content: url("../img/service-decor.png");
+    content: '';
+    width: 20px;
+    height: 21px;
+    background-image: url("../img/service-decor.png");
+    background-size: 19px 20px;
+    background-repeat: no-repeat;
+    background-position: center center;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -351,7 +363,7 @@ header {
   background-size: 98px 156px; }
 
 .services-block-second .decor-text i:after {
-  content: url("../img/service-decor-2.png"); }
+  background-image: url("../img/service-decor-2.png"); }
 
 .services-block-second:hover .service-block-button a {
   background-color: #b492c1;
@@ -423,7 +435,13 @@ header {
     display: inline;
     position: relative; }
   .benefits-block p:after {
-    content: url("../img/benef-decor.png");
+    content: '';
+    width: 20px;
+    height: 21px;
+    background-image: url("../img/service-decor.png");
+    background-size: 19px 20px;
+    background-repeat: no-repeat;
+    background-position: center center;
     position: absolute;
     bottom: 0;
     right: 0;

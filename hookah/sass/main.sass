@@ -159,7 +159,7 @@ header
 		left: 0
 		z-index: 1
 .main-header		
-	margin-top: 260px
+	margin-top: 260px		
 	h1	
 		font-family: 'CodeProBoldLC', sans-serif
 		font-size: 47px
@@ -168,14 +168,19 @@ header
 		letter-spacing: 7px
 		position: relative	
 		display: inline			
+		z-index: 100
 	h1:after
-		content: url('../img/decor.png')
+		content: ''
+		width: 40px
+		height: 47px
+		background-repeat: no-repeat
+		background-position: center center
+		background-image: url('../img/decor.png')
 		position: absolute
 		bottom: 0		
 		right: 0px
 		margin-bottom: -32px
 		margin-right: -27px
-
 .form-header
 	width: 100%
 	position: absolute
@@ -300,7 +305,13 @@ header
 		-webkit-transition: all 0.5s ease-out
 		transition: all 0.5s ease-out
 	i:after
-		content: url('../img/service-decor.png')
+		content: ''
+		width: 20px
+		height: 21px
+		background-image: url('../img/service-decor.png')
+		background-size: 19px 20px
+		background-repeat: no-repeat
+		background-position: center center
 		position: absolute
 		bottom: 0
 		right: 0
@@ -332,7 +343,7 @@ header
 	background-size: 98px 156px
 .services-block-second .decor-text
 	i:after
-		content: url('../img/service-decor-2.png')
+		background-image: url('../img/service-decor-2.png')
 .services-block-second:hover .service-block-button a
 	background-color: #b492c1
 	opacity: 1
@@ -394,7 +405,13 @@ header
 		display: inline	
 		position: relative	
 	p:after
-		content: url('../img/benef-decor.png')
+		content: ''
+		width: 20px
+		height: 21px
+		background-image: url('../img/service-decor.png')
+		background-size: 19px 20px
+		background-repeat: no-repeat
+		background-position: center center
 		position: absolute
 		bottom: 0
 		right: 0

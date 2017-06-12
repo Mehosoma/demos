@@ -22,8 +22,25 @@
 
 @media only screen and (min-width: 1500px) and (max-width: 1899px){
 
+	body h2{
+		font-size: 32px;
+		margin: 10px 0;
+	}
+
+	.services-block p, .benefits-block p, .contacts-data p{
+		font-size: 16px!important;
+		line-height: 18px!important;
+	}
+
+	.decor-text i:after, .benefits-block p:after{
+		width: 17px;
+		height: 17px;
+		background-size: 16px 16px;
+		margin-bottom: -10px;
+	}
+
 	header{
-		height: 222px;
+		height: 200px;
 		padding-top: 30px;
 	}
 
@@ -43,7 +60,275 @@
 		font-size: 18px;
 	}
 
+	.social{
+		margin-top: 28px;
+	}
+
+	.social a:nth-child(1) li{
+		background-size: 27px 27px
+	}
+
+	.social a:nth-child(2) li{
+		background-size: 12px 27px
+	}
+
+	.social a:nth-child(3) li{
+		background-size: 22px 26px
+	}
+
+	.social a:nth-child(4) li{
+		background-size: 44px 27px
+	}
+
+	.navbar-default {
+		height: 74px
+	}
+
+	.navbar-default .navbar-nav > li > a{
+		font-size: 15px
+	}
+
+	.navbar-default .navbar-nav > li{
+		padding: 27px 79px
+	}
+
+	.main-header {		
+		margin-top: 206px
+	}	
+
+	.main-header h1{
+		font-size: 37px;
+		line-height: 44px;
+	}
+
+	.form-header .form-overlay{
+		height: 64px;
+	}
+
+	.form-header .form-overlay a{
+		line-height: 64px;
+	}
+
+	.form-header form{
+		height: 64px;
+	}
+
+	.form-header form input{
+		width: 339px;
+		height: 62px;
+	}
+
+	.form-header form button{
+		height: 62px;
+	}
+
+	.form-header{
+		bottom: 30px;
+	}
+
+	.main-header h1:after{
+		width: 34px;
+		height: 39px;
+		background-size: 32px 37px;
+	}
+
+	.services{
+		padding: 56px 0 80px;
+	}
+
+	.services strong{
+		font-size: 29px;
+		letter-spacing: 5px;
+	}
+
+	.services p{
+		font-size: 20px;
+	}
+
+	.services p img{
+		width: 15px;
+		height: 23px;
+	}
+
+	.services hr{
+		margin: 52px auto;
+		width: 215px;
+
+	}
+
+	.services-block{
+		margin-top: 69px;
+	}
+
+	.sb-first{
+		background-size: 100px 123px;
+	}
+
+	.services-block-second:hover .services-block-image, .services-block-second .services-block-image{
+		background-size: 78px 125px;
+	}
+
+	.services-block-image, .services-block-image2{
+		min-height: 125px;
+	}
+
+	.decor-text{
+		margin-top: 56px;
+	}
+
+	.decor-text i{
+		font-size: 24px;
+	}
+
+	.services-block p{
+		padding: 0 210px;
+	}	
+
+	.service-block-button{
+		margin-top: 36px;
+	}
+
+	.service-block-button a{
+		padding: 16px 36px;
+	}
+
+	.benefits{
+		padding: 72px 0 107px;
+	}
+
+	.benefits h2{
+		margin-bottom: 80px;
+	}
 	
+	.benefits-block strong{
+		font-size: 24px;
+		line-height: 29px;
+	}
+
+	.benefits-icon{
+		min-height: 107px;
+	}
+
+	.benefits .col-lg-4:nth-child(1) .benefits-icon, .benefits .col-lg-4:nth-child(1) .benefits-block:hover .benefits-icon{
+		background-size: 148px 107px;
+	}
+
+	.benefits .col-lg-4:nth-child(2) .benefits-icon, .benefits .col-lg-4:nth-child(2) .benefits-block:hover .benefits-icon{
+		background-size: 76px 103px;
+	}
+
+	.benefits .col-lg-4:nth-child(3) .benefits-icon, .benefits .col-lg-4:nth-child(3) .benefits-block:hover .benefits-icon{
+		background-size: 106px 103px;
+	}
+
+	.insta-block{
+		height: 290px;
+	}
+
+	.feedback{
+		padding: 103px 0 60px;
+	}
+
+	.feedback-form{
+		margin-top: 95px;
+	}
+
+	.text-field input, .footer-form button{
+		height: 56px;
+	}
+
+	.feedback-form p{
+		font-size: 20px;
+	}
+
+	.form-top-left, .footer-form-left{
+		width: 64%;
+	}
+
+	.footer-form textarea{
+		height: 124px;
+	}
+
+	.footer-form button{
+		font-size: 20px;
+		margin-top: 34px;
+	}
+
+	.contacts{
+		padding: 32px 0px;
+	}
+
+	.contacts hr{
+		width: 183px;
+		margin: 60px auto;
+	}
+
+	.contacts-data{
+		margin-top: 32px;
+	}
+
+	.contacts-data strong{
+		font-size: 18px;
+		margin-bottom: 37px;
+	}
+
+	.contacts-data .central-text{
+		margin-left: 125px;
+	}
+
+	.contacts p{
+		font-size: 20px;
+	}
+
+	.contacts-icons ul li:nth-child(1) img{
+		width: 22px;
+		height: 22px;
+	}
+
+	.contacts-icons ul li:nth-child(2) img{
+		width: 11px;
+		height: 22px;
+	}
+
+	.contacts-icons ul li:nth-child(3) img{
+		width: 18px;
+		height: 22px;
+	}
+
+	.contacts-icons ul li:nth-child(4) img{
+		width: 37px;
+		height: 22px;
+	}
+
+	.footer-logo{
+		margin-top: 36px;
+	}
+
+	.footer-logo img{
+		width: 198px;
+		height: auto;
+	}
+
+	.footer-nav li a{
+		font-size: 16px;
+	}
+
+	.footer-nav{
+		height: 112px;
+	}
+
+	.footer-nav li{
+		margin: 41px 0px;
+		padding: 0px 60px;
+	}
+
+	.footer-bottom p, .footer-bottom i{
+		line-height: 66px;
+	}
+
+	footer{
+		min-height: 297px;
+	}
 }
 
 

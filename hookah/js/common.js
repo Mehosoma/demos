@@ -5,26 +5,27 @@ $(document).ready(function(){
 
  $(document).ready(function(){
 
-    if ($(window).width() > 1600) {
+    if ($(window).width() > 1500) {
 
             function setHeiHeight() {
     $('.slider-wrap, .slider-wrap li, .slide-overlay').css({
         height: $(window).height() - 280 + 'px' 
-    });
-}
-setHeiHeight();  
-$(window).resize( setHeiHeight ); 
-            
-        } else{
+      });
+    }
+    setHeiHeight();  
 
-                function setHeiHeight() {
-    $('.slider-wrap, .slider-wrap li, .slide-overlay').css({
-        height: $(window).height() - 160 + 'px' 
-    });
-}
-setHeiHeight();  
-$(window).resize( setHeiHeight ); 
-        }
+    $(window).resize( setHeiHeight ); 
+                
+} else{
+
+                    function setHeiHeight() {
+        $('.slider-wrap, .slider-wrap li, .slide-overlay').css({
+            height: $(window).height() - 200 + 'px' 
+        });
+    }
+    setHeiHeight();  
+    $(window).resize( setHeiHeight ); 
+            }
 
 });
 
