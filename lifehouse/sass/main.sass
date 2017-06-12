@@ -1,0 +1,472 @@
+@import "bourbon/bourbon"
+
+body
+	font-family: "PT Sans", sans-serif
+	font-weight: normal
+	font-size: 14px
+	min-width: 320px
+	max-width: 1920px
+	position: relative	
+	-webkit-font-smoothing: antialiased
+	overflow-x: hidden
+	margin: 0 auto
+a:hover, a:focus, a:active
+	text-decoration: none
+	outline: none	
+a
+	text-decoration: none
+input:focus, input:active
+	text-decoration: none
+	outline: none
+button:hover, button:focus, button:active
+	text-decoration: none
+	outline: none
+select:hover, select:focus, select:active
+	text-decoration: none
+	outline: none
+h2
+	font-family: 'EuroStyleNormal', sans-serif
+	font-size: 36px
+	text-transform: uppercase
+	color: #f9ed1b
+	text-align: center
+a:hover, button:hover
+	opacity: 0.7
+
+
+/********************************************************Header******************************/
+header
+	width: 100%
+	height: 112px
+	line-height: 112px
+
+.logo
+	line-height: 112px
+	text-align: center
+.phone
+	line-height: normal	
+	padding-left: 32px
+	margin-top: 37px
+	span
+		font-family: 'Arial', sans-serif
+		font-weight: bold
+		font-size: 30px
+		color: #4e6395
+	p
+		font-family: 'Arial', sans-serif
+		font-weight: normal
+		font-size: 12px
+		color: #848484
+.feedback		
+	a
+		color: #4e6395
+		font-family: 'Arial', sans-serif
+		font-weight: bold
+		font-size: 12px
+		text-transform: uppercase
+		background-color: #f9ed1b
+		padding: 12px 26px
+		background-image: url('../img/phone.png')
+		background-repeat: no-repeat
+		background-position: left 12px center
+		padding-left: 55px		
+.navbar-default
+	background-color: #fff
+	height: 56px
+	text-align: center
+	margin-bottom: 0px
+	ul
+		float: none		
+	li
+		float: none
+		display: inline-block
+		padding: 0px 6px
+.navbar-default .navbar-nav > li > a
+	font-family: 'Roboto', sans-serif
+	font-size: 14px
+	color: #4e6395
+	text-transform: uppercase
+	padding-top: 17px
+	padding-bottom: 17px
+	font-weight: 700
+
+/********************************************************FirstBlock******************************/
+.main-banner
+	border-bottom: 1px solid #c4c4c4
+	padding-bottom: 40px
+.left-first-window
+	padding: 10px 0	
+	h1
+		font-family: 'Arial Black', sans-serif
+		text-transform: uppercase
+		color: #f9ed1b
+		text-shadow: 2px 2px 0px rgba(49,61,90,1)
+		font-size: 42px
+		letter-spacing: -1px
+		margin-bottom: 15px
+	p
+		color: #606060
+		font-family: 'Arial', sans-serif		
+		font-size: 14px	
+		margin: 0px
+		line-height: 16px
+	a
+		color: #4e6395
+		font-family: 'Arial', sans-serif		
+		font-size: 14px
+		line-height: 24px
+		text-decoration: underline
+		padding: 0px 20px
+		display: inline-block
+		margin: 6px 0px
+	.right-link
+		float: right	
+.calc-gal-links
+	margin-top: 40px
+	img
+		position: absolute
+		bottom: 0
+		right: 0
+	a	
+		width: 96%
+		color: #4e6395
+		font-family: 'Arial', sans-serif
+		font-size: 14px
+		text-transform: uppercase
+		background-color: #f9ed1b
+		padding: 4px 0px
+		display: block
+		padding-left: 30px
+		text-shadow: 1px 0 0 #4e6395
+		letter-spacing: 0.5px
+.master-foto	
+	margin-left: - 15px
+	margin-top: 20px
+.right-first-window
+	.write
+		position: relative
+		img
+			position: absolute
+			bottom: 0
+			right: 0	
+	span
+		font-family: 'Arial', sans-serif
+		font-size: 16px		
+		color: #606060
+	a
+		color: #4e6395
+		font-family: 'Arial', sans-serif
+		font-size: 14px
+		text-transform: uppercase
+		background-color: #f9ed1b
+		padding: 4px
+		padding-left: 20px
+		padding-right: 25px
+		text-shadow: 1px 0 0 #4e6395
+		
+/********************************************************Gallery*****************************************************/
+.gallery
+	padding: 32px 0
+	.col-lg-6
+		margin-bottom: 35px
+	h3
+		color: #313d5a
+		font-family: 'Arial', sans-serif		
+		font-size: 22px	
+		text-transform: uppercase
+		float: left
+		line-height: 55px
+		letter-spacing: 2px
+		margin: 0px
+.header-right
+	float: right
+	position: relative
+	line-height: 55px
+	span
+		color: #313d5a
+		font-family: 'Arial', sans-serif
+		font-size: 14px
+		padding: 2px 10px
+	.active
+		border: 1px solid #f9ee25
+		border-radius: 20px
+.gallery-foto
+	width: 100%
+	height: auto
+	position: relative
+	img
+		width: 100%
+		height: 100%
+.inform
+	width: 32px
+	height: 32px
+	background-color: #f9ee25
+	border-radius: 50%
+	box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.8)
+	background-image: url('../img/i.png')
+	background-position: center center
+	background-repeat: no-repeat
+	position: absolute
+	top: 15px
+	right: 20px
+.gallery-overlay
+	position: absolute
+	width: 100%
+	height: 100%
+	top: 0
+	left: 0
+	background-color: rgba(49,61,90,0.8)
+	text-align: center
+	.dimensions		
+		width: 98%
+		position: relative		
+		margin-top: 100px
+		hr
+			width: 400px
+			height: 1px
+			position: absolute
+			margin: auto		
+			top: 45px
+			right: 0
+			left: 0
+			background: rgba(255,255,255,0.5)
+			background-color: rgba(255,255,255,0.5)
+			border: none
+		span
+			color: #fff
+			font-family: 'Arial', sans-serif
+			font-size: 13px
+			line-height: 48px
+		i
+			font-family: 'EuroStyleNormal', sans-serif
+			font-size: 48px
+			line-height: 50px
+			color: #fff
+			font-style: normal
+			display: block			
+		strong
+			font-family: 'EuroStyleNormal', sans-serif
+			font-size: 36px
+			line-height: 50px
+			color: #fff
+			display: block
+			font-weight: normal
+		sup
+			font-size: 52%			
+		.square
+			width: 24%
+			text-align: center
+			display: inline-block
+		.price
+			width: 40%
+			text-align: center
+			display: inline-block
+		.time-work
+			width: 28%
+			text-align: center
+			display: inline-block
+	.overlay-buttons	
+		margin-top: 50px
+		a
+			color: #404c65
+			padding: 10px 25px
+			font-size: 18px			
+			background: rgb(255,255,255); /* Old browsers */
+			background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(224,214,34,1) 100%); /* FF3.6-15 */
+			background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(224,214,34,1) 100%); /* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(224,214,34,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e0d622',GradientType=0 ); /* IE6-9 */
+			border-radius: 20px
+
+/********************************************************Gallery*****************************************************/
+.work-header	
+	text-align: center
+	padding-top: 12px
+	margin-bottom: 53px
+	img
+		display: inline-block
+		margin-right: 20px
+	h2
+		display: inline-block
+		margin: 0
+		position: relative
+		top: 10px
+		border-bottom: 1px solid #f9ed1b	
+.work-block	
+	text-align: center
+	img
+		vertical-align: baseline
+	strong
+		font-family: 'Arial Black', sans-serif
+		font-size: 60px	
+		color: #f7eb1b
+		letter-spacing: -7px
+	.first-number
+		letter-spacing: -13px
+	span
+		font-size: 36px
+		display: block
+		font-family: 'EuroStyleNormal', sans-serif
+		color: #606060
+		line-height: 36px
+	p
+		font-size: 13px
+		display: block
+		font-family: 'Arial', sans-serif
+		color: #2d2d2d
+		margin-top: 30px
+		text-align: left
+		display: block	
+		padding: 0 30px
+.arrow
+	position: absolute
+	top: 20%
+	right: 0
+	margin-right: -100px
+
+
+
+/********************************************************Contact-form*****************************************************/
+.contact-form
+	padding: 115px 0 50px
+	text-align: center	
+	.block-shadow
+		width: 80%
+		margin: 0 auto
+		box-shadow: 0px -20px 20px -20px rgba(0,0,0,0.2), 0px 20px 20px -20px rgba(0,0,0,0.2) 	
+	h2
+		border-bottom: 1px solid #f9ed1b	
+		display: inline-block
+	form
+		margin-top: 45px
+		span
+			display: block
+			color: #313d5a
+			font-family: 'Arial', sans-serif
+			font-size: 18px			
+		input
+			width: 220px
+			height: 40px
+			border: 2px solid #313d5a
+			padding-left: 50px
+			padding-right: 10px
+			color: #313d5a
+			font-family: 'Arial', sans-serif
+			font-size: 18px	
+			margin-top: 10px
+		button
+			color: #2b2a2a
+			font-family: 'EuroStyleNormal', sans-serif
+			font-size: 25px	
+			margin-top: 40px
+			width: 225px
+			height: 45px
+			margin-bottom: 53px
+			background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(224,214,34,1) 100%); /* FF3.6-15 */
+			background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(224,214,34,1) 100%); /* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(224,214,34,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e0d622',GradientType=0 ); /* IE6-9 */
+			border-radius: 20px
+			border: 2px solid #f7eb1b
+.left-form
+	text-align: left
+	float: right
+	input
+		background-image: url('../img/face-input.png')
+		background-repeat: no-repeat
+		background-position: left 5px center
+.right-form
+	text-align: left
+	float: left
+	input
+		background-image: url('../img/phone-input.png')
+		background-repeat: no-repeat
+		background-position: left 5px center
+
+/********************************************************Contacts*****************************************************/
+.contacts
+	.col-lg-4
+		height: 180px
+	span
+		color: #1e1e1e
+		font-family: 'Arial', sans-serif
+		font-size: 14px	
+		text-transform: uppercase
+		font-weight: 600
+		padding-left: 20px
+	hr
+		width: 100%
+		height: 2px
+		border: none
+		background: #cfd2d9
+		background-color: #cfd2d9
+		margin-top: 7px
+.contacts-content
+	height: 60px
+	margin-left: 20px
+.address.contacts-content
+	background-image: url('../img/marker.png')
+	background-repeat: no-repeat
+	background-position: left center
+	p
+		width: 62%
+		padding-left: 50px
+.phone-number.contacts-content
+	background-image: url('../img/yellow-phone.png')
+	background-repeat: no-repeat
+	background-position: left center
+	span
+		font-family: 'Arial', sans-serif
+		font-size: 14px
+		color: #cfd2d9
+		line-height: 16px
+		padding-left: 50px
+	p
+		font-family: 'Arial', sans-serif
+		font-size: 24px
+		color: #1e1e1e
+		padding-left: 50px
+		line-height: 24px
+		margin: 0px		
+.mail-contact.contacts-content	
+	background-image: url('../img/yellow-cover.png')
+	background-repeat: no-repeat
+	background-position: left center
+	a
+		color: #3790a6
+		font-family: 'Arial', sans-serif
+		font-size: 18px
+		padding-left: 50px
+		line-height: 60px
+		
+/********************************************************Footer*****************************************************/
+footer
+	width: 100%
+	min-height: 140px
+	background-color: #f6f6f6
+	text-align: center
+	padding-bottom: 10px
+	ul
+		padding: 0px
+		margin: 0px
+		margin-top: 30px
+	li
+		display: inline-block
+		padding: 10px 30px
+		a
+			font-family: 'Arial', sans-serif
+			font-size: 12px
+			color: #4e6395
+			text-decoration: underline
+.footer-bottom
+	hr
+		width: 70px
+		height: 2px
+		border: none
+		background: #f9ee25
+		background-color: #f9ee25
+	span
+		display: block
+		color: #838383
+		font-family: 'Arial', sans-serif
+		font-size: 12px

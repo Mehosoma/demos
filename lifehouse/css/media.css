@@ -1,0 +1,850 @@
+@media only screen and (min-width : 0px) and (max-width : 479px) {
+
+	header{
+		position: static;
+	}
+
+	.logo{
+		text-align: left;		
+	}
+
+	.contacts-phones{
+		margin-left: 0px;	
+		text-align: right;		
+	}	
+
+	.navbar-header{
+		background-color: #f3b22d;
+	}
+
+	header .col-xs-12{
+		padding: 0px;
+	}
+
+	.navbar-default .navbar-toggle{
+		border-radius: 0px;
+		border: none;
+		border-left: 2px solid #fff;
+		border-color: #fff;	
+		padding: 10px;	
+	}
+
+	.navbar-default .navbar-toggle .icon-bar{
+		background-color: #fff;
+	}
+
+	.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{
+		background-color: transparent;
+	}
+
+	.header-button{	
+		margin-left: 20px		
+	}
+
+	.header-button a{
+		color: #fff;
+		text-transform: uppercase;		
+		padding: 5px 10px;
+		border: 1px solid #fff;
+		background-color: transparent;
+		font-size: 17px;
+		line-height: 50px;
+	}
+
+	.navbar-nav li{
+		float: none;
+		text-align: center;
+		border-bottom: 1px solid #bababa;
+		padding: 10px 0;
+	}
+
+	.main-banner{
+		background-position: top center;
+	}
+	
+	.main-banner h1{		
+		padding: 0px;
+		font-size: 34px;
+		line-height: 60px;
+		margin-top: 30px;
+	}
+
+	.main-banner span{
+		padding: 0px;
+		font-size: 24px;
+		margin-top: 36px;
+		line-height: 40px;
+	}
+
+	.banner-button a{
+		padding: 25px 15px;
+		font-size: 20px;
+	}
+
+	.slider-wrap{
+		width: 100%;
+	}
+
+	#goToNextSlide{
+		display: none;
+	}
+
+	#goToPrevSlide{
+		display: none;
+	}
+
+	.calc-block{
+		margin-left: 0px;	
+	}
+
+	.area{
+		margin-left: 0px;
+	}
+
+	.area input{
+		width: 75px;
+	}
+
+	.area span{
+		font-size: 24px;
+	}
+
+	.calc-block label{
+		display: block;				
+		margin-bottom: 20px;	
+	}
+
+	.calc-block label{
+		margin-right: 0px;
+	}
+
+	.calc-fields{
+		padding: 0px;
+	}
+
+	.calc-send-button{
+		margin-left: 0px;
+		text-align: center;
+	}
+
+	.ready-house .col-xs-6{
+		padding: 0 15px;		
+		margin-bottom: 30px;
+		width: 100%;
+	}
+
+	.ready-house .col-xs-6:nth-child(2n+1) {
+      clear: left;
+  }
+
+	.ready-house-block{
+		margin-bottom: 0px;
+	}
+
+	.ready-house-block{
+		width: 100%;
+		height: auto;
+	}
+
+	.square{
+		display: none;
+	}
+
+	.stages .col-xs-6{				
+		margin-bottom: 30px;
+		width: 100%;
+	}
+
+	.stage-main-desc{
+		margin-top: 30px;
+	}
+
+	.stage-main-block{
+		width: 250px;
+		height: 250px;
+		height: auto;
+		margin-right: 0px;
+		margin: 72px auto 0px;
+	}
+
+	.stage-main-block img{
+		width: 100%;
+		height: auto;
+	}
+
+	.stage-main-block .number-stage{
+		margin-right: -32px;
+		width: 100px;
+		height: 100px;
+		top: 14px;
+	}
+
+	.stage-main-block .number-stage span{
+		line-height: 100px;
+	}
+
+	.changes-img{
+		text-align: center;
+	}
+
+	.changes-img img{
+		width: 100%;
+	}
+
+	.changes-header{
+		padding: 0;
+		margin: 0;
+	}
+
+	.changes{
+		padding-bottom: 40px;
+	}
+
+	.changes-header span{
+		font-size: 15px;
+	}
+
+	.changes-list span{
+		display: block;
+	}
+
+	.changes-right p{
+		padding: 0px;
+	}
+
+	.changes-right a{
+		font-size: 15px;
+		padding: 13px 25px;
+		display: block;
+		margin: 0 auto;
+		text-align: center;
+	}
+	
+	.view-left span{
+		margin-right: 0px;
+		padding-top: 30px;
+	}
+
+	.view-left p{
+		margin-right: 0px;
+	}
+
+	.view-right{
+		width: 224px;
+		height: 292px;
+		margin: auto;
+		right: 0;
+		left: 0;
+	}
+
+	.view-right img{
+		width: 100%;
+		height: 100%;
+	}
+
+	.order{
+		padding: 10px;
+	}
+
+	.order h2{
+		width: 100%;
+		margin-bottom: 20px;
+		line-height: 38px;
+	}
+
+	#order-form .form-field{
+		margin-bottom: 20px;
+	}
+
+	#order-form .form-field:nth-child(2){
+		margin-bottom: 0px;
+	}
+
+	.map-block{
+		position: relative;
+	}
+
+	.map-text-block{
+		margin-top: 0px;
+		border-bottom: 2px solid #bababa;
+	}
+
+	.map-text-block .map-phone{
+		display: block;
+		width: 140px;		
+		margin: 0 auto;
+	}
+
+	.hidden_form{
+		width: 100%;
+	}
+
+	.modal.in .modal-dialog{
+		margin: 10px auto;
+	}
+
+	.slider-for .slick-slide img{
+		margin: 0 auto;
+		width: 100%;
+	}
+
+	.slider-nav{
+		width: 100%;
+		margin: 30px auto;		
+	}
+
+	.slider-nav .slick-slide{
+		width: 100px;		
+	}
+
+	.slider-for .slick-prev, .slider-for .slick-next{
+		display: none!important;
+	} 
+
+	.navbar-default{
+		margin-left: 0px;	
+	}
+
+
+	
+
+}
+
+@media only screen and (min-width : 480px) and (max-width : 767px){
+
+	header{
+		position: static;
+	}
+
+	.logo{
+		text-align: left;
+		padding-left: 20px; 
+	}
+
+	.contacts-phones{
+		margin-left: 0px;	
+		text-align: right;		
+	}	
+
+	.contacts-phones a{		
+		font-size: 24px;
+	}
+
+	.navbar-header{
+		background-color: #f3b22d;
+	}
+
+	header .col-xs-12{
+		padding: 0px;
+	}
+
+	.navbar-default .navbar-toggle{
+		border-radius: 0px;
+		border: none;
+		border-left: 2px solid #fff;
+		border-color: #fff;	
+		padding: 10px;	
+	}
+
+	.navbar-default .navbar-toggle .icon-bar{
+		background-color: #fff;
+	}
+
+	.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{
+		background-color: transparent;
+	}
+
+	.header-button{		
+		margin-left: 20px		
+	}
+
+	.header-button a{
+		color: #fff;
+		text-transform: uppercase;		
+		padding: 5px 10px;
+		border: 1px solid #fff;
+		background-color: transparent;
+		font-size: 17px;
+		line-height: 50px;
+	}
+
+	.navbar-nav li{
+		float: none;
+		text-align: center;
+		border-bottom: 1px solid #bababa;
+		padding: 10px 0;
+	}
+
+	.main-banner{
+		background-position: top center;
+	}
+
+	.main-banner h1{		
+		padding: 0px;
+		font-size: 48px;
+		margin-top: 100px;
+	}
+
+	.main-banner span{
+		padding: 0px;
+		font-size: 28px;
+		margin-top: 36px;
+	}
+
+	.banner-button a{
+		padding: 25px 70px;
+	}
+
+	.slider-wrap{
+		width: 100%;
+	}
+
+	#goToNextSlide{
+		top: 193px;
+		right: 87px;
+	}
+
+	#goToPrevSlide{
+		top: 193px;
+		left: 87px;
+	}
+
+	.calc-block{
+		margin-left: 0px;
+		display: inline-block;		
+		width: 49%;
+	}
+
+	.area{
+		margin-left: 0px;
+	}
+
+	.calc-block label{
+		display: block;				
+		margin-bottom: 20px;	
+	}
+
+	.calc-block label{
+		margin-right: 0px;
+	}
+
+	.calc-fields{
+		padding: 0px;
+	}
+
+	.calc-send-button{
+		margin-left: 0px;
+		text-align: center;
+	}
+
+	.ready-house .col-xs-6{
+		padding: 0 15px;		
+		margin-bottom: 30px;
+	}
+
+	.ready-house .col-xs-6:nth-child(2n+1) {
+      clear: left;
+  }
+
+	.ready-house-block{
+		margin-bottom: 0px;
+	}
+
+	.ready-house-block{
+		width: 100%;
+		height: auto;
+	}
+
+	.square{
+		display: none;
+	}
+
+	.stages .col-xs-6{
+		margin-bottom: 30px;
+	}
+
+	.stage-main-desc{
+		margin-top: 30px;
+	}
+
+	.stage-main-block{
+		width: 408px;
+		height: 381px;
+		height: auto;
+		margin-right: 0px;
+		margin: 72px auto 0px;
+	}
+
+	.stage-main-block img{
+		width: 100%;
+		height: auto;
+	}
+
+	.stage-main-block .number-stage{
+		margin-right: -32px;		
+		top: 42px;
+	}	
+
+	.changes-img{
+		text-align: center;
+	}
+
+	.changes{
+		padding-bottom: 40px;
+	}
+
+	.changes-list span{
+		display: block;
+	}
+	
+	.view-left span{
+		margin-right: 0px;
+		padding-top: 30px;
+	}
+
+	.view-left p{
+		margin-right: 0px;
+	}
+
+	.view-right{
+		width: 280px;
+		height: 356px;
+		margin: auto;
+		right: 0;
+		left: 0;
+	}
+
+	.view-right img{
+		width: 100%;
+		height: 100%;
+	}
+
+	#order-form .form-field{
+		margin-bottom: 20px;
+	}
+
+	#order-form .form-field:nth-child(2){
+		margin-bottom: 0px;
+	}
+
+	.map-block{
+		position: relative;
+	}
+
+	.map-text-block{
+		margin-top: 0px;
+		border-bottom: 2px solid #bababa;
+	}
+
+	.map-text-block .map-phone{
+		display: block;
+		width: 140px;		
+		margin: 0 auto;
+	}
+
+	.modal.in .modal-dialog{
+		margin: 10px auto;
+	}
+
+	.slider-for .slick-slide img{
+		margin: 0 auto;
+		width: 100%;
+	}
+
+	.slider-nav{
+		width: 100%;
+		margin: 30px auto;
+		
+	}
+
+	.slider-nav .slick-slide{
+		width: 171px;
+		
+	}
+
+	.slider-for .slick-prev, .slider-for .slick-next{
+		display: none!important;
+	} 
+
+	.navbar-default{
+		margin-left: 0px;	
+	}
+
+	
+
+}
+
+@media only screen and (min-width : 768px) and (max-width : 991px){
+
+	header{
+		position: static;
+	}
+
+	.slider-wrap{
+		width: 750px;
+	}
+
+	.contacts-phones{
+		margin-left: 0px;
+		text-align: center;
+	}	
+
+	.navbar-default{
+		margin-left: 0px;
+		float: none;
+	}
+
+	.navbar-collapse.collapse{
+		padding: 0px
+	}
+
+	.navbar-nav{
+		float: none;
+	}
+
+	.nav li{
+		float: none;
+		display: inline-block;
+	}
+
+	.header-button{
+		text-align: center;
+	}
+
+	header .col-sm-12{
+		text-align: center;
+	}
+
+	.logo{
+		text-align: center;
+	}
+
+	.main-banner{
+		background-position: center center;
+	}
+
+	.main-banner h1{
+		padding: 0px;
+		font-size: 55px;
+		margin-top: 131px;
+	}
+
+	.main-banner span{
+		padding: 0px;
+		font-size: 35px;
+	}
+
+	#goToPrevSlide{
+		left: 40px;
+	}
+
+	#goToNextSlide{
+		right: 40px;
+	}
+
+	.calc-block{
+		margin-left: 0px;
+	}
+
+	.calc-send-button{
+		margin-left: -10px;
+	}
+
+	.calc-block label{
+		width: 150px;
+		margin-right: 10px;
+	}
+
+	.calc-block label:before{
+		width:150px;
+	}
+
+	.area{
+		margin-left: 85px;
+	}
+
+	.ready-house .col-sm-6{
+		padding: 0 15px;
+		margin-bottom: 20px;
+		margin-bottom: 30px;
+	}
+
+	.ready-house-block{
+		margin-bottom: 0px;
+	}
+
+	.ready-house-block{
+		width: 100%;
+	}
+
+	.square{
+		display: none;
+	}
+
+	.changes-img{
+		text-align: center;
+	}
+
+	.changes{
+		padding-bottom: 40px;
+	}
+
+	.view-left span, .view-left p{
+		margin-right: 0px;
+	}
+
+	.view-left span{
+		padding-top: 193px;
+	}
+
+	.map-text-block .map-phone{
+		margin: 0 100px;
+	}
+
+	#view .container{
+		width: 100%;
+	}
+
+	.stages .col-sm-6{
+		margin-bottom: 30px;
+	}
+
+	.slider-for .slick-slide img{
+		margin: 0 auto;
+		width: 100%;
+	}
+
+	.slider-nav{
+		width: 690px;
+		margin: 30px auto;		
+	}
+	
+
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+
+	header .col-md-5, header .col-md-3, header .col-md-6{
+		padding: 0px;
+	}
+
+	.navbar-default{
+		margin-left: 45px
+	}
+
+	.nav > li > a{
+		padding-left: 8px;
+		padding-right: 8px;
+	}
+
+	header .navbar-collapse{
+		padding: 0px;
+	}
+
+	.contacts-phones{
+		margin-left: -25px;
+	}
+
+	.slider-wrap{
+		width: 940px;
+	}
+
+	.main-banner h1{
+		padding: 0 70px;
+	}
+
+	.main-banner span{
+		padding: 0 70px;
+	}
+
+	#goToPrevSlide{
+		left: 22px;
+	}
+
+	#goToNextSlide{
+		right: 22px;
+	}
+
+	.calc-block{
+		margin-left: 10px;
+	}
+
+	.calc-send-button{
+		margin-left: -10px;
+	}
+
+	.ready-house .col-md-4{
+		padding: 0 15px;
+	}
+
+	.ready-house-block{
+		width: 100%;
+	}
+
+	.changes-list span{
+		display: block;
+	}
+
+	.changes-list li{
+		background-position: left top 5px;
+	}
+
+	.view-left span{
+		margin-right: 0px
+	}
+
+	.view-left p{
+		margin-right: 0px;
+	}
+
+	.area{
+		margin-left: 120px;
+	}
+
+	.stage-main-block .number-stage{
+		margin-right: -100px;
+		top: 106px;
+	}
+
+	.slider-for .slick-slide img{
+		margin: 0 auto;
+	}
+
+	.slider-nav{
+		width: 800px;
+		margin: 30px auto;		
+	}
+
+	
+
+	.slider-for .slick-next{
+		right: 100px;	
+	}
+
+	.slider-for .slick-prev{
+		left: 85px;
+	}
+
+	
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1680px){
+
+	
+
+}
+
+
+@media only screen and (min-width : 600px) and (max-width : 768px){
+
+	.calc-block{
+		display: block;
+		width: 100%;
+	}
+
+	.calc-block label{
+		display: inline-block;		
+	}
+
+
+	}
