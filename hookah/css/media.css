@@ -20,129 +20,30 @@
 }
 
 
-@media only screen and (min-width: 1200px) and (max-width: 1600px){
+@media only screen and (min-width: 1500px) and (max-width: 1899px){
 
 	header{
-		padding-top: 10px;
-		height: 160px;
-	}
-
-	.navbar-default .navbar-nav > li{
-		padding: 15px 78px;
-		height: 50px;
-	}
-
-	.navbar-default{
-		height: 50px;
-	}
-
-	.slider-wrap .main-header{
-		width: 1000px;
-		top: 60px;
-		left: 0px;
-	}
-
-	.form-header{
-		width: 1000px;
-	}
-
-	.form-header form input{
-		width: 308px;
-		height: 50px;
-		font-size: 14px;
-	}
-
-	.form-header form #date{
-		width: 200px;
-		padding-left: 70px;
-	}
-
-	.form-header form button{
-		height: 50px;
-		font-size: 16px;
-	}
-
-	.services strong{
-		display: block;
-		text-align: center;
-	}
-
-	.services-block p{
-		padding: 0px 200px;
-	}
-
-	.insta-block{
-		height: 277px;
-	}
-
-	.contacts-data .col-lg-4:nth-child(2){
-		padding-left: 115px;
-	}
-
-	.logo{
-		width: 100%;
-		height: 80px;
-		background-repeat: no-repeat;
-		background-position: left 160px center !important;
-		background-image: url(../img/logo-small.png)!important;
+		height: 222px;
+		padding-top: 30px;
 	}
 
 	header .col-lg-4{
-		height: 80px;
+		height: 94px;
 	}
 
-	.phone{
-		margin-top: 26px;
+	.logo{
+		height: 82px;
+		background-size: 197px 82px;
+	}
+	.phone{		
+		margin-top: 28px;
 	}
 
 	.phone a{
 		font-size: 18px;
 	}
 
-	.social{
-		margin-top: 15px;
-		margin-right: 4px;
-	}
-
-	.social a:nth-child(1) li{
-		background-image: url('../img/intstagramm-2.png')!important;
-		background-size: 26px 26px;
-	}
-
-	.social a:nth-child(2) li{
-		background-image: url('../img/facebook-2.png')!important;
-		background-size: 12px 26px;
-	}
-
-	.social a:nth-child(3) li{
-		background-image: url('../img/soc3-2.png')!important;
-		background-size: 22px 25px;
-	}
-
-	.social a:nth-child(4) li{
-		background-image: url('../img/soc5-2.png')!important;
-		background-size: 43px 26px;
-	}
-
-	.navbar-default .navbar-nav > li > a{
-		font-size: 16px;
-	}
-
-	.slider-wrap .main-header h1{
-		font-size: 35px;
-	}
-
-	.form-header .form-overlay{
-		height: 50px;
-	}
-
-	.form-header .form-overlay a{
-		line-height: 50px;
-		font-size: 20px;
-	}
 	
-
-
 }
 
 

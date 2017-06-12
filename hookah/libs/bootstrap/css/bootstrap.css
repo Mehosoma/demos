@@ -1583,14 +1583,14 @@ pre code {
   }
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 1500px) {
   .container {
-    width: 1330px;
+    width: 1170px;
   }
 }
 
 
-@media (min-width: 1920px) {
+@media (min-width: 1900px) {
   .container {
     width: 1470px;
   }

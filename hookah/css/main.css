@@ -54,6 +54,9 @@ input {
 ol {
   padding: 0; }
 
+textarea {
+  resize: none; }
+
 /********************************************************FirstScreen******************************************/
 .first-screen {
   height: 100vh; }
@@ -1261,19 +1264,21 @@ footer {
 
 .slide-bottom {
   margin-top: 40px; }
-  .slide-bottom a {
-    font-family: 'CodeProBoldLC', sans-serif;
-    line-height: 37px;
+  .slide-bottom span {
+    font-family: 'CodeProLC', sans-serif;
+    line-height: 54px;
     font-size: 31px;
     color: #fff;
-    background-color: #49a1c0;
-    padding: 5px 30px; }
+    font-weight: bold; }
   .slide-bottom .price {
-    display: inline; }
+    width: 126px;
+    height: 54px;
+    background-color: #49a1c0;
+    display: inline-block; }
   .slide-bottom .basket {
     position: relative;
     left: 20px;
-    top: 10px;
+    top: 5px;
     display: inline-block; }
     .slide-bottom .basket a {
       background-color: transparent;
