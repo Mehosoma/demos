@@ -82,16 +82,19 @@ header {
   opacity: 0.7; }
 
 .contacts-phones {
-  margin-left: -62px; }
-  .contacts-phones a {
+  margin-left: -62px;
+  position: relative;
+  z-index: 10; }
+  .contacts-phones span {
     font-family: 'PT Sans', sans-serif;
     font-size: 18px;
     letter-spacing: 0.5px;
     color: #00a8ff;
     text-decoration: underline;
     display: block;
-    line-height: 100px; }
-  .contacts-phones a:hover {
+    line-height: 100px;
+    display: inline-block; }
+  .contacts-phones span:hover {
     opacity: 0.7; }
 
 /********************************************************MainBanner******************************/
@@ -155,22 +158,18 @@ header {
 
 .project-block-image {
   width: 250px;
-  height: 167px;
-  overflow: hidden; }
+  height: 167px; }
   .project-block-image img {
-    -moz-transition: all 1s ease-out;
-    -o-transition: all 1s ease-out;
-    -webkit-transition: all 1s ease-out;
-    transition: all 1s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
     width: 100%;
     height: 100%; }
 
 .project-block-image:hover img {
-  -webkit-transform: scale(1.05);
-  -moz-transform: scale(1.05);
-  -o-transform: scale(1.05);
-  -ms-transform: scale(1.05);
-  transform: scale(1.05); }
+  -webkit-filter: brightness(70%);
+  filter: brightness(70%); }
 
 .project-number {
   border-bottom: 1px solid #cecece;
@@ -814,7 +813,7 @@ footer {
 
 .slider-for .slick-prev {
   z-index: 1;
-  left: 10px; }
+  left: 26px; }
 
 .slider-for .slick-next {
   z-index: 1;
@@ -822,11 +821,11 @@ footer {
 
 .slider-nav .slick-prev {
   z-index: 1;
-  left: 12px; }
+  left: 5px; }
 
 .slider-nav .slick-next {
   z-index: 1;
-  right: 15px; }
+  right: 5px; }
 
 .slider-nav {
   border: 2px solid #fc0; }
