@@ -102,6 +102,10 @@ header {
   background-color: #fa7437;
   color: #fff; }
 
+.feedback {
+  position: relative;
+  z-index: 1; }
+
 /***********************************************FirstScreen******************************************/
 .first-screen {
   width: 100%;
@@ -228,7 +232,9 @@ header {
 
 /*****************************************Description************************************/
 #description {
-  padding: 50px 0 77px; }
+  padding: 50px 0 77px;
+  background-repeat: no-repeat;
+  background-position: top 80px right -200px; }
   #description h3 {
     font-family: 'GilroyBlack', sans-serif;
     font-size: 26px;
@@ -303,12 +309,7 @@ header {
     background: -webkit-gradient(linear, left top, left bottom, from(#f75f12), to(#f77939));
     background: -o-linear-gradient(top, #f75f12 0%, #f77939 100%);
     background: linear-gradient(to bottom, #f75f12 0%, #f77939 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f75f12', endColorstr='#f77939',GradientType=0 ); }
-
-.desc-image-bg {
-  position: absolute;
-  right: 0px;
-  margin-right: -200px; }
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f75f12', endColorstr='#f77939',GradientType=0); }
 
 /*****************************************Cases************************************/
 #cases {
@@ -417,7 +418,11 @@ header {
 
 /*****************************************FreeWebinar************************************/
 .free-webinar {
-  padding: 50px 0px; }
+  padding: 50px 0px;
+  width: 100%;
+  min-height: 640px;
+  background-position: center left -200px;
+  background-repeat: no-repeat; }
   .free-webinar h3 {
     font-family: 'GilroyBlack', sans-serif;
     font-size: 30px;
@@ -573,7 +578,7 @@ header {
 /*****************************************Author************************************/
 #author {
   width: 100%;
-  height: 433px;
+  min-height: 433px;
   background-position: center center;
   background-size: cover; }
   #author .col-lg-5 {
