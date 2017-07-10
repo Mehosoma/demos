@@ -42,6 +42,10 @@
 		margin-right: 0px;
 	}
 
+	.navbar-default .navbar-toggle{
+		margin: 14px 0px;
+	}
+
 	.navbar-default .navbar-toggle .icon-bar{
 		background-color: #fa7437;
 	}
@@ -273,13 +277,22 @@
 
 @media only screen and (min-width : 480px) and (max-width : 767px){
 
+	.navbar-default .navbar-toggle{
+		margin: 14px 0px;
+	}
+
 	.header-contacts a, .header-contacts p{
 		line-height: 40px;
 		float: none;		
 	}
 
+
 	.header-contacts{
-		text-align: right;
+		text-align: center;
+	}
+
+	.header-contacts a, .header-contacts p{
+		margin-left: 0px;
 	}
 
 	.navbar{
