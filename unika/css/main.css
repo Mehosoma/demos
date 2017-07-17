@@ -159,7 +159,14 @@ header {
     color: #000;
     background-color: #f3cf55;
     padding: 20px 82px;
-    border-radius: 10px; }
+    border-radius: 10px;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out; }
+  .free-isbn-button a:hover {
+    background-color: #efb511;
+    opacity: 1; }
 
 /**********************************************Benefits*******************************************/
 #benefits {
@@ -242,7 +249,14 @@ header {
     background-color: #f3cf55;
     padding: 18px 80px;
     border-radius: 10px;
-    margin-left: -20px; }
+    margin-left: -20px;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out; }
+  .feedback-button a:hover {
+    background-color: #efb511;
+    opacity: 1; }
 
 /**********************************************Projects*******************************************/
 #projects {
@@ -369,6 +383,8 @@ header {
       font-size: 20px;
       color: #0054ff;
       border-bottom: 1px solid #0054ff; }
+    .contacts-inf li a:hover {
+      border-bottom: none; }
 
 /**************************************************************Modal************************************/
 .hidden_form {
