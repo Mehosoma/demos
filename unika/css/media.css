@@ -315,7 +315,7 @@
 		height: 62px;
 	}
 
-	#benefits li:nth-child(1), #benefits li:nth-child(2){
+	#benefits li:nth-child(2){
 		line-height: 62px;
 	}
 
