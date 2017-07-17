@@ -153,7 +153,7 @@
 		padding: 15px 36px;
 	}
 
-	.benefits{
+	#benefits{
 		background-position: center right -100px;
 	}
 
@@ -161,7 +161,7 @@
 		padding-left: 0px;
 	}
 
-	.benefits li{
+	#benefits li{
 		line-height: 23px;
 	}
 
@@ -213,7 +213,7 @@
 		right: 30px;
 	}
 
-	.contacts .contacts-block-wrapper{
+	#contacts .contacts-block-wrapper{
 		width: 100%;
 	}
 
@@ -302,24 +302,24 @@
 		padding: 15px 36px;
 	}
 
-	.benefits{
-		background-position: center right -100px;
+	#benefits{
+		background-image: none;
 	}
 
 	.benefits-block{
 		padding-left: 0px;
 	}
 
-	.benefits li{
+	#benefits li{
 		line-height: 23px;
 		height: 62px;
 	}
 
-	.benefits li:nth-child(1), .benefits li:nth-child(2){
+	#benefits li:nth-child(1), #benefits li:nth-child(2){
 		line-height: 62px;
 	}
 
-	.benefits h2{
+	#benefits h2{
 		margin-left: 20px;
 	}
 
@@ -376,7 +376,7 @@
 		right: 30px;
 	}
 
-	.contacts .contacts-block-wrapper{
+	#contacts .contacts-block-wrapper{
 		width: 100%;
 	}
 
@@ -388,12 +388,16 @@
 		text-align: center;
 	}
 
-	.contacts .col-xs-10{
+	#contacts .col-xs-10{
 		width: 100%;
 	}
 
 	.contacts-inf{
 		padding-left: 10px;
+	}
+
+	.hidden_form{
+		width: 100%;
 	}
 
 }
