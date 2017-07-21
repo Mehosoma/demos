@@ -261,67 +261,84 @@
 
 
 	<!--Feed-->
-	<section class="feed">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<h2>Напишите нам</h2>
-					<div class="row">
-						<div class="col-md-6">
-							<form>
-								<div class="first_row">
-									<p>Ваше имя</p>
-									<input />
+						<section class="feed">
+							<div class="container">
+								<div class="row">
+									<div class="col-md-12">
+										<h2>Напишите нам</h2>
+										<div class="row">
+											<div class="col-md-6">
+													<div class="first_row">
+														<p>Ваше имя</p>
+														<input type="text" name="t_oname" value=""></input>
+													</div>
+													<div class="first_row">
+														<p>Ваш телефон</p>
+														<input type="text" name="t_phone1" value=""></input>
+													</div>
+													<div class="first_row">
+														<p>Ваш e-mail</p>
+														<input type="text" name="t_email" value=""></input>
+													</div>
+													<div class="second_row">
+														<p>Выберите тему</p>
+														<select name="t_title">
+															<option value="t1">Регистрация медицинских изделий</option>
+															<option value="t2">Регистрация лекарственных средств</option>
+															<option value="t3">Клинические исследования лекарственных средств</option>
+															<option value="t4">Комплексные решения для вывода ЛС на рынок РФ и стран Европы и Азии</option>
+															<option value="t5">Локализация фармпроизводства</option>
+															<option value="t6">GMP сертификация для России и стран ЕС</option>
+															<option value="t7">Услуги по развитию бизнеса и продуктового портфеля</option>
+															<option value="t8">Консультирование по запуску и маркетингу новых продуктов</option>
+														</select>
+													</div>
+													<div class="third_row">
+														<p>Ваше сообщение</p>
+														<textarea name="t_description"></textarea>
+													</div>
+													<div class="button">
+														<a href=javascript:mSub2('send_form')>Отправить</a>
+													</div>
+											</div>
+											<div class="col-md-6">
+											</div>
+										</div>
+									</div>
 								</div>
-								<div class="first_row">
-									<p>Ваш телефон</p>
-									<input />
-								</div>
-								<div class="first_row">
-									<p>Ваш e-mail</p>
-									<input />
-								</div>	
-								<div class="second_row">
-									<p>Выберите тему</p>
-									<select>
-										<option>Регистрация медицинских изделий</option>
-										<option>Регистрация лекарственных средств</option>
-										<option>Клинические исследования лекарственных средств</option>
-										<option>Комплексные решения для вывода ЛС на рынок</option>
-										<option>Локализация фармпроизводства</option>
-										<option>GMP сертификация для России и стран ЕС</option>
-										<option>Услуги по развитию бизнеса и продуктового портфеля</option>
-										<option>Консультирование по запуску и маркетингу новых продуктов</option>
-									</select>
-								</div>
-								<div class="third_row">
-									<p>Ваше сообщение</p>
-									<textarea></textarea>
-								</div>
-								<div class="button">
-									<input type="button" value="Отправить"/>	
-								</div>									
-							</form>							
-						</div>
-						<div class="col-md-6">
-							<div class="sign">
-								<img src="img/tel.png" alt="telephone">
-								<p>Также вы можете связаться с нами,<br> позвонив по номеру<br>
-								<i>+7 (499) 517-95-23</i></p>
 							</div>
-							<div class="sign">
-								<img src="img/konvert.png" alt="post">
-								<p>Или напишите нам на электронную почту<br>
-								<i><a href="mailto:info@regapharm.ru">info@regapharm.ru</a></i></p>
+						</section>
+					<!--Uslugi-->
+					<section class="uslugi">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-6">
+									<ul>
+										<li><a href="/service_registration_pharmaceutical_products">Регистрация лекарственных средств (ЛС)</a></li>
+										<hr>
+										<li><a href="/registration_pharmaceutical_substances_services">Регистрация фармацевтических субстанций</a></li>
+										<hr>
+										<li><a href="/clinical_trials_of_pharmaceutical_products">Клинические исследования лекарственных средств</a></li>
+										<hr>
+										<li><a href="/complex_solutions_for_introducing_your_products_on_the_markets_of_russia_europe_and_asia">Комплексные решения для вывода ЛС на рынок РФ и стран Европы и Азии</a></li>
+										<hr>
+										<li><a href="/localization_of_pharmaceutical_manufacruting_in_russia_europe_asia_and_latin_america">Локализация фармпроизводства в России и странах Европы, Азии, Латинской Америки</a></li>
+										<hr>
+										<li><a href="/gmp_certification_in_russia_and_european_union">GMP сертификация для России и стран ЕС</a></li>
+										<hr>
+										<li><a href="/business_development_and_product_portfolio_management_services">Услуги по развитию бизнеса и продуктового портфеля</a></li>
+									</ul>
+								</div>
+								<div class="col-md-6">
+<div class="marker">
+						<img src="img/marker.png">
+						<span>ул.Дубининская, д.57, стр.1, 115054, Москва, Россия<br>
+						Тел. +7(499)517-95-23</span>
+						<i><a href="mailto:info@regapharm.com">info@regapharm.com</a></i>
+					</div>								</div>
 							</div>
 						</div>
-					</div>
-				</div>				
-			</div>			
-		</div>		
-	</section>
-
-
+					</section>
 					<!--Footer-->
 					<footer>
 						<div class="container">
