@@ -1549,3 +1549,14 @@ header.sticky .navbar-brand {
 #news-page .count-page .extend-page:hover{
   background: transparent;
   }
+
+.news-headers a{
+  display: block;
+  font-size: 20px;
+  line-height: 24px;
+  padding-bottom: 20px;
+}
+
+.news-headers a:hover{
+  color: #ff8a38;
+}
