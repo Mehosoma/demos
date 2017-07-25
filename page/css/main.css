@@ -1469,7 +1469,7 @@ header.sticky .navbar-brand {
   #news-page .news-page-block-desc h2 {
     display: block;
     font-family: "Roboto-Light", sans-serif;
-    font-size: 36px;
+    font-size: 30px;
     color: #06a2a6;
     font-weight: normal;
     margin-bottom: 20px;
@@ -1550,11 +1550,22 @@ header.sticky .navbar-brand {
   background: transparent;
   }
 
+.news-headers{
+  margin-top: 25px;
+}
+
+.news-headers h3{
+   font-family: "Roboto-Light", sans-serif;
+    font-size: 30px;
+    color: #06a2a6;
+    font-weight: normal;   
+}
+
 .news-headers a{
   display: block;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 24px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 .news-headers a:hover{
