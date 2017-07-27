@@ -211,7 +211,7 @@
 
 	.news-page-block-desc{
 		margin-top: 30px;
-	}
+	}	
 
 }
 	
@@ -520,6 +520,11 @@
 		height: 230px;
 	}
 
+	.news-headers-image img {
+ 		width: 50%;
+  		height: auto;   
+	}
+
 	
 } 
 
@@ -634,6 +639,8 @@
 	.navbar-brand{
 		display: none!important;
 	}	
+
+
 }
 
 
