@@ -1,0 +1,52 @@
+body {
+  min-width: 320px;
+  max-width: 1920px;
+  position: relative;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden; }
+  body a:hover, body a:focus, body a:active {
+    text-decoration: none;
+    outline: none; }
+  body input:focus, body input:active {
+    text-decoration: none;
+    outline: none; }
+  body button:focus, body button:active {
+    text-decoration: none;
+    outline: none; }
+
+/*************************************************************Header******************************************************/
+header {
+  background-color: rgba(0, 0, 0, 0.5); }
+
+.feed-phone i {
+  width: 39px;
+  height: 39px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  padding-top: 12px; }
+
+/*************************************************************First******************************************************/
+.first {
+  width: 100%;
+  height: 742px;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+.main-header-content {
+  background-repeat: no-repeat; }
+
+/*************************************************************Transit******************************************************/
+.transit {
+  width: 100%;
+  height: 408px; }
+
+/*************************************************************Desc******************************************************/
+.desc-right {
+  width: 370px;
+  height: 430px; }
+
+.hidden {
+  display: none; }
