@@ -23,8 +23,7 @@ $(document).ready(function(){
 $(document).ready(function(){
   $(".owl-carousel").owlCarousel({
     center: true,
-    loop:true,
-
+    loop:true,    
     mouseDrag:false,
     nav:true,
     margin:0,

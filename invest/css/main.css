@@ -244,9 +244,16 @@ header {
 .owl-carousel {
   margin-top: 100px; }
 
-.owl-item {
+.owl.item {
+  background: transparent;
+  background-color: transparent; }
+
+.slide-bg {
+  width: 100%;
   height: 250px;
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
   opacity: 0.5;
   -moz-transition: all 0.5s ease-out;
   -o-transition: all 0.5s ease-out;
@@ -261,14 +268,11 @@ header {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cccccc', endColorstr='#ffffff',GradientType=1 ); }
 
 .center {
-  opacity: 1;
-  -moz-transition: all 0.5s ease-out;
-  -o-transition: all 0.5s ease-out;
-  -webkit-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
-  z-index: 10; }
+  z-index: 1000; }
 
-.center {
+.center .slide-bg {
+  opacity: 1;
+  z-index: 10;
   -webkit-transform: scale(1.3) !important;
   -moz-transform: scale(1.3) !important;
   -o-transform: scale(1.3) !important;
@@ -327,7 +331,8 @@ header {
 .slider-text {
   position: absolute;
   top: 0px;
-  opacity: 0; }
+  opacity: 0;
+  z-index: 1000; }
   .slider-text h5 {
     font-family: 'GilroyBold', sans-serif;
     font-size: 26px;
@@ -351,13 +356,53 @@ header {
   position: relative;
   width: 100%;
   height: 250px;
-  overflow: hidden; }
+  overflow: hidden;
+  z-index: 1000; }
 
-.owl-carousel div:nth-child(1) img {
+.center .slide-wrap {
+  width: 115%;
+  height: 288px; }
+
+.slide-1 img {
   width: 364px;
   height: 365px;
   position: absolute;
   right: -80px;
+  bottom: -150px; }
+
+.slide-2 img {
+  width: 281px;
+  height: 338px;
+  position: absolute;
+  right: -80px;
+  bottom: -150px; }
+
+.slide-3 img {
+  width: 200px;
+  height: 344px;
+  position: absolute;
+  right: 0px;
+  bottom: -150px; }
+
+.slide-4 img {
+  width: 325px;
+  height: 384px;
+  position: absolute;
+  right: 0px;
+  bottom: -150px; }
+
+.slide-5 img {
+  width: 443px;
+  height: 349px;
+  position: absolute;
+  right: 0px;
+  bottom: -150px; }
+
+.slide-6 img {
+  width: 202px;
+  height: 298px;
+  position: absolute;
+  right: 0px;
   bottom: -150px; }
 
 /*************************************************************Projects******************************************************/
