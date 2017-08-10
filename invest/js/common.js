@@ -19,3 +19,20 @@ $(document).ready(function(){
 $(document).ready(function(){
     $(".popup_form").magnificPopup();
 });
+
+$(document).ready(function(){
+  $(".owl-carousel").owlCarousel({
+    center: true,
+    items:4,
+    loop:true,
+    mouseDrag:false,
+    nav:true,
+    margin:0,
+    responsive:{
+        600:{
+            items:4
+        }
+    }
+  });
+
+});

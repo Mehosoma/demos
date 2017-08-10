@@ -17,13 +17,16 @@
 	
 	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.css">	
 	<link rel="stylesheet" type="text/css" href="libs/magnific/magnific-popup.css"/>
+	<link rel="stylesheet" type="text/css" href="libs/owl/owl.carousel.css"/>
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">	
 
 	<link rel="stylesheet" href="css/font-awesome.css">
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/media.css">
 
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans&amp;subset=cyrillic" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
 
 </head>
 
@@ -59,10 +62,10 @@
 				</nav>
 			</div>
 			<div class="col-lg-3">
-				<div class="feed-phone">
+				<div class="feed-phone clearfix">
 					<i class="fa fa-phone" aria-hidden="true" style="background-image: url(img/romb.png);"></i>
 					<div class="feed-phone-text">
-						<p>Обратный звонок</p>
+						<a href="">Обратный звонок</a>
 					</div>
 				</div>
 			</div>
@@ -72,38 +75,39 @@
 
 <!--First-->
 <section class="first" style="background-image: url('img/first.jpg');">
+	<div class="first-add-back" style="background-image: url('img/first__details.png');"></div>
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-6">
+			<div class="col-lg-7">
 				<div class="main-header">
-					<h1>Инвестирование в государственные торги</h1>					
+					<h1>Инвестирование<br> в государственные торги</h1>					
 				</div>
-				<div class="main-header-content" style="background-image: url('img/first__arrow.png');">
+				<div class="main-header-content clearfix" style="background-image: url('img/first__arrow.png');">
 					<p>от 6-ти месяцев и 25% годовых</p>
 					<div class="main-header-icons">
 						<img src="img/main-header-icon1.png" alt="first-screen-icon">
-						<p>Страхование вкладов</p>
+						<p>Страхование<br> вкладов</p>
 					</div>
 					<div class="main-header-icons">
 						<img src="img/main-header-icon2.png" alt="first-screen-icon">
-						<p>Порог входа от 100 000 рублей</p>
+						<p>Порог входа<br> от 100 000 рублей</p>
 					</div>
 				</div>
 			</div>
-			<div class="col-lg-6">
+			<div class="col-lg-5">
 				<form id="first-form">
 					<div class="first-form-header">
 						<span>Оставьте заявку</span>
-						<p>и получите персональную консультацию от нашего менеджера</p>
+						<p>и получите персональную<br> консультацию от нашего менеджера</p>
 					</div>
 					<div class="first-form-content">
-						<input type="text" name="fio" required="">
-						<input type="text" name="email" required="">
-						<input type="text" name="phone" required="">
+						<input type="text" name="fio" required="" placeholder="Введите ваше имя">
+						<input type="text" name="email" required="" placeholder="Введите ваш e-mail">
+						<input type="text" name="phone" required="" placeholder="Введите ваш телефон">
 						<button type="submit">Оставить заявку</button>
 					</div>
 					<div class="first-form-footer">
-						<p>Отправляя заявку вы соглашаетесь с политикой конфиденциальности</p>
+						<p>Отправляя заявку вы соглашаетесь с<br> политикой конфиденциальности</p>
 					</div>
 				</form>
 			</div>
@@ -112,13 +116,30 @@
 </section>
 
 <!--Audience-->
-<section class="audience">
+<section class="audience">	
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12">
-				<h2>Для кого подходит наша программа инвестирования?</h2>
+				<h2>Для кого подходит<br> наша программа инвестирования?</h2>
 			</div>
 		</div>
+	</div>
+	<div class="owl-carousel">
+  		<div>
+  			<img src="img/slide-1.png" alt="slide-image">
+  			<div class="slider-text">
+  				<h5>Молодые пары</h5>
+  				<hr />
+  				<p>Молодая пара, которая хочет<br>путешествовать и ищет для этого<br>новые финансовые возможности</p>
+  			</div>
+  		</div>
+  		<div><img src="img/slide-2.png" alt="slide-image"></div>
+  		<div><img src="img/slide-3.png" alt="slide-image"></div>
+  		<div><img src="img/slide-4.png" alt="slide-image"></div>  		
+  		<div><img src="img/slide-1.png" alt="slide-image"></div>
+  		<div><img src="img/slide-2.png" alt="slide-image"></div>
+  		<div><img src="img/slide-3.png" alt="slide-image"></div>
+  		<div><img src="img/slide-4.png" alt="slide-image"></div>  		
 	</div>
 </section>
 
@@ -135,30 +156,45 @@
 				<div class="projects-center-image">
 					<img src="img/projects__center.png" alt="projects-center-image">
 				</div>
-				<div class="projects-icons-block">
-					<img src="img/projects__gov.png" alt="projects-icon-one">
-					<p>Поставки государству товаров и услуг</p>
-				</div>
-				<div class="projects-icons-block">
-					<img src="img/projects__factory.png" alt="projects-icon-two">
-					<p>Залоговое и арестованное имущество</p>
-				</div>
-				<div class="projects-icons-block">
-					<img src="img/projects__doc.png" alt="projects-icon-three">
-					<p>Приобретенние и монетизация дебиторских задолжностей</p>
-				</div>
-				<div class="projects-icons-block">
-					<img src="img/projects__startup.png" alt="projects-icon-four">
-					<p>Венчурные инвестиции в собственные проекты</p>
+				<div class="projects-icons clearfix">
+					<div class="projects-icons-block">
+						<img src="img/projects__gov.png" alt="projects-icon-one">
+						<p>Поставки государству<br> товаров и услуг</p>
+						<div class="line">
+							<img src="img/line-1.png" alt="line-image">
+						</div>
+					</div>
+					<div class="projects-icons-block">
+						<img src="img/projects__factory.png" alt="projects-icon-two">
+						<p>Залоговое и арестованное<br> имущество</p>
+						<div class="line">
+							<img src="img/line-2.png" alt="line-image">
+						</div>
+					</div>
+					<div class="projects-icons-block">
+						<img src="img/projects__doc.png" alt="projects-icon-three">
+						<p>Приобретенние и монетизация<br> дебиторских задолжностей</p>
+						<div class="line">
+							<img src="img/line-3.png" alt="line-image">
+						</div>
+					</div>
+					<div class="projects-icons-block">
+						<img src="img/projects__startup.png" alt="projects-icon-four">
+						<p>Венчурные инвестиции<br> в собственные проекты</p>
+						<div class="line">
+							<img src="img/line-4.png" alt="line-image">
+						</div>
+					</div>
 				</div>
 			</div>			
 		</div>
 		<div class="row">
 			<div class="col-lg-12">
-				<div class="projects-button">
+				<div class="projects-button clearfix">
 					<button>
 						<img src="img/projects__pdf.png" alt="pdf-icon">
-						<p>получить презентацию о программе</p>
+						<p><strong>получить</strong><br>презентацию о программе</p>
+						<span>PDF</span>
 					</button>
 				</div>
 			</div>
@@ -178,16 +214,14 @@
 			<div class="col-lg-4">
 				<div class="packets-left">
 					<div class="packets-left-icon">
-						<div class="circle-out">
-							<div class="circle-in">
-								<p>18% годовых</p>
-							</div>
+						<div class="circle">
+							<p><strong>18</strong><i>%</i><br>годовых</p>							
 						</div>
 					</div>
 					<div class="packets-left-content">
 						<h3>Пробный</h3>
-						<strong>Длительность инвестиций 6 месяцев</strong>
-						<p>Выплата дохода в конце срока действия договора</p>
+						<strong>Длительность инвестиций<br>6 месяцев</strong>
+						<p>Выплата дохода в конце<br>срока действия договора</p>
 						<div class="packets-left-button">
 							<a href="">Выбрать</a>
 						</div>
@@ -197,17 +231,15 @@
 			<div class="col-lg-4">
 				<div class="packets-center">
 					<div class="packets-center-icon">
-						<div class="circle-out">
-							<div class="circle-in">
-								<p>36% годовых</p>
-							</div>
+						<div class="circle">							
+							<p><strong>36</strong><i>%</i><br>годовых</p>							
 						</div>
 					</div>
 					<div class="packets-center-content">
 						<h3>Капитальный</h3>
-						<strong>Капитальная длительность инвестиций 24 месяца</strong>
-						<p>От 500 000 рублей Ежеквартальные выплаты дохода</p>
-						<p>От 1 000 000 рублей Ежемесячные выплаты дохода</p>
+						<strong>Капитальная длительность<br>инвестиций 24 месяца</strong>
+						<p>От 500 000 рублей<br>Ежеквартальные выплаты дохода</p>
+						<p>От 1 000 000 рублей<br>Ежемесячные выплаты дохода</p>
 						<div class="packets-left-button">
 							<a href="">Выбрать</a>
 						</div>
@@ -217,10 +249,8 @@
 			<div class="col-lg-4">
 				<div class="packets-right">
 					<div class="packets-right-icon">
-						<div class="circle-out">
-							<div class="circle-in">
-								<p>24% годовых</p>
-							</div>
+						<div class="circle">
+							<p><strong>24</strong><i>%</i><br>годовых</p>						
 						</div>
 					</div>
 					<div class="packets-right-content">
@@ -236,9 +266,11 @@
 		</div>
 		<div class="row">
 			<div class="col-lg-12">
-				<div class="packets-programm">
-					<p>Мы платим 3% вознаграждение своим партнерам за привлечение средств</p>
-					<a href="">Получить программу</a>
+				<div class="packets-programm clearfix">
+					<p>Мы платим <strong>3% вознаграждение</strong><br>своим партнерам за привлечение средств</p>
+					<div class="packets-programm-button">
+						<a href="">Получить программу</a>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -255,34 +287,37 @@
 		</div>
 		<div class="row">
 			<div class="col-lg-12">
-				<div class="calc-top">
-					<p>Сумма инвестиций</p>
-					<input type="text" name="calc-summa">
+				<div class="calc-top clearfix">
+					<p>Сумма<br>инвестиций</p>
+					<input type="text" name="calc-summa" id="amount">
 					<p>рублей</p>
 				</div>
+				<div id="slider-range-min"></div>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-lg-4">
 				<div class="calc-block">
 					<div class="calc-block-top">
-						<p>Доход: 5000 руб.</p>
+						<p>Доход: 5 000 руб.</p>
 					</div>
 					<div class="calc-block-middle">
 						<div class="calc-block-middle-icon">
 							<img src="img/calc-block-icon1.png" alt="tarif-icon">
-							<strong>18%</strong>
-							<p>доход, годовых</p>
-							<hr />
-							<p>срок вложений 6 мес.</p>
+							<div class="calc-block-middle-icon-content">
+								<strong>18%</strong>
+								<p>доход, годовых</p>
+								<hr />
+								<p>срок вложений<br>6 мес.</p>
+							</div>
 						</div>
 						<div class="calc-block-middle-content">
 							<h5>Пакет "Пробный"</h5>
 							<p>Выплата в конце срока</p>
 							<ul>
-								<li>Сумма вложений 200 000 Р</li>
-								<li>Чистый доход 8 700 Р</li>
-								<li>НДФЛ 1 300 Р</li>
+								<li><img src="img/li-1.png" alt="background-image">Сумма вложений 200 000 Р</li>
+								<li><img src="img/li-2.png" alt="background-image">Чистый доход 8 700 Р</li>
+								<li><img src="img/li-3.png" alt="background-image">НДФЛ 1 300 Р</li>
 							</ul>
 						</div>
 						<div class="calc-block-button">
@@ -294,23 +329,25 @@
 			<div class="col-lg-4">
 				<div class="calc-block">
 					<div class="calc-block-top">
-						<p>Доход: 20000 руб.</p>
+						<p>Доход: 20 000 руб.</p>
 					</div>
 					<div class="calc-block-middle">
 						<div class="calc-block-middle-icon">
 							<img src="img/calc-block-icon1.png" alt="tarif-icon">
-							<strong>24%</strong>
-							<p>доход, годовых</p>
-							<hr />
-							<p>срок вложений 1 год</p>
+							<div class="calc-block-middle-icon-content">
+								<strong>18%</strong>
+								<p>доход, годовых</p>
+								<hr />
+								<p>срок вложений<br>6 мес.</p>
+							</div>
 						</div>
 						<div class="calc-block-middle-content">
-							<h5>Пакет "Доходный"</h5>
+							<h5>Пакет "Пробный"</h5>
 							<p>Выплата в конце срока</p>
 							<ul>
-								<li>Сумма вложений 200 000 Р</li>
-								<li>Чистый доход 8 700 Р</li>
-								<li>НДФЛ 1 300 Р</li>
+								<li><img src="img/li-1.png" alt="background-image">Сумма вложений 200 000 Р</li>
+								<li><img src="img/li-2.png" alt="background-image">Чистый доход 8 700 Р</li>
+								<li><img src="img/li-3.png" alt="background-image">НДФЛ 1 300 Р</li>
 							</ul>
 						</div>
 						<div class="calc-block-button">
@@ -322,23 +359,25 @@
 			<div class="col-lg-4">
 				<div class="calc-block">
 					<div class="calc-block-top">
-						<p>Доход: 50000 руб.</p>
+						<p>Доход: 50 000 руб.</p>
 					</div>
 					<div class="calc-block-middle">
 						<div class="calc-block-middle-icon">
 							<img src="img/calc-block-icon1.png" alt="tarif-icon">
-							<strong>36%</strong>
-							<p>доход, годовых</p>
-							<hr />
-							<p>срок вложений 2 года</p>
+							<div class="calc-block-middle-icon-content">
+								<strong>18%</strong>
+								<p>доход, годовых</p>
+								<hr />
+								<p>срок вложений<br>6 мес.</p>
+							</div>
 						</div>
 						<div class="calc-block-middle-content">
-							<h5>Пакет "Капитальный"</h5>
-							<p>Выплата в конце срока, ежемесячно или ежеквартально</p>
+							<h5>Пакет "Пробный"</h5>
+							<p>Выплата в конце срока</p>
 							<ul>
-								<li>Сумма вложений 200 000 Р</li>
-								<li>Чистый доход 8 700 Р</li>
-								<li>НДФЛ 1 300 Р</li>
+								<li><img src="img/li-1.png" alt="background-image">Сумма вложений 200 000 Р</li>
+								<li><img src="img/li-2.png" alt="background-image">Чистый доход 8 700 Р</li>
+								<li><img src="img/li-3.png" alt="background-image">НДФЛ 1 300 Р</li>
 							</ul>
 						</div>
 						<div class="calc-block-button">
@@ -362,10 +401,14 @@
 		<div class="row">
 			<div class="col-lg-12">
 				<form id="transit-form">
-					<input type="text" name="transit-fio">
-					<input type="text" name="transit-email">
-					<input type="text" name="transit-phone">
-					<button type="submit">Отправить</button>
+					<div class="transit-form-top">
+						<input type="text" name="transit-fio" placeholder="Введите имя">
+						<input type="text" name="transit-email" placeholder="Введите e-mail">
+						<input type="text" name="transit-phone" placeholder="Введите телефон">
+						<button type="submit">Отправить</button>
+					</div>
+					<hr />
+					<p>Отправляя заявку вы соглашаетесь с политикой конфиденциальности</p>
 				</form>
 			</div>
 		</div>
@@ -373,10 +416,10 @@
 </section>
 
 <!--Desc-->
-<section class="desc">
+<section class="desc" style="background-image: url('img/desc__tacks.png');">
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-8">
+			<div class="col-lg-8 clearfix">
 				<h2>Группа компаний "Профит"</h2>
 				<hr />
 				<div class="desc-text-block">
@@ -392,24 +435,24 @@
 			<div class="col-lg-4">
 				<div class="desc-right" style="background-image: url(img/desc__right__back.jpg);">
 					<div class="desc-right-top">
-						<div class="desc-right-top-field">
+						<div class="desc-right-top-field clearfix">
 							<strong>5</strong>
 							<p>лет работы</p>
 						</div>
-						<div class="desc-right-top-field">
+						<div class="desc-right-top-field clearfix">
 							<strong>60</strong>
 							<p>млн. дохода</p>
 						</div>
-						<div class="desc-right-top-field">
+						<div class="desc-right-top-field clearfix">
 							<strong>180</strong>
 							<p>сделок в месяц</p>
 						</div>
 					</div>
 					<div class="desc-right-bottom">
 						<ul>
-							<li>Свидетельство о регистрации</li>
-							<li>Страховой сертификат</li>
-							<li>Выписка из ОГРН</li>
+							<li><img src="img/pdf.png" alt="pdf-icon"><a href="">Свидетельство о регистрации</a></li>
+							<li><img src="img/pdf.png" alt="pdf-icon"><a href="">Страховой сертификат</a></li>
+							<li><img src="img/pdf.png" alt="pdf-icon"><a href="">Выписка из ОГРН</a></li>
 						</ul>
 					</div>
 				</div>
@@ -417,7 +460,7 @@
 		</div>
 		<div class="row">
 			<div class="col-lg-4">
-				<div class="desc-icons">
+				<div class="desc-icons clearfix">
 					<img src="img/desc__docs.png" alt="desc-icon-image">
 					<div class="desc-icon-text">
 						<span>Заключаем договор</span>
@@ -426,7 +469,7 @@
 				</div>
 			</div>
 			<div class="col-lg-4">
-				<div class="desc-icons">
+				<div class="desc-icons clearfix">
 					<img src="img/desc__man.png" alt="desc-icon-image">
 					<div class="desc-icon-text">
 						<span>Опыт и репутация</span>
@@ -435,10 +478,10 @@
 				</div>
 			</div>
 			<div class="col-lg-4">
-				<div class="desc-icons">
+				<div class="desc-icons clearfix">
 					<img src="img/desc__insury.png" alt="desc-icon-image">
 					<div class="desc-icon-text">
-						<span>Страхлвание ответственности</span>
+						<span>Страхование ответственности</span>
 						<p>Предпринимательская деятельность Компании застрахована от банкротства на сумму 160 000 000 рублей.</p>
 					</div>
 				</div>
@@ -448,7 +491,7 @@
 </section>
 
 <!--Scheme-->
-<section class="scheme">
+<section class="scheme" style="background-image: url('img/scheme__cash.png');">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12">
@@ -456,36 +499,41 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-lg-3">
-				<div class="scheme-block">
-					<div class="scheme-block-icon">
-						<p>1</p>
+			<div class="scheme-block-wrap">
+				<div class="col-lg-3">
+					<div class="scheme-block">
+						<div class="scheme-block-icon">
+							<p>1</p>
+						</div>
+						<span>Определиться со<br><i>сроком и суммой</i><br>инвестирования</span>
+						<img src="img/scheme-arrow.png" alt="scheme-arrow-image">
 					</div>
-					<p>Определиться со сроком и суммой инвестирования</p>
 				</div>
-			</div>
-			<div class="col-lg-3">
-				<div class="scheme-block">
-					<div class="scheme-block-icon">
-						<p>2</p>
+				<div class="col-lg-3">
+					<div class="scheme-block">
+						<div class="scheme-block-icon">
+							<p>2</p>
+						</div>
+						<span>Заключить <i>договор</i><br>инвестиционного<br>займа с компанией</span>
+						<img src="img/scheme-arrow.png" alt="scheme-arrow-image">
 					</div>
-					<p>Заключить договор инвестиционного займа с компанией</p>
 				</div>
-			</div>
-			<div class="col-lg-3">
-				<div class="scheme-block">
-					<div class="scheme-block-icon">
-						<p>3</p>
+				<div class="col-lg-3">
+					<div class="scheme-block">
+						<div class="scheme-block-icon">
+							<p>3</p>
+						</div>
+						<span>Внести <i>денежные<br>средства</i> на<br>расчетный счет<br>компании</span>
+						<img src="img/scheme-arrow.png" alt="scheme-arrow-image">
 					</div>
-					<p>Внести денежные средства на расчетный счет компании</p>
 				</div>
-			</div>
-			<div class="col-lg-3">
-				<div class="scheme-block">
-					<div class="scheme-block-icon">
-						<p>4</p>
+				<div class="col-lg-3">
+					<div class="scheme-block">
+						<div class="scheme-block-icon">
+							<p>4</p>
+						</div>
+						<span>После внесения<br>средств договор<br>вступает в силу, а<br>Вы <i>получаете<br>доход</i></span>
 					</div>
-					<p>После внесения средств договор вступает в силу, а Вы получаете доход</p>
 				</div>
 			</div>
 		</div>
@@ -500,14 +548,17 @@
 </section>
 
 <!--Contact-->
-<section class="contact">
+<section class="contacts">
+	<div class="map">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2889.169806044783!2d39.72229302710503!3d43.60300591154075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40f5cbeb6ae5e88b%3A0x4d2993ab55153cec!2z0YPQuy4g0KfQsNC50LrQvtCy0YHQutC-0LPQviwgNDHQsCwg0KHQvtGH0LgsINCa0YDQsNGB0L3QvtC00LDRgNGB0LrQuNC5INC60YDQsNC5LCAzNTQwNjU!5e0!3m2!1sru!2sru!4v1502354848920" width="100%" height="550" frameborder="0" style="border:0" allowfullscreen></iframe>
+	</div>
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12">
 				<div class="contacts-block">
-					<p>Мы находимся г. Сочи ул. Чайковского 41А</p>
-					<p>Телефон 8 (966) 770-03-81</p>
-					<p>Email <a href="mailto:info@profitp.su">info@profitp.su</a></p>
+					<p><i>Мы находимся</i><br>г. Сочи ул. Чайковского 41А</p>
+					<p><i>Телефон</i><br><strong>8 (966) 770-03-81</strong></p>
+					<p><i>Email</i><br><a href="mailto:info@profitp.su">info@profitp.su</a></p>
 				</div>
 			</div>
 		</div>
@@ -522,10 +573,14 @@
 				<div class="footer-left">
 					<p>&copy; 2017 project</p>
 					<a href="">Политика конфиденциальности</a>
-				</div>
+				</div>				
+			</div>
+			<div class="col-lg-6">
 				<div class="footer-right">
 					<p>8 (966) 770-03-81</p>
-					<a href="">Обратный звонок</a>
+					<div class="footer-button">
+						<a href="">Обратный звонок</a>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -536,7 +591,24 @@
 	<script src="libs/bootstrap/js/bootstrap.js"></script>	
 	<script src="libs/cole/bootstrap-colequalizer.js"></script>
 	<script src="libs/magnific/jquery.magnific-popup.js"></script>
+	<script src="libs/owl/owl.carousel.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<script src="js/common.js"></script>
+
+	<script>
+  $( function() {
+    $( "#slider-range-min" ).slider({
+      range: "min",
+      value: 1000,
+      min: 1000,
+      max: 1000000,
+      slide: function( event, ui ) {
+        $( "#amount" ).val( + ui.value );
+      }
+    });
+    $( "#amount" ).val( + $( "#slider-range-min" ).slider( "value" ) );
+  } );
+  </script>
 	
 </body>
 </html>
