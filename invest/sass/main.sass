@@ -7,6 +7,7 @@ body
 	line-height: 1.6
 	-webkit-font-smoothing: antialiased
 	overflow-x: hidden	
+	margin: 0 auto
 	a:hover, a:focus, a:active
 		text-decoration: none
 		outline: none
@@ -16,10 +17,34 @@ body
 	button:focus, button:active
 		text-decoration: none
 		outline: none
+	p
+		margin: 0px
+	h2
+		font-family: 'GilroyRegular', sans-serif
+		font-size: 36px
+		line-height: 46px
+		font-weight: 400		
+		color: #000
+		text-align: center
+		text-shadow: 0.5px 0 0 #000
+		letter-spacing: 5px
+
 
 /*************************************************************Header******************************************************/
 header
-	background-color: rgba(0,0,0,0.5)
+	min-height: 60px
+	background-color: rgba(0,0,0,0.2)
+	position: relative
+	z-index: 10
+.logo 
+	p
+		font-family: 'PT Sans', sans-serif
+		font-size: 18px
+		font-weight: 700
+		text-transform: uppercase
+		color: #fff
+		line-height: 60px
+		letter-spacing: 2px
 .feed-phone i
 	width: 39px
 	height: 39px
@@ -28,7 +53,48 @@ header
 	color: #fff
 	text-align: center
 	padding-top: 12px
-
+.navbar-default
+	background-image: none
+	background-color: transparent
+	border: none
+.navbar-nav
+	float: right
+.navbar-default .navbar-nav > li > a
+	font-family: 'PT Sans', sans-serif
+	font-size: 16px
+	font-weight: 400	
+	color: #fff
+	padding-top: 20px
+	padding-bottom: 20px
+	letter-spacing: 1px
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:active, .navbar-default .navbar-nav > li > a:focus
+	color: #99d962
+.navbar
+	margin-bottom: 0px
+.feed-phone
+	float: right
+	i
+		float: left
+		position: relative
+		top: 10px		
+	a
+		font-family: 'PT Sans', sans-serif
+		font-size: 16px
+		font-weight: 400	
+		color: #99d962
+		text-shadow: 0.5px 0px #99d962
+		letter-spacing: 1px			
+.feed-phone-text			
+	display: inline-block
+	position: relative
+	top: 15px
+	margin-left: 10px
+	border-bottom: 1px dashed #99d962
+	float: left	
+.feed-phone-text:hover
+	border-bottom: none
+.feed-phone-text:hover a
+	color: #9dec59	
 
 /*************************************************************First******************************************************/
 .first
@@ -36,19 +102,1079 @@ header
 	height: 742px	
 	background-repeat: no-repeat
 	background-position: center center
-.main-header-content
+	margin-top: -60px	
+	padding-top: 60px
+	position: relative
+.first-add-back
+	position: absolute
+	top: 0px
+	left: 0px
+	width: 100%
+	height: 742px
 	background-repeat: no-repeat
+	background-position: center left	
+.main-header-content	
+	padding-left: 55px
+	background-repeat: no-repeat
+	background-position: top 20px right 115px
+	p
+		font-family: 'PT Sans', sans-serif
+		font-size: 26px
+		font-weight: 400	
+		color: #fff		
+		letter-spacing: 2px
+.main-header-icons
+	float: left
+	width: 35%
+	margin-top: 50px
+	margin-left: -10px
+	p
+		font-family: 'PT Sans', sans-serif
+		font-size: 18px
+		line-height: 22px
+		font-weight: 400	
+		color: #fff		
+		letter-spacing: 1px	
+		position: relative
+		top: 5px		
+	img
+		float: left
+		margin-right: 0px
+		position: relative
+		top: -2px
+.main-header-icons:nth-child(3)
+	width: 45%	
+.main-header
+	padding-top: 158px
+	padding-left: 55px
+	h1		
+		font-family: 'GilroySemibold', sans-serif
+		font-size: 40px
+		line-height: 54px
+		color: #fff		
+		letter-spacing: 3px
+		text-shadow: 2px 0px rgba(0,0,0,0.5)
+.icons-block-two
+	margin-left: 7px
+.icons-block-two img
+	top: -5px
+#first-form
+	width: 340px
+	background-color: #fff
+	margin: 108px auto 0px
+	border: 4px solid #e3e3e3	
+.first-form-header
+	text-align: center
+	height: 135px
+	padding-top: 30px
+	border-bottom: 1px solid #e3e3e3
+	span
+		font-family: 'GilroyBold', sans-serif
+		font-size: 28px
+		text-transform: uppercase
+		color: #000
+	p
+		font-family: 'PT Sans', sans-serif
+		font-size: 18px 
+		line-height: 20px
+		color: #000
+.first-form-content
+	text-align: center
+	border-bottom: 1px solid #e3e3e3
+	padding-bottom: 20px
+	input
+		color: #000
+		font-family: 'Open Sans', sans-serif		
+		font-size: 13px
+		font-weight: 600
+		border: 1px solid #e3e3e3
+		padding: 7px 9px
+		border-radius: 5px			
+		width: 220px
+		margin-top: 20px
+		box-shadow: -2px -2px 0px 0px #e3e3e3
+	::-webkit-input-placeholder 
+		color: #000
+		letter-spacing: 1px
+	::-moz-placeholder
+		color: #000
+		letter-spacing: 1px          
+	:-moz-placeholder 
+		color: #000
+		letter-spacing: 1px     
+	:-ms-input-placeholder      
+		color: #000
+		letter-spacing: 1px
+	input:hover, input:active, input:focus
+		border: 1px solid #f97233
+		box-shadow: -2px -2px 0px 0px #f97233
+	button	
+		width: 220px	
+		height: 40px
+		font-family: 'PT Sans', sans-serif		
+		font-size: 15px
+		font-weight: 600	
+		color: #fff
+		letter-spacing: 2px
+		padding-left: 12px
+		text-transform: uppercase
+		background: rgb(114,172,64)
+		background: -moz-linear-gradient(#72ac40, #5c8f30)
+		background: -webkit-linear-gradient(#72ac40, #5c8f30)
+		background: linear-gradient(#6a9e3d, #34610d, #6a9e3d)
+		background-size: auto 200%		
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#72ac40', endColorstr='#5c8f30',GradientType=0)
+		border: none
+		margin-top: 30px
+		box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.2)
+		-moz-transition: all 0.5s ease-out
+		-o-transition: all 0.5s ease-out
+		-webkit-transition: all 0.5s ease-out
+		transition: all 0.5s ease-out			
+	button:hover				
+		background-position: 0 100%
+.first-form-footer
+	padding: 20px 0px
+	text-align: center
+	p
+		font-family: 'PT Sans', sans-serif		
+		font-size: 14px
+		line-height: 18px
+		font-weight: 400	
+		text-shadow: 0.5px 0px 0px #000
+		font-style: italic
+		color: #000
+		letter-spacing: 1px
 
+/*************************************************************Audience******************************************************/
+.audience
+	padding: 70px 0px 30px
+	min-height: 600px
+.owl-carousel
+	margin-top: 92px
+.owl-item	
+	opacity: 0.5
+.center
+	z-index: 1000
+	opacity: 1
+.slide-bg
+	width: 100%
+	height: 250px
+	position: absolute
+	top: 0
+	left: 0	
+	-moz-transition: all 0.5s ease-out
+	-o-transition: all 0.5s ease-out
+	-webkit-transition: all 0.5s ease-out
+	transition: all 0.5s ease-out 
+	background: rgb(204,204,204)
+	background: -moz-linear-gradient(left, rgba(204,204,204,1) 0%, rgba(255,255,255,1) 100%)
+	background: -webkit-linear-gradient(left, rgba(204,204,204,1) 0%,rgba(255,255,255,1) 100%)
+	background: linear-gradient(to right, rgba(204,204,204,1) 0%,rgba(255,255,255,1) 100%)
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cccccc', endColorstr='#ffffff',GradientType=1 )
+.center	.slide-bg
+	-webkit-transform: scale(1.3)!important
+	-moz-transform: scale(1.3)!important
+	-o-transform: scale(1.3)!important
+	transform: scale(1.3)!important
+	-moz-transition: all 0.3s ease-out
+	-o-transition: all 0.3s ease-out
+	-webkit-transition: all 0.3s ease-out
+	transition: all 0.3s ease-out 
+	box-shadow: 0 0 20px 0px rgba(0,0,0,0.3)
+.slider-text
+	position: absolute
+	top: -20px
+	left: -20px		
+	opacity: 0
+	z-index: 1000
+	h5
+		font-family: 'GilroyBold', sans-serif
+		font-size: 26px
+		text-transform: uppercase
+		color: #000
+	hr
+		width: 120px
+		height: 3px
+		border: none
+		background: #7ebc46
+		background-color: #7ebc46
+		margin: 0px 0px 20px 0px
+	p
+		font-family: 'PT Sans', sans-serif
+		font-size: 14px
+		line-height: 18px		
+		color: #000	
+		text-shadow: 0.2px 0 0 #000
+.center .slider-text
+	opacity: 1	
+	-moz-transition: all 0.3s ease-out
+	-o-transition: all 0.3s ease-out
+	-webkit-transition: all 0.3s ease-out
+	transition: all 0.3s ease-out 	
+.owl-carousel .owl-stage-outer
+	overflow: visible!important
+.owl-prev, .owl-next
+	width: 76px
+	height: 76px
+	background-image: url('../img/left-arrow.png')
+	background-repeat: no-repeat
+	background-position: center center
+	opacity: 0.7
+	-moz-transition: all 0.3s ease-out
+	-o-transition: all 0.3s ease-out
+	-webkit-transition: all 0.3s ease-out
+	transition: all 0.3s ease-out 
+	float: left	
+.owl-next
+	background-image: url('../img/right-arrow.png')
+.owl-prev:hover, .owl-prev:active, .owl-prev:focus, .owl-next:hover, .owl-next:active, .owl-next:focus 
+	opacity: 1
+	-moz-transition: all 0.3s ease-out
+	-o-transition: all 0.3s ease-out
+	-webkit-transition: all 0.3s ease-out
+	transition: all 0.3s ease-out 
+.owl-nav
+	position: absolute
+	bottom: 0px
+	left: 55%
+.slide-wrap
+	position: relative
+	width: 100%
+	height: 250px
+	overflow: hidden	
+	z-index: 1000
+	background-repeat: no-repeat
+	background-position: right 0
+.center .slide-wrap
+	width: 115%
+	height: 288px
+
+
+/*************************************************************Projects******************************************************/
+.projects
+	padding-top: 40px
+.projects-center-image
+	text-align: center
+	position: relative
+	z-index: 10
+	margin-top: 12px
+.projects-icons-block
+	float: left
+	width: 25%
+	text-align: center
+	position: relative
+	p
+		font-family: 'PT Sans', sans-serif	
+		font-size: 14px
+		line-height: 18px		
+		color: #000
+		font-weight: 400		
+		letter-spacing: 2px
+		text-shadow: 0.2px 0 0 #000
+.projects-icons
+	margin-top: 50px	
+	margin-bottom: 32px
+.projects-icons .projects-icons-block:nth-child(1), .projects-icons .projects-icons-block:nth-child(4)
+	margin-top: -150px
+.line
+	img
+		position: absolute		
+.projects-icons .projects-icons-block:nth-child(1)
+	position: relative
+	right: -90px
+	top: -50px
+.projects-icons .projects-icons-block:nth-child(1) .line img
+	top: 0
+	right: 0px
+	margin-top: 0px
+	margin-right: -59px
+.projects-icons .projects-icons-block:nth-child(2)
+	position: relative
+	top: -25px
+.projects-icons .projects-icons-block:nth-child(2) .line img
+	top: 0
+	right: 0px
+	margin-top: -78px
+	margin-right: 70px
+.projects-icons .projects-icons-block:nth-child(3)
+	position: relative
+	top: -25px	
+.projects-icons .projects-icons-block:nth-child(3) .line img
+	top: 0
+	left: 0px
+	margin-top: -85px
+	margin-left: 60px
+.projects-icons .projects-icons-block:nth-child(4)
+	position: relative	
+	top: -50px
+	left: -90px
+.projects-icons .projects-icons-block:nth-child(4) .line img
+	top: 0
+	left: 0px	
+	margin-left: -107px
+	margin-top: -5px
+.projects-button
+	text-align: center
+	margin-bottom: -40px	
+	button
+		width: 380px
+		height: 80px			
+		border: none
+		padding: 21px
+		background: rgb(112,168,62)
+		background: -moz-linear-gradient(#72ac40, #5c8f30)
+		background: -webkit-linear-gradient(#72ac40, #5c8f30)
+		background: linear-gradient(#7cbe44, #4c7924)
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#70a83e', endColorstr='#5d8b35',GradientType=0 )
+		padding-left: 60px
+		border-radius: 50px
+		overflow: hidden
+		box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.5)
+		background-size: 1px 400px
+		-moz-transition: all 0.5s ease-out
+		-o-transition: all 0.5s ease-out
+		-webkit-transition: all 0.5s ease-out
+		transition: all 0.5s ease-out
+	button:hover
+		background-position: 160px
+	img
+		float: left	
+		margin-right: 20px
+	strong
+		font-family: 'PT Sans', sans-serif	
+		font-size: 20px
+		line-height: 20px
+		text-transform: uppercase
+		color: #fff
+		font-weight: 600
+		font-style: normal
+		letter-spacing: 2px
+	p
+		text-align: left
+		font-family: 'PT Sans', sans-serif	
+		font-size: 16px
+		line-height: 20px		
+		color: #fff
+		font-weight: 400
+		font-style: normal
+		letter-spacing: 2px
+		position: relative
+		z-index: 10
+	span
+		font-family: 'PT Sans', sans-serif	
+		font-size: 100px
+		line-height: 20px
+		text-transform: uppercase
+		color: rgba(0,0,0,0.2)
+		font-weight: 600
+		position: relative
+		top: -15px
+		left: 70px
+		letter-spacing: 5px
+
+/*************************************************************Packets******************************************************/
+.packets
+	padding: 80px 0px 100px
+	background-color: #f4f3f3
+	h2
+		margin-bottom: 160px
+	.col-lg-4
+		padding: 0px
+.packets-left, .packets-right
+	width: 255px
+	height: 395px
+	float: right
+	box-shadow: 0px 0px 30px 10px rgba(0,0,0,0.1) 	
+	position: relative
+	border-bottom: 7px solid #f3743a	
+	margin-top: 80px	
+.packets-center
+	width: 100%
+	height: 520px
+	box-shadow: 0px 0px 30px 10px rgba(0,0,0,0.1) 	
+	position: relative
+	z-index: 100
+	border-bottom: 7px solid #76b341
+	background-color: #f4f3f3
+.packets-right
+	float: left
+	border-bottom: 7px solid #0071bb		
+.packets-left-content, .packets-right-content, .packets-center
+	padding-top: 85px	
+	h3
+		font-family: 'GilroyBold', sans-serif
+		font-size: 26px
+		text-transform: uppercase
+		color: #f3743a
+		letter-spacing: 3px
+		text-align: center
+		margin-bottom: 20px
+	strong, p
+		text-align: left
+		padding-left: 30px
+		display: block
+		font-family: 'PT Sans', sans-serif
+		font-size: 18px
+		line-height: 20px
+		font-weight: 400
+		color: #000
+	p
+		text-shadow: 0.2px 0 0 #000
+		margin-top: 20px
+	strong
+		font-weight: 600
+.packets-right-content h3
+	color: #0071bb
+.packets-center
+	padding-top: 122px
+	h3
+		font-size: 34px
+		color: #76b341
+		text-align: left
+		padding-left: 30px	
+		margin-bottom: 24px
+	p, strong
+		padding-left: 40px
+.circle
+	width: 180px
+	height: 180px
+	border-radius: 50%
+	background-color: #f3743a
+	border: 15px solid #fff
+	text-align: center
+	padding-top: 50px
+	box-shadow: 0px 0px 30px 10px rgba(0,0,0,0.1)
+	padding-left: 10px
+	margin: 0 auto
+	position: absolute
+	margin: auto
+	left: 0
+	right: 0
+	top: -90px	
+	strong		
+		font-size: 70px		
+		letter-spacing: 0px		
+	i
+		font-style: normal
+		font-size: 45px		
+	p
+		font-family: 'PT Sans', sans-serif
+		font-size: 24px
+		line-height: 20px
+		color: #fff
+		font-weight: 600
+		letter-spacing: 3.2px
+.packets-right-icon .circle
+	background-color: #0071bb
+.packets-center .circle
+	width: 236px
+	height: 236px
+	padding-top: 55px
+	background-color: #76b341
+	padding-left: 5px
+	top: -118px	
+	strong
+		font-size: 90px	
+		padding-left: 0px	
+		display: inline-block
+		color: #fff			
+	i
+		font-size: 58px		
+	p
+		font-size: 32px
+		line-height: 26px
+		letter-spacing: 5px
+		padding-left: 26px
+.packets-left-button
+	text-align: center
+	margin-top: 70px
+	a
+		font-family: 'GothamProRegular', sans-serif
+		font-size: 16px
+		background-color: #df6731
+		color: #fff
+		padding: 8px 23px 8px 31px
+		border: 2px solid #df6731
+		border-radius: 5px
+		letter-spacing: 2px
+		padding-left: 30px
+		box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.3)
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out 
+	a:hover
+		border: 2px solid #df6731
+		background-color: transparent
+		color: #df6731
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out 
+.packets-right-content .packets-left-button a
+	border: 2px solid #0071bb
+	background-color: #0071bb
+.packets-right-content .packets-left-button a:hover
+	border: 2px solid #0071bb
+	background-color: transparent
+	color: #0071bb
+	-moz-transition: all 0.3s ease-out
+	-o-transition: all 0.3s ease-out
+	-webkit-transition: all 0.3s ease-out
+	transition: all 0.3s ease-out 
+.packets-center-content .packets-left-button a
+	background-color: #76b341
+	border: 2px solid #76b341
+	padding: 11px 32px 11px 39px
+.packets-center-content .packets-left-button a:hover
+	border: 2px solid #76b341
+	background-color: transparent
+	color: #76b341
+	-moz-transition: all 0.3s ease-out
+	-o-transition: all 0.3s ease-out
+	-webkit-transition: all 0.3s ease-out
+	transition: all 0.3s ease-out 
+.packets-programm
+	width: 885px
+	height: 80px
+	margin: 110px auto 0px
+	background-color: #fff	
+	box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2)
+	p
+		float: left
+		font-family: 'GilroyRegular', sans-serif
+		font-size: 20px
+		line-height: 26px
+		letter-spacing: 3px
+		padding-top: 13px
+		padding-left: 30px
+		text-shadow: 0.2px 0 0 #000
+	a
+		float: right
+		font-family: 'GothamProRegular', sans-serif
+		font-size: 16px		
+		color: #000
+		border: 2px solid #7ebc46
+		padding: 10px 20px
+		border-radius: 5px
+		letter-spacing: 2px
+		padding-left: 25px
+		text-shadow: 0.2px 0 0 #000
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out 	
+	a:hover
+		background-color: #7ebc46
+		color: #000
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out 
+.packets-programm-button
+	margin-right: 30px
+	margin-top: 16px
+
+/*************************************************************Calc******************************************************/
+#calc
+	padding: 65px 0px 50px
+.calc-block	
+	width: 310px
+	height: 575px
+	border: 3px solid #7ebc46
+	border-radius: 10px
+	position: relative
+	margin: 45px auto 10px
+.calc-block-top
+	height: 65px
+	border-bottom: 3px solid #7ebc46
+	p
+		font-family: 'PT Sans', sans-serif
+		font-size: 25px
+		line-height: 65px
+		font-weight: 600
+		color: #7ebc46
+		text-align: center
+		letter-spacing: 2px
+.calc-block-middle-icon
+	height: 270px
+	text-align: center
+	padding-top: 25px	
+	img
+		position: absolute
+		width: 220px
+		height: 220px
+		margin: auto
+		right: 0
+		left: 0
+	strong
+		font-family: 'PT Sans', sans-serif
+		font-size: 26px	
+		line-height: 22px	
+		font-weight: 600
+		color: #000
+		letter-spacing: 1px		
+	p
+		font-family: 'PT Sans', sans-serif
+		font-size: 16px
+		line-height: 22px		
+		font-weight: 400
+		color: #000
+		letter-spacing: 1px
+		text-shadow: 0.2px 0 0 #000
+	hr
+		width: 120px
+		height: 1px
+		border: none
+		background-color: #7ebc46
+		background: #7ebc46
+		margin: 5px auto 0px
+.calc-block-middle-icon-content
+	padding-top: 65px
+	padding-left: 5px
+.calc-block-middle-content
+	text-align: center
+	padding-top: 5px
+	h5
+		font-family: 'GilroyBold', sans-serif
+		font-size: 20px	
+		line-height: 24px			
+		color: #7ebc46
+		letter-spacing: 1px	
+		margin: 0px
+	p
+		font-family: 'Open Sans', sans-serif
+		font-size: 16px	
+		line-height: 24px			
+		color: #000
+		letter-spacing: 1px	
+		text-shadow: 0.2px 0 0 #000
+	ul
+		list-style-type: none
+		text-align: left
+		margin-top: 20px
+		padding-left: 40px
+		li
+			font-family: 'PT Sans', sans-serif
+			font-size: 16px
+			line-height: 22px				
+			color: #000
+			letter-spacing: 1px	
+			text-shadow: 0.2px 0 0 #000	
+		img
+			margin-right: 10px
+			position: relative
+			top: -1px	
+.calc-block-button
+	text-align: center
+	margin-top: 30px
+	a
+		font-family: 'PT Sans', sans-serif
+		font-size: 16px				
+		color: #fff
+		letter-spacing: 1px	
+		text-shadow: 0.2px 0 0 #fff
+		padding: 10px 37px 10px 45px
+		border-radius: 5px
+		background: rgb(121,184,65); /* Old browsers */
+		background: -moz-linear-gradient(#72ac40, #5c8f30)
+		background: -webkit-linear-gradient(#72ac40, #5c8f30)
+		background: linear-gradient(#7cbe44, #4c7924)
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#79b841', endColorstr='#619435',GradientType=0)
+		background-size: 1px 500px
+		-moz-transition: all 0.5s ease-out
+		-o-transition: all 0.5s ease-out
+		-webkit-transition: all 0.5s ease-out
+		transition: all 0.5s ease-out
+	a:hover
+		background-position: 200px
+.calc-top
+	margin-top: 50px
+	margin-left: 38px
+	p, strong
+		font-family: 'GothamProRegular', sans-serif
+		font-size: 24px
+		line-height: 28px
+		color: #000
+		text-shadow: 0.5px 0 0 #000
+		float: left
+		position: relative		
+		letter-spacing: 2px
+		font-weight: normal
+	strong
+		position: relative
+		top: 5px
+	input
+		width: 240px
+		height: 45px
+		float: left
+		font-family: 'GothamProRegular', sans-serif
+		font-size: 24px		
+		text-shadow: 0.5px 0 0 #000
+		color: #000
+		border: 2px solid #cccccc
+		border-radius: 5px
+		margin: 0px 15px 0px 90px 
+		padding: 0 10px
+#slider-range-min
+	margin-top: 28px
+	margin-left: 300px
+	width: 650px
+.ui-slider-horizontal
+	height: 3px
+	border: none!important
+	background-color: #7ebc46
+.ui-widget-header
+	height: 3px
+	border: none!important
+	background-color: #7ebc46
+.ui-slider .ui-slider-handle
+	width: 30px
+	height: 30px
+	border-radius: 50%
+	border: 2px solid #fff
+	background-color: #7ebc46	
+	box-shadow: 0 0 10px 0 rgba(0,0,0,0.5)
+	top: -13px
+.ui-slider .ui-slider-handle:hover, .ui-slider .ui-slider-handle:active, .ui-slider .ui-slider-handle:focus
+	outline: none
+.calc-bottom-text
+	text-align: center
+	margin-top: 20px
+	p
+		font-family: 'PT Sans', sans-serif
+		font-style: italic
+		font-size: 14px
+		line-height: 18px
+		color: #cccccc
+		padding: 0px 150px
 
 /*************************************************************Transit******************************************************/
 .transit
 	width: 100%
 	height: 408px
+	padding: 70px 0px
+	h2
+		color: #fff
+#transit-form
+	width: 900px
+	height: 130px
+	background-color: #fff
+	border-radius: 5px
+	margin: 30px auto	
+	input
+		color: #000
+		font-family: 'Open Sans', sans-serif		
+		font-size: 13px
+		font-weight: 600
+		border: 1px solid #e3e3e3
+		padding: 7px 9px
+		border-radius: 5px			
+		width: 210px
+		height: 44px
+		margin-top: 20px	
+		margin-right: 15px
+	::-webkit-input-placeholder 
+		color: #000
+		letter-spacing: 1px
+	::-moz-placeholder
+		color: #000
+		letter-spacing: 1px          
+	:-moz-placeholder 
+		color: #000
+		letter-spacing: 1px     
+	:-ms-input-placeholder      
+		color: #000
+		letter-spacing: 1px
+	input:hover, input:active, input:focus
+		border: 1px solid #f86319
+	button	
+		width: 150px	
+		height: 44px
+		font-family: 'PT Sans', sans-serif		
+		font-size: 15px
+		font-weight: 600	
+		color: #fff
+		letter-spacing: 2px
+		text-transform: uppercase
+		background-color: #f86319
+		border: 2px solid #f86319
+		border-radius: 5px
+		margin-top: 26px
+		box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.2)
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out 
+		padding-left: 15px
+	button:hover
+		background-color: transparent
+		color: #f86319
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out 
+	hr
+		margin-bottom: 0px
+	p
+		font-family: 'Open Sans', sans-serif		
+		font-size: 14px
+		font-weight: 400	
+		color: #a9a9a9
+		letter-spacing: 2px
+		font-style: italic
+		padding-left: 33px
+		padding-top: 7px
+.transit-form-top
+	padding-left: 30px
+
 
 /*************************************************************Desc******************************************************/
 .desc-right
 	width: 370px
 	height: 430px
+	border-radius: 5px
+	box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.3)
+	margin-top: 33px	
+	padding-top: 26px
+#desc
+	background-repeat: no-repeat
+	background-position: center left
+	padding: 68px 0px 76px 0px
+	h2
+		color: #000
+		font-family: 'GilroyBold', sans-serif		
+		font-size: 26px		
+		text-align: left
+		letter-spacing: 3px
+		margin-bottom: 2px
+	hr
+		width: 120px
+		height: 3px
+		border: none
+		background: #7ebc46
+		background-color: #7ebc46
+		margin: 0px 0px 28px 0px
+		text-align: left
+.desc-text-block		
+	float: left
+	width: 45%
+	margin-right: 30px
+	p
+		font-family: 'Open Sans', sans-serif		
+		font-size: 14px
+		line-height: 16px
+		font-weight: 400	
+		color: #000
+		margin-bottom: 20px
+.desc-right-top-field
+	padding-left: 30px	
+	padding-bottom: 5px		
+	strong
+		font-family: 'GilroyBold', sans-serif		
+		font-size: 70px		
+		line-height: 70px
+		color: #fff		
+		letter-spacing: 5px
+		text-shadow: #638e42 3px 3px 0, #638e42 -3px -3px 0, #638e42 -3px 3px 0, #638e42 3px -3px 0 
+		float: left
+		margin-right: 20px
+	p
+		font-family: 'GilroyBold', sans-serif		
+		font-size: 20px		
+		line-height: 70px
+		color: #fff		
+		letter-spacing: 2px	
+.desc-right-top	
+	padding-bottom: 10px
+	border-bottom: 1px solid #8db670
+.desc-right-bottom
+	ul	
+		padding-left: 30px		
+		list-style-type: none
+	li
+		margin: 20px 0px
+		font-family: 'Open Sans', sans-serif		
+		font-size: 16px				
+		font-weight: 400	
+		color: #fff		
+		img
+			margin-right: 10px
+	a		
+		color: #fff
+		text-decoration: underline
+.desc-icons
+	margin-top: 40px
+	padding: 40px 20px 20px 20px
+	img
+		float: left	
+		margin-right: 30px	
+.desc-icon-text	
+	margin-top: -10px
+	span
+		font-family: 'GilroyBold', sans-serif		
+		font-size: 24px				
+		line-height: 26px
+		color: #75ab51
+		letter-spacing: 1px
+	p
+		display: inline-block
+		width: 76%
+		font-family: 'PT Sans', sans-serif		
+		font-size: 16px				
+		line-height: 20px
+		color: #000		
+		margin-top: 15px
+.desc-icons-sec
+	border-left: 1px solid #e4eedc
+	border-right: 1px solid #e4eedc	
+	p
+		width: 72%
+
+/*************************************************************Scheme******************************************************/		
+#scheme
+	padding: 65px 0px
+	min-height: 620px
+	background-color: #f2f1f1
+	background-repeat: no-repeat
+	background-position: top 30px right
+.scheme-block
+	text-align: center
+	position: relative	
+	span
+		font-family: 'GilroyRegular', sans-serif
+		font-size: 20px
+		line-height: 28px
+		color: #000
+		text-shadow: 0.2px 0 0 #000
+	i
+		font-style: normal
+		font-family: 'GilroyBold', sans-serif
+		text-shadow: none
+		color: #649f36
+	img
+		position: absolute
+		top: 68px
+		right: -55px
+.scheme-block-icon
+	width: 150px
+	height: 150px
+	background-color: #72ac40
+	border-radius: 50%
+	border: 5px solid #fff
+	text-align: center
+	margin: 0 auto
+	margin-bottom: 16px
+	p
+		font-family: 'Open Sans', sans-serif
+		font-size: 50px
+		font-weight: 800
+		color: #fff
+		padding-top: 30px
+.scheme-block-wrap
+	margin-top: 40px
+.scheme-button
+	text-align: center
+	margin-top: 50px
+	a
+		font-family: 'PT Sans', sans-serif
+		font-size: 16px				
+		color: #fff
+		letter-spacing: 1px	
+		text-shadow: 0.2px 0 0 #fff
+		padding: 12px 30px 12px 40px 
+		border-radius: 5px
+		text-transform: uppercase
+		background: rgb(121,184,65); /* Old browsers */
+		background: -moz-linear-gradient(#72ac40, #5c8f30)
+		background: -webkit-linear-gradient(#72ac40, #5c8f30)
+		background: linear-gradient(#7cbe44, #4c7924)		
+		background-size: 1px 500px
+		-moz-transition: all 0.5s ease-out
+		-o-transition: all 0.5s ease-out
+		-webkit-transition: all 0.5s ease-out
+		transition: all 0.5s ease-out
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#79b841', endColorstr='#619435',GradientType=0 )
+	a:hover
+		background-position: 200px
+
+
+/*************************************************************Contacts******************************************************/		
+#contacts
+	width: 100%
+	height: 460px
+	position: relative
+.contacts-block
+	width: 290px
+	height: 210px
+	background-color: #6cae3e
+	position: relative
+	padding-top: 20px
+	padding-left: 30px
+	margin-top: 60px
+	margin-left: 420px
+	p, a
+		font-family: 'PT Sans', sans-serif
+		font-size: 16px
+		line-height: 20px
+		letter-spacing: 2px
+		color: #fff
+		margin-bottom: 20px
+	a:hover
+		text-decoration: underline
+.contacts-block:after
+	content: ''
+	position: absolute
+	left: 0px	
+	bottom: -30px
+	border: 20px solid transparent
+	border-top: 20px solid #6cae3e
+	border-left: 20px solid #6cae3e
+.map
+	position: absolute	
+	width: 100%
+
+/*************************************************************Footer******************************************************/		
+footer
+	min-height: 140px
+	background-color: #232222
+.footer-left
+	padding-top: 25px
+	p, a
+		font-family: 'Open Sans', sans-serif
+		font-size: 16px
+		color: #fff
+		font-weight: 400
+		text-shadow: none
+	a
+		display: inline-block
+		margin-top: 13px		
+		text-decoration: underline
+.footer-right
+	text-align: right
+	padding-top: 20px
+	p
+		font-family: 'PT Sans', sans-serif
+		font-size: 22px
+		color: #fff
+		font-weight: 600
+		text-shadow: none	
+		letter-spacing: 2px
+.footer-button
+	margin-top: 20px
+	a
+		font-family: 'PT Sans', sans-serif
+		font-size: 14px
+		color: #fff
+		text-transform: uppercase
+		text-shadow: none	
+		border: 1px solid #fff
+		padding: 10px 32px
+		border-radius: 5px
+	a:hover
+		text-decoration: underline
+
 
 .hidden
 	display: none
