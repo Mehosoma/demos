@@ -112,7 +112,8 @@
 
 	.navbar-default .navbar-collapse{
 		position: absolute;
-		width: 100%;
+		width: 127%;
+		left: -37px;
 	}
 
 	.center .slider-text{
@@ -235,9 +236,9 @@
 
 	#transit-form{
 		width: 100%;
-		max-width: 550px;
+		max-width: 400px;
 		height: 316px;
-		margin: 0px;
+		margin: 0px auto;
 	}
 
 	.transit-form-top{		
@@ -335,6 +336,17 @@
 
 	.footer-right{
 		text-align: center;
+	}
+
+	.left-modal{
+		width: 300px;
+		min-height: 270px;
+	}
+
+	.right-modal{
+		width: 300px;
+		background-color: #fff;
+		box-shadow: 0 0 20px rgba(0,0,0,0.3);
 	}
 	
 }
@@ -538,9 +550,9 @@
 
 	#transit-form{
 		width: 100%;
-		max-width: 550px;
+		max-width: 480px;
 		height: 300px;
-		margin: 0px;
+		margin: 0px auto;
 	}
 
 	.transit-form-top{		
@@ -634,7 +646,7 @@
 	}
 
 	.main-header{
-		padding-top: 0px;
+		padding-top: 70px;
 	}
 
 	.first-form-header{
