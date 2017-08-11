@@ -113,7 +113,7 @@
 	.navbar-default .navbar-collapse{
 		position: absolute;
 		width: 127%;
-		left: -37px;
+		left: -69px;
 	}
 
 	.center .slider-text{
@@ -339,14 +339,18 @@
 	}
 
 	.left-modal{
-		width: 300px;
+		width: 100%;
 		min-height: 270px;
 	}
 
 	.right-modal{
-		width: 300px;
+		width: 100%;
 		background-color: #fff;
 		box-shadow: 0 0 20px rgba(0,0,0,0.3);
+	}
+
+	.hidden_form{
+		width: 100%;
 	}
 	
 }
@@ -676,9 +680,7 @@
 		margin-top: 20px;
 	}
 
-	.slide-wrap{
-		background-position: 0px 0px;
-	}
+	
 
 	.projects-icons .projects-icons-block:nth-child(1) {
  		position: relative;

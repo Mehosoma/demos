@@ -32,7 +32,7 @@ $(document).ready(function(){
         1200:{
             items:4
         },        
-        600:{
+        900:{
             items:3
         },
         480:{
