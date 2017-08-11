@@ -28,7 +28,56 @@ body
 		text-align: center
 		text-shadow: 0.5px 0 0 #000
 		letter-spacing: 5px
-
+	button
+		text-align: center
+.button-large
+	padding: 9px 26px 9px 38px	
+.button-small
+	padding: 8px 30px 8px 36px
+	display: inline-block	
+.button-green
+	background: rgb(114,172,64)
+	background: -moz-linear-gradient(#72ac40, #5c8f30, #72ac40)
+	background: -webkit-linear-gradient(#72ac40, #5c8f30, #72ac40)
+	background: linear-gradient(#72ac40, #5c8f30, #72ac40)
+	background-size: auto 200%	
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#72ac40', endColorstr='#5c8f30',GradientType=0)
+.button-orange
+	background: #e06028
+	background: -moz-linear-gradient(#f9773c, #e06028, #f9773c)
+	background: -webkit-linear-gradient(#f9773c, #e06028, #f9773c)
+	background: linear-gradient(#f9773c, #e06028, #f9773c)
+	background-size: auto 200%	
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e06028', endColorstr='#f9773c',GradientType=0)
+.button-blue
+	background: #035991
+	background: -moz-linear-gradient(#006fb7, #035991, #006fb7)
+	background: -webkit-linear-gradient(#006fb7, #035991, #006fb7)
+	background: linear-gradient(#006fb7, #035991, #006fb7)
+	background-size: auto 200%	
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#035991', endColorstr='#f9773c',GradientType=0)
+.button-gen
+	border: none
+	box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2)
+	-moz-transition: all 0.5s ease-out
+	-o-transition: all 0.5s ease-out
+	-webkit-transition: all 0.5s ease-out
+	transition: all 0.5s ease-out
+	border-radius: 5px
+.button-big-text			
+	font-family: 'PT Sans', sans-serif		
+	font-size: 15px
+	font-weight: 600	
+	color: #fff
+	letter-spacing: 2px		
+	text-transform: uppercase
+.button-small-text
+	font-family: 'GothamProRegular', sans-serif
+	font-size: 16px		
+	color: #fff
+	letter-spacing: 2px
+.button-gen:hover, .button-gen:active, .button-gen:focus				
+	background-position: 0 100%	
 
 /*************************************************************Header******************************************************/
 header
@@ -91,10 +140,10 @@ header
 	margin-left: 10px
 	border-bottom: 1px dashed #99d962
 	float: left	
-.feed-phone-text:hover
-	border-bottom: none
 .feed-phone-text:hover a
-	color: #9dec59	
+	color: #69a03a
+.feed-phone-text:hover
+	border-bottom: 1px dashed #99d962
 
 /*************************************************************First******************************************************/
 .first
@@ -209,30 +258,7 @@ header
 		border: 1px solid #f97233
 		box-shadow: -2px -2px 0px 0px #f97233
 	button	
-		width: 220px	
-		height: 40px
-		font-family: 'PT Sans', sans-serif		
-		font-size: 15px
-		font-weight: 600	
-		color: #fff
-		letter-spacing: 2px
-		padding-left: 12px
-		text-transform: uppercase
-		background: rgb(114,172,64)
-		background: -moz-linear-gradient(#72ac40, #5c8f30)
-		background: -webkit-linear-gradient(#72ac40, #5c8f30)
-		background: linear-gradient(#72ac40, #5c8f30, #72ac40)
-		background-size: auto 200%		
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#72ac40', endColorstr='#5c8f30',GradientType=0)
-		border: none
-		margin-top: 30px
-		box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.2)
-		-moz-transition: all 0.5s ease-out
-		-o-transition: all 0.5s ease-out
-		-webkit-transition: all 0.5s ease-out
-		transition: all 0.5s ease-out			
-	button:hover				
-		background-position: 0 100%
+		margin-top: 30px		
 .first-form-footer
 	padding: 20px 0px
 	text-align: center
@@ -422,22 +448,10 @@ header
 		height: 80px			
 		border: none
 		padding: 21px
-		background: rgb(112,168,62)
-		background: -moz-linear-gradient(#72ac40, #5c8f30)
-		background: -webkit-linear-gradient(#72ac40, #5c8f30)
-		background: linear-gradient(#7cbe44, #4c7924)
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#70a83e', endColorstr='#5d8b35',GradientType=0 )
 		padding-left: 60px
 		border-radius: 50px
 		overflow: hidden
-		box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.5)
-		background-size: 1px 400px
-		-moz-transition: all 0.5s ease-out
-		-o-transition: all 0.5s ease-out
-		-webkit-transition: all 0.5s ease-out
-		transition: all 0.5s ease-out
-	button:hover
-		background-position: 160px
+		box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.5)					
 	img
 		float: left	
 		margin-right: 20px
@@ -471,7 +485,7 @@ header
 		position: relative
 		top: -15px
 		left: 70px
-		letter-spacing: 5px
+		letter-spacing: 5px		
 
 /*************************************************************Packets******************************************************/
 .packets
@@ -589,52 +603,6 @@ header
 .packets-left-button
 	text-align: center
 	margin-top: 70px
-	a
-		font-family: 'GothamProRegular', sans-serif
-		font-size: 16px
-		background-color: #df6731
-		color: #fff
-		padding: 8px 23px 8px 31px
-		border: 2px solid #df6731
-		border-radius: 5px
-		letter-spacing: 2px
-		padding-left: 30px
-		box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.3)
-		-moz-transition: all 0.3s ease-out
-		-o-transition: all 0.3s ease-out
-		-webkit-transition: all 0.3s ease-out
-		transition: all 0.3s ease-out 
-	a:hover
-		border: 2px solid #df6731
-		background-color: transparent
-		color: #df6731
-		-moz-transition: all 0.3s ease-out
-		-o-transition: all 0.3s ease-out
-		-webkit-transition: all 0.3s ease-out
-		transition: all 0.3s ease-out 
-.packets-right-content .packets-left-button a
-	border: 2px solid #0071bb
-	background-color: #0071bb
-.packets-right-content .packets-left-button a:hover
-	border: 2px solid #0071bb
-	background-color: transparent
-	color: #0071bb
-	-moz-transition: all 0.3s ease-out
-	-o-transition: all 0.3s ease-out
-	-webkit-transition: all 0.3s ease-out
-	transition: all 0.3s ease-out 
-.packets-center-content .packets-left-button a
-	background-color: #76b341
-	border: 2px solid #76b341
-	padding: 11px 32px 11px 39px
-.packets-center-content .packets-left-button a:hover
-	border: 2px solid #76b341
-	background-color: transparent
-	color: #76b341
-	-moz-transition: all 0.3s ease-out
-	-o-transition: all 0.3s ease-out
-	-webkit-transition: all 0.3s ease-out
-	transition: all 0.3s ease-out 
 .packets-programm
 	width: 885px
 	height: 80px
@@ -743,17 +711,18 @@ header
 		color: #7ebc46
 		letter-spacing: 1px	
 		margin: 0px
+		margin-bottom: 3px
 	p
 		font-family: 'Open Sans', sans-serif
 		font-size: 16px	
-		line-height: 24px			
+		line-height: 20px			
 		color: #000
 		letter-spacing: 1px	
 		text-shadow: 0.2px 0 0 #000
 	ul
 		list-style-type: none
 		text-align: left
-		margin-top: 20px
+		margin-top: 28px
 		padding-left: 40px
 		li
 			font-family: 'PT Sans', sans-serif
@@ -765,7 +734,11 @@ header
 		img
 			margin-right: 10px
 			position: relative
-			top: -1px	
+			top: -1px
+.repair ul
+	margin-top: 11px	
+.repair h5
+	margin-bottom: 0px
 .calc-block-button
 	text-align: center
 	margin-top: 30px
@@ -775,20 +748,7 @@ header
 		color: #fff
 		letter-spacing: 1px	
 		text-shadow: 0.2px 0 0 #fff
-		padding: 10px 37px 10px 45px
-		border-radius: 5px
-		background: rgb(121,184,65); /* Old browsers */
-		background: -moz-linear-gradient(#72ac40, #5c8f30)
-		background: -webkit-linear-gradient(#72ac40, #5c8f30)
-		background: linear-gradient(#7cbe44, #4c7924)
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#79b841', endColorstr='#619435',GradientType=0)
-		background-size: 1px 500px
-		-moz-transition: all 0.5s ease-out
-		-o-transition: all 0.5s ease-out
-		-webkit-transition: all 0.5s ease-out
-		transition: all 0.5s ease-out
-	a:hover
-		background-position: 200px
+		padding: 10px 37px 10px 45px		
 .calc-top
 	margin-top: 50px
 	margin-left: 38px
@@ -872,7 +832,7 @@ header
 		padding: 7px 9px
 		border-radius: 5px			
 		width: 210px
-		height: 44px
+		height: 42px
 		margin-top: 20px	
 		margin-right: 15px
 	::-webkit-input-placeholder 
@@ -889,32 +849,8 @@ header
 		letter-spacing: 1px
 	input:hover, input:active, input:focus
 		border: 1px solid #f86319
-	button	
-		width: 150px	
-		height: 44px
-		font-family: 'PT Sans', sans-serif		
-		font-size: 15px
-		font-weight: 600	
-		color: #fff
-		letter-spacing: 2px
-		text-transform: uppercase
-		background-color: #f86319
-		border: 2px solid #f86319
-		border-radius: 5px
-		margin-top: 26px
-		box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.2)
-		-moz-transition: all 0.3s ease-out
-		-o-transition: all 0.3s ease-out
-		-webkit-transition: all 0.3s ease-out
-		transition: all 0.3s ease-out 
-		padding-left: 15px
-	button:hover
-		background-color: transparent
-		color: #f86319
-		-moz-transition: all 0.3s ease-out
-		-o-transition: all 0.3s ease-out
-		-webkit-transition: all 0.3s ease-out
-		transition: all 0.3s ease-out 
+	button
+		padding: 9px 28px 9px 38px
 	hr
 		margin-bottom: 0px
 	p
@@ -1078,27 +1014,7 @@ header
 	text-align: center
 	margin-top: 50px
 	a
-		font-family: 'PT Sans', sans-serif
-		font-size: 16px				
-		color: #fff
-		letter-spacing: 1px	
-		text-shadow: 0.2px 0 0 #fff
-		padding: 12px 30px 12px 40px 
-		border-radius: 5px
-		text-transform: uppercase
-		background: rgb(121,184,65); /* Old browsers */
-		background: -moz-linear-gradient(#72ac40, #5c8f30)
-		background: -webkit-linear-gradient(#72ac40, #5c8f30)
-		background: linear-gradient(#7cbe44, #4c7924)		
-		background-size: 1px 500px
-		-moz-transition: all 0.5s ease-out
-		-o-transition: all 0.5s ease-out
-		-webkit-transition: all 0.5s ease-out
-		transition: all 0.5s ease-out
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#79b841', endColorstr='#619435',GradientType=0 )
-	a:hover
-		background-position: 200px
-
+		display: inline-block
 
 /*************************************************************Contacts******************************************************/		
 #contacts
@@ -1175,6 +1091,103 @@ footer
 	a:hover
 		text-decoration: underline
 
+
+.hidden_form
+	min-height: 440px	
+	width: 610px
+	background-color: #f7f7f7
+	text-align: center
+	margin-top: 60px	
+	margin: 0 auto
+	position: relative
+	overflow: hidden
+	.row
+		margin: 0px
+	.col-lg-5
+		padding: 0px
+	.col-lg-7
+.right-modal
+	padding: 20px 0
+	background-color: #f7f7f7
+	h5
+		font-family: 'GilroyRegular', sans-serif
+		font-size: 18px
+		line-height: 24px
+		color: #000
+		letter-spacing: 1.5px	
+		margin-top: 10px
+		text-shadow: 0.5px 0 0 #000
+		padding-bottom: 20px
+	input
+		width: 185px
+		height: 40px	
+		border: 1px solid #c1c0c0
+		border-radius: 5px
+		background-color: transparent
+		padding-left: 15px
+		padding-right: 10px
+		font-family: 'Open Sans', sans-serif
+		font-size: 13px
+		letter-spacing: 0px		
+		color: #000
+	::-webkit-input-placeholder 
+		color: #969696	
+		font-size: 13px	
+	::-moz-placeholder
+		color: #969696		
+	:-moz-placeholder 
+		color: #969696		
+	:-ms-input-placeholder      
+		color: #969696	
+	input:hover, input:active, input:focus
+		border: 1px solid #7ebc46	
+	i
+		display: block
+		font-family: 'PT Sans', sans-serif
+		font-size: 12px		
+		color: #969696
+		line-height: 16px
+		margin: 0 5%
+		padding-top: 20px
+	button
+		padding: 9px 76px
+		margin-top: 10px
+	.form-modal-field
+		margin: 20px 27px
+		span
+			float: left
+			font-family: 'GilroyBold', sans-serif
+			font-size: 13px		
+			color: #000	
+			position: relative
+			line-height: 40px		
+		input
+			float: right
+.left-modal
+	box-shadow: 0 0 20px rgba(0,0,0,0.3)
+	background-color: #6cae3e
+	position: relative
+	z-index: 1
+	min-height: 440px
+	text-align: left
+	padding-top: 35px
+	padding-left: 20px
+	h6
+		margin: 0px
+		font-family: 'GilroyRegular', sans-serif
+		font-size: 18px
+		color: #fff
+		padding-bottom: 30px
+		letter-spacing: 2px
+	p, a
+		font-family: 'PT Sans', sans-serif
+		font-size: 16px
+		line-height: 20px
+		letter-spacing: 2px
+		color: #fff	
+		padding-bottom: 20px	
+	a:hover
+		text-decoration: underline
 
 .hidden
 	display: none
