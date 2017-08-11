@@ -28,9 +28,20 @@ $(document).ready(function(){
     nav:true,
     margin:0,
     responsive:{
-        600:{
+
+        1200:{
             items:4
+        },        
+        600:{
+            items:3
+        },
+        480:{
+            items:2
+        },
+        320:{
+            items:1
         }
+
     }
   });
 
