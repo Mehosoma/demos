@@ -8,6 +8,7 @@ body
 	-webkit-font-smoothing: antialiased
 	overflow-x: hidden	
 	margin: 0 auto
+	background-color: #fff
 	a:hover, a:focus, a:active
 		text-decoration: none
 		outline: none
@@ -215,18 +216,18 @@ header
 .first-form-header
 	text-align: center
 	height: 135px
-	padding-top: 30px
+	padding-top: 20px
 	border-bottom: 1px solid #e3e3e3
 	span
 		font-family: 'GilroyBold', sans-serif
 		font-size: 28px
-		text-transform: uppercase
 		color: #000
 	p
 		font-family: 'PT Sans', sans-serif
 		font-size: 18px 
 		line-height: 20px
 		color: #000
+		margin-top: 10px
 .first-form-content
 	text-align: center
 	border-bottom: 1px solid #e3e3e3
@@ -241,7 +242,7 @@ header
 		border-radius: 5px			
 		width: 220px
 		margin-top: 20px
-		box-shadow: -2px -2px 0px 0px #e3e3e3
+		box-shadow: -1px -1px 0px 0px #e3e3e3
 	::-webkit-input-placeholder 
 		color: #000
 		letter-spacing: 1px
@@ -256,7 +257,7 @@ header
 		letter-spacing: 1px
 	input:hover, input:active, input:focus
 		border: 1px solid #f97233
-		box-shadow: -2px -2px 0px 0px #f97233
+		box-shadow: -1px -1px 0px 0px #f97233
 	button	
 		margin-top: 30px		
 .first-form-footer
@@ -341,12 +342,12 @@ header
 .owl-carousel .owl-stage-outer
 	overflow: visible!important
 .owl-prev, .owl-next
-	width: 76px
-	height: 76px
+	width: 65px
+	height: 65px
 	background-image: url('../img/left-arrow.png')
 	background-repeat: no-repeat
 	background-position: center center
-	opacity: 0.7
+	opacity: 1
 	-moz-transition: all 0.3s ease-out
 	-o-transition: all 0.3s ease-out
 	-webkit-transition: all 0.3s ease-out
@@ -355,15 +356,15 @@ header
 .owl-next
 	background-image: url('../img/right-arrow.png')
 .owl-prev:hover, .owl-prev:active, .owl-prev:focus, .owl-next:hover, .owl-next:active, .owl-next:focus 
-	opacity: 1
+	opacity: 0.7
 	-moz-transition: all 0.3s ease-out
 	-o-transition: all 0.3s ease-out
 	-webkit-transition: all 0.3s ease-out
 	transition: all 0.3s ease-out 
 .owl-nav
 	position: absolute
-	bottom: 0px
-	left: 55%
+	bottom: 10px
+	left: 56%
 .slide-wrap
 	position: relative
 	width: 100%
@@ -399,13 +400,13 @@ header
 		letter-spacing: 2px
 		text-shadow: 0.2px 0 0 #000
 .projects-icons
-	margin-top: 50px	
-	margin-bottom: 32px
+	margin-top: 50px
 .projects-icons .projects-icons-block:nth-child(1), .projects-icons .projects-icons-block:nth-child(4)
 	margin-top: -150px
 .line
 	img
-		position: absolute		
+		position: absolute
+		z-index: -1		
 .projects-icons .projects-icons-block:nth-child(1)
 	position: relative
 	right: -90px
@@ -417,19 +418,19 @@ header
 	margin-right: -59px
 .projects-icons .projects-icons-block:nth-child(2)
 	position: relative
-	top: -25px
+	top: -55px
 .projects-icons .projects-icons-block:nth-child(2) .line img
-	top: 0
+	top: 0px
 	right: 0px
-	margin-top: -78px
+	margin-top: -48px
 	margin-right: 70px
 .projects-icons .projects-icons-block:nth-child(3)
 	position: relative
-	top: -25px	
+	top: -55px	
 .projects-icons .projects-icons-block:nth-child(3) .line img
 	top: 0
 	left: 0px
-	margin-top: -85px
+	margin-top: -48px
 	margin-left: 60px
 .projects-icons .projects-icons-block:nth-child(4)
 	position: relative	
@@ -441,9 +442,11 @@ header
 	margin-left: -107px
 	margin-top: -5px
 .projects-button
-	text-align: center
+	text-align: center	
 	margin-bottom: -40px	
 	button
+		display: block
+		margin: 0 auto
 		width: 380px
 		height: 80px			
 		border: none
@@ -490,7 +493,11 @@ header
 /*************************************************************Packets******************************************************/
 .packets
 	padding: 80px 0px 100px
-	background-color: #f4f3f3
+	background: rgb(255,255,255); /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(220,220,220,1) 68%)
+	background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%,rgba(220,220,220,1) 68%)
+	background: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%,rgba(220,220,220,1) 68%)
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dcdcdc',GradientType=1 )
 	h2
 		margin-bottom: 160px
 	.col-lg-4
@@ -544,8 +551,7 @@ header
 	padding-top: 122px
 	h3
 		font-size: 34px
-		color: #76b341
-		text-align: left
+		color: #76b341		
 		padding-left: 30px	
 		margin-bottom: 24px
 	p, strong
@@ -557,7 +563,7 @@ header
 	background-color: #f3743a
 	border: 15px solid #fff
 	text-align: center
-	padding-top: 50px
+	padding-top: 54px
 	box-shadow: 0px 0px 30px 10px rgba(0,0,0,0.1)
 	padding-left: 10px
 	margin: 0 auto
@@ -584,9 +590,9 @@ header
 .packets-center .circle
 	width: 236px
 	height: 236px
-	padding-top: 55px
+	padding-top: 58px
 	background-color: #76b341
-	padding-left: 5px
+	padding-left: 8px
 	top: -118px	
 	strong
 		font-size: 90px	
@@ -850,7 +856,8 @@ header
 	input:hover, input:active, input:focus
 		border: 1px solid #f86319
 	button
-		padding: 9px 28px 9px 38px
+		padding: 0px 30px 0px 38px
+		line-height: 42px
 	hr
 		margin-bottom: 0px
 	p
@@ -858,7 +865,7 @@ header
 		font-size: 14px
 		font-weight: 400	
 		color: #a9a9a9
-		letter-spacing: 2px
+		letter-spacing: 1px
 		font-style: italic
 		padding-left: 33px
 		padding-top: 7px
@@ -930,16 +937,19 @@ header
 		padding-left: 30px		
 		list-style-type: none
 	li
-		margin: 20px 0px
-		font-family: 'Open Sans', sans-serif		
-		font-size: 16px				
-		font-weight: 400	
-		color: #fff		
+		margin: 20px 0px		
 		img
 			margin-right: 10px
-	a		
-		color: #fff
-		text-decoration: underline
+		a
+			font-family: 'Open Sans', sans-serif		
+			font-size: 16px						
+			font-weight: 400	
+			color: #fff		
+			line-height: 17px	
+			border-bottom: 1px solid #fff
+			display: inline-block
+		a:hover
+			border-bottom: none
 .desc-icons
 	margin-top: 40px
 	padding: 40px 20px 20px 20px
@@ -991,12 +1001,12 @@ header
 		color: #649f36
 	img
 		position: absolute
-		top: 68px
-		right: -55px
+		top: 66px
+		right: -53px
 .scheme-block-icon
-	width: 150px
-	height: 150px
-	background-color: #72ac40
+	width: 146px
+	height: 146px
+	background-color: #7ebc46
 	border-radius: 50%
 	border: 5px solid #fff
 	text-align: center
@@ -1007,7 +1017,7 @@ header
 		font-size: 50px
 		font-weight: 800
 		color: #fff
-		padding-top: 30px
+		padding-top: 24px
 .scheme-block-wrap
 	margin-top: 40px
 .scheme-button
