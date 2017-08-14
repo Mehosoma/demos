@@ -128,6 +128,10 @@
 		background-color: #fff;
 	}
 
+	.navbar-nav{
+		margin: 7.5px 0px;
+	}
+
 	.first-screen img{
 		width: 100%;
 		height: auto;
@@ -256,6 +260,10 @@
 
 	.navbar-toggle{
 		margin-right: 0px;
+	}
+
+	.navbar-nav{
+		margin: 7.5px 0px;
 	}
 
 	.first-screen img{
