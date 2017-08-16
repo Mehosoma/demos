@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<html lang="ru">
+
+	<title></title>
+	<meta name="Главная" content="">
+	<meta name="keywords" content=""/>
+	
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="format-detection" content="telephone=no">
+
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+
+</head>
+
+<div class="form-one">
+	<div class="modal-logo-top">
+		<img src="img/modal-logo.png" alt="modal-logo-image">
+	</div>
+	<div class="modal-logo-middle">
+		<img src="img/modal-logo-middle.png" alt="modal-logo-middle-image">	
+	</div>
+	<form id="modal-one" method="post" action="">
+		<span>Введите номер телефона</span>
+		<input type="text" name="phone" placeholder="+7 (___) ___ - _____ " required="">
+		<button type="submit">Отправить смс с кодом</button>
+	</form>
+</div>
+
+<div class="form-two">
+	<div class="modal-logo-top">
+		<img src="img/modal-logo.png" alt="modal-logo-image">
+	</div>
+	<div class="modal-logo-middle">
+		<img src="img/modal-logo-middle.png" alt="modal-logo-middle-image">	
+	</div>
+	<form id="modal-two" method="post" action="">
+		<span>Введите номер телефона</span>
+		<input type="text" name="phone2" placeholder="+7 (___) ___ - _____ " required="">
+		<div class="add-field">
+			<span>Введите пароль из смс</span>
+			<input type="password" name="pass" required="">
+		</div>
+		<button type="submit">Подключиться</button>
+	</form>
+</div>
+
+<body>
+
+	<div class="hidden"></div>
+
+	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
+	<script src="libs/bootstrap/js/bootstrap.js"></script>
+	<script src="js/common.js"></script>
+	
+</body>
+</html>
