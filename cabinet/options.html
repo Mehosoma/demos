@@ -49,7 +49,7 @@
 			</div>
 			<div class="col-lg-8 col-lg-pull-2 col-md-8 col-md-pull-1 col-sm-8 col-sm-pull-2 col-xs-12">
 				<div class="main-header">
-					<span>Общая сводка на <p>15 сентября 2017 г.</p></span>
+					<span>Настройки</p></span>
 				</div>
 			</div>						
 		</div>
@@ -62,7 +62,7 @@
 			<div class="col-lg-1 col-md-2 col-sm-12 col-xs-12">
 				<div class="menu-wrap col-height">
 					<nav class="main-menu">
-						<ul class="clearfix">
+						<ul>
 							<li><a href="svodka.html"><span>Сводка</span></a></li>
 							<li><a href="clients.html"><span>Клиенты</span></a></li>
 							<li><a href="reports.html"><span>Отчеты</span></a></li>
@@ -72,56 +72,78 @@
 				</div>
 			</div>
 			<div class="col-lg-11 col-md-10 col-sm-12 col-xs-12 col-height">
-				<div class="svodka-diag clearfix">
-					<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
-						<div class="diag-left">
-							<span>Посетители</span>
-							<div class="circles">
-								<div class="outer-circle">
-									<span>15<br><p>клиентов</p></span>
-								</div>
-								<div class="inner-circle">
-									<span>256 гб<br><p>трафика</p></span>
-								</div>
-							</div>
+				<div class="options-content clearfix">
+					<div class="options-subscribe">
+						<span>Подписка</span>
+						<div class="details">
+							<span>Активна до <p>26 сентября 2017 года</p></span>
+							<a href="">Запросить детализацию</a>
 						</div>
+						<div class="balance">
+							<input type="text" name="balance" placeholder="4000">
+							<a href="">Пополнить</a>
+						</div>											
 					</div>
-					<div class="col-lg-7 col-md-7 col-sm-8 col-xs-10 clearfix">
-						<div class="diag-right">
-							<span>Новые посетители</span>
-							<img src="img/diag-2.png" alt="diagramm-image">
-						</div>
-					</div>				
-					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 clearfix">
-						<div class="diag-bottom">
-							<span class="last-active-text">Последняя активность</span>
-							<img src="img/diag-bottom.png" alt="diagramm-image">		
-						</div>				
+					<div class="start-page">
+						<span>Стартовая страница</span>
+						<input type="text" name="start-page" placeholder="http://yandex.ru">
+						<a href="">Сохранить</a>
+						<img src="img/ok-icon.png" alt="icon-image">
 					</div>	
-					<div class="col-lg-12 col-md-12 col-sm-12 clearfix">
-						<div class="diag-cart">
-							<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
-								<div class="diag-cart-block">
-									<img src="img/diag-cart-1.png">
+					<div class="news">
+						<span>Новости</span>
+						<div class="news-field">
+							<div class="news-field-header">
+								<span>Заголовок</span>
+								<span class="date-header">Дата</span>
+							</div>
+							<div class="news-field-content clearfix">
+								<div class="news-options-text clearfix">															
+									<span class="news-options-text-header"><img src="img/ok-icon.png" alt="ok-image" class="ok-image">	Акция номер 1</span>
+									<span class="date">22.05.2017</span>
+								</div>
+								<div class="news-options">																		
+									<a href=""><img src="img/new-news.png" alt="new-icon"></a>
+									<a href=""><img src="img/delete.png" alt="delete-icon"></a>
+									<img src="img/line.png" alt="line-image" class="line-image">
+									<span>Вы действительно хотите удалить активную новость?</span>
+									<a href="" class="accept">Да</a>
+									<a href="" class="accept">Нет</a>									
 								</div>
 							</div>
-							<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
-								<div class="diag-cart-block">
-									<img src="img/diag-cart-1.png">
-								</div>
-							</div>
-							<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
-								<div class="diag-cart-block">
-									<img src="img/diag-cart-1.png">
-								</div>
+							<div class="news-field-content clearfix">
+								<div class="news-options-text clearfix">															
+									<span class="news-options-text-header"><img src="img/ok-icon.png" alt="ok-image" class="ok-image">	Акция номер 1 Проверка заголовка</span>
+									<span class="date">22.05.2017</span>
+								</div>							
 							</div>
 						</div>
-					</div>
-					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-						<div class="more-info">
-							<a href=""><img src="img/plus.png" alt="more-info-image"></a>
-						</div>						
-					</div>				
+						<div class="news-add">
+							<div class="col-lg-5 col-md-5 col-sm-6 col-xs-12">
+								<div class="news-add-button">
+									<a href="">Добавить новость</a>
+								</div>
+							</div>
+							<div class="col-lg-7 col-md-7 col-sm-6 col-xs-12">
+								<div class="news-add-content clearfix">
+									<img src="img/line.png" alt="line-image">
+									<form id="news-add-form">
+										<div class="news-add-form-field">
+											<span>Заголовок</span>
+											<input type="text" name="news-add-header" required="">	
+										</div>
+										<div class="news-add-form-field">
+											<span>Описание</span>
+											<textarea required=""></textarea>
+										</div>
+										<div class="news-add-form-submit">
+											<button type="submit" class="gen-btn">Сохранить</button>
+										</div>
+									</form>
+								</div>
+							</div>						
+						</div>
+					</div>					
 				</div>
 			</div>
 		</div>
@@ -132,7 +154,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-				<div class="footer-content">
+				<div class="footer-content clearfix">
 					<div class="col-lg-6 col-md-6 col-sm-8 col-xs-12">
 						<div class="footer-menu">
 							<ul>
