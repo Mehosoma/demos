@@ -52,7 +52,7 @@
 	}
 
 	.svodka-content .col-lg-11{
-		padding-left: 10px;
+		padding-left: 0px;
 	}
 
 	.diag-right img, .diag-bottom img, .diag-cart-block img{
@@ -110,7 +110,7 @@
 	}
 
 	.clients-content .col-lg-11{
-		padding-left: 10px;
+		padding-left: 0px;
 	}
 
 	.clients-content-menu, .client-reports{
@@ -213,7 +213,7 @@
 	}
 
 	.reports-content-right ul li{
-		padding: 3px 7px;
+		padding: 3px 6px;
 	}
 
 	.reports-content-right li a{

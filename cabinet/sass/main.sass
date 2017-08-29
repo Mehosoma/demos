@@ -7,6 +7,7 @@ body
 	line-height: 1.6
 	-webkit-font-smoothing: antialiased
 	overflow-x: hidden	
+	overflow-y: scroll
 	margin: 0 auto
 	background-color: #fff
 	a:hover, a:focus, a:active
@@ -48,8 +49,12 @@ body
 	background-image: url('../img/tr-grey.png')
 	background-repeat: no-repeat
 	background-position: center left 100px
-.th-triang:hover
-	background-image: url('../img/tr-black.png')
+.th-triang span:hover
+	cursor: pointer
+.th-triang-down
+	background-image: url('../img/tr-black-down.png')
+	span
+		color: #000!important
 
 /*******************************************Header******************************/
 header
@@ -141,7 +146,8 @@ header
 /*******************************************Footer******************************/
 footer
 	min-height: 54px
-	margin-top: -6px
+	position: relative
+	top: -6px
 .footer-content
 	border-top: 1px solid #d1d1d1
 .footer-menu
@@ -323,6 +329,7 @@ footer
 		width: 80px
 		float: left		
 	textarea
+		border: 1px solid #c2c2c2
 		width: 427px
 		height: 190px
 		border-color: #ccc
@@ -392,14 +399,12 @@ footer
 			font-family: 'HelveticaRegular', sans-serif
 			font-size: 14px
 			color: #000			
-		th a
+		th span
 			font-family: 'HelveticaRegular', sans-serif
 			font-size: 14px
 			color: #999
 			display: block
-			font-weight: normal	
-		th:hover a
-			color: #000
+			font-weight: normal			
 		.first-td
 			width: 70px
 			padding-right: 15px			
@@ -417,6 +422,7 @@ footer
 		font-size: 18px
 		color: #000	
 	textarea
+		border: 1px solid #c2c2c2
 		width: 470px
 		height: 222px
 		border-color: #ccc
@@ -718,6 +724,7 @@ footer
 		padding-right: 15px
 		margin-top: 6px
 	textarea
+		border: 1px solid #c2c2c2
 		width: 405px
 		height: 102px
 		border-color: #ccc

@@ -33,3 +33,10 @@ $(document).ready(function(){
 	});
 });
 
+$(document).ready(function(){
+	$('.th-triang').on('click',function(e){
+    	e.preventDefault();    	
+    	$(this).toggleClass('th-triang-down');
+	});
+});
+
