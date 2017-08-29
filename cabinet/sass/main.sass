@@ -193,23 +193,28 @@ footer
 .first-viz
 	background-image: url('../img/tr-grey.png')
 	background-repeat: no-repeat
-	background-position: center left 100px
-.first-viz:hover, .last-viz:hover
-	background-image: url('../img/tr-black.png')
+	background-position: center left 100px	
 .last-viz
-	background-image: url('../img/tr-grey.png')
+	background-image: url('../img/tr-grey-down.png')
 	background-repeat: no-repeat
 	background-position: center left 120px
+.first-viz span:hover, .last-viz span:hover
+	cursor: pointer
 .report-header
 	width: 200px
-	a
+	span
 		font-family: 'HelveticaRegular', sans-serif
 		font-size: 14px
 		color: #999
 		display: block
 		font-weight: normal				
-.report-header:hover a
+.sort-active span, .sort-active-down span
 		color: #000
+		cursor: pointer
+.sort-active
+	background-image: url('../img/tr-black.png')
+.sort-active-down
+	background-image: url('../img/tr-black-down.png')
 .phone-number	
 	a
 		font-family: 'HelveticaRegular', sans-serif
