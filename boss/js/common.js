@@ -56,3 +56,12 @@ var target = $(this).attr('href');
 $('html, body').animate({scrollTop: $(target).offset().top}, 800);
 return false;
 });
+
+
+//Add block in masters section
+$(document).ready(function(){
+    $('.hc-show').on('click',function(e){
+        e.preventDefault();        
+        $(".hidden-content").slideDown("normal"); 
+    });
+});
