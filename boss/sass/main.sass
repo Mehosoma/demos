@@ -1,0 +1,657 @@
+@import "bourbon/bourbon"
+
+body
+	min-width: 320px
+	max-width: 1500px
+	position: relative
+	line-height: 1.6
+	-webkit-font-smoothing: antialiased
+	overflow-x: hidden	
+	margin: 0 auto
+	background-color: #fff
+	a:hover, a:focus, a:active
+		text-decoration: none
+		outline: none
+	input:focus, input:active
+		text-decoration: none
+		outline: none
+	button:focus, button:active
+		text-decoration: none
+		outline: none
+
+.section-header
+	text-align: center
+	h2
+		font-family: 'Roboto', sans-serif
+		font-size: 28px
+		color: #fff
+		font-weight: 300	
+		text-align: center
+		margin-bottom: 14px
+	hr
+		width: 160px
+		height: 1px
+		border: none
+		background-color: #e9d456
+		background: #e9d456
+		display: inline-block		
+	img
+		position: relative
+		top: -17px
+		margin: 0px 38px
+
+
+
+/************************************************Header*********************************/
+header
+	min-height: 100px
+	position: relative
+	z-index: 100
+.logo
+	line-height: 100px
+.navbar-default	
+	background-color: transparent
+	border: none	
+	margin-top: 30px
+.navbar-default .navbar-nav > li
+	padding: 10px 13px 10px
+.navbar-default .navbar-nav > li > a
+	font-family: 'Roboto', sans-serif
+	font-size: 16px
+	color: #fff
+	font-weight: 300
+	padding: 0px
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:active, .navbar-default .navbar-nav > li > a:focus
+	color: #ecd455
+	border-bottom: 1px solid #ecd455
+.phone
+	padding-left: 10px
+	span
+		font-family: 'Roboto', sans-serif
+		font-size: 20px
+		color: #fff
+		font-weight: 500
+		line-height: 100px
+.order-button	
+	margin-left: -10px
+	line-height: 100px
+	a		
+		background-color: #de3539
+		font-family: 'Roboto', sans-serif
+		font-size: 16px
+		color: #fff
+		font-weight: 500		
+		text-transform: uppercase
+		padding: 11px 26px
+		-moz-transition: all 0.5s ease-out
+		-o-transition: all 0.5s ease-out
+		-webkit-transition: all 0.5s ease-out
+		transition: all 0.5s ease-out
+	a:hover
+		background-color: #bc272b
+
+
+/************************************************FirstScreen*********************************/
+.first-screen
+	width: 100%
+	min-height: 550px
+	margin-top: -100px
+	background-image: url('../img/first-bg.jpg')
+	background-size: 100% 100%
+	background-repeat: no-repeat
+	background-position: center center
+.main-header
+	margin-top: 174px
+	h1
+		font-family: 'Roboto', sans-serif
+		font-size: 46px
+		color: #fff
+		font-weight: 400
+		line-height: 62px		
+		text-align: center
+	i
+		font-style: normal
+		font-weight: 100
+.first-screen-button
+	margin-top: 35px
+	text-align: center
+	a
+		background-color: #f3e06b
+		font-family: 'Roboto', sans-serif
+		font-size: 24px
+		color: #414141
+		font-weight: 400		
+		text-transform: uppercase
+		padding: 11px 25px
+		-moz-transition: all 0.5s ease-out
+		-o-transition: all 0.5s ease-out
+		-webkit-transition: all 0.5s ease-out
+		transition: all 0.5s ease-out
+	a:hover
+		background-color: #cfba3f
+.benefits-block
+	height: 45px
+	line-height: 44px	
+	margin-top: 75px
+	padding-left: 95px
+	img
+		margin-right: 20px
+	span
+		display: inline-block
+		font-family: 'Roboto', sans-serif
+		font-size: 16px
+		color: #fff
+		font-weight: 300
+		line-height: normal
+		vertical-align: middle
+		width: 75%
+
+
+/************************************************Girls*********************************/
+#girls
+	width: 100%
+	min-height: 1095px
+	background-image: url('../img/girls-bg.jpg')
+	background-size: 100% 100%
+	background-repeat: no-repeat
+	background-position: center center
+	padding-top: 50px	
+.girls-block
+	width: 270px
+	height: 358px
+	position: relative	
+	margin: 30px auto 0px
+	img		
+		width: 100%
+		height: 100%
+.girls-block-hover
+	width: 100%
+	height: 100%
+	background-color: rgba(0,0,0,0.7)
+	position: absolute
+	top: 0
+	left: 0
+	opacity: 0
+	text-align: center
+	-moz-transition: all 0.5s ease-out
+	-o-transition: all 0.5s ease-out
+	-webkit-transition: all 0.5s ease-out
+	transition: all 0.5s ease-out
+	img
+		width: 64px
+		height: 68px	
+		margin-top: 100px	
+.girls-block:hover .girls-block-hover
+	opacity: 1
+.girls-block:hover .girls-block-overlay
+	opacity: 0
+.girls-block-overlay
+	width: 100%
+	height: 118px
+	position: absolute
+	bottom: 0px
+	left: 0px
+	background-color: rgba(0,0,0,0.7)
+	-moz-transition: all 0.5s ease-out
+	-o-transition: all 0.5s ease-out
+	-webkit-transition: all 0.5s ease-out
+	transition: all 0.5s ease-out
+.girls-block-text
+	width: 100%
+	position: absolute
+	bottom: 13px		
+.name, .girls-characters-left, .girls-characters-right
+	text-align: center
+	display: block
+	font-family: 'Roboto', sans-serif
+	font-size: 18px
+	color: #fff
+	font-weight: 400
+.girls-characters-left, .girls-characters-right
+	text-align: left
+	float: left
+	padding-top: 8px
+	span
+		display: block		
+		color: #e9d456
+		font-size: 16px
+	span:nth-child(2)
+		padding-top: 5px
+	i
+		font-style: normal
+		font-weight: 300
+		color: #fff
+.girls-characters-left
+	margin-right: 30px
+	padding-left: 30px
+.girls-button		
+	margin-top: 50px
+	text-align: center
+	a		
+		background-color: #f3e06b
+		font-family: 'Roboto', sans-serif
+		font-size: 16px
+		color: #000
+		font-weight: 500		
+		text-transform: uppercase
+		padding: 11px 16px
+		-moz-transition: all 0.5s ease-out
+		-o-transition: all 0.5s ease-out
+		-webkit-transition: all 0.5s ease-out
+		transition: all 0.5s ease-out
+	a:hover
+		background-color: #cfba3f
+
+
+
+/************************************************Programms*********************************/
+#programms	
+	width: 100%
+	min-height: 1288px
+	background-image: url('../img/programs-bg.jpg')
+	background-size: 100% 100%
+	background-repeat: no-repeat
+	background-position: center center
+	padding-top: 50px
+	.section-header
+		margin-bottom: 50px
+.container-programms
+	width: 1388px
+	padding-right: 15px
+	padding-left: 15px
+	margin-right: auto
+	margin-left: auto
+.programms-block
+	width: 347px
+	height: 512px
+	position: relative
+	cursor: pointer
+.programms-overlay
+	position: absolute
+	width: 100%
+	height: 100%
+	top: 0
+	left: 0
+	background-color: rgba(0,0,0,0.7)
+	z-index: 10
+	opacity: 0
+	-moz-transition: all 0.5s ease-out
+	-o-transition: all 0.5s ease-out
+	-webkit-transition: all 0.5s ease-out
+	transition: all 0.5s ease-out
+.programms-block:hover .programms-overlay
+	opacity: 1
+.programms-block-text
+	position: absolute
+	top: 0
+	left: 0
+	text-align: center
+	padding-top: 55px
+	z-index: 100
+	.programms-block-text-header
+		font-family: 'Roboto', sans-serif
+		font-size: 22px
+		line-height: 24px
+		color: #e9d456
+		font-weight: 400		
+		height: 57px
+		display: block	
+	p
+		font-family: 'Roboto', sans-serif
+		font-size: 16px
+		color: #fff
+		font-weight: 300
+		padding: 0px 23px
+		margin-top: 20px				
+	img		
+		text-align: center
+		display: block
+		margin: 0 auto
+	hr
+		width: 280px
+		height: 1px
+		border: none
+		background-color: #e9d456
+		background: #e9d456
+		display: inline-block	
+.text-middle
+	height: 200px
+.programms-block-character	
+	text-align: left	
+	padding-left: 30px
+	img
+		display: inline-block
+		margin-right: 10px
+	span
+		font-family: 'Roboto', sans-serif
+		font-size: 16px
+		color: #fff
+		font-weight: 300
+.programms-block-ch
+	margin-bottom: 10px
+.programms-block-ch-left
+	display: inline-block
+.programms-block-ch-right
+	display: inline-block
+	padding-left: 45px
+
+
+/************************************************Membership*********************************/
+#membership
+	width: 100%
+	min-height: 585px
+	background-image: url('../img/membership-bg.jpg')
+	background-size: 100% 100%
+	background-repeat: no-repeat
+	background-position: center center
+	padding-top: 45px
+	.col-lg-6
+		img
+			margin-top: 15px
+.left-button
+	margin-left: 26px
+.right-button
+	margin-left: 90px
+
+/************************************************Interior*********************************/
+#interior
+	width: 100%
+	min-height: 734px
+	background-image: url('../img/interior-bg.jpg')
+	background-size: 100% 100%
+	background-repeat: no-repeat
+	background-position: center center
+	overflow: visible!important
+	padding-top: 45px
+.owl-wrap
+	width: 100%
+	overflow: hidden
+	margin: 35px auto
+.owl-carousel
+	width: 970px
+	margin: 0 auto
+.owl-item				
+	width: 570px!important
+	height: 409px!important
+	img
+		width: 100%
+		height: 100%		
+		-webkit-transform: scale(0.8)!important
+		-moz-transform: scale(0.8)!important
+		-o-transform: scale(0.8)!important
+		transform: scale(0.8)!important
+		-moz-transition: all 1s ease-out
+		-o-transition: all 1s ease-out
+		-webkit-transition: all 1s ease-out
+		transition: all 1s ease-out 		
+.center		
+	z-index: 1000			
+	img
+		-webkit-transform: scale(1)!important
+		-moz-transform: scale(1)!important
+		-o-transform: scale(1)!important
+		transform: scale(1)!important
+		-moz-transition: all 1s ease-out
+		-o-transition: all 1s ease-out
+		-webkit-transition: all 1s ease-out
+		transition: all 1s ease-out 
+.owl-next
+	background-image: url('../img/next-arrow.png')
+	background-repeat: no-repeat
+	width: 100px 
+	height: 36px
+	position: absolute
+	top: 40%
+	right: 0px
+	margin-right: -150px	
+.owl-next:hover, .owl-next:active, .owl-next:focus
+	background-image: url('../img/next-arrow-y.png')
+.owl-prev:hover, .owl-prev:active, .owl-prev:focus
+	background-image: url('../img/prev-arrow-y.png')
+.owl-prev
+	background-image: url('../img/prev-arrow.png')
+	background-repeat: no-repeat
+	width: 100px 
+	height: 36px
+	top: 40%
+	left: 0px
+	margin-left: -100px
+	position: absolute	
+.owl-dots
+	text-align: center
+	margin-top: 40px
+	.owl-dot
+		width: 20px
+		height: 20px
+		display: inline-block
+		margin-right: 18px
+		background-color: #fff
+		border-radius: 50%	
+	.active
+		background-color: #e9d456
+		
+
+
+/************************************************About*********************************/
+#about
+	width: 100%
+	min-height: 599px
+	background-image: url('../img/about-bg.jpg')
+	background-size: 100% 100%
+	background-repeat: no-repeat
+	background-position: center center
+	padding-top: 45px
+#about-form
+	margin-top: 36px
+	input
+		width: 470px
+		height: 55px
+		border: none
+		margin-bottom: 20px
+		padding-left: 20px
+		padding-right: 20px		
+	textarea
+		border: none
+		width: 470px
+		height: 170px
+		resize: none
+		margin-bottom: 30px
+		padding-left: 20px
+		padding-right: 20px
+		padding-top: 10px
+	input, textarea
+		font-family: 'Roboto', sans-serif
+		font-size: 18px
+		color: #414141
+		font-weight: 300	
+	button
+		width: 470px
+		height: 55px
+		font-family: 'Roboto', sans-serif
+		font-size: 24px
+		color: #414141
+		font-weight: 500
+		background-color: #ebd65a
+		border: none
+		-moz-transition: all 0.5s ease-out
+		-o-transition: all 0.5s ease-out
+		-webkit-transition: all 0.5s ease-out
+		transition: all 0.5s ease-out
+	button:hover
+		background-color: #cfba3f
+.feedback-top
+	float: left
+	display: block
+	width: 100%
+	span
+		font-family: 'Roboto', sans-serif
+		font-size: 18px
+		color: #fff
+		font-weight: 400	
+	img
+		margin-right: 40px	
+.f-date
+	float: right
+	line-height: 53px
+.feedback-wrap
+	margin-top: 36px
+.feedback
+	padding-left: 117px
+	margin-bottom: 3px
+	margin-bottom: 15px
+	hr
+		width: 380px	
+		float: right
+		display: block
+		margin: 0px
+.feedback-bottom
+	display: block
+	float: left
+	p
+		font-family: 'Roboto', sans-serif
+		font-size: 14px
+		line-height: 24px
+		color: #fff
+		font-weight: 400
+		margin-top: 10px	
+.feedback-button
+	margin-top: 10px
+	padding-left: 117px
+	a		
+		background-color: #f3e06b
+		font-family: 'Roboto', sans-serif
+		font-size: 16px
+		color: #000
+		font-weight: 500		
+		text-transform: uppercase
+		padding: 12px 30px
+		-moz-transition: all 0.5s ease-out
+		-o-transition: all 0.5s ease-out
+		-webkit-transition: all 0.5s ease-out
+		transition: all 0.5s ease-out
+	a:hover
+		background-color: #cfba3f
+
+/************************************************Contacts*********************************/
+#contacts
+	width: 100%
+	min-height: 437px
+	background-image: url('../img/contacts-bg.jpg')
+	background-size: 100% 100%
+	background-repeat: no-repeat
+	background-position: center center
+	.section-header
+		margin-top: 84px
+#contacts p
+	font-family: 'Roboto', sans-serif
+	font-size: 24px
+	color: #fff
+	font-weight: 300
+	margin-top: 24px	
+#contacts span
+	font-family: 'Roboto', sans-serif
+	font-size: 20px
+	color: #fff
+	font-weight: 300
+.contacts-coor
+	text-align: center
+.contacts-field
+	margin-top: 16px
+	margin-bottom: 28px
+	text-align: left
+	padding-left: 80px
+.contacts-field-img
+	width: 30px
+	display: inline-block
+	position: relative
+	top: -5px	
+.marker
+	top: 0px
+
+.map
+	margin-top: 40px
+
+
+/************************************************Footer*********************************/
+footer
+	background-color: #000
+	min-height: 100px
+.footer-menu
+	padding-left: 40px
+	margin-bottom: 0px
+	list-style-type: none
+	margin-top: 27px
+	li
+		display: inline-block
+		padding: 10px
+	li > a
+		font-family: 'Roboto', sans-serif
+		font-size: 16px
+		color: #fff
+		font-weight: 300
+		padding: 0px
+	li > a:hover
+		color: #ecd455
+		border-bottom: 1px solid #ecd455
+
+
+.hidden_form
+	min-height: 340px	
+	width: 370px	
+	text-align: center		
+	margin: 0 auto
+	position: relative
+	overflow: hidden
+	background-color: #000
+	border: 1px solid #4b4b4b
+	padding: 15px
+	padding-top: 42px
+.hidden-form-top
+	text-align: center
+	span
+		font-family: 'Roboto', sans-serif
+		font-size: 20px
+		color: #fff
+		font-weight: 300
+	p
+		font-family: 'Roboto', sans-serif
+		font-size: 14px
+		line-height: 20px
+		color: #fff
+		font-weight: 300
+		margin-bottom: 15px
+.hidden-form-middle
+	input
+		width: 320px
+		border: 1px solid #4b4b4b
+		height: 42px
+		font-family: 'Roboto', sans-serif
+		font-size: 16px		
+		color: #fff
+		font-weight: 300
+		padding: 0px 20px
+		background-color: #000
+		margin-bottom: 16px
+	button
+		width: 320px
+		height: 42px
+		background-color: #de3539
+		border: none
+		font-family: 'Roboto', sans-serif
+		font-size: 22px		
+		color: #fff
+		font-weight: 500
+		text-transform: uppercase
+		-moz-transition: all 0.5s ease-out
+		-o-transition: all 0.5s ease-out
+		-webkit-transition: all 0.5s ease-out
+		transition: all 0.5s ease-out
+	button:hover
+		background-color: #bc272b
+.mfp-close-btn-in .mfp-close
+	color: #fff
+	opacity: 1
+	
+
+.hidden
+	display: none
