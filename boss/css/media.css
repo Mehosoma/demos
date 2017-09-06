@@ -397,6 +397,10 @@
 		font-size: 14px;
 	}
 
+	.programms-block-character{
+		padding-left: 87px;
+	}
+
 	#programms{
 		padding-bottom: 40px;
 	}
@@ -408,6 +412,9 @@
 
 	.owl-carousel{
 		width: 100%;
+	}
+	.owl-nav{
+		display: none;
 	}
 
 	.center img	{
