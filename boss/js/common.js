@@ -27,18 +27,18 @@ $(document).ready(function(){
     mouseDrag:true,
     nav:true,
     smartSpeed:1000,
-    autoWidth:true,   
+    autoWidth:true,       
     margin:0,
     responsive:{
 
         1200:{
-            items:2
+            items:3
         },        
         900:{
             items:3
         },
         480:{
-            items:3
+            items:1
         },
         320:{
             items:3
@@ -65,3 +65,18 @@ $(document).ready(function(){
         $(".hidden-content").slideDown("normal"); 
     });
 });
+
+//Всплывающие окна видео
+$(document).ready(function() {
+    $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
+        disableOn: 700,
+        type: 'iframe',
+        mainClass: 'mfp-fade',
+        removalDelay: 160,
+        preloader: false,
+
+        fixedContentPos: false
+    });
+});
+
+
