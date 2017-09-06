@@ -283,6 +283,29 @@
 		height: 100%;
 	}
 
+	.hidden_form{
+		width: 100%;
+	}
+
+	.hidden-form-middle input{
+		width: 100%;
+	}
+
+	.hidden-form-middle button{
+		width: 100%;
+	}
+
+	.center img	{
+		-webkit-transform: scale(1)!important;
+		-moz-transform: scale(1)!important;
+		-o-transform: scale(1)!important;
+		transform: scale(1)!important;
+	}
+
+	.owl-item {
+		width: 300px!important;
+		height: 215px!important;
+	}
 
 	
 }

@@ -41,7 +41,7 @@ $(document).ready(function(){
             items:1
         },
         320:{
-            items:3
+            items:1
         }
 
     }
