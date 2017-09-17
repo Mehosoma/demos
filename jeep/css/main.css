@@ -420,7 +420,8 @@ header {
 .main-slider {
   position: relative;
   width: 100%;
-  max-height: 897px; }
+  max-height: 897px;
+  z-index: 2; }
 
 .slider {
   margin: 0px; }
