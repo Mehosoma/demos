@@ -5,12 +5,8 @@ $(document).ready(function(){
         e.preventDefault();        
         $(".hidden-menu").toggleClass('open');
         $(".cat-open").toggleClass('down');
-     		if(windowWidth >= 767){
-   				return false
-    		} else {
-    			$(".body-overlay").toggleClass('active-overlay');        		
-    		}
-    });
+     	$(".body-overlay").toggleClass('active-overlay');        		   	
+    });   
 });
 
 //Show-hide menu on mobile resolution
