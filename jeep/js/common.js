@@ -1,9 +1,15 @@
 //Show-hide category menu
 $(document).ready(function(){
+	var windowWidth = $(window).width();
     $('.cat-open').on('click',function(e){
         e.preventDefault();        
         $(".hidden-menu").toggleClass('open');
         $(".cat-open").toggleClass('down');
+     		if(windowWidth >= 767){
+   				return false
+    		} else {
+    			$(".body-overlay").toggleClass('active-overlay');        		
+    		}
     });
 });
 
@@ -12,10 +18,9 @@ $(document).ready(function(){
     $('.menu-toggle-button').on('click',function(e){
         e.preventDefault();        
         $(".menu-wrap").toggleClass('main-open');          
-        $(".menu-toggle-button").toggleClass('is-active');          
+        $(".menu-toggle-button").toggleClass('is-active');        
     });
 });
-
 
 //Top-Slider
 $(document).ready(function(){

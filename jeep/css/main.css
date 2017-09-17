@@ -43,6 +43,24 @@ body {
   background-position: top center;
   display: none; }
 
+.body-overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: -1;
+  opacity: 0;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out; }
+
+.active-overlay {
+  z-index: 90;
+  opacity: 1; }
+
 .clearfix:after {
   content: "";
   display: table;
