@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<html lang="ru">
+
+	<title>4x4 Shop</title>
+	<meta name="Главная" content="">
+	<meta name="keywords" content=""/>
+	
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="format-detection" content="telephone=no">
+
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="libs/bxslider/jquery.bxslider.css">	
+	<link rel="stylesheet" type="text/css" href="libs/owl/owl.carousel.css"/>
+
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="pixel"></div>
+
+<!--MainMenu-->
+<header>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
+				<div class="logo"></div>
+			</div>			
+			<div class="col-lg-7 col-md-6 col-sm-8 col-xs-12">
+				<div class="header-contacts">					
+					<div class="header-contacts-phone">
+						<div class="header-phone-icon"></div>
+						<div class="header-contacts-text">
+							<span><i>+7 (495)</i> 727 - 53 - 00</span>
+							<span><i>+7 (495)</i> 727 - 53 - 12</span>
+						</div>
+					</div>				
+					<div class="header-contacts-addres">
+						<div class="header-addres-icon"></div>
+						<div class="header-contacts-text adr-text">
+							<span>Пешком: ул. 4-я Магистральная, д. 3</span>
+							<span>На автомобиле: ул. 5-я Магистральная, д. 15</span>
+						</div>
+					</div>
+				</div>				
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-12 hidden-xs">
+				<div class="basket">
+					<span>Корзина пуста</span>
+					<div class="basket-number">
+						<span>0</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="hidden-lg hidden-md hidden-sm col-xs-9">
+				<div class="basket">
+					<span>Корзина пуста</span>
+					<div class="basket-number">
+						<span>0</span>
+					</div>
+				</div>
+			</div>		
+			<div class=" hidden-lg hidden-md hidden-sm col-xs-3">
+				<button class="menu-toggle-button">
+					<span></span>					
+				</button>
+			</div>
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">				
+				<nav class="menu-wrap">				
+					<ul class="main-menu">
+						<li class="hidden-xs"><a href="" class="cat-open">Каталог товаров</a></li>						
+						<li><a href="">О компании</a></li>
+						<li><a href="">Фото и видео</a></li>
+						<li><a href="">Техраздел</a></li>
+						<li><a href="">Сертификаты</a></li>
+						<li><a href="">Отзывы о нас</a></li>
+						<li class="search hidden-xs"> 
+							<form id="search-form">
+								<input type="text" name="search" placeholder="Поиск по сайту">
+								<button type="submit"></button>
+							</form>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<div class="row ">			
+			<div class="search hidden-lg hidden-md hidden-sm col-xs-6"> 
+				<form id="search-form">
+					<input type="text" name="search" placeholder="Поиск по сайту">
+					<button type="submit"></button>
+				</form>
+			</div>
+			<div class="hidden-lg hidden-md hidden-sm col-xs-6 cat-open-mobile">
+				<a href="" class="cat-open">Смотреть каталог</a>						
+			</div>				
+			<div class="hidden-menu">					
+				<div class="menu-cat">
+					<ul>
+						<li><a href="">Тюнинг Нива</a></li>
+						<li><a href="">Тюнинг УАЗ</a></li>
+						<li><a href="">Лебедка</a></li>
+						<li><a href="">Подвеска</a></li>
+						<li><a href="">Шины</a></li>
+						<li><a href="">Диски</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+					<ul class="menu-cat-list">
+						<li><a href="">Сендтраки</a></li>
+						<li><a href="">Распродажа</a></li>
+						<li><a href="">Автохимия</a></li>
+						<li><a href="">Аккумуляторы и аксессуары к ним</a></li>
+						<li><a href="">Багажники экспедиционные, лесенки</a></li>
+						<li><a href="">Бамперы и силовой обвес</a></li>
+						<li><a href="">Блокировки дифференциала</a></li>
+						<li><a href="">Бодилифт</a></li>
+						<li><a href="">Главные пары</a></li>
+						<li><a href="">Диски колёсные и аксессуары</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+					<ul class="menu-cat-list">
+						<li><a href="">Домкраты реечные и аксессуары</a></li>
+						<li><a href="">Защита рулевых тяг, мостов </a></li>
+						<li><a href="">Канистры экспедиционные</a></li>
+						<li><a href="">Компрессоры</a></li>
+						<li><a href="">Консоли потолочные</a></li>
+						<li><a href="">Крепления груза</a></li>
+						<li><a href="">Кунги для пикапов</a></li>
+						<li><a href="">Лебёдки, аксессуары и запчасти</a></li>
+						<li><a href="">Мойки и пылесосы</a></li>
+						<li><a href="">Одежда</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+					<ul class="menu-cat-list">
+						<li><a href="">Рекламные материалы</a></li>
+						<li><a href="">Рулевые тяги и демферы</a></li>
+						<li><a href="">Свет дополнительный</a></li>
+						<li><a href="">Синтетический трос</a></li>
+						<li><a href="">Стропы</a></li>
+						<li><a href="">Сцепления Xtreme Outback</a></li>
+						<li><a href="">Топливные баки</a></li>
+						<li><a href="">Турбосистемы Safari Power</a></li>
+						<li><a href="">Туристическое и экспедиционное </a></li>
+						<li><a href="">Тюнинг квадроциклов</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+					<ul class="menu-cat-list">
+						<li><a href="">Тюнинг УАЗов</a></li>
+						<li><a href="">Усиленные цапфы</a></li>
+						<li><a href="">Фаркопы</a></li>
+						<li><a href="">Хабы колёсные AVM и другие</a></li>
+						<li><a href="">Цепи противоскольжения</a></li>
+						<li><a href="">Шины для внедорожников</a></li>
+						<li><a href="">Шноркели</a></li>
+						<li><a href="">Щётки стеклоочистителя</a></li>							
+					</ul>
+				</div>
+			</div>			
+		</div>
+	</div>
+</header>
+
+<!--MainSlider-->
+<div class="main-slider">
+	<div id="slider">
+		<div class="slide slide1"></div>
+		<div class="slide slide2"></div>
+		<div class="slide slide1"></div>
+		<div class="slide slide2"></div>
+	</ul>	
+</div>
+
+<!--Popular-->
+<section class="popular">
+	<div class="container">		
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="owl-wrap">
+					<h2>Популярные товары</h2>
+					<div class="owl-carousel">
+						<div class="slide-cart pop-slide-1">
+							<div class="slide-image"></div>
+							<div class="slide-desc">
+								<div class="slide-desc-header">
+									<h4>Шакл "Скоба" 3.2T Runva</h4>
+									<span>Код: AGR-110H</span>
+								</div>
+								<span class="price">9 580 <i>руб.</i></span>
+								<div class="slide-desc-buy clearfix">
+									<a href="" class="bask-but">В корзину</a>
+									<a href="" class="cart-but"></a>
+								</div>
+							</div>
+						</div>
+						<div class="slide-cart">
+							<div class="slide-image pop-slide-2"></div>
+							<div class="slide-desc">
+								<div class="slide-desc-header">
+									<h4>Шакл "Скоба" 3.2T Runva</h4>
+									<span>Код: AGR-110H</span>
+								</div>
+								<span class="price">9 580 <i>руб.</i></span>
+								<div class="slide-desc-buy clearfix">
+									<a href="" class="bask-but">В корзину</a>
+									<a href="" class="cart-but"></a>
+								</div>
+							</div>
+						</div>
+						<div class="slide-cart">
+							<div class="slide-image pop-slide-3"></div>
+							<div class="slide-desc">
+								<div class="slide-desc-header">
+									<h4>Шакл "Скоба" 3.2T Runva</h4>
+									<span>Код: AGR-110H</span>
+								</div>
+								<span class="price">9 580 <i>руб.</i></span>
+								<div class="slide-desc-buy clearfix">
+									<a href="" class="bask-but">В корзину</a>
+									<a href="" class="cart-but"></a>
+								</div>
+							</div>
+						</div>
+						<div class="slide-cart">
+							<div class="slide-image pop-slide-4"></div>
+							<div class="slide-desc">
+								<div class="slide-desc-header">
+									<h4>Шакл "Скоба" 3.2T Runva</h4>
+									<span>Код: AGR-110H</span>
+								</div>
+								<span class="price">9 580 <i>руб.</i></span>
+								<div class="slide-desc-buy clearfix">
+									<a href="" class="bask-but">В корзину</a>
+									<a href="" class="cart-but"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--About-->
+<section class="about">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="about-block clearfix">
+					<h2>О компании</h2>
+					<p>«4х4» привык радовать своих клиентов, создавая уют и сервис для вас и делая любую покупку приятной. Стильный дизайн магазина, низкие цены и приветливый персонал - всё это как нельзя лучше отражает политику работы нашего магазина. Мы стремимся сократить время, которое вы тратите на поиск и покупку полюбившейся техники, создавая вокруг вас сервис. Мы всегда стараемся учесть все пожелания и быть максимально близки к вам.  Наш магазин дает понять своими низкими ценами, что вы не переплачиваете — это и есть сервис.</p>
+					<div class="about-block-but">
+						<a href="">Подробнее о нас</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+</section>
+
+<!--Footer-->
+<footer>
+	<div class="container">
+		<hr />
+		<div class="row">
+			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+				<span class="footer-nav-header">Хиты продаж</span>
+				<ul class="footer-nav-block">
+					<li><a href="">Шины для внедорожников</a></li>
+					<li><a href="">Резина SIMEX</a></li>
+					<li><a href="">Колесные диски</a></li>
+					<li><a href="">Лебедки COMEUP</a></li>
+					<li><a href="">Дисковые тормоза</a></li>
+					<li><a href="">Дополнительные свет</a></li>
+					<li><a href="">Бампера</a></li>
+					<li><a href="">Багажники</a></li>
+					<li><a href="">Шины FEDERAL</a></li>
+					<li><a href="">Шноркели SAFARI</a></li>
+				</ul>
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+				<span class="footer-nav-header">Как купить</span>
+				<ul class="footer-nav-block">
+					<li><a href="">Как найти в каталоге</a></li>
+					<li><a href="">Как оформить заказ</a></li>
+					<li><a href="">Оплата заказа</a></li>
+					<li><a href="">Доставка</a></li>
+					<li><a href="">Гарантии</a></li>
+					<li><a href="">Возврат товара</a></li>
+					<li><a href="">Скидки и акции</a></li>
+					<li><a href="">Оптовым покупателям</a></li>					
+				</ul>
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+				<span class="footer-nav-header">Технический раздел</span>
+				<ul class="footer-nav-block">
+					<li><a href="">Справочник</a></li>
+					<li><a href="">Сертификаты</a></li>
+					<li><a href="">Лебедки COMEUP</a></li>
+					<li><a href="">Блокировки дифференциала</a></li>
+					<li><a href="">Танковые фары</a></li>
+					<li><a href="">Дисковые тормоза на УАЗ</a></li>
+					<li><a href="">Аккумуляторные батареи</a></li>
+					<li><a href="">Подвеска Tough Dog</a></li>
+					<li><a href="">Шины и диски</a></li>
+					<li><a href="">Хабы AVM</a></li>
+				</ul>
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+				<span class="footer-nav-header">О магазине</span>
+				<ul class="footer-nav-block">
+					<li><a href="">Каталог товаров</a></li>
+					<li><a href="">Контакты и адреса</a></li>
+					<li><a href="">Оптовым покупателям</a></li>
+					<li><a href="">Реквизиты компании</a></li>
+					<li><a href="">Договор оферта</a></li>
+					<li><a href="">Доставка</a></li>
+					<li><a href="">Оплата</a></li>
+					<li><a href="">Наши гарантии</a></li>
+					<li><a href="">Возврат товара</a></li>
+					<li><a href="">В регионах</a></li>
+					<li><a href="">Новости</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="footer-image-line">
+		<div class="container">
+			<div class="row footer-hr">
+				<div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+					<div class="footer-block footer-add">
+						<img src="img/footer-mark.png" alt="mark-icon">
+						<div class="footer-block-text">
+							<span>Москва, ул. 4-я</span>
+							<span>Магистральная, д. 3</span>
+							<hr />
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+					<div class="footer-block footer-ph">
+						<img src="img/footer-phone.png" alt="phone-icon">
+						<div class="footer-block-text">
+							<hr />
+							<span><i>+7 495</i>  727-53-00</span>
+							<span><i>+7 495</i>  727-53-12</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+					<div class="footer-block footer-mail">
+						<img src="img/footer-mail.png" alt="mail-icon">
+						<div class="footer-block-text">
+							<span>Электронная почта:</span>
+							<a href="mailto:shop@4x4sport.ru">shop@4x4sport.ru</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 hidden-md hidden-sm hidden-xs">
+					<div class="footer-polite">
+						<a href="">Политика конфиденциальности ООО "4Х4СПОРТ"</a>
+						<a href="" class="second-row-polite">Согласие пользователя на обработку персональных данных</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer-bottom">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-3 col-sm-4 col-xs-5">
+					<div class="copy">
+						<span>&copy; ООО «rk4x4shop.ru», 2006-2017</span>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-5 col-sm-7 col-xs-7">
+					<div class="footer-contacts">
+						<span>Москва, ул. 4-я Магистральная, д. 3</span>
+						<span>Телефоны: +7 495 727-53-00, +7 495 727-53-12</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+	<div class="hidden"></div>
+	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
+	<script src="libs/bxslider/jquery.bxslider.js"></script>
+	<script src="libs/owl/owl.carousel.js"></script>
+	<script src="js/common.js"></script>	
+	
+</body>
+</html>
