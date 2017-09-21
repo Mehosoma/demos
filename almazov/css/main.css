@@ -208,6 +208,7 @@ h2 {
 
 .desktop_menu{
 	border-bottom: 1px solid rgba(0, 0, 0, 0.10); 
+	width: 100%;
 }
 
 .bottom_menu {
@@ -280,6 +281,9 @@ h2 {
 
 /* main */
 /************************************************************** FirstScreen**************************************/
+.first-screen{
+	overflow: hidden;
+}
 
 .content1 {
 	height: 960px;
@@ -488,6 +492,11 @@ h2 {
 }
 
 /****************************************************OperationsType********************************/
+
+.operations-types{
+	overflow: hidden;
+}
+
 .content3 {
     padding-top: 100px;
     position: relative;
@@ -760,6 +769,10 @@ h2 {
 } 
 
 /****************************************************ResultsSlider**************************************/
+.results{
+	overflow: hidden;
+}
+
 .content4 {
 	min-height: 1197px;
     position: relative;
