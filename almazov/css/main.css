@@ -1649,16 +1649,7 @@ footer {
     height: 90px;
     margin-top: 26px;
 }
-.bottom_row::after {
-    content: ' ';
-    width: 5000px;
-    top: 0;
-    left: -45%;
-    display: block;
-    height: 1px;
-    background: #e5e5e5;
-    position: absolute;
-}
+
 .bottom_row p {
     color: #ccc;
     font-size: 1.2rem;
