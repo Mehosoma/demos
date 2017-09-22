@@ -138,17 +138,33 @@ display: none}
 .twentytwenty-after {
   z-index: 10; }
 
-.twentytwenty-handle {
+.twentytwenty-handle{
 	cursor: pointer;
-	background: url(../img/slider_btn.png) no-repeat;
+	background-color: rgba(249,131,128,0.36);
 	width: 94px;
 	height: 94px;
 	z-index: 40;
-		  position: absolute;
+	position: absolute;
   left: 50%;
   top: 50%;
   margin-left: -47px;
   margin-top: -47px;
+  border-radius: 50%;
+}
+
+.twentytwenty-handle-in{
+  position: relative;
+  width: 72px;
+  height: 72px;
+  background-color: rgba(249,131,128,1);
+  border-radius: 50%;  
+  left: 0;
+  right: 0;
+  top: 11px;
+  margin: auto;   
+  background-image: url('../img/handler.png');
+  background-repeat: no-repeat;
+  background-position: center center; 
 }
 
 .twentytwenty-horizontal .twentytwenty-handle:before {

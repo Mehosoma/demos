@@ -16,6 +16,11 @@
       if(!options.no_overlay) {
         container.append("<div class='twentytwenty-overlay'></div>");
         container.append("<div class='twentytwenty-handle'></div>");
+        var slider = container.find(".twentytwenty-handle");
+      slider.append("<div class='twentytwenty-handle-in'></div>");     
+      var overlay = container.find(".twentytwenty-overlay");
+      overlay.append("<div class='twentytwenty-before-label' data-content='"+options.before_label+"'></div>");
+      overlay.append("<div class='twentytwenty-after-label' data-content='"+options.after_label+"'></div>");
       }
       } else {     
       
@@ -30,8 +35,7 @@
       afterImg.addClass("twentytwenty-after");
 
       var overlay = container.find(".twentytwenty-overlay");
-      overlay.append("<div class='twentytwenty-before-label' data-content='"+options.before_label+"'></div>");
-      overlay.append("<div class='twentytwenty-after-label' data-content='"+options.after_label+"'></div>");
+     
 
      var calcOffset = function(dimensionPct) {
         var w = beforeImg.width();

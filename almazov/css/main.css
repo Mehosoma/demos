@@ -108,7 +108,7 @@ h2 {
 	box-shadow: 0px 6px 30px 0px rgba(67, 170, 155, 0.3);
 	position: absolute;
 	z-index: 1;
-	left: 0px;
+	left: -25px;
 	top: 50px;
 	width: 246px;
 	max-height:  0px;
@@ -379,7 +379,7 @@ h2 {
 	box-shadow: 0px 6px 30px 0px rgba(67, 170, 155, 0.42);
 	text-align: center;
 	-webkit-transition: .3s ease-out;
-	transition: .3s ease-out;
+	transition: .3s ease-out;	
 }
 
 .icon1__modal::after {
@@ -1024,14 +1024,19 @@ a.link_slider_active, a.link_reviews_active {
 	font-size: 1.6rem;
 	font-family: 'proxima_nova_light';
 	line-height: 49px;
-	text-align: center;
-	-webkit-transition: opacity .3s ease-out;
-	transition: opacity .3s ease-out;
+	text-align: center;	
+	-moz-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	-webkit-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;	
 }
 .content5__left_col a:hover {
-	text-decoration: none;
-	opacity: .9;
+	text-decoration: none;	
+	background-color: rgb(255, 98, 94);
 }
+
+
+
 .content5__right_col {
 	width: 682px;
 	height: 100%;
@@ -1565,8 +1570,8 @@ div.frame__angel {
 
 
 .city1 {
-    right: 207px;
-    top: 165px;
+    right: 208px;
+    top: 134px;
 }
 .city_bigger {
     bottom: 0px;
@@ -1579,7 +1584,7 @@ div.frame__angel {
 
 .city5 {
     right: 248px;
-    top: 160px;
+    top: 127px;
 }
 .city_big {
     width: 20px;
@@ -1592,8 +1597,8 @@ div.frame__angel {
 }
 
 .city6 {
-    right: 380px;
-    top: 152px;
+    right: 382px;
+    top: 120px;
 }
 .city_normal {
     width: 14px;
@@ -1607,7 +1612,7 @@ div.frame__angel {
 
 .city7 {
     right: 444px;
-    top: 190px
+    top: 157px
 }
 .city_small {
     width: 10px;
