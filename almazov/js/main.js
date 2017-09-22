@@ -288,6 +288,7 @@ $(document).ready(function(){
     smartSpeed:500,   
     mouseDrag:true,      
     nav:true,    
+    dots:true,
     navText: ["<span></span>","<span></span>"],    
     margin:30,
     responsive:{
@@ -379,4 +380,35 @@ $('.link_reviews a').on('click',function(e){
   
    var visible = $(this).attr('href');
    $(visible).delay(200).fadeIn(2000);  
+});
+
+
+
+$('.map__city_point').mouseenter(function() {    
+  $(this).parent().toggleClass('active-map-point');  
+  $('.active-map-point .map-info').finish();
+  $('.active-map-point .map__city_line').finish();
+  $('.active-map-point .map-info').animate({    
+     opacity: '1'
+     }, 1000, function() {
+  });  
+  $('.active-map-point .map__city_line').animate({    
+      height: '145px'
+     }, 1000, function() {
+  });
+ 
+});
+
+$('.map__city_point').mouseleave(function() {  
+  $('.active-map-point .map-info').finish();
+  $('.active-map-point .map__city_line').finish();
+  $('.active-map-point .map-info').animate({    
+     opacity: '0'
+     }, 500, function() {
+  });   
+  $('.active-map-point .map__city_line').animate({
+      height: '0px'
+     }, 500, function() {
+  }); 
+  $(this).parent().removeClass('active-map-point');   
 });
