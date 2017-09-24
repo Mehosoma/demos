@@ -696,6 +696,7 @@ h2 {
     position: relative;
     cursor: pointer;
     color: black;
+    height: 100%;   
 }
 
 .rhinoplasty h3, .breast_surgery h3 {
@@ -703,7 +704,6 @@ h2 {
     font-family: 'proxima_nova_black';
     line-height: 118%;
     padding: 60px 0 0 85px;
-    margin-top: -4px;
     letter-spacing: 1.5px
 }
 

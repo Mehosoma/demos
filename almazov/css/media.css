@@ -93,6 +93,10 @@
 		margin-left: 0px;
 	}
 
+	.company-phone{
+		float: right;
+	}
+
 	.menu__phone{
 		margin-left: -2px;
 		line-height: 30px;
@@ -123,7 +127,8 @@
 	.content1__video{
 		width: 280px;
 		height: 280px;
-		margin-left: 0px;
+		margin-left: auto;
+		margin-right: auto;
 		margin-top: 45px;
 	}
 
@@ -238,14 +243,24 @@
 		padding-right: 0px;
 	}
 
-	.rhinoplasty{
+	.rhinoplasty-mobile{
 		width: 100%;		
 		display: flex;
 		flex-wrap: wrap;
 	}
 
-	.breast_surgery{
-		width: 100%;		
+	.rhinoplasty{
+		background-position:  center top -50px;
+	}
+
+	.breast_surgery, .rhinoplasty, .liposuction{
+		width: 100%;
+		background-size: cover;		
+	}
+
+	.facial_rejuvenation, .ear_plastic{
+		width: 50%;
+		background-size: cover;
 	}
 
 	.rhinoplasty, .facial_rejuvenation, .ear_plastic, .liposuction, .intimate_plastic, .other_operations, .scar_treatment{
@@ -281,6 +296,8 @@
     	flex-wrap: wrap;
 	}
 
+
+
 	.rhinoplasty h3, .breast_surgery h3{
 		font-size: 24px;
 		padding: 55px 0 0 35px;
@@ -294,16 +311,29 @@
 	   padding: 64px 0 0 35px;
 	}
 
-	.rhinoplasty span, .breast_surgery span{
+	.rhinoplasty span{
 		font-size: 2.5rem;
 		padding: 47px 0 0 0;
 		margin-left: -14px;
 	}
 
-	.rhinoplasty p, .breast_surgery p{
-		padding: 0 0 0 34px;
-		margin-top: -37px;
+	.breast_surgery span{
+		padding-left: 11px;
+	}
+
+	.rhinoplasty p, .breast_surgery p, .rhinoplasty__hover p:nth-child(3){
+		padding: 0 0 0 34px;		
 		letter-spacing: 0.9px;
+	}
+
+	.rhinoplasty__hover p:nth-child(3){
+		margin-top: 5px;
+	}
+
+	.breast_surgery p:nth-child(3){
+		padding: 4px 0 4px 33px;
+    	line-height: 100%;
+   		font-size: 1.8rem;
 	}
 
 	.breast_surgery p { 	
@@ -370,7 +400,8 @@
 	.content4{
 		padding-left: 0px;
 		padding-right: 0px;
-		min-height: 731px;
+		min-height: 591px;
+		padding-bottom: 140px;
 	}
 
 	.content4 h2{
@@ -383,8 +414,7 @@
 	}
 
 	.twentytwenty-wrapper{
-		width: 100%;
-		height: 237px;
+		width: 100%;		
 	}
 
 	.twentytwenty-container{
@@ -415,8 +445,11 @@
 	.results-carousel .owl-nav{
 		position: absolute;
 		bottom: 0;
-		left: 80px;
-		margin-bottom: -26px;
+		left: 50%;
+		margin-left: -80px;
+		margin-bottom: -93px;
+		width: 160px;
+		height: 67px;
 	}
 
 	.content5{
@@ -590,11 +623,6 @@
 		padding-bottom: 68px;
 	}
 
-	.events-carousel .owl-nav{
-		top: 22px;		
-		left: 572px;		
-	}
-
 	.content7__img > p span:nth-child(1){
 		position: relative;
 		left: -2px;		
@@ -635,10 +663,12 @@
 	}
 
 	.events-carousel .owl-nav{
-		display: block;
-		top: 364px;		
-		right: 0px;		
+		display: block;				
 		left: 158px;
+		width: 160px;
+		height: 67px;
+		top: 0px;		
+		margin-top: -115px;
 	}
 
 	.content8 h2{
@@ -735,7 +765,7 @@
 	}
 
 	.midle_row{
-		min-height: 300px;	
+		min-height: 70px;	
 		padding-top: 25px;	
 	}
 
@@ -819,6 +849,123 @@
 
 	.top-menu-toggle p{
 		color: #43aa9b;
+	}
+
+	.map-wrap{
+		width: 320px;
+		position: relative;
+		margin: 0 auto;
+	}
+
+}
+
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+
+	.rhinoplasty, .breast_surgery, .facial_rejuvenation, .ear_plastic, .liposuction, .intimate_plastic, .other_operations, .scar_treatment{
+		height: 246px;
+	}
+
+	.facial_rejuvenation__hover, .ear_plastic__hover, .liposuction__hover, .intimate_plastic__hover, .other_operations__hover, .scar_treatment__hover{
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.twentytwenty-container {
+ 	   width: 100%;
+       height: 400px!important;
+	}
+
+	.slider-wrap{
+		height: 400px;
+	}
+
+	.frame div h4, .frame__angel h4{
+		padding: 103px 50px 10px;
+	}
+
+	.frame div p{
+		padding: 10px 30px;
+	}
+
+	.frame__angel p { 	   
+	   padding: 10px 30px!important;
+	}
+
+	.midle_row ul li a {
+ 	   font-size: 1.4rem;
+	}
+
+}
+
+@media only screen and (min-width : 650px) and (max-width : 767px) {
+
+	.content1__counter div{
+		width: 25%;
+		padding-top: 20px;
+		padding-left: 0px!important;
+	}
+
+	.rhinoplasty-mobile, .center_col{
+		width: 50%;
+	}
+
+	.rhinoplasty-mobile{
+		height: 642px;
+	}
+
+	.rhinoplasty, .rhinoplasty__hover{
+		height: 642px;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
+
+	.facial_rejuvenation, .ear_plastic, .liposuction {
+		height: 198px;
+	}
+
+	.liposuction{
+		height: 198px;
+	}
+
+	.intimate_plastic, .other_operations{
+		width: 25%;
+	}
+
+	.scar_treatment{
+		width: 50%;
+	}
+
+	.intimate_plastic, .other_operations, .scar_treatment{
+		height: 160px;
+	}
+
+	.content5__left_col p{
+		padding: 39px 40px;
+	}
+
+	.frame div p{
+		padding: 10px 120px;
+	}
+
+	.frame__angel p { 	   
+	   padding: 10px 120px!important;
+	}
+
+	.content8 p br{
+		display: none;
+	}
+
+	.patient_map{
+		margin-top: 10px;
+	}
+
+	footer .ad-height .col-xs-12{
+		width: 50%;
+	}
+
+	footer .menu__phone{
+		margin-top: 7px;
 	}
 
 }

@@ -338,13 +338,26 @@ $(document).ready(function(){
             items:1
         },
         320:{
-            items:1
+            items:1,
+            navContainer: '#customNav',
         }
 
     }
+
   });
 
+var owl = $('.events-carousel');
+  // Custom Navigation Events
+$('.events-carousel .owl-next').click(function(){
+    owl.trigger('next.owl.carousel');
+})
+$('.events-carousel .owl-prev').click(function(){
+    owl.trigger('prev.owl.carousel');
+})
+
 });
+
+
 
 //Инициализация twenty-twenty при смене слайда
 $('.owl-carousel').on('changed.owl.carousel', function(event) {
