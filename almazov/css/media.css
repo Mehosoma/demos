@@ -1555,7 +1555,7 @@
 	}
 
 	.hidden-md{
-		display: none;
+		display: none!important;
 	}
 
 	.facial_rejuvenation,
@@ -1742,6 +1742,24 @@
 
 	.copy-right{
 		padding-right: 8px;
+	}
+
+	.top_menu__link > ul > li:hover ul {
+		height:  318px; 
+		padding-top: 20px;
+		padding-bottom: 20px;
+		opacity: 1;
+	}
+
+	.top_menu__link > ul > li > ul >li:hover a:before {
+		content:"";
+		background: #43aa9b;
+		width: 4px;
+		height: 10px;
+		display: block;
+		position: absolute;
+		left: 0px;
+		top: 3px;	
 	}
 
 
