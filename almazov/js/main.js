@@ -254,7 +254,8 @@ $(document).ready(function(){
     center: true,
     loop:true, 
     smartSpeed:500,   
-    mouseDrag:false,    
+    mouseDrag:false,
+    touchDrag:false,    
     nav:true,    
     navText: ["<span></span>","<span></span>"],    
     margin:30,
@@ -263,10 +264,10 @@ $(document).ready(function(){
             items:1
         },        
         992:{
-            items:3
+            items:1
         },
         768:{
-            items:2
+            items:1
         },
         480:{         
             items:1
@@ -296,10 +297,10 @@ $(document).ready(function(){
             items:1
         },        
         992:{
-            items:3
+            items:1
         },
         768:{
-            items:2
+            items:1
         },
         480:{         
             items:1
@@ -328,10 +329,10 @@ $(document).ready(function(){
             items:1
         },        
         992:{
-            items:3
+            items:1
         },
         768:{
-            items:2
+            items:1
         },
         480:{         
             items:1
@@ -383,7 +384,7 @@ $('.link_reviews a').on('click',function(e){
 });
 
 
-
+//Анимация точек на карте
 $('.map__city_point').mouseenter(function() {    
   $(this).parent().toggleClass('active-map-point');  
   $('.active-map-point .map-info').finish();
@@ -411,4 +412,64 @@ $('.map__city_point').mouseleave(function() {
      }, 500, function() {
   }); 
   $(this).parent().removeClass('active-map-point');   
+});
+
+
+//Show-hide menu on tablet resolution
+$(document).ready(function(){
+    $('.click-tablet').on('click',function(e){
+        e.preventDefault();        
+          $('.menu-tablet-wrap').animate({
+              height: 'toggle'
+            }, 600, function() {
+          });         
+        $("header .menu-toggle-button").toggleClass('is-active'); 
+        $('.top_nav_bg').toggleClass('menu-tablet-open');
+        $('.top-menu-toggle p').toggleClass('green-color');
+        $('.desktop_menu').toggleClass('w-border');               
+    });
+});
+
+
+//Show-hide menu on mobile resolution
+$(document).ready(function(){
+    $('.click-mobile').on('click',function(e){
+        e.preventDefault();        
+          $('.top_menu__link').animate({
+              height: 'toggle'
+            }, 600, function() {
+          });         
+        $("header .menu-toggle-button").toggleClass('is-active'); 
+        $('.top_nav_bg').toggleClass('menu-tablet-open');
+        $('.top-menu-toggle p').toggleClass('green-color');
+        $('.desktop_menu').toggleClass('w-border'); 
+        $('.right_menu').removeClass('show');               
+    });
+});
+
+//Show-hide footer menu on mobile resolution
+$(document).ready(function(){
+    $('.click-footer-mobile').on('click',function(e){
+        e.preventDefault();        
+          $('.footer-navigation').animate({
+              height: 'toggle'
+            }, 600, function() {
+          });         
+        $("footer .menu-toggle-button").toggleClass('is-active');                      
+    });
+});
+
+//Submenu animation
+$(document).ready( function() {
+    $(".hover_drop").on('click', function (e) {
+    e.preventDefault();
+      $('.right_menu').addClass('show')
+    });
+});
+
+$(document).ready( function() {
+    $(".back").on('click', function (e) {
+    e.preventDefault();
+      $('.right_menu').removeClass('show')
+    });
 });

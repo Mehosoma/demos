@@ -15,7 +15,7 @@
 <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
 -->
 	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/responsitive.css">
+	<link rel="stylesheet" href="css/media.css">
 	<style media="screen">
 		html {
 			box-sizing: border-box;
@@ -52,29 +52,89 @@
 		<div class="container clearfix">
 			<div class="row">
 				<div class="col-lg-12 col-md-12 col-sm-12 top_menu">
-					<div class="top_menu__link">
-						<ul>
-							<li><a href="#">Обо мне</a></li>
-							<li>
-								<a href="#" class="hover_drop">Пластическая хирургия</a>
-								<ul>
-									<li><a href="#">Пластика носа</a></li>
-									<li><a href="#">Пластика груди</a></li>
-									<li><a href="#">Пластика ушей</a></li>
-									<li><a href="#">Омоложение лица</a></li>
-									<li><a href="#">Интимная пластика</a></li>
-									<li><a href="#">Липосакция и липофиллинг</a></li>
-									<li><a href="#">Лечение рубцов</a></li>
-									<li><a href="#">Другие операции</a></li>
-								</ul>
-							</li>
-							<li><a href="#">До и после</a></li>
-							<li><a href="#">Акции</a></li>
-							<li><a href="#">Отзывы</a></li>
-							<li><a href="#">Блог</a></li>
-							<li><a href="#">Пациентам</a></li>
-							<li><a href="#">Контакты</a></li>
-						</ul>
+					<div class="m-d-menu">
+						<div class="top-menu-toggle hidden-sm hidden-md hidden-lg">
+							<button class="menu-toggle-button click-mobile">
+								<span></span>					
+							</button>
+							<p>Меню</p>					
+						</div>
+						<div class="top_menu__link hidden-sm">
+							<ul>
+								<li><a href="#">Обо мне</a></li>
+								<li class="arrow-menu">
+									<a href="#" class="hover_drop">Пластическая хирургия</a>
+									<ul class="right_menu">
+										<li class="back hidden-lg hidden-md hidden-sm"><a href="#">Пластическая хирургия</a></li>
+										<li><a href="#">Пластика носа</a></li>
+										<li><a href="#">Пластика груди</a></li>
+										<li><a href="#">Пластика ушей</a></li>
+										<li><a href="#">Омоложение лица</a></li>
+										<li><a href="#">Интимная пластика</a></li>
+										<li><a href="#">Липосакция и липофиллинг</a></li>
+										<li><a href="#">Лечение рубцов</a></li>
+										<li><a href="#">Другие операции</a></li>
+									</ul>
+								</li>
+								<li><a href="#">До и после</a></li>
+								<li><a href="#">Акции</a></li>
+								<li><a href="#">Отзывы</a></li>
+								<li><a href="#">Блог</a></li>
+								<li><a href="#">Пациентам</a></li>
+								<li><a href="#">Контакты</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="hidden-lg hidden-md hidden-xs top-menu-tablet">
+						<div class="top-menu-toggle click-tablet">
+							<button class="menu-toggle-button">
+								<span></span>					
+							</button>
+							<p>Меню</p>					
+						</div>
+						<div class="menu-tablet-wrap">
+							<div class="row midle_row clearfix">
+								<div class="col-sm-12">
+									<nav class="menu-tablet-main">
+										<div class="col-sm-3">
+											<ul>
+												<li><a href="#">Обо мне</a></li>
+												<li><a href="#">До и после</a></li>
+												<li><a href="#">Отзывы</a></li>
+												<li><a href="#">Акции</a></li>
+												<li><a href="#">Блог</a></li>
+												<li><a href="#">Контакты</a></li>
+											</ul>
+										</div>
+										<div class="col-sm-3">
+											<ul>
+												<li><a href="#">Пластика груди</a></li>
+												<li><a href="#">Пластика носа</a></li>
+												<li><a href="#">Пластика ушей</a></li>
+												<li><a href="#">Липосакция</a></li>
+												<li><a href="#">Омоложение лица</a></li>
+												<li><a href="#">Интимная хирургия</a></li>
+											</ul>
+										</div>
+										<div class="col-sm-3">
+											<ul>
+												<li><a href="#">Лечение бубцов</a></li>
+												<li><a href="#">Абдоминопластика</a></li>
+												<li><a href="#">Другие операции</a></li>
+											</ul>
+										</div>
+										<div class="col-sm-3">
+											<ul>
+												<li><a href="#">Иногородним</a></li>
+												<li><a href="#">Перед операцией</a></li>
+												<li><a href="#">Подготовка к операции</a></li>
+												<li><a href="#">После операции</a></li>
+											</ul>
+										</div>
+									</nav>			
+								</div>							
+							</div>
+						</div>
 					</div>
 					<div class="menu__social">
 						<a href="#" class="menu__social-instagram"></a>
@@ -88,21 +148,27 @@
 
 	<nav class="row desktop_menu">
 		<div class="container clearfix">
-			<div class="col-lg-7 bottom_menu">
+			<div class="col-lg-7 col-md-6 col-sm-6 col-xs-12 bottom_menu">
 				<div class="menu__logo">
 					<span>Dr. Almazov</span>
 					<p>пластический хирург<br> кандидат медицинских наук</p>
 				</div>
 			</div>
-			<div class="col-lg-3">
+			<div class="col-lg-3 col-md-3 hidden-sm hidden-xs">
 				<a href="#" class="bottom_menu__btn">Записаться на прием</a>
 			</div>
-			<div class="col-lg-2">
+			<div class="hidden-lg hidden-md hidden-sm col-xs-4">
+				<a href="#" class="bottom_menu__btn"></a>
+			</div>
+			<div class="col-lg-2 col-md-3 col-sm-6 col-xs-8">
 				<p class="menu__phone">8 (903) 61 61 61</p>
+				<div class="col-lg-3 col-md-3 hidden-lg hidden-md hidden-xs">
+					<a href="#" class="bottom_menu__btn">Записаться на прием</a>
+				</div>
 			</div>
 		</div>
 	</nav>
-	<nav class="mobile_menu"></nav>
+	
 </header>
 
 <!-- main -->
@@ -112,16 +178,17 @@
 			<h2>Пластическая хирургия высокого уровня</h2>
 			<p>Богатая практика и постоянное совершенствование<br> позволяют проводить операции европейского<br> уровня и быть в тренде инноваций</p>
 			<div class="content1__text-link">
-				<p>Российская<br> и международная сертификация:
-				</p>
-				<a class="icon1">
-					<div class="icon1__modal">
-						<p>Стандарты диагностики и лечения<br> рака молочной железы</p>
-					</div>
-				</a>
-				<a class="icon2"></a>
-				<a class="icon3"></a>
-				<a class="icon4"></a>
+				<p>Российская<br> и международная сертификация:</p>
+				<div class="content1-icon-block">
+					<a class="icon1">
+						<div class="icon1__modal">
+							<p>Стандарты диагностики и лечения<br> рака молочной железы</p>
+						</div>
+					</a>
+					<a class="icon2"></a>
+					<a class="icon3"></a>
+					<a class="icon4"></a>
+				</div>
 			</div>
 		</div>
 		<div class="content1__video">
@@ -163,7 +230,7 @@
 		<div class="row">
 			<div class="col-lg-12">
 				<h3>Импланты в подарок</h3>
-				<p>при заказе пакета «Увеличение и подтяжка» до31.09.2017</p>
+				<p>при заказе пакета «Увеличение и подтяжка» до 31.09.2017</p>
 			</div>
 		</div>
 	</div>
@@ -179,12 +246,12 @@
 					<span>#</span>
 					<h3>ПЛАСТИКА<br> НОСА</h3>
 					<p>от 6000 руб.</p>
-					<p>#крыльяноса</p>
-					<p>#кончикноса</p>
-					<p>#спинканоса</p>
-					<p>#перегородка</p>
-					<p>#реконструкция</p>
-					<p>#изъяны</p>
+					<p class="hidden-xs">#крыльяноса</p>
+					<p class="hidden-xs">#кончикноса</p>
+					<p class="hidden-xs">#спинканоса</p>
+					<p class="hidden-xs">#перегородка</p>
+					<p class="hidden-xs">#реконструкция</p>
+					<p class="hidden-xs">#изъяны</p>
 				</div>
 				<span>#</span>
 				<h3>ПЛАСТИКА<br> НОСА</h3>
@@ -196,9 +263,9 @@
 						<span>#</span>
 						<h3>ПЛАСТИКА<br> ГРУДИ</h3>
 						<p>от 35000 руб.</p>
-						<p>#увеличение</p>
-						<p>#уменьшние</p>
-						<p>#подтяжка</p>
+						<p class="hidden-md hidden-sm hidden-xs">#увеличение</p>
+						<p class="hidden-md hidden-sm hidden-xs">#уменьшние</p>
+						<p class="hidden-md hidden-sm hidden-xs">#подтяжка</p>
 					</div>
 					<span>#</span>
 					<h3>ПЛАСТИКА<br> ГРУДИ</h3>
@@ -332,7 +399,7 @@
 <section class="trust">
 	<div class="container content5">
 		<div class="content5__left_col">
-			<p>Я доверяю только лучшим медицинским учреждениям области<br>c современным оборудованием<br>и условиями для послеоперационной реабилитации
+			<p>Я доверяю только лучшим медицинским учреждениям области <br>c современным оборудованием <br>и условиями для послеоперационной реабилитации
 			</p>
 			<a href="#">Записаться на прием</a>
 		</div>
@@ -340,11 +407,11 @@
 			<div class="frame">
 				<span class="frame__line_v"></span>
 				<div class="frame__center">
-					<h4>Центр реконструктивной и пластической<br>хирургии Оренбургской области</h4>
+					<h4>Центр реконструктивной и пластической <br>хирургии Оренбургской области</h4>
 					<p>старейшей и мощнейшей клиники региона — образовалась в 1997 году</p>
 				</div>
 			</div>
-			<div class="frame">
+			<div class="frame second-frame">
 				<span class="frame__line_v"></span>
 				<div class="frame__angel">
 					<h4>частная клиника пластической хирургии<br> «Ангел Бьюти»</h4>
@@ -450,14 +517,14 @@
 		<div class="events-slider-wrap">
 			<div class="owl-carousel events-carousel">
 				<div class="events-slider-slide">
-					<p>Я участвую во многих российских и зарубежных<br>профильных конференциях и семинарах по пластической хирургии. Это позволяет мне использовать последние достижения современной медицины в своей работе.<br>Одно из таких мероприятий</p>
+					<p>Я участвую во многих российских и зарубежных <br>профильных конференциях и семинарах по пластической хирургии. Это позволяет мне использовать последние достижения современной медицины в своей работе. <br>Одно из таких мероприятий</p>
 					<div class="content7__img">
 						<div class="content7__img_data">
 							<h3>21</h3>
 							<p>сентября 2017</p>
 						</div>
 						<h3>XIV Международный конгресс пластических хирургов</h3>
-						<p><span></span>Брюссель, Бельгия<span></span></p>
+						<p class="city-marker"><span></span>Брюссель, Бельгия<span></span></p>
 						<a href="#">Смотреть отчет<span></span></a>
 					</div>		
 				</div>
@@ -469,7 +536,7 @@
 							<p>сентября 2017</p>
 						</div>
 						<h3>XIV Международный конгресс пластических хирургов</h3>
-						<p><span></span>Брюссель, Бельгия<span></span></p>
+						<p class="city-marker"><span></span>Брюссель, Бельгия<span></span></p>
 						<a href="#">Смотреть отчет<span></span></a>
 					</div>		
 				</div>
@@ -482,8 +549,9 @@
 <section class="map">
 	<div class="container content8">
 		<h2>География пациентов</h2>
-		<p>Душа моя озарена неземной радостью, как эти чудесные весенние утра, которыми<br>я наслаждаюсь от всего сердца. Я совсем один и блаженствую<br> в здешнем краю, словно созданном для таких</p>
-		<div class="patient_map">
+		<p class="map-text-content">Душа моя озарена неземной радостью, как эти чудесные весенние утра, которыми<br>я наслаждаюсь от всего сердца. Я совсем один и блаженствую<br> в здешнем краю, словно созданном для таких</p>		
+	</div>
+	<div class="patient_map">
 			<div class="map__city city1">
 				<div class="map-info">
 					<h4>117</h4>
@@ -517,27 +585,39 @@
 				<span class="map__city_point city_small"></span>
 			</div>			
 		</div>
-	</div>
 </section>
 
 <!--Footer-->
 <footer>
 	<div class="container">
 		<div class="row clearfix">
-			<div class="col-lg-6">
+			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 				<div class="menu__logo">
 					<span>Dr. Almazov</span>
 					<p>пластический хирург<br> кандидат медицинских наук</p>
 				</div>
 			</div>
-			<div class="col-lg-6">
+			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 				<p class="menu__phone">8 (903) 61 61 61<span>8 (3532) 928 829</span></p>
 			</div>
 		</div>				
 		<div class="row midle_row clearfix">
-			<div class="col-lg-8">
-				<nav>
-					<div class="col-lg-3">
+			<div class="col-lg-4 col-lg-push-8 col-md-3 col-md-push-9 col-sm-12">
+				<div class="footer__social">
+					<a href="#" class="menu__social-instagram"></a>
+					<a href="#" class="menu__social-facebook"></a>
+					<a href="#" class="menu__social-vk"></a>
+				</div>
+			</div>
+			<div class="col-lg-8 col-lg-pull-4 col-md-9 col-md-pull-3 col-sm-12 col-xs-12">				
+				<div class="top-menu-toggle hidden-sm hidden-md hidden-lg">
+					<button class="menu-toggle-button click-footer-mobile">
+						<span></span>					
+					</button>
+					<p>Меню</p>					
+				</div>			
+				<nav class="footer-navigation clearfix">							
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
 						<ul>
 							<li><a href="#">Обо мне</a></li>
 							<li><a href="#">До и после</a></li>
@@ -547,7 +627,7 @@
 							<li><a href="#">Контакты</a></li>
 						</ul>
 					</div>
-					<div class="col-lg-3">
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
 						<ul>
 							<li><a href="#">Пластика груди</a></li>
 							<li><a href="#">Пластика носа</a></li>
@@ -557,14 +637,14 @@
 							<li><a href="#">Интимная хирургия</a></li>
 						</ul>
 					</div>
-					<div class="col-lg-3">
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
 						<ul>
 							<li><a href="#">Лечение бубцов</a></li>
 							<li><a href="#">Абдоминопластика</a></li>
 							<li><a href="#">Другие операции</a></li>
 						</ul>
 					</div>
-					<div class="col-lg-3">
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
 						<ul>
 							<li><a href="#">Иногородним</a></li>
 							<li><a href="#">Перед операцией</a></li>
@@ -573,14 +653,7 @@
 						</ul>
 					</div>
 				</nav>			
-			</div>
-			<div class="col-lg-4">
-				<div class="footer__social">
-					<a href="#" class="menu__social-instagram"></a>
-					<a href="#" class="menu__social-facebook"></a>
-					<a href="#" class="menu__social-vk"></a>
-				</div>
-			</div>
+			</div>				
 		</div>
 		<div class="row clearfix">			
 			<div class="copyright">
