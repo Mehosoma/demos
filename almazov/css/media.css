@@ -410,15 +410,15 @@
 	}
 
 	.owl-carousel{
-		width: 100%;
+		width: 320px;
 	}
 
 	.twentytwenty-wrapper{
-		width: 100%;		
+		width: 320px;		
 	}
 
 	.twentytwenty-container{
-		width: 100%;
+		width: 320px;
 		height: 237px!important;
 	}
 
@@ -547,7 +547,7 @@
 	}
 
 	.reviews-slider-wrap, .reviews-carousel{
-		width: 100%;
+		width: 100%!important;
 		height: 100%;
 	}
 
@@ -577,6 +577,7 @@
 
 	.events-carousel{
 		margin-top: 35px;
+		width: 100%!important;
 	}
 
 	.content7{
@@ -857,18 +858,25 @@
 		margin: 0 auto;
 	}
 
+	.patient_map{
+		margin-top: 45px;
+	}
+
+
 }
 
 @media only screen and (min-width : 480px) and (max-width : 767px) {
 
 	.rhinoplasty, .breast_surgery, .facial_rejuvenation, .ear_plastic, .liposuction, .intimate_plastic, .other_operations, .scar_treatment{
-		height: 246px;
+		height: 210px;
 	}
 
 	.facial_rejuvenation__hover, .ear_plastic__hover, .liposuction__hover, .intimate_plastic__hover, .other_operations__hover, .scar_treatment__hover{
 		background-repeat: no-repeat;
 		background-size: cover;
 	}
+
+
 
 	.twentytwenty-container {
  	   width: 100%;
@@ -893,6 +901,23 @@
 
 	.midle_row ul li a {
  	   font-size: 1.4rem;
+	}
+
+	.content8 p br{
+		display: none;
+	}
+
+	.owl-carousel{
+		width: 480px;
+	}
+
+	.twentytwenty-wrapper{
+		width: 480px;		
+	}
+
+	.twentytwenty-container{
+		width: 480px;
+		height: 380px!important;
 	}
 
 }
@@ -925,7 +950,7 @@
 	}
 
 	.liposuction{
-		height: 198px;
+		height: 234px;
 	}
 
 	.intimate_plastic, .other_operations{

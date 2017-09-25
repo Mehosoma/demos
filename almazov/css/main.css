@@ -1033,7 +1033,7 @@ a.link_slider_active, a.link_reviews_active {
 }
 
 .slider-wrap{
-	width: 1150px;
+	width: 1140px;
 	height: 750px;
 	margin: 0 auto;
 	margin-top: 66px;
@@ -1076,7 +1076,7 @@ a.link_slider_active, a.link_reviews_active {
 
 .owl-prev{
 	left: 0px;
-	margin-left: -200px;
+	margin-left: -190px;
 }
 
 .owl-next span, .owl-prev span {
