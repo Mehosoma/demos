@@ -45,7 +45,7 @@ h2 {
 	font-family: 'proxima_nova_light';
 }
 .pixel_perfect {
-	background: url(../img/almazov_main-markup_not_drop.jpg) no-repeat top center;
+	background: url(../img/almazov_main-markup-320.jpg) no-repeat top center;
 	width: 1920px;
 	height: 7313px;
 	position: absolute;
@@ -55,6 +55,7 @@ h2 {
     top: 0;
     margin-left: -960px;
     opacity: 0.5;   
+    margin-top: 735px;
 }
 
 .clearfix:after {
@@ -731,6 +732,11 @@ h2 {
     cursor: pointer;
     color: black;
     height: 100%;   
+}
+
+.rh-link{
+	display: block;
+	height: 100%;
 }
 
 .rhinoplasty h3, .breast_surgery h3 {
@@ -1496,6 +1502,7 @@ div.frame__angel {
 	width: 100%;
 	min-height: 580px;
 	background: rgb(67, 170, 155);
+	padding-top: 102px;
 }
 .content7 {	
 	display: -webkit-box;
@@ -1507,7 +1514,7 @@ div.frame__angel {
 }
 
 .content7 p {
-	padding-top: 10px;
+	padding-top: 20px;
 	padding-right: 70px;
 	width: 50%;
 	font-size: 1.8rem;
@@ -1532,7 +1539,6 @@ div.frame__angel {
 	position: relative;
 	overflow: hidden;
 	float: left;	
-	margin-top: -10px;
 }
 
 .content7__img img{	
@@ -1593,7 +1599,7 @@ div.frame__angel {
 .ev-sl-wrap > p span:nth-child(2) {
 	background: url(../img/icon_country.jpg) no-repeat center;
 	height: 14px;
-	width: 10px;
+	width: 14px;
 	display: block;
 	margin-left: 15px
 }
@@ -1618,14 +1624,13 @@ div.frame__angel {
 
 .events-slider-wrap{
 	width: 100%;
-	min-height: 580px;
+	min-height: 360px;
 	overflow: hidden;	
 }
 
 .events-carousel{
 	width: 1170px;
-	height: 360px;
-	margin-top: 112px;	
+	min-height: 360px;		
 }
 
 .events-carousel .owl-stage-outer{

@@ -597,13 +597,13 @@
 	}
 
 	.events{
-		padding-bottom: 68px;
+		padding-bottom: 58px;
+		padding-top: 0px;
 	}
 
 	.events-carousel{
 		margin-top: 35px;
 		width: 100%!important;
-		height: 100%;
 	}
 
 	.content7{
@@ -905,6 +905,10 @@
 		margin-top: -56px;
 	}
 
+	.ev-text{
+		padding-top: 10px!important;
+	}
+
 
 }
 
@@ -1045,6 +1049,8 @@
 	footer .menu__phone{
 		margin-top: 7px;
 	}
+
+
 
 }
 
@@ -1357,7 +1363,7 @@
 
 	.events-slider-wrap{
 		width: 100%;
-		padding-bottom: 77px;
+		padding-bottom: 66px;
 	}
 
 	.content7 p{
@@ -1473,7 +1479,11 @@
 
 	.content7 p{
 		padding-right: 0px;
-		width: 72%
+		width: 72%;		
+	}
+
+	.ev-text{
+		padding-top: 10px!important;
 	}
 
 	.content7 p br{
@@ -1591,6 +1601,10 @@
 
 	footer nav .col-lg-3:nth-child(4) ul{
 		margin-left: -56px;
+	}
+
+	.events{
+		padding-top: 0px;
 	}
 
 }
