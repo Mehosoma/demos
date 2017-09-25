@@ -95,6 +95,7 @@
 
 	.company-phone{
 		float: right;
+		margin-right: -5px;
 	}
 
 	.menu__phone{
@@ -117,24 +118,30 @@
 		font-family: 'proxima_nova_light', sans-serif;
 		line-height: 134%;
 		margin-left: -2px;
+		position: relative;
+		z-index: 1000;
 	}
 
 	.content1__text p{
 		padding-top: 33px;
-		margin-left: -2px;
+		margin-left: -2px;	
+		position: relative;
+		z-index: 1000;	
 	}
 
 	.content1__video{
-		width: 280px;
-		height: 280px;
+		width: 347px;
+		height: 347px;
 		margin-left: auto;
 		margin-right: auto;
-		margin-top: 45px;
+		margin-top: 97px;
+		position: absolute;
+		right: -166px;
 	}
 
 	.mask_video{
-		width: 280px;
-		height: 280px;
+		width: 347px;
+		height: 347px;
 		background: url(../img/mask.png) no-repeat center;
 		background-size: cover;
 	}
@@ -725,9 +732,11 @@
 		width: 10px;
 	}
 
-	footer .menu__phone{
-		margin-right: 32px;
+	footer .menu__phone{		
 		margin-top: 26px;
+		float: none;
+		margin: 26px auto 0px auto;		
+		padding-left: 0px;
 	}
 
 	.bottom-info{
@@ -920,6 +929,10 @@
 		height: 380px!important;
 	}
 
+	.content1__text h2{
+		width: 70%;
+	}
+
 }
 
 @media only screen and (min-width : 650px) and (max-width : 767px) {
@@ -929,6 +942,12 @@
 		padding-top: 20px;
 		padding-left: 0px!important;
 	}
+
+	.content1__video{
+		margin-top: 62px;
+	}
+
+
 
 	.rhinoplasty-mobile, .center_col{
 		width: 50%;
@@ -1253,16 +1272,27 @@
 		width: 100%;
 	}
 
+	.results .slider-wrap{
+		margin-top: 115px;
+	}
+
 	.owl-carousel{
 		width: 720px;
 	}
 
+	.owl-next, .owl-prev{
+		top: 0px;
+		margin-top: -98px;
+	}
+
 	.owl-next{		
 		margin-right: 0px;
+		right: 40%
 	}
 	
 	.owl-prev{	
 		margin-left: 0px;
+		left: 40%;
 	}
 
 	.reviews-slider-wrap{
