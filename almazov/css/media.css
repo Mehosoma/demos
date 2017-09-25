@@ -5,6 +5,15 @@
  		margin-right: 0px;
 	}
 
+	.icon1__modal{
+		left: -5px;
+		z-index: 1000;
+	}
+
+	.icon1__modal::after{
+		left: 4%;
+	}
+
 	footer .menu__logo{
 		width: 280px;
 		margin-left: -16px;
@@ -96,6 +105,7 @@
 	.company-phone{
 		float: right;
 		margin-right: -5px;
+		margin-top: 0px;
 	}
 
 	.menu__phone{
@@ -320,8 +330,12 @@
 
 	.rhinoplasty span{
 		font-size: 2.5rem;
-		padding: 47px 0 0 0;
+		padding: 51px 0 0 0;
 		margin-left: -14px;
+	}
+
+	.breast_surgery span{
+		padding-top: 55px;
 	}
 
 	.breast_surgery span{
@@ -582,6 +596,10 @@
 		height: 100%;
 	}
 
+	.events{
+		padding-bottom: 68px;
+	}
+
 	.events-carousel{
 		margin-top: 35px;
 		width: 100%!important;
@@ -600,15 +618,26 @@
 		letter-spacing: -0.2px;
 	}
 
+	.content7__img_data > p{
+		padding: 5px 0 0 32px;
+	}
+
 	.content7 p br{
 		display: none;
 	}
 
 	.content7__img{
-		margin-top: 183px;
+		margin-top: 27px;
+		height: 515px;
 		width: 100%;
-		background: linear-gradient(16deg, rgba(0,0,0,.56) 0%,rgba(0,0,0,.56) 3%,rgba(0,0,0,0) 64%,rgba(0,0,0,0) 100%), url(../img/content6_img_750.jpg) no-repeat;
+		background: linear-gradient(16deg, rgba(0,0,0,.56) 0%,rgba(0,0,0,.56) 3%,rgba(0,0,0,0) 64%,rgba(0,0,0,0) 100%);
 		margin-left:0px;
+	}
+
+	.ev-sl-wrap{
+		margin-left: 0px;
+		margin-top: 0px;
+		margin-top: 155px;
 	}
 
 	.content7__img_data{
@@ -616,56 +645,46 @@
 		top: -155px;
 	}
 
-	.content7__img > h3{
+	.ev-sl-wrap > h3{
 		padding: 0px!important;
 		padding-left: 14px!important;
 		padding-top: 32px!important;
 	}
 
-	.content7__img > p{
+	.ev-sl-wrap > p{
 		margin-left: 2px;
 		padding-top: 26px;
 	}
 
-	.events{
-		padding-bottom: 68px;
-	}
-
-	.content7__img > p span:nth-child(1){
+	.ev-sl-wrap > p span:nth-child(1){
 		position: relative;
 		left: -2px;		
 		margin-top: -4px;
 	}
 
-	.content7__img > p span:nth-child(2){
+	.ev-sl-wrap > p span:nth-child(2){
 		position: relative;
 		left: 5px;		
 		margin-top: -2px;
-	}
+	}	
 
-	.content7__img > h3{
-		padding-right: 60px;
-		padding-bottom: 17px;
-		padding-left: 153px;
-	}
-
-	.content7__img > p span:nth-child(1), .content7__img > p span:nth-child(2){
+	.ev-sl-wrap > p span:nth-child(1), .ev-sl-wrap > p span:nth-child(2){
 		display: inline-block;				
 		position: relative;
 		top: 3px;
 	}
 
-	.content7__img > p span:nth-child(2){
+	.ev-sl-wrap > p span:nth-child(2){
 		width: 30px;
 		margin-left: 4px;		
 	}
 
-	.content7__img_data p {
+	.ev-sl-wrap p {
 		margin-left: 0px;
 		margin-top: 2px;
 	}
 
-	.content7__img > a{
+	.ev-sl-wrap > a{
 		margin-top: 179px;
 		padding-left: 15px;
 	}
@@ -687,41 +706,61 @@
 
 	.city-marker{
 		margin-left: 0px;
+		padding-left: 18px!important;
 	}
 
 	.content8 p{
 		padding: 0px;
 	}
 
+	.map{
+		overflow: hidden;
+	}
+
 	.patient_map{
 		width: 100%;
-		background-size: 100%;
-		background: url(../img/worldmap_01_mobile.png) no-repeat center;
-		height: 300px;
+		margin-top: 15px;
+		
 	}	
+
+	.map-wrap{
+		position: relative;
+		height: 0;
+		padding-top: 75%;
+	}
+
+	.map-content{
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-size: 140% 90%;
+		background-position: center top 30px;
+	}
 
 	.map-text-content{
 		padding-top: 26px!important;
 	}
 
 	.city1 {
- 		right: 71px;
-		top: 81px;
+ 		right: 15%;
+		top: 43%;
 	}
 
 	.city5 {
- 	   right: 112px;
-    	top: 119px;
+ 	   right: 39%;
+    	top: 36%;
 	}
 
 	.city6 {
- 	   right: 150px;
-    	top: 90px;
+ 	   right: 26%;
+    	top: 42%;
 	}
 
 	.city7 {
- 	   right: 270px;
-    	top: 102px;
+ 	   right: 87%;
+    	top: 53%;
 	}
 
 	.map{
@@ -861,14 +900,8 @@
 		color: #43aa9b;
 	}
 
-	.map-wrap{
-		width: 320px;
-		position: relative;
-		margin: 0 auto;
-	}
-
-	.patient_map{
-		margin-top: 45px;
+	.map-info{
+		margin-top: -56px;
 	}
 
 
@@ -1016,6 +1049,23 @@
 
 @media only screen and (min-width : 768px) and (max-width : 991px) {
 
+	.icon1__modal{
+		left: -5px;
+		z-index: 1000;
+	}
+
+	.icon1__modal p{
+		padding-top: 20px!important;
+	}
+
+	.icon1__modal::after{
+		left: 4%;
+	}
+
+	.company-phone{
+		margin-top: 0px;
+	}
+
 	.hidden-sm{
 		display: none!important;
 	}
@@ -1127,7 +1177,7 @@
 	}
 
 	.content1__video{
-		margin: 100px 0 0 62px;
+		margin: 76px 0 0 62px;
 	}
 
 	.rhinoplasty{
@@ -1280,9 +1330,9 @@
 		width: 720px;
 	}
 
-	.owl-next, .owl-prev{
+	.results .owl-next, .results .owl-prev{
 		top: 0px;
-		margin-top: -98px;
+		margin-top: -100px;		
 	}
 
 	.owl-next{		
@@ -1314,11 +1364,13 @@
 		width: 100%;		
 	}
 
-	.patient_map{
+	.map-content{
 		width: 100%;
 		background-size: cover;		
 		background-position: right -183px center;
 		margin-top: 71px;
+		height: 580px;
+		position: relative;
 	}
 
 	.link_slider, .link_reviews{
@@ -1428,9 +1480,13 @@
 	}
 
 	.content7__img{
-		margin-top: 52px;
+		margin-top: 43px;
 		width: 100%;
-		background: linear-gradient(16deg, rgba(0,0,0,.56) 0%,rgba(0,0,0,.56) 3%,rgba(0,0,0,0) 64%,rgba(0,0,0,0) 100%), url(../img/content6_img_750.jpg) no-repeat
+		
+	}
+
+	.ev-sl-wrap{
+		background: linear-gradient(16deg, rgba(0,0,0,.56) 0%,rgba(0,0,0,.56) 3%,rgba(0,0,0,0) 64%,rgba(0,0,0,0) 100%);
 	}
 
 	.events-carousel .owl-nav{
@@ -1438,21 +1494,25 @@
 		left: 572px;		
 	}
 
-	.content7__img > h3{
+	.ev-sl-wrap > h3{
 		padding-right: 60px;
 		padding-bottom: 17px;
 		padding-left: 153px;
 	}
 
-	.content7__img > p span:nth-child(1), .content7__img > p span:nth-child(2){
+	.ev-sl-wrap > p span:nth-child(1), .ev-sl-wrap > p span:nth-child(2){
 		display: inline-block;				
 		position: relative;
 		top: 3px;
 	}
 
-	.content7__img > p span:nth-child(2){
+	.ev-sl-wrap > p span:nth-child(1){
+		margin-left: -2px;
+	}
+
+	.ev-sl-wrap > p span:nth-child(2){
 		width: 30px;
-		margin-left: 4px;		
+		margin-left: 6px;		
 	}
 
 	.content7__img_data p {
@@ -1460,7 +1520,7 @@
 		margin-top: 2px;
 	}
 
-	.content7__img > a{
+	.ev-sl-wrap > a{
 		margin-top: 176px;
 	}
 
@@ -1883,20 +1943,20 @@
 	}
 
 	.content7__img{
-		width: 445px;
-		margin-left: 25px;
+		width: 455px;
+		margin-left: 15px;
 	}
 
-	.content7__img > p{
+	.ev-sl-wrap > p{
 		margin-left: 152px;
 		margin-top: -13px;
 	}
 
-	.content7__img > p span:nth-child(2){
+	.ev-sl-wrap > p span:nth-child(2){
 		width: 14px;
 	}
 
-	.content7__img > a{
+	.ev-sl-wrap > a{
 		margin-top: 130px;
 	}
 
@@ -1904,10 +1964,15 @@
 		bottom: 91px;
 	}
 
-	.patient_map{		
+	.map-content{		
 		width: 100%;
 		background-size: cover;		
-		background-position: center center;		
+		background-position: center center;	
+		height: 580px;		
+    	position: relative;
+    	margin-top: 110px;
+    	margin-left: auto;
+    	margin-right: auto;
 	}
 
 	.map-text-content{
@@ -1991,6 +2056,15 @@
 		position: absolute;
 		left: 0px;
 		top: 3px;	
+	}
+
+	.map-content{
+		height: 580px;
+		width: 1140px;
+    	position: relative;
+    	margin-top: 110px;
+    	margin-left: auto;
+    	margin-right: auto;
 	}
 
 }

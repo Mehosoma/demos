@@ -19,6 +19,12 @@
 }
 
 
+.map-markers{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
 /*
 .container:after {
     display: block;
@@ -39,7 +45,7 @@ h2 {
 	font-family: 'proxima_nova_light';
 }
 .pixel_perfect {
-	background: url(../img/almazov_main-markup-320.jpg) no-repeat top center;
+	background: url(../img/almazov_main-markup_not_drop.jpg) no-repeat top center;
 	width: 1920px;
 	height: 7313px;
 	position: absolute;
@@ -48,8 +54,7 @@ h2 {
 	left: 50%;
     top: 0;
     margin-left: -960px;
-    opacity: 0.5;       
-  
+    opacity: 0.5;   
 }
 
 .clearfix:after {
@@ -407,9 +412,19 @@ h2 {
 	font-family: 'proxima_nova_bold';
 	-ms-flex-item-align: center;
 	align-self: center;	
-	width: 190px;
-	line-height: 128px;		
+	width: 190px;			
 	margin-left: -10px;
+	color: #000;	
+}
+
+.company-phone{
+	margin-top: 52px;
+}
+
+.company-phone a:hover, .company-phone a:active, .company-phone a:focus{
+	color: #000;
+	text-decoration: none;
+	outline: none;
 }
 
 
@@ -652,6 +667,24 @@ h2 {
     padding-top: 100px;
     position: relative;
 }
+
+.content3__wrap a{
+	color: #000;	
+}
+
+.content3__wrap a:hover, .content3__wrap a:active, .content3__wrap a:focus{
+	outline: none;
+	text-decoration: none;
+}  
+
+.content3__wrap .rhinoplasty a, .content3__wrap .breast_surgery a{
+	color: rgb(51,51,51);
+}
+
+.content3__wrap .rhinoplasty__hover a, .content3__wrap .breast_surgery__hover a{
+	color: #fff;
+}
+
 .content3 h2 {
     padding-top: 3px;
     text-align: center;
@@ -715,7 +748,7 @@ h2 {
     font-size: 3rem;
     font-family: 'proxima_nova_black';
     display: block;
-    padding: 53px 0 0 30px;
+    padding: 57px 0 0 30px;
 }
 
 .breast_surgery span{
@@ -1483,18 +1516,35 @@ div.frame__angel {
 	float: left;
 }
 
-.content7__img {
-	background: linear-gradient(16deg, rgba(0,0,0,.56) 0%,rgba(0,0,0,.56) 3%,rgba(0,0,0,0) 64%,rgba(0,0,0,0) 100%), url(../img/content6_img.jpg) no-repeat;
-	width: 545px;
-	height: 360px;
+.ev-sl-wrap{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	margin-left: 10px;
+	margin-top: 10px;
+	background: linear-gradient(16deg, rgba(0,0,0,.56) 0%,rgba(0,0,0,.56) 3%,rgba(0,0,0,0) 64%,rgba(0,0,0,0) 100%);
+}
+
+.content7__img {	
+	width: 555px;
+	height: 370px;
 /*	margin-left: 25px;*/
 	position: relative;
-	float: left;
-	margin-left: 10px;
+	overflow: hidden;
+	float: left;	
+	margin-top: -10px;
 }
+
+.content7__img img{	
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: -1;
+}
+
 .content7__img_data {
 	position: absolute;
-	z-index: 1;
+	z-index: 2;
 	left: -10px;
 	top: -10px;
 	height: 155px;
@@ -1515,13 +1565,13 @@ div.frame__angel {
 	padding: 5px 0 0 32px;	
 }
 
-.content7__img > h3{
+.ev-sl-wrap > h3{
 	font-size: 2.4rem;
 	font-family: 'proxima_nova_bold';
 	line-height: 125%;
 	padding: 40px 20px 33px 155px;
 }
-.content7__img > p {
+.ev-sl-wrap > p {
 	width: 200px;
 	padding: 0;
 	margin-left: 155px;
@@ -1533,21 +1583,21 @@ div.frame__angel {
 	display: -ms-flexbox;
 	display: flex;
 }
-.content7__img > p span:nth-child(1) {
+.ev-sl-wrap > p span:nth-child(1) {
 	background: url(../img/map_marker.png) no-repeat;
 	height: 16px;
 	width: 12px;
 	display: block;
 	margin-right: 15px
 }
-.content7__img > p span:nth-child(2) {
+.ev-sl-wrap > p span:nth-child(2) {
 	background: url(../img/icon_country.jpg) no-repeat center;
 	height: 14px;
 	width: 10px;
 	display: block;
 	margin-left: 15px
 }
-.content7__img > a {
+.ev-sl-wrap > a {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -1557,7 +1607,7 @@ div.frame__angel {
 	padding-left: 155px;
 	margin-top: 160px;
 }
-.content7__img > a > span {
+.ev-sl-wrap > a > span {
 	background: url(../img/instagram.png) no-repeat;
 	width: 22px;
 	height: 22px;
@@ -1662,33 +1712,28 @@ div.frame__angel {
     line-height: 100%;
     padding-top: 90px
 }
-.content8 p, .patient_map p{
+.content8 p, .map-content p{
     font-size: 1.8rem;
     color: #a4a4a4;
     line-height: 200%;
     padding: 35px 225px 0 225px; 
 }
 
-.patient_map p{
+.map-content p{
 	text-align: center;
 	margin: 5px 0px;
 }
 
-.patient_map {
-    background: url(../img/worldmap_01.jpg) no-repeat;
-    height: 580px;
-    width: 1136px;
-    position: relative;
-    margin-top: 110px;
-    margin-left: auto;
-    margin-right: auto;
+.map-content {
+    background: url(../img/worldmap_01.jpg) no-repeat;      
 }
-.patient_map h4 {
+
+.map-content h4 {
     color: #43aa9b;
     font-size: 2rem;
     font-family: 'proxima_nova_black';
 }
-.patient_map p {
+.map-content p {
     color: #b3b3b3;
     font-size: 1.2rem;
     line-height: 120%;
@@ -1813,6 +1858,16 @@ footer .menu__phone {
 	padding-left: 5px;
 	display: block;
 	background: url(../img/phone.png) no-repeat right top 5px;
+}
+
+footer .menu__phone a{
+	color: #000;
+}
+
+footer .menu__phone a:hover, footer .menu__phone a:active, footer .menu__phone a:focus{
+	text-decoration: none;
+	outline: none;
+	color: #000;
 }
 
 footer .menu__phone span {

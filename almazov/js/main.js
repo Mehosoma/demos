@@ -402,14 +402,28 @@ $('.map__city_point').mouseenter(function() {
   $(this).parent().toggleClass('active-map-point');  
   $('.active-map-point .map-info').finish();
   $('.active-map-point .map__city_line').finish();
+  if ($(window).width() < 767) {
   $('.active-map-point .map-info').animate({    
      opacity: '1'
-     }, 1000, function() {
+     }, 500, function() {
+  });  
+  $('.active-map-point .map__city_line').animate({    
+      height: '45px'
+     }, 500, function() {
+  });
+
+} else{
+
+  $('.active-map-point .map-info').animate({    
+     opacity: '1'
+     }, 500, function() {
   });  
   $('.active-map-point .map__city_line').animate({    
       height: '145px'
-     }, 1000, function() {
+     }, 500, function() {
   });
+
+}
  
 });
 
