@@ -260,10 +260,8 @@
 		padding-right: 0px;
 	}
 
-	.rhinoplasty-mobile{
-		width: 100%;		
-		display: flex;
-		flex-wrap: wrap;
+	.left-col{
+		width: 100%;
 	}
 
 	.rhinoplasty{
@@ -985,15 +983,9 @@
 		margin-top: 62px;
 	}
 
-
-
-	.rhinoplasty-mobile, .center_col{
+	.left-col, .center_col{
 		width: 50%;
-	}
-
-	.rhinoplasty-mobile{
-		height: 642px;
-	}
+	}	
 
 	.rhinoplasty, .rhinoplasty__hover{
 		height: 642px;
@@ -1607,10 +1599,23 @@
 		padding-top: 0px;
 	}
 
+	.left-col{
+		height: 626px;
+	}
+
+	.content1__bg_wawe2{
+		left: 500px;
+	}
+
+
 }
 
 
 @media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+	.content1__bg_wawe2{
+		left: 780px;
+	}
 
 	.icon1__modal{
 		left: -5px;
@@ -1630,11 +1635,6 @@
 	}
 
 	.content1__video{
-		width: 455px;
-		height: 455px;
-	}
-
-	.mask_video{
 		width: 455px;
 		height: 455px;
 	}
@@ -1746,7 +1746,9 @@
 	}
 
 	.mask_video{
-		background: url(../img/mask_970.png) no-repeat center
+	    width: 455px;
+	    height: 455px;
+		background: url(../img/mask_970.png) no-repeat center;
 	}
 
 	.content1__counter{
