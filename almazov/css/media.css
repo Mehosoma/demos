@@ -1597,6 +1597,19 @@
 
 @media only screen and (min-width : 992px) and (max-width : 1199px) {
 
+	.icon1__modal{
+		left: -5px;
+		z-index: 1000;
+	}
+
+	.icon1__modal p{
+		padding-top: 20px!important;
+	}
+
+	.icon1__modal::after{
+		left: 4%;
+	}
+
 	.content1{
 		height: 850px;
 	}
