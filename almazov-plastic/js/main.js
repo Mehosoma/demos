@@ -248,16 +248,16 @@
 
     // counter
   var plus_number_step1 = $.animateNumber.numberStepFactories.append(' +')
-  $('#breast-grow').animateNumber({ number: 182, numberStep: plus_number_step1 }, 2000);
+  $('#breast-grow').animateNumber({ number: 182}, 2000);
   $('#breast-low').animateNumber({ number: 56 }, 2000);
   $('#breast-oper').animateNumber({ number: 61 }, 2000);
-  $('#breast-others').animateNumber({ number: 93, numberStep: plus_number_step1 }, 2000);
+  $('#breast-others').animateNumber({ number: 93 }, 2000);
     
   var plus_number_step2 = $.animateNumber.numberStepFactories.append(' +')
-  $('#nose-grow').animateNumber({ number: 182, numberStep: plus_number_step2 }, 2000);
+  $('#nose-grow').animateNumber({ number: 182 }, 2000);
   $('#nose-plast').animateNumber({ number: 56 }, 2000);
   $('#nose-repair').animateNumber({ number: 61 }, 2000);
-  $('#nose-recon').animateNumber({ number: 93, numberStep: plus_number_step2 }, 2000);
+  $('#nose-recon').animateNumber({ number: 93 }, 2000);
     
 	
 	
@@ -388,9 +388,9 @@ $(".container5").twentytwenty();
 
 
 //Смена слайдера при клике на категории в блоке Results
-$('.link_slider a').on('click',function(e){
+$('.results-link-slider .link_slider a').on('click',function(e){
   e.preventDefault();    
-  $("*").removeClass("link_slider_active"); 
+  $(".results-link-slider *").removeClass("link_slider_active"); 
   $(this).addClass("link_slider_active"); 
   
     $('.slider-wrap').each(function(){
@@ -402,10 +402,10 @@ $('.link_slider a').on('click',function(e){
 });
 
 //Смена слайдера при клике на категории в блоке Reviews
-$('.link_reviews a').on('click',function(e){
+$('.reviews-link-slider .link_slider a').on('click',function(e){
   e.preventDefault();    
-  $("*").removeClass("link_reviews_active"); 
-  $(this).addClass("link_reviews_active"); 
+  $(".reviews-link-slider *").removeClass("link_slider_active"); 
+  $(this).addClass("link_slider_active"); 
   
     $('.reviews-slider-wrap').each(function(){
       $(this).fadeOut(200);
@@ -533,10 +533,10 @@ $('.conf-choice a').on('click',function(e){
 
 
 //Смена отзывов на странице Backcall
-$('.link_backcall a').on('click',function(e){
+$('.backcall-links .link_slider a').on('click',function(e){
   e.preventDefault();    
-  $("*").removeClass("link_backcall_active"); 
-  $(this).addClass("link_backcall_active"); 
+  $(".backcall-links *").removeClass("link_slider_active"); 
+  $(this).addClass("link_slider_active"); 
   
     $('.backcall-category').each(function(){
       $(this).fadeOut(300);
@@ -548,10 +548,10 @@ $('.link_backcall a').on('click',function(e){
 
 
 //Смена результатов на странице Cases
-$('.link_cases a').on('click',function(e){
+$('.cases-sliders .link_slider a').on('click',function(e){
   e.preventDefault();    
-  $("*").removeClass("link_cases_active"); 
-  $(this).addClass("link_cases_active"); 
+  $(".cases-sliders *").removeClass("link_slider_active"); 
+  $(this).addClass("link_slider_active"); 
   
     $('.cases-category').each(function(){
       $(this).fadeOut(0);
@@ -566,4 +566,18 @@ $('.link_cases a').on('click',function(e){
 
   $(visible).fadeIn(1000);
    
+});
+
+//Scroll to ankor
+$('.nav-list a[href^="."]').click(function(){
+//Сохраняем значение атрибута href в переменной:
+var target = $(this).attr('href');
+$('html, body').animate({scrollTop: $(target).offset().top}, 800);
+return false;
+});
+
+
+//ModalWindow
+$(document).ready(function(){
+    $(".popup_form").magnificPopup();
 });

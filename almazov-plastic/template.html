@@ -5,10 +5,11 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Алмазов пластика - о клинике</title>
+	<title>Алмазов пластика</title>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300&amp;subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="libs/owl/owl.carousel.css"/>
+	<link rel="stylesheet" type="text/css" href="libs/magnific/magnific-popup.css"/>
 	<link rel="stylesheet" href="css/twentytwenty.css">
 <!--
 	<link rel="stylesheet" type="text/css" href="css/slick.css"/>
@@ -149,23 +150,25 @@
 	<nav class="row desktop_menu">
 		<div class="container clearfix">
 			<div class="col-lg-7 col-md-6 col-sm-6 col-xs-12 bottom_menu">
-				<div class="menu__logo">
-					<span>Dr. Almazov</span>
-					<p>пластический хирург<br> кандидат медицинских наук</p>
-				</div>
+				<a href="index.html" class="main-page-link">
+					<div class="menu__logo">
+						<span>Dr. Almazov</span>
+						<p>пластический хирург<br> кандидат медицинских наук</p>
+					</div>
+				</a>
 			</div>
 			<div class="col-lg-3 col-md-3 hidden-sm hidden-xs">
-				<a href="#" class="bottom_menu__btn">Записаться на прием</a>
+				<a href="#" class="btn-gen btn-top-menu">Записаться на прием</a>
 			</div>
 			<div class="hidden-lg hidden-md hidden-sm col-xs-4">
-				<a href="#" class="bottom_menu__btn"></a>
+				<a href="#" class="btn-gen btn-top-menu"></a>
 			</div>
 			<div class="col-lg-2 col-md-3 col-sm-6 col-xs-8">
 				<div class="company-phone">
 					<a href="tel:8(903)616161"><p class="menu__phone">8 (903) 61 61 61</p></a>
 				</div>
 				<div class="col-lg-3 col-md-3 hidden-lg hidden-md hidden-xs">
-					<a href="#" class="bottom_menu__btn">Записаться на прием</a>
+					<a href="#" class="btn-gen btn-top-menu">Записаться на прием</a>
 				</div>
 			</div>
 		</div>
@@ -173,16 +176,20 @@
 </header>
 
 <!-- main -->
-<section class="first-screen template">
+<section class="first-screen bplastic-fs template">
 	<hr />
 	<div class="container content1">
 		<div class="content1__text">
 			<h2>Другие операции</h2>
 			<p>Богатая практика и постоянное совершенствование <br>позволяют проводить  операции европейского уровня <br>и быть в тренде инноваций</p>
 		</div>		
-		<div class="template-bg"></div>
-		<div class="content1__bg hidden-xs">
-			<div class="content1__bg_wawe1-about"></div>
+		<div class="other-bg">
+			<img src="img/template-bg.png" alt="breat-plastic-background-image">
+		</div>	
+		<div class="content1__bg other-bg-wave hidden-xs">
+			<div class="content1__bg_wawe1"></div>
+			<div class="content1__bg_wawe2"></div>
+			<div class="content1__bg_wawe3"></div>
 		</div>
 	</div>	
 </section>
@@ -295,7 +302,7 @@
 		<div class="content5__left_col">
 			<p>Я доверяю только лучшим медицинским учреждениям области <br>c современным оборудованием <br>и условиями для послеоперационной реабилитации
 			</p>
-			<a href="#">Записаться на прием</a>
+			<a href="#" class="btn-gen btn-trust">Записаться на прием</a>
 		</div>
 		<div class="content5__right_col">
 			<div class="frame">
@@ -317,20 +324,10 @@
 </section>
 
 <!--Reviews-->
-<section class="reviews">
+<section class="reviews rev-bp">
 	<div class="container content6">
-		<h2>Отзывы</h2>
-		<div class="link_reviews">
-			<a href="#breast-r-slider" class="link_reviews_active">#пластика груди</a>
-			<a href="#nose-r-slider">#пластика носа</a>
-			<a href="#">#пластика ушей</a>
-			<a href="#">#омоложение лица</a>
-			<a href="#">#липосакция</a>
-			<a href="#">#лечение рубцов</a>
-			<a href="#">#интимная пластика</a>
-			<a href="#">#остальное</a>
-		</div>
-		<div class="reviews-slider-wrap active-r-slider" id="breast-r-slider">
+		<h2>Отзывы</h2>		
+		<div class="reviews-slider-wrap active-r-slider">
 			<div class="owl-carousel reviews-carousel">
 				<div class="reviews-slider-slide">
 					<div class="reviews__frame_header">
@@ -434,7 +431,7 @@
 					</div>
 				</div>
 				<div class="events-slider-slide">
-					<p>Я участвую во многих российских и зарубежных <br>профильных конференциях и семинарах по пластической хирургии. Это позволяет мне использовать последние достижения современной медицины в своей работе. <br>Одно из таких мероприятий</p>					
+					<p class="ev-text">Я участвую во многих российских и зарубежных <br>профильных конференциях и семинарах по пластической хирургии. Это позволяет мне использовать последние достижения современной медицины в своей работе. <br>Одно из таких мероприятий</p>					
 					<div class="content7__img">
 						<div class="ev-sl-wrap">
 							<img src="img/content6_img_full.jpg" alt="events-slider-image">
@@ -509,10 +506,12 @@
 	<div class="container">
 		<div class="row clearfix ad-height">
 			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-				<div class="menu__logo">
-					<span>Dr. Almazov</span>
-					<p>пластический хирург<br> кандидат медицинских наук</p>
-				</div>
+				<a href="index.html" class="main-page-link">
+					<div class="menu__logo">
+						<span>Dr. Almazov</span>
+						<p>пластический хирург<br> кандидат медицинских наук</p>
+					</div>
+				</a>
 			</div>
 			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 				<p class="menu__phone"><a href="tel:8(903)616161">8 (903) 61 61 61</a><span><a href="tel:tel:8(3532)928829">8 (3532) 928 829</a></span></p>
@@ -593,6 +592,7 @@
 	<script src="js/jquery.twentytwenty.js"></script>
 	<script src="js/jquery.event.move.js"></script>	
 	<script src="libs/owl/owl.carousel.js"></script>
+	<script src="libs/magnific/jquery.magnific-popup.js"></script>
 	<script src="js/main.js"></script>
 </body>
 
