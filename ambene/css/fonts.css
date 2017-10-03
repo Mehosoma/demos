@@ -1,0 +1,11 @@
+@font-face {
+  font-family: "yanonekaffeesatz";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/yanonekaffeesatz.eot?#iefix") format("embedded-opentype"), url("../fonts/yanonekaffeesatz.woff") format("woff"), url("../fonts/yanonekaffeesatz.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "yanonekaffeesatzbold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/yanonekaffeesatzbold.eot?#iefix") format("embedded-opentype"), url("../fonts/yanonekaffeesatzbold.woff") format("woff"), url("../fonts/yanonekaffeesatzbold.ttf") format("truetype"); }
