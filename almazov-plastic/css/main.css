@@ -2783,10 +2783,6 @@ footer nav .col-lg-3:nth-child(4){
 	margin-top: 70px;
 }
 
-.bp-results{
-	margin-top: -90px;
-}
-
 .bp-results .content4{
 	min-height: 630px;
 	padding-bottom: 70px;
@@ -3249,4 +3245,8 @@ footer nav .col-lg-3:nth-child(4){
 
 .template-price{
 	padding-top: 47px;
+}
+
+.template-results{
+	margin-top: -90px;
 }

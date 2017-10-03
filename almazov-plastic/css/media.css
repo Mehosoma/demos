@@ -433,7 +433,8 @@
 	}
 
 	.twentytwenty-wrapper{
-		width: 320px;		
+		width: 320px;	
+		margin: 0 auto;	
 	}
 
 	.twentytwenty-container{
@@ -1225,10 +1226,7 @@
 		margin-left: -21px;
 	}
 
-	.twentytwenty-wrapper{
-		margin: 0 auto;
-	}
-
+	
 	/*************ContactsPage*************/
 	.contacts-trust .frame{
 		width: 100%;
@@ -1296,6 +1294,11 @@
 	.argument p{
 		padding-right: 15px;
 		padding-left: 15px;
+	}
+
+	.ideal-plast .col-xs-12{
+		padding-left: 0px;
+		padding-right: 0px;
 	}
 
 
@@ -2202,6 +2205,20 @@
 
 	.ideal-plast{
 		padding-bottom: 40px;
+	}
+
+
+	.cases .twentytwenty-container{
+		width: 720px;
+		margin: 0 auto;
+	}
+
+	.cases .twentytwenty-wrapper{
+		width: 720px;
+	}
+
+	.cases-block {
+ 	   width: 100%;
 	}
 
 }
