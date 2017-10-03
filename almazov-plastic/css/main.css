@@ -3251,3 +3251,11 @@ footer nav .col-lg-3:nth-child(4){
 .block-border{
 	border-bottom: 1px solid #e5e5e5;
 }
+
+.template .other-bg{
+	right: -265px;
+}
+
+.template .content1__text p{
+	padding-top: 67px;
+}

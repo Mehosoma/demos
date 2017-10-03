@@ -1303,6 +1303,10 @@
 		padding-right: 0px;
 	}
 
+	.template .other-bg{
+		right: -547px;
+	}
+
 
 }
 
@@ -2221,6 +2225,10 @@
 
 	.cases-block {
  	   width: 100%;
+	}
+
+	.template .other-bg {
+    	right: -397px;
 	}
 
 }
