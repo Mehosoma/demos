@@ -79,12 +79,16 @@
 		color: #203f82;
 	}
 
+	.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:active{
+		color: #203f82;	
+	}
+
 	.main-bg{
 		width: 100%;	
+		height: 563px;	
 		background-image: url('../img/mobile-bg.jpg');
 		background-repeat: repeat-x;
-		background-size: auto;	
-		height: 563px;	
+		background-size: auto;			
 	}
 
 	.box-mobile{
@@ -246,10 +250,10 @@
 
 	.main-bg{
 		width: 100%;	
+		height: 600px;
 		background-image: url('../img/mobile-bg.jpg');
 		background-repeat: repeat-x;
-		background-size: auto;	
-		height: 600px;	
+		background-size: auto;				
 	}
 
 	.box-mobile{
@@ -275,10 +279,6 @@
 		display: none;
 	}
 
-	.navbar-default{
-		height: 50px;
-	}
-
 	.navbar-toggle{
 		border: none;
 		background-color: transparent;		
@@ -290,6 +290,10 @@
 
 	.navbar-default .navbar-toggle .icon-bar{
 		background-color: #fff
+	}
+
+	.navbar-default{
+		height: 50px;
 	}
 
 	.navbar-default .navbar-collapse{
@@ -323,9 +327,8 @@
 		color: #203f82;
 	}
 
-	.main-bg {
- 		background-position: left -400px center;
-    	background-size: auto;
+	.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:active{
+		color: #203f82;	
 	}
 
 	.prep-desc{
@@ -429,10 +432,6 @@
 	.dose-block span br{
 		display: none;
 	}
-
-}
-
-@media only screen and (min-width : 650px) and (max-width : 991px) {
 
 }
 
@@ -548,26 +547,6 @@
 
 }
 
-@media only screen and (min-width : 1500px){
-
-	.main-bg{
-		width: 100%;
-		height: 800px;
-		background-size: cover;
-	}
-
-}
-
-@media only screen and (min-width : 2000px){
-
-	.main-bg{
-		width: 100%;
-		height: 1000px;
-		background-size: cover;
-	}
-
-}
-
 @media only screen and (min-width : 1920px){
 
 	.prep-desc{
@@ -585,80 +564,6 @@
 }
 
 
-#tel-modal{
-  padding-right: 0px!important;
-}
-
-#tel-modal .modal-dialog{
-  background-color: #fff;
-  width: 300px;  
-  margin: 30px auto;
-}
-
-#tel-modal .modal-dialog .modal-header{
-  border-bottom: none;
-  text-align: center;
-}
-
-#tel-modal .modal-dialog .modal-body{  
-  padding: 0 52px 15px;
-}
-
-#tel-modal .modal-dialog .modal-body #tel-header-form{
-  display: block;
-  margin-bottom: 20px;
-}
-
-#tel-modal .modal-dialog .modal-body input{
-  margin-bottom: 10px;  
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
-  color: #555; 
-  font-size: 14px;
-  line-height: 2;
-  padding: 6px 12px;
-  margin-bottom: 10px;  
-}
-
-#tel-modal .modal-dialog .modal-body .button-header-form{
-  background-color: orange;
-  color: #fff;
-  border: none;
-  padding: 10px 61px;
-  -moz-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out; 
-  cursor: pointer;
-  font-size: 15px;
-}
-
-#tel-modal .modal-dialog .modal-body .button-header-form:hover{
-  background-color: #468dda;
-}
 
 
-#tel-modal .modal-dialog .modal-body a{
-  display: inline-block; 
-  font-size: 12px;  
-}
-
-#tel-modal .modal-dialog .modal-body .modal-links a:hover{
-  text-decoration: underline;
-  color: #337ab7;
-}
-
-#tel-modal .modal-dialog .modal-body .disabled{
-  pointer-events: none;
-  background-color: #d6d6d6;
-}
-
-#tel-modal .modal-dialog .modal-body .reg {
-  float: left;
-}
-
-#tel-modal .modal-dialog .modal-body .pass {
-  float: right;
-}
 

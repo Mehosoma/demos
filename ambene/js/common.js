@@ -50,6 +50,11 @@ $("#tel-modal").on('hidden.bs.modal', function(){
     $('.button-header-form').addClass('disabled');
   });
 
- 
+});
 
+
+$(document).ready(function(){
+    $('.navbar-toggle').on('click',function(e){
+        $(this).toggleClass('is-active');       
+    });
 });
