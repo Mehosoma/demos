@@ -50,7 +50,7 @@
 						<a href="tel:+7(499)189-63-25">+7(499)189-63-25</a>
 						<div class="reg-link">
 							<a href="" class="border-link">Регистрация</a>
-							<a href="">Вход</a>
+							<a href="#tel-modal" data-toggle="modal">Вход</a>
 						</div>
 					</div>
 				</div>
@@ -233,6 +233,26 @@
 		</div>
 	</div>
 </footer>
+
+<div class="modal" id="tel-modal">
+	<div class="modal-dialog"> 
+		<div class="modal-header">	  				
+   			<button class="close" data-dismiss="modal">×</button>	    			
+   			<h3>Авторизация</h3>
+		</div>
+		<div class="modal-body">
+			<span id="tel-header-form">
+   			<input type="text" id="modal-login" name="tel-login" onkeyup="checkParams()" placeholder="Введите логин" required="">
+  			<input type="text" id="modal-pass" name="tel-pass" onkeyup="checkParams()" placeholder="Введите пароль" required="">
+   			<a href="" class="button-header-form disabled">Отправить</a>
+    		</span>	
+	   		<div class="modal-links clearfix">
+	   			<a href="#" class="reg">Регистрация</a>
+	   			<a href="#" class="pass">Забыли пароль?</a>
+	   		</div>
+	  	</div>	  			
+	</div>
+</div>
 
 	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
 	<script src="libs/owl/owl.carousel.js"></script>
