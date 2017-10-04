@@ -29,12 +29,12 @@ body {
   left: 50%;
   margin-left: -700px;
   z-index: 1000;
-  background-image: url("../img/index.jpg");
+  background-image: url("../img/about.jpg");
   background-size: cover;
   opacity: 0.5;
   background-position: top center;
   display: none;
-  margin-top: -18px; }
+  margin-top: 2px; }
 
 /**************************************Header**********************************/
 .header-top {
@@ -78,7 +78,10 @@ body {
     padding: 0px 9px;
     text-decoration: underline; }
   .reg-link a:hover {
-    color: #4c92f0; }
+    color: #4c92f0;
+    text-decoration: none !important; }
+  .reg-link a:active, .reg-link a:focus {
+    text-decoration: underline; }
 
 .border-link {
   border-right: 1px solid #000; }
@@ -339,7 +342,7 @@ h2 {
   -ms-flex-align: end;
   align-items: flex-end; }
 
-/***************************************Footer**********************************/
+/***************************************Callback**********************************/
 .callback {
   padding: 70px 0px 100px; }
 
@@ -393,6 +396,147 @@ footer {
 footer .phone {
   margin-top: 70px;
   padding-right: 0px; }
+
+/**************************************AboutPage**********************************/
+.about {
+  padding: 15px 0px 91px 0px; }
+  .about h2 {
+    font-family: "yanonekaffeesatz", sans-serif;
+    color: #f37022;
+    margin-bottom: 56px; }
+  .about p {
+    font-family: "yanonekaffeesatz", sans-serif;
+    font-size: 20px;
+    color: #525252; }
+  .about img {
+    padding-left: 33px; }
+
+.about-content p {
+  padding-left: 10px;
+  text-align: justify;
+  padding-right: 9px; }
+
+.unic-tech {
+  padding-left: 20px; }
+  .unic-tech h3 {
+    font-family: "yanonekaffeesatz", sans-serif;
+    font-size: 24px;
+    color: #f37022;
+    text-transform: uppercase;
+    margin-top: 0px;
+    margin-bottom: 22px;
+    padding-left: 17px; }
+  .unic-tech p {
+    text-align: justify; }
+  .unic-tech a {
+    display: inline-block;
+    margin-top: 19px;
+    float: right; }
+  .unic-tech a:hover {
+    opacity: 0.7; }
+
+.about, .subject, .dose {
+  -webkit-box-shadow: inset 0px -8px 29px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0px -8px 29px 0px rgba(0, 0, 0, 0.1); }
+
+.subject {
+  padding: 40px 0px 50px 0px; }
+
+.owl-wrap {
+  width: 100%;
+  position: relative; }
+
+.owl-carousel {
+  width: 1040px;
+  height: 400px;
+  margin-top: 52px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.slide-block {
+  width: 223px;
+  height: 310px;
+  -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+  margin: 20px auto; }
+  .slide-block span {
+    font-family: "yanonekaffeesatz", sans-serif;
+    font-size: 20px;
+    color: #474747;
+    text-align: center;
+    display: block;
+    padding-top: 15px; }
+
+.owl-prev {
+  position: absolute;
+  width: 40px;
+  height: 60px;
+  left: 0px;
+  top: 106px;
+  background-image: url("../img/arrow-left.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out; }
+
+.owl-next {
+  position: absolute;
+  width: 40px;
+  height: 60px;
+  right: 0px;
+  top: 106px;
+  background-image: url("../img/arrow-right.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out; }
+
+.owl-prev:hover {
+  cursor: pointer;
+  background-image: url("../img/arrow-orange-left.png"); }
+
+.owl-next:hover {
+  cursor: pointer;
+  background-image: url("../img/arrow-orange-right.png"); }
+
+.dose {
+  padding: 85px 0px 88px 0px; }
+
+.dose-block {
+  padding-left: 167px; }
+  .dose-block img {
+    display: inline-block;
+    position: relative;
+    top: 30px; }
+  .dose-block span {
+    display: inline-block;
+    width: 70%;
+    font-family: "yanonekaffeesatz", sans-serif;
+    font-size: 24px;
+    color: #393939;
+    padding-left: 16px;
+    position: relative;
+    top: 76px; }
+  .dose-block p {
+    font-family: "yanonekaffeesatz", sans-serif;
+    font-size: 18px;
+    color: #626262;
+    margin-top: 56px;
+    padding-left: 3px; }
+
+.repair .col-lg-6:nth-child(2) .dose-block {
+  padding-left: 110px;
+  padding-top: 26px; }
+  .repair .col-lg-6:nth-child(2) .dose-block span {
+    top: 58px;
+    padding-left: 13px; }
+
+.about-callback {
+  padding-top: 106px; }
 
 .hidden {
   display: none; }

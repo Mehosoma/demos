@@ -34,7 +34,7 @@
 			<div class="row">
 				<div class="col-lg-4 col-md-4 col-sm-6">
 					<div class="logo">
-						<img src="img/logo.png" alt="logo-image">
+						<a href="index.html"><img src="img/logo.png" alt="logo-image"></a>
 					</div>
 					<div class="tagline hidden-lg hidden-md hidden-xs">
 						<span>Больше <i>нет боли</i> в суставах!</span>
@@ -50,7 +50,7 @@
 						<a href="tel:+7(499)189-63-25">+7(499)189-63-25</a>
 						<div class="reg-link">
 							<a href="" class="border-link">Регистрация</a>
-							<a href="">Вход</a>
+							<a href="#tel-modal" data-toggle="modal">Вход</a>
 						</div>
 					</div>
 				</div>
@@ -58,33 +58,32 @@
 		</div>	
 	</div>
 	<nav role="navigation" class="navbar navbar-default">
-			<div class="navbar-header">
-				<div class="tagline hidden-lg hidden-md hidden-sm">
-					<span>Больше <i>нет боли</i> в суставах!</span>
-				</div>
-				<button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
-				    <span class="sr-only">Toggle navigation</span>
-				    <span class="icon-bar"></span>
-				    <span class="icon-bar"></span>
-				    <span class="icon-bar"></span>
-	  			</button>		 
+		<div class="navbar-header">
+			<div class="tagline hidden-lg hidden-md hidden-sm">
+				<span>Больше <i>нет боли</i> в суставах!</span>
 			</div>
-	   		<div id="navbarCollapse" class="collapse navbar-collapse">		    				
-	  			<ul class="nav navbar-nav">
-	  			 	<li><a href="">Главная</a><img src="img/li-bg.png" alt="list-decor" class="decor"></li>
-				    <li><a href="">О препарате</a><img src="img/li-bg.png" alt="list-decor" class="decor"></li>	
-				    <li><a href="">Статьи</a><img src="img/li-bg.png" alt="list-decor" class="decor"></li>
-				    <li><a href="">Контакты</a><img src="img/li-bg.png" alt="list-decor" class="decor"></li>						    
-			    </ul>
-			</div>			
-		</nav>	
+			<button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+			    <span class="sr-only">Toggle navigation</span>
+			    <span class="icon-bar"></span>
+			    <span class="icon-bar"></span>
+			    <span class="icon-bar"></span>
+			</button>		 
+		</div>
+		<div id="navbarCollapse" class="collapse navbar-collapse">		    				
+			<ul class="nav navbar-nav">
+			 	<li><a href="">Главная</a><img src="img/li-bg.png" alt="list-decor" class="decor"></li>
+			    <li><a href="">О препарате</a><img src="img/li-bg.png" alt="list-decor" class="decor"></li>	
+			    <li><a href="">Статьи</a><img src="img/li-bg.png" alt="list-decor" class="decor"></li>
+			    <li><a href="">Контакты</a><img src="img/li-bg.png" alt="list-decor" class="decor"></li>
+		    </ul>
+		</div>			
+	</nav>	
 </header>
 
 <!--MainBg-->
 <section class="main-bg">
-	<div class="main-gradient">
-		
-	</div>
+	<div class="main-gradient"></div>
+	<div class="box-mobile"><img src="img/box.png" alt="box-ambene-image" class="hidden-sm hidden-md hidden-lg"></div>
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-4 col-lg-offset-8 col-md-3 col-md-offset-9 col-sm-4 col-sm-offset-8 col-xs-12 right-col">
@@ -126,7 +125,7 @@
 	</div>
 </section>
 
-<!--Evidence-->
+<!--Benefits-->
 <section class="benefits">
 	<div class="container">
 		<div class="row">
@@ -191,7 +190,7 @@
 				</div>
 				<h2>Остались вопросы?</h2>
 				<div class="header-content">
-					<p>Наши специалисты готовы ответить на любые ваши вопросы о показаниях, способах применения и противопоказаниях к препарату Амбене Био. Звоните +7(499)189-63-25</p>
+					<p>Наши специалисты готовы ответить на любые ваши вопросы о показаниях, способах применения и противопоказаниях к препарату Амбене Био. Звоните +7(499)189&nbsp;-63&nbsp;-25</p>
 				</div>				
 			</div>
 		</div>		
@@ -226,6 +225,26 @@
 		</div>
 	</div>
 </footer>
+
+<div class="modal" id="tel-modal">
+	<div class="modal-dialog"> 
+		<div class="modal-header">	  				
+   			<button class="close" data-dismiss="modal">×</button>	    			
+   			<h3>Авторизация</h3>
+		</div>
+		<div class="modal-body">
+			<span id="tel-header-form">
+   			<input type="text" id="modal-login" name="tel-login" onkeyup="checkParams()" placeholder="Введите логин" required="">
+  			<input type="text" id="modal-pass" name="tel-pass" onkeyup="checkParams()" placeholder="Введите пароль" required="">
+   			<a href="" class="button-header-form disabled">Отправить</a>
+    		</span>	
+	   		<div class="modal-links clearfix">
+	   			<a href="#" class="reg">Регистрация</a>
+	   			<a href="#" class="pass">Забыли пароль?</a>
+	   		</div>
+	  	</div>	  			
+	</div>
+</div>
 
 	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
 	<script src="libs/owl/owl.carousel.js"></script>
