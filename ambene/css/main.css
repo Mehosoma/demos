@@ -740,13 +740,13 @@ height: auto; }
 
 #article-page .article-page-block-desc h2 {
   display: block;
-  font-family: "Arial", sans-serif;
-  font-size: 30px;
+  font-family: "yanonekaffeesatz", sans-serif;
+  font-size: 34px;
   color: #468dda;
   font-weight: normal;
   margin-bottom: 20px;
   margin-top: 0px;
-  line-height: 1em;
+  line-height: 0.7em;
   text-align: left;
   -moz-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
@@ -759,8 +759,7 @@ height: auto; }
 
 .article-one .article-page-block-desc span{
   display: block;
-  margin-bottom: 20px;
-  padding-left: 10px;
+  margin-bottom: 20px; 
   color: #d0d0d0;
 }
 
@@ -772,7 +771,11 @@ height: auto; }
 } 
 
 #article-page p {
-  margin: 10px 0; }
+  margin: 10px 0; 
+  font-family: 'arial', sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
 
 #article-page .read-button {
   display: inline-block;
@@ -815,8 +818,8 @@ height: auto; }
 }
 
 .news-headers h3{
-   font-family: "Arial", sans-serif;
-    font-size: 20px;
+   font-family: "yanonekaffeesatz", sans-serif;
+    font-size: 28px;
     line-height: 34px;
     color: #848484;
     font-weight: normal;   
@@ -852,6 +855,10 @@ height: auto; }
   cursor: pointer;
   border: 1px solid #c0c0c0;
   margin-right: 5px;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 #article-page .count-page .active-page, #article-page .count-page .active-page:hover, #article-page .count-page .active-page:active, #article-page .count-page .active-page:focus{
@@ -862,6 +869,7 @@ height: auto; }
 
 #article-page .count-page span:hover{
   background: rgba(70,141,218,0.2);
+  color: #337ab7;
 }
 
 #article-page .count-page .extend-page{
@@ -880,9 +888,13 @@ height: auto; }
 
 .news-headers a{
   display: block;
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 15px;
+  line-height: 22px;
   padding-bottom: 10px;
+  background-image: url('../img/bullet_li.png');
+  background-repeat: no-repeat;
+  background-position: left top 4px;
+  padding-left: 20px;
 }
 
 
@@ -897,4 +909,22 @@ height: auto; }
 
 .news-headers a:hover{
   color: #ff8a38;
+}
+
+.breadcrumb{
+  background-color: transparent;
+  font-size: 14px;
+  margin-bottom: 0px;
+}
+
+.breadcrumb a{
+  color: #468dda;
+   -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.breadcrumb a:hover{
+  opacity: 0.7;
 }
