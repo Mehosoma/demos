@@ -625,8 +625,6 @@ footer .phone {
   display: none; }
 
 
-
-
 /************************************ModalWindow**********************************/
 
 #tel-modal{
@@ -706,3 +704,186 @@ footer .phone {
   float: right;
 }
 
+
+/************************************ArticlesGenerealPage**********************************/
+#article-page {
+  padding: 40px 0 50px 0px; 
+}
+
+#article-page .article-page-block {
+  padding: 30px 0;
+  border-bottom: 1px solid #a1a1a1; }
+
+.article-one .article-page-block{
+  border-bottom: none!important;
+}
+
+#article-page .article-page-block-image img {
+    width: 100%;
+height: auto; }
+
+.article-one .article-page-block-image{
+  max-width: 320px;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 15px;
+}
+
+#article-page .article-page-block-image {
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out; }
+
+#article-page .article-page-block-image:hover {
+  -webkit-filter: brightness(90%); }
+
+#article-page .article-page-block-desc h2 {
+  display: block;
+  font-family: "Arial", sans-serif;
+  font-size: 30px;
+  color: #468dda;
+  font-weight: normal;
+  margin-bottom: 20px;
+  margin-top: 0px;
+  line-height: 1em;
+  text-align: left;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out; }
+
+#article-page .article-page-block-desc h2:hover {
+  color: #ff8a38; } 
+
+.article-one .article-page-block-desc h2:hover {
+  color: #468dda!important; 
+} 
+
+#article-page p {
+  margin: 10px 0; }
+
+#article-page .read-button {
+  display: inline-block;
+  background-color: #468dda;
+  color: #fff;
+  padding: 8px 17px;
+  font-family: 'arial', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 19px;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out; }
+
+#article-page .read-button:hover {
+  background-color: #ff8a38;
+  text-decoration: none; }
+
+.article-page-block-desc {
+  padding-left: 10px;
+}
+
+.article-page-block-content{
+  padding-left: 10px;
+}
+
+.news-headers{
+  margin-top: 25px;  
+}
+
+#article-page .col-lg-8{
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+#article-page .col-lg-9{
+  padding-right: 15px;
+}
+
+.news-headers h3{
+   font-family: "Arial", sans-serif;
+    font-size: 20px;
+    line-height: 34px;
+    color: #848484;
+    font-weight: normal;   
+    text-align: left;
+    background-image: url('../img/note.png');
+    background-size: 18px auto;
+    background-repeat: no-repeat;
+    background-position: top 7px left;
+    margin-bottom: 34px;
+    margin-top: 0px;
+    padding-left: 25px;
+    display: block;
+
+}
+
+#article-page a:hover, #article-page a:active, #article-page a:focus{
+  text-decoration: none;
+}
+
+#article-page .col-lg-9 div:nth-last-child(2){
+  border-bottom: none;
+}
+
+#article-page .count-page{
+  margin-top: 50px;
+  margin-left: 20px;
+}
+
+#article-page .count-page span{
+  padding: 10px 15px; 
+  font-size: 18px;
+  border-radius: 5px;  
+  cursor: pointer;
+  border: 1px solid #c0c0c0;
+  margin-right: 5px;
+}
+
+#article-page .count-page .active-page, #article-page .count-page .active-page:hover, #article-page .count-page .active-page:active, #article-page .count-page .active-page:focus{
+  background: #468dda;
+  color: #fff;
+  border: 1px solid #468dda;
+}
+
+#article-page .count-page span:hover{
+  background: rgba(70,141,218,0.2);
+}
+
+#article-page .count-page .extend-page{
+  position: relative;    
+  border: none;  
+  cursor: default;
+  padding: 0px 15px;
+  bottom: 5px;  
+  letter-spacing: 2px;
+}
+
+#article-page .count-page .extend-page:hover{
+  background: transparent;
+  }
+
+
+.news-headers a{
+  display: block;
+  font-size: 18px;
+  line-height: 24px;
+  padding-bottom: 10px;
+}
+
+
+.news-headers-image img {
+  width: 100%;
+  height: auto;   
+}
+
+.news-headers-image{
+  margin-top: 30px;
+}
+
+.news-headers a:hover{
+  color: #ff8a38;
+}
