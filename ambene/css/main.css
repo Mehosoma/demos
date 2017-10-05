@@ -753,6 +753,17 @@ height: auto; }
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out; }
 
+.article-one .article-page-block-desc h2{
+  margin-bottom: 5px!important;
+}
+
+.article-one .article-page-block-desc span{
+  display: block;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  color: #d0d0d0;
+}
+
 #article-page .article-page-block-desc h2:hover {
   color: #ff8a38; } 
 
