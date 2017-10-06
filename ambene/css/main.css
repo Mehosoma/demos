@@ -631,6 +631,13 @@ footer .phone {
   padding-right: 0px!important;
 }
 
+#tel-modal h3{
+  font-family: 'yanonekaffeesatz', sans-serif;
+  letter-spacing: 1px;
+  font-size: 30px;
+  color: #468dda;
+}
+
 #tel-modal .modal-dialog{
   background-color: #fff;
   width: 300px;  
@@ -664,7 +671,7 @@ footer .phone {
 }
 
 #tel-modal .modal-dialog .modal-body .button-header-form{
-  background-color: orange;
+  background-color: #468dda;
   color: #fff;
   border: none;
   padding: 10px 61px;
@@ -677,7 +684,7 @@ footer .phone {
 }
 
 #tel-modal .modal-dialog .modal-body .button-header-form:hover{
-  background-color: #468dda;
+  background-color: orange;
 }
 
 
@@ -707,7 +714,7 @@ footer .phone {
 
 /************************************ArticlesGenerealPage**********************************/
 #article-page {
-  padding: 40px 0 50px 0px; 
+  padding: 30px 0 50px 0px; 
 }
 
 #article-page .article-page-block {
@@ -720,13 +727,31 @@ footer .phone {
 
 #article-page .article-page-block-image img {
     width: 100%;
-height: auto; }
+    height: auto; }
 
 .article-one .article-page-block-image{
-  max-width: 320px;
+  max-width: 320px;   
+}
+
+.article-one .image-left{
   float: left;
   margin-right: 20px;
+  margin-bottom: 15px; 
+}
+
+.template .image-left{
+  margin-top: 15px;
+}
+
+.article-one .image-right{
+  float: right;
+  margin-left: 20px;
   margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.article-one .image-center{
+  margin: 20px auto;  
 }
 
 #article-page .article-page-block-image {
@@ -777,24 +802,31 @@ height: auto; }
   letter-spacing: 0.5px;
 }
 
+.article-one p{
+  text-align: justify;
+}
+
 #article-page .read-button {
-  display: inline-block;
-  background-color: #468dda;
+  display: inline-block; 
   color: #fff;
-  padding: 8px 17px;
-  font-family: 'arial', sans-serif;
-  font-size: 14px;
-  font-weight: bold;
+  padding: 7px 20px;
+  font-family: 'yanonekaffeesatz', sans-serif;
+  font-size: 20px;    
+  color: #468dda;
   text-transform: uppercase;
   margin-top: 19px;
+  border: 1px solid #468dda;
   -moz-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
   -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out; }
+  transition: all 0.3s ease-out; 
+}
 
-#article-page .read-button:hover {
-  background-color: #ff8a38;
-  text-decoration: none; }
+#article-page .read-button:hover {  
+  text-decoration: none; 
+  color: #f37225;
+  border: 1px solid #f37225;  
+}
 
 .article-page-block-desc {
   padding-left: 10px;
@@ -908,7 +940,7 @@ height: auto; }
 }
 
 .news-headers a:hover{
-  color: #ff8a38;
+  color: #f37225;
 }
 
 .breadcrumb{
