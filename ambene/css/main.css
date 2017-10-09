@@ -785,7 +785,7 @@ footer .phone {
 #article-page .article-page-block-image:hover {
   -webkit-filter: brightness(90%); }
 
-#article-page .article-page-block-desc h2, #article-page .article-page-block-desc h1, .article-page-block-content h2 {
+#article-page .article-page-block-desc h2, #article-page .article-page-block-desc h1, .subheader{
   display: block;
   font-family: "yanonekaffeesatz", sans-serif;
   font-size: 40px;
@@ -801,7 +801,7 @@ footer .phone {
   transition: all 0.3s ease-out; 
 }
 
-.article-page-block-content h2{
+.subheader{
   font-size: 32px;
   margin: 20px 0px; 
 }
@@ -853,11 +853,7 @@ footer .phone {
   border: 1px solid #f37225;  
 }
 
-.article-page-block-desc {
-  padding-left: 10px;
-}
-
-.article-page-block-content{
+.articles-content-wrap{
   padding-left: 10px;
 }
 
