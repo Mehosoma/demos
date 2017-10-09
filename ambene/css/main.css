@@ -832,8 +832,7 @@ footer .phone {
 }
 
 #article-page .read-button {
-  display: inline-block; 
-  color: #fff;
+  display: inline-block;  
   padding: 7px 20px;
   font-family: 'yanonekaffeesatz', sans-serif;
   font-size: 20px;    
