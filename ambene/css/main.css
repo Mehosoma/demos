@@ -910,8 +910,7 @@ footer .phone {
   font-size: 18px;
   border-radius: 5px;  
   cursor: pointer;
-  border: 1px solid #c0c0c0;
-  margin-right: 5px;
+  border: 1px solid #c0c0c0; 
   -moz-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
   -webkit-transition: all 0.3s ease-out;
@@ -927,6 +926,10 @@ footer .phone {
 #article-page .count-page span:hover{
   background: rgba(70,141,218,0.2);
   color: #337ab7;
+}
+
+#article-page .count-page a{
+  margin-right: 5px;
 }
 
 #article-page .count-page .extend-page{
