@@ -48,6 +48,11 @@
 		background-color: #fff
 	}
 
+	.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{
+ 		background-color: #fff;
+  		color: #203f82;
+	}
+
 	.navbar-default .navbar-collapse{
 		position: absolute;
 		z-index: 1000;
@@ -334,6 +339,11 @@
 
 	.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{
 		background-color: transparent;
+	}
+
+	.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{
+ 		background-color: #fff;
+  		color: #203f82;
 	}
 
 	.navbar-default .navbar-toggle .icon-bar{
