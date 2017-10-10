@@ -277,6 +277,14 @@
 	.template .article-page-block{
 		padding: 0px!important;
 	}
+
+	.width-middle{
+ 		width: 100%;
+	}
+
+	.width-small{
+  		width: 100%;
+	}
 	
 }
 
@@ -540,6 +548,14 @@
 
 	.template .article-page-block{
 		padding: 0px!important;
+	}
+
+	.width-middle{
+ 		width: 100%;
+	}
+
+	.width-small{
+  		width: 100%;
 	}
 
 }

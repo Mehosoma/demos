@@ -806,6 +806,64 @@ footer .phone {
   margin: 20px 0px; 
 }
 
+.number-list, .marker-list{
+  list-style-type: none;
+  padding-left: 40px;
+  margin: 20px 0px;
+  counter-reset: list 0;
+}
+
+.number-list li{
+  margin: 5px 0px;
+  font-size: 14px;
+  font-family: 'Arial', sans-serif
+}
+
+.number-list li:before{
+  counter-increment: list;
+  content: counter(list) ". ";
+  color: #468dda;
+}
+
+.marker-list li:before{
+  content: '\2022  ';
+  font-size: 20px;
+  line-height: 24px;
+  position: relative;
+  top: 3px;
+  color: #468dda;
+}
+
+.orange-block, .blue-block{
+  width: 100%;
+  background-color: #f85921;  
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.blue-block{
+  background-color: #0c4ca3;
+}
+
+.blue-text p{
+  color: #0c4ca3;
+  font-weight: bold;
+}
+
+.orange-text p{
+  color: #f85921;
+  font-weight: bold;  
+}
+
+.width-middle{
+  width: 50%;
+}
+
+.width-small{
+  width: 33%;
+}
+
 .article-one .article-page-block-desc h1{
   margin-bottom: 10px!important;
 }
