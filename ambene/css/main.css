@@ -1045,7 +1045,7 @@ footer .phone {
 
 /************************************ModalWindowLoad**********************************/
 
-.modal-dialog {
+#load-modal .modal-dialog {
   background: #fff;
   width: 435px;
   height: 150px;
