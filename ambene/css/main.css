@@ -1072,11 +1072,15 @@ footer .phone {
   margin-top: 20px
 }
 
-#load-modal span{
-  float: left;
-  padding-left: 10px;
+#load-modal label{
+  font-style: normal;
+  font-weight: normal;
+}
+
+#load-modal label input{
   position: relative;
-  top: 2px;
+  top: -2px;
+  margin-right: 10px;
 }
 
 #load-modal p{
