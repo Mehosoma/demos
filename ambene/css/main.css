@@ -1037,6 +1037,11 @@ h3{
   margin-bottom: 5px!important;
 }
 
+.align-header{
+  text-align: center;
+  margin: 0 auto;
+}
+
 
 
 /************************************ModalWindowLoad**********************************/

@@ -681,6 +681,11 @@
 		padding-left: 30px!important;
 	}
 
+	.benefits-block p{
+		padding-right: 20px;
+	}
+
+
 }
 
 @media only screen and (min-width : 1920px){
