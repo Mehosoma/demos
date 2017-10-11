@@ -58,3 +58,20 @@ $(document).ready(function(){
         $(this).toggleClass('is-active');       
     });
 });
+
+$(document).ready(function(){
+    setTimeout(function(){$('#load-modal').modal('show');}, 1000);
+});
+
+//Disabled button
+
+jQuery(function($){ 
+    $("input[name='disclaim']").click(function() {
+        if (this.checked) {
+            $('#block').removeClass('disabled');
+        } else {
+            $('#block').addClass('disabled');
+        }         
+    }); 
+});
+

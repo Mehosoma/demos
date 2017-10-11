@@ -735,11 +735,11 @@ footer .phone {
 
 
 /************************************ArticlesGenerealPage**********************************/
-#article-page {
+.article-page {
   padding: 30px 0 50px 0px; 
 }
 
-#article-page .article-page-block {
+.article-page-block {
   padding: 30px 0;
   border-bottom: 1px solid #a1a1a1; }
 
@@ -747,7 +747,7 @@ footer .phone {
   border-bottom: none!important;
 }
 
-#article-page .article-page-block-image img {
+.article-page-block-image img {
     width: 100%;
     height: auto; }
 
@@ -776,16 +776,16 @@ footer .phone {
   margin: 20px auto;  
 }
 
-#article-page .article-page-block-image {
+.article-page-block-image {
   -moz-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out; }
 
-#article-page .article-page-block-image:hover {
+.article-page-block-image:hover {
   -webkit-filter: brightness(90%); }
 
-#article-page .article-page-block-desc h2, #article-page .article-page-block-desc h1, .subheader{
+.news-one-header, .header-gen, .subheader{
   display: block;
   font-family: "yanonekaffeesatz", sans-serif;
   font-size: 40px;
@@ -864,7 +864,7 @@ footer .phone {
   width: 33%;
 }
 
-.article-one .article-page-block-desc h1{
+.header-gen{
   margin-bottom: 10px!important;
 }
 
@@ -874,11 +874,11 @@ footer .phone {
   color: #d0d0d0;
 }
 
-#article-page .article-page-block-desc h2:hover {
+.article-page-block-desc h2:hover {
   color: #ff8a38; } 
 
 
-#article-page p {
+.article-page p {
   margin: 10px 0; 
   font-family: 'arial', sans-serif;
   font-size: 14px;
@@ -889,7 +889,7 @@ footer .phone {
   text-align: justify;
 }
 
-#article-page .read-button {
+.read-button {
   display: inline-block;  
   padding: 7px 20px;
   font-family: 'yanonekaffeesatz', sans-serif;
@@ -904,7 +904,7 @@ footer .phone {
   transition: all 0.3s ease-out; 
 }
 
-#article-page .read-button:hover {  
+.read-button:hover {  
   text-decoration: none; 
   color: #f37225;
   border: 1px solid #f37225;  
@@ -918,12 +918,12 @@ footer .phone {
   margin-top: 25px;  
 }
 
-#article-page .col-lg-8{
+.article-page .col-lg-8{
   padding-right: 15px;
   padding-left: 15px;
 }
 
-#article-page .col-lg-9{
+.article-page .col-lg-9{
   padding-right: 15px;
 }
 
@@ -945,20 +945,20 @@ footer .phone {
 
 }
 
-#article-page a:hover, #article-page a:active, #article-page a:focus{
+.article-page a:hover, .article-page a:active, .article-page a:focus{
   text-decoration: none;
 }
 
-#article-page .col-lg-9 div:nth-last-child(2){
+.article-page .col-lg-9 div:nth-last-child(2){
   border-bottom: none;
 }
 
-#article-page .count-page{
+.article-page .count-page{
   margin-top: 50px;
   margin-left: 20px;
 }
 
-#article-page .count-page span{
+.article-page .count-page span{
   padding: 10px 15px; 
   font-size: 18px;
   border-radius: 5px;  
@@ -970,22 +970,22 @@ footer .phone {
   transition: all 0.3s ease-out;
 }
 
-#article-page .count-page .active-page, #article-page .count-page .active-page:hover, #article-page .count-page .active-page:active, #article-page .count-page .active-page:focus{
+.article-page .count-page .active-page, .article-page .count-page .active-page:hover, .article-page .count-page .active-page:active, .article-page .count-page .active-page:focus{
   background: #468dda;
   color: #fff;
   border: 1px solid #468dda;
 }
 
-#article-page .count-page span:hover{
+.article-page .count-page span:hover{
   background: rgba(70,141,218,0.2);
   color: #337ab7;
 }
 
-#article-page .count-page a{
+.article-page .count-page a{
   margin-right: 5px;
 }
 
-#article-page .count-page .extend-page{
+.article-page .count-page .extend-page{
   position: relative;    
   border: none;  
   cursor: default;
@@ -994,7 +994,7 @@ footer .phone {
   letter-spacing: 2px;
 }
 
-#article-page .count-page .extend-page:hover{
+.article-page .count-page .extend-page:hover{
   background: transparent;
   }
 
@@ -1040,4 +1040,66 @@ footer .phone {
 
 .breadcrumb a:hover{
   opacity: 0.7;
+}
+
+
+/************************************ModalWindowLoad**********************************/
+
+.modal-dialog {
+  background: #fff;
+  width: 435px;
+  height: 150px;
+  margin: 0 auto;
+  position: relative;
+  top: 50%;  
+  margin-top: -75px;  
+}
+
+#load-modal .close{
+  margin-top: -9px;
+}
+
+#load-modal input {
+  display: inline-block;
+  vertical-align: top;
+  float: left;
+}
+
+#load-modal .butt-dis {
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  margin-top: 20px
+}
+
+#load-modal span{
+  float: left;
+  padding-left: 10px;
+  position: relative;
+  top: 2px;
+}
+
+#load-modal a {
+  background-color: #468dda;
+  padding: 10px 10px;
+  font-family: 'arial', sans-serif;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 5px;
+  display: inline-block;  
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+#load-modal a:hover {
+  outline: none;
+  text-decoration: none;
+  background-color: orange;
+}
+
+#load-modal .disabled {
+  pointer-events: none;
+  background-color: #d6d6d6;
 }

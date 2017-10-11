@@ -285,6 +285,16 @@
 	.width-small{
   		width: 100%;
 	}
+
+	.modal-dialog{
+		width: 310px;
+		height: 160px;
+		margin-top: -80px;
+	}
+
+	#load-modal span{
+		width: 90%;
+	}
 	
 }
 
