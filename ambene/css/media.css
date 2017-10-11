@@ -286,7 +286,7 @@
   		width: 100%;
 	}
 
-	.modal-dialog{
+	#load-modal .modal-dialog{
 		width: 310px;
 		height: 160px;
 		margin-top: -80px;
