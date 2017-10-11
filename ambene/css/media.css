@@ -287,9 +287,7 @@
 	}
 
 	#load-modal .modal-dialog{
-		width: 310px;
-		height: 160px;
-		margin-top: -80px;
+		margin: 0 5%;
 	}
 
 	#load-modal span{
@@ -566,6 +564,14 @@
 
 	.width-small{
   		width: 100%;
+	}
+
+	#load-modal .modal-dialog{
+		max-width: 700px;
+	}
+
+	#load-modal .modal-dialog{
+		margin: 0 5%;
 	}
 
 }

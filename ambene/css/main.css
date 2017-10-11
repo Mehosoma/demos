@@ -1047,12 +1047,12 @@ footer .phone {
 
 #load-modal .modal-dialog {
   background: #fff;
-  width: 435px;
-  height: 150px;
+  max-width: 600px;
+  min-height: 100px;
   margin: 0 auto;
   position: relative;
-  top: 50%;  
-  margin-top: -75px;  
+  top: 20%;  
+  border-radius: 5px;
 }
 
 #load-modal .close{
@@ -1077,6 +1077,10 @@ footer .phone {
   padding-left: 10px;
   position: relative;
   top: 2px;
+}
+
+#load-modal p{
+  margin-bottom: 0px;
 }
 
 #load-modal a {
