@@ -322,7 +322,7 @@ $(document).ready(function(){
 $(function(){
   $(window).scroll(function() {
     var top = $(document).scrollTop();
-    if (top > 100) $("header").css({'box-shadow' : '0px 5px 10px 0px rgba(0,0,0,0.2)'});
+    if (top > 100) $("header").css({'box-shadow' : '0px 2px 10px 0px rgba(0,0,0,0.2)'});
     else{} ;
   });
 });

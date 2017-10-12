@@ -1338,3 +1338,207 @@ footer .phone a {
 .hidden {
   display: none;
 }
+
+/***********************************************PrimerPage************************************/
+.task {
+  margin-top: 60px;
+  min-height: 310px;
+  padding-bottom: 30px;
+}
+
+.breadcrumb {
+  background-color: transparent;
+  padding-left: 0px;
+  margin-top: 24px;
+}
+
+.breadcrumb a {
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  color: #414141;
+  font-weight: 400;
+}
+
+.breadcrumb a:hover {
+  opacity: 0.7;
+}
+
+.breadcrumb .active {
+  color: #414141;
+}
+
+.breadcrumb > li + li:before {
+  color: #414141;
+  font-size: 20px;
+  padding: 0px 8px;
+}
+
+.task-block {
+  padding-top: 27px;
+}
+
+.task-block span {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  color: #414141;
+  font-weight: 700;
+  display: block;
+  margin-top: -5px;
+}
+
+.task-block p {
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  color: #414141;
+  font-weight: 400;
+  display: block;
+  margin-top: 10px;
+  line-height: 24px;
+}
+
+.task-block a {
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  color: #00d0f4;
+  font-weight: 700;
+  display: inline-block;
+  line-height: 14px;
+  border-bottom: 1px solid #00d0f4;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.task-block a:hover {
+  border-bottom: 1px solid transparent;
+  color: #3eb5f1;
+}
+
+.process {
+  padding: 40px;
+  background-color: #f8f8f8;
+  min-height: 1082px;
+}
+
+.process .col-lg-3 {
+  height: 394px;
+}
+
+.task-right p:last-child {
+  margin-top: 24px;
+}
+
+.sh-content {
+  text-align: center;
+  margin-top: 17px;
+  margin-bottom: 47px;
+}
+
+.sh-content p {
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  color: #414141;
+  font-weight: 400;
+  display: block;
+  line-height: 15px;
+  margin-top: 0px;
+}
+
+.sh-content i {
+  font-style: normal;
+  font-weight: 700;
+  color: #00d0f4;
+}
+
+.design {
+  padding: 40px 0px 45px;
+  text-align: center;
+}
+
+.design .sh-content {
+  margin-top: 12px;
+  margin-bottom: 26px;
+}
+
+.design p {
+  line-height: 24px;
+}
+
+.second-design {
+  margin-top: -4px;
+}
+
+/***********************************************TarifPage************************************/
+.tarif-is {
+  margin-top: 60px;
+  min-height: 591px;
+}
+
+.tarif-is-header {
+  text-align: center;
+  margin-top: 7px;
+}
+
+.tarif-is-header h2 {
+  margin-left: -12px;
+  border-left: 0px;
+  font-size: 24px;
+}
+
+.tarif-is-header p {
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  color: #414141;
+  font-weight: 400;
+  display: block;
+  line-height: 24px;
+  margin-top: 0px;
+}
+
+.tarif-is-desc {
+  text-align: center;
+  padding-top: 29px;
+}
+
+.tarif-is-desc span {
+  display: block;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  color: #414141;
+  font-weight: 700;
+  display: block;
+  line-height: 24px;
+  margin-top: 0px;
+}
+
+.tarif-is-desc .tarifs-list {
+  text-align: left;
+  padding-top: 15px;
+  margin-left: 180px;
+}
+
+.tarif-is-desc .tarifs-list li {
+  padding-left: 41px;
+  display: block;
+}
+
+.tarif-is-desc .tl-right {
+  margin-left: 7px;
+}
+
+.tarif-is-price {
+  margin-left: 394px;
+  text-align: left;
+}
+
+.tarif-is-price li {
+  display: block;
+  font-size: 22px;
+  padding-left: 46px;
+  margin-bottom: 17px;
+}
+
+.tarif-is-price .price {
+  padding-top: 25px;
+}
