@@ -274,52 +274,76 @@ $(document).ready(function(){
 //Show-hide tarifs block
 $(document).ready(function(){
     $('.add-row-1').on('click',function(e){
-        e.preventDefault();         
+        e.preventDefault(); 
+
+      if ($('.tarifs-row-2').hasClass('active-row') || $('.tarifs-row-3').hasClass('active-row')){ 
         $('.tarifs-row-2').removeClass('active-row');
-        $('.tarifs-row-3').removeClass('active-row'); 
-        $('.tarifs-row-1').toggleClass('active-row');        
-    });
+        $('.tarifs-row-3').removeClass('active-row');
+        $('.tarifs-row-1').delay(700).queue(function () { 
+          $('.tarifs-row-1').toggleClass('active-row');   
+        $(this).dequeue();});       
+      } else {
+        $('.tarifs-row-1').toggleClass('active-row');   
+      }        
+    });   
 });
 
 $(document).ready(function(){
     $('.add-row-2').on('click',function(e){
         e.preventDefault(); 
+      if ($('.tarifs-row-1').hasClass('active-row') || $('.tarifs-row-3').hasClass('active-row')){ 
         $('.tarifs-row-1').removeClass('active-row');
-        $('.tarifs-row-3').removeClass('active-row'); 
-        $('.tarifs-row-2').toggleClass('active-row'); 
-    });
+        $('.tarifs-row-3').removeClass('active-row');
+        $('.tarifs-row-2').delay(700).queue(function () { 
+          $('.tarifs-row-2').toggleClass('active-row');   
+        $(this).dequeue();});       
+      } else {
+        $('.tarifs-row-2').toggleClass('active-row');   
+      }        
+    });   
 });
 
 $(document).ready(function(){
     $('.add-row-3').on('click',function(e){
         e.preventDefault(); 
+      if ($('.tarifs-row-1').hasClass('active-row') || $('.tarifs-row-2').hasClass('active-row')){ 
         $('.tarifs-row-1').removeClass('active-row');
-        $('.tarifs-row-2').removeClass('active-row'); 
-        $('.tarifs-row-3').toggleClass('active-row'); 
-    });
+        $('.tarifs-row-2').removeClass('active-row');
+        $('.tarifs-row-3').delay(700).queue(function () { 
+          $('.tarifs-row-3').toggleClass('active-row');   
+        $(this).dequeue();});       
+      } else {
+        $('.tarifs-row-3').toggleClass('active-row');   
+      }        
+    });   
 });
 
 
 $(function(){
-$(window).scroll(function() {
-var top = $(document).scrollTop();
-if (top > 100) $("header").css({'box-shadow' : '0px 5px 10px 0px rgba(0,0,0,0.2)'});
-else{} ;
-});
-});
-
-//Block animation
-$(window).load(function() {
-    $(".animate-block").animated("fadeInRight", "fadeOut");
-     $(".animate-block1").animated("fadeInLeft", "fadeOut");  
+  $(window).scroll(function() {
+    var top = $(document).scrollTop();
+    if (top > 100) $("header").css({'box-shadow' : '0px 5px 10px 0px rgba(0,0,0,0.2)'});
+    else{} ;
+  });
 });
 
- 
- $('.activities').waypoint(function(direction) {
-    
+$('.activities').waypoint(function(direction) {    
             $('#number-clients').animateNumber({ number: 192}, 2000);
             $('#number-prize').animateNumber({ number: 8}, 1500);
             $('#number-company').animateNumber({ number: 86}, 2000);
             $('#number-serv').animateNumber({ number: 122}, 2000);
-
 }, { offset: '60%'});
+
+
+//ModalWindow
+$(document).ready(function(){
+    $(".popup_form").magnificPopup();
+});
+
+//ScrollToSection
+$('.main-menu a[href^="."]').click(function(){
+  //Сохраняем значение атрибута href в переменной:
+  var target = $(this).attr('href');
+  $('html, body').animate({scrollTop: $(target).offset().top-100}, 1000);
+return false;
+});

@@ -34,12 +34,13 @@ body ul {
   width: 1378px;
   height: 6196px;
   position: absolute;
-  z-index: 1000;
+  z-index: 1000000;
   display: none;
   left: 50%;
   top: 0;
   margin-left: -689px;
   opacity: 0.5;
+  margin-top: -60px;
 }
 
 .section-header {
@@ -106,7 +107,7 @@ header {
   background-color: #fff;
   position: fixed;
   width: 100%;
-  z-index: 10000;
+  z-index: 100;
   top: 0px;
 }
 
@@ -251,12 +252,13 @@ header {
   margin-top: 11px;
 }
 
-#main-banner-form {
+#form1, #form3, #form4, #form5, #form6, #form7, #form8, #form9, #form10 {
   width: 370px;
-  height: 326px;
+  min-height: 326px;
   background-color: #fff;
   margin-top: 47px;
   margin-left: 100px;
+  padding-bottom: 30px;
 }
 
 .form-header {
@@ -830,7 +832,7 @@ header {
   color: #fff;
 }
 
-#callback-form {
+#form2 {
   margin-top: 25px;
   -moz-placeholder-color: #ababab;
   -moz-placeholder-font-family: "PT Sans", sans-serif;
@@ -840,7 +842,7 @@ header {
   -ms-input-placeholder-font-size: 20px;
 }
 
-#callback-form input {
+#form2 input {
   width: 370px;
   height: 56px;
   border: none;
@@ -852,19 +854,19 @@ header {
   margin-right: 26px;
 }
 
-#callback-form ::-webkit-input-placeholder {
+#form2 ::-webkit-input-placeholder {
   color: #ababab;
   font-family: "PT Sans", sans-serif;
   font-size: 20px;
 }
 
-#callback-form ::-moz-placeholder {
+#form2 ::-moz-placeholder {
   color: #ababab;
   font-family: "PT Sans", sans-serif;
   font-size: 20px;
 }
 
-#callback-form button {
+#form2 button {
   width: 370px;
   height: 56px;
   border: none;
@@ -881,7 +883,7 @@ header {
   transition: all 0.3s ease-out;
 }
 
-#callback-form button:hover {
+#form2 button:hover {
   background-color: #da2e2e;
 }
 
@@ -1301,6 +1303,36 @@ footer .phone a {
   color: #414141;
   font-weight: 400;
   padding-left: 112px;
+}
+
+/***********************************************ModalWndows************************************/
+#form3, #form4, #form5, #form6, #form7, #form8, #form9, #form10 {
+  position: relative;
+  height: 350px;
+  margin: 0 auto;
+  z-index: 100000;
+}
+
+#form3 button, #form4 button, #form5 button, #form6 button, #form7 button, #form8 button, #form9 button, #form10 button {
+  background-color: #23d348;
+  text-transform: uppercase;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+#form3 button:hover, #form4 button:hover, #form5 button:hover, #form6 button:hover, #form7 button:hover, #form8 button:hover, #form9 button:hover, #form10 button:hover {
+  background-color: #1cb73d;
+}
+
+#form3 button.mfp-close, #form4 button.mfp-close, #form5 button.mfp-close, #form6 button.mfp-close, #form7 button.mfp-close, #form8 button.mfp-close, #form9 button.mfp-close, #form10 button.mfp-close {
+  background-color: transparent;
+  color: red;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 44px;
 }
 
 .hidden {
