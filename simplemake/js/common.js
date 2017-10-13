@@ -174,6 +174,7 @@
 }(jQuery));
 
 
+
 $(".example").TimeCircles({
     "animation": "smooth",
     "bg_width": 1,
@@ -204,6 +205,14 @@ $(".example").TimeCircles({
         }
     }
 });
+
+//перезагрузка страницы при смене ориентации экрана
+
+window.addEventListener("orientationchange", function(e) {
+         e.preventDefault();
+        $('body,html').animate({scrollTop: 0}, 400);    
+        location.reload();
+    }, false);
 
 
 $(document).ready(function(){
@@ -322,7 +331,7 @@ $(document).ready(function(){
 });
 
 
-
+//Shadow fixed-menu
 $(function(){
   $(window).scroll(function() {
     var top = $(document).scrollTop();
@@ -331,11 +340,13 @@ $(function(){
   });
 });
 
+
+//Counter-animation
 $('.activities').waypoint(function(direction) {    
-            $('#number-clients').animateNumber({ number: 192}, 2000);
-            $('#number-prize').animateNumber({ number: 8}, 1500);
-            $('#number-company').animateNumber({ number: 86}, 2000);
-            $('#number-serv').animateNumber({ number: 122}, 2000);
+  $('#number-clients').animateNumber({ number: 192}, 2000);
+  $('#number-prize').animateNumber({ number: 8}, 1500);
+  $('#number-company').animateNumber({ number: 86}, 2000);
+  $('#number-serv').animateNumber({ number: 122}, 2000);
 }, { offset: '60%'});
 
 
@@ -344,6 +355,7 @@ $(document).ready(function(){
     $(".popup_form").magnificPopup();
 });
 
+
 //ScrollToSection
 $('.main-menu a[href^="."]').click(function(){
   //Сохраняем значение атрибута href в переменной:
@@ -351,6 +363,7 @@ $('.main-menu a[href^="."]').click(function(){
   $('html, body').animate({scrollTop: $(target).offset().top-100}, 1000);
 return false;
 });
+
 
 //Show-hide menu
 $(document).ready(function(){
