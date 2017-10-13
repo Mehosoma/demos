@@ -1382,13 +1382,18 @@ footer .phone a {
 }
 
 .process {
-  padding: 40px;
+  padding: 40px 0px;
   background-color: #f8f8f8;
   min-height: 1082px;
 }
 
 .process .col-lg-3 {
   height: 394px;
+}
+
+.process img {
+  width: 100%;
+  height: auto;
 }
 
 .task-right p:last-child {
@@ -1608,3 +1613,5 @@ footer .phone a {
 .menu-toggle-button:focus {
   outline: none !important;
 }
+
+/***********************************************PrimerPage************************************/

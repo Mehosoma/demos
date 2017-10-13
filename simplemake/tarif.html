@@ -6,7 +6,7 @@
 	<html lang="ruRu">
 
 	<title>SimpleMake</title>
-	<meta name="Тариф" content="">
+	<meta name="Главная" content="">
 	<meta name="keywords" content="">
 	
 	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
@@ -37,12 +37,18 @@
 <header>
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-2">
+			<div class="col-lg-2 col-md-2 hidden-sm hidden-xs">
 				<div class="logo">
 					<a href="index.html"><img src="img/logo.png" alt="company-logo"></a>
 				</div>
 			</div>
-			<div class="col-lg-7">
+			<div class="col-lg-7 col-md-8 col-sm-12 col-sm-12 col-xs-12">
+				<div class="logo hidden-md hidden-lg">
+					<a href="index.html"><img src="img/logo.png" alt="company-logo"></a>
+				</div>
+				<button class="menu-toggle-button click-mobile hidden-lg hidden-md">
+					<span></span>					
+				</button>
 				<nav class="main-menu">
 					<ul>
 						<li><a href=".tarifs">Тарифы</a></li>
@@ -50,10 +56,20 @@
 						<li><a href=".portfolio">Наши работы</a></li>
 						<li><a href=".benefits">Почему мы</a></li>
 						<li><a href=".clients">Контакты</a></li>
+						<li class="hidden-lg hidden-md">
+							<div class="header-contacts">
+								<div class="phone">
+									<a href="tel:+73511234567">8 (351) 123-45-67</a>
+								</div>
+								<div class="header-callback">
+									<a href="#form3" class="popup_form transition-opt">Заказать звонок</a>
+								</div>
+							</div>
+						</li>
 					</ul>
 				</nav>
 			</div>
-			<div class="col-lg-3">
+			<div class="col-lg-3 col-md-2 hidden-sm hidden-xs">
 				<div class="header-contacts">
 					<div class="phone">
 						<a href="tel:+73511234567">8 (351) 123-45-67</a>
@@ -67,11 +83,11 @@
 	</div>
 </header>
 
-<!--Task-->
+<!--TarifIsBlock-->
 <section class="tarif-is">
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-12">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 				<ol class="breadcrumb">
 					<li class="breadcrumb-item"><a href="index.html">Главная</a></li>
   					<li class="breadcrumb-item"><a href="index.html">Разработка сайтов</a></li>
@@ -86,7 +102,7 @@
 			</div>
 			<div class="tarif-is-desc">
 				<span>В разработку входит:</span>
-				<div class="col-lg-6">
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
 					<div class="tarifs-list">
 						<ul>
 							<li>Система управления сайтом - Wordpress</li>
@@ -96,7 +112,7 @@
 						</ul>
 					</div>
 				</div>
-				<div class="col-lg-6">
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
 					<div class="tarifs-list tl-right">
 						<ul>
 							<li>Реализация сайта</li>
@@ -106,7 +122,7 @@
 						</ul>
 					</div>
 				</div>
-				<div class="col-lg-12">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 					<div class="tarif-is-price clearfix">
 						<div class="price">
 							<ul>
@@ -289,38 +305,46 @@
 
 <!--Footer-->
 <footer>
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-2">
-				<div class="logo">
-					<a href="index.html"><img src="img/footer-logo.png" alt="company-logo"></a>
-				</div>
-			</div>
-			<div class="col-lg-7">
-				<nav class="main-menu">
-					<ul>
-						<li><a href=".tarifs">Тарифы</a></li>
-						<li><a href=".reviews">Отзывы</a></li>
-						<li><a href=".portfolio">Наши работы</a></li>
-						<li><a href=".benefits">Почему мы</a></li>
-						<li><a href=".clients">Контакты</a></li>
-					</ul>
-				</nav>
-			</div>
-			<div class="col-lg-3">
-				<div class="header-contacts">
-					<div class="phone">
-						<a href="tel:+73511234567">8 (351) 123-45-67</a>
-					</div>
-					<div class="header-callback">
-						<a href="#form3" class="popup_form transition-opt">Заказать звонок</a>
+	<div class="footer-row">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-2 col-md-2 col-sm-6 col-xs-6">
+					<div class="logo">
+						<a href="index.html"><img src="img/footer-logo.png" alt="company-logo"></a>
 					</div>
 				</div>
+				<div class="col-lg-3 col-lg-push-7 col-md-2 col-md-push-8 col-sm-6 col-xs-6">
+					<div class="header-contacts">
+						<div class="phone">
+							<a href="tel:+73511234567">8 (351) 123-45-67</a>
+						</div>
+						<div class="header-callback">
+							<a href="#form3" class="popup_form transition-opt">Заказать звонок</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-7 col-lg-pull-3 col-md-8 col-md-pull-2 col-sm-12 col-xs-12">
+					<nav class="main-menu">
+						<ul>
+							<li><a href=".tarifs">Тарифы</a></li>
+							<li><a href=".reviews">Отзывы</a></li>
+							<li><a href=".portfolio">Наши работы</a></li>
+							<li><a href=".benefits">Почему мы</a></li>
+							<li><a href=".clients">Контакты</a></li>
+						</ul>
+					</nav>
+				</div>				
 			</div>
 		</div>
 	</div>
-	<div class="copy">
-		<span>Copyright © 2017,  «Simple Make», официальный сайт</span>		
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="copy">
+					<span>Copyright © 2017,  «Simple Make», официальный сайт</span>		
+				</div>
+			</div>
+		</div>
 	</div>
 </footer>
 
@@ -342,7 +366,8 @@
 	</form>
 </div>
 
-	<div class="hidden"></div>
+
+<div class="hidden"></div>
 
 	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
 	<script src="libs/bootstrap/js/bootstrap.js"></script>

@@ -333,6 +333,77 @@
 		font-size: 12px;
 	}
 
+	.breadcrumb a, .breadcrumb .active{
+		font-size: 11px;
+	}
+
+	.breadcrumb > li + li:before{
+		padding: 0 3px;
+		font-size: 14px;
+	}
+
+	.task-block .col-xs-5, .task-block .col-xs-7{
+		width: 100%;
+	}
+
+	.task-block img{
+		margin-bottom: 30px;
+	}
+
+	.task-right{
+		margin-top: 50px;
+	}
+
+	.process .col-lg-3{		
+		height: 100%;
+	}
+
+	.process .col-xs-6{
+		width: 100%;
+	}
+
+	.process{
+		min-height: 800px;
+	}
+
+	.design img{
+		width: 100%;
+		height: auto;
+	}
+
+	.task-image{
+		text-align: center;
+	}
+
+	.tarif-is-desc .col-xs-6{
+		width: 100%;
+	}
+
+	.tarif-is-header{
+		padding: 0 15px;
+	}
+
+	.tarif-is-desc .tarifs-list{
+		margin-left: 0px;	
+		padding: 20px 0px 0px;	
+	}
+
+	.tarif-is-price{
+		width: 280px;
+		margin-left: 0px;
+		position: relative;
+		left: 50%;						
+		margin-left: -140px;
+	}
+
+	.tarif-is-price li{
+		display: block;		
+	}
+
+	.tarif-is-price .price{
+		padding: 20px 0px;
+	}
+
 	
 }
 
@@ -597,6 +668,56 @@
 		display: block;
 	}
 
+	.task-right{
+		margin-top: 50px;
+	}
+
+	.process .col-lg-3{
+		height: 100%;
+	}
+
+	.process .col-lg-3:nth-child(2n+1){
+		clear: left;
+	}
+
+	.process{
+		min-height: 800px;
+	}
+
+	.design img{
+		width: 100%;
+		height: auto;
+	}
+
+	.task-image{
+		text-align: center;
+	}
+
+	.tarif-is-header{
+		padding: 0 15px;
+	}
+
+	.tarif-is-desc .tarifs-list{
+		margin-left: 0px;	
+		padding: 30px 0px;	
+	}
+
+	.tarif-is-price{
+		width: 280px;
+		margin-left: 0px;
+		position: relative;
+		left: 50%;						
+		margin-left: -140px;
+	}
+
+	.tarif-is-price li{
+		display: block;		
+	}
+
+	.tarif-is-price .price{
+		padding: 20px 0px;
+	}
+
 }
 
 @media only screen and (min-width : 768px) and (max-width : 991px) {
@@ -821,6 +942,32 @@
 		padding: 0px 20px;
 	}
 
+	.task-right{
+		margin-top: 50px;
+	}
+
+	.process .col-lg-3{
+		height: 350px;
+	}
+
+	.process{
+		min-height: 800px;
+	}
+
+	.design img{
+		width: 100%;
+		height: auto;
+	}
+
+	.tarif-is-desc .tarifs-list{
+		margin-left: 0px;		
+		padding-top: 30px;
+	}
+
+	.tarif-is-price{
+		margin-left: 190px;
+	}
+
 
 }
 
@@ -989,5 +1136,36 @@
 		margin-top: 44px;
 	}
 
+	.task{
+		margin-top: 103px;
+	}
+
+	.process .col-lg-3{
+		height: 350px;
+	}
+
+	.process{
+		min-height: 800px;
+	}
+
+	.design img{
+		width: 100%;
+		height: auto;
+	}
+
+	.tarif-is{
+		margin-top: 103px;
+	}
+
+	.tarif-is-desc .tarifs-list{
+		margin-left: 45px;	
+		margin-top: 30px;
+	}
+
+	.tarif-is-price{
+		margin-left: 300px;
+	}
+
+	
 
 }

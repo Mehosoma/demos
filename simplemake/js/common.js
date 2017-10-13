@@ -174,7 +174,7 @@
 }(jQuery));
 
 
-
+//Time counter
 $(".example").TimeCircles({
     "animation": "smooth",
     "bg_width": 1,
