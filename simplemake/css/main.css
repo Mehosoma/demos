@@ -59,6 +59,18 @@ h2 {
   margin-left: -15px;
 }
 
+p {
+  font-family: "PT Sans", sans-serif;
+  color: #414141;
+}
+
+.transition-opt {
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
 .anim_left1 {
   -webkit-animation-delay: 200ms;
   -moz-animation-delay: 200ms;
@@ -177,10 +189,6 @@ header {
   font-size: 17px;
   font-weight: 400;
   text-transform: uppercase;
-  -moz-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
 }
 
 .header-callback a:hover {
@@ -190,7 +198,7 @@ header {
 /***********************************************MainBanner************************************/
 .main-banner {
   width: 100%;
-  height: 420px;
+  min-height: 420px;
   margin-top: 60px;
   background-image: url("../img/main-bg.jpg");
   background-repeat: no-repeat;
@@ -201,7 +209,7 @@ header {
 
 .main-banner-overlay {
   width: 100%;
-  height: 420px;
+  height: 100%;
   position: absolute;
   left: 0;
   top: 0;
@@ -252,7 +260,7 @@ header {
   margin-top: 11px;
 }
 
-#form1, #form3, #form4, #form5, #form6, #form7, #form8, #form9, #form10 {
+.gen-form {
   width: 370px;
   min-height: 326px;
   background-color: #fff;
@@ -274,7 +282,6 @@ header {
 }
 
 .form-header p {
-  font-family: "PT Sans", sans-serif;
   color: #747474;
   font-size: 16px;
   font-weight: 400;
@@ -344,10 +351,6 @@ header {
   font-size: 20px;
   font-weight: 700;
   text-transform: uppercase;
-  -moz-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
 }
 
 .main-form-button button:hover {
@@ -357,6 +360,7 @@ header {
 /***********************************************Tarifs************************************/
 .tarifs {
   padding: 40px 0px 60px;
+  position: relative;
 }
 
 .tarifs-block {
@@ -414,7 +418,7 @@ header {
   font-weight: 400;
   background-image: url("../img/tarifs-icon.png");
   background-repeat: no-repeat;
-  background-position: left center;
+  background-position: left top 2px;
   padding-left: 35px;
   margin-bottom: 10px;
 }
@@ -463,10 +467,6 @@ header {
   line-height: 49px;
   color: #fff;
   text-align: center;
-  -moz-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
 }
 
 .tarifs-buttons a:nth-child(1) {
@@ -487,11 +487,12 @@ header {
 
 .tarif-desc {
   width: 100%;
-  min-height: 494px;
+  height: 100%;
   border: 2px solid #00d0f4;
   margin-top: 34px;
   padding: 20px 28px;
   position: relative;
+  float: left;
 }
 
 .tarif-desc .col-lg-6 {
@@ -499,10 +500,8 @@ header {
 }
 
 .tarif-desc p {
-  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 27px;
-  color: #414141;
 }
 
 .tarif-desc span {
@@ -557,10 +556,6 @@ header {
   padding-top: 16px;
   margin-left: 5px;
   border-bottom: 1px solid #00d0f4;
-  -moz-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
 }
 
 .tds-image a:hover {
@@ -594,17 +589,13 @@ header {
   font-weight: 400;
   text-align: center;
   line-height: 49px;
-  -moz-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
 }
 
 .tarif-desc-button a:hover {
   background-color: #da2e2e;
 }
 
-.tarifs-row-1 .tarif-desc::after {
+#addrow1 .tarif-desc::after {
   position: absolute;
   top: -26px;
   left: 70px;
@@ -613,7 +604,7 @@ header {
   border-bottom: 14px solid #00d0f4;
 }
 
-.tarifs-row-2 .tarif-desc::after {
+#addrow2 .tarif-desc::after {
   position: absolute;
   top: -26px;
   left: 480px;
@@ -622,7 +613,7 @@ header {
   border-bottom: 14px solid #00d0f4;
 }
 
-.tarifs-row-3 .tarif-desc::after {
+#addrow3 .tarif-desc::after {
   position: absolute;
   top: -26px;
   right: 250px;
@@ -632,6 +623,7 @@ header {
 }
 
 .add-row {
+  width: 1200px;
   height: 0px;
   overflow: hidden;
   -moz-transition: all 0.6s ease-out;
@@ -640,8 +632,15 @@ header {
   transition: all 0.6s ease-out;
 }
 
+#addrow2 {
+  margin-left: -415px;
+}
+
+#addrow3 {
+  margin-left: -815px;
+}
+
 .active-row {
-  height: 530px;
   -moz-transition: all 0.6s ease-out;
   -o-transition: all 0.6s ease-out;
   -webkit-transition: all 0.6s ease-out;
@@ -653,6 +652,7 @@ header {
   width: 100%;
   min-height: 205px;
   background-color: #f6f6f6;
+  padding-bottom: 40px;
 }
 
 .engines-list {
@@ -702,10 +702,8 @@ header {
 }
 
 .reviews-block p {
-  font-family: "PT Sans", sans-serif;
   font-size: 14px;
   line-height: 24px;
-  color: #414141;
   font-weight: 400;
   padding: 0px 16px;
 }
@@ -733,10 +731,6 @@ header {
   font-weight: 700;
   padding-top: 3px;
   border-bottom: 1px solid #00d0f4;
-  -moz-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
 }
 
 .reviews-block a:hover {
@@ -877,10 +871,6 @@ header {
   text-transform: uppercase;
   font-weight: 700;
   text-align: center;
-  -moz-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
 }
 
 #form2 button:hover {
@@ -896,7 +886,7 @@ header {
 
 .services-block {
   width: 270px;
-  height: 340px;
+  min-height: 340px;
   border: 1px solid #dfdfdf;
   margin-top: 40px;
   position: relative;
@@ -912,10 +902,8 @@ header {
 }
 
 .services-block p {
-  font-family: "PT Sans", sans-serif;
   font-size: 14px;
   line-height: 24px;
-  color: #414141;
   font-weight: 400;
   text-align: center;
 }
@@ -949,10 +937,6 @@ header {
   line-height: 36px;
   font-weight: 700;
   background-color: #ff3838;
-  -moz-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
 }
 
 .sb-order a:hover {
@@ -1008,10 +992,6 @@ header {
   padding-top: 70px;
   opacity: 0;
   background-color: rgba(65, 65, 65, 0.89);
-  -moz-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
   z-index: 1000;
 }
 
@@ -1046,7 +1026,6 @@ header {
 }
 
 .pb-bottom p {
-  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   color: #fff;
   text-align: center;
@@ -1087,9 +1066,7 @@ header {
 }
 
 .benefits-block p {
-  font-family: "PT Sans", sans-serif;
   font-size: 18px;
-  color: #414141;
   line-height: 24px;
   font-weight: 400;
   padding-top: 15px;
@@ -1142,7 +1119,7 @@ header {
   width: 100%;
   min-height: 221px;
   background-color: #414141;
-  padding: 40px;
+  padding: 40px 0px;
 }
 
 .activities-block {
@@ -1262,11 +1239,11 @@ header {
 /***********************************************Footer************************************/
 footer {
   width: 100%;
-  background-color: #414141;
 }
 
-footer .container {
+footer .footer-row {
   min-height: 94px;
+  background-color: #414141;
 }
 
 footer .logo {
@@ -1302,31 +1279,26 @@ footer .phone a {
   line-height: 50px;
   color: #414141;
   font-weight: 400;
-  padding-left: 112px;
 }
 
 /***********************************************ModalWndows************************************/
-#form3, #form4, #form5, #form6, #form7, #form8, #form9, #form10 {
+.add-form {
   position: relative;
   height: 350px;
   margin: 0 auto;
   z-index: 100000;
 }
 
-#form3 button, #form4 button, #form5 button, #form6 button, #form7 button, #form8 button, #form9 button, #form10 button {
+.add-form button {
   background-color: #23d348;
   text-transform: uppercase;
-  -moz-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
 }
 
-#form3 button:hover, #form4 button:hover, #form5 button:hover, #form6 button:hover, #form7 button:hover, #form8 button:hover, #form9 button:hover, #form10 button:hover {
+.add-form button:hover {
   background-color: #1cb73d;
 }
 
-#form3 button.mfp-close, #form4 button.mfp-close, #form5 button.mfp-close, #form6 button.mfp-close, #form7 button.mfp-close, #form8 button.mfp-close, #form9 button.mfp-close, #form10 button.mfp-close {
+.add-form button.mfp-close {
   background-color: transparent;
   color: red;
   width: 50px;
@@ -1387,9 +1359,7 @@ footer .phone a {
 }
 
 .task-block p {
-  font-family: "PT Sans", sans-serif;
   font-size: 16px;
-  color: #414141;
   font-weight: 400;
   display: block;
   margin-top: 10px;
@@ -1404,10 +1374,6 @@ footer .phone a {
   display: inline-block;
   line-height: 14px;
   border-bottom: 1px solid #00d0f4;
-  -moz-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
 }
 
 .task-block a:hover {
@@ -1436,9 +1402,7 @@ footer .phone a {
 }
 
 .sh-content p {
-  font-family: "PT Sans", sans-serif;
   font-size: 16px;
-  color: #414141;
   font-weight: 400;
   display: block;
   line-height: 15px;
@@ -1487,9 +1451,7 @@ footer .phone a {
 }
 
 .tarif-is-header p {
-  font-family: "PT Sans", sans-serif;
   font-size: 16px;
-  color: #414141;
   font-weight: 400;
   display: block;
   line-height: 24px;
@@ -1541,4 +1503,108 @@ footer .phone a {
 
 .tarif-is-price .price {
   padding-top: 25px;
+}
+
+/***********************************************ButtonMobile************************************/
+.menu-toggle-button {
+  width: 50px;
+  height: 40px;
+  float: right;
+  background-color: transparent;
+  border-radius: 7px;
+  padding-top: 5px;
+  border: none;
+  text-indent: -9999px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin-top: 10px;
+  float: left;
+  margin-left: -17px;
+}
+
+.menu-toggle-button span {
+  display: block;
+  height: 2px;
+  background: #00d0f4;
+  position: absolute;
+  top: 15px;
+  left: 16px;
+  right: 16px;
+  -webkit-transition: background 0s 0.3;
+  -o-transition: background 0s 0.3;
+  transition: background 0s 0.3;
+}
+
+.menu-toggle-button span::before, .menu-toggle-button span::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #00d0f4;
+  position: absolute;
+  left: 0px;
+  -webkit-transition-duration: 0.3s, 1s;
+  -o-transition-duration: 0.3s, 1s;
+  transition-duration: 0.3s, 1s;
+  -webkit-transition-delay: 0s, 0.3s;
+  -o-transition-delay: 0s, 0.3s;
+  transition-delay: 0s, 0.3s;
+}
+
+.menu-toggle-button span::before {
+  top: -5px;
+}
+
+.menu-toggle-button span::after {
+  bottom: -5px;
+}
+
+.menu-toggle-button.is-active span {
+  background: none;
+}
+
+.menu-toggle-button.is-active span::before {
+  top: 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition-property: top, -webkit-transform;
+  transition-property: top, -webkit-transform;
+  -o-transition-property: top, transform;
+  transition-property: top, transform;
+  transition-property: top, transform, -webkit-transform;
+  -webkit-transition-delay: 0s, 0.3s;
+  -o-transition-delay: 0s, 0.3s;
+  transition-delay: 0s, 0.3s;
+  -webkit-transition-duration: 0.3s, 0.3s;
+  -o-transition-duration: 0.3s, 0.3s;
+  transition-duration: 0.3s, 0.3s;
+  background: #00d0f4;
+}
+
+.menu-toggle-button.is-active span::after {
+  bottom: 0;
+  background: #00d0f4;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-transition-property: bottom, -webkit-transform;
+  transition-property: bottom, -webkit-transform;
+  -o-transition-property: bottom, transform;
+  transition-property: bottom, transform;
+  transition-property: bottom, transform, -webkit-transform;
+  -webkit-transition-delay: 0s, 0.3s;
+  -o-transition-delay: 0s, 0.3s;
+  transition-delay: 0s, 0.3s;
+  -webkit-transition-duration: 0.3s, 0.3s;
+  -o-transition-duration: 0.3s, 0.3s;
+  transition-duration: 0.3s, 0.3s;
+}
+
+.menu-toggle-button:focus {
+  outline: none !important;
 }

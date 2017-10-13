@@ -1,76 +1,964 @@
-/*==========  Desktop First Method  ==========*/
+@media only screen and (min-width : 0px) and (max-width : 479px) {
 
-/* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px) {
+	.example{
+		width: 300px!important;
+	}
 
+	.time_circles > div{
+		top: 20px!important;
+	}
+
+	.time_circles > div > span{
+		font-size: 30px!important;
+	}
+
+	.time_circles > div > h4{
+		line-height: 18px!important;
+		font-size: 13px!important;
+	}
+
+
+	header{
+		min-height: 50px;
+	}
+
+	header .container{
+		padding-right: 0px;
+		padding-left: 0px;
+	}
+
+	.logo{
+		margin-top: 6px;
+		margin-left: 20px;
+	}
+
+	.header-contacts, .header-callback{
+		display: block;
+		margin-left: 0px;		
+	}
+
+	.header-callback{
+		margin-top: 14px;
+	}
+
+	.main-timer{
+		margin-top: 20px;
+	}
+
+	header .main-menu{
+		position: absolute;		
+		top: 50px;
+		left: 0px;
+		margin-left: 0px;	
+		margin-top: 0px;
+		width: 100%;
+		background-color: #fff;				
+		padding: 0px;
+		display: none;
+	}
+
+	header .main-menu ul{
+		padding-bottom: 30px;
+	}
+
+	header .main-menu li{
+		width: 100%;
+		display: block;			
+		text-align: center;
+		padding-right: 0px;
+	}
+
+	.main-menu a, .main-menu a:hover{
+		border-bottom: none;
+	}
+
+	header .logo{
+		float: left;
+	}
+
+	.menu-toggle-button{
+		float: right;
+	}
+
+	.main-banner{
+		margin-top: 50px;
+	}
+
+	.main-banner{
+		padding-bottom: 40px;
+	}
+
+	.main-header h1{
+		font-size: 22px;
+		line-height: 36px;
+	}
+
+	.main-header h1 br{
+		display: none;
+	}
+
+	#form1{
+		margin-right: auto;
+		margin-left: auto;
+		width: 290px;
+	}
+
+	.form-main input{
+		width: 270px;
+	}
+
+	.main-form-button button{
+		width: 270px;
+	}
+
+		.add-row{
+		width: 100%;
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+
+	.tarifs-block{
+		margin: 20px auto 0px;		
+		width: 100%;
+	}
+
+	.tarifs-block-header{
+		background-position: left 50px center;
+	}
+
+	.tarifs-block-header span{
+		padding-left: 40px;
+	}
+
+	.tarifs-list li{
+		line-height: 25px;
+	}
+
+	.tarifs-list{		
+		padding-right: 10px;
+	}
+
+	.tarifs-list hr{
+		width: 100%;
+	}	
+
+	.tds-text ul{
+		top: 0px;
+		margin-top: 20px;
+
+	}
+
+	#addrow1 .tarif-desc::after, #addrow2 .tarif-desc::after{
+		left: 132px;
+	}
+
+	#addrow3 .tarif-desc::after{
+		right: 130px;		
+	}
+
+	#addrow2, #addrow3{
+		margin-left: 0px;
+	}
+
+	.tarif-desc li{
+		background-position: left top 2px;
+	}
+
+	.tarif-desc-button{
+		margin-top: 30px;
+	}
+
+	.tarif-desc-right{
+		padding-left: 0px;
+	}
+
+	.tds-text{
+		padding-left: 0px;
+	}
+
+	.mob-rep{
+		padding-right: 0px;
+		padding-left: 0px;
+	}
+
+	.engines-list li{
+		width: 100%;
+		margin-bottom: 20px;
+		text-align: center;
+		margin-right: 0px;
+	}
+
+	.reviews{
+		padding-bottom: 30px;
+	}
+
+	.rb-data{
+		width: 100%;
+	}
+
+	.reviews-block{
+		width: 100%;
+		margin: 0 auto;
+		height: 500px;
+	}
+
+	.partners-list li{
+		width: 100%;
+		margin-bottom: 20px;
+		text-align: center;
+		margin-right: 0px;
+	}
+
+	.white-header h2{
+		font-size: 21px;
+		margin-left: 0px;
+	}
+
+	#form2 {
+		text-align: center;
+	}
+
+	#form2 input{
+		width: 280px;
+		margin: 30px auto;
+		display: block;
+	}
+
+	#form2 button{
+		width: 280px;
+		display: block;
+		margin: 30px auto 0px;
+	}
+
+	.services-block{
+		margin: 40px auto 0px;
+	}
+
+	.services-block p{
+		padding: 0 10px;
+	}
+
+	.sb-order{
+		width: 100%;
+	}
+
+	.portfolio-block{
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.activities-block{
+		text-align: center;
+		padding: 0px!important;
+	}
+
+	.activities-block i, .activities-block span{		
+		display: block;
+		float: none;
+		padding-left: 0px;
+	}
+
+	.benefits{
+		padding: 40px 0px;		
+	}
+
+	.benefits-block{
+		height: auto;
+	}
+
+	.bb-second-row{
+		margin-top: 40px;
+	}
+
+	.ab-second span{
+		top: 0px;
+	}
+
+	.activities .row:nth-child(2) .col-xs-6:nth-child(2n+1){
+		clear: left;
+	}
+
+	.clients-data .pad-left{
+		width: 85px;
+	}
+
+	footer .footer-row{
+		min-height: 120px;
+	}
+
+	footer .logo{
+		margin-top: 50px;
+		margin-left: 0px;
+	}
+	
+	footer .main-menu{
+		margin: 30px auto;
+	}
+
+	footer ul{
+		text-align: center;
+	}
+
+	footer .main-menu li{
+		padding: 5px 20px;
+		display: block;
+	}
+
+	footer .col-xs-6{
+		width: 100%;
+		text-align: center;
+	}
+
+	.copy span{
+		font-size: 12px;
+	}
+
+	
 }
 
-/* Medium Devices, Desktops */
-@media only screen and (max-width : 992px) {
+@media only screen and (min-width : 480px) and (max-width : 767px) {
 
-}
+	header{
+		min-height: 50px;
+	}
 
-/* Small Devices, Tablets */
-@media only screen and (max-width : 768px) {
+	header .container{
+		padding-right: 0px;
+		padding-left: 0px;
+	}
 
-	/*Disable Animation on Mobile Devices*/
-	.animated {
-		/*CSS transitions*/
-		-o-transition-property: none !important;
-		-moz-transition-property: none !important;
-		-ms-transition-property: none !important;
-		-webkit-transition-property: none !important;
-		transition-property: none !important;
-		/*CSS transforms*/
-		-o-transform: none !important;
-		-moz-transform: none !important;
-		-ms-transform: none !important;
-		-webkit-transform: none !important;
-		transform: none !important;
-		/*CSS animations*/
-		-webkit-animation: none !important;
-		-moz-animation: none !important;
-		-o-animation: none !important;
-		-ms-animation: none !important;
-		animation: none !important;
+	.logo{
+		margin-top: 6px;
+		margin-left: 20px;
+	}
+
+	.header-contacts, .header-callback{
+		display: block;
+		margin-left: 0px;		
+	}
+
+	.header-callback{
+		margin-top: 14px;
+	}
+
+	header .main-menu{
+		position: absolute;		
+		top: 50px;
+		left: 0px;
+		margin-left: 0px;	
+		margin-top: 0px;
+		width: 100%;
+		background-color: #fff;				
+		padding: 0px;
+		display: none;
+	}
+
+	header .main-menu ul{
+		padding-bottom: 30px;
+	}
+
+	header .main-menu li{
+		width: 100%;
+		display: block;			
+		text-align: center;
+		padding-right: 0px;
+	}
+
+	.main-menu a, .main-menu a:hover{
+		border-bottom: none;
+	}
+
+	header .logo{
+		float: left;
+	}
+
+	.menu-toggle-button{
+		float: right;
+	}
+
+	.main-banner{
+		margin-top: 50px;
+	}
+
+	.main-banner{
+		padding-bottom: 40px;
+	}
+
+	.main-header h1{
+		font-size: 22px;
+	}
+
+	#form1{
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.add-row{
+		width: 100%;
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+
+	.tarifs-block{
+		margin: 20px auto 0px;		
+	}
+
+	.tarifs-block-header{
+		background-position: left 50px center;
+	}
+
+	.tarifs-block-header span{
+		padding-left: 40px;
+	}
+
+	.tarifs-list li{
+		line-height: 25px;
+	}
+
+	.tarifs-list{		
+		padding-right: 10px;
+	}
+
+	.tarifs-list hr{
+		width: 100%;
+	}	
+
+	.tds-text ul{
+		top: 0px;
+		margin-top: 20px;
+
+	}
+
+	#addrow1 .tarif-desc::after, #addrow2 .tarif-desc::after{
+		left: 110px;
+	}
+
+	#addrow3 .tarif-desc::after{
+		right: 290px;		
+	}
+
+	#addrow2, #addrow3{
+		margin-left: 0px;
+	}
+
+	.tarif-desc li{
+		background-position: left top 2px;
+	}
+
+	.tarif-desc-button{
+		margin-top: 30px;
+	}
+
+	.tarif-desc-right{
+		padding-left: 0px;
+	}
+
+	.tds-text{
+		padding-left: 0px;
+	}
+
+	.engines-list li{
+		width: 49%;
+		margin-bottom: 20px;
+		text-align: center;
+		margin-right: 0px;
+	}
+
+	.reviews-block{
+		margin: 0 auto;
+	}
+
+	.partners-list li{
+		width: 49%;
+		margin-bottom: 20px;
+		text-align: center;
+		margin-right: 0px;
+	}
+
+	.white-header h2{
+		font-size: 24px;
+	}
+
+	#form2 {
+		text-align: center;
+	}
+
+	#form2 input{
+		width: 350px;
+		margin: 30px auto;
+		display: block;
+	}
+
+	#form2 button{
+		width: 350px;
+		display: block;
+		margin: 30px auto 0px;
+	}
+
+	.services-block{
+		margin: 40px auto 0px;
+	}
+
+	.services-block p{
+		padding: 0 10px;
+	}
+
+	.sb-order{
+		width: 100%;
+	}
+
+	.portfolio-block{
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.activities-block{
+		text-align: center;
+	}
+
+	.activities-block i, .activities-block span{		
+		display: block;
+		float: none;
+		padding-left: 0px;
+	}
+
+	.benefits{
+		padding: 40px 0px;		
+	}
+
+	.benefits-block{
+		height: auto;
+	}
+
+	.bb-second-row{
+		margin-top: 40px;
+	}
+
+	.ab-second span{
+		top: 0px;
+	}
+
+	.activities .row:nth-child(2) .col-xs-6:nth-child(2n+1){
+		clear: left;
+	}
+
+	footer .footer-row{
+		min-height: 120px;
+	}
+
+	footer .logo{
+		margin-top: 50px;
+	}
+	
+	
+	footer .header-contacts{
+		text-align: right;
+	}
+
+	footer .main-menu{
+		margin: 30px auto;
+	}
+
+	footer ul{
+		text-align: center;
+	}
+
+	footer .main-menu li{
+		padding: 5px 20px;
+		display: block;
 	}
 
 }
 
-/* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px) {
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+	header{
+		min-height: 50px;
+	}
+
+	header .container{
+		padding-right: 0px;
+		padding-left: 0px;
+	}
+
+	.logo{
+		margin-top: 6px;
+	}
+
+	.header-contacts, .header-callback{
+		display: block;
+		margin-left: 0px;		
+	}
+
+	.header-callback{
+		margin-top: 14px;
+	}
+
+	header .main-menu{
+		position: absolute;		
+		top: 50px;
+		left: 0px;
+		margin-left: 0px;	
+		margin-top: 0px;
+		width: 100%;
+		background-color: #fff;				
+		padding: 0px;
+		display: none;
+	}
+
+	header .main-menu ul{
+		padding-bottom: 30px;
+	}
+
+	header .main-menu li{
+		width: 100%;
+		display: block;			
+		text-align: center;
+		padding-right: 0px;
+	}
+
+	.main-menu a, .main-menu a:hover{
+		border-bottom: none;
+	}
+
+	header .logo{
+		float: left;
+	}
+
+	.menu-toggle-button{
+		float: right;
+	}
+
+	.main-banner{
+		margin-top: 50px;
+	}
+
+	.main-banner{
+		padding-bottom: 40px;
+	}
+
+	#form1{
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.add-row{
+		width: 750px;
+	}
+
+	.tarifs-block{
+		width: 100%;
+	}
+
+	.tarifs-block-header{
+		background-position: left 50px center;
+	}
+
+	.tarifs-block-header span{
+		padding-left: 40px;
+	}
+
+	.tarifs-list li{
+		line-height: 25px;
+	}
+
+	.tarifs-list{
+		height: 224px;
+		padding-right: 10px;
+	}
+
+	.tarifs-list hr{
+		width: 100%;
+	}	
+
+	.tds-text ul{
+		top: 27px;
+	}
+
+	#addrow2 {
+ 	   margin-left: -390px;
+	}
+
+	#addrow2 .tarif-desc::after{
+		left: 450px;
+	}
+
+	#addrow3 {
+ 	   margin-left: -203px;
+	}
+
+	#addrow3 .tarif-desc::after{
+		right: 430px;
+	}
+
+	.tarif-desc li{
+		    background-position: left top 2px;
+	}	
+
+	.engines-list li{
+		width: 32%;
+		margin-bottom: 20px;
+		text-align: center;
+		margin-right: 0px;
+	}
+
+	.reviews-block{
+		margin: 0 auto;
+	}
+
+	.partners-list li{
+		width: 32%;
+		margin-bottom: 20px;
+		text-align: center;
+		margin-right: 0px;
+	}
+
+	#form2 {
+		text-align: center;
+	}
+
+	#form2 input{
+		width: 290px;
+		margin: 0px 10px;
+	}
+
+	#form2 button{
+		width: 300px;
+		display: block;
+		margin: 30px auto 0px;
+	}
+
+	.services-block{
+		margin: 40px auto 0px;
+	}
+
+	.services-block p{
+		padding: 0 10px;
+	}
+
+	.sb-order{
+		width: 100%;
+	}
+
+	.portfolio-block{
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.activities-block{
+		text-align: center;
+	}
+
+	.activities-block i, .activities-block span{		
+		display: block;
+		float: none;
+		padding-left: 0px;
+	}
+
+	.benefits{
+		padding: 40px 0px;
+	}
+
+	.bb-second-row{
+		margin-top: 40px;
+	}
+
+	.ab-second span{
+		top: 0px;
+	}
+
+	footer .footer-row{
+		min-height: 120px;
+	}
+
+	footer .logo{
+		margin-top: 50px;
+	}
+	
+	
+	footer .header-contacts{
+		text-align: right;
+	}
+
+	footer .main-menu{
+		margin: 30px auto;
+	}
+
+	footer ul{
+		text-align: center;
+	}
+
+	footer .main-menu li{
+		padding: 0px 20px;
+	}
+
 
 }
 
-/* Custom, iPhone Retina */
-@media only screen and (max-width : 320px) {
 
-}
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
 
+	header{
+		padding-bottom: 20px;
+	}
 
-/*==========  Mobile First Method  ==========*/
+	.logo{
+		margin-top: 30px;
+	}
 
-/* Custom, iPhone Retina */
-@media only screen and (min-width : 320px) {
+	.header-contacts{
+		margin-left: -60px;
+		text-align: center;
+	}
 
-}
+	.header-callback{
+		margin-left: 0px;
+	}
 
-/* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px) {
+	.header-callback a{
+		margin-top: 10px;
+	}
 
-}
+	.main-menu {
+ 		margin-top: 34px;
+    	margin-left: 30px;
+	}
 
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px) {
+	.main-banner{
+		margin-top: 103px;
+	}
 
-}
+	#form1{
+		margin-left: 0px;
+	}
 
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px) {
+	.main-header br{
+		display: none;
+	}
 
-}
+	.main-header h1{
+		margin-top: 33px;
+	}
 
- /* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px) {
+	.tarifs-block{
+		width: 100%;
+	}
+
+	.tarifs-block-header{
+		background-position: left 50px center;
+	}
+
+	.tarifs-block-header span{
+		padding-left: 40px;
+	}
+
+	.tarifs-list li{
+		line-height: 25px;
+	}
+
+	.tarifs-list{
+		height: 224px;
+	}
+
+	.tarifs-list hr{
+		width: 100%;
+	}
+
+	.add-row{
+		width: 970px;
+	}
+
+	.tds-text ul{
+		top: 27px;
+	}
+
+	#addrow2 {
+ 	   margin-left: -338px;
+	}
+
+	#addrow2 .tarif-desc::after{
+		left: 384px;
+	}
+
+	#addrow3 {
+ 	   margin-left: -662px;
+	}
+
+	#addrow3 .tarif-desc::after{
+		right: 200px;
+	}
+
+	.engines-list li{
+		width: 30%;
+		margin-bottom: 20px;
+		text-align: center;
+	}
+
+	.reviews-block{
+		margin: 0 auto;
+	}
+
+	.partners-list li{
+		width: 30%;
+		margin-bottom: 20px;
+		text-align: center;
+	}
+
+	#form2 input{
+		width: 290px;
+	}
+
+	#form2 button{
+		width: 300px;
+	}
+
+	.services-block{
+		width: 100%;
+		min-height: 410px;
+	}
+
+	.services-block p{
+		padding: 0 10px;
+	}
+
+	.sb-order{
+		width: 100%;
+	}
+
+	.portfolio-block{
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.activities-block{
+		text-align: center;
+	}
+
+	.activities-block i, .activities-block span{		
+		display: block;
+		float: none;
+		padding-left: 0px;
+	}
+
+	.benefits{
+		padding: 40px 0px;
+	}
+
+	.ab-second span{
+		top: 0px;
+	}
+
+	footer .footer-row{
+		min-height: 120px;
+	}
+
+	footer .logo{
+		margin-top: 40px;
+	}
+
+	footer .main-menu{
+		margin-top: 44px;
+	}
+
 
 }

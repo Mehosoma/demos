@@ -219,13 +219,13 @@ $(document).ready(function(){
             items:3
         },        
         992:{
-            items:3
+            items:2
         },
         768:{
-            items:2
+            items:1
         },
         650:{         
-            items:2
+            items:1
         },
         480:{         
             items:1
@@ -252,13 +252,13 @@ $(document).ready(function(){
             items:3
         },        
         992:{
-            items:3
+            items:2
         },
         768:{
-            items:2
+            items:1
         },
         650:{         
-            items:2
+            items:1
         },
         480:{         
             items:1
@@ -271,52 +271,40 @@ $(document).ready(function(){
   });
 });
 
+
+
 //Show-hide tarifs block
 $(document).ready(function(){
-    $('.add-row-1').on('click',function(e){
+
+    $('.add-row-but').on('click',function(e){
         e.preventDefault(); 
 
-      if ($('.tarifs-row-2').hasClass('active-row') || $('.tarifs-row-3').hasClass('active-row')){ 
-        $('.tarifs-row-2').removeClass('active-row');
-        $('.tarifs-row-3').removeClass('active-row');
-        $('.tarifs-row-1').delay(700).queue(function () { 
-          $('.tarifs-row-1').toggleClass('active-row');   
-        $(this).dequeue();});       
-      } else {
-        $('.tarifs-row-1').toggleClass('active-row');   
-      }        
+      if ($("div#addrow"+ this.id).hasClass('active-row')){
+             $('.active-row').css('height', '0px');
+             $("div#addrow"+ this.id).removeClass('active-row');
+             $("div#addrow"+ this.id).toggleClass('active-row1');
+      } else{
+        if (!$('*').not($("div#addrow"+ this.id)).hasClass('active-row1')){
+            var height = $("div#addrow"+ this.id).children(".col-lg-12").height();                        
+            $("div#addrow"+ this.id).toggleClass('active-row');
+            $('.active-row').css('height', height);
+            $("div#addrow"+ this.id).toggleClass('active-row1'); 
+        }else{ 
+             $('* .active-row').css('height', '0px');         
+            $('.active-row1').toggleClass('active-row'); 
+            $(this).delay(700).queue(function () { 
+            $('*').removeClass('active-row1');       
+            var height = $("div#addrow"+ this.id).children(".col-lg-12").height();                        
+            $("div#addrow"+ this.id).toggleClass('active-row');
+            $('.active-row').css('height', height);
+            $("div#addrow"+ this.id).toggleClass('active-row1');
+            $(this).dequeue();});       
+        }
+      }
+
     });   
 });
 
-$(document).ready(function(){
-    $('.add-row-2').on('click',function(e){
-        e.preventDefault(); 
-      if ($('.tarifs-row-1').hasClass('active-row') || $('.tarifs-row-3').hasClass('active-row')){ 
-        $('.tarifs-row-1').removeClass('active-row');
-        $('.tarifs-row-3').removeClass('active-row');
-        $('.tarifs-row-2').delay(700).queue(function () { 
-          $('.tarifs-row-2').toggleClass('active-row');   
-        $(this).dequeue();});       
-      } else {
-        $('.tarifs-row-2').toggleClass('active-row');   
-      }        
-    });   
-});
-
-$(document).ready(function(){
-    $('.add-row-3').on('click',function(e){
-        e.preventDefault(); 
-      if ($('.tarifs-row-1').hasClass('active-row') || $('.tarifs-row-2').hasClass('active-row')){ 
-        $('.tarifs-row-1').removeClass('active-row');
-        $('.tarifs-row-2').removeClass('active-row');
-        $('.tarifs-row-3').delay(700).queue(function () { 
-          $('.tarifs-row-3').toggleClass('active-row');   
-        $(this).dequeue();});       
-      } else {
-        $('.tarifs-row-3').toggleClass('active-row');   
-      }        
-    });   
-});
 
 
 $(function(){
@@ -346,4 +334,19 @@ $('.main-menu a[href^="."]').click(function(){
   var target = $(this).attr('href');
   $('html, body').animate({scrollTop: $(target).offset().top-100}, 1000);
 return false;
+});
+
+//Show-hide menu
+$(document).ready(function(){
+    $('.click-mobile').on('click',function(e){
+        e.preventDefault();        
+          $('.main-menu').animate({
+              height: 'toggle'
+            }, 600, function() {
+          });         
+        $("header .menu-toggle-button").toggleClass('is-active'); 
+        $('.top_nav_bg').toggleClass('menu-tablet-open');
+        $('.top-menu-toggle p').toggleClass('green-color');
+        $('.desktop_menu').toggleClass('w-border');               
+    });
 });
