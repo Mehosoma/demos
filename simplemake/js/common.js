@@ -307,7 +307,7 @@ $(document).ready(function(){
     }else{
 
        if ($("div#addrow"+ this.id).hasClass('active-row')){
-        $('.active-row').css('height', '0px');
+        $("div#addrow"+ this.id).css('height', '0px');
         $("div#addrow"+ this.id).removeClass('active-row');        
       }else {
 

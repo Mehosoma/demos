@@ -1,12 +1,15 @@
 @media only screen and (min-width : 0px) and (max-width : 479px) {
 
+
+	.gen-form{
+		width: 100%;
+	}
+
 	.anim_left1, .anim_left2, .anim_left3, .anim_left4, .anim_left5, .anim_left6{
-
-	-webkit-animation-delay: 200ms;
-	-moz-animation-delay: 200ms;
-	-o-animation-delay: 200ms;
-	animation-delay: 200ms;
-
+		-webkit-animation-delay: 0ms;
+		-moz-animation-delay: 0ms;
+		-o-animation-delay: 0ms;
+		animation-delay: 0ms;
 	} 
 
 	.example{
@@ -329,10 +332,10 @@
 
 	.anim_left1, .anim_left2, .anim_left3, .anim_left4, .anim_left5, .anim_left6{
 
-		-webkit-animation-delay: 200ms;
-		-moz-animation-delay: 200ms;
-		-o-animation-delay: 200ms;
-		animation-delay: 200ms;
+		-webkit-animation-delay: 0ms;
+		-moz-animation-delay: 0ms;
+		-o-animation-delay: 0ms;
+		animation-delay: 0ms;
 
 	} 
 
