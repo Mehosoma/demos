@@ -29,20 +29,6 @@ body {
     margin: 0px;
     list-style-type: none; }
 
-.pixel {
-  width: 1920px;
-  height: 2871px;
-  position: absolute;
-  top: 0px;
-  left: 50%;
-  margin-left: -960px;
-  z-index: 1000;
-  background-image: url("../img/main_page.jpg");
-  background-size: cover;
-  opacity: 0.5;
-  background-position: top center;
-  display: none; }
-
 .clearfix:after {
   content: "";
   display: table;
