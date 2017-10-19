@@ -234,17 +234,17 @@
 		margin-left: 0px;
 	}
 
-	#form2 {
+	.callback-form {
 		text-align: center;
 	}
 
-	#form2 input{
+	.callback-form input{
 		width: 280px;
 		margin: 30px auto;
 		display: block;
 	}
 
-	#form2 button{
+	.callback-form button{
 		width: 280px;
 		display: block;
 		margin: 30px auto 0px;
@@ -579,17 +579,17 @@
 		font-size: 24px;
 	}
 
-	#form2 {
+	.callback-form {
 		text-align: center;
 	}
 
-	#form2 input{
+	.callback-form input{
 		width: 350px;
 		margin: 30px auto;
 		display: block;
 	}
 
-	#form2 button{
+	.callback-form button{
 		width: 350px;
 		display: block;
 		margin: 30px auto 0px;
@@ -863,16 +863,16 @@
 		margin-right: 0px;
 	}
 
-	#form2 {
+	.callback-form {
 		text-align: center;
 	}
 
-	#form2 input{
+	.callback-form input{
 		width: 290px;
 		margin: 0px 10px;
 	}
 
-	#form2 button{
+	.callback-form button{
 		width: 300px;
 		display: block;
 		margin: 30px auto 0px;
@@ -1080,11 +1080,11 @@
 		text-align: center;
 	}
 
-	#form2 input{
+	.callback-form input{
 		width: 290px;
 	}
 
-	#form2 button{
+	.callback-form button{
 		width: 300px;
 	}
 

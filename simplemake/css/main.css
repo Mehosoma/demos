@@ -826,7 +826,7 @@ header {
   color: #fff;
 }
 
-#form2 {
+.callback-form {
   margin-top: 25px;
   -moz-placeholder-color: #ababab;
   -moz-placeholder-font-family: "PT Sans", sans-serif;
@@ -836,7 +836,7 @@ header {
   -ms-input-placeholder-font-size: 20px;
 }
 
-#form2 input {
+.callback-form input {
   width: 370px;
   height: 56px;
   border: none;
@@ -848,19 +848,19 @@ header {
   margin-right: 26px;
 }
 
-#form2 ::-webkit-input-placeholder {
+.callback-form ::-webkit-input-placeholder {
   color: #ababab;
   font-family: "PT Sans", sans-serif;
   font-size: 20px;
 }
 
-#form2 ::-moz-placeholder {
+.callback-form ::-moz-placeholder {
   color: #ababab;
   font-family: "PT Sans", sans-serif;
   font-size: 20px;
 }
 
-#form2 button {
+.callback-form button {
   width: 370px;
   height: 56px;
   border: none;
@@ -873,7 +873,7 @@ header {
   text-align: center;
 }
 
-#form2 button:hover {
+.callback-form button:hover {
   background-color: #da2e2e;
 }
 

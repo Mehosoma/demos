@@ -207,7 +207,6 @@ $(".example").TimeCircles({
 });
 
 //перезагрузка страницы при смене ориентации экрана
-
 window.addEventListener("orientationchange", function(e) {
          e.preventDefault();
         $('body,html').animate({scrollTop: 0}, 400);    
@@ -215,6 +214,7 @@ window.addEventListener("orientationchange", function(e) {
     }, false);
 
 
+//Owl
 $(document).ready(function(){
   $(".owl-carousel-rev").owlCarousel({
     loop:true, 
