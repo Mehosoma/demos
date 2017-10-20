@@ -1123,32 +1123,62 @@ h3{
   background-color: #d6d6d6;
 }
 
-.un-wrap{
+.univ-button{
   width: 100%; 
+  height: 426px;
+  overflow-x: hidden;
+  position: absolute;
+  margin-top: -260px;
 }
 
-.un-image{
-  width: 625px;
-  height: 188px;
+.univ-button .container{
+  height: 100%;
   position: relative;
- float: right;
- margin-top: -160px; 
- display: block;
 }
 
 .buka{
   display: block;
-  width: 100%;
-  height: 100%;
+  width: 625px;
+  height: 184px;
   z-index: 100;
+  right: 15px;
   position: absolute;
+  top: 108px;
+ 
 }
 
-.un-image img{    
+.univ-button img{    
   position: absolute;
-  margin: auto;
-  left: 0;  
-  top: 30px;
-  bottom: 0;
+  margin: auto;  
+  top: 0px;
+  right: -100px;
   z-index: 0;
+}
+
+.univ-button-pad-full{
+  padding-bottom: 140px;
+}
+
+.univ-button-text{
+  position: relative;
+  margin-top: 0px;
+  overflow-x: visible;
+  height: 360px;  
+  margin-top: -50px;
+}
+
+.univ-button-text .container{
+  width: 100%;
+}
+
+.univ-button-text img{
+  position: relative;
+  margin: 0 auto;
+  display: block;
+  right: 0px;
+}
+
+.univ-button-text .buka{
+ left: 200px;
+ right: 0px;
 }
