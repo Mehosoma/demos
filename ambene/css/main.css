@@ -744,9 +744,11 @@ footer .phone {
 }
 
 
-/************************************ArticlesGenerealPage**********************************/
+/************************************ArticlesGeneralPage**********************************/
 .article-page {
   padding: 60px 0px; 
+  position: relative;
+  z-index: 100;
 }
 
 .article-page-block {
@@ -860,9 +862,6 @@ h3{
 .count-page{
   margin-top: 50px;
   margin-left: 20px;
-  z-index: 1000;
-  position: relative;
-
 }
 
 .count-page span{
@@ -1145,7 +1144,7 @@ h3{
   display: block;
   width: 625px;
   height: 184px;
-  z-index: 100;
+  z-index: 110;
   right: 15px;
   position: absolute;
   top: 108px;
