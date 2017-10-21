@@ -860,6 +860,9 @@ h3{
 .count-page{
   margin-top: 50px;
   margin-left: 20px;
+  z-index: 1000;
+  position: relative;
+
 }
 
 .count-page span{
@@ -1122,6 +1125,8 @@ h3{
   pointer-events: none;
   background-color: #d6d6d6;
 }
+
+/********************************************Image-Button******************************************/
 
 .univ-button{
   width: 100%; 
