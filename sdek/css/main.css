@@ -249,7 +249,8 @@ footer,
 .footer-left,
 .footer-center,
 .footer-right,
-.h-nav {
+.h-nav,
+.calc {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
@@ -412,10 +413,15 @@ h1 {
   padding-top: 30px;
   position: relative; }
 
+.increase--container {
+  height: 100%;
+  position: relative; }
+
 .comp-bg {
   position: absolute;
   bottom: 3px;
-  left: 37px; }
+  left: 0px;
+  margin-left: -170px; }
 
 .section-left--increase {
   width: 54%; }
@@ -518,6 +524,10 @@ h1 {
   background-position: top 7px left 710px;
   position: relative; }
 
+.container--contract {
+  position: relative;
+  height: 100%; }
+
 .contract_header {
   color: #000;
   margin-bottom: 20px; }
@@ -543,7 +553,8 @@ h1 {
 .pad-bg {
   position: absolute;
   bottom: 3px;
-  left: 143px;
+  left: 0px;
+  margin-left: -70px;
   z-index: 2; }
 
 /**********************************************************Priviledges*****************************************************/
@@ -551,7 +562,7 @@ h1 {
   min-height: 1404px;
   background-image: url("../img/priviledges.png");
   background-repeat: no-repeat;
-  background-position: bottom left 104px;
+  background-position: bottom center;
   background-color: #f4f8fa;
   margin-top: -102px;
   position: relative;
@@ -698,7 +709,8 @@ h1 {
   min-height: 743px;
   background-image: url("../img/calc-bg.jpg");
   background-repeat: no-repeat;
-  background-position: top left; }
+  background-position: top left;
+  padding-top: 90px; }
 
 .calc-wrapper {
   display: block;
@@ -1039,9 +1051,6 @@ footer {
   font-family: "OpenSansRegular", sans-serif;
   font-size: 16px;
   color: #fff;
-  display: block; }
-
-.footer-content {
   display: block; }
 
 .footer_link {
