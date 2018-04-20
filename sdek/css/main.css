@@ -37,6 +37,9 @@ body {
     padding: 0px;
     margin: 0px;
     list-style-type: none; }
+  body button {
+    border: none;
+    cursor: pointer; }
 
 .pixel {
   background: url(../img/pixel.jpg) no-repeat top center;
@@ -635,7 +638,8 @@ h1 {
     font-size: 18px;
     width: 314px;
     height: 80px;
-    margin-top: 26px; }
+    margin-top: 26px;
+    line-height: 80px; }
 
 .info-man-bg {
   position: absolute;
@@ -878,7 +882,7 @@ h1 {
   margin: 0 auto;
   position: relative; }
   .owl-video .owl-slide {
-    height: 300px; }
+    height: 320px; }
   .owl-video .owl-next {
     width: 36px;
     height: 36px;
@@ -936,6 +940,13 @@ h1 {
 
 .feedback-textblock_phone {
   padding-top: 44px; }
+
+.feedback hr {
+  width: 87px;
+  height: 2px;
+  float: left;
+  border: none;
+  background-color: #fff; }
 
 /**********************************************************Map*****************************************************/
 .map {

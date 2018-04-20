@@ -30,7 +30,7 @@
 	<div class="container">
 		<div class="h-wrapper">
 			<div class="h-logo">			
-				<img src="img/logo.png" class="h-logo_image">
+				<img src="img/logo.png" class="h-logo_image" alt="logo-image">
 				<span class="h-logo_text">Комплексное обслуживание<br>вашего Интернет-магазина</span>
 			</div>
 			<div class="h-contacts">
@@ -72,7 +72,7 @@
 					<input type="text" name="fio" class="main-form_input form--banner-input" required="" placeholder="Имя">
 					<input type="text" name="phone" class="main-form_input phone" required="" placeholder="Телефон">
 				</div>
-				<a href="" onclick="document.getElementById('form1').submit(); return false;" class="btn btn-banner">Протестировать</a>
+				<button type="submit" class="btn btn-banner">Протестировать</button>
 			</form>
 		</div>
 	</div>
@@ -150,21 +150,21 @@
 
 <!--Increase-->
 <section class="increase clearfix">
-	<img src="img/comp-bg.png" class="comp-bg">
+	<img src="img/comp-bg.png" class="comp-bg" alt="bg-image">
 	<div class="container clearfix">
 		<div class="section-left section-left--increase">
 			<h3 class="increase_header">Как повысить эффективность доставки для своего Интернет-магазина?</h3>
 			<span class="increase_text section-header_add shadow">Сдэк знает!</span>
 		</div>
 		<div class="section-right section-right--increase">
-			<form class="main-form form--increase">
+			<form class="main-form form--increase" id="form2">
 				<div class="form-wrapper">
 					<span class="main-form_header">Оставьте ваш номер</span>
 					<p class="main-form_text">и мы перезвоним сами</p>
 					<input type="text" name="fio" class="main-form_input form--banner-input" required="" placeholder="Имя">
 					<input type="text" name="phone" class="main-form_input phone" required="" placeholder="Телефон">
 				</div>
-				<a href="" class="btn btn--increase">Получить консультацию</a>				
+				<button type="submit" class="btn btn--increase">Получить консультацию</button>				
 			</form>
 		</div>
 	</div>
@@ -299,21 +299,21 @@
 
 <!--Contract-->
 <section class="contract clearfix">
-	<img src="img/pad-bg.png" class="pad-bg">
+	<img src="img/pad-bg.png" class="pad-bg" alt="bg-image">
 	<div class="container">
 		<div class="section-left">
 			<h3 class="contract_header">Заключите договор на услуги сегодня и получите</h3>
 			<span class="contract_text section-header_add">Скидку 5%</span>
 		</div>
 		<div class="section-right">
-			<form class="main-form form--contract">
+			<form class="main-form form--contract" id="form3">
 				<div class="form-wrapper">
 					<span class="main-form_header">Оставьте ваш номер</span>
 					<p class="main-form_text">и получите скидку</p>
 					<input type="text" name="fio" class="main-form_input form--banner-input" required="" placeholder="Имя">
 					<input type="text" name="phone" class="main-form_input phone" required="" placeholder="Телефон">
 				</div>
-				<a href="" class="btn btn--increase">Получить скидку 5%</a>
+				<button type="submit" class="btn btn--increase">Получить скидку 5%</button>
 			</form>
 		</div>
 	</div>
@@ -366,19 +366,19 @@
 
 <!--Info-->
 <section class="info clearfix">
-	<img src="img/info-man-bg.png" class="info-man-bg">
+	<img src="img/info-man-bg.png" class="info-man-bg" alt="bg-image">
 	<div class="container">
 		<div class="info-block">
 			<h2 class="white-header shadow header--info">Нужно больше информации?</h2>
 			<p class="info-block_text">Оставьте свои данные для связи,<br> мы перезвоним Вам и ответим<br>на все интересующие вопросы</p>
-			<form class="main-form form--info">
+			<form class="main-form form--info" id="form4">
 				<div class="form-wrapper">
 					<span class="main-form_header">Оставьте ваш номер,</span>
 					<p class="main-form_text">и мы перезвоним сами</p>
 					<input type="text" name="fio" class="main-form_input form--info-input" required="" placeholder="Имя">
 					<input type="text" name="phone" class="main-form_input phone" required="" placeholder="Телефон">
 				</div>
-				<a href="" class="btn btn--info">Отправить заявку</a>
+				<button type="submit" class="btn btn--info">Отправить заявку</button>
 			</form>
 		</div>
 	</div>
@@ -562,14 +562,14 @@
 			<h2 class="white-header shadow header--dialog">Закажите позитивный диалог</h2>
 		</div>
 		<div class="section-right">
-			<form class="main-form form--dialog">
+			<form class="main-form form--dialog" id="form-5">
 				<div class="form-wrapper">
 					<span class="main-form_header">Оставьте cвои данные<br>для связи,</span>
 					<p class="main-form_text">мы перезвоним вам и ответим<br>на все интересующие вопросы</p>
 					<input type="text" name="fio" class="main-form_input form--dialog-input" required="" placeholder="Имя">
 					<input type="text" name="phone" class="main-form_input phone" required="" placeholder="Телефон">
 				</div>
-				<a href="" class="btn btn--dialog">Отправить заявку</a>
+				<button type="submit" class="btn btn--dialog">Отправить заявку</button>
 			</form>
 		</div>
 	</div>
@@ -681,14 +681,14 @@
 <section class="request clearfix">
 	<div class="container clearfix">
 		<h2 class="white-header shadow">Хотите присоединиться<br>к сильнейшим?</h2>
-		<form class="main-form form--request">
+		<form class="main-form form--request" id="form6">
 			<div class="form-wrapper">
 					<span class="main-form_header">Оставьте свои данные,</span>
-					<p class="main-form_text">и мы вам перезвоним сразу</p>
+					<p class="main-form_text">и мы перезвоним вам сразу</p>
 					<input type="text" name="fio" class="main-form_input form--request-input" required="" placeholder="Имя">
 					<input type="text" name="phone" class="main-form_input phone" required="" placeholder="Телефон">
 				</div>
-				<a href="" class="btn btn--request">Отправить заявку</a>
+				<button type="submit" class="btn btn--request">Отправить заявку</button>
 		</form>
 	</div>
 </section>
@@ -731,17 +731,17 @@
 	<div class="container">
 		<div class="section-left">
 			<h2 class="white-header shadow header--feedback">Управляйте бизнесом из любой точки мира. Заключите договор на услуги уже сегодня</h2>
-			<p class="feedback-text"></p>
+			<hr />			
 		</div>
 		<div class="section-right">
-			<form class="main-form form--feedback">
+			<form class="main-form form--feedback" id="form7">
 				<div class="form-wrapper">
 					<span class="main-form_header">Оставьте cвои данные</span>
 					<p class="main-form_text">и мы перезвоним вам сами</p>
 					<input type="text" name="fio" class="main-form_input form--banner-input" required="" placeholder="Имя">
 					<input type="text" name="phone" class="main-form_input phone" required="" placeholder="Телефон">
 				</div>
-				<a href="" class="btn btn--feedback">Заключить договор</a>	
+				<button type="submit" class="btn btn--feedback">Заключить договор</button>	
 			</form>
 		</div>
 		<div class="feedback-textblock">
@@ -834,6 +834,23 @@
 <script src="libs/mask/mask.js"></script>
 <script src="js/common.js"></script>
 
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('form').submit(function () {
+            var formID = $(this).attr('id'); // Получение ID формы
+            var formNm = $('#' + formID);
+            $.ajax({
+                type: 'POST',
+                url: 'send.php', // Обработчик формы отправки
+                data: formNm.serialize(),
+                success: function (data) {
+                    alert('Ваше сообщение отправлено. Мы свяжемся с вами в ближайшее время');
+                }
+            });
+            return false;
+        });
+    });
+</script>
 
 </body>
 </html>
