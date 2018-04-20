@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "OpenSansRegular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/OpenSansRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSansRegular.woff") format("woff"), url("../fonts/OpenSansRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "OpenSansBold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/OpenSansBold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSansBold.woff") format("woff"), url("../fonts/OpenSansBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "OpenSansSemibold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/OpenSansSemibold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSansSemibold.woff") format("woff"), url("../fonts/OpenSansSemibold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "rouble";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/rouble.eot?#iefix") format("embedded-opentype"), url("../fonts/rouble.woff") format("woff"), url("../fonts/rouble.ttf") format("truetype"); }
