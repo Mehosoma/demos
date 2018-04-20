@@ -17,7 +17,7 @@ html {
   width: 100%; }
 
 body {
-  min-width: 1200px;
+  min-width: 1400px;
   margin: 0 auto;
   position: relative;
   line-height: 1.2;
@@ -559,7 +559,7 @@ h1 {
 
 /**********************************************************Priviledges*****************************************************/
 .priviledges {
-  min-height: 1404px;
+  min-height: 1500px;
   background-image: url("../img/priviledges.png");
   background-repeat: no-repeat;
   background-position: bottom center;
