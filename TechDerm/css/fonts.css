@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "QanelasRegular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/QanelasRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/QanelasRegular.woff") format("woff"), url("../fonts/QanelasRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "QanelasBold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/QanelasBold.eot?#iefix") format("embedded-opentype"), url("../fonts/QanelasBold.woff") format("woff"), url("../fonts/QanelasBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "QanelasExtraBold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/QanelasExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/QanelasExtraBold.woff") format("woff"), url("../fonts/QanelasExtraBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "QanelasMedium";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/QanelasMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/QanelasMedium.woff") format("woff"), url("../fonts/QanelasMedium.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "ITCEDSCR";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/ITCEDSCR.eot?#iefix") format("embedded-opentype"), url("../fonts/ITCEDSCR.woff") format("woff"), url("../fonts/ITCEDSCR.ttf") format("truetype"); }

@@ -1,0 +1,1042 @@
+@import "bourbon/bourbon"
+
+$pink: #c595c3
+$bordo: #4c032d
+$bg-pink: #faf4f4
+$s-red: #e02c7f
+$green: #6cbe5b
+$qu: 'QanelasRegular', sans-serif
+$qu-bold: 'QanelasBold', sans-serif
+$qu-med: 'QanelasMedium', sans-serif
+
+html, body
+	height: 100%
+
+body
+	width: 100%
+	min-width: 320px
+	margin: 0 auto
+	position: relative
+	line-height: 1.2
+	-webkit-font-smoothing: antialiased
+	overflow-x: hidden
+	background-color: #fff
+	a:hover, a:focus, a:active
+		text-decoration: none
+		outline: none
+	input:focus, input:active
+		text-decoration: none
+		outline: none
+	button:focus, button:active
+		text-decoration: none
+		outline: none
+	textarea:focus, textarea:active
+		text-decoration: none
+		outline: none
+	a
+		display: inline-block
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out
+	ul
+		padding: 0px
+		margin: 0px
+		list-style-type: none
+	button
+		border: none
+		cursor: pointer
+	hr
+		border: none
+
+.pixel
+	background: url(../img/TechDerm6.jpg) no-repeat top center
+	width: 1920px
+	height: 5216px
+	position: absolute
+	z-index: 1000000
+	display: none
+	left: 50%
+	top: 0
+	margin-left: -960px
+	opacity: 0.5
+	margin-top: 0px
+/***************************************************GeneralStyles************************************/
+h2
+	text-align: center
+	font-family: $qu-bold
+	font-size: 36px
+	line-height: 50px
+	color: $bordo
+	position: relative
+.h2-bg
+	background-repeat: no-repeat
+	background-position: top 30px center
+.h2-bg--gen
+	background-image: url(../img/h2-prod-bg.png)
+h3
+	font-family: $qu-bold
+	font-size: 22px
+	color: #242424
+h4
+	font-family: $qu-bold
+	font-size: 20px
+	color: #242424
+	text-align: center
+.transition-opt
+	-moz-transition: all 0.3s ease-out
+	-o-transition: all 0.3s ease-out
+	-webkit-transition: all 0.3s ease-out
+	transition: all 0.3s ease-out
+.button
+	position: relative
+	font-family: $qu
+	font-size: 20px
+	color: #fff
+	border: none	
+	border-radius: 30px
+	text-align: center
+	line-height: 60px
+	background: rgb(160,32,107)
+	background: -moz-linear-gradient(left, rgba(160,32,107,1) 0%, rgba(224,44,128,1) 100%)
+	background: -webkit-linear-gradient(left, rgba(160,32,107,1) 0%, rgba(224,44,128,1) 100%)
+	background: linear-gradient(to right, rgba(160,32,107,1) 0%, rgba(224,44,128,1) 100%)
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a0206b', endColorstr='#e02c80',GradientType=1 )
+	box-shadow: 0px 10px 30px rgba(224,44,128,0.25)
+.button:after 
+	display: block
+	position: absolute
+	background: rgba(224,44,128,1)
+	border-radius: 30px
+	bottom: 0
+	left: 0
+	right: 0	
+	opacity: 1
+	height: 60px
+	transition: 0.3s
+	opacity: 0
+.button:hover:after		
+	opacity: 0.5
+	color: #fff 		
+.button:hover
+	color: #fff
+section
+	padding: 47px 0px 75px 0px
+.gen_text
+	font-family: $qu-med
+	font-size: 16px
+	line-height: 24px
+	color: #666
+.gen_text_small
+	font-family: $qu-med
+	font-size: 14px
+	color: #666
+	line-height: 20px
+.shadow
+	box-shadow: 0px 0px 40px 10px rgba(153,153,153,0.15)
+.upper_decor
+	width: 90px
+	height: 10px
+	background: rgba(197,149,195,0.3)
+	border-radius: 5px
+	position: absolute
+	top: 0px	
+	left: 0
+	right: 0
+	margin: auto
+	margin-top: -5px
+.h4--left
+	text-align: left
+.image-frame
+	position: relative
+	width: 540px
+	height: 380px
+	border-radius: 10px
+	background-color: #fff
+	z-index: 1
+.content-image--right	
+	margin: 59px 0px 35px 95px
+.content-image--left
+	margin: 24px 65px 35px 30px
+.frame_image			
+	z-index: 10
+	position: absolute
+	bottom: 0
+	border-radius: 10px
+.image_decor
+	width: 540px
+	height: 380px
+	border: 1px solid $pink
+	position: absolute	
+	border-radius: 10px
+	top: 30px
+	margin-left: -30px
+.f-right
+	float: right
+.f-left
+	float: left
+.letter
+	letter-spacing: 1px
+
+/***************************************************Header************************************/
+header
+	width: 100%
+	min-height: 170px
+	background-color: #fff
+	position: relative
+	overflow: hidden
+	background: transparent
+.inner-page
+	background-image: url('../img/first-bg2.jpg')
+	background-repeat: no-repeat
+.first-header-row
+	min-height: 60px		
+.first-header-row .container
+	position: relative
+	z-index: 100	
+.e-mail
+	margin-top: 20px
+.fa-envelope-open
+	color: $pink
+	font-size: 16px
+	margin-right: 12px
+.mail_link
+	color: $pink
+	border-bottom: 1px solid $pink
+	font-family: $qu-med
+	font-size: 18px
+.mail_link:hover
+	border-bottom: 1px solid transparent
+	color: $pink
+.logo_image
+	position: absolute
+	width: 114px
+	height: 112px
+	top: 135px
+	left: 13px
+	right: 0
+	bottom: 0
+	margin: auto
+	z-index: 2	
+.logo_bg
+	position: absolute
+	width: 1920px
+	height: 170px	
+	left: 50%	
+	margin-left: -960px
+	z-index: 1
+.phone
+	text-align: right
+	line-height: 58px
+.fa-phone
+	font-size: 20px
+	color: $pink
+	margin-right: 15px
+.phone_number
+	font-family: $qu-bold
+	font-size: 18px
+	color: #666666
+.menu-wrapper
+	min-height: 60px	
+	position: relative	
+	background-color: rgba(255,255,255,0.4)
+.navbar-default
+	margin: 0px
+	border: none
+	background-color: transparent
+	height: 60px
+.navbar-default .menu_list
+	padding: 22px 0px 18px 0px		
+	position: relative
+	z-index: 10
+.menu_border
+	width: 100%
+	height: 1px
+	position: absolute
+	bottom: 0		
+	background: #c696c3
+	background: -moz-linear-gradient(left, #c696c3 0%, #dcbdd5 50%, rgba(236,210,219,0.4) 100%)
+	background: -webkit-linear-gradient(left, #c696c3 0%,#dcbdd5 50%, rgba(236,210,219,0.4) 100%)
+	background: linear-gradient(to right, #c696c3 0%,#dcbdd5 50%, rgba(236,210,219,0.4) 100%)
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c696c3', endColorstr='#00ffffff',GradientType=1)
+	opacity: 0
+.navbar-default .navbar-nav .menu_link
+	padding: 0px	
+	font-family: $qu-med
+	font-size: 16px
+	color: #666	
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus
+	color: #a1206a
+.navbar-default .navbar-nav > li > a:hover + .menu_border
+	opacity: 1
+.navbar-collapse
+	padding: 0px
+.separator
+	width: 5px
+	height: 5px
+	border: 1px solid #c799c5
+	border-radius: 50%
+	margin: 27px 20px 25px 20px	
+.navbar-nav--right
+	margin-left: 45px
+	.separator
+		margin: 27px 16px 25px 16px	
+
+/***************************************************FirstScreen************************************/
+.firstscreen
+	width: 100%
+	min-height: 750px
+	background-image: url('../img/first-bg1.jpg')
+	background-repeat: no-repeat
+	background-position: top center
+	margin-top: -170px
+h1
+	margin-top: 234px
+	margin-bottom: 4px
+	font-family: $qu-bold
+	font-size: 90px
+	color: $bordo
+	line-height: 60px
+	text-transform: uppercase
+.main_header_small
+	font-style: normal
+	font-size: 48px
+	text-transform: none
+.header_desc
+	font-family: 'ITCEDSCR', sans-serif
+	font-size: 50px
+	color: $bordo
+	display: block
+	position: relative	
+.header_desc_decor
+	width: 200px
+	height: 1px
+	position: absolute
+	bottom: 23px	
+	left: 238px
+	background: #c696c3
+	background: -moz-linear-gradient(left, #c696c3 0%, #dcbdd5 50%, rgba(236,210,219,0.4) 100%)
+	background: -webkit-linear-gradient(left, #c696c3 0%,#dcbdd5 50%, rgba(236,210,219,0.4) 100%)
+	background: linear-gradient(to right, #c696c3 0%,#dcbdd5 50%, rgba(236,210,219,0.4) 100%)
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c696c3', endColorstr='#00ffffff',GradientType=1)
+.btn--seminar
+	width: 350px
+	height: 60px
+	margin-top: 42px
+.btn--seminar:after
+	content: 'Расписание семинаров'
+
+
+/***************************************************Production************************************/
+.production
+	background-color: $bg-pink
+.production-block
+	width: 100%
+	height: 300px	
+	border-radius: 10px
+	background-color: #fff
+	position: relative
+	margin-top: 29px
+	padding-top: 22px	
+	overflow: hidden	
+.block_image			
+	position: absolute
+	bottom: 0px
+	border-radius: 0 0 10px 10px	
+
+/***************************************************About************************************/
+.about
+	position: relative
+	width: 100%
+	min-height: 696px
+	background: linear-gradient(to right, #fcf9f9 29%, #fff 29%)
+.about-desc_header
+	font-family: $qu-bold
+	font-size: 20px
+	color: #242424
+.image-frame--about
+	margin-top: 79px
+	margin-left: 30px
+.about-desc
+	margin-top: 76px
+	margin-left: -31px
+.about-desc_header
+	display: block
+	margin-bottom: 15px
+
+
+/***************************************************Programs************************************/
+.programs
+	width: 100%
+	min-height: 500px
+	background-color: $bg-pink
+	padding-bottom: 70px
+.programs .col-lg-4
+	padding: 0px 
+.h2-bg--progr
+	background-image: url('../img/h2-progr-bg.png')
+.programs-wrapper
+	margin-top: 19px
+	margin-left: -10px
+.program-block
+	border: 10px solid #fff
+	border-radius: 20px
+	margin-bottom: 30px
+	position: relative
+	hr
+		position: absolute
+		width: 100%
+		height: 1px
+		background: #fff
+		margin-top: 50px
+		margin-bottom: 0px
+.program_image
+	border-radius: 10px 0 0 10px
+	position: relative
+	z-index: 10
+.program_date
+	padding-left: 8px	
+.header-link
+	display: block
+.header-link:hover h3, .header-link:hover h4
+	color: $pink	
+.date, .hour
+	font-family: $qu-bold
+	font-size: 16px
+	color: $pink
+	font-style: normal
+	line-height: 53px
+	letter-spacing: 1px
+.weekday
+	text-align: right
+	float: right
+	font-family: $qu-med
+	font-size: 16px
+	color: $green	
+	line-height: 53px
+	padding-right: 13px
+	letter-spacing: 1px
+.h3--programs
+	margin-top: 29px
+	letter-spacing: 1.1px
+.free
+	font-family: $qu-bold
+	font-style: normal
+	letter-spacing: 1px
+.btn--prorgam
+	width: 310px
+	height: 60px
+	display: block
+	margin: 10px auto	
+.btn--prorgam:after
+	content: 'Ко всем событиям'
+
+
+/***************************************************News************************************/
+.news
+	background: linear-gradient(to left, #fcf9f9 29%, #fff 29%)	
+	padding-bottom: 95px
+.h2-bg--news
+	background-image: url('../img/h2-news-bg.png')
+.news-block
+	width: 100%
+	height: 100%
+	background: #fff
+	border: 1px solid #ebebeb
+	border-radius: 10px
+	box-sizing: content-box
+	position: relative
+	margin-top: 27px
+.news_desc
+	margin-bottom: 60px
+	padding-top: 12px
+	padding-left: 29px
+	padding-right: 20px		
+.news_date
+	position: absolute
+	width: 100%
+	height: 53px
+	bottom: 0px
+	border-top: 1px solid #ebebeb
+	padding: 0px 30px
+	letter-spacing: 1px
+	line-height: 50px
+.news_image	
+	border-radius: 10px 10px 0px 0px
+.date--news, .hour--news
+	font-family: $qu-med
+	font-size: 16px
+	color: $green
+.hour--news
+	float: right
+.content--news
+	margin-top: 16px
+	line-height: 20px
+
+/***************************************************Calendar************************************/
+.calendar
+	width: 100%
+	height: 616px
+	background-image: url('../img/calendar-bg.jpg')
+	background-repeat: no-repeat
+	background-position: top center
+	background-size: cover
+	hr
+		width: 100%
+		height: 1px
+		background: #ebebeb
+		margin: 0px		
+		position: relative
+		top: -3px
+.calendar-wrapper
+	width: 100%
+	height: 380px
+	background: #fff
+	border-radius: 10px
+	margin-top: 31px	
+.date--calendar, .hour--calendar, .weekday-calendar
+	color: $green
+	line-height: 60px
+.weekday-calendar
+	padding-right: 0px
+	line-height: 63px
+.h3--calendar
+	margin-top: 28px
+	margin-bottom: 15px
+.text--calendar	
+	line-height: 20px
+.h2-bg--calendar
+	background-image: url('../img/h2-calendar-bg.png')
+.calendar-right
+	padding-right: 15px
+#datetimepicker12
+	width: 100%
+	height: 360px
+	border-right: 1px solid #ebebeb
+	padding-right: 30px
+	padding-left: 15px
+	padding-top: 15px
+.bootstrap-datetimepicker-widget table thead tr:first-child th
+	font-family: $qu-bold
+	font-size: 18px
+	color: #666
+.bootstrap-datetimepicker-widget table thead tr:first-child
+	border-bottom: 1px solid #ebebeb
+	height: 45px
+.bootstrap-datetimepicker-widget table .next
+	position: relative
+	background-image: url('../img/arrow-right.png')!important
+	background-repeat: no-repeat!important
+	background-position: right center!important
+.bootstrap-datetimepicker-widget table thead tr:first-child th:hover
+	background: transparent	
+	opacity: 0.7
+.bootstrap-datetimepicker-widget table .prev
+	position: relative
+	background-image: url('../img/arrow-left.png')!important
+	background-repeat: no-repeat!important
+	background-position: left center!important
+.bootstrap-datetimepicker-widget table thead tr:nth-child(2)
+	font-family: $qu
+	font-size: 16px
+	color: #999
+	border-bottom: 1px solid #ebebeb	
+	height: 50px
+.bootstrap-datetimepicker-widget table td.day
+	font-family: $qu
+	font-size: 16px
+	color: #666		
+.bootstrap-datetimepicker-widget table td.old, .bootstrap-datetimepicker-widget table td.new
+	color: #999
+.bootstrap-datetimepicker-widget table td.today::before
+	content: none	
+.bootstrap-datetimepicker-widget table tbody tr
+	height: 50px
+.bootstrap-datetimepicker-widget table td.active, .bootstrap-datetimepicker-widget table td.active:hover
+	color: #fff
+	background: $pink!important
+.bootstrap-datetimepicker-widget table td.today
+	background: $green!important
+	color: #fff
+.bootstrap-datetimepicker-widget table td.day:hover
+	background: $bg-pink
+
+/***************************************************Consult************************************/
+.consult
+	background: linear-gradient(to left, #f3f2f7 23%, #fafafa 23%)	
+	padding-bottom: 81px
+	.col-lg-5
+		padding-left: 0px
+	.col-lg-3
+		padding-right: 0px
+.h2-bg--consult
+	background-image: url('../img/h2-consult-bg.png')
+.consult-wrapper
+	width: 100%
+	height: 240px
+	border: 10px solid #fff
+	border-radius: 10px
+	margin-top: 30px
+.consult_text
+	font-family: $qu-med
+	font-size: 22px
+	line-height: 30px
+	color: #242424
+	padding-left: 98px
+	padding-top: 50px
+.gen_text--consult
+	color: $s-red
+	padding-left: 98px
+.phone_consult
+	font-family: $qu-bold
+	font-size: 30px
+	color: $bordo
+	padding-left: 10px	
+.consult-phone-wrapper	
+	margin-top: 50px
+	padding-left: 59px
+.btn--consult
+	width: 250px
+	height: 60px
+	display: block
+	margin-top: 25px
+.btn--consult:after
+	content: 'Обратная связь'
+.consult_image
+	margin-top: -96px
+	position: relative
+	left: 12px
+
+
+/***************************************************Footer************************************/
+footer
+	width: 100%
+	height: 50px
+	background-color: $bordo
+.copy
+	line-height: 50px
+	text-align: center
+	display: block
+	color: rgba(255,255,255,0.3)	
+
+.hidden
+	display: none
+
+
+/***************************************************Thread************************************/
+.thread
+	background: linear-gradient(to right, #fcf9f9 29%, #fff 29%)
+	width: 100%
+	min-height: 696px
+	margin-top: -50px
+	padding-top: 67px	
+.h2-bg--thread
+	background-image: url('../img/h2-thread-bg.png')	
+.image-frame--thread
+	margin-top: 59px
+	margin-left: 30px
+.play
+	width: 125px
+	height: 125px
+	position: absolute
+	top: 0
+	bottom: 0
+	left: 0
+	right: 0
+	margin: auto
+	z-index: 20	
+.play:hover
+	opacity: 0.7
+	cursor: pointer
+.play-main
+	border: none
+	width: 540px
+	height: 380px
+	position: absolute
+	top: 0
+	left: 0
+	z-index: 10
+.thread-right
+	padding-top: 78px
+	padding-left: 64px
+.gen_text--thread
+	margin-top: 24px
+.btn--thread
+	width: 260px
+	height: 60px
+	display: block
+	margin-top: 45px
+.btn--thread:after
+	content: 'Заказать продукт'
+.tables
+	padding-top: 30px
+	padding-bottom: 79px
+.h2--inner
+	font-size: 30px
+	text-align: left
+	margin-bottom: 17px
+.table-main
+	width: 100%	
+	border-collapse: collapse	
+	border-radius: 10px
+	th, td
+		padding: 20px 20px 20px 30px		
+	th
+		height: 68px
+		background-color: $pink
+		border: 1px solid rgba(255,255,255,0.3)
+		border-bottom: none		
+		font-family: $qu-bold
+		font-size: 20px
+		color: #fff			
+	th:first-child
+		border-left: none
+		border-radius: 10px 0px 0px 0px
+	th:last-child
+		border-right: none
+		border-radius: 0px 10px 0px 0px		
+	td
+		border: 1px solid $pink
+		font-family: $qu-med
+		font-size: 18px
+		color: #666		
+	tr td:last-child
+		border-right: none
+	tr:last-child td, .last-row td
+		border-bottom: none
+	.first_col
+		font-family: $qu-bold
+		font-size: 18px
+		color: #242424
+		vertical-align: top
+		border-left: none!important
+	img
+		display: block
+.table--first
+	margin-bottom: 25px
+.mono-image1
+	margin-top: 27px
+	margin-bottom: 30px 
+.mono-image2
+	margin-top: 5px
+	margin-bottom: 10px
+.mono-image3
+	margin-top: 20px
+	margin-bottom: 15px
+.mono-image4 
+	margin-top: 10px
+.second-table
+	th, td
+		padding: 19px 20px 19px 30px
+.last-table
+	td
+		padding: 35px 20px 35px 30px
+	.mis-row td
+		padding: 23px 20px 23px 30px
+
+
+/***************************************************Skin************************************/
+.skin
+	background: linear-gradient(to left, #fcf9f9 29%, #fff 29%)	
+	background-repeat: no-repeat
+	background-size: 100% 696px	
+	margin-top: -50px
+	padding-top: 67px
+	padding-bottom: 32px
+.h2-bg--skin
+	background-image: url('../img/h2-skin-bg.png')
+.h4--skin
+	margin-top: 77px
+	line-height: 24px
+	margin-bottom: 20px
+.h4--add
+	margin-top: 35px
+	margin-bottom: 17px
+.btn--skin
+	width: 320px
+	height: 60px
+	margin-top: 23px	
+.btn--skin:after
+	content: 'Проконсультироваться'
+.photos
+	padding-bottom: 80px
+.photos_photo
+	border-radius: 10px
+	display: block
+.mis-photo
+	margin-bottom: 30px
+.btn--photos
+	width: 400px
+	height: 60px	
+	display: block
+	margin: 0 auto
+	margin-top: 30px
+.btn--photos:after
+	content: 'Скачать больше фотографий'
+
+
+/***************************************************Tools************************************/
+.tools
+	background: linear-gradient(to right, #fcf9f9 29%, #fff 29%)	
+	background-repeat: no-repeat
+	background-size: 100% 696px	
+	margin-top: -50px
+	padding-top: 67px
+.tools .content-image--left
+	margin-top: 59px
+.h2-bg--tools
+	background-image: url('../img/h2-tools-bg.png')
+.h2-bg--staff
+	background-image: url('../img/h2-calendar-bg.png')
+.content-wrapper--tools
+	margin-top: 86px
+.indent--tools
+	margin-top: 39px
+.slider-wrapper
+	width: 1300px
+	margin: 0 auto
+	position: relative
+	margin-top: 42px
+.slider
+	width: 1100px
+	margin: 0 auto	
+.slick-next
+	position: absolute
+	top: 30%
+	right: 0
+	margin-right: -134px
+	width: 60px
+	height: 60px
+	border-radius: 50%
+	background-image: url('../img/arrow-circle-right.png')
+	background-color: transparent
+	background-repeat: no-repeat	
+.slick-prev
+	position: absolute
+	top: 30%
+	left: 0
+	margin-left: -132px
+	width: 60px
+	height: 60px
+	border-radius: 50%
+	background-image: url('../img/arrow-circle-left.png')
+	background-color: transparent
+	background-repeat: no-repeat	
+.slick-prev:hover, .slick-next:hover
+	opacity: 0.7
+.slide_image
+	border-radius: 10px
+.slick-slide
+	margin: 0 10px
+
+/***************************************************Schools************************************/
+.school
+	width: 100%
+	min-height: 857px	
+	background: linear-gradient(to left, #fcf9f9 29%, #fafafa 29%)
+	position: relative	
+	margin-top: -50px
+	padding: 0px		
+.h2-bg--school
+	background-image: url('../img/h2-school-bg.png')
+	margin-top: 86px
+.image-frame--white
+	width: 335px
+	height: 427px
+	border: 10px solid #fff
+	border-radius: 10px
+	position: relative
+	margin: 35px 0px 0px 60px
+.content-wrapper--school
+	padding-top: 30px
+.h4--school
+	margin-top: 37px
+	margin-bottom: 12px	
+.frame_image_white	
+	position: absolute
+	bottom: 0
+.indent--school
+	margin-top: 27px
+.peoples
+	padding-top: 46px
+	padding-bottom: 63px
+	.slider
+		.slick-next
+			top: 36%
+		.slick-prev
+			top: 36%
+.name_people
+	font-family: $qu-bold
+	font-size: 20px
+	color: #242424
+	text-align: center
+	display: block
+	margin-top: 23px
+.prof
+	display: block
+	text-align: center
+
+/***************************************************Events************************************/
+.events
+	width: 100%
+	min-height: 500px
+	background-color: #fafafa
+	margin-top: -50px
+	padding-top: 67px
+	padding-bottom: 32px
+.h2-bg--events
+	background-image: url('../img/h2-events-bg.png')
+.events .col-lg-4
+	padding: 0px 
+.events-wrapper
+	margin-top: 29px
+.events-pagination
+	width: 100%
+	height: 150px
+	position: relative
+	margin-top: -50px
+.events-next
+	position: absolute
+	width: 50px
+	height: 50px	
+	top: 50%
+	margin-top: - 25px
+	right: 0
+	background-image: url('../img/circle-right-small.png')
+	background-color: transparent
+	background-repeat: no-repeat
+.events-prev
+	position: absolute
+	width: 50px
+	height: 50px	
+	top: 50%
+	margin-top: - 25px
+	left: 0
+	background-image: url('../img/circle-left-small.png')
+	background-color: transparent
+	background-repeat: no-repeat
+.events-next:hover, .events-prev:hover
+	opacity: 0.7
+.pages
+	width: 418px
+	height: 50px
+	position: absolute
+	left: 50%
+	margin-left: -205px
+	top: 50%
+	margin-top: -25px
+.page
+	display: inline-block
+	width: 50px
+	height: 50px
+	border: 1px solid #e2e2e2
+	border-radius: 50%
+	text-align: center
+	padding: 15px 0px
+	margin: 0px 3px
+.page:hover
+	background: $bg-pink	
+	cursor: pointer
+.page-active, .page-active:hover
+	border: 1px solid $pink
+	background: $pink
+	color: #fff
+.btn--calendar
+	width: 250px
+	height: 60px	
+	display: block	
+	margin-top: 30px
+.btn--calendar:after
+	content: 'Записаться'
+
+
+/***************************************************Contacts************************************/
+.contacts
+	width: 100%	
+	margin-top: -50px
+	background-color: #fafafa
+	padding-bottom: 82px	
+.h2-bg--contacts
+	background-image: url('../img/h2-contacts-bg.png')
+	margin-top: 40px
+.fields
+	padding-left: 90px
+.contacts-form
+	width: 100%
+	height: 520px
+	border: 10px solid #fff
+	border-radius: 10px
+	margin-top: 30px	
+	padding-top: 50px	
+	.form_input
+		width: 440px
+		height: 60px
+		border: 1px solid $pink
+		border-radius: 30px
+		margin-bottom: 10px
+		margin-left: 8px
+		color: $pink
+		font-family: $qu-med
+		font-size: 20px	
+		position: relative
+		padding: 0px 20px 0px 74px 
+		letter-spacing: 2px		
+	::-webkit-input-placeholder 
+		color: $pink
+		font-family: '$qu-med'
+		font-size: 20px		
+	::-moz-placeholder
+		color: $pink
+		font-family: $qu-med
+		font-size: 20px		
+	:-moz-placeholder 
+		color: $pink
+		font-family: $qu-med
+		font-size: 20px		
+	:-ms-input-placeholder      
+		color: $pink
+		font-family: $qu-med
+		font-size: 20px	
+.form_input:hover
+	border: 1px solid #772052	
+.form_header
+	text-align: center
+	display: block
+	font-family: $qu-med
+	font-size: 22px
+	color: #242424
+	margin-bottom: 34px
+.contacts-form .form_textarea
+	width: 890px
+	height: 120px
+	border-radius: 30px
+	resize: none
+	padding: 14px 20px 20px 76px
+	letter-spacing: 2px 
+.btn--contacts
+	width: 250px
+	height: 60px
+	display: block
+	margin: 7px auto
+.btn--contacts:after
+	content: 'Отправить'
+.form_input--user
+	background: url('../img/user.png')
+	background-repeat: no-repeat
+	background-position: left 40px center
+.form_input--phone
+	background: url('../img/phone-1.png')
+	background-repeat: no-repeat
+	background-position: left 40px center
+.form_input--cover
+	background: url('../img/cover.png')
+	background-repeat: no-repeat
+	background-position: left 40px center
+.form_input--spec
+	background: url('../img/spec.png')
+	background-repeat: no-repeat
+	background-position: left 40px center
+.form_input--message
+	background: url('../img/message.png')
+	background-repeat: no-repeat
+	background-position: left 40px top 18px
