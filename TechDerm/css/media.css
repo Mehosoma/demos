@@ -98,10 +98,6 @@
 		margin-left: 0px;
 	}
 
-	.btn--seminar{
-		width: 300px;
-	}
-
 	.production-block{
 		width: 280px;
 		display: block;		
@@ -267,7 +263,7 @@
 		margin: 30px 0px 35px 15px;
 	}
 
-	.btn--skin, .btn--photos, .btn--prorgam{
+	.btn--skin, .btn--photos, .btn--prorgam, .btn--seminar{
 		width: 290px;
 	}
 
@@ -342,7 +338,7 @@
 	}
 
 	.pages{
-		width: 236;
+		width: 236px;
 		margin-left: -118px;
 	}
 
@@ -368,6 +364,10 @@
 
 	.firstscreen-content{
 		float: right;
+	}
+
+	.contacts-form .form_textarea{
+		padding-top: 20px;
 	}
 	
 }
