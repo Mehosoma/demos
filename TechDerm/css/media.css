@@ -99,7 +99,8 @@
 	}
 
 	.production-block{
-		width: 280px;
+		width: 100%;
+		max-width: 350px;
 		display: block;		
 		margin: 20px auto;
 	}
@@ -189,9 +190,10 @@
 		padding-top: 0px;
 	}
 
-	.calendar-wrapper{
+	.calendar-wrapper{		
+		width: 100%;
 		height: 930px;
-		width: 290px;
+		max-width: 350px;
 		margin: 0px auto;
 	}
 
@@ -289,13 +291,13 @@
 	}
 
 	.tables{
-		width: : 300px;
+		width: 100%;
 		height: auto;
 		overflow-x: auto;
 	}
 
 	.table-main{
-		width: 200px;				
+		width: 100%;				
 	}
 
 	.table-main .first_col, .table-main td{
@@ -308,14 +310,24 @@
 
 	.image-frame--white{
 		margin-top: 100px;
-		margin-left: 0px;
-		width: 100%;		
+		margin-left: auto;
+		margin-right: auto;		
+		width: 100%;
+		max-width: 335px;			
 	}
 
 	.frame_image_white{
-		width: 95%;
-
+		width: 100%;
 	}
+
+	.indent--tools{
+		margin-top: 0px;
+	}
+
+	.block_image{
+		width: 100%;
+	}
+	
 
 	.slider-wrapper, .slider{
 		width: 100%;
@@ -349,7 +361,8 @@
 	}
 
 	.contacts-form .form_textarea, .contacts-form .form_input{
-		width: 255px;
+		width: 90%;
+
 		margin-left: 0px;
 	}
 
@@ -849,6 +862,13 @@
 
 	.news_image{
 		width: 100%;
+		height: auto;
+	}
+
+	.news-block{
+		max-width: 400px;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 	.news .col-md-6{
