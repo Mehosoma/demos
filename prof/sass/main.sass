@@ -1,0 +1,316 @@
+@import "bourbon/bourbon"
+
+$dark-green: #00535e
+$light-green: #e2f2d6
+$gr-blue: #cbdadc
+$dark: #363637
+$green: #7ac142
+$grey: #aaa
+$open: 'OpenSansRegular', sans-serif
+$open-bold: 'OpenSansBold', sans-serif
+$open-light: 'OpenSansLight', sans-serif
+$hel-med: 'helveticaneuecyr_139', sans-serif
+$hel-light: 'helveticaneuecyr_167', sans-serif
+$helios: 'HeliosLight_22357', sans-serif
+
+html, body
+	height: 100%
+
+body
+	width: 100%
+	min-width: 320px
+	margin: 0 auto
+	position: relative
+	line-height: 1.2
+	-webkit-font-smoothing: antialiased
+	overflow-x: hidden
+	background-color: #f3f3f3
+	a:hover, a:focus, a:active
+		text-decoration: none
+		outline: none
+	input:focus, input:active
+		text-decoration: none
+		outline: none
+	button:focus, button:active
+		text-decoration: none
+		outline: none
+	textarea:focus, textarea:active
+		text-decoration: none
+		outline: none
+	a
+		display: inline-block
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out
+	ul
+		padding: 0px
+		margin: 0px
+		li
+			list-style-type: none
+	button
+		border: none
+		cursor: pointer
+	hr
+		border: none
+
+.pixel
+	background: url(../img/main.jpg) no-repeat top center
+	width: 1716px
+	height: 1731px
+	position: absolute
+	z-index: 1000000
+	display: none
+	left: 50%
+	top: 0
+	margin-left: -820px
+	opacity: 0.5
+	margin-top: 0px
+/***************************************************GeneralStyles************************************/
+.container
+	background-color: #fff
+h1
+	background-color: transparent
+	display: inline-block
+	margin-top: 171px
+	margin-left: 119px
+	font-family: $open-light
+	font-size: 36px
+	color: #fff
+.gk-text
+	font-family: $open-light
+	font-size: 18px
+	color: $dark-green
+	line-height: 30px
+	position: absolute	
+	i
+		font-family: $open
+		font-style: normal
+.small-header
+	font-family: $open-light
+	font-size: 15.24px
+	color: #1f2124
+	text-transform: uppercase
+.uni-link
+	font-family: $open-light
+	font-size: 14px
+	color: $green
+.uni-link:hover
+	color: $dark-green
+.button
+	width: 234px
+	height: 44px
+	border: 1px solid $green
+	font-family: $open
+	font-size: 14px
+	color: #fff
+	text-align: center
+	line-height: 44px
+	text-transform: uppercase		
+.button:hover
+	background-color: $green
+	color: #fff
+
+/***************************************************Header************************************/
+.header-row
+	min-height: 43px
+	border-bottom: 1px dashed $grey	
+	margin: 0px 35px
+.header-text	
+	font-family: $hel-light
+	font-size: 14px
+	color: $grey
+	float: left
+	padding-top: 16px
+	letter-spacing: 1.67px
+.icon_search
+	position: relative
+	top: 13px
+	right: 7px
+.right-header
+	float: right
+.lang_link
+	font-family: $hel-light
+	font-size: 14px
+	color: $dark-green	
+	top: 14px
+	position: relative	
+	text-shadow: 0.3px 0px $dark-green
+	letter-spacing: 0.5px
+.lang_link:hover
+	color: $green
+	text-shadow: 0.3px 0px $green
+.container-wrapper
+	background-color: #fff
+	min-height: 158px
+	padding-top: 52px
+.logo
+	padding-left: 35px	
+	margin-left: -6px
+.navbar-default
+	border: none
+	background-color: transparent
+	float: right
+	padding-right: 20px
+	margin-top: 5px
+.navbar-default .navbar-nav > li > a
+	font-family: $hel-light
+	font-size: 15px
+	color: $dark-green	
+	text-shadow: 0.3px 0px $dark-green
+	letter-spacing: 0.4px
+	padding: 0px
+.navbar-default .navbar-nav > li > a:hover
+	color: $green
+	text-shadow: 0.3px 0px $green
+.menu_list
+	padding: 20px 0px 20px 20px	
+	margin-left: 30px
+
+
+/***************************************************FirstScreen************************************/
+.first-bg
+	width: 100%
+	height: 470px
+	background-image: url('../img/first-bg.jpg')
+	background-repeat: no-repeat	
+	background-position: center center
+
+/***************************************************Services************************************/
+.services-left
+	width: 100%
+	height: 460px
+	position: relative	
+.services-overlay
+	width: 100%
+	height: 100%
+	position: absolute
+	top: 0
+	left: 0
+	background-color: #90cc61
+	opacity: 0.27
+.gk--serv
+	top: 25px
+	left: 37px
+.services-right
+	position: relative
+	overflow: hidden		
+.services-content
+	padding-top: 27px
+	padding-left: 37px
+.services_name, .services_desc
+	display: inline-block
+	font-family: $open-light
+	font-size: 16px
+	color: $dark-green	
+	vertical-align: top
+.services_desc
+	margin-left: 32px
+	margin-top: -3px
+.services_desc
+	color: #838383
+	line-height: 24px
+
+/***************************************************News************************************/
+.news-block
+	width: 100%
+	height: 279px
+	position: relative
+	padding-top: 31px
+	padding-left: 36px
+.date
+	font-family: $open-bold
+	font-size: 17px
+	color: $green
+.news--header
+	margin-top: 5px
+	line-height: 27.5px	
+	padding-right: 70px
+.news_image
+	width: 104px
+	height: 80px
+	position: absolute
+	right: 0
+	bottom: 0
+.middle-news
+	background-color: $gr-blue
+.last-news
+	background-color: $dark-green
+	h3
+		color: #fff
+	.uni-link:hover
+		color: #fff
+.uni-link--news
+	margin-top: 13px
+	display: inline-block
+
+
+/***************************************************Footer************************************/
+.footer-left
+	width: 100%
+	min-height: 283px
+	background-color: $dark
+	padding-top: 58px
+	padding-left: 35px
+.bottom_list
+	float: left
+.bottom_link
+	font-family: $open-light
+	font-size: 12px
+	color: #898989
+	text-transform: uppercase
+	letter-spacing: 1px
+.bottom_link:hover, .footer-mail:hover
+	color: $green
+.separator
+	width: 1px
+	height: 9px
+	background-color: #898989
+	margin: 0px 21px
+	position: relative
+	top: 6px
+.sep--fix
+	margin-right: 16px
+.sep--last
+	margin: 0px 17px 0px 15px
+.adress, .footer-mail
+	font-family: $helios
+	font-size: 14px
+	line-height: 24px
+	color: #fff
+	text-transform: uppercase
+	margin-top: 63px
+	margin-bottom: 0px
+	padding-right: 160px
+.footer-mail
+	text-transform: none
+	margin-top: 0px	
+.footer-phone
+	font-family: 'Arial', sans-serif
+	font-size: 30px
+	color: #fff
+	margin-top: 60px
+	padding-left: 24px
+	display: block
+	letter-spacing: 0.8px
+.copy
+	width: 100%
+	min-height: 38px
+	background-color: $dark-green
+	font-family: $open
+	font-size: 12px
+	color: #838383
+	line-height: 38px
+.footer--button
+	margin-top: 15px
+	margin-left: 20px
+.copy_left
+	float: left
+	text-transform: uppercase	
+	padding-left: 30px
+.copy_right
+	float: right
+	padding-right: 45px	
+
+.hidden
+	display: none
