@@ -203,8 +203,8 @@
 		padding-left: 0px;
 	}
 
-	.contacts-image{
-		width: 100%;
+	.adr-overlay{
+		width: 384px;
 	}
 
 	.contacts-form{
@@ -415,12 +415,8 @@
 		padding-left: 0px;
 	}
 
-	.contacts-image{
-		width: 100%;		
-	}
-
-	.contacts_image{
-		max-width: 420px
+	.adr-overlay{
+		width: 384px;
 	}
 
 	.contacts-form{
