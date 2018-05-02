@@ -433,7 +433,8 @@ h1 {
   color: #00535e; }
 
 .adr-overlay {
-  background-color: #00535e; }
+  background-color: #00535e;
+  opacity: 0.8; }
 
 .requisite {
   margin-top: 123px; }
