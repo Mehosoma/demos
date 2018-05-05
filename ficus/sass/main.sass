@@ -1,0 +1,727 @@
+@import "bourbon/bourbon"
+
+$blue: #01a0e4
+$blue-h: #0288c1
+$font: #282c37
+$font-g: #525252
+$font-dark: #333
+$rob: 'Roboto', sans-serif
+$exo: 'Exo 2', sans-serif
+$rale: 'Raleway Black', sans-serif
+$rale-med: 'Raleway Medium', sans-serif
+$open: 'Open Sans', sans-serif
+$min: 'MinionProRegular', sans-serif
+$prox: 'ProximaNovaRegular', sans-serif
+
+html, body
+	height: 100%
+
+body
+	width: 100%
+	min-width: 320px
+	max-width: 1600px
+	margin: 0 auto
+	position: relative
+	line-height: 1.2
+	-webkit-font-smoothing: antialiased
+	overflow-x: hidden
+	background-color: #fff
+	a:hover, a:focus, a:active
+		text-decoration: none
+		outline: none
+	input:focus, input:active
+		text-decoration: none
+		outline: none
+	button:focus, button:active
+		text-decoration: none
+		outline: none
+	textarea:focus, textarea:active
+		text-decoration: none
+		outline: none
+	a
+		display: inline-block
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out
+	ul
+		padding: 0px
+		margin: 0px
+		list-style-type: none
+	button
+		border: none
+		cursor: pointer
+	hr
+		border: none
+
+.pixel
+	background: url(../img/contacts.jpg) no-repeat top center
+	width: 1600px
+	height: 2800px
+	position: absolute
+	z-index: 1000000
+	display: none
+	left: 50%
+	top: 0
+	margin-left: -800px
+	opacity: 0.5
+	margin-top: 0px
+/***************************************************GeneralStyles************************************/
+h1
+	font-family: $rale
+	font-size: 32px
+	line-height: 42px
+	color: $font
+	text-transform: uppercase
+	font-weight: 700
+	text-shadow: 7px 7px 4px rgba(25, 35, 6, 0.13)
+	margin-top: 67px
+	margin-left: 13px
+	letter-spacing: 0.5px
+	i
+		font-size: 48px
+		font-weight: 900
+		font-style: normal
+		letter-spacing: 1.5px
+.h1--inner
+	margin: 10px
+	color: #fff
+	margin-left: 0px
+	margin-top: 16px
+.h2-gen
+	font-family: $exo
+	font-size: 24px
+	color: $font-g
+	text-transform: uppercase
+	text-align: center
+	font-weight: 700
+.h2-decor	
+	display: block
+	margin: 23px auto
+.first-inner
+	width: 100%
+	height: 70px
+	background-image: url('../img/bg-inner.jpg')
+	background-repeat: no-repeat
+	background-position: top center
+.h2--inner
+	font-family: $exo
+	font-size: 22px
+	color: $font-g		
+	font-weight: 700
+	margin-top: 53px
+	margin-bottom: 16px
+	letter-spacing: 0.2px
+.h2-inner-decor
+	position: relative
+	margin-top: -4px
+.gen-text
+	font-family: $rob
+	font-size: 16px
+	line-height: 24px
+	color: $font-dark	
+.transition-opt
+	-moz-transition: all 0.3s ease-out
+	-o-transition: all 0.3s ease-out
+	-webkit-transition: all 0.3s ease-out
+	transition: all 0.3s ease-out
+.contacts-form .input_field:hover, .footer-form .input_field:hover, .contacts-form .input_field:active, .footer-form .input_field:active, .contacts-form .input_field:focus, .footer-form .input_field:focus
+	border: 1px solid #bfbebe
+
+
+
+/***************************************************Header************************************/
+header
+	width: 100%
+	min-height: 116px
+	background-color: #fff
+.logo
+	margin-top: 26px	
+.main-menu
+	margin-top: 40px	
+	margin-left: 10px
+.nav_list
+	display: inline-block
+	padding-right: 20px
+.nav_link
+	display: inline-block
+	font-family: $exo
+	font-size: 16px
+	color: $font
+	font-weight: 300
+	border-bottom: 1px solid transparent
+	line-height: 30px
+	text-transform: uppercase	
+.nav_link:hover
+	border-bottom: 1px solid $blue
+	color: $blue
+.nav_link--contacts
+	border: 1px solid $blue
+	background-image: url('../img/small-marker.png')
+	background-repeat: no-repeat
+	background-position: left 9px center	
+	padding: 2px 11px 2px 32px
+	margin-left: 7px
+.nav_link--contacts:hover
+	border: 1px solid transparent
+.main-menu ul li:nth-child(2)
+	padding-right: 17px
+.main-menu ul li:nth-child(3)
+	padding-right: 17px
+.main-menu ul li:nth-last-child(1)
+	padding-right: 0px
+
+
+
+
+/***************************************************FirstScreen************************************/
+.first
+	width: 100%
+	height: 298px
+	background-image: url('../img/main-bg.jpg')
+	background-repeat: no-repeat
+	background-position: top center
+.complex_text
+	font-family: $exo
+	font-size: 24px
+	color: $blue
+	font-weight: 300	
+	padding-left: 8px
+.complex
+	margin-top: 33px
+	margin-left: 17px
+
+
+/***************************************************About************************************/
+.about
+	padding-top: 33px
+.about-list
+	width: 100%
+	min-height: 400px
+	margin-top: 57px
+.about_header_text
+	margin-top: 30px
+	padding: 0px 200px
+	letter-spacing: 0.2px
+	text-align: center
+.about-second
+	background: linear-gradient(to right, #f7f9fa 46.5%, #fff 46.5%)
+	margin-top: 50px
+.about-block
+	position: relative
+	margin-bottom: 25px
+.about-block-second
+	margin-bottom: 23px
+.about-block-third .about_image
+	top: 27px
+	left: 2px
+.about-block-third
+	margin-bottom: 25px
+.about-block-four .about_image
+	top: 26px	
+.about_image
+	position: absolute
+	top: 50%
+	margin-top: -20px
+.gen-text--about	
+	text-align: left
+	padding-left: 58px
+	letter-spacing: 0.2px
+	padding-right: 70px	
+.about-block-right
+	padding-top: 56px
+	margin-left: -15px	
+.about-block-right .gen-text
+	padding-left: 0px
+	padding-right: 20px
+	margin-bottom: 24px
+.about-block-right .gen-text--about_fix
+	margin-bottom: 0px	
+.about-block-right .about-right-list
+	padding-left: 8px
+.about_link
+	color: $blue
+	border-bottom: 1px solid $blue
+.about_link:hover
+	color: $blue-h
+	border-bottom: 1px solid transparent
+
+
+/***************************************************Services************************************/
+.services
+	width: 100%
+	min-height: 495px
+	background-color: $font
+.h2--services
+	color: #fff
+	margin-top: 62px
+.services-wrapper
+	margin-top: 30px
+.services-block
+	width: 100%
+	height: 235px
+	text-align: center	
+	background-image: url('../img/support.png')
+	background-repeat: no-repeat
+	background-position: top 50px center				
+.services-block:hover
+	background-color: #d8e1e8
+	box-shadow: 0px 0px 21px #000
+	background-image: url('../img/support-h.png')
+.services-block-two
+	background-image: url('../img/computer.png')
+.services-block-two:hover
+	background-image: url('../img/computer-h.png')
+.services-block-three
+	background-image: url('../img/search.png')
+.services-block-three:hover
+	background-image: url('../img/search-h.png')
+.services-block-four
+	background-image: url('../img/hosting.png')
+.services-block-four:hover
+	background-image: url('../img/hosting-h.png')
+.services-block:hover .services_desc
+	color: $font
+.services_desc
+	font-family: $rob
+	font-size: 20px
+	color: #fff	
+	font-weight: 400
+	padding-top: 177px
+	display: inline-block
+.services_image
+	display: block
+	margin: 0 auto
+
+
+/***************************************************Stuff************************************/
+.stuff
+	padding-bottom: 78px
+.h2--stuff
+	margin-top: 62px
+.slider-wrapper
+	width: 1230px
+	height: 182px
+	margin: 0 auto
+	margin-top: 22px
+.slider
+	width: 1170px	
+	margin: 0 auto	
+.slider-block
+	width: 570px
+	height: 182px
+	position: relative
+	border: 1px solid #ebebeb
+	border-left: 3px solid $font
+.slider_content	
+	width: 383px
+	float: right
+	margin-top: 27px
+.slider_avatar
+	width: 131px
+	height: 130px
+	position: absolute
+	top: 50%
+	margin-top: -65px
+	left: 18px
+.content_name
+	font-family: $exo
+	font-size: 22px
+	color: $font-dark
+	font-weight: 500
+	display: block
+	letter-spacing: 0.2px
+.content_job
+	font-family: $rale-med
+	font-size: 18px
+	color: $blue	
+	margin-top: 20px
+	display: inline-block
+.job_desc
+	font-family: $rob
+	font-size: 15px
+	color: $font-dark
+	margin-top: 8px
+	letter-spacing: 0.2px
+	padding-right: 30px
+.slick-next
+	position: absolute
+	width: 19px
+	height: 35px	
+	top: 78px	
+	margin-right: -32px
+	right: 0
+	background-image: url('../img/arrow-right.png')
+	background-color: transparent
+	background-repeat: no-repeat
+	z-index: 100
+	-moz-transition: all 0.3s ease-out
+	-o-transition: all 0.3s ease-out
+	-webkit-transition: all 0.3s ease-out
+	transition: all 0.3s ease-out
+.slick-next:hover
+	background-image: url('../img/arrow-right-h.png')	
+.slick-prev
+	position: absolute
+	width: 19px
+	height: 35px	
+	top: 78px	
+	margin-left: -30px
+	left: 0
+	background-image: url('../img/arrow-left.png')
+	background-color: transparent
+	background-repeat: no-repeat
+	-moz-transition: all 0.3s ease-out
+	-o-transition: all 0.3s ease-out
+	-webkit-transition: all 0.3s ease-out
+	transition: all 0.3s ease-out
+.slick-prev:hover
+	background-image: url('../img/arrow-left-h.png')
+
+/***************************************************Footer***********************************************/
+footer
+	width: 100%
+	height: 600px
+	position: relative
+.map
+	width: 100%
+	height: 560px
+	position: absolute
+	top: 0	
+	right: 0
+	left: 0
+	margin: auto
+.footer-form
+	width: 393px
+	height: 407px
+	background-color: #fff
+	margin-top: 70px
+	margin-left: 90px
+	padding-left: 28px
+	padding-top: 20px
+.header_form
+	display: block	
+	font-family: $exo
+	font-size: 22px
+	color: $font
+	font-weight: 500
+	text-transform: uppercase
+	padding-left: 2px
+	letter-spacing: 0.3px
+	margin-bottom: 20px
+.footer-form, .contacts-form	
+	.input_field
+		border: 1px solid #eaeaea
+		font-family: $rob
+		font-size: 16px
+		color: #5f5f5f
+		height: 42px
+		margin-bottom: 22px
+		padding: 0px 15px 5px 15px		
+	::-webkit-input-placeholder 
+		color: #5f5f5f
+		font-family: $rob
+		font-size: 14px	
+		font-weight: 400			
+	::-moz-placeholder
+		color: #5f5f5f
+		font-family: $rob
+		font-size: 14px				
+	:-moz-placeholder 
+		color: #5f5f5f
+		font-family: $rob
+		font-size: 14px				
+	:-ms-input-placeholder      
+		color: #5f5f5f
+		font-family: $rob
+		font-size: 14px				
+.input_name
+	width: 340px
+.input_small
+	width: 162px
+.input_email
+	margin-left: 12px
+.footer-form .input_textarea
+	width: 340px
+	height: 138px
+	resize: none
+	padding: 12px 10px 10px 15px
+	letter-spacing: 0.2px
+	margin-bottom: 0px
+.btn--submit
+	width: 129px
+	height: 35px
+	border: 1px solid $blue
+	background-color: $blue
+	margin-top: 15px
+	margin-left: 1px
+	text-align: center
+	font-family: $rob
+	font-size: 16px
+	color: #fff
+	text-transform: uppercase
+.btn--submit:hover
+	background-color: #fff
+	color: $blue
+.footer-marker
+	width: 485px
+	height: 229px	
+	position: relative
+	margin-top: 150px
+	margin-left: -10px
+.footer-marker-wrapper
+	width: 485px
+	height: 229px
+	background-color: $font		
+	padding: 15px 60px 10px 20px
+.exit
+	width: 18px
+	height: 18px
+	background-image: url('../img/exit.png')
+	background-repeat: no-repeat
+	background-position: center center
+	position: absolute
+	top: 12px
+	right: 12px
+	z-index: 100
+.exit:hover
+	opacity: 0.7
+.active-marker
+	opacity: 0
+.dis
+	pointer-events: none
+	cursor: none
+.footer-marker-image
+	width: 56px
+	height: 76px
+	position: absolute
+	left: 50%
+	margin-left: -30px
+	bottom: 0
+	margin-bottom: -15px
+	cursor: pointer
+	z-index: 1000
+.adress, .company
+	font-family: $exo
+	font-size: 22px
+	color: #fff
+	text-transform: uppercase
+	font-weight: 500
+	display: block
+.company
+	text-transform: none
+	font-weight: 400
+	font-size: 18px
+	margin-top: 10px
+.adress_text, .phone_text, .mail_text
+	font-family: $open
+	font-size: 16px
+	color: #fff
+	background-image: url('../img/small-marker2.png')
+	background-repeat: no-repeat
+	background-position: left top
+	padding-left: 30px
+	display: block
+.adress_text
+	margin-top: 28px
+.phone_text
+	background-image: url('../img/phone.png')
+	margin-top: 10px
+.mail_text
+	background-image: url('../img/mail.png')
+	background-position: left top 3px
+	display: inline-block
+	margin-top: 13px	
+.mail_text:hover
+	color: $blue
+.bottom-line
+	width: 100%
+	height: 43px
+	background-color: $font
+	position: absolute
+	bottom: 0	
+.copy
+	margin-left: 117px
+.bottom-line_list
+	display: inline-block
+	font-family: $rob
+	font-size: 14px
+	color: #fff
+	line-height: 43px
+	font-weight: 400
+	letter-spacing: 0.3px	
+.bottom-line_mis
+	font-weight: 500
+	letter-spacing: 0px
+.bottom-line_link
+	color: #fff
+	text-decoration: underline
+	letter-spacing: 0px
+.bottom-line_link:hover
+	color: $blue
+.separator
+	width: 1px 
+	height: 11px
+	background-color: #fff
+	margin: 0 9px
+	position: relative	
+.map-marker
+	width: 52px
+	height: 70px
+	position: absolute
+	top: 0
+	bottom: 0
+	right: 0
+	left: 0
+	margin: auto
+
+/***************************************************Autsors***********************************************/
+.autsors-content
+	padding-bottom: 80px
+.autsors-content-wrapper
+	padding-right: 170px
+.autsors-block
+	width: 877px
+	height: 159px
+	background-color: #ebf0f3
+	background-image: url('../img/support-inner.png')	
+	background-repeat: no-repeat
+	background-position: left 30px center
+	margin-top: 45px
+	margin-left: 2px
+.autsors-block-text	
+	padding-right: 34px
+	padding-left: 153px
+	margin-top: 30px
+	display: inline-block	
+	letter-spacing: 0.2px
+.h2-inner-decor, .h2--inner
+	display: inline-block
+.autsors-list_list
+	background-image: url('../img/check.png')
+	background-repeat: no-repeat
+	background-position: left top 5px
+	padding-left: 30px
+	margin-bottom: 5px
+.first-autsors-list
+	margin-top: 54px
+	p
+		letter-spacing: 0.2px
+.autsors-list
+	margin-top: 14px
+	margin-bottom: 64px
+
+/***************************************************Partners***********************************************/
+.partners-block-image
+	width: 100%
+	height: 144px
+	position: relative
+.partners_image
+	position: absolute
+	bottom: 0
+.partners
+	margin-top: 8px
+	padding-bottom: 90px
+.partners .col-lg-4
+	margin-bottom: 41px
+.company-name
+	margin-top: 20px
+
+
+/***************************************************Contacts***********************************************/
+.contacts-inner
+	padding-bottom: 74px
+.contacts_content
+	display: inline-block
+	font-family: $rob
+	font-size: 16px
+	color: #333
+.inner--phone	
+	line-height: 18px
+	i
+		font-size: 14px
+		color: #999
+		font-style: normal
+.inner-mail:hover
+	color: #01a0e4
+.inner--adress
+	width: 90%
+.contacts-form	
+	.input_field
+		border: 1px solid #eaeaea
+		font-family: $rob
+		font-size: 14px
+		color: #5f5f5f
+		width: 367px
+		height: 40px
+		margin-bottom: 20px
+		padding: 0px 12px 2px 12px
+	::-webkit-input-placeholder 
+		color: #b5b5b5
+		font-family: $rob
+		font-size: 14px	
+		font-weight: 400			
+	::-moz-placeholder
+		color: #b5b5b5
+		font-family: $rob
+		font-size: 14px				
+	:-moz-placeholder 
+		color: #b5b5b5
+		font-family: $rob
+		font-size: 14px				
+	:-ms-input-placeholder      
+		color: #b5b5b5
+		font-family: $rob
+		font-size: 14px		
+	.question_input	
+		width: 100%
+.btn--contacts
+	background-color: $font
+	border: 1px solid $font
+.btn--contacts:hover
+	background-color: #fff
+	color: $font
+.h2--contacts
+	margin-top: 39px
+.contacts-inner-phone
+	margin-top: 20px
+.inner--phone, .inner-mail, .inner--adress
+	padding-left: 9px
+	letter-spacing: 0.2px
+.inner--adress
+	line-height: 22px
+.inner--phone_image
+	position: relative
+	margin-top: -38px
+.contacts-inner-mail
+	margin-top: 22px
+.contacts-inner-adress
+	margin-top: 30px
+	img
+		position: relative
+		margin-top: -90px	
+.feedback
+	margin-top: -15px
+.contacts-form
+	margin-top: 5px
+.job_input, .phone_input
+	margin-left: 30px
+.btn--contacts
+	margin-top: 0px
+	height: 42px
+.map-wrapper
+	position: relative
+	width: 100%
+	height: 260px
+.inner-footer
+	height: 372px	
+	.map
+		height: 260px
+
+
+
+
+
+
+.hidden
+	display: none
