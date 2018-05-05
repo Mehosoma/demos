@@ -27,16 +27,19 @@
 
 <body>
 
+
+
 <!--Header-->
 <header>
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-3">
+			<div class="col-lg-3 col-md-3">
 				<div class="logo">
-					<a href="index.html"><img src="img/logo.png" alt="logo-image" class="logo_img"></a>
+					<a href="index.html" class="hidden-xs"><img src="img/logo.png" alt="logo-image" class="logo_img"></a>
+					<a href="index.html" class="hidden-lg hidden-md hidden-sm"><img src="img/logo-small.png" alt="logo-image" class="logo_img"></a>
 				</div>
 			</div>
-			<div class="col-lg-9">
+			<div class="col-lg-9 col-md-9">
 				<button class="menu-toggle-button click-mobile hidden-lg hidden-md">
 					<span></span>					
 				</button>
@@ -116,25 +119,12 @@
 </section>
 
 <footer>
-	<div class="map">
-		<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0e80d6af9f736a06de2772cb99aa394198324144fb8a501d107985e933622cc0&amp;width=100%25&amp;height=560&amp;lang=ru_RU&amp;scroll=false"></script>	
-	</div>
+	<div id="map"></div>
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-6">
-				<form class="footer-form">
-					<span class="header_form">Связаться с нами</span>
-					<input type="text" name="name" required="" placeholder="Ваше имя" class="input_field input_name">
-					<input type="text" name="phone" required="" placeholder="Ваш телефон" class="input_field input_small">
-					<input type="text" name="email" required="" placeholder="Ваш E-mail" class="input_field input_small input_email">
-					<textarea name="message" placeholder="Ваше сообщение (не обязательно)" class="input_field input_textarea"></textarea>
-					<button type="submit" class="btn--submit transition-opt">Отправить</button>
-				</form>
-			</div>
-			<div class="col-lg-6">
-				<div class="footer-marker">
-					<img src="img/marker.png" alt="marker-image" class="footer-marker-image dis">
-					<div class="footer-marker-wrapper transition-opt">
+			<div class="col-lg-6 col-md-7 col-sm-7 col-sm-push-5 col-xs-12 adapt-height">
+				<div class="footer-marker transition-opt">					
+					<div class="footer-marker-wrapper">
 						<a href="" class="exit"></a>					
 						<span class="adress">Наш адрес</span>
 						<span class="company">Компания «FIQUS»</span>
@@ -143,15 +133,28 @@
 						<a href="mailto:support@fiqus.su" class="mail_text">support@fiqus.su</a>					
 					</div>
 				</div>
+				<div class="footer-visible">
+					<a href="">Развернуть</a>
+				</div>
 			</div>
+			<div class="col-lg-6 col-md-5 col-sm-5 col-sm-pull-7 col-xs-12 fix-height">
+				<form class="footer-form">
+					<span class="header_form">Связаться с нами</span>
+					<input type="text" name="name" required="" placeholder="Ваше имя" class="input_field input_name">
+					<input type="text" name="phone" required="" placeholder="Ваш телефон" class="input_field input_small main-phone">
+					<input type="text" name="email" required="" placeholder="Ваш E-mail" class="input_field input_small input_email">
+					<textarea name="message" placeholder="Ваше сообщение (не обязательно)" class="input_field input_textarea"></textarea>
+					<button type="submit" class="btn--submit transition-opt">Отправить</button>
+				</form>
+			</div>			
 		</div>
 	</div>
 	<div class="bottom-line">
 		<ul class="copy">
 			<li class="bottom-line_list"><span class="bottom-line_text">fiqus.com  (c)  2000-2018</span></li>
 			<li class="separator bottom-line_list"></li>
-			<li class="bottom-line_list"><span class="bottom-line_text bottom-line_mis">Первое качественное обслуживание</span></li>
-			<li class="separator bottom-line_list"></li>
+			<li class="bottom-line_list"><span class="bottom-line_text bottom-line_mis hidden-xs">Первое качественное обслуживание</span></li>
+			<li class="separator bottom-line_list hidden-xs"></li>
 			<li class="bottom-line_list"><a href="" class="bottom-line_text bottom-line_link">Политика конфиденциальности</a></li>
 		</ul>
 	</div>
@@ -164,6 +167,54 @@
 	<script src="libs/slick/slick.js"></script>
 	<script src="libs/mask/mask.js"></script>
 	<script src="js/common.js"></script>
+
+	<script src="http://api-maps.yandex.ru/2.0/?load=package.standard,package.geoObjects&lang=ru-RU"></script>
+
+	<script type="text/javascript">
+		$(window).load(function(){
+		
+
+	if ($(window).width() > 767) {
+
+			ymaps.ready(init)
+		
+			function init(){
+				var myMap = new ymaps.Map("map", {
+					center: [55.78157321631442,37.69406975710087],
+					zoom: 17
+			}),
+
+				myPlacemark = new ymaps.Placemark([55.780959431963666,37.69679574922212], {}, {
+			    iconImageHref: 'img/marker.png',
+			    iconImageSize: [56, 76],
+			    iconImageOffset: [-30, -60]
+			})
+			myMap.geoObjects.add(myPlacemark)
+			} 
+	
+	} else{
+
+		ymaps.ready(init)
+		
+			function init(){
+				var myMap = new ymaps.Map("map", {
+					center: [55.78155205456429,37.69692625030546],
+					zoom: 17
+			}),
+
+				myPlacemark = new ymaps.Placemark([55.7820448180368,37.69537593349484], {}, {
+			    iconImageHref: 'img/marker.png',
+			    iconImageSize: [56, 76],
+			    iconImageOffset: [100, 120]
+			})
+			myMap.geoObjects.add(myPlacemark)
+			} 
+
+	}
+
+})
+	</script>
+	
 	
 </body>
 </html>

@@ -27,16 +27,19 @@
 
 <body>
 
+
+
 <!--Header-->
 <header>
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-3">
+			<div class="col-lg-3 col-md-3">
 				<div class="logo">
-					<a href="index.html"><img src="img/logo.png" alt="logo-image" class="logo_img"></a>
+					<a href="index.html" class="hidden-xs"><img src="img/logo.png" alt="logo-image" class="logo_img"></a>
+					<a href="index.html" class="hidden-lg hidden-md hidden-sm"><img src="img/logo-small.png" alt="logo-image" class="logo_img"></a>
 				</div>
 			</div>
-			<div class="col-lg-9">
+			<div class="col-lg-9 col-md-9">
 				<button class="menu-toggle-button click-mobile hidden-lg hidden-md">
 					<span></span>					
 				</button>
@@ -61,11 +64,13 @@
 <section class="first">	
 	<div class="container">
 		<div class="row">
-			<div class="first-content">
-				<h1><i>ОПТИМИЗАЦИЯ</i><br>Информационных процессов</h1>
-				<div class="complex">
-					<img src="img/checklist.png" alt="checklist-icon" class="complex_image">
-					<span class="complex_text">Комплексные решения</span>
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<div class="first-content">
+					<h1><i>ОПТИМИЗАЦИЯ</i><br>Информационных процессов</h1>
+					<div class="complex">
+						<img src="img/checklist.png" alt="checklist-icon" class="complex_image">
+						<span class="complex_text">Комплексные решения</span>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -76,7 +81,7 @@
 <section class="about">
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-12">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 				<h2 class="h2-gen">ПАРА СЛОВ О НАС</h2>
 				<img src="img/header-decor.png" class="h2-decor" alt="header-decor">
 				<p class="gen-text about_header_text">С 2012 года мы помогаем бизнесу в решении повседневных задач работы информационных систем. Помогаем разобраться в структуре текущих процессов, выявить и предложить варианты устранения факторов, отрицательно влияющих на качество работы информационных систем и затрат на их обслуживание.</p>
@@ -86,7 +91,7 @@
 	<div class="about-second">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-6">
+				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 					<div class="about-list">
 						<div class="about-block">
 							<img src="img/network.png" alt="network-icon" class="about_image">
@@ -106,7 +111,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-6 about-block-right">
+				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 about-block-right">
 					<p class="gen-text gen-text--about">Стараясь предоставить своим клиентам максимально полных спектр ИТ услуг, мы открыты к сотрудничеству с такими же фанатами своего дела, готовыми решать поставленные задачи до конца.</p>
 					<p class="gen-text gen-text--about gen-text--about_fix">На данный момент у нас есть потребность в профессионалах в области:</p>
 					<ul class="gen-text gen-text--about about-right-list">
@@ -125,29 +130,29 @@
 <section class="services">	
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-12">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 				<h2 class="h2-gen h2--services">Наши услуги</h2>
 				<img src="img/header-decor.png" class="h2-decor" alt="header-decor">
 			</div>
 		</div>
 		<div class="row">
 			<div class="services-wrapper clearfix">
-				<div class="col-lg-3">
+				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
 					<a href="" class="services-block">					
 						<span class="services_desc">It аутсорсинг</span>					
 					</a>
 				</div>
-				<div class="col-lg-3">
+				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
 					<a href="" class="services-block services-block-two">					
 						<span class="services_desc">Продажа техники</span>					
 					</a>
 				</div>
-				<div class="col-lg-3">
+				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
 					<a href="" class="services-block services-block-three">					
 						<span class="services_desc">It аудит</span>					
 					</a>
 				</div>
-				<div class="col-lg-3">
+				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
 					<a href="" class="services-block services-block-four">					
 						<span class="services_desc">Кластеры Stratus</span>					
 					</a>
@@ -161,7 +166,7 @@
 <section class="stuff">	
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-12">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 				<h2 class="h2-gen h2--stuff">НАШИ СОТРУДНИКИ</h2>
 				<img src="img/header-decor.png" class="h2-decor" alt="header-decor">
 			</div>
@@ -170,7 +175,7 @@
 	<div class="slider-wrapper">
 		<div class="slider">
 			<div class="slider-block-wrapper">
-				<div class="slider-block">
+				<div class="slider-block clearfix">
 					<img src="img/avatar.png" class="slider_avatar" alt="avatar-image">
 					<div class="slider_content">
 						<span class="content_name">Александр Третьяков</span>
@@ -180,7 +185,7 @@
 				</div>
 			</div>
 			<div class="slider-block-wrapper">
-				<div class="slider-block">
+				<div class="slider-block clearfix">
 					<img src="img/avatar.png" class="slider_avatar" alt="avatar-image">
 					<div class="slider_content">
 						<span class="content_name">Александр Третьяков</span>
@@ -190,7 +195,7 @@
 				</div>
 			</div>
 			<div class="slider-block-wrapper">
-				<div class="slider-block">
+				<div class="slider-block clearfix">
 					<img src="img/avatar.png" class="slider_avatar" alt="avatar-image">
 					<div class="slider_content">
 						<span class="content_name">Александр Третьяков</span>
@@ -200,7 +205,7 @@
 				</div>
 			</div>
 			<div class="slider-block-wrapper">
-				<div class="slider-block">
+				<div class="slider-block clearfix">
 					<img src="img/avatar.png" class="slider_avatar" alt="avatar-image">
 					<div class="slider_content">
 						<span class="content_name">Александр Третьяков</span>
@@ -214,25 +219,12 @@
 </section>
 
 <footer>
-	<div class="map">
-		<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0e80d6af9f736a06de2772cb99aa394198324144fb8a501d107985e933622cc0&amp;width=100%25&amp;height=560&amp;lang=ru_RU&amp;scroll=false"></script>	
-	</div>
+	<div id="map"></div>
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-6">
-				<form class="footer-form">
-					<span class="header_form">Связаться с нами</span>
-					<input type="text" name="name" required="" placeholder="Ваше имя" class="input_field input_name">
-					<input type="text" name="phone" required="" placeholder="Ваш телефон" class="input_field input_small main-phone">
-					<input type="text" name="email" required="" placeholder="Ваш E-mail" class="input_field input_small input_email">
-					<textarea name="message" placeholder="Ваше сообщение (не обязательно)" class="input_field input_textarea"></textarea>
-					<button type="submit" class="btn--submit transition-opt">Отправить</button>
-				</form>
-			</div>
-			<div class="col-lg-6">
-				<div class="footer-marker">
-					<img src="img/marker.png" alt="marker-image" class="footer-marker-image dis">
-					<div class="footer-marker-wrapper transition-opt">
+			<div class="col-lg-6 col-md-7 col-sm-7 col-sm-push-5 col-xs-12 adapt-height">
+				<div class="footer-marker transition-opt">					
+					<div class="footer-marker-wrapper">
 						<a href="" class="exit"></a>					
 						<span class="adress">Наш адрес</span>
 						<span class="company">Компания «FIQUS»</span>
@@ -241,15 +233,28 @@
 						<a href="mailto:support@fiqus.su" class="mail_text">support@fiqus.su</a>					
 					</div>
 				</div>
+				<div class="footer-visible">
+					<a href="">Развернуть</a>
+				</div>
 			</div>
+			<div class="col-lg-6 col-md-5 col-sm-5 col-sm-pull-7 col-xs-12 fix-height">
+				<form class="footer-form">
+					<span class="header_form">Связаться с нами</span>
+					<input type="text" name="name" required="" placeholder="Ваше имя" class="input_field input_name">
+					<input type="text" name="phone" required="" placeholder="Ваш телефон" class="input_field input_small main-phone">
+					<input type="text" name="email" required="" placeholder="Ваш E-mail" class="input_field input_small input_email">
+					<textarea name="message" placeholder="Ваше сообщение (не обязательно)" class="input_field input_textarea"></textarea>
+					<button type="submit" class="btn--submit transition-opt">Отправить</button>
+				</form>
+			</div>			
 		</div>
 	</div>
 	<div class="bottom-line">
 		<ul class="copy">
 			<li class="bottom-line_list"><span class="bottom-line_text">fiqus.com  (c)  2000-2018</span></li>
 			<li class="separator bottom-line_list"></li>
-			<li class="bottom-line_list"><span class="bottom-line_text bottom-line_mis">Первое качественное обслуживание</span></li>
-			<li class="separator bottom-line_list"></li>
+			<li class="bottom-line_list"><span class="bottom-line_text bottom-line_mis hidden-xs">Первое качественное обслуживание</span></li>
+			<li class="separator bottom-line_list hidden-xs"></li>
 			<li class="bottom-line_list"><a href="" class="bottom-line_text bottom-line_link">Политика конфиденциальности</a></li>
 		</ul>
 	</div>
@@ -262,6 +267,53 @@
 	<script src="libs/slick/slick.js"></script>
 	<script src="libs/mask/mask.js"></script>
 	<script src="js/common.js"></script>
+
+	<script src="http://api-maps.yandex.ru/2.0/?load=package.standard,package.geoObjects&lang=ru-RU"></script>
+	
+	<script type="text/javascript">
+		$(window).load(function(){
+		
+
+	if ($(window).width() > 767) {
+
+			ymaps.ready(init)
+		
+			function init(){
+				var myMap = new ymaps.Map("map", {
+					center: [55.78157321631442,37.69406975710087],
+					zoom: 17
+			}),
+
+				myPlacemark = new ymaps.Placemark([55.780959431963666,37.69679574922212], {}, {
+			    iconImageHref: 'img/marker.png',
+			    iconImageSize: [56, 76],
+			    iconImageOffset: [-30, -60]
+			})
+			myMap.geoObjects.add(myPlacemark)
+			} 
+	
+	} else{
+
+		ymaps.ready(init)
+		
+			function init(){
+				var myMap = new ymaps.Map("map", {
+					center: [55.78155205456429,37.69692625030546],
+					zoom: 17
+			}),
+
+				myPlacemark = new ymaps.Placemark([55.7820448180368,37.69537593349484], {}, {
+			    iconImageHref: 'img/marker.png',
+			    iconImageSize: [56, 76],
+			    iconImageOffset: [100, 120]
+			})
+			myMap.geoObjects.add(myPlacemark)
+			} 
+
+	}
+
+})
+	</script>
 	
 </body>
 </html>
