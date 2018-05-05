@@ -15,6 +15,10 @@
 		box-shadow: -5px 5px 18px 0px rgba(0,0,0,0.17)
 	}
 
+	header .col-lg-3, header .col-lg-9{
+		padding: 0 15px;
+	}
+
 	.main-menu ul li{
 		padding-right: 0px!important;				
 	}
@@ -58,7 +62,7 @@
 	}
 
 	.about-second{
-		background-size: 100% 55%!important;
+		background-size: 100% 54%!important;
 		background-repeat: no-repeat!important;
 		background: linear-gradient(to right, #f7f9fa 100%, #fff 100%)
 	}
@@ -238,6 +242,10 @@
 		box-shadow: -5px 5px 18px 0px rgba(0,0,0,0.17)
 	}
 
+	header .col-lg-3, header .col-lg-9{
+		padding: 0 15px;
+	}
+
 	.main-menu ul li{
 		padding-right: 0px!important;				
 	}
@@ -281,8 +289,8 @@
 	}
 
 	.about-second{
-		background-size: 100% 55%;
-		background-repeat: no-repeat;
+		background-size: 100% 54%!important;
+		background-repeat: no-repeat!important;
 		background: linear-gradient(to right, #f7f9fa 100%, #fff 100%)
 	}
 
@@ -414,8 +422,6 @@
 	.contacts-form{
 		max-width: 450px;
 	}
-		
-
 	
 }
 
@@ -479,8 +485,8 @@
 	}
 
 	.about-second{
-		background-size: 100% 55%;
-		background-repeat: no-repeat;
+		background-size: 100% 54%!important;
+		background-repeat: no-repeat!important;
 		background: linear-gradient(to right, #f7f9fa 100%, #fff 100%)
 	}
 
