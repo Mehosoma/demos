@@ -60,7 +60,7 @@
 	.about-second{
 		background-size: 100% 55%!important;
 		background-repeat: no-repeat!important;
-		background: linear-gradient(to right, #f7f9fa 55%, #fff 55%);
+		background: linear-gradient(to right, #f7f9fa 100%, #fff 100%)
 	}
 
 	.about-block-right{
@@ -283,6 +283,7 @@
 	.about-second{
 		background-size: 100% 55%;
 		background-repeat: no-repeat;
+		background: linear-gradient(to right, #f7f9fa 100%, #fff 100%)
 	}
 
 	.about-block-right{
@@ -480,6 +481,7 @@
 	.about-second{
 		background-size: 100% 55%;
 		background-repeat: no-repeat;
+		background: linear-gradient(to right, #f7f9fa 100%, #fff 100%)
 	}
 
 	.about-block-right{
