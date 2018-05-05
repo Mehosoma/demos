@@ -70,7 +70,7 @@ $('.slider').slick({
     $('.footer-visible').on('click',function(e){
         e.preventDefault(); 
         $('.footer-marker').css( 'display','block');       
-       	$(this).delay(400).queue(function () { 
+       	$(this).delay(100).queue(function () { 
        		$(".footer-marker").css( 'opacity','1');        	
         	$('.footer-visible').css( 'opacity','0');        		   	
         	$('.footer-visible').css( 'z-index','1'); 
