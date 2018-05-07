@@ -33,6 +33,7 @@
 		display: block;			
 		text-align: center;
 		padding-right: 0px;
+		padding-left: 0px!important;
 	}
 
 	.main-menu a, .main-menu a:hover{
@@ -297,6 +298,7 @@
 		display: block;			
 		text-align: center;
 		padding-right: 0px;
+		padding-left: 0px!important;
 	}
 
 	.main-menu a, .main-menu a:hover{
