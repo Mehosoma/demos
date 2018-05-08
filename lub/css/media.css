@@ -185,6 +185,11 @@
 		padding-bottom: 30px;
 	}
 
+	.footer-logo_desc{
+		margin-left: 0px;
+		padding-right: 0px;
+	}
+
 	.media-row .col-xs-6, .single-foto-row .col-xs-6{
 		width: 100%;
 	}
