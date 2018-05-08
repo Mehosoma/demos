@@ -6,14 +6,28 @@
 	}
 
 	header .logo{
-		width: 300px;
+		width: 100%;
 		float: none;				
 		display: block;
-		margin: 20px auto;		
+		margin: 20px 20px;	
+		position: relative;					
+	}
+
+	.logo_image{
+		width: 62px;
+		height: 51px;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		margin: auto;
 	}
 
 	header h1{
 		text-align: left;
+		padding-left: 60px;
+		width: 100%;
+		padding-right: 30px;
+		margin: 0px;
 	}
 
 	.inner .header-contacts{
@@ -28,7 +42,7 @@
 		margin-left: 0px;	
 		margin-top: 0px;
 		margin-right: 0px;
-		width: 80%;
+		width: 100%;
 		background-color: #008ddc;				
 		padding: 0px;
 		display: none;		
@@ -57,6 +71,18 @@
 	.menu-toggle-button{
 		float: right;
 		margin-top: 10px;
+	}
+
+	.header-contacts{
+		background-image: none;
+		text-align: center;		
+		width: 280px;
+		margin: 0 auto;
+		float: none;
+	}
+
+	.header_adress, .header_phone{
+		padding-left: 0px;
 	}
 
 	.slider{
@@ -263,6 +289,18 @@
 }
 
 @media only screen and (min-width : 480px) and (max-width : 767px) {
+
+	.header-contacts{
+		background-image: none;
+		text-align: center;		
+		width: 280px;
+		margin: 0 auto;
+		float: none;
+	}
+
+	.header_adress, .header_phone{
+		padding-left: 0px;
+	}
 
 	header .logo{
 		width: 370px;
@@ -477,6 +515,10 @@
 
 @media only screen and (min-width : 768px) and (max-width : 991px) {
 
+	header{
+		min-height: 150px;
+	}
+
 	header .main-menu{
 		position: absolute;		
 		top: 62px;
@@ -513,7 +555,32 @@
 	}
 
 	header .logo{
-		float: left;
+		width: 300px;
+		float: none;				
+		display: block;
+		margin: 20px auto;	
+		position: relative;	
+	}
+
+	.logo_image{
+		width: 62px;
+		height: 51px;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		margin: auto;
+	}
+
+	header h1{
+		text-align: left;
+		padding-left: 60px;
+		width: 100%;
+		padding-right: 30px;
+		margin: 0px;
+	}
+
+	.header-contacts{
+		margin-top: 20px;
 	}
 
 	.menu-toggle-button{
