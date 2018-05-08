@@ -317,7 +317,7 @@
 		text-align: left;
 	}
 
-	.header-contacts{
+	.header-contacts, .inner .header-contacts{
 		margin-top: 20px;
 		float: none;
 	}
@@ -558,7 +558,7 @@
 		border-bottom: none;
 	}
 
-	header .logo{
+	header .logo, .inner .logo{
 		width: 300px;
 		float: none;				
 		display: block;
@@ -583,7 +583,7 @@
 		margin: 0px;
 	}
 
-	.header-contacts{
+	.header-contacts, .inner .header-contacts{
 		margin-top: 20px;
 	}
 
