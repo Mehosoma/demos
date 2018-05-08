@@ -2,7 +2,7 @@
 
 	body{
 		background-repeat: repeat-y;
-		background-size: auto;
+		background-size: 100% 50%;
 	}
 
 	header .logo{
@@ -161,7 +161,7 @@
 	}
 
 	.links_send{
-		margin-top: 35px;
+		margin-top: 20px;
 	}
 
 	.fix-height{
