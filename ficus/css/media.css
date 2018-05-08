@@ -258,6 +258,7 @@
 
 	.bottom-line li{
 		display: block;
+		line-height: 30px;
 	}
 
 
@@ -490,6 +491,7 @@
 
 	.bottom-line li{
 		display: block;
+		line-height: 30px;
 	}
 
 
