@@ -1,5 +1,39 @@
 @media only screen and (min-width : 0px) and (max-width : 479px) {
 
+
+	.arrow-menu{
+		background-image: url('../img/arrow-menu-right.png');
+		background-repeat: no-repeat;
+		background-position: right 0px center;
+	}
+
+	
+
+	.back{
+		background-image: url('../img/arrow-menu-left.png');
+		background-repeat: no-repeat;
+		background-position: left 0px center;
+		padding-left: 0px!important;
+	}
+
+	.right_menu{
+		background-color: #0086d1!important;
+		box-shadow: none!important;				
+		opacity: 1;		
+		margin-left: 100%;
+		transition: all 0.5s;			
+		width: 0px!important;
+		overflow: hidden;
+		top: 0px;			
+	}
+
+	.show{
+		width: 100%!important;
+		margin-left: 0px;
+		display: block;	
+	}
+	
+	
 	body{
 		background-repeat: repeat-y;
 		background-size: 150% 50%;
@@ -14,8 +48,8 @@
 	}
 
 	.logo_image{
-		width: 62px;
-		height: 51px;
+		width: 68px;
+		height: 81px;
 		position: absolute;
 		top: 0;
 		bottom: 0;
@@ -24,7 +58,7 @@
 
 	.logo-text{
 		text-align: left;
-		padding-left: 60px;
+		padding-left: 80px;
 		width: 100%;		
 		margin: 0px;
 	}
@@ -64,6 +98,8 @@
 
 	.main-menu a, .main-menu a:hover{
 		border-bottom: none;
+		line-height: 50px;
+		display: block;
 	}
 	
 
@@ -73,11 +109,15 @@
 	}
 
 	.header-contacts{
-		background-image: none;
-		text-align: center;		
-		width: 280px;
+		background-image: none;		
+		width: 290px;
 		margin: 0 auto;
 		float: none;
+		display: block;
+	}
+
+	.contacts_adr{
+		width: 260px;
 	}
 
 	.header_adress, .header_phone{
@@ -294,12 +334,43 @@
 
 @media only screen and (min-width : 480px) and (max-width : 767px) {
 
+	.arrow-menu{
+		background-image: url('../img/arrow-menu-right.png');
+		background-repeat: no-repeat;
+		background-position: right 0px center;
+	}
+
+	.back{
+		background-image: url('../img/arrow-menu-left.png');
+		background-repeat: no-repeat;
+		background-position: left 0px center;
+		padding-left: 0px!important;
+	}
+
+	.right_menu{
+		background-color: #0086d1!important;
+		box-shadow: none!important;				
+		opacity: 1;		
+		margin-left: 100%;
+		transition: all 0.5s;			
+		width: 0px!important;
+		overflow: hidden;
+		top: 0px;		
+	}
+
+	.show{
+		width: 100%!important;
+		margin-left: 0px;
+		display: block;		
+	}
+
+
 	.header-contacts{
-		background-image: none;
-		text-align: center;		
-		width: 280px;
+		background-image: none;				
+		width: 455px;
 		margin: 0 auto;
 		float: none;
+		display: block;
 	}
 
 	.header_adress, .header_phone{
@@ -319,7 +390,7 @@
 
 	.header-contacts, .inner .header-contacts{
 		margin-top: 20px;
-		float: none;
+		float: none;		
 	}
 
 	header .main-menu{
@@ -329,16 +400,12 @@
 		margin-left: 0px;	
 		margin-top: 0px;
 		margin-right: 0px;
-		width: 80%;
+		width: 100%;
 		background-color: #008ddc;				
 		padding: 0px;
 		display: none;		
 		z-index: 1000;
 		box-shadow: -5px 5px 18px 0px rgba(0,0,0,0.17)
-	}
-
-	.main-menu ul li{
-		padding-right: 0px!important;				
 	}
 
 	header .main-menu ul{
@@ -351,10 +418,14 @@
 		display: block;			
 		text-align: center;
 		padding-right: 0px;
+		padding-right: 0px!important;	
 	}
 
 	.main-menu a, .main-menu a:hover{
 		border-bottom: none;
+		line-height: 50px;
+		display: block;
+		background-color: transparent;
 	}
 	
 
@@ -519,6 +590,43 @@
 
 @media only screen and (min-width : 768px) and (max-width : 991px) {
 
+	.contacts_adr{
+		width: 90%;
+	}
+
+	.arrow-menu{
+		background-image: url('../img/arrow-menu-right.png');
+		background-repeat: no-repeat;
+		background-position: right 0px center;
+	}
+
+	.back{
+		background-image: url('../img/arrow-menu-left.png');
+		background-repeat: no-repeat;
+		background-position: left 0px center;
+		padding-left: 0px!important;
+	}
+
+	.right_menu{
+		background-color: #0086d1!important;
+		box-shadow: none!important;	
+		height: 340px;	
+		opacity: 1;		
+		margin-left: 100%;
+		transition: all 0.5s;			
+		width: 0px!important;
+		overflow: hidden;
+		top: 0px;
+		
+	}
+
+	.show{
+		width: 100%!important;
+		margin-left: 0px;
+		display: block;
+		
+	}
+
 	header{
 		min-height: 150px;
 	}
@@ -553,9 +661,11 @@
 		text-align: center;
 		padding-right: 0px;
 	}
+	
 
 	.main-menu a, .main-menu a:hover{
 		border-bottom: none;
+		line-height: 50px;
 	}
 
 	header .logo, .inner .logo{
@@ -567,8 +677,8 @@
 	}
 
 	.logo_image{
-		width: 62px;
-		height: 51px;
+		width: 68px;
+		height: 81px;
 		position: absolute;
 		top: 0;
 		bottom: 0;
@@ -577,7 +687,7 @@
 
 	.logo-text{
 		text-align: left;
-		padding-left: 60px;
+		padding-left: 80px;
 		width: 100%;
 		padding-right: 30px;
 		margin: 0px;
@@ -677,13 +787,18 @@
 
 
 @media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+	.nav_link{
+		font-size: 13px;
+		padding: 0px 10px;
+	}
+
+	.right_menu a{
+		font-size: 13px;
+	}
 	
 	.main-menu{
 		padding-left: 10px;
-	}
-
-	.separator{
-		margin: 0 11px;
 	}
 
 	.slider{

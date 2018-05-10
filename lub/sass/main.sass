@@ -69,7 +69,8 @@ body
 	display: inline-block
 	width: 75%
 	margin-top: 20px
-	margin-bottom: 10px
+	padding-left: 10px
+	
 .body-overlay
 	position: absolute
 	width: 100%
@@ -183,53 +184,108 @@ header
 	display: inline-block
 	vertical-align: top
 	position: relative
-	top: 20px
-.header-contacts	
-	background-image: url(../img/marker.png)
-	background-repeat: no-repeat
-	background-position: left top 5px	
+	top: 6px
+.header-contacts		
 	float: right
 	margin-top: 57px
+	display: inline-block
+.header_marker, .contacts_adr
+	float: left
+.header_marker object	
+	width: 25px
+	height: 31px
+	pointer-events: none
+.header_marker:hover object
+	transform: scale(1.1,1.1)	
+.header_marker:hover i
+	font-size: 30px
+.contacts_adr
+	padding-left: 10px
+.header_marker
+	position: relative
+	top: 5px
 .inner .header-contacts
-	margin-top: 67px
+	margin-top: 67px	
 .header_adress, .header_phone
 	font-family: $rob
 	font-size: 14px
 	line-height: 25px
 	color: #fff
-	display: block
-	padding-left: 30px
+	display: block	
 .main-menu
 	margin-top: 17px			
 	background-color: $blue
-	min-height: 82px
-	padding-left: 30px
+	min-height: 82px	
 .inner .main-menu
 	margin-top: 20px
-.main-menu ul
-	padding-top: 11px
+.main_menu	
+	padding: 0 10px
 .nav_list
 	display: inline-block	
-	padding-right: 0px
+	height: 100%		
+	position: relative
 .separator
 	width: 1px
 	height: 37px
 	background-color: rgba(255,255,255,0.2)
 	display: inline-block
-	margin: 0px 32px
+	margin: 0px 
 	position: relative
 	top: 12px	
 .nav_link
 	display: inline-block
 	font-family: $rob
 	font-size: 16px
-	color: #fff	
-	border-bottom: 1px solid transparent
-	line-height: 30px
+	color: #fff		
+	line-height: 82px
 	text-transform: uppercase	
-.nav_link:hover
-	border-bottom: 1px solid #fff
+	padding: 0 12px	
+.nav_link:hover	
 	color: #fff
+	background-color: #0086d1!important
+.nav_link:visited
+	color: #fff
+.main-menu > ul > li:hover .right_menu, .right_menu:hover
+	max-height: 800px
+	opacity: 1			
+	transition: max-height 0.3s ease-in
+	transition: all 0.3s
+.right_menu	
+	width: 100%	
+	max-height: 0px	
+	position: absolute
+	z-index: 100
+	left: 0px
+	top: 82px	
+	background: #0086d1
+	opacity: 0	
+	overflow: hidden		
+	transition: max-height 0.30s ease-out
+	transition: all 0.3s
+	box-sizing: border-box
+	ul
+		padding: 10px 13px 20px 20px
+	li
+		display: block
+		border: none						
+		padding: 0px					
+		margin: 0px					
+		top: 0px
+		height: 42px
+		line-height: 42px		
+	a
+		font-family: $rob
+		font-size: 16px		
+		color: #fff				
+		text-transform: uppercase			
+		line-height: normal
+		display: inline-block
+		vertical-align: middle
+		text-decoration: underline
+	a:hover 
+		text-decoration: none
+
+
 
 /***************************************************FirstScreen************************************/
 .first
@@ -610,7 +666,7 @@ footer
 	a
 		color: #fff!important
 .trigger, .activetrigger
-	width: 112px 	
+	width: 110px 	
 	border: none
 	background-color: transparent
 	font-family: $rob
@@ -623,7 +679,7 @@ footer
 	background-color: transparent
 	border: none
 	width: 100%
-	background-color: grey
+	background-color: rgba(0,141,220,1)
 .dropdownvisible li a
 	background-color: transparent
 	font-family: $rob

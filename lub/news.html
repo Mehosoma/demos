@@ -41,10 +41,15 @@
 					<span class="logo-text">Контрольно-счетная палата городского округа Люберцы</span>
 				</a>
 			</div>
-			<div class="col-lg-8 col-md-7 col-sm-6 col-xs-12">
-				<div class="header-contacts">
-					<span class="header_adress">Адрес: Московская область, г.о.Люберцы, Октябрьский проспект, д.190</span> 
-					<span class="header_phone">Тел. (495) 503-30-00</span>
+			<div class="col-lg-8 col-md-7 col-sm-6 col-xs-12">				
+				<div class="header-contacts clearfix">
+					<div class="header_marker">
+						<a href=""><object type="image/svg+xml" data="img/marker.svg" class="icon"></object></a>
+					</div>
+					<div class="contacts_adr">
+						<span class="header_adress">Адрес: Московская область, г.о.Люберцы, Октябрьский проспект, д.190</span> 
+						<span class="header_phone">Тел. (495) 503-30-00</span>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -54,16 +59,30 @@
 					<span></span>					
 				</button>
 				<nav class="main-menu">
-					<ul>
+					<ul class="main_menu">
 						<li class="nav_list"><a href="" class="nav_link">Общая информация</a></li>
 						<li class="separator hidden-sm hidden-xs"></li>
-						<li class="nav_list"><a href="" class="nav_link">Организация деятельности</a></li>
+						<li class="arrow-menu nav_list">
+							<a href="" class="hover_drop nav_link">Организация деятельности</a>
+							<div class="right_menu">
+								<ul>
+									<li class="back hidden-lg hidden-md"><a href="#">Организация деятельности</a></li>
+									<li><a href="#">План работы</a></li>
+									<li><a href="#">Контрольная деятельность</a></li>
+									<li><a href="#">Отчеты о работе</a></li>
+									<li><a href="#">Противодействие коррупции</a></li>
+									<li><a href="#">Контроль закупок</a></li>										
+								</ul>
+							</div>
+						</li>
 						<li class="separator hidden-sm hidden-xs"></li>
 						<li class="nav_list"><a href="" class="nav_link">Деятельность взаимодействие</a></li>
 						<li class="separator hidden-sm hidden-xs"></li>
 						<li class="nav_list"><a href="" class="nav_link">Медиархив</a></li>
 						<li class="separator hidden-sm hidden-xs"></li>
-						<li class="nav_list"><a href="" class="nav_link">Обратная связь</a></li>							
+						<li class="nav_list"><a href="" class="nav_link">Обратная связь</a></li>
+						<li class="separator hidden-sm hidden-xs"></li>
+						<li class="nav_list"><a href="" class="nav_link">Тестовый пункт</a></li>							
 					</ul>
 				</nav>	
 			</div>
@@ -97,9 +116,9 @@
 				<form action="#" id="select_form">
 					<p>					
 						<select class="year turnintodropdown" name="year-select">
-							<option>2017</option>							
-							<option>2017</option>
-							<option>2018</option>
+							<option>2017 г.</option>							
+							<option>2017 г.</option>
+							<option>2018 г.</option>
 						</select>
 					</p>
 				</form>
