@@ -55,12 +55,14 @@ body {
   background-repeat: no-repeat; }
 
 /***************************************************GeneralStyles************************************/
-h1 {
+.logo-text {
   font-family: "robotocondensed", arial;
   font-size: 22px;
   color: #fff;
   display: inline-block;
-  width: 75%; }
+  width: 75%;
+  margin-top: 20px;
+  margin-bottom: 10px; }
 
 .body-overlay {
   position: absolute;
