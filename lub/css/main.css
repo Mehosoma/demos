@@ -195,10 +195,7 @@ header {
   min-height: 200px; }
 
 .logo {
-  margin-top: 36px; }
-
-.inner .logo {
-  margin-top: 44px; }
+  margin-top: 16px; }
 
 .logo_image {
   display: inline-block;
@@ -208,7 +205,7 @@ header {
 
 .header-contacts {
   float: right;
-  margin-top: 57px;
+  margin-top: 34px;
   display: inline-block; }
 
 .header_marker, .contacts_adr {
@@ -224,18 +221,12 @@ header {
   -ms-transform: scale(1.1, 1.1);
   transform: scale(1.1, 1.1); }
 
-.header_marker:hover i {
-  font-size: 30px; }
-
 .contacts_adr {
   padding-left: 10px; }
 
 .header_marker {
   position: relative;
   top: 5px; }
-
-.inner .header-contacts {
-  margin-top: 67px; }
 
 .header_adress, .header_phone {
   font-family: "robotocondensed", arial;
@@ -252,22 +243,28 @@ header {
 .inner .main-menu {
   margin-top: 20px; }
 
-.main_menu {
-  padding: 0 10px; }
-
 .nav_list {
-  display: inline-block;
+  float: left;
   height: 100%;
   position: relative; }
 
-.separator {
-  width: 1px;
-  height: 37px;
-  background-color: rgba(255, 255, 255, 0.2);
-  display: inline-block;
-  margin: 0px;
-  position: relative;
-  top: 12px; }
+.no-border:before {
+  border-color: transparent !important; }
+
+.nav_list:before {
+  content: "";
+  border-left: 1px solid rgba(213, 213, 213, 0.3);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 30px;
+  margin-top: -15px; }
+
+.nav_list:hover:before {
+  border-color: transparent; }
+
+.main_menu .nav_list:first-child:before {
+  border-color: transparent; }
 
 .nav_link {
   display: inline-block;
@@ -276,7 +273,7 @@ header {
   color: #fff;
   line-height: 82px;
   text-transform: uppercase;
-  padding: 0 12px; }
+  padding: 0 18px; }
 
 .nav_link:hover {
   color: #fff;

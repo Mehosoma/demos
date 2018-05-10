@@ -35,7 +35,8 @@ $(document).ready(function(){
 $('.slider').slick({
   		infinite: true,
   		slidesToShow: 1,
-  		slidesToScroll: 1,   		
+  		slidesToScroll: 1,  
+  		autoplay: true, 		
   		arrows: true,
   		 responsive: [
 			    {
@@ -103,6 +104,16 @@ $(document).ready(function(){
 	 		$(this).prev('.nav_link').css('background-color','#0086d1');
 	 		},function() {
 	 		$(this).prev('.nav_link').css('background-color','#008ddc');
+	 	});
+	}
+
+	if ($(window).width() < 992) {
+	    	
+		}else{
+			$(".nav_list").hover(function() {
+		 	$(this).next('.nav_list').addClass('no-border');
+		 	},function() {
+		 	$(this).next('.nav_list').removeClass('no-border');
 	 	});
 	}
 
