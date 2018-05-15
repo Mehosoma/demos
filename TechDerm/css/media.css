@@ -1,5 +1,27 @@
 @media only screen and (min-width : 0px) and (max-width : 479px) {
 
+	.about{
+		background: linear-gradient(to right, #fcf9f9 45%, #fff 45%)
+	}
+
+	.skin{
+		background: linear-gradient(to left, #fcf9f9 45%, #fff 45%);
+	}
+
+	.consult{
+		background: linear-gradient(to left, #f3f2f7 35%, #fafafa 35%);
+	}
+
+	.thread{
+		background: linear-gradient(to right, #fcf9f9 45%, #fff 45%);
+	}
+
+	.tools{
+		background: linear-gradient(to right, #fcf9f9 45%, #fff 45%);
+	}
+
+
+	
 	header{
 		min-height: 110px;
 	}
@@ -109,7 +131,7 @@
 		margin-left: 0px;
 	}
 
-	.mobile-frame, .image-frame--about, .image-frame--thread{
+	.mobile-frame, .image-frame--about{
 		width: 280px;
 		height: 213px;
 	}
@@ -117,6 +139,15 @@
 	.image-frame--about{
 		margin-left: 15px;
 		margin-top: 49px;
+	}
+
+	.image-frame--thread{
+		width: 280px;
+		height: 198px;
+	}
+
+	.image-frame--thread .image_decor{
+		top: 30px;
 	}
 	
 	.frame_image{
