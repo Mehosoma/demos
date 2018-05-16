@@ -279,7 +279,10 @@ header {
   line-height: 36px;
   text-transform: uppercase;
   letter-spacing: 0.2px;
-  margin-bottom: 0px; }
+  margin-bottom: 0px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s; }
 
 .news_header:hover h2 {
   color: #960001; }
