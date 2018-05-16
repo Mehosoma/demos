@@ -1,0 +1,667 @@
+@import "bourbon/bourbon"
+
+$red: #960001
+$gold: #8a7f52
+$prox-b: 'ProximaNovaBold', sans-serif
+$rob: 'Roboto Regular', sans-serif
+$rob-m: 'Roboto Medium', sans-serif
+$rob-b: 'Roboto Bold', sans-serif
+$r-extra: 'Raleway ExtraBold', sans-serif
+$r-bold: 'Raleway Bold', sans-serif
+$r-med: 'Raleway Medium', sans-serif
+$r-reg: 'Raleway Regular', sans-serif
+$r-light: 'Raleway Light', sans-serif
+$r-semi: 'Raleway SemiBold', sans-serif
+
+html, body
+	height: 100%
+
+body
+	width: 100%
+	min-width: 320px
+	max-width: 1920px
+	margin: 0 auto
+	position: relative
+	line-height: 1.2
+	-webkit-font-smoothing: antialiased
+	overflow-x: hidden
+	background-color: #fff		
+	a:hover, a:focus, a:active
+		text-decoration: none
+		outline: none
+	input:focus, input:active
+		text-decoration: none
+		outline: none
+	button:focus, button:active
+		text-decoration: none
+		outline: none
+	textarea:focus, textarea:active
+		text-decoration: none
+		outline: none
+	a
+		display: inline-block
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out
+	ul, ol
+		padding: 0px
+		margin: 0px
+		list-style-type: none
+	button
+		border: none
+		cursor: pointer
+	hr
+		border: none	
+
+.pixel
+	background: url(../img/feedback.jpg) no-repeat top center
+	width: 1920px
+	height: 2800px
+	position: absolute
+	z-index: 1000000
+	display: none
+	left: 50%
+	top: 0
+	margin-left: -960px
+	opacity: 0.5
+	margin-top: 0px
+
+
+/***************************************************GeneralStyles************************************/
+.inner-header
+	font-family: $r-bold
+	font-size: 22px
+	color: $red
+	letter-spacing: 0.5px
+.info-wrapper
+	width: 264px
+	height: 412px	
+	position: relative	
+	margin-top: 52px
+	margin-left: -4px
+.info-block	
+	width: 100%
+	height: 100%
+	border: 1px solid #b7b7b7
+	position: relative
+	z-index: 100
+	padding-top: 33px
+	padding-left: 20px
+.info-bg
+	width: 264px
+	height: 412px
+	position: absolute
+	background-color: rgba(209,203, 179,0.5)
+	left: 7px
+	top: 7px
+	z-index: 1
+.info_request_header
+	font-family: $r-reg
+	font-size: 18px 
+	color: #333333
+	margin-bottom: 10px
+.info_request_number
+	font-family: $prox-b
+	font-size: 60px
+	line-height: 50px
+	color: $red
+	display: block
+.info_request_link
+	font-family: $rob
+	font-size: 16px
+	color: $red
+	border-bottom: 1px solid $red
+.info_request_link:hover
+	border-bottom: 1px solid transparent
+	color: $red
+.info_time, .info_adress
+	margin-top: 37px
+.info_header
+	font-family: $r-bold
+	font-size: 16px
+	color: #000
+	display: block
+	margin-bottom: 11px
+.info_content
+	font-family: $rob
+	font-size: 16px
+	color: #000
+.gen-text
+	font-family: $rob
+	font-size: 16px
+	line-height: 22px
+	color: #000
+	letter-spacing: 0.5px	
+.hidden
+	display: none
+
+/***************************************************Header******************************************/
+header	
+	min-height: 585px
+	position: relative
+	overflow-x: hidden
+.first-row
+	height: 585px
+.header-bg
+	width: 1920px
+	height: 585px
+	position: absolute
+	left: 50%
+	margin-left: -960px
+.name
+	width: 556px
+	height: 147px
+	background-color: $red
+	box-shadow: 8px 8px 24px 0px rgba(0,0,0,0.5)
+	margin-top: 112px
+	padding-left: 34px
+	h1
+		font-family: $r-extra
+		font-size: 45px
+		line-height: 1
+		color: #fff
+		display: inline-block
+		text-shadow: 5px 5px 9px rgba(0,0,0,0.53)
+		margin-top: 15px
+		line-height: 55px
+		letter-spacing: 0.3px
+		i
+			font-style: normal
+			font-size: 57px
+.job
+	font-family: $r-med
+	font-size: 24px
+	line-height: 35px
+	color: #fff
+	margin-top: 15px
+	margin-left: 34px
+	letter-spacing: 0.2px
+.official
+	width: 283px
+	height: 50px
+	border: 1px solid rgba(255,255,255,0.20)
+	background-color: rgba(20,34,60,0.20)
+	background-image: url('../img/diplom.png')
+	background-repeat: no-repeat
+	background-position: left 16px center
+	padding-left: 59px
+	margin-top: 88px
+	margin-left: 18px
+.official_text
+	font-family: $r-light
+	font-size: 20px
+	line-height: 48px
+	letter-spacing: 0.2px
+	color: #fff
+.main-wrapper
+	width: 100%
+	height: 61px
+	background-color: $red
+	overflow: hidden
+	position: relative
+.decor
+	position: absolute
+	width: 40px
+	height: 61px
+	top: 0	
+	pointer-events: none	
+	margin-left: -30px
+.decor:before
+	position: absolute
+	content: ""
+	width: 71.1% // 100% * height/width =50%; 50% * tan(30deg) = 28.9%; 100-28.9 = 71.1
+	height: 100%
+	transform-origin: 0 100%
+	transform: skew(-30deg)
+	background: #919191		
+.decor--second
+	left: 27px
+.decor--second:before
+	background: #d1cbb3
+.main-menu
+	height: 61px
+.nav_list	
+	display: inline-block
+	background-image: url('../img/menu-1.png')
+	background-repeat: no-repeat
+	background-position: left 0px center
+	padding: 20px 36px	
+.main-menu ul li:nth-child(2)
+	background-image: url('../img/menu-2.png')
+.main-menu ul li:nth-child(3)
+	background-image: url('../img/menu-3.png')
+.main-menu ul li:nth-child(4)
+	background-image: url('../img/menu-4.png')
+.nav_link
+	font-family: $r-reg
+	font-size: 18px
+	color: #fff	
+	letter-spacing: 0.5px
+	text-transform: uppercase
+.nav_link:hover, .nav_link:active, .nav_link:focus, .nav_link:visited 
+	text-shadow: 0.5px 0.1px 0px #fff, -0.5px -0.1px 0px #fff	
+	color: #fff
+
+
+/***************************************************News******************************************/
+.news
+	padding-bottom: 80px	
+.news-block
+	margin-top: 26px
+	margin-bottom: 43px
+	.gen-text
+		word-spacing: 10px
+.news_header h2
+	color: #000
+	font-family: $r-bold
+	font-size: 24px
+	line-height: 36px
+	text-transform: uppercase
+	letter-spacing: 0.2px
+	margin-bottom: 0px
+.news_header:hover h2
+	color: $red
+.news_info
+	margin-top: 11px
+.date_views
+	font-family: $rob
+	font-size: 14px
+	line-height: 24px
+	color: #999999
+	margin-bottom: 0px
+	padding-left: 34px
+	margin-right: 28px
+.date
+	background-image: url('../img/calendar.png')
+	background-repeat: no-repeat
+	background-position: left, center
+	display: inline-block
+.views
+	background-image: url('../img/views.png')
+	background-repeat: no-repeat
+	background-position: left, center
+	display: inline-block
+.news_content
+	margin-top: 23px
+	.col-lg-8
+		padding-right: 0px
+.news_image
+	width: 272px
+	height: 272px
+	margin-top: 4px
+.news_link
+	width: 117px
+	height: 36px
+	background-color: $gold
+	background-image: url('../img/book.png')
+	background-repeat: no-repeat
+	background-position: left 12px center
+	font-family: $r-semi
+	font-size: 16px
+	color: #fff
+	line-height: 36px
+	padding-left: 43px
+	text-transform: uppercase
+	margin-top: 12px	
+.news_link:hover	
+	color: #fff
+	background-color: #988e66
+.see-more
+	width: 217px
+	height: 36px		
+	font-family: $r-semi
+	font-size: 16px
+	color: #000
+	line-height: 36px	
+	text-transform: uppercase	
+	border: 1px solid $red	
+	text-align: center
+	display: block
+	margin: 20px 0px 0px 350px
+.see-more:hover
+	background-color: $red
+	color: #fff
+
+
+/***************************************************Footer******************************************/
+footer
+	width: 100%
+	min-height: 40px
+	position: relative
+	background-color: #383838
+	overflow: hidden
+.footer-content br
+	display: none
+.footer_list
+	display: inline-block
+.footer-text
+	font-family: $rob
+	font-size: 14px 
+	color: #fff
+	margin: 0px 
+	line-height: 40px
+	i
+		font-style: normal
+		font-family: $rob-m
+.footer-separator
+	display: inline-block
+	color: #fff
+.copy
+	font-family: $rob
+	font-size: 14px 
+	color: #fff
+	border-bottom: 1px solid #fff
+	padding-top: 12px
+.copy:hover
+	color: #fff
+	border-color: transparent
+.footer-separator
+	margin: 0 10px
+.decor--footer
+	right: 0
+	margin-right: -20px
+	height: 40px
+.decor--footer:before
+	background-color: $red
+.decor--footer-second
+	right: 8px
+	height: 40px
+
+
+/***************************************************Main-Content******************************************/
+.main-content	
+	padding-bottom: 72px
+	.gen-text
+		word-spacing: 0px
+		letter-spacing: 0.2px
+		margin-bottom: 8px		
+		padding-right: 80px
+.content-wrapper
+	padding-top: 54px
+	padding-left: 100px
+.main-content-text
+	font-family: $rob
+	font-size: 16px
+	line-height: 22px
+	color: #000	
+.main-content-header
+	font-family: $r-bold
+	font-size: 18px
+	color: #000
+	margin-bottom: 24px
+.main-content ol
+	counter-reset: num
+	margin-bottom: 26px
+.main-content ol li::before
+	content: counter(num) '. '
+	counter-increment: num
+	font-family: $rob-b
+	font-size: 16px
+	color: #000
+	float: left
+	padding-right: 5px
+.hard-text
+	font-family: $rob-b
+	font-size: 16px
+	color: #000
+	display: block
+	margin-top: -17px	
+	letter-spacing: 0.15px
+.button-dis
+	font-family: $r-bold
+	font-size: 18px
+	color: #000
+	text-transform: uppercase
+	border: 1px solid $red
+	text-align: center
+	line-height: 39px
+	width: 79px
+	height: 39px
+.button-dis:hover
+	background-color: $red
+	color: #fff
+.disclaim
+	margin-top: 24px
+	.gen-text
+		margin-bottom: 0px
+		letter-spacing: 0.1px
+.disclaim-buttons
+	display: block
+	text-align: center
+	margin-left: -100px
+	margin-top: 33px
+.button-dis
+	margin: 0px 10px	
+
+/***************************************************Bio******************************************/
+.bio
+	padding-top: 34px
+	padding-bottom: 72px
+.polite-foto
+	margin-top: 25px
+.bio--header
+	margin-bottom: 24px
+.bio-content
+	.gen-text
+		letter-spacing: 0.3px
+		margin-bottom: 8px
+		word-spacing: 2px
+.long-text
+	margin-bottom: 0px!important
+.fix-text
+	margin-top: 26px
+
+
+/***************************************************FeedBack******************************************/
+.feedback
+	padding-bottom: 108px
+.feedback-wrapper
+	padding-top: 35px
+.feedback-form
+	margin-top: 46px
+.single-field
+	width: 670px
+	display: block
+	float: left
+	margin-bottom: 28px
+.fields-wrapper
+	width: 100%
+	display: block
+.field_text
+	float: left
+	font-family: $rob
+	font-size: 16px 
+	line-height: 32px
+	color: #000	
+.field
+	width: 469px
+	height: 32px
+	float: right
+	border: 1px solid #b7b7b7
+	font-family: $rob
+	font-size: 14px 
+	color: #999
+	padding: 0px 10px 0px 8px
+	::-webkit-input-placeholder 
+		font-family: $rob
+		font-size: 14px 
+		color: #999		
+	::-moz-placeholder
+		font-family: $rob
+		font-size: 14px 
+		color: #999				
+	:-moz-placeholder 
+		font-family: $rob
+		font-size: 14px 
+		color: #999			
+	:-ms-input-placeholder      
+		font-family: $rob
+		font-size: 14px 
+		color: #999		
+.field:hover
+	border-color: #777
+.field-textarea		
+	resize: none
+	height: 100px
+	padding: 8px 10px 10px 8px
+.button_send
+	position: relative
+	width: 97px
+	height: 43px
+	background-color: #e8e5d9
+	font-family: $rob
+	font-size: 14px
+	line-height: 43px
+	text-align: center	
+	text-transform: uppercase
+	display: block
+	font-weight: 400
+	border: 1px solid #e8e5d9 
+	transition: all 0.3s
+.button_send:hover
+	cursor: pointer
+	background-color: transparent
+	transition: all 0.3s
+.file-field
+	width: 297px
+	display: block
+	margin-top: 3px
+	.field_text
+		line-height: 43px
+	label
+		float: right
+		margin-bottom: 0px
+	input[type=file]
+		display: none
+.submit_form
+	width: 144px
+	height: 39px
+	background-color: $red
+	border: 1px solid $red
+	font-family: $r-bold
+	font-size: 18px
+	text-align: center
+	color: #fff	
+	display: block
+	transition: all 0.3s
+	margin-top: 43px
+	text-transform: uppercase
+.submit_form:hover
+	background-color: transparent
+	color: $red
+.send_file
+	position: relative
+.file_name
+	position: absolute
+	top: 0px
+	left: 130px
+	margin: 0px	
+	line-height: 43px	
+
+
+/***********************************************ButtonMobile************************************/
+.menu-toggle-button
+	width: 50px
+	height: 40px
+	float: right
+	background-color: transparent
+	border-radius: 7px
+	padding-top: 5px
+	border: none
+	text-indent: -9999px
+	-webkit-appearance: none
+	-moz-appearance: none
+	appearance: none
+	position: relative
+	display: block
+	overflow: hidden
+	margin-top: 10px
+	float: left
+	margin-left: -17px
+
+
+.menu-toggle-button span 
+	width: 30px
+	display: block
+	height: 4px
+	background: #fff
+	position: absolute
+	top: 15px
+	left: 11px
+	right: 16px
+	-webkit-transition: background 0s 0.3
+	-o-transition: background 0s 0.3
+	transition: background 0s 0.3
+
+
+.menu-toggle-button span::before, .menu-toggle-button span::after
+	content: ""
+	display: block
+	width: 100%
+	height: 4px
+	background: #fff
+	position: absolute
+	left: 0px
+	-webkit-transition-duration: 0.3s, 1s
+	-o-transition-duration: 0.3s, 1s
+	transition-duration: 0.3s, 1s
+	-webkit-transition-delay: 0s, 0.3s
+	-o-transition-delay: 0s, 0.3s
+	transition-delay: 0s, 0.3s
+
+
+.menu-toggle-button span::before 
+	top: -7px
+
+.menu-toggle-button span::after 
+	bottom: -7px
+
+.menu-toggle-button.is-active span
+	background: none
+
+.menu-toggle-button.is-active span::before
+	top: 0
+	-webkit-transform: rotate(45deg)
+	-ms-transform: rotate(45deg)
+	transform: rotate(45deg)
+	-webkit-transition-property: top, -webkit-transform
+	transition-property: top, -webkit-transform
+	-o-transition-property: top, transform
+	transition-property: top, transform
+	transition-property: top, transform, -webkit-transform
+	-webkit-transition-delay: 0s, 0.3s
+	-o-transition-delay: 0s, 0.3s
+	transition-delay: 0s, 0.3s
+	-webkit-transition-duration: 0.3s, 0.3s
+	-o-transition-duration: 0.3s, 0.3s
+	transition-duration: 0.3s, 0.3s
+	background: #fff
+
+
+.menu-toggle-button.is-active span::after 
+	bottom: 0
+	background: #fff
+	-webkit-transform: rotate(-45deg)
+	-ms-transform: rotate(-45deg)
+	transform: rotate(-45deg)
+	-webkit-transition-property: bottom, -webkit-transform
+	transition-property: bottom, -webkit-transform
+	-o-transition-property: bottom, transform
+	transition-property: bottom, transform
+	transition-property: bottom, transform, -webkit-transform
+	-webkit-transition-delay: 0s, 0.3s
+	-o-transition-delay: 0s, 0.3s
+	transition-delay: 0s, 0.3s
+	-webkit-transition-duration: 0.3s, 0.3s
+	-o-transition-duration: 0.3s, 0.3s
+	transition-duration: 0.3s, 0.3s
+
+.menu-toggle-button:focus
+	outline: none !important
+
+
+
+
+	
+	
