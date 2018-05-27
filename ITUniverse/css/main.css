@@ -85,12 +85,6 @@ body {
 .hidden {
   display: none; }
 
-.main-wrapper {
-  height: 100%; }
-
-.main-content {
-  min-height: 100%; }
-
 .block_header {
   font-family: "Roboto Medium", sans-serif;
   font-size: 16px;
@@ -338,7 +332,8 @@ header {
 .how-slide-first {
   padding-top: 155px; }
   .how-slide-first .how-block {
-    min-height: 150px; }
+    min-height: 120px;
+    margin-bottom: 30px; }
   .how-slide-first .how-block_image {
     width: 100%;
     height: 39px;
@@ -522,9 +517,8 @@ header {
 /***************************************************Footer************************************/
 footer {
   width: 100%;
-  position: absolute;
   min-height: 40px;
-  margin-top: -90px; }
+  margin-top: -10px; }
 
 .footer_contacts_blue {
   display: inline-block;
