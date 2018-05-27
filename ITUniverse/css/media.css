@@ -1,12 +1,12 @@
 @media only screen and (min-width : 0px) and (max-width : 479px) {
 
 	.how-slide-first .slider_content{
-		font-size: 15px;
+		font-size: 14px;
 		letter-spacing: 0px;
 	}
 
 	.how-slide-first .col-lg-3{
-		padding: 0 10px;
+		padding: 0 15px;
 	}
 
 	header .main-menu{
