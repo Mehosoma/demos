@@ -77,6 +77,7 @@ $(document).ready(function(){
 		}
 	});
 
+	//Set adaptive height on click arrows
 	$('.slick-next, .slick-prev ').on( "click", function() {				
     	if ($(window).width() < 991){
 			var height = $('.active-slider .slick-active').height();
@@ -102,7 +103,7 @@ $(document).ready(function(){
 
 		$('.active-slider .slider-main').slick('slickGoTo', 0);	
 
-
+		//Close Mobile Menu
 		if ($(window).width() < 991){
 			$('.main-menu').animate({
               height: 'toggle'
@@ -113,7 +114,7 @@ $(document).ready(function(){
 
 		}
 
-		
+		//Adaptive Height
 		setTimeout(function() {
 		if ($(window).width() < 991){
 			var height = $( '.active-slider .slick-active' ).height();
@@ -127,21 +128,17 @@ $(document).ready(function(){
 	});
 
 	
-		if ($(window).width() < 991){
-			var height = $( '.active-slider .slick-active').height();
-			$( '.slider-inner' ).height(height + 50);
-		}else{
+	//Set height slider on load page
+	if ($(window).width() < 991){
+		var height = $( '.active-slider .slick-active').height();
+		$( '.slider-inner' ).height(height + 50);
+	}else{
+	}
 
-		}
-
-		
-
-
-		
 });
 
 
-//Show-hide menu
+//Show-hide mobile menu
 $(document).ready(function(){
     $('.click-mobile').on('click',function(e){
         e.preventDefault();        
@@ -150,5 +147,16 @@ $(document).ready(function(){
             }, 600, function() {
           });         
         $("header .menu-toggle-button").toggleClass('is-active');                     
+    });
+
+    $('.slider-main').on('swipe', function(event, slick, direction) {
+
+    	//Set height on swipe
+		if ($(window).width() < 991){
+			var height = $( '.active-slider .slick-active').height();
+			$( '.slider-inner' ).height(height + 50);
+		}else{
+		}
+
     });
 });
