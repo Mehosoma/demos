@@ -273,15 +273,19 @@ header {
     border-radius: 10px 0px 0px 10px;
     opacity: 0.7; }
 
-.slide_bottom a {
-  display: inline-block; }
+.slide_bottom {
+  margin-left: 200px;
+  margin-top: 80px; }
+  .slide_bottom a {
+    display: inline-block; }
 
 .slide_arrows {
   width: 180px;
   height: 50px;
   border: 2px solid #e5e5e5;
-  position: relative;
-  float: left; }
+  position: absolute;
+  z-index: 1000;
+  top: 380px; }
   .slide_arrows hr {
     width: 2px;
     height: 30px;
@@ -299,7 +303,16 @@ header {
   width: 14px;
   height: 24px;
   z-index: 100;
-  cursor: pointer; }
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s; }
+
+.slick-prev:hover {
+  background-image: url("../img/prev-h.png") !important; }
+
+.slick-next:hover {
+  background-image: url("../img/next-h.png") !important; }
 
 .slick-next {
   position: absolute;
@@ -308,7 +321,74 @@ header {
   width: 14px;
   height: 24px;
   z-index: 100;
-  cursor: pointer; }
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s; }
 
 .slick-prev:focus, .slick-prev:active, .slick-next:focus, .slick-next:active {
   outline: none; }
+
+.block-link {
+  float: right;
+  background-repeat: no-repeat;
+  background-position: right center;
+  padding-right: 40px; }
+  .block-link a {
+    font-family: "MuseoSansCyrl500", sans-serif;
+    font-size: 14px;
+    color: #000; }
+  .block-link a:hover {
+    color: #ff9900; }
+
+/***************************************************Quote************************************/
+.quote {
+  padding-top: 60px; }
+
+.quote-right {
+  position: relative; }
+  .quote-right blockquote {
+    font-family: "MuseoSansCyrl700", sans-serif;
+    font-size: 20px;
+    color: #000;
+    border: none;
+    padding-left: 0px;
+    padding-right: 100px;
+    background-repeat: no-repeat;
+    background-position: right center; }
+  .quote-right p {
+    text-align: right;
+    font-family: "MuseoSansCyrl700", sans-serif;
+    font-size: 16px;
+    color: #ff9900; }
+  .quote-right img {
+    position: absolute;
+    bottom: 0;
+    left: 0; }
+
+/***************************************************Benefits************************************/
+.benefits {
+  padding-top: 60px; }
+
+.benefits-block {
+  position: relative; }
+  .benefits-block i {
+    font-family: "MuseoSansCyrl900", sans-serif;
+    font-size: 40px;
+    color: #ff9900;
+    font-style: normal; }
+  .benefits-block p {
+    font-family: "MuseoSansCyrl500", sans-serif;
+    font-size: 16px;
+    color: #000; }
+  .benefits-block a {
+    font-family: "MuseoSansCyrl900", sans-serif;
+    font-size: 16px;
+    color: #000;
+    border-bottom: 1px solid #ff9900; }
+  .benefits-block a:hover {
+    border-bottom: 1px solid transparent; }
+  .benefits-block img {
+    position: absolute;
+    top: 0;
+    right: 0; }

@@ -253,14 +253,17 @@ header
 		border-radius: 10px 0px 0px 10px
 		opacity: 0.7
 .slide_bottom
+	margin-left: 200px
+	margin-top: 80px
 	a
 		display: inline-block
 .slide_arrows
 	width: 180px
 	height: 50px
 	border: 2px solid #e5e5e5
-	position: relative
-	float: left
+	position: absolute
+	z-index: 1000
+	top: 380px 	
 	hr
 		width: 2px
 		height: 30px
@@ -278,6 +281,11 @@ header
 	height: 24px
 	z-index: 100
 	cursor: pointer
+	transition: all 0.3s
+.slick-prev:hover
+	background-image: url('../img/prev-h.png')!important
+.slick-next:hover
+	background-image: url('../img/next-h.png')!important
 .slick-next
 	position: absolute
 	top: 0px
@@ -286,6 +294,70 @@ header
 	height: 24px
 	z-index: 100
 	cursor: pointer
+	transition: all 0.3s
 .slick-prev:focus, .slick-prev:active, .slick-next:focus, .slick-next:active
 	outline: none	
+.block-link
+	float: right
+	background-repeat: no-repeat
+	background-position: right center
+	padding-right: 40px	
+	a
+		font-family: $mus-500
+		font-size: 14px
+		color: #000		
+	a:hover
+		color: $orange
 
+/***************************************************Quote************************************/
+.quote
+	padding-top: 60px
+.quote-right
+	position: relative
+	blockquote
+		font-family: $mus-700
+		font-size: 20px
+		color: #000	
+		border: none
+		padding-left: 0px
+		padding-right: 100px
+		background-repeat: no-repeat
+		background-position: right center
+	p
+		text-align: right
+		font-family: $mus-700
+		font-size: 16px
+		color: $orange
+	img
+		position: absolute
+		bottom: 0
+		left: 0
+
+/***************************************************Benefits************************************/
+.benefits
+	padding-top: 60px
+.benefits-block
+	position: relative
+	i
+		font-family: $mus-900
+		font-size: 40px
+		color: $orange
+		font-style: normal
+	p
+		font-family: $mus-500
+		font-size: 16px
+		color: #000
+	a	
+		font-family: $mus-900
+		font-size: 16px
+		color: #000
+		border-bottom: 1px solid $orange
+	a:hover
+		border-bottom: 1px solid transparent
+	img
+		position: absolute
+		top: 0
+		right: 0
+
+
+		
