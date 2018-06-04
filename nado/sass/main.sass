@@ -1,0 +1,291 @@
+@import "bourbon/bourbon"
+
+$orange: #ff9900
+$mus-100: 'MuseoSansCyrl100', sans-serif
+$mus-300: 'MuseoSansCyrl300', sans-serif
+$mus-500: 'MuseoSansCyrl500', sans-serif
+$mus-700: 'MuseoSansCyrl700', sans-serif
+$mus-900: 'MuseoSansCyrl900', sans-serif
+
+body
+	width: 100%
+	min-width: 320px
+	max-width: 1920px
+	margin: 0 auto
+	position: relative
+	line-height: 1.2
+	-webkit-font-smoothing: antialiased
+	overflow-x: hidden
+	background-color: #fff		
+	a:hover, a:focus, a:active
+		text-decoration: none
+		outline: none
+	input:focus, input:active
+		text-decoration: none
+		outline: none
+	button:focus, button:active
+		text-decoration: none
+		outline: none
+	textarea:focus, textarea:active
+		text-decoration: none
+		outline: none
+	a
+		display: inline-block
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out
+	ul, ol
+		padding: 0px
+		margin: 0px
+		list-style-type: none
+	button
+		border: none
+		cursor: pointer
+	hr
+		border: none	
+
+.pixel
+	background: url(../img/feedback.jpg) no-repeat top center
+	width: 1920px
+	height: 2800px
+	position: absolute
+	z-index: 1000000
+	display: none
+	left: 50%
+	top: 0
+	margin-left: -960px
+	opacity: 0.5
+	margin-top: 0px
+
+
+/***************************************************GeneralStyles************************************/
+.hidden
+	display: none
+
+
+/***************************************************Header************************************/
+header
+	border-bottom: 2px solid #e5e5e5
+.first-line
+	min-height: 100px
+	box-shadow: 0 5px 15px 0px rgba(133,133,133,0.1)
+.header-text
+	a
+		font-family: $mus-700
+		font-size: 14px
+		color: #000
+	a:hover
+		color: $orange
+.social
+	a:hover
+		opacity: 0.7
+.phone	
+	p
+		font-family: $mus-700
+		font-size: 20px
+		color: #000
+	a
+		font-family: $mus-700
+		font-size: 16px
+		color: $orange
+		border-bottom: 1px solid $orange
+		transition: all 0.3s
+	a:hover
+		border-bottom: 1px solid transparent
+.feedback
+	background-repeat: no-repeat
+	background-position: left center
+	padding-left: 30px
+.main-menu
+	margin-bottom: -2px
+	li
+		display: inline-block
+		text-align: center
+		position: relative
+		margin: 0px 10px
+	a
+		padding: 20px 20px	
+		font-family: $mus-500
+		font-size: 12px
+		color: #000	
+	li:before
+		content: ''
+		position: absolute
+		bottom: 0px
+		width: 0%
+		height: 4px
+		background-color: $orange
+		transition: all 0.5s 
+	li:hover:before
+		width: 100%
+	li:hover a
+		text-shadow: 0.3px 0.1px 0px #000, -0.3px -0.1px 0px #000
+
+/***************************************************Services************************************/
+.services
+	position: relative
+.s-cont
+	padding-right: 5px
+.services-left
+	width: 50%
+	float: left
+	background-color: #fff
+	margin-top: 40px
+.services
+	padding-top: 50px
+	height: auto
+	h2
+		font-family: $mus-900
+		font-size: 40px
+		color: #000	
+	p
+		font-family: $mus-500
+		font-size: 16px
+		color: #000	
+.slide_bottom
+	a
+		font-family: $mus-900
+		font-size: 16px
+		color: $orange
+		text-transform: uppercase
+		border-bottom: 2px solid $orange
+	a:hover
+		border-bottom: 2px solid transparent
+.header_right
+	width: 170px
+	height: 150px
+	background-color: #fff
+	position: absolute
+	top: 0px
+	right: 0px
+	padding-top: 20px
+	padding-left: 20px
+	p
+		font-family: $mus-700
+		font-size: 20px
+		color: $orange
+		text-align: left
+.services_decor
+	position: absolute
+	top: 100px
+	right: 130px
+	z-index: -1
+	margin-top: -40px
+	margin-right: -70px
+.services-right
+	width: 49%
+	float: right
+	position: relative		
+	z-index: 100	
+	margin-top: 40px
+	margin-right: 10px	
+	img
+		float: right
+	.image_wrapper		
+		width: 520px
+		height: 420px
+		position: absolute				
+		top: 0px
+		right: 0px
+		box-shadow: 5px -5px 15px 0px rgba(133,133,133,0.1)
+		z-index: 1000		
+		transition: all 0.7s
+	.image_wrapper:before
+		content: ''
+		width: 580px
+		height: 420px
+		position: absolute
+		top: 0px
+		right: 0px
+		background: rgb(255,153,0)!important
+		background: -moz-linear-gradient(left, rgba(255,153,0,1) 0%, rgba(255,153,0,1) 30%, rgba(255,184,67,1) 100%)!important
+		background: -webkit-linear-gradient(left, rgba(255,153,0,1) 0%,rgba(255,153,0,1) 30%,rgba(255,184,67,1) 100%)!important
+		background: linear-gradient(to right, rgba(255,153,0,1) 0%,rgba(255,153,0,1) 30%,rgba(255,184,67,1) 100%)!important
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff9900', endColorstr='#ffb843',GradientType=1 )!important
+		opacity: 0
+		transition: all 0.7s
+.open-tab	
+	width: 580px!important	
+.open-tab:before
+	opacity: 1!important
+.open-button
+	background-image: url('../img/close-icon.png')!important	
+.right_content	
+	width: 520px	
+	height: 420px
+	position: absolute
+	top: 0
+	right: 0
+	display: none		
+	p
+		font-family: $mus-500
+		font-size: 14px
+		color: #fff	
+.more
+	position: absolute
+	left: 0
+	bottom: 0
+	height: 50px
+	margin-left: -89px
+	z-index: 100000
+	p
+		float: left		
+		margin: 0px		
+		font-family: $mus-700
+		font-size: 14px
+		color: #000			
+		position: relative		
+		top: 20px
+	button
+		inline-block
+		width: 50px
+		height: 50px
+		background-color: $orange
+		padding: 0px
+		margin: 0px
+		margin-left: 20px
+		transition: all 0.3s
+		background-repeat: no-repeat
+		background-position: 15px 15px
+		transition: all 0.3s
+	button:hover
+		border-radius: 10px 0px 0px 10px
+		opacity: 0.7
+.slide_bottom
+	a
+		display: inline-block
+.slide_arrows
+	width: 180px
+	height: 50px
+	border: 2px solid #e5e5e5
+	position: relative
+	float: left
+	hr
+		width: 2px
+		height: 30px
+		background: #e5e5e5
+		position: absolute
+		top: 10px
+		left: 85px
+		border: none
+		margin: 0px
+.slick-prev
+	position: absolute
+	top: 0px
+	left: 0px
+	width: 14px
+	height: 24px
+	z-index: 100
+	cursor: pointer
+.slick-next
+	position: absolute
+	top: 0px
+	right: 0px
+	width: 14px
+	height: 24px
+	z-index: 100
+	cursor: pointer
+.slick-prev:focus, .slick-prev:active, .slick-next:focus, .slick-next:active
+	outline: none	
+
