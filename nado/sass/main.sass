@@ -273,7 +273,7 @@ header
 		left: 85px
 		border: none
 		margin: 0px
-.slick-prev
+.slick-prev, .slick-prev1
 	position: absolute
 	top: 0px
 	left: 0px
@@ -282,11 +282,11 @@ header
 	z-index: 100
 	cursor: pointer
 	transition: all 0.3s
-.slick-prev:hover
+.slick-prev:hover, .slick-prev1:hover
 	background-image: url('../img/prev-h.png')!important
-.slick-next:hover
+.slick-next:hover, .slick-next1:hover
 	background-image: url('../img/next-h.png')!important
-.slick-next
+.slick-next, .slick-next1
 	position: absolute
 	top: 0px
 	right: 0px
@@ -346,18 +346,247 @@ header
 	p
 		font-family: $mus-500
 		font-size: 16px
-		color: #000
-	a	
-		font-family: $mus-900
-		font-size: 16px
-		color: #000
-		border-bottom: 1px solid $orange
-	a:hover
-		border-bottom: 1px solid transparent
+		color: #000	
 	img
 		position: absolute
 		top: 0
 		right: 0
+.link-content
+	font-family: $mus-900
+	font-size: 16px
+	color: #000
+	border-bottom: 1px solid $orange
+	text-transform: uppercase
+.link-content:hover
+	border-bottom: 1px solid transparent
+	color: #000
 
 
-		
+/***************************************************Projects*****************************************************/
+.projects
+	padding-top: 60px
+	padding-bottom: 40px
+.projects-wrapper
+	position: relative
+	.slide_arrows
+		top: 380px
+		left: 400px
+		background-color: #fff
+		border: none
+	.vis-arr
+		display: none
+	.vis-video
+		display: block
+	.close-vid
+		width: 50px
+		height: 50px
+		background: $orange
+		position: absolute
+		top: 30px
+		right: 30px
+		background-repeat: no-repeat
+		background-position: center center
+		background-image: url(../img/close-icon.png)!important
+.projects-left
+	width: 70%
+	float: left
+.projects-right
+	width: 30%
+	float: right
+	margin-top: 30px
+	height: 440px
+	position: relative
+	img
+		position: absolute
+		bottom: 0px
+.projects_image_wrapper
+	width: 800px
+	height: 440px
+	margin-top: 30px
+	box-shadow: 5px -5px 15px 0px rgba(133,133,133,0.1)
+	position: relative
+.video-main
+	width: 800px
+	height: 440px	
+	position: absolute
+	top: 0
+	left: 0
+	display: none	
+.projects-button
+	width: 50px
+	height: 50px
+	background: $orange
+	position: absolute
+	top: 30px
+	right: 30px
+	background-repeat: no-repeat
+	background-position: center center
+.projects_bottom
+	ul
+		float: left
+	a
+		float: right
+.crumbs
+	li
+		display: inline-block
+	p
+		font-family: $mus-700
+		font-size: 14px
+		color: #ccc
+.next_pr p
+	color: $orange
+.next_pr:hover p
+	cursor: pointer
+.projects-right
+	h3
+		font-family: $mus-700
+		font-size: 20px
+		color: #000
+	p
+		font-family: $mus-500
+		font-size: 14px
+		line-height: 18px
+		color: #000	
+	i
+		font-family: $mus-700
+		font-size: 16px
+		color: $orange
+		font-style: normal
+.pagingInfo
+	position: absolute
+	top: 40px
+	left: 50px
+	z-index: 1000	
+	strong
+		font-family: $mus-900
+		font-size: 40px
+		color: #fff
+		display: inline-block
+	p
+		display: inline-block
+		font-family: $mus-700
+		font-size: 20px
+		color: #fff
+
+
+/***************************************************Footer*******************************************************/
+footer
+	padding-top: 40px
+	padding-bottom: 20px
+	border-top: 2px solid #e5e5e5
+.footer-address
+	p
+		font-family: $mus-700
+		font-size: 12px
+		color: #000
+	i
+		font-family: $mus-500
+		font-size: 12px
+		color: #000
+		font-style: normal
+
+
+/***************************************************ModalWindow*****************************************************/
+#hidden_form
+	position: relative
+	width: 300px
+	height: 400px
+	margin: 0 auto
+	background-color: #fff
+	border: 2px solid #ccc
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,1)
+	padding-top: 40px
+	text-align: center
+	h4
+		font-family: $mus-700
+		font-size: 20px
+		color: $orange
+	p
+		font-family: $mus-500
+		font-size: 16px
+		color: #000
+	input
+		width: 220px
+		height: 40px
+		border: 2px solid #ccc
+		margin: 10px auto
+		color: #ccc
+		font-family: $mus-700
+		font-size: 16px
+		padding: 0px 20px
+	::-webkit-input-placeholder 
+		color: #ccc
+		font-family: $mus-700
+		font-size: 16px
+	::-moz-placeholder
+		color: #ccc
+		font-family: $mus-700
+		font-size: 16px
+	:-moz-placeholder 
+		color: #ccc
+		font-family: $mus-700
+		font-size: 16px
+	:-ms-input-placeholder      
+		color: #ccc
+		font-family: $mus-700
+		font-size: 16px
+	label
+		display: inline-block
+		cursor: pointer
+		position: relative
+		padding-left: 25px
+		margin-right: 15px
+		font-size: 13px
+		text-align: left
+		padding-left: 50px
+		p
+			color: #333
+			font-family: $mus-500
+			font-size: 12px
+			font-weight: normal	
+			display: inline-block
+			margin: 0px
+			float: left		
+		i
+			border-bottom: 1px solid #000	
+			font-style: normal	
+	input[type="checkbox"]
+		display: none
+	label:before
+		content: ""
+		display: inline-block
+		position: absolute
+		left: 0px
+		top: 0px
+		width: 25px
+		height: 25px
+		border: 2px solid $orange!important		
+	input[type=checkbox]:checked + label:before
+		content: "\2714"
+		font-size: 20px
+		line-height: 22px
+		color: $orange
+		text-align: center
+.button_form
+	button
+		width: 220px
+		height: 50px
+		background: $orange
+		border: 2px solid $orange
+		transition: all 0.3s
+		color: #fff
+		font-family: $mus-900
+		font-size: 16px
+		text-transform: uppercase
+	button:hover
+		background: transparent
+		color: $orange
+
+.disabled
+	pointer-events: none
+	button
+		background: #ccc
+		border: 2px solid #ccc
+
+
+
