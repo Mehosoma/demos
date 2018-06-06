@@ -55,7 +55,7 @@ $(document).ready(function(){
 			    {
 			      breakpoint: 1200,
 			      settings: {
-			        slidesToShow: 2,
+			        slidesToShow: 1,
 			        slidesToScroll: 1
 			      }
 			    },
@@ -113,7 +113,7 @@ $(document).ready(function(){
 			    {
 			      breakpoint: 1200,
 			      settings: {
-			        slidesToShow: 2,
+			        slidesToShow: 1,
 			        slidesToScroll: 1
 			      }
 			    },
@@ -189,7 +189,25 @@ $(document).ready(function(){
         $('iframe').attr('src', $('iframe').attr('src'));       
     });
 
-   
+    //ScrollButton
+     $('.scroll-button').click(function() {
+        var leftPos = $('.menu-wrapper').scrollLeft();
+        $('.menu-wrapper').animate({scrollLeft: leftPos + 200}, 800);
+     });
+
+     //ChangeImageOnTablet
+     if ($(window).width() < 1024) {
+     	$('.first-image').attr('src', 'img/slide-1-tablet.png');
+     	$('.second-image').attr('src', 'img/slide-2-tablet.png');
+     	$('.third-image').attr('src', 'img/slide-3-tablet.png');
+     	$('.four-image').attr('src', 'img/slide-4-tablet.png');
+     	$('.five-image').attr('src', 'img/slide-5-tablet.png');
+     	$('.six-image').attr('src', 'img/slide-6-tablet.png');
+     	$('.foto-ceo').attr('src', 'img/foto-tablet.png');
+     }else{
+
+     }
+
 
 });
 

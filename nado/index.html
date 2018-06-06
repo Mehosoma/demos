@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="ru">
 <html>
 <head>
 
@@ -26,33 +27,38 @@
 
 <body>
 
+
+<div class="pixel"></div>
+
 <!--Header-->
 <header>
 	<div class="first-line">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-2">
+				<div class="col-lg-2 col-md-2 col-sm-3">
 					<div class="logo">
 						<a href="index.html"><img src="img/logo.png" alt="logo-image"></a>
 					</div>
 				</div>
-				<div class="col-lg-4">
-					<div class="h-address header-text">
-						<a href="">г. Тольятти, ул. Автостроителей 2, оф. 312/2</a>
+				<div class="col-lg-8 col-md-7 col-sm-6">					
+					<div class="col-lg-2 col-lg-push-6 col-md-2 col-md-push-7 col-sm-4">
+						<div class="social">
+							<a href=""><img src="img/vk.png" alt="social-icon"></a>
+							<a href=""><img src="img/instagram.png" alt="social-icon"></a>
+						</div>
 					</div>
-				</div>
-				<div class="col-lg-1">
-					<div class="social">
-						<a href=""><img src="img/vk.png" alt="social-icon"></a>
-						<a href=""><img src="img/instagram.png" alt="social-icon"></a>
+					<div class="col-lg-4 col-lg-push-6 col-md-3 col-md-push-7 col-sm-8">
+						<div class="mail header-text">
+							<a href="mailto:naumoff.nado@yandex.ru">naumoff.nado@yandex.ru</a>
+						</div>
 					</div>
+					<div class="col-lg-6 col-lg-pull-6 col-md-7 col-md-pull-5 col-sm-12">
+						<div class="h-address header-text">
+							<a href="">г. Тольятти, ул. Автостроителей 2, оф. 312/2</a>
+						</div>
+					</div>				
 				</div>
-				<div class="col-lg-3">
-					<div class="mail header-text">
-						<a href="mailto:naumoff.nado@yandex.ru">naumoff.nado@yandex.ru</a>
-					</div>
-				</div>
-				<div class="col-lg-2">
+				<div class="col-lg-2 col-md-3 col-sm-3">
 					<div class="phone">
 						<p>8 (927) 297-97-94</p>
 						<div class="feedback" style="background-image: url('img/phone.png');">
@@ -65,31 +71,38 @@
 	</div>
 	<div class="container">
 		<div class="row">
-			<button class="menu-toggle-button click-mobile hidden-lg hidden-md">
-				<span></span>					
-			</button>
-			<nav class="main-menu">
-				<ul>
-					<li><a href="">Пожарная сигнализация<br> и оповещение</a></li>
-					<li><a href="">Охранная<br> сигнализация</a></li>
-					<li><a href="">Системы контроля и<br> управления доступом</a></li>
-					<li><a href="">Системы<br> видеонаблюдения</a></li>
-					<li><a href="">Монтаж систем<br> электроснабжения</a></li>
-					<li><a href="">Монтаж<br> автоматических ворот</a></li>
-				</ul>
-			</nav>
+			<div class="col-lg-12 col-md-12 col-sm-12">
+				<button class="menu-toggle-button click-mobile hidden-sm hidden-lg hidden-md">
+					<span></span>					
+				</button>
+				<div class="scroll-button hidden-lg hidden-md">
+					<img src="img/menu.png">
+				</div>
+				<div class="menu-wrapper">					
+					<nav class="main-menu">
+						<ul>
+							<li><a href="">Пожарная сигнализация<br> и оповещение</a></li>
+							<li><a href="">Охранная<br> сигнализация</a></li>
+							<li><a href="">Системы контроля и<br> управления доступом</a></li>
+							<li><a href="">Системы<br> видеонаблюдения</a></li>
+							<li><a href="">Монтаж систем<br> электроснабжения</a></li>
+							<li><a href="">Монтаж<br> автоматических ворот</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
 		</div>
 	</div>	
 </header>
 
 <!--Services-->
 <section class="services">
-	<div class="services_decor">
+	<div class="services_decor clearfix">
 		<img src="img/decor.png" alt="slide-image">
 	</div>
 	<div class="container s-cont">
 		<div class="row">
-			<div class="col-lg-12">
+			<div class="col-lg-12 col-md-12 col-sm-12">
 				<div class="slider-wrapper">
 					<div class="slide_arrows">
 						<div class="slick-prev" style="background-image: url('img/prev.png');"></div>
@@ -97,7 +110,7 @@
 						<div class="slick-next" style="background-image: url('img/next.png');"></div>
 					</div>
 					<div class="slider services-slider">
-						<div class="slide clearfix">
+						<div class="slide services-first clearfix">
 							<div class="services-left clearfix">
 								<h2>Пожарная сигнализация, система оповещения и управления эвакуацией</h2>
 								<p>Система пожарной сигнализации осуществляет контроль и управление, в случае возникновения ЧС, всеми системами объекта, на котором она установлена. Сложность и количество решаемых ей задач пропорционально размеру и предназначению объекта. Чем больше и сложнее объект, например, небоскрёб, тем сложнее система, а точнее логика её работы.</p>
@@ -122,7 +135,7 @@
 										<img src="img/content_image.png" alt="content-decor-image">
 									</div>
 								</div>
-								<img src="img/slide-1.png">	
+								<img src="img/slide-1.png" class="services_slide_image first-image">	
 								<div class="header_right">
 									<p>Строгий контроль на всех этапах реализации!</p>									
 								</div>								
@@ -132,9 +145,9 @@
 								</div>								
 							</div>
 						</div>
-						<div class="slide clearfix">
+						<div class="slide services-second clearfix">
 							<div class="services-left clearfix">
-								<h2>Надёжная система охранной сигнализации различной сложности</h2>
+								<h2>Надёжная система<br> охранной сигнализации различной сложности</h2>
 								<p>Охранная сигнализация применяется для защиты объекта различной сложности от несанкционированного проникновения. Такая система позволяет всегда быть уверенным в безопасности вашей квартиры, дома, офиса или производственного помещения. В охранную сигнализацию отлично интегрируется система видеонаблюдения, что делает защиту ещё эффективнее.</p>
 								<div class="slide_bottom">									
 									<a href="#hidden_form" class="popup_form">Оставить заявку</a>									
@@ -152,7 +165,7 @@
 										<img src="img/content_image.png" alt="content-decor-image">
 									</div>
 								</div>
-								<img src="img/slide-2.png">	
+								<img src="img/slide-2.png" class="services_slide_image second-image">	
 								<div class="header_right">
 									<p>Ежедневная техническая поддержка системы!</p>									
 								</div>								
@@ -162,7 +175,7 @@
 								</div>								
 							</div>
 						</div>
-						<div class="slide clearfix">
+						<div class="slide services-third clearfix">
 							<div class="services-left clearfix">
 								<h2>Автоматизированные системы контроля и управления доступом</h2>
 								<p>Система контроля и управления доступом (или СКУД) предназначена для автоматического управления входом и выходом в зданиях и промышленных комплексах, а также въездом и выездом транспорта. СКУД обеспечивает более высокий уровень безопасности на предприятии и помогает учесть отработанное время сотрудника, выводя эту информацию в 1С бухгалтерию.</p>
@@ -182,9 +195,9 @@
 										<img src="img/content_image.png" alt="content-decor-image">
 									</div>
 								</div>
-								<img src="img/slide-3.png">	
+								<img src="img/slide-3.png" class="services_slide_image third-image">	
 								<div class="header_right">
-									<p>Устройства от ведущих мировых брендов!</p>									
+									<p>Устройства<br> от ведущих мировых брендов!</p>									
 								</div>								
 								<div class="more">
 									<p>Подробнее</p>
@@ -192,10 +205,10 @@
 								</div>								
 							</div>
 						</div>
-						<div class="slide clearfix">
+						<div class="slide services-four clearfix">
 							<div class="services-left clearfix">
-								<h2>Профессиональные системы охранного видеонаблюдения</h2>
-								<p>Система охранного видеонаблюдения многофункциональна и интегрируется с любой системой, связанной с безопасностью жизнедеятельности человека. Будь то система контроля и управления доступом на объекте или же видеосистема на опасном химическом производстве, где она помогает своевременно обнаружить возгорание и предупредить оператора.</p>
+								<h2>Профессиональные<br> системы охранного видеонаблюдения</h2>
+								<p>Система охранного видеонаблюдения многофунк&shy;циональна и интегрируется с любой системой, связанной с безопасностью жизнедеятельности человека. Будь то система контроля и управления доступом на объекте или же видеосистема на опасном химическом производстве, где она помогает своевременно обнаружить возгорание и предупредить оператора.</p>
 								<div class="slide_bottom">									
 									<a href="#hidden_form" class="popup_form">Оставить заявку</a>									
 								</div>
@@ -214,9 +227,9 @@
 										<img src="img/content_image.png" alt="content-decor-image">
 									</div>
 								</div>
-								<img src="img/slide-4.png">	
+								<img src="img/slide-4.png" class="services_slide_image four-image">	
 								<div class="header_right">
-									<p>Поддержка с функцией «горячей замены»!</p>									
+									<p>Поддержка<br> с функцией «горячей замены»!</p>									
 								</div>								
 								<div class="more">
 									<p>Подробнее</p>
@@ -224,9 +237,9 @@
 								</div>								
 							</div>
 						</div>
-						<div class="slide clearfix">
+						<div class="slide services-five clearfix">
 							<div class="services-left clearfix">
-								<h2>Грамотный монтаж систем электроснабжения</h2>
+								<h2>Грамотный<br> монтаж систем электроснабжения</h2>
 								<p>Монтаж системы электроснабжения включает в себя комплекс услуг, связанных с проектированием и установкой электрики на промышленных объектов, торговых центров и административных зданий. Наши специалисты грамотно и внимательно просчитывают все параметры, чтобы сформировать стабильно работающие системы, гарантируя надёжность электроснабжения.</p>
 								<div class="slide_bottom">									
 									<a href="#hidden_form" class="popup_form">Оставить заявку</a>									
@@ -247,7 +260,7 @@
 										<img src="img/content_image.png" alt="content-decor-image">
 									</div>
 								</div>
-								<img src="img/slide-5.png">	
+								<img src="img/slide-5.png" class="services_slide_image five-image">	
 								<div class="header_right">
 									<p>Ежегодное повышение мастерства работников!</p>									
 								</div>								
@@ -257,7 +270,7 @@
 								</div>								
 							</div>
 						</div>
-						<div class="slide clearfix">
+						<div class="slide services-six clearfix">
 							<div class="services-left clearfix">
 								<h2>Качественный монтаж автоматических ворот разного типажа</h2>
 								<p>Автоматические ворота стали необходимы для каждого частного участка, будь то предприятие, двор, здание или жилой дом. Они исправно функционируют в разные погодные условия и практически бесшумны. Такие ворота надежны и безопасны, их можно дополнить системой контроля доступом, охранной сигнализацией и видеонаблюдением.</p>
@@ -278,9 +291,9 @@
 										<img src="img/content_image.png" alt="content-decor-image">
 									</div>
 								</div>
-								<img src="img/slide-6.png">	
+								<img src="img/slide-6.png" class="services_slide_image six-image">	
 								<div class="header_right">
-									<p>Долгий срок службы и надежность конструкции!</p>
+									<p>Долгий срок службы и надежность конструкции</p>
 								</div>								
 								<div class="more">
 									<p>Подробнее</p>
@@ -295,7 +308,7 @@
 		<div class="row">
 			<div class="col-lg-12">
 				<div class="block-link" style="background-image: url('../img/down.png');">
-					<a href=".quote">Узнать о нас больше</a>
+					<a href=".quote">узнать о нас больше</a>
 				</div>
 			</div>
 		</div>
@@ -306,14 +319,14 @@
 <section class="quote">
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-3">
+			<div class="col-lg-3 col-md-3 col-sm-3">
 				<div class="quote-left">
-					<img src="img/foto.png" alt="foto-ceo">
+					<img src="img/foto.png" alt="foto-ceo" class="foto-ceo">
 				</div>
 			</div>
-			<div class="col-lg-9">
+			<div class="col-lg-9 col-md-9 col-sm-9">
 				<div class="quote-right">
-					<blockquote style="background-image: url('../img/quote.png');">Мы уверены, что успех приходит с вниманием к деталям, грамотном обучении команды, а также выстраиванию честных и открытых отношений. Мы неравнодушны к людям, с которыми работаем. Следим за инновациями и сдерживаем свои обещания. Мы всегда рады новым проектам и открыты для диалога!</blockquote>
+					<blockquote style="background-image: url('../img/quote.png');">Мы уверены, что успех приходит с вниманием к деталям, грамотном обучении команды, а также выстраиванию честных и открытых отношений. Мы неравно<wbr>душны к людям, с которыми работаем. Следим за инновациями и сдерживаем свои обещания. Мы всегда рады новым проектам и открыты для диалога!</blockquote>
 					<p>Дмитрий Наумов - Директор компании «NADO»</p>
 					<div class="signature">
 						<img src="img/signature.png" alt="signature-image">
@@ -328,25 +341,25 @@
 <section class="benefits">
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-3">
-				<div class="benefits-block">
+			<div class="col-lg-3 col-md-3 col-sm-3">
+				<div class="benefits-block benefits-first">
 					<i>Более<br> 10 лет</i>
-					<p>на рынке систем безопасности</p>
+					<p>на рынке систем<br> безопасности</p>
 				</div>
 			</div>
-			<div class="col-lg-3">
-				<div class="benefits-block">
+			<div class="col-lg-3 col-md-3 col-sm-3">
+				<div class="benefits-block benefits-second">
 					<i>Гарантия<br> от 1 года</i>
-					<p>на монтажные работы и оборудование</p>
+					<p>на монтажные работы<br> и оборудование</p>
 				</div>
 			</div>
-			<div class="col-lg-3">
-				<div class="benefits-block">
+			<div class="col-lg-3 col-md-3 col-sm-3">
+				<div class="benefits-block benefits-third">
 					<i>До 20%<br> скидка</i>
-					<p>для новых клиентов с поддержкой после</p>
+					<p>для новых клиентов<br> с поддержкой после</p>
 				</div>
 			</div>
-			<div class="col-lg-3">
+			<div class="col-lg-3 col-md-3 col-sm-3">
 				<div class="benefits-block">
 					<a href="#hidden_form" class="popup_form link-content">Получить скидку</a>
 					<img src="img/ben-decor.png" alt="block-decor">
@@ -354,7 +367,7 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-lg-12">
+			<div class="col-lg-12 col-sm-12">
 				<div class="block-link" style="background-image: url('../img/down.png');">
 					<a href=".projects">наши проекты</a>					
 				</div>
@@ -367,7 +380,7 @@
 <section class="projects">
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-12">
+			<div class="col-lg-12 col-md-12 col-sm-12">
 				<div class="projects-wrapper">
 					<div class="pagingInfo"><strong class="current_slide"></strong><p></p></div>
 					<div class="slide_arrows">
@@ -377,7 +390,7 @@
 					</div>					
 					<div class="projects-slider">					
 						<div class="slide">
-							<div class="projects-left">
+							<div class="projects-left clearfix">
 								<div class="projects_image_wrapper">
 									<img src="img/projects-1.jpg" alt="projects-image">
 									<div class="video-main">
@@ -385,17 +398,9 @@
 									 	<button class="close-vid"></button>
 									</div>
 									<a href="https://www.youtube.com/embed/4ysZqKJQS-w?rel=0&autoplay=1" target="slide-vid" class="projects-button v-click" style="background-image: url('img/play.png');"></a>
-								</div>
-								<div class="projects_bottom">
-									<ul class="crumbs">
-										<li class="next_pr"><p>Следующий проект</p></li>
-										<li><img src="img/separator.png" alt="separator"></li>
-										<li><p>Гастрономический бар КОКО</p></li>
-									</ul>								
-									<a href="#hidden_form" class="popup_form link-content">Хотите также?</a>
-								</div>							
+								</div>															
 							</div>
-							<div class="projects-right">
+							<div class="projects-right clearfix">
 								<div class="projects_header">
 									<h3>Крафтовый KRAN bar</h3>								
 								</div>
@@ -411,15 +416,7 @@
 								<div class="projects_image_wrapper">
 									<img src="img/projects-1.jpg" alt="projects-image">							
 									<a href="" class="projects-button" style="background-image: url('img/text.png');"></a>
-								</div>
-								<div class="projects_bottom">
-									<ul class="crumbs">
-										<li class="next_pr"><p>Следующий проект</p></li>
-										<li><img src="img/separator.png" alt="separator"></li>
-										<li><p>Крафтовый KRAN bar</p></li>
-									</ul>								
-									<a href="#hidden_form" class="popup_form link-content">Хотите также?</a>
-								</div>							
+								</div>														
 							</div>
 							<div class="projects-right">
 								<div class="projects_header">
@@ -429,8 +426,17 @@
 								<i>Что мы сделали:</i>
 								<p>Возникла необходимость изготовления специальных кронштейнов, которые бы жестко фиксировали прожекторы от 1 до 1,5 м от основного потолка, при этом вписывались в концепцию бара.</p>
 								<p>В результате задача была выполнена успешно и клиент остался полностью доволен нашей работой.</p>
+								<img src="img/projects-decor.png" alt="decor-content">
 							</div>						
 						</div>
+					</div>
+					<div class="projects_bottom clearfix">
+						<ul class="crumbs">
+							<li class="next_pr"><p>Следующий проект</p></li>
+							<li class="separator"><img src="img/separator.png" alt="separator"></li>
+							<li><p>Гастрономический бар КОКО</p></li>
+						</ul>								
+						<a href="#hidden_form" class="popup_form link-content">Хотите также?</a>
 					</div>
 				</div>
 			</div>
@@ -450,38 +456,44 @@
 	<div class="container">
 		<div class="row">
 			<div class="container">
-				<div class="col-lg-5">
-					<div class="footer-address">
-						<p>«NADO» - Проектно-монтажная организация в сфере систем безопасности</p>
-						<i>445030, РФ, Самарская область, г. Тольятти, ул. Автостроителей 2, оф. 312/2 ИНН 6382070946  КПП 638201001 ОГРН 1156313051619</i>
+				<div class="col-lg-7 col-md-7 col-sm-8">
+					<div class="col-lg-9 col-md-10 col-sm-12">
+						<div class="footer-address">
+							<p>«NADO» - Проектно-монтажная организация в сфере систем безопасности</p>
+							<i>445030, РФ, Самарская область, г. Тольятти, ул. Автостроителей 2, оф. 312/2<br> ИНН 6382070946&ensp; КПП 638201001 ОГРН 1156313051619</i>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-2 col-sm-12">
+						<div class="social">
+							<a href=""><img src="img/vk.png" alt="social-icon"></a>
+							<a href=""><img src="img/instagram.png" alt="social-icon"></a>
+						</div>
 					</div>
 				</div>
-				<div class="col-lg-2">
-					<div class="social">
-						<a href=""><img src="img/vk.png" alt="social-icon"></a>
-						<a href=""><img src="img/instagram.png" alt="social-icon"></a>
+				<div class="col-lg-5 col-md-5 col-sm-4">
+					<div class="col-lg-8 col-lg-push-4 col-md-8 col-md-push-4 col-sm-12">
+						<div class="phone">
+							<p>8 (927) 297-97-94</p>
+							<div class="feedback" style="background-image: url('img/phone.png');">
+								<a href="#hidden_form" class="popup_form">Перезвоните мне</a>
+							</div>
+						</div>
 					</div>
-				</div>
-				<div class="col-lg-2">
-					<div class="mail header-text">
-						<a href="mailto:naumoff.nado@yandex.ru">naumoff.nado@yandex.ru</a>
-					</div>
-				</div>
-				<div class="col-lg-3">
-					<div class="phone">
-						<p>8 (927) 297-97-94</p>
-						<a href="#hidden_form" class="popup_form">Перезвоните мне</a>
-					</div>
+					<div class="col-lg-4 col-lg-pull-8 col-md-4 col-md-pull-8 col-sm-12">
+						<div class="mail header-text">
+							<a href="mailto:naumoff.nado@yandex.ru">naumoff.nado@yandex.ru</a>
+						</div>
+					</div>					
 				</div>
 			</div>
 		</div>
-	</div>
+	</div>	
 </footer>
 
 <div class="hidden">
 	<form id="hidden_form" class="send" method="post">
 		<h4>Заполните форму</h4>
-		<p>и мы свяжемся с вами как можно быстрее</p>
+		<p>и мы свяжемся с вами<br> как можно быстрее</p>
 		<input type="text" name="fio" required="" placeholder="Имя"></input>
 		<input type="text" name="tel" required="" placeholder="Телефон"></input>		
 		<div class="button_form disabled">

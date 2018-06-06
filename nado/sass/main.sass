@@ -9,8 +9,7 @@ $mus-900: 'MuseoSansCyrl900', sans-serif
 
 body
 	width: 100%
-	min-width: 320px
-	max-width: 1920px
+	min-width: 320px	
 	margin: 0 auto
 	position: relative
 	line-height: 1.2
@@ -46,15 +45,15 @@ body
 		border: none	
 
 .pixel
-	background: url(../img/feedback.jpg) no-repeat top center
-	width: 1920px
+	background: url(../img/index-768.jpg) no-repeat top center
+	width: 768px
 	height: 2800px
 	position: absolute
 	z-index: 1000000
 	display: none
 	left: 50%
 	top: 0
-	margin-left: -960px
+	margin-left: -384px
 	opacity: 0.5
 	margin-top: 0px
 
@@ -70,6 +69,13 @@ header
 .first-line
 	min-height: 100px
 	box-shadow: 0 5px 15px 0px rgba(133,133,133,0.1)
+.logo
+	margin-top: 26px
+.h-address
+	margin-left: 26px
+	margin-top: 42px
+	a
+		letter-spacing: 0.1px
 .header-text
 	a
 		font-family: $mus-700
@@ -78,9 +84,18 @@ header
 	a:hover
 		color: $orange
 .social
+	margin-top: 42px	
+	a
+		margin: 0 9px
 	a:hover
 		opacity: 0.7
+.mail
+	margin-top: 42px
+	margin-left: 0px
+	a
+		letter-spacing: 0.1px
 .phone	
+	margin-top: 23px
 	p
 		font-family: $mus-700
 		font-size: 20px
@@ -98,16 +113,31 @@ header
 	background-position: left center
 	padding-left: 30px
 .main-menu
+	margin-top: 12px
 	margin-bottom: -2px
 	li
 		display: inline-block
 		text-align: center
-		position: relative
-		margin: 0px 10px
-	a
-		padding: 20px 20px	
+		position: relative		
+		margin-top: 8px
+	li:first-child
+		margin-left: 0px
+		margin-right: 93px
+	li:nth-child(2)
+		margin-right: 99px
+	li:nth-child(3)
+		margin-right: 86px
+	li:nth-child(4)
+		margin-right: 94px
+	li:nth-child(5)
+		margin-right: 83px
+	li:last-child
+		margin-right: 0px
+	a		
+		padding: 16px 0px 16px 0px	
 		font-family: $mus-500
 		font-size: 12px
+		line-height: 16px
 		color: #000	
 	li:before
 		content: ''
@@ -123,26 +153,38 @@ header
 		text-shadow: 0.3px 0.1px 0px #000, -0.3px -0.1px 0px #000
 
 /***************************************************Services************************************/
-.services
-	position: relative
 .s-cont
 	padding-right: 5px
 .services-left
 	width: 50%
+	height: 410px
 	float: left
 	background-color: #fff
 	margin-top: 40px
+	padding-top: 16px
+	position: relative
 .services
-	padding-top: 50px
+	padding-top: 6px
+	padding-bottom: 57px
 	height: auto
+	position: relative
+	width: 100%
+	margin: 0 auto
+	overflow: hidden
 	h2
 		font-family: $mus-900
 		font-size: 40px
+		line-height: 40px
 		color: #000	
 	p
 		font-family: $mus-500
 		font-size: 16px
+		line-height: 22px
+		letter-spacing: 0.1px
 		color: #000	
+		margin-top: 30px		
+.services-left p
+	padding-right: 70px
 .slide_bottom
 	a
 		font-family: $mus-900
@@ -159,20 +201,25 @@ header
 	position: absolute
 	top: 0px
 	right: 0px
-	padding-top: 20px
-	padding-left: 20px
+	padding-top: 26px
+	padding-left: 23px
 	p
 		font-family: $mus-700
 		font-size: 20px
+		line-height: 24px
 		color: $orange
 		text-align: left
+		margin: 0px
 .services_decor
-	position: absolute
-	top: 100px
-	right: 130px
-	z-index: -1
-	margin-top: -40px
-	margin-right: -70px
+	position: relative
+	width: 1200px	
+	margin: 0 auto	
+	img
+		position: absolute
+		top: 14px
+		right: 0px		
+		z-index: -1		
+		margin-right: -47px
 .services-right
 	width: 49%
 	float: right
@@ -193,7 +240,7 @@ header
 		transition: all 0.7s
 	.image_wrapper:before
 		content: ''
-		width: 580px
+		width: 570px
 		height: 420px
 		position: absolute
 		top: 0px
@@ -204,9 +251,9 @@ header
 		background: linear-gradient(to right, rgba(255,153,0,1) 0%,rgba(255,153,0,1) 30%,rgba(255,184,67,1) 100%)!important
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff9900', endColorstr='#ffb843',GradientType=1 )!important
 		opacity: 0
-		transition: all 0.7s
+		transition: all 0.7s	
 .open-tab	
-	width: 580px!important	
+	width: 570px!important	
 .open-tab:before
 	opacity: 1!important
 .open-button
@@ -221,13 +268,15 @@ header
 	p
 		font-family: $mus-500
 		font-size: 14px
+		line-height: 20px
 		color: #fff	
+		text-align: justify
 .more
 	position: absolute
 	left: 0
 	bottom: 0
 	height: 50px
-	margin-left: -89px
+	margin-left: -86px
 	z-index: 100000
 	p
 		float: left		
@@ -236,7 +285,7 @@ header
 		font-size: 14px
 		color: #000			
 		position: relative		
-		top: 20px
+		top: 14px
 	button
 		inline-block
 		width: 50px
@@ -244,7 +293,7 @@ header
 		background-color: $orange
 		padding: 0px
 		margin: 0px
-		margin-left: 20px
+		margin-left: 16px
 		transition: all 0.3s
 		background-repeat: no-repeat
 		background-position: 15px 15px
@@ -253,30 +302,33 @@ header
 		border-radius: 10px 0px 0px 10px
 		opacity: 0.7
 .slide_bottom
-	margin-left: 200px
-	margin-top: 80px
+	position: absolute
+	left: 268px
+	bottom: 0px	
 	a
 		display: inline-block
+		line-height: 27px
 .slide_arrows
 	width: 180px
 	height: 50px
 	border: 2px solid #e5e5e5
 	position: absolute
 	z-index: 1000
-	top: 380px 	
+	top: 411px 	
+	background: #fff
 	hr
 		width: 2px
 		height: 30px
 		background: #e5e5e5
 		position: absolute
-		top: 10px
-		left: 85px
+		top: 7px
+		left: 86px
 		border: none
 		margin: 0px
 .slick-prev, .slick-prev1
 	position: absolute
-	top: 0px
-	left: 0px
+	top: 10px
+	left: 36px
 	width: 14px
 	height: 24px
 	z-index: 100
@@ -288,8 +340,8 @@ header
 	background-image: url('../img/next-h.png')!important
 .slick-next, .slick-next1
 	position: absolute
-	top: 0px
-	right: 0px
+	top: 10px
+	right: 37px
 	width: 14px
 	height: 24px
 	z-index: 100
@@ -301,19 +353,47 @@ header
 	float: right
 	background-repeat: no-repeat
 	background-position: right center
-	padding-right: 40px	
+	padding-right: 58px	
+	margin-right: 23px
+	margin-top: 32px
 	a
 		font-family: $mus-500
-		font-size: 14px
+		font-size: 12px
 		color: #000		
 	a:hover
 		color: $orange
+.right_content
+	padding-top: 44px
+	padding-right: 34px	
+	p
+		margin: 0px
+	ul
+		margin-top: 20px
+		margin-bottom: 20px
+	img
+		float: left
+		position: absolute
+		bottom: 22px
+		left: 2px
+.services-second .right_content li, .services-six .right_content li
+	margin-bottom: 20px
+.services-third .right_content li
+	margin-bottom: 10px
+.services-five .right_content
+	ul
+		margin: 10px 0px
+
 
 /***************************************************Quote************************************/
 .quote
 	padding-top: 60px
+.quote-left
+	margin-left: -29px
 .quote-right
 	position: relative
+	padding-top: 28px
+	margin-left: -5px
+	min-height: 217px
 	blockquote
 		font-family: $mus-700
 		font-size: 20px
@@ -322,57 +402,87 @@ header
 		padding-left: 0px
 		padding-right: 100px
 		background-repeat: no-repeat
-		background-position: right center
+		background-position: right 5px center
+		text-align: right
+		margin-bottom: 10px
 	p
 		text-align: right
 		font-family: $mus-700
 		font-size: 16px
 		color: $orange
+		margin-right: 103px
 	img
 		position: absolute
 		bottom: 0
-		left: 0
+		left: 255px
 
 /***************************************************Benefits************************************/
 .benefits
-	padding-top: 60px
+	padding-top: 100px
+	padding-bottom: 57px
+	.block-link
+		margin-top: 34px
+		margin-right: 14px
+		padding-right: 56px
 .benefits-block
 	position: relative
 	i
 		font-family: $mus-900
 		font-size: 40px
+		line-height: 40px
 		color: $orange
 		font-style: normal
 	p
 		font-family: $mus-500
 		font-size: 16px
+		line-height: 22px
 		color: #000	
+		margin-top: 13px
 	img
 		position: absolute
 		top: 0
 		right: 0
-.link-content
+	.link-content
+		margin-top: 24px
+		line-height: 32px
+		margin-left: 4px
+.benefits-second
+	margin-left: -30px
+.link-content, .link-content:visited
 	font-family: $mus-900
 	font-size: 16px
+	line-height: 32px
 	color: #000
-	border-bottom: 1px solid $orange
+	border-bottom: 2px solid $orange
 	text-transform: uppercase
 .link-content:hover
-	border-bottom: 1px solid transparent
+	border-bottom: 2px solid transparent
 	color: #000
 
 
 /***************************************************Projects*****************************************************/
 .projects
-	padding-top: 60px
-	padding-bottom: 40px
+	padding-top: 50px
+	padding-bottom: 87px
+	.block-link
+		margin-top: 17px
+		margin-right: 14px
+		padding-right: 56px
+	.link-content
+		margin-right: 23px
+		margin-top: 9px
 .projects-wrapper
 	position: relative
 	.slide_arrows
-		top: 380px
-		left: 400px
+		top: 420px
+		left: 620px
 		background-color: #fff
 		border: none
+		hr
+			left: 89px
+			top: 10px
+		.slick-prev1, .slick-next1
+			top: 12px
 	.vis-arr
 		display: none
 	.close-vid
@@ -380,20 +490,21 @@ header
 		height: 50px
 		background: $orange
 		position: absolute
-		top: 30px
-		right: 30px
+		top: 15px
+		right: 14px
 		background-repeat: no-repeat
 		background-position: center center
 		background-image: url(../img/close-icon.png)!important
 .projects-left
 	width: 70%
-	float: left
+	float: left	
 .projects-right
 	width: 30%
 	float: right
-	margin-top: 30px
-	height: 440px
+	margin-top: 9px
+	min-height: 440px
 	position: relative
+	padding-left: 50px
 	img
 		position: absolute
 		bottom: 0px
@@ -401,7 +512,7 @@ header
 	width: 800px
 	height: 440px
 	margin-top: 30px
-	box-shadow: 5px -5px 15px 0px rgba(133,133,133,0.1)
+	box-shadow: 5px 5px 15px 0px rgba(133,133,133,0.1)
 	position: relative
 .video-main
 	width: 800px
@@ -415,13 +526,16 @@ header
 	height: 50px
 	background: $orange
 	position: absolute
-	top: 30px
-	right: 30px
+	top: 15px
+	right: 14px
 	background-repeat: no-repeat
 	background-position: center center
 .projects_bottom
+	width: 800px
+	margin-top: 33px
 	ul
 		float: left
+		margin-top: 18px
 	a
 		float: right
 .crumbs
@@ -430,30 +544,41 @@ header
 	p
 		font-family: $mus-700
 		font-size: 14px
+		letter-spacing: 0.2px
 		color: #ccc
 .next_pr p
 	color: $orange
+	font-size: 16px
 .next_pr:hover p
 	cursor: pointer
+.separator
+	margin: 0px 30px 0 25px 
+	position: relative	
 .projects-right
+	min-height: 466px
 	h3
 		font-family: $mus-700
 		font-size: 20px
 		color: #000
+		margin-bottom: 14px
 	p
 		font-family: $mus-500
 		font-size: 14px
 		line-height: 18px
 		color: #000	
+		padding-right: 10px
+		margin-bottom: 18px
 	i
 		font-family: $mus-700
 		font-size: 16px
 		color: $orange
 		font-style: normal
+		margin: 32px 0px 10px 0px
+		display: block
 .pagingInfo
 	position: absolute
-	top: 40px
-	left: 50px
+	top: 45px
+	left: 23px
 	z-index: 1000	
 	strong
 		font-family: $mus-900
@@ -469,19 +594,38 @@ header
 
 /***************************************************Footer*******************************************************/
 footer
-	padding-top: 40px
+	padding-top: 23px
 	padding-bottom: 20px
 	border-top: 2px solid #e5e5e5
-.footer-address
+	.col-lg-8
+		padding-right: 0px;
+	.container
+		padding: 0px
+	.social
+		margin-top: 15px
+		margin-left: 32px
+	.mail
+		margin-top: 15px
+		margin-left: 12px
+	.phone
+		margin-top: -3px
+		margin-left: 127px
+.footer-address	
+	margin-left: -15px
 	p
 		font-family: $mus-700
 		font-size: 12px
 		color: #000
+		margin-bottom: 2px
 	i
 		font-family: $mus-500
 		font-size: 12px
+		line-height: 18px
+		letter-spacing: -0.1px
 		color: #000
 		font-style: normal
+		display: block
+
 
 
 /***************************************************ModalWindow*****************************************************/
@@ -499,16 +643,20 @@ footer
 		font-family: $mus-700
 		font-size: 20px
 		color: $orange
+		margin: 0px
+		margin-bottom: 10px
 	p
 		font-family: $mus-500
 		font-size: 16px
 		color: #000
+		margin: 0px
 	input
 		width: 220px
 		height: 40px
 		border: 2px solid #ccc
-		margin: 10px auto
-		color: #ccc
+		margin: 0px auto
+		margin-top: 30px
+		color: #000
 		font-family: $mus-700
 		font-size: 16px
 		padding: 0px 20px
@@ -528,15 +676,18 @@ footer
 		color: #ccc
 		font-family: $mus-700
 		font-size: 16px
+	input:hover, input:focus, input:active 
+		border-color: $orange
 	label
 		display: inline-block
 		cursor: pointer
-		position: relative
-		padding-left: 25px
+		position: relative		
 		margin-right: 15px
 		font-size: 13px
 		text-align: left
 		padding-left: 50px
+		margin-left: 38px
+		margin-top: 20px
 		p
 			color: #333
 			font-family: $mus-500
@@ -555,7 +706,7 @@ footer
 		display: inline-block
 		position: absolute
 		left: 0px
-		top: 0px
+		top: 3px
 		width: 25px
 		height: 25px
 		border: 2px solid $orange!important		
@@ -566,6 +717,7 @@ footer
 		color: $orange
 		text-align: center
 .button_form
+	margin-top: 25px
 	button
 		width: 220px
 		height: 50px
