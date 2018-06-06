@@ -496,7 +496,8 @@ header {
   line-height: 32px;
   color: #000;
   border-bottom: 2px solid #ff9900;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  outline: none !important; }
 
 .link-content:hover {
   border-bottom: 2px solid transparent;
@@ -799,7 +800,7 @@ footer {
 .mobile-menu {
   position: relative;
   width: 100%;
-  z-index: 10000; }
+  z-index: 1000; }
   .mobile-menu .burger {
     width: 50px;
     height: 38px;
