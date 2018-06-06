@@ -313,7 +313,7 @@ header
 	height: 50px
 	border: 2px solid #e5e5e5
 	position: absolute
-	z-index: 1000
+	z-index: 10
 	top: 411px 	
 	background: #fff
 	hr
@@ -482,9 +482,7 @@ header
 			left: 89px
 			top: 10px
 		.slick-prev1, .slick-next1
-			top: 12px
-	.vis-arr
-		display: none
+			top: 12px	
 	.close-vid
 		width: 50px
 		height: 50px
@@ -495,6 +493,8 @@ header
 		background-repeat: no-repeat
 		background-position: center center
 		background-image: url(../img/close-icon.png)!important
+.vis-arr
+	display: none
 .projects-left
 	width: 70%
 	float: left	
@@ -738,5 +738,56 @@ footer
 		border: 2px solid #ccc
 
 
+/***************************************************MobileMenu*****************************************************/
+.mobile-menu
+	position: relative
+	width: 100%
+	z-index: 10000
+	.burger
+		width: 50px
+		height: 38px
+		float: left	
+		margin-top: 40px	
+		margin-left: 30px
+		span
+			width: 37px
+			height: 5px
+			background: $orange			
+			position: relative						
+			margin-bottom: 7px
+			display: block	
+			margin-left: 10px					
+		span:before
+			content: ''
+			width: 5px
+			height: 5px
+			background: $orange
+			border-radius: 50%
+			position: absolute
+			top: 0px
+			left: 0px
+			margin-left: -8px
+	.phone
+		float: right
+		margin-right: 20px
+	.mobile-hidden
+		width: 100%
+		height: auto
+		display: none
+		background-color: $orange
+		position: absolute
+		top: 100px
+		left: 0px
+	.mobile-address
+		float: left
+		width: 80%
+		a
+			color: #fff
+	.social
+		width: 10%
+		float: right
+		text-align: center
+		a
+			display: inline-block			
 
     

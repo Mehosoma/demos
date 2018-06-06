@@ -142,6 +142,7 @@ $(document).ready(function(){
   		$(this).parent('.more').parent('.services-right').children('.image_wrapper').toggleClass('open-tab');
   		$(this).toggleClass('open-button')
   		$(this).parent('.more').parent('.services-right').children('.image_wrapper').children('.right_content').slideToggle();
+  		$('.services .slide_arrows').toggleClass('vis-arr');
 	})
 
 	//Next Projects Click
@@ -207,6 +208,11 @@ $(document).ready(function(){
      }else{
 
      }
+
+     //Burger
+     $('.burger').click(function() {      
+        $('.mobile-hidden').slideToggle();
+     });
 
 
 });

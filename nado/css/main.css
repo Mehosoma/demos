@@ -338,7 +338,7 @@ header {
   height: 50px;
   border: 2px solid #e5e5e5;
   position: absolute;
-  z-index: 1000;
+  z-index: 10;
   top: 411px;
   background: #fff; }
   .slide_arrows hr {
@@ -526,8 +526,6 @@ header {
       top: 10px; }
     .projects-wrapper .slide_arrows .slick-prev1, .projects-wrapper .slide_arrows .slick-next1 {
       top: 12px; }
-  .projects-wrapper .vis-arr {
-    display: none; }
   .projects-wrapper .close-vid {
     width: 50px;
     height: 50px;
@@ -538,6 +536,9 @@ header {
     background-repeat: no-repeat;
     background-position: center center;
     background-image: url(../img/close-icon.png) !important; }
+
+.vis-arr {
+  display: none; }
 
 .projects-left {
   width: 70%;
@@ -793,3 +794,55 @@ footer {
   .disabled button {
     background: #ccc;
     border: 2px solid #ccc; }
+
+/***************************************************MobileMenu*****************************************************/
+.mobile-menu {
+  position: relative;
+  width: 100%;
+  z-index: 10000; }
+  .mobile-menu .burger {
+    width: 50px;
+    height: 38px;
+    float: left;
+    margin-top: 40px;
+    margin-left: 30px; }
+    .mobile-menu .burger span {
+      width: 37px;
+      height: 5px;
+      background: #ff9900;
+      position: relative;
+      margin-bottom: 7px;
+      display: block;
+      margin-left: 10px; }
+    .mobile-menu .burger span:before {
+      content: '';
+      width: 5px;
+      height: 5px;
+      background: #ff9900;
+      border-radius: 50%;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      margin-left: -8px; }
+  .mobile-menu .phone {
+    float: right;
+    margin-right: 20px; }
+  .mobile-menu .mobile-hidden {
+    width: 100%;
+    height: auto;
+    display: none;
+    background-color: #ff9900;
+    position: absolute;
+    top: 100px;
+    left: 0px; }
+  .mobile-menu .mobile-address {
+    float: left;
+    width: 80%; }
+    .mobile-menu .mobile-address a {
+      color: #fff; }
+  .mobile-menu .social {
+    width: 10%;
+    float: right;
+    text-align: center; }
+    .mobile-menu .social a {
+      display: inline-block; }
