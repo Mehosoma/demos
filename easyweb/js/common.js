@@ -3,8 +3,7 @@ $('.staff-slider').slick({
       infinite: true,
       slidesToShow: 3,
       slidesToScroll: 1,           
-      arrows: true,
-      mobileFirst:true,
+      arrows: true,     
        responsive: [          
           {
             breakpoint: 1200,
