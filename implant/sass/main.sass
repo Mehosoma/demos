@@ -1,0 +1,555 @@
+@import "bourbon/bourbon"
+
+$blue: #4c4f6c
+$blue-d: #1e2249
+$another: #404764
+$ubun: 'UbuntuRegular', sans-serif
+$ubun-b: 'UbuntuBold', sans-serif
+$ubun-l: 'UbuntuLight', sans-serif
+$ubun-m: 'UbuntuMedium', sans-serif
+$rob-black: 'RobotoBlack', sans-serif
+
+html
+	width: 100%
+	height: 100%
+	overflow-x: hidden
+body
+	width: 100%
+	height: 5200px
+	min-width: 320px	
+	margin: 0 auto
+	position: relative
+	line-height: 1.2
+	-webkit-font-smoothing: antialiased
+	overflow-x: hidden
+	background-color: #f4f8ff	
+	a:hover, a:focus, a:active
+		text-decoration: none
+		outline: none
+	input:focus, input:active
+		text-decoration: none
+		outline: none
+	button:focus, button:active
+		text-decoration: none
+		outline: none
+	textarea:focus, textarea:active
+		text-decoration: none
+		outline: none
+	a
+		display: inline-block
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out
+	ul, ol
+		padding: 0px
+		margin: 0px
+		list-style-type: none
+	button
+		border: none
+		cursor: pointer
+	hr
+		border: none	
+
+.pixel
+	background: url(../img/main.jpg) no-repeat top center
+	width: 1920px
+	height: 12800px
+	position: absolute
+	z-index: 1000000
+	display: none
+	left: 50%
+	top: 0
+	margin-left: -960px
+	opacity: 0.5
+	margin-top: 0px
+
+
+/***************************************************GeneralStyles************************************/
+h1
+	font-family: $ubun-b
+	font-size: 37px
+	color: $blue
+	text-transform: uppercase
+	margin-top: 71px
+	margin-left: 39px
+	i
+		font-style: normal
+		font-size: 69.33px	
+		line-height: 107px			
+	strong
+		font-weight: normal
+		font-size: 68px
+		text-transform: none
+		line-height: 116px
+	b
+		font-size: 71px
+		text-transform: none
+.btn-gen
+	width: 504px
+	height: 90px
+	background-color: #2479b0
+	border-radius: 50px
+	font-family: $rob-black
+	color: #fff
+	line-height: 90px
+	text-align: center
+	font-size: 40px
+	text-transform: uppercase
+	position: relative
+	z-index: 10
+.btn-gen:hover
+	background-color: #378ec5
+	color: #fff
+.gen-text
+	font-family: $ubun
+	font-size: 24px
+	color: $another
+.body-bg
+	width: 1920px
+	height: 2643px
+	position: absolute
+	background-image: url('../img/body-bg.png')
+	bottom: 0px
+	left: 50%
+	margin-left: -960px
+.gen-header
+	font-family: $ubun-b
+	font-size: 50px
+	color: $blue
+	text-transform: uppercase
+	letter-spacing: 1px
+.hidden
+	display: none
+
+
+/***************************************************FirstScreen************************************/
+.first
+	width: 100%
+	height: 820px
+	position: relative
+.first-foto
+	width: 1063px
+	height: 847px
+	background-image: url('../img/first-foto.png')
+	position: absolute
+	right: -260px
+header
+	width: 100%
+	height: 145px
+	background-color: #fff
+	border-radius: 80px
+	opacity: 0.70
+	margin-top: 50px
+.header-l
+	float: left
+.header-r
+	float: right
+.centr-name, .phone
+	font-family: $ubun
+	font-size: 30px
+	color: $blue-d
+	text-transform: uppercase	
+.logo
+	margin-left: 42px
+	margin-top: 15px
+	position: relative	
+	display: inline-block
+.centr-name
+	position: relative
+	margin-left: 28px
+	top: 8px
+	letter-spacing: 0.9px
+.phone
+	position: relative
+	margin-right: 44px
+	top: 50px	
+.button-first
+	margin-top: 74px
+	margin-left: 42px
+
+/***************************************************Steps************************************/
+.steps
+	width: 100%
+	height: 1150px
+	position: relative	
+.steps-bg
+	width: 893px
+	height: 1914px
+	background-image: url('../img/steps-bg.png')
+	position: absolute
+	top: -423px
+	left: -262px
+.steps_number
+	font-family: $ubun-b
+	font-size: 54px
+	color: #fff
+	text-transform: uppercase
+	margin-top: 192px
+	margin-left: 37px
+	i
+		font-style: normal
+		font-size: 324px		
+		line-height: 200px
+.steps_header
+	font-family: $ubun-b
+	font-size: 50px
+	line-height: 58px
+	letter-spacing: 0.35px
+	color: $blue
+	text-transform: uppercase
+	margin-top: 33px
+	margin-left: 40px
+.steps-list_point
+	padding-left: 187px
+	min-height: 133px
+	position: relative
+	z-index: 10
+	span
+		font-family: $ubun-b
+		font-size: 32px
+		color: $another
+		text-transform: uppercase
+	p
+		letter-spacing: 0px
+.steps-list li:nth-child(1)
+	background-image: url('../img/steps-1.png')
+	background-repeat: no-repeat
+	background-position: left top 10px
+.steps-list li:nth-child(2)
+	background-image: url('../img/steps-2.png')
+	background-repeat: no-repeat
+	background-position: left top
+.steps-list li:nth-child(3)
+	background-image: url('../img/steps-3.png')
+	background-repeat: no-repeat
+	background-position: left top
+.steps-list li:nth-child(4)
+	background-image: url('../img/steps-4.png')
+	background-repeat: no-repeat
+	background-position: left top
+.steps-list li:nth-child(5)
+	background-image: url('../img/steps-5.png')
+	background-repeat: no-repeat
+	background-position: left top
+.steps-list li:nth-child(6)
+	background-image: url('../img/steps-6.png')
+	background-repeat: no-repeat
+	background-position: left top
+.steps-list
+	margin-top: 67px
+	margin-left: -42px
+
+/***************************************************Implants************************************/
+.implants
+	width: 100%
+	height: 740px
+	position: relative
+.implants-bg
+	width: 986px
+	height: 2031px
+	background-image: url('../img/implants-bg.png')
+	position: absolute
+	top: -752px
+	right: -262px
+.implants-photo
+	border-radius: 50px
+	margin-top: 10px
+	margin-left: -45px
+.implants_header
+	font-family: $ubun-b
+	font-size: 36px
+	color: $blue
+	i
+		font-style: normal
+		font-size: 46.19px
+		line-height: 76px
+.implants-list_point
+	padding-left: 30px
+	background-image: url('../img/implants-list.png')
+	background-repeat: no-repeat
+	background-position: left top 10px	
+	padding-right: 95px	
+.implants-content
+	margin-left: 38px
+.implants-list
+	margin-top: 7px
+	.gen-text
+		line-height: 36px
+.implants-info
+	margin-top: 17px
+	line-height: 34px
+	letter-spacing: 0.3px
+	padding-right: 50px
+
+/***************************************************Cert************************************/
+.cert
+	width: 100%	
+	.gen-header
+		margin-top: 40px
+		padding-left: 34px
+	.col-lg-4
+		img
+			display: block
+			margin-top: 20px
+	.first-col			
+		padding-left: 55px
+	.second-col
+		padding-left: 65px
+	.third-col
+		padding-left: 66px
+.cert_subheader
+	font-family: $ubun
+	font-size: 28px
+	color: #fff
+	text-transform: uppercase
+	letter-spacing: 1px
+	padding-left: 38px
+.cert-st
+	width: 318px
+	height: 47px
+	background-color: #fff
+	border-radius: 50px
+	margin-top: 21px		
+	span
+		font-family: $ubun
+		font-size: 20px
+		color: #5a6388
+		text-align: center
+		display: block
+		line-height: 47px
+		text-transform: uppercase
+		letter-spacing: 0.4px
+
+
+
+/***************************************************Licence************************************/
+.lic	
+	height: 570px
+	h2
+		margin-top: 47px
+		padding-left: 48px
+	.col-lg-3
+		padding: 0px
+.lic-row-fix
+	margin-top: 9px
+.lic-col-first
+	img
+		margin-left: 56px
+.lic-col-second
+	img
+		margin-left: 35px
+.lic-col-third
+	img
+		margin-left: 11px
+.lic-col-fourth
+	img
+		margin-left: -11px
+
+/***************************************************Map************************************/
+.map
+	width: 100%
+	height: 700px
+	.gen-header
+		margin-top: 36px
+		padding-left: 40px
+	.col-lg-7, .col-lg-5
+		padding: 0px
+.map-ya
+	width: 733px
+	height: 548px
+	margin-top: 30px
+	margin-left: 56px
+#order
+	width: 500px
+	height: 548px
+	background-color: #f9f9f9
+	margin-top: 30px
+	padding-top: 97px
+	input
+		width: 350px
+		height: 49px
+		padding: 0 20px
+		border-radius: 30px
+		border: 2px solid #e0e0e0
+		font-family: $ubun
+		font-size: 20px
+		color: $blue-d
+.form_header
+	font-family: $ubun-b
+	font-size: 29.04px
+	color: #1a2556
+	text-transform: uppercase
+	text-align: center
+	display: block	
+.form-content
+	margin-top: 25px
+	margin-bottom: 32px
+	padding-left: 72px
+.order-field
+	margin-bottom: 28px
+	display: block
+	input
+		margin-top: 2px
+		margin-left: 3px
+.field_header
+	font-family: $ubun-l
+	font-size: 18px
+	color: #5a6388
+.btn_sub
+	width: 350px
+	height: 78px
+	line-height: 78px
+	font-size: 30px	
+	display: block
+	margin: 0px auto
+	-moz-transition: all 0.3s ease-out
+	-o-transition: all 0.3s ease-out
+	-webkit-transition: all 0.3s ease-out
+	transition: all 0.3s ease-out
+
+
+/***************************************************Footer************************************/
+.footer-first-row
+	padding-top: 20px
+	.col-lg-4, .col-lg-3, .col-lg-5
+		padding: 0px
+.footer_header
+	font-family: $ubun-m
+	font-size: 28px
+	color: $blue
+	text-transform: uppercase
+.footer-adr
+	padding-left: 54px
+.f_adr
+	font-family: $ubun
+	font-size: 28px
+	color: $blue-d
+	display: block
+	margin-top: 25px
+.f_phone
+	font-family: $ubun-m
+	font-size: 43.34px
+	color: $blue
+	letter-spacing: 1px
+.social
+	padding-left: 47px
+.social-icons
+	margin-top: 42px
+	margin-left: -6px
+.social-icon_list
+	display: inline-block
+	margin-right: 5px
+.social-icon_link:hover
+	opacity: 0.7
+.subscribe
+	padding-left: 50px
+#f-sub
+	margin-top: 12px
+	margin-left: 2px
+.f-sub_field
+	display: block
+	font-family: $ubun-l
+	font-size: 18px
+	color: #a9a8a8
+	display: block
+	margin-bottom: 5px
+.f-sub_mail
+	width: 322px
+	height: 51px
+	background-color: #fff
+	border: none
+	position: relative
+	padding: 0 40px 0 20px
+.f-sub_sub
+	width: 140px
+	height: 51px
+	border-radius: 3px
+	font-family: $ubun-l
+	font-size: 16px
+	line-height: 51px
+	margin-left: -20px
+	position: relative
+	top: 2px
+	-moz-transition: all 0.3s ease-out
+	-o-transition: all 0.3s ease-out
+	-webkit-transition: all 0.3s ease-out
+	transition: all 0.3s ease-out
+.disclaim
+	margin-top: 29px
+	margin-left: 5px
+.l-container
+	display: block
+	position: relative
+	padding-left: 35px
+	margin-bottom: 12px
+	cursor: pointer
+	font-family: $ubun-l
+	font-size: 16px
+	color: #a5a5a5
+	font-weight: normal
+	-webkit-user-select: none
+	-moz-user-select: none
+	-ms-user-select: none
+	user-select: none
+.l-container input
+	position: absolute
+	opacity: 0
+	cursor: pointer
+.checkmark
+	position: absolute
+	top: 0
+	left: 0
+	height: 25px
+	width: 25px
+	background-color: #fff
+	border-radius: 3px
+.container input:checked ~ .checkmark
+	background-color: #2196F3
+.checkmark:after
+	content: ""
+	position: absolute
+	display: none
+.container input:checked ~ .checkmark:after
+	display: block
+.container .checkmark:after
+	left: 9px
+	top: 5px
+	width: 7px
+	height: 13px
+	border: solid white
+	border-width: 0 3px 3px 0
+	-webkit-transform: rotate(45deg)
+	-ms-transform: rotate(45deg)
+	transform: rotate(45deg)
+.footer-contacts
+	width: 100%
+	height: 145px
+	background-color: #fff
+	border-radius: 80px
+	opacity: 0.70
+	margin-top: 22px
+	span, a
+		font-family: $ubun-l
+		font-size: 22px
+		color: $blue-d
+	a:hover
+		color: #2196F3
+.copy
+	display: block
+	margin-top: 51px
+	margin-left: 26px
+	letter-spacing: 0.2px
+.service
+	display: block
+	margin-top: 38px
+	margin-left: 41px
+	letter-spacing: 0.2px
+	line-height: 36px
+.market
+	display: block
+	margin-top: 51px
+	margin-left: 10px
+	letter-spacing: 0.3px
+
+	

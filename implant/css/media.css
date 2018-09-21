@@ -1,0 +1,42 @@
+@media only screen and (min-width : 0px) and (max-width : 479px) {
+
+}
+
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+}
+
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+}
+
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+}
+
+@media only screen and (min-width : 1400px) {
+	.container{
+		width: 1350px;
+	}
+	
+}
+
+@media only screen and (min-width : 1920px) {
+
+	.first-foto{
+		right: 0px;
+	}
+
+	.steps-bg{
+		left: 0px;
+	}
+
+	.implants-bg{
+		right: 0px;
+	}
+
+	.body-bg{
+		width: 100%;
+		background-repeat: no-repeat;
+		left: 0px;
+		margin-left: 0px;
+		background-size: cover;
+	}
+}

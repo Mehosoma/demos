@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "UbuntuRegular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/UbuntuRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/UbuntuRegular.woff") format("woff"), url("../fonts/UbuntuRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "UbuntuBold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/UbuntuBold.eot?#iefix") format("embedded-opentype"), url("../fonts/UbuntuBold.woff") format("woff"), url("../fonts/UbuntuBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "RobotoBlack";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/RobotoBlack.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBlack.woff") format("woff"), url("../fonts/RobotoBlack.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "UbuntuLight";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/UbuntuLight.eot?#iefix") format("embedded-opentype"), url("../fonts/UbuntuLight.woff") format("woff"), url("../fonts/UbuntuLight.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "UbuntuMedium";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/UbuntuMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/UbuntuMedium.woff") format("woff"), url("../fonts/UbuntuMedium.ttf") format("truetype"); }
