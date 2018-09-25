@@ -93,6 +93,9 @@ h1 {
   background-color: #378ec5;
   color: #fff; }
 
+.btn-gen:visited, .btn-gen:active, .btn-gen:focus {
+  color: #fff; }
+
 .gen-text {
   font-family: "UbuntuRegular", sans-serif;
   font-size: 24px;
@@ -170,6 +173,9 @@ header {
 .button-first {
   margin-top: 74px;
   margin-left: 42px; }
+
+.btn_first {
+  font-size: 32px; }
 
 /***************************************************Steps************************************/
 .steps {
