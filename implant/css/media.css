@@ -6,6 +6,10 @@
 		padding-bottom: 40px;
 	}
 
+	body{
+		height: auto;
+	}
+
 	.first{
 		height: auto;
 	}
@@ -276,6 +280,10 @@
 		padding-bottom: 40px;
 	}
 
+	body{
+		height: auto;
+	}
+
 	.first-foto{
 		right: -510px;
 	}
@@ -474,6 +482,10 @@
 		position: relative;
 	}
 
+	body{
+		height: auto;
+	}
+
 	.centr-name{
 		top: 0px;
 		position: absolute;		
@@ -619,6 +631,10 @@
 }
 
 @media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+	body{
+		height: auto;
+	}
 
 	.centr-name, .phone{
 		font-size: 24px;
