@@ -45,7 +45,7 @@
 	}
 
 	h1 b{
-		font-size: 54px;
+		font-size: 52px;
 	}
 
 	.button-first{
@@ -173,6 +173,10 @@
 		margin-bottom: 60px;
 	}
 
+	.map{
+		height: auto;
+	}
+
 	.map-ya{
 		width: 100%;
 		margin-left: 0px;
@@ -180,9 +184,9 @@
 	}
 
 	#order{
-		margin-left: auto;
-		margin-left: auto;
+		margin-left: auto;		
 		width: 100%;
+		height: auto;
 		margin-top: 0px;
 	}
 
