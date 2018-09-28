@@ -383,7 +383,7 @@ header {
   position: relative; }
 
 .sort {
-  margin-left: 92px; }
+  text-align: right; }
   .sort .bootstrap-select .btn, .sort span {
     background-color: transparent;
     font-family: "PTSansRegular", sans-serif;
