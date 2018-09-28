@@ -10,7 +10,7 @@ $phone = urldecode($phone);
 $fio = trim($fio);
 $phone = trim($phone);
 
-$address = "123@yandex.ru";
+$address = "marketing@dentalhall.ru";
 $sub = "Сообщение с сайта Dental";
 
 $mes = "Сообщение с сайта Dental \n

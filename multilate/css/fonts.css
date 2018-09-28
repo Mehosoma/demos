@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "MontserratMedium";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/MontserratMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/MontserratMedium.woff") format("woff"), url("../fonts/MontserratMedium.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "PTSansRegular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/PTSansRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/PTSansRegular.woff") format("woff"), url("../fonts/PTSansRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "PTSansBold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/PTSansBold.eot?#iefix") format("embedded-opentype"), url("../fonts/PTSansBold.woff") format("woff"), url("../fonts/PTSansBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "MontserratRegular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/MontserratRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/MontserratRegular.woff") format("woff"), url("../fonts/MontserratRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "OpenSansBold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/OpenSansBold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSansBold.woff") format("woff"), url("../fonts/OpenSansBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "OpenSansSemiBold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/OpenSansSemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSansSemiBold.woff") format("woff"), url("../fonts/OpenSansSemiBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "OpenSansRegular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/OpenSansRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSansRegular.woff") format("woff"), url("../fonts/OpenSansRegular.ttf") format("truetype"); }
