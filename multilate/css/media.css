@@ -282,8 +282,8 @@
 	}
 
 	.user-info-wrapper{
-		margin-left: 20px;
-		margin-right: 20px;
+		margin-left: 10px;
+		margin-right: 10px;
 		margin-top: 50px;
 	}
 
@@ -309,7 +309,7 @@
 		height: 57px;
 	}
 
-	.author_name{
+	.user-info-wrapper .author_name{
 		margin-top: 10px;
 		font-size: 16px;
 	}
