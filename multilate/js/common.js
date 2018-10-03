@@ -11,7 +11,8 @@ $(document).ready(function(){
           $('.user-menu').animate({
               height: 'toggle'
             }, 600, function() {
-          });                            
+          });  
+          $('.user_name').toggleClass('active-menu')                          
     });
 });
 
@@ -23,8 +24,7 @@ $(document).ready(function(){
           $('.main-menu').animate({
               height: 'toggle'
             }, 600, function() {
-          });         
-        $("footer .menu-toggle-button").toggleClass('is-active');                  
+          });       
     });
 });
 

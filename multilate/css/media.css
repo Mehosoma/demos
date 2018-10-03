@@ -282,8 +282,8 @@
 	}
 
 	.user-info-wrapper{
-		margin-left: 10px;
-		margin-right: 10px;
+		margin-left: 0px;
+		margin-right: 0px;
 		margin-top: 50px;
 	}
 
@@ -312,9 +312,19 @@
 	.user-info-wrapper .author_name{
 		margin-top: 10px;
 		font-size: 16px;
+		left: 12px;
 	}
 
 	.user_status{
+		font-size: 14px;
+		left: 12px;
+	}
+
+	.story-header_right p{
+		font-size: 13px;
+	}
+
+	.story-header_right span{
 		font-size: 14px;
 	}
 
