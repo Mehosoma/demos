@@ -741,5 +741,8 @@
 	.public .tales-block{
 		height: 445px;
 	}
-
+	
+	.ratings .col-width{
+		width: 50%;
+	}
 }
