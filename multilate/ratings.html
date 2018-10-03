@@ -73,45 +73,226 @@
 	</div>
 </header>
 
-<!--SubPage-->
-<section class="sub-page">
+<!--Main-->
+<section class="main-bg">
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-3 fix-right-padding col-md-4">
-				<ol class="breadcrumb">
-    				<li class="breadcrumb-item"><a href="#">Главная</a></li>    				
-    				<li class="breadcrumb-item active" aria-current="page">Добавить рассказ</li>
-  				</ol>
-  				<nav class="sub-page-menu">
-  					<hr>
-  					<ul>
-  						<li class="subpage-menu_list"><a href="" class="subpage-menu_link">Мои истории</a></li>
-  						<li class="subpage-menu_list subpage-menu_list_active"><a href="" class="subpage-menu_link">Добавить рассказ</a></li>
-  						<li class="subpage-menu_list"><a href="" class="subpage-menu_link">Личные данные</a></li>
-  						<li class="subpage-menu_list"><a href="" class="subpage-menu_link">Оценки пользователей</a></li>
-  						<li class="subpage-menu_list"><a href="" class="subpage-menu_link">Финансы</a></li>
-  					</ul>
-  				</nav>
-			</div>
-			<div class="col-lg-9 col-md-8">
-				<div class="add-story">
-					<h3 class="subpage_header">Добавить рассказ</h3>
-					<p class="add-story_info gen-text">За шесть десятилетий карьеры фотограф, эмигрировавший в Париж из Ирана, стал настоящим гражданином мира. Называя Аббаса столпом "Магнум" и крестным отцом для молодых фотожурналистов, Дворжак отмечает, что фотограф документировал войны, катастрофы и революции с безжалостной точностью. Все в агентстве с огромной печалью провожают мастера, с одинаковой страстью снимавшего</p>
-					<form class="add-story-form">
-						<input type="text" name="story-name" required="" placeholder="Введите название" class="gen-text">
-						<input type="text" name="story-category" required="" placeholder="Введите категорию" class="gen-text">
-						<div class="add-avatar">
-							<div class="avatar_base"></div>
-							<a href="" class="btn-outline btn_addavatar link-gen">Добавить фото</a>
-						</div>
-						<textarea class="gen-text" placeholder="Введите текст" required=""></textarea>
-						<div class="add-story_button">
-							<button type="submit" class="btn-gen btn_public link-gen">Опубликовать</button>
-						</div>
-					</form>
+			<div class="col-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12 no-padding">
+				<div class="main-bg_iconblock">
+					<a href="">
+						<img src="img/book.png" alt="book-icon">
+						<p class="mbg_iconblock_text">Литера</p>
+					</a>
+				</div>
+				<div class="main-bg_iconblock">
+					<a href="">
+						<img src="img/durka.png" alt="durka-icon">
+						<p class="mbg_iconblock_text">Дурка</p>
+					</a>
+				</div>
+				<div class="main-bg_iconblock fix-border">
+					<a href="">
+						<img src="img/age.png" alt="age-icon">
+						<p class="mbg_iconblock_text">18+</p>
+					</a>
 				</div>
 			</div>
 		</div>
+	</div>
+</section>
+
+<!--Ratings-->
+<section class="ratings">
+	<div class="container">
+		<div class="container-outer">
+			<div class="row">
+				<div class="col-lg-8 col-md-6 col-sm-5 col-xs-12 no-padding">
+					<h3 class="subpage_header">Рейтинг Авторов</h3>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-7 col-xs-12 no-padding">
+					<div class="sort">
+						<p class="sort_text">Сортировать по:</p>
+						<select class="selectpicker">
+							<option>Имени</option>
+							<option>Фамилии</option>
+							<option>Дате</option>
+						</select>
+					</div>
+				</div>			
+			</div>
+			<div class="row ratings-second-row">
+				<div class="col-lg-12">
+					<div class="rating-block clearfix">	
+						<div class="col-lg-9 col-md-8 col-sm-7 col-xs-12 clearfix">																
+							<div class="col-lg-5 col-md-6 col-sm-12 col-xs-12">							
+								<img src="img/avatar.png" class="avatar" alt="avatar-image">
+								<p class="author_name">Марина Цветаева <b>4.7</b></p>
+							</div>
+							<div class="col-lg-7 col-md-6 col-sm-12 col-xs-12">							
+								<div class="pub-block">
+									<div class="pub_image">
+										<img src="img/list.png" alt="list-icon">
+										<div class="pub_callout">
+											<p>Публикаций</p>
+										</div>
+									</div>
+									<p class="pub_number gen_info_text">4</p>								
+								</div>							
+								<div class="views_left">
+									<p class="views_numbers gen_info_text">6 465</p>
+								</div>									
+								<div class="likes_left">
+									<p class="likes_number">4,6 К</p>
+								</div>							
+							</div>						
+						</div>							
+						<div class="col-lg-3 col-md-4 col-sm-5 col-xs-12">
+							<div class="rating-block_right">
+								<a href="" class="pub_all">Смотреть все публикации</a>
+							</div>
+						</div>				
+					</div>
+				</div>
+				<div class="col-lg-12">
+					<div class="rating-block clearfix">	
+						<div class="col-lg-9 col-md-8 col-sm-7 col-xs-12 clearfix">																
+							<div class="col-lg-5 col-md-6 col-sm-12 col-xs-12">							
+								<img src="img/avatar.png" class="avatar" alt="avatar-image">
+								<p class="author_name">Марина Цветаева <b>4.7</b></p>
+							</div>
+							<div class="col-lg-7 col-md-6 col-sm-12 col-xs-12">							
+								<div class="pub-block">
+									<div class="pub_image">
+										<img src="img/list.png" alt="list-icon">
+										<div class="pub_callout">
+											<p>Публикаций</p>
+										</div>
+									</div>
+									<p class="pub_number gen_info_text">4</p>								
+								</div>							
+								<div class="views_left">
+									<p class="views_numbers gen_info_text">6 465</p>
+								</div>									
+								<div class="likes_left">
+									<p class="likes_number">4,6 К</p>
+								</div>							
+							</div>						
+						</div>							
+						<div class="col-lg-3 col-md-4 col-sm-5 col-xs-12">
+							<div class="rating-block_right">
+								<a href="" class="pub_all">Смотреть все публикации</a>
+							</div>
+						</div>				
+					</div>
+				</div>
+				<div class="col-lg-12">
+					<div class="rating-block clearfix">	
+						<div class="col-lg-9 col-md-8 col-sm-7 col-xs-12 clearfix">																
+							<div class="col-lg-5 col-md-6 col-sm-12 col-xs-12">							
+								<img src="img/avatar.png" class="avatar" alt="avatar-image">
+								<p class="author_name">Марина Цветаева <b>4.7</b></p>
+							</div>
+							<div class="col-lg-7 col-md-6 col-sm-12 col-xs-12">							
+								<div class="pub-block">
+									<div class="pub_image">
+										<img src="img/list.png" alt="list-icon">
+										<div class="pub_callout">
+											<p>Публикаций</p>
+										</div>
+									</div>
+									<p class="pub_number gen_info_text">4</p>								
+								</div>							
+								<div class="views_left">
+									<p class="views_numbers gen_info_text">6 465</p>
+								</div>									
+								<div class="likes_left">
+									<p class="likes_number">4,6 К</p>
+								</div>							
+							</div>						
+						</div>							
+						<div class="col-lg-3 col-md-4 col-sm-5 col-xs-12">
+							<div class="rating-block_right">
+								<a href="" class="pub_all">Смотреть все публикации</a>
+							</div>
+						</div>				
+					</div>
+				</div>
+				<div class="col-lg-12">
+					<div class="rating-block clearfix">	
+						<div class="col-lg-9 col-md-8 col-sm-7 col-xs-12 clearfix">																
+							<div class="col-lg-5 col-md-6 col-sm-12 col-xs-12">							
+								<img src="img/avatar.png" class="avatar" alt="avatar-image">
+								<p class="author_name">Марина Цветаева <b>4.7</b></p>
+							</div>
+							<div class="col-lg-7 col-md-6 col-sm-12 col-xs-12">							
+								<div class="pub-block">
+									<div class="pub_image">
+										<img src="img/list.png" alt="list-icon">
+										<div class="pub_callout">
+											<p>Публикаций</p>
+										</div>
+									</div>
+									<p class="pub_number gen_info_text">4</p>								
+								</div>							
+								<div class="views_left">
+									<p class="views_numbers gen_info_text">6 465</p>
+								</div>									
+								<div class="likes_left">
+									<p class="likes_number">4,6 К</p>
+								</div>							
+							</div>						
+						</div>							
+						<div class="col-lg-3 col-md-4 col-sm-5 col-xs-12">
+							<div class="rating-block_right">
+								<a href="" class="pub_all">Смотреть все публикации</a>
+							</div>
+						</div>				
+					</div>
+				</div>
+				<div class="col-lg-12">
+					<div class="rating-block clearfix">	
+						<div class="col-lg-9 col-md-8 col-sm-7 col-xs-12 clearfix">																
+							<div class="col-lg-5 col-md-6 col-sm-12 col-xs-12">							
+								<img src="img/avatar.png" class="avatar" alt="avatar-image">
+								<p class="author_name">Марина Цветаева <b>4.7</b></p>
+							</div>
+							<div class="col-lg-7 col-md-6 col-sm-12 col-xs-12">							
+								<div class="pub-block">
+									<div class="pub_image">
+										<img src="img/list.png" alt="list-icon">
+										<div class="pub_callout">
+											<p>Публикаций</p>
+										</div>
+									</div>
+									<p class="pub_number gen_info_text">4</p>								
+								</div>							
+								<div class="views_left">
+									<p class="views_numbers gen_info_text">6 465</p>
+								</div>									
+								<div class="likes_left">
+									<p class="likes_number">4,6 К</p>
+								</div>							
+							</div>						
+						</div>							
+						<div class="col-lg-3 col-md-4 col-sm-5 col-xs-12">
+							<div class="rating-block_right">
+								<a href="" class="pub_all">Смотреть все публикации</a>
+							</div>
+						</div>				
+					</div>
+				</div>				
+			</div>
+			<div class="row">
+				<div class="col-lg-12 fix-align col-sm-12 col-xs-12 no-padding">
+					<div class="tales-page">
+						<span class="tales-page_number tales-page-active">1</span>
+						<span class="tales-page_number">2</span>
+						<span class="tales-page_number">3</span>
+						<span class="tales-page_number">4</span>
+					</div>
+				</div>
+			</div>
+		</div>		
 	</div>
 </section>
 

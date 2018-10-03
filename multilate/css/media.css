@@ -176,6 +176,148 @@
 	.form-login{
 		padding: 0 10px
 	}
+
+	.pub-block{
+		margin-left: 10px
+	}
+
+	.rating-block_right{
+		padding-right: 0px;
+		text-align: center;
+	}
+
+	.rating-block{
+		padding-bottom: 30px;
+		padding-top: 10px;
+	}
+
+	.ratings .sort{
+		margin-right: 0px;
+		text-align: left;
+	}
+
+	.ratings .container-outer{
+		width: 100%;
+	}
+
+	.pub_callout{
+		left: -33px
+	}
+
+	.pub_callout p:after{
+		left: 30px;
+	}
+
+	.story-header, .story-main, .comments-block{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.story-main_header{
+		line-height: 36px;
+	}
+
+	.iterations{
+		margin-left: -10px;
+	}
+
+	.store-footer{
+		margin: 0px 20px;
+	}
+
+	.comments{
+		margin-left: 0px;
+	}
+
+	.store-footer .block-right, .store-footer .block-left{
+		float: none;
+	}
+
+	.store-footer .block-right{
+		margin-top: 20px;
+		text-align: center;
+	}
+
+	.story-page .container-outer{
+		width: 100%;
+		padding: 0px;
+	}
+
+	.story-header .views_left, .story-header .views_right{
+		margin-left: 20px;
+	}
+
+	.story-header_right p{
+		font-size: 14px;
+	}
+
+	.story-main_header{
+		font-size: 19px;
+	}
+
+	.iterations_list p, .edit_text, .comment_text{
+		font-size: 14px;
+		padding-right: 0px;
+	}
+
+	.edit-form_top{
+		padding: 28px 10px 0px 20px;
+	}
+
+	.edit-form_content{
+		padding: 0px 10px;
+	}
+
+	.edit-story_button{
+		text-align: center;
+		margin-right: 0px;
+	}
+
+	.comment_date{
+		margin-left: 63px;
+	}
+
+	.comment-content{
+		padding: 0px;
+	}
+
+	.user-info-wrapper{
+		margin-left: 20px;
+		margin-right: 20px;
+		margin-top: 50px;
+	}
+
+	.user-info{
+		width: 100%;
+		float: none;
+	}
+
+	.public{
+		padding: 0px;
+	}
+
+	.public .tales-block{
+		width: 100%;
+		height: 435px;
+		max-width: 420px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.user-info-wrapper .avatar{
+		width: 57px;
+		height: 57px;
+	}
+
+	.author_name{
+		margin-top: 10px;
+		font-size: 16px;
+	}
+
+	.user_status{
+		font-size: 14px;
+	}
+
 }
 
 @media only screen and (min-width : 480px) and (max-width : 767px) {
@@ -207,8 +349,7 @@
 		margin-left: 10px;
 	}
 
-	.sort{
-		margin-left: 0px;		
+	.sort{			
 		margin-top: 30px;
 	}
 
@@ -276,6 +417,95 @@
 	.nav-tabs{
 		padding: 0 35px;
 	}
+
+	.pub-block{
+		margin-left: 10px
+	}
+
+	.rating-block_right{
+		padding-right: 0px;
+		text-align: center;
+	}
+
+	.rating-block{
+		padding-bottom: 30px;
+		padding-top: 10px;
+	}
+
+	.ratings .sort{
+		margin-right: 0px;
+		text-align: left;
+	}
+
+	.ratings .container-outer{
+		width: 100%;
+	}
+
+	.pub_callout{
+		left: -33px
+	}
+
+	.pub_callout p:after{
+		left: 30px;
+	}
+
+	.story-header, .story-main, .comments-block{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.story-main_header{
+		line-height: 36px;
+	}
+
+	.iterations{
+		margin-left: -10px;
+	}
+
+	.store-footer{
+		margin: 0px 20px;
+	}
+
+	.comments{
+		margin-left: 0px;
+	}
+
+	.store-footer .block-right, .store-footer .block-left{
+		float: none;
+	}
+
+	.store-footer .block-right{
+		margin-top: 20px;
+		text-align: center;
+	}
+
+	.story-page .container-outer{
+		width: 100%;
+		padding: 0px;
+	}
+
+	.user-info-wrapper{
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+
+	.user-info{
+		width: 100%;
+		float: none;
+	}
+
+	.public{
+		padding: 0px;
+	}
+
+	.public .tales-block{
+		width: 100%;
+		max-width: 420px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+
 }
 
 @media only screen and (min-width : 768px) and (max-width : 991px) {
@@ -338,7 +568,52 @@
 		display: none;
 	}
 
+	.pub-block{
+		margin-left: 10px
+	}
 
+	.ratings .sort{
+		margin-right: 0px;
+	}
+
+	.rating-block{
+		padding-bottom: 30px;
+		padding-top: 10px;
+	}
+
+	.story-header, .story-main, .comments-block{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.story-main_header{
+		line-height: 36px;
+	}
+
+	.iterations{
+		margin-left: -10px;
+	}
+
+	.store-footer{
+		margin: 0px 20px;
+	}
+
+	.comments{
+		margin-left: 0px;
+	}
+
+	.user-info-wrapper{
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+
+	.user-info{
+		width: 68%;
+	}
+
+	.public{
+		padding: 0px;
+	}
 }
 
 @media only screen and (min-width : 992px) and (max-width : 1199px) {
@@ -377,6 +652,19 @@
 
 	.add-story {
  	   padding: 94px 0px 0px 30px;
+	}
+
+	.user-info-wrapper{
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+
+	.user-info{
+		width: 68%;
+	}
+
+	.public{
+		padding: 0px;
 	}
 
 }
@@ -432,6 +720,26 @@
 
 	.registry{
 		text-align: right;
+	}
+
+	.user-info{
+		width: 60%;
+	}
+
+	.user-info-wrapper{
+		margin-right: 0px;
+	}
+
+	.public{
+		padding-right: 0px;
+	}
+
+	.public .col-lg-4{
+		padding: 10px;
+	}
+
+	.public .tales-block{
+		height: 445px;
 	}
 
 }

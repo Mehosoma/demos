@@ -27,3 +27,14 @@ $(document).ready(function(){
         $("footer .menu-toggle-button").toggleClass('is-active');                  
     });
 });
+
+
+//Show-hide edit form
+$(document).ready(function(){
+    $('.btn-outline_storyblock').on('click',function(e){
+      $( ".edit-story-form" ).fadeIn(300);
+    });
+    $('.btn_exit').on('click',function(e){
+      $( ".edit-story-form" ).fadeOut(300);
+    });    
+});
