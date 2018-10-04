@@ -247,10 +247,6 @@
 		margin-left: 20px;
 	}
 
-	.story-header_right p{
-		font-size: 14px;
-	}
-
 	.story-main_header{
 		font-size: 19px;
 	}
@@ -322,6 +318,7 @@
 
 	.story-header_right p{
 		font-size: 13px;
+
 	}
 
 	.story-header_right span{
@@ -508,11 +505,27 @@
 		padding: 0px;
 	}
 
+	.tales-block{
+		width: 100%;
+		max-width: 420px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
 	.public .tales-block{
 		width: 100%;
 		max-width: 420px;
 		margin-left: auto;
 		margin-right: auto;
+	}
+
+	.tales .container-outer{
+		width: 100%;
+		max-width: 420px;		
+	}
+
+	.story-header_right p{
+		padding-left: 40px;
 	}
 
 
@@ -623,6 +636,18 @@
 
 	.public{
 		padding: 0px;
+	}
+
+	.tales-block{
+		width: 100%;
+		max-width: 420px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.tales .container-outer{
+		width: 100%;
+		max-width: 420px;		
 	}
 }
 

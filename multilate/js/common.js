@@ -10,7 +10,7 @@ $(document).ready(function(){
         e.preventDefault();        
           $('.user-menu').animate({
               height: 'toggle'
-            }, 600, function() {
+            }, 300, function() {
           });  
           $('.user_name').toggleClass('active-menu')                          
     });
