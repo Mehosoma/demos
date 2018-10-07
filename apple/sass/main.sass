@@ -1,0 +1,649 @@
+@import "bourbon/bourbon"
+
+$grey: #787878
+$orange: #ffcc00
+$red: #E30512
+$orange-h: #E2B700
+$cham-r: 'Champagne_Limousines', sans-serif
+$cham-b: 'Champagne_LimousinesBold', sans-serif
+
+html
+	width: 100%
+	height: 100%
+	overflow-x: hidden
+body
+	width: 100%
+	height: auto
+	min-width: 320px	
+	margin: 0 auto
+	position: relative
+	line-height: 1.2
+	-webkit-font-smoothing: antialiased
+	background-color: #e7e7e7	
+	a:hover, a:focus, a:active
+		text-decoration: none
+		outline: none
+	input:focus, input:active
+		text-decoration: none
+		outline: none
+	button:focus, button:active
+		text-decoration: none
+		outline: none
+	textarea:focus, textarea:active
+		text-decoration: none
+		outline: none
+	a
+		display: inline-block
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out
+	ul, ol
+		padding: 0px
+		margin: 0px
+		list-style-type: none
+	button
+		border: none
+		cursor: pointer
+	hr
+		border: none	
+
+.pixel
+	background: url(../img/main.jpg) no-repeat top center
+	width: 1920px
+	height: 12800px
+	position: absolute
+	z-index: 1000000
+	display: none
+	left: 50%
+	top: 0
+	margin-left: -960px
+	opacity: 0.5
+	margin-top: 0px
+
+
+/***************************************************GeneralStyles************************************/
+section
+	padding: 56px 0px
+.btn-gen
+	width: 380px
+	height: 80px
+	background-color: $orange
+	text-align: center
+	line-height: 80px
+	font-family: $cham-b
+	font-size: 30px
+	color: #fff
+	border-radius: 10px
+	-moz-transition: all 0.3s ease-out
+	-o-transition: all 0.3s ease-out
+	-webkit-transition: all 0.3s ease-out
+	transition: all 0.3s ease-out
+.btn-gen:hover
+	background-color: $orange-h
+	color: #fff
+.btn-gen:visited, .btn-gen:active, .btn-gen:focus
+	color: #fff
+.sub-header
+	text-align: center
+	h2
+		font-family: $cham-b
+		font-size: 60px
+		color: #000
+		margin-bottom: 15px
+	h3
+		font-family: $cham-r
+		font-size: 30px
+		color: #000
+		margin-top: 0px
+	hr
+		width: 146px
+		height: 4px
+		background-color: $orange
+		margin-top: 30px
+		margin-bottom: 28px
+.modal-form
+	position: relative
+	margin: 0 auto
+	background-color: $orange!important
+	z-index: 100000	
+	p
+		color: #000
+	.btn_form
+		background-color: #fff
+		color: #000
+	.btn_form:hover
+		background-color: $orange-h!important
+	i
+		color: $red!important
+.hidden
+	display: none
+
+/***************************************************Header*******************************************/
+header
+	width: 100%
+	min-height: 100px
+	position: relative
+.logo
+	width: 260px
+	height: 240px
+	background-color: #161616
+	margin-left: -100px
+	background-image: url('../img/logo.png')
+	background-repeat: no-repeat
+	background-position: center center
+	position: absolute
+	top: 0
+	left: 0
+	z-index: 100
+.main-menu
+
+.main-menu_list
+	display: inline-block
+	padding: 36px 17px
+.main-menu_link, .main-menu_link:visited, .main-menu_link:active, .main-menu_link:focus
+	font-family: $cham-b
+	font-size: 22px
+	color: #000
+	border-bottom: 2px solid transparent
+.main-menu_link:hover
+	border-bottom: 2px solid $red
+	color: $red
+.phone_number, .mail_link
+	font-family: $cham-r
+	font-size: 24px
+	line-height: 40px
+	color: #000
+	padding-left: 40px
+.phone_number
+	background-image: url(../img/phone.png)
+	background-repeat: no-repeat
+	background-position: left center
+.phone_number:hover
+	color: #000
+.mail_link:visited, .mail_link:active, .mail_link:focus
+	color: #000
+.mail_link
+	background-image: url(../img/mail.png)
+	background-repeat: no-repeat
+	background-position: left center
+.mail_link:hover
+	color: $orange-h
+.phone
+	margin-top: 10px
+	padding-left: 37px
+.mail
+	padding-left: 37px
+
+
+/***************************************************First********************************************/
+.first
+	width: 100%
+	height: 800px
+	overflow: hidden
+	background-image: url('../img/first-bg.jpg')
+	background-repeat: no-repeat
+	background-position: center center
+	position: relative
+.bg_overlay
+	width: 100%
+	height: 100%
+	background-color: rgba(0,0,0,0.8)
+	position: absolute
+	top: 0
+	left: 0
+	z-index: 0
+.first-content
+	position: relative
+	z-index: 10
+	margin-top: 120px
+	h1
+		font-family: $cham-b
+		font-size: 38px
+		line-height: 54px
+		color: #fff
+		text-transform: uppercase
+	span
+		color: $red
+	b
+		color: $orange
+		font-weight: normal
+.about-company
+	font-family: $cham-r
+	font-size: 30px
+	color: #fff
+	margin-top: 50px
+.first-button
+	margin-top: 70px
+.main-form, .modal-form
+	width: 100%
+	max-width: 360px
+	height: 424px
+	background-color: rgba(255,255,255,0.35)
+	border-radius: 10px
+	margin-top: 80px
+	text-align: center
+	padding: 1px 0px
+	margin-top: 117px
+.form-header
+	font-family: $cham-b
+	font-size: 34px
+	color: #fff
+	margin-top: 30px	
+	text-transform: uppercase
+	margin-top: 38px
+	margin-bottom: 31px
+.form-fields
+	input	
+		width: 310px
+		height: 55px
+		background-color: #fff
+		margin: 0 auto
+		margin-bottom: 25px
+		padding: 0 23px
+		color: #000
+		font-family: $cham-b
+		font-size: 20px
+		border-radius: 5px
+
+	::-webkit-input-placeholder 
+		color: #848484
+		font-family: $cham-r
+		font-size: 20px		
+	::-moz-placeholder
+		color: #848484
+		font-family: $cham-r
+		font-size: 20px		
+	:-moz-placeholder 
+		color: #848484
+		font-family: $cham-r
+		font-size: 20px		
+	:-ms-input-placeholder      
+		color: #848484
+		font-family: $cham-r
+		font-size: 20px		
+.btn_form
+	width: 310px
+	height: 55px
+	line-height: 55px
+.replay
+	color: #fff
+	font-family: $cham-b
+	font-size: 16px	
+	margin-top: 34px
+	i
+		font-style: normal
+		color: $orange
+
+
+
+/***************************************************Benefits********************************************/
+.benefits
+	padding-bottom: 36px
+.benefits-wrapper
+	margin-top: 50px
+.benefits-image
+	text-align: center
+.benefits-block
+	margin-top: 66px
+	margin-left: 30px
+	margin-bottom: 90px
+	height: 185px
+.benefits-block_header
+	font-family: $cham-b
+	font-size: 26px
+	line-height: 50px
+	color: $grey
+	padding-left: 64px
+.benefits-block_top
+	height: 50px
+.benefits_desc
+	font-family: $cham-b
+	font-size: 16px	
+	line-height: 26px
+	color: #000
+	margin-top: 0px
+.benefits .col-lg-4 .benefits-block:nth-child(1) .benefits-block_top
+	background-image: url('../img/quality.png')
+	background-repeat: no-repeat
+	background-position: left center
+.benefits .col-lg-4 .benefits-block:nth-child(2) .benefits-block_top
+	background-image: url('../img/shield.png')
+	background-repeat: no-repeat
+	background-position: left center
+.benefits .third-col .benefits-block:nth-child(1) .benefits-block_top
+	background-image: url('../img/choice.png')
+	background-repeat: no-repeat
+	background-position: left center
+.benefits .third-col .benefits-block:nth-child(2) .benefits-block_top
+	background-image: url('../img/cards.png')
+	background-repeat: no-repeat
+	background-position: left center
+
+
+/***************************************************Price********************************************/
+.price
+	width: 100%
+	height: 1191px
+	background-image: url('../img/price-bg.jpg')
+	background-repeat: no-repeat
+	background-position: center center
+	position: relative
+	padding-top: 30px	
+	h3, h2
+		color: #fff
+.price-block_header
+	font-family: $cham-b
+	font-size: 30px	
+	color: #fff
+	margin-bottom: 0px
+.price-block_cost
+	font-family: $cham-r
+	font-size: 24px	
+	color: #fff
+	margin-bottom: 20px
+.price-block_link
+	font-family: $cham-b
+	font-size: 14px	
+	color: $orange
+	text-transform: uppercase
+	border-bottom: 1px dashed $orange
+.price-block_link:hover
+	color: $orange
+	border-bottom: 1px dashed transparent
+.price-block_link:visited, .price-block_link:active, .price-block_link:focus
+	color: $orange
+.circles-one
+	width: 10px
+	height: 10px
+	background-color: #fff
+	border-radius: 50%
+.circles-two
+	width: 15px
+	height: 15px
+	background-color: #fff
+	border-radius: 50%
+.circles-third
+	width: 20px
+	height: 20px
+	background-color: #fff
+	border-radius: 50%
+.circles-fourth
+	width: 25px
+	height: 25px
+	background-color: #fff
+	border-radius: 50%
+.block-left	
+	float: left
+.price-block_circles .circles
+	display: inline-block
+	vertical-align: middle
+	margin-left: 18px
+.inner-circle
+	width: 112px
+	height: 112px	
+	border-radius: 50%		
+	background-color: rgba(114,114,114,0.63)
+	position: absolute
+	z-index: 10	
+	left: 0
+	right: 0
+	top: 0
+	bottom: 0
+	margin: auto
+.price-block_button span
+	width: 88px
+	height: 88px
+	display: block	
+	border-radius: 50%
+	position: absolute	
+	left: 0
+	right: 0
+	top: 0
+	bottom: 0
+	margin: auto
+	background-color: #727272
+	line-height: 88px
+	z-index: 100
+	font-family: $cham-b
+	font-size: 56px
+	color: #fff
+	text-align: center
+.price-block_button span:hover
+	cursor: pointer
+.outer-circle
+	width: 136px
+	height: 136px
+	background-color: red
+	position: absolute
+	z-index: 1
+	border-radius: 50%
+	left: 0
+	right: 0
+	top: 0
+	bottom: 0
+	margin: auto
+	background-color: rgba(160,160,160,0.45)
+	opacity: 0
+	-moz-transition: all 0.3s ease-out
+	-o-transition: all 0.3s ease-out
+	-webkit-transition: all 0.3s ease-out
+	transition: all 0.3s ease-out
+.price-block_button
+	width: 146px
+	height: 146px
+	position: relative
+	margin: 0 auto
+.price-block
+	margin-top: 29px		
+.price-block_content
+	margin-top: 41px
+	margin-left: 49px
+.block-right
+	float: right
+.price-block_circles
+	margin-top: 60px
+.block-left .circles
+	margin-left: 0px
+	margin-right: 18px
+.block-right.price-block_content 
+	margin-left: 0px
+	margin-right: 30px
+	margin-top: 39px
+
+
+/***************************************************Slider********************************************/
+.projects
+	padding-top: 89px
+	padding-bottom: 140px
+.projects-slider
+	width: 1020px 
+	height: 608px
+	margin: 0 auto
+	text-align: center
+	position: relative
+.slider-outer
+	margin-top: 55px
+.slide 
+	width: 820px!important
+	height: 100%
+.slick-prev
+	width: 70px
+	height: 70px
+	position: absolute
+	top: 50%
+	margin-top: -35px 
+	left: 0
+	background-color: $orange
+	display: block
+	z-index: 1000
+	border-radius: 50%
+	background-image: url('../img/prev.png')
+	background-repeat: no-repeat
+	background-position: center center
+	-moz-transition: all 0.3s ease-out
+	-o-transition: all 0.3s ease-out
+	-webkit-transition: all 0.3s ease-out
+	transition: all 0.3s ease-out
+.slick-next
+	width: 70px
+	height: 70px
+	position: absolute
+	top: 50%
+	margin-top: -35px 
+	right: 0px
+	background-color: $orange
+	display: block
+	z-index: 1000
+	border-radius: 50%
+	background-image: url('../img/next.png')
+	background-repeat: no-repeat
+	background-position: center center
+	-moz-transition: all 0.3s ease-out
+	-o-transition: all 0.3s ease-out
+	-webkit-transition: all 0.3s ease-out
+	transition: all 0.3s ease-out
+.slick-prev:hover, .slick-next:hover
+	background-color: $orange-h
+
+
+/***************************************************Progress********************************************/
+.progress-com
+	width: 100%
+	height: 534px
+	background-image: url('../img/progress-bg.jpg')
+	background-repeat: no-repeat
+	background-position: center center
+	position: relative
+	padding-top: 47px
+	h2, h3
+		color: white
+.progress-com-block
+	margin-top: 40px
+	margin-left: 68px
+	span
+		font-family: $cham-b
+		font-size: 50px
+		color: #fff
+	p
+		font-family: $cham-r
+		font-size: 30px
+		line-height: 28px
+		color: $orange
+
+
+/***************************************************Map**************************************************/
+.map
+	position: relative
+	padding-bottom: 0px
+	padding-top: 80px
+.ya-map
+	width: 100%
+	height: 654px
+	position: relative
+	margin-top: 63px
+.contacts
+	width: 457px
+	height: 518px
+	background-color: rgba(0,0,0,0.75)
+	position: absolute
+	top: 406px
+	right: 130px
+	z-index: 1000
+	padding-top: 50px
+	padding-left: 27px
+	padding-right: 30px
+.contacts_header
+	font-family: $cham-b
+	font-size: 40px
+	color: #fff
+	text-align: center
+	display: block
+	margin-bottom: 37px
+.contacts-block
+	padding-left: 65px	
+	height: 50px	
+	margin-bottom: 25px		
+	a,p
+		font-family: $cham-b
+		font-size: 30px
+		color: #fff
+		line-height: 50px			
+	a:hover
+		color: $orange
+.contacts_adress p
+	line-height: 30px
+.contacts_adress
+	background-image: url('../img/marker.png')
+	background-repeat: no-repeat
+	background-position: left center
+.contacts_phone
+	background-image: url('../img/phone-out.png')
+	background-repeat: no-repeat
+	background-position: left center
+.contacts_clock
+	background-image: url('../img/clock.png')
+	background-repeat: no-repeat
+	background-position: left center
+.contacts_site
+	background-image: url('../img/earth.png')
+	background-repeat: no-repeat
+	background-position: left center
+.contacts_mail
+	background-image: url('../img/mail-out.png')
+	background-repeat: no-repeat
+	background-position: left center
+
+
+/***************************************************Footer**************************************************/
+footer
+	width: 100%
+	min-height: 120px
+	.phone
+		margin-top: 18px
+.footer-logo
+	text-align: center
+	margin-top: 10px
+.copyright
+	text-align: center
+.copy
+	font-family: $cham-r
+	font-size: 20px
+	line-height: 120px
+	color: #000
+.social-icons
+	text-align: center
+	margin-top: 40px
+	li
+		display: inline-block
+		margin: 0 10px
+.social-list
+	width: 33px
+	height: 33px
+	background-color: #C6C6C6
+	border-radius: 5px
+	-moz-transition: all 0.3s ease-out
+	-o-transition: all 0.3s ease-out
+	-webkit-transition: all 0.3s ease-out
+	transition: all 0.3s ease-out
+.social-link:hover .social-list
+	background-color: $orange
+.soc-vk
+	background-image: url('../img/vk.png')
+	background-repeat: no-repeat
+	background-position: center center
+.soc-face
+	background-image: url('../img/face.png')
+	background-repeat: no-repeat
+	background-position: center center
+.soc-twitter
+	background-image: url('../img/twitter.png')
+	background-repeat: no-repeat
+	background-position: center center
+.soc-insta
+	background-image: url('../img/insta.png')
+	background-repeat: no-repeat
+	background-position: center center
+
+
+	

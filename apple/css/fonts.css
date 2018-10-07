@@ -1,0 +1,11 @@
+@font-face {
+  font-family: "Champagne_Limousines";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/Champagne_Limousines.eot?#iefix") format("embedded-opentype"), url("../fonts/Champagne_Limousines.woff") format("woff"), url("../fonts/Champagne_Limousines.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Champagne_LimousinesBold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/Champagne_LimousinesBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Champagne_LimousinesBold.woff") format("woff"), url("../fonts/Champagne_LimousinesBold.ttf") format("truetype"); }
