@@ -20,12 +20,12 @@ $(document).ready(function(){
 //Show-hide menu
 $(document).ready(function(){
     $('.click-mobile').on('click',function(e){
+        $("footer .menu-toggle-button").toggleClass('is-active'); 
         e.preventDefault();        
           $('.main-menu').animate({
               height: 'toggle'
             }, 600, function() {
-          });     
-        $("footer .menu-toggle-button").toggleClass('is-active');  
+          });              
     });
 });
 
