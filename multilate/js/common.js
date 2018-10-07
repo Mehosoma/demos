@@ -24,7 +24,7 @@ $(document).ready(function(){
         e.preventDefault();        
           $('.main-menu').animate({
               height: 'toggle'
-            }, 600, function() {
+            }, 300, function() {
           });              
     });
 });
