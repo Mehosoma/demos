@@ -24,7 +24,8 @@ $(document).ready(function(){
           $('.main-menu').animate({
               height: 'toggle'
             }, 600, function() {
-          });       
+          });     
+        $("footer .menu-toggle-button").toggleClass('is-active');  
     });
 });
 
