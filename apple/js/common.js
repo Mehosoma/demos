@@ -4,7 +4,9 @@ $('.projects-slider').slick({
   		slidesToShow: 1,
   		slidesToScroll: 1,  
   		autoplay: true, 		
-  		arrows: true,  		
+  		autoplaySpeed: 2000,
+  		arrows: true, 
+  		dots: true, 		
   		 responsive: [
 			    {
 			      breakpoint: 1200,
@@ -18,14 +20,24 @@ $('.projects-slider').slick({
 			      breakpoint: 992,
 			      settings: {
 			        slidesToShow: 1,
-			        slidesToScroll: 1
+			        slidesToScroll: 1,
+			        arrows: false
+			      }
+			    },
+			    {
+			      breakpoint: 768,
+			      settings: {
+			        slidesToShow: 1,
+			        slidesToScroll: 1,
+			        arrows: false
 			      }
 			    },
 			    {
 			      breakpoint: 480,
 			      settings: {
 			        slidesToShow: 1,
-			        slidesToScroll: 1
+			        slidesToScroll: 1,
+			        arrows: false
 			      }
 			    },
 			    // You can unslick at a given breakpoint now by adding:
@@ -62,4 +74,16 @@ $(document).ready(function(){
     	fixedBgPos: true
 	});
 
+});
+
+//Show-hide menu
+$(document).ready(function(){
+    $('.click-mobile').on('click',function(e){
+        e.preventDefault();        
+          $('.main-menu').animate({
+              height: 'toggle'
+            }, 300, function() {
+          });         
+        $("header .menu-toggle-button").toggleClass('is-active');         
+    });
 });

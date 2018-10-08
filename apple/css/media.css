@@ -1,12 +1,869 @@
 @media only screen and (min-width : 0px) and (max-width : 479px) {
 
+		header{
+		padding-bottom: 20px;
+	}
+
+	.sub-header h2{
+		font-size: 40px;
+	}
+
+	.logo{
+		margin-left: 0px;		
+		height: 220px;
+		background-size: 140px 160px;	
+		width: 100%;
+	}
+
+	.main-menu{
+		margin-left: 0px;
+	}
+
+	.main-menu_list{
+		padding: 26px 13px;		
+	}
+
+	.main-menu_link{
+		font-size: 18px;
+	}
+
+	.phone, .mail{
+		padding-left: 0px;		
+		margin-left: 13px;		
+		margin-top: 0px;
+		float: none;
+	}
+
+	.phone{				
+		margin-top: 240px;
+	}
+
+	.mail{		
+		margin-right: 0px;		
+	}
+
+	header .phone_number, header .mail_link{
+		font-size: 20px;
+	}
+
+	.contacts-wrapper{
+		text-align: center;
+	}
+
+	.menu-toggle-button{
+		margin-top: 260px;
+	}
+
+	header .main-menu{
+		position: absolute;		
+		top: 292px;
+		left: 0px;
+		margin-left: -220px;	
+		margin-top: 0px;		
+		background-color: #000;
+		padding: 0px;
+		display: none;
+		width: 300px;
+		z-index: 200;		
+	}
+
+	.main-menu_link{
+		color: #ffcc00;
+	}
+
+	header .main-menu li{
+		display: block;
+		text-align: center;
+	}
+
+	.first{
+		padding-top: 0px;
+		height: auto;
+		background-size: cover;
+	}
+
+	.first-content{
+		margin-top: 50px;
+	}
+
+	.first-content h1{
+		font-size: 28px;
+	}
+
+	.first-button{
+		display: none;
+	}
+
+	.about-company{
+		font-size: 24px;
+	}
+
+	.benefits-wrapper{
+		margin-top: 0px;
+	}
+
+	.benefits-block_header{
+		font-size: 23px;
+	}
+
+	.benefits_desc{
+		font-size: 14px;
+		line-height: 21px;
+	}
+
+	.price-block_circles{
+		display: none;
+	}
+
+	.projects-slider{
+		width: 100%;
+	}
+
+	.slide{
+		width: 100%!important;
+		height: 100%;
+	}
+
+	.progress-com-block{		
+		width: 130px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.main-form{
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 67px;
+		width: 100%;
+		max-width: 450px;
+		height: auto;
+	}
+
+	.form-fields input, .btn_form{
+		width: 95%;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.first .form-header{
+		margin-top: 15px;
+		margin-bottom: 20px;
+	}
+
+	.first .replay{		
+		padding: 0 20px;
+	}
+
+	.first .replay br{
+		display: none;
+	}
+
+	.benefits-block{
+		height: auto;
+		margin-bottom: 40px;
+		margin-top: 40px;
+		margin-left: 0px;
+	}
+
+	.price{
+		height: 1030px;
+	}
+
+	.price-block_button{
+		width: 95px;
+		height: 95px;
+		margin-top: 30px;
+	}
+
+	.outer-circle{
+		width: 95px;
+		height: 95px;
+	}
+
+	.inner-circle{
+		width: 80px;
+		height: 80px;
+	}
+
+	.price-block_button span{
+		width: 60px;
+		height: 60px;
+		line-height: 60px;
+		font-size: 40px;
+	}
+
+	.price-block_content, .block-right.price-block_content{
+		margin-top: 28px;
+	}
+
+	.price-block_content{
+		margin-left: 0px;
+	}
+
+	.block-right.price-block_content{
+		margin-right: 0px;
+	}
+
+	.price-block .col-xs-9{
+    	width: 83.33333333%;		
+	}
+
+	.price-block .col-xs-offset-3{
+	    margin-left: 16.66666667%;
+	}
+
+	.projects-slider{
+		height: auto;
+	}
+
+	.copy{
+		font-size: 18px;
+	}
+
+	.social-icons li{
+		margin: 0 5px;
+	}
+
+	.social-icons{
+		margin-left: 0px;
+		margin-top: 0px;
+		margin-bottom: 40px;
+	}
+
+	.progress-com{
+		height: auto;
+		background-size: cover;
+	}
+
+	.progress-com-block span{
+		font-size: 40px;
+	}
+
+	.progress-com-block p{
+		font-size: 23px;
+		line-height: 23px;
+	}
+	
+
+	.projects{
+		padding-bottom: 80px;
+	}
+
+	footer{
+		padding-bottom: 20px;
+		padding-top: 20px;
+	}
+
+	footer .phone{
+		margin-top: 0px;
+	}
+
+	.contacts-block a, .contacts-block p{
+		font-size: 19px;
+	}
+
+	.contacts-block{
+		margin-bottom: 15px;
+	}
+
+	.contacts{
+		width: 100%;
+		max-width: 340px;
+		height: 474px;
+		top: 380px;
+		right: 0px;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	.contacts_header{
+		font-size: 36px;
+	}
+
+	footer .col-xs-4, footer .col-xs-8{
+		width: 100%;
+	}
+
+	footer .phone, footer .mail{
+		margin-left: 0px;
+	}
+
+	.modal-form .form-header{
+		font-size: 28px;
+	}
+
 }
 
 @media only screen and (min-width : 480px) and (max-width : 767px) {
+
+	header{
+		padding-bottom: 20px;
+	}
+
+	.sub-header h2{
+		font-size: 52px;
+	}
+
+	.logo{
+		margin-left: 0px;		
+		height: 220px;
+		background-size: 140px 160px;	
+		width: 100%;
+	}
+
+	.main-menu{
+		margin-left: 0px;
+	}
+
+	.main-menu_list{
+		padding: 26px 13px;		
+	}
+
+	.main-menu_link{
+		font-size: 18px;
+	}
+
+	.phone, .mail{
+		padding-left: 0px;		
+		margin-left: 13px;		
+		margin-top: 0px;
+		float: none;
+	}
+
+	.phone{				
+		margin-top: 240px;
+	}
+
+	.mail{		
+		margin-right: 0px;		
+	}
+
+	.contacts-wrapper{
+		text-align: center;
+	}
+
+	.menu-toggle-button{
+		margin-top: 260px;
+	}
+
+	header .main-menu{
+		position: absolute;		
+		top: 292px;
+		left: 0px;
+		margin-left: -220px;	
+		margin-top: 0px;		
+		background-color: #000;
+		padding: 0px;
+		display: none;
+		width: 300px;
+		z-index: 200;		
+	}
+
+	.main-menu_link{
+		color: #ffcc00;
+	}
+
+	header .main-menu li{
+		display: block;
+		text-align: center;
+	}
+
+	.contacts{
+		right: 10px;
+	}
+
+	.first{
+		padding-top: 0px;
+		height: auto;
+		padding-bottom: 40px;
+		background-size: cover;
+	}
+
+	.first-content{
+		margin-top: 50px;
+	}
+
+	.first-content h1{
+		font-size: 28px;
+	}
+
+	.first-button{
+		display: none;
+	}
+
+	.about-company{
+		font-size: 24px;
+	}
+
+	.benefits-wrapper{
+		margin-top: 0px;
+	}
+
+	.benefits-block_header{
+		font-size: 23px;
+	}
+
+	.benefits_desc{
+		font-size: 14px;
+		line-height: 21px;
+	}
+
+	.price-block_circles{
+		display: none;
+	}
+
+	.projects-slider{
+		width: 100%;
+		height: auto;
+	}
+
+	.slide{
+		width: 100%!important;
+		height: 100%;
+	}
+
+	.progress-com-block{		
+		width: 130px;
+		margin-left: auto;
+		margin-right: auto;	
+	}
+
+	.first .main-form{
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 67px;
+		width: 100%;
+		max-width: 100%;
+		height: auto;
+	}
+
+	.first .form-header{
+		margin-top: 15px;
+		margin-bottom: 20px;
+	}
+
+	.first .replay{		
+		padding: 0 80px;
+	}
+
+	.first .replay br{
+		display: none;
+	}
+
+	.benefits-block{
+		height: auto;
+		margin-bottom: 40px;
+		margin-top: 40px;
+	}
+
+	.price{
+		height: 1030px;
+	}
+
+	.price-block_button{
+		width: 95px;
+		height: 95px;
+		margin-top: 30px;
+	}
+
+	.outer-circle{
+		width: 95px;
+		height: 95px;
+	}
+
+	.inner-circle{
+		width: 80px;
+		height: 80px;
+	}
+
+	.price-block_button span{
+		width: 60px;
+		height: 60px;
+		line-height: 60px;
+		font-size: 40px;
+	}
+
+	.price-block_content, .block-right.price-block_content{
+		margin-top: 28px;
+	}
+
+	.copy{
+		font-size: 18px;
+	}
+
+	.social-icons li{
+		margin: 0 5px;
+	}
+
+	.social-icons{
+		margin-left: 0px;
+		margin-top: 30px;
+		margin-bottom: 40px;
+	}
+
+	.progress-com{
+		height: auto;
+		background-size: cover;
+	}
+
+	.progress-com-block span{
+		font-size: 40px;
+	}
+
+	.progress-com-block p{
+		font-size: 23px;
+		line-height: 23px;
+	}
+	
+
+	.projects{
+		padding-bottom: 80px;
+	}
+
+	footer{
+		padding-bottom: 20px;
+	}
+
+	footer .phone{
+		margin-top: 0px;
+	}
+
+	.contacts-block a, .contacts-block p{
+		font-size: 19px;
+	}
+
+	.contacts-block{
+		margin-bottom: 15px;
+	}
+
+	.contacts{
+		width: 340px;
+		height: 474px;
+		top: 380px;
+	}
+
+	footer .phone, footer .mail{
+		margin-left: 0px;
+	}
 }
 
 @media only screen and (min-width : 768px) and (max-width : 991px) {
+
+	header{
+		padding-bottom: 20px;
+	}
+
+	.sub-header h2{
+		font-size: 52px;
+	}
+
+	.logo{
+		margin-left: 0px;
+		width: 100%;
+		height: 220px;
+		background-size: 140px 160px
+	}
+
+	.main-menu{
+		margin-left: 0px;
+	}
+
+	.main-menu_list{
+		padding: 26px 13px;		
+	}
+
+	.main-menu_link{
+		font-size: 18px;
+	}
+
+	.phone, .mail{
+		padding-left: 0px;		
+		margin-left: 0px;
+		display: inline-block;
+		margin-top: 0px;
+	}
+
+	.phone{
+		float: left;
+		margin-left: 13px;
+	}
+
+	.mail{
+		float: right;
+		margin-right: 20px;
+	}
+
+	.contacts-wrapper{
+		text-align: center;
+	}
+
+	.contacts{
+		right: 50px;
+	}
+
+	.first{
+		padding-top: 0px;
+	}
+
+	.first-content h1{
+		font-size: 34px;
+	}
+
+	.first-button{
+		display: none;
+	}
+
+	.about-company{
+		font-size: 25px;
+	}
+
+	.benefits-wrapper{
+		margin-top: 0px;
+	}
+
+	.benefits-block_header{
+		font-size: 23px;
+	}
+
+	.benefits_desc{
+		font-size: 14px;
+		line-height: 21px;
+	}
+
+	.price-block_circles{
+		display: none;
+	}
+
+	.projects-slider{
+		width: 100%;
+	}
+
+	.slide{
+		width: 100%!important;
+		height: 100%;
+	}
+
+	.progress-com-block{
+		margin-left: 30px;
+	}
+
+	.first .main-form{
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 67px;
+		width: 100%;
+		max-width: 100%;
+		height: 262px;
+	}
+
+	.first .form-header{
+		margin-top: 15px;
+		margin-bottom: 20px;
+	}
+
+	.first .replay{
+		margin-top: 15px;
+	}
+
+	.first .replay br{
+		display: none;
+	}
+
+	.benefits-block{
+		height: auto;
+		margin-bottom: 50px;
+	}
+
+	.price{
+		height: 1030px;
+	}
+
+	.price-block_button{
+		width: 95px;
+		height: 95px;
+	}
+
+	.outer-circle{
+		width: 95px;
+		height: 95px;
+	}
+
+	.inner-circle{
+		width: 80px;
+		height: 80px;
+	}
+
+	.price-block_button span{
+		width: 60px;
+		height: 60px;
+		line-height: 60px;
+		font-size: 40px;
+	}
+
+	.price-block_content, .block-right.price-block_content{
+		margin-top: 28px;
+	}
+
+	.copy{
+		font-size: 18px;
+	}
+
+	.social-icons li{
+		margin: 0 5px;
+	}
+
+	.social-icons{
+		margin-left: 0px;
+	}
+
+	.progress-com-block span{
+		font-size: 40px;
+	}
+
+	.progress-com-block p{
+		font-size: 23px;
+		line-height: 23px;
+	}
+
+	.progress-com{
+		height: 370px;
+	}
+
+	.projects{
+		padding-bottom: 80px;
+	}
+
+	footer{
+		padding-bottom: 20px;
+	}
+
+	footer .phone{
+		margin-top: 0px;
+	}
+
+	.contacts-block a, .contacts-block p{
+		font-size: 24px;
+	}
+
+	.contacts-block{
+		margin-bottom: 15px;
+	}
+
+	.contacts{
+		width: 405px;
+		height: 474px;
+		top: 380px;
+	}
 }
 
 @media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+	.logo{
+		margin-left: 0px;
+		width: 200px;
+		height: 220px;
+		background-size: 140px 160px
+	}
+
+	.main-menu{
+		margin-left: 40px;
+	}
+
+	.main-menu_list{
+		padding: 36px 5px;		
+	}
+
+	.main-menu_link{
+		font-size: 18px;
+	}
+
+	.phone, .mail{
+		padding-left: 0px;		
+		margin-left: -40px;
+	}
+
+	.contacts{
+		right: 50px;
+	}
+
+	.first-content h1{
+		font-size: 28px;
+	}
+
+	.about-company{
+		font-size: 24px;
+	}
+
+	.benefits-block_header{
+		font-size: 23px;
+	}
+
+	.benefits_desc{
+		font-size: 14px;
+		line-height: 21px;
+	}
+
+	.price-block_circles{
+		display: none;
+	}
+
+	.projects-slider{
+		width: 100%;
+	}
+
+	.slide{
+		width: 750px!important;
+		height: 100%;
+	}
+
+	.progress-com-block{
+		margin-left: 30px;
+	}
+
+	.first .main-form{
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 87px;
+	}
+
+	.copy{
+		font-size: 18px;
+	}
+
+	.social-icons li{
+		margin: 0 5px;
+	}
+
+	.social-icons{
+		margin-left: -30px;
+	}
+
+
+}
+
+@media only screen and (min-width : 1200px) and (max-width : 1399px) {
+	.logo{
+		margin-left: 0px;
+	}
+
+	.main-menu{
+		margin-left: 80px;
+	}
+
+	.main-menu_list{
+		padding: 36px 10px;
+	}
+
+	.main-menu_link{
+		font-size: 20px;
+	}
+
+	.phone, .mail{
+		padding-left: 0px;		
+		margin-left: -20px;
+	}
+
+	.contacts{
+		right: 80px;
+	}
 }
