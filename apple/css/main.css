@@ -632,13 +632,13 @@ header {
 
 .contacts-block {
   padding-left: 65px;
-  height: 50px;
-  margin-bottom: 25px; }
+  height: 62px;
+  margin-bottom: 10px; }
   .contacts-block a, .contacts-block p {
     font-family: "Champagne_LimousinesBold", sans-serif;
     font-size: 30px;
     color: #fff;
-    line-height: 50px; }
+    line-height: 62px; }
   .contacts-block a:hover {
     color: #ffcc00; }
 
