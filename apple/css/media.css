@@ -63,8 +63,13 @@
 		background-color: #000;
 		padding: 0px;
 		display: none;
-		width: 300px;
+		width: 270px;
 		z-index: 200;		
+	}
+
+	.menu-toggle-button{
+		margin-left: 0px;
+		margin-right: -13px;
 	}
 
 	.main-menu_link{
