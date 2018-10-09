@@ -83,7 +83,7 @@
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-5">
-				<form class="main-form form-submit">
+				<form class="main-form form-submit" id="form1">
 					<p class="form-header">Обратный звонок</p>
 					<div class="form-fields">
 						<input type="text" name="fio" placeholder="Ваше имя" required="">
@@ -436,7 +436,7 @@
 	</div>
 </footer>
 
-<form class="modal-form form-submit mfp-hide">
+<form  id="form2" class="modal-form form-submit mfp-hide">
 	<p class="form-header">Обратный звонок</p>
 	<div class="form-fields">
 		<input type="text" name="fio" placeholder="Ваше имя" required="">
@@ -458,22 +458,23 @@
 	<script src="js/common.js"></script>
 
 	<script type="text/javascript">
-	    $(document).ready(function () {
-	        $('.modal-form, .main-form').submit(function () {	            
-	            var formNm = $('.form-submit');
-	            $.ajax({
-	                type: 'POST',
-	                url: 'send.php', // Обработчик формы отправки
-	                data: formNm.serialize(),
-	                success: function (data) {
-	                    $(formNm).find('.form-header').html('Спасибо за заявку!');	                   
-	                    jQuery(formNm)[0].reset();
-	                }
-	            });
-	            return false;
-	        });
-	    });
-	</script>
+    $(document).ready(function () {
+        $('form').submit(function () {
+            var formID = $(this).attr('id'); // Получение ID формы
+            var formNm = $('#' + formID);
+            $.ajax({
+                type: 'POST',
+                url: 'send.php', // Обработчик формы отправки
+                data: formNm.serialize(),
+                success: function (data) {
+                    $(formNm).find('.form-header').html('Спасибо за заявку!');                    
+                    jQuery(formNm)[0].reset();
+                }
+            });
+            return false;
+        });
+    });
+</script>
 	
 </body>
 </html>
