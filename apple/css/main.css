@@ -66,7 +66,7 @@ section {
   font-family: "Champagne_LimousinesBold", sans-serif;
   font-size: 30px;
   color: #fff;
-  border-radius: 10px;
+  border-radius: 5px;
   -moz-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
   -webkit-transition: all 0.3s ease-out;
@@ -113,6 +113,11 @@ section {
     background-color: #efb511 !important; }
   .modal-form i {
     color: #E30512 !important; }
+  .modal-form input {
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out; }
 
 .slick-dots {
   margin-top: 20px; }
@@ -179,7 +184,7 @@ header {
   background-repeat: no-repeat;
   background-position: left center; }
 
-.phone_number:hover {
+.phone_number:hover, .phone_number:visited, .phone_number:active, .phone_number:focus {
   color: #000; }
 
 .mail_link:visited, .mail_link:active, .mail_link:focus {
@@ -264,6 +269,16 @@ header {
   margin-top: 38px;
   margin-bottom: 31px; }
 
+form input:hover {
+  border: 2px solid #ffcc00; }
+
+.modal-form input:hover {
+  border: 1px solid #000; }
+
+.modal-form input {
+  border: 1px solid transparent;
+  border-width: 1px !important; }
+
 .form-fields {
   -moz-placeholder-color: #848484;
   -moz-placeholder-font-family: "Champagne_Limousines", sans-serif;
@@ -281,7 +296,12 @@ header {
     color: #000;
     font-family: "Champagne_LimousinesBold", sans-serif;
     font-size: 20px;
-    border-radius: 5px; }
+    border-radius: 5px;
+    border: 2px solid transparent;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out; }
   .form-fields ::-webkit-input-placeholder {
     color: #848484;
     font-family: "Champagne_Limousines", sans-serif;
@@ -622,6 +642,12 @@ header {
   padding-left: 27px;
   padding-right: 30px; }
 
+.contacts-marker {
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out; }
+
 .contacts_header {
   font-family: "Champagne_LimousinesBold", sans-serif;
   font-size: 40px;
@@ -670,6 +696,34 @@ header {
   background-repeat: no-repeat;
   background-position: left center; }
 
+.exit {
+  width: 18px;
+  height: 18px;
+  background-image: url("../img/exit.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 100; }
+
+.exit:hover {
+  opacity: 0.7; }
+
+.footer-visible {
+  width: 90px;
+  height: 30px;
+  text-align: center;
+  position: absolute;
+  top: 450px;
+  right: 150px;
+  opacity: 0;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.75); }
+  .footer-visible a {
+    color: #fff;
+    line-height: 30px; }
+
 /***************************************************Footer**************************************************/
 footer {
   width: 100%;
@@ -688,7 +742,8 @@ footer {
   font-family: "Champagne_Limousines", sans-serif;
   font-size: 20px;
   line-height: 120px;
-  color: #000; }
+  color: #000;
+  margin-bottom: 0px; }
 
 .social-icons {
   text-align: center;

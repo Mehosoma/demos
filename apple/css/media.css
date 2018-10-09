@@ -1,7 +1,11 @@
 @media only screen and (min-width : 0px) and (max-width : 479px) {
 
-		header{
+	header{
 		padding-bottom: 20px;
+	}
+
+	.col-height{
+		height: 220px;
 	}
 
 	.sub-header h2{
@@ -35,7 +39,7 @@
 	}
 
 	.phone{				
-		margin-top: 240px;
+		margin-top: 26px;
 	}
 
 	.mail{		
@@ -51,12 +55,12 @@
 	}
 
 	.menu-toggle-button{
-		margin-top: 260px;
+		margin-top: 45px;
 	}
 
 	header .main-menu{
 		position: absolute;		
-		top: 292px;
+		top: 80px;
 		left: 0px;
 		margin-left: -220px;	
 		margin-top: 0px;		
@@ -305,6 +309,10 @@
 		padding-bottom: 20px;
 	}
 
+	.col-height{
+		height: 220px;
+	}
+
 	.sub-header h2{
 		font-size: 52px;
 	}
@@ -336,7 +344,7 @@
 	}
 
 	.phone{				
-		margin-top: 240px;
+		margin-top: 26px;
 	}
 
 	.mail{		
@@ -348,12 +356,12 @@
 	}
 
 	.menu-toggle-button{
-		margin-top: 260px;
+		margin-top: 45px;
 	}
 
 	header .main-menu{
 		position: absolute;		
-		top: 292px;
+		top: 80px;
 		left: 0px;
 		margin-left: -220px;	
 		margin-top: 0px;		
