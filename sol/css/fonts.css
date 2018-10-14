@@ -1,0 +1,11 @@
+@font-face {
+  font-family: "MyriadProBold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/MyriadProBold.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadProBold.woff") format("woff"), url("../fonts/MyriadProBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "myriadproregular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/myriadproregular.eot?#iefix") format("embedded-opentype"), url("../fonts/myriadproregular.woff") format("woff"), url("../fonts/myriadproregular.ttf") format("truetype"); }
