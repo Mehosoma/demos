@@ -281,7 +281,7 @@
 		margin-bottom: 40px;
 	}
 
-	.diode, .lattice, .super-con table p{
+	.lattice table p, .super-con table p{
 		font-size: 16px;
 		line-height: 22px;
 	}
