@@ -6,9 +6,6 @@ $dark: #333333
 $grey-l: #747474
 $myr-b: 'MyriadProBold', sans-serif
 $myr-r: 'myriadproregular', sans-serif
-$ubun-l: 'UbuntuLight', sans-serif
-$ubun-m: 'UbuntuMedium', sans-serif
-$rob-black: 'RobotoBlack', sans-serif
 
 html
 	width: 100%
@@ -102,6 +99,7 @@ body
 .btn-gen:visited, .btn-gen:active, .btn-gen:focus
 	color: #54770f
 .btn-gen:hover	
+	color: #54770f
 	text-shadow: none
 	box-shadow: none
 .green-link:visited, .green-link:focus, .green-link:active
@@ -121,8 +119,19 @@ body
 	padding-right: 0px
 .fix-padding
 	padding: 0px
+.section-header
+	position: relative
+	p
+		background-color: #fff
+		position: relative
+		z-index: 100
+		display: inline
+		padding-right: 20px
 .header-lines
 	width: 100%
+	position: absolute
+	top: 0px
+	left: 0px	
 	hr
 		width: 100%
 		height: 1px
@@ -153,7 +162,7 @@ body
 	overflow: hidden	
 	display: none
 	padding: 0px 10px
-	box-shadow: 0 15px 20px -15px rgba(0, 0, 0, 1), 26px 21px 13px -21px rgba(0,0,0,0.2), -26px 21px 13px -21px rgba(0,0,0,0.2)
+	box-shadow: 0 15px 20px -15px rgba(0, 0, 0, 0.5), 26px 21px 13px -21px rgba(0,0,0,0.2), -26px 21px 13px -21px rgba(0,0,0,0.2)
 	a
 		display: block		
 		font-family: $myr-r
@@ -315,7 +324,7 @@ header
 	padding-left: 47px
 	padding-top: 8px
 	line-height: 23px	
-	padding-bottom: 1px	
+	padding-bottom: 6px	
 	margin-bottom: 5px
 .goods-more
 	font-family: $myr-r
@@ -483,7 +492,7 @@ footer
 		padding-right: 50px	
 #contacts-form
 	margin-top: 56px
-	padding-right: 50px
+	padding-right: 20px
 	input		
 		width: 214px
 		height: 35px	
@@ -495,7 +504,7 @@ footer
 		font-size: 13px
 		color: #000
 		box-shadow: inset 0px 0px 3px 1px rgba(0,0,0,0.1)
-		margin-right: 6px		
+		margin-right: 13px		
 	::-webkit-input-placeholder 
 		font-family: $myr-r
 		font-size: 13px
@@ -570,7 +579,7 @@ footer
 .subpage-header
 	background-position: left center
 	padding-top: 0px
-	line-height: 50px
+	line-height: 50px!important
 .super-con_image_left, .super-con_image_right
 	width: 100%
 	max-width: 460px
@@ -585,12 +594,6 @@ footer
 	background-repeat: no-repeat
 	background-position: center center
 	float: right
-.char
-	padding-left: 30px
-	margin-left: 7px
-.mean
-	padding-left: 8px
-	border-left: 1px solid #e9e7e7
 .product-desc_list
 	p
 		font-family: $myr-r
@@ -606,15 +609,6 @@ footer
 		margin-left: 26px
 .product-desc_list
 	margin-top: 39px
-.product-desc_field
-	min-height: 35px
-	border: 1px solid #e9e7e7
-	border-bottom: none
-	p
-		line-height: 35px
-		margin-bottom: 0px
-.product-desc_list .product-desc_field:last-child
-	border: 1px solid #e9e7e7
 .lattice-block
 	width: 100%
 	height: 215px
@@ -658,7 +652,7 @@ footer
 	font-size: 20px
 	color: #535353
 	line-height: 35px
-.diode
+.diode, .lattice, .super-con
 	table
 		width: 100%
 		border-collapse: collaps
@@ -672,6 +666,8 @@ footer
 	td 
 		border: 1px solid #e9e7e7
 		padding-left: 10px
+		vertical-align: top
+		padding-right: 5px
 		p
 			font-family: $myr-r
 			font-size: 18px
@@ -681,4 +677,103 @@ footer
 		padding-left: 25px
 .table-wrapper
 	margin: 35px 0px
+
+/***********************************************ButtonMobile************************************/
+.menu-toggle-button
+	width: 50px
+	height: 40px
+	float: right
+	background-color: transparent
+	border-radius: 7px
+	padding-top: 5px
+	border: none
+	text-indent: -9999px
+	-webkit-appearance: none
+	-moz-appearance: none
+	appearance: none
+	position: relative
+	display: block
+	overflow: hidden
+	margin-top: 10px
+	float: right
+	margin-left: -17px
+
+
+.menu-toggle-button span 
+	display: block
+	height: 2px
+	background: $green
+	position: absolute
+	top: 15px
+	left: 16px
+	right: 16px
+	-webkit-transition: background 0s 0.3
+	-o-transition: background 0s 0.3
+	transition: background 0s 0.3
+
+
+.menu-toggle-button span::before, .menu-toggle-button span::after
+	content: ""
+	display: block
+	width: 100%
+	height: 2px
+	background: $green
+	position: absolute
+	left: 0px
+	-webkit-transition-duration: 0.3s, 0.3s
+	-o-transition-duration: 0.3s, 0.3s
+	transition-duration: 0.3s, 0.3s
+	-webkit-transition-delay: 0s, 0.3s
+	-o-transition-delay: 0s, 0.3s
+	transition-delay: 0s, 0.3s
+
+
+.menu-toggle-button span::before 
+	top: -5px
+
+.menu-toggle-button span::after 
+	bottom: -5px
+
+.menu-toggle-button.is-active span
+	background: none
+
+.menu-toggle-button.is-active span::before
+	top: 0
+	-webkit-transform: rotate(45deg)
+	-ms-transform: rotate(45deg)
+	transform: rotate(45deg)
+	-webkit-transition-property: top, -webkit-transform
+	transition-property: top, -webkit-transform
+	-o-transition-property: top, transform
+	transition-property: top, transform
+	transition-property: top, transform, -webkit-transform
+	-webkit-transition-delay: 0s, 0.3s
+	-o-transition-delay: 0s, 0.3s
+	transition-delay: 0s, 0.3s
+	-webkit-transition-duration: 0.3s, 0.3s
+	-o-transition-duration: 0.3s, 0.3s
+	transition-duration: 0.3s, 0.3s
+	background: $green
+
+
+.menu-toggle-button.is-active span::after 
+	bottom: 0
+	background: $green
+	-webkit-transform: rotate(-45deg)
+	-ms-transform: rotate(-45deg)
+	transform: rotate(-45deg)
+	-webkit-transition-property: bottom, -webkit-transform
+	transition-property: bottom, -webkit-transform
+	-o-transition-property: bottom, transform
+	transition-property: bottom, transform
+	transition-property: bottom, transform, -webkit-transform
+	-webkit-transition-delay: 0s, 0.3s
+	-o-transition-delay: 0s, 0.3s
+	transition-delay: 0s, 0.3s
+	-webkit-transition-duration: 0.3s, 0.3s
+	-o-transition-duration: 0.3s, 0.3s
+	transition-duration: 0.3s, 0.3s
+
+.menu-toggle-button:focus
+	outline: none !important
 
