@@ -98,6 +98,7 @@
 	.news-image{
 		max-width: 323px;
 		padding-right: 15px;
+		margin-bottom: 20px;
 	}
 
 	.news-content{
@@ -145,6 +146,7 @@
 	.lattice .goods-header, .super-con .goods-header, .diode .goods-header{
 		line-height: 30px!important;
 		margin-top: 30px!important;
+		background-position: left top 0px;
 	}
 
 	.super-con_image_left, .super-con_image_right{
@@ -243,6 +245,7 @@
 
 	.news-image{
 		max-width: 323px;
+		margin-bottom: 20px;
 	}
 
 	.news-content{
