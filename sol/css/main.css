@@ -108,7 +108,8 @@ body {
   color: #333333; }
 
 .green-link:hover {
-  color: #a0ce4e; }
+  color: #a0ce4e;
+  cursor: pointer; }
 
 .header-gen {
   font-family: "myriadproregular", sans-serif;

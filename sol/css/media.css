@@ -308,8 +308,47 @@
 
 @media only screen and (min-width : 768px) and (max-width : 991px) {
 
-	.main-menu_list{
-		padding: 29px 12px 0px 12px;
+	header .main-menu{
+		position: absolute;		
+		top: 109px;
+		right: 0px;
+		margin-left: 0px;	
+		margin-top: 0px;
+		width: 250px;
+		background-color: #fff;				
+		padding: 0px;
+		display: none;
+		z-index: 1000;
+		box-shadow: 0 15px 20px -15px rgba(0, 0, 0, 0.5), 26px 0px 13px -21px rgba(0,0,0,0.2), -26px 0px 13px -21px rgba(0,0,0,0.2)
+	}
+
+	header .main-menu li{
+		width: 100%;
+		display: block;			
+		text-align: left;
+		padding-right: 0px;				
+		padding: 10px 16px;
+	}
+
+	header .main-menu .active-menu{
+		border-left: 5px solid #a0ce4e;	
+	}
+
+	.menu-toggle-button{
+		margin-top: 37px;
+	}
+
+	.dropdown-list_menu{
+		width: 100%;
+		position: relative;
+		display: block;
+		box-shadow: none;
+		top: 0px;
+		margin-left: 0px;
+	}
+
+	.dropdown-list_menu li:nth-child(1) {
+ 	   margin-top: 10px;
 	}
 
 	.slider-image{
@@ -339,8 +378,8 @@
 		margin-top: 50px;
 	}
 
-	.product-desc_list p{
-		font-size: 16px;
+	.lattice table p, .super-con table p{
+		font-size: 16px;	
 	}
 
 	.lattice .col-sm-4, .diode .col-sm-4{
