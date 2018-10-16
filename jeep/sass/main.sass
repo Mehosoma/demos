@@ -1,0 +1,722 @@
+@import "bourbon/bourbon"
+	
+$dark: #251614
+$orange: #ffb618
+$light: #2c1b19
+$open: 'Open Sans', sans-serif
+$ubun: 'Ubuntu', sans-serif
+
+html
+	box-sizing: border-box
+body
+	font-family: "Ubuntu", sans-serif
+	font-weight: normal
+	font-size: 14px
+	color: #fff
+	min-width: 320px
+	max-width: 1920px	
+	margin: 0 auto
+	position: relative
+	line-height: 1.6
+	-webkit-font-smoothing: antialiased
+	overflow-x: hidden
+	background-color: #fff
+	a:hover, a:focus, a:active
+		text-decoration: none
+		outline: none
+	input:focus, input:active
+		text-decoration: none
+		outline: none
+	button:focus, button:active
+		text-decoration: none
+		outline: none
+	ul
+		padding: 0px
+		margin: 0px
+		list-style-type: none
+
+	
+.clearfix:after
+	content: ""
+	display: table
+	clear: both
+
+h2
+	font-family: $ubun
+	font-size: 26px
+	font-weight: 500
+	color: #000
+
+
+/***************************************************Header********************************************/
+header
+	width: 100%
+	min-height: 55px	
+	position: absolute
+	z-index: 100
+	padding-top: 18px
+.logo
+	width: 210px
+	height: 94px
+	background-color: $dark
+	border-radius: 7px
+	background-image: url('../img/logo.png')
+	background-repeat: no-repeat
+	background-position: center center
+	margin-left: -30px
+.header-contacts
+	width: 609px
+	min-height: 60px
+	background-color: $dark
+	border-radius: 7px
+	float: right
+	margin-top: 17px
+	padding-left: 25px
+	padding-top: 10px
+.header-contacts-phone, .header-contacts-addres	
+	display: inline-block
+.header-contacts-text
+	display: inline-block
+	padding-left: 22px
+	position: relative
+	top: -2px
+	span
+		display: block	
+		font-family: $ubun
+		font-size: 15px
+		font-weight: 500
+		line-height: 22px
+	i
+		font-size: 13px
+		font-weight: 300
+		color: #5b413e
+		font-style: normal
+.adr-text
+	padding-left: 16px
+	position: relative
+	top: -5px
+	span
+		line-height: 20px
+		font-size: 13px
+		font-weight: 300			
+.header-phone-icon, .header-addres-icon
+	width: 35px
+	height: 35px
+	background-color: $orange
+	border-radius: 7px
+	display: inline-block	
+.header-contacts-addres
+	margin-left: 39px
+.header-phone-icon
+	background-image: url('../img/phones-icon.png')
+	background-repeat: no-repeat
+	background-position: center center
+.header-addres-icon
+	background-image: url('../img/addres-icon.png')
+	background-repeat: no-repeat
+	background-position: center center
+.basket
+	width: 243px
+	height: 50px
+	background-color: #191e2c
+	border-radius: 5px
+	position: relative
+	float: right
+	margin-right: -15px
+	margin-top: 22px	
+	padding-left: 31px
+	span
+		line-height: 30px
+		font-family: $ubun
+		font-size: 16px
+		font-weight: 500
+		line-height: 47px
+.basket-number
+	width: 30px
+	height: 30px
+	background-color: #20273c
+	border-radius: 5px
+	text-align: center
+	position: absolute
+	right: 15px
+	top: 10px	
+	span
+		line-height: 27px
+.menu-wrap
+	width: 1200px
+	height: 70px
+	background-color: $light
+	border-radius: 7px
+	margin-left: -30px
+	margin-top: 18px
+	padding: 10px 15px
+.main-menu
+	width: 1170px
+	height: 50px
+	background-color: transparent
+	border: 1px solid $dark
+	border-radius: 3px
+	list-style-type: none
+	margin: 0px	
+	li		
+		height: 50px		
+		display: inline-block		
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out
+	li:hover
+		background-color: $dark
+		border-radius: 7px
+		a					
+			color: $orange
+	a
+		font-family: $ubun
+		font-size: 15px
+		font-weight: 300
+		color: #fff
+		line-height: 46px
+		display: block
+		padding: 0px 29px
+		height: 100%
+.search:hover
+	background-color: transparent!important
+.search-form
+	position: relative	
+	padding-left: 36px
+	input
+		width: 190px
+		padding-right: 30px
+		border: none
+		background-color: transparent
+		font-family: $ubun
+		font-size: 14px
+		font-weight: 300
+		color: #5b3f3c		
+	::-webkit-input-placeholder 
+		font-size: 14px
+		color: #5b3f3c
+	::-moz-placeholder
+		font-size: 14px
+		color: #5b3f3c
+	:-moz-placeholder 
+		font-size: 14px
+		color: #5b3f3c	
+	:-ms-input-placeholder      
+		font-size: 14px
+		color: #5b3f3c	
+	button
+		width: 24px
+		height: 24px
+		border: none
+		background-color: transparent
+		background-image: url('../img/search-icon.png')		
+		background-repeat: no-repeat
+		background-position: center center
+		position: absolute
+		right: 0px
+		top: 0px
+.hidden-menu
+	width: 1200px
+	height: 0px
+	margin-left: -15px
+	margin-top: 30px
+	background-color: rgba(44,27,25,0.95)
+	border-radius: 7px		
+	overflow: hidden	
+	-moz-transition: all 0.5s ease-out
+	-o-transition: all 0.5s ease-out
+	-webkit-transition: all 0.5s ease-out
+	transition: all 0.5s ease-out	
+.menu-cat
+	width: 1170px
+	height: 50px
+	border-radius: 7px
+	background-color: $orange
+	margin: 0 auto
+	margin-top: 20px
+	margin-bottom: 30px
+	padding: 0px 20px
+	li
+		display: inline-block
+		height: 50px
+		border-right: 1px solid 
+		border-color: rgba(37,22,20,0.15)
+	a
+		font-family: $ubun
+		font-size: 16px
+		font-weight: 500
+		color: $dark
+		display: block		
+		line-height: 46px
+		width: 100%
+		height: 100%	
+	li:nth-child(1) a
+		padding: 0 28px 0px 50px
+	li:nth-child(2)	a
+		padding: 0 52px 0px 50px
+	li:nth-child(3)	a
+		padding: 0 53px 0px 52px
+	li:nth-child(4)	a
+		padding: 0 58px 0px 61px
+	li:nth-child(5)	a
+		padding: 0 64px 0px 64px
+	li:nth-child(6)	a
+		padding: 0 64px 0px 71px
+	li:nth-child(6)
+		border-right: none
+.menu-cat-list
+	li
+		margin: 11px 0px
+	a
+		font-family: $open
+		font-weight: 300
+		color: #fff
+		font-size: 15px
+.hidden-menu .col-lg-3:nth-child(2)
+	padding-right: 0px
+	.menu-cat-list
+		padding-left: 15px
+.hidden-menu .col-lg-3:nth-child(3)
+	padding-right: 0px
+	.menu-cat-list
+		padding-left: 9px
+.hidden-menu .col-lg-3:nth-child(5)
+	padding-right: 0px
+	.menu-cat-list
+		margin-left: -7px
+.open
+	height: 494px
+	opacity: 1
+.main-open	
+	height: 255px!important
+	margin-bottom: 30px		
+.menu-toggle-button
+	width: 50px
+	height: 40px	
+	float: right
+	background-color: $dark
+	border-radius: 7px	
+	padding-top: 5px
+	border: none	
+	text-indent: -9999px
+	appearance: none
+	position: relative
+	display: block
+	overflow: hidden
+	span
+		display: block
+		height: 2px
+		background: #fff		
+		position: absolute
+		top: 19px
+		left: 15px
+		right: 15px	
+		transition: background 0s 0.3		
+.menu-toggle-button	span::before, .menu-toggle-button span::after
+	content: ""
+	display: block
+	width: 100%
+	height: 2px
+	background: #fff		
+	position: absolute		
+	left: 0px			
+	transition-duration: 0.3s, 1s
+	transition-delay: 0s, 0.3s
+.menu-toggle-button span::before
+	top: -8px		
+.menu-toggle-button span::after
+	bottom: -8px	
+.menu-toggle-button.is-active span
+	background: none
+.menu-toggle-button.is-active span::before
+	top: 0
+	transform: rotate(45deg)
+	transition-property: top, transform
+	transition-delay: 0s, 0.3s
+	transition-duration: 0.3s, 0.3s
+.menu-toggle-button.is-active span::after
+	bottom: 0
+	transform: rotate(-45deg)
+	transition-property: bottom, transform
+	transition-delay: 0s, 0.3s
+	transition-duration: 0.3s, 0.3s
+.menu-toggle-button:focus
+	outline: none!important
+.cat-open
+	-moz-transition: all 0.3s ease-out
+	-o-transition: all 0.3s ease-out
+	-webkit-transition: all 0.3s ease-out
+	transition: all 0.3s ease-out	
+.cat-open:active, .cat-open:focus
+	color: #fff 		
+
+/***************************************************MainSlider********************************************/
+.main-slider
+	position: relative
+	width: 100%
+	max-height: 897px
+	z-index: 2
+.slider
+	margin: 0px
+.slide1
+	width: 100%
+	height: 897px
+	background-image: url('../img/slide-1.png')
+	background-size: cover
+	background-position: center center
+.slide2
+	width: 100%
+	height: 897px
+	background-image: url('../img/slide-2.png')
+	background-size: cover
+	background-position: center center
+.bx-wrapper
+	border: none
+	margin: 0px
+	width: 100%
+	height: 897px
+	box-shadow: none
+.bx-viewport
+	height: 897px
+.bx-controls-direction
+	display: none
+.bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto
+	bottom: 142px
+.bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus
+	background-color: $orange
+	width: 16px
+	height: 16px
+	border-radius: 50%			
+	position: relative	
+	margin: 0px
+.bx-wrapper .bx-pager.bx-default-pager a:hover
+	background: $orange
+	opacity: 0.7
+.bx-wrapper .bx-pager.bx-default-pager a
+	background: #fff
+	margin: 3px				
+	-moz-transition: all 0.3s ease-out
+	-o-transition: all 0.3s ease-out
+	-webkit-transition: all 0.3s ease-out
+	transition: all 0.3s ease-out
+.bx-wrapper .bx-pager-item
+	width: 16px
+	height: 16px	
+	margin-right: 12px
+
+/***************************************************Popular********************************************/
+.popular
+	padding-top: 16px
+	padding-bottom: 10px
+	h2
+		padding-left: 28px
+.slide-cart
+	width: 263px 
+	height: 480px
+	background-color: #fff	
+	border-top: 1px solid #e8e8e8	
+.slide-cart:hover	
+	box-shadow: 0px 0px 35px 5px rgba(0,0,0,0.1)
+.slide-image
+	width: 100%
+	height: 281px
+	background-image: url('../img/pop-slide-1.png')
+	background-repeat: no-repeat
+	background-position: center top 110px
+.pop-slide-2
+	background-image: url('../img/pop-slide-2.png')
+.pop-slide-3
+	background-image: url('../img/pop-slide-3.png')
+.pop-slide-4
+	background-image: url('../img/pop-slide-4.png')
+.slide-desc-header
+	border-bottom: 1px solid #e8e8e8
+	padding-bottom: 16px
+	h4
+		font-family: $ubun
+		font-size: 15px
+		font-weight: 500
+		color: #000
+		padding-left: 20px
+		margin-bottom: 6px
+	span
+		font-family: $ubun
+		font-size: 11px
+		font-weight: 500
+		color: #626262
+		padding-left: 21px
+.price
+	display: block
+	font-family: $ubun
+	font-size: 21px
+	font-weight: 500
+	color: #000
+	padding-left: 21px
+	margin-top: 11px
+	i
+		font-style: normal
+		font-weight: 300
+		font-size: 15px
+.slide-desc-buy
+	margin-top: 10px
+	padding-left: 19px
+.bask-but
+	display: inline-block
+	width: 147px
+	height: 44px
+	text-align: center
+	background-color: #321e1b
+	border-radius: 3px	
+	line-height: 40px	
+	font-family: $ubun
+	font-size: 15px
+	font-weight: 500
+	color: #fff
+	position: absolute
+	box-shadow: 0px -3px $dark inset
+	-moz-transition: all 0.3s ease-out
+	-o-transition: all 0.3s ease-out
+	-webkit-transition: all 0.3s ease-out
+	transition: all 0.3s ease-out
+.bask-but:hover
+	color: #321e1b
+	background-color: $orange
+	box-shadow: 0px -3px #e29f0f inset
+.cart-but
+	display: inline-block
+	width: 65px
+	height: 40px
+	border: 1px solid #e8e8e8
+	border-radius: 3px
+	margin-left: 160px
+	background-image: url('../img/cart.png')
+	background-repeat: no-repeat
+	background-position: center center
+.owl-wrap
+	width: 1230px
+	overflow: hidden
+	height: 600px
+	margin-left: -30px
+.owl-carousel
+	width: 1170px
+	margin: 0 auto
+	height: 480px
+	margin-top: 32px
+.owl-carousel .owl-stage-outer
+	overflow: visible
+.owl-carousel .owl-nav.disabled
+	display: block
+.owl-nav
+	position: absolute
+	top: 0
+	right: 30px
+	margin-top: -70px
+.owl-next
+	width: 40px 
+	height: 40px
+	background-color: #fff
+	border: 2px solid $light	
+	display: inline-block
+	background-image: url('../img/pop-arr-next.png')
+	background-repeat: no-repeat
+	background-position: center center
+	-moz-transition: all 0.3s ease-out
+	-o-transition: all 0.3s ease-out
+	-webkit-transition: all 0.3s ease-out
+	transition: all 0.3s ease-out	
+.owl-prev
+	width: 40px 
+	height: 40px
+	background-color: #fff
+	border: 2px solid $light
+	display: inline-block
+	margin-right: 27px
+	background-image: url('../img/pop-arr-prev.png')
+	background-repeat: no-repeat
+	background-position: center center
+	-moz-transition: all 0.3s ease-out
+	-o-transition: all 0.3s ease-out
+	-webkit-transition: all 0.3s ease-out
+	transition: all 0.3s ease-out
+.owl-prev:hover
+	background-color: $light
+	background-image: url('../img/pop-arr-prev-hover.png')
+.owl-next:hover
+	background-color: $light
+	background-image: url('../img/pop-arr-next-hover.png')
+	
+
+
+/*************************************************************About***********************************************/
+.about
+	padding-top: 20px
+	padding-bottom: 37px
+	position: relative
+	z-index: 2
+.about-block
+	width: 895px
+	min-height: 380px
+	background-color: #e9e9e9
+	margin-left: -48px
+	padding-left: 48px
+	padding-top: 5px
+	border-radius: 7px	
+	p
+		font-family: $open
+		font-size: 15px
+		line-height: 25px
+		font-weight: 300
+		color: #000
+		margin-top: 43px
+		padding-right: 100px
+.about-block-but
+	margin-top: 47px
+	a
+		display: inline-block
+		width: 165px
+		height: 43px
+		background-color: $orange
+		text-align: center
+		line-height: 40px
+		font-family: $ubun
+		font-size: 15px
+		font-weight: 500
+		color: #2e1b19
+		border-radius: 3px
+		box-shadow: 0px -3px #e29f0f inset
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out
+	a:hover
+		background-color: #e29f0f
+
+
+/*************************************************************Footer***********************************************/
+footer
+	width: 100%
+	min-height: 914px
+	background-color: #e9e9e9	
+	padding-top: 45px
+	position: relative
+	z-index: 2
+	hr
+		position: absolute
+		border: none
+		width: 1170px
+		height: 1px
+		background: #cdcaca
+		top: 85px
+		margin-left: -14px
+.footer-image-line
+	background-image: url('../img/footer-bg.png')
+	background-repeat: no-repeat
+	background-position: center top
+	width: 100%
+	min-height: 292px
+	margin-top: 22px	
+.footer-bottom
+	min-height: 76px
+.footer-nav-header
+	display: block
+	font-family: $ubun
+	font-size: 18px
+	font-weight: 500
+	color: #392523
+	margin-bottom: 64px
+.footer-nav-block
+	margin-left: -17px
+	a
+		font-family: $open
+		font-size: 15px
+		font-weight: 300
+		color: #392523
+	li
+		margin-bottom: 3px
+	li:before
+		content: '\2022'		
+		color: #d5d2d2
+		font-size: 20px	
+		margin-right: 10px
+.footer-nav-block a:hover 
+	color: $orange
+.footer-block
+	padding-left: 44px
+	img
+		display: inline-block
+		position: relative
+		margin-top: -26px
+.footer-block-text
+	display: inline-block
+	padding-left: 37px
+	position: relative
+	hr
+		position: absolute
+		top: 5px
+		right: 0
+		width: 1px
+		height: 35px				
+		background: #fff		
+		margin: 0px
+		margin-right: -43px
+	span, a
+		display: block
+		font-family: $open
+		font-size: 15px
+		font-weight: 300
+		color: #fff
+		line-height: 22px
+	i
+		font-style: normal
+		font-size: 12px
+.footer-ph
+	padding-left: 15px
+	hr
+		margin-right: -82px
+.footer-mail
+	padding-left: 0px
+	a:hover
+		color: $orange	
+.footer-polite
+	margin-left: 35px
+	position: relative
+	margin-top: -2px
+	a
+		display: inline-block
+		white-space: nowrap		
+		font-family: $open
+		font-size: 14px
+		font-weight: 300
+		color: #fff
+		line-height: 20px
+		border-bottom: 1px solid rgba(0,0,0,0.2)	
+	a:hover
+		border-bottom: none	
+.copy, .footer-contacts
+	padding-top: 25px
+	span		
+		font-family: $open
+		font-size: 13px
+		font-weight: 300
+		color: #000		
+.footer-contacts
+	padding-top: 12px
+	span
+		display: block
+		line-height: 25px
+.second-row-polite
+	margin-left: -73px
+	position: relative
+	margin-top: 3px
+.footer-hr
+	padding-top: 178px
+
+
+
+
+
+
+
+.hidden
+	display: none

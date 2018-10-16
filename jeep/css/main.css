@@ -188,14 +188,14 @@ header {
 .search:hover {
   background-color: transparent !important; }
 
-#search-form {
+.search-form {
   position: relative;
   padding-left: 36px;
   -moz-placeholder-font-size: 14px;
   -moz-placeholder-color: #5b3f3c;
   -ms-input-placeholder-font-size: 14px;
   -ms-input-placeholder-color: #5b3f3c; }
-  #search-form input {
+  .search-form input {
     width: 190px;
     padding-right: 30px;
     border: none;
@@ -204,13 +204,13 @@ header {
     font-size: 14px;
     font-weight: 300;
     color: #5b3f3c; }
-  #search-form ::-webkit-input-placeholder {
+  .search-form ::-webkit-input-placeholder {
     font-size: 14px;
     color: #5b3f3c; }
-  #search-form ::-moz-placeholder {
+  .search-form ::-moz-placeholder {
     font-size: 14px;
     color: #5b3f3c; }
-  #search-form button {
+  .search-form button {
     width: 24px;
     height: 24px;
     border: none;

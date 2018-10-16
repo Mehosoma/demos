@@ -60,19 +60,19 @@
 		border: none;
 	}
 
-	#search-form{
+	.search-form{
 		padding-left: 29px;
 		background-color: #251614;	
 		padding: 9px 30px 9px 36px;	
 		margin-bottom: 10px;
 	}
 
-	#search-form button{
+	.search-form button{
 		top: 9px;
 		right: 20px;		
 	}
 
-	#search-form input{
+	.search-form input{
 		width: 100%;
 		color: #fff;
 	}
@@ -299,18 +299,18 @@
 		border: none;
 	}
 
-	#search-form{
+	.search-form{
 		padding-left: 29px;
 		background-color: #251614;	
 		padding: 9px 30px 9px 36px;	
 	}
 
-	#search-form button{
+	.search-form button{
 		top: 9px;
 		right: 20px;		
 	}
 
-	#search-form input{
+	.search-form input{
 		width: 100%;
 		color: #fff;
 	}
@@ -669,7 +669,7 @@
 		width: 910px;
 	}
 
-	#search-form input{
+	.search-form input{
 		width: 140px;
 	}
 
