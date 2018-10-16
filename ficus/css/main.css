@@ -400,17 +400,13 @@ header {
   margin-top: -17px;
   margin-right: -30px;
   right: 0;
-  background-image: url("../img/arrow-right.png");
+  background: url("../img/sprires.png") -38px 0px;
   background-color: transparent;
   background-repeat: no-repeat;
-  z-index: 100;
-  -moz-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out; }
+  z-index: 100; }
 
 .slick-next:hover {
-  background-image: url("../img/arrow-right-h.png"); }
+  background: url("../img/sprires.png") -60px 0px; }
 
 .slick-prev {
   position: absolute;
@@ -420,16 +416,13 @@ header {
   margin-top: -17px;
   margin-left: -30px;
   left: 0;
-  background-image: url("../img/arrow-left.png");
+  background: url("../img/sprires.png") 0px 0px;
   background-color: transparent;
   background-repeat: no-repeat;
-  -moz-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out; }
+  z-index: 100; }
 
 .slick-prev:hover {
-  background-image: url("../img/arrow-left-h.png"); }
+  background: url("../img/sprires.png") 60px 0px; }
 
 /***************************************************Footer***********************************************/
 footer {
