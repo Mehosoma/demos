@@ -75,7 +75,7 @@
 	.slider-content{
 		margin-top: 100px;
 		padding: 0px 30px;
-		margin-left: -20px;
+		padding-left: 40px;
 	}
 
 	.top-slider h1{
@@ -235,6 +235,10 @@
 		width: 40px;
 	}
 
+	.slider-content{
+		padding-left: 40px;
+	}
+
 	.goods-block p{
 		padding-right: 20px
 	}
@@ -277,6 +281,10 @@
 
 	.super-con_image_left{
 		margin-bottom: 50px;
+	}
+
+	.super-con_image_right{
+		float: none;
 	}
 
 	.lattice-block, .diode-block{

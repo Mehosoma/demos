@@ -375,7 +375,7 @@ header {
   color: #333333;
   display: block;
   position: absolute;
-  bottom: 23px;
+  bottom: 18px;
   right: 13px; }
 
 .goods-block {
@@ -735,7 +735,8 @@ footer {
   color: #535353;
   line-height: 35px;
   border: 1px solid #e9e7e7;
-  padding-left: 10px; }
+  padding-left: 10px;
+  font-weight: normal; }
 
 .diode td, .lattice td, .super-con td {
   border: 1px solid #e9e7e7;
