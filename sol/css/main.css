@@ -162,7 +162,11 @@ body {
   -moz-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   -o-flex-wrap: wrap;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  -webkit-flex: 1 1 100%;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1;
+  flex: 1 1; }
 
 .green-circle {
   background-image: url(../img/green-circle.png);
@@ -383,22 +387,16 @@ header {
   color: #333333;
   display: block;
   position: absolute;
-  bottom: 0px;
+  bottom: 18px;
   right: 13px; }
 
 .goods-block {
   position: relative;
-  height: 100%;
-  -webkit-flex: 1 1 100%;
-  -webkit-box-flex: 1;
-  -ms-flex: 1 1;
-  flex: 1 1;
-  -ms-flex-preferred-size: auto;
-  flex-basis: auto; }
+  height: 100%; }
   .goods-block p {
     margin-top: 10px;
     padding: 1px 0px;
-    margin: 0px; }
+    margin-bottom: 20px; }
 
 /***************************************************Main-News*******************************************/
 .main-news {
