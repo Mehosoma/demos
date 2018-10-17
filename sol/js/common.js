@@ -10,13 +10,13 @@ $(document).ready(function(){
 	});
 
 	$('.main-menu  ul li').hover(
-            function () {
-                $('ul', this).stop().slideDown(300);
-            }, 
-            function () {
-                $('ul', this).stop().slideUp(300);            
-            }
-        );
+        function () {
+    		$('ul', this).stop().slideDown(300);
+        }, 
+        function () {
+            $('ul', this).stop().slideUp(300);            
+        }
+    );
 });
 
 //Top-slider
