@@ -1,0 +1,178 @@
+@import "bourbon/bourbon"
+
+$green: #6ABEA7
+$blue: #D2E9FC
+$red: #FC4A60
+$orange: #FFBC73
+$ver: 'Verdana', sans-serif
+
+
+html
+	width: 100%
+	height: 100%
+	overflow-x: hidden
+body
+	width: 100%
+	height: auto
+	min-width: 320px	
+	margin: 0 auto
+	position: relative
+	font-family: $ver
+	line-height: 1.2
+	-webkit-font-smoothing: antialiased
+	background-color: #f4f8ff	
+	a:hover, a:focus, a:active
+		text-decoration: none
+		outline: none
+	input:focus, input:active
+		text-decoration: none
+		outline: none
+	button:focus, button:active
+		text-decoration: none
+		outline: none
+	textarea:focus, textarea:active
+		text-decoration: none
+		outline: none
+	a
+		display: inline-block
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out
+	ul, ol
+		padding: 0px
+		margin: 0px
+		list-style-type: none
+	button
+		border: none
+		cursor: pointer
+	hr
+		border: none	
+
+.pixel
+	background: url(../img/main.jpg) no-repeat top center
+	width: 1920px
+	height: 12800px
+	position: absolute
+	z-index: 1000000
+	display: none
+	left: 50%
+	top: 0
+	margin-left: -960px
+	opacity: 0.5
+	margin-top: 0px
+
+
+/***************************************************GeneralStyles************************************/
+.container-fluid
+	max-width: 1170px
+#page-content	
+	height: auto
+.sidebar	
+	height: 200px
+.side_menu_categories
+	background-color: $blue
+	height: 100%
+h1
+	font-size: 22px
+	text-transform: uppercase
+	font-weight: bold
+	letter-spacing: 2px
+h3
+	font-size: 16px
+.hidden
+	display: none
+
+
+/***************************************************OrderAndPayment************************************/
+.order-and-payment
+	margin-top: 50px
+	a, i
+		color: $green
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out
+		font-style: normal
+	a:hover
+		color: $orange
+.order-header
+	font-size: 16px
+	text-transform: uppercase
+	color: $orange
+	text-align: center
+	margin-top: 20px
+	margin-bottom: 40px
+.how-order
+	text-align: center
+.how-block
+	margin-bottom: 50px
+.image-wrapper
+	display: inline-block	
+	margin: 0px 60px
+	img
+		height: 141px
+		margin-bottom: 20px	
+.order-gen
+	font-size: 14px
+	line-height: 18px	
+.payment-col
+	text-align: center
+.payment-icon
+	width: 120px
+	height: 120px
+	margin: 0 auto
+	margin-bottom: 20px
+	img
+		height: 100%
+#how-date-table
+	width: 100%
+	th
+		font-size: 14px
+		font-weight: bold
+		background-color: $blue
+		height: 45px
+		text-align: center
+	td
+		font-size: 14px
+		height: 90px
+	span
+		color: $red
+	.how-col
+		width: 25%
+		text-align: left
+		padding-left: 20px
+	.date-col
+		width: 30%			
+	.how-col-first
+		padding-left: 30px
+		padding-right: 40px
+	.how-col-second
+		padding-left: 40px
+	.tr-bottom
+		border-bottom: 1px solid #727272
+	.col-center
+		text-align: center
+	.how-small
+		font-size: 10px
+		line-height: 13px
+		color: #727272	
+		margin-top: 10px
+		margin-bottom: 0px	
+	.col-add
+		text-align: left	
+.add-info
+	font-size: 13px
+	color: #727272
+	margin-top: 10px
+	padding-left: 10px
+	span
+		color: $red
+.how-list
+	li
+		background-image: url(../img/how-ok.png)
+		background-repeat: no-repeat
+		background-position: left center
+		padding: 10px 0px 10px 40px
+		font-size: 14px
+		line-height: 16px
