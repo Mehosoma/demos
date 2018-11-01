@@ -65,6 +65,34 @@
 		margin-top: 0px;
 	}
 
+	.how-return-ill{
+		width: 100%;
+	}
+
+	.return-sheme-block{
+		width: 100%;
+		max-width: 400px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.base-block-add .center-text{
+		padding: 0px;
+	}
+
+	.add-important{
+		background-position: top 30px center;
+		padding: 120px 20px 20px 20px;
+	}
+
+	.add-important p{
+		text-align: justify;
+	}
+
+	.base-small-header{
+		margin-top: 20px;
+	}
+
 }
 
 @media only screen and (min-width : 480px) and (max-width : 767px) {
@@ -127,6 +155,34 @@
 
 	#how-date-table .how-small{
 		margin-top: 0px;
+	}
+
+	.how-return-ill{
+		max-width: 450px;
+	}
+
+	.return-sheme-block{
+		width: 100%;
+		max-width: 400px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.base-block-add .center-text{
+		padding: 0px;
+	}
+
+	.add-important{
+		background-position: top 30px center;
+		padding: 120px 20px 20px 20px;
+	}
+
+	.add-important p{
+		text-align: justify;
+	}
+
+	.base-small-header{
+		margin-top: 20px;
 	}
 }
 
@@ -192,6 +248,23 @@
 	#how-date-table .how-small{
 		margin-top: 0px;
 	}
+
+	.how-return-ill{
+		max-width: 480px;
+	}
+
+	.base-block-add .center-text{
+		padding: 0px 20px;
+	}
+
+	.add-important{
+		background-position: top 30px center;
+		padding: 120px 20px 20px 20px;
+	}
+
+	.add-important p{
+		text-align: justify;
+	}
 }
 
 @media only screen and (min-width : 992px) and (max-width : 1199px) {
@@ -202,7 +275,9 @@
 	#how-date-table .how-col-first{
 		padding-left: 10px;
 	}
+
+	.base-block-add .center-text{
+		padding: 0px 50px;
+	}
 }
 
-@media only screen and (min-width : 992px) and (max-width : 1199px) {
-}
