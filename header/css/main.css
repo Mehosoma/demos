@@ -111,11 +111,12 @@ header {
   margin-left: 10px; }
 
 .bottom-menu a {
-  font-family: "Segoe UI Bold", sans-serif; }
+  font-family: "Segoe UI Bold", sans-serif;
+  font-size: 14px; }
 
 .bottom-menu li {
   line-height: 70px;
-  margin-right: 40px; }
+  margin-right: 24px; }
 
 .top-menu {
   margin-top: 37px; }
@@ -151,6 +152,10 @@ header {
   border-bottom: 1px solid #a6008d;
   margin-left: 10px; }
 
+.f-right:hover {
+  color: #f0891c;
+  border-bottom: 1px solid transparent; }
+
 .header-second {
   height: 90px;
   background-color: #f0891c; }
@@ -182,7 +187,7 @@ header {
     height: 38px;
     line-height: 37px;
     border: 1px solid #a6008d;
-    padding: 0px 20px;
+    padding: 0px 100px 0px 20px;
     border-right: none; }
   .header-search ::-webkit-input-placeholder {
     color: #999999;
@@ -235,7 +240,7 @@ header {
   right: -60px;
   top: 15px;
   border: 45px solid transparent;
-  border-top: 16px solid #fff;
+  border-top: 15px solid #fff;
   -webkit-transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
   transform: rotate(-90deg); }
@@ -246,7 +251,7 @@ header {
   right: -58px;
   top: 15px;
   border: 45px solid transparent;
-  border-top: 16px solid #f0891c;
+  border-top: 15px solid #f0891c;
   -webkit-transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
   transform: rotate(-90deg); }
@@ -349,3 +354,97 @@ header {
     color: #f0891c; }
   .basket-wrapper span {
     font-size: 14px; }
+
+/***********************************************ButtonMobile************************************/
+.menu-toggle-button {
+  width: 50px;
+  height: 40px;
+  float: right;
+  background-color: transparent;
+  border-radius: 7px;
+  padding-top: 5px;
+  border: none;
+  text-indent: -9999px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin-top: 10px;
+  margin-left: -17px; }
+
+.menu-toggle-button span {
+  display: block;
+  height: 2px;
+  background: #f0891c;
+  position: absolute;
+  top: 15px;
+  left: 16px;
+  right: 16px;
+  -webkit-transition: background 0s 0.3;
+  -o-transition: background 0s 0.3;
+  transition: background 0s 0.3; }
+
+.menu-toggle-button span::before, .menu-toggle-button span::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #f0891c;
+  position: absolute;
+  left: 0px;
+  -webkit-transition-duration: 0.3s, 1s;
+  -o-transition-duration: 0.3s, 1s;
+  transition-duration: 0.3s, 1s;
+  -webkit-transition-delay: 0s, 0.3s;
+  -o-transition-delay: 0s, 0.3s;
+  transition-delay: 0s, 0.3s; }
+
+.menu-toggle-button span::before {
+  top: -5px; }
+
+.menu-toggle-button span::after {
+  bottom: -5px; }
+
+.menu-toggle-button.is-active span {
+  background: none; }
+
+.menu-toggle-button.is-active span::before {
+  top: 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition-property: top, -webkit-transform;
+  transition-property: top, -webkit-transform;
+  -o-transition-property: top, transform;
+  transition-property: top, transform;
+  transition-property: top, transform, -webkit-transform;
+  -webkit-transition-delay: 0s, 0.3s;
+  -o-transition-delay: 0s, 0.3s;
+  transition-delay: 0s, 0.3s;
+  -webkit-transition-duration: 0.3s, 0.3s;
+  -o-transition-duration: 0.3s, 0.3s;
+  transition-duration: 0.3s, 0.3s;
+  background: #f0891c; }
+
+.menu-toggle-button.is-active span::after {
+  bottom: 0;
+  background: #f0891c;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-transition-property: bottom, -webkit-transform;
+  transition-property: bottom, -webkit-transform;
+  -o-transition-property: bottom, transform;
+  transition-property: bottom, transform;
+  transition-property: bottom, transform, -webkit-transform;
+  -webkit-transition-delay: 0s, 0.3s;
+  -o-transition-delay: 0s, 0.3s;
+  transition-delay: 0s, 0.3s;
+  -webkit-transition-duration: 0.3s, 0.3s;
+  -o-transition-duration: 0.3s, 0.3s;
+  transition-duration: 0.3s, 0.3s; }
+
+.menu-toggle-button:focus {
+  outline: none !important; }
