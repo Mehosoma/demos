@@ -14,7 +14,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<meta name="format-detection" content="telephone=no">
 
-	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.css">	
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="libs/slick/slick.css">	
 
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/main.css">
@@ -82,8 +83,7 @@
 					</div>
 				</div>
 				<div class="col-lg-2 сlearfix col-md-3 col-sm-4 col-xs-12">
-					<div class="h-login">						
-					</div>
+					<div class="h-login"></div>
 					<a href="" class="h-login-link">Войти</a>
 					<div class="h-basket clearfix">
 						<div class="basket-wrapper">
@@ -107,13 +107,13 @@
 							<li><a href="#">Книги</a></li>
 							<li><a href="#">Учебники</a></li>
 							<li><a href="#">Канцелярия</a></li>							
-							<li><a href="">Игры / Игрушки</a></li>
-							<li><a href="">Мебель</a></li>
-							<li><a href="">Хозтовары</a></li>
-							<li><a href="">Праздники</a></li>
-							<li><a href="">Товары для детей</a></li>
-							<li><a href="">Творчество</a></li>
-							<li class="fix-li"><a href="">Оснащение детских садов</a></li>
+							<li><a href="#">Игры / Игрушки</a></li>
+							<li><a href="#">Мебель</a></li>
+							<li><a href="#">Хозтовары</a></li>
+							<li><a href="#">Праздники</a></li>
+							<li><a href="#">Товары для детей</a></li>
+							<li><a href="#">Творчество</a></li>
+							<li class="fix-li"><a href="#">Оснащение детских садов</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -122,10 +122,645 @@
 	</div>
 </header>
 
+<!--Slider-->
+<section class="main-slider">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="top-slider">
+					<div class="slide"></div>
+					<div class="slide"></div>
+					<div class="slide"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--Goods-->
+<section class="goods">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+				<div class="goods-block">
+					<div class="goods-block-image">
+						<img src="img/book.png" alt="book-icon">
+					</div>
+					<div class="goods-block-info">
+						<h3 class="">Книги</h3>
+						<ul class="goods-list gen-text">
+							<li><a href="">Автотранспорт, Туризм</a></li>							
+							<li><a href="">Книги для детей</a></li>
+							<li><a href="">Экономика, Бизнес, Право</a></li>							
+							<li><a href="">Художественная литература</a></li>
+							<li><a href="">Дом, Быт, Досуг</a></li>							
+							<li><a href="">Медицина, Спорт, Здоровье</a></li>							
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+				<div class="goods-block">
+					<div class="goods-block-image">
+						<img src="img/bag.png" alt="bag-icon">
+					</div>
+					<div class="goods-block-info">
+						<h3 class="">Учебники</h3>
+						<ul class="goods-list gen-text">
+							<li><a href="">Учебники 1 класс</a></li>						
+							<li><a href="">Учебники 2 класс</a></li>
+							<li><a href="">Учебники 3 класс</a></li>
+							<li><a href="">Учебники 4 класс</a></li>
+							<li><a href="">Учебники 5 класс</a></li>
+							<li><a href="">Учебники 6 класс</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+				<div class="goods-block">
+					<div class="goods-block-image">
+						<img src="img/furn.png" alt="furniture-icon">
+					</div>
+					<div class="goods-block-info">
+						<h3 class="">Мебель</h3>
+						<ul class="goods-list gen-text">
+							<li><a href="">Школьная мебель</a></li>
+							<li><a href="">Детская мебель</a></li>
+							<li><a href="">Библиотечная мебель</a></li>
+							<li><a href="">Офисная мебель</a></li>
+							<li><a href="">Металлическая мебель</a></li>						
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+				<div class="goods-block">
+					<div class="goods-block-image">
+						<img src="img/clean.png" alt="clean-icon">
+					</div>
+					<div class="goods-block-info">
+						<h3 class="">Хозтовары</h3>
+						<ul class="goods-list gen-text">
+							<li><a href="">Средства гигиены</a></li>
+							<li><a href="">Средства для стирки</a></li>
+							<li><a href="">Средства чистящие</a></li>
+							<li><a href="">Товары для дома</a></li>
+							<li><a href="">Средства для обуви</a></li>
+							<li><a href="">Элементы питания</a></li>							
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+				<div class="goods-block">
+					<div class="goods-block-image">
+						<img src="img/child.png" alt="child-icon">
+					</div>
+					<div class="goods-block-info">
+						<h3 class="">Товары для детей</h3>
+						<ul class="goods-list gen-text">
+							<li><a href="">Детская бижутерия</a></li>
+							<li><a href="">Спортивные товары</a></li>
+							<li><a href="">Детская гигиена, уход, красота</a></li>														
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+				<div class="goods-block">
+					<div class="goods-block-image">
+						<img src="img/art.png" alt="art-icon">
+					</div>
+					<div class="goods-block-info">
+						<h3 class="">Творчество</h3>
+						<ul class="goods-list gen-text">
+							<li><a href="">Рисование</a></li>
+							<li><a href="">Лепка</a></li>
+							<li><a href="">Рукоделие для мам и дочерей</a></li>							
+							<li><a href="">Конструирование, моделирование</a></li>
+							<li><a href="">Опыты, фокусы</a></li>
+							<li><a href="">Скрапбукинг</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row goods-row">
+			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+				<div class="goods-block">
+					<div class="goods-block-image">
+						<img src="img/office.png" alt="office-goods-icon">
+					</div>
+					<div class="goods-block-info">
+						<h3 class="">Канцтовары</h3>
+						<ul class="goods-list gen-text">
+							<li><a href="">Бумага для оргтехники</a></li>							
+							<li><a href="">Бумажная продукция</a></li>
+							<li><a href="">Школьная бумажная продукция</a></li>							
+							<li><a href="">Письменные и чертежные принадлежности</a></li>
+							<li><a href="">Товары для творчества и хобби</a></li>							
+							<li><a href="">Школьные принадлежности</a></li>							
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+				<div class="goods-block">
+					<div class="goods-block-image">
+						<img src="img/toys.png" alt="toys-goods-icon">
+					</div>
+					<div class="goods-block-info">
+						<h3 class="">Игры / Игрушки</h3>
+						<ul class="goods-list gen-text">
+							<li><a href="">Игрушки для малышей</a></li>							
+							<li><a href="">Игрушки для девочек</a></li>
+							<li><a href="">Игрушки для мальчиков</a></li>							
+							<li><a href="">Звуковые, музыкальные игрушки</a></li>
+							<li><a href="">Игровые, ролевые наборы</a></li>							
+							<li><a href="">Все для театра (куклы, ширмы, костюмы)</a></li>							
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+				<div class="goods-block">
+					<div class="goods-block-image">
+						<img src="img/holidays.png" alt="holidays-goods-icon">
+					</div>
+					<div class="goods-block-info">
+						<h3 class="">Праздники</h3>
+						<ul class="goods-list gen-text">
+							<li><a href="">Аксессуары для праздника, воздушные шары</a></li>							
+							<li><a href="">Новый год</a></li>
+							<li><a href="">День влюбленных. 8 марта</a></li>							
+							<li><a href="">23 февраля</a></li>
+							<li><a href="">Пасха</a></li>							
+							<li><a href="">1 мая, 9 мая</a></li>							
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+				<div class="goods-block">
+					<div class="goods-block-image">
+						<img src="img/kindergarten.png" alt="kindergarten-goods-icon">
+					</div>
+					<div class="goods-block-info">
+						<h3 class="">Оснащение детских садов</h3>
+						<ul class="goods-list gen-text">
+							<li><a href="">Познавательно-речевое развитие</a></li>							
+							<li><a href="">Развитие мышления, математика</a></li>
+							<li><a href="">Социально-эмоциальное развитие</a></li>							
+							<li><a href="">Творческое развитие</a></li>
+							<li><a href="">Спец.литература для педагогов и заведующих</a></li>							
+							<li><a href="">Развивающие-обучающие игрушки</a></li>							
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--Best-Goods-->
+<section class="best">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<h2>Бестселлеры</h2>
+			</div>
+		</div>	
+		<div class="slider-fix">
+			<div class="goods-slider">
+				<div class="goods-slide">
+					<div class="goods-slide-block">
+						<div class="goods-slide-image">
+							<img src="img/book-1.jpg" alt="braun-book">
+						</div>
+						<a href="" class="in-cart">В корзину</a>
+						<div class="good-info gen-text">
+							<p class="good-cost"><span>629</span> руб.</p>
+							<p class="good-name">Происхождение</p>
+							<a href="" class="good-author">Браун Д.</a>
+						</div>
+					</div>
+				</div>	
+				<div class="goods-slide">
+					<div class="goods-slide-block">
+						<div class="goods-slide-image">
+							<img src="img/book-2.jpg" alt="braun-book">
+						</div>
+						<a href="" class="in-cart">В корзину</a>
+						<div class="good-info gen-text">
+							<p class="good-cost"><span>382</span> руб.</p>
+							<p class="good-name">Уничтожь меня! Уникальный блокнот для творческих людей людей</p>
+							<a href="" class="good-author">Смит К.</a>
+						</div>
+					</div>
+				</div>	
+				<div class="goods-slide">
+					<div class="goods-slide-block">
+						<div class="goods-slide-image">
+							<img src="img/book-1.jpg" alt="braun-book">
+						</div>
+						<a href="" class="in-cart">В корзину</a>
+						<div class="good-info gen-text">
+							<p class="good-cost"><span>629</span> руб.</p>
+							<p class="good-name">Происхождение</p>
+							<a href="" class="good-author">Браун Д.</a>
+						</div>
+					</div>
+				</div>	
+				<div class="goods-slide">
+					<div class="goods-slide-block">
+						<div class="goods-slide-image">
+							<img src="img/book-3.jpg" alt="braun-book">
+						</div>
+						<a href="" class="in-cart">В корзину</a>
+						<div class="good-info gen-text">
+							<p class="good-cost"><span>629</span> руб.</p>
+							<p class="good-name">Приключения Чиполлино (ил. Л. Владимирского)</p>
+							<a href="" class="good-author">Родари Дж.</a>
+						</div>
+					</div>
+				</div>	
+				<div class="goods-slide">
+					<div class="goods-slide-block">
+						<div class="goods-slide-image goods-slide-image_unknown">						
+						</div>
+						<a href="" class="in-cart">В корзину</a>
+						<div class="good-info gen-text">
+							<p class="good-cost"><span>629</span> руб.</p>
+							<p class="good-name">Происхождение</p>
+							<a href="" class="good-author">Браун Д.</a>
+						</div>
+					</div>
+				</div>	
+				<div class="goods-slide">
+					<div class="goods-slide-block">
+						<div class="goods-slide-image">
+							<img src="img/book-3.jpg" alt="braun-book">
+						</div>
+						<a href="" class="in-cart">В корзину</a>
+						<div class="good-info gen-text">
+							<p class="good-cost"><span>629</span> руб.</p>
+							<p class="good-name">Приключения Чиполлино (ил. Л. Владимирского)</p>
+							<a href="" class="good-author">Родари Дж.</a>
+						</div>
+					</div>
+				</div>	
+				<div class="goods-slide">
+					<div class="goods-slide-block">
+						<div class="goods-slide-image">
+							<img src="img/book-1.jpg" alt="braun-book">
+						</div>
+						<a href="" class="in-cart">В корзину</a>
+						<div class="good-info gen-text">
+							<p class="good-cost"><span>629</span> руб.</p>
+							<p class="good-name">Происхождение</p>
+							<a href="" class="good-author">Браун Д.</a>
+						</div>
+					</div>
+				</div>			
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--New-Goods-->
+<section class="new-goods">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<h2>Новинки</h2>
+			</div>
+		</div>
+		<div class="slider-fix">	
+			<div class="goods-slider">
+				<div class="goods-slide">
+					<div class="goods-slide-block">
+						<div class="goods-slide-image">
+							<img src="img/book-4.jpg" alt="braun-book">
+						</div>
+						<a href="" class="in-cart">В корзину</a>
+						<div class="good-info gen-text">
+							<p class="good-cost"><span>629</span> руб.</p>
+							<p class="good-name">Происхождение</p>
+							<a href="" class="good-author">Браун Д.</a>
+						</div>
+					</div>
+				</div>	
+				<div class="goods-slide">
+					<div class="goods-slide-block">
+						<div class="goods-slide-image">
+							<img src="img/book-5.jpg" alt="braun-book">
+						</div>
+						<a href="" class="in-cart">В корзину</a>
+						<div class="good-info gen-text">
+							<p class="good-cost"><span>382</span> руб.</p>
+							<p class="good-name">Уничтожь меня! Уникальный блокнот для творческих людей людей</p>
+							<a href="" class="good-author">Смит К.</a>
+						</div>
+					</div>
+				</div>	
+				<div class="goods-slide">
+					<div class="goods-slide-block">
+						<div class="goods-slide-image">
+							<img src="img/book-1.jpg" alt="braun-book">
+						</div>
+						<a href="" class="in-cart">В корзину</a>
+						<div class="good-info gen-text">
+							<p class="good-cost"><span>629</span> руб.</p>
+							<p class="good-name">Происхождение</p>
+							<a href="" class="good-author">Браун Д.</a>
+						</div>
+					</div>
+				</div>	
+				<div class="goods-slide">
+					<div class="goods-slide-block">
+						<div class="goods-slide-image">
+							<img src="img/book-3.jpg" alt="braun-book">
+						</div>
+						<a href="" class="in-cart">В корзину</a>
+						<div class="good-info gen-text">
+							<p class="good-cost"><span>629</span> руб.</p>
+							<p class="good-name">Приключения Чиполлино (ил. Л. Владимирского)</p>
+							<a href="" class="good-author">Родари Дж.</a>
+						</div>
+					</div>
+				</div>	
+				<div class="goods-slide">
+					<div class="goods-slide-block">
+						<div class="goods-slide-image">
+							<img src="img/book-6.jpg" alt="braun-book">						
+						</div>
+						<a href="" class="in-cart">В корзину</a>
+						<div class="good-info gen-text">
+							<p class="good-cost"><span>629</span> руб.</p>
+							<p class="good-name">Происхождение</p>
+							<a href="" class="good-author">Браун Д.</a>
+						</div>
+					</div>
+				</div>	
+				<div class="goods-slide">
+					<div class="goods-slide-block">
+						<div class="goods-slide-image">
+							<img src="img/book-3.jpg" alt="braun-book">
+						</div>
+						<a href="" class="in-cart">В корзину</a>
+						<div class="good-info gen-text">
+							<p class="good-cost"><span>629</span> руб.</p>
+							<p class="good-name">Приключения Чиполлино (ил. Л. Владимирского)</p>
+							<a href="" class="good-author">Родари Дж.</a>
+						</div>
+					</div>
+				</div>	
+				<div class="goods-slide">
+					<div class="goods-slide-block">
+						<div class="goods-slide-image">
+							<img src="img/book-1.jpg" alt="braun-book">
+						</div>
+						<a href="" class="in-cart">В корзину</a>
+						<div class="good-info gen-text">
+							<p class="good-cost"><span>629</span> руб.</p>
+							<p class="good-name">Происхождение</p>
+							<a href="" class="good-author">Браун Д.</a>
+						</div>
+					</div>
+				</div>			
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--Office-->
+<section class="office-goods">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<h2>Канцелярия</h2>
+			</div>
+		</div>	
+		<div class="slider-fix">
+			<div class="goods-slider">
+				<div class="goods-slide">
+					<div class="goods-slide-block">
+						<div class="goods-slide-image">
+							<img src="img/office-1.jpg" alt="braun-book">
+						</div>
+						<a href="" class="in-cart">В корзину</a>
+						<div class="good-info gen-text">
+							<p class="good-cost"><span>629</span> руб.</p>
+							<p class="good-name">Происхождение</p>
+							<a href="" class="good-author">Браун Д.</a>
+						</div>
+					</div>
+				</div>	
+				<div class="goods-slide">
+					<div class="goods-slide-block">
+						<div class="goods-slide-image">
+							<img src="img/office-1.jpg" alt="braun-book">
+						</div>
+						<a href="" class="in-cart">В корзину</a>
+						<div class="good-info gen-text">
+							<p class="good-cost"><span>382</span> руб.</p>
+							<p class="good-name">Уничтожь меня! Уникальный блокнот для творческих людей людей</p>
+							<a href="" class="good-author">Смит К.</a>
+						</div>
+					</div>
+				</div>	
+				<div class="goods-slide">
+					<div class="goods-slide-block">
+						<div class="goods-slide-image">
+							<img src="img/office-2.jpg" alt="braun-book">
+						</div>
+						<a href="" class="in-cart">В корзину</a>
+						<div class="good-info gen-text">
+							<p class="good-cost"><span>629</span> руб.</p>
+							<p class="good-name">Происхождение</p>
+							<a href="" class="good-author">Браун Д.</a>
+						</div>
+					</div>
+				</div>	
+				<div class="goods-slide">
+					<div class="goods-slide-block">
+						<div class="goods-slide-image goods-office-image_unknown">
+							
+						</div>
+						<a href="" class="in-cart">В корзину</a>
+						<div class="good-info gen-text">
+							<p class="good-cost"><span>629</span> руб.</p>
+							<p class="good-name">Приключения Чиполлино (ил. Л. Владимирского)</p>
+							<a href="" class="good-author">Родари Дж.</a>
+						</div>
+					</div>
+				</div>	
+				<div class="goods-slide">
+					<div class="goods-slide-block">
+						<div class="goods-slide-image">
+							<img src="img/office-3.jpg" alt="braun-book">						
+						</div>
+						<a href="" class="in-cart">В корзину</a>
+						<div class="good-info gen-text">
+							<p class="good-cost"><span>629</span> руб.</p>
+							<p class="good-name">Происхождение</p>
+							<a href="" class="good-author">Браун Д.</a>
+						</div>
+					</div>
+				</div>	
+				<div class="goods-slide">
+					<div class="goods-slide-block">
+						<div class="goods-slide-image">
+							<img src="img/office-3.jpg" alt="braun-book">
+						</div>
+						<a href="" class="in-cart">В корзину</a>
+						<div class="good-info gen-text">
+							<p class="good-cost"><span>629</span> руб.</p>
+							<p class="good-name">Приключения Чиполлино (ил. Л. Владимирского)</p>
+							<a href="" class="good-author">Родари Дж.</a>
+						</div>
+					</div>
+				</div>	
+				<div class="goods-slide">
+					<div class="goods-slide-block">
+						<div class="goods-slide-image">
+							<img src="img/book-1.jpg" alt="braun-book">
+						</div>
+						<a href="" class="in-cart">В корзину</a>
+						<div class="good-info gen-text">
+							<p class="good-cost"><span>629</span> руб.</p>
+							<p class="good-name">Происхождение</p>
+							<a href="" class="good-author">Браун Д.</a>
+						</div>
+					</div>
+				</div>			
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--Benefits-->
+<section class="benefits">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+				<div class="benefits-header-block">
+					<img src="img/basket-out.png" alt="basket-icon">
+					<p class="benefits-header">Большой выбор</p>
+				</div>
+				<div class="benefits-info">
+					<p class="gen-text"><a href="">Интернет-магазин Партнер-online</a> - Ваш удобный помощник в море книг, игрушек, канцелярии, товаров для отдыха и творчества.</p>
+					<p class="gen-text">Огромный выбор товаров. Удобная система поиска. Работаем более 20 лет на рынке непосредственно с производителями и издательствами. Удобная подписка на новинки и новости.</p>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+				<div class="benefits-header-block">
+					<img src="img/car.png" alt="car-icon">
+					<p class="benefits-header">Доставка</p>
+				</div>
+				<div class="benefits-info">
+					<p class="gen-text">Быстрая и качественная <a href="">доставка по всем городам России</a>. Обратите внимание на наличие <a href="">сети магазинов и пунктов выдачи заказов Партнер-online</a> в Вашем городе. Сотрудничаем со всеми службами почтовой и курьерской доставки.</p>					
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+				<div class="benefits-header-block">
+					<img src="img/cash.png" alt="cash-icon">
+					<p class="benefits-header">Оплата</p>
+				</div>
+				<div class="benefits-info">
+					<p class="gen-text">Все возможные <a href="">способы оплаты:</a> банковская карта, электронные деньги через QIWI-кошелек и PayPal.
+					При получении на почте или в пунктах выдачи возможна как безналичная оплата так и оплата наличными. Покупайте товары в нтернет-магазине Партнер-online в 2 клика не выходя из дома.</p>					
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--About-->
+<section class="about">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
+				<div class="about-content">
+					<span class="about-header">О проекте интернет-магазин Partner-online.ru</span>
+					<p class="gen-text">Стартовав в 2012 году, интернет-магазин Partner-online.ru успешно развивается: растет поток заказов, расширяется ассортимент книг, игрушек, канцелярских товаров.</p>
+					<p class="gen-text">Интернет-магазин Partner-online.ru доставляет заказы во все города России. В г. Красноярске уже существует 7 пунктов выдачи заказов «Партнер-online», доставка до них осуществляется бесплатно. Мы также доставляем заказы до покупателя «из рук в руки» курьерскими службами или Почтой России.</p>
+					<p class="gen-text">В 2014 году мы ставим перед собой цель выйти на 350-400 тыс. наименований продаваемых книг. Благодаря непрерывному улучшению качества в работе всех подразделений, развитию новых сервисов интернет-магазина Partner-online.ru, мы гарантируем своим клиентам увлекательное путешествие в мир истории, сказок, фантастики и приключений, европейский уровень сервиса и удовольствие от процесса покупки.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--Footer-->
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4 col-lg-offset-6 col-md-7 col-md-offset-2 col-sm-8 col-xs-12">				
+				<ul class="bottom-links">
+					<li><a href="" class="purple-link">Доставка</a> <span>почтой из</span> <span class="city-choice">Красноярска</span></li>					
+					<li><a href="" class="d-marker">Санкт-Петербург</a></li>
+				</ul>
+			</div>
+			<div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
+				<div class="phone-wrapper">
+					<div class="phone">
+						<a href="tel:8-800-3333-150">8 800 3333-150</a>
+					</div>
+					<div class="phone-info clearfix">
+						<p class="f-left">Бесплатно по России</p>
+						<a href="" class="f-right">Заказать звонок</a>
+					</div>
+				</div>
+			</div>
+		</div>		
+	</div>
+	<div class="header-third bottom-menu-wr">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12">
+						<button class="menu-toggle-button click-mobile hidden-lg hidden-md">
+							<span></span>					
+						</button>
+						<nav class="bottom-menu">						
+							<ul>
+								<li><a href="#">Книги</a></li>
+								<li><a href="#">Учебники</a></li>
+								<li><a href="#">Канцелярия</a></li>							
+								<li><a href="#">Игры / Игрушки</a></li>
+								<li><a href="#">Мебель</a></li>
+								<li><a href="#">Хозтовары</a></li>
+								<li><a href="#">Праздники</a></li>
+								<li><a href="#">Товары для детей</a></li>
+								<li><a href="#">Творчество</a></li>
+								<li class="fix-li"><a href="#">Оснащение детских садов</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>		
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-10 col-md-9 col-sm-7 col-xs-12">
+				<p class="gen-text copy">&copy; 2018 Оптово-розничный интернет-магазин Partner-online.ru. Все права защищены.</p>
+			</div>
+			<div class="col-lg-2 al-right col-md-3 col-sm-5 col-xs-12">
+				<a href=""><img src="img/bitrix.png"></a>
+				<div class="counters">
+					<a href=""><img src="img/counters.png"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
 	<div class="hidden"></div>
 
 	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
 	<script src="libs/bootstrap/js/bootstrap.js"></script>
+	<script src="libs/slick/slick.js"></script>
 	<script src="js/common.js"></script>
 	
 </body>
