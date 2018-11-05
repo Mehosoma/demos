@@ -24,7 +24,7 @@ $(document).ready(function(){
 
 //Show-hide search field
 $(document).ready(function(){
-    $('.search-mm').on('click',function(e){
+    $('.search-mm').on('click',function(e){       
         e.preventDefault();        
           $('.header-search').animate({
               width: '300px'
@@ -35,7 +35,14 @@ $(document).ready(function(){
 
 //Show-hide dropdown-menu
 $(document).ready(function(){
-    $('.dropdown-list').click(function(){            
+    $('.dropdown-list').click(function(){   
+
+           $('.goods-list-mm').animate({
+              left: '1000px'              
+            }, 0, function() {
+           });   
+
+
           $(this).next('.goods-list-mm').animate({
               left: '0px'              
             }, 300, function() {

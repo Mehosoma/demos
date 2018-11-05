@@ -440,15 +440,17 @@ header {
   .top-menu-mm li {
     display: block;
     padding: 10px 10px 10px 30px;
-    margin: 0px;
-    background-image: url(../img/arr-mm.png);
-    background-repeat: no-repeat;
-    background-position: right 20px center; }
+    margin: 0px; }
   .top-menu-mm ul {
     display: block; }
 
-.top-mm-dropdown a {
-  display: block; }
+.top-mm-dropdown {
+  background-image: url(../img/arr-mm.png);
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+  position: relative; }
+  .top-mm-dropdown a {
+    display: block; }
 
 .goods-list-mm {
   position: absolute;
@@ -456,11 +458,16 @@ header {
   top: 0px;
   overflow: hidden;
   background-color: #f1f1f1;
-  z-index: 100000;
-  height: 100%; }
+  z-index: 100000; }
 
 .cat-return {
   color: #f0891c !important; }
+
+.top-menu-mm ul:nth-child(2) {
+  margin-left: 0px; }
+
+.add-info a {
+  color: #a6008d; }
 
 /***************************************************Slider*******************************************/
 .main-slider {
