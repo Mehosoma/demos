@@ -447,8 +447,7 @@ header {
 .top-mm-dropdown {
   background-image: url(../img/arr-mm.png);
   background-repeat: no-repeat;
-  background-position: right 20px center;
-  position: relative; }
+  background-position: right 20px center; }
   .top-mm-dropdown a {
     display: block; }
 
