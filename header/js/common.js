@@ -6,7 +6,47 @@ $(document).ready(function(){
               height: 'toggle'
             }, 600, function() {
           });         
+        $("footer .menu-toggle-button").toggleClass('is-active');                   
+    });
+});
+
+//Show-hide top menu
+$(document).ready(function(){
+    $('.click-mobile-mm').on('click',function(e){
+        e.preventDefault();        
+          $('.top-menu').animate({
+              height: 'toggle'
+            }, 600, function() {
+          });         
         $("header .menu-toggle-button").toggleClass('is-active');                   
+    });
+});
+
+//Show-hide search field
+$(document).ready(function(){
+    $('.search-mm').on('click',function(e){
+        e.preventDefault();        
+          $('.header-search').animate({
+              width: '300px'
+            }, 600, function() {
+          });                               
+    });
+});
+
+//Show-hide dropdown-menu
+$(document).ready(function(){
+    $('.dropdown-list').click(function(){            
+          $(this).next('.goods-list-mm').animate({
+              left: '0px'              
+            }, 300, function() {
+          });        
+    });
+
+     $('.cat-return').click(function(){
+         $(this).parent('.goods-list-mm').animate({
+              left: '1000px'              
+            }, 300, function() {
+          });  
     });
 });
 
