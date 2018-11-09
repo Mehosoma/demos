@@ -58,6 +58,15 @@ $(document).ready(function(){
 });
 
 
+  //ModalWindow
+$(document).ready(function(){
+    $('.popup_form').magnificPopup({
+      fixedContentPos: false,
+      fixedBgPos: true    
+  });
+});
+
+
 $(document).ready(function(){
   $('.top-slider').slick({
         infinite: true,

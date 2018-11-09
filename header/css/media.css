@@ -1,5 +1,9 @@
 @media only screen and (min-width : 0px) and (max-width : 479px) {
 
+	.header-search::before, .header-search::after{
+		display: none;
+	}
+
 	.logo{
 		top: 7px;
 		left: 20px;
@@ -161,9 +165,30 @@
 		margin-top: 10px;
 	}
 
+	.modal-form{
+		width: 100%;
+		max-width: 600px;
+	}
+
+	.form-wrapper{
+		width: 95%;
+	}
+
+	.social-icons-list li{
+		margin-bottom: 10px;
+	}
+
+	.form-single .s-field{
+		width: 70%;
+	}
+
 }
 
 @media only screen and (min-width : 480px) and (max-width : 767px) {
+
+	.header-search::before, .header-search::after{
+		display: none;
+	}
 
 	.logo{
 		top: 7px;
@@ -279,10 +304,23 @@
 		font-size: 20px;
 	}
 
+	.modal-form{
+		width: 100%;
+		max-width: 600px;
+	}
+
+	.form-wrapper{
+		width: 95%;
+	}
+
 
 }
 
 @media only screen and (min-width : 768px) and (max-width : 991px) {
+
+	.header-search::before, .header-search::after{
+		display: none;
+	}
 
 	.logo{
 		top: 7px;

@@ -16,6 +16,7 @@
 
 	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.css">
 	<link rel="stylesheet" href="libs/slick/slick.css">	
+	<link rel="stylesheet" href="libs/magnific/magnific-popup.css">	
 
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/main.css">
@@ -43,7 +44,7 @@
 							</div>
 							<div class="phone-info clearfix">
 								<p class="f-left">Бесплатно по России</p>
-								<a href="" class="f-right">Заказать звонок</a>
+								<a href="#callback" class="f-right popup_form">Заказать звонок</a>
 							</div>
 						</div>
 					</div>
@@ -72,9 +73,9 @@
 						<div class="tr-wrapper">
 							<div class="login-info">
 								<ul>
-									<li><a href="" class="order-search">Заявка на поиск</a></li>
-									<li><a href="" class="registration">Регистрация</a></li>
-									<li><a href="" class="f-pass">Забыли пароль</a></li>
+									<li><a href="#search-ord" class="order-search popup_form">Заявка на поиск</a></li>
+									<li><a href="#reg-form" class="registration popup_form">Регистрация</a></li>
+									<li><a href="#fog-pass" class="f-pass popup_form">Забыли пароль</a></li>
 								</ul>
 							</div>
 							<div class="header-search">
@@ -85,7 +86,7 @@
 					</div>
 					<div class="col-lg-2 сlearfix col-md-3 col-sm-4 col-xs-12">
 						<div class="h-login"></div>
-						<a href="" class="h-login-link">Войти</a>
+						<a href="#auth" class="h-login-link popup_form">Войти</a>
 						<div class="h-basket clearfix">
 							<div class="basket-wrapper">
 								<a href="" class="h-basket-link">корзина<br><span class="cost-num">0</span> руб.</a>
@@ -128,7 +129,7 @@
 			</div>
 			<div class="header-mm-icons">
 				<ul>
-					<li><a href="" class="registration link-mm registration-mm"></a></li>
+					<li><a href="#reg-form" class="registration link-mm registration-mm popup_form"></a></li>
 					<li>
 						<a href="" class="search-mm link-mm"></a>
 						<div class="header-search header-search-mm">
@@ -269,7 +270,7 @@
 				<li><a href="">Оплата</a></li>
 				<li><a href="">Доставка</a></li>
 				<li><a href="">Возврат</a></li>
-				<li><a href="" class="order-search">Заявка на поиск</a></li>
+				<li><a href="#search-ord" class="order-search popup_form">Заявка на поиск</a></li>
 				<li><a href="">Контакты</a></li>
 				<li><a href="">Магазины</a></li>
 			</ul>
@@ -868,7 +869,7 @@
 					</div>
 					<div class="phone-info clearfix">
 						<p class="f-left">Бесплатно по России</p>
-						<a href="" class="f-right">Заказать звонок</a>
+						<a href="#callback" class="f-right popup_form">Заказать звонок</a>
 					</div>
 				</div>
 			</div>
@@ -914,11 +915,136 @@
 	</div>
 </footer>
 
+<form  id="callback" class="modal-form mfp-hide">
+	<div class="form-wrapper">
+		<p class="form-header">Заказ звонка</p>
+		<p class="form-info">Здравствуйте, <span class="user-name">Имя</span>! Оставьте заявку и Вам обязательно перезвонят.</p>	
+		<div class="form-fields">
+			<div class="form-single">
+				<span class="form-main-text">Номер телефона или Skype*</span>
+				<input type="text" name="acc-info" required="">
+			</div>
+			<div class="form-single">
+				<span class="form-main-text">Краткое описание*</span>
+				<textarea name="s-desc"></textarea>
+			</div>
+			<div class="form-single">
+				<span class="form-main-text">Удобные дата и время звонка*</span>
+				<input type="text" name="date" required="" class="s-field">
+				<img src="img/calendar.png" alt="calendar-icon" class="date-choice">
+				<div class="form-dates">
+					<a href="">c 10:00 - 13:00</a>
+					<a href="">c 13:00 - 16:00</a>
+					<a href="">c 16:00 - 19:00</a>
+				</div>
+			</div>
+		</div>	
+		<div class="form-button">
+			<button type="submit" class="btn_form">Отправить заявку</button>
+		</div>	
+	</div>
+</form>
+
+<form  id="search-ord" class="modal-form mfp-hide">
+	<div class="form-wrapper">
+		<p class="form-header">Заявка на поиск</p>
+		<p class="form-info">Ответ по заявке будет отправлен Вам на электронную почту в течении трех рабочих дней.</p>	
+		<div class="form-fields">			
+			<div class="form-single">
+				<span class="form-main-text">Описание товара*</span>
+				<textarea name="s-desc"></textarea>
+			</div>			
+		</div>	
+		<div class="form-button">
+			<button type="submit" class="btn_form">Отправить заявку</button>
+		</div>	
+	</div>
+</form>
+
+<form  id="reg-form" class="modal-form mfp-hide">
+	<div class="form-wrapper">
+		<p class="form-header">Регистрация</p>		
+		<div class="form-fields">
+			<div class="form-single">
+				<span class="form-main-text">E-mail*</span>
+				<input type="text" name="email" required="">
+			</div>
+			<div class="form-single">
+				<span class="form-main-text">Имя</span>
+				<input type="text" name="fio">
+			</div>
+		</div>	
+		<div class="form-button">
+			<button type="submit" class="btn_form">Регистрация</button>
+		</div>	
+		<div class="social-icons">
+			<p class="form-main-text">Войти на сайт, используя социальные сети</p>
+			<ul class="social-icons-list">
+				<li><a href=""><img src="img/vk.png"></a></li>
+				<li><a href=""><img src="img/facebook.png"></a></li>
+				<li><a href=""><img src="img/twitter.png"></a></li>
+				<li><a href=""><img src="img/mailru.png"></a></li>
+				<li><a href=""><img src="img/google.png"></a></li>
+				<li><a href=""><img src="img/ok.png"></a></li>
+			</ul>
+		</div>
+	</div>
+</form>
+
+
+<form  id="fog-pass" class="modal-form mfp-hide">
+	<div class="form-wrapper">
+		<p class="form-header">Забыли пароль</p>
+		<p class="form-main-text">Если вы забыли пароль, введите E-Mail.</p>	
+		<p class="form-main-text">Контрольная строка для смены пароля будет выслана вам по E-Mail.</p>
+		<div class="form-fields">
+			<div class="form-single">
+				<span class="form-main-text">E-mail*</span>
+				<input type="" name="email" required="">
+			</div>			
+		</div>	
+		<div class="form-button">
+			<button type="submit" class="btn_form">Отправить</button>
+		</div>	
+	</div>
+</form>
+
+<form  id="auth" class="modal-form mfp-hide">
+	<div class="form-wrapper">
+		<p class="form-header">Войти</p>		
+		<div class="form-fields">
+			<div class="form-single">
+				<span class="form-main-text">E-mail или телефон</span>
+				<input type="text" name="email" required="">
+			</div>
+			<div class="form-single">
+				<span class="form-main-text">Пароль</span>
+				<input type="password" name="pass">
+			</div>
+		</div>	
+		<div class="form-button">
+			<button type="submit" class="btn_form">Войти</button>
+		</div>	
+		<div class="social-icons">
+			<p class="form-main-text">Войти на сайт, используя социальные сети</p>
+			<ul class="social-icons-list">
+				<li><a href=""><img src="img/vk.png"></a></li>
+				<li><a href=""><img src="img/facebook.png"></a></li>
+				<li><a href=""><img src="img/twitter.png"></a></li>
+				<li><a href=""><img src="img/mailru.png"></a></li>
+				<li><a href=""><img src="img/google.png"></a></li>
+				<li><a href=""><img src="img/ok.png"></a></li>
+			</ul>
+		</div>
+	</div>
+</form>
+
 	<div class="hidden"></div>
 
 	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
 	<script src="libs/bootstrap/js/bootstrap.js"></script>
 	<script src="libs/slick/slick.js"></script>
+	<script src="libs/magnific/jquery.magnific-popup.js"></script>
 	<script src="js/common.js"></script>
 	
 </body>

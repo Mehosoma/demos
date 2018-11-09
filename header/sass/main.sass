@@ -1,0 +1,829 @@
+@import "bourbon/bourbon"
+
+$orange: #f0891c
+$purple: #a6008d
+$seg: 'Segoe UI', sans-serif
+$seg-b: 'Segoe UI Bold', sans-serif
+$seg-semi: 'egoe UI Semibold', sans-serif
+
+html
+	width: 100%
+	height: 100%
+	overflow-x: hidden
+body
+	width: 100%
+	height: auto
+	min-width: 320px	
+	margin: 0 auto
+	position: relative
+	line-height: 1.2
+	-webkit-font-smoothing: antialiased
+	background-color: #fff	
+	font-family: $seg
+	a:hover, a:focus, a:active
+		text-decoration: none
+		outline: none
+	input:focus, input:active
+		text-decoration: none
+		outline: none
+	button:focus, button:active
+		text-decoration: none
+		outline: none
+	textarea:focus, textarea:active
+		text-decoration: none
+		outline: none
+	a
+		display: inline-block
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out
+	ul, ol
+		padding: 0px
+		margin: 0px
+		list-style-type: none
+	button
+		border: none
+		cursor: pointer
+	hr
+		border: none	
+
+.pixel
+	background: url(../img/main.jpg) no-repeat top center
+	width: 1920px
+	height: 12800px
+	position: absolute
+	z-index: 1000000
+	display: none
+	left: 50%
+	top: 0
+	margin-left: -960px
+	opacity: 0.5
+	margin-top: 0px
+
+
+/***************************************************GeneralStyles************************************/
+h3
+	font-size: 36px
+	color: $purple
+	line-height: 1.2
+h2
+	font-size: 36px
+	color: #000
+.gen-text, .gen-text a
+	font-size: 16px
+	color: #000
+	line-height: 26px
+.gen-text a:hover
+	color: $orange
+.hidden
+	display: none
+
+
+/***************************************************Header*******************************************/
+header
+	position: relative
+.logo
+	position: absolute
+	top: 16px	
+.header-first
+	height: 106px
+.top-menu, .bottom-menu, .bottom-links
+	ul
+		display: inline-block
+	li
+		display: inline-block		
+		font-size: 18px
+		color: #000
+		span
+			color: #fa3a1d
+			font-family: $seg-b
+	a
+		font-size: 18px
+		color: #000
+	a:hover
+		color: $orange
+	.purple-link
+		color: #a21b86
+		border-bottom: 1px solid #a21b86
+	.purple-link:hover
+		border-bottom: 1px solid $orange
+	i
+		width: 16px
+		height: 16px
+		background-color: #bd2f1b
+		color: #fff
+		text-align: center
+		line-height: 14px
+		font-size: 12px
+		font-style: normal
+		display: inline-block
+		border-radius: 4px
+		margin-left: 5px
+.top-menu ul:nth-child(2)
+	margin-left: 10px
+.bottom-menu
+	a
+		font-family: $seg-b		
+	li
+		line-height: 70px
+		margin-right: 39px	
+.top-menu
+	margin-top: 37px
+	li
+		margin-right: 24px
+.d-marker
+	position: relative
+.d-marker::after
+	content: ''
+	position: absolute
+	right: -20px
+	top: 10px
+	border: 5px solid transparent
+	border-top: 5px solid $purple
+.phone
+	margin-top: 30px
+	a
+		font-size: 30px
+		color: #000
+.f-left
+	display: inline-block
+	font-size: 12px
+	color: #333333
+.f-right, .f-right:visited, .f-right:active, .f-right:focus
+	display: inline-block
+	font-size: 12px
+	color: $purple
+	border-bottom: 1px solid $purple	
+	margin-left: 10px
+.f-right:hover
+	color: $orange
+	border-bottom: 1px solid transparent
+.header-second
+	height: 90px
+	background-color: $orange
+	.container, .row
+		height: inherit
+.login-info	
+	li
+		display: inline-block
+		margin-right: 17px
+	a
+		font-size: 16px
+		color: #fff
+		border-bottom: 1px solid #fff
+	a:hover
+		border-bottom: 1px solid transparent
+.header-search
+	width: 736px
+	position: relative
+	margin-top: 11px
+	input
+		width: 100%
+		height: 38px
+		line-height: 37px
+		border: 1px solid $purple
+		padding: 0px 100px 0px 12px
+		border-right: none
+	::-webkit-input-placeholder 
+		color: #999999		
+		font-size: 16px	
+	::-moz-placeholder
+		color: #999999		
+		font-size: 16px	
+	:-moz-placeholder 
+		color: #999999		
+		font-size: 16px	
+	:-ms-input-placeholder      
+		color: #999999		
+		font-size: 16px	
+.h-search-link
+	width: 21px
+	height: 21px
+	background-image: url(../img/lupa.png)
+	background-repeat: no-repeat
+	background-position: center center
+	position: absolute
+	top: 10px
+	right: 10px
+.header-search::before
+	content: ''
+	position: absolute
+	right: -33px 
+	top: 5px
+	border: 19px solid transparent
+	border-top: 9px solid $purple
+	transform: rotate(-90deg)
+.header-search::after
+	content: ''
+	position: absolute
+	right: -32px
+	top: 5px
+	border: 19px solid transparent
+	border-top: 9px solid white
+	transform: rotate(-90deg)
+.tr-wrapper
+	position: relative	
+	z-index: 10
+	height: 90px
+	padding-top: 7px
+.tr-wrapper::before
+	content: ''
+	position: absolute
+	right: -60px 
+	top: 15px
+	border: 45px solid transparent
+	border-top: 15px solid #fff
+	transform: rotate(-90deg)	
+.tr-wrapper::after
+	content: ''
+	position: absolute
+	right: -58px
+	top: 15px
+	border: 45px solid transparent
+	border-top: 15px solid $orange
+	transform: rotate(-90deg)	
+.h-login
+	width: 75px
+	height: 90px
+	background-color: $purple
+	margin-left: -45px
+	position: relative	
+	display: inline-block
+	z-index: 5
+	vertical-align: top
+.h-login-link
+	font-size: 16px
+	color: #fff
+	line-height: 90px
+	margin-left: 28px
+	position: absolute
+	z-index: 100
+	left: -30px
+.h-login-link:hover
+	color: $orange!important
+.h-login:visited, .h-login-link:active, .h-login-link:focus
+	color: #fff
+.h-login::before
+	content: ''
+	position: absolute
+	right: -76px 
+	top: 15px
+	border: 45px solid transparent
+	border-top: 15px solid #fff
+	transform: rotate(-90deg)	
+.h-login::after
+	content: ''
+	position: absolute
+	right: -74px
+	top: 15px
+	border: 45px solid transparent
+	border-top: 15px solid $purple
+	transform: rotate(-90deg)
+.h-basket
+	display: inline-block
+	width: 190px
+	height: 90px
+	background-color: #c4bb9e
+	position: relative
+	z-index: 0	
+	vertical-align: top
+	margin-left: -10px
+	background-image: url(../img/basket.png)
+	background-repeat: no-repeat
+	background-position: left 43px center
+.h-basket::before
+	content: ''
+	position: absolute
+	right: -76px 
+	top: 15px
+	border: 45px solid transparent
+	border-top: 15px solid #fff
+	transform: rotate(-90deg)	
+.h-basket::after
+	content: ''
+	position: absolute
+	right: -74px
+	top: 15px
+	border: 45px solid transparent
+	border-top: 15px solid #c4bb9e
+	transform: rotate(-90deg)
+.header-third
+	height: 70px
+	background-color: #e6ebee
+	.col-lg-12
+		padding-right: 0px
+	.fix-li
+		margin-right: 0px
+.basket-wrapper
+	margin-top: 27px
+	margin-left: 92px	
+	a
+		font-size: 16px	
+		line-height: 16px
+		color: #000
+	a:hover
+		color: $purple
+	span
+		font-size: 16px		
+
+
+/***************************************************Header-Mobile*******************************************/
+.header-mm
+	height: 60px
+	background-color: #f0891c
+	position: relative	
+.header-mm  .menu-toggle-button
+	margin-top: 15px
+.header-mm-icons
+	position: absolute
+	left: 100px
+	top: 20px
+	z-index: 100
+	li
+		width: 20px
+		height: 20px
+		display: inline-block	
+		vertical-align: middle
+		margin: 0px 10px
+	.link-mm
+		width: 100%
+		height: 100%
+.registration-mm
+	background-image: url('../img/login-mm.png')
+	background-repeat: no-repeat
+	background-position: center center
+.search-mm
+	position: relative
+	background-image: url(../img/search-mm.png)
+	background-repeat: no-repeat
+	background-position: center center
+.header-search-mm
+	position: absolute
+	top: -10px
+	margin-top: 0px
+	width: 0px
+	overflow: hidden
+	z-index: 1000
+	input
+		border: 1px solid $purple
+		padding: 0 40px 0px 12px
+.h-basket-link-mm
+	background-image: url('../img/basket-mm.png')
+	background-repeat: no-repeat
+	background-position: center center	
+.top-menu-mm
+	box-shadow: 0px 10px 10px -10px rgba(0,0,0,1)	
+	overflow: hidden
+	position: absolute
+	top: 60px		
+	left: 0px
+	margin-left: 0px
+	margin-top: 0px
+	width: 100%
+	height: auto
+	background-color: #fff
+	padding: 0px
+	display: none
+	z-index: 10000
+	li
+		display: block		
+		padding: 10px 10px 10px 30px
+		margin: 0px		
+	ul
+		display: block		
+.top-mm-dropdown
+	background-image: url(../img/arr-mm.png)
+	background-repeat: no-repeat
+	background-position: right 20px center		
+	a
+		display: block
+.goods-list-mm
+	position: absolute
+	right: -1000px
+	top: 0px	
+	overflow: hidden
+	background-color: #f1f1f1
+	z-index: 100000		
+.cat-return
+	color: $orange!important
+.top-menu-mm ul:nth-child(2)
+	margin-left: 0px
+.add-info
+	a
+		color: $purple
+
+
+/***************************************************Slider*******************************************/
+.main-slider
+	padding-top: 94px
+	padding-bottom: 30px
+.top-slider
+	position: relative
+.slide
+	width: 100%
+	height: 459px
+	background-image: url(../img/slide-1.jpg)
+	background-repeat: no-repeat
+	background-position: center center	
+.slick-prev
+	position: absolute
+	width: 26px
+	height: 50px
+	background-image: url('../img/arr-prev.png')
+	background-repeat: no-repeat
+	background-position: center center	
+	left: 0px
+	top: 50%
+	margin-top: -25px
+	padding: 0px
+	background-color: transparent
+	z-index: 1000
+.slick-next
+	position: absolute
+	width: 26px
+	height: 50px
+	background-image: url('../img/arr-next.png')
+	background-repeat: no-repeat
+	background-position: center center	
+	right: 0px
+	top: 50%
+	margin-top: -25px
+	padding: 0px
+	background-color: transparent
+	z-index: 1000
+
+/***************************************************Goods*******************************************/
+.goods
+	padding-top: 26px
+	padding-bottom: 50px
+.goods-block
+	position: relative
+	height: 430px
+.goods-block-info
+	position: absolute
+	top: 148px
+	h3
+		margin-bottom: 22px	
+.goods-block-image
+	width: 100%
+	height: 150px
+	position: relative	
+	img
+		position: absolute
+		bottom: 0px
+.goods-list
+	li
+		margin-bottom: 6px
+.goods-row
+	margin-top: 112px
+
+/***************************************************Goods-Sliders**********************************************/
+.best, .new-goods, .office-goods
+	padding-top: 60px
+	padding-bottom: 15px
+.slider-fix
+	width: 1525px
+	overflow: hidden
+.goods-slider
+	width: 1530px
+	margin-top: 20px
+	overflow: hidden
+	.slick-list		
+		margin: 0 -10px
+	.slick-slide
+		margin: 0 10px	
+	.slick-prev
+		width: 30px
+		height: 60px
+		border-radius: 0 100% 100% 0 / 0 50% 50% 0
+		background-color: #fff
+		top: 38%	
+		background-size: 10px auto 
+		background-position: left 5px center
+		left: -1px
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out
+	.slick-next
+		width: 30px
+		height: 60px
+		border-radius: 100% 0 0 100% / 50% 0 0 50%
+		background-color: #fff
+		top: 38%
+		background-size: 10px auto 
+		background-position: right 5px center
+		right: 4px
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out	
+.goods-slide-block
+	width: 230px
+	height: 545px
+.goods-slide-image
+	width: 100%
+	height: 368px
+	img
+		max-width: 100%
+		height: 368px
+.in-cart
+	width: 100%
+	height: 50px
+	font-size: 16px
+	color: #fff
+	background-color: $purple
+	text-align: center
+	line-height: 50px
+.in-cart:hover
+	color: $orange
+.good-cost
+	font-size: 22px
+	color: #000
+	line-height: 35px
+.good-name
+	max-height: 34px
+	overflow: hidden
+	line-height: 17px
+.good-info .good-author
+	color: $purple
+	border-bottom: 1px solid $purple
+	line-height: 18px
+.good-author:hover
+	border-bottom: 1px solid $orange
+.goods-slide-image_unknown, .goods-office-image_unknown
+	border: 1px solid #d9d9d9
+	background-image: url('../img/unknown-book.png')
+	background-repeat: no-repeat
+	background-position: center center
+.goods-office-image_unknown
+	background-image: url('../img/unknown-office.png')
+
+
+/***************************************************Benefits**********************************************/
+.benefits
+	padding-top: 70px
+	padding-bottom: 80px
+.benefits-header-block 
+	margin-top: 23px
+	height: 41px
+	img
+		display: inline-block	
+	p
+		margin-left: 24px			
+.benefits-header
+	font-size: 24px
+	color: #000
+	display: inline-block
+	position: relative
+	top: 15px
+.benefits .row .col-lg-4:nth-child(2)
+	img
+		position: relative
+		top: 5px
+.benefits-info
+	margin-top: 34px
+	p
+		margin-bottom: 1px
+		padding-right: 20px
+	.gen-text
+		a
+			color: $purple
+			border-bottom: 1px solid $purple
+			display: inline
+		a:hover
+			border-bottom: 1px solid transparent		
+
+
+/***************************************************About**********************************************/
+.about
+	width: 100%
+	height: 430px
+	background-color: #fee8cc
+.about-header
+	font-size: 24px
+	color: #000
+	margin-bottom: 25px
+	display: block	
+.about-content
+	margin-top: 47px
+	p
+		margin-bottom: 26px
+		padding-right: 50px
+
+
+/***************************************************Footer**********************************************/
+.bottom-links
+	margin-top: 20px
+	b
+		color: #fa3a1d
+	li:nth-child(1)
+		margin-right: 42px
+footer 
+	padding-bottom: 20px
+	.phone-wrapper
+		margin-top: 12px
+		.phone
+			margin-top: 0px
+	.header-third
+		margin-top: 18px
+.copy
+	font-size: 14px
+	margin-top: 98px
+.al-right
+	text-align: right
+	padding-top: 18px
+	.counters
+		margin-top: 41px
+
+
+/**********************************************ModalWindows*******************************************/
+.form-wrapper
+	width: 570px
+	margin: 0 auto
+	padding: 30px 0px 40px 0px
+.modal-form
+	position: relative
+	width: 600px
+	height: auto
+	margin: 0 auto
+	background-color: #fff
+.form-header
+	font-family: $seg-b
+	font-size: 30px
+	color: $purple
+.form-info
+	font-size: 16px
+	color: #000
+.form-single	
+	margin-top: 20px	
+	position: relative
+	input, textarea
+		display: block
+		width: 100%
+		height: 36px
+		border: 1px solid #cccccc
+		padding: 0px 20px
+		margin-top: 10px
+	textarea		
+		resize: none		
+		height: 100px
+		padding: 20px
+.form-dates
+	margin-top: 10px
+	display: block
+	a
+		font-size: 16px
+		font-family: $seg-semi
+		font-weight: 600
+		color: #000
+		border-bottom: 1px solid transparent
+	a:hover
+		color: $purple
+		border-bottom: 1px solid $purple
+.form-single .s-field
+	width: 80%
+	display: inline-block
+.btn_form
+	width: 100%
+	height: 54px
+	background-color: #00aeef
+	font-size: 16px
+	font-family: $seg-b	
+	color: #fff
+	margin-top: 25px
+	-moz-transition: all 0.3s ease-out
+	-o-transition: all 0.3s ease-out
+	-webkit-transition: all 0.3s ease-out
+	transition: all 0.3s ease-out
+.btn_form:hover
+	background-color: $orange
+.form-main-text
+	font-size: 16px
+	line-height: 24px
+	font-family: $seg-semi
+	font-weight: 600
+.social-icons
+	margin-top: 25px
+.social-icons-list	
+	li
+		display: inline-block
+		margin-right: 10px
+	a:hover
+		opacity: 0.7
+.date-choice
+	display: inline-block
+	position: relative
+	top: -5px
+	margin-left: 20px
+//CallBack
+
+/***********************************************ButtonMobile******************************************/
+.menu-toggle-button
+	width: 50px
+	height: 40px
+	float: right
+	background-color: transparent
+	border-radius: 7px
+	padding-top: 5px
+	border: none
+	text-indent: -9999px
+	-webkit-appearance: none
+	-moz-appearance: none
+	appearance: none
+	position: relative
+	display: block
+	overflow: hidden
+	margin-top: 10px	
+	margin-left: -17px
+
+
+.menu-toggle-button span 
+	display: block
+	height: 2px
+	background: $orange
+	position: absolute
+	top: 15px
+	left: 16px
+	right: 16px
+	-webkit-transition: background 0s 0.3
+	-o-transition: background 0s 0.3
+	transition: background 0s 0.3
+
+header .menu-toggle-button span 
+	background: #fff
+
+
+.menu-toggle-button span::before, .menu-toggle-button span::after
+	content: ""
+	display: block
+	width: 100%
+	height: 2px
+	background: $orange
+	position: absolute
+	left: 0px
+	-webkit-transition-duration: 0.3s, 1s
+	-o-transition-duration: 0.3s, 1s
+	transition-duration: 0.3s, 1s
+	-webkit-transition-delay: 0s, 0.3s
+	-o-transition-delay: 0s, 0.3s
+	transition-delay: 0s, 0.3s
+
+header .menu-toggle-button span::before, header .menu-toggle-button span::after
+	background: #fff
+
+
+.menu-toggle-button span::before 
+	top: -5px
+
+.menu-toggle-button span::after 
+	bottom: -5px
+
+.menu-toggle-button.is-active span
+	background: none
+
+.menu-toggle-button.is-active span::before
+	top: 0
+	-webkit-transform: rotate(45deg)
+	-ms-transform: rotate(45deg)
+	transform: rotate(45deg)
+	-webkit-transition-property: top, -webkit-transform
+	transition-property: top, -webkit-transform
+	-o-transition-property: top, transform
+	transition-property: top, transform
+	transition-property: top, transform, -webkit-transform
+	-webkit-transition-delay: 0s, 0.3s
+	-o-transition-delay: 0s, 0.3s
+	transition-delay: 0s, 0.3s
+	-webkit-transition-duration: 0.3s, 0.3s
+	-o-transition-duration: 0.3s, 0.3s
+	transition-duration: 0.3s, 0.3s
+	background: $orange
+
+header .menu-toggle-button.is-active span::before
+	background: #fff
+
+.menu-toggle-button.is-active span::after 
+	bottom: 0
+	background: $orange
+	-webkit-transform: rotate(-45deg)
+	-ms-transform: rotate(-45deg)
+	transform: rotate(-45deg)
+	-webkit-transition-property: bottom, -webkit-transform
+	transition-property: bottom, -webkit-transform
+	-o-transition-property: bottom, transform
+	transition-property: bottom, transform
+	transition-property: bottom, transform, -webkit-transform
+	-webkit-transition-delay: 0s, 0.3s
+	-o-transition-delay: 0s, 0.3s
+	transition-delay: 0s, 0.3s
+	-webkit-transition-duration: 0.3s, 0.3s
+	-o-transition-duration: 0.3s, 0.3s
+	transition-duration: 0.3s, 0.3s
+
+header .menu-toggle-button.is-active span::after 
+	background: #fff
+
+.menu-toggle-button:focus
+	outline: none !important

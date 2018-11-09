@@ -161,7 +161,7 @@ header {
   font-size: 12px;
   color: #333333; }
 
-.f-right {
+.f-right, .f-right:visited, .f-right:active, .f-right:focus {
   display: inline-block;
   font-size: 12px;
   color: #a6008d;
@@ -292,7 +292,10 @@ header {
   left: -30px; }
 
 .h-login-link:hover {
-  color: #f0891c; }
+  color: #f0891c !important; }
+
+.h-login:visited, .h-login-link:active, .h-login-link:focus {
+  color: #fff; }
 
 .h-login::before {
   content: '';
@@ -577,7 +580,7 @@ header {
     background-color: #fff;
     top: 38%;
     background-size: 10px auto;
-    background-position: right 7px center;
+    background-position: right 5px center;
     right: 4px;
     -moz-transition: all 0.3s ease-out;
     -o-transition: all 0.3s ease-out;
@@ -714,6 +717,98 @@ footer {
   padding-top: 18px; }
   .al-right .counters {
     margin-top: 41px; }
+
+/**********************************************ModalWindows*******************************************/
+.form-wrapper {
+  width: 570px;
+  margin: 0 auto;
+  padding: 30px 0px 40px 0px; }
+
+.modal-form {
+  position: relative;
+  width: 600px;
+  height: auto;
+  margin: 0 auto;
+  background-color: #fff; }
+
+.form-header {
+  font-family: "Segoe UI Bold", sans-serif;
+  font-size: 30px;
+  color: #a6008d; }
+
+.form-info {
+  font-size: 16px;
+  color: #000; }
+
+.form-single {
+  margin-top: 20px;
+  position: relative; }
+  .form-single input, .form-single textarea {
+    display: block;
+    width: 100%;
+    height: 36px;
+    border: 1px solid #cccccc;
+    padding: 0px 20px;
+    margin-top: 10px; }
+  .form-single textarea {
+    resize: none;
+    height: 100px;
+    padding: 20px; }
+
+.form-dates {
+  margin-top: 10px;
+  display: block; }
+  .form-dates a {
+    font-size: 16px;
+    font-family: "egoe UI Semibold", sans-serif;
+    font-weight: 600;
+    color: #000;
+    border-bottom: 1px solid transparent; }
+  .form-dates a:hover {
+    color: #a6008d;
+    border-bottom: 1px solid #a6008d; }
+
+.form-single .s-field {
+  width: 80%;
+  display: inline-block; }
+
+.btn_form {
+  width: 100%;
+  height: 54px;
+  background-color: #00aeef;
+  font-size: 16px;
+  font-family: "Segoe UI Bold", sans-serif;
+  color: #fff;
+  margin-top: 25px;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out; }
+
+.btn_form:hover {
+  background-color: #f0891c; }
+
+.form-main-text {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "egoe UI Semibold", sans-serif;
+  font-weight: 600; }
+
+.social-icons {
+  margin-top: 25px; }
+
+.social-icons-list li {
+  display: inline-block;
+  margin-right: 10px; }
+
+.social-icons-list a:hover {
+  opacity: 0.7; }
+
+.date-choice {
+  display: inline-block;
+  position: relative;
+  top: -5px;
+  margin-left: 20px; }
 
 /***********************************************ButtonMobile******************************************/
 .menu-toggle-button {

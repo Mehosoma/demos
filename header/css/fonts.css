@@ -9,3 +9,9 @@
   font-style: normal;
   font-weight: normal;
   src: url("../fonts/SegoeUI-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/SegoeUI-Bold.woff") format("woff"), url("../fonts/SegoeUI-Bold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Segoe UI Semibold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/Segoe UI Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/Segoe UI Semibold.woff") format("woff"), url("../fonts/Segoe UI Semibold.ttf") format("truetype"); }
