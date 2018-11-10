@@ -72,6 +72,22 @@ h2 {
 .gen-text a:hover {
   color: #f0891c; }
 
+.breadcrumb {
+  background-color: transparent;
+  margin-top: 22px;
+  margin-bottom: 15px; }
+
+.breadcrumb-item a {
+  color: #000;
+  font-size: 16px; }
+
+.breadcrumb > .active {
+  color: #999999;
+  font-size: 16px; }
+
+.breadcrumb > li + li:before {
+  padding: 0px; }
+
 .hidden {
   display: none; }
 
@@ -128,7 +144,9 @@ header {
   margin-left: 10px; }
 
 .bottom-menu a {
-  font-family: "Segoe UI Bold", sans-serif; }
+  font-family: "Segoe UI Bold", sans-serif;
+  line-height: 1;
+  display: inline-block; }
 
 .bottom-menu li {
   line-height: 70px;
@@ -285,11 +303,11 @@ header {
 .h-login-link {
   font-size: 16px;
   color: #fff;
-  line-height: 90px;
   margin-left: 28px;
   position: absolute;
   z-index: 100;
-  left: -30px; }
+  left: -30px;
+  top: 34px; }
 
 .h-login-link:hover {
   color: #f0891c !important; }
@@ -718,6 +736,20 @@ footer {
   .al-right .counters {
     margin-top: 41px; }
 
+.add-footer {
+  padding-bottom: 30px; }
+  .add-footer .copy {
+    margin-top: 16px; }
+
+.add-footer-counters a {
+  display: inline-block; }
+
+.add-footer-counters .bit-link {
+  margin-right: 78px; }
+
+.add-footer-counters .counters {
+  display: inline; }
+
 /**********************************************ModalWindows*******************************************/
 .form-wrapper {
   width: 570px;
@@ -760,7 +792,7 @@ footer {
   display: block; }
   .form-dates a {
     font-size: 16px;
-    font-family: "egoe UI Semibold", sans-serif;
+    font-family: "Segoe UI Semibold", sans-serif;
     font-weight: 600;
     color: #000;
     border-bottom: 1px solid transparent; }
@@ -791,7 +823,7 @@ footer {
 .form-main-text {
   font-size: 16px;
   line-height: 24px;
-  font-family: "egoe UI Semibold", sans-serif;
+  font-family: "Segoe UI Semibold", sans-serif;
   font-weight: 600; }
 
 .social-icons {
@@ -809,6 +841,65 @@ footer {
   position: relative;
   top: -5px;
   margin-left: 20px; }
+
+/***************************************************Catalog*******************************************/
+.catalog {
+  padding-bottom: 72px; }
+
+.catalog-goods li {
+  border-bottom: 1px dashed #e9e9e9;
+  padding: 5px 0px; }
+
+.catalog-header {
+  font-family: "Segoe UI Bold", sans-serif;
+  font-size: 16px;
+  color: #a6008d;
+  text-transform: uppercase; }
+
+.catalog-header:visited, .catalog-header:focus, .catalog-header:active {
+  color: #a6008d; }
+
+.catalog-goods-dropdown {
+  padding-left: 11px;
+  margin-top: 10px;
+  height: auto;
+  display: none;
+  overflow: hidden; }
+  .catalog-goods-dropdown li:last-child {
+    border-bottom: none; }
+
+.catalog-gen a {
+  font-size: 16px;
+  line-height: 16px;
+  color: #000; }
+
+.catalog-gen a:hover {
+  color: #a6008d; }
+
+.catalog-gen li {
+  padding: 7px 0px; }
+
+.active-dropdown-goods {
+  display: block; }
+
+.calalog-right {
+  margin-top: -15px; }
+  .calalog-right h2 {
+    font-family: "Segoe UI Bold", sans-serif;
+    font-size: 30px;
+    color: #a6008d; }
+  .calalog-right h3 {
+    font-family: "Segoe UI", sans-serif;
+    font-size: 24px;
+    color: #a6008d; }
+  .calalog-right .catalog-gen li {
+    padding: 5px 0px; }
+
+.catalog-goods-block {
+  margin-top: 25px;
+  margin-bottom: 5px; }
+  .catalog-goods-block img {
+    height: 150px; }
 
 /***********************************************ButtonMobile******************************************/
 .menu-toggle-button {

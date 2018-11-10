@@ -57,6 +57,17 @@ $(document).ready(function(){
     });
 });
 
+//Show-hide catalog menu
+$(document).ready(function(){
+    $('.catalog-header').on('click',function(e){       
+        e.preventDefault();        
+          $(this).next('.catalog-goods-dropdown').animate({
+              height: 'toggle'
+            }, 400, function() {
+          });                              
+    });
+});
+
 
   //ModalWindow
 $(document).ready(function(){

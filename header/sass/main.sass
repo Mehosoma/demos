@@ -4,7 +4,7 @@ $orange: #f0891c
 $purple: #a6008d
 $seg: 'Segoe UI', sans-serif
 $seg-b: 'Segoe UI Bold', sans-serif
-$seg-semi: 'egoe UI Semibold', sans-serif
+$seg-semi: 'Segoe UI Semibold', sans-serif
 
 html
 	width: 100%
@@ -76,6 +76,18 @@ h2
 	line-height: 26px
 .gen-text a:hover
 	color: $orange
+.breadcrumb
+	background-color: transparent
+	margin-top: 22px
+	margin-bottom: 15px
+.breadcrumb-item a
+	color: #000
+	font-size: 16px	
+.breadcrumb > .active
+	color: #999999
+	font-size: 16px
+.breadcrumb > li + li:before
+	padding: 0px
 .hidden
 	display: none
 
@@ -90,10 +102,10 @@ header
 	height: 106px
 .top-menu, .bottom-menu, .bottom-links
 	ul
-		display: inline-block
+		display: inline-block		
 	li
 		display: inline-block		
-		font-size: 18px
+		font-size: 18px		
 		color: #000
 		span
 			color: #fa3a1d
@@ -124,7 +136,9 @@ header
 	margin-left: 10px
 .bottom-menu
 	a
-		font-family: $seg-b		
+		font-family: $seg-b	
+		line-height: 1	
+		display: inline-block
 	li
 		line-height: 70px
 		margin-right: 39px	
@@ -254,12 +268,12 @@ header
 	vertical-align: top
 .h-login-link
 	font-size: 16px
-	color: #fff
-	line-height: 90px
+	color: #fff	
 	margin-left: 28px
 	position: absolute
 	z-index: 100
 	left: -30px
+	top: 34px
 .h-login-link:hover
 	color: $orange!important
 .h-login:visited, .h-login-link:active, .h-login-link:focus
@@ -636,7 +650,17 @@ footer
 	padding-top: 18px
 	.counters
 		margin-top: 41px
-
+.add-footer
+	padding-bottom: 30px
+	.copy
+		margin-top: 16px
+.add-footer-counters	
+	a
+		display: inline-block
+	.bit-link
+		margin-right: 78px
+	.counters
+		display: inline
 
 /**********************************************ModalWindows*******************************************/
 .form-wrapper
@@ -718,6 +742,58 @@ footer
 	top: -5px
 	margin-left: 20px
 //CallBack
+
+/***************************************************Catalog*******************************************/
+.catalog
+	padding-bottom: 72px
+.catalog-goods 
+	li
+		border-bottom: 1px dashed #e9e9e9
+		padding: 5px 0px
+.catalog-header
+	font-family: $seg-b
+	font-size: 16px
+	color: $purple
+	text-transform: uppercase
+.catalog-header:visited, .catalog-header:focus, .catalog-header:active
+	color: $purple
+.catalog-goods-dropdown
+	padding-left: 11px
+	margin-top: 10px
+	height: auto
+	display: none
+	overflow: hidden	
+	li:last-child
+		border-bottom: none
+.catalog-gen
+	a
+		font-size: 16px	
+		line-height: 16px	
+		color: #000
+	a:hover
+		color: $purple	
+	li
+		padding: 7px 0px
+.active-dropdown-goods
+	display: block
+.calalog-right
+	margin-top: -15px
+	h2
+		font-family: $seg-b
+		font-size: 30px
+		color: $purple				
+	h3
+		font-family: $seg
+		font-size: 24px
+		color: $purple		
+	.catalog-gen 
+		li
+			padding: 5px 0px
+.catalog-goods-block
+	margin-top: 25px
+	margin-bottom: 5px
+	img
+		height: 150px
 
 /***********************************************ButtonMobile******************************************/
 .menu-toggle-button
