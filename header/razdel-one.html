@@ -16,8 +16,9 @@
 
 	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.css">
 	<link rel="stylesheet" href="libs/slick/slick.css">	
-	<link rel="stylesheet" href="libs/magnific/magnific-popup.css">	
+	<link rel="stylesheet" href="libs/magnific/magnific-popup.css">
 	<link rel="stylesheet" href="libs/select/css/bootstrap-select.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
 
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/main.css">
@@ -279,14 +280,15 @@
 	</div>
 </header>
 
-<!--Catalog-->
-<section class="catalog">
+<!--Catalog-Section-->
+<section class="cat-section">
 	<div class="container">
 		<div class="row">
 			<nav aria-label="breadcrumb">
   				<ol class="breadcrumb">
     				<li class="breadcrumb-item"><a href="#">Главная</a></li>
-    				<li class="breadcrumb-item active" aria-current="page">Учебники</li>
+    				<li class="breadcrumb-item"><a href="#">Учебники</a></li>
+    				<li class="breadcrumb-item active" aria-current="page">Учебники 1 класс</li>
   				</ol>
 			</nav>
 		</div>
@@ -342,165 +344,460 @@
 							<li><a href="" class="catalog-header">Избранное</a></li>
 						</ul>
 					</nav>
+					<form class="cat-filter">
+						<div class="filter-check">
+							<label class="l-container">Есть в наличии
+  								<input type="checkbox">
+  								<span class="checkmark"></span>
+							</label>
+						</div>
+						<div class="cat-filter-fields clearfix">
+							<div class="filter-field">
+								<span>Год от:</span>
+								<input type="text" name="f-year">								
+							</div>
+							<div class="filter-field">
+								<span>Цена от:</span>
+								<input type="text" name="f-cost-min">								
+							</div>
+							<div class="filter-field">
+								<span>Цена до:</span>
+								<input type="text" name="f-cost-max">								
+							</div>
+							<div class="filter-field">
+								<span>На складе от:</span>
+								<input type="text" name="f-storage">								
+							</div>
+						</div>
+						<div class="filter-buttons">
+							<button type="submit" class="btn-gen btn-blue">Показать</button>
+							<button type="submit" class="btn-gen btn-grey">Сбросить</button>
+						</div>
+					</form>
 				</div>
 			</div>
 			<div class="col-lg-9 col-md-8 col-sm-12">
 				<div class="calalog-right">
-					<h2 class="second-header">Учебники</h2>
+					<h2 class="second-header">Учебники 1 класс</h2>
 					<div class="row">
-						<div class="col-lg-4 col-md-6 col-sm-4 col-xs-6">
-							<div class="catalog-goods-block catalog-links-gen">
-								<img src="img/catalog-1.jpg" alt="catalog-good-image">
-								<h3>Учебники 1 класс</h3>
+						<div class="col-lg-12 col-md-12">
+							<nav class="cat-section-nav catalog-links-gen">
 								<ul class="catalog-gen">
 									<li><a href="">1 класс. Русский язык и развитие речи</a></li>
-									<li><a href="">1 класс. Математика, информатика</a></li>
 									<li><a href="">1 класс. Окружающий мир</a></li>
-									<li><a href="">1 класс. Технология</a></li>
 									<li><a href="">1 класс. Чтение</a></li>
+									<li><a href="">1 класс. Искусство</a></li>
+								</ul>
+								<ul class="catalog-gen">
+									<li><a href="">1 класс. Математика, информатика</a></li>
+									<li><a href="">1 класс. Технология</a></li>									
 									<li><a href="">1 класс. Английский язык</a></li>
 								</ul>
+							</nav>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-12 col-md-12">
+							<div class="sort-wrapper clearfix">
+								<div class="sort">
+									<span class="sort_text">Сортировать по:</span>
+									<select class="selectpicker">
+										<option>популярности</option>
+										<option>цене</option>									
+									</select>
+								</div>							
+								<div class="sort sort-short">
+									<span class="sort_text">Сортировать по:</span>
+									<select class="selectpicker">
+										<option>15</option>
+										<option>25</option>
+										<option>30</option>
+									</select>
+								</div>							
+								<div class="sort-fav">
+									<a href="" class="sort_text">В избранное</a>
+								</div>							
+								<div class="type-view clearfix">
+									<span class="sort_text">Вид:</span>
+									<div class="type1"></div>
+									<div class="type2"></div>
+									<div class="type3"></div>
+								</div>
+							</div>						
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+							<div class="cat-section-block">
+								<div class="cat-section-block_img">
+									<img src="img/section-1.png" alt="section-block-image" class="cat-section_image">
+									<span class="cat-sec-cost">167<i class="fa fa-rub" aria-hidden="true"></i></span>
+									<div class="cat-section-fav">
+										<a href=""><img src="img/favorite_gray.png"></a>
+									</div>
+								</div>
+								<span class="cat-shipping">Отгрузка в течение 2 дней</span>
+								<div class="cat-basket">
+									<a href="" class="btn-gen">В корзину</a>
+									<input type="text" name="good-number" placeholder="1">
+								</div>
+								<div class="cat-good-info">
+									<span class="cat-book-name">Изобразительное искусство 1 кл. (твоя мастерская)</span>
+									<span class="cat-book-author">Неменская Л.А.</span>
+								</div>
 							</div>
 						</div>
-						<div class="col-lg-4 col-md-6 col-sm-4 col-xs-6">
-							<div class="catalog-goods-block catalog-links-gen">
-								<img src="img/catalog-2.jpg" alt="catalog-good-image">
-								<h3>Учебники 2 класс</h3>
-								<ul class="catalog-gen">
-									<li><a href="">2 класс. Русский язык и развитие речи</a></li>
-									<li><a href="">2 класс. Математика, информатика</a></li>
-									<li><a href="">2 класс. Окружающий мир</a></li>
-									<li><a href="">2 класс. Природоведение</a></li>
-									<li><a href="">2 класс. Английский язык</a></li>
-									<li><a href="">2 класс. Технология</a></li>
-								</ul>
+						<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+							<div class="cat-section-block">
+								<div class="cat-section-block_img">
+									<img src="img/section-2.jpg" alt="section-block-image" class="cat-section_image">
+									<span class="cat-sec-cost">84<i class="fa fa-rub" aria-hidden="true"></i></span>
+									<div class="cat-section-fav">
+										<a href=""><img src="img/favorite_gray.png"></a>
+									</div>
+								</div>
+								<span class="cat-shipping">Отгрузка в течение 2 дней</span>
+								<div class="cat-basket">
+									<a href="" class="btn-gen">В корзину</a>
+									<input type="text" name="good-number" placeholder="1">
+								</div>
+								<div class="cat-good-info">
+									<span class="cat-book-name">Прописи 1кл (ШколаРоссии) Ч.4 ФГОС</span>
+									<span class="cat-book-author">Неменская Л.А.</span>
+								</div>
 							</div>
 						</div>
-						<div class="col-lg-4 col-md-6 col-sm-4 col-xs-6">
-							<div class="catalog-goods-block catalog-links-gen">
-								<img src="img/catalog-3.jpg" alt="catalog-good-image">
-								<h3>Учебники 3 класс</h3>
-								<ul class="catalog-gen">
-									<li><a href="">3 класс. Русский язык и развитие речи</a></li>
-									<li><a href="">3 класс. Математика, информатика</a></li>
-									<li><a href="">3 класс. Чтение</a></li>
-									<li><a href="">3 класс. Английский язык</a></li>
-									<li><a href="">3 класс. Немецкий язык</a></li>
-									<li><a href="">3 класс. Окружающий мир</a></li>
-								</ul>
-							</div>
-						</div>										
-						<div class="col-lg-4 col-md-6 col-sm-4 col-xs-6">
-							<div class="catalog-goods-block catalog-links-gen">
-								<img src="img/catalog-4.jpg" alt="catalog-good-image">
-								<h3>Учебники 4 класс</h3>
-								<ul class="catalog-gen">
-									<li><a href="">4 класс. Русский язык и развитие речи</a></li>
-									<li><a href="">4 класс. Математика, информатика</a></li>
-									<li><a href="">4 класс. Английский язык</a></li>
-									<li><a href="">4 класс. Чтение</a></li>
-									<li><a href="">4 класс. Окружающий мир</a></li>
-									<li><a href="">4 класс. Искусство</a></li>
-								</ul>
+						<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+							<div class="cat-section-block">
+								<div class="cat-section-block_img">
+									<img src="img/section-2.jpg" alt="section-block-image" class="cat-section_image">
+									<span class="cat-sec-cost">84<i class="fa fa-rub" aria-hidden="true"></i></span>
+									<div class="cat-section-fav">
+										<a href=""><img src="img/favorite_gray.png"></a>
+									</div>
+								</div>
+								<span class="cat-shipping">Отгрузка в течение 2 дней</span>
+								<div class="cat-basket">
+									<a href="" class="btn-gen">В корзину</a>
+									<input type="text" name="good-number" placeholder="1">
+								</div>
+								<div class="cat-good-info">
+									<span class="cat-book-name">Изобразительное искусство 1 кл. (твоя мастерская)</span>
+									<span class="cat-book-author">Неменская Л.А.</span>
+								</div>
 							</div>
 						</div>
-						<div class="col-lg-4 col-md-6 col-sm-4 col-xs-6">
-							<div class="catalog-goods-block catalog-links-gen">
-								<img src="img/catalog-5.jpg" alt="catalog-good-image">
-								<h3>Учебники 5 класс</h3>
-								<ul class="catalog-gen">
-									<li><a href="">5 класс. Русский язык, литература</a></li>
-									<li><a href="">5 класс. Математика</a></li>
-									<li><a href="">5 класс. Английский язык</a></li>
-									<li><a href="">5 класс. Немецкий язык</a></li>
-									<li><a href="">5 класс. История</a></li>
-									<li><a href="">5 класс. Искусство</a></li>
-								</ul>
+						<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+							<div class="cat-section-block">
+								<div class="cat-section-block_img">
+									<img src="img/section-1.png" alt="section-block-image" class="cat-section_image">
+									<span class="cat-sec-cost">167<i class="fa fa-rub" aria-hidden="true"></i></span>
+									<div class="cat-section-fav">
+										<a href=""><img src="img/favorite_gray.png"></a>
+									</div>
+								</div>
+								<span class="cat-shipping">Отгрузка в течение 2 дней</span>
+								<div class="cat-basket">
+									<a href="" class="btn-gen">В корзину</a>
+									<input type="text" name="good-number" placeholder="1">
+								</div>
+								<div class="cat-good-info">
+									<span class="cat-book-name">Изобразительное искусство 1 кл. (твоя мастерская)</span>
+									<span class="cat-book-author">Неменская Л.А.</span>
+								</div>
 							</div>
 						</div>
-						<div class="col-lg-4 col-md-6 col-sm-4 col-xs-6">
-							<div class="catalog-goods-block catalog-links-gen">
-								<img src="img/catalog-6.jpg" alt="catalog-good-image">
-								<h3>Учебники 6 класс</h3>
-								<ul class="catalog-gen">
-									<li><a href="">3 класс. Русский язык и развитие речи</a></li>
-									<li><a href="">3 класс. Математика, информатика</a></li>
-									<li><a href="">3 класс. Чтение</a></li>
-									<li><a href="">3 класс. Английский язык</a></li>
-									<li><a href="">3 класс. Немецкий язык</a></li>
-									<li><a href="">3 класс. Окружающий мир</a></li>
-								</ul>
+						<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+							<div class="cat-section-block">
+								<div class="cat-section-block_img">
+									<img src="img/section-2.jpg" alt="section-block-image" class="cat-section_image">
+									<span class="cat-sec-cost">84<i class="fa fa-rub" aria-hidden="true"></i></span>
+									<div class="cat-section-fav">
+										<a href=""><img src="img/favorite_gray.png"></a>
+									</div>
+								</div>
+								<span class="cat-shipping">Отгрузка в течение 2 дней</span>
+								<div class="cat-basket">
+									<a href="" class="btn-gen">В корзину</a>
+									<input type="text" name="good-number" placeholder="1">
+								</div>
+								<div class="cat-good-info">
+									<span class="cat-book-name">Прописи 1кл (ШколаРоссии) Ч.4 ФГОС</span>
+									<span class="cat-book-author">Неменская Л.А.</span>
+								</div>
 							</div>
 						</div>
-						<div class="col-lg-4 col-md-6 col-sm-4 col-xs-6">
-							<div class="catalog-goods-block catalog-links-gen">
-								<img src="img/catalog-7.jpg" alt="catalog-good-image">
-								<h3>Учебники 7 класс</h3>
-								<ul class="catalog-gen">
-									<li><a href="">7 класс. Русский язык, литература</a></li>
-									<li><a href="">7 класс. Алгебра, геометрия</a></li>
-									<li><a href="">7 класс. История</a></li>
-									<li><a href="">7 класс. Английский язык</a></li>
-									<li><a href="">7 класс. Биология</a></li>
-									<li><a href="">7 класс. Информатика</a></li>
-								</ul>
+						<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+							<div class="cat-section-block">
+								<div class="cat-section-block_img">
+									<img src="img/section-2.jpg" alt="section-block-image" class="cat-section_image">
+									<span class="cat-sec-cost">84<i class="fa fa-rub" aria-hidden="true"></i></span>
+									<div class="cat-section-fav">
+										<a href=""><img src="img/favorite_gray.png"></a>
+									</div>
+								</div>
+								<span class="cat-shipping">Отгрузка в течение 2 дней</span>
+								<div class="cat-basket">
+									<a href="" class="btn-gen">В корзину</a>
+									<input type="text" name="good-number" placeholder="1">
+								</div>
+								<div class="cat-good-info">
+									<span class="cat-book-name">Изобразительное искусство 1 кл. (твоя мастерская)</span>
+									<span class="cat-book-author">Неменская Л.А.</span>
+								</div>
 							</div>
 						</div>
-						<div class="col-lg-4 col-md-6 col-sm-4 col-xs-6">
-							<div class="catalog-goods-block catalog-links-gen">
-								<img src="img/catalog-8.jpg" alt="catalog-good-image">
-								<h3>Учебники 8 класс</h3>
-								<ul class="catalog-gen">
-									<li><a href="">8 класс. Русский язык, литература</a></li>
-									<li><a href="">8 класс. Алгебра, геометрия</a></li>
-									<li><a href="">8 класс. Английский язык</a></li>
-									<li><a href="">8 класс. История</a></li>
-									<li><a href="">8 класс. Обществознание</a></li>
-									<li><a href="">8 класс. Биология</a></li>
-								</ul>
+						<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+							<div class="cat-section-block">
+								<div class="cat-section-block_img">
+									<img src="img/section-1.png" alt="section-block-image" class="cat-section_image">
+									<span class="cat-sec-cost">167<i class="fa fa-rub" aria-hidden="true"></i></span>
+									<div class="cat-section-fav">
+										<a href=""><img src="img/favorite_gray.png"></a>
+									</div>
+								</div>
+								<span class="cat-shipping">Отгрузка в течение 2 дней</span>
+								<div class="cat-basket">
+									<a href="" class="btn-gen">В корзину</a>
+									<input type="text" name="good-number" placeholder="1">
+								</div>
+								<div class="cat-good-info">
+									<span class="cat-book-name">Изобразительное искусство 1 кл. (твоя мастерская)</span>
+									<span class="cat-book-author">Неменская Л.А.</span>
+								</div>
 							</div>
 						</div>
-						<div class="col-lg-4 col-md-6 col-sm-4 col-xs-6">
-							<div class="catalog-goods-block catalog-links-gen">
-								<img src="img/catalog-9.jpg" alt="catalog-good-image">
-								<h3>Учебники 9 класс</h3>
-								<ul class="catalog-gen">
-									<li><a href="">9 класс. Русский язык, литература</a></li>
-									<li><a href="">9 класс. Алгебра, геометрия</a></li>
-									<li><a href="">9 класс. Английский язык</a></li>
-									<li><a href="">9 класс. Немецкий язык</a></li>
-									<li><a href="">9 класс. История</a></li>
-									<li><a href="">9 класс. География</a></li>
-								</ul>
+						<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+							<div class="cat-section-block">
+								<div class="cat-section-block_img">
+									<img src="img/section-2.jpg" alt="section-block-image" class="cat-section_image">
+									<span class="cat-sec-cost">84<i class="fa fa-rub" aria-hidden="true"></i></span>
+									<div class="cat-section-fav">
+										<a href=""><img src="img/favorite_gray.png"></a>
+									</div>
+								</div>
+								<span class="cat-shipping">Отгрузка в течение 2 дней</span>
+								<div class="cat-basket">
+									<a href="" class="btn-gen">В корзину</a>
+									<input type="text" name="good-number" placeholder="1">
+								</div>
+								<div class="cat-good-info">
+									<span class="cat-book-name">Прописи 1кл (ШколаРоссии) Ч.4 ФГОС</span>
+									<span class="cat-book-author">Неменская Л.А.</span>
+								</div>
 							</div>
 						</div>
-						<div class="col-lg-4 col-md-6 col-sm-4 col-xs-6">
-							<div class="catalog-goods-block catalog-links-gen">
-								<img src="img/catalog-10.jpg" alt="catalog-good-image">
-								<h3>Учебники 10 класс</h3>
-								<ul class="catalog-gen">
-									<li><a href="">10 класс. Русский язык, литература</a></li>
-									<li><a href="">10 класс. Алгебра, геометрия</a></li>
-									<li><a href="">10 класс. Английский язык</a></li>
-									<li><a href="">10 класс. Немецкий язык</a></li>
-									<li><a href="">10 класс. История</a></li>
-									<li><a href="">10 класс. Информатика и ИКТ</a></li>
-								</ul>
+						<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+							<div class="cat-section-block">
+								<div class="cat-section-block_img">
+									<img src="img/section-2.jpg" alt="section-block-image" class="cat-section_image">
+									<span class="cat-sec-cost">84<i class="fa fa-rub" aria-hidden="true"></i></span>
+									<div class="cat-section-fav">
+										<a href=""><img src="img/favorite_gray.png"></a>
+									</div>
+								</div>
+								<span class="cat-shipping">Отгрузка в течение 2 дней</span>
+								<div class="cat-basket">
+									<a href="" class="btn-gen">В корзину</a>
+									<input type="text" name="good-number" placeholder="1">
+								</div>
+								<div class="cat-good-info">
+									<span class="cat-book-name">Изобразительное искусство 1 кл. (твоя мастерская)</span>
+									<span class="cat-book-author">Неменская Л.А.</span>
+								</div>
 							</div>
 						</div>
-						<div class="col-lg-4 col-md-6 col-sm-4 col-xs-6">
-							<div class="catalog-goods-block catalog-links-gen">
-								<img src="img/catalog-11.jpg" alt="catalog-good-image">
-								<h3>Учебники 11 класс</h3>
-								<ul class="catalog-gen">
-									<li><a href="">11 класс. Искусство</a></li>
-									<li><a href="">11 класс. Русский язык, литература</a></li>
-									<li><a href="">11 класс. Алгебра, геометрия</a></li>
-									<li><a href="">11 класс. История</a></li>
-									<li><a href="">11 класс. Английский язык</a></li>
-									<li><a href="">11 класс. Биология</a></li>
-								</ul>
+						<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+							<div class="cat-section-block">
+								<div class="cat-section-block_img">
+									<img src="img/section-1.png" alt="section-block-image" class="cat-section_image">
+									<span class="cat-sec-cost">167<i class="fa fa-rub" aria-hidden="true"></i></span>
+									<div class="cat-section-fav">
+										<a href=""><img src="img/favorite_gray.png"></a>
+									</div>
+								</div>
+								<span class="cat-shipping">Отгрузка в течение 2 дней</span>
+								<div class="cat-basket">
+									<a href="" class="btn-gen">В корзину</a>
+									<input type="text" name="good-number" placeholder="1">
+								</div>
+								<div class="cat-good-info">
+									<span class="cat-book-name">Изобразительное искусство 1 кл. (твоя мастерская)</span>
+									<span class="cat-book-author">Неменская Л.А.</span>
+								</div>
 							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+							<div class="cat-section-block">
+								<div class="cat-section-block_img">
+									<img src="img/section-2.jpg" alt="section-block-image" class="cat-section_image">
+									<span class="cat-sec-cost">84<i class="fa fa-rub" aria-hidden="true"></i></span>
+									<div class="cat-section-fav">
+										<a href=""><img src="img/favorite_gray.png"></a>
+									</div>
+								</div>
+								<span class="cat-shipping">Отгрузка в течение 2 дней</span>
+								<div class="cat-basket">
+									<a href="" class="btn-gen">В корзину</a>
+									<input type="text" name="good-number" placeholder="1">
+								</div>
+								<div class="cat-good-info">
+									<span class="cat-book-name">Прописи 1кл (ШколаРоссии) Ч.4 ФГОС</span>
+									<span class="cat-book-author">Неменская Л.А.</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+							<div class="cat-section-block">
+								<div class="cat-section-block_img">
+									<img src="img/section-2.jpg" alt="section-block-image" class="cat-section_image">
+									<span class="cat-sec-cost">84<i class="fa fa-rub" aria-hidden="true"></i></span>
+									<div class="cat-section-fav">
+										<a href=""><img src="img/favorite_gray.png"></a>
+									</div>
+								</div>
+								<span class="cat-shipping">Отгрузка в течение 2 дней</span>
+								<div class="cat-basket">
+									<a href="" class="btn-gen">В корзину</a>
+									<input type="text" name="good-number" placeholder="1">
+								</div>
+								<div class="cat-good-info">
+									<span class="cat-book-name">Изобразительное искусство 1 кл. (твоя мастерская)</span>
+									<span class="cat-book-author">Неменская Л.А.</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+							<div class="cat-section-block">
+								<div class="cat-section-block_img">
+									<img src="img/section-1.png" alt="section-block-image" class="cat-section_image">
+									<span class="cat-sec-cost">167<i class="fa fa-rub" aria-hidden="true"></i></span>
+									<div class="cat-section-fav">
+										<a href=""><img src="img/favorite_gray.png"></a>
+									</div>
+								</div>
+								<span class="cat-shipping">Отгрузка в течение 2 дней</span>
+								<div class="cat-basket">
+									<a href="" class="btn-gen">В корзину</a>
+									<input type="text" name="good-number" placeholder="1">
+								</div>
+								<div class="cat-good-info">
+									<span class="cat-book-name">Изобразительное искусство 1 кл. (твоя мастерская)</span>
+									<span class="cat-book-author">Неменская Л.А.</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+							<div class="cat-section-block">
+								<div class="cat-section-block_img">
+									<img src="img/section-2.jpg" alt="section-block-image" class="cat-section_image">
+									<span class="cat-sec-cost">84<i class="fa fa-rub" aria-hidden="true"></i></span>
+									<div class="cat-section-fav">
+										<a href=""><img src="img/favorite_gray.png"></a>
+									</div>
+								</div>
+								<span class="cat-shipping">Отгрузка в течение 2 дней</span>
+								<div class="cat-basket">
+									<a href="" class="btn-gen">В корзину</a>
+									<input type="text" name="good-number" placeholder="1">
+								</div>
+								<div class="cat-good-info">
+									<span class="cat-book-name">Прописи 1кл (ШколаРоссии) Ч.4 ФГОС</span>
+									<span class="cat-book-author">Неменская Л.А.</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+							<div class="cat-section-block">
+								<div class="cat-section-block_img">
+									<img src="img/section-2.jpg" alt="section-block-image" class="cat-section_image">
+									<span class="cat-sec-cost">84<i class="fa fa-rub" aria-hidden="true"></i></span>
+									<div class="cat-section-fav">
+										<a href=""><img src="img/favorite_gray.png"></a>
+									</div>
+								</div>
+								<span class="cat-shipping">Отгрузка в течение 2 дней</span>
+								<div class="cat-basket">
+									<a href="" class="btn-gen">В корзину</a>
+									<input type="text" name="good-number" placeholder="1">
+								</div>
+								<div class="cat-good-info">
+									<span class="cat-book-name">Изобразительное искусство 1 кл. (твоя мастерская)</span>
+									<span class="cat-book-author">Неменская Л.А.</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+							<div class="cat-section-block">
+								<div class="cat-section-block_img">
+									<img src="img/section-1.png" alt="section-block-image" class="cat-section_image">
+									<span class="cat-sec-cost">167<i class="fa fa-rub" aria-hidden="true"></i></span>
+									<div class="cat-section-fav">
+										<a href=""><img src="img/favorite_gray.png"></a>
+									</div>
+								</div>
+								<span class="cat-shipping">Отгрузка в течение 2 дней</span>
+								<div class="cat-basket">
+									<a href="" class="btn-gen">В корзину</a>
+									<input type="text" name="good-number" placeholder="1">
+								</div>
+								<div class="cat-good-info">
+									<span class="cat-book-name">Изобразительное искусство 1 кл. (твоя мастерская)</span>
+									<span class="cat-book-author">Неменская Л.А.</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+							<div class="cat-section-block">
+								<div class="cat-section-block_img">
+									<img src="img/section-2.jpg" alt="section-block-image" class="cat-section_image">
+									<span class="cat-sec-cost">84<i class="fa fa-rub" aria-hidden="true"></i></span>
+									<div class="cat-section-fav">
+										<a href=""><img src="img/favorite_gray.png"></a>
+									</div>
+								</div>
+								<span class="cat-shipping">Отгрузка в течение 2 дней</span>
+								<div class="cat-basket">
+									<a href="" class="btn-gen">В корзину</a>
+									<input type="text" name="good-number" placeholder="1">
+								</div>
+								<div class="cat-good-info">
+									<span class="cat-book-name">Прописи 1кл (ШколаРоссии) Ч.4 ФГОС</span>
+									<span class="cat-book-author">Неменская Л.А.</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+							<div class="cat-section-block">
+								<div class="cat-section-block_img">
+									<img src="img/section-2.jpg" alt="section-block-image" class="cat-section_image">
+									<span class="cat-sec-cost">84<i class="fa fa-rub" aria-hidden="true"></i></span>
+									<div class="cat-section-fav">
+										<a href=""><img src="img/favorite_gray.png"></a>
+									</div>
+								</div>
+								<span class="cat-shipping">Отгрузка в течение 2 дней</span>
+								<div class="cat-basket">
+									<a href="" class="btn-gen">В корзину</a>
+									<input type="text" name="good-number" placeholder="1">
+								</div>
+								<div class="cat-good-info">
+									<span class="cat-book-name">Изобразительное искусство 1 кл. (твоя мастерская)</span>
+									<span class="cat-book-author">Неменская Л.А.</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="page-counter">
+							<span class="active-page">1</span>
+							<span>2</span>
+							<span>3</span>
+							<span>4</span>
+							<span>5</span>
+							<span>...</span>
+							<span>11</span>
+							<div class="page-next"></div>
 						</div>
 					</div>
 				</div>
