@@ -64,6 +64,16 @@ h2 {
   font-size: 36px;
   color: #000; }
 
+.second-header {
+  font-family: "Segoe UI Bold", sans-serif;
+  font-size: 30px;
+  color: #a6008d; }
+
+.smallh3-header {
+  font-size: 24px;
+  color: #a6008d;
+  font-family: "Segoe UI Semibold", sans-serif; }
+
 .gen-text, .gen-text a {
   font-size: 16px;
   color: #000;
@@ -117,6 +127,21 @@ h2 {
 .btn-grey:hover {
   background-color: #999999;
   opacity: 0.7; }
+
+.btn-orange {
+  background-color: #f0891c; }
+
+.btn-orange:hover {
+  color: #fff;
+  background-color: #00aeef; }
+
+.purple-link {
+  color: #a21b86;
+  border-bottom: 1px solid #a21b86; }
+
+.purple-link:hover {
+  color: #f0891c;
+  border-bottom: 1px solid #f0891c; }
 
 /***************************************************Header*******************************************/
 header {
@@ -911,10 +936,6 @@ footer {
 
 .calalog-right {
   margin-top: -15px; }
-  .calalog-right h2 {
-    font-family: "Segoe UI Bold", sans-serif;
-    font-size: 30px;
-    color: #a6008d; }
   .calalog-right h3 {
     font-family: "Segoe UI", sans-serif;
     font-size: 24px;
@@ -1088,6 +1109,10 @@ footer {
     background-image: url(../img/type-3.png);
     background-repeat: no-repeat;
     background-position: center center; }
+  .type-view .type1-active {
+    background-image: url(../img/type-1-blue.png) !important; }
+  .type-view .type2-active {
+    background-image: url(../img/type-2-blue.png) !important; }
 
 .sort-fav {
   background-image: url("../img/favorite_gray.png");
@@ -1116,6 +1141,11 @@ footer {
   -webkit-transform: translateX(-50%) translateY(-50%);
   -ms-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%); }
+
+.type2-cost {
+  font-family: "Segoe UI Bold", sans-serif;
+  font-size: 18px;
+  color: #000; }
 
 .cat-sec-cost {
   position: absolute;
@@ -1213,6 +1243,277 @@ footer {
   .page-counter .page-next:hover {
     cursor: pointer;
     opacity: 0.7; }
+
+/***************************************************Razdel-2*******************************************/
+.row-type2 h4 {
+  font-family: "Segoe UI Semibold", sans-serif;
+  font-size: 24px;
+  line-height: 1.2;
+  color: #000;
+  margin-top: 26px; }
+
+.row-type2 .gen-text {
+  line-height: 24px; }
+
+.row-type2 .cat-sec-cost {
+  position: relative;
+  background-color: transparent;
+  color: #000; }
+
+.type2-info {
+  margin-top: 24px; }
+  .type2-info span {
+    font-size: 16px;
+    line-height: 24px;
+    display: block; }
+  .type2-info span:nth-child(2) {
+    margin-top: 16px; }
+  .type2-info .cat-book-author {
+    display: inline-block;
+    font-size: 16px; }
+  .type2-info .cat-shipping {
+    font-size: 14px;
+    margin-top: 26px;
+    margin-bottom: 6px; }
+  .type2-info i {
+    font-style: normal; }
+  .type2-info b {
+    font-family: "Segoe UI Bold", sans-serif; }
+
+.section2-wrapper {
+  border-bottom: 1px solid #e1e1e1;
+  padding-bottom: 51px;
+  margin-bottom: 18px; }
+
+.section2-book-info {
+  margin-top: 25px; }
+
+/***************************************************Single*******************************************/
+.goods-single .purple-link {
+  font-size: 16px; }
+
+.goods-single .purple-link:hover {
+  color: #a6008d;
+  border-bottom: 1px solid transparent; }
+
+.goods-single .purple-link:visited {
+  color: #a6008d; }
+
+.single-top .purple-link {
+  font-family: "Segoe UI Bold", sans-serif; }
+
+.btn-one-click {
+  width: 230px;
+  height: 54px;
+  background-color: #f0891c;
+  background-image: none;
+  text-align: center;
+  padding-left: 0px;
+  font-family: "Segoe UI Bold", sans-serif;
+  line-height: 52px;
+  font-size: 24px;
+  margin-top: 14px; }
+
+.cat-book-author-pur {
+  color: #a6008d; }
+
+.single-main {
+  border-bottom: 1px solid #999;
+  margin-top: 8px;
+  padding-bottom: 27px; }
+  .single-main .type2-info {
+    margin-top: 14px; }
+    .single-main .type2-info a {
+      line-height: 20px; }
+  .single-main .type2-info span:nth-child(2) {
+    margin-top: 0px; }
+  .single-main .type2-cost {
+    font-size: 30px;
+    margin-bottom: 6px; }
+  .single-main .section2-book-info {
+    margin-top: 0px; }
+  .single-main .cat-basket a {
+    width: 230px;
+    background-position: left 50px center;
+    padding-left: 76px; }
+  .single-main .cat-section-block {
+    height: auto; }
+
+.single-social {
+  margin-top: 27px; }
+  .single-social span {
+    font-size: 16px;
+    color: #737373; }
+  .single-social ul {
+    margin-top: 20px;
+    margin-bottom: 16px; }
+  .single-social li {
+    display: inline-block;
+    margin-right: 14px; }
+    .single-social li a {
+      width: 32px;
+      height: 32px;
+      display: block;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover; }
+    .single-social li a:hover {
+      opacity: 0.7; }
+  .single-social ul li:nth-child(1) a {
+    background-image: url("../img/vk.png"); }
+  .single-social ul li:nth-child(2) a {
+    background-image: url("../img/facebook.png"); }
+  .single-social ul li:nth-child(3) a {
+    background-image: url("../img/twitter.png"); }
+  .single-social ul li:nth-child(4) a {
+    background-image: url("../img/mailru.png"); }
+  .single-social ul li:nth-child(5) a {
+    background-image: url("../img/google.png"); }
+  .single-social ul li:nth-child(6) a {
+    background-image: url("../img/ok.png"); }
+
+.first-link {
+  margin-bottom: 8px; }
+
+.single-text {
+  margin-top: 5px;
+  border-bottom: 1px solid #e1e1e1;
+  padding-bottom: 5px; }
+
+.recom {
+  padding-top: 25px; }
+
+.rec-link {
+  font-size: 14px;
+  color: #737373;
+  border-bottom: 1px dashed #737373; }
+  .rec-link i {
+    font-style: normal;
+    color: #00aeef; }
+
+.rec-link:hover {
+  color: #00aeef;
+  border-bottom: 1px dashed #00aeef; }
+
+.btn-rec {
+  width: 161px;
+  height: 34px;
+  text-align: center;
+  line-height: 34px;
+  margin-left: 12px;
+  font-size: 14px; }
+
+.btn-rec:hover {
+  color: #fff; }
+
+.recom-wrapper {
+  position: relative;
+  padding-bottom: 62px; }
+
+.recom-shadow {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -webkit-box-shadow: 0 21px 28px -30px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 21px 28px -30px rgba(0, 0, 0, 0.5); }
+
+.recom-btn {
+  width: 70px;
+  height: 35px;
+  border-radius: 0 0 50% 50% / 0 0 100% 100%;
+  position: absolute;
+  bottom: -33px;
+  left: 50%;
+  margin-left: -35px;
+  -webkit-box-shadow: 0 5px 15px -3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 15px -3px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+  background-color: #fff; }
+
+.recom-btn-arr {
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/arr-next.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 10px 20px;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg); }
+
+.recom-block {
+  margin-top: 25px; }
+
+.cat-book-author-purple {
+  display: inline-block;
+  color: #a6008d; }
+
+.cat-section-block {
+  height: 590px; }
+
+.recom-add-block {
+  height: 237px; }
+
+/***********************************************Basket*************************************************/
+.basket-header {
+  display: inline-block; }
+
+.delay-link {
+  font-size: 20px;
+  line-height: 24px;
+  border-bottom: 1px dashed #a6008d;
+  margin-left: 25px; }
+
+.delay-link:hover {
+  border-bottom: 1px dashed #f0891c; }
+
+.basket-wrapper-empty {
+  width: 100%;
+  height: 40vh;
+  position: relative;
+  text-align: center; }
+
+.basket-empty-text {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateX(-50%), translateY(-50%);
+  -ms-transform: translateX(-50%), translateY(-50%);
+  transform: translateX(-50%), translateY(-50%);
+  font-family: "Segoe UI Semibold", sans-serif;
+  font-size: 24px; }
+
+.basket-cost-info, .basket-button {
+  display: inline-block; }
+
+.basket-cost-info {
+  font-size: 24px;
+  font-family: "Segoe UI Semibold", sans-serif;
+  margin-right: 20px; }
+  .basket-cost-info i {
+    font-size: 22px; }
+
+.del-minus-number {
+  color: #999;
+  text-decoration: line-through; }
+
+.basker-cost-wrapper {
+  text-align: right; }
+
+.btn-basket {
+  width: 238px;
+  height: 54px;
+  color: #fff;
+  text-align: center;
+  line-height: 54px;
+  font-family: "Segoe UI Bold", sans-serif;
+  font-size: 24px;
+  position: relative;
+  top: -18px; }
 
 /***********************************************ButtonMobile******************************************/
 .menu-toggle-button {

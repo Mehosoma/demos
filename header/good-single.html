@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">	
+
+	<title>Header</title>
+	<meta name="Главная" content="">
+	<meta name="keywords" content=""/>
+	
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="format-detection" content="telephone=no">
+
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="libs/slick/slick.css">	
+	<link rel="stylesheet" href="libs/magnific/magnific-popup.css">
+	<link rel="stylesheet" href="libs/select/css/bootstrap-select.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+
+</head>
+
+<body>
+
+<div class="pixel"></div>
+
+<!--Header-->
+<header>
+	<div class="hidden-sm hidden-xs">
+		<div class="container">		
+			<div class="logo">
+				<a href="index.html"><img src="img/logo.png" alt="logo-image"></a>
+			</div>
+			<div class="header-first">
+				<div class="row">
+					<div class="col-lg-2 col-lg-push-10 col-lg-offset-0 col-md-3 col-md-push-9 col-md-offset-0 col-sm-8 col-sm-offset-4">
+						<div class="phone-wrapper">
+							<div class="phone">
+								<a href="tel:8-800-3333-150">8 800 3333-150</a>
+							</div>
+							<div class="phone-info clearfix">
+								<p class="f-left">Бесплатно по России</p>
+								<a href="#callback" class="f-right popup_form">Заказать звонок</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-8 col-lg-offset-2 col-lg-pull-2 fix-padd-right col-md-7 col-md-offset-2 col-md-pull-3 col-sm-12 col-xs-12">
+						<nav class="top-menu clearfix">
+							<ul>
+								<li><a href="#">О нас</a></li>
+								<li><a href="#">Оплата</a></li>
+								<li><a href="#">Доставка</a></li>
+								<li class="return-link">Возврат <span>бесплатно</span> в <a href="" class="purple-link">пункты выдачи</a><i>12</i></li>							
+							</ul>
+							<ul>
+								<li><a href="">Контакты</a></li>
+								<li><a href="">Магазины</a></li>
+								<li><a href="" class="d-marker city">Санкт-Петербург</a></li>
+							</ul>
+						</nav>
+					</div>				
+				</div>			
+			</div>
+		</div>
+		<div class="header-second">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-lg-offset-2 col-md-7 col-md-offset-2 col-sm-8 col-xs-12">
+						<div class="tr-wrapper">
+							<div class="login-info">
+								<ul>
+									<li><a href="#search-ord" class="order-search popup_form">Заявка на поиск</a></li>
+									<li><a href="#reg-form" class="registration popup_form">Регистрация</a></li>
+									<li><a href="#fog-pass" class="f-pass popup_form">Забыли пароль</a></li>
+								</ul>
+							</div>
+							<div class="header-search">
+								<input type="text" name="h-search" required="" placeholder="Найти товар или группу">
+								<a href="" class="h-search-link"></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-2 сlearfix col-md-3 col-sm-4 col-xs-12">
+						<div class="h-login"></div>
+						<a href="#auth" class="h-login-link popup_form">Войти</a>
+						<div class="h-basket clearfix">
+							<div class="basket-wrapper">
+								<a href="" class="h-basket-link">корзина<br><span class="cost-num">0</span> руб.</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header-third">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12">
+						<button class="menu-toggle-button click-mobile hidden-lg hidden-md">
+							<span></span>					
+						</button>
+						<nav class="bottom-menu">						
+							<ul>
+								<li><a href="#">Книги</a></li>
+								<li><a href="#">Учебники</a></li>
+								<li><a href="#">Канцелярия</a></li>							
+								<li><a href="#">Игры / Игрушки</a></li>
+								<li><a href="#">Мебель</a></li>
+								<li><a href="#">Хозтовары</a></li>
+								<li><a href="#">Праздники</a></li>
+								<li><a href="#">Товары для детей</a></li>
+								<li><a href="#">Творчество</a></li>
+								<li class="fix-li"><a href="#">Оснащение детских садов</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="header-mm hidden-lg hidden-md clearfix">	
+		<div class="header-info-panel">
+			<div class="logo">
+				<a href="index.html"><img src="img/logo-mm.png" alt="logo-mobile"></a>
+			</div>
+			<div class="header-mm-icons">
+				<ul>
+					<li><a href="#reg-form" class="registration link-mm registration-mm popup_form"></a></li>
+					<li>
+						<a href="" class="search-mm link-mm"></a>
+						<div class="header-search header-search-mm">
+							<input type="text" name="h-search" required="" placeholder="Найти товар или группу">
+							<a href="" class="h-search-link"></a>
+						</div>
+					</li>
+					<li><a href="" class="h-basket-link link-mm h-basket-link-mm"></a></li>
+				</ul>
+			</div>
+		</div>	
+		<button class="menu-toggle-button click-mobile-mm hidden-lg hidden-md">
+			<span></span>					
+		</button>
+		<nav class="top-menu top-menu-mm">
+			<ul>
+				<li class="top-mm-dropdown">
+					<a href="#" class="dropdown-list">Книги</a>
+					<ul class="goods-list gen-text goods-list-mm">
+						<li class="cat-return">Назад к каталогу</li>
+						<li><a href="">Автотранспорт, Туризм</a></li>							
+						<li><a href="">Книги для детей</a></li>
+						<li><a href="">Экономика, Бизнес, Право</a></li>							
+						<li><a href="">Художественная литература</a></li>
+						<li><a href="">Дом, Быт, Досуг</a></li>							
+						<li><a href="">Медицина, Спорт, Здоровье</a></li>							
+					</ul>
+				</li>
+				<li class="top-mm-dropdown">
+					<a href="#" class="dropdown-list">Учебники</a>
+					<ul class="goods-list gen-text goods-list-mm">
+						<li class="cat-return">Назад к каталогу</li>
+						<li><a href="">Учебники 1 класс</a></li>						
+						<li><a href="">Учебники 2 класс</a></li>
+						<li><a href="">Учебники 3 класс</a></li>
+						<li><a href="">Учебники 4 класс</a></li>
+						<li><a href="">Учебники 5 класс</a></li>
+						<li><a href="">Учебники 6 класс</a></li>						
+					</ul>
+				</li>
+				<li class="top-mm-dropdown">
+					<a href="#" class="dropdown-list">Мебель</a>
+					<ul class="goods-list gen-text goods-list-mm">
+						<li class="cat-return">Назад к каталогу</li>
+						<li><a href="">Школьная мебель</a></li>
+						<li><a href="">Детская мебель</a></li>
+						<li><a href="">Библиотечная мебель</a></li>
+						<li><a href="">Офисная мебель</a></li>
+						<li><a href="">Металлическая мебель</a></li>							
+					</ul>
+				</li>						
+				<li class="top-mm-dropdown">
+					<a href="#" class="dropdown-list">Хозтовары</a>
+					<ul class="goods-list gen-text goods-list-mm">
+						<li class="cat-return">Назад к каталогу</li>
+						<li><a href="">Средства гигиены</a></li>
+						<li><a href="">Средства для стирки</a></li>
+						<li><a href="">Средства чистящие</a></li>
+						<li><a href="">Товары для дома</a></li>
+						<li><a href="">Средства для обуви</a></li>
+						<li><a href="">Элементы питания</a></li>							
+					</ul>
+				</li>	
+				<li class="top-mm-dropdown">
+					<a href="#" class="dropdown-list">Товары для детей</a>
+					<ul class="goods-list gen-text goods-list-mm">
+						<li class="cat-return">Назад к каталогу</li>
+						<li><a href="">Детская бижутерия</a></li>
+						<li><a href="">Спортивные товары</a></li>
+						<li><a href="">Детская гигиена, уход, красота</a></li>						
+					</ul>
+				</li>	
+				<li class="top-mm-dropdown">
+					<a href="#" class="dropdown-list">Творчество</a>
+					<ul class="goods-list gen-text goods-list-mm">
+						<li class="cat-return">Назад к каталогу</li>
+						<li><a href="">Рисование</a></li>
+						<li><a href="">Лепка</a></li>
+						<li><a href="">Рукоделие для мам и дочерей</a></li>							
+						<li><a href="">Конструирование, моделирование</a></li>
+						<li><a href="">Опыты, фокусы</a></li>
+						<li><a href="">Скрапбукинг</a></li>						
+					</ul>
+				</li>	
+				<li class="top-mm-dropdown">
+					<a href="#" class="dropdown-list">Канцтовары</a>
+					<ul class="goods-list gen-text goods-list-mm">
+						<li class="cat-return">Назад к каталогу</li>
+						<li><a href="">Бумага для оргтехники</a></li>							
+						<li><a href="">Бумажная продукция</a></li>
+						<li><a href="">Школьная бумажная продукция</a></li>							
+						<li><a href="">Письменные и чертежные принадлежности</a></li>
+						<li><a href="">Товары для творчества и хобби</a></li>							
+						<li><a href="">Школьные принадлежности</a></li>						
+					</ul>
+				</li>	
+				<li class="top-mm-dropdown">
+					<a href="#" class="dropdown-list">Игры / Игрушки</a>
+					<ul class="goods-list gen-text goods-list-mm">
+						<li class="cat-return">Назад к каталогу</li>
+						<li><a href="">Игрушки для малышей</a></li>							
+						<li><a href="">Игрушки для девочек</a></li>
+						<li><a href="">Игрушки для мальчиков</a></li>							
+						<li><a href="">Звуковые, музыкальные игрушки</a></li>
+						<li><a href="">Игровые, ролевые наборы</a></li>							
+						<li><a href="">Все для театра (куклы, ширмы, костюмы)</a></li>				
+					</ul>
+				</li>	
+				<li class="top-mm-dropdown">
+					<a href="#" class="dropdown-list">Праздники</a>
+					<ul class="goods-list gen-text goods-list-mm">
+						<li class="cat-return">Назад к каталогу</li>
+						<li><a href="">Аксессуары для праздника, воздушные шары</a></li>							
+						<li><a href="">Новый год</a></li>
+						<li><a href="">День влюбленных. 8 марта</a></li>							
+						<li><a href="">23 февраля</a></li>
+						<li><a href="">Пасха</a></li>							
+						<li><a href="">1 мая, 9 мая</a></li>			
+					</ul>
+				</li>
+				<li class="top-mm-dropdown">
+					<a href="#" class="dropdown-list">Оснащение детских садов</a>
+					<ul class="goods-list gen-text goods-list-mm">
+						<li class="cat-return">Назад к каталогу</li>
+						<li><a href="">Познавательно-речевое развитие</a></li>							
+						<li><a href="">Развитие мышления, математика</a></li>
+						<li><a href="">Социально-эмоциальное развитие</a></li>							
+						<li><a href="">Творческое развитие</a></li>
+						<li><a href="">Спец.литература для педагогов и заведующих</a></li>							
+						<li><a href="">Развивающие-обучающие игрушки</a></li>			
+					</ul>
+				</li>
+			</ul>
+			<ul class="add-info">
+				<li><a href="" class="city">Красноярск</a></li>
+				<li><a href="tel:+7(391)2466-550">+7 (391) 2466-550</a></li>
+				<li><a href="">О нас</a></li>
+				<li><a href="">Оплата</a></li>
+				<li><a href="">Доставка</a></li>
+				<li><a href="">Возврат</a></li>
+				<li><a href="#search-ord" class="order-search popup_form">Заявка на поиск</a></li>
+				<li><a href="">Контакты</a></li>
+				<li><a href="">Магазины</a></li>
+			</ul>
+		</nav>		
+	</div>
+</header>
+
+
+<!--GoodsSingle-->
+<section class="goods-single">
+	<div class="container">
+		<div class="row">
+			<nav aria-label="breadcrumb">
+  				<ol class="breadcrumb">
+    				<li class="breadcrumb-item"><a href="#">Главная</a></li>
+    				<li class="breadcrumb-item"><a href="#">Книги</a></li>
+    				<li class="breadcrumb-item"><a href="#">Книги для детей</a></li>
+    				<li class="breadcrumb-item"><a href="#">Проза для детей</a></li>
+    				<li class="breadcrumb-item active" aria-current="page">Вересковый мед</li>
+  				</ol>
+			</nav>
+		</div>
+		<div class="row">
+			<div class="col-lg-12 col-md-12">
+				<div class="single-top">
+					<h2 class="second-header">Вересковый мед</h2>
+					<a href="" class="purple-link">Маршак С.Я.</a>
+				</div>
+			</div>
+			<div class="col-lg-12 col-md-12">
+				<div class="single-main clearfix">
+					<div class="row">
+						<div class="col-lg-3 col-md-5 col-sm-6 col-xs-12">
+							<div class="cat-section-block">
+								<div class="cat-section-block_img">
+									<img src="img/single.jpg" alt="section-block-image" class="cat-section_image">
+									<div class="cat-section-fav">
+										<a href=""><img src="img/favorite_gray.png"></a>
+									</div>
+								</div>								
+							</div>
+							<div class="single-social">
+								<span>Поделиться с друзьями</span>
+								<ul>
+									<li><a href=""></a></li>
+									<li><a href=""></a></li>
+									<li><a href=""></a></li>
+									<li><a href=""></a></li>
+									<li><a href=""></a></li>
+									<li><a href=""></a></li>
+								</ul>
+								<a href="" class="purple-link first-link">Проза для детей</a><br>
+								<a href="" class="purple-link">Сказки для детей</a>
+							</div>
+						</div>
+						<div class="col-lg-7 col-md-7 col-sm-6 col-xs-12">
+							<div class="single-text">
+								<p class="gen-text">Шотландская баллада "Вересковый мёд" ("Heather Ale") Роберта Льюиса Стивенсона (1850 - 1894) в переводе С.Я. Маршака впервые была опубликована в 1941 году и приобрела значительную популярность. В ней - яркий исторический эпизод об истреблении королем Шотландии маленького народа и двух последних его представителей - отца и сына, знающих секрет приготовления сладкого хмельного напитка из вереска. Перевод С. Маршака подлинно отразил эпоху и национальный колорит, волю, душу, характер и темперамент Р.Л. Стивенсона. Язык баллады стилизован под старину. Для среднего школьного возраста. <br>Для среднего школьного возраста.</p>
+							</div>
+							<div class="type2-info">
+								<span>ID: <i class="id-book"">421918</i></span>
+								<span>Автор: <a href="" class="cat-book-author purple-link cat-book-author-pur">Маршак С.Я.</a></span>
+								<span>Издательство: <a href="" class="cat-book-izd purple-link">Просвещение</a></span>					
+								<span>Год: 2018</span>
+								<span>Исполнение: 7Бц</span>
+								<span>Объем: 32 стр.</span>
+								<span>ISBN: 978-5-09-046224-2</span>
+								<span>Штрих-код: 9785171095277</span>
+							</div>					
+						</div>					
+						<div class="col-lg-2 col-lg-offset-0 col-md-7 col-md-offset-5 col-sm-6 col-sm-offset-6 col-xs-12">
+							<div class="section2-book-info row-type2">
+								<p class="type2-cost">Цена: <span class="cat-sec-cost">167<i class="fa fa-rub" aria-hidden="true"></i></span></p>
+								<div class="cat-basket">
+									<a href="" class="btn-gen">В корзину</a>													
+								</div>
+								<a href="" class="btn-gen btn-orange btn-one-click">Купить в 1 клик</a>	
+								<div class="type2-info">
+									<span>Выставочный зал: <b><i class="art-num">2</i> шт.</b></span>
+									<span>Иннокентьевский: <b><i class="in-num">4</i> шт.</b></span>									
+									<span>Основной склад: <b><i class="genstor-num">38</i> шт.</b></span>
+									<span>Толстого 49: <b><i class="tolst-num">1</i> шт.</b></span>
+								</div>
+							</div>
+						</div>				
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--Recommended-->
+<section class="recom">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="rec">
+					<a href="" class="rec-link">Рецензии пользователей: <i class="rec-number">0</i></a>
+					<a href="" class="btn-gen btn-blue btn-rec">Добавить рецензию</a>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="recom-wrapper clearfix">	
+				<div class="recom-shadow"></div>			
+				<div class="recom-btn">
+					<div class="recom-btn-arr"></div>
+				</div>
+				<div class="col-lg-12">
+					<h3 class="smallh3-header">Рекомендуемые товары</h3>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+					<div class="recom-block">
+						<div class="cat-section-block">
+							<div class="cat-section-block_img">
+								<img src="img/section-1.png" alt="section-block-image" class="cat-section_image">
+								<span class="cat-sec-cost">167<i class="fa fa-rub" aria-hidden="true"></i></span>
+								<div class="cat-section-fav">
+									<a href=""><img src="img/favorite_gray.png"></a>
+								</div>
+							</div>
+							<span class="cat-shipping">Отгрузка в течение 2 дней</span>
+							<div class="cat-basket">
+								<a href="" class="btn-gen">В корзину</a>
+								<input type="text" name="good-number" placeholder="1">
+							</div>
+							<div class="cat-good-info">
+								<span class="cat-book-name">Изобразительное искусство 1 кл. (твоя мастерская)</span>
+								<a href="" class="cat-book-author cat-book-author-purple purple-link">Неменская Л.А.</a>
+							</div>
+						</div>					
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+					<div class="recom-block">
+						<div class="cat-section-block">
+							<div class="cat-section-block_img">
+								<img src="img/section-2.jpg" alt="section-block-image" class="cat-section_image">
+								<span class="cat-sec-cost">84<i class="fa fa-rub" aria-hidden="true"></i></span>
+								<div class="cat-section-fav">
+									<a href=""><img src="img/favorite_gray.png"></a>
+								</div>
+							</div>
+							<span class="cat-shipping">Отгрузка в течение 2 дней</span>
+							<div class="cat-basket">
+								<a href="" class="btn-gen">В корзину</a>
+								<input type="text" name="good-number" placeholder="1">
+							</div>
+							<div class="cat-good-info">
+								<span class="cat-book-name">Прописи 1кл (ШколаРоссии) Ч.4 ФГОС</span>
+								<a href="" class="cat-book-author cat-book-author-purple purple-link">Неменская Л.А.</a>
+							</div>
+						</div>					
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+					<div class="recom-block">
+						<div class="cat-section-block">
+							<div class="cat-section-block_img">
+								<img src="img/section-2.jpg" alt="section-block-image" class="cat-section_image">
+								<span class="cat-sec-cost">84<i class="fa fa-rub" aria-hidden="true"></i></span>
+								<div class="cat-section-fav">
+									<a href=""><img src="img/favorite_gray.png"></a>
+								</div>
+							</div>
+							<span class="cat-shipping">Отгрузка в течение 2 дней</span>
+							<div class="cat-basket">
+								<a href="" class="btn-gen">В корзину</a>
+								<input type="text" name="good-number" placeholder="1">
+							</div>
+							<div class="cat-good-info">
+								<span class="cat-book-name">Прописи 1кл (ШколаРоссии) Ч.4 ФГОС</span>
+								<a href="" class="cat-book-author cat-book-author-purple purple-link">Неменская Л.А.</a>
+							</div>
+						</div>					
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+					<div class="recom-block">
+						<div class="cat-section-block">
+							<div class="cat-section-block_img">
+								<img src="img/section-2.jpg" alt="section-block-image" class="cat-section_image">
+								<span class="cat-sec-cost">84<i class="fa fa-rub" aria-hidden="true"></i></span>
+								<div class="cat-section-fav">
+									<a href=""><img src="img/favorite_gray.png"></a>
+								</div>
+							</div>
+							<span class="cat-shipping">Отгрузка в течение 2 дней</span>
+							<div class="cat-basket">
+								<a href="" class="btn-gen">В корзину</a>
+								<input type="text" name="good-number" placeholder="1">
+							</div>
+							<div class="cat-good-info">
+								<span class="cat-book-name">Прописи 1кл (ШколаРоссии) Ч.4 ФГОС</span>
+								<a href="" class="cat-book-author cat-book-author-purple purple-link">Неменская Л.А.</a>
+							</div>
+						</div>					
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+					<div class="recom-block">
+						<div class="cat-section-block">
+							<div class="cat-section-block_img">
+								<img src="img/section-1.png" alt="section-block-image" class="cat-section_image">
+								<span class="cat-sec-cost">167<i class="fa fa-rub" aria-hidden="true"></i></span>
+								<div class="cat-section-fav">
+									<a href=""><img src="img/favorite_gray.png"></a>
+								</div>
+							</div>
+							<span class="cat-shipping">Отгрузка в течение 2 дней</span>
+							<div class="cat-basket">
+								<a href="" class="btn-gen">В корзину</a>
+								<input type="text" name="good-number" placeholder="1">
+							</div>
+							<div class="cat-good-info">
+								<span class="cat-book-name">Изобразительное искусство 1 кл. (твоя мастерская)</span>
+								<a href="" class="cat-book-author cat-book-author-purple purple-link">Неменская Л.А.</a>
+							</div>
+						</div>					
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+					<div class="recom-block">
+						<div class="cat-section-block">
+							<div class="cat-section-block_img">
+								<img src="img/section-2.jpg" alt="section-block-image" class="cat-section_image">
+								<span class="cat-sec-cost">84<i class="fa fa-rub" aria-hidden="true"></i></span>
+								<div class="cat-section-fav">
+									<a href=""><img src="img/favorite_gray.png"></a>
+								</div>
+							</div>
+							<span class="cat-shipping">Отгрузка в течение 2 дней</span>
+							<div class="cat-basket">
+								<a href="" class="btn-gen">В корзину</a>
+								<input type="text" name="good-number" placeholder="1">
+							</div>
+							<div class="cat-good-info">
+								<span class="cat-book-name">Прописи 1кл (ШколаРоссии) Ч.4 ФГОС</span>
+								<a href="" class="cat-book-author cat-book-author-purple purple-link">Неменская Л.А.</a>
+							</div>
+						</div>					
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+					<div class="recom-block">
+						<div class="cat-section-block">
+							<div class="cat-section-block_img">
+								<img src="img/section-2.jpg" alt="section-block-image" class="cat-section_image">
+								<span class="cat-sec-cost">84<i class="fa fa-rub" aria-hidden="true"></i></span>
+								<div class="cat-section-fav">
+									<a href=""><img src="img/favorite_gray.png"></a>
+								</div>
+							</div>
+							<span class="cat-shipping">Отгрузка в течение 2 дней</span>
+							<div class="cat-basket">
+								<a href="" class="btn-gen">В корзину</a>
+								<input type="text" name="good-number" placeholder="1">
+							</div>
+							<div class="cat-good-info">
+								<span class="cat-book-name">Прописи 1кл (ШколаРоссии) Ч.4 ФГОС</span>
+								<a href="" class="cat-book-author cat-book-author-purple purple-link">Неменская Л.А.</a>
+							</div>
+						</div>					
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+					<div class="recom-block">
+						<div class="cat-section-block">
+							<div class="cat-section-block_img">
+								<img src="img/section-2.jpg" alt="section-block-image" class="cat-section_image">
+								<span class="cat-sec-cost">84<i class="fa fa-rub" aria-hidden="true"></i></span>
+								<div class="cat-section-fav">
+									<a href=""><img src="img/favorite_gray.png"></a>
+								</div>
+							</div>
+							<span class="cat-shipping">Отгрузка в течение 2 дней</span>
+							<div class="cat-basket">
+								<a href="" class="btn-gen">В корзину</a>
+								<input type="text" name="good-number" placeholder="1">
+							</div>
+							<div class="cat-good-info">
+								<span class="cat-book-name">Прописи 1кл (ШколаРоссии) Ч.4 ФГОС</span>
+								<a href="" class="cat-book-author cat-book-author-purple purple-link">Неменская Л.А.</a>
+							</div>
+						</div>					
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+					<div class="recom-block">
+						<div class="cat-section-block">
+							<div class="cat-section-block_img">
+								<img src="img/section-1.png" alt="section-block-image" class="cat-section_image">
+								<span class="cat-sec-cost">167<i class="fa fa-rub" aria-hidden="true"></i></span>
+								<div class="cat-section-fav">
+									<a href=""><img src="img/favorite_gray.png"></a>
+								</div>
+							</div>
+							<span class="cat-shipping">Отгрузка в течение 2 дней</span>
+							<div class="cat-basket">
+								<a href="" class="btn-gen">В корзину</a>
+								<input type="text" name="good-number" placeholder="1">
+							</div>
+							<div class="cat-good-info">
+								<span class="cat-book-name">Изобразительное искусство 1 кл. (твоя мастерская)</span>
+								<a href="" class="cat-book-author cat-book-author-purple purple-link">Неменская Л.А.</a>
+							</div>
+						</div>					
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+					<div class="recom-block">
+						<div class="cat-section-block">
+							<div class="cat-section-block_img">
+								<img src="img/section-2.jpg" alt="section-block-image" class="cat-section_image">
+								<span class="cat-sec-cost">84<i class="fa fa-rub" aria-hidden="true"></i></span>
+								<div class="cat-section-fav">
+									<a href=""><img src="img/favorite_gray.png"></a>
+								</div>
+							</div>
+							<span class="cat-shipping">Отгрузка в течение 2 дней</span>
+							<div class="cat-basket">
+								<a href="" class="btn-gen">В корзину</a>
+								<input type="text" name="good-number" placeholder="1">
+							</div>
+							<div class="cat-good-info">
+								<span class="cat-book-name">Прописи 1кл (ШколаРоссии) Ч.4 ФГОС</span>
+								<a href="" class="cat-book-author cat-book-author-purple purple-link">Неменская Л.А.</a>
+							</div>
+						</div>					
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+					<div class="recom-block">
+						<div class="cat-section-block">
+							<div class="cat-section-block_img">
+								<img src="img/section-2.jpg" alt="section-block-image" class="cat-section_image">
+								<span class="cat-sec-cost">84<i class="fa fa-rub" aria-hidden="true"></i></span>
+								<div class="cat-section-fav">
+									<a href=""><img src="img/favorite_gray.png"></a>
+								</div>
+							</div>
+							<span class="cat-shipping">Отгрузка в течение 2 дней</span>
+							<div class="cat-basket">
+								<a href="" class="btn-gen">В корзину</a>
+								<input type="text" name="good-number" placeholder="1">
+							</div>
+							<div class="cat-good-info">
+								<span class="cat-book-name">Прописи 1кл (ШколаРоссии) Ч.4 ФГОС</span>
+								<a href="" class="cat-book-author cat-book-author-purple purple-link">Неменская Л.А.</a>
+							</div>
+						</div>					
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+					<div class="recom-block">
+						<div class="cat-section-block">
+							<div class="cat-section-block_img">
+								<img src="img/section-2.jpg" alt="section-block-image" class="cat-section_image">
+								<span class="cat-sec-cost">84<i class="fa fa-rub" aria-hidden="true"></i></span>
+								<div class="cat-section-fav">
+									<a href=""><img src="img/favorite_gray.png"></a>
+								</div>
+							</div>
+							<span class="cat-shipping">Отгрузка в течение 2 дней</span>
+							<div class="cat-basket">
+								<a href="" class="btn-gen">В корзину</a>
+								<input type="text" name="good-number" placeholder="1">
+							</div>
+							<div class="cat-good-info">
+								<span class="cat-book-name">Прописи 1кл (ШколаРоссии) Ч.4 ФГОС</span>
+								<a href="" class="cat-book-author cat-book-author-purple purple-link">Неменская Л.А.</a>
+							</div>
+						</div>					
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+					<div class="recom-block">
+						<div class="cat-section-block">
+							<div class="cat-section-block_img">
+								<img src="img/section-1.png" alt="section-block-image" class="cat-section_image">
+								<span class="cat-sec-cost">167<i class="fa fa-rub" aria-hidden="true"></i></span>
+								<div class="cat-section-fav">
+									<a href=""><img src="img/favorite_gray.png"></a>
+								</div>
+							</div>
+							<span class="cat-shipping">Отгрузка в течение 2 дней</span>
+							<div class="cat-basket">
+								<a href="" class="btn-gen">В корзину</a>
+								<input type="text" name="good-number" placeholder="1">
+							</div>
+							<div class="cat-good-info">
+								<span class="cat-book-name">Изобразительное искусство 1 кл. (твоя мастерская)</span>
+								<a href="" class="cat-book-author cat-book-author-purple purple-link">Неменская Л.А.</a>
+							</div>
+						</div>					
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+					<div class="recom-block">
+						<div class="cat-section-block">
+							<div class="cat-section-block_img">
+								<img src="img/section-2.jpg" alt="section-block-image" class="cat-section_image">
+								<span class="cat-sec-cost">84<i class="fa fa-rub" aria-hidden="true"></i></span>
+								<div class="cat-section-fav">
+									<a href=""><img src="img/favorite_gray.png"></a>
+								</div>
+							</div>
+							<span class="cat-shipping">Отгрузка в течение 2 дней</span>
+							<div class="cat-basket">
+								<a href="" class="btn-gen">В корзину</a>
+								<input type="text" name="good-number" placeholder="1">
+							</div>
+							<div class="cat-good-info">
+								<span class="cat-book-name">Прописи 1кл (ШколаРоссии) Ч.4 ФГОС</span>
+								<a href="" class="cat-book-author cat-book-author-purple purple-link">Неменская Л.А.</a>
+							</div>
+						</div>					
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+					<div class="recom-block">
+						<div class="cat-section-block">
+							<div class="cat-section-block_img">
+								<img src="img/section-2.jpg" alt="section-block-image" class="cat-section_image">
+								<span class="cat-sec-cost">84<i class="fa fa-rub" aria-hidden="true"></i></span>
+								<div class="cat-section-fav">
+									<a href=""><img src="img/favorite_gray.png"></a>
+								</div>
+							</div>
+							<span class="cat-shipping">Отгрузка в течение 2 дней</span>
+							<div class="cat-basket">
+								<a href="" class="btn-gen">В корзину</a>
+								<input type="text" name="good-number" placeholder="1">
+							</div>
+							<div class="cat-good-info">
+								<span class="cat-book-name">Прописи 1кл (ШколаРоссии) Ч.4 ФГОС</span>
+								<a href="" class="cat-book-author cat-book-author-purple purple-link">Неменская Л.А.</a>
+							</div>
+						</div>					
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+					<div class="recom-block">
+						<div class="cat-section-block">
+							<div class="cat-section-block_img">
+								<img src="img/section-2.jpg" alt="section-block-image" class="cat-section_image">
+								<span class="cat-sec-cost">84<i class="fa fa-rub" aria-hidden="true"></i></span>
+								<div class="cat-section-fav">
+									<a href=""><img src="img/favorite_gray.png"></a>
+								</div>
+							</div>
+							<span class="cat-shipping">Отгрузка в течение 2 дней</span>
+							<div class="cat-basket">
+								<a href="" class="btn-gen">В корзину</a>
+								<input type="text" name="good-number" placeholder="1">
+							</div>
+							<div class="cat-good-info">
+								<span class="cat-book-name">Прописи 1кл (ШколаРоссии) Ч.4 ФГОС</span>
+								<a href="" class="cat-book-author cat-book-author-purple purple-link">Неменская Л.А.</a>
+							</div>
+						</div>					
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="recom-add-block">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--Footer-->
+<footer class="add-footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4 col-lg-offset-6 col-md-7 col-md-offset-2 col-sm-8 col-xs-12">				
+				<ul class="bottom-links">
+					<li><a href="" class="purple-link">Доставка</a> <span>почтой из</span> <span class="city-choice">Красноярска</span></li>					
+					<li><a href="" class="d-marker city">Санкт-Петербург</a></li>
+				</ul>
+			</div>
+			<div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
+				<div class="phone-wrapper">
+					<div class="phone">
+						<a href="tel:8-800-3333-150">8 800 3333-150</a>
+					</div>
+					<div class="phone-info clearfix">
+						<p class="f-left">Бесплатно по России</p>
+						<a href="#callback" class="f-right popup_form">Заказать звонок</a>
+					</div>
+				</div>
+			</div>
+		</div>		
+	</div>
+	<div class="header-third bottom-menu-wr">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12">
+						<button class="menu-toggle-button click-mobile hidden-lg hidden-md">
+							<span></span>					
+						</button>
+						<nav class="bottom-menu">						
+							<ul>
+								<li><a href="#">Книги</a></li>
+								<li><a href="#">Учебники</a></li>
+								<li><a href="#">Канцелярия</a></li>							
+								<li><a href="#">Игры / Игрушки</a></li>
+								<li><a href="#">Мебель</a></li>
+								<li><a href="#">Хозтовары</a></li>
+								<li><a href="#">Праздники</a></li>
+								<li><a href="#">Товары для детей</a></li>
+								<li><a href="#">Творчество</a></li>
+								<li class="fix-li"><a href="#">Оснащение детских садов</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>		
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+				<p class="gen-text copy">&copy; 2018 Оптово-розничный интернет-магазин Partner-online.ru. Все права защищены.</p>
+			</div>
+			<div class="col-lg-6 al-right col-md-6 col-sm-6 col-xs-12">
+				<div class="add-footer-counters">
+					<a href="" class="bit-link"><img src="img/bitrix.png"></a>
+					<div class="counters">
+						<a href=""><img src="img/counters.png"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<form  id="callback" class="modal-form mfp-hide">
+	<div class="form-wrapper">
+		<p class="form-header">Заказ звонка</p>
+		<p class="form-info">Здравствуйте, <span class="user-name">Имя</span>! Оставьте заявку и Вам обязательно перезвонят.</p>	
+		<div class="form-fields">
+			<div class="form-single">
+				<span class="form-main-text">Номер телефона или Skype*</span>
+				<input type="text" name="acc-info" required="">
+			</div>
+			<div class="form-single">
+				<span class="form-main-text">Краткое описание*</span>
+				<textarea name="s-desc"></textarea>
+			</div>
+			<div class="form-single">
+				<span class="form-main-text">Удобные дата и время звонка*</span>
+				<input type="text" name="date" required="" class="s-field">
+				<img src="img/calendar.png" alt="calendar-icon" class="date-choice">
+				<div class="form-dates">
+					<a href="">c 10:00 - 13:00</a>
+					<a href="">c 13:00 - 16:00</a>
+					<a href="">c 16:00 - 19:00</a>
+				</div>
+			</div>
+		</div>	
+		<div class="form-button">
+			<button type="submit" class="btn_form">Отправить заявку</button>
+		</div>	
+	</div>
+</form>
+
+<form  id="search-ord" class="modal-form mfp-hide">
+	<div class="form-wrapper">
+		<p class="form-header">Заявка на поиск</p>
+		<p class="form-info">Ответ по заявке будет отправлен Вам на электронную почту в течении трех рабочих дней.</p>	
+		<div class="form-fields">			
+			<div class="form-single">
+				<span class="form-main-text">Описание товара*</span>
+				<textarea name="s-desc"></textarea>
+			</div>			
+		</div>	
+		<div class="form-button">
+			<button type="submit" class="btn_form">Отправить заявку</button>
+		</div>	
+	</div>
+</form>
+
+<form  id="reg-form" class="modal-form mfp-hide">
+	<div class="form-wrapper">
+		<p class="form-header">Регистрация</p>		
+		<div class="form-fields">
+			<div class="form-single">
+				<span class="form-main-text">E-mail*</span>
+				<input type="text" name="email" required="">
+			</div>
+			<div class="form-single">
+				<span class="form-main-text">Имя</span>
+				<input type="text" name="fio">
+			</div>
+		</div>	
+		<div class="form-button">
+			<button type="submit" class="btn_form">Регистрация</button>
+		</div>	
+		<div class="social-icons">
+			<p class="form-main-text">Войти на сайт, используя социальные сети</p>
+			<ul class="social-icons-list">
+				<li><a href=""><img src="img/vk.png"></a></li>
+				<li><a href=""><img src="img/facebook.png"></a></li>
+				<li><a href=""><img src="img/twitter.png"></a></li>
+				<li><a href=""><img src="img/mailru.png"></a></li>
+				<li><a href=""><img src="img/google.png"></a></li>
+				<li><a href=""><img src="img/ok.png"></a></li>
+			</ul>
+		</div>
+	</div>
+</form>
+
+
+<form  id="fog-pass" class="modal-form mfp-hide">
+	<div class="form-wrapper">
+		<p class="form-header">Забыли пароль</p>
+		<p class="form-main-text">Если вы забыли пароль, введите E-Mail.</p>	
+		<p class="form-main-text">Контрольная строка для смены пароля будет выслана вам по E-Mail.</p>
+		<div class="form-fields">
+			<div class="form-single">
+				<span class="form-main-text">E-mail*</span>
+				<input type="" name="email" required="">
+			</div>			
+		</div>	
+		<div class="form-button">
+			<button type="submit" class="btn_form">Отправить</button>
+		</div>	
+	</div>
+</form>
+
+<form  id="auth" class="modal-form mfp-hide">
+	<div class="form-wrapper">
+		<p class="form-header">Войти</p>		
+		<div class="form-fields">
+			<div class="form-single">
+				<span class="form-main-text">E-mail или телефон</span>
+				<input type="text" name="email" required="">
+			</div>
+			<div class="form-single">
+				<span class="form-main-text">Пароль</span>
+				<input type="password" name="pass">
+			</div>
+		</div>	
+		<div class="form-button">
+			<button type="submit" class="btn_form">Войти</button>
+		</div>	
+		<div class="social-icons">
+			<p class="form-main-text">Войти на сайт, используя социальные сети</p>
+			<ul class="social-icons-list">
+				<li><a href=""><img src="img/vk.png"></a></li>
+				<li><a href=""><img src="img/facebook.png"></a></li>
+				<li><a href=""><img src="img/twitter.png"></a></li>
+				<li><a href=""><img src="img/mailru.png"></a></li>
+				<li><a href=""><img src="img/google.png"></a></li>
+				<li><a href=""><img src="img/ok.png"></a></li>
+			</ul>
+		</div>
+	</div>
+</form>
+
+	<div class="hidden"></div>
+
+	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
+	<script src="libs/bootstrap/js/bootstrap.js"></script>
+	<script src="libs/slick/slick.js"></script>
+	<script src="libs/magnific/jquery.magnific-popup.js"></script>
+	<script src="libs/select/js/bootstrap-select.js"></script>
+	<script src="js/common.js"></script>
+	
+</body>
+</html>

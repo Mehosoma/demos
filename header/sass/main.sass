@@ -72,6 +72,14 @@ h3
 h2
 	font-size: 36px
 	color: #000
+.second-header
+	font-family: $seg-b
+	font-size: 30px
+	color: $purple
+.smallh3-header
+	font-size: 24px 
+	color: $purple
+	font-family: $seg-semi
 .gen-text, .gen-text a
 	font-size: 16px
 	color: #000
@@ -113,6 +121,18 @@ h2
 .btn-grey:hover
 	background-color: #999999
 	opacity: 0.7
+.btn-orange
+	background-color: $orange
+.btn-orange:hover
+	color: #fff
+	background-color: $blue	
+.purple-link
+	color: #a21b86
+	border-bottom: 1px solid #a21b86
+.purple-link:hover
+	color: $orange
+	border-bottom: 1px solid $orange
+
 
 /***************************************************Header*******************************************/
 header
@@ -799,11 +819,7 @@ footer
 .active-dropdown-goods
 	display: block
 .calalog-right
-	margin-top: -15px
-	h2
-		font-family: $seg-b
-		font-size: 30px
-		color: $purple				
+	margin-top: -15px				
 	h3
 		font-family: $seg
 		font-size: 24px
@@ -959,6 +975,10 @@ footer
 		background-image: url(../img/type-3.png)
 		background-repeat: no-repeat
 		background-position: center center
+	.type1-active
+		background-image: url(../img/type-1-blue.png)!important
+	.type2-active
+		background-image: url(../img/type-2-blue.png)!important
 .sort-fav
 	background-image: url('../img/favorite_gray.png')
 	background-repeat: no-repeat
@@ -981,6 +1001,10 @@ footer
 	top: 50%
 	left: 50%
 	transform: translateX(-50%) translateY(-50%)
+.type2-cost
+	font-family: $seg-b
+	font-size: 18px
+	color: #000
 .cat-sec-cost
 	position: absolute
 	height: 44px
@@ -1073,6 +1097,237 @@ footer
 		cursor: pointer
 		opacity: 0.7
 
+
+/***************************************************Razdel-2*******************************************/
+.row-type2
+	h4
+		font-family: $seg-semi
+		font-size: 24px
+		line-height: 1.2
+		color: #000
+		margin-top: 26px
+	.gen-text
+		line-height: 24px
+	.cat-sec-cost
+		position: relative
+		background-color: transparent
+		color: #000
+.type2-info
+	margin-top: 24px
+	span
+		font-size: 16px
+		line-height: 24px
+		display: block
+	span:nth-child(2)
+		margin-top: 16px
+	.cat-book-author
+		display: inline-block
+		font-size: 16px
+	.cat-shipping
+		font-size: 14px
+		margin-top: 26px		
+		margin-bottom: 6px	
+	i
+		font-style: normal
+	b
+		font-family: $seg-b
+.section2-wrapper
+	border-bottom: 1px solid #e1e1e1
+	padding-bottom: 51px
+	margin-bottom: 18px
+.section2-book-info
+		margin-top: 25px
+
+/***************************************************Single*******************************************/
+.goods-single	
+	.purple-link
+		font-size: 16px
+	.purple-link:hover
+		color: $purple
+		border-bottom: 1px solid transparent
+	.purple-link:visited
+		color: $purple
+.single-top
+	.purple-link
+		font-family: $seg-b
+.btn-one-click
+	width: 230px
+	height: 54px
+	background-color: $orange
+	background-image: none
+	text-align: center
+	padding-left: 0px
+	font-family: $seg-b
+	line-height: 52px
+	font-size: 24px
+	margin-top: 14px
+.cat-book-author-pur
+	color: $purple
+.single-main
+	border-bottom: 1px solid #999
+	margin-top: 8px
+	padding-bottom: 27px
+	.type2-info
+		margin-top: 14px
+		a
+			line-height: 20px
+	.type2-info span:nth-child(2)
+		margin-top: 0px
+	.type2-cost
+		font-size: 30px
+		margin-bottom: 6px
+	.section2-book-info
+		margin-top: 0px
+	.cat-basket a
+		width: 230px
+		background-position: left 50px center
+		padding-left: 76px
+	.cat-section-block
+		height: auto
+.single-social
+	margin-top: 27px
+	span
+		font-size: 16px
+		color: $grey
+	ul
+		margin-top: 20px
+		margin-bottom: 16px
+	li
+		display: inline-block
+		margin-right: 14px
+		a
+			width: 32px
+			height: 32px
+			display: block
+			background-repeat: no-repeat
+			background-position: center center
+			background-size: cover
+		a:hover
+			opacity: 0.7
+	ul li:nth-child(1) a
+		background-image: url('../img/vk.png')
+	ul li:nth-child(2) a
+		background-image: url('../img/facebook.png')
+	ul li:nth-child(3) a
+		background-image: url('../img/twitter.png')
+	ul li:nth-child(4) a
+		background-image: url('../img/mailru.png')
+	ul li:nth-child(5) a
+		background-image: url('../img/google.png')
+	ul li:nth-child(6) a
+		background-image: url('../img/ok.png')
+.first-link
+	margin-bottom: 8px
+.single-text
+	margin-top: 5px
+	border-bottom: 1px solid #e1e1e1
+	padding-bottom: 5px
+.recom
+	padding-top: 25px
+.rec-link
+	font-size: 14px
+	color: $grey
+	border-bottom: 1px dashed $grey
+	i
+		font-style: normal
+		color: $blue
+.rec-link:hover
+	color: $blue
+	border-bottom: 1px dashed $blue
+.btn-rec
+	width: 161px
+	height: 34px
+	text-align: center
+	line-height: 34px
+	margin-left: 12px
+	font-size: 14px
+.btn-rec:hover
+	color: #fff
+.recom-wrapper
+	position: relative
+	padding-bottom: 62px
+.recom-shadow
+	width: 50%
+	height: 100%
+	position: absolute
+	bottom: 0px
+	left: 50%
+	transform: translateX(-50%)
+	box-shadow: 0 21px 28px -30px rgba(0, 0, 0, 0.5)
+.recom-btn
+	width: 70px
+	height: 35px
+	border-radius: 0 0 50% 50% / 0 0 100% 100%
+	position: absolute
+	bottom: -33px
+	left: 50%
+	margin-left: -35px		
+	box-shadow: 0 5px 15px -3px rgba(0, 0, 0, 0.2)
+	z-index: 100
+	background-color: #fff		
+.recom-btn-arr	
+	width: 100%
+	height: 100%
+	background-image: url('../img/arr-next.png')
+	background-repeat: no-repeat
+	background-position: center center
+	background-size: 10px 20px
+	transform: rotate(90deg)
+.recom-block
+	margin-top: 25px
+.cat-book-author-purple
+	display: inline-block
+	color: $purple
+.cat-section-block
+	height: 590px
+.recom-add-block
+	height: 237px
+
+
+/***********************************************Basket*************************************************/	
+.basket-header
+	display: inline-block
+.delay-link
+	font-size: 20px
+	line-height: 24px
+	border-bottom: 1px dashed $purple
+	margin-left: 25px
+.delay-link:hover
+	border-bottom: 1px dashed $orange
+.basket-wrapper-empty
+	width: 100%
+	height: 40vh
+	position: relative
+	text-align: center
+.basket-empty-text
+	position: relative
+	top: 50%	
+	transform: translateX(-50%), translateY(-50%)
+	font-family: $seg-semi
+	font-size: 24px
+.basket-cost-info, .basket-button
+	display: inline-block
+.basket-cost-info
+	font-size: 24px
+	font-family: $seg-semi	
+	margin-right: 20px
+	i
+		font-size: 22px
+.del-minus-number
+	color: #999
+	text-decoration: line-through
+.basker-cost-wrapper
+	text-align: right
+.btn-basket
+	width: 238px
+	height: 54px
+	color: #fff
+	text-align: center
+	line-height: 54px
+	font-family: $seg-b
+	font-size: 24px
+	position: relative
+	top: -18px
 
 /***********************************************ButtonMobile******************************************/
 .menu-toggle-button
