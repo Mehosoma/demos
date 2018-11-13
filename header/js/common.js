@@ -68,6 +68,32 @@ $(document).ready(function(){
     });
 });
 
+//Show-hide basket-content
+$(document).ready(function(){
+    $('.basket-toggle').on('click',function(e){       
+        e.preventDefault();        
+          $('.basket-content-toggle').animate({
+              height: 'toggle'
+            }, 400, function() {
+          });                              
+    });
+});
+
+
+
+//Radio-button
+$(document).ready(function(){
+    $('.l-container-radio input[type=radio]').change(function(){           
+          $('.add-radio').css('display', 'none');
+          $('.radio-check').removeClass('radio-checked');
+          $(this).parent().parent().addClass('radio-checked');
+          $(this).parent().nextAll('.add-radio').animate({
+              height: 'toggle'
+            }, 400, function() {
+          });                              
+    });
+});
+
 
   //ModalWindow
 $(document).ready(function(){
