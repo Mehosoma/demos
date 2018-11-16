@@ -1,6 +1,343 @@
-/***************************************************GeneralStyles************************************/
-header .text-blue {
-  color: green !important; }
+/***************************************************Banner-top************************************/
+.banner-top {
+  height: 560px;
+  background-image: url(/promo/images/top-banner-s.jpg);
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: cover;
+}
+
+.banner-top h1 {
+  margin-top: 5rem;
+}
+
+.banner-top a:hover {
+  text-decoration: none;
+  background-color: #e89100;
+}
+
+.btn-ban-orange {
+  background-color: #ff9f00;
+  width: 239px;
+  height: 58px;
+  line-height: 58px;
+  border-radius: 2px;
+}
+
+.container-content {
+  max-width: 1160px;
+}
+
+/***************************************************Counters-days************************************/
+.counter-days .counter-days-block {
+  height: 147px;
+  background-color: #f5dbde;
+  position: relative;
+}
+
+.btn-blue-gen {
+  width: 256px;
+  height: 59px;
+  line-height: 59px;
+  background-color: #4753d1;
+  border-radius: 2px;
+}
+
+.btn-blue-gen:hover {
+  text-decoration: none;
+  background-color: #3b46b3;
+}
+
+/***************************************************Gen-Ceo************************************/
+.quote-gen-ceo {
+  height: 335px;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 0 40px 0 #e5eff7;
+  box-shadow: 0 0 40px 0 #e5eff7;
+  background-color: #ffffff;
+  position: relative;
+}
+
+.quote-gen-ceo .ceo-photo {
+  width: 209px;
+  height: 209px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.quote-gen-ceo p {
+  line-height: 1.43;
+  color: #333;
+  letter-spacing: -1px;
+}
+
+.quote-gen-ceo:after {
+  position: absolute;
+  top: 0px;
+  left: 649px;
+  content: "\2019 \2019";
+  font-family: "8292", sans-serif;
+  font-size: 525px;
+  display: block;
+  color: #e5eff7;
+  line-height: 0.8;
+}
+
+.ceo-name {
+  color: #333;
+  position: relative;
+}
+
+.ceo-pos {
+  color: #a1a1a7;
+  line-height: 1.61;
+}
+
+.z-fix {
+  position: relative;
+  z-index: 100;
+}
+
+/***************************************************Use************************************/
+.color-g {
+  color: #333;
+}
+
+.use-b-block {
+  height: 512px;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 0 40px 0 #e5eff7;
+  box-shadow: 0 0 40px 0 #e5eff7;
+  padding-bottom: 20px;
+}
+
+.use-b-block img {
+  border-radius: 6px 6px 0px 0px;
+}
+
+/***************************************************Methods************************************/
+.methods-text {
+  line-height: 1.56;
+}
+
+.brd-bottom {
+  border-bottom: solid 1px #a1a1a7;
+}
+
+/***************************************************S-benefits************************************/
+.s-benefits-header {
+  line-height: 1.29;
+}
+
+.list-gen p {
+  line-height: 1.56;
+}
+
+.list-gen li {
+  display: list-item;
+  list-style-type: disc !important;
+}
+
+/***************************************************Teacher************************************/
+.teacher {
+  height: 548px;
+  background-color: #adb4ca;
+  background-image: url(/promo/images/teacher.png);
+  background-position: center right 58px;
+  background-repeat: no-repeat;
+  background-size: 37%;
+}
+
+.teacher-name {
+  line-height: 0.83;
+}
+
+/***************************************************Programm************************************/
+.programm-step-block {
+  position: relative;
+}
+
+.pr-col {
+  height: 230px;
+}
+
+.programm-step {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 37px;
+  height: 37px;
+  background-color: #656885;
+  border-radius: 50%;
+  display: block;
+}
+
+.programm-step:after {
+  position: absolute;
+  left: 14px;
+  top: 8px;
+  width: 11px;
+  height: 16px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  display: block;
+}
+
+.pr-col:before {
+  position: absolute;
+  width: 1px;
+  height: 77%;
+  display: block;
+  background-color: #656885;
+  top: 45px;
+  left: 33px;
+}
+
+.programm-step-number {
+  line-height: 1.29;
+  color: #656885;
+}
+
+.step-subheader {
+  line-height: 1.43;
+}
+
+.before-fix:before {
+  display: none;
+}
+
+.before-fix {
+  height: auto;
+}
+
+/***************************************************Pr-Cost************************************/
+.pr-cost {
+  height: 1104px;
+  background-color: #adb4ca;
+}
+
+.pr-cost-block {
+  background-color: #fff;
+  height: 822px;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 2px 30px 0 rgba(212, 212, 212, 0.73);
+  box-shadow: 0 2px 30px 0 rgba(212, 212, 212, 0.73);
+  position: relative;
+}
+
+.pr-cost-block ul {
+  border-top: 2px solid #4753d1;
+}
+
+.pr-cost-block .btn-blue-gen {
+  position: absolute;
+  bottom: 68px;
+  left: 48px;
+}
+
+.pr-cost-header {
+  line-height: 1.57;
+}
+
+.text-blue {
+  color: #4753d1;
+  line-height: 1;
+}
 
 .hidden {
-  display: none; }
+  display: none;
+}
+
+/***************************************************Format************************************/
+.format-text {
+  line-height: 1.56;
+}
+
+/***************************************************R-slider************************************/
+.owl-carousel-res .owl-slide {
+  height: 670px;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 0 40px 0 #e5eff7;
+  box-shadow: 0 0 40px 0 #e5eff7;
+  background-color: #ffffff;
+}
+
+.owl-carousel-res .slide-image {
+  width: 104px;
+  height: 104px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.owl-carousel-res span {
+  vertical-align: top;
+  position: relative;
+  top: 39px;
+}
+
+.owl-carousel-res .format-text {
+  letter-spacing: -0.5px;
+}
+
+.owl-carousel-res {
+  width: 1130px;
+  margin: 0 auto;
+  height: 670px;
+  margin-top: 20px;
+}
+
+.owl-carousel-res .owl-item {
+  position: relative;
+  min-height: 1px;
+  float: left;
+  -webkit-backface-visibility: hidden;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+}
+
+.owl-wrapper {
+  width: 1200px;
+  height: 710px;
+  overflow-x: hidden;
+}
+
+/***************************************************Add-form************************************/
+.add-form {
+  height: 454px;
+  background-color: #656885;
+}
+
+.form-single span {
+  opacity: 0.55;
+}
+
+.form-single input {
+  opacity: 0.55;
+  width: 237px;
+  height: 25px;
+  border-bottom: solid 1px #ffffff;
+  background-color: transparent;
+}
+
+.btn-white-gen {
+  width: 196px;
+  height: 52px;
+  line-height: 52px;
+  background-color: #fff;
+  border-radius: 2px;
+  color: #656885;
+}
+
+.btn-white-gen:hover {
+  text-decoration: none;
+  color: #656885;
+  background-color: #e8e8e8;
+  cursor: pointer;
+}
+
+.letter-sp {
+  letter-spacing: 0.5px;
+}
