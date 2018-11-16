@@ -1,0 +1,186 @@
+footer p {
+    padding-bottom: 15px;
+}
+footer a:hover, footer a:hover span {
+    color: #4753d1 !important;
+    text-decoration: none;
+}
+footer .hidden {
+    display: none;
+}
+footer nav.nav2, .row .row-item, footer .row .full-row-item {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+footer {
+    max-width: 1140px !important;
+    margin: auto;
+}
+footer *, footer a, footer .first-row a, footer nav a {
+    line-height: 1.5;
+    color: #000;
+}
+footer nav.nav2 .nav2-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+footer nav.nav2 .nav2-inner a {
+    padding: 23px 0;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+footer .row .row-item {
+    width: 33.4%;
+}
+footer .border-bottom-1px {
+    border-bottom: 1px solid rgba(0,0,0,.16);
+}
+
+
+footer .first-row, footer .second-row, footer .third-row {
+    margin-left: 0;
+    margin-right: 0
+}
+footer .first-row, footer .second-row {
+    display: flex;
+    justify-content: start;
+    flex-wrap: nowrap;
+    align-items: start;
+    margin-top: 1.5rem;
+    padding-bottom: 3rem;
+}
+footer .first-row .block-1 {
+    display: flex;
+}
+footer .first-row .block-1 p {
+    font-weight: bold;
+    margin: 0 .5rem;
+}
+footer .first-row .block-2 a {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    line-height: 1.5;
+}
+footer .first-row .block-2 a img {
+    margin-right: 1.5rem
+}
+footer .first-row .block-2 .first-link {
+    margin-bottom: 1.5rem;
+    margin-top: .25rem;
+}
+footer .first-row .block-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+footer .first-row .block-3 .main-phone {
+    font-weight: 300
+}
+
+
+footer .second-row .block-3 .row-item-content a:first-child{
+    margin-right: 1.5rem
+}
+footer .second-row .block-3 .row-item-content {
+    justify-content: flex-start !important;
+}
+footer .second-row .row-item .row-item-title {
+    font-weight: 700;
+    margin-top: 0;
+}
+footer .second-row .row-item .row-item-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .second-row .block-1 .row-item-content img:last-child{
+    margin-right: 1.5rem;
+}
+footer .second-row .block-1 .row-item-content {
+    padding-right: 3rem;
+}
+footer .second-row .block-2 .row-item-content img {
+    margin-bottom: .5rem;
+}
+footer .second-row .block-2 .row-item-content a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+footer .second-row .block-2 .row-item-content a span {
+    color: #6c757d;
+}
+
+
+footer .third-row .full-row-item:first-child {
+    color: #6c757d;
+}
+footer .third-row .full-row-item:last-child {
+    color: #343a40;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+    footer {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    footer nav.nav2 {
+        width: 100%;
+    }
+    footer nav.nav2 .nav2-inner {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    footer .first-row, footer .second-row {
+        flex-wrap: wrap;
+    }
+    footer .first-row .block-1 {
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+    footer .first-row .block-2, footer .first-row .block-3 {
+        width: 50%;
+    }
+    footer .second-row .block-1, footer .second-row .block-2, footer .second-row .block-3 {
+        width: 59%;
+    }
+    footer .second-row .block-2, footer .second-row .block-3 {
+        margin-top: 1.5rem
+    }
+}
+@media (max-width: 767px) {
+    footer {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    footer nav.nav2 {
+        width: 100%;
+    }
+    footer nav.nav2 .nav2-inner {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    footer .first-row, footer .second-row {
+        flex-wrap: wrap;
+        padding-bottom: 0;
+    }
+    footer .first-row .block-1, footer .first-row .block-2, footer .first-row .block-3, footer .second-row .block-1, footer .second-row .block-2, footer .second-row .block-3 {
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+    footer .second-row .block-1 .row-item-content {
+        padding-right: 0;
+    }
+    footer .second-row .block-1 .row-item-content img:last-child {
+        margin-right: 0
+    }
+}

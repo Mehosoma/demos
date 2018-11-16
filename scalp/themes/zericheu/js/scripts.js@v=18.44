@@ -1,0 +1,130 @@
+function findBootstrapEnvironment(){
+	var envs = ['xs', 'sm', 'md', 'lg'];
+
+	$el = $('<div>');
+	$el.appendTo($('body'));
+
+	for (var i = envs.length - 1; i >= 0; i--) {
+		var env = envs[i];
+
+		$el.addClass('hidden-' + env);
+		if ($el.is(':hidden')) {
+			$el.remove();
+			return env;
+		}
+	}
+}
+
+function updateContacts(agent){}
+
+function updateForms(agent){
+	$('option[value="' + agent.city.city + '"]').attr('selected', 'true');
+}
+
+function imgRealSize(img) {
+	var $img = $(img);
+	if ($img.prop('naturalWidth') == undefined) {
+		var $tmpImg = $('<img/>').attr('src', $img.attr('src'));
+		$img.prop('naturalWidth', $tmpImg[0].width);
+		$img.prop('naturalHeight', $tmpImg[0].height);
+	}
+	return { 'width': $img.prop('naturalWidth'), 'height': $img.prop('naturalHeight') };
+}
+
+var bootstrapEnvironment = 'xs',
+	closestAgent;
+
+
+// if('localStorage' in window){
+// 	if('closestAgent' in localStorage){
+// 		closestAgent = JSON.parse(localStorage['closestAgent']);
+// 		updateContacts(closestAgent);
+// 	}
+// 	else ymaps.ready(function (){
+// 		$.getJSON('/siteServices/regions', {}, function (data){
+// 			var geoObjects = [],
+// 				service = new GeolocationService(),
+// 				myLocation = service.getLocation({
+// 					enableHighAccuracy: true,
+// 					timeout: 10000,
+// 					maximumAge: 1000 * 60 * 60 * 12
+// 				});
+// 			for(var i = 0; i < data.length; i++) geoObjects[i] = new ymaps.Placemark([data[i].latitude, data[i].longitude], data[i], {});
+// 			myLocation.then(function (location){
+// 				var myCoords = [location.latitude, location.longitude],
+// 					geoQueryResult = ymaps.geoQuery(geoObjects);
+// 				closestAgent = geoQueryResult.getClosestTo(myCoords).properties.get(0);
+// 				localStorage['closestAgent'] = JSON.stringify(closestAgent);
+// 				updateContacts(closestAgent);
+// 			});
+// 		});
+// 	});
+// }
+
+$(document).ready(function (){
+
+	bootstrapEnvironment = findBootstrapEnvironment();
+
+	$('.top-bar .search i').click(function (){
+		if(bootstrapEnvironment === 'sm') {
+			$('.top-bar .search').addClass('active');
+		}
+		$('.top-bar .search input').focus();
+	});
+	$('.top-bar .search input').blur(function (){
+		$('.top-bar .search').removeClass('active');
+	});
+
+	//if(Modernizr.mq('min-width: 991px')) {
+	if(parseInt($(window).width()) > 991){
+		$('#main-menu-toggle').click(function (){
+			$('#sidr').toggle();
+			return false;
+		});
+	}
+
+	$('.nav-pills, .nav-tabs').tabdrop();
+
+	$('[data-toggle=tooltip]').tooltip();
+
+	$('.flink.one-line').each(function (){
+		var $el = $(this);
+		if(parseInt($el.css('height')) > 40) $el.css('padding-top', '0px');
+	});
+
+	var $gallery = $('.js-gallery');
+	if($gallery.length) $gallery.justifiedGallery({
+		rowHeight: '250px',
+		margins: '10px'
+	}).on('jg.complete', function() {
+		$gallery.lightGallery();
+	});
+
+	if ('ymaps' in window) {
+        ymaps.ready(function (){
+            var service = new GeolocationService(),
+                myLocation = service.getLocation({
+                    enableHighAccuracy: true,
+                    timeout: 10000,
+                    maximumAge: 1000 * 60 * 60 * 12
+                });
+            myLocation.then(function (location){
+                ymaps.geocode([ location.latitude, location.longitude ], {
+                    kind: 'locality',
+                    results: 1
+                }).then(function (res){
+                    var firstGeoObject = res.geoObjects.get(0),
+                        props = (firstGeoObject !== null ? firstGeoObject.properties.getAll() : null);
+                    var address = {
+                        city:  props.name || 'Москва',
+                        subject: props.metaDataProperty.GeocoderMetaData.AddressDetails.Country.AdministrativeArea.AdministrativeAreaName || 'Московская область'
+                    };
+                    $.getJSON('/siteServices/getAgentByLocation', { city: address.city, subject: address.subject }, function (agent){
+                        updateContacts(agent);
+                        updateForms(agent);
+                    });
+                });
+            });
+        });
+    }
+});

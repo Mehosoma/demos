@@ -1,0 +1,187 @@
+//Регистрация на мероприятия в УЦ без авторизации и создания ЛК
+
+let self = $(this);
+let errors = $('.errorRegistration small');
+let loading = $('#loading');
+let loadingSms = $('#loadingSms');
+
+//модальные окна
+let eventRegistrationModal = $('#modal-window-registration-event'); //1 - шаг
+let smsCodeModal = $('#modal-window-sms-code'); //2 - шаг
+let successModal = $('#modal-window-success'); //3 - шаг
+let personalDataModal = $('#personalDataModal');
+
+//формы
+let registrationEventForm = document.getElementById('registrationEventForm');
+let smsCodeForm = document.getElementById('smsCodeForm');
+
+//кнопки
+let closeButton = $('.closeEventModal');
+let nextButton = $('#modalBtnNextStep');
+let backButton = $('.backModal');
+let radioButtons = $('.radioButtons');
+let personalDataButton = $("#personalDataEvent");
+let checkBoxAgreeEvent = $('#isAgreeEvent');
+let buttonSendSmsCode = $('#buttonSendSmsCode');
+let buttonSuccessClose = $('#buttonSuccessClose');
+
+smsCodeForm.reset(); //очищаем поля на втором шаге
+registrationEventForm.reset(); //очищаем поля на первом шаге
+
+function showEventRegistrationModal(eventId, eventModel, params){
+    self.eventId = eventId;
+    self.eventModel = eventModel;
+    self.eventParams = params;
+    self.eventParams.price == 0 ? radioButtons.hide() : radioButtons.show();
+    eventRegistrationModal.show();
+    eventRegistrationModal.click(function(e){
+        let target = e.target;
+        if ($(target).attr('id') === 'modal-window-registration-event') {
+            eventRegistrationModal.hide();
+        }
+    });
+    validateModal();
+}
+
+function validateModal(){
+    $("#phone").mask("89999999999");
+    nextButton.prop('disabled', !registrationEventForm.checkValidity());
+    buttonSendSmsCode.prop('disabled', !smsCodeForm.checkValidity());
+}
+
+//шаг первый - создание заявки
+function createEducationPayment(){
+    loading.show();
+    $.ajax({
+        type: 'POST',
+        url: '/proxyApi/createEducationPayment',
+        data: JSON.stringify({
+            FirstName : self.user.first_name,
+            LastName : self.user.last_name,
+            MiddleName : 'none',
+            Email : self.user.email,
+            Phone : self.user.phone,
+            PaymentType : self.user.paymentType,
+            eventId: self.eventId,
+            eventModel: self.eventModel,
+            eventDate: self.eventParams.date ? self.eventParams.date : null
+        }),
+        success: function (response) {
+            loading.hide();
+            if (response.Code !== 0){ //если не все ок, такое тоже бывает с кодом 200)
+                return errors.show();
+            }
+            self.requestId = response.Result.RequestId;
+            eventRegistrationModal.hide();
+            smsCodeModal.show();
+        },
+        error: function () {
+            loading.hide();
+            errors.show();
+        }
+    });
+}
+
+//шаг второй - подтвержение смс кода
+function confirmEducationPayment(){
+    loadingSms.show();
+    //открываем новый таб - далее ему установим урл, чтобы избежать блокировки окон браузером
+    let setWindow = self.eventParams.price != 0 && self.user.paymentType === 'card'
+        ? window.open('/themes/zericheu/images/svg-loaders/tail-spin-purple.svg', '_blank')
+        : '';
+
+    $.ajax({
+        type: 'POST',
+        url: '/api/ConfirmEducationPayment',
+        data: JSON.stringify({ RequestId: self.requestId, Code: self.sms_code }),
+        dataType: 'json',
+        success: function (response) {
+            loadingSms.hide();
+            if (response.Code !== 0){ //если не все ок, такое тоже бывает с кодом 200)
+                return errors.show();
+            }
+            if(self.eventParams.price != 0){
+                setWindow.location = response.Result.formUrl; //в открытой вкладке меняем урл
+            }
+            $('#modal-window-success .description').html(response.Result.Description);
+            smsCodeModal.hide();
+            successModal.show();
+
+        },
+        error: function () {
+            loadingSms.hide();
+            errors.show();
+        }
+    });
+}
+
+//чекбокс - обработка персональных данных
+checkBoxAgreeEvent.click(function(){
+    let isChecked = $(this).prop('checked');
+    checkBoxAgreeEvent.prop("checked", !isChecked);
+});
+
+//кнопка Далее в модальном окне
+nextButton.click(function () {
+    errors.hide();
+    self.user = {
+        first_name: $('#modal-window-registration-event #first_name').val(),
+        last_name: $('#modal-window-registration-event #last_name').val(),
+        email: $('#modal-window-registration-event #e-mail').val(),
+        phone: $('#modal-window-registration-event #phone').val(),
+        paymentType: $("#modal-window-registration-event input[name='bedStatus']:checked").val()
+    };
+    createEducationPayment()
+});
+
+//кнопка Закрыть в модальном окне
+closeButton.click(function(){
+    eventRegistrationModal.hide();
+});
+
+//кнопка Назад в модальном окне - второй шаг
+backButton.click(function(){
+    errors.hide();
+    smsCodeModal.hide();
+    smsCodeForm.reset();
+    eventRegistrationModal.show();
+});
+
+//кнопка Закрыть в модальном окне - последний шаг
+buttonSuccessClose.click(function(){
+    successModal.hide();
+    smsCodeForm.reset(); //очищаем поля на втором шаге
+    registrationEventForm.reset(); //очищаем поля на первом шаге
+    self = {};
+});
+
+//открытие окна на обработку персональных данных
+personalDataButton.click(function(){
+    personalDataModal.modal('show');
+    eventRegistrationModal.hide();
+});
+
+//кнопка Отправить смс код
+buttonSendSmsCode.click(function () {
+    errors.hide();
+    self.sms_code = $('#modal-window-sms-code #sms_code').val();
+    confirmEducationPayment();
+});
+
+//ищем пустые поля и добавляем ошибку валидации
+$(document).on('focusout input', ['#registrationEventForm input', '#smsCodeForm input'], function (e) {
+    e.preventDefault();
+    var target = e.target;
+    var currentInput = $(target);
+    $(currentInput).parents('.form-group').removeClass('has-error');
+    $(currentInput).parents('.form-group').addClass('has-success');
+    $(currentInput).parents('.form-group').find('.hint').hide();
+
+    if (!$(currentInput).val()) {
+        $(currentInput).parents('.form-group').addClass('has-error');
+        $(currentInput).parents('.form-group').removeClass('has-success');
+        $(currentInput).parents('.form-group').find('.hint').text('Поле не заполнено');
+        $(currentInput).parents('.form-group').find('.hint').show();
+    }
+    validateModal();
+});
