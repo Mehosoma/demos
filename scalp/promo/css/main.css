@@ -56,6 +56,7 @@
   box-shadow: 0 0 40px 0 #e5eff7;
   background-color: #ffffff;
   position: relative;
+  overflow: hidden;
 }
 
 .quote-gen-ceo .ceo-photo {
