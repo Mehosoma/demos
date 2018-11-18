@@ -40,7 +40,7 @@ $(document).ready(function(){
 	'use strict';
 	var now		= new Date(),
 		times	= [
-			23 - now.getHours(),
+			24 - now.getHours(),
 			59 - now.getMinutes(),
 			59 - now.getSeconds(),
 		],
