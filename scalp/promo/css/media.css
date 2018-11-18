@@ -130,6 +130,17 @@
 	.pr-col{
 		height: auto;
 	}
+
+	.counter-bg-block{
+		width: 58px;
+		height: 80px;
+	}
+
+	.counter-main{
+		text-align: center
+	}
+
+
 }
 
 @media only screen and (min-width : 480px) and (max-width : 767px) {
@@ -271,6 +282,10 @@
 	.pr-col{
 		height: auto;
 	}
+
+	.counter-main{
+		text-align: center
+	}
 }
 
 @media only screen and (min-width : 768px) and (max-width : 991px) {
@@ -357,6 +372,12 @@
 		width: 100%;
 	}
 
+	.counter-attent{
+		text-align: left!important;
+	}
+
+	
+
 }
 
 @media only screen and (min-width : 992px) and (max-width : 1199px) {
@@ -403,4 +424,5 @@
 	.owl-carousel-res .owl-slide{		
 		height: 830px;
 	}
+
 }

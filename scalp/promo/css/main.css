@@ -53,6 +53,21 @@
   background-color: #3b46b3;
 }
 
+.counter-text {
+  color: #656885;
+}
+
+.counter-bg-block {
+  width: 74px;
+  height: 84px;
+  background-color: #fff;
+}
+
+.counter-attent {
+  position: relative;
+  top: 0px;
+}
+
 /***************************************************Gen-Ceo************************************/
 .quote-gen-ceo {
   height: 335px;
