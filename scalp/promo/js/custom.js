@@ -36,51 +36,45 @@ $(document).ready(function(){
 
 $(document).ready(function(){
 
-	;(function() {
-	'use strict';
-	var now		= new Date(),
-		times	= [
-			24 - now.getHours(),
-			59 - now.getMinutes(),
-			59 - now.getSeconds(),
-		],
-		hBox	= document.getElementById('days-block'),
-		mBox	= document.getElementById('minutes'),
-		sBox	= document.getElementById('hours-block');
-
-	timer(times);
-
-	function timer(times) {
-		var tm = setInterval(function() {
-			var hour 	= times[0],
-				min		= times[1],
-				sec		= times[2];
-			
-			times[2]--;
-
-			if (times[0] == 0 && times[1] == 0 && times[2] == 0) {
-				clearInterval(tm);
-			} else if (times[2] == -1) {
-				times[1]--;
-				times[2] = 59;
-			} else if (times[1] == -1) {
-				times[0]--;
-				times[1] = 59;
-			}
-
-			var hour 	= (times[0] < 10) ? '0' + times[0] : times[0],
-				min		= (times[1] < 10) ? '0' + times[1] : times[1],
-				sec		= (times[2] < 10) ? '0' + times[2] : times[2];
-
-			showTimer(hour, min, sec);
-		}, 1000);
-	}
-
-	function showTimer(hour, min, sec) {
-		hBox.innerHTML = hour;
-		
-		sBox.innerHTML = sec;
-	}
-})();
+	function getTimeRemaining(endtime) {
+  var t = Date.parse(endtime) - Date.parse(new Date());
+  var seconds = Math.floor((t / 1000) % 60);
+  var minutes = Math.floor((t / 1000 / 60) % 60);
+  var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+  var days = Math.floor(t / (1000 * 60 * 60 * 24));
+  return {
+    total: t,
+    days: days,
+    hours: hours,
+    minutes: minutes,
+    seconds: seconds
+  };
+}
+ 
+function initializeClock(id, endtime) {
+  var clock = document.getElementById(id);
+  var daysSpan = clock.querySelector("#days-block");
+  var secondsSpan = clock.querySelector("#hours-block");
+ 
+ 
+  function updateClock() {
+    var t = getTimeRemaining(endtime);
+ 
+    if (t.total <= 0) {
+      clearInterval(timeinterval);
+      var deadline = new Date(Date.parse(new Date()) + 5 * 1000);
+      initializeClock('clock-counter', deadline);
+    }
+ 
+    daysSpan.innerHTML = ("0" + t.days).slice(-2);
+    secondsSpan.innerHTML = ("0" + t.seconds).slice(-2);   
+  }
+ 
+  updateClock();
+  var timeinterval = setInterval(updateClock, 1000);
+}
+ 
+var deadline="November 20 2018 22:00:00 GMT+0300";
+initializeClock("clock-counter", deadline);
 
 });
