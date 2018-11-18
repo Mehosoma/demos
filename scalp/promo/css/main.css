@@ -35,6 +35,11 @@
   position: relative;
 }
 
+.counter-days .btn-blue-gen {
+  -ms-flex-item-align: end !important;
+  align-self: flex-end !important;
+}
+
 .btn-blue-gen {
   width: 256px;
   height: 59px;
@@ -144,9 +149,9 @@
   height: 548px;
   background-color: #adb4ca;
   background-image: url(../images/teacher.png);
-  background-position: center right 58px;
+  background-position: top -100px right 58px;
   background-repeat: no-repeat;
-  background-size: 37%;
+  background-size: 610px auto;
 }
 
 .teacher-name {
@@ -271,6 +276,16 @@
   height: 104px;
   border-radius: 50%;
   overflow: hidden;
+  position: relative;
+}
+
+.owl-carousel-res .slide-image img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
 }
 
 .owl-carousel-res span {

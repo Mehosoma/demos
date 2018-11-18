@@ -19,16 +19,13 @@ $(document).ready(function(){
             items:2
         },
         768:{
-            items:2
-        },
-        650:{         
-            items:2
-        },
+            items:1
+        },        
         480:{         
-            items:2
+            items:1
         },
         320:{
-            items:2
+            items:1
         }
 
     }

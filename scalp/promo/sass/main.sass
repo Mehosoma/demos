@@ -20,13 +20,14 @@
 	border-radius: 2px	
 .container-content
 	max-width: 1160px		
-
 /***************************************************Counters-days************************************/
 .counter-days	
 	.counter-days-block
 		height: 147px
 		background-color: #f5dbde
-		position: relative	
+		position: relative
+	.btn-blue-gen	
+		align-self: flex-end!important
 .btn-blue-gen
 	width: 256px
 	height: 59px
@@ -107,9 +108,9 @@
 	height: 548px	
 	background-color: #adb4ca
 	background-image: url(../images/teacher.png)
-	background-position: center right 58px
+	background-position: top -100px right 58px
 	background-repeat: no-repeat
-	background-size: 37%
+	background-size: 610px auto
 .teacher-name
 	line-height: 0.83
 
@@ -199,6 +200,12 @@
 		height: 104px
 		border-radius: 50%
 		overflow: hidden
+		position: relative
+		img
+			position: absolute
+			top: 50%
+			left: 50%
+			transform:  translateX(-50%) translateY(-50%)
 	span
 		vertical-align: top
 		position: relative
