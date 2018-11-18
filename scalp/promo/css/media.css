@@ -131,10 +131,13 @@
 		height: auto;
 	}
 
-	.counter-bg-block{
-		width: 58px;
-		height: 80px;
-	}
+	
+	.counter-bg-block {
+    	width: 120px;
+    	height: 80px;    	
+    	letter-spacing: 44px;
+    	padding-left: 19px;    	
+    }
 
 	.counter-main{
 		text-align: center
@@ -286,6 +289,11 @@
 	.counter-main{
 		text-align: center
 	}
+
+	.counter-bg-block {
+    	letter-spacing: 65px;
+    	padding-left: 29px;    	
+    }
 }
 
 @media only screen and (min-width : 768px) and (max-width : 991px) {
@@ -375,6 +383,10 @@
 	.counter-attent{
 		text-align: left!important;
 	}
+
+	.counter-bg-block {
+    	letter-spacing: 65px;    	
+    }
 
 	
 
