@@ -1,0 +1,413 @@
+@import url(//fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic);
+
+html,
+body {
+    font-family: "PT Sans", "Helvetica Neue", Arial;
+    font-size: 18px;
+}
+
+a {
+    color: #441a8c;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    font-weight: bold;
+    text-rendering: optimizelegibility;
+}
+
+.h1, .h2, .h3 {
+    line-height: 40px;
+}
+
+.h4, .h5, .h6 {
+    line-height: 20px;
+}
+
+.h1 {
+    font-size: 38.5px;
+}
+
+.h2 {
+    font-size: 31.5px;
+}
+
+.h3 {
+    font-size: 24.5px;
+}
+
+.h4 {
+    font-size: 17.5px;
+}
+
+.h5 {
+    font-size: 14px;
+}
+
+.h6 {
+    font-size: 11.9px;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.btn {
+    background-image: none;
+}
+
+.btn-success {
+    background-color: #15920e;
+}
+
+.btn-default {
+    border: 1px solid #fff;
+    color: #fff;
+    background-color: transparent;
+}
+
+.flink {
+    display: block;
+    padding-left: 45px;
+    min-height: 40px;
+    background-position: left top;
+    background-repeat: no-repeat;
+}
+
+.flink.one-line {
+    padding-top: 10px;
+}
+
+.flink.pdf {
+    background-image: url(https://www.zerich.com/themes/zericheu/images/pdf.svg);
+}
+
+.visuallyhidden {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+}
+
+.panel-fixed {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 3;
+    height: 85px;
+    text-shadow: none;
+    background-color: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, .38);
+}
+
+span.second-phone {
+    color: #64bf08;
+    font-size: 20px;
+    margin: 15px 0 0 55px;
+}
+
+.consulting {
+    margin: 13px 0 0 0;
+}
+
+.account-new-mob {
+    margin: 15px 0 0 35px;
+}
+
+.btn-new-account {
+    color: #15920e;
+    border-color: #15920e;
+    margin: 19px 0 0 0;
+}
+
+@media (width: 375px) {
+    .panel-fixed {
+        height: 70px;
+    }
+
+    .account-new-mob {
+        margin: 15px 0 0 30px;
+    }
+}
+
+@media (max-width: 325px) {
+    .account-new-mob {
+        margin: 15px 0 0 20px;
+    }
+
+    .panel-fixed {
+        height: 70px;
+    }
+
+    span.second-phone {
+        margin: 15px 0 0 15px;
+    }
+
+    .table td {
+        padding: 0 !important;
+    }
+}
+
+.csstransforms .fixed-panel {
+    -webkit-transition: .5s -webkit-transform ease-in-out;
+    -moz-transition: .5s -moz-transform ease-in-out;
+    -o-transition: .5s -o-transform ease-in-out;
+    transition: .5s transform ease-in-out;
+}
+
+.no-csstransforms .fixed-panel {
+    transition: .5s top ease-in-out, .5s bottom ease-in-out;
+}
+
+header {
+    margin: 0 auto;
+    width: 1024px;
+    color: #fff;
+}
+
+.logo a,
+.logo img {
+    display: block;
+    margin: 1px 0 0 6px;
+}
+
+.logo a {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.slogon {
+    margin: 20px 0 0 0;
+}
+
+.slogon a {
+    color: #000000;
+    font-size: 20px;
+
+}
+
+.phone {
+    padding-top: 17px;
+    text-align: right;
+    font-size: 29px;
+}
+
+.phone a {
+    color: #000000;
+}
+
+.block1-container {
+    padding-top: 110px;
+    padding-bottom: 20px;
+    color: #fff;
+    /*	background: url(../../images/promo/ipoFuture/block1-container__bg.jpg) no-repeat top center;*/
+}
+
+.block1-container h1 {
+    margin-top: 40px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.block1 {
+    padding: 15px;
+    margin: 0 auto;
+    width: 1024px;
+}
+
+.block2-container {
+}
+
+.block2 {
+    margin: 0 auto;
+    padding: 20px 0 40px 0;
+    width: 1024px;
+}
+
+.block2 h2 {
+    margin-bottom: 20px;
+}
+
+.block2 h3 {
+    margin-top: 40px;
+}
+
+.block2 ul.advantages {
+    font-size: 25px;
+}
+
+.block2 ul.advantages li {
+    margin-bottom: 30px;
+    line-height: 30px;
+}
+
+.block2 ul.advantages li:last-child {
+    margin-bottom: 0;
+}
+
+.block8-container {
+    padding: 15px;
+
+}
+
+.block8 {
+    margin: 0 auto;
+    width: 1024px;
+    color: #fff;
+}
+
+.block8 a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.header-item-bg {
+    background-repeat: no-repeat;
+    background-position: center;
+    webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.header-item-bg:before {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    transition: .1s linear;
+    background: linear-gradient(180deg, transparent 0, rgba(0, 0, 0, .8) 100%);
+}
+.lead-item {
+    padding: 15px 0;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.container-opacity-item{
+    background-color: rgba(2, 3, 10, .8);
+}
+.container-opacity-item h2{
+    line-height: 55px;
+    font-weight: 400;
+}
+
+.container-blockOne-item h4{
+    padding: 25px 0;
+}
+.advantage-items{
+    padding: 25px 0;
+}
+.advantage-items h5{
+    font-weight: 600;
+    letter-spacing: normal;
+}
+.fa-check{
+    color: #76B76F;
+}
+.blockOne-link a{
+    font-weight: 400;
+    color: rgba(0, 0, 0, .7);
+    text-decoration: underline;
+}
+.block5-container {
+    background-color: #f5f7fa;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.block5 {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.block5 h2{
+    font-size: 2.3em;
+    margin-bottom: 40px;
+    padding: 20px 0;
+}
+
+.block5__about {
+    color: #2e3192;
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 35px
+}
+.block5__plus{
+    margin-bottom: 1em;
+}
+.block8 h3{
+    padding: 25px 0;
+}
+.block8-container{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    justify-content: center;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-image: url(../../images/promo/exchange/block8-container__bg.jpg);
+}
+.header-item-bg{
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-image: url(/themes/zericheu/images/promo/ipoDetmir/bonds-directleasing.png);
+}
+.btn-outline-secondary a{
+    text-decoration: none;
+    color: #FFF;
+}
+.btn-outline-secondary a:hover{
+    text-decoration: none;
+    color: #FFF;
+}
+.accordeon dt{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@media (max-width: 767px) {
+    .hidden-xs, tr.hidden-xs, th.hidden-xs, td.hidden-xs {
+        display: none !important
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .hidden-sm, tr.hidden-sm, th.hidden-sm, td.hidden-sm {
+        display: none !important
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .hidden-md, tr.hidden-md, th.hidden-md, td.hidden-md {
+        display: none !important
+    }
+}
+
+@media (min-width: 1200px) {
+    .hidden-lg, tr.hidden-lg, th.hidden-lg, td.hidden-lg {
+        display: none !important
+    }
+    .block-image {
+        display:flex;align-items:center;min-height: 500px !important;margin-bottom: 60px;
+    }
+}
