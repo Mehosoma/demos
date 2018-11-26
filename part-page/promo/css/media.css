@@ -21,16 +21,24 @@
 	}
 
 	.partners-block{
-		width: 100%;
-		margin-bottom: 0px!important;
+		width: 100%;		
 	}	
 
 	.partners-block img{
-		display: none;
+		width: 100px;
+		right: 0px;
+	}
+
+	.partners-block span{
+		padding-right: 60px;
+	}
+
+	.referal-pr .btn-blue-gen{
+		width: 83%!important;
 	}
 
 	.btn-blue-gen{
-		width: 95%;
+		width: 90%;
 		margin-left: auto;
 		margin-right: auto;
 	}
