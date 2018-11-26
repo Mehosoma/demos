@@ -22,12 +22,11 @@ $(document).ready(function(){
             items:1
         },        
         480:{         
-            items:1,
-            autoHeight: true
+            items:1
         },
         320:{
-            items:1,
-            autoHeight: true            
+            items:1
+                      
         }
 
     }

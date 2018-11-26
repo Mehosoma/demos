@@ -311,6 +311,7 @@
   -webkit-backface-visibility: hidden;
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
+  height: 100%;
 }
 
 .slider-info {
@@ -322,6 +323,10 @@
   right: 15px;
   bottom: 0px;
   z-index: 10000;
+}
+
+.owl-dots .active {
+  background-color: #9b9b9b;
 }
 
 .owl-dot {

@@ -53,6 +53,7 @@
 
 	.owl-carousel-res .owl-slide{
 		height: auto;				
+		min-height: 1000px;
 	}
 
 	.owl-carousel-res .slider-video{
@@ -98,6 +99,10 @@
 		right: 0px;
 	}
 
+	.referal-pr .btn-blue-gen{
+		width: 90%!important;
+	}
+
 	.btn-blue-gen{
 		width: 95%;
 		margin-left: auto;
@@ -113,7 +118,8 @@
 	}
 
 	.owl-carousel-res .owl-slide{
-		height: auto;				
+		height: auto;	
+		min-height: 700px;			
 	}
 
 	.owl-carousel-res .slider-video{
