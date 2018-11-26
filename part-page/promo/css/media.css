@@ -1,280 +1,105 @@
-@media only screen and (min-width : 0px) and (max-width : 479px) {
-
-	
-	.fix-font{
-		line-height: 1.5;
-		font-size: 19px!important;
-		letter-spacing: -0.5px;
-	}
+@media only screen and (min-width : 0px) and (max-width : 413px) {
 
 	.btn-ban-orange{
 		width: 100%;
 	}
 
-	.banner-top span br{
-		display: none;
+	.banner-top h1{
+		margin-top: 3rem!important;
 	}
 
-	.counter-days .counter-days-block{
+	.fix-center{
+		text-align: center;
+	}
+
+	.steps .steps-wrapper{
 		height: auto;
-		padding-bottom: 31px;
-		padding-right: 15px!important;
-		padding-left: 15px!important;
 	}
 
-	.counter-days .btn-blue-gen{
-		align-self: flex-start!important;
+	.partners-block{
+		width: 100%;
+	}	
+
+	.partners-block img{
+		display: none;
 	}
 
 	.btn-blue-gen{
-		width: 100%;
-	}
-
-	.quote-gen-ceo .ceo-photo{
-		width: 157px;
-		height: 157px;
-	}
-
-	.quote-gen-ceo .ceo-photo img{
-		width: 100%;
-	}
-
-	.quote-gen-ceo:after{
-		display: none;
-	}
-
-	.quote-gen-ceo{
-		height: auto;
-		padding-bottom: 30px;
-	}
-
-	.quote-gen-ceo .justify-content-center{
-		justify-content: start!important;
-	}
-
-	.quote-gen-ceo .align-self-end{		    	
-    	align-self: flex-start!important;	
-	}
-
-	.quote-gen-ceo p{
-		font-size: 20px!important;		
-	}
-
-	.use-b-block{
-		height: auto;
-	}
-
-	.teacher{
-		height: 859px;
-		background-position: bottom center;
-		background-size: 270px auto;
-	}
-
-	.teacher-wrapper span:nth-child(2){
-		line-height: 1.25;
-	}
-
-	.let-half{
-		letter-spacing: -0.5px;
-		margin-left: 40px;
-	}
-
-	.programm .col-11, .programm .col-1{
-		padding: 0px;
-	}
-
-	.programm .col-11{
-		padding-right: 15px;
-	}
-
-	.programm-step{
-		left: 14px;
-	}
-
-	.pr-cost-block{
-		height: auto;
-		padding-bottom: 150px;
-	}
-
-	.pr-cost-block .btn-blue-gen{
-		width: 90%;
-		left: 0px;
-		right: 0px;
-		margin: auto;
-	}
-
-	.pr-cost{
-		height: auto;
-		padding-bottom: 30px;
-	}
-
-	.owl-wrapper{
-		width: 100%;
-		height: auto;
-	}
-
-	.owl-carousel-res{
 		width: 95%;
-		height: auto;		
+		margin-left: auto;
+		margin-right: auto;
 	}
 
-	.owl-carousel-res .owl-slide{		
+	.partners-more{
 		height: auto;
+	}
+
+	.referal-pr{
+		height: auto;
+	}
+
+	.owl-carousel-res .owl-slide{
+		height: auto;				
+	}
+
+	.owl-carousel-res .slider-video{
+		left: 15px;
+	}
+
+	.staff-img{
+		width: 100%;
 	}
 
 	.add-form{
 		height: auto;
 		padding-bottom: 30px;
-	}
-
-	.pr-col{
-		height: auto;
-	}
-
-	
-	.counter-bg-block {
-    	width: 120px;
-    	height: 80px;    	
-    	letter-spacing: 44px;
-    	padding-left: 19px;    	
-    }
-
-	.counter-main{
-		text-align: center
 	}
 
 
 }
 
-@media only screen and (min-width : 480px) and (max-width : 767px) {
-
-	.container-content{
-		max-width: 720px;
-	}
-
-	.use-b-block img{
-		width: 100%;
-	}
-
-	.fix-font{
-		line-height: 1.5;
-		font-size: 19px!important;
-		letter-spacing: -0.5px;
-	}
+@media only screen and (min-width : 414px) and (max-width : 767px) {
 
 	.btn-ban-orange{
 		width: 100%;
 	}
 
-	.banner-top span br{
-		display: none;
+	.fix-center{
+		text-align: center;
 	}
 
-	.counter-days .counter-days-block{
+	.steps .steps-wrapper{
 		height: auto;
-		padding-bottom: 31px;
-		padding-right: 15px!important;
-		padding-left: 15px!important;
 	}
 
-	.counter-days .btn-blue-gen{
-		align-self: flex-start!important;
+	.partners-block{
+		width: 100%;
+	}	
+
+	.partners-block img{
+		right: 0px;
 	}
 
 	.btn-blue-gen{
-		width: 100%;
-	}
-
-	.quote-gen-ceo .ceo-photo{
-		width: 157px;
-		height: 157px;
-	}
-
-	.quote-gen-ceo .ceo-photo img{
-		width: 100%;
-	}
-
-	.quote-gen-ceo:after{
-		display: none;
-	}
-
-	.quote-gen-ceo{
-		height: auto;
-		padding-bottom: 30px;
-	}
-
-	.quote-gen-ceo .justify-content-center{
-		justify-content: start!important;
-	}
-
-	.quote-gen-ceo .align-self-end{		    	
-    	align-self: flex-start!important;	
-	}
-
-	.quote-gen-ceo p{
-		font-size: 20px!important;		
-	}
-
-	.use-b-block{
-		height: auto;
-	}
-
-	.teacher{
-		height: 859px;
-		background-position: bottom center;
-		background-size: 340px auto;
-	}
-
-	.teacher-wrapper span:nth-child(2){
-		line-height: 1.25;
-	}
-
-	.let-half{
-		letter-spacing: -0.5px;
-		margin-left: 40px;
-	}
-
-	.programm .col-11, .programm .col-1{
-		padding: 0px;
-	}
-
-	.programm .col-11{
-		padding-right: 15px;
-	}
-
-	.programm-step{
-		left: 14px;
-	}
-
-	.pr-cost-block{
-		height: auto;
-		padding-bottom: 150px;
-	}
-
-	.pr-cost-block .btn-blue-gen{
-		width: 90%;
-		left: 0px;
-		right: 0px;
-		margin: auto;
-	}
-
-	.pr-cost{
-		height: auto;
-		padding-bottom: 30px;
-	}
-
-	.owl-wrapper{
-		width: 100%;
-		height: auto;
-	}
-
-	.owl-carousel-res{
 		width: 95%;
-		height: auto;		
+		margin-left: auto;
+		margin-right: auto;
 	}
 
-	.owl-carousel-res .owl-slide{		
+	.partners-more{
 		height: auto;
+	}
+
+	.referal-pr{
+		height: auto;
+	}
+
+	.owl-carousel-res .owl-slide{
+		height: auto;				
+	}
+
+	.owl-carousel-res .slider-video{
+		left: 15px;
 	}
 
 	.add-form{
@@ -282,159 +107,81 @@
 		padding-bottom: 30px;
 	}
 
-	.pr-col{
-		height: auto;
-	}
 
-	.counter-main{
-		text-align: center
-	}
-
-	.counter-bg-block {
-    	letter-spacing: 65px;
-    	padding-left: 29px;    	
-    }
 }
 
 @media only screen and (min-width : 768px) and (max-width : 991px) {
 
+	.steps .steps-wrapper{
+		height: auto;
+	}
+
+	.partners-block{
+		width: 100%;
+	}	
+
 	.container-content{
-		max-width: 720px;
+		max-width: 713px;
 	}
 
-	.banner-top{
-	    background-position: top right -405px;
-	}
-
-	.banner-top span br{
-		display: none;
-	}
-
-	.counter-days .counter-days-block{
+	.owl-carousel-res .owl-slide{
 		height: auto;
-		padding-bottom: 31px;
 	}
 
-	.counter-days .btn-blue-gen{
-		align-self: flex-start!important;
-	}
 
-	.quote-gen-ceo .ceo-photo{
-		width: 157px;
-		height: 157px;
-	}
-
-	.quote-gen-ceo .ceo-photo img{
+	.staff-img{
 		width: 100%;
-	}
-
-	.quote-gen-ceo:after{
-		left: 454px;
-	}
-
-	.quote-gen-ceo{
-		height: auto;
-	}
-
-	.quote-gen-ceo .justify-content-center{
-		justify-content: start!important;
-	}
-
-	.use-b-block img{
-		width: 100%;
-	}
-
-	.use-b-block{
-		height: auto;
-	}
-
-	.owl-wrapper{
-		width: 100%;
-		height: 560px;
-	}
-
-	.owl-carousel-res{
-		width: 95%;
-		height: 520px;
-	}
-
-	.owl-carousel-res .owl-slide{		
-		height: 520px;
-	}
-
-	.teacher {	    
-	    background-position: top 119px right -25px;	    
-	    background-size: 324px auto;
-	}
-
-	.pr-cost-block{
-		height: 625px;
-	}
-
-	.pr-cost{
-		height: auto;
-		padding-bottom: 109px;
 	}
 
 	.form-single input{
 		width: 100%;
 	}
-
-	.counter-attent{
-		text-align: left!important;
-	}
-
-	.counter-bg-block {
-    	letter-spacing: 65px;    	
-    }
-
 	
-
 }
 
 @media only screen and (min-width : 992px) and (max-width : 1199px) {
 
-	.banner-top{
-		background-position: top center;
+	.arrow-inner{
+		width: 200px;
 	}
 
-	.z-fix{
-		padding-bottom: 30px;
+	.steps-arrow{
+		left: 230px;
 	}
 
-	.quote-gen-ceo{
-		height: auto;
+	.steps-arrow-second{
+		left: 560px;
 	}
 
-	.methods img{
+	.partners-block{
 		width: 100%;
 	}
 
-	.teacher {
-	    background-position: top 0px right 0px;	    
-	    background-size: 456px auto;
+	.partners-block img{
+		right: 0px;
 	}
 
-	.teacher-header{
-		line-height: 1
+	.owl-carousel-res .owl-slide{
+		height: 850px;
 	}
 
-	.pr-cost-block .btn-blue-gen{
-		bottom: 30px;
+	.staff-img{
+		width: 100%;
 	}
+
+}
+
+
+@media only screen and (min-width : 1200px) and (max-width : 1300px) {
 
 	.owl-wrapper{
 		width: 100%;
-		height: 870px;
 	}
 
 	.owl-carousel-res{
-		width: 95%;
-		height: 830px;
+		width: 1170px;
 	}
 
-	.owl-carousel-res .owl-slide{		
-		height: 830px;
-	}
+
 
 }

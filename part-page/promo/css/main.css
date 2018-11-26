@@ -55,7 +55,6 @@
   height: 58px;
   line-height: 58px;
   border-radius: 2px;
-  padding-left: 47px;
 }
 
 .container-content {
@@ -86,7 +85,6 @@
   line-height: 59px;
   background-color: #4753d1;
   border-radius: 2px;
-  padding-left: 8px;
 }
 
 .btn-blue-gen:hover {
@@ -100,7 +98,7 @@
 
 .steps-arrow {
   position: absolute;
-  left: 280px;
+  left: 270px;
   top: 25px;
 }
 
@@ -122,7 +120,7 @@
 }
 
 .steps-arrow-second {
-  left: 680px;
+  left: 690px;
 }
 
 /***************************************************Partners************************************/
@@ -237,12 +235,6 @@
   margin-left: 13px;
 }
 
-.ref-add span {
-  width: 88%;
-  vertical-align: top;
-  margin-left: 13px;
-}
-
 /***************************************************R-slider************************************/
 .owl-carousel-res .owl-slide {
   height: 760px;
@@ -251,7 +243,7 @@
   box-shadow: 0 0 40px 0 #e5eff7;
   background-color: #ffffff;
   position: relative;
-  padding-bottom: 80px;
+  padding-bottom: 80px !important;
 }
 
 .owl-carousel-res .slide-image {
@@ -274,7 +266,7 @@
 .owl-carousel-res span {
   vertical-align: top;
   position: relative;
-  top: 39px;
+  top: 23px;
 }
 
 .owl-carousel-res .format-text {
@@ -302,10 +294,14 @@
 }
 
 .owl-carousel-res {
-  width: 1200px;
+  width: 100%;
+  max-width: 1230px;
   margin: 0 auto;
-  height: 760px;
-  margin-top: 20px;
+  height: auto;
+  overflow: hidden;
+  padding: 15px;
+  position: relative;
+  padding-bottom: 60px;
 }
 
 .owl-carousel-res .owl-item {
@@ -317,20 +313,15 @@
   -webkit-touch-callout: none;
 }
 
-.owl-wrapper {
-  width: 1230px;
-  height: 845px;
-  overflow-x: hidden;
-}
-
 .slider-info {
   vertical-align: top;
 }
 
 .owl-dots {
   position: absolute;
-  right: 30px;
-  bottom: -50px;
+  right: 15px;
+  bottom: 0px;
+  z-index: 10000;
 }
 
 .owl-dot {
