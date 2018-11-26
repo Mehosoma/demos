@@ -18,6 +18,7 @@
 
 	.partners-block{
 		width: 100%;
+		margin-bottom: 0px!important;
 	}	
 
 	.partners-block img{
@@ -53,6 +54,10 @@
 	.add-form{
 		height: auto;
 		padding-bottom: 30px;
+	}
+
+	.fix-font-adapt{
+		font-size: 26px!important;
 	}
 
 
