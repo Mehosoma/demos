@@ -1,5 +1,9 @@
 @media only screen and (min-width : 0px) and (max-width : 413px) {
 
+	.banner-top h1{
+		font-size: 36px!important;
+	}
+
 	.btn-ban-orange{
 		width: 100%;
 	}
