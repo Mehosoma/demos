@@ -191,7 +191,7 @@
 }
 
 .referal-pr {
-  height: 210px;
+  height: auto;
   border-radius: 6px;
   -webkit-box-shadow: 0 2px 30px 0 #e5eff7;
   box-shadow: 0 2px 30px 0 #e5eff7;
