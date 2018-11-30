@@ -1,0 +1,440 @@
+@media only screen and (min-width : 0px) and (max-width : 479px) {
+
+	
+	.fix-font{
+		line-height: 1.5;
+		font-size: 19px!important;
+		letter-spacing: -0.5px;
+	}
+
+	.btn-ban-orange{
+		width: 100%;
+	}
+
+	.banner-top span br{
+		display: none;
+	}
+
+	.counter-days .counter-days-block{
+		height: auto;
+		padding-bottom: 31px;
+		padding-right: 15px!important;
+		padding-left: 15px!important;
+	}
+
+	.counter-days .btn-blue-gen{
+		align-self: flex-start!important;
+	}
+
+	.btn-blue-gen{
+		width: 100%;
+	}
+
+	.quote-gen-ceo .ceo-photo{
+		width: 157px;
+		height: 157px;
+	}
+
+	.quote-gen-ceo .ceo-photo img{
+		width: 100%;
+	}
+
+	.quote-gen-ceo:after{
+		display: none;
+	}
+
+	.quote-gen-ceo{
+		height: auto;
+		padding-bottom: 30px;
+	}
+
+	.quote-gen-ceo .justify-content-center{
+		justify-content: start!important;
+	}
+
+	.quote-gen-ceo .align-self-end{		    	
+    	align-self: flex-start!important;	
+	}
+
+	.quote-gen-ceo p{
+		font-size: 20px!important;		
+	}
+
+	.use-b-block{
+		height: auto;
+	}
+
+	.teacher{
+		height: 859px;
+		background-position: bottom center;
+		background-size: 270px auto;
+	}
+
+	.teacher-wrapper span:nth-child(2){
+		line-height: 1.25;
+	}
+
+	.let-half{
+		letter-spacing: -0.5px;
+		margin-left: 40px;
+	}
+
+	.programm .col-11, .programm .col-1{
+		padding: 0px;
+	}
+
+	.programm .col-11{
+		padding-right: 15px;
+	}
+
+	.programm-step{
+		left: 14px;
+	}
+
+	.pr-cost-block{
+		height: auto;
+		padding-bottom: 150px;
+	}
+
+	.pr-cost-block .btn-blue-gen{
+		width: 90%;
+		left: 0px;
+		right: 0px;
+		margin: auto;
+	}
+
+	.pr-cost{
+		height: auto;
+		padding-bottom: 30px;
+	}
+
+	.owl-wrapper{
+		width: 100%;
+		height: auto;
+	}
+
+	.owl-carousel-res{
+		width: 95%;
+		height: auto;		
+	}
+
+	.owl-carousel-res .owl-slide{		
+		height: auto;
+	}
+
+	.add-form{
+		height: auto;
+		padding-bottom: 30px;
+	}
+
+	.pr-col{
+		height: auto;
+	}
+
+	
+	.counter-bg-block {
+    	width: 120px;
+    	height: 80px;    	
+    	letter-spacing: 44px;
+    	padding-left: 19px;    	
+    }
+
+	.counter-main{
+		text-align: center
+	}
+
+
+}
+
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+
+	.container-content{
+		max-width: 720px;
+	}
+
+	.use-b-block img{
+		width: 100%;
+	}
+
+	.fix-font{
+		line-height: 1.5;
+		font-size: 19px!important;
+		letter-spacing: -0.5px;
+	}
+
+	.btn-ban-orange{
+		width: 100%;
+	}
+
+	.banner-top span br{
+		display: none;
+	}
+
+	.counter-days .counter-days-block{
+		height: auto;
+		padding-bottom: 31px;
+		padding-right: 15px!important;
+		padding-left: 15px!important;
+	}
+
+	.counter-days .btn-blue-gen{
+		align-self: flex-start!important;
+	}
+
+	.btn-blue-gen{
+		width: 100%;
+	}
+
+	.quote-gen-ceo .ceo-photo{
+		width: 157px;
+		height: 157px;
+	}
+
+	.quote-gen-ceo .ceo-photo img{
+		width: 100%;
+	}
+
+	.quote-gen-ceo:after{
+		display: none;
+	}
+
+	.quote-gen-ceo{
+		height: auto;
+		padding-bottom: 30px;
+	}
+
+	.quote-gen-ceo .justify-content-center{
+		justify-content: start!important;
+	}
+
+	.quote-gen-ceo .align-self-end{		    	
+    	align-self: flex-start!important;	
+	}
+
+	.quote-gen-ceo p{
+		font-size: 20px!important;		
+	}
+
+	.use-b-block{
+		height: auto;
+	}
+
+	.teacher{
+		height: 859px;
+		background-position: bottom center;
+		background-size: 340px auto;
+	}
+
+	.teacher-wrapper span:nth-child(2){
+		line-height: 1.25;
+	}
+
+	.let-half{
+		letter-spacing: -0.5px;
+		margin-left: 40px;
+	}
+
+	.programm .col-11, .programm .col-1{
+		padding: 0px;
+	}
+
+	.programm .col-11{
+		padding-right: 15px;
+	}
+
+	.programm-step{
+		left: 14px;
+	}
+
+	.pr-cost-block{
+		height: auto;
+		padding-bottom: 150px;
+	}
+
+	.pr-cost-block .btn-blue-gen{
+		width: 90%;
+		left: 0px;
+		right: 0px;
+		margin: auto;
+	}
+
+	.pr-cost{
+		height: auto;
+		padding-bottom: 30px;
+	}
+
+	.owl-wrapper{
+		width: 100%;
+		height: auto;
+	}
+
+	.owl-carousel-res{
+		width: 95%;
+		height: auto;		
+	}
+
+	.owl-carousel-res .owl-slide{		
+		height: auto;
+	}
+
+	.add-form{
+		height: auto;
+		padding-bottom: 30px;
+	}
+
+	.pr-col{
+		height: auto;
+	}
+
+	.counter-main{
+		text-align: center
+	}
+
+	.counter-bg-block {
+    	letter-spacing: 65px;
+    	padding-left: 29px;    	
+    }
+}
+
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+	.container-content{
+		max-width: 720px;
+	}
+
+	.banner-top{
+	    background-position: top right -405px;
+	}
+
+	.banner-top span br{
+		display: none;
+	}
+
+	.counter-days .counter-days-block{
+		height: auto;
+		padding-bottom: 31px;
+	}
+
+	.counter-days .btn-blue-gen{
+		align-self: flex-start!important;
+	}
+
+	.quote-gen-ceo .ceo-photo{
+		width: 157px;
+		height: 157px;
+	}
+
+	.quote-gen-ceo .ceo-photo img{
+		width: 100%;
+	}
+
+	.quote-gen-ceo:after{
+		left: 454px;
+	}
+
+	.quote-gen-ceo{
+		height: auto;
+	}
+
+	.quote-gen-ceo .justify-content-center{
+		justify-content: start!important;
+	}
+
+	.use-b-block img{
+		width: 100%;
+	}
+
+	.use-b-block{
+		height: auto;
+	}
+
+	.owl-wrapper{
+		width: 100%;
+		height: 560px;
+	}
+
+	.owl-carousel-res{
+		width: 95%;
+		height: 520px;
+	}
+
+	.owl-carousel-res .owl-slide{		
+		height: 520px;
+	}
+
+	.teacher {	    
+	    background-position: top 119px right -25px;	    
+	    background-size: 324px auto;
+	}
+
+	.pr-cost-block{
+		height: 625px;
+	}
+
+	.pr-cost{
+		height: auto;
+		padding-bottom: 109px;
+	}
+
+	.form-single input{
+		width: 100%;
+	}
+
+	.counter-attent{
+		text-align: left!important;
+	}
+
+	.counter-bg-block {
+    	letter-spacing: 65px;    	
+    }
+
+	
+
+}
+
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+	.banner-top{
+		background-position: top center;
+	}
+
+	.z-fix{
+		padding-bottom: 30px;
+	}
+
+	.quote-gen-ceo{
+		height: auto;
+	}
+
+	.methods img{
+		width: 100%;
+	}
+
+	.teacher {
+	    background-position: top 0px right 0px;	    
+	    background-size: 456px auto;
+	}
+
+	.teacher-header{
+		line-height: 1
+	}
+
+	.pr-cost-block .btn-blue-gen{
+		bottom: 30px;
+	}
+
+	.owl-wrapper{
+		width: 100%;
+		height: 870px;
+	}
+
+	.owl-carousel-res{
+		width: 95%;
+		height: 830px;
+	}
+
+	.owl-carousel-res .owl-slide{		
+		height: 830px;
+	}
+
+}
