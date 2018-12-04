@@ -225,7 +225,7 @@
 
 /***************************************************ISS-Benef************************************/
 .iss-benef-block {
-  min-height: 482px;
+  height: 482px;
   border-radius: 6px;
   -webkit-box-shadow: 0 0 40px 0 #e5eff7;
   box-shadow: 0 0 40px 0 #e5eff7;

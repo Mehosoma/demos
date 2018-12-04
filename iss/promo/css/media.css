@@ -25,7 +25,7 @@
 	}
 
 	.iss-benef-block{
-		min-height: auto;
+		height: auto;
 	}
 
 	.hidden-btn{
@@ -74,7 +74,7 @@
 	}
 
 	.iss-benef-block{
-		min-height: auto;
+		height: auto;
 	}
 
 	.hidden-btn{
@@ -115,7 +115,7 @@
 	}
 
 	.iss-benef-block{
-		min-height: auto;
+		height: auto;
 	}
 
 	.hidden-btn{
@@ -157,7 +157,7 @@
 	}
 
 	.iss-benef-block{
-		min-height: auto;
+		height: auto;
 	}
 
 	.hidden-btn{
@@ -172,6 +172,10 @@
 		width: 100%;
 	}
 
+	.add-form{
+		height: auto;
+	}
+
 	
 }
 
@@ -180,5 +184,11 @@
 	.quote-block-sec:after{
 		right: 0px;
 	}
+
+	.iss-benef-block{
+		height: auto;
+	}
+
+
 
 }
