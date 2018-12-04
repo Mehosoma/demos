@@ -1,7 +1,7 @@
 @media only screen and (min-width : 0px) and (max-width : 479px) {	
 
 	.banner-top h1{
-		font-size: 35px!important;
+		font-size: 34px!important;
 	}
 
 	.banner-top{
@@ -33,7 +33,7 @@
 	}
 
 	.strategy-graph{
-		width: 95%;
+		width: 90%;
 	}
 
 	.attention{
@@ -48,7 +48,9 @@
 		height: auto;
 	}
 
-
+	.container-content{
+		max-width: 100%;
+	}
 
 	
 }
@@ -80,7 +82,7 @@
 	}
 
 	.strategy-graph{
-		width: 95%;
+		width: 90%;
 	}
 
 	.attention{
