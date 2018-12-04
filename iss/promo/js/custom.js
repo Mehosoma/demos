@@ -22,7 +22,7 @@ function videoPlay(wrapper) {
 //Show-hide button
 $(document).ready(function(){
 
-  if ($(window).width() < 992) {
+  if ($(window).width() >= 992) {
 
     $('.hidden-btn-vis').on({
 
