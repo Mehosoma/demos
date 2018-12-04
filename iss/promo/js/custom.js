@@ -22,27 +22,24 @@ function videoPlay(wrapper) {
 //Show-hide button
 $(document).ready(function(){
 
-$('.hidden-btn-vis').on({
+  if ($(window).width() < 992) {
 
-   mouseenter: function () {
+    $('.hidden-btn-vis').on({
 
-      $(this).find(".hidden-btn").animate({
+       mouseenter: function () {
+          $(this).find(".hidden-btn").animate({
               height: 'toggle'
-            }, 300, function() {
-          });  
+                }, 300, function() {
+              });
+       },
 
-   },
-
-   mouseleave: function () {
-
-
-       $(this).find(".hidden-btn").animate({
+       mouseleave: function () {
+          $(this).find(".hidden-btn").animate({
               height: 'toggle'
-            }, 10, function() {
-          });      
-       
-
-   }
-});
+                }, 10, function() {
+              });      
+       }
+    });
+  }
 
 });
