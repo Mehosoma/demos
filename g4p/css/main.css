@@ -640,10 +640,11 @@ header {
   background-size: 32px;
 }
 
-.c-adr {
+.contacts .c-adr {
   background-image: url("../img/marker.png");
   background-repeat: no-repeat;
   background-position: left 3px center;
+  vertical-align: top;
 }
 
 #main-form {
