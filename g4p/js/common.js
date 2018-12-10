@@ -1,1 +1,7 @@
-Файлы получила. Сейчас верстку доделаю и начну правки вносить. В принципе, ничего критичного нет. Смущает только фон неба под логотипом
+//ScrollToSection
+$('.main-menu a[href^="."]').click(function(){
+  //Сохраняем значение атрибута href в переменной:
+  var target = $(this).attr('href');
+  $('html, body').animate({scrollTop: $(target).offset().top-100}, 1000);
+return false;
+});

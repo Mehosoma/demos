@@ -66,6 +66,8 @@ h2
 	color: $blue
 	text-align: center
 	text-transform: uppercase
+	margin-top: 40px
+	margin-bottom: 20px
 .sub-header
 	display: block
 	font-size: 35px
@@ -143,15 +145,16 @@ header
 	.main-headers
 		display: inline-block
 		vertical-align: top
-		margin-left: 30px 
+		margin-left: 20px 
 	h1
 		text-transform: uppercase
-		font-size: 40px
+		font-size: 47px
 		color: #fff
 		font-weight: 700
+		margin-top: 40px
 	span
 		color: #fff
-		font-size: 24px
+		font-size: 36px
 .banner-decor
 	position: absolute
 	width: 2000px
@@ -188,21 +191,23 @@ header
 
 /**************************************************Services******************************************/	
 .services
-	padding: 100px 0px 0px 0px
+	padding: 60px 0px 0px 0px
 	position: relative
 	overflow: hidden
 	width: 100%
+	top: -100px
 .serv-back
 	width: 1920px
 	height: 893px
 	left: 50%
 	margin-left: -960px
-	top: 150px
+	top: 180px
 	position: absolute
 	background-image: url('../img/serv-back.jpg')
 	background-repeat: no-repeat
 .services-text
-	font-size: 18px
+	font-size: 24px
+	line-height: 1.4
 .icon-block
 	width: 100%
 	height: 290px
@@ -210,7 +215,8 @@ header
 	box-shadow: 0px 0px 10px rgba(0,0,0,0.1)
 	position: relative
 	background-color: #fff
-	margin-top: 100px
+	margin-top: 40px
+	padding-top: 30px
 	svg
 		position: relative
 		z-index: 1
@@ -219,6 +225,7 @@ header
 	padding: 0px 15px
 	position: relative
 	z-index: 1
+	margin-top: 20px
 	-moz-transition: all 0.3s ease-out
 	-o-transition: all 0.3s ease-out
 	-webkit-transition: all 0.3s ease-out
@@ -263,8 +270,18 @@ header
 	background-image: url('../img/state.png')
 	background-repeat: no-repeat
 	background-position: center center
+	background-size: 90%
+	margin-top: 30px
 .state-block-content
 	width: 100%
+.state-block-content:hover
+	cursor: pointer
+.state-block-content:hover .state-line
+	background: $blue
+.state-block-content:hover .state-header
+	color: $blue
+.state-block-content:hover .state-desc
+	color: $blue
 .state-block-content__sec
 	text-align: right
 .state-line
@@ -272,16 +289,30 @@ header
 	width: 320px
 	height: 3px
 	background: #000
-	top: 30px
+	top: 80px
+	z-index: 10
+	-moz-transition: all 0.3s ease-out
+	-o-transition: all 0.3s ease-out
+	-webkit-transition: all 0.3s ease-out
+	transition: all 0.3s ease-out
 .state-line-right
 	right: 15px
 .state-header
 	font-size: 34px
 	font-weight: 700
-	margin-top: 40px
+	margin-top: 90px
 	display: block
+	-moz-transition: all 0.3s ease-out
+	-o-transition: all 0.3s ease-out
+	-webkit-transition: all 0.3s ease-out
+	transition: all 0.3s ease-out
 .state-desc
 	font-size: 20px
+	margin-top: 30px
+	-moz-transition: all 0.3s ease-out
+	-o-transition: all 0.3s ease-out
+	-webkit-transition: all 0.3s ease-out
+	transition: all 0.3s ease-out
 .forum-img
 	width: 100%
 	height: 629px	
@@ -293,12 +324,18 @@ header
 		right: 0px
 .pr-0
 	padding-right: 0px
+.sub-header__mar
+	margin-top: 40px
+	margin-bottom: 50px
 .forum-desc-header
 	font-size: 36px
 	font-weight: 700
+	margin-top: 60px
+	display: block
 .forum-desc-content
 	font-size: 20px
 	line-height: 1.4
+	margin-top: 40px
 .forum-desc
 	position: relative
 .forum-desc-line
@@ -306,6 +343,11 @@ header
 	width: 168px
 	height: 3px
 	background: $red
+	left: -190px
+	top: 24px
+.sub-header__forum
+	margin-top: 105px
+	display: block
 
 
 /**************************************************Benefits******************************************/
@@ -313,8 +355,10 @@ header
 	width: 100%
 	height: 791px
 	background-image: url('../img/benef-bg.jpg')
-	background-position: center center
+	background-position: center top -800px
 	background-repeat: no-repeat
+	position: relative
+	top: -100px
 	.container
 		height: 100%
 	h2, span
@@ -327,6 +371,7 @@ header
 		position: absolute
 		left: 50%
 		transform: translateX(-50%)
+		top: 40px
 		span
 			font-size: 20px
 			line-height: 1.6
@@ -348,8 +393,14 @@ header
 	z-index: 100
 	background: $red
 	text-align: center
+	-moz-transition: all 0.3s ease-out
+	-o-transition: all 0.3s ease-out
+	-webkit-transition: all 0.3s ease-out
+	transition: all 0.3s ease-out
 	span,i
 		display: block
+		position: relative
+		z-index: 1000
 	i
 		font-style: normal
 		font-size: 100px
@@ -357,40 +408,63 @@ header
 		color: #fff
 	span
 		font-size: 24px
-		padding: 0px 25px		
+		padding: 0px 25px
+		margin-top: 40px
+.benefits-block-content 
+	cursor: pointer	
+.benefits-block-hov	
+	position: absolute
+	width: 100%
+	height: 0px
+	background: $blue
+	bottom: 0px
+	-moz-transition: all 0.3s ease-out
+	-o-transition: all 0.3s ease-out
+	-webkit-transition: all 0.3s ease-out
+	transition: all 0.3s ease-out
+.benefits-block-content:hover .benefits-block-hov
+	height: 100%
 .benefits-block-content__sec
 	height: 430px
+	span
+		margin-top: 90px	
 .benefits-block-content__third
 	height: 480px
+	span
+		margin-top: 140px	
 
 /**************************************************Contacts******************************************/
 .contacts
+	position: relative
+	top: -100px
+	padding-top: 40px
 	span, a
 		font-size: 24px
 		color: #000
-	span
-		padding-left: 50px
 		display: inline-block
-		line-height: 40px
-		vertical-align: top
+		vertical-align: middle
+		margin-top: 30px
+		padding-left: 50px	
+	span			
+		line-height: 40px	
 	a:hover
 		color: $blue
 .sp-bl
 	font-weight: 700
+	width: 150px
 .c-phone
 	background-image: url('../img/phone.png')
 	background-repeat: no-repeat
-	background-position: left center
-	display: block
+	background-position: left center	
 .c-mail
 	background-image: url('../img/mail.png')
 	background-repeat: no-repeat
-	background-position: left center
-	display: block!important
+	background-position: left center	
+	background-size: 32px	
 .c-adr
 	background-image: url('../img/marker.png')
 	background-repeat: no-repeat
-	background-position: left center
+	background-position: left 3px center	
 #main-form
 	span
 		padding-left: 0px
@@ -401,6 +475,7 @@ header
 		border: 1px solid $red
 		border-radius: 5px
 		padding: 0px 20px
+		margin-top: 30px
 	::-webkit-input-placeholder 
 		color: #aaa			
 	::-moz-placeholder
@@ -421,6 +496,7 @@ header
 		color: #fff
 .contacts-wrapper
 	border-bottom: 1px solid #B5B5B5
+	padding-bottom: 40px
 
 
 /**************************************************Footer******************************************/
@@ -435,6 +511,11 @@ footer
 	.phone
 		color: #fff
 		background-image: url('../img/phone-f.png')
+		line-height: 120px
+		margin-top: 0px
+		margin-bottom: 0px
+	img
+		margin-top: 20px
 
 
 .hidden
