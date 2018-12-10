@@ -714,6 +714,10 @@ footer .phone {
   margin-bottom: 0px;
 }
 
+footer .phone:hover {
+  color: #fff;
+}
+
 footer img {
   margin-top: 20px;
 }
