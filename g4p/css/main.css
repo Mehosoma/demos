@@ -229,12 +229,19 @@ header {
   margin-top: 80px;
   position: relative;
   top: 10%;
-  margin-left: 70px;
+  margin-left: 30px;
 }
 
 .decor-text {
   color: #fff;
-  font-size: 28px;
+  font-size: 26px;
+  line-height: 1.4;
+  width: 420px;
+  text-align: right;
+}
+
+.decor-text br {
+  display: none;
 }
 
 /**************************************************Services******************************************/
