@@ -1,0 +1,435 @@
+@import "bourbon/bourbon"
+
+$blue: #0057A3
+$red: #DB1F2E
+
+html
+	width: 100%
+	height: 100%
+	overflow-x: hidden
+body
+	width: 100%
+	height: auto
+	min-width: 320px	
+	margin: 0 auto
+	position: relative
+	line-height: 1.2
+	-webkit-font-smoothing: antialiased
+	background-color: #fff	
+	font-family: 'Roboto', sans-serif
+	a:hover, a:focus, a:active
+		text-decoration: none
+		outline: none
+	input:focus, input:active
+		text-decoration: none
+		outline: none
+	button:focus, button:active
+		text-decoration: none
+		outline: none
+	textarea:focus, textarea:active
+		text-decoration: none
+		outline: none
+	a
+		display: inline-block
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out
+	ul, ol
+		padding: 0px
+		margin: 0px
+		list-style-type: none
+	button
+		border: none
+		cursor: pointer
+	hr
+		border: none	
+
+.pixel
+	background: url(../img/main.jpg) no-repeat top center
+	width: 1920px
+	height: 12800px
+	position: absolute
+	z-index: 1000000
+	display: none
+	left: 50%
+	top: 0
+	margin-left: -960px
+	opacity: 0.5
+	margin-top: 0px
+
+
+/***************************************************GeneralStyles************************************/
+h2
+	font-size: 40px
+	font-weight: bold
+	color: $blue
+	text-align: center
+	text-transform: uppercase
+.sub-header
+	display: block
+	font-size: 35px
+	color: #000
+	font-weight: bold
+
+/***************************************************Header******************************************/
+header
+	position: relative
+	z-index: 10
+	height: 100px
+	background-color: rgba(255,255,255,0.8)
+	z-index: 100
+.f-right
+	text-align: right
+.phone
+	font-size: 18px
+	padding-left: 35px	
+	color: #000
+	background-image: url('../img/phone.png')
+	background-repeat: no-repeat
+	background-position: left center
+	background-size: 20px 20px	
+	margin-top: 20px
+	margin-bottom: 10px
+.phone:hover
+	color: $red
+.btn-feedback
+	color: $blue	
+	font-size: 18px
+	display: inline-block
+	border-bottom: 1px dashed $blue
+.btn-feedback:hover
+	color: $blue
+	border-bottom: 1px dashed transparent
+.main-menu
+	width: 100%	
+	li
+		line-height: 96px
+		display: inline-block
+	a
+		font-size: 15px
+		font-weight: 500
+		color: #000
+		display: inline		
+		border-bottom: 1px solid transparent
+		-moz-transition: all 0.1s ease-out
+		-o-transition: all 0.1s ease-out
+		-webkit-transition: all 0.1s ease-out
+		transition: all 0.1s ease-out
+	a:hover
+		color: $blue
+		border-bottom: 1px solid $blue
+	ul
+		width: 100%
+		display: flex
+		justify-content: space-between
+
+
+/**************************************************Top-Banner******************************************/	
+.top-banner
+	width: 100%
+	height: 800px
+	background-image: url('../img/top-banner.jpg')
+	background-repeat: no-repeat
+	background-position: top center
+	position: relative
+	margin-top: -100px
+	overflow: hidden
+.logo
+	margin-top: 150px
+	margin-left: 0px
+	img
+		display: inline-block
+	.main-headers
+		display: inline-block
+		vertical-align: top
+		margin-left: 30px 
+	h1
+		text-transform: uppercase
+		font-size: 40px
+		color: #fff
+		font-weight: 700
+	span
+		color: #fff
+		font-size: 24px
+.banner-decor
+	position: absolute
+	width: 2000px
+	height: 100%
+	background: rgba(0,87,163,0.7)	
+	left: 65%
+	top: 100px
+	-webkit-transform: skewX(-15deg)
+	-moz-transform: skewX(-15deg)
+	-ms-transform: skewX(-15deg)
+	-o-transform: skewX(-15deg)
+	transform: skewX(-15deg)
+.decor-text
+	display: block
+	-webkit-transform: skewX(15deg)
+	-moz-transform: skewX(15deg)
+	-ms-transform: skewX(15deg) 
+	-o-transform: skewX(15deg)
+	transform: skewX(15deg)
+	margin-top: 80px
+	position: relative
+	top: 10%
+	margin-left: 70px
+.decor-text
+	color: #fff
+	font-size: 28px
+
+
+/**************************************************Services******************************************/	
+.services
+	padding: 100px 0px 0px 0px
+	position: relative
+	overflow: hidden
+	width: 100%
+.serv-back
+	width: 1920px
+	height: 893px
+	left: 50%
+	margin-left: -960px
+	top: 150px
+	position: absolute
+	background-image: url('../img/serv-back.jpg')
+	background-repeat: no-repeat
+.services-text
+	font-size: 18px
+.icon-block
+	width: 100%
+	height: 290px
+	position: relative
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.1)
+	position: relative
+	background-color: #fff
+	margin-top: 100px
+	svg
+		position: relative
+		z-index: 1
+.icon-block-desc
+	font-size: 14px
+	padding: 0px 15px
+	position: relative
+	z-index: 1
+	-moz-transition: all 0.3s ease-out
+	-o-transition: all 0.3s ease-out
+	-webkit-transition: all 0.3s ease-out
+	transition: all 0.3s ease-out
+.st0
+	-moz-transition: all 0.3s ease-out
+	-o-transition: all 0.3s ease-out
+	-webkit-transition: all 0.3s ease-out
+	transition: all 0.3s ease-out
+.icon-block-bg
+	width: 100%
+	height: 100%
+	position: absolute
+	top: 0px
+	left: 0px
+	-moz-transition: all 0.3s ease-out
+	-o-transition: all 0.3s ease-out
+	-webkit-transition: all 0.3s ease-out
+	transition: all 0.3s ease-out
+	visibility: hidden
+	opacity: 0
+.icon-block-white
+	width: 100%
+	height: 100%
+	background-color: rgba(0,87,163,0.67)
+	position: absolute
+	top: 0px
+	left: 0px
+.icon-block:hover
+	cursor: pointer
+.icon-block:hover .st0
+	fill: white
+.icon-block:hover .icon-block-desc
+	color: white
+.icon-block:hover .icon-block-bg
+	visibility: visible
+	opacity: 1
+.state-block
+	width: 100%
+	height: 396px
+	box-shadow: 0px 10px 10px rgba(0,0,0,0.1)
+	background-image: url('../img/state.png')
+	background-repeat: no-repeat
+	background-position: center center
+.state-block-content
+	width: 100%
+.state-block-content__sec
+	text-align: right
+.state-line
+	position: absolute
+	width: 320px
+	height: 3px
+	background: #000
+	top: 30px
+.state-line-right
+	right: 15px
+.state-header
+	font-size: 34px
+	font-weight: 700
+	margin-top: 40px
+	display: block
+.state-desc
+	font-size: 20px
+.forum-img
+	width: 100%
+	height: 629px	
+	position: relative
+	img
+		width: 1000px
+		position: absolute
+		top: 0px
+		right: 0px
+.pr-0
+	padding-right: 0px
+.forum-desc-header
+	font-size: 36px
+	font-weight: 700
+.forum-desc-content
+	font-size: 20px
+	line-height: 1.4
+.forum-desc
+	position: relative
+.forum-desc-line
+	position: absolute
+	width: 168px
+	height: 3px
+	background: $red
+
+
+/**************************************************Benefits******************************************/
+.benefits
+	width: 100%
+	height: 791px
+	background-image: url('../img/benef-bg.jpg')
+	background-position: center center
+	background-repeat: no-repeat
+	.container
+		height: 100%
+	h2, span
+		color: #fff
+	.col-lg-4
+		height: 100%
+	.row
+		height: 100%
+	.text-center
+		position: absolute
+		left: 50%
+		transform: translateX(-50%)
+		span
+			font-size: 20px
+			line-height: 1.6
+.benef-decor
+	position: absolute
+	width: 100%
+	height: 791px
+	background: rgba(0,0,0,0.56)
+.benefits-block
+	position: relative
+	width: 100%
+	height: 100%
+.benefits-block-content
+	position: absolute
+	bottom: 0px
+	left: 0px
+	width: 100%
+	height: 380px
+	z-index: 100
+	background: $red
+	text-align: center
+	span,i
+		display: block
+	i
+		font-style: normal
+		font-size: 100px
+		font-weight: 700
+		color: #fff
+	span
+		font-size: 24px
+		padding: 0px 25px		
+.benefits-block-content__sec
+	height: 430px
+.benefits-block-content__third
+	height: 480px
+
+/**************************************************Contacts******************************************/
+.contacts
+	span, a
+		font-size: 24px
+		color: #000
+	span
+		padding-left: 50px
+		display: inline-block
+		line-height: 40px
+		vertical-align: top
+	a:hover
+		color: $blue
+.sp-bl
+	font-weight: 700
+.c-phone
+	background-image: url('../img/phone.png')
+	background-repeat: no-repeat
+	background-position: left center
+	display: block
+.c-mail
+	background-image: url('../img/mail.png')
+	background-repeat: no-repeat
+	background-position: left center
+	display: block!important
+.c-adr
+	background-image: url('../img/marker.png')
+	background-repeat: no-repeat
+	background-position: left center
+#main-form
+	span
+		padding-left: 0px
+	input, button
+		width: 358px
+		height: 60px
+		font-size: 24px
+		border: 1px solid $red
+		border-radius: 5px
+		padding: 0px 20px
+	::-webkit-input-placeholder 
+		color: #aaa			
+	::-moz-placeholder
+		color: #aaa	
+	:-moz-placeholder 
+		color: #aaa	
+	:-ms-input-placeholder      
+		color: #aaa
+	button
+		background: transparent
+		color: $red
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out
+	button:hover
+		background: $red
+		color: #fff
+.contacts-wrapper
+	border-bottom: 1px solid #B5B5B5
+
+
+/**************************************************Footer******************************************/
+footer
+	width: 100%
+	height: 120px
+	background: $blue
+	span
+		color: #fff
+		font-size: 24px
+		line-height: 120px
+	.phone
+		color: #fff
+		background-image: url('../img/phone-f.png')
+
+
+.hidden
+	display: none
