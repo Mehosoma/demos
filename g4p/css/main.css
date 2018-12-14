@@ -137,7 +137,7 @@ header {
 }
 
 .main-menu li {
-  line-height: 96px;
+  line-height: 100px;
   display: inline-block;
 }
 
@@ -229,9 +229,8 @@ header {
   -ms-transform: skewX(15deg);
   -o-transform: skewX(15deg);
   transform: skewX(15deg);
-  margin-top: 80px;
   position: relative;
-  top: 10%;
+  top: 20%;
   margin-left: 30px;
 }
 
@@ -249,7 +248,6 @@ header {
 
 /**************************************************Services******************************************/
 .services {
-  padding: 60px 0px 0px 0px;
   position: relative;
   overflow: hidden;
   width: 100%;
@@ -258,19 +256,31 @@ header {
 }
 
 .serv-back {
-  width: 1920px;
-  height: 893px;
-  left: 50%;
-  margin-left: -960px;
-  top: 180px;
-  position: absolute;
+  width: 100%;
+  height: auto;
+  padding-bottom: 60px;
   background-image: url("../img/serv-back.jpg");
   background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  position: relative;
+}
+
+.services-white {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.services-main {
+  margin-top: 60px;
 }
 
 .services-text {
   font-size: 24px;
   line-height: 1.4;
+  padding: 60px 0px;
 }
 
 .icon-block {
@@ -288,6 +298,10 @@ header {
 .icon-block svg {
   position: relative;
   z-index: 1;
+}
+
+.icon-block-hor {
+  height: 240px;
 }
 
 .icon-block-desc {
@@ -394,7 +408,7 @@ header {
   width: 320px;
   height: 3px;
   background: #000;
-  top: 80px;
+  top: 110px;
   z-index: 10;
   -moz-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
@@ -419,16 +433,31 @@ header {
 
 .state-desc {
   font-size: 20px;
-  margin-top: 30px;
+  margin-top: 120px;
   -moz-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
 
+.state-block-content__down .state-line {
+  top: 310px;
+}
+
+.state-block-content__down .state-desc {
+  margin-top: 105px;
+}
+
 .forum-img {
   width: 100%;
+  height: 376px;
   position: relative;
+  -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  background-image: url("../img/forum-image.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 90% 87%;
 }
 
 .forum-img img {
@@ -447,7 +476,7 @@ header {
 .forum-desc-header {
   font-size: 32px;
   font-weight: 700;
-  margin-top: 10px;
+  margin-top: 30px;
   display: block;
 }
 
@@ -455,24 +484,139 @@ header {
   font-size: 20px;
   line-height: 1.4;
   margin-top: 40px;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 .forum-desc {
   position: relative;
 }
 
+.forum-desc:hover {
+  cursor: pointer;
+}
+
+.forum-desc:hover .forum-desc-line {
+  background: #0057A3;
+}
+
+.forum-desc:hover .forum-desc-content, .forum-desc:hover .forum-desc-header {
+  color: #0057A3;
+}
+
 .forum-desc-line {
   position: absolute;
-  width: 168px;
+  width: 125px;
   height: 3px;
-  background: #DB1F2E;
-  left: -190px;
+  background: #000;
+  left: -142px;
   top: 20px;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 .sub-header__forum {
-  margin-top: 105px;
+  margin-top: 60px;
   display: block;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.serv-benef {
+  width: 100%;
+  height: 540px;
+  background-image: url("../img/serv-benef-back.jpg");
+  background-position: left 200px bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.serv-benef-decor {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgba(0, 87, 163, 0.6);
+}
+
+.serv-benef-div {
+  position: absolute;
+  width: 2000px;
+  height: 100%;
+  background: #0057a3;
+  right: 55%;
+  -webkit-transform: skewX(-15deg);
+  -moz-transform: skewX(-15deg);
+  -ms-transform: skewX(-15deg);
+  -o-transform: skewX(-15deg);
+  transform: skewX(-15deg);
+}
+
+.serv-benef-header {
+  font-size: 50px;
+  color: #fff;
+  position: relative;
+  margin-top: 170px;
+  display: block;
+  font-family: 'Roboto Condensed';
+  font-weight: 400;
+  padding-right: 90px;
+}
+
+.serv-benef-icon {
+  width: 100%;
+  height: 120px;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  background-color: rgba(0, 87, 163, 0.7);
+  text-align: left;
+  background-image: url("../img/benef-1.png");
+  background-repeat: no-repeat;
+  background-position: left 20px center;
+  background-size: 60px;
+  padding: 38px 20px 30px 100px;
+  margin: 45px 0px;
+}
+
+.serv-benef-icon span {
+  font-size: 19px;
+  color: #fff;
+  display: inline-block;
+}
+
+.srv-state {
+  padding-bottom: 60px;
+}
+
+.serv-benef__second {
+  width: 100%;
+  height: 540px;
+  background-image: url("../img/serv-benef-back.jpg");
+  background-position: right 100px bottom;
+}
+
+.serv-benef__second .serv-benef-div {
+  left: 55%;
+}
+
+.serv-benef__second .serv-benef-header {
+  text-align: right;
+  padding-left: 60px;
+  padding-right: 0px;
+}
+
+.serv-benef__second .serv-benef-div {
+  -webkit-transform: skewX(-15deg);
+  -moz-transform: skewX(-15deg);
+  -ms-transform: skewX(-15deg);
+  -o-transform: skewX(-15deg);
+  transform: skewX(-15deg);
 }
 
 /**************************************************Benefits******************************************/
@@ -513,7 +657,7 @@ header {
 }
 
 .benefits .text-center span {
-  font-size: 20px;
+  font-size: 24px;
   line-height: 1.6;
 }
 
