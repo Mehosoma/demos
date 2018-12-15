@@ -89,6 +89,7 @@ h2 {
   font-size: 35px;
   color: #000;
   font-weight: bold;
+  font-family: 'Roboto Condensed';
 }
 
 /***************************************************Header******************************************/
@@ -172,9 +173,9 @@ header {
 .top-banner {
   width: 100%;
   height: 800px;
-  background-image: url("../img/top-banner.jpg");
+  background-image: url("../img/top-banner-f.jpg");
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: top right -100px;
   position: relative;
   top: -100px;
   overflow: hidden;
@@ -187,6 +188,7 @@ header {
 
 .logo img {
   display: inline-block;
+  width: 260px;
 }
 
 .logo .main-headers {
@@ -197,7 +199,7 @@ header {
 
 .logo h1 {
   text-transform: uppercase;
-  font-size: 47px;
+  font-size: 42px;
   color: #fff;
   font-weight: 700;
   margin-top: 40px;
@@ -213,7 +215,7 @@ header {
   width: 2000px;
   height: 100%;
   background: rgba(0, 87, 163, 0.7);
-  left: 65%;
+  left: 60%;
   top: 100px;
   -webkit-transform: skewX(-15deg);
   -moz-transform: skewX(-15deg);
@@ -224,26 +226,12 @@ header {
 
 .decor-text {
   display: block;
-  -webkit-transform: skewX(15deg);
-  -moz-transform: skewX(15deg);
-  -ms-transform: skewX(15deg);
-  -o-transform: skewX(15deg);
-  transform: skewX(15deg);
-  position: relative;
-  top: 20%;
-  margin-left: 30px;
-}
-
-.decor-text {
+  margin-top: 187px;
   color: #fff;
-  font-size: 26px;
+  font-size: 22px;
   line-height: 1.4;
-  width: 420px;
-  text-align: right;
-}
-
-.decor-text br {
-  display: none;
+  margin-left: 40px;
+  text-align: left;
 }
 
 /**************************************************Services******************************************/
@@ -261,7 +249,7 @@ header {
   padding-bottom: 60px;
   background-image: url("../img/serv-back.jpg");
   background-repeat: no-repeat;
-  background-position: center bottom;
+  background-position: left bottom;
   background-size: cover;
   position: relative;
 }
@@ -270,7 +258,7 @@ header {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.6);
 }
 
 .services-main {
@@ -293,6 +281,7 @@ header {
   background-color: #fff;
   margin-top: 40px;
   padding-top: 30px;
+  overflow: hidden;
 }
 
 .icon-block svg {
@@ -324,11 +313,12 @@ header {
 }
 
 .icon-block-bg {
-  width: 100%;
+  width: 854px;
   height: 100%;
   position: absolute;
   top: 0px;
-  left: 0px;
+  left: 50%;
+  margin-left: -400px;
   -moz-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
   -webkit-transition: all 0.3s ease-out;
@@ -574,20 +564,46 @@ header {
   height: 120px;
   border: 2px solid #fff;
   border-radius: 10px;
-  background-color: rgba(0, 87, 163, 0.7);
+  background-color: rgba(219, 31, 46, 0.9);
   text-align: left;
   background-image: url("../img/benef-1.png");
   background-repeat: no-repeat;
   background-position: left 20px center;
   background-size: 60px;
-  padding: 38px 20px 30px 100px;
+  padding: 0px 20px 0px 100px;
   margin: 45px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .serv-benef-icon span {
   font-size: 19px;
   color: #fff;
   display: inline-block;
+}
+
+.serv-benef-icon-2 {
+  background-image: url("../img/benef-2.png");
+}
+
+.serv-benef-icon-3 {
+  background-image: url("../img/benef-3.png");
+}
+
+.serv-benef-icon-4 {
+  background-image: url("../img/benef-4.png");
+}
+
+.serv-benef-icon-5 {
+  background-image: url("../img/benef-5.png");
+}
+
+.serv-benef-icon-6 {
+  background-image: url("../img/benef-6.png");
 }
 
 .srv-state {
@@ -597,12 +613,16 @@ header {
 .serv-benef__second {
   width: 100%;
   height: 540px;
-  background-image: url("../img/serv-benef-back.jpg");
+  background-image: url("../img/serv-back.jpg");
   background-position: right 100px bottom;
 }
 
 .serv-benef__second .serv-benef-div {
   left: 55%;
+}
+
+.serv-benef__second .serv-benef-icon {
+  background-color: rgba(0, 87, 163, 0.7);
 }
 
 .serv-benef__second .serv-benef-header {
@@ -617,6 +637,28 @@ header {
   -ms-transform: skewX(-15deg);
   -o-transform: skewX(-15deg);
   transform: skewX(-15deg);
+  background-color: #db1f2e;
+}
+
+.anim_left1 {
+  -webkit-animation-delay: 200ms;
+  -moz-animation-delay: 200ms;
+  -o-animation-delay: 200ms;
+  animation-delay: 200ms;
+}
+
+.anim_left2 {
+  -webkit-animation-delay: 400ms;
+  -moz-animation-delay: 400ms;
+  -o-animation-delay: 400ms;
+  animation-delay: 400ms;
+}
+
+.anim_left3 {
+  -webkit-animation-delay: 600ms;
+  -moz-animation-delay: 600ms;
+  -o-animation-delay: 600ms;
+  animation-delay: 600ms;
 }
 
 /**************************************************Benefits******************************************/
