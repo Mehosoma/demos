@@ -168,7 +168,7 @@
 	.forum-img{
 		width: 100%;
 		max-width: 290px;
-		height: 260px;		
+		height: 220px;		
 		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 	}
 
@@ -504,6 +504,10 @@
 
 	.contacts .ogrn{
 		padding-left: 205px;
+	}
+
+	.contacts .adr{
+		width: 200px;
 	}
 
 
