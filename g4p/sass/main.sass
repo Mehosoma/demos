@@ -80,7 +80,7 @@ header
 	position: relative
 	z-index: 10
 	height: 100px
-	background-color: rgba(255,255,255,0.8)
+	background-color: rgba(58,97,255,0.1)
 	z-index: 100
 .f-right
 	text-align: right
@@ -96,6 +96,9 @@ header
 	margin-bottom: 10px
 .phone:hover
 	color: $red
+.phone-wr
+	display: inline-block
+	vertical-align: middle
 .btn-feedback
 	color: $blue	
 	font-size: 18px
@@ -106,8 +109,10 @@ header
 	border-bottom: 1px dashed transparent
 .main-menu
 	width: 100%	
+	display: flex
+	align-items: center
+	height: 100px
 	li
-		line-height: 100px
 		display: inline-block
 	a
 		font-size: 15px
@@ -125,21 +130,23 @@ header
 	ul
 		width: 100%
 		display: flex
-		justify-content: space-between
+		justify-content: space-around
 
 
 /**************************************************Top-Banner******************************************/	
 .top-banner
 	width: 100%
-	height: 800px
+	height: 700px
 	background-image: url('../img/top-banner-f.jpg')
 	background-repeat: no-repeat
-	background-position: top right -100px
-	position: relative
-	top: -100px
+	background-position: top right
+	background-size: cover
+	position: relative	
 	overflow: hidden
+	.container
+		height: 100%	
 .logo
-	margin-top: 150px
+	margin-top: 50px
 	margin-left: 0px
 	img
 		display: inline-block
@@ -160,23 +167,25 @@ header
 .banner-decor
 	position: absolute
 	width: 2000px
-	height: 100%
-	background: rgba(0,87,163,0.7)	
-	left: 58.5%
-	top: 100px
-	-webkit-transform: skewX(-15deg)
-	-moz-transform: skewX(-15deg)
-	-ms-transform: skewX(-15deg)
-	-o-transform: skewX(-15deg)
-	transform: skewX(-15deg)	
+	height: 700px
+	background: rgba(0,87,163,0.7)		
+	-webkit-transform: skewX(-10deg)
+	-moz-transform: skewX(-10deg)
+	-ms-transform: skewX(-10deg)
+	-o-transform: skewX(-10deg)
+	transform: skewX(-10deg)
+	left: -20px	
+
 .decor-text
 	display: block
-	margin-top: 187px
+	margin-top: 87px
 	color: #fff
 	font-size: 22px
 	line-height: 1.4	
 	margin-left: 40px
 	text-align: right
+	position: relative
+	z-index: 10
 
 
 
@@ -185,8 +194,7 @@ header
 .services
 	position: relative
 	overflow: hidden
-	width: 100%
-	top: -100px
+	width: 100%	
 	padding-bottom: 100px	
 .serv-back
 	width: 100%
@@ -319,11 +327,12 @@ header
 	-o-transition: all 0.3s ease-out
 	-webkit-transition: all 0.3s ease-out
 	transition: all 0.3s ease-out
+	height: 180px
 .state-block-content__down	
 	.state-line
 		top: 310px
 	.state-desc
-		margin-top: 105px
+		margin-top: 20px
 .forum-img
 	width: 100%	
 	height: 376px	
@@ -397,21 +406,21 @@ header
 	width: 2000px
 	height: 100%
 	background: rgba(0,87,163,1)	
-	right: 55%
-	-webkit-transform: skewX(-15deg)
-	-moz-transform: skewX(-15deg)
-	-ms-transform: skewX(-15deg)
-	-o-transform: skewX(-15deg)
-	transform: skewX(-15deg)
+	right: 100px
+	-webkit-transform: skewX(-10deg)
+	-moz-transform: skewX(-10deg)
+	-ms-transform: skewX(-10deg)
+	-o-transform: skewX(-10deg)
+	transform: skewX(-10deg)
 .serv-benef-header
 	font-size: 50px
-	color: #fff
-	position: relative
-	margin-top: 170px
-	display: block
+	color: #fff	
+	display: inline-block
 	font-family: 'Roboto Condensed'
 	font-weight: 400
 	padding-right: 90px
+	position: relative
+	z-index: 10
 .serv-benef-icon
 	width: 100%
 	height: 120px
@@ -447,9 +456,9 @@ header
 	width: 100%
 	height: 540px
 	background-image: url('../img/serv-back.jpg')
-	background-position: right 100px bottom
+	background-position: left bottom
 	.serv-benef-div
-		left: 55%
+		left: 70px
 	.serv-benef-icon
 		background-color: rgba(0,87,163,0.7)
 	.serv-benef-header
@@ -457,42 +466,41 @@ header
 		padding-left: 60px
 		padding-right: 0px
 	.serv-benef-div
-		-webkit-transform: skewX(-15deg)
-		-moz-transform: skewX(-15deg)
-		-ms-transform: skewX(-15deg)
-		-o-transform: skewX(-15deg)
-		transform: skewX(-15deg)
-		background-color: rgba(219,31,46,1)
-	
+		-webkit-transform: skewX(-10deg)
+		-moz-transform: skewX(-10deg)
+		-ms-transform: skewX(-10deg)
+		-o-transform: skewX(-10deg)
+		transform: skewX(-10deg)
+		background-color: rgba(219,31,46,1)	
 .anim_left1
 	-webkit-animation-delay: 200ms
 	-moz-animation-delay: 200ms
 	-o-animation-delay: 200ms
 	animation-delay: 200ms
-
 .anim_left2
 	-webkit-animation-delay: 400ms
 	-moz-animation-delay: 400ms
 	-o-animation-delay: 400ms
 	animation-delay: 400ms
-
 .anim_left3
 	-webkit-animation-delay: 600ms
 	-moz-animation-delay: 600ms
 	-o-animation-delay: 600ms
 	animation-delay: 600ms
-
+.d-col-flex
+	display: flex
+	align-items: center
+	height: 540px	
 
 /**************************************************Benefits******************************************/
 .benefits
 	width: 100%
 	height: 791px
 	background-image: url('../img/benef-bg.jpg')
-	background-position: center top -300px
+	background-position: center top -600px
 	background-repeat: no-repeat
 	position: relative
-	background-size: cover
-	top: -100px
+	background-size: 120% 200%
 	.container
 		height: 100%
 	h2, span
@@ -506,6 +514,7 @@ header
 		left: 50%
 		transform: translateX(-50%)
 		top: 40px
+		width: 100%
 		span
 			font-size: 24px
 			line-height: 1.6
@@ -513,7 +522,7 @@ header
 	position: absolute
 	width: 100%
 	height: 791px
-	background: rgba(0,0,0,0.56)
+	background: rgba(0,0,0,0.7)
 .benefits-block
 	position: relative
 	width: 100%
@@ -569,9 +578,9 @@ header
 
 /**************************************************Contacts******************************************/
 .contacts
-	position: relative
-	top: -100px
+	position: relative	
 	padding-top: 40px
+	padding-bottom: 60px
 	span, a
 		font-size: 24px
 		color: #000
@@ -657,3 +666,102 @@ footer
 
 .hidden
 	display: none
+
+/***********************************************ButtonMobile************************************/
+.menu-toggle-button
+	width: 50px
+	height: 40px
+	float: right
+	background-color: transparent
+	border-radius: 7px
+	padding-top: 5px
+	border: none
+	text-indent: -9999px
+	-webkit-appearance: none
+	-moz-appearance: none
+	appearance: none
+	position: relative
+	display: block
+	overflow: hidden
+	margin-top: 10px
+	float: left
+	margin-left: -17px
+
+
+.menu-toggle-button span 
+	display: block
+	height: 2px
+	background: $blue
+	position: absolute
+	top: 15px
+	left: 16px
+	right: 16px
+	-webkit-transition: background 0s 0.3
+	-o-transition: background 0s 0.3
+	transition: background 0s 0.3
+
+
+.menu-toggle-button span::before, .menu-toggle-button span::after
+	content: ""
+	display: block
+	width: 100%
+	height: 2px
+	background: $blue
+	position: absolute
+	left: 0px
+	-webkit-transition-duration: 0.3s, 1s
+	-o-transition-duration: 0.3s, 1s
+	transition-duration: 0.3s, 1s
+	-webkit-transition-delay: 0s, 0.3s
+	-o-transition-delay: 0s, 0.3s
+	transition-delay: 0s, 0.3s
+
+
+.menu-toggle-button span::before 
+	top: -5px
+
+.menu-toggle-button span::after 
+	bottom: -5px
+
+.menu-toggle-button.is-active span
+	background: none
+
+.menu-toggle-button.is-active span::before
+	top: 0
+	-webkit-transform: rotate(45deg)
+	-ms-transform: rotate(45deg)
+	transform: rotate(45deg)
+	-webkit-transition-property: top, -webkit-transform
+	transition-property: top, -webkit-transform
+	-o-transition-property: top, transform
+	transition-property: top, transform
+	transition-property: top, transform, -webkit-transform
+	-webkit-transition-delay: 0s, 0.3s
+	-o-transition-delay: 0s, 0.3s
+	transition-delay: 0s, 0.3s
+	-webkit-transition-duration: 0.3s, 0.3s
+	-o-transition-duration: 0.3s, 0.3s
+	transition-duration: 0.3s, 0.3s
+	background: $blue
+
+
+.menu-toggle-button.is-active span::after 
+	bottom: 0
+	background: $blue
+	-webkit-transform: rotate(-45deg)
+	-ms-transform: rotate(-45deg)
+	transform: rotate(-45deg)
+	-webkit-transition-property: bottom, -webkit-transform
+	transition-property: bottom, -webkit-transform
+	-o-transition-property: bottom, transform
+	transition-property: bottom, transform
+	transition-property: bottom, transform, -webkit-transform
+	-webkit-transition-delay: 0s, 0.3s
+	-o-transition-delay: 0s, 0.3s
+	transition-delay: 0s, 0.3s
+	-webkit-transition-duration: 0.3s, 0.3s
+	-o-transition-duration: 0.3s, 0.3s
+	transition-duration: 0.3s, 0.3s
+
+.menu-toggle-button:focus
+	outline: none !important
