@@ -555,6 +555,7 @@ header {
   width: 2000px;
   height: 100%;
   background: #0057a3;
+  top: 0px;
   right: 100px;
   -webkit-transform: skewX(-10deg);
   -moz-transform: skewX(-10deg);

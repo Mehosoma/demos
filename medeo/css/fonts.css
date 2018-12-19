@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "Conv_PFDinTextCompPro-Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/PFDinTextCompPro-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/PFDinTextCompPro-Medium.woff") format("woff"), url("../fonts/PFDinTextCompPro-Medium.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Conv_PFDinTextCompPro-Light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/PFDinTextCompPro-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/PFDinTextCompPro-Light.woff") format("woff"), url("../fonts/PFDinTextCompPro-Light.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Conv_PT_Sans-Caption-Web-Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/PT_Sans-Caption-Web-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/PT_Sans-Caption-Web-Regular.woff") format("woff"), url("../fonts/PT_Sans-Caption-Web-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Conv_PT_Sans-Caption-Web-Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/PT_Sans-Caption-Web-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/PT_Sans-Caption-Web-Bold.woff") format("woff"), url("../fonts/PT_Sans-Caption-Web-Bold.ttf") format("truetype"); }
