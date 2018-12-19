@@ -614,9 +614,8 @@ footer {
   min-height: 180px;
   background-color: #38455c; }
   footer img {
-    display: block;
-    margin: 0 auto;
-    margin-top: 16px; }
+    margin-top: 16px;
+    width: 100px; }
   footer .phone-h_number {
     font-family: "Conv_PT_Sans-Caption-Web-Regular", sans-serif;
     display: inline-block;
@@ -633,13 +632,17 @@ footer {
   #footer-form input {
     margin-right: 16px; }
 
+.engine-link {
+  margin-left: auto;
+  margin-right: auto; }
+
 .copy {
   display: block;
   width: 100%;
   font-family: "Conv_PT_Sans-Caption-Web-Regular", sans-serif;
   color: #fff;
   text-transform: uppercase;
-  margin-top: 10px; }
+  margin-top: 30px; }
 
 .hidden {
   display: none; }
