@@ -10,3 +10,40 @@
 
 @media only screen and (min-width : 992px) and (max-width : 1199px) {
 }
+
+@media only screen and (min-width : 1921px){
+
+	.banner-decor{
+		width: 2500px;
+		margin-left: 0px;
+		transform: translateX(-50%);
+		background-position: right 357px center;
+	}
+
+	.decor-left{
+		width: 53%;		
+	}
+
+	.decor-left-op{
+		width: 54%;
+	}
+
+	.education .banner-decor{
+		width: 2500px;
+		margin-left: 0px;
+		transform: translateX(-50%);
+		background-position: right 450px center;
+	}
+
+	.education .decor-left{
+		width: 64%;
+	}
+
+	.education .decor-left-op{
+		width: 65%;
+	}
+
+	.best, .dark, .portfolio, .anesthesia{
+		background-size: 100% 100%;
+	}
+}
