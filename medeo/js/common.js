@@ -125,4 +125,5 @@ $('.right').click(function(){
 
 $(document).ready(function() {
   $('.popup_link').magnificPopup({type:'image'});
+   $('body .leaflet-popup-content-wrapper').addClass('grub');
 });
