@@ -1,14 +1,370 @@
-@media only screen and (min-width : 0px) and (max-width : 479px) {
+@media only screen and (min-width : 0px) and (max-width : 575px) {
+
+	header{
+		height: auto;
+		padding-bottom: 20px;
+	}
+
+	header .col-sm-4{
+		text-align: center;
+	}
+
+	.top-banner{
+		height: auto;
+		padding-bottom: 40px;
+	}
+
+	.top-banner{
+		background-image: url(../img/top-banner_bg.jpg);
+		background-size: cover;
+	}
+
+	.banner-decor{
+		display: none;
+	}
+
+	h1 br{
+		display: none;
+	}
+
+	h1{
+		font-size: 50px;
+	}
+
+	.banner-decor{
+		margin-left: -680px;
+	}
+
+	#main-form button{
+	 	margin-left: 0px;
+		margin-top: 30px;
+	 }
+
+	.portfolio .col-md-6{
+		margin-top: 30px!important;
+	}
+
+	.portfolio-block_desc span {
+		font-size: 18px;
+	}
+
+	.education{
+		background-color: #fff0e8;
+		height: auto;
+		padding-bottom: 40px;
+	}
+
+	.slider-wrapper{
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.slick-slide{
+		text-align: center;
+	}
+
+	.left{
+		left: 0px;
+	}
+
+	.right{
+		right: 0px;
+	}
+
+	.docs-slider-wrapper{
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.docs-slider{
+		width: 100%;
+	}
+
+	.docs-slider-wrapper .left{
+		left: -10px
+	}
+
+	.docs-slider-wrapper .right{
+		right: -10px;
+	}
+
+	.recom-image{
+		width: 100%;
+		margin-bottom: 30px;
+	}
+
+	.education .gen-text{
+		font-size: 16px;
+	}
+
+	.education .banner-decor{
+		background-position: right 400px center;
+	}
+
+	.dark{
+		padding-top: 40px;
+		height: auto;
+		background-size: cover;
+		padding-bottom: 40px;
+	}
+
+	.dark-header{
+		font-size: 33px;
+	}
+
+	.anesthesia, .best{
+		height: auto;
+		background-size: cover;
+	}
+
+	.sevoran .text-right{
+		text-align: left!important;
+		margin-bottom: 30px;
+	}
+
+	.sevoran{
+		padding-bottom: 0px;
+	}
+
+	footer .btn-gen{
+		margin-top: 30px;
+	}
+
+	footer{
+		padding-bottom: 40px;
+	}
+
+	footer .text-right{
+		text-align: center!important;
+	}
+
+	#footer-form{
+		text-align: center;
+		margin-left: 0px;
+	}
+
+	#footer-form input{
+		margin-right: 0px;
+	}
+
+	footer #phone-error{
+		left: 50%;
+		transform: translateX(-50%);
+		width: 100%;
+	}
+
+	footer{
+		text-align: center!important;
+	}
+
+	.copy{
+		margin-top: 30px;
+	}
 
 }
 
-@media only screen and (min-width : 480px) and (max-width : 767px) {
+@media only screen and (min-width : 576px) and (max-width : 767px) {
+
+	h1 br{
+		display: none;
+	}
+
+	h1{
+		font-size: 50px;
+	}
+
+	.banner-decor{
+		margin-left: -680px;
+	}
+
+	#main-form input, #main-form button{
+		width: 230px;
+	}
+
+	.portfolio .col-md-6{
+		margin-top: 30px!important;
+	}
+
+	.education .banner-decor{
+		margin-left: -1050px;
+	}
+
+	.docs-slider-wrapper{
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.docs-slider{
+		width: 100%;
+	}
+
+	.docs-slider-wrapper .left{
+		left: -40px
+	}
+
+	.docs-slider-wrapper .right{
+		right: -40px;
+	}
+
+	.recom-image{
+		width: 100%;
+		margin-bottom: 30px;
+	}
+
+	.education .gen-text{
+		font-size: 16px;
+	}
+
+	.education .banner-decor{
+		background-position: right 400px center;
+	}
+
+	.dark{
+		padding-top: 40px;
+	}
+
+	.dark-header{
+		font-size: 36px;
+	}
+
+	.anesthesia, .best{
+		height: auto;
+		background-size: cover;
+	}
+
+	footer .btn-gen{
+		margin-top: 30px;
+	}
+
+	footer{
+		padding-bottom: 40px;
+	}
+
+	footer .text-right{
+		text-align: center!important;
+	}
+
+	#footer-form{
+		text-align: center;
+	}
+
+	#footer-form input{
+		margin-right: 0px;
+	}
+
+	footer #phone-error{
+		left: 50%;
+		transform: translateX(-50%);
+		width: 100%;
+	}
+
+	.right{
+		right: 0px;
+	}
 }
 
 @media only screen and (min-width : 768px) and (max-width : 991px) {
+
+	h1 br{
+		display: none;
+	}
+
+	h1{
+		font-size: 50px;
+	}
+
+	.docs-slider-wrapper{
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.docs-slider{
+		width: 100%;
+	}
+
+	.docs-slider-wrapper .left{
+		left: -40px
+	}
+
+	.docs-slider-wrapper .right{
+		right: -40px;
+	}
+
+	.recom-image{
+		width: 100%;
+		margin-bottom: 30px;
+	}
+
+	.education .gen-text{
+		font-size: 16px;
+	}
+
+	.education .banner-decor{
+		background-position: right 400px center;
+	}
+
+	.dark{
+		padding-top: 40px;
+	}
+
+	.dark-header{
+		font-size: 38px;
+	}
+
+	.anesthesia{
+		height: auto;
+		background-size: cover;
+	}
+
+	footer .btn-gen{
+		margin-top: 30px;
+	}
+
+	footer{
+		padding-bottom: 40px;
+	}
+
+	.copy{
+		margin-top: 30px;
+	}
+
 }
 
 @media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+	.dark-header{
+		font-size: 46px;
+	}
+
+	.docs-slider-wrapper{
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.docs-slider{
+		width: 100%;
+	}
+
+	.docs-slider-wrapper .left{
+		left: -40px
+	}
+
+	.docs-slider-wrapper .right{
+		right: -40px;
+	}
+
+	.recom-image{
+		width: 100%;
+	}
+
+	.right{
+		right: -30px;
+	}
 }
 
 @media only screen and (min-width : 1921px){
