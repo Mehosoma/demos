@@ -481,7 +481,8 @@ header {
     width: 100%;
     max-width: 500px;
     height: 354px;
-    margin-top: 7px; }
+    margin-top: 7px;
+    border: none; }
   .recom .gen-text {
     margin-bottom: 10px; }
 
