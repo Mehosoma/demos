@@ -2,18 +2,59 @@
 $(document).ready(function(){
     $('.portfolio-more').on('click',function(e){
         e.preventDefault();        
-          $('.fix-height').animate({
-              height: 'toggle'
-            }, 600, function() {
-        });                    
+         $( ".fix-height" ).slideDown( "slow" );
+       
+        $('.portfolio-more').addClass('d-none')                   
     });
 
     //Mask phone
-    $(".main-phone").mask("8 (999) 999-9999");
+    $(".main-phone").mask("+7(999)999-9999", {autoclear: false});
+
+    jQuery.validator.addMethod("checkMask", function(value, element) {
+      return /\+\d{1}\(\d{3}\)\d{3}-\d{4}/g.test(value); 
+    });
+
+    $.validator.addClassRules({
+      'main-phone': {
+          checkMask: true
+        }
+    });
     
 
-    $('#footer-form').validate();
-    $('#main-form').validate();
+    $("#footer-form").validate({
+        submitHandler: function(form) { 
+            var formNm = $('#footer-form');
+            $.ajax({
+                type: 'POST',
+                url: 'send.php', // Обработчик формы отправки
+                data: formNm.serialize(),
+                success: function (data) {
+                    $("#footer-form").find('#phone-error').html('Данные отправлены. Спасибо за заявку!');
+                    $("#footer-form").find('#phone-error').css('display','block');
+                    jQuery(formNm)[0].reset();
+                }
+            });
+            return false;
+        }
+    });    
+
+    $("#main-form").validate({
+        submitHandler: function(form) {
+            var formNm = $('#main-form');
+            $.ajax({
+                type: 'POST',
+                url: 'send.php', // Обработчик формы отправки
+                data: formNm.serialize(),
+                success: function (data) {
+                    $("#main-form").find('#phone-error').html('Данные отправлены. Спасибо за заявку!');
+                    $("#main-form").find('#phone-error').css('display','block');
+                    jQuery(formNm)[0].reset();
+                }
+            });
+            return false;        
+        }
+    });
+
 });
 
 //Slider
