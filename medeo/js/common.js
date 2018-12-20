@@ -2,7 +2,7 @@
 $(document).ready(function(){
     $('.portfolio-more').on('click',function(e){
         e.preventDefault();        
-         $( ".fix-height" ).slideDown( "slow" );
+         $( ".fix-height" ).slideDown( "fast" );
        
         $('.portfolio-more').addClass('d-none')                   
     });
