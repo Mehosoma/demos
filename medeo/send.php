@@ -6,7 +6,7 @@ $phone = htmlspecialchars($phone);
 $phone = urldecode($phone);
 $phone = trim($phone);
 
-$address = "freenincha@yandex.ru";
+$address = "jumenchikova@mail.ru";
 $sub = "Сообщение с сайта MedeoDent";
 
 $mes = "Сообщение с сайта MedeoDent \n
