@@ -53,3 +53,38 @@ $('.left').click(function(){
 $('.right').click(function(){
   $('.slider-p').slick('slickNext');
 })
+
+
+//Sticky menu
+$(document).ready(function(){
+	var $menu = $('.second-row');
+	$(window).scroll(function(){
+		if ( $(this).scrollTop() > 10 && $menu.hasClass('normal') ){
+			$menu.removeClass('normal').addClass('fix');
+		}
+		else if($(this).scrollTop() <= 10 && $menu.hasClass('fix')) {
+			$menu.removeClass('fix').addClass('normal');
+		}
+	});
+});
+
+
+//ScrollToSection
+$('.nav-page a[href^="."]').click(function(){
+  //Сохраняем значение атрибута href в переменной:
+  var target = $(this).attr('href');
+  $('html, body').animate({scrollTop: $(target).offset().top-100}, 1000);
+return false;
+});
+
+//Show-hide menu
+$(document).ready(function(){
+    $('.click-mobile').on('click',function(e){
+        e.preventDefault();        
+          $('.main-menu').animate({
+              height: 'toggle'
+            }, 600, function() {
+          });         
+        $("header .menu-toggle-button").toggleClass('is-active');             
+    });
+});

@@ -1,4 +1,138 @@
-@media only screen and (min-width : 0px) and (max-width : 479px) {
+@media only screen and (min-width : 0px) and (max-width : 767px) {
+
+	header .main-menu{
+		position: absolute;		
+		top: 60px;
+		right: 0px;
+		margin-left: 0px;	
+		margin-top: 0px;
+		width: 250%;
+		background-color: #fff;				
+		padding: 0px;
+		display: none;
+	}
+
+	header .main-menu ul{
+		display: block!important;
+	}
+
+	header .main-menu ul li{
+		padding: 10px 0px;
+		text-align: center;
+		margin-left: 0px;
+	}
+
+	header .logo img{
+		width: 100%;
+	}
+
+	.first-row .row{
+		height: 76px;
+	}
+
+	h1{
+		font-size: 40px;
+		margin-top: 180px;
+	}
+
+	.banner{
+		background-image: url('../img/banner-tablet.jpg');
+		background-position: center top;
+		height: 690px;
+	}
+
+	.banner .btn-outline{
+		width: 100%;
+	}
+
+	.services-list .services-field{
+		width: 60%;
+		font-size: 14px;
+	}
+
+	.services-list span{
+		font-size: 14px;
+	}
+
+	.services-cost{
+		margin-left: -20px;
+	}
+
+	.services-list li{
+		padding: 0px;
+	}
+
+	.services-tb-fix{
+		margin-top: 50px;
+		padding-bottom: 100px;
+	}
+
+	.remark{
+		left: 20px;
+		padding-right: 20px;
+	}
+
+	.remark br{
+		display: none;
+	}
+
+	.order{
+		height: auto;
+		padding-bottom: 50px;
+	}
+
+	.page-form input{
+		width: 100%;
+	}
+
+	.btn__order{
+		width: 100%;		
+	}
+
+	#contacts-form input, .page-form input{
+		margin-right: 0px;
+		margin-bottom: 30px;
+	}
+
+	.disclaim{
+		margin-top: 30px;
+	}
+
+	.l-container br{
+		display: none;
+	}
+
+	.contacts{
+		height: auto;
+		padding-bottom: 80px;
+	}
+
+	.contacts-header{
+		margin-top: 30px;
+	}
+
+	.map{
+		margin-top: 50px;
+	}
+
+	footer{
+		padding-bottom: 50px;
+	}
+
+	
+	.footer-menu_left{
+		margin-right: 0px;
+		margin-left: 0px;
+	}
+
+	.footer-menu__second{
+		margin-top: 0px;
+	}
+
+	.footer-menu{
+		display: block;
+		width: 100%;
+	}
 
 }
 
@@ -6,7 +140,164 @@
 }
 
 @media only screen and (min-width : 768px) and (max-width : 991px) {
+
+	.header_link br{
+		display: none;
+	}
+
+	.header_link{
+		line-height: 20px;
+		background-position: left center; 
+	}
+
+	.adr__second{
+		margin-left: 0px;
+	}
+
+	.adr{
+		margin-top: 0px;
+	}
+	
+	.phone{
+		position: relative;
+		margin-top: 0px;
+		top: 20px;	
+		display: inline;	
+	}
+
+	.first-row .pr-0{
+		text-align: right;
+		padding-right: 15px!important;
+	}
+
+	header .main-menu{
+		position: absolute;		
+		top: 60px;
+		left: 0px;
+		margin-left: 0px;	
+		margin-top: 0px;
+		width: 100%;
+		background-color: #fff;				
+		padding: 0px;
+		display: none;
+	}
+
+	header .main-menu ul{
+		display: block!important;
+	}
+
+	header .main-menu ul li{
+		padding: 10px 0px;
+	}
+
+	.banner{
+		background-image: url('../img/banner-tablet.jpg');
+		background-position: center top;
+		height: 690px;
+	}
+
+	.services-tb-fix{
+		margin-top: 50px;
+		padding-bottom: 100px;
+	}
+
+	.page-form input{
+		width: 330px;
+	}
+
+	.btn__order{
+		width: 330px;
+		float: right;
+		margin-top: 30px;
+	}
+
+	.page-form .phone-field{
+		margin-right: 0px;
+	}
+
+	.disclaim{
+		width: 330px;
+		float: left;
+		margin-left: 0px;
+		margin-top: 30px;
+	}
+
+	.l-container br{
+		display: none;
+	}
+
+	.contacts{
+		height: auto;
+		padding-bottom: 80px;
+	}
+
+	.contacts-tablet-fix{
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+
+	.contacts-form-header{
+		margin-top: 0px;
+	}
+
+	footer{
+		padding-bottom: 50px;
+	}
+
+	.logo-f img{
+		width: 100%
+	}
+
+	.copy{
+		font-size: 11px;
+	}
+
+	.footer-menu_left{
+		margin-right: 0px;
+		margin-left: 0px;
+	}
+
+	.footer-menu__second{
+		margin-top: 0px;
+	}
+
+
+
 }
 
 @media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+	.work-h{
+		margin-left: 0px;
+	}
+
+	.phone{
+		margin-left: -25px;
+	}
+
+	.services-list li{
+		padding-right: 0px;
+		padding-left: 0px;
+	}
+
+	.page-form input{
+		width: 290px;
+	}
+
+	.btn__order{
+		width: 290px;
+	}
+
+	.l-container{
+		width: 290px;
+	}
+
+	.l-container br{
+		display: none;
+	}
+
+	.footer-menu_left {
+		margin-right: 50px;
+		margin-left: 0px;
+	}
 }

@@ -100,6 +100,8 @@ h2
 	letter-spacing: 1.8px
 
 /***************************************************Header************************************/
+header
+	width: 100%
 .header_link
 	font-size: 14px
 	line-height: 22px
@@ -137,8 +139,15 @@ h2
 	color: $blue
 .second-row
 	height: 71px
+	position: fixed
+	background-color: #fff
+	z-index: 10000	
+	width: 100%
 	.row
 		align-items: center
+.fix
+	margin-top: -76px
+	box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.2)
 .main-menu
 	ul
 		justify-content: flex-end
@@ -160,6 +169,7 @@ h2
 	background-image: url('../img/banner.jpg')
 	background-repeat: no-repeat
 	background-position: center center
+	background-size: cover
 	.btn-outline
 		margin-top: 28px
 .main-header_desc
@@ -178,7 +188,7 @@ h2
 	.main-text
 		margin-bottom: 24px
 		letter-spacing: 0.6px
-	.col-4
+	.col-md-4
 		text-align: center
 		margin-bottom: 40px
 .know-icon
@@ -258,6 +268,7 @@ h2
 		font-size: 14px
 		display: block
 		line-height: 0px
+		font-style: normal
 		
 
 
@@ -268,6 +279,7 @@ h2
 	background-image: url('../img/order-bg.jpg')
 	background-repeat: no-repeat
 	background-position: center center
+	background-size: cover
 	padding-top: 94px
 	h2
 		color: #fff
@@ -326,6 +338,7 @@ h2
 	position: absolute
 	opacity: 0
 	cursor: pointer
+	display: none
 .checkmark
 	position: absolute
 	top: 8px
@@ -363,7 +376,7 @@ h2
 	img
 		width: 100%
 		height: auto
-	.col-6
+	.col-12
 		margin-bottom: 30px	
 .right, .left
 	width: 68px
@@ -426,6 +439,9 @@ h2
 	padding-top: 88px	
 	h2
 		margin-bottom: 35px
+.map
+	width: 100%
+	height: 410px
 .contacts-header
 	font-size: 18px
 	letter-spacing: 0.8px
@@ -458,7 +474,7 @@ h2
 		height: 56px
 		background-color: #fff
 		border: 1px solid #cdcdcd
-		color: #fff
+		color: #222
 		margin-bottom: 10px
 	::-webkit-input-placeholder 
 		color: #cdcdcd
@@ -529,3 +545,102 @@ footer
 
 .hidden
 	display: none
+
+
+/***********************************************ButtonMobile************************************/
+.menu-toggle-button
+	width: 50px
+	height: 40px
+	float: right
+	background-color: transparent
+	border-radius: 7px
+	padding-top: 5px
+	border: none
+	text-indent: -9999px
+	-webkit-appearance: none
+	-moz-appearance: none
+	appearance: none
+	position: relative
+	display: block
+	overflow: hidden
+	margin-top: 10px	
+	margin-left: -17px
+
+
+.menu-toggle-button span 
+	display: block
+	height: 3px
+	background: $blue
+	position: absolute
+	top: 15px
+	left: 10px
+	right: 10px
+	-webkit-transition: background 0s 0.3
+	-o-transition: background 0s 0.3
+	transition: background 0s 0.3
+
+
+.menu-toggle-button span::before, .menu-toggle-button span::after
+	content: ""
+	display: block
+	width: 100%
+	height: 3px
+	background: $blue
+	position: absolute
+	left: 0px
+	-webkit-transition-duration: 0.3s, 1s
+	-o-transition-duration: 0.3s, 1s
+	transition-duration: 0.3s, 1s
+	-webkit-transition-delay: 0s, 0.3s
+	-o-transition-delay: 0s, 0.3s
+	transition-delay: 0s, 0.3s
+
+
+.menu-toggle-button span::before 
+	top: -10px
+
+.menu-toggle-button span::after 
+	bottom: -10px
+
+.menu-toggle-button.is-active span
+	background: none
+
+.menu-toggle-button.is-active span::before
+	top: 0
+	-webkit-transform: rotate(45deg)
+	-ms-transform: rotate(45deg)
+	transform: rotate(45deg)
+	-webkit-transition-property: top, -webkit-transform
+	transition-property: top, -webkit-transform
+	-o-transition-property: top, transform
+	transition-property: top, transform
+	transition-property: top, transform, -webkit-transform
+	-webkit-transition-delay: 0s, 0.3s
+	-o-transition-delay: 0s, 0.3s
+	transition-delay: 0s, 0.3s
+	-webkit-transition-duration: 0.3s, 0.3s
+	-o-transition-duration: 0.3s, 0.3s
+	transition-duration: 0.3s, 0.3s
+	background: $blue
+
+
+.menu-toggle-button.is-active span::after 
+	bottom: 0
+	background: $blue
+	-webkit-transform: rotate(-45deg)
+	-ms-transform: rotate(-45deg)
+	transform: rotate(-45deg)
+	-webkit-transition-property: bottom, -webkit-transform
+	transition-property: bottom, -webkit-transform
+	-o-transition-property: bottom, transform
+	transition-property: bottom, transform
+	transition-property: bottom, transform, -webkit-transform
+	-webkit-transition-delay: 0s, 0.3s
+	-o-transition-delay: 0s, 0.3s
+	transition-delay: 0s, 0.3s
+	-webkit-transition-duration: 0.3s, 0.3s
+	-o-transition-duration: 0.3s, 0.3s
+	transition-duration: 0.3s, 0.3s
+
+.menu-toggle-button:focus
+	outline: none !important
