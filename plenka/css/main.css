@@ -516,7 +516,7 @@ header {
   height: auto;
 }
 
-.slider-p .col-12 {
+.slider-p .col-12, .slider-p .col-6 {
   margin-bottom: 30px;
 }
 
