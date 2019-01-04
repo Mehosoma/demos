@@ -10,8 +10,8 @@ $(document).ready(function(){
     //Mask phone
     $(".main-phone").mask("+7(999)999-9999", {autoclear: false});
 
-    jQuery.validator.addMethod("checkMask", function(value, element) {
-      return /\+\d{1}\(\d{3}\)\d{3}-\d{4}/g.test(value); 
+    jQuery.validator.addMethod("checkMask", function(value, element) {      
+      return /\+\d{1}\(\d{3}\)\d{3}-\d{4}/g.test(value);      
     });
 
     $.validator.addClassRules({
@@ -28,9 +28,10 @@ $(document).ready(function(){
                 type: 'POST',
                 url: 'send.php', // Обработчик формы отправки
                 data: formNm.serialize(),
-                success: function (data) {
-                    $("#footer-form").find('#phone-error').html('Данные отправлены. Спасибо за заявку!');
-                    $("#footer-form").find('#phone-error').css('display','block');
+                success: function (data) {                    
+                    $("#footer-form").find('.error').html('Данные отправлены. Спасибо за заявку!');
+                    $("#footer-form").find('.error').css('display','block');
+                    $("#footer-form").find('.error').css('color','green');
                     jQuery(formNm)[0].reset();
                 }
             });
@@ -38,7 +39,7 @@ $(document).ready(function(){
         }
     });    
 
-    $("#main-form").validate({
+    $("#main-form").validate({      
         submitHandler: function(form) {
             var formNm = $('#main-form');
             $.ajax({
@@ -46,27 +47,36 @@ $(document).ready(function(){
                 url: 'send.php', // Обработчик формы отправки
                 data: formNm.serialize(),
                 success: function (data) {
-                    $("#main-form").find('#phone-error').html('Данные отправлены. Спасибо за заявку!');
-                    $("#main-form").find('#phone-error').css('display','block');
+                    $("#main-form").find('.error').html('Данные отправлены. Спасибо за заявку!');
+                    $("#main-form").find('.error').css('display','block');
+                    $("#main-form").find('.error').css('color','green');
                     jQuery(formNm)[0].reset();
                 }
             });
-            return false;        
-        }
+           
+            return false;                 
+        }         
     });
 
 });
 
+ function isValid() {
+    $("#main-form").find('.error').css('color','red');
+   }
+   
+
 //Slider
 $(document).ready(function(){
 $('.edu-slider').slick({
-      infinite: true,
-      slidesToShow: 3,
-      slidesToScroll: 3,  
+      infinite: true,    
       autoplay: false,     
       autoplaySpeed: 2000,
       arrows: false, 
-      dots: false,     
+      dots: false, 
+      variableWidth: true,
+      slidesToShow: 2,
+      slidesToScroll: 1, 
+      centerMode: true,   
        responsive: [
           {
             breakpoint: 1200,
