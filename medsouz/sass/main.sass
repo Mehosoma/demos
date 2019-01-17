@@ -1,0 +1,906 @@
+@import "bourbon/bourbon"
+
+$blue: #0698bd
+$link: #222
+$text: #171617
+$gray: #bbb
+$roboto: 'RobotoRegular', sans-serif
+$roboto-bold: 'Roboto-Bold', sans-serif
+$roboto-light: 'Roboto-Light', sans-serif
+
+
+html
+	width: 100%
+	height: 100%
+	overflow-x: hidden
+body
+	width: 100%
+	height: auto
+	min-width: 320px	
+	margin: 0 auto
+	position: relative
+	font-family: $roboto
+	line-height: 1.2
+	-webkit-font-smoothing: antialiased
+	background-color: #fff	
+	a:hover, a:focus, a:active
+		text-decoration: none
+		outline: none
+	input:focus, input:active
+		text-decoration: none
+		outline: none
+	button:focus, button:active
+		text-decoration: none
+		outline: none
+	textarea:focus, textarea:active
+		text-decoration: none
+		outline: none
+	a
+		display: inline-block
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out
+	ul, ol
+		padding: 0px
+		margin: 0px
+		list-style-type: none
+	button
+		border: none
+		cursor: pointer
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out
+	hr
+		border: none	
+
+.pixel
+	background: url('../img/page-4.jpg') no-repeat top center
+	width: 1920px
+	height: 12800px
+	position: absolute
+	z-index: 1000000
+	display: none
+	left: 50%
+	top: 0
+	margin-left: -960px
+	opacity: 0.5
+	margin-top: 0px
+
+
+/***************************************************GeneralStyles************************************/
+.btn-outline
+	width: 200px
+	height: 47px
+	border: 2px solid $blue
+	border-radius: 3px
+	text-align: center
+	line-height: 43px
+	color: $blue
+	font-size: 16px
+	letter-spacing: 0.5px
+.btn-outline:hover
+	background: $blue
+	color: #fff
+.btn-filled
+	width: 305px
+	height: 57px
+	background-color: $blue
+	color: #fff
+	font-size: 16px
+	border-radius: 3px
+	border: 1px solid $blue
+.btn-filled:hover
+	background-color: #12728a
+.subheader
+	text-align: center
+	font-size: 35px
+	font-family: $roboto-bold
+	letter-spacing: 1.4px
+	margin-bottom: 4px
+.subheader_desc
+	font-size: 18px
+	color: $gray
+	text-align: center
+	display: block
+	letter-spacing: 0.6px
+.main-text
+	font-size: 16px
+	line-height: 24px
+	color: $text
+	letter-spacing: 0.6px
+.breadcrumb
+	background-color: transparent
+	padding-left: 0px
+	margin-top: 7px
+	margin-bottom: 2px
+	a
+		color: $gray
+		font-size: 14px
+		letter-spacing: 0.2px
+.breadcrumb-item + .breadcrumb-item::before
+	color: $gray
+	padding-right: 0px
+.breadcrumb-item.active
+	color: #000
+	font-size: 14px
+	letter-spacing: 0.5px
+.breadcrumb-item + .breadcrumb-item
+	padding-left: 0.1rem
+	
+/***************************************************Header************************************/
+.first-line
+	height: 129px
+	.btn-outline
+		margin-left: -30px
+.h-col
+	align-items: center
+	display: flex
+.logo
+	margin-top: 19px
+	a
+		display: block
+.h-phone
+	span
+		font-size: 14px
+		line-height: 25px
+		display: block
+		letter-spacing: 0.5px
+		color: $text
+		text-shadow: 0.5px 0px $text
+	a
+		font-family: $roboto-bold
+		font-size: 16px
+		color: $link
+		letter-spacing: 0.5px
+	a:hover
+		color: $blue
+.h-phone-f
+	margin-left: 32px
+.h-phone-s
+	margin-left: -28px
+.h-phone-t
+	margin-left: 4px
+.menu-line
+	background-color: $blue
+	height: 44px
+.main-menu
+	a
+		color: #fff
+		font-size: 16px
+		border-bottom: 1px solid transparent
+	a:hover
+		border-bottom: 1px solid #fff
+	ul
+		display: flex
+		justify-content: space-between
+		align-items: center
+		
+
+/***************************************************Banner************************************/
+.banner
+	width: 100%
+	height: 705px
+	background-image: url('../img/banner-bg.jpg')
+	background-repeat: no-repeat
+	background-position: center center
+	padding-top: 126px
+.main-header
+	font-size: 35px
+	line-height: 50px
+	text-align: center
+	letter-spacing: 1.4px
+.banner-list
+	margin-top: 9px
+	span
+		font-size: 18px
+		line-height: 36px
+		padding-left: 15px
+		letter-spacing: 0.7px
+	li
+		position: relative
+	li:before
+		display: block
+		content: ''
+		position: absolute
+		width: 6px
+		height: 6px
+		border-radius: 100%
+		background-color: #000
+		top: 50%
+		margin-top: -3px
+.banner-list-s
+	margin-left: 29px
+#banner-form
+	width: 100%
+	min-height: 132px
+	background-color: #f1f1f1
+	padding: 20px
+	margin-top: 53px
+	border-radius: 3px
+	input
+		width: 758px
+		height: 57px
+		border-radius: 3px
+		border: 1px solid $gray
+		padding: 0px 21px
+		font-size: 14px
+		letter-spacing: 0.5px
+	::-webkit-input-placeholder 
+		color: $gray		
+		font-size: 14px	
+		letter-spacing: 0.5px
+		font-family: $roboto	
+	::-moz-placeholder
+		color: $gray	
+		font-size: 14px
+		font-family: $roboto
+		letter-spacing: 0.5px		
+	:-moz-placeholder 
+		color: $gray	
+		font-size: 14px	
+		font-family: $roboto
+		letter-spacing: 0.5px	
+	:-ms-input-placeholder      
+		color: $gray	
+		font-size: 14px	
+		font-family: $roboto
+		letter-spacing: 0.5px
+.btn-filled__banner
+	margin-left: 6px
+	width: 330px
+	letter-spacing: 0.6px
+.banner-form_header
+	display: block
+	font-size: 20px
+	text-shadow: 0.5px 0px #000	
+	letter-spacing: 0.8px
+	margin-bottom: 8px
+
+/***************************************************Services************************************/
+.services
+	padding: 100px 0px 45px 0px
+	.col-xl-2
+		display: flex
+.services-block
+	text-align: center
+	margin-bottom: 40px
+	width: 100%
+	span
+		font-size: 16px
+		line-height: 24px
+		display: block
+		color: $text
+		margin-top: 15px
+		letter-spacing: 0.5px
+		text-shadow: 0.5px 0px $text
+.services-block_image
+	display: flex
+	height: 54px
+	justify-content: center
+	align-items: flex-end
+.services-row
+	margin-top: 50px
+
+/***************************************************Work********************************************/
+.work
+	padding-bottom: 74px
+.work-row
+	margin-top: 48px
+	.col-xl-6
+		margin-bottom: 17px
+.circle-block-number
+	width: 82px
+	height: 82px
+	display: inline-block
+	background-color: $blue
+	border-radius: 50%	
+	text-align: center
+	flex-shrink: 0	
+	margin-top: 2px
+	span
+		font-size: 50px
+		color: #fff
+		padding: 11px 0px
+		display: block
+.circle-block-content_header
+	font-size: 18px
+	font-family: $roboto-bold
+	text-transform: uppercase
+	letter-spacing: 0.7px
+	display: block	
+.circle-block-content
+	margin-left: 15px
+hr
+	width: 100px
+	height: 2px
+	background-color: $blue
+	margin-left: 0px
+	margin-top: 8px
+	margin-bottom: 12px	
+
+
+/***************************************************About************************************/
+.about
+	width: 100%
+	height: 652px
+	background-image: url('../img/about-bg.jpg')
+	background-repeat: no-repeat
+	background-position: center center
+	padding-top: 100px
+.about-number
+	font-size: 159px
+	color: $blue
+	font-family: $roboto-light
+	letter-spacing: 5.3px
+.about-desc
+	font-size: 30px
+	line-height: 38px
+	color: $text
+	margin-left: 37px
+	margin-top: -5px
+	letter-spacing: 1.2px
+.about-col
+	margin: 0px 13%
+	align-items: center
+	margin-top: 31px
+	margin-bottom: 45px	
+.about-block
+	text-align: center	
+.about-small	
+	font-size: 70px
+	font-family: $roboto-light
+	color: $blue
+	letter-spacing: 1px
+	display: block
+
+
+/***************************************************Consult************************************/
+.consult
+	padding: 100px 0px 82px 0px
+#consult-form
+	margin-top: 48px
+	input
+		width: 100%
+		height: 57px
+		padding: 0px 15px
+		letter-spacing: 0.6px
+	::-webkit-input-placeholder 
+		color: $gray		
+		font-size: 14px
+		letter-spacing: 0.6px		
+	::-moz-placeholder
+		color: $gray	
+		font-size: 14px
+		letter-spacing: 0.6px		
+	:-moz-placeholder 
+		color: $gray	
+		font-size: 14px
+		letter-spacing: 0.6px
+	:-ms-input-placeholder      
+		color: $gray		
+		font-size: 14px
+		letter-spacing: 0.6px		
+.btn-filled__consult
+	margin: 30px auto
+	width: 380px
+	letter-spacing: 1px
+
+
+/***************************************************News************************************/
+.news
+	width: 100%
+	height: 657px
+	background-color: #f4f4f4
+	padding-top: 100px
+.left
+	width: 17px
+	height: 32px	
+	position: absolute
+	top: 50%
+	margin-top: -27px
+	left: -43px
+.right
+	width: 17px
+	height: 32px	
+	position: absolute
+	top: 50%
+	margin-top: -27px
+	right: -43px
+.right:hover, .left:hover
+	cursor: pointer
+.right .st0, .left .st0
+	fill: $text
+	-moz-transition: all 0.3s ease-out
+	-o-transition: all 0.3s ease-out
+	-webkit-transition: all 0.3s ease-out
+	transition: all 0.3s ease-out
+.right:hover .st0, .left:hover .st0,  
+	fill: $blue	
+.slider-image
+	height: 130px
+	width: auto
+.slider-header
+	font-family: $roboto-bold
+	font-size: 18px
+	line-height: 22px
+	display: block
+	margin-top: 10px
+	letter-spacing: 0.7px
+.read-more
+	a
+		color: $text
+		font-size: 16px
+		letter-spacing: 0.6px
+	.st1
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out
+	a:hover
+		color: $blue
+	a:hover	.st1
+		fill: $blue
+	svg
+		width: 17px
+		height: 8px
+		margin-left: 4px
+.slider
+	margin-top: 52px
+	.main-text
+		margin-bottom: 12px
+	.slick-slide
+		margin: 0 15px
+	.slick-list
+		margin: 0 -15px
+	.slick-dots
+		text-align: center
+		z-index: 1000
+		margin-top: 36px
+		button
+			font-size: 0px
+			width: 12px
+			height: 12px
+			background-color: $gray
+			border-radius: 50%
+		li
+			display: inline-block
+			margin: 0px 2px					
+		.slick-active
+			button
+				background-color: $blue
+
+/***************************************************Footer************************************/
+footer
+	width: 100%
+	min-height: 431px
+	background-color: $text
+	padding-top: 60px
+	hr
+		margin-bottom: 29px
+	a
+		font-size: 14px
+		color: #fff
+		padding-left: 18px
+		letter-spacing: 0.8px
+	a:hover
+		color: $blue
+	li
+		position: relative
+		margin-bottom: 8px
+	li:before
+		display: block
+		position: absolute
+		content: ''		
+		width: 12px
+		height: 12px
+		border: 1px solid #fff
+		border-radius: 3px
+		top: 4px
+	li:after
+		display: block
+		content: '\2713'
+		position: absolute
+		left: 0px
+		color: #fff
+		top: -2px
+		font-weight: 600
+.footer-header
+	color: #fff
+	font-size: 18px
+	line-height: 24px
+	text-transform: uppercase
+	letter-spacing: 0.8px
+.footer-desc
+	font-size: 14px
+	color: #fff
+	line-height: 21px
+	letter-spacing: 0.6px
+.footer-phone
+	padding-left: 0px
+	letter-spacing: 0.6px
+.footer-phone-f
+	margin-top: 14px
+	margin-bottom: 10px
+.footer-phone_icons
+	background-image: url('../img/wa.png'), url('../img/viber.png')
+	background-repeat: no-repeat
+	background-position: left center, left 26px center
+	padding-left: 49px
+	margin-top: 13px
+.footer-mail
+	background-image: url('../img/mail.png')
+	background-repeat: no-repeat
+	background-position: left center
+	padding-left: 25px
+	margin-top: 11px
+.footer-adr
+	background-image: url('../img/marker.png')
+	background-repeat: no-repeat
+	background-position: left 5px center
+	padding-left: 24px
+	margin-top: 10px
+#footer-form
+	margin-top: -2px
+	input
+		width: 100%
+		height: 47px
+		border: 2px solid #fff
+		background-color: transparent	
+		color: #fff
+		padding: 0px 15px
+		border-radius: 3px
+		margin-bottom: 6px
+		letter-spacing: 0.8px
+	::-webkit-input-placeholder 
+		color: #fff	
+		font-size: 14px	
+		letter-spacing: 0.8px	
+	::-moz-placeholder
+		color: #fff		
+		font-size: 14px	
+		letter-spacing: 0.8px	
+	:-moz-placeholder 
+		color: #fff	
+		font-size: 14px	
+		letter-spacing: 0.8px	
+	:-ms-input-placeholder      
+		color: #fff	
+		font-size: 14px
+		letter-spacing: 0.8px	
+	button
+		width: 100%
+		margin-top: 5px
+		height: 47px
+		letter-spacing: 0.6px
+		margin-bottom: 21px
+.polite
+	padding-left: 0px
+
+/********************************************************************************************************/
+/***************************************************Service-Main Page************************************/
+/********************************************************************************************************/
+.service-main
+	h2
+		text-align: left
+		margin-bottom: 45px
+.cat-menu
+	background-color: $blue
+	padding: 28px 20px 21px 20px
+	hr
+		background-color: #fff
+		width: 58px
+		margin-top: 6px
+		margin-bottom: 12px	
+	li
+		border-bottom: 1px solid #fff
+		height: 32px
+		line-height: 32px
+	a
+		color: #fff
+		font-size: 14px
+		letter-spacing: 0.6px
+	a:hover
+		font-family: $roboto-bold
+.cat-menu_header
+	font-size: 18px
+	color: #fff
+	font-family: $roboto-bold
+.service-links
+	background-color: #f4f4f4
+	padding: 28px 20px 16px 23px
+	margin-bottom: 22px
+	ul
+		display: inline-block
+	ul:nth-child(2)
+		margin-left: 71px
+	li
+		margin-bottom: 17px
+	a
+		font-size: 16px
+		color: #000
+		letter-spacing: 0.6px
+	a:hover
+		color: $blue
+.service-image
+	margin-top: 10px
+	margin-bottom: 22px
+.service-desc
+	line-height: 22px
+.service-types_header
+	font-size: 20px
+	font-family: $roboto-bold
+	color: $text
+	letter-spacing: 0.8px
+	margin-bottom: 25px
+	display: block
+.service-block_header
+	font-size: 16px
+	font-family: $roboto-bold
+	color: $text
+	letter-spacing: 0.6px
+	margin-bottom: 9px 
+	display: block
+.service-types_block
+	margin-bottom: 18px
+.main-text-mr
+	margin-top: 25px
+
+
+/***************************************************Service-Cost************************************/
+.service-cost
+	padding-top: 23px
+.nav-tabs
+	padding-left: 15px
+.nav-tabs
+	border: none
+.nav-tabs .nav-link
+	font-size: 23px
+	font-family: $roboto-bold
+	color: $gray
+	border: none
+	letter-spacing: 0.9px
+.nav-tabs .nav-link.active
+	color: $text
+	background-color: transparent
+.service-cost_table
+	min-height: 500px
+	background-color: #f4f4f4
+	margin-top: 22px	
+.cost-table_header
+	display: block
+	height: 53px
+	background-color: $blue
+	color: #fff
+	font-size: 18px
+	font-family: $roboto-bold
+	display: flex
+	align-items: center
+	padding-left: 20px
+	letter-spacing: 0.7px	
+.cost-field_header
+	font-size: 16px
+	font-family: $roboto-bold
+	color: $text
+	letter-spacing: 0.7px
+	margin-bottom: 15px
+	margin-top: 5px
+	display: block
+.cost-table_field
+	display: flex
+	justify-content: space-between
+	margin-bottom: 14px
+.cost-table_wrapper
+	padding-left: 20px
+	padding-top: 20px
+	padding-right: 20px
+	padding-bottom: 20px
+.cost-field_left, .cost-field_right
+	letter-spacing: 0.7px
+.cost-field_header_sec
+	margin-top: 20px
+.service__consult .btn-filled__consult
+	width: 224px
+.service__consult
+	padding-bottom: 47px
+
+/***************************************************Interesting************************************/
+.intr
+	padding-top: 20px
+	padding-bottom: 104px
+	img
+		height: 157px
+		width: auto
+.intr-row
+	margin-top: 48px
+.intr-header
+	font-size: 18px
+	font-family: $roboto-bold
+	color: $text
+	display: block
+	margin-top: 10px
+	letter-spacing: 0.6px
+.intr-header:hover
+	color: $blue
+.intr-cat
+	display: block
+	font-size: 14px
+	color: $text
+	letter-spacing: 0.4px
+	margin-top: 2px
+
+
+/********************************************************************************************************/
+/***************************************************About Page*******************************************/
+/********************************************************************************************************/
+.about-page-header
+	font-size: 20px
+	font-family: $roboto-bold
+	color: $text
+	letter-spacing: 0.8px
+	display: block
+	margin-bottom: 20px
+.about-page-block
+	margin-top: 85px
+/***************************************************Mission Block****************************************/
+.marker-list-wh
+	li
+		span:nth-child(1)
+			font-size: 16px
+			font-family: $roboto-bold
+			color: $text
+			letter-spacing: 0.4px
+			margin-bottom: 6px
+.marker-list
+	margin-bottom: 43px
+	li
+		position: relative	
+		margin-bottom: 14px
+		span:nth-child(1)
+			padding-left: 20px	
+	span
+		display: block	
+		letter-spacing: 0.7px	
+	li:before
+		display: block
+		position: absolute
+		content: ''		
+		width: 12px
+		height: 12px
+		border: 1px solid #000
+		border-radius: 3px
+		top: 4px
+	li:after
+		display: block
+		content: '\2713'
+		position: absolute
+		left: 0px
+		color: #000
+		top: -2px
+		font-weight: 600
+.row-circle .circle-block-number
+	background-repeat: no-repeat
+	background-position: center center
+.row-circle .col-circle:nth-child(1) .circle-block-number
+	background-image: url('../img/circle-1.png')
+.row-circle .col-circle:nth-child(2) .circle-block-number
+	background-image: url('../img/circle-2.png')
+.row-circle .col-circle:nth-child(3) .circle-block-number
+	background-image: url('../img/circle-3.png')
+.row-circle .col-circle:nth-child(4) .circle-block-number
+	background-image: url('../img/circle-4.png')
+.mission
+	padding-top: 39px
+	padding-bottom: 78px
+.mission-row
+	margin-top: 39px
+	.main-text
+		letter-spacing: 0.7px
+	.row-circle
+		margin-top: 37px
+		hr
+			margin-bottom: 7px
+		.col-xl-6
+			margin-bottom: 18px
+.mission-image
+	margin-top: 10px
+
+/********************************************************************************************************/
+/***************************************************News Page*******************************************/
+/********************************************************************************************************/
+.row-news
+	margin-top: 50px
+.news-main_col
+	display: flex
+	hr
+		margin-left: 0px
+		margin-top: 0px
+		margin-bottom: 5px
+.news-main_block
+	border-bottom: 1px solid $gray
+	margin-bottom: 30px
+	padding-bottom: 33px	
+	img
+		height: 273px
+		width: auto
+.news-main_header
+	display: flex
+	margin-top: 15px	
+.news-main_date
+	width: 54px
+	height: 53px
+	background-color: $blue
+	text-align: center
+	flex-shrink: 0
+	padding-top: 10px
+.date-number
+	font-size: 23px
+	color: #fff
+	font-family: $roboto-bold
+	line-height: 16px	
+.date-month
+	font-size: 14px
+	color: #fff	
+	line-height: 16px
+	display: block
+.news-main_subheader
+	font-size: 23px
+	line-height: 30px
+	font-family: $roboto-bold
+	color: $text
+	padding-left: 7px
+	letter-spacing: 1px
+.news-pages-counter
+	position: relative
+	display: inline-block
+	padding: 0px 20px
+	margin-top: 30px	
+	li
+		display: inline-block
+	span
+		font-size: 16px
+		width: 46px
+		height: 46px
+		display: inline-block
+		background-color: transparent
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out
+		text-align: center
+		padding-top: 12px
+	span:hover
+		cursor: pointer
+		color: $blue		
+	.page-active
+		color: #fff
+		background-color: $blue
+	.page-active:hover
+		color: #fff
+.left-counter, .right-counter
+	width: 13px
+	height: 25px
+	.st0
+		fill: $text
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out
+.left-counter:hover, .right-counter:hover
+	cursor: pointer
+	.st0
+		fill: $blue
+.left-counter
+	position: absolute
+	top: 10px
+	left: 0px
+.right-counter
+	position: absolute
+	top: 10px
+	right: -8px
+.news-pages_news
+	background-color: #fff
+
+.hidden
+	display: none
