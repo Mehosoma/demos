@@ -215,6 +215,11 @@
 		line-height: 20px;
 	}
 
+	.news{
+		padding-bottom: 80px;
+		height: auto;
+	}
+
 		
 }
 
@@ -429,6 +434,11 @@
 	.news-main_subheader{
 		font-size: 18px;
 		line-height: 20px;
+	}
+
+	.news{
+		padding-bottom: 80px;
+		height: auto;
 	}
 
 
