@@ -165,6 +165,8 @@ body
 .menu-line
 	background-color: $blue
 	height: 44px
+	ul
+		height: 44px
 .main-menu
 	a
 		color: #fff
@@ -419,8 +421,8 @@ hr
 .right:hover .st0, .left:hover .st0,  
 	fill: $blue	
 .slider-image
-	height: 130px
-	width: auto
+	width: 100%
+	height: auto
 .slider-header
 	font-family: $roboto-bold
 	font-size: 18px
@@ -595,7 +597,7 @@ footer
 		margin-bottom: 12px	
 	li
 		border-bottom: 1px solid #fff
-		height: 32px
+		min-height: 32px
 		line-height: 32px
 	a
 		color: #fff
@@ -626,6 +628,8 @@ footer
 .service-image
 	margin-top: 10px
 	margin-bottom: 22px
+	width: 100%
+	height: auto
 .service-desc
 	line-height: 22px
 .service-types_header
@@ -704,14 +708,24 @@ footer
 	width: 224px
 .service__consult
 	padding-bottom: 47px
+.click-cat-mobile
+	position: absolute
+	top: 18px
+	left: 10px
+	width: 29px
+	height: 25px
+	background-image: url('../img/cat-btn.png')
+	background-color: transparent
+	background-repeat: no-repeat
+	background-position: center center
 
 /***************************************************Interesting************************************/
 .intr
 	padding-top: 20px
 	padding-bottom: 104px
 	img
-		height: 157px
-		width: auto
+		width: 100%
+		height: auto
 .intr-row
 	margin-top: 48px
 .intr-header
@@ -805,6 +819,8 @@ footer
 			margin-bottom: 18px
 .mission-image
 	margin-top: 10px
+	width: 100%
+	height: auto
 
 /********************************************************************************************************/
 /***************************************************News Page*******************************************/
@@ -822,11 +838,17 @@ footer
 	margin-bottom: 30px
 	padding-bottom: 33px	
 	img
-		height: 273px
-		width: auto
+		width: 100%
+		height: auto
+		max-height: 273px
 .news-main_header
 	display: flex
-	margin-top: 15px	
+	margin-top: 15px
+	flex-wrap: wrap
+	.news-main_date
+		flex-basis: 10%
+	.news-main_subheader
+		flex-basis: 90%	
 .news-main_date
 	width: 54px
 	height: 53px
@@ -901,6 +923,163 @@ footer
 	right: -8px
 .news-pages_news
 	background-color: #fff
+
+
+/***************************************************ModalForm*******************************************/
+#modal-form
+	width: 587px
+	height: 635px
+	padding: 76px 60px
+	text-align: center
+	position: relative
+	.subheader
+		display: block
+	.subheader_desc
+		margin-bottom: 50px
+	input
+		width: 100%
+		height: 57px
+		padding: 0px 15px
+		letter-spacing: 0.6px
+		margin-bottom: 10px
+	::-webkit-input-placeholder 
+		color: $gray		
+		font-size: 14px
+		letter-spacing: 0.6px		
+	::-moz-placeholder
+		color: $gray	
+		font-size: 14px
+		letter-spacing: 0.6px		
+	:-moz-placeholder 
+		color: $gray	
+		font-size: 14px
+		letter-spacing: 0.6px
+	:-ms-input-placeholder      
+		color: $gray		
+		font-size: 14px
+		letter-spacing: 0.6px	
+	textarea
+		width: 100%
+		height: 164px
+		resize: none
+		padding: 15px
+		margin-bottom: 20px	
+.exit-form
+	position: absolute
+	width: 23px
+	height: 23px
+	top: 20px 
+	right: 15px
+	background-image: url('../img/exit.png')
+	background-repeat: no-repeat
+	background-position: center center
+.form-replay
+	width: 585px
+	height: 249px
+	display: flex
+	justify-content: center
+	flex-direction: column
+	position: relative
+
+/***********************************************ButtonMobile************************************/
+.menu-toggle-button
+	width: 50px
+	height: 40px
+	float: right
+	background-color: transparent
+	border-radius: 7px
+	padding-top: 5px
+	border: none
+	text-indent: -9999px
+	-webkit-appearance: none
+	-moz-appearance: none
+	appearance: none
+	position: relative
+	display: block
+	overflow: hidden
+	margin-top: 10px	
+	margin-left: -17px
+
+
+.menu-toggle-button span 
+	display: block
+	height: 3px
+	background: #fff
+	position: absolute
+	top: 15px
+	left: 10px
+	right: 10px
+	-webkit-transition: background 0s 0.3
+	-o-transition: background 0s 0.3
+	transition: background 0s 0.3
+
+
+.menu-toggle-button span::before, .menu-toggle-button span::after
+	content: ""
+	display: block
+	width: 100%
+	height: 3px
+	background: #fff
+	position: absolute
+	left: 0px
+	-webkit-transition-duration: 0.3s, 1s
+	-o-transition-duration: 0.3s, 1s
+	transition-duration: 0.3s, 1s
+	-webkit-transition-delay: 0s, 0.3s
+	-o-transition-delay: 0s, 0.3s
+	transition-delay: 0s, 0.3s
+
+
+.menu-toggle-button span::before 
+	top: -10px
+
+.menu-toggle-button span::after 
+	bottom: -10px
+
+.menu-toggle-button.is-active span
+	background: none
+
+.menu-toggle-button.is-active span::before
+	top: 0
+	-webkit-transform: rotate(45deg)
+	-ms-transform: rotate(45deg)
+	transform: rotate(45deg)
+	-webkit-transition-property: top, -webkit-transform
+	transition-property: top, -webkit-transform
+	-o-transition-property: top, transform
+	transition-property: top, transform
+	transition-property: top, transform, -webkit-transform
+	-webkit-transition-delay: 0s, 0.3s
+	-o-transition-delay: 0s, 0.3s
+	transition-delay: 0s, 0.3s
+	-webkit-transition-duration: 0.3s, 0.3s
+	-o-transition-duration: 0.3s, 0.3s
+	transition-duration: 0.3s, 0.3s
+	background: #fff
+
+
+.menu-toggle-button.is-active span::after 
+	bottom: 0
+	background: #fff
+	-webkit-transform: rotate(-45deg)
+	-ms-transform: rotate(-45deg)
+	transform: rotate(-45deg)
+	-webkit-transition-property: bottom, -webkit-transform
+	transition-property: bottom, -webkit-transform
+	-o-transition-property: bottom, transform
+	transition-property: bottom, transform
+	transition-property: bottom, transform, -webkit-transform
+	-webkit-transition-delay: 0s, 0.3s
+	-o-transition-delay: 0s, 0.3s
+	transition-delay: 0s, 0.3s
+	-webkit-transition-duration: 0.3s, 0.3s
+	-o-transition-duration: 0.3s, 0.3s
+	transition-duration: 0.3s, 0.3s
+
+.menu-toggle-button:focus
+	outline: none !important
+
+
 
 .hidden
 	display: none

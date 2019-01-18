@@ -30,43 +30,43 @@
 <header>
 	<div class="container first-line">
 		<div class="row h-100">
-			<div class="col-2">
+			<div class="col-lg-2 col-md-3 col-sm-4 col-5">
 				<div class="logo">
 					<a href="index.html"><img src="img/logo.svg" alt="company-logo"></a>
 				</div>
 			</div>
-			<div class="col-3 h-col">
+			<div class="col-3 h-col col-md-3 col-sm-4 col-7">
 				<div class="h-phone h-phone-f">
 					<span>Бесплатно по России</span>
 					<a href="tel:88007778899">8800 777-88-99</a>
 				</div>
 			</div>
-			<div class="col-2 h-col">
+			<div class="col-lg-2 h-col col-md-3 col-sm-4 d-sm-flex d-none">
 				<div class="h-phone h-phone-s">
 					<span>Телефон в Москве</span>
 					<a href="tel:84997775545">+7 499 777-55-45</a>
 				</div>
 			</div>
-			<div class="col-3 h-col">
+			<div class="col-3 h-col d-md-flex d-none">
 				<div class="h-phone h-phone-t">
 					<span>Телефон в Германии</span>
 					<a href="tel:+492117977622">+49 211 797-76-22</a>
 				</div>
 			</div>
-			<div class="col-2 h-col">
+			<div class="col-2 h-col d-lg-flex d-none">
 				<a href="" class="btn-outline">Задайте вопрос</a>
 			</div>
 		</div>		
 	</div>
 	<div class="menu-line">
-		<div class="container h-100">
-			<div class="row h-100">
+		<div class="container">
+			<div class="row">
 				<div class="col-12">
 					<button class="menu-toggle-button click-mobile d-lg-none">
 						<span></span>					
 					</button>
-					<nav class="main-menu nav-page h-100">
-						<ul class="h-100">
+					<nav class="main-menu nav-page">
+						<ul class="">
 							<li><a href="">Услуги</a></li>
 							<li><a href="">Преимущества</a></li>
 							<li><a href="">Врачи</a></li>
@@ -109,10 +109,13 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-4">
+			<div class="col-12 col-md-4">				
 				<nav class="cat-menu">
+					<button class="click-cat-mobile d-md-none">
+						<span></span>					
+					</button>
 					<span class="cat-menu_header">Категории</span>
-					<hr>
+					<hr class="d-none d-md-block">
 					<ul>
 						<li><a href="">Алкоголизм</a></li>
 						<li><a href="">Аллергология</a></li>
@@ -148,7 +151,7 @@
 					</ul>
 				</nav>
 			</div>
-			<div class="col-8">
+			<div class="col-12 col-md-8">
 				<div class="service-links">
 					<ul>
 						<li><a href="">Пластическая хирургия</a></li>
@@ -195,7 +198,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
-				<ul class="nav nav-tabs offset-2" id="myTab" role="tablist">
+				<ul class="nav nav-tabs offset-xl-2 offset-lg-1 offset-0" id="myTab" role="tablist">
 				  <li class="nav-item">
 				    <a class="nav-link active" id="cosm-cost" data-toggle="tab" href="#cosm" role="tab" aria-controls="home" aria-selected="true">Цены на косметологию</a>
 				  </li>
@@ -300,25 +303,27 @@
 </section>
 
 <!--Consult-->
-<section class="consult service__consult">
+<section class="consult">
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
-				<h2 class="subheader">Не нашли нужную услугу или остались вопросы?</h2>
-				<span class="subheader_desc">Свяжитесь с нами,  мы ответим на все ваши вопросы</span>
+				<h2 class="subheader">Получите консультацию эксперта бесплатно</h2>
+				<span class="subheader_desc">Наш врач-координатор  перезвонит Вам и ответит на все вопросы</span>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-12">
 				<form id="consult-form">
 					<div class="row">
-						<div class="col-5 offset-1">
+						<div class="col-lg-5 col-md-6 offset-lg-1 col-12">
 							<input type="text" name="fio" placeholder="Ваше имя" required="">
 						</div>
-						<div class="col-5">
+						<div class="col-lg-5 col-md-6 col-12">
 							<input type="text" name="phone" placeholder="Ваш телефон" required="">
 						</div>
-						<button type="submit" class="btn-filled btn-filled__consult">Отправить заявку</button>
+						<div class="col-12 text-center">
+							<button type="submit" class="btn-filled btn-filled__consult">Получить бесплатную консультацию</button>
+						</div>
 					</div>
 				</form>
 			</div>
@@ -336,25 +341,52 @@
 			</div>
 		</div>
 		<div class="row intr-row">
-			<div class="col-3">
-				<img src="img/int-1.jpg" alt="interesting-block-image">
-				<a href="" class="intr-header">Пластическая хирургия</a>
-				<span class="intr-cat">Категория: Косметология</span>
-			</div>
-			<div class="col-3">
-				<img src="img/int-2.jpg" alt="interesting-block-image">
-				<a href="" class="intr-header">Фотоомоложение</a>
-				<span class="intr-cat">Категория: Косметология</span>
-			</div>
-			<div class="col-3">
-				<img src="img/int-3.jpg" alt="interesting-block-image">
-				<a href="" class="intr-header">Мезотерапия</a>
-				<span class="intr-cat">Категория: Косметология</span>
-			</div>
-			<div class="col-3">
-				<img src="img/int-4.jpg" alt="interesting-block-image">
-				<a href="" class="intr-header">Волюмизация губ</a>
-				<span class="intr-cat">Категория: Косметология</span>
+			<div class="col-12">
+				<div class="slider">
+					<div>
+						<img src="img/int-1.jpg" alt="interesting-block-image">
+						<a href="" class="intr-header">Пластическая хирургия</a>
+						<span class="intr-cat">Категория: Косметология</span>
+					</div>
+					<div>
+						<img src="img/int-2.jpg" alt="interesting-block-image">
+						<a href="" class="intr-header">Фотоомоложение</a>
+						<span class="intr-cat">Категория: Косметология</span>
+					</div>
+					<div >
+						<img src="img/int-3.jpg" alt="interesting-block-image">
+						<a href="" class="intr-header">Мезотерапия</a>
+						<span class="intr-cat">Категория: Косметология</span>
+					</div>
+					<div>
+						<img src="img/int-4.jpg" alt="interesting-block-image">
+						<a href="" class="intr-header">Волюмизация губ</a>
+						<span class="intr-cat">Категория: Косметология</span>
+					</div>
+					<div>
+						<img src="img/int-1.jpg" alt="interesting-block-image">
+						<a href="" class="intr-header">Пластическая хирургия</a>
+						<span class="intr-cat">Категория: Косметология</span>
+					</div>
+				</div>
+				<div class="left">
+						<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+							 viewBox="0 0 26 47" style="enable-background:new 0 0 26 47;" xml:space="preserve">
+						<style type="text/css">
+							.st0{fill:#64AEDB;}
+						</style>
+						<polygon class="st0" points="1,23.5 23.9,46.5 25,45.4 3.2,23.5 25,1.6 23.9,0.5 "/>
+						</svg>
+				</div>
+				<div class="right">
+					<svg version="1.1" id="Capa_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+						 viewBox="0 0 26 47" style="enable-background:new 0 0 26 47;" xml:space="preserve">
+					<style type="text/css">
+						.st0{fill:#64AEDB;}
+					</style>
+					<polygon class="st0" points="2.1,0.5 1,1.6 22.8,23.5 1,45.4 2.1,46.5 25,23.5 "/>
+					</svg>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -364,7 +396,7 @@
 <footer>
 	<div class="container">
 		<div class="row">
-			<div class="col-3">
+			<div class="col-lg-3 col-md-6 col-12">
 				<span class="footer-header">ЛЕЧЕНИЕ, ОЗДОРОВЛЕНИЕ И ОТДЫХ В БЕЛАРУСИ</span>
 				<hr>
 				<ul>
@@ -376,7 +408,7 @@
 					<li><a href="">Дополнительные услуги</a></li>
 				</ul>
 			</div>
-			<div class="col-3">
+			<div class="col-lg-3 col-md-6 col-12">
 				<span class="footer-header">направления</span>
 				<hr>
 				<p class="footer-desc">С нами Вы можете организовать свою поездку на лечение в Беларусь комфортно и без лишних затрат!</p>
@@ -388,7 +420,7 @@
 					<li><a href="">Турпакеты "Здоровье"</a></li>					
 				</ul>
 			</div>
-			<div class="col-3">
+			<div class="col-lg-3 col-md-6 col-12">
 				<span class="footer-header">Наши контакты</span>
 				<hr>
 				<p class="footer-desc">Мы поможем организовать лечение в Беларуси, прост позвоните или напишите нам!</p>
@@ -398,7 +430,7 @@
 				<a href="mailto:info@med-belarus.com" class="footer-mail">info@med-belarus.com</a>
 				<a href="#" class="footer-adr">Минск, Заславская 23/1, 16</a>
 			</div>
-			<div class="col-3">
+			<div class="col-lg-3 col-md-6 col-12">
 				<span class="footer-header">Получить консультацию</span>
 				<hr>
 				<p class="footer-desc">Заполните форму ниже и мы свяжемся с Вами сами!</p>
