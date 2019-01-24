@@ -267,6 +267,10 @@ header .container, header .row {
   left: 0px;
 }
 
+.fml {
+  margin-left: 60px;
+}
+
 /***************************************************Content*******************************************/
 .content, .docs, .contacts-page, .contract {
   padding: 100px 0px 80px 0px;
