@@ -72,6 +72,7 @@ body
 	color: #fff
 	text-align: center	
 	border-radius: 5px
+	font-size: 16px
 .btn-blue:hover
 	color: #fff
 	background-color: #672ed8
@@ -82,6 +83,8 @@ body
 	color: #fff
 	text-align: center
 	border-radius: 5px
+	font-family: $comf-b
+	font-size: 18px
 .btn-red:hover
 	color: #fff
 	background-color: #d23004
@@ -90,10 +93,28 @@ body
 	border: 2px solid #fff
 	border-radius: 5px
 	padding: 9px 0px
+	font-size: 18px
+	padding: 10px 0px
+	width: 400px
+	text-align: center
 .btn-outline:hover
 	border: 2px solid $blue
 	color: $blue
-
+h1
+	font-size: 40px
+	line-height: 60px
+	font-family: $comf-b
+	color: #fff
+h2
+	font-family: $comf-b
+	text-align: center
+	color: #fff
+	font-size: 36px
+.text-shadow
+	text-shadow: 2px 2px 5px rgba(0,0,0,0.2)
+.main-text
+	font-size: 18px
+	line-height: 36px
 /***************************************************Header*******************************************/
 header
 	width: 100%
@@ -107,15 +128,33 @@ header
 	.container
 		position: relative
 		z-index: 10
+	hr
+		width: 70px
+		height: 1px 
+		background-color: #fff
+		margin-left: 0px
+.top-line
+	min-height: 100px
+	align-items: center
 .logo
 	img
 		width: 100%
 		height: auto
+.phone-h
+	color: #fff
+	font-family: $comf-b
+	font-size: 20px
+	padding-left: 30px
+	background-size: 38px 28px
+.phone-h:hover
+	color: #fff
+	opacity: 0.7
 .compet-link
 	padding: 10px 20px
 	background-color: #ff3600
 	color: #fff
 	font-family: $rubik
+	font-size: 40px
 .hover-image
 	position: absolute
 	top: 0px 
@@ -135,8 +174,16 @@ header
 	position: relative
 	img
 		position: absolute
-
-
+.header-desc
+	font-size: 18px
+	line-height: 24px
+	color: #fff
+	b
+		font-family: $comf-b
+.btn-blue__want
+	width: 450px
+	padding: 20px 0px
+	font-size: 24px
 
 /***************************************************text-block************************************/
 .text-block
@@ -147,6 +194,9 @@ header
 	background-position: center center
 .robot
 	opacity: 0.2
+.text-block-row
+	height: 100%
+	align-items: center
 /***************************************************Prizes******************************************/
 .prizes
 	width: 100%
@@ -163,8 +213,33 @@ header
 .bg-decor__prizes
 	background-image: url('../img/prizes-decor.png')
 	opacity: 0.5
-	
-
+.prizes-text
+	font-family: $comf-b
+	font-size: 20px
+	line-height: 24px
+	color: #fff
+.prizes-block_img
+	width: 100%
+	height: 200px
+.add-subheader
+	i
+		display: block
+		font-style: normal
+		font-size: 48px
+.imp-text
+	font-family: $comf-b
+	font-size: 48px
+	color: #fff
+	text-align: center
+	display: block
+	text-shadow: 0px 5px 10px rgba(0,0,0,0.2)
+.notice
+	color: #fff
+	font-family: $comf-l
+	font-size: 14px
+	line-height: 24px
+	display: block
+	text-align: right
 
 /****************************************text-block__second***********************************/
 .text-block__second
@@ -191,7 +266,7 @@ header
 	position: relative
 	hr
 		width: 100%
-		height: 3px
+		height: 6px
 		background-color: #f39c2f
 		position: absolute
 .steps-block-circle
@@ -202,6 +277,7 @@ header
 	background-color: #fff
 	background-repeat: no-repeat
 	background-position: center center
+	margin: 0 auto
 .steps-block-circle__f
 	background-image: url('../img/1.svg')
 	background-size: 90px 90px
@@ -219,10 +295,15 @@ header
 	background-repeat: no-repeat
 	background-position: center center
 	z-index: 10
+	margin: 0 auto
+.flag-wrapper
+	position: relative
+	width: 150px
+	margin: 0 auto
 .flag-image
 	position: absolute
 	top: -50px 
-	left: -50px
+	left: 0px
 	z-index: 1
 .steps-block-circle__s
 	background-size: 130px 130px, 150px 150px
@@ -255,6 +336,49 @@ header
 	background-image: url('../img/7.svg')
 	background-size: 90px 90px
 	background-position: left 35px top 35px
+.steps-block-header
+	font-family: $comf-b
+	font-size: 18px
+	line-height: 30px
+	color: #fff
+	display: block
+.steps-block-desc
+	font-family: $comf-l
+	font-size: 16px
+	line-height: 24px
+	color: #fff
+.steps-last-row
+	hr
+		width: 70px 
+		height: 1px 
+		background-color: #fff
+.steps-content-header
+	font-family: $comf-b
+	font-size: 24px
+	line-height: 36px
+	display: block	
+	color: #fff
+.steps-content
+	font-family: $comf-b
+	font-size: 20px
+	line-height: 36px
+	display: block	
+	color: #fff
+	i
+		font-style: normal
+		font-family: $comf-l
+.btn-red__steps
+	width: 349px
+.ellips-image
+	position: absolute
+	width: 188px
+	height: 377px
+	display: block
+	top: 0px
+	right: 0px
+.steps-block__s .ellips-image
+	left: 0px
+	transform: rotate(180deg)
 
 
 /***************************************************Rules************************************/
@@ -262,6 +386,23 @@ header
 	width: 100%
 	height: 227px
 	background-color: #f1f2f4
+.rules-left
+	font-family: $comf-b
+	font-size: 24px
+	line-height: 30px
+	color: #db434a
+.btn-red__rules
+	width: 100%
+	font-size: 24px
+.rules-notice
+	font-size: 16px
+	line-height: 30px
+	font-family: $comf-l
+	a
+		color: #db434a
+		font-family: $comf-b
+	a:hover
+		color: $blue
 
 
 /***************************************************Videos************************************/
@@ -320,6 +461,7 @@ header
 	-o-transition: all 0.3s ease-out
 	-webkit-transition: all 0.3s ease-out
 	transition: all 0.3s ease-out
+	box-shadow: 0px 2px 1px rgba(0,0,0,0.3)
 	svg
 		width: 17px
 		height: 32px
@@ -339,6 +481,7 @@ header
 	-o-transition: all 0.3s ease-out
 	-webkit-transition: all 0.3s ease-out
 	transition: all 0.3s ease-out
+	box-shadow: 0px 2px 1px rgba(0,0,0,0.3)
 	svg
 		width: 17px
 		height: 32px
@@ -354,6 +497,15 @@ header
 .slider
 	width: 770px
 	margin: 0 auto
+.school-number
+	font-family: $comf-b
+	font-size: 24px
+	line-height: 30px
+	color: #fff
+.video-desc span
+	font-size: 14px
+	line-height: 16px
+	
 
 
 /***************************************************Footer************************************/	
@@ -361,7 +513,7 @@ footer
 	width: 100%
 	min-height: 155px
 	background-color: #2a2a2a
-.phone-f
+.phone-f, .phone-h
 	background-image: url('../img/phone.svg')
 	background-repeat: no-repeat
 	background-position: left center
@@ -380,6 +532,10 @@ footer
 	a,span
 		color: #fff
 		padding-left: 20px
+		font-size: 20px
+		font-family: $comf-b
+	a:hover
+		color: $blue
 
 
 .hidden
