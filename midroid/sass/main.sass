@@ -51,7 +51,7 @@ body
 		border: none	
 
 .pixel
-	background: url(../img/main.jpg) no-repeat top center
+	background: url('../img/page.jpg') no-repeat top center
 	width: 1920px
 	height: 12800px
 	position: absolute
@@ -93,10 +93,11 @@ body
 	border: 2px solid #fff
 	border-radius: 5px
 	padding: 9px 0px
-	font-size: 18px
-	padding: 10px 0px
-	width: 400px
+	font-size: 18px	
+	width: 308px
 	text-align: center
+	margin-top: 22px
+	letter-spacing: 0.3px
 .btn-outline:hover
 	border: 2px solid $blue
 	color: $blue
@@ -105,11 +106,13 @@ h1
 	line-height: 60px
 	font-family: $comf-b
 	color: #fff
+	margin-top: 23px
 h2
 	font-family: $comf-b
 	text-align: center
 	color: #fff
 	font-size: 36px
+	letter-spacing: 0.7px
 .text-shadow
 	text-shadow: 2px 2px 5px rgba(0,0,0,0.2)
 .main-text
@@ -133,9 +136,11 @@ header
 		height: 1px 
 		background-color: #fff
 		margin-left: 0px
+		margin-top: 12px
 .top-line
-	min-height: 100px
+	min-height: 105px
 	align-items: center
+	margin-bottom: 56px
 .logo
 	img
 		width: 100%
@@ -144,21 +149,25 @@ header
 	color: #fff
 	font-family: $comf-b
 	font-size: 20px
-	padding-left: 30px
+	padding-left: 37px
 	background-size: 38px 28px
+	margin-left: 14px
+	margin-top: -2px
+	letter-spacing: 0.5px	
 .phone-h:hover
 	color: #fff
 	opacity: 0.7
 .compet-link
-	padding: 10px 20px
+	padding: 11px 21px
 	background-color: #ff3600
 	color: #fff
 	font-family: $rubik
 	font-size: 40px
+	text-transform: uppercase
 .hover-image
 	position: absolute
-	top: 0px 
-	left: 0px
+	top: -45px 
+	left: 133px
 .bg-decor
 	width: 100%
 	height: 100%
@@ -174,6 +183,12 @@ header
 	position: relative
 	img
 		position: absolute
+	img:nth-child(1)
+		top: 20px
+		left: -27px
+	img:nth-child(2)
+		top: 85px
+		left: -27px
 .header-desc
 	font-size: 18px
 	line-height: 24px
@@ -184,6 +199,10 @@ header
 	width: 450px
 	padding: 20px 0px
 	font-size: 24px
+	margin-top: 59px
+	letter-spacing: 0.7px
+.col-right
+	text-align: right
 
 /***************************************************text-block************************************/
 .text-block
@@ -192,11 +211,18 @@ header
 	background-image: url('../img/compet-bg.jpg')
 	background-repeat: no-repeat
 	background-position: center center
+	img
+		margin-top: 46px
+		margin-left: -17px
+	.main-text
+		letter-spacing: 0.4px
+	.text-center .main-text:nth-child(1)
+		margin-top: 87px
+		margin-bottom: 10px
 .robot
 	opacity: 0.2
-.text-block-row
-	height: 100%
-	align-items: center
+
+
 /***************************************************Prizes******************************************/
 .prizes
 	width: 100%
@@ -207,20 +233,36 @@ header
 	background: linear-gradient(135deg, rgba(70,157,255,1) 0%,rgba(153,19,238,1) 100%) /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#469dff', endColorstr='#9913ee',GradientType=1 ) /* IE6-9 fallback on horizontal gradient */
 	position: relative
+	padding-top: 68px
 	.container
 		position: relative
 		z-index: 10
 .bg-decor__prizes
 	background-image: url('../img/prizes-decor.png')
 	opacity: 0.5
+.prizes-block
+	margin-top: 70px
+	margin-bottom: 48px
 .prizes-text
 	font-family: $comf-b
 	font-size: 20px
 	line-height: 24px
 	color: #fff
+	letter-spacing: 0.5px
 .prizes-block_img
 	width: 100%
-	height: 200px
+	height: 176px
+.prizes-block-f	img
+	margin-left: -25px
+.prizes-block-s	img
+	margin-left: -49px
+.prizes-block-t	img
+	margin-left: -29px
+	margin-top: -15px
+.prizes-block-fo img
+	margin-left: -53px
+.prizes-block-fi img
+	margin-left: -27px
 .add-subheader
 	i
 		display: block
@@ -233,6 +275,7 @@ header
 	text-align: center
 	display: block
 	text-shadow: 0px 5px 10px rgba(0,0,0,0.2)
+	letter-spacing: 1px
 .notice
 	color: #fff
 	font-family: $comf-l
@@ -240,22 +283,36 @@ header
 	line-height: 24px
 	display: block
 	text-align: right
+	margin-top: 53px
+	letter-spacing: 0.3px
+.prizes-last-row
+	margin-top: 16px
+	img
+		margin-top: 25px
+		margin-bottom: 29px
+		border-radius: 5px
 
 /****************************************text-block__second***********************************/
 .text-block__second
 	background-image: url('../img/compet-bg-sec.jpg')
+	height: 375px
+	padding-top: 6px
+	.main-text
+		font-family: $comf-l
+		padding: 0px 50px
 
 
 /***************************************************Steps************************************/
 .steps
 	width: 100%
-	height: 1514px
+	height: 1579px
 	background: rgb(121,57,249) /* Old browsers */
 	background: -moz-linear-gradient(-45deg, rgba(121,57,249,1) 0%, rgba(73,34,151,1) 100%) /* FF3.6-15 */
 	background: -webkit-linear-gradient(-45deg, rgba(121,57,249,1) 0%,rgba(73,34,151,1) 100%) /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(135deg, rgba(121,57,249,1) 0%,rgba(73,34,151,1) 100%) /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7939f9', endColorstr='#492297',GradientType=1 ) /* IE6-9 fallback on horizontal gradient */
 	position: relative
+	padding-top: 68px
 	.container
 		position: relative
 		z-index: 10
@@ -265,10 +322,16 @@ header
 .steps-block
 	position: relative
 	hr
-		width: 100%
+		width: 660px
 		height: 6px
 		background-color: #f39c2f
 		position: absolute
+		top: 54px
+		left: 0px 
+		right: 0px
+.steps-block__f
+	margin-top: 90px
+	margin-bottom: 64px
 .steps-block-circle
 	width: 150px
 	height: 150px
@@ -278,10 +341,14 @@ header
 	background-repeat: no-repeat
 	background-position: center center
 	margin: 0 auto
-.steps-block-circle__f
-	background-image: url('../img/1.svg')
-	background-size: 90px 90px
-	background-position: left 35px top 35px
+.steps-block-circle__f 
+	margin-left: 10px
+	.steps-block-circle
+		background-image: url('../img/1.svg')
+		background-size: 91px 98px
+		background-position: left 28px top 34px	
+	.steps-block-header
+		margin-left: -9px
 .steps-block-circle-orange
 	width: 150px
 	height: 150px
@@ -302,51 +369,74 @@ header
 	margin: 0 auto
 .flag-image
 	position: absolute
-	top: -50px 
-	left: 0px
+	top: -48px 
+	left: -70px
 	z-index: 1
 .steps-block-circle__s
-	background-size: 130px 130px, 150px 150px
-	background-position: left 10px top 20px, left 0px top 0px
+	background-size: 116px 126px, 150px 150px
+	background-position: left 19px top 25px, left 0px top 0px
 .steps-block-circle__t
-	background-image: url('../img/3.svg')
-	background-size: 90px 90px
-	background-position: left 35px top 35px
+	.steps-block-circle
+		margin-left: 36px
+		background-image: url('../img/3.svg')
+		background-size: 90px 125px
+		background-position: left 24px top 20px
+	.steps-block-header
+		margin-left: -21px
+	.steps-block-desc
+		margin-left: -21px
 .steps-block-circle__fo
-	background-image: url('../img/4.svg')
-	background-size: 90px 90px
-	background-position: left 35px top 35px
+	margin-left: 35px
+	.steps-block-circle
+		background-image: url('../img/4.svg')
+		background-size: 157px 166px
+		background-position: left -7px top 14px
 .steps-block-circle__fi
-	background: rgb(255,184,31) /* Old browsers */
-	background: url('../img/5.svg'), -moz-linear-gradient(-45deg, rgba(255,184,31,1) 0%, rgba(192,41,115,1) 100%) /* FF3.6-15 */
-	background: url('../img/5.svg'), -webkit-linear-gradient(-45deg, rgba(255,184,31,1) 0%,rgba(192,41,115,1) 100%) /* Chrome10-25,Safari5.1-6 */
-	background: url('../img/5.svg'), linear-gradient(135deg, rgba(255,184,31,1) 0%,rgba(192,41,115,1) 100%), url('../img/2.svg') /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb81f', endColorstr='#c02973',GradientType=1 ) /* IE6-9 fallback on horizontal gradient */
-	background-size: 130px 130px, 150px 150px
-	background-position: left 10px top 20px, left 0px top 0px
+	margin-left: -27px
+	.steps-block-circle-orange
+		background: rgb(255,184,31) /* Old browsers */
+		background: url('../img/5.svg'), -moz-linear-gradient(-45deg, rgba(255,184,31,1) 0%, rgba(192,41,115,1) 100%) /* FF3.6-15 */
+		background: url('../img/5.svg'), -webkit-linear-gradient(-45deg, rgba(255,184,31,1) 0%,rgba(192,41,115,1) 100%) /* Chrome10-25,Safari5.1-6 */
+		background: url('../img/5.svg'), linear-gradient(135deg, rgba(255,184,31,1) 0%,rgba(192,41,115,1) 100%), url('../img/2.svg') /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb81f', endColorstr='#c02973',GradientType=1 ) /* IE6-9 fallback on horizontal gradient */
+		background-size: 166px 176px, 150px 150px
+		background-position: left -13px top 3px, left 0px top 0px
+	.steps-block-desc
+		margin-left: 4px
 .steps-block-circle__six
-	background: rgb(255,184,31) /* Old browsers */
-	background: url('../img/6.svg'), -moz-linear-gradient(-45deg, rgba(255,184,31,1) 0%, rgba(192,41,115,1) 100%) /* FF3.6-15 */
-	background: url('../img/6.svg'), -webkit-linear-gradient(-45deg, rgba(255,184,31,1) 0%,rgba(192,41,115,1) 100%) /* Chrome10-25,Safari5.1-6 */
-	background: url('../img/6.svg'), linear-gradient(135deg, rgba(255,184,31,1) 0%,rgba(192,41,115,1) 100%), url('../img/2.svg') /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb81f', endColorstr='#c02973',GradientType=1 ) /* IE6-9 fallback on horizontal gradient */
-	background-size: 130px 130px, 150px 150px
-	background-position: left 10px top 20px, left 0px top 0px
+	margin-left: 36px
+	.steps-block-circle-orange
+		background: rgb(255,184,31) /* Old browsers */
+		background: url('../img/6.svg'), -moz-linear-gradient(-45deg, rgba(255,184,31,1) 0%, rgba(192,41,115,1) 100%) /* FF3.6-15 */
+		background: url('../img/6.svg'), -webkit-linear-gradient(-45deg, rgba(255,184,31,1) 0%,rgba(192,41,115,1) 100%) /* Chrome10-25,Safari5.1-6 */
+		background: url('../img/6.svg'), linear-gradient(135deg, rgba(255,184,31,1) 0%,rgba(192,41,115,1) 100%), url('../img/2.svg') /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb81f', endColorstr='#c02973',GradientType=1 ) /* IE6-9 fallback on horizontal gradient */
+		background-size: 122px 107px, 150px 150px
+		background-position: left 14px top 33px, left 0px top 0px
+		background-repeat: no-repeat, no-repeat
 .steps-block-circle__sev
 	background-image: url('../img/7.svg')
-	background-size: 90px 90px
-	background-position: left 35px top 35px
+	background-size: 127px 140px
+	background-position: left 9px top 11px
 .steps-block-header
 	font-family: $comf-b
 	font-size: 18px
 	line-height: 30px
 	color: #fff
 	display: block
+	margin-top: 13px
+	letter-spacing: 0.5px
+	margin-bottom: 13px	
+	text-align: center
 .steps-block-desc
 	font-family: $comf-l
 	font-size: 16px
 	line-height: 24px
 	color: #fff
+	padding: 0px 10px
+	text-align: center
+	display: block
+	letter-spacing: 0.5px
 .steps-last-row
 	hr
 		width: 70px 
@@ -357,47 +447,75 @@ header
 	font-size: 24px
 	line-height: 36px
 	display: block	
-	color: #fff
+	color: #fff	
+	margin-top: 25px
+	letter-spacing: 0.7px
+	margin-bottom: 10px
 .steps-content
 	font-family: $comf-b
 	font-size: 20px
 	line-height: 36px
 	display: block	
 	color: #fff
+	letter-spacing: 0.5px
 	i
 		font-style: normal
 		font-family: $comf-l
 .btn-red__steps
 	width: 349px
+	margin-top: 40px
+	padding: 14px 0px
+	letter-spacing: 0.5px
 .ellips-image
 	position: absolute
-	width: 188px
-	height: 377px
+	width: 215px
+	height: 504px
 	display: block
-	top: 0px
+	top: 9px
 	right: 0px
-.steps-block__s .ellips-image
-	left: 0px
-	transform: rotate(180deg)
-
+.steps-block__s
+	hr
+		width: 450px
+		top: 57px 
+	.ellips-image
+		left: 0px
+		transform: rotate(180deg)
+		width: 221px
+		height: 496px
+		top: 20px
+.steps-block__last
+	margin-top: 105px
+	margin-bottom: 43px
+    
 
 /***************************************************Rules************************************/
 .rules
 	width: 100%
 	height: 227px
 	background-color: #f1f2f4
+	padding-top: 63px
+	img
+		margin-left: -40px
+		margin-top: -18px
 .rules-left
 	font-family: $comf-b
 	font-size: 24px
-	line-height: 30px
+	line-height: 38px
 	color: #db434a
+	letter-spacing: 0.5px
 .btn-red__rules
 	width: 100%
 	font-size: 24px
+	margin-top: 6px
+	padding: 18px 0px
+	letter-spacing: 0.5px
 .rules-notice
 	font-size: 16px
 	line-height: 30px
 	font-family: $comf-l
+	margin-top: 28px
+	display: block
+	letter-spacing: 0.3px
 	a
 		color: #db434a
 		font-family: $comf-b
@@ -415,6 +533,7 @@ header
 	background: linear-gradient(135deg, rgba(255,184,31,1) 0%,rgba(192,41,115,1) 100%) /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb81f', endColorstr='#c02973',GradientType=1 ) /* IE6-9 fallback on horizontal gradient */
 	position: relative
+	padding-top: 60px
 	.container
 		position: relative
 		z-index: 10
@@ -423,10 +542,9 @@ header
 	opacity: 1
 .video-block-wrap-resp
 	padding-top: 86px				
-#resp-video
-	padding: 40px 0 80px 0
 .video-content
 	position: relative
+	margin-top: 39px
 	#video-main
 		position: absolute
 		width: 700px
@@ -446,15 +564,19 @@ header
 			top: -15px
 			right: -15px
 .video-block
+	margin-bottom: 20px
 	span			
 		display: block
+	img
+		width: 100%
+		height: 136px
 .left
 	width: 72px
 	height: 72px
 	position: absolute
 	top: 50%
-	margin-top: -27px
-	left: -43px
+	margin-top: -36px
+	left: 0px
 	background-color: #f5ae15
 	border-radius: 50%
 	-moz-transition: all 0.3s ease-out
@@ -473,8 +595,8 @@ header
 	height: 72px
 	position: absolute
 	top: 50%
-	margin-top: -27px
-	right: -43px
+	margin-top: -36px
+	right: 0px
 	background-color: #f5ae15
 	border-radius: 50%
 	-moz-transition: all 0.3s ease-out
@@ -487,13 +609,13 @@ header
 		height: 32px
 		position: relative
 		top: 20px
-		left: 25px	
+		left: 30px	
 .right:hover, .left:hover
 	cursor: pointer
 .right .st0, .left .st0
 	fill: #fff	
 .right:hover, .left:hover  
-	opacity: 0.7	
+	opacity: 0.8	
 .slider
 	width: 770px
 	margin: 0 auto
@@ -502,40 +624,65 @@ header
 	font-size: 24px
 	line-height: 30px
 	color: #fff
+	margin-left: 38px
+	letter-spacing: 1px
+	margin-bottom: 7px
 .video-desc span
 	font-size: 14px
 	line-height: 16px
+	margin-left: 10px
 	
 
 
 /***************************************************Footer************************************/	
 footer
 	width: 100%
-	min-height: 155px
+	min-height: 174px
 	background-color: #2a2a2a
+	padding-top: 41px
+	.logo
+		margin-top: 30px
+	.btn-blue
+		margin-top: 33px
 .phone-f, .phone-h
 	background-image: url('../img/phone.svg')
 	background-repeat: no-repeat
 	background-position: left center
+.phone-f
+	background-size: 42px 32px
+	padding-left: 31px
+	letter-spacing: 0.7px
+	background-position: top 1px left -8px
+	margin-bottom: 15px
 .mail-f
 	background-image: url('../img/e-mail.svg')
 	background-repeat: no-repeat
-	background-position: left center
+	background-size: 52px 44px
+	padding-left: 36px
+	letter-spacing: 0.5px
+	background-position: top -6px left -12px
+	margin-bottom: 12px
 .adr-f
 	background-image: url('../img/map.svg')
 	background-repeat: no-repeat
-	background-position: left center
+	background-size: 52px 36px
+	padding-left: 29px
+	letter-spacing: 0.5px
+	background-position: top -1px left -15px
+	margin-bottom: 12px
+	display: block
+	line-height: 25px
 .footer-contacts
 	display: flex
 	flex-direction: column
 	align-items: center
 	a,span
 		color: #fff
-		padding-left: 20px
 		font-size: 20px
 		font-family: $comf-b
 	a:hover
 		color: $blue
+
 
 
 .hidden
