@@ -1,7 +1,9 @@
 //VideoResponse
 $(document).ready(function(){
 
-    $('iframe').attr('src', $('iframe').attr('src'));
+    $('.myvideo').each(function(){
+        this.contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*')
+    });
 
     $('.click').on('click', function(){
 
@@ -19,7 +21,9 @@ $(document).ready(function(){
         'display' : 'none'        
         }); 
 
-       $('iframe').attr('src', $('iframe').attr('src'));
+       $('.myvideo').each(function(){
+        this.contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*')
+    });
         
     });
 });
@@ -85,7 +89,9 @@ $('.left').click(function(){
         'display' : 'none'        
         }); 
 
-       $('iframe').attr('src', $('iframe').attr('src'));
+     $('.myvideo').each(function(){
+        this.contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*')
+    });
 })
 
 $('.right').click(function(){
@@ -95,5 +101,7 @@ $('.right').click(function(){
         'display' : 'none'        
         }); 
 
-       $('iframe').attr('src', $('iframe').attr('src'));
+        $('.myvideo').each(function(){
+        this.contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*')
+    });
 })
