@@ -304,6 +304,12 @@
 
 @media only screen and (min-width : 576px) and (max-width : 767px) {
 
+	.text-block{
+		background-size: cover;
+		height: auto;
+		padding-bottom: 60px;
+	}
+
 	.container{
 		padding: 0px;
 	}
