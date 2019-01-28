@@ -1,34 +1,3 @@
-//VideoResponse
-$(document).ready(function(){
-
-    $('.myvideo').each(function(){
-        this.contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*')
-    });
-
-    $('.click').on('click', function(){
-
-        $("#video-main").css({
-        'display' : 'block'        
-        }); 
-        
-    });
-});
-
-$(document).ready(function(){
-    $('.close-video').on('click', function(){
-
-        $("#video-main").css({
-        'display' : 'none'        
-        }); 
-
-       $('.myvideo').each(function(){
-        this.contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*')
-    });
-        
-    });
-});
-
-
 //Slider
 $(document).ready(function(){
 $('.slider').slick({
@@ -87,23 +56,23 @@ $('.slider').slick({
 $('.left').click(function(){
   $('.slider').slick('slickPrev');
 
-   $("#video-main").css({
-        'display' : 'none'        
-        }); 
-
-     $('.myvideo').each(function(){
-        this.contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*')
-    });
-})
+  })
 
 $('.right').click(function(){
   $('.slider').slick('slickNext');
 
-    $("#video-main").css({
-        'display' : 'none'        
-        }); 
-
-        $('.myvideo').each(function(){
-        this.contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*')
-    });
+   
 })
+
+
+$(document).ready(function() {
+    $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
+        disableOn: 700,
+        type: 'iframe',
+        mainClass: 'mfp-fade',
+        removalDelay: 160,
+        preloader: false,
+
+        fixedContentPos: false
+    });
+});
