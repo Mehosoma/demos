@@ -7,7 +7,7 @@ html {
 body {
   width: 100%;
   height: auto;
-  min-width: 320px;
+  min-width: 576px;
   margin: 0 auto;
   position: relative;
   font-family: "ComfortaaRegular", sans-serif;
@@ -181,6 +181,7 @@ header {
   background: linear-gradient(135deg, #ffb81f 0%, #c02973 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb81f', endColorstr='#c02973',GradientType=1 );
   position: relative;
+  overflow: hidden;
 }
 
 header .container {
@@ -300,6 +301,7 @@ header hr {
   background-image: url("../img/compet-bg.jpg");
   background-repeat: no-repeat;
   background-position: center center;
+  position: relative;
 }
 
 .text-block img {
@@ -333,6 +335,7 @@ header hr {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#469dff', endColorstr='#9913ee',GradientType=1 );
   position: relative;
   padding-top: 68px;
+  overflow: hidden;
 }
 
 .prizes .container {
@@ -446,6 +449,7 @@ header hr {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7939f9', endColorstr='#492297',GradientType=1 );
   position: relative;
   padding-top: 68px;
+  overflow: hidden;
 }
 
 .steps .container {
@@ -490,20 +494,6 @@ header hr {
   margin: 0 auto;
 }
 
-.steps-block-circle__f {
-  margin-left: 10px;
-}
-
-.steps-block-circle__f .steps-block-circle {
-  background-image: url("../img/1.svg");
-  background-size: 91px 98px;
-  background-position: left 28px top 34px;
-}
-
-.steps-block-circle__f .steps-block-header {
-  margin-left: -9px;
-}
-
 .steps-block-circle-orange {
   width: 150px;
   height: 150px;
@@ -516,8 +506,8 @@ header hr {
   background: url("../img/2.svg"), linear-gradient(135deg, #ffb81f 0%, #c02973 100%), url("../img/2.svg");
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb81f', endColorstr='#c02973',GradientType=1 );
   border-radius: 50%;
-  background-repeat: no-repeat;
-  background-position: center center;
+  background-repeat: no-repeat, no-repeat;
+  background-position: center center, center center;
   z-index: 10;
   margin: 0 auto;
 }
@@ -535,16 +525,27 @@ header hr {
   z-index: 1;
 }
 
+.steps-block-circle__f {
+  margin-left: 10px;
+}
+
+.steps-block-circle__f .steps-block-circle {
+  background-image: url("../img/1.svg");
+  background-size: 60%;
+}
+
+.steps-block-circle__f .steps-block-header {
+  margin-left: -9px;
+}
+
 .steps-block-circle__s {
-  background-size: 116px 126px, 150px 150px;
-  background-position: left 19px top 25px, left 0px top 0px;
+  background-size: 60% 60%, 100% 100%;
 }
 
 .steps-block-circle__t .steps-block-circle {
   margin-left: 36px;
   background-image: url("../img/3.svg");
-  background-size: 90px 125px;
-  background-position: left 24px top 20px;
+  background-size: 70%;
 }
 
 .steps-block-circle__t .steps-block-header {
@@ -561,8 +562,7 @@ header hr {
 
 .steps-block-circle__fo .steps-block-circle {
   background-image: url("../img/4.svg");
-  background-size: 157px 166px;
-  background-position: left -7px top 14px;
+  background-size: 60%;
 }
 
 .steps-block-circle__fi {
@@ -577,8 +577,9 @@ header hr {
   background: url("../img/5.svg"), -o-linear-gradient(315deg, #ffb81f 0%, #c02973 100%), url("../img/2.svg");
   background: url("../img/5.svg"), linear-gradient(135deg, #ffb81f 0%, #c02973 100%), url("../img/2.svg");
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb81f', endColorstr='#c02973',GradientType=1 );
-  background-size: 166px 176px, 150px 150px;
-  background-position: left -13px top 3px, left 0px top 0px;
+  background-size: 60% 60%, 100% 100%;
+  background-repeat: no-repeat, no-repeat;
+  background-position: center center, center center;
 }
 
 .steps-block-circle__fi .steps-block-desc {
@@ -597,15 +598,15 @@ header hr {
   background: url("../img/6.svg"), -o-linear-gradient(315deg, #ffb81f 0%, #c02973 100%), url("../img/2.svg");
   background: url("../img/6.svg"), linear-gradient(135deg, #ffb81f 0%, #c02973 100%), url("../img/2.svg");
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb81f', endColorstr='#c02973',GradientType=1 );
-  background-size: 122px 107px, 150px 150px;
-  background-position: left 14px top 33px, left 0px top 0px;
+  background-size: 60% 60%, 100% 100%;
   background-repeat: no-repeat, no-repeat;
+  background-position: center center, center center;
 }
 
 .steps-block-circle__sev {
   background-image: url("../img/7.svg");
-  background-size: 127px 140px;
-  background-position: left 9px top 11px;
+  background-size: 80%;
+  background-position: center center;
 }
 
 .steps-block-header {
@@ -795,6 +796,10 @@ header hr {
   z-index: 100000;
 }
 
+.video-content #video-main iframe {
+  border: none;
+}
+
 .video-content #video-main .close-video {
   position: absolute;
   top: -15px;
@@ -857,7 +862,7 @@ header hr {
   position: absolute;
   top: 50%;
   margin-top: -36px;
-  right: 0px;
+  right: 15px;
   background-color: #f5ae15;
   border-radius: 50%;
   -moz-transition: all 0.3s ease-out;

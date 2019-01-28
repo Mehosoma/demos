@@ -14,7 +14,7 @@ html
 body
 	width: 100%
 	height: auto
-	min-width: 320px	
+	min-width: 576px	
 	margin: 0 auto
 	position: relative
 	font-family: $comf-r
@@ -143,6 +143,7 @@ header
 	background: linear-gradient(135deg, rgba(255,184,31,1) 0%,rgba(192,41,115,1) 100%) /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb81f', endColorstr='#c02973',GradientType=1 ) /* IE6-9 fallback on horizontal gradient */
 	position: relative
+	overflow: hidden
 	.container
 		position: relative
 		z-index: 10
@@ -226,6 +227,7 @@ header
 	background-image: url('../img/compet-bg.jpg')
 	background-repeat: no-repeat
 	background-position: center center
+	position: relative
 	img
 		margin-top: 46px
 		margin-left: -17px
@@ -249,6 +251,7 @@ header
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#469dff', endColorstr='#9913ee',GradientType=1 ) /* IE6-9 fallback on horizontal gradient */
 	position: relative
 	padding-top: 68px
+	overflow: hidden 
 	.container
 		position: relative
 		z-index: 10
@@ -328,6 +331,7 @@ header
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7939f9', endColorstr='#492297',GradientType=1 ) /* IE6-9 fallback on horizontal gradient */
 	position: relative
 	padding-top: 68px
+	overflow: hidden
 	.container
 		position: relative
 		z-index: 10
@@ -356,14 +360,6 @@ header
 	background-repeat: no-repeat
 	background-position: center center
 	margin: 0 auto
-.steps-block-circle__f 
-	margin-left: 10px
-	.steps-block-circle
-		background-image: url('../img/1.svg')
-		background-size: 91px 98px
-		background-position: left 28px top 34px	
-	.steps-block-header
-		margin-left: -9px
 .steps-block-circle-orange
 	width: 150px
 	height: 150px
@@ -374,8 +370,8 @@ header
 	background: url('../img/2.svg'), linear-gradient(135deg, rgba(255,184,31,1) 0%,rgba(192,41,115,1) 100%), url('../img/2.svg') /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb81f', endColorstr='#c02973',GradientType=1 ) /* IE6-9 fallback on horizontal gradient */
 	border-radius: 50%
-	background-repeat: no-repeat
-	background-position: center center
+	background-repeat: no-repeat, no-repeat
+	background-position: center center, center center
 	z-index: 10
 	margin: 0 auto
 .flag-wrapper
@@ -387,15 +383,20 @@ header
 	top: -48px 
 	left: -70px
 	z-index: 1
+.steps-block-circle__f 
+	margin-left: 10px
+	.steps-block-circle
+		background-image: url('../img/1.svg')
+		background-size: 60%
+	.steps-block-header
+		margin-left: -9px
 .steps-block-circle__s
-	background-size: 116px 126px, 150px 150px
-	background-position: left 19px top 25px, left 0px top 0px
+	background-size: 60% 60%, 100% 100%	
 .steps-block-circle__t
 	.steps-block-circle
 		margin-left: 36px
 		background-image: url('../img/3.svg')
-		background-size: 90px 125px
-		background-position: left 24px top 20px
+		background-size: 70%
 	.steps-block-header
 		margin-left: -21px
 	.steps-block-desc
@@ -404,8 +405,7 @@ header
 	margin-left: 35px
 	.steps-block-circle
 		background-image: url('../img/4.svg')
-		background-size: 157px 166px
-		background-position: left -7px top 14px
+		background-size: 60%		
 .steps-block-circle__fi
 	margin-left: -27px
 	.steps-block-circle-orange
@@ -414,8 +414,9 @@ header
 		background: url('../img/5.svg'), -webkit-linear-gradient(-45deg, rgba(255,184,31,1) 0%,rgba(192,41,115,1) 100%) /* Chrome10-25,Safari5.1-6 */
 		background: url('../img/5.svg'), linear-gradient(135deg, rgba(255,184,31,1) 0%,rgba(192,41,115,1) 100%), url('../img/2.svg') /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb81f', endColorstr='#c02973',GradientType=1 ) /* IE6-9 fallback on horizontal gradient */
-		background-size: 166px 176px, 150px 150px
-		background-position: left -13px top 3px, left 0px top 0px
+		background-size: 60% 60%, 100% 100%
+		background-repeat: no-repeat, no-repeat
+		background-position: center center, center center		
 	.steps-block-desc
 		margin-left: 4px
 .steps-block-circle__six
@@ -426,13 +427,13 @@ header
 		background: url('../img/6.svg'), -webkit-linear-gradient(-45deg, rgba(255,184,31,1) 0%,rgba(192,41,115,1) 100%) /* Chrome10-25,Safari5.1-6 */
 		background: url('../img/6.svg'), linear-gradient(135deg, rgba(255,184,31,1) 0%,rgba(192,41,115,1) 100%), url('../img/2.svg') /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb81f', endColorstr='#c02973',GradientType=1 ) /* IE6-9 fallback on horizontal gradient */
-		background-size: 122px 107px, 150px 150px
-		background-position: left 14px top 33px, left 0px top 0px
+		background-size: 60% 60%, 100% 100%
 		background-repeat: no-repeat, no-repeat
+		background-position: center center, center center
 .steps-block-circle__sev
 	background-image: url('../img/7.svg')
-	background-size: 127px 140px
-	background-position: left 9px top 11px
+	background-size: 80%
+	background-position: center center
 .steps-block-header
 	font-family: $comf-b
 	font-size: 18px
@@ -623,7 +624,7 @@ header
 	position: absolute
 	top: 50%
 	margin-top: -36px
-	right: 0px
+	right: 15px
 	background-color: #f5ae15
 	border-radius: 50%
 	-moz-transition: all 0.3s ease-out
