@@ -1,5 +1,9 @@
 @media only screen and (min-width : 0px) and (max-width : 575px) {
 
+	.bg-decor{
+		display: none;
+	}
+
 	
 	.align-c{
 		text-align: center;
@@ -122,7 +126,7 @@
 	}
 
 	.steps-block-header{
-		font-size: 26px;
+		font-size: 22px;
 		margin-top: 30px;
 		line-height: 30px;
 	}
@@ -248,6 +252,52 @@
 	.text-block__second .main-text{
 		padding: 0px;
 	}
+
+	.steps-block-circle__f .steps-block-circle{
+		background-image: url(../img/1.png);
+    	background-size: 60%;
+	}
+
+	.steps-block-circle__s{
+		background: url('../img/2.png'), -moz-linear-gradient(-45deg, rgba(255,184,31,1) 0%, rgba(192,41,115,1) 100%); /* FF3.6-15 */
+		background: url('../img/2.png'), -webkit-linear-gradient(-45deg, rgba(255,184,31,1) 0%,rgba(192,41,115,1) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: url('../img/2.png'), linear-gradient(135deg, rgba(255,184,31,1) 0%,rgba(192,41,115,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		background-size: 60% 60%, 100% 100%;
+		background-repeat: no-repeat, no-repeat;
+		background-position: center center, center center;
+	}
+
+	.steps-block-circle__t .steps-block-circle{
+		background-image: url(../img/3.png);
+	}
+
+	.steps-block-circle__fo .steps-block-circle {
+	    background-image: url(../img/4.png);	   
+	}
+
+	.steps-block-circle__fi .steps-block-circle-orange{
+		background: url('../img/5.png'), -moz-linear-gradient(-45deg, rgba(255,184,31,1) 0%, rgba(192,41,115,1) 100%); /* FF3.6-15 */
+		background: url('../img/5.png'), -webkit-linear-gradient(-45deg, rgba(255,184,31,1) 0%,rgba(192,41,115,1) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: url('../img/5.png'), linear-gradient(135deg, rgba(255,184,31,1) 0%,rgba(192,41,115,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		background-size: 60% 60%, 100% 100%;
+		background-repeat: no-repeat, no-repeat;
+		background-position: center center, center center;
+	}
+	
+
+	.steps-block-circle__six .steps-block-circle-orange{
+
+		background: url('../img/6.png'), -moz-linear-gradient(-45deg, rgba(255,184,31,1) 0%, rgba(192,41,115,1) 100%); /* FF3.6-15 */
+		background: url('../img/6.png'), -webkit-linear-gradient(-45deg, rgba(255,184,31,1) 0%,rgba(192,41,115,1) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: url('../img/6.png'), linear-gradient(135deg, rgba(255,184,31,1) 0%,rgba(192,41,115,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		background-size: 60% 60%, 100% 100%;
+		background-repeat: no-repeat, no-repeat;
+		background-position: center center, center center;
+	}
+
+	.steps-block-circle__sev {
+	    background-image: url(../img/7.png);
+	  }
 
 
 }

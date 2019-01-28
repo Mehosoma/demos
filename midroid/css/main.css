@@ -936,6 +936,10 @@ footer .btn-blue {
   background-position: left center;
 }
 
+.phone-h {
+  background-position: left top 0px;
+}
+
 .phone-f {
   background-size: 42px 32px;
   padding-left: 31px;
