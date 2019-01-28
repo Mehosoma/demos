@@ -39,8 +39,6 @@
 	header{
 		height: auto;
 		padding-bottom: 60px;
-		background-image: none;
-		background-color: orange;
 	}
 
 	.header-desc{
@@ -69,17 +67,10 @@
 		padding-bottom: 60px;
 	}
 
-	.prizes, .steps{
-		background-image: none;
-		background-color: blue;
-	}
-
 	.text-block{
 		background-size: cover;
 		height: auto;
 		padding-bottom: 60px;
-		background-image: none;
-		background-color: #f2f2f2;
 	}
 
 	.prizes-text{
@@ -306,7 +297,7 @@
 
 	.steps-block-circle__sev {
 	    background-image: url(../img/7.png);
-	 }
+	   }
 
 
 }
