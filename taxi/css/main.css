@@ -150,6 +150,7 @@ header .container, header .row {
 .main-menu {
   height: 100%;
   margin-left: 50px;
+  text-align: center;
 }
 
 .main-menu ul {
@@ -164,7 +165,7 @@ header .container, header .row {
 }
 
 .main-menu li {
-  padding: 0px 15px;
+  padding: 0px 14px;
 }
 
 .main-menu a {
@@ -362,6 +363,10 @@ footer hr {
   font-size: 30px;
   text-transform: uppercase;
   color: #fff;
+}
+
+.main-contacts {
+  margin-left: -30px;
 }
 
 .main-contacts ul {
@@ -568,8 +573,8 @@ footer hr {
   background-image: url("../img/phone-o.png");
 }
 
-.contacts-page .main-contacts .adr-f {
-  background-image: url("../img/marker-o.png");
+.phone_wa {
+  background-image: url("../img/wa.png") !important;
 }
 
 .map {
