@@ -171,6 +171,7 @@ header .container, header .row {
 .main-menu a {
   color: #000;
   font-family: "RobotoMedium", sans-serif;
+  font-size: 15px;
 }
 
 .main-menu a:hover {
@@ -326,6 +327,10 @@ header .container, header .row {
   background-color: #ffcc00;
   top: 8px;
   left: 0px;
+}
+
+.second-list {
+  margin-top: 60px;
 }
 
 /***************************************************Footer*******************************************/
@@ -488,6 +493,7 @@ footer hr {
   margin-bottom: 12px;
   cursor: pointer;
   font-size: 16px;
+  line-height: 24px;
   color: #000;
   font-weight: normal;
   -webkit-user-select: none;
@@ -504,13 +510,17 @@ footer hr {
 
 .checkmark {
   position: absolute;
-  top: -2px;
+  top: 3px;
   left: 0;
   height: 25px;
   width: 25px;
   background-color: #fff;
   border-radius: 3px;
   border: 1px solid gray;
+}
+
+.auto-yes .checkmark {
+  top: 0px;
 }
 
 .check-gen input:checked ~ .checkmark {
@@ -571,6 +581,10 @@ footer hr {
 
 .contacts-page .main-contacts .phone-f {
   background-image: url("../img/phone-o.png");
+}
+
+.contacts-page .main-contacts .phone_wa {
+  background-image: url("../img/wa-o.png") !important;
 }
 
 .phone_wa {
