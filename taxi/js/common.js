@@ -29,7 +29,7 @@ $('.auto-yes').on('click',function(e){
 
 //Disclaim
 $('.disclaim').on('click',function(e){
-  if ($('#disclaim').is(':checked')){
+  if ($('#disclaim').is(':checked') && $('#disclaim_polite').is(':checked')) {
       $('.btn-form').removeAttr('disabled');
   } else {
      $('.btn-form').attr('disabled','disabled');

@@ -519,7 +519,7 @@ footer hr {
   border: 1px solid gray;
 }
 
-.auto-yes .checkmark {
+.auto-yes .checkmark, .polite-d .checkmark {
   top: 0px;
 }
 
