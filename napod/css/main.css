@@ -1404,7 +1404,7 @@ footer .logo {
   justify-content: flex-end;
 }
 
-.order-form-button a {
+.order-form-button button {
   margin: 0px;
   margin-top: 92px;
   width: 261px;
