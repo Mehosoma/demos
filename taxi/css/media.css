@@ -1,12 +1,202 @@
-@media only screen and (min-width : 0px) and (max-width : 479px) {
+@media only screen and (min-width : 0px) and (max-width : 575px) {
+
+		header{
+		height: auto;		
+	}
+
+	.logo img{
+		width: 100%;
+		height: auto;
+	}
+
+	.logo a{
+		margin-top: 30px;
+	}
+
+	.reg{
+		margin: 10px 0px;
+	}
+
+	h1{
+		font-size: 34px;
+	}
+
+	header .main-menu{
+		position: absolute;		
+		top: 50px;
+		left: 0px;
+		margin-left: 0px;	
+		margin-top: 0px;
+		width: 100%;
+		background-color: #fff;				
+		padding: 0px;
+		display: none;
+		z-index: 1000;
+		height: auto;
+	}
+
+	header .main-menu ul{
+		display: block;
+		height: auto;
+	}
+
+	header .main-menu li{
+		width: 100%;
+		display: block;			
+		text-align: center;
+		padding-right: 0px;
+		margin: 15px 0px;
+	}
+
+	.banner{
+		height: auto;
+		padding-bottom: 60px;
+		background-size: auto 100%;
+		padding-top: 80px;
+	}
+
+	.fml{
+		margin-left: 0px;
+	}
+
+	.btn-order{
+		width: 100%;
+	}
+
+	.main-contacts{
+		margin-left: 0px;
+	}
+
+	.main-contacts{
+		margin-top: 30px;
+	}
 
 }
 
-@media only screen and (min-width : 480px) and (max-width : 767px) {
+@media only screen and (min-width : 576px) and (max-width : 767px) {
+
+	header{
+		height: auto;		
+	}
+
+	.logo img{
+		width: 100%;
+		height: auto;
+	}
+
+	.logo a{
+		margin-top: 30px;
+	}
+
+	.reg{
+		margin-top: 10px;
+	}
+
+	header .main-menu{
+		position: absolute;		
+		top: 50px;
+		left: 0px;
+		margin-left: 0px;	
+		margin-top: 0px;
+		width: 100%;
+		background-color: #fff;				
+		padding: 0px;
+		display: none;
+		z-index: 1000;
+		height: auto;
+	}
+
+	header .main-menu ul{
+		display: block;
+		height: auto;
+	}
+
+	header .main-menu li{
+		width: 100%;
+		display: block;			
+		text-align: center;
+		padding-right: 0px;
+		margin: 15px 0px;
+	}
+
+	.banner{
+		height: auto;
+		padding-bottom: 60px;
+		background-size: auto 100%;
+	}
+
+	.fml{
+		margin-left: 0px;
+	}
+
+	.main-contacts{
+		margin-left: 0px;
+	}
+
+	.main-contacts{
+		margin-top: 30px;
+	}
 }
 
 @media only screen and (min-width : 768px) and (max-width : 991px) {
+	header{
+		height: auto;		
+	}
+
+	.main-menu{
+		margin-left: 0px;
+	}
+
+	.main-menu ul{
+		justify-content: space-between;		
+		padding: 20px 0px;
+	}
+
+	.main-menu li{
+		padding: 0px;
+	}
+
+	.fml{
+		margin-left: 0px;
+	}
+
+	.banner-list li{
+		font-size: 14px;
+	}
+
+	.banner{
+		padding-top: 80px;
+	}
+
+	.main-contacts{
+		margin-left: 0px;
+	}
 }
 
 @media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+	.logo img{
+		width: 100%;
+		height: auto;
+	}
+
+	.logo a{
+		margin-top: 30px;
+	}
+
+	.main-menu{
+		margin-left: 0px;
+	}
+
+	.reg a {
+		font-size: 26px;
+	}
+
+	.fml{
+		margin-left: 0px;
+	}
+
+	.footer-link{
+		margin-top: 10px;
+	}
 }
