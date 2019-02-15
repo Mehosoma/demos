@@ -171,6 +171,10 @@
 	.main-contacts{
 		margin-left: 0px;
 	}
+
+	.footer-link{
+		margin-top: 5px;
+	}
 }
 
 @media only screen and (min-width : 992px) and (max-width : 1199px) {
@@ -197,6 +201,14 @@
 	}
 
 	.footer-link{
-		margin-top: 10px;
+		margin-top: 5px;
 	}
+}
+
+@media only screen and (min-width : 1200px) {
+
+	footer .logo{
+		margin-top: -10px;
+	}
+
 }
