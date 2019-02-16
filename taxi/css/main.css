@@ -214,6 +214,10 @@ header .container, header .row {
   color: #ffcc00;
 }
 
+.reg-form {
+  overflow: hidden;
+}
+
 .logo a {
   display: block;
   margin-top: 15px;
