@@ -1,0 +1,13 @@
+@font-face {
+  font-family: "12492";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/12492.eot?#iefix") format("embedded-opentype"), url("../fonts/12492.woff") format("woff"), url("../fonts/12492.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "12594";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/12594.eot?#iefix") format("embedded-opentype"), url("../fonts/12594.woff") format("woff"), url("../fonts/12594.ttf") format("truetype");
+}
