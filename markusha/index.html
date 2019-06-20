@@ -34,7 +34,10 @@
 	<div class="header-first">
 		<div class="container">
 			<div class="row">
-				<div class="col-xl-2">
+				<div class="d-lg-none col-2 col-md-1">
+					<img src="images/logo.png" alt="markusha-logo" class="logo-mobile">
+				</div>
+				<div class="col-xl-2 col-lg-2 d-lg-block d-none">
 					<div class="social social-h">
 						<a href="" class="social-link">
 							<svg version="1.1" id="earth" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -103,35 +106,37 @@
 						</a>
 					</div>
 				</div>
-				<div class="col-xl-5">
+				<div class="col-xl-5 col-lg-4 d-lg-block d-none">
 					<form id="search" class="form-gen">
 						<input type="text" name="search" required="" placeholder="Поиск по сайту" class="search-input">
 						<button type="submit" class="btn-blue btn-blue_search a-trans">Искать</button>
 					</form>
 				</div>
-				<div class="col-xl-2">
+				<div class="col-xl-2 col-lg-3 col-md-4 col-8">
 					<div class="phones">
 						<a href="tel:8(495)469-90-00" class="phones-tel">8 (495) 469-90-00</a>
 						<a href="tel:8(495)466-00-87" class="phones-tel">8 (495) 466-00-87</a>
 					</div>
 				</div>
-				<div class="col-xl-2">
+				<div class="col-xl-2 col-lg-2 col-md-4 d-none d-md-block">
 					<a href="" class="btn-blue btn-blue_order">Заказать звонок</a>
 				</div>
-				<div class="col-xl-1">
+				<div class="col-xl-1 col-lg-1 col-md-2 d-none d-md-block">
 					<div class="work-h">
 						<span>График работы:</span>
 						<span>с 10:00 до 20:00</span>
 					</div>
 				</div>
+				<div class="d-lg-none col-2 col-md-1">
+					<button class="menu-toggle-button click-mobile">
+						<span></span>					
+					</button>
+				</div>
 			</div>
 		</div>
 	</div>
 	<div class="container">
-		<div class="col-12">
-			<button class="menu-toggle-button click-mobile d-xl-none">
-				<span></span>					
-			</button>
+		<div class="col-12">			
 			<nav class="main-menu">
 				<ul>
 					<li class="main-menu-list"><a href="" class="main-menu-link"><img src="images/home-icon.png" alt="home-icon"></a></li>
@@ -154,7 +159,7 @@
 		<div class="row">
 			<div class="col-12">
 				<div class="main-header-wrap">
-					<img src="images/logo.png" alt="markusha-logo">
+					<img src="images/logo.png" alt="markusha-logo" class="d-none d-lg-inline-block">
 					<h1 class="main-header">Детская стоматологическая клиника<span>МАРКУШКА</span></h1>	
 				</div>
 				<div class="slogan-wrap">
@@ -168,19 +173,21 @@
 <!--Main-About-->
 <section class="main-about">
 	<div class="container">
-		<div class="row">
-			<div class="col-xl-4">
-				<div class="main-about-image">
-					<img src="images/main-about.jpg" alt="about-company">
-					<div class="main-about-image_decor"></div>
-				</div>
-			</div>
-			<div class="col-xl-8">
-				<h2 class="sub-header sub-header_mabout">О компании</h2>
-				<p class="main-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </p>
-				<p class="main-text">dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sdeserunt mollit anim id est laborum.  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas</p>
-				<p class="main-text">sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem</p>
-				<a href="" class="link-blue">Подробнее >></a>
+		<div class="row">			
+			<div class="col-12">
+				
+					<div class="main-about-image">
+						<img src="images/main-about.jpg" alt="about-company">
+						<div class="main-about-image_decor d-none d-md-block"></div>
+					</div>
+					<div class="main-about-content">
+						<h2 class="sub-header sub-header_mabout">О компании</h2>
+						<p class="main-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </p>
+						<p class="main-text">dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sdeserunt mollit anim id est laborum.  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas</p>
+						<p class="main-text">sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem</p>
+						<a href="" class="link-blue">Подробнее >></a>
+					</div>
+				
 			</div>
 		</div>
 	</div>
@@ -195,61 +202,83 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-xl-3">
-				<div class="main-services-block">
-					<span class="sub-header_blue">Профилактика</span>
-					<img src="images/mservices-prof.png" alt="prevention">
-					<a href="" class="main-text main-services-link link-gray">Профилактика кариеса<br>Профессиональная гигиена<br> полости рта</a>
+			<div class="col-12">
+				<div class="slider-serv row">
+					<div class="col-xl-3 col-lg-4 col-md-6">
+						<div class="main-services-block">
+							<span class="sub-header_blue">Профилактика</span>
+							<img src="images/mservices-prof.png" alt="prevention">
+							<a href="" class="main-text main-services-link link-gray">Профилактика кариеса<br>Профессиональная гигиена<br> полости рта</a>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-4 col-md-6">
+						<div class="main-services-block">
+							<span class="sub-header_blue">Терапия</span>
+							<img src="images/mservices-ter.png" alt="therapy">
+							<a href="" class="main-text main-services-link link-gray">Профилактика кариеса<br>Профессиональная гигиена полости рта</a>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-4 d-md-none d-lg-block">
+						<div class="main-services-block">
+							<span class="sub-header_blue">Хирургия</span>
+							<img src="images/mservices-sur.png" alt="surgery">
+							<a href="" class="main-text main-services-link link-gray">Профилактика кариеса<br>Профессиональная гигиена полости рта</a>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-4 d-md-none d-lg-block">
+						<div class="main-services-block">
+							<span class="sub-header_blue">Ортопедия</span>
+							<img src="images/mservices-ort.png" alt="orthopedics">
+							<a href="" class="main-text main-services-link link-gray">Профилактика кариеса<br>Профессиональная гигиена полости рта 111 3122412 1241412 1414 44124 141212 </a>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-4 col-md-6">
+						<div class="main-services-block">
+							<span class="sub-header_blue">Пародонтология</span>
+							<img src="images/mservices-per.png" alt="periodontics">
+							<a href="" class="main-text main-services-link link-gray">Лечение корневых каналов зуба, а также кости, окружающей верхушку корня</a>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-4 col-md-6">
+						<div class="main-services-block">
+							<span class="sub-header_blue">Обезболивание</span>
+							<img src="images/mservices-anes.png" alt="anesthesia">
+							<a href="" class="main-text main-services-link link-gray">Лечение корневых каналов зуба, а также кости, окружающей верхушку корня</a>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-4 d-md-none d-lg-block">
+						<div class="main-services-block">					
+							<span class="sub-header_blue">Реставрация</span>
+							<img src="images/mservices-res.png" alt="restoration">
+							<a href="" class="main-text main-services-link link-gray">Лечение корневых каналов зуба, а также кости, окружающей верхушку корня</a>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-4 d-md-none d-lg-block">
+						<div class="main-services-block">					
+							<span class="sub-header_blue">Лечение<br> "особенных" детей</span>
+							<img src="images/mservices-inv.png" alt="invalid">
+							<a href="" class="main-text main-services-link link-gray">Лечение корневых каналов зуба, а также кости, окружающей верхушку корня</a>
+						</div>
+					</div>
 				</div>
-			</div>
-			<div class="col-xl-3">
-				<div class="main-services-block">
-					<span class="sub-header_blue">Терапия</span>
-					<img src="images/mservices-ter.png" alt="therapy">
-					<a href="" class="main-text main-services-link link-gray">Профилактика кариеса<br>Профессиональная гигиена полости рта</a>
-				</div>
-			</div>
-			<div class="col-xl-3">
-				<div class="main-services-block">
-					<span class="sub-header_blue">Хирургия</span>
-					<img src="images/mservices-sur.png" alt="surgery">
-					<a href="" class="main-text main-services-link link-gray">Профилактика кариеса<br>Профессиональная гигиена полости рта</a>
-				</div>
-			</div>
-			<div class="col-xl-3">
-				<div class="main-services-block">
-					<span class="sub-header_blue">Ортопедия</span>
-					<img src="images/mservices-ort.png" alt="orthopedics">
-					<a href="" class="main-text main-services-link link-gray">Профилактика кариеса<br>Профессиональная гигиена полости рта 111 3122412 1241412 1414 44124 141212 </a>
-				</div>
-			</div>
-			<div class="col-xl-3">
-				<div class="main-services-block">
-					<span class="sub-header_blue">Пародонтология</span>
-					<img src="images/mservices-per.png" alt="periodontics">
-					<a href="" class="main-text main-services-link link-gray">Лечение корневых каналов зуба, а также кости, окружающей верхушку корня</a>
-				</div>
-			</div>
-			<div class="col-xl-3">
-				<div class="main-services-block">
-					<span class="sub-header_blue">Обезболивание</span>
-					<img src="images/mservices-anes.png" alt="anesthesia">
-					<a href="" class="main-text main-services-link link-gray">Лечение корневых каналов зуба, а также кости, окружающей верхушку корня</a>
-				</div>
-			</div>
-			<div class="col-xl-3">
-				<div class="main-services-block">					
-					<span class="sub-header_blue">Реставрация</span>
-					<img src="images/mservices-res.png" alt="restoration">
-					<a href="" class="main-text main-services-link link-gray">Лечение корневых каналов зуба, а также кости, окружающей верхушку корня</a>
-				</div>
-			</div>
-			<div class="col-xl-3">
-				<div class="main-services-block">					
-					<span class="sub-header_blue">Лечение<br> "особенных" детей</span>
-					<img src="images/mservices-inv.png" alt="invalid">
-					<a href="" class="main-text main-services-link link-gray">Лечение корневых каналов зуба, а также кости, окружающей верхушку корня</a>
-				</div>
+				<div class="left-s d-lg-none d-md-block">
+						<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+							 viewBox="0 0 26 47" style="enable-background:new 0 0 26 47;" xml:space="preserve">
+						<style type="text/css">
+							.st0{fill:#64AEDB;}
+						</style>
+						<polygon class="st0" points="1,23.5 23.9,46.5 25,45.4 3.2,23.5 25,1.6 23.9,0.5 "/>
+						</svg>
+					</div>
+					<div class="right-s d-lg-none d-md-block">
+						<svg version="1.1" id="Capa_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+							 viewBox="0 0 26 47" style="enable-background:new 0 0 26 47;" xml:space="preserve">
+						<style type="text/css">
+							.st0{fill:#64AEDB;}
+						</style>
+						<polygon class="st0" points="2.1,0.5 1,1.6 22.8,23.5 1,45.4 2.1,46.5 25,23.5 "/>
+						</svg>
+					</div>
 			</div>
 		</div>
 		<div class="row">
@@ -262,67 +291,100 @@
 
 <!--Main-Methods-->
 <section class="main-methods section-blue-bg">
-	<hr class="line line_top">
-	<div class="container">
-		<img src="images/mmethods-decor.png" alt="methods-decor" class="mmethods-decor">
-		<div class="row">
-			<div class="col-12">
-				<h2 class="sub-header_decor">Кроме уникальной методики лечения молочных резцов, у нас:</h2>
-			</div>
-		</div>
-		<div class="row main-methods_secrow">
-			<div class="col-xl-4">
-				<div class="main-methods-block">
-					<p class="main-text"><span>Современное оснащение</span>  новейшим оборудованием.</p>
+	<div class="decor-wrap">
+		<hr class="line line_top">
+		<div class="container">			
+			<div class="row">
+				<div class="col-xl-12 offset-xl-0 col-lg-10 offset-lg-1">
+					<h2 class="sub-header_decor">Кроме уникальной методики лечения молочных резцов, у нас:</h2>
 				</div>
 			</div>
-			<div class="col-xl-4">
-				<div class="main-methods-block">
-					<p class="main-text"><span>Профессиональная команда</span> (врачи высших категорий и К.М.Н.)</p>
+			<div class="row">
+				<div class="col-12">
+					<div class="row main-methods_secrow slider-methods">
+							<div class="col-12">
+								<div class="row">
+								<div class="col-xl-4 col-lg-4 col-md-6 col-12">
+									<div class="main-methods-block">
+										<p class="main-text"><span>Современное оснащение</span>  новейшим оборудованием.</p>
+									</div>
+								</div>
+								<div class="col-xl-4 col-lg-4 col-md-6 col-12">
+									<div class="main-methods-block">
+										<p class="main-text"><span>Профессиональная команда</span> (врачи высших категорий и К.М.Н.)</p>
+									</div>
+								</div>
+								<div class="col-xl-4 col-lg-4 col-md-6 col-12">
+									<div class="main-methods-block">
+										<p class="main-text">Очень <span>сильная анестезиологическая служба.</span></p>
+									</div>
+								</div>
+								<div class="col-xl-4 col-lg-4 col-md-6 col-12">
+									<div class="main-methods-block">
+										<p class="main-text">Мы НЕ лечим «в слепую»!<br> У нас есть <span>весь необходимый мониторинг!</span></p>
+									</div>
+								</div>
+								<div class="col-xl-4 col-lg-4 col-md-6 col-12">
+									<div class="main-methods-block">
+										<p class="main-text">Используем <span>только оригинальный препарат севоран</span> (севофлуран для ингаляционного наркоза)</p>
+									</div>
+								</div>
+								<div class="col-xl-4 col-lg-4 col-md-6 col-12">
+									<div class="main-methods-block">
+										<p class="main-text">Врачи имеют <span>огромный опыт работы с детьми</span></p>
+									</div>
+								</div>
+								</div>
+							</div>
+							<div class="col-12">
+								<div class="row">
+									<div class="col-xl-4 col-lg-4 col-md-6">
+										<div class="main-methods-block">
+											<p class="main-text">Помимо стоматологов, в клинике работают <span>детские врачи</span> практически <span>всех востребованных специализаций</span></p>
+										</div>
+									</div>
+									<div class="col-xl-4 col-lg-4 col-md-6">
+										<div class="main-methods-block">
+											<p class="main-text">Демократичная <span>стоимость услуг</span>, различные <span>акции!</span></p>
+										</div>
+									</div>	
+								</div>
+							</div>					
+					</div>
+					<div class="left d-lg-none d-md-block">
+						<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+							 viewBox="0 0 26 47" style="enable-background:new 0 0 26 47;" xml:space="preserve">
+						<style type="text/css">
+							.st0{fill:#64AEDB;}
+						</style>
+						<polygon class="st0" points="1,23.5 23.9,46.5 25,45.4 3.2,23.5 25,1.6 23.9,0.5 "/>
+						</svg>
+					</div>
+					<div class="right d-lg-none d-md-block">
+						<svg version="1.1" id="Capa_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+							 viewBox="0 0 26 47" style="enable-background:new 0 0 26 47;" xml:space="preserve">
+						<style type="text/css">
+							.st0{fill:#64AEDB;}
+						</style>
+						<polygon class="st0" points="2.1,0.5 1,1.6 22.8,23.5 1,45.4 2.1,46.5 25,23.5 "/>
+						</svg>
+					</div>
 				</div>
 			</div>
-			<div class="col-xl-4">
-				<div class="main-methods-block">
-					<p class="main-text">Очень <span>сильная анестезиологическая служба.</span></p>
-				</div>
-			</div>
-			<div class="col-xl-4">
-				<div class="main-methods-block">
-					<p class="main-text">Мы НЕ лечим «в слепую»!<br> У нас есть <span>весь необходимый мониторинг!</span></p>
-				</div>
-			</div>
-			<div class="col-xl-4">
-				<div class="main-methods-block">
-					<p class="main-text">Используем <span>только оригинальный препарат севоран</span> (севофлуран для ингаляционного наркоза)</p>
-				</div>
-			</div>
-			<div class="col-xl-4">
-				<div class="main-methods-block">
-					<p class="main-text">Врачи имеют <span>огромный опыт работы с детьми</span></p>
-				</div>
-			</div>
-			<div class="col-xl-4">
-				<div class="main-methods-block">
-					<p class="main-text">Помимо стоматологов, в клинике работают <span>детские врачи</span> практически <span>всех востребованных специализаций</span></p>
-				</div>
-			</div>
-			<div class="col-xl-4">
-				<div class="main-methods-block">
-					<p class="main-text">Демократичная <span>стоимость услуг</span>, различные <span>акции!</span></p>
-				</div>
-			</div>
-		</div>
-	</div>	
+		</div>	
+	</div>
 </section>
+
 
 <!--Main-Stock-->
 <section class="main-stock">
 	<div class="container">
 		<div class="row">
-			<div class="col-xl-4">
-				<img src="images/main-stock.png" alt="stock-image">
+			<div class="col-xl-4 col-lg-5 col-md-4">
+				<img src="images/main-stock.png" alt="stock-image" class="d-none d-lg-block">
+				<img src="images/main-stock-mob.png" alt="stock-image" class="d-lg-none d-block">
 			</div>
-			<div class="col-xl-8">
+			<div class="col-xl-8 col-lg-7 col-md-8">
 				<h2 class="sub-header_decor c-blue sub-header_decor__stock">Лечитесь с выгодой!</h2>
 				<ul>
 					<li class="main-stock-list"><span class="main-text"><i>-15%</i>(лечение ребенка–инвалида);</span></li>
@@ -347,35 +409,63 @@
 			<div class="col-12">
 				<div class="sub-header_full">
 					<h2 class="sub-header">Новости нашей клиники</h2>
-					<hr>
-					<a href="" class="link-blue link-blue_subheader-full">Все новости<div class="link-circle a-trans"></div></a>
+					<hr class="d-none d-md-block">
+					<a href="" class="link-blue link-blue_subheader-full d-none d-md-block">Все новости<div class="link-circle a-trans"></div></a>
 				</div>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-xl-4">
-				<div class="main-news-block">
-					<span class="small-text mnb-date">12.12.2019</span>
-					<h4 class="sub-header_small">Заголовок новости</h4>
-					<p class="main-text">Lorem ipsum dolor sit amet, onsecet ur adipisicing elit, sed do eius mo dtempor incididunt ut labore et dolo re magna aliqua. Ut enim... </p>
-					<a href="" class="link-blue">Подробнее >></a>
+			<div class="col-12">
+				<div class="row slider-news">
+					<div class="col-xl-4 col-lg-4 col-md-6">
+						<div class="main-news-block">
+							<span class="small-text mnb-date">12.12.2019</span>
+							<h4 class="sub-header_small">Заголовок новости</h4>
+							<p class="main-text">Lorem ipsum dolor sit amet, onsecet ur adipisicing elit, sed do eius mo dtempor incididunt ut labore et dolo re magna aliqua. Ut enim... </p>
+							<div class="link-blue_news-wrap">
+								<a href="" class="link-blue link-blue_news">Подробнее >></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-4 col-lg-4 col-md-6">
+						<div class="main-news-block">
+							<span class="small-text mnb-date">12.12.2019</span>
+							<h4 class="sub-header_small">Заголовок новости</h4>
+							<p class="main-text">Lorem ipsum dolor sit amet, onsecet ur adipisicing elit, sed do eius mo dtempor incididunt ut labore et dolo re magna aliqua. Ut enim... </p>
+							<div class="link-blue_news-wrap">
+								<a href="" class="link-blue link-blue_news">Подробнее >></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-4 col-lg-4 d-md-none d-lg-block">
+						<div class="main-news-block">
+							<span class="small-text mnb-date">12.12.2019</span>
+							<h4 class="sub-header_small">Заголовок новости</h4>
+							<p class="main-text">Lorem ipsum dolor sit amet, onsecet ur adipisicing elit, sed do eius mo dtempor incididunt ut labore et dolo re magna aliqua. Ut enim... </p>
+							<div class="link-blue_news-wrap">
+								<a href="" class="link-blue link-blue_news">Подробнее >></a>
+							</div>
+						</div>
+					</div>
 				</div>
-			</div>
-			<div class="col-xl-4">
-				<div class="main-news-block">
-					<span class="small-text mnb-date">12.12.2019</span>
-					<h4 class="sub-header_small">Заголовок новости</h4>
-					<p class="main-text">Lorem ipsum dolor sit amet, onsecet ur adipisicing elit, sed do eius mo dtempor incididunt ut labore et dolo re magna aliqua. Ut enim... </p>
-					<a href="" class="link-blue">Подробнее >></a>
-				</div>
-			</div>
-			<div class="col-xl-4">
-				<div class="main-news-block">
-					<span class="small-text mnb-date">12.12.2019</span>
-					<h4 class="sub-header_small">Заголовок новости</h4>
-					<p class="main-text">Lorem ipsum dolor sit amet, onsecet ur adipisicing elit, sed do eius mo dtempor incididunt ut labore et dolo re magna aliqua. Ut enim... </p>
-					<a href="" class="link-blue">Подробнее >></a>
-				</div>
+				<div class="left-n d-lg-none d-md-block">
+						<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+							 viewBox="0 0 26 47" style="enable-background:new 0 0 26 47;" xml:space="preserve">
+						<style type="text/css">
+							.st0{fill:#64AEDB;}
+						</style>
+						<polygon class="st0" points="1,23.5 23.9,46.5 25,45.4 3.2,23.5 25,1.6 23.9,0.5 "/>
+						</svg>
+					</div>
+					<div class="right-n d-lg-none d-md-block">
+						<svg version="1.1" id="Capa_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+							 viewBox="0 0 26 47" style="enable-background:new 0 0 26 47;" xml:space="preserve">
+						<style type="text/css">
+							.st0{fill:#64AEDB;}
+						</style>
+						<polygon class="st0" points="2.1,0.5 1,1.6 22.8,23.5 1,45.4 2.1,46.5 25,23.5 "/>
+						</svg>
+					</div>
 			</div>
 		</div>
 	</div>
@@ -388,8 +478,8 @@
 			<div class="col-12">
 				<div class="sub-header_full">
 					<h2 class="sub-header">Вот, что говорят наши довольные пациенты</h2>
-					<hr>
-					<a href="" class="link-blue link-blue_subheader-full">Все отзывы<div class="link-circle a-trans"></div></a>
+					<hr class="d-none d-lg-block">
+					<a href="" class="link-blue link-blue_subheader-full d-none d-lg-block">Все отзывы<div class="link-circle a-trans"></div></a>
 				</div>
 			</div>
 		</div>
@@ -490,13 +580,13 @@
 <section class="main-form">
 	<div class="container">
 		<div class="row">
-			<div class="col-xl-8">
+			<div class="col-xl-8 col-lg-8 col-md-11">
 				<h2 class="sub-header">Хотите вылечить своему ребенку зубы без страха и слез?</h2>
-				<span class="sub-header_decor c-blue">Запишитесь на консультацию. Мы знаем как его отвлечь!</span>
+				<span class="sub-header_decor c-blue">Запишитесь на консультацию.<br class="d-block d-md-none"> Мы знаем как его отвлечь!</span>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-xl-6">
+			<div class="col-xl-6 col-lg-7 col-md-9">
 				<form id="main-form-order" class="form-gen">
 					<input type="text" name="name" required="" placeholder="Ваше имя">
 					<input type="text" name="phone" required="" placeholder="Номер телефона">
@@ -509,7 +599,7 @@
 </section>
 
 <!--Map-->
-<section class="main-map">
+<section class="main-map d-none d-md-block">
 	<div class="map">
 		<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Acb18dfdf2e2b912109e4915593f7b0356e8a1b03837ef1ac6c291662efa8f239&amp;width=100%25&amp;height=705&amp;lang=ru_RU&amp;scroll=false"></script>			
 	</div>
@@ -610,13 +700,15 @@
 <section class="main-add">
 	<div class="container">
 		<div class="row">
-			<div class="col-xl-3">
+			<div class="col-xl-3 col-lg-4 col-md-4">
 				<img src="images/heart.png" alt="add-heart-image">
 			</div>
-			<div class="col-xl-9">
+			<div class="col-xl-9 col-lg-8 col-md-8">
 				<h2 class="sub-header sub-header_add">В нашем многопрофильном центре доступны</h2>
 				<span class="sub-header_decor sub-header_decor__add c-blue">все виды обследований и большой ряд специалистов</span>
-				<a href="" class="btn-gray btn-gray_add">Узнайте больше на www.mark-med.ru</a>
+				<div class="btn-gray-wrap">
+					<a href="" class="btn-gray btn-gray_add">Узнайте больше на www.mark-med.ru</a>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -624,13 +716,14 @@
 
 <!--Footer-->
 <footer>
+	<img src="images/logo.png" alt="markushka-logo" class="d-md-block d-lg-none footer-logo">
 	<div class="container">
 		<div class="row">
-			<div class="col-xl-3">
+			<div class="col-xl-3 col-lg-3 col-md-5">
 				<span class="copyright">&copy; Маркушка, <br><a href="" class="link-gray">http://mark-dent.ru</a>, 2019</span>
 				<p class="footer-text footer-text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor</p>
 			</div>
-			<div class="col-xl-3">
+			<div class="col-xl-3 col-lg-3 d-none d-lg-block">
 				<div class="footer-site-map">
 					<span class="subheader-footer">Карта сайта</span>
 					<ul class="footer-list">
@@ -644,7 +737,7 @@
 					</ul>
 				</div>
 			</div>
-			<div class="col-xl-3">
+			<div class="col-xl-3 col-lg-3 d-none d-lg-block">
 				<div class="footer-services">
 					<span class="subheader-footer">Услуги</span>
 					<ul class="footer-list">
@@ -660,9 +753,9 @@
 					</ul>
 				</div>
 			</div>
-			<div class="col-xl-3">
+			<div class="col-xl-3 col-lg-3 col-md-5 offset-md-2 offset-lg-0">
 				<div class="footer-contacts">
-					<span class="subheader-footer">Контакты</span>
+					<span class="subheader-footer d-md-none d-lg-block">Контакты</span>
 					<div class="footer-contacts-phone">
 						<a href="tel:+7(345)234-23-45" class="footer-text link-gray">+7 (345) 234-23-45</a>
 						<a href="tel:+7(345)234-23-45" class="footer-text link-gray">+7 (345) 234-23-45</a>
@@ -673,6 +766,36 @@
 					<div class="footer-contacts-mail">
 						<a href="mailto:example@mail.com" class="footer-text link-gray">example@mail.com</a>
 					</div>
+				</div>
+				<div class="footer-add-menu d-block d-lg-none">
+					<a href="" class="footer-add-menu-header subheader-footer">Карта сайта</a>	
+					<div class="filters-block_hidden">
+						<ul>
+							<li><a href="" class="footer-text link-gray">О клинике</a></li>
+							<li><a href="" class="footer-text link-gray">Услуги и стоимость</a></li>
+							<li><a href="" class="footer-text link-gray">Специалисты</a></li>
+							<li><a href="" class="footer-text link-gray">Отзывы</a></li>
+							<li><a href="" class="footer-text link-gray">Новости и акции</a></li>
+							<li><a href="" class="footer-text link-gray">Полезное</a></li>
+							<li><a href="" class="footer-text link-gray">Контакты</a></li>
+						</ul>
+					</div>					
+				</div>
+				<div class="footer-add-menu d-block d-lg-none">
+					<a href="" class="footer-add-menu-header subheader-footer">Услуги</a>	
+					<div class="filters-block_hidden">
+						<ul>
+							<li><a href="" class="footer-text link-gray">Профилактика</a></li>
+							<li><a href="" class="footer-text link-gray">Терапия</a></li>
+							<li><a href="" class="footer-text link-gray">Хирургия</a></li>
+							<li><a href="" class="footer-text link-gray">Пародонтология</a></li>
+							<li><a href="" class="footer-text link-gray">Реставрация</a></li>
+							<li><a href="" class="footer-text link-gray">Лечение "особенных" детей</a></li>
+							<li><a href="" class="footer-text link-gray">Обезболивание</a></li>
+							<li><a href="" class="footer-text link-gray">Ортодонтия</a></li>
+							<li><a href="" class="footer-text link-gray">Стоматология для</a></li>
+						</ul>
+					</div>					
 				</div>
 				<div class="footer-social">
 					<ul>
