@@ -16,6 +16,7 @@
 	.menu-toggle-button{
 		margin-top: 0px;
 		width: 62px;
+		margin-left: -25px;
 	}
 
 	.work-h {
@@ -259,11 +260,294 @@
 		padding-bottom: 30px;
 	}
 
+	.btn-gray_mservices{
+		margin-top: 0px;
+	}
+
+}
+
+@media only screen and (min-width : 480px) and (max-width : 575px) {
+
+	.main-methods {
+	    min-height: 950px;
+	}
+
+	.main-methods .main-methods-block{
+		width: 70%;
+	}
 
 
 }
 
 @media only screen and (min-width : 576px) and (max-width : 767px) {
+
+	.logo-mobile{
+		width: 59px;
+		height: 59px;
+		margin-top: -5px;
+	}
+
+	.phones{
+		background-image: none;
+		padding-left: 0px;
+		margin-left: 0px;
+		text-align: center;
+	}
+
+	.menu-toggle-button{
+		margin-top: 0px;
+		width: 62px;
+		margin-left: -25px;
+	}
+
+	.work-h {
+		margin-left: -15px;
+	}
+
+	header .main-menu{		
+		display: none;
+		height: auto;
+		text-align: center;
+		padding: 30px 0px;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		width: 100%;
+		background-color: #fff;
+		z-index: 10000;
+	}
+
+	.main-menu-list{
+		display: block;
+		margin-right: 0px;
+		padding: 20px 0px;
+	}
+
+	.main-header{
+		margin-left: 0px;
+		font-size: 15px;
+	}
+
+	.main-header{
+		font-size: 25px;
+		margin-left: 0px;
+	}
+
+	.main-header span{
+		font-size: 82px;
+	}
+
+	.slogan{
+		font-size: 38px;
+	}
+
+	.main-about-image img{
+		width: 100%;
+		height: auto;
+	}
+
+	.sub-header_mabout{
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		font-size: 24px;
+		top: -20px;
+	}
+
+	.main-about-image{
+		margin-top: 40px;
+		width: 30%;
+		margin: 40px 20px 20px 0px;
+	}
+
+	.main-about-content{
+		padding-top: 40px;
+	}
+
+	.sub-header_mservices{
+		text-align: center;		
+	}
+
+	.main-services-block{
+		text-align: center;
+	}
+
+	.main-services-link{
+		padding-left: 0px;
+	}
+
+	.btn-gray{
+		font-size: 14px;
+	}
+
+	.main-services-block {
+		margin-top: -40px;
+	}
+
+	.main-services .col-xl-3{
+		margin-bottom: 40px;
+	}
+
+	.main-services {
+		padding-bottom: 90px;
+	}
+
+	.main-methods .sub-header_decor{
+		font-size: 20px;
+		margin-top: -28px;
+	}
+
+	.line{
+		width: 90%;
+	}
+
+	.decor-wrap{
+		background-image: none;
+	}
+
+	.slider-methods .slick-slide{
+		width: 100%!important;
+	}
+
+	.left, .right{
+		display: none;
+	}
+
+	.main-methods {
+		min-height: 950px;
+	}
+
+	.main-methods .main-methods-block{
+		width: 80%;
+	}
+
+	.sub-header_decor__stock{
+		padding-left: 0px;
+		font-size: 32px;
+	}
+
+	.main-stock ul{
+		margin-left: 0px;
+	}
+
+	.btn-gray_stock-wrap{
+		padding-left: 0px;
+		text-align: center;
+	}
+
+	.main-news .sub-header{
+		font-size: 27px;
+		text-align: center;
+	}
+
+	.link-blue_news-wrap{
+		text-align: center;
+		margin-top: 20px;
+	}
+
+	.main-response .sub-header_full{
+		padding-left: 0px;
+	}
+
+	.main-response .sub-header{
+		text-align: center;
+		font-size: 24px;
+	}
+
+	.response-top{
+		padding-left: 0px;
+	}
+
+	.response-top-info{
+		margin-left: 0px;
+	}
+
+	.response-top-ratings{
+		display: block;
+		width: 100%;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+
+	.response-top-info{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.response-date{
+		order: 2;
+	}
+
+	.response-user{
+		margin-left: 0px;		
+	}
+
+	.main-form{
+		background-position: right -700px center;
+	}
+
+	.main-form .sub-header{
+		font-size: 24px;
+	} 
+
+	.main-form .sub-header_decor{
+		font-size: 20px;
+	}
+
+	#main-form-order input{
+		width: 100%;
+		margin-right: 0px!important;
+		margin-bottom: 10px;
+	}
+
+	#main-form-order textarea{
+		margin-top: 0px;
+	}
+
+	.main-add img{
+		width: 100%;
+		max-width: 267px;
+		height: auto;
+		margin-left: 0px;
+		margin-top: 0px;
+	}
+
+	.sub-header_add{
+		margin-left: 0px;
+		font-size: 27px;		
+	}
+
+	.sub-header_decor__add{
+		margin-left: 0px;
+		font-size: 20px;
+		margin-top: 20px;
+		display: block;
+		text-align: left;
+	}
+
+	.btn-gray_add{
+		margin-left: 0px;
+		padding: 0px 15px;
+		font-size: 16px;
+	}
+
+	.btn-gray_add:after{
+		display: none;
+	}
+
+	.btn-gray-wrap{
+		text-align: center;
+	}
+
+	footer{
+		padding-bottom: 30px;
+	}
+
+	.btn-gray_mservices{
+		margin-top: 0px;
+	}
+
 }
 
 @media only screen and (min-width : 768px) and (max-width : 991px) {

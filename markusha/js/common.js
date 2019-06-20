@@ -6,24 +6,9 @@ $('.slider-response').slick({
   speed: 300,
   arrows: false, 
   responsive: [
+    
     {
-      breakpoint: 1200,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        infinite: true,
-        dots: true
-      }
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2
-      }
-    },
-    {
-      breakpoint: 480,
+      breakpoint: 320,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1
@@ -101,13 +86,6 @@ $(window).on('load resize', function() {
 	        infinite: true,
 	        dots: false,
 	        arrows:true
-	      }
-	    },
-	    {
-	      breakpoint: 768,
-	      settings: {
-	        slidesToShow: 2,
-	        slidesToScroll: 2
 	      }
 	    },
 	    {
