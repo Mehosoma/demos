@@ -400,6 +400,9 @@ body hr {
 
 .main-header-wrap img {
   display: inline-block;
+}
+
+.main-header-wrap a {
   vertical-align: top;
 }
 
@@ -437,9 +440,9 @@ body hr {
 }
 
 .main-about-image {
-  top: 9px;
+  top: -50px;
   position: relative;
-  margin: 0px 50px 40px 0px;
+  margin: 0px 53px -20px 0px;
   vertical-align: top;
   float: left;
 }
@@ -507,64 +510,72 @@ body hr {
 
 /***************************************************Main-Methods*******************************************/
 .decor-wrap {
-  height: 500px;
-  max-width: 1400px;
-  margin: 0 auto;
+  height: 100%;
+  width: 1200px;
   background-image: url("../images/mmethods-decor.png");
   background-repeat: no-repeat;
   background-position: bottom right;
-  position: relative;
-  z-index: 10000;
-}
-
-.main-methods {
-  height: 460px;
-  position: relative;
+  position: absolute;
+  top: 45px;
+  left: 0px;
+  right: 0px;
+  margin: auto;
   z-index: 1;
 }
 
+.main-methods {
+  position: relative;
+  padding-bottom: 30px;
+}
+
 .main-methods .col-xl-4 {
-  margin-bottom: 28px;
+  margin-bottom: 18px;
+}
+
+.main-methods .col-12 {
+  position: relative;
+  z-index: 1000;
 }
 
 .main-methods-block {
   background-repeat: no-repeat;
   padding-left: 74px;
+  padding-bottom: 10px;
 }
 
 .main-methods-block span {
   color: #0a9de3;
 }
 
-.main-methods_secrow .col-xl-4:nth-child(1) .main-methods-block {
+.main-methods_secrow .main-methods-block-1 {
   background-image: url("../images/mmethods-equipment.png");
 }
 
-.main-methods_secrow .col-xl-4:nth-child(2) .main-methods-block {
+.main-methods_secrow .main-methods-block-2 {
   background-image: url("../images/mmethods-team.png");
 }
 
-.main-methods_secrow .col-xl-4:nth-child(3) .main-methods-block {
+.main-methods_secrow .main-methods-block-3 {
   background-image: url("../images/mmethods-anes.png");
 }
 
-.main-methods_secrow .col-xl-4:nth-child(4) .main-methods-block {
+.main-methods_secrow .main-methods-block-4 {
   background-image: url("../images/mmethods-mon.png");
 }
 
-.main-methods_secrow .col-xl-4:nth-child(5) .main-methods-block {
+.main-methods_secrow .main-methods-block-5 {
   background-image: url("../images/mmethods-sevoran.png");
 }
 
-.main-methods_secrow .col-xl-4:nth-child(6) .main-methods-block {
+.main-methods_secrow .main-methods-block-6 {
   background-image: url("../images/mmethods-exp.png");
 }
 
-.main-methods_secrow .col-xl-4:nth-child(7) .main-methods-block {
+.main-methods_secrow .main-methods-block-7 {
   background-image: url("../images/mmethods-spec.png");
 }
 
-.main-methods_secrow .col-xl-4:nth-child(8) .main-methods-block {
+.main-methods_secrow .main-methods-block-8 {
   background-image: url("../images/mmethods-cost.png");
 }
 
@@ -582,12 +593,6 @@ body hr {
 
 .line_top {
   top: -1px;
-}
-
-.mmethods-decor {
-  position: absolute;
-  bottom: -42px;
-  right: -53px;
 }
 
 .main-methods_secrow {
@@ -624,12 +629,6 @@ body hr {
   top: 96%;
 }
 
-.slider-methods {
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 /***************************************************Main-Stock**************************************/
 .main-stock {
   padding: 93px 0px 60px 0px;
@@ -664,6 +663,14 @@ body hr {
   padding-left: 178px;
 }
 
+.sub-header_decor__stock {
+  background-image: none;
+}
+
+.stock-dropdown {
+  display: block;
+}
+
 /***************************************************Main-News**************************************/
 .main-news {
   padding: 37px 0px 68px 0px;
@@ -677,6 +684,11 @@ body hr {
   line-height: 24px;
   margin-top: 12px;
   margin-bottom: 8px;
+}
+
+.btn-gray_news-wrap {
+  text-align: center;
+  margin-top: 50px;
 }
 
 /***************************************************Main-Response*******************************************/
@@ -1028,6 +1040,7 @@ footer {
 .footer-contacts-mail {
   background-image: url("../images/footer-email.png");
   margin-bottom: 9px;
+  background-position: left center;
 }
 
 .footer-contacts-mail .footer-text {
@@ -1069,7 +1082,7 @@ footer .row .col-xl-3:nth-child(3) {
 
 /***********************************************ButtonMobile************************************/
 .menu-toggle-button {
-  width: 50px;
+  width: 62px;
   height: 40px;
   float: right;
   background-color: transparent;
@@ -1083,14 +1096,14 @@ footer .row .col-xl-3:nth-child(3) {
   position: relative;
   display: block;
   overflow: hidden;
-  margin-top: 10px;
-  float: left;
+  margin-top: 5px;
+  float: right;
   margin-left: -17px;
 }
 
 .menu-toggle-button span {
   display: block;
-  height: 2px;
+  height: 3px;
   background: #424242;
   position: absolute;
   top: 15px;
@@ -1105,7 +1118,7 @@ footer .row .col-xl-3:nth-child(3) {
   content: "";
   display: block;
   width: 100%;
-  height: 2px;
+  height: 3px;
   background: #424242;
   position: absolute;
   left: 0px;
@@ -1118,11 +1131,11 @@ footer .row .col-xl-3:nth-child(3) {
 }
 
 .menu-toggle-button span::before {
-  top: -6px;
+  top: -7px;
 }
 
 .menu-toggle-button span::after {
-  bottom: -6px;
+  bottom: -7px;
 }
 
 .menu-toggle-button.is-active span {

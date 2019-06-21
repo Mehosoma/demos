@@ -21,22 +21,11 @@ $('.slider-response').slick({
 });
 });
 
-//Show-hide menu
-$(document).ready(function(){
-    $('.click-mobile').on('click',function(e){
-        e.preventDefault();        
-          $('.main-menu').animate({
-              height: 'toggle'
-            }, 300, function() {
-          });         
-        $("header .menu-toggle-button").toggleClass('is-active');                    
-    });
-});
 
-
+//Slider-services, News
 $(window).on('load resize', function() {
   if ($(window).width() < 768) {
-    $('.slider-serv:not(.slick-initialized)').slick({
+    $('.slider-gen:not(.slick-initialized)').slick({
       infinite: true,
 	  loop: true,
 	  dots: false,  
@@ -47,28 +36,11 @@ $(window).on('load resize', function() {
 	  
     });
   } else {
-    $(".slider-serv.slick-initialized").slick("unslick");
+    $(".slider-gen.slick-initialized").slick("unslick");
   }
 });
 
-$(window).on('load resize', function() {
-  if ($(window).width() < 768) {
-    $('.slider-news:not(.slick-initialized)').slick({
-      infinite: true,
-	  loop: true,
-	  dots: false,  
-	  speed: 300,
-	  arrows: false, 
-	  slidesToShow: 1,
-	  slidesToScroll: 1,
-	  
-    });
-  } else {
-    $(".slider-news.slick-initialized").slick("unslick");
-  }
-});
-
-
+//Slider-Methods
 $(window).on('load resize', function() {
   if ($(window).width() < 992) {
     $('.slider-methods:not(.slick-initialized)').slick({
@@ -107,6 +79,7 @@ $(window).on('load resize', function() {
 });
 
 
+//Slider-Arrows
 $('.left').click(function(){
   $('.slider-methods').slick('slickPrev');
 })
@@ -132,9 +105,20 @@ $('.right-n').click(function(){
 })
 
 
+//Show-hide menu
+$(document).ready(function(){
+    $('.click-mobile').on('click',function(e){
+        e.preventDefault();        
+          $('.main-menu').animate({
+              height: 'toggle'
+            }, 300, function() {
+          });         
+        $("header .menu-toggle-button").toggleClass('is-active');                    
+    });
+});
 
 
-//Show-hide filters
+//Show-hide dropdown footer menu
 $(document).ready(function(){
     $('.footer-add-menu-header').on('click',function(e){
         e.preventDefault();        
@@ -143,4 +127,22 @@ $(document).ready(function(){
             }, 300, function() {
           });        
     });
+});
+
+
+//Slider-services, News
+
+$(window).on('load resize', function() {
+  if ($(window).width() < 768) {
+	$( ".sub-header_decor__stock" ).unbind('click').on('click', function() {
+	  $(this).next('.stock-dropdown').animate({
+              height: 'toggle'
+            }, 300, function() {
+          });  
+	});
+  } else {
+    if ($(window).width() >= 768) {
+		$( ".sub-header_decor__stock" ).unbind('click');	 
+	}
+  }
 });

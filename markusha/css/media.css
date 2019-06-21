@@ -9,14 +9,8 @@
 	.phones{
 		background-image: none;
 		padding-left: 0px;
-		margin-left: 0px;
+		margin-left: 10px;
 		text-align: center;
-	}
-
-	.menu-toggle-button{
-		margin-top: 0px;
-		width: 62px;
-		margin-left: -25px;
 	}
 
 	.work-h {
@@ -69,22 +63,15 @@
 		height: auto;
 	}
 
-	.sub-header_mabout{
-		position: absolute;
-		left: 50%;
-		transform: translateX(-50%);
-		font-size: 24px;
-		top: -20px;
-	}
-
 	.main-about-image{
-		margin-top: 40px;
-		width: 30%;
-		margin: 40px 20px 20px 0px;
+		top: 8px;
+		margin: 0px 20px 10px 0px;
+		width: 50%;
 	}
 
-	.main-about-content{
-		padding-top: 40px;
+	.sub-header_mabout{
+		text-align: center;
+		font-size: 24px;
 	}
 
 	.sub-header_mservices{
@@ -102,6 +89,16 @@
 
 	.btn-gray{
 		font-size: 14px;
+		height: 50px;
+		line-height: 50px;
+	}
+
+	.btn-gray_news{
+		display: block!important;
+	}
+
+	.btn-gray:after{
+		height: 50px;
 	}
 
 	.main-services-block {
@@ -122,11 +119,7 @@
 	}
 
 	.line{
-		width: 90%;
-	}
-
-	.decor-wrap{
-		background-image: none;
+		width: 300px;
 	}
 
 	.slider-methods .slick-slide{
@@ -137,17 +130,26 @@
 		display: none;
 	}
 
-	.main-methods {
-		min-height: 1250px;
+	.main-stock img{
+		margin-bottom: 15px;
 	}
 
 	.sub-header_decor__stock{
 		padding-left: 0px;
-		font-size: 32px;
+		font-size: 28px;
+		background-image: url('../images/arr-down_blue.png');
+		background-repeat: no-repeat;
+		background-position: right center;
+		display: inline;
+		padding-right: 35px;		
 	}
 
 	.main-stock ul{
 		margin-left: 0px;
+	}
+
+	.stock-dropdown{
+		display: none;
 	}
 
 	.btn-gray_stock-wrap{
@@ -276,7 +278,6 @@
 		width: 70%;
 	}
 
-
 }
 
 @media only screen and (min-width : 576px) and (max-width : 767px) {
@@ -292,12 +293,6 @@
 		padding-left: 0px;
 		margin-left: 0px;
 		text-align: center;
-	}
-
-	.menu-toggle-button{
-		margin-top: 0px;
-		width: 62px;
-		margin-left: -25px;
 	}
 
 	.work-h {
@@ -346,22 +341,13 @@
 		height: auto;
 	}
 
-	.sub-header_mabout{
-		position: absolute;
-		left: 50%;
-		transform: translateX(-50%);
-		font-size: 24px;
-		top: -20px;
-	}
-
 	.main-about-image{
-		margin-top: 40px;
-		width: 30%;
-		margin: 40px 20px 20px 0px;
+		top: 8px;
+		margin: 0px 20px 10px 0px;
 	}
 
-	.main-about-content{
-		padding-top: 40px;
+	.sub-header_mabout{
+		text-align: center;
 	}
 
 	.sub-header_mservices{
@@ -398,7 +384,7 @@
 	}
 
 	.line{
-		width: 90%;
+		width: 350px;
 	}
 
 	.decor-wrap{
@@ -413,10 +399,6 @@
 		display: none;
 	}
 
-	.main-methods {
-		min-height: 950px;
-	}
-
 	.main-methods .main-methods-block{
 		width: 80%;
 	}
@@ -426,8 +408,26 @@
 		font-size: 32px;
 	}
 
+	.main-stock img{
+		margin-bottom: 15px;
+	}
+
+	.sub-header_decor__stock{
+		padding-left: 0px;
+		font-size: 28px;
+		background-image: url('../images/arr-down_blue.png');
+		background-repeat: no-repeat;
+		background-position: right center;
+		display: inline;
+		padding-right: 35px;		
+	}
+
 	.main-stock ul{
 		margin-left: 0px;
+	}
+
+	.stock-dropdown{
+		display: none;
 	}
 
 	.btn-gray_stock-wrap{
@@ -566,11 +566,6 @@
 		margin-left: 25px;
 	}
 
-	.menu-toggle-button{
-		margin-top: 0px;
-		width: 62px;
-	}
-
 	.work-h {
 		margin-left: -15px;
 	}
@@ -613,10 +608,12 @@
 
 	.sub-header{
 		font-size: 35px;
+		padding-left: 15px
 	}
 
 	.sub-header_mservices{
 		font-size: 30px;
+		text-align: center;
 	}
 
 	.main-services-block{
@@ -635,17 +632,13 @@
 		margin-top: 30px;
 	}
 
-	.decor-wrap{
-		background-image: none;
-	}
-
 	.main-methods .sub-header_decor{
-		font-size: 20px;
-		margin-top: -13px;
+		font-size: 26px;
+		margin-top: -20px;
 	}
 
 	.line{
-		width: 500px;
+		width: 620px;
 	}
 
 	.main-stock img{
@@ -653,6 +646,7 @@
 		height: auto;
 	}
 
+	
 	.sub-header_decor__stock{
 		font-size: 45px;
 		padding-left: 0px;
@@ -660,6 +654,7 @@
 
 	.btn-gray_stock-wrap{
 		padding-left: 0px;
+		margin-left: -50px;
 	}
 
 	.main-response .sub-header_full{
@@ -707,12 +702,19 @@
 		font-size: 14px;
 	}
 
+	.slider-methods{
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
 }
 
 @media only screen and (min-width : 992px) and (max-width : 1199px) {
 
 	.form-gen{
 		width: 100%;
+		margin-left: -15px;
 	}
 
 	.social-link{
@@ -755,11 +757,7 @@
 	}
 
 	.decor-wrap{
-		background-image: none;
-	}
-
-	.main-methods{
-		height: 600px;
+		max-width: 960px;
 	}
 
 	.sub-header_decor__stock, .btn-gray_stock-wrap {
@@ -807,4 +805,10 @@
 		margin-left: 30px;
 	}
 
+}
+
+@media only screen and (min-width : 768px) {
+.stock-dropdown{
+		display: block!important;
+	}
 }
