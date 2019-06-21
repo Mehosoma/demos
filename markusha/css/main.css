@@ -603,7 +603,7 @@ body hr {
   line-height: 24px;
 }
 
-.left, .left-s, .left-n {
+.arr-left-gen {
   width: 13px;
   height: 26px;
   position: absolute;
@@ -612,7 +612,7 @@ body hr {
   left: 10px;
 }
 
-.right, .right-s, .right-n {
+.arr-right-gen {
   width: 13px;
   height: 26px;
   position: absolute;
@@ -621,12 +621,20 @@ body hr {
   right: 10px;
 }
 
-.right .st0, .left .st0, .left-s .st0, .right-s .st0, .left-n .st0, .right-n .st0 {
+.arr-fill .st0, .arr-fill .st1, .arr-fill .st2 {
   fill: #424242;
 }
 
-.left-n, .right-n {
+.arr-bottom {
   top: 96%;
+}
+
+.arr-bottom-add {
+  top: 98%;
+}
+
+.arr-wrap {
+  text-align: center;
 }
 
 /***************************************************Main-Stock**************************************/
@@ -957,6 +965,7 @@ footer {
   background-color: #3a3939;
   padding-top: 43px;
   position: relative;
+  padding-bottom: 30px;
 }
 
 .footer-logo {
@@ -978,8 +987,8 @@ footer {
   background-image: url("../images/footer-add.png");
   background-repeat: no-repeat;
   background-position: left top 5px;
-  padding-left: 30px;
-  margin-left: 20px;
+  padding-left: 42px;
+  margin-left: 23px;
 }
 
 .footer-add-menu-header:hover {
@@ -1074,6 +1083,34 @@ footer .row .col-xl-3:nth-child(3) {
 .footer-social {
   margin-left: 61px;
   margin-top: 20px;
+}
+
+.copy-social {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.copy-social .link-gray {
+  border-bottom: 1px solid #b6b4b4;
+  line-height: 19px;
+}
+
+.copy-social .social-h .st0, .copy-social .social-h .st1 {
+  fill: #b6b4b4;
+}
+
+.copy-social .social-h {
+  margin-top: 0px;
+}
+
+.copy-social .social-h svg {
+  width: 40px;
+  height: 40px;
+  margin-left: 25px;
 }
 
 .hidden {

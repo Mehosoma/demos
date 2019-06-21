@@ -167,13 +167,13 @@
 		margin-top: 20px;
 	}
 
-	.main-response .sub-header_full{
-		padding-left: 0px;
-	}
-
 	.main-response .sub-header{
 		text-align: center;
-		font-size: 24px;
+		font-size: 24px;		
+		background-image: url('../images/quote.png');
+		background-repeat: no-repeat;
+		background-position: left center;
+		padding-left: 50px;		
 	}
 
 	.response-top{
@@ -205,6 +205,20 @@
 		margin-left: 0px;		
 	}
 
+	.response-main{
+		background-image: none;
+		padding-left: 0px;
+	}
+
+	.main-response .sub-header_full{
+		padding-left: 0px;
+	}
+
+	.slider-response .slick-dots{
+		display: none!important;
+	}
+
+	
 	.main-form .sub-header{
 		font-size: 24px;
 	} 
@@ -258,14 +272,53 @@
 		text-align: center;
 	}
 
-	footer{
-		padding-bottom: 30px;
-	}
-
 	.btn-gray_mservices{
 		margin-top: 0px;
 	}
 
+	.copyright{
+		font-size: 16px;
+		display: block;
+		margin-bottom: 30px;
+		margin-top: 10px;
+	}
+
+	.footer-contacts-phone, .footer-contacts-mail{
+		margin-left: 0px;
+		margin-bottom: 10px;
+	}
+
+	.footer-add-menu{
+		margin-left: 3px;
+	}
+
+	.copy-social{
+		justify-content: center;
+		align-items: flex-start;
+		flex-wrap: wrap;
+	}
+
+	.polite-wrap{
+		order: 2;
+		width: 100%;
+		justify-content: center;
+		display: flex;
+	}
+
+	footer .social-link, .copy-social .social-h svg{
+		margin-right: 0px;
+		margin-left: 0px;
+	}
+
+	.copy-social .social-h{
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		margin-top: 20px;
+		margin-bottom: 33px;
+		max-width: 320px;
+	}
+	
 }
 
 @media only screen and (min-width : 480px) and (max-width : 575px) {
@@ -483,6 +536,10 @@
 		margin-left: 0px;		
 	}
 
+	.slider-response .slick-dots{
+		display: none!important;
+	}
+
 	.main-form{
 		background-position: right -700px center;
 	}
@@ -540,12 +597,51 @@
 		text-align: center;
 	}
 
-	footer{
-		padding-bottom: 30px;
-	}
-
 	.btn-gray_mservices{
 		margin-top: 0px;
+	}
+
+	.copyright{
+		font-size: 16px;
+		display: block;
+		margin-bottom: 30px;
+		margin-top: 10px;
+	}
+
+	.footer-contacts-phone, .footer-contacts-mail{
+		margin-left: 0px;
+		margin-bottom: 10px;
+	}
+
+	.footer-add-menu{
+		margin-left: 3px;
+	}
+
+	.copy-social{
+		justify-content: center;
+		align-items: flex-start;
+		flex-wrap: wrap;
+	}
+
+	.polite-wrap{
+		order: 2;
+		width: 100%;
+		justify-content: center;
+		display: flex;
+	}
+
+	footer .social-link, .copy-social .social-h svg{
+		margin-right: 0px;
+		margin-left: 0px;
+	}
+
+	.copy-social .social-h{
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		margin-top: 20px;
+		margin-bottom: 33px;
+		max-width: 320px;
 	}
 
 }
@@ -708,6 +804,11 @@
 		margin-right: auto;
 	}
 
+	.footer-text-left{
+		padding-left: 0px;
+	}
+
+
 }
 
 @media only screen and (min-width : 992px) and (max-width : 1199px) {
@@ -803,6 +904,10 @@
 
 	.footer-social {
 		margin-left: 30px;
+	}
+
+	.sub-header_add{
+		text-align: center;
 	}
 
 }

@@ -5,13 +5,13 @@ $('.slider-response').slick({
   dots: true,  
   speed: 300,
   arrows: false, 
-  responsive: [
-    
+  mobileFirst:true,
+  responsive: [ 
     {
       breakpoint: 320,
       settings: {
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,       
       }
     }
     // You can unslick at a given breakpoint now by adding:
@@ -32,8 +32,7 @@ $(window).on('load resize', function() {
 	  speed: 300,
 	  arrows: false, 
 	  slidesToShow: 1,
-	  slidesToScroll: 1,
-	  
+	  slidesToScroll: 1,	  
     });
   } else {
     $(".slider-gen.slick-initialized").slick("unslick");
@@ -102,6 +101,14 @@ $('.left-n').click(function(){
 
 $('.right-n').click(function(){
   $('.slider-news').slick('slickNext');
+})
+
+$('.left-r').click(function(){
+  $('.slider-response').slick('slickPrev');
+})
+
+$('.right-r').click(function(){
+  $('.slider-response').slick('slickNext');
 })
 
 
