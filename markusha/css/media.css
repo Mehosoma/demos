@@ -517,6 +517,41 @@
 		padding-left: 0px;
 	}
 
+	.all-services hr{
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.all-services-bottom hr{
+		margin-left: 0px;
+	}
+
+	.all-services-list{
+		padding-left: 0px;
+	}
+
+	.sub-header-all-services{
+		font-size: 25px;
+		padding-left: 0px;
+		text-align: center;
+	}
+
+	.all-services, .all-responses{
+		padding-top: 50px;
+	}
+
+	.all-services .main-services-block{
+		margin-top: -20px;
+	}
+
+	.all-services-bottom-content .main-services-link, .all-services-list li{
+		text-align: left;
+	}
+
+	.all-services-list .main-services-link{
+		color: #0a9de3;
+	}
+
 	
 }
 
@@ -1026,6 +1061,49 @@
 		margin-bottom: 30px;
 	}
 
+	.all-responses .sub-header-all-response{
+		font-size: 27px;
+	}
+
+	.all-responses-replay{
+		padding-left: 0px;
+	}
+
+	.all-services hr{
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.all-services-bottom hr{
+		margin-left: 0px;
+	}
+
+	.all-services-list{
+		padding-left: 0px;
+	}
+
+	.sub-header-all-services{
+		font-size: 30px;
+		padding-left: 0px;
+		text-align: center;
+	}
+
+	.all-services, .all-responses{
+		padding-top: 50px;
+	}
+
+	.all-services .main-services-block{
+		margin-top: -20px;
+	}
+
+	.all-services-bottom-content .main-services-link, .all-services-list li{
+		text-align: left;
+	}
+
+	.all-services-list .main-services-link{
+		color: #0a9de3;
+	}
+
 	
 
 }
@@ -1302,6 +1380,37 @@
 		width: 352px;
 	}
 
+	.all-services hr{
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.all-services-bottom hr{
+		margin-left: 0px;
+	}
+
+	.sub-header-all-services{
+		font-size: 30px;
+		padding-left: 0px;
+		text-align: center;
+	}
+
+	.all-services, .all-responses{
+		padding-top: 50px;
+	}
+
+	.all-services .main-services-block{
+		margin-top: -20px;
+	}
+
+	.all-services-bottom-content .main-services-link, .all-services-list li{
+		text-align: left;
+	}
+
+	.all-services-list .main-services-link{
+		color: #0a9de3;
+	}
+
 
 }
 
@@ -1430,6 +1539,15 @@
 
 	.response-feedback .response-feedback-bg{
 		right: -50px;
+	}
+
+	.all-services hr{
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.all-services-bottom hr{
+		margin-left: 0px;
 	}
 
 }
