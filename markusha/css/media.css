@@ -242,13 +242,13 @@
 		font-size: 20px;
 	}
 
-	#main-form-order input{
+	#main-form-order input, #response-feed-form input{
 		width: 100%;
 		margin-right: 0px!important;
 		margin-bottom: 10px;
 	}
 
-	#main-form-order textarea{
+	#main-form-order textarea, #response-feed-form textarea{
 		margin-top: 0px;
 	}
 
@@ -497,9 +497,18 @@
 		display: none;
 	}
 
-	.btn-gray-feedback{
-		font-size: 13px;
+	.response-feedback .response-feedback-bg {
+		right: -50px;
 	}
+
+	.sub-header_decor-feed {
+		font-size: 22px;
+	}
+
+	.response-feedback{
+		margin-bottom: 30px;
+	}
+
 	
 }
 
@@ -753,13 +762,13 @@
 		font-size: 20px;
 	}
 
-	#main-form-order input{
+	#main-form-order input, #response-feed-form input{
 		width: 100%;
 		margin-right: 0px!important;
 		margin-bottom: 10px;
 	}
 
-	#main-form-order textarea{
+	#main-form-order textarea, #response-feed-form textarea{
 		margin-top: 0px;
 	}
 
@@ -1005,9 +1014,11 @@
 		display: none;
 	}
 
-	.btn-gray-feedback{
-		font-size: 13px;
+	.response-feedback{
+		margin-bottom: 30px;
 	}
+
+	
 
 }
 
