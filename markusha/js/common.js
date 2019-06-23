@@ -1,4 +1,6 @@
 
+
+//Slider-Response
 $(document).ready(function(){
 
 $('.slider-response').slick({
@@ -20,6 +22,45 @@ $('.slider-response').slick({
   ]
 });
 });
+
+//Slider-add
+$(document).ready(function(){
+
+$('.slider-add').slick({
+  dots: true,  
+  speed: 300,
+  arrows: false,
+  dots: false, 
+  mobileFirst:true,
+  responsive: [ 
+  	 {
+      breakpoint: 991,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,       
+      }
+    },
+     {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,       
+      }
+    },
+    {
+      breakpoint: 320,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,       
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+});
+
 
 
 //Slider-services, News
@@ -77,40 +118,25 @@ $(window).on('load resize', function() {
   }
 });
 
-
 //Slider-Arrows
-$('.left').click(function(){
-  $('.slider-methods').slick('slickPrev');
-})
+$(function () {
+    
+    var $arrows = $('.arrows');
+    var $next = $arrows.children(".arr-right-gen");    
+    var $prev = $arrows.children(".arr-left-gen");
+    
+    var slick = $('.slider-main');
 
-$('.right').click(function(){
-  $('.slider-methods').slick('slickNext');
-})
+    $('.arr-right-gen').on('click', function (e) {
+        var i = $next.index( this )
+        slick.eq(i).slick('slickNext');
+    });
+    $('.arr-left-gen').on('click', function (e) {
+        var i = $prev.index( this )
+        slick.eq(i).slick('slickPrev');
+    });
 
-$('.left-s').click(function(){
-  $('.slider-serv').slick('slickPrev');
-})
-
-$('.right-s').click(function(){
-  $('.slider-serv').slick('slickNext');
-})
-
-$('.left-n').click(function(){
-  $('.slider-news').slick('slickPrev');
-})
-
-$('.right-n').click(function(){
-  $('.slider-news').slick('slickNext');
-})
-
-$('.left-r').click(function(){
-  $('.slider-response').slick('slickPrev');
-})
-
-$('.right-r').click(function(){
-  $('.slider-response').slick('slickNext');
-})
-
+});
 
 //Show-hide menu
 $(document).ready(function(){
@@ -120,7 +146,7 @@ $(document).ready(function(){
               height: 'toggle'
             }, 300, function() {
           });         
-        $("header .menu-toggle-button").toggleClass('is-active');                    
+        $(".menu-toggle-button").toggleClass('is-active');                    
     });
 });
 
@@ -137,8 +163,7 @@ $(document).ready(function(){
 });
 
 
-//Slider-services, News
-
+//Menu block stock
 $(window).on('load resize', function() {
   if ($(window).width() < 768) {
 	$( ".sub-header_decor__stock" ).unbind('click').on('click', function() {
@@ -151,5 +176,55 @@ $(window).on('load resize', function() {
     if ($(window).width() >= 768) {
 		$( ".sub-header_decor__stock" ).unbind('click');	 
 	}
+  }
+});
+
+
+//Link-Dropdown
+$(document).ready(function(){
+	$( ".link-dropdown" ).on('click', function() {
+	  $(this).next('.block-dropdown').animate({
+              height: 'toggle'
+            }, 300, function() {
+          }); 
+       $(this).css('display','none')  
+	});  
+});
+
+
+//Disclaim
+$('.disclaim').on('click',function(e){
+  if ($('#feedback-check').is(':checked')) {
+      $('.btn-blue-feed').removeAttr('disabled');
+  } else {
+     $('.btn-blue-feed').attr('disabled','disabled');
+  }
+});
+
+
+//Slider-Unwrap
+$(window).on('load resize', function() {
+	var init = $(".slider-unwrap").data('init-slider');
+  if ($(window).width() < 768) {
+	 $('.slide-unwrap').unwrap();
+	 $('.link-dropdown').remove();
+	if(init != 1){
+      // Запускаем слайдер и записываем в data init-slider = 1
+      $('.slider-unwrap').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }).data({'init-slider': 1});
+    }else{
+    	$('.slider-unwrap').slick('refresh');
+    }
+
+	
+  } else {
+
+  	 if(init == 1){
+      // Разрушаем слайдер и записываем в data init-slider = 0
+      $('.slider-unwrap').slick('unslick').data({'init-slider': 0});
+    }
   }
 });

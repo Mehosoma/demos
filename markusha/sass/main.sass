@@ -6,6 +6,7 @@ $blue: #0a9de3
 $blue-h: #0974a7
 $blue-text: #00365d
 $link-blue: #039ee2
+$gray-text: #b1b1b1
 $open: 'Open Sans', sans-serif
 
 
@@ -53,15 +54,15 @@ body
 		border: none	
 
 .pixel
-	background: url(../images/page.jpg) no-repeat top center
+	background: url(../images/doctor.jpg) no-repeat top center
 	width: 1920px
 	height: 12800px
 	position: absolute
 	z-index: 1000000
 	display: none
 	left: 50%
-	top: 0
-	margin-left: -960px
+	top: 168px
+	margin-left: -950px
 	opacity: 0.5
 	margin-top: 0px
 
@@ -182,7 +183,91 @@ body
 	color: $blue
 .link-blue_subheader-full
 	margin-top: -6px
-
+.read-add-block
+	width: 100%	
+	height: 303px
+	overflow: hidden
+	position: relative
+	img
+		width: 100%
+		height: 100%	
+.read-add-block-header
+	position: absolute
+	width: 100%
+	height: 87px
+	bottom: 0px
+	left: 0px
+	background-color: rgba(255,255,255,0.72)
+	text-align: center
+	line-height: 87px
+.subheader-blue-30
+	font-size: 30px
+	color: $blue-text
+	font-weight: 600
+.arr-left-gen
+	width: 13px
+	height: 26px	
+	position: absolute
+	top: 50%
+	margin-top: -13px
+	left: 10px
+	.st0, .st1
+		fill: #424242
+.arr-right-gen
+	width: 13px
+	height: 26px	
+	position: absolute
+	top: 50%
+	margin-top: -13px
+	right: 10px
+	.st0, .st1
+		fill: #424242
+.arr-left-gen:hover, .arr-right-gen:hover
+	cursor: pointer
+	.st0, .st1
+		fill: $blue
+.arr-bottom
+	top: 96%
+.slick-arrow
+	display: none!important
+.read-add
+	.arr-left-gen
+		left: 15px
+	.arr-right-gen
+		right: 15px
+.arr-wrap
+	text-align: center
+.text-gray-15
+	font-size: 15px
+	color: $gray-text
+.text-16
+	font-size: 16px
+	color: $gray-d
+	line-height: 24px
+	i
+		font-style: normal
+		font-weight: bold
+.text-14
+	font-size: 14px
+	color: $gray-d
+	line-height: 24px	
+.text-16-bold
+	font-size: 16px
+	color: $gray-d
+	font-weight: 700
+.text-16-gray
+	font-size: 16px
+	font-weight: 700
+	color: $gray-text
+	line-height: 24px
+.text-17-bold
+	font-size: 17px
+	font-weight: 700
+	color: $gray-d
+.btn-sh
+	box-shadow: 0px 5px 9px rgba(0,0,0,0.24)
+.border-22
+	border-radius: 22px
 
 /***************************************************Header*******************************************/
 .header-first
@@ -431,28 +516,7 @@ body
 	padding-top: 30px
 	.main-text
 		line-height: 24px
-.arr-left-gen
-	width: 13px
-	height: 26px	
-	position: absolute
-	top: 50%
-	margin-top: -13px
-	left: 10px
-.arr-right-gen
-	width: 13px
-	height: 26px	
-	position: absolute
-	top: 50%
-	margin-top: -13px
-	right: 10px
-.arr-fill .st0, .arr-fill .st1, .arr-fill .st2
-	fill: #424242
-.arr-bottom
-	top: 96%
-.arr-bottom-add
-	top: 98%
-.arr-wrap
-	text-align: center
+
 
 
 /***************************************************Main-Stock**************************************/
@@ -560,7 +624,9 @@ body
 .response-top
 	padding-left: 78px
 .response-top-info
-	margin-left: 24px 
+	margin-left: 24px
+.response-slide
+	padding-bottom: 10px
 	
 
 /***************************************************Main-Form*******************************************/
@@ -572,12 +638,20 @@ body
 	background-size: cover
 	background-position: right -300px center
 	padding: 79px 0px 20px 0px
+	position: relative
 	.sub-header_decor
 		font-size: 30px
 		margin-top: 15px
 		display: block
 		text-align: left
-#main-form-order
+.main-form-overlay
+	position: absolute
+	width: 100%
+	height: 100%
+	top: 0px
+	left: 0px
+	background-color: rgba(255,255,255,0.7)
+#main-form-order, #response-feed-form
 	margin-left: -1px
 	margin-top: 23px
 	width: 100%
@@ -777,6 +851,284 @@ footer .row .col-xl-3:nth-child(3)
 .hidden
 	display: none
 
+/*****************************************Top-Banner-Inner-Page*********************************/
+.banner-top-in
+	background-image: url('../images/top-banner-in.jpg')
+	height: 223px
+	padding-top: 38px
+	position: relative
+	.main-header
+		margin-left: 28px
+		margin-top: 6px
+	.main-header span
+		line-height: 98px
+
+/*****************************************Menu-Inner-Page*********************************/
+.inner-menu
+	ul
+		border-bottom: 1px solid $gray-l
+		padding-bottom: 10px
+		li:hover::after
+			width: 100%
+	.main-menu-list-wdecor::after
+		display: none
+	.main-menu-list
+		position: relative
+		margin-right: 16px
+	.main-menu-list::after
+		position: absolute
+		content: ''
+		width: 0px
+		height: 4px
+		background-color: $blue
+		top: 34px
+		left: 0px
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out
+	.main-menu
+		padding: 0px 31px 0px 41px
+		height: 96px
+	.main-menu-list-wdecor
+		margin-right: 28px
+	.main-menu-link
+    	font-size: 18px
+
+
+/*****************************************Doctors-page*******************************************/
+.doctor-name, .doctor-job
+	display: block
+	padding: 0px 30px
+.all-doctors
+	padding-top: 30px
+	padding-bottom: 20px
+.all-doctors-row
+	padding-top: 35px
+.doctors-block
+	margin-bottom: 17px
+.doctor-name
+	display: block
+	margin-top: 12px
+	margin-bottom: 10px
+.read-add
+	padding-top: 11px
+	padding-bottom: 78px
+.slider-add
+	margin-top: 36px
+	a
+		display: block
+
+/*****************************************Doctor-page*******************************************/
+.doctor-info
+	padding-top: 49px	
+.sub-header-doctor_name 
+	margin-top: 20px
+	margin-top: 30px
+.doctor-info-block
+	img
+		float: left
+		margin-left: -39px
+		margin-right: -67px
+		margin-bottom: 60px
+		width: 47%
+.doctor-position
+	position: relative
+	top: 10px
+.doctor-info-response
+	margin-top: 20px
+.btn-blue-doctor
+	padding: 0px 33px
+	height: 50px
+	line-height: 50px	
+	font-weight: bold
+.dir-number
+	margin-left: 42px
+	i
+		font-style: normal
+.dir-write-response
+	margin-left: 20px
+.doctor-info-full
+	padding-top: 30px
+.doctor-info-full-header
+	text-transform: uppercase
+	margin-bottom: 13px
+	display: block
+.doctor-info-full-field
+	margin-bottom: 28px
+.dir-qualif-list
+	padding-left: 38%
+	li
+		position: relative
+		padding-left: 37px		
+	li::after
+		position: absolute
+		content: ''
+		width: 10px
+		height: 10px
+		border-radius: 50%
+		background-color: #accdef
+		top: 8px
+		left: 6px
+.doctor-schedule-header
+	display: block
+	text-transform: uppercase
+.doctor-cert
+	img
+		margin-top: 17px
+		margin-right: 26px
+.doctor-schedule-block
+	margin-top: 35px
+.doctor-schedule-table
+	border: 1px solid #d0d0d0
+	display: flex
+	justify-content: space-between
+	margin-top: 21px
+.doctor-schedule-table-field
+	text-align: center
+	width: 14.285%	
+	span
+		display: block
+.sth-wrap
+	padding: 10px 0px
+.shedule-table-week
+	display: block
+	background-color: #f3f3f3
+	line-height: 49px
+	width: 100%
+	border-bottom: 1px solid #d0d0d0
+.shedule-table-hour
+	line-height: 30px
+.block-dropdown
+	display: none
+.link-dropdown:hover
+	cursor: pointer
+.doctor-response
+	padding-top: 48px
+	padding-bottom: 20px
+	.response-top
+		padding-left: 0px
+	.response-main
+		padding-left: 0px
+		background-image: none
+	.dir-number
+		text-transform: uppercase
+		margin-left: 0px
+	.slider-container
+		margin-top: 30px
+	hr
+		width: 320px
+		height: 1px 
+		background-color: $gray-text
+		margin: 0px
+.response-feedback
+	width: 100%
+	height: 672px
+	overflow: hidden
+	padding-top: 27px
+	position: relative
+	.container
+		position: relative
+	.response-feedback-bg
+		position: absolute
+		top: -7px
+		right: -231px
+		z-index: -1
+.link-dropdown
+	background-image: url('../images/arr-down_blue.png')
+	background-repeat: no-repeat
+	background-position: right center
+	padding-right: 30px
+	background-size: 16px 10px
+	margin-top: 20px
+	display: inline-block
+.sub-header_decor-feed
+	font-size: 28px
+	color: $blue
+	margin-top: 0px
+.l-container
+	display: block
+	position: relative
+	padding-left: 37px
+	margin-bottom: 12px
+	cursor: pointer	
+	font-size: 14px
+	line-height: 24px
+	color: $gray-d
+	font-weight: normal
+	-webkit-user-select: none
+	-moz-user-select: none
+	-ms-user-select: none
+	user-select: none
+.l-container input
+	position: absolute
+	opacity: 0
+	cursor: pointer
+.checkmark
+	position: absolute
+	top: 3px
+	left: 0
+	height: 23px
+	width: 23px
+	background-color: #fff
+	border-radius: 3px
+	border: 1px solid gray
+.auto-yes .checkmark, .polite-d .checkmark
+	top: 0px
+.check-gen input:checked ~ .checkmark
+	background-color: $blue
+	border: 1px solid $blue
+.check-gen .checkmark:after
+	content: ""
+	position: absolute
+	display: none
+.check-gen input:checked ~ .checkmark:after
+	display: block
+.check-gen .checkmark:after
+	left: 8px
+	top: 4px
+	width: 7px
+	height: 13px
+	border: solid white
+	border-width: 0 3px 3px 0
+	-webkit-transform: rotate(45deg)
+	-ms-transform: rotate(45deg)
+	transform: rotate(45deg)
+.btn-blue-feed:disabled
+	background-color: gray
+.resp-feedback-mark
+	span
+		margin-right: 17px
+	margin-bottom: 23px
+.feedback-stars
+	display: inline-block
+	position: relative
+	top: -3px
+	li
+		display: inline-block
+	.st0
+		fill: #fff
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out
+	li:hover
+		cursor: pointer
+		.st0
+			fill: #fdba00
+	svg
+		width: 20px
+		height: 20px
+
+#response-feed-form
+	textarea
+		height: 210px
+.polite-d
+	margin-top: 10px
+.btn-blue-feed
+	margin-top: 10px
+.fix-mrg
+	margin-right: 25px
 
 /***********************************************ButtonMobile************************************/
 .menu-toggle-button
