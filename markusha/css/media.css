@@ -509,6 +509,14 @@
 		margin-bottom: 30px;
 	}
 
+	.all-responses .sub-header-all-response{
+		font-size: 27px;
+	}
+
+	.all-responses-replay{
+		padding-left: 0px;
+	}
+
 	
 }
 
