@@ -903,6 +903,16 @@ body hr {
 
 .response-slide {
   padding-bottom: 10px;
+  position: relative;
+}
+
+.arr-wrap {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 9px;
 }
 
 /***************************************************Main-Form*******************************************/
@@ -1356,6 +1366,7 @@ footer .row .col-xl-3:nth-child(3) {
 
 .doctor-info-response {
   margin-top: 20px;
+  padding-left: 38%;
 }
 
 .btn-blue-doctor {
@@ -1363,6 +1374,7 @@ footer .row .col-xl-3:nth-child(3) {
   height: 50px;
   line-height: 50px;
   font-weight: bold;
+  text-align: center;
 }
 
 .dir-number {

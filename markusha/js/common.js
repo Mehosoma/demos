@@ -204,27 +204,40 @@ $('.disclaim').on('click',function(e){
 
 //Slider-Unwrap
 $(window).on('load resize', function() {
-	var init = $(".slider-unwrap").data('init-slider');
+	
   if ($(window).width() < 768) {
-	 $('.slide-unwrap').unwrap();
-	 $('.link-dropdown').remove();
-	if(init != 1){
-      // Запускаем слайдер и записываем в data init-slider = 1
-      $('.slider-unwrap').slick({
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }).data({'init-slider': 1});
-    }else{
-    	$('.slider-unwrap').slick('refresh');
-    }
+
+  	if (document.getElementById("block-dropdown")) {
+	  		$('.slide-unwrap').unwrap();
+	  		$('.link-dropdown').remove();
+	  					
+			$('.slider-unwrap:not(.slick-initialized)').slick({
+			    infinite: true,
+			    slidesToShow: 1,
+			    slidesToScroll: 1
+			 });
+
+			var stHeight = $('.slider-unwrap .slick-track').height();
+			$('.slider-unwrap .response-slide').css('height',stHeight + 'px' );
+					
+	    }else{
+	    	$('.slider-unwrap').slick('refresh');
+	    	var stHeight = $('.slider-unwrap .slick-track').height();
+			$('.slider-unwrap .response-slide').css('height',stHeight + 'px' );
+	    }
 
 	
   } else {
 
-  	 if(init == 1){
-      // Разрушаем слайдер и записываем в data init-slider = 0
-      $('.slider-unwrap').slick('unslick').data({'init-slider': 0});
-    }
+  	$(".slider-unwrap.slick-initialized").slick("unslick");
+  	if (document.getElementById("block-dropdown")) {
+  	}else{
+  		$('.slide-unwrap').wrap('<div class="block-dropdown" id="block-dropdown">');
+  	}
+  	
   }
 });
+
+
+
+
