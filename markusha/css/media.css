@@ -402,7 +402,8 @@
 		margin: 30px auto;
 		order: 2;
 		max-width: 300px;
-		height: 390px;
+		height: auto;
+		max-height: 510px;
 	}
 
 	.sub-header-doctor_name{
@@ -449,6 +450,10 @@
 
 	.doctor-cert img{
 		margin-right: 10px;
+	}
+
+	.dir-qualif-list li{
+		margin-left: 0px;
 	}
 
 	.doctor-schedule{
@@ -555,6 +560,325 @@
 
 	.response-slide{
 		padding-bottom: 30px;
+	}
+
+	.sub-header-services-info{
+		font-size: 22px;
+	}
+
+	.services-info-content img{
+		float: none!important;
+		width: 100%;
+		height: auto;
+		max-width: 400px;
+		margin-right: auto;
+		margin-left: auto;
+		display: block;
+	}
+
+	.services-info .dir-qualif-list li{
+		margin-left: 0px;
+	}
+
+	.sub-header-services-cost{
+		text-align: left;
+		font-size: 24px;
+	}
+
+	.services-cost-drop{
+		width: 40px;
+		height: 40px;
+		right: 0px;
+	}
+
+	.services-cost-drop::before {
+	    height: 0.85em;
+	    position: relative;
+	    top: 1.05em;   
+	    width: 0.85em;
+	}
+
+	.service-cost{
+		padding: 0px;
+	}
+
+	.service-cost-wrap{
+		box-shadow: none;
+		padding-bottom: 0px;
+	}
+
+	.service-doctors .doctor-job, .service-doctors .doctor-name{
+		padding: 0px;
+	}
+
+	.other-services-block{
+		flex-direction: column;		
+		margin-left: 0px;
+		width: 100%;
+		align-items: center;
+	}
+
+	.other-services-block .link-gray{
+		color: #0a9de3;
+		margin-bottom: 10px;
+	}
+
+	.service-cost-table{
+		margin-left: 0px;
+		width: 100%;
+		padding-left: 15px;
+	}
+
+	.service-cost-table-header{
+		display: none;
+	}
+
+	.service-cost-list li{
+		display: block;
+		border-top: none!important;
+		border-bottom: none;
+		margin-bottom: 20px;
+	}
+
+	.service-cost-list li span{
+		display: block;
+		text-align: left;
+		width: 100%;
+	}
+
+	.sub-header-services-doctors, .sub-header-services-others,  .sub-header-articles{
+		font-size: 24px;
+	}
+
+	.service-doctors .doctors-block img{
+		margin: 0 auto;
+	}
+
+	.btn-blue-service-doctor{
+		width: 95%;
+		max-width: 400px;
+	}
+
+	.sub-header-articles{
+		text-align: center;
+	}
+
+	.main-articles{
+		padding: 30px 0px 30px 0px;
+	}
+
+	.contacts-block-field{
+		margin-bottom: 20px;
+		max-width: 290px;
+	}
+
+	.contacts-adress, .contacts-work, .contacts-social{
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+
+	.contacts-adress  p{
+		width: 100%;
+	}
+
+	.contacts-block-field b{
+		margin-top: 12px;
+	}
+
+	.contacts-phone .link-blue{
+		order: 2;
+		margin-right: 0px;	
+		width: 45%;	
+		position: relative;
+		top: 3px;
+	}
+
+	.contacts-block-field-small{
+		order: 3;
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		margin-top: 10px;
+	}
+
+	.contacts-block-field-small a{
+		font-size: 16px;
+	}
+
+	.contacts-block-field-left{
+		width: 55%;
+	}
+
+	.contacts-phone{
+		flex-wrap: wrap;
+	}
+
+	.contacts-work .contacts-block-field-left, .contacts-work .contacts-block-field-right, .contacts-social .contacts-block-field-left, .contacts-social .contacts-block-field-right{
+		display: block;
+		width: 100%;
+	}
+
+	.contacts-social .footer-social{
+		margin-top: 20px;
+	}
+
+	.stock-block-top .stock-image-boy{
+		width: 192px;
+		height: auto;
+		margin-left: -174px;
+	}
+
+	.stock-image-add{
+		width: 122px;
+		height: auto;
+		top: 36px;
+		left: 174px;
+	}
+
+	.stock-block-top .sub-header_decor__news-stock{
+		display: none;
+	}
+
+	.stock-block-top-content{
+		padding-left: 0px;
+	}
+
+	.stock-block-top-content i {
+		font-size: 22px;
+	}
+
+	.stock-block-top-content .text-18 {
+		font-size: 15px;
+	}
+
+	.stock-block-top-image{
+		text-align: center;
+		width: 290px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.stock-block-top .stock-comment{
+		padding-left: 0px;
+	}
+
+	.stock-block-middle .sub-header{
+		font-size: 25px;
+	}
+
+	.stock-image-girl{
+		display: none;
+	}
+
+	.stock-block-middle .stock-image-add {
+		left: 0px;
+	}
+
+	.stock-block-middle .sub-header_decor__news-stock{
+		padding-left: 50%;
+		font-size: 32px;
+	}
+
+	.back-tale-image{
+		top: 0px;
+		width: 100%;		
+		height: auto;
+		margin-left: 0px;
+		margin-top: 30px;
+		margin-bottom: 20px;
+	}
+
+	.tale-begin{
+		margin-left: 0px;
+	}
+
+	.stock-gift{
+		margin-left: 0px;
+		text-align: center;
+		width: 290px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.stock-gift .sub-header_decor{
+		font-size: 28px;
+	}
+
+	.stock-gift img {
+	    position: absolute;
+	    bottom: -8px;
+	    right: 12px;
+	}
+
+	.stock-news-10{
+		left: 0px;
+		right: 0px;
+		z-index: 100;
+		transform: rotate(-53deg);
+		top: 8px;
+	}
+
+	.tale-comment{
+		margin-left: 0px;
+	}
+
+	.stock-block-bottom .btn-blue-wrap{
+		text-align: center;
+	}
+
+	.stock-block-bottom .btn-blue-wrap{
+		margin-left: 0px;
+	}
+
+	.sub-header-stock-bottom{
+		padding-right: 0px;
+		font-size: 27px;
+	}
+
+	.tale-begin span {
+		font-size: 18px;
+		text-align: center;
+	}
+
+	.stock-news .sub-header{
+		font-size: 23px;
+	}
+
+	.stock-news img{
+		width: 122px;
+		height: 122px;
+		float: left;
+		margin-right: 15px;
+	}
+
+	.stock-news-slide-wrap{
+		display: block;
+	}
+
+	.stock-block-top hr{
+		display: none;
+	}
+
+	.stock-news-block{
+		padding-left: 0px;
+	}
+
+	.stock-news .btn-gray {
+    	padding: 0px 26px 0 0px;
+	}
+
+	.stock-news .stock-news-slide{
+		position: relative;
+		padding-bottom: 30px;
+		margin-bottom: 0px;
+	}
+
+	.stock-news .arr-wrap{
+		bottom: 13px;
+	}
+
+	.stock-news-block h4{
+		margin-left: 137px;
 	}
 
 	
@@ -967,7 +1291,8 @@
 		margin: 30px auto;
 		order: 2;
 		max-width: 300px;
-		height: 390px;
+		height: 100%;
+		max-height: 510px;
 	}
 
 	.sub-header-doctor_name{
@@ -1013,6 +1338,10 @@
 
 	.doctor-cert img{
 		margin-right: 10px;
+	}
+
+	.dir-qualif-list li{
+		margin-left: 0px;
 	}
 
 	.doctor-schedule{
@@ -1113,7 +1442,274 @@
 		padding-bottom: 30px;
 	}
 
-	
+	.sub-header-services-info{
+		font-size: 22px;
+	}
+
+	.services-info-content img{
+		float: none!important;
+		width: 100%;
+		height: auto;
+		max-width: 400px;
+		margin-right: auto;
+		margin-left: auto;
+		display: block;
+	}
+
+	.services-info .dir-qualif-list li{
+		margin-left: 0px;
+	}
+
+	.sub-header-services-cost{
+		text-align: left;
+		font-size: 24px;
+	}
+
+	.services-cost-drop{
+		width: 40px;
+		height: 40px;
+		right: 0px;
+	}
+
+	.services-cost-drop::before {
+	    height: 0.85em;
+	    position: relative;
+	    top: 1.05em;   
+	    width: 0.85em;
+	}
+
+	.service-cost{
+		padding: 0px;
+	}
+
+	.service-cost-wrap{
+		box-shadow: none;
+		padding-bottom: 0px;
+	}
+
+	.service-doctors .doctor-job, .service-doctors .doctor-name{
+		padding: 0px;
+	}
+
+	.other-services-block{
+		flex-direction: column;		
+		margin-left: 0px;
+		width: 100%;
+		align-items: center;
+	}
+
+	.other-services-block .link-gray{
+		color: #0a9de3;
+		margin-bottom: 10px;
+	}
+
+	.service-cost-table{
+		margin-left: 0px;
+		width: 100%;
+		padding-left: 15px;
+	}
+
+	.service-cost-table-header{
+		display: none;
+	}
+
+	.service-cost-list li{
+		display: block;
+		border-top: none!important;
+		border-bottom: none;
+		margin-bottom: 20px;
+	}
+
+	.service-cost-list li span{
+		display: block;
+		text-align: left;
+		width: 100%;
+	}
+
+	.sub-header-services-doctors, .sub-header-services-others,  .sub-header-articles{
+		font-size: 24px;
+	}
+
+	.service-doctors .doctors-block img{
+		margin: 0 auto;
+	}
+
+	.btn-blue-service-doctor{
+		width: 95%;
+		max-width: 400px;
+	}
+
+	.sub-header-articles{
+		text-align: center;
+	}
+
+	.main-articles{
+		padding: 30px 0px 30px 0px;
+	}
+
+	.contacts-block-field-left{
+		width: 58%;
+	}
+
+	.contacts-block-field-small{
+		width: 56%;
+	}
+
+	.stock-block-top .stock-image-boy{
+		width: 192px;
+		height: auto;
+		margin-left: -174px;
+	}
+
+	.stock-image-add{
+		width: 122px;
+		height: auto;
+		top: 36px;
+		left: 174px;
+	}
+
+	.stock-block-top .sub-header_decor__news-stock{
+		display: none;
+	}
+
+	.stock-block-top-content{
+		padding-left: 0px;
+	}
+
+	.stock-block-top-content i {
+		font-size: 22px;
+	}
+
+	.stock-block-top-content .text-18 {
+		font-size: 15px;
+	}
+
+	.stock-block-top-image{
+		text-align: center;
+		width: 290px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.stock-block-top .stock-comment{
+		padding-left: 0px;
+	}
+
+	.stock-block-middle .sub-header{
+		font-size: 25px;
+	}
+
+	.stock-image-girl{
+		display: none;
+	}
+
+	.stock-block-middle .stock-image-add {
+		left: 0px;
+	}
+
+	.stock-block-middle .sub-header_decor__news-stock{
+		padding-left: 50%;
+		font-size: 32px;
+	}
+
+	.back-tale-image{
+		top: 0px;
+		width: 100%;		
+		height: auto;
+		margin-left: 0px;
+		margin-top: 30px;
+		margin-bottom: 20px;
+	}
+
+	.tale-begin{
+		margin-left: 0px;
+	}
+
+	.stock-gift{
+		margin-left: 0px;
+		text-align: center;
+		width: 290px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.stock-gift .sub-header_decor{
+		font-size: 28px;
+	}
+
+	.stock-gift img {
+	    position: absolute;
+	    bottom: -8px;
+	    right: 12px;
+	}
+
+	.stock-news-10{
+		left: 0px;
+		right: 0px;
+		z-index: 100;
+		transform: rotate(-53deg);
+		top: 8px;
+	}
+
+	.tale-comment{
+		margin-left: 0px;
+	}
+
+	.stock-block-bottom .btn-blue-wrap{
+		text-align: center;
+	}
+
+	.stock-block-bottom .btn-blue-wrap{
+		margin-left: 0px;
+	}
+
+	.sub-header-stock-bottom{
+		padding-right: 0px;
+		font-size: 27px;
+	}
+
+	.tale-begin span {
+		font-size: 18px;
+		text-align: center;
+	}
+
+	.stock-news .sub-header{
+		font-size: 23px;
+	}
+
+	.stock-news img{
+		width: 122px;
+		height: 122px;
+		float: left;
+		margin-right: 15px;
+	}
+
+	.stock-news-slide-wrap{
+		display: block;
+	}
+
+	.stock-block-top hr{
+		display: none;
+	}
+
+	.stock-news-block{
+		padding-left: 0px;
+	}
+
+	.stock-news .stock-news-slide{
+		position: relative;
+		padding-bottom: 30px;
+		margin-bottom: 0px;
+	}
+
+	.stock-news .arr-wrap{
+		bottom: 13px;
+	}
+
+	.stock-news-block h4{
+		margin-left: 137px;
+	}
+
 
 }
 
@@ -1329,8 +1925,9 @@
 	}
 
 	.doctor-info-block img {
-		margin-right: -40px;
+		margin-right: 10px;
 		margin-bottom: 10px;
+		width: 350px;
 	}
 
 	.response-feedback .response-feedback-bg{
@@ -1343,7 +1940,7 @@
 	}
 
 	.doctor-info-response{
-		padding-left: 36.5%;
+		padding-left: 360px;
 	}
 
 	.dir-number{
@@ -1352,6 +1949,10 @@
 
 	.dir-qualif-list{
 		padding-left: 0px;
+	}
+
+	.dir-qualif-list li{
+		margin-left: 0px;
 	}
 
 	.doctor-schedule{
@@ -1424,6 +2025,125 @@
 		color: #0a9de3;
 	}
 
+	.services-info-content img{
+		width: 289px;
+		height: 267px;
+	}
+
+	.services-info .dir-qualif-list li{
+		margin-left: 309px;
+	}
+
+	.services-info .dir-qualif-list li:nth-child(2), .services-info .dir-qualif-list li:nth-child(3), .services-info .dir-qualif-list li:nth-child(4){
+		margin-left: 0px;
+		float: none;
+	}
+
+	.service-doctors .doctor-job, .service-doctors .doctor-name{
+		padding: 0px;
+	}
+
+	.other-services-block{
+		flex-direction: column;		
+		margin-left: 0px;
+		width: 100%;
+		align-items: center;
+	}
+
+	.other-services-block .link-gray{
+		color: #0a9de3;
+		margin-bottom: 10px;
+	}
+
+	.contacts-block-field-left{
+		width: 30%;
+	}
+
+	.contacts-block-field-right{
+		width: 70%;
+	}
+
+	.contacts-block-field-small{
+		width: 44%;
+	}
+
+	.stock-block-top .stock-image-boy{
+		width: 100%;
+		height: auto;
+		margin-left: 0px;
+		margin-top: 240px;
+	}
+
+	.stock-image-add {
+		right: 0px;
+		top: 80px;
+	}
+
+	.sub-header_decor__news-stock{
+		padding-left: 0px;
+		text-align: center;
+	}
+
+	.stock-image-girl{
+		width: 100%;
+		height: auto;
+		margin-top: 190px;
+	}
+
+	.stock-block-middle .stock-image-add{
+		top: 7px;
+		left: 0px;
+	}
+
+	.back-tale-image{
+		top: 0px;
+		width: 100%;
+		height: auto;
+		margin-left: 0px;
+		margin-top: 30px;
+	}
+
+	.tale-begin{
+		margin-left: 0px;
+	}
+
+	.stock-gift{
+		margin-left: 0px;
+	}
+
+	.stock-gift .sub-header_decor{
+		font-size: 25px;
+	}
+
+	.stock-gift img {
+	    position: absolute;
+	    bottom: -8px;
+	    right: 12px;
+	}
+
+	.stock-news-10{
+		left: 0px;
+		right: 0px;
+		z-index: 100;
+		transform: rotate(-53deg);
+	}
+
+	.tale-comment{
+		margin-left: 0px;
+	}
+
+	.stock-block-bottom .btn-blue-wrap{
+		text-align: center;
+	}
+
+	.stock-block-bottom .btn-blue-wrap{
+		margin-left: -370px;
+	}
+
+	.stock-news .sub-header{
+		padding-left: 0px;
+		font-size: 30px;
+	}
 
 }
 
@@ -1547,7 +2267,25 @@
 	}
 
 	.doctor-info-block img {
-		margin-right: -40px;
+		width: 400px;
+		margin-bottom: 30px;
+	}
+
+	.doctor-info-response{
+		padding-left: 400px;
+	}
+
+	.btn-blue-doctor {
+		padding: 0 15px;
+	}
+
+	.dir-qualif-list li{
+		margin-left: 400px;
+	}
+
+	.dir-qualif-list  .fix-mr-left{
+		margin-left: 0px!important;
+		float: none!important;
 	}
 
 	.response-feedback .response-feedback-bg{
@@ -1561,6 +2299,67 @@
 
 	.all-services-bottom hr{
 		margin-left: 0px;
+	}
+
+	.services-info-content img{
+		width: 425px;
+		height: 346px;
+	}
+
+	.services-info .dir-qualif-list li{
+		margin-left: 445px;
+	}
+
+	.contacts-block-field-left{
+		width: 25%;
+	}
+
+	.contacts-block-field-right{
+		width: 75%;
+	}
+
+	.stock-block-top .stock-image-boy{
+		width: 382px;
+		height: auto;
+		margin-left: 0px;
+		margin-top: 110px;
+	}
+
+	.stock-image-girl{
+		margin-left: -70px;
+	}
+
+	.stock-block-middle .stock-image-add {
+		left: -148px;
+	}
+
+	.back-tale-image{
+		top: 0px;
+		width: 100%;
+		height: auto;
+		margin-left: 0px;
+		top: 40px;
+	}
+
+	.tale-begin{
+		margin-left: 0px;
+	}
+
+	.stock-gift{
+		margin-left: 0px;
+	}
+
+	.stock-gift .sub-header_decor{
+		font-size: 37px;
+	}
+
+	.tale-comment{
+		margin-left: 0px;
+	}
+
+	.stock-block-bottom .btn-blue-wrap{
+		text-align: center;
+		margin-left: -40px;
 	}
 
 }

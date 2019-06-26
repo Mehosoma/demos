@@ -182,12 +182,22 @@ $(window).on('load resize', function() {
 
 //Link-Dropdown
 $(document).ready(function(){
-	$( ".link-dropdown" ).on('click', function() {
+	$( ".link-dropdown").on('click', function() {
 	  $(this).next('.block-dropdown').animate({
               height: 'toggle'
             }, 300, function() {
           }); 
        $(this).css('display','none')  
+	});  
+});
+
+//Cost-Dropdown
+$(document).ready(function(){
+	$( ".service-cost-wrap").on('click', function() {
+	  $('.service-cost-table').animate({
+              height: 'toggle'
+            }, 300, function() {
+      });        
 	});  
 });
 
@@ -235,6 +245,51 @@ $(window).on('load resize', function() {
   		$('.slide-unwrap').wrap('<div class="block-dropdown" id="block-dropdown">');
   	}
   	
+  }
+});
+
+
+//Stock-Dropdown
+$(document).ready(function(){
+	$( ".stock-comment-link").on('click', function() {
+	  $(this).next('.stock-comment-dropdown').animate({
+              height: 'toggle'
+            }, 300, function() {
+          });      
+	});  
+});
+
+
+//Slider-Stock-News
+$(window).on('load resize', function() {
+	
+  if ($(window).width() < 768) {
+
+  	if (!$('.slider-stock-news').hasClass('slick-initialized')){
+	  					
+			$('.slider-stock-news:not(.slick-initialized)').slick({
+			    infinite: true,
+			    slidesToShow: 1,
+			    slidesToScroll: 1
+			 });
+
+			var stHeight = $('.slider-stock-news .slick-track').height();
+			$('.slider-stock-news .stock-news-slide').css('height',stHeight + 'px' );
+
+	}else{
+
+		$('.slider-stock-news').slick('refresh');
+		var stHeight = $('.slider-stock-news .slick-track').height();
+		$('.slider-stock-news .stock-news-slide').css('height',stHeight + 'px' );
+
+		
+
+	}
+
+  } else {
+
+  	$(".slider-stock-news.slick-initialized").slick("unslick");
+  	  	
   }
 });
 

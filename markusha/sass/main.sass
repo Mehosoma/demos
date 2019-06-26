@@ -54,14 +54,14 @@ body
 		border: none	
 
 .pixel
-	background: url(../images/services.jpg) no-repeat top center
+	background: url(../images/news.jpg) no-repeat top center
 	width: 1920px
 	height: 12800px
 	position: absolute
 	z-index: 1000000
 	display: none
 	left: 50%
-	top: -68px
+	top: 0px
 	margin-left: -960px
 	opacity: 0.5
 	margin-top: 0px
@@ -250,7 +250,12 @@ body
 .text-14
 	font-size: 14px
 	color: $gray-d
-	line-height: 24px	
+	line-height: 24px
+.text-14-bold
+	font-size: 14px
+	color: $gray-d
+	line-height: 24px
+	font-weight: 700		
 .text-16-bold
 	font-size: 16px
 	color: $gray-d
@@ -263,6 +268,9 @@ body
 .text-17-bold
 	font-size: 17px
 	font-weight: 700
+	color: $gray-d
+.text-18
+	font-size: 18px	
 	color: $gray-d
 .btn-sh
 	box-shadow: 0px 5px 9px rgba(0,0,0,0.24)
@@ -935,17 +943,16 @@ footer .row .col-xl-3:nth-child(3)
 	margin-top: 30px
 .doctor-info-block
 	img
-		float: left
-		margin-left: -39px
-		margin-right: -67px
-		margin-bottom: 60px
-		width: 47%
+		margin-left: 0px
+		margin-right: 10px
+		margin-bottom: 80px
+		width: 475px
 .doctor-position
 	position: relative
 	top: 10px
 .doctor-info-response
 	margin-top: 20px
-	padding-left: 38%
+	padding-left: 475px
 .btn-blue-doctor
 	padding: 0px 33px
 	height: 50px
@@ -967,10 +974,11 @@ footer .row .col-xl-3:nth-child(3)
 .doctor-info-full-field
 	margin-bottom: 28px
 .dir-qualif-list
-	padding-left: 38%
+	
 	li
 		position: relative
-		padding-left: 37px		
+		padding-left: 37px	
+		margin-left: 475px	
 	li::after
 		position: absolute
 		content: ''
@@ -1244,8 +1252,373 @@ footer .row .col-xl-3:nth-child(3)
 		padding-left: 29px
 		margin-top: 5px
 
+/*****************************************One-Services*******************************************/
+.services-info
+	padding-top: 22px
+	padding-bottom: 40px		
+	.dir-qualif-list
+		li
+			margin-left: 565px
+	.circle	
+		width: 7px
+		height: 7px
+		background-color: red
+.services-info-content
+	margin-top: 38px
+	margin-left: -3px
+	.main-text
+		line-height: 25px
+	.fix-mr-bottom
+		margin-bottom: 24px
+	img
+		position: relative
+		top: 4px
+		width: 545px
+		margin-right: 20px
+		margin-bottom: 20px
+.sub-header_decor-si
+	font-size: 30px
+	margin-top: 41px
+.service-cost
+	padding-top: 20px
+	padding-bottom: 40px
+.sub-header-services-cost, .sub-header-services-doctors
+	display: block
+	text-align: center
+.service-cost-wrap
+	box-shadow: 0px 7px 7px rgba(0,0,0,0.24)
+	padding-top: 36px
+	padding-bottom: 88px
+	position: relative
+.service-cost-table-header
+	display: flex
+	justify-content: space-between	
+	line-height: 45px
+.service-cost-list 
+	li:nth-child(1)
+		border-top: 1px solid #d0d0d0
+	li
+		display: flex
+		justify-content: space-between
+		border-bottom: 1px solid #d0d0d0
+		padding: 3.4px 0px
+.services-cost-drop
+	width: 52px
+	height: 52px
+	background-color: #d0d0d0
+	border-radius: 50%
+	position: absolute
+	z-index: 100
+	right: 58px
+	top: 44px
+	text-align: center
+.services-cost-drop::before
+	border-style: solid
+	border-width: 0.15em 0.15em 0 0
+	content: ''
+	display: inline-block
+	height: 1.05em	
+	position: relative
+	top: 1.35em
+	transform: rotate(-45deg)
+	vertical-align: top
+	width: 1.15em	
+.services-cost-drop:hover
+	cursor: pointer
+	background-color: $blue	
+.services-cost-drop:hover::before
+	border-color: #fff
+	-moz-transition: all 0.3s ease-out
+	-o-transition: all 0.3s ease-out
+	-webkit-transition: all 0.3s ease-out
+	transition: all 0.3s ease-out
+.service-cost-table
+	margin-top: 33px
+	width: 85%
+	margin-left: 65px
+	height: auto
+.services-header-name
+	width: 93%
+	text-align: center
+	font-weight: 600
+.services-header-cost
+	width: 7%
+	text-align: center
+	font-weight: 600
+	text-align: right
+	padding-right: 10px
+.services-desc
+	width: 85%
+	letter-spacing: 0.4px
+.services-table-cost
+	width: 15%
+	letter-spacing: 0.4px
+	text-align: right
+.service-doctors
+	padding-top: 69px
+	padding-bottom: 68px
+	.doctors-block
+		margin-top: 27px
+		margin-bottom: 0px
+.service-doctors .col-xl-3
+	padding-bottom: 74px
+.service-doctor-blue
+	position: absolute
+	bottom: 0px	
+	right: 0px 
+	left: 0px
+	margin: auto
+	text-align: center	
+.btn-blue-service-doctor
+	line-height: 60px
+	height: 60px
+	font-weight: 600
+	padding: 0px 20px
+	border-radius: 30px
+	font-weight: 700
+	padding: 0px 45px
+.other-services
+	width: 100%
+	min-height: 308px	
+	padding-top: 48px
+	padding-bottom: 48px
+.other-services-decor	
+	position: absolute
+	left: -159px
+	top: -100px
+.other-services-block
+	display: flex
+	justify-content: space-between
+	width: 83%
+	margin-left: 125px
+	margin-top: 22px
+	margin-bottom: 28px
+	a
+		font-size: 21px
+		color: $gray-d
+.btn-gray_other-serv
+	padding: 0px 87px 0 53px
+.main-articles
+	padding-top: 79px
+	padding-bottom: 72px
+	.slider-container
+		margin-top: 27px
+.article-anonse-block
+	.sub-header_small
+		line-height: 22px
+	.main-text
+		line-height: 22px
+.service-cost-list-header
+	font-weight: 700
+	display: block
+	margin-bottom: 10px
+	position: relative
+	padding-left: 30px
+	margin-left: -30px
+.service-cost-list-header::after
+	position: absolute
+	content: ''
+	width: 10px
+	height: 10px
+	border-radius: 50%
+	background-color: #accdef
+	top: 8px
+	left: 6px
 
 
+/***********************************************Contacts*****************************************/
+.contacts
+	padding-top: 43px
+	padding-bottom: 58px
+.contacts-block
+	margin-top: 25px
+.contacts-block-field
+	display: flex
+	align-items: top
+	padding: 6px 0px
+	.footer-social
+		margin-top: 0px
+		margin-left: 0px
+		position: relative
+		top: -5px			
+	.main-text
+		line-height: 24px
+	span		
+		text-transform: uppercase
+		font-weight: bold
+		padding-left: 50px
+	a
+		margin-right: 10px
+	p
+		margin: 0px	
+	b
+		display: block
+		margin-bottom: -12px
+.contacts-block-field-left
+	width: 17%
+.contacts-block-field-right
+	width: 83%
+.contacts-block-field-small	
+	width: 28%
+.contacts-adress
+	background-image: url('../images/marker.png')
+	background-repeat: no-repeat
+	background-position: left top
+	margin-bottom: 16px
+.contacts-phone
+	background-image: url('../images/phone.png')
+	background-repeat: no-repeat
+	background-position: left top
+	margin-bottom: 6px
+.contacts-work
+	background-image: url('../images/work.png')
+	background-repeat: no-repeat
+	background-position: left top
+	margin-bottom: 12px
+.contacts-site
+	background-image: url('../images/site.png')
+	background-repeat: no-repeat
+	background-position: left top
+	margin-bottom: 12px
+.contacts-social
+	background-image: url('../images/social.png')
+	background-repeat: no-repeat
+	background-position: left top
+
+
+/***********************************************Stock-page***************************************/
+.stock-block-top-image
+	position: relative
+.stock-block-top
+	padding-top: 38px
+	padding-bottom: 50px
+	position: relative
+	.stock-image-boy
+		margin-left: -30px
+	.stock-comment
+		padding-left: 33px
+		display: inline-block
+		margin-top: 20px	
+	hr
+		width: 700px
+		height: 4px
+		background-color: $gray-l
+		margin: 0 auto
+		margin-top: 30px
+.stock-image-add
+	position: absolute
+	top: -20px
+	right: -60px
+.stock-comment-dropdown
+	display: none
+	height: auto
+	span
+		padding: 20px 0px
+		display: block	
+.stock-comment-link:hover
+	cursor: pointer
+.stock-block-top-content
+	position: relative
+	top: 12px
+	padding-left: 33px
+	ul
+		margin-top: 22px
+	i
+		font-size: 25px
+.sub-header_decor__news-stock
+	padding-left: 100px
+	font-size: 55px
+	text-align: left
+.stock-block-middle
+	.stock-block-top-content
+		padding-top: 60px
+		padding-left: 0px
+		top: 0px
+	.sub-header_decor__news-stock
+		padding-left: 0px
+	.stock-block-top-content ul
+		margin-top: 31px
+	.stock-comment
+		display: inline-block
+		margin-top: 30px
+	.stock-block-top-image
+		position: relative
+		top: 106px
+	.stock-image-add
+	    position: absolute
+	    top: -80px
+	    left: -68px
+.stock-block-bottom
+	padding-top: 78px
+	padding-bottom: 42px
+	.btn-blue-wrap
+		margin-top: 27px
+		margin-left: 172px
+	.container
+		position: relative				
+.stock-news-10
+	position: absolute
+	right: 17px
+	top: 51px
+.sub-header-stock-bottom
+	padding-right: 25px		
+.back-tale-image
+	margin-left: -116px
+	position: relative
+	top: -44px
+.tale-begin
+	margin-top: 30px
+	margin-left: 134px
+	span
+		font-family: 'Calibri', sans-serif
+		font-size: 20px
+		font-weight: bold
+		color: #00365d
+		display: block
+		margin-bottom: 10px
+.stock-gift
+	margin-top: 22px
+	margin-left: 54px
+	position: relative
+	img
+		position: absolute
+		bottom: 5px
+		right: 38px
+.tale-comment
+	display: block
+	margin-top: 19px
+	margin-left: 41px
+.btn-blue-stock-page
+	padding: 0 48px
+	height: 60px
+	line-height: 60px
+	font-size: 18px
+	border-radius: 30px
+.stock-news
+	padding-top: 20px
+	padding-bottom: 70px
+	.stock-news-slide
+		margin-bottom: 36px
+	.slider-container
+		margin-top: 23px
+	.btn-gray_news-wrap
+		margin-top: 20px
+	.btn-gray
+		padding: 0px 124px 0 65px
+	img
+		position: relative
+		top: 5px
+		margin-right: 37px
+		height: 174px
+.stock-news-block
+	padding-left: 10px
+	h4
+		margin-top: 10px
+		margin-bottom: 14px
+	.main-text
+		line-height: 25px
+.stock-news-slide-wrap
+	display: flex
 
 /***********************************************ButtonMobile************************************/
 .menu-toggle-button
