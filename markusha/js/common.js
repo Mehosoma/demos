@@ -80,35 +80,7 @@ $(window).on('load resize', function() {
   }
 });
 
-//Licences
-$(window).on('load resize', function() {
-  if ($(window).width() < 992) {
-    $('.licences-slider:not(.slick-initialized)').slick({
-      infinite: true,
-	  loop: true,
-	  dots: false,  
-	  speed: 300,
-	  arrows: false, 
-	  slidesToShow: 3,
-	  slidesToScroll: 1,
-	  responsive: [ 
-	  	
-	    {
-	      breakpoint: 768,
-	      settings: {
-	        slidesToShow: 2,
-	        slidesToScroll: 1,       
-	      }
-	    }
-	    // You can unslick at a given breakpoint now by adding:
-	    // settings: "unslick"
-	    // instead of a settings object
-	  ]	  
-    });
-  } else {
-    $(".licences-slider.slick-initialized").slick("unslick");
-  }
-});
+
 
 //Slider-Methods
 $(window).on('load resize', function() {
@@ -391,5 +363,69 @@ $(document).ready(function() {
     });
 });
 
+//Slider-About
+$(document).ready(function(){
+
+$('.licences-slider').slick({
+  dots: false,  
+  speed: 300,
+  arrows: false,
+  infinite: false,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  responsive: [
+  	 {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1             
+      }
+    },
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1             
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 576,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+});
 
 
+$(document).ready(function() {
+	$('.popup-gallery').magnificPopup({
+		fixedContentPos: false,
+   		fixedBgPos: true,
+		delegate: 'a',
+		type: 'image',
+		tLoading: 'Loading image #%curr%...',
+		mainClass: 'mfp-img-mobile',
+		gallery: {
+			enabled: true,
+			navigateByImgClick: true,
+			preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+		},
+		image: {
+			tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+			
+		}
+	});
+});

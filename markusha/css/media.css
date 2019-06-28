@@ -1059,6 +1059,14 @@
 		margin-top: 16px;
 	}
 
+	.licensec .arr-left-gen{
+		left: 10px;
+	}
+
+	.licences-slider img{
+		margin: 0 auto;
+	}
+
 	
 }
 
@@ -2064,6 +2072,10 @@
 		min-height: 200px;
 	}
 
+	.licensec .arr-left-gen{
+		left: 10px;
+	}
+
 
 }
 
@@ -2585,6 +2597,10 @@
 		right: -10px;
 	}
 
+	.licensec .arr-left-gen{
+		left: 10px;
+	}
+
 
 }
 
@@ -2837,6 +2853,10 @@
 
 	.licences-slider{
 		margin-left: 0px;
+	}
+
+	.licensec .arr-left-gen{
+		left: 10px;
 	}
 
 

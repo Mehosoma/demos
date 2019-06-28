@@ -59,20 +59,6 @@ body hr {
   border: none;
 }
 
-.pixel {
-  background: url(../images/about.jpg) no-repeat top center;
-  width: 1920px;
-  height: 12800px;
-  position: absolute;
-  z-index: 1000000;
-  display: none;
-  left: 50%;
-  top: 0px;
-  margin-left: -960px;
-  opacity: 0.5;
-  margin-top: 0px;
-}
-
 /***************************************************GeneralStyles************************************/
 .a-trans {
   -moz-transition: all 0.3s ease-out;
@@ -3037,9 +3023,23 @@ footer .row .col-xl-3:nth-child(3) {
   min-height: 265px;
 }
 
+.licensec .arr-left-gen {
+  left: -10px;
+  margin-top: -66px;
+}
+
+.licensec .arr-right-gen {
+  margin-top: -66px;
+}
+
 .licences-slider {
   margin-left: -35px;
   margin-top: -66px;
+  padding: 0px 20px;
+}
+
+.license-slide {
+  text-align: center;
 }
 
 .garantee {
