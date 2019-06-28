@@ -80,6 +80,36 @@ $(window).on('load resize', function() {
   }
 });
 
+//Licences
+$(window).on('load resize', function() {
+  if ($(window).width() < 992) {
+    $('.licences-slider:not(.slick-initialized)').slick({
+      infinite: true,
+	  loop: true,
+	  dots: false,  
+	  speed: 300,
+	  arrows: false, 
+	  slidesToShow: 3,
+	  slidesToScroll: 1,
+	  responsive: [ 
+	  	
+	    {
+	      breakpoint: 768,
+	      settings: {
+	        slidesToShow: 2,
+	        slidesToScroll: 1,       
+	      }
+	    }
+	    // You can unslick at a given breakpoint now by adding:
+	    // settings: "unslick"
+	    // instead of a settings object
+	  ]	  
+    });
+  } else {
+    $(".licences-slider.slick-initialized").slick("unslick");
+  }
+});
+
 //Slider-Methods
 $(window).on('load resize', function() {
   if ($(window).width() < 992) {
@@ -191,17 +221,7 @@ $(document).ready(function(){
 	});  
 });
 
-//Cost-Dropdown
-$(document).ready(function(){
-	$( ".service-cost-wrap").on('click', function() {
-	  $('.service-cost-table').animate({
-              height: 'toggle'
-            }, 300, function() {
-      });        
-	});  
-});
-
-
+ 
 //Disclaim
 $('.disclaim').on('click',function(e){
   if ($('#feedback-check').is(':checked')) {
@@ -265,34 +285,111 @@ $(window).on('load resize', function() {
 	
   if ($(window).width() < 768) {
 
-  	if (!$('.slider-stock-news').hasClass('slick-initialized')){
-	  					
+  	if (!$('.slider-stock-news').hasClass('slick-initialized')){	  					
 			$('.slider-stock-news:not(.slick-initialized)').slick({
 			    infinite: true,
 			    slidesToShow: 1,
 			    slidesToScroll: 1
 			 });
-
 			var stHeight = $('.slider-stock-news .slick-track').height();
 			$('.slider-stock-news .stock-news-slide').css('height',stHeight + 'px' );
-
 	}else{
-
 		$('.slider-stock-news').slick('refresh');
 		var stHeight = $('.slider-stock-news .slick-track').height();
 		$('.slider-stock-news .stock-news-slide').css('height',stHeight + 'px' );
-
-		
-
 	}
 
   } else {
-
-  	$(".slider-stock-news.slick-initialized").slick("unslick");
-  	  	
+  	$(".slider-stock-news.slick-initialized").slick("unslick");  	  	
   }
 });
 
+//Slider-steps
+$(window).on('load resize', function() {
+	if (!$('.slider-steps').hasClass('slick-initialized')){	  					
+			$('.slider-steps:not(.slick-initialized)').slick({
+			    infinite: true,
+			    slidesToShow: 1,
+			    slidesToScroll: 1
+			 });
+			var stHeight = $('.slider-steps .slick-track').height();
+			$('.slider-steps .steps-slide').css('height',stHeight + 'px' );
+	}else{
+		$('.slider-steps').slick('refresh');
+		var stHeight = $('.slider-stock-news .slick-track').height();
+		$('.slider-steps .steps-slide').css('height',stHeight + 'px' );
+	} 
+});
+
+
+//Change icon
+$(document).ready(function(){
+	$( ".btn-link").on('click', function() {
+	  $(this).closest('.card').find('.accdrop').toggleClass('drop-show');  
+    });  
+});
+
+
+//Slider-About
+$(document).ready(function(){
+
+$('.slider-about').slick({
+  dots: false,  
+  speed: 300,
+  arrows: false,
+  infinite: false,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  responsive: [
+  	 {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1             
+      }
+    },
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1             
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+});
+
+
+
+//Modal-Video
+$(document).ready(function() {
+    $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
+        disableOn: 700,
+        type: 'iframe',
+        mainClass: 'mfp-fade',
+        removalDelay: 160,
+        preloader: false,
+
+        fixedContentPos: false
+    });
+});
 
 
 
