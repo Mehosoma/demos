@@ -414,7 +414,7 @@ $(document).ready(function() {
     });
 });
 
-//Slider-About
+//Slider-Licensec
 $(document).ready(function(){
 
 $('.licences-slider').slick({
