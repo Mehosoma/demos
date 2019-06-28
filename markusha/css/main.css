@@ -795,6 +795,10 @@ body hr {
   padding: 37px 0px 68px 0px;
 }
 
+.main-news .sub-header_small {
+  padding-left: 0px;
+}
+
 .main-news-block {
   margin-top: 35px;
 }
@@ -3060,13 +3064,13 @@ footer .row .col-xl-3:nth-child(3) {
   position: relative;
 }
 
-.sub-header_small {
+.garantee-block-list-wrap .sub-header_small {
   position: relative;
   display: block;
   padding-left: 29px;
 }
 
-.sub-header_small b {
+.garantee-block-list-wrap .sub-header_small b {
   font-size: 12px;
 }
 
