@@ -120,7 +120,7 @@
 					</div>
 				</div>
 				<div class="col-xl-2 col-lg-2 col-md-4 d-none d-md-block">
-					<a href="" class="btn-blue btn-blue_order">Заказать звонок</a>
+					<a href="#modal" class="btn-blue btn-blue_order popup-modal">Заказать звонок</a>
 				</div>
 				<div class="col-xl-1 col-lg-1 col-md-2 d-none d-md-block">
 					<div class="work-h">
@@ -274,7 +274,7 @@
 					<div class="slider-gen slider-serv row slider-main">
 						<div class="col-xl-3 col-lg-4 col-md-4 col-sm-12">
 							<div class="service-doctor-blue">
-								<a href="" class="btn-blue btn-blue-service-doctor">Записаться</a>
+								<a href="#modal" class="btn-blue btn-blue-service-doctor popup-modal">Записаться</a>
 							</div>
 							<div class="doctors-block text-center">								
 								<img src="images/doctors/doctor-1.png" alt="doctor-image">							
@@ -290,7 +290,7 @@
 									<span class="doctor-job text-gray-15">Детский врач-стоматолог.</span>
 								</div>
 								<div class="service-doctor-blue">
-									<a href="" class="btn-blue btn-blue-service-doctor">Записаться</a>
+									<a href="#modal" class="btn-blue btn-blue-service-doctor popup-modal">Записаться</a>
 								</div>
 							</div>							
 						</div>
@@ -302,7 +302,7 @@
 									<span class="doctor-job text-gray-15">Детский врач-стоматолог.</span>
 								</div>
 								<div class="service-doctor-blue">
-									<a href="" class="btn-blue btn-blue-service-doctor">Записаться</a>
+									<a href="#modal" class="btn-blue btn-blue-service-doctor popup-modal">Записаться</a>
 								</div>
 							</div>							
 						</div>
@@ -314,7 +314,7 @@
 									<span class="doctor-job text-gray-15">Детский врач-стоматолог, что-то ещё и ещё и ещё и ещё какие-то регалии</span>
 								</div>
 								<div class="service-doctor-blue">
-									<a href="" class="btn-blue btn-blue-service-doctor">Записаться</a>
+									<a href="#modal" class="btn-blue btn-blue-service-doctor popup-modal">Записаться</a>
 								</div>
 							</div>							
 						</div>				
@@ -658,6 +658,22 @@
 		</div>
 	</div>
 </footer>
+
+<!--Modal-Form-->
+<div id="modal" class="mfp-hide white-popup-block">
+	<div class="mfp-close-wrap">
+		<button  class="mfp-close" type="button" title="Close (Esc)">X</button>
+	</div>
+	<form id="modal-form-order" class="form-gen">
+		<span class="modal-header-form sub-header_decor">Обратная связь</span>
+		<div class="modal-inputs">
+			<input type="text" name="name" required="" placeholder="Ваше имя">
+			<input type="text" name="phone" required="" placeholder="Номер телефона">
+		</div>
+		<textarea name="message" required="" placeholder="Что Вас беспокоит и какое лечение Вы хотели бы получить?"></textarea>
+		<button type="submit" class="btn-blue btn-blue_main-form a-trans">Отправить заявку</button>
+	</form>
+</div>
 
 	<div class="hidden"></div>
 

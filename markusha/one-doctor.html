@@ -120,7 +120,7 @@
 					</div>
 				</div>
 				<div class="col-xl-2 col-lg-2 col-md-4 d-none d-md-block">
-					<a href="" class="btn-blue btn-blue_order">Заказать звонок</a>
+					<a href="#modal" class="btn-blue btn-blue_order popup-modal">Заказать звонок</a>
 				</div>
 				<div class="col-xl-1 col-lg-1 col-md-2 d-none d-md-block">
 					<div class="work-h">
@@ -183,9 +183,9 @@
 						<span class="doctor-position text-16-gray">Детский врач анестезиолог-реаниматолог высшей<br class="d-none d-lg-block"> категории, кандидат медицинских наук</span>
 						<h2 class="sub-header sub-header-doctor_name">Михайлов Эдуард Валентинович</h2>
 						<div class="doctor-info-response">		
-							<a href="" class="btn-blue btn-blue-doctor btn-sh border-22">Записаться на прием</a>
+							<a href="#modal" class="btn-blue btn-blue-doctor btn-sh border-22 popup-modal">Записаться на прием</a>
 							<span class="dir-number text-17-bold">Отзывов: <i>10</i></span>
-							<a href="" class="dir-write-response link-blue">Написать отзыв</a>
+							<a href=".response-feedback" class="dir-write-response link-blue link-down">Написать отзыв</a>
 						</div>
 						<div class="doctor-info-full">
 							<div class="doctor-info-full-field">
@@ -903,6 +903,22 @@
 		</div>
 	</div>
 </footer>
+
+<!--Modal-Form-->
+<div id="modal" class="mfp-hide white-popup-block">
+	<div class="mfp-close-wrap">
+		<button  class="mfp-close" type="button" title="Close (Esc)">X</button>
+	</div>
+	<form id="modal-form-order" class="form-gen">
+		<span class="modal-header-form sub-header_decor">Обратная связь</span>
+		<div class="modal-inputs">
+			<input type="text" name="name" required="" placeholder="Ваше имя">
+			<input type="text" name="phone" required="" placeholder="Номер телефона">
+		</div>
+		<textarea name="message" required="" placeholder="Что Вас беспокоит и какое лечение Вы хотели бы получить?"></textarea>
+		<button type="submit" class="btn-blue btn-blue_main-form a-trans">Отправить заявку</button>
+	</form>
+</div>
 
 	<div class="hidden"></div>
 

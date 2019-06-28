@@ -2413,8 +2413,8 @@ footer .row .col-xl-3:nth-child(3) {
   text-align: center;
   padding: 85px 30px 30px 24px;
   background-color: #f4f4f4;
-  -webkit-box-shadow: 0px 0px 21px rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 0px 21px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.2);
   margin-bottom: 56px;
 }
 
@@ -2663,10 +2663,17 @@ footer .row .col-xl-3:nth-child(3) {
   margin-top: 0px;
 }
 
+.steps-slide-content {
+  position: relative;
+  height: 100%;
+  padding-bottom: 60px;
+  margin-left: 30px;
+}
+
 .btn-steps-slide-wrap {
   position: absolute;
-  left: 59.4%;
-  bottom: 70px;
+  left: 77px;
+  bottom: 0px;
   font-size: 23px;
   font-weight: 700;
   color: #00365d;
@@ -2679,8 +2686,8 @@ footer .row .col-xl-3:nth-child(3) {
   margin-top: 27px;
 }
 
-.slider-steps .col-12 {
-  padding-bottom: 52px;
+.slider-steps .mb-fix {
+  padding-bottom: 50px;
 }
 
 .slider-steps .sub-header {
@@ -2708,7 +2715,7 @@ footer .row .col-xl-3:nth-child(3) {
   text-align: center;
   margin-left: 52%;
   position: relative;
-  top: -111px;
+  bottom: 95px;
 }
 
 .about-steps .arrows .arr-left-gen, .about-steps .arrows .arr-right-gen {
@@ -2758,17 +2765,14 @@ footer .row .col-xl-3:nth-child(3) {
 }
 
 .steps-image-wrap {
-  position: relative;
   margin-left: 52px;
-  margin-right: 38px;
   position: relative;
-  top: 10px;
+  margin-top: 10px;
 }
 
 .steps-image-wrap img {
   z-index: 100;
   position: relative;
-  float: left;
 }
 
 .steps-image-decor-text {
@@ -3192,6 +3196,29 @@ footer .row .col-xl-3:nth-child(3) {
 .modal-inputs input {
   width: 49% !important;
   margin-right: 0px !important;
+}
+
+#dmodal {
+  width: 700px;
+  height: auto;
+  padding: 30px;
+  margin: 0 auto;
+  position: relative;
+  background-color: #fff;
+}
+
+#dmodal .tour-image-main {
+  width: 100%;
+  height: auto;
+}
+
+#dmodal .tour-image {
+  width: 100%;
+}
+
+#dmodal .mfp-close-wrap {
+  top: 6px;
+  right: 6px;
 }
 
 /***********************************************ButtonMobile************************************/

@@ -1000,6 +1000,7 @@
 
 	.tour-image{
 		width: 100%;
+		height: 200px;
 	}
 
 	.tour-image img:nth-child(1){
@@ -1025,7 +1026,7 @@
 		display: flex;
 		flex-direction: column;
 		flex-wrap: wrap;
-		margin-top: -55px;
+		margin-top: -100px;
 		height: 82px;
 	}
 
@@ -1070,6 +1071,23 @@
 	.licences-small-slider-wrap, .doctor-schedule-block{
 		margin-left: auto;
 		margin-right: auto;
+	}
+
+	#modal{
+		width: 100%;
+	}
+
+	.modal-inputs{
+		display: block;
+	}
+
+	.modal-inputs input{
+		width: 100%!important;
+		margin-bottom: 20px;
+	}
+
+	.steps-slide-content{
+		margin-left: 0px;
 	}
 
 	
@@ -1942,11 +1960,8 @@
 		flex-wrap: wrap;
 	}
 
-	.steps-image-wrap{
-		float: none!important;
-		width: 100%;
-		height: 225px;
-		max-width: 260px;
+	.steps-image-wrap{		
+		width: 100%;	
 		margin: 0 auto;
 		margin-bottom: 80px;
 		order: 3;
@@ -1954,6 +1969,10 @@
 
 	.steps-image-wrap img{
 		width: 100%;
+	}
+
+	.steps-slide-content{
+		margin-left: 0px;
 	}
 
 	.slider-steps .sub-header{
@@ -2085,6 +2104,21 @@
 		margin-left: auto;
 		margin-right: auto;
 	}
+
+	#modal{
+		width: 100%;
+		max-width: 400px;
+	}
+
+	.modal-inputs{
+		display: block;
+	}
+
+	.modal-inputs input{
+		width: 100%!important;		
+		margin-bottom: 20px;
+	}
+
 
 
 }
@@ -2536,9 +2570,8 @@
 	}
 
 	.steps-image-wrap{
-		float: none!important;
-		width: 560px;
-		height: 483px;
+		width: 100%;
+		height: auto;
 		margin: 0 auto;
 		margin-bottom: 80px;
 		order: 3;
@@ -2616,6 +2649,17 @@
 		margin-right: auto;
 	}
 
+	.steps-image-wrap img{
+		width: 100%;
+	}
+
+	.steps-image-decor {
+		left: -13px;
+	}
+
+	.steps-slide-content{
+		margin-left: 0px;
+	}
 
 }
 
@@ -2830,29 +2874,32 @@
 	}
 
 	.stock-block-bottom .btn-blue-wrap{
-		text-align: center;
-		margin-left: -40px;
+		text-align: center;	
 	}
 
 	.slider-steps{
-		width: 960px;
+		width: 100%;	
+		margin-left: 0px;	
 	}
 
 	.sub-header_decor-steps{
 		font-size: 35px;
 	}
 
-	.steps-image-wrap{
-		float: none!important;
-		width: 560px;
-		height: 483px;
-		margin: 0 auto;
-		margin-bottom: 80px;
+	.steps-image-wrap{		
+		width: 100%;
+		height: auto;
+		margin-left: 19px;		
 	}
 
-	.slider-steps{
+	.steps-slide-content{
 		margin-left: 0px;
 	}
+
+	.steps-image-wrap img{
+		width: 100%;
+	}
+
 
 	.sub-header_video-slider {
 		margin-left: 50px;
@@ -2874,6 +2921,14 @@
 		left: 10px;
 	}
 
+	.about-steps .arrows {
+		margin-left: 51%;
+		bottom: 45px;
+	}
+
+	.slider-steps .mb-fix{
+		padding-bottom: 0px;
+	}
 
 }
 
