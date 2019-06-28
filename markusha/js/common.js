@@ -80,6 +80,57 @@ $(window).on('load resize', function() {
   }
 });
 
+//Small-Licences Slider
+$(window).on('load resize', function() {
+  if ($(window).width() < 1920) {
+    $('.licences-small-slider:not(.slick-initialized)').slick({
+      infinite: true,
+	  loop: true,
+	  dots: false,  
+	  speed: 300,
+	  arrows: false, 
+	  infinite: false,
+	  slidesToShow: 2,
+      slidesToScroll: 1,  	
+	  responsive: [
+  	 {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1             
+      }
+    },
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1             
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 576,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]	  
+    });
+  } else {
+    $(".licences-small-slider.slick-initialized").slick("unslick");
+  }
+});
+
 
 
 //Slider-Methods

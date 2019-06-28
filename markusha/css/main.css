@@ -1667,6 +1667,12 @@ footer .row .col-xl-3:nth-child(3) {
   margin-right: 25px;
 }
 
+.licences-small-slider-wrap {
+  width: 312px;
+  position: relative;
+  padding: 0px 20px 0 25px;
+}
+
 /*****************************************All-Responses*******************************************/
 .all-responses {
   padding-top: 11px;
