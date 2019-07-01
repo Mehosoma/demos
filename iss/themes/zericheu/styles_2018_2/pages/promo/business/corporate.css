@@ -1,0 +1,406 @@
+
+body {
+    font-family: 'Roboto', sans-serif !important
+}
+.btn.blue:hover {
+    background-color: #5060ff;
+    transform: none;
+    color: white;
+}
+.mt-30 {
+    margin-top: 30px;
+}
+
+.mt-50 {
+    margin-top: 50px;
+}
+
+.mb-100{
+    margin-bottom: 100px;
+}
+
+.mt-200 {
+    margin-top: 100px;
+}
+
+.width-70 {
+    width: 70%;
+}
+
+.header .container {
+}
+
+.page-trading .video-wrapper {
+    background-image: url("/themes/zericheu/images/promo/business/bisnes-vasiliy.png");
+    background-size: cover;
+}
+
+.page-financial .video-wrapper {
+    background-image: url("/themes/zericheu/images/promo/business/new/financial_institutes.png");
+    background-size: cover;
+    background-position: center;
+}
+
+
+.page-mediaagentam .video-wrapper {
+    background-image: url("/themes/zericheu/images/promo/business/new/mediaagentam.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.font-size-23 {
+    font-size: 23px;
+}
+
+.page-trading .header-content .breadcrumbs {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+.tip {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.tips {
+    background-color: #f4f4fe;
+}
+
+.additional-section {
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.additional-section-dark {
+    color: white;
+}
+
+.about {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    /*margin: 50px 0 50px 0;*/
+    border-bottom: lightgrey 1px solid ;
+    /*padding-bottom: 30px;*/
+}
+.advantages {
+    margin-bottom: 50px ;
+    font-size: 23px;
+}
+.adv-parts {
+    margin-bottom: 19px;
+}
+
+.background {
+    background: #51557c;
+}
+
+.strategy-form form {
+    padding: 57px 0 50px;
+}
+
+.nav-main {
+    border-bottom: 1px solid rgba(0,0,0,.16);
+    width: 100%;
+}
+
+.additional-section-dark {
+    background-size: cover;
+    background-position: center;
+}
+
+.white-ref {
+    color: white;
+}
+.header-content-row .header-item:hover .white-ref{
+    color: hsla(0,0%,100%,.7);
+}
+.block-ref-mobile {
+    color: black;
+}
+
+footer .nav-main a {
+    text-transform: uppercase;
+    color: #000;
+    margin: 0;
+    float: none;
+    line-height: 23px;
+    display: inline-block;
+    padding: 10px 0;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.grey-text {
+    line-height: 1.56;
+    color: #999;
+}
+footer .socials {
+    width: 100%;
+}
+
+.wrapper {
+    overflow: visible;
+}
+
+.not-href {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+@media (min-width: 768px) {
+    .begin-header {
+        font-size: 40px;
+    }
+    .min-size {
+        min-height: 450px;
+        max-height: 450px;
+    }
+
+    /*.min-size-inner {*/
+        /*min-height: 400px;*/
+        /*max-height: 400px;*/
+    /*}*/
+
+    /*.additional-section-dark {*/
+        /*background-size: 100% 100%;*/
+    /*}*/
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .hide-if-desktop {
+        display: none;
+    }
+
+    .header-nav {
+        width : 72% ;
+        border-bottom: none ;
+    }
+}
+@media only screen and (max-width : 320px){
+    .page-trading .header-content .breadcrumbs {
+        font-size: 14px;
+    }
+}
+
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+    .page-trading .header-content .breadcrumbs {
+        margin-top: 70px;
+    }
+}
+
+/* Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767.98px) {
+    .about {
+        font-size: 15px;
+    }
+    .advantages {
+        font-size: 15px;
+    }
+    .header-nav>* {
+        font-size: 9px;
+    }
+    .additional-section-dark {
+        /*margin-top: 50px;*/
+    }
+    .tip {
+        font-size: 16px;
+        font-weight: 500;
+    }
+}
+
+/* Medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) {
+    .hide-if-tablet {
+        display: none;
+    }
+
+    .first {
+        order: -1;
+    }
+    .page-trading .video-wrapper {
+        /*background-size: 200% 100%;*/
+    }
+    .page-trading header.header {
+        height: auto;
+        min-height: auto;
+    }
+    .font-size-23 {
+        font-size: 20px;
+    }
+}
+header .video-wrapper {
+    min-height: 450px;
+}
+.page-corporate {
+    min-height: 450px;
+}
+
+.font-size-36 {
+    font-size: 36px;
+}
+.font-size-45 {
+    font-size: 45px;
+}
+.font-size-50 {
+    font-size: 50px;
+}
+.font-size-60 {
+    font-size: 60px;
+}
+
+@media only screen and (max-width: 320px) {
+    .font-size-24 {
+        font-size: 20px !important;
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    .font-size-36 {
+        font-size: 33px;
+    }
+    .font-size-60, .font-size-50, .font-size-45 {
+        font-size: 40px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .font-size-36 {
+        font-size: 30px;
+    }
+    .font-size-60, .font-size-50, .font-size-45 {
+        font-size: 33px;
+    }
+}
+
+
+* {
+    font-family: 'Roboto', sans-serif !important
+}
+
+.font-size-34 {
+    font-size: 34px;
+}
+.font-size-52 {
+    font-size: 52px;
+}
+.width-100-px {
+    width: 100px;
+}
+.width-150-px {
+    width: 150px;
+}
+.font-weight-500 {
+    font-weight: 500;
+}
+
+.calculator-block h4.active {
+    color: #4752d1;
+    border-bottom: 2px solid #4752d1;
+}
+.calculator-block .icon-flag.USD {
+    background: url(/themes/zericheu/images/promo/business/USD-flag-icon.png) no-repeat center;
+    background-size: contain;
+}
+.calculator-block .icon-flag.EUR {
+    background: url(/themes/zericheu/images/promo/business/EUR-flag-icon.jpg) no-repeat center;
+    background-size: contain;
+}
+.calculator-block .icon-flag {
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+}
+.calculator-block {
+    max-width: 1160px;
+}
+.calculator-block .values-block div.value {
+    border-bottom: 1px solid #bababa;
+}
+.calculator-block .value-block.profit-block {
+    border-bottom: 0;
+}
+.calculator-block .value-block {
+    max-width: 470px;
+}
+.calculator-block .values-block {
+    /*padding: 35px 70px 35px 0;*/
+}
+.calculator-block .values-block.gray-value {
+    background-color: #f3f4fd;
+    /*padding: 35px;*/
+}
+.calculator-block .slider-value-block {
+    border-bottom: none;
+}
+
+
+.calculator-block  #slider {
+    height: 0;
+    border: none;
+}
+.calculator-block  #slider span {
+    height: 30px;
+    width: 22px;
+    border-bottom-left-radius: 11px;
+    border-bottom-right-radius: 11px;
+    overflow:hidden;
+    outline: none;
+    color: white;
+    background: none;
+    border: none;
+    top: 0;
+}
+
+.calculator-block  #slider span::after {
+    display: block;
+    content: ' ';
+    position: absolute;
+    top: 6px;
+    left: -4px;
+    width: 30px;
+    height: 30px;
+    transform: rotate(45deg);
+    background-color: #4752d1;
+}
+
+.currentStateOption:hover {
+    border: solid 1px #4753d1 !important;
+    z-index: 3 !important;
+}
+.currentStateOption {
+    border: none !important;
+    color: white;
+    border-radius: 0 !important;
+    z-index: 2;
+    background-color: #d4d8f5 !important;
+}
+.currentStateOption.active {
+    border: solid 1px #4753d1 !important;
+    color: #4753d1 !important;
+    z-index: 3 !important;
+    background-color: white !important;
+}
+.currentStateOption.active:hover {
+
+}
+
+.header-item-arrow {
+    width: 15px;
+    flex-shrink: 0;
+}
+.header-item-arrow svg {
+    width: 9px;
+    transition: all .4s;
+}
+.header-item:hover .header-item-arrow svg {
+    transform: translateY(5px);
+    width: 15px;
+}
+.header-item:hover a {
+    text-decoration: none;
+}
