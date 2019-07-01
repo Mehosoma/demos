@@ -196,11 +196,17 @@
 .invest-services-block {
   -webkit-box-shadow: 0 0 30px 0 #85929c;
   box-shadow: 0 0 30px 0 #85929c;
+  border-radius: 4px;
 }
 
 .image-row a:hover {
   text-decoration: none;
   outline: none;
+}
+
+.image-row a:hover .invest-services-block-content {
+  border-color: transparent;
+  border-radius: 0px 0px 4px 4px;
 }
 
 .invest-services-block-content {
@@ -210,6 +216,9 @@
   -webkit-box-flex: 1;
   -ms-flex: 1 0 auto;
   flex: 1 0 auto;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .invest-services-block-image {

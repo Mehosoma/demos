@@ -131,15 +131,20 @@
 		color: #fff
 .invest-services-block
 	box-shadow: 0 0 30px 0 #85929c
+	border-radius: 4px
 .image-row
 	a:hover
 		text-decoration: none
-		outline: none	
+		outline: none
+	a:hover	.invest-services-block-content
+		border-color: transparent
+		border-radius: 0px 0px 4px 4px
 .invest-services-block-content
 	border: solid 1px #4753d1
 	border-radius: 0px 0px 4px 4px
 	border-top: none
 	flex: 1 0 auto
+	transition: all 0.2s
 .invest-services-block-image
 	position: relative	
 	height: 204px
