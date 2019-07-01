@@ -1,0 +1,46 @@
+$(document).ready(function () {
+
+    $("#search-term").keyup(function () {
+        var search = $(this).val();
+        if (search.length > 0) {
+            $.ajax({
+                type: 'POST',
+                url: '/Search/IndexSearch',
+                data: {
+                    'text': search
+                },
+                dataType: 'json',
+                success: function (response) {
+                    $('.search-box').empty();
+
+                    response.forEach(function (items, key) {
+                        var url = '/analytics/blogs/'; // Блоги
+                        key === 1 ? url = '/analytics/current-comments/' : url; // Текущий комментарий
+                        key === 2 ? url = '/article/view.html?id=' : url; // Статьи
+                        key === 3 ? url = '/news/' : url; // Новости
+                        items.forEach(function (item) {
+                            $('.search-box').append('<a href=' + url + item.id + '>' + item.title + '</a><hr>');
+                        });
+                    });
+                }
+            });
+        }
+        else {
+            $('#search-box').empty();
+        }
+    });
+
+    $('#searchButton').click(function () {
+        $('#search-black-popup').css('display', 'flex');
+        setTimeout(function () {
+            $('#search-black-popup').removeClass('hidden');
+        }, 1);
+    });
+
+    $('#close-popup-button').click(function () {
+        $('#search-black-popup').addClass('hidden');
+        setTimeout(function () {
+            $('#search-black-popup').css('display', 'none');
+        }, 500);
+    });
+});

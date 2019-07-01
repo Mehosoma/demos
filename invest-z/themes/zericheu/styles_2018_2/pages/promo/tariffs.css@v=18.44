@@ -1,0 +1,465 @@
+body {
+    font-family: 'Roboto', sans-serif !important
+}
+
+.white {
+    color: white;
+}
+
+.white-border {
+    border-bottom : 3px solid white;
+}
+
+.min-height {
+    min-height: 60px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.mb-30{
+    margin-bottom: 30px;
+}
+
+.mt-50 {
+    margin-top: 50px;
+}
+
+.mb-50{
+    margin-bottom: 50px;
+}
+
+.mb-100{
+    margin-bottom: 100px;
+}
+
+.mt-100{
+    margin-top: 100px;
+}
+
+.mt-150{
+    margin-top: 150px;
+}
+
+.font-size-12{
+    font-size: 12px;
+}
+
+.font-size-16{
+    font-size: 16px;
+}
+
+.font-size-18 {
+    font-size: 18px;
+}
+
+.font-size-23 {
+    font-size: 23px ;
+}
+
+.height-100{
+    height: 100px;
+}
+
+.blue {
+    background-color: #4753d1;
+}
+
+.light-blue {
+    background-color: #f6f9fb;
+}
+
+.box-shadow {
+    box-shadow: 0 2px 7px 0 rgba(212, 212, 212, 0.75);
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+
+/*----------------------------------*/
+
+.select-nav a {
+    font-size: 14px;
+}
+
+.page-trading header.header {
+    min-height: 350px;
+}
+
+
+.page-trading .video-wrapper {
+    background: transparent url(/themes/zericheu/images/promo/tariffs/businessman_bg.png) no-repeat top center;
+}
+
+
+.banner-preview {
+    width: 100%;
+    height : 100%;
+    cursor: pointer;
+}
+
+.page-trading .header-content .header-content-title {
+    margin-top: 50px;
+    max-width: 700px;
+    margin-bottom: 0;
+    font-size: 45px;
+}
+
+a:-webkit-any-link:hover {
+    cursor: pointer;
+    text-decoration: none;
+    /*-webkit-transform: scale(1.1);*/
+}
+
+.background {
+    background-color: #f6f9fb;
+    min-height: 1050px;
+}
+
+
+.nav-main {
+    border-bottom: 1px solid rgba(0,0,0,.16);
+    width: 100%;
+}
+
+footer .nav-main a {
+    text-transform: uppercase;
+    color: #000;
+    margin: 0;
+    float: none;
+    line-height: 23px;
+    display: inline-block;
+    padding: 10px 0;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.grey-text {
+    line-height: 1.56;
+    color: #999;
+}
+footer .socials {
+    width: 100%;
+}
+
+
+.btn-full-width, a.btn-full-width {
+    width: 100%;
+    border: none!important;
+    line-height: 52px;
+    height: 75px;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    -webkit-transition: .1s linear;
+    transition: .1s linear;
+    -webkit-transition-property: -webkit-transform,background-color,color;
+    transition-property: transform,background-color,color;
+    padding: 14px 35px;
+    font-size: 15px;
+    font-weight: 500;
+    min-width: 162px;
+    text-transform: uppercase;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    letter-spacing: .6px;
+}
+
+.no-gutters {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.news-item-main {
+    padding: 0 0 0 0;
+    -webkit-box-flex: 1;
+    -webkit-flex: auto;
+    -ms-flex: auto;
+    flex: auto;
+}
+
+.big-padding {
+    padding: 20px;
+}
+
+.height-100 {
+    min-height: 100px;
+}
+.height-70 {
+    min-height: 70px;
+}
+
+.active-orange {
+    border-bottom: 5px solid orange;
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.active-dark-red {
+    border-bottom: 5px solid #d0021b;
+    font-weight: bold;
+    font-size: 26px;
+}
+
+
+.active-yellow {
+    border-bottom: 5px solid yellow;
+    font-weight: bold;
+    font-size: 26px;
+}
+
+
+.color-border-orange{
+    border-bottom: 5px solid orange;
+    height: 100px;
+    margin-top: 50px;
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.active-dark-blue {
+    border-bottom: 5px solid #5967ad;
+    font-weight: bold;
+    font-size: 26px;
+}
+
+
+.color-border-dark-blue{
+    border-bottom: 5px solid #5967ad;
+    height: 100px;
+    margin-top: 50px;
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.active-blue {
+    border-bottom: 5px solid #4a90e2;
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.color-border-blue{
+    border-bottom: 5px solid #4a90e2;
+    height: 100px;
+    margin-top: 50px;
+    font-weight: bold;
+    font-size: 26px;
+}
+
+
+.active-purple {
+    border-bottom: 5px solid #9013fe;
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.active-green {
+    border-bottom: 5px solid #7ed321;
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.color-border-green{
+    border-bottom: 5px solid #7ed321;
+    height: 100px;
+    margin-top: 50px;
+    font-weight: bold;
+    font-size: 26px;
+}
+
+
+.tip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tip .tiptext {
+    bottom: 100%;
+    /*right: -150px;*/
+    visibility: hidden;
+    width: 300px;
+    background-color: white;
+    color: black;
+    border-radius: 6px;
+    padding: 25px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, .38);
+    position: absolute;
+    z-index: 1;
+    text-align: left;
+    word-wrap: break-word;
+}
+
+.tip:hover .tiptext {
+    visibility: visible;
+}
+
+
+.violet {
+    color: #4753d1;
+}
+
+
+.drop-down {
+    cursor : pointer;
+}
+
+.bold-desktop {
+    font-weight: 300;
+    font-size: 12px;
+}
+
+#additional {
+    display: none;
+}
+
+.page-trading .header-content .breadcrumbs {
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: 16px;
+}
+
+.flink {
+    padding-left: 45px;
+    min-height: 40px;
+    background-position: left top;
+    background-repeat: no-repeat;
+}
+.flink.one-line {
+    padding-top: 10px;
+}
+.flink.pdf {
+    background-image: url(/themes/zericheu/images/pdf.png);
+}
+.flink.doc {
+    background-image: url(/themes/zericheu/images/doc.png);
+}
+li.flink {
+    margin-bottom: 10px;
+}
+
+/*==================================================
+=            Bootstrap Media Queries             =
+==================================================*/
+
+
+/*==========  Mobile First Method  ==========*/
+/* Extra small devices (portrait phones, less than 576px) */
+/* No media query for `xs` since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .begin-header {
+        font-size: 40px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .hide-if-desktop {
+        display: none;
+    }
+
+    .header-nav {
+        border-bottom: none ;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .page-trading .video-wrapper {
+        background-size: 100%;
+    }
+}
+
+
+/* We occasionally use media queries that go in the other direction (the given screen size or smaller): */
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px){
+
+}
+
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+    .bold-desktop {
+        font-weight: normal;
+    }
+    .page-trading .header-content {
+        height: 235px;
+    }
+    .page-trading header.header {
+        min-height: 325px;
+    }
+}
+
+/* Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767.98px) {
+
+
+}
+
+/* Medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) {
+    .hide-if-tablet {
+        display: none;
+    }
+    .page-trading .header-content .breadcrumbs {
+        margin-bottom: 0;
+    }
+    .page-trading .video-wrapper {
+        background: transparent url(/themes/zericheu/images/promo/tariffs/businessman_bg.png) no-repeat right top;
+    }
+}
+
+/* Large devices (desktops, less than 1200px)*/
+@media (max-width: 1199.98px) {
+    .page-trading .header-content .breadcrumbs {
+        margin-bottom: 0;
+    }
+}
+
+/* Extra large devices (large desktops)*/
+/*No media query since the extra-large breakpoint has no upper bound on its width*/
+
+
+
+/*
+There are also media queries and mixins for
+targeting a single segment of screen sizes
+using the minimum and maximum breakpoint widths.
+*/
+
+/* Extra small devices (portrait phones, less than 576px)  */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
+
+/*--------------------------------*/

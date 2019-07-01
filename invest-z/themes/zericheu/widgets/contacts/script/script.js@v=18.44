@@ -1,0 +1,114 @@
+function setActive(button) {
+    $('#moscow').removeClass('active');
+    $('#regions').removeClass('active');
+    $('#moscowBlock').addClass('d-none');
+    $('#regionsBlock').addClass('d-none');
+
+    console.log(button.id);
+    $('#' + button.id + 'Block').removeClass('d-none');
+    $('#' + button.id).addClass('active');
+
+    if (button.id === 'regions') {
+        $('.city-link.active')[0].onclick();
+    } else {
+        generateYandexMap(55.7429, 37.5988, 'ЦЕРИХ Кэпитал Менеджмент');
+    }
+}
+
+function showPartner(id, link) {
+    $('.agentInformationBlock').remove();
+    $('.city-link.active').removeClass('active');
+    $(link).addClass('active');
+
+    var mapGenered = false;
+    for (var i = 0; i < window.agentsInformation[id].related.length; i++) {
+        var template = $('#agentInfoExample').clone();
+        template.addClass('agentInformationBlock');
+        template.removeClass('d-none');
+
+        //fill template
+        template[0].getElementsByClassName('partnerName')[0].innerHTML = 'Офис партнера ' + window.agentsInformation[id].related[i].company;
+
+        if (window.agentsInformation[id].related[i].phone !== '') {
+            template[0].getElementsByClassName('phone')[0].innerHTML = window.agentsInformation[id].related[i].phone;
+            $(template[0].getElementsByClassName('phone')).attr('href', 'tel:' + window.agentsInformation[id].related[i].phone);
+        } else {
+            $(template[0].getElementsByClassName('phoneBlock')).removeClass('d-flex').addClass('d-none');
+        }
+
+        if (window.agentsInformation[id].related[i].email !== '') {
+            template[0].getElementsByClassName('email')[0].innerHTML = window.agentsInformation[id].related[i].email;
+            $(template[0].getElementsByClassName('email')).attr('href', 'mailto:' + window.agentsInformation[id].related[i].email);
+        } else {
+            $(template[0].getElementsByClassName('emailBlock')).removeClass('d-flex').addClass('d-none');
+        }
+
+        if (window.agentsInformation[id].related[i].site !== '') {
+            if (window.agentsInformation[id].related[i].site.indexOf('http') === -1) {
+                window.agentsInformation[id].related[i].site = 'http://' + window.agentsInformation[id].related[i].site;
+            }
+            template[0].getElementsByClassName('site')[0].innerHTML = window.agentsInformation[id].related[i].site;
+            $(template[0].getElementsByClassName('site')).attr('href', window.agentsInformation[id].related[i].site);
+        } else {
+            $(template[0].getElementsByClassName('siteBlock')).removeClass('d-flex').addClass('d-none');
+        }
+
+        if (window.agentsInformation[id].related[i].address !== '') {
+            template[0].getElementsByClassName('address')[0].innerHTML = window.agentsInformation[id].related[i].address;
+            var href = 'https://yandex.ru/maps/?text=' + window.agentsInformation[id].related[i].address;
+            $(template[0].getElementsByClassName('address')).attr('href', href);
+        } else {
+            $(template[0].getElementsByClassName('addressBlock')).removeClass('d-flex').addClass('d-none');
+        }
+
+        if (window.agentsInformation[id].related[i].person !== '') {
+            template[0].getElementsByClassName('person')[0].innerHTML = window.agentsInformation[id].related[i].person;
+        } else {
+            $(template[0].getElementsByClassName('personBlock')).removeClass('d-flex').addClass('d-none');
+        }
+
+        if (window.agentsInformation[id].related[i].skype !== '') {
+            template[0].getElementsByClassName('skype')[0].innerHTML = window.agentsInformation[id].related[i].skype;
+        } else {
+            $(template[0].getElementsByClassName('skypeBlock')).removeClass('d-flex').addClass('d-none');
+        }
+
+        if (window.agentsInformation[id].related[i].workhours !== '') {
+            template[0].getElementsByClassName('workhours')[0].innerHTML = window.agentsInformation[id].related[i].workhours;
+        } else {
+            $(template[0].getElementsByClassName('workhoursBlock')).removeClass('d-flex').addClass('d-none');
+        }
+        // end fill template
+
+        if (!mapGenered) {
+            mapGenered = true;
+            generateYandexMap(window.agentsInformation[id].related[i].latitude, window.agentsInformation[id].related[i].longitude, window.agentsInformation[id].related[i].company);
+        }
+
+        template.appendTo('#contactsInfoDiv');
+    }
+}
+function generateYandexMap(latitude, longitude, title) {
+    document.getElementById('bigMap').innerHTML = '';
+    ymaps.ready(function(){
+        bigMap = new ymaps.Map('bigMap', {
+            center: [latitude, longitude],
+            zoom: 16,
+            behaviors: ['default', 'scrollZoom']
+        });
+        geoObjects = new ymaps.Placemark([latitude, longitude], {
+            hintContent: title,
+            balloonContent: title
+        }, {
+            iconLayout: 'default#image',
+            iconImageHref: '/themes/zericheu/images/logo_map.png',
+            iconImageSize: [30, 34],
+            iconImageOffset: [-15, -34]
+        });
+        bigMap.geoObjects.add(geoObjects);
+    });
+}
+
+$(document).ready(function(){
+    $('.contacts-sections-button.active')[0].onclick();
+});

@@ -1,0 +1,66 @@
+.modal {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 2001;
+	overflow-x: hidden;
+	overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
+}
+	.modal-window {
+		margin: 15px auto;
+		padding: 15px;
+		overflow: hidden;
+	}
+
+		/*.modal-window.confirmdoc .alert-state {
+			height: 200px;
+		}*/
+
+		.modal .close {
+			cursor: pointer;
+		}
+
+.modal-overlay {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 2000;
+	background-image: -moz-linear-gradient(25deg, rgb(28, 3, 43) 30%, rgb(47, 1, 8) 74%);
+	background-image: -webkit-gradient(linear, left bottom, right top, color-stop(30%, rgb(28, 3, 43)), color-stop(74%, rgb(47, 1, 8)));
+	background-image: -webkit-linear-gradient(25deg, rgb(28, 3, 43) 30%, rgb(47, 1, 8) 74%);
+	background-image: -o-linear-gradient(25deg, rgb(28, 3, 43) 30%, rgb(47, 1, 8) 74%);
+	background-image: -ms-linear-gradient(25deg, rgb(28, 3, 43) 30%, rgb(47, 1, 8) 74%);
+	background-image: linear-gradient(25deg, rgb(28, 3, 43) 30%, rgb(47, 1, 8) 74%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5d3376',endColorstr='#803456',GradientType=1);
+	opacity: .7;
+}
+
+@media (max-width: 767px) {
+
+	.modal-window {
+		width: 100%;
+	}
+
+}
+
+/* sm */
+@media (min-width: 768px) {
+
+	.modal-window.viewport {
+		width: 730px;
+	}
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+	.modal-window {
+		width: 730px;
+	}
+
+}

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+    <g fill="none" fill-rule="evenodd" transform="translate(3 3)">
+        <circle cx="10.5" cy="10.5" r="10.5" stroke="#C3C8F6" stroke-width="2"/>
+        <text fill="#C3C8F6" font-family="Roboto-Medium, Roboto" font-size="18" font-weight="400">
+            <tspan x="8" y="17">i</tspan>
+        </text>
+    </g>
+</svg>
