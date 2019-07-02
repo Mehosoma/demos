@@ -194,9 +194,10 @@
 }
 
 .invest-services-block {
-  -webkit-box-shadow: 0 0 30px 0 #85929c;
-  box-shadow: 0 0 30px 0 #85929c;
   border-radius: 4px;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .image-row a:hover {
@@ -206,7 +207,11 @@
 
 .image-row a:hover .invest-services-block-content {
   border-color: transparent;
-  border-radius: 0px 0px 4px 4px;
+}
+
+.image-row a:hover .invest-services-block {
+  -webkit-box-shadow: 0 0 15px 0 #85929c;
+  box-shadow: 0 0 15px 0 #85929c;
 }
 
 .invest-services-block-content {
@@ -230,6 +235,11 @@
   position: absolute;
   left: 18px;
   bottom: 12px;
+}
+
+.invest-services-block-image img {
+  border-radius: 4px 4px 0px 0px;
+  height: 204px;
 }
 
 /***************************************************Invest-Start************************************/
@@ -309,10 +319,23 @@
 /***************************************************Invest-Info************************************/
 .invest-info-block {
   position: relative;
+  border-radius: 4px;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .invest-info-block span {
   position: absolute;
   top: 24px;
   left: 25px;
+}
+
+.invest-info-block img {
+  border-radius: 4px;
+}
+
+.invest-info-block:hover {
+  -webkit-box-shadow: 0 0 15px 0 #85929c;
+  box-shadow: 0 0 15px 0 #85929c;
 }
