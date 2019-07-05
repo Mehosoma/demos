@@ -213,7 +213,8 @@ header {
   background-image: url("../img/first-bg.jpg");
   background-repeat: no-repeat;
   background-position: center center;
-  position: relative; }
+  position: relative;
+  background-size: cover; }
 
 .bg_overlay {
   width: 100%;
@@ -386,7 +387,8 @@ form input:hover {
   background-repeat: no-repeat;
   background-position: center center;
   position: relative;
-  padding-top: 30px; }
+  padding-top: 30px;
+  background-size: cover; }
   .price h3, .price h2 {
     color: #fff; }
 
@@ -601,7 +603,8 @@ form input:hover {
   background-repeat: no-repeat;
   background-position: center center;
   position: relative;
-  padding-top: 47px; }
+  padding-top: 47px;
+  background-size: cover; }
   .progress-com h2, .progress-com h3 {
     color: white; }
 
