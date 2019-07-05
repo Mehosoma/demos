@@ -4,7 +4,6 @@ html, body {
 body {
   width: 100%;
   min-width: 320px;
-  max-width: 1600px;
   margin: 0 auto;
   position: relative;
   line-height: 1.2;
@@ -92,7 +91,8 @@ h1 {
   height: 70px;
   background-image: url("../img/bg-inner.jpg");
   background-repeat: no-repeat;
-  background-position: top center; }
+  background-position: top center;
+  background-size: cover; }
 
 .h2--inner {
   font-family: "Exo 2", sans-serif;
@@ -185,7 +185,8 @@ header {
   height: 298px;
   background-image: url("../img/main-bg.jpg");
   background-repeat: no-repeat;
-  background-position: top center; }
+  background-position: top center;
+  background-size: cover; }
 
 .complex_text {
   font-family: "Exo 2", sans-serif;
@@ -439,6 +440,9 @@ footer {
   left: 0;
   margin: auto;
   z-index: 10; }
+
+.ymaps-map {
+  width: 100% !important; }
 
 .footer-form {
   width: 393px;
