@@ -8,7 +8,6 @@ body {
   font-size: 14px;
   color: #fff;
   min-width: 320px;
-  max-width: 1920px;
   margin: 0 auto;
   position: relative;
   line-height: 1.6;
@@ -703,7 +702,8 @@ footer {
   background-position: center top;
   width: 100%;
   min-height: 292px;
-  margin-top: 22px; }
+  margin-top: 22px;
+  background-size: cover; }
 
 .footer-bottom {
   min-height: 76px; }
