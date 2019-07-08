@@ -6,11 +6,18 @@
 		margin-top: -5px;
 	}
 
-	.phones{
-		background-image: none;
+	.phones{		
 		padding-left: 0px;
 		margin-left: 10px;
-		text-align: center;
+		display: inline-block;	
+	}
+
+	.phones-tel{
+		background-image: url('../images/footer-phone.png');
+		background-repeat: no-repeat;
+		background-position: left center;
+		background-size: 20px 20px;
+		padding-left: 30px;
 	}
 
 	.work-h {
@@ -61,7 +68,7 @@
 	}
 
 	.slogan{
-		font-size: 18px;
+		font-size: 26px;
 		text-align: center;
 		display: block;
 		width: 65%;
@@ -258,6 +265,7 @@
 		height: auto;
 		margin-left: 0px;
 		margin-top: 0px;
+		margin-bottom: 20px;
 	}
 
 	.sub-header_add{
@@ -269,8 +277,7 @@
 		margin-left: 0px;
 		font-size: 20px;
 		margin-top: 20px;
-		display: block;
-		text-align: left;
+		display: block;		
 	}
 
 	.btn-gray_add{
@@ -450,10 +457,6 @@
 
 	.doctor-cert img{
 		margin-right: 10px;
-	}
-
-	.dir-qualif-list li{
-		margin-left: 0px;
 	}
 
 	.doctor-schedule{
@@ -672,9 +675,13 @@
 		max-width: 290px;
 	}
 
-	.contacts-adress, .contacts-work, .contacts-social{
+	.contacts-adress, .contacts-work, .contacts-social, .contacts-site{
 		flex-direction: column;
 		flex-wrap: wrap;
+	}
+
+	.contacts-block-field-right{
+		width: 100%;
 	}
 
 	.contacts-adress  p{
@@ -1090,6 +1097,15 @@
 		margin-left: 0px;
 	}
 
+	.sub-header_full-faq{
+		display: block!important;
+		text-align: center;
+	}
+
+	.btn-gray_faq-wrap{
+		margin-bottom: 30px;
+	}
+
 	
 }
 
@@ -1115,9 +1131,20 @@
 		background-position: right -700px center
 	}
 
+	
+
 }
 
 @media only screen and (min-width : 576px) and (max-width : 767px) {
+
+	.sub-header_full-faq{
+		display: block!important;
+		text-align: center;
+	}
+
+	.btn-gray_faq-wrap{
+		margin-bottom: 30px;
+	}
 
 	.logo-mobile{
 		width: 59px;
@@ -1125,11 +1152,18 @@
 		margin-top: -5px;
 	}
 
-	.phones{
-		background-image: none;
+	.phones{		
 		padding-left: 0px;
 		margin-left: 0px;
-		text-align: center;
+		display: inline-block;	
+	}
+
+	.phones-tel{
+		background-image: url('../images/footer-phone.png');
+		background-repeat: no-repeat;
+		background-position: left center;
+		background-size: 20px 20px;
+		padding-left: 30px;
 	}
 
 	.work-h {
@@ -1367,6 +1401,7 @@
 		height: auto;
 		margin-left: 0px;
 		margin-top: 0px;
+		margin-bottom: 20px;
 	}
 
 	.sub-header_add{
@@ -1378,8 +1413,7 @@
 		margin-left: 0px;
 		font-size: 20px;
 		margin-top: 20px;
-		display: block;
-		text-align: left;
+		display: block;		
 	}
 
 	.btn-gray_add{
@@ -1555,10 +1589,6 @@
 
 	.doctor-cert img{
 		margin-right: 10px;
-	}
-
-	.dir-qualif-list li{
-		margin-left: 0px;
 	}
 
 	.doctor-schedule{
@@ -2121,6 +2151,8 @@
 
 
 
+
+
 }
 
 @media only screen and (min-width : 768px) and (max-width : 991px) {
@@ -2191,7 +2223,7 @@
 	}
 
 	.slogan{
-		font-size: 38px;
+		font-size: 34px;
 	}
 
 	.sub-header{
@@ -2361,10 +2393,6 @@
 		padding-left: 0px;
 	}
 
-	.dir-qualif-list li{
-		margin-left: 0px;
-	}
-
 	.doctor-schedule{
 		text-align: center;
 	}
@@ -2436,8 +2464,7 @@
 	}
 
 	.services-info-content img{
-		width: 289px;
-		height: 267px;
+		width: 300px;		
 	}
 
 	.services-info .dir-qualif-list li{
@@ -2585,6 +2612,7 @@
 
 	.slider-steps .sub-header-blue{
 		order: 4;
+		text-align: center;
 	}
 
 	.slider-steps .main-text{
@@ -2660,6 +2688,8 @@
 	.steps-slide-content{
 		margin-left: 0px;
 	}
+
+
 
 }
 
@@ -2795,10 +2825,6 @@
 		padding: 0 15px;
 	}
 
-	.dir-qualif-list li{
-		margin-left: 400px;
-	}
-
 	.dir-qualif-list  .fix-mr-left{
 		margin-left: 0px!important;
 		float: none!important;
@@ -2818,8 +2844,7 @@
 	}
 
 	.services-info-content img{
-		width: 425px;
-		height: 346px;
+		width: 425px;		
 	}
 
 	.services-info .dir-qualif-list li{
@@ -2928,6 +2953,33 @@
 
 	.slider-steps .mb-fix{
 		padding-bottom: 0px;
+	}
+
+	.all-services-bottom .sub-header_blue{
+		height: 100px;
+		margin-left: 0px;
+	}
+
+	.all-services-bottom hr{
+		margin: 10px auto;
+	}
+
+	.all-services-bottom .all-services-list{
+		margin-left: 0px;
+	}
+
+	.all-services-bottom img{
+		margin-top: 0px;
+		margin: 16px auto 12px;
+		float: none;
+	}
+
+	.all-services .all-services-bottom{
+		margin-top: -20px;
+	}
+
+	.sub-header_full-faq hr{
+		width: 100px;
 	}
 
 }

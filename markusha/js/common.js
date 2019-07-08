@@ -83,91 +83,10 @@ $(window).on('load resize', function() {
 //Small-Licences Slider
 $(document).ready(function(){
 
-	$('.licences-small-slider').slick({ 
-  
-      infinite: true,
-	  loop: true,
-	  dots: false,  
-	  speed: 300,
-	  arrows: false, 
-	  infinite: false,
-	  slidesToShow: 2,
-      slidesToScroll: 1,  	
-	  responsive: [
-  	 {
-      breakpoint: 1200,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1             
-      }
-    },
-    {
-      breakpoint: 992,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1             
-      }
-    },
-    {
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1
-      }
-    },
-    {
-      breakpoint: 576,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    }
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
-  ]	  
-    });  
+	
 });
 
 
-
-//Slider-Methods
-$(window).on('load resize', function() {
-  if ($(window).width() < 992) {
-    $('.slider-methods:not(.slick-initialized)').slick({
-    
-      infinite: true,
-	  loop: true,	  
-	  speed: 300,	
-	  arrows: false,
-	  responsive: [
-	    {
-	      breakpoint: 768,
-	      settings: {
-	        slidesToShow: 2,
-	        slidesToScroll: 1,
-	        infinite: true,
-	        dots: false,
-	        arrows:true
-	      }
-	    },
-	    {
-	      breakpoint: 320,
-	      settings: {
-	        slidesToShow: 1,
-	        slidesToScroll: 1,
-	        unslick: true,
-	      }
-	    }
-	    // You can unslick at a given breakpoint now by adding:
-	    // settings: "unslick"
-	    // instead of a settings object
-	  ]
-    });
-  } else {
-    $(".slider-methods.slick-initialized").slick("unslick");
-  }
-});
 
 //Slider-Unwrap
 $(window).on('load resize', function() {
@@ -373,8 +292,8 @@ $(function () {
 
 });
 
-//Hide Arrows
 
+//Hide Arrows
 $('.licences-slider').on('init', function (event, slick, direction) {
 
     // check to see if there are one or less slides
@@ -384,15 +303,57 @@ $('.licences-slider').on('init', function (event, slick, direction) {
     }
 });
 
-$('.licences-small-slider').on('init', function (event, slick, direction) {
+$(window).on('load resize', function() {
 
     // check to see if there are one or less slides
-    if (($('.licences-small-slider .slick-slide').length <= 2)) {
+    if (($('.licences-small-slider .license-slide').length <= 6)) {
         // remove arrows
         $('.arrows-licences-small').hide();
          $('.licences-small-slider-wrap').removeClass('pad-fix')
     }else{
     	$('.licences-small-slider-wrap').addClass('pad-fix')
+      $('.licences-small-slider:not(.slick-initialized)').slick({ 
+  
+          infinite: false,      
+          dots: false,  
+          speed: 300,
+          arrows: false,                
+          slidesToShow: 5,
+          slidesToScroll: 1,    
+          responsive: [
+           {
+            breakpoint: 1200,
+            settings: {
+              slidesToShow: 6,
+              slidesToScroll: 1             
+            }
+          },
+          {
+            breakpoint: 992,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1             
+            }
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 576,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ]   
+      });  
     }
 
 
