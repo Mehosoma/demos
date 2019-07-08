@@ -80,14 +80,6 @@ $(window).on('load resize', function() {
   }
 });
 
-//Small-Licences Slider
-$(document).ready(function(){
-
-	
-});
-
-
-
 //Slider-Unwrap
 $(window).on('load resize', function() {
 	
@@ -324,14 +316,14 @@ $(window).on('load resize', function() {
            {
             breakpoint: 1200,
             settings: {
-              slidesToShow: 6,
+              slidesToShow: 4,
               slidesToScroll: 1             
             }
           },
           {
             breakpoint: 992,
             settings: {
-              slidesToShow: 2,
+              slidesToShow: 3,
               slidesToScroll: 1             
             }
           },
@@ -344,6 +336,13 @@ $(window).on('load resize', function() {
           },
           {
             breakpoint: 576,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 480,
             settings: {
               slidesToShow: 1,
               slidesToScroll: 1
