@@ -295,67 +295,42 @@ $('.licences-slider').on('init', function (event, slick, direction) {
     }
 });
 
+//Small-License-Slider
 $(window).on('load resize', function() {
 
-    // check to see if there are one or less slides
-    if (($('.licences-small-slider .license-slide').length <= 6)) {
-        // remove arrows
-        $('.arrows-licences-small').hide();
-         $('.licences-small-slider-wrap').removeClass('pad-fix')
+    var $full_weight=0;
+    var $width_lic=$('.licences-small-slider-wrap').width();
+     if ($('.licences-small-slider').hasClass('slick-initialized')) {
+      $(".licences-small-slider .slick-slide:not(.slick-cloned) .license-slide").each(function(){
+        $full_weight+=$(this).outerWidth(true);
+      });
     }else{
-    	$('.licences-small-slider-wrap').addClass('pad-fix')
+        $(".licences-small-slider .license-slide").each(function(){
+          $full_weight+=$(this).outerWidth(true);
+        });
+      }
+
+    if ($full_weight > $width_lic){
+      $('.arrows-licences-small').show();
+      $('.licences-small-slider-wrap').addClass('pad-fix')
       $('.licences-small-slider:not(.slick-initialized)').slick({ 
   
-          infinite: false,      
-          dots: false,  
-          speed: 300,
-          arrows: false,                
-          slidesToShow: 5,
-          slidesToScroll: 1,    
-          responsive: [
-           {
-            breakpoint: 1200,
-            settings: {
-              slidesToShow: 4,
-              slidesToScroll: 1             
-            }
-          },
-          {
-            breakpoint: 992,
-            settings: {
-              slidesToShow: 3,
-              slidesToScroll: 1             
-            }
-          },
-          {
-            breakpoint: 768,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 1
-            }
-          },
-          {
-            breakpoint: 576,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 1
-            }
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1
-            }
-          }
-          // You can unslick at a given breakpoint now by adding:
-          // settings: "unslick"
-          // instead of a settings object
-        ]   
+          infinite: true,              
+          speed: 300,                        
+          centerMode: true,
+          variableWidth: true,
+           slidesToShow: 1,
       });  
+    }else{
+       // remove arrows
+        $('.arrows-licences-small').hide();
+         $('.licences-small-slider-wrap').removeClass('pad-fix');
+         if ($('.licences-small-slider').hasClass('slick-initialized')) {
+          $(".licences-small-slider.slick-initialized").slick("unslick");
+         }else{
+
+         }
     }
-
-
 });
 
 $(window).on('load resize', function() {
@@ -370,11 +345,11 @@ $(window).on('load resize', function() {
 			 });
 			var stHeight = $('.slider-stock-news .slick-track').height();
 			$('.slider-stock-news .stock-news-slide').css('height',stHeight + 'px' );
-	}else{
-		$('.slider-stock-news').slick('refresh');
-		var stHeight = $('.slider-stock-news .slick-track').height();
-		$('.slider-stock-news .stock-news-slide').css('height',stHeight + 'px' );
-	}
+    	}else{
+    		$('.slider-stock-news').slick('refresh');
+    		var stHeight = $('.slider-stock-news .slick-track').height();
+    		$('.slider-stock-news .stock-news-slide').css('height',stHeight + 'px' );
+    	}
 
   } else {
   	$(".slider-stock-news.slick-initialized").slick("unslick");  	  	
@@ -512,3 +487,5 @@ $('.link-down').click(function(){
   $('html, body').animate({scrollTop: $(target).offset().top-100}, 1000);
 return false;
 });
+
+

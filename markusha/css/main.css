@@ -1440,18 +1440,17 @@ footer .row .col-xl-3:nth-child(3) {
 
 .doctor-cert img {
   margin-top: 17px;
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 120px;
 }
 
 .doctor-cert .slick-slide {
   text-align: center;
+  margin: 0 10px;
 }
 
 .doctor-cert .license-slide {
   display: inline-block;
-  width: 156px !important;
-  max-height: 120px;
   margin-right: 20px;
 }
 
