@@ -2117,13 +2117,17 @@ footer .row .col-xl-3:nth-child(3) {
   justify-content: space-between;
   width: 83%;
   margin-left: 125px;
-  margin-top: 22px;
   margin-bottom: 28px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .other-services-block a {
   font-size: 21px;
   color: #424242;
+  -ms-flex-preferred-size: 25%;
+  flex-basis: 25%;
+  margin-top: 22px;
 }
 
 .btn-gray_other-serv {
