@@ -99,6 +99,11 @@ $(window).on('load resize', function() {
 			$('.slider-unwrap .response-slide').css('height',stHeight + 'px' );
 					
 	    }else{
+        $('.slider-unwrap:not(.slick-initialized)').slick({
+          infinite: true,
+          slidesToShow: 1,
+          slidesToScroll: 1
+       });
 	    	$('.slider-unwrap').slick('refresh');
 	    	var stHeight = $('.slider-unwrap .slick-track').height();
 			$('.slider-unwrap .response-slide').css('height',stHeight + 'px' );
@@ -144,29 +149,17 @@ $(window).on('load resize', function() {
 //Slider-steps
 $(window).on('load resize', function() {
 
-	 if ($(window).width() > 992) {
-
-		if (!$('.slider-steps').hasClass('slick-initialized')){	  					
+	if (!$('.slider-steps').hasClass('slick-initialized')){	  					
 				$('.slider-steps:not(.slick-initialized)').slick({
 				    infinite: true,
 				    slidesToShow: 1,
-				    slidesToScroll: 1
+				    slidesToScroll: 1,
+            adaptiveHeight: true
 				 });
-				var stHeight = $('.slider-steps .slick-track').height();
-				$('.slider-steps .steps-slide').css('height',stHeight + 'px' );
-		}else{
-			$('.slider-steps').slick('refresh');
-			var stHeight = $('.slider-stock-news .slick-track').height();
-			$('.slider-steps .steps-slide').css('height',stHeight + 'px' );
-		} 
-	}else{
-
-		  					
-				$('.slider-steps:not(.slick-initialized)').slick({
-				    infinite: true,
-				    slidesToShow: 1,
-				    slidesToScroll: 1
-				 });
+				   
+		}else{	      
+		
+	  		 $('.slider-steps').slick('refresh');
 
 	}
 });
@@ -315,11 +308,11 @@ $(window).on('load resize', function() {
       $('.licences-small-slider-wrap').addClass('pad-fix')
       $('.licences-small-slider:not(.slick-initialized)').slick({ 
   
-          infinite: true,              
-          speed: 300,                        
+         infinite: true,
+          speed: 300,
+          slidesToShow: 4,
           centerMode: true,
-          variableWidth: true,
-           slidesToShow: 1,
+          variableWidth: true
       });  
     }else{
        // remove arrows
