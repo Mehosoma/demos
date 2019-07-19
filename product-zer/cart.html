@@ -14,7 +14,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="format-detection" content="telephone=no">
 
-    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.css">     
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.css">  
+    <link rel="stylesheet" href="libs/slick/slick.css">      
     
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/media.css">
@@ -132,7 +133,7 @@
 
                 <!-- Tab panes -->
                 <div class="tab-content">
-                    <div class="tab-pane active container" id="nota-tab-1" >
+                  <div class="tab-pane active container" id="nota-tab-1" >
                         <ul>
                             <li>
                               <div class="nota-list-field d-flex align-items-center border-bottom-1px">
@@ -183,112 +184,28 @@
                               </div>
                             </li>
                         </ul>
-                    </div>
-                  <div class="tab-pane container" id="nota-tab-2">
-                        2 таб
-                       <ul>
-                            <li>
-                              <div class="nota-list-field d-flex align-items-center border-bottom-1px">
-                                  <span class="opacity-72">Срок жизни ноты</span>
-                                  <span class="font-size-23">6 месяцев</span>
-                              </div>
-                            </li>
-                            <li>
-                              <div class="nota-list-field d-flex align-items-center border-bottom-1px">
-                                  <span class="opacity-72">Периодичность купонных выплат</span>
-                                  <span class="font-size-23">Ежеквартально (26/09/2019, 26/12/2019)</span>
-                              </div>
-                            </li>
-                            <li>
-                              <div class="nota-list-field d-flex align-items-center border-bottom-1px">
-                                  <span class="opacity-72">Защитный барьер</span>
-                                  <span class="font-size-23">75% (48,79$ за баррель Brent Front Month)</span>
-                              </div>
-                            </li>
-                            <li>
-                              <div class="nota-list-field d-flex align-items-center border-bottom-1px">
-                                  <span class="opacity-72">Купонный барьер</span>
-                                  <span class="font-size-23">75% (с «эффектом памяти») (48,79$ за баррель Brent Front Month )</span>
-                              </div>
-                            </li>
-                            <li>
-                              <div class="nota-list-field d-flex align-items-center border-bottom-1px">
-                                  <span class="opacity-72">Барьер отзыва</span>
-                                  <span class="font-size-23">100% (65,05$ за баррель Brent Front Month)</span>
-                              </div>
-                            </li>
-                            <li>
-                              <div class="nota-list-field d-flex align-items-center border-bottom-1px">
-                                  <span class="opacity-72">Базовый актив</span>
-                                  <span class="font-size-23">Brent Front Month</span>
-                              </div>
-                            </li>
-                            <li>
-                              <div class="nota-list-field d-flex align-items-center border-bottom-1px">
-                                  <span class="opacity-72">Валюта ноты</span>
-                                  <span class="font-size-23">USD</span>
-                              </div>
-                            </li>
-                            <li>
-                              <div class="nota-list-field d-flex align-items-center border-bottom-1px">
-                                  <span class="opacity-72">Эмитент</span>
-                                  <span class="font-size-23">EFG International Finance (Guernsey) Ltd.</span>
-                              </div>
-                            </li>
-                        </ul>
                   </div>
-                  <div class="tab-pane container" id="nota-tab-3">
-                        3 таб
-                       <ul>
-                            <li>
-                              <div class="nota-list-field d-flex align-items-center border-bottom-1px">
-                                  <span class="opacity-72">Срок жизни ноты</span>
-                                  <span class="font-size-23">6 месяцев</span>
-                              </div>
-                            </li>
-                            <li>
-                              <div class="nota-list-field d-flex align-items-center border-bottom-1px">
-                                  <span class="opacity-72">Периодичность купонных выплат</span>
-                                  <span class="font-size-23">Ежеквартально (26/09/2019, 26/12/2019)</span>
-                              </div>
-                            </li>
-                            <li>
-                              <div class="nota-list-field d-flex align-items-center border-bottom-1px">
-                                  <span class="opacity-72">Защитный барьер</span>
-                                  <span class="font-size-23">75% (48,79$ за баррель Brent Front Month)</span>
-                              </div>
-                            </li>
-                            <li>
-                              <div class="nota-list-field d-flex align-items-center border-bottom-1px">
-                                  <span class="opacity-72">Купонный барьер</span>
-                                  <span class="font-size-23">75% (с «эффектом памяти») (48,79$ за баррель Brent Front Month )</span>
-                              </div>
-                            </li>
-                            <li>
-                              <div class="nota-list-field d-flex align-items-center border-bottom-1px">
-                                  <span class="opacity-72">Барьер отзыва</span>
-                                  <span class="font-size-23">100% (65,05$ за баррель Brent Front Month)</span>
-                              </div>
-                            </li>
-                            <li>
-                              <div class="nota-list-field d-flex align-items-center border-bottom-1px">
-                                  <span class="opacity-72">Базовый актив</span>
-                                  <span class="font-size-23">Brent Front Month</span>
-                              </div>
-                            </li>
-                            <li>
-                              <div class="nota-list-field d-flex align-items-center border-bottom-1px">
-                                  <span class="opacity-72">Валюта ноты</span>
-                                  <span class="font-size-23">USD</span>
-                              </div>
-                            </li>
-                            <li>
-                              <div class="nota-list-field d-flex align-items-center border-bottom-1px">
-                                  <span class="opacity-72">Эмитент</span>
-                                  <span class="font-size-23">EFG International Finance (Guernsey) Ltd.</span>
-                              </div>
-                            </li>
-                        </ul>
+                  <div class="tab-pane container" id="nota-tab-2">
+                      <div class="nota-list-text-field mb-4">
+                          <span class="font-size-23 font-weight-500 d-block">Выплата купонов</span>
+                          <span class="font-size-18 line-height-56">Ежеквартально выплачивается условный купон <i class="text-blue">12,5%</i> (годовых)</span>
+                      </div>  
+                      <div class="nota-list-text-field mb-4">
+                          <span class="font-size-23 font-weight-500 d-block">Купон обладает «эффектом памяти»</span>
+                          <span class="font-size-18 line-height-56">Если купон не был выплачен (в случае, когда базовый актив оказался ниже купонного барьера на дату наблюдения), купон может быть выплачен в дату любого следующего наблюдения (в случае выполнения условий выплаты купона – базовый актив не ниже купонного барьера).</span>
+                      </div>   
+                      <div class="nota-list-text-field mb-4">
+                          <span class="font-size-23 font-weight-500 d-block">Досрочный отзыв</span>
+                          <span class="font-size-18 line-height-56">Если на дату очередного ежеквартального наблюдения базовый актив выше барьера отзыва, то нота досрочно погашается.</span>
+                      </div>   
+                      <div class="nota-list-text-field mb-4">
+                          <span class="font-size-23 font-weight-500 d-block">После окончания последнего купонного периода</span>
+                          <span class="font-size-18 line-height-56">Нота погашается по 100% от номинала в случае, если базовый актив находится выше защитного барьера.</span>
+                      </div>                                            
+                  </div>
+                  <div class="tab-pane container" id="nota-tab-3">                        
+                       <p class="font-size-18 line-height-56 mb-4">Не выплата купона – если базовый актив находится ниже купонного барьера.</p>
+                       <p class="font-size-18 line-height-56 mb-4">Потенциальный убыток равный величине падения базового актива в случае, если базовый актив упал ниже защитного барьера</p>
                   </div>
                 </div>
             </div>
@@ -296,12 +213,58 @@
     </div>
 </section>
 
-
+<!--Base-Active-->
+<section class="base-active pb-5">
+  <div class="container-fluid container-content">
+      <div class="row">
+          <div class="col-12">
+              <h2 class="font-size-45 font-weight-bold line-height-56">Базовые активы</h2> 
+          </div>
+      </div>
+      <div>
+        <div class="row base-active-slider">  
+              <div class="col-xl-12 col-lg-4 col-12 py-4">
+                  <a href="" class="base-active-block d-flex px-4 py-4">
+                      <div class="base-active-block-image mr-2">
+                        <img src="images/costco-logo.jpg" alt="logo-image">
+                      </div>
+                      <div class="base-active-block-text pl-4">
+                        <span class="font-size-23 font-weight-bold text-blue">Costco Wholesale Corporation</span>
+                        <p class="line-height-56 font-size-18">Крупнейшая в мире сеть складов самообслуживания клубного типа и пятое по величине продаж розничное торговое предприятие в США.</p>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-xl-12 col-lg-4 col-12 py-4">
+                  <a href="" class="base-active-block d-flex px-4 py-4">
+                      <div class="base-active-block-image mr-2">
+                        <img src="images/adobe-logo.jpg" alt="logo-image">
+                      </div>
+                      <div class="base-active-block-text pl-4">
+                        <span class="font-size-23 font-weight-bold text-blue">Adobe Incorporation</span>
+                        <p class="line-height-56 font-size-18">Американская компания - разработчик программного обеспечения. Штаб-квартира расположена в Сан-Хосе. В 2011 году почти 100% акций в свободном обращении.</p>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-xl-12 col-lg-4 col-12 py-4">
+                  <a href="" class="base-active-block d-flex px-4 py-4">
+                      <div class="base-active-block-image mr-2">
+                        <img src="images/adobe-logo.jpg" alt="logo-image">
+                      </div>
+                      <div class="base-active-block-text pl-4">
+                        <span class="font-size-23 font-weight-bold text-blue">Adobe Incorporation</span>
+                        <p class="line-height-56 font-size-18">Американская компания - разработчик программного обеспечения. Штаб-квартира расположена в Сан-Хосе. В 2011 году почти 100% акций в свободном обращении.</p>
+                      </div>
+                  </a>
+              </div>
+        </div> 
+  </div>
+</section>
 
     <div class="hidden"></div>
 
     <script src="libs/jquery/jquery-3.3.1.js"></script>
-    <script src="libs/bootstrap/js/bootstrap.js"></script>   
+    <script src="libs/bootstrap/js/bootstrap.js"></script> 
+    <script src="libs/slick/slick.js"></script>  
     <script src="js/custom.js"></script>
     
 </body>

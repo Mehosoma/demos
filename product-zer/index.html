@@ -14,7 +14,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="format-detection" content="telephone=no">
 
-    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.css">     
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="libs/slick/slick.css">    
     
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/media.css">
@@ -128,10 +129,10 @@
         </div>
         <div class="row">
             <div class="col-12">
-                <div class="product-info-block d-flex">
+                <div class="product-info-block d-flex mb-4">
                     <div class="product-info-block-image">
                         <img src="images/product-info.jpg" alt="product-cart-image" class="w-100">
-                        <div class="product-cart-desc px-4 py-4">
+                        <div class="product-cart-desc px-3 py-4">
                             <span class="font-size-35 font-weight-500 text-white line-height-56 d-block mt-2">Черное золото</span>
                             <span class="font-size-18 font-weight-500 text-white d-block">Отзывная нота на нефть</span>
                         </div>
@@ -145,6 +146,78 @@
                             <div class="pibc-inner-block">
                                 <span class="d-block font-size-16 opacity-72">Срок вложения</span>
                                 <span class="d-block font-size-18 font-weight-bold">6 месяцев</span>
+                            </div>
+                            <div class="pibc-inner-block">
+                                <span class="d-block font-size-16 opacity-72">Сумма входа</span>
+                                <span class="d-block font-size-18 font-weight-bold">от 25 000$</span>
+                            </div>
+                        </div>
+                        <div class="pibc-inner d-flex">
+                            <div class="pibc-inner-block">
+                                <span class="d-block font-size-16 opacity-72">Валюта</span>
+                                <span class="d-block font-size-18 font-weight-bold">Доллар США</span>
+                            </div>
+                            <div class="pibc-inner-block flex-grow-1 flex-shrink-1 pr-5">
+                                <span class="d-block font-size-16 opacity-72">Выплата</span>
+                                <span class="d-block font-size-18 font-weight-bold pr-5">Купон выплачивается ежеквартально, 100% погашение номинала в конце срока</span>
+                            </div>
+                        </div>
+                        <a href="" class="font-size-16 font-weight-500 text-white zerich-button text-uppercase btn-blue-pi d-inline-block mt-2">Подробнее</a>
+                    </div>
+                </div>
+                <div class="product-info-block d-flex mb-4">
+                    <div class="product-info-block-image">
+                        <img src="images/product-info2.jpg" alt="product-cart-image" class="w-100">
+                        <div class="product-cart-desc px-3 py-4">
+                            <span class="font-size-35 font-weight-500 text-white line-height-56 d-block mt-2">Стабильная четверка</span>
+                            <span class="font-size-18 font-weight-500 text-white d-block">Отзывная нота на акции:<br> Societe General SA, Adobe Inc, Electronic Arts, Costco Wholesale</span>
+                        </div>
+                    </div>
+                    <div class="product-info-block-content px-4 py-4">
+                        <div class="pibc-inner d-flex pibc-inner-top mb-4">
+                            <div class="pibc-inner-block">
+                                <span class="d-block font-size-16 opacity-72">Доходность</span>
+                                <span class="d-block font-size-18 font-weight-bold"><i class="text-blue font-size-23 pr-1">8,5%</i> годовых</span>
+                            </div>
+                            <div class="pibc-inner-block">
+                                <span class="d-block font-size-16 opacity-72">Срок вложения</span>
+                                <span class="d-block font-size-18 font-weight-bold">24 месяца</span>
+                            </div>
+                            <div class="pibc-inner-block">
+                                <span class="d-block font-size-16 opacity-72">Сумма входа</span>
+                                <span class="d-block font-size-18 font-weight-bold">от 25 000$</span>
+                            </div>
+                        </div>
+                        <div class="pibc-inner d-flex">
+                            <div class="pibc-inner-block">
+                                <span class="d-block font-size-16 opacity-72">Валюта</span>
+                                <span class="d-block font-size-18 font-weight-bold">Доллар США</span>
+                            </div>
+                            <div class="pibc-inner-block flex-grow-1 flex-shrink-1 pr-5">
+                                <span class="d-block font-size-16 opacity-72">Выплата</span>
+                                <span class="d-block font-size-18 font-weight-bold pr-5">Купон выплачивается ежеквартально, 100% погашение номинала в конце срока</span>
+                            </div>
+                        </div>
+                        <a href="" class="font-size-16 font-weight-500 text-white zerich-button text-uppercase btn-blue-pi d-inline-block mt-2">Подробнее</a>
+                    </div>
+                </div>
+                <div class="product-info-block d-flex">
+                    <div class="product-info-block-image">
+                        <img src="images/product-info3.jpg" alt="product-cart-image" class="w-100">
+                        <div class="product-cart-desc px-3 py-4">
+                            <span class="font-size-35 font-weight-500 text-white line-height-56 d-block mt-2">Высокий купон</span>
+                            <span class="font-size-18 font-weight-500 text-white d-block">Отзывная нота на акции:<br> Amazon.com Inc , Adobe Inc, Costco Wholesale, Ноme Depot Inc</span>
+                        </div>
+                    </div>
+                    <div class="product-info-block-content px-4 py-4">
+                        <div class="pibc-inner d-flex pibc-inner-top mb-4">
+                            <div class="pibc-inner-block">
+                                <span class="d-block font-size-16 opacity-72">Доходность</span>
+                                <span class="d-block font-size-18 font-weight-bold"><i class="text-blue font-size-23 pr-1">11%</i> годовых</span>
+                            </div>
+                            <div class="pibc-inner-block">
+                                <span class="d-block font-size-16 opacity-72">Срок вложения</span>
+                                <span class="d-block font-size-18 font-weight-bold">18 месяцев</span>
                             </div>
                             <div class="pibc-inner-block">
                                 <span class="d-block font-size-16 opacity-72">Сумма входа</span>
@@ -212,7 +285,8 @@
     <div class="hidden"></div>
 
     <script src="libs/jquery/jquery-3.3.1.js"></script>
-    <script src="libs/bootstrap/js/bootstrap.js"></script>   
+    <script src="libs/bootstrap/js/bootstrap.js"></script>
+    <script src="libs/slick/slick.js"></script>
     <script src="js/custom.js"></script>
     
 </body>

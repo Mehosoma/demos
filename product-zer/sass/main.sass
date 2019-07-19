@@ -79,8 +79,7 @@ body
 	height: 100%
 	overflow: hidden
 	position: relative
-	img
-		border-radius: 8px 0px 0px 8px
+	border-radius: 8px 0px 0px 8px	
 .product-cart-desc
 	position: absolute
 	top: 0px
@@ -94,17 +93,17 @@ body
 	border-right: solid 1px #adb4ca
 .product-info-block-content
 	position: relative
-.product-info-block-content::after
-	display: block
-	position: absolute
-	content: ''
-	width: 0
-	height: 0
-	border: 30px solid transparent
-	border-right-color: #fff
-	border-left: 0
-	top: 50px
-	left: -30px
+//.product-info-block-content::after
+//	display: block
+//	position: absolute
+//	content: ''
+//	width: 0
+//	height: 0
+//	border: 30px solid transparent
+//	border-right-color: #fff
+//	border-left: 0
+//	top: 50px
+//	left: -30px
 .pibc-inner-block span:nth-child(2)		
 	line-height: 30px
 .btn-blue-pi
@@ -189,12 +188,16 @@ body
 
 /***************************************************Nota-Graph************************************/
 .nota-graph 
+	i
+		font-style: normal
 	.nav-tabs .nav-item
-		border: 1px solid #4753d1
+		border: 1px solid #4753d1		
 	.nav-link
 		color: #4753d1
 		font-size: 16px
 		font-weight: normal
+		padding-left: 50px
+		padding-right: 50px
 	.nav-tabs .nav-link.active
 		color: #fff
 		background-color: #4753d1
@@ -220,7 +223,35 @@ body
 	min-height: 50px
 	span:nth-child(1)
 		flex: 0 0 350px
-
-
+.base-active-block
+	box-shadow: 0 0 15px 0 #bcccd8
+	p
+		color: #333
+.base-active-block:hover
+	text-decoration: none
+.base-active-slider .slick-dots
+	text-align: center
+	margin-top: 10px
+	li
+		font-size: 0px		
+		display: inline-block
+		margin: 0px 10px
+		font-weight: 0px
+		line-height: 0px
+		padding: 0px
+	button
+		width: 8px!important
+		height: 8px
+		border: 1px solid transparent
+		background-color: #4a4a4a
+		border-radius: 50%
+		border: 1px solid #4a4a4a
+		padding: 0px
+	.slick-active
+		button
+			
+			background-color: transparent
+			width: 8px
+			height: 8px
 
 
