@@ -73,13 +73,14 @@ body
 .product-info-block
 	border: solid 1px rgba(71,83,209,0.51)
 	border-radius: 8px
-	height: 271px
+	min-height: 271px
 .product-info-block-image
-	flex: 1 0 390px
-	height: 100%
+	flex: 1 0 390px	
 	overflow: hidden
 	position: relative
 	border-radius: 8px 0px 0px 8px	
+	img
+		height: 100%
 .product-cart-desc
 	position: absolute
 	top: 0px
@@ -92,7 +93,8 @@ body
 .product-info-company
 	border-right: solid 1px #adb4ca
 .product-info-block-content
-	position: relative
+	height: auto
+	display: block
 //.product-info-block-content::after
 //	display: block
 //	position: absolute
@@ -117,8 +119,7 @@ body
 	overflow: hidden
 	background-image: url('../images/product-control.png')
 	background-repeat: no-repeat
-	background-position: right top -130px
-	margin-bottom: 200px
+	background-position: right top -130px	
 
 
 /***************************************************Cart-Top-Banner************************************/
@@ -229,9 +230,10 @@ body
 		color: #333
 .base-active-block:hover
 	text-decoration: none
-.base-active-slider .slick-dots
+.base-active-slider .slick-dots, .product-icons-slider .slick-dots
 	text-align: center
 	margin-top: 10px
+	padding-left: 0px
 	li
 		font-size: 0px		
 		display: inline-block
