@@ -4,7 +4,7 @@
 		min-height: 100px;
 	}
 
-	.product-banner-top .btn-blue-gen{
+	.product-banner-top .btn-blue-gen, .btn-blue-pi, .banner-cart-top .btn-blue-gen, .nota-desc-more-right .btn-blue-gen{
 		width: 100%;
 		text-align: center;
 	}
