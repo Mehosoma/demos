@@ -1,0 +1,294 @@
+@media only screen and (min-width : 0px) and (max-width : 575px) {	
+
+	.isg-banner-top h1{
+		font-size: 35px!important;
+	}
+
+	.isg-banner-top{
+		height: auto;
+		min-height: 100px;
+		background-position: right -200px center;
+	}
+
+	.isg-banner-top .btn-blue-gen, .isg-programms .btn-blue-gen, .isg-terms-imp .btn-blue-gen{
+		width: 100%;
+		text-align: center;
+	}
+
+	.isg-about-block{
+		flex-wrap: wrap;
+	}
+
+	.isg-about-block img{
+		width: 100%;
+		max-width: 400px;
+		height: auto;
+	}
+
+	.programs-list .programs-list-slide.item-1 {
+	  top: -50px;	 
+	}
+
+	.programs-list .programs-list-slide.item-2 {
+	   top: -100px;	 
+	}
+
+	.programs-list .programs-list-slide.item-3 {	
+	  top: -150px;	
+	}
+
+	.programs-list .programs-list-slide.item-4 {	
+	  top: -210px;	 
+	}
+
+	.programs-list .programs-list-slide.item-5 {	
+	  top: -250px;	
+	}
+
+	.programs-list .programs-list-slide.item-6 {	
+	  top: -290px;	 
+	}
+
+	.isg-programms-list li{
+		flex-wrap: wrap;
+	}
+
+	.isg-programms-list li span:nth-child(1){
+		flex: 0 0 100%;
+	}
+
+	.isg-programms-blue{
+		flex-wrap: wrap;
+		height: auto;
+	}
+
+	.isg-partners-block .isg-partners-drop ul{
+		min-height: 200px;
+		height: auto;
+	}
+
+	.isg-terms-block-field {
+	    -webkit-box-flex: 0;
+	    -ms-flex: 0 0 100%;
+	    flex: 0 0 100%;
+	}
+
+	.isg-icons-wrap{
+		flex: 0 0 74px;
+	}
+
+	.isg-terms-imp{
+		flex-wrap: wrap;
+		height: auto;
+	}
+
+	.isg-icons .isg-icons-wrap {
+		flex: 0 0 92px;
+	}
+
+	.isg-icons .font-size-45{
+		font-size: 30px!important;
+	}
+
+	.isg-programms-block .isg-programms-block-field:nth-child(odd), .isg-programms-block .isg-programms-block-field:nth-child(even){
+		flex: 0 0 100%;
+	}
+		
+}
+
+
+@media only screen and (min-width : 576px) and (max-width : 767px) {
+
+	.isg-banner-top{
+		height: auto;
+		min-height: 100px;
+		background-position: right -200px center;
+	}
+
+	.isg-about-block{
+		flex-wrap: wrap;
+	}
+
+	.isg-about-block img{
+		width: 100%;
+		max-width: 400px;
+		height: auto;
+	}
+
+	.programs-list .programs-list-slide.item-1 {
+	  top: -50px;	 
+	}
+
+	.programs-list .programs-list-slide.item-2 {
+	   top: -100px;	 
+	}
+
+	.programs-list .programs-list-slide.item-3 {	
+	  top: -150px;	
+	}
+
+	.programs-list .programs-list-slide.item-4 {	
+	  top: -200px;	 
+	}
+
+	.programs-list .programs-list-slide.item-5 {	
+	  top: -250px;	
+	}
+
+	.programs-list .programs-list-slide.item-6 {	
+	  top: -300px;	 
+	}
+
+	.isg-programms-list li{
+		flex-wrap: wrap;
+	}
+
+	.isg-programms-list li span:nth-child(1){
+		flex: 0 0 100%;
+	}
+
+	.isg-programms-blue{
+		flex-wrap: wrap;
+		height: auto;
+	}
+
+	.isg-partners-block .isg-partners-drop ul{
+		min-height: 200px;
+		height: auto;
+	}
+
+	.isg-terms-block-field {
+	    -webkit-box-flex: 0;
+	    -ms-flex: 0 0 100%;
+	    flex: 0 0 100%;
+	}
+
+	.isg-icons-wrap{
+		flex: 0 0 74px;
+	}
+
+	.isg-terms-imp{
+		flex-wrap: wrap;
+		height: auto;
+	}
+
+	.isg-icons .isg-icons-wrap {
+		flex: 0 0 92px;
+	}
+
+	.isg-programms-block .isg-programms-block-field:nth-child(odd), .isg-programms-block .isg-programms-block-field:nth-child(even){
+		flex: 0 0 100%;
+	}
+
+	.isg-terms-imp span{
+		flex: 0 0 100%;		
+	}
+	
+}
+
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+	.isg-about-block{
+		flex-wrap: wrap;
+	}
+
+	.isg-programms-block .isg-programms-block-field{
+		flex: 1 0 100%!important;
+	}
+
+	.programs-list .programs-list-slide.item-1 {
+	  top: -50px;	 
+	}
+
+	.programs-list .programs-list-slide.item-2 {
+	   top: -100px;	 
+	}
+
+	.programs-list .programs-list-slide.item-3 {	
+	  top: -150px;	
+	}
+
+	.programs-list .programs-list-slide.item-4 {	
+	  top: -210px;	 
+	}
+
+	.programs-list .programs-list-slide.item-5 {	
+	  top: -250px;	
+	}
+
+	.programs-list .programs-list-slide.item-6 {	
+	  top: -290px;	 
+	}
+
+	.isg-partners-block .isg-partners-drop ul{
+		min-height: 200px;
+		height: auto;
+	}
+
+	.isg-terms-block-field {
+	    -webkit-box-flex: 0;
+	    -ms-flex: 0 0 50%;
+	    flex: 0 0 50%;
+	}
+
+	.font-size-23{
+		font-size: 20px!important;
+	}
+
+	.isg-icons-wrap{
+		flex: 0 0 74px;
+	}
+
+	.isg-icons .isg-icons-wrap {
+		flex: 0 0 92px;
+	}
+
+}
+
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+	.programs-list .programs-list-slide.item-1 {
+	  top: -40px;	 
+	}
+
+	.programs-list .programs-list-slide.item-2 {
+	   top: -80px;	 
+	}
+
+	.programs-list .programs-list-slide.item-3 {	
+	  top: -120px;	
+	}
+
+	.programs-list .programs-list-slide.item-4 {	
+	  top: -160px;	 
+	}
+
+	.programs-list .programs-list-slide.item-5 {	
+	  top: -200px;	
+	}
+
+	.programs-list .programs-list-slide.item-6 {	
+	  top: -240px;	 
+	}
+
+	.isg-partners-block .isg-partners-drop ul{
+		min-height: 440px;
+	}
+
+	.isg-terms-block-field {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+	}
+
+
+}
+
+
+
+ 
+
+
+
+
+ 
