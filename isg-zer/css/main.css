@@ -501,126 +501,176 @@ body {
   margin: auto;
 }
 
-/***************************************************Cart-Top-Banner************************************/
-.banner-cart-top {
+/***************************************************Marga-top************************************/
+.banner-marga {
   min-height: 300px;
-  background-image: url("../images/cart.jpg");
+  background-image: url("../images/marga-banner.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
 }
 
-/***************************************************Cart-Info************************************/
-.cart-info {
-  min-height: 133px;
-  background-color: #e5eff7;
+/***************************************************Marga-Types************************************/
+.marga-num-block {
+  position: relative;
 }
 
-.cart-info i {
-  font-style: normal;
-  line-height: normal;
+.marga-num-block p {
+  width: 84%;
 }
 
-/***************************************************Nota-Graph************************************/
-.nota-graph i {
-  font-style: normal;
-}
-
-.nota-graph .nav-tabs .nav-item {
-  border: 1px solid #4753d1;
-}
-
-.nota-graph .nav-link {
-  color: #4753d1;
-  font-size: 16px;
-  font-weight: normal;
-  padding-left: 50px;
-  padding-right: 50px;
-}
-
-.nota-graph .nav-tabs .nav-link.active {
-  color: #fff;
-  background-color: #4753d1;
-  border: none;
+.marga-num-block::before {
+  position: absolute;
+  content: '';
   display: block;
-  width: 100%;
-  height: 100%;
-  border-radius: 0px;
-  font-size: 16px;
-  font-weight: normal;
-}
-
-.nota-graph .nav-tabs .nav-item:first-child {
-  border-radius: 4px 0px 0px 4px;
-}
-
-.nota-graph .nav-tabs .nav-item:last-child {
-  border-radius: 0px 4px 4px 0px;
-}
-
-.nota-graph li {
-  list-style-type: none;
-}
-
-.nota-graph ul, .nota-graph .tab-pane {
-  margin: 0px;
-  padding: 0px;
-}
-
-.nota-graph ul li:first-child .nota-list-field {
-  border-top: 1px solid rgba(0, 0, 0, 0.16);
-}
-
-.nota-list-field {
-  min-height: 50px;
-}
-
-.nota-list-field span:nth-child(1) {
-  -webkit-box-flex: 0;
-  -ms-flex: 0 0 350px;
-  flex: 0 0 350px;
-}
-
-.base-active-block {
-  -webkit-box-shadow: 0 0 15px 0 #bcccd8;
-  box-shadow: 0 0 15px 0 #bcccd8;
-}
-
-.base-active-block p {
-  color: #333;
-}
-
-.base-active-block:hover {
-  text-decoration: none;
-}
-
-.base-active-slider .slick-dots, .product-icons-slider .slick-dots {
-  text-align: center;
-  margin-top: 10px;
-  padding-left: 0px;
-}
-
-.base-active-slider .slick-dots li, .product-icons-slider .slick-dots li {
-  font-size: 0px;
-  display: inline-block;
-  margin: 0px 10px;
-  font-weight: 0px;
-  line-height: 0px;
-  padding: 0px;
-}
-
-.base-active-slider .slick-dots button, .product-icons-slider .slick-dots button {
-  width: 8px !important;
-  height: 8px;
-  border: 1px solid transparent;
-  background-color: #4a4a4a;
+  width: 32px;
+  height: 32px;
+  background-color: #d7e4ef;
   border-radius: 50%;
-  border: 1px solid #4a4a4a;
-  padding: 0px;
+  top: 0px;
+  left: 0px;
 }
 
-.base-active-slider .slick-dots .slick-active button, .product-icons-slider .slick-dots .slick-active button {
-  background-color: transparent;
-  width: 8px;
-  height: 8px;
+.marga-num-block::after {
+  position: absolute;
+  top: 0px;
+  left: 10px;
+  display: block;
+  content: '1';
+  font-size: 23px;
+  font-weight: 900;
+  color: #fff;
+  text-align: center;
+}
+
+.marga-num-block-sec::after {
+  content: '2';
+}
+
+.marga-num-block-thi::after {
+  content: '3';
+}
+
+.marga-types-cost {
+  background-color: rgba(215, 228, 239, 0.3);
+}
+
+.marga-types-cost-field {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 38%;
+  flex: 0 0 38%;
+  position: relative;
+}
+
+.marga-types-cost-field::before {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 40px;
+  height: 40px;
+  border: 6px solid #d7e4ef;
+  background-color: #4753d1;
+  border-radius: 50%;
+  top: 0px;
+  left: 0px;
+}
+
+.marga-types-cost-field::after {
+  width: 10px;
+  height: 13px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  top: 11px;
+  left: 16px;
+  display: block;
+  content: '';
+}
+
+.marga-num-block i {
+  font-style: normal;
+}
+
+.marga-exam-images {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+}
+
+/***************************************************Marga-Glos************************************/
+.marga-glos-block {
+  border-top: solid 1px rgba(215, 228, 239, 0.4);
+}
+
+.marga-glos-block-header:hover {
+  cursor: pointer;
+}
+
+.marga-block-arr {
+  width: 15px;
+  height: 15px;
+  position: relative;
+}
+
+.marga-block-arr::after {
+  width: 13px;
+  height: 13px;
+  border: solid gray;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: block;
+  content: '';
+}
+
+.marga-block-arr::after {
+  width: 10px;
+  height: 10px;
+  border: solid #d1d1d6;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  top: 0px;
+  left: 2px;
+  display: block;
+  content: '';
+}
+
+.marga-glos-block:not(.collapsed) .marga-glos-block-header span {
+  color: #4753d1;
+  -webkit-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.marga-glos-block:not(.collapsed) .marga-block-arr::after {
+  width: 10px;
+  height: 10px;
+  border: solid #4753d1;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(225deg);
+  -ms-transform: rotate(225deg);
+  transform: rotate(225deg);
+  position: absolute;
+  top: 5px;
+  left: 2px;
+  display: block;
+  content: '';
+}
+
+.marga-glos-block:not(.collapsed) {
+  border-top: solid 1px #4753d1;
+}
+
+.fix-show-bot .col-12:last-child .marga-glos-block {
+  border-bottom: solid 1px rgba(215, 228, 239, 0.4);
 }

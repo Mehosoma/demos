@@ -4,13 +4,20 @@
 		font-size: 35px!important;
 	}
 
-	.isg-banner-top{
+	.banner-mob{
 		height: auto;
 		min-height: 100px;
+	}
+
+	.isg-banner-top{		
 		background-position: right -200px center;
 	}
 
-	.isg-banner-top .btn-blue-gen, .isg-programms .btn-blue-gen, .isg-terms-imp .btn-blue-gen{
+	.banner-marga{
+		background-position: right -300px center;
+	}
+
+	.full-btn{
 		width: 100%;
 		text-align: center;
 	}
@@ -93,17 +100,48 @@
 	.isg-programms-block .isg-programms-block-field:nth-child(odd), .isg-programms-block .isg-programms-block-field:nth-child(even){
 		flex: 0 0 100%;
 	}
+
+	.marga-types-image img, .marga-exam-images img{
+		width: 100%;
+		height: auto;
+		max-width: 520px;
+	}
+
+	.marga-num-block p {
+   		width: 100%;
+	}
+
+	.marga-fields-wrap{
+		flex-wrap: wrap;
+	}
+
+	.marga-types-cost-field{
+		flex: 0 0 100%;
+	}
+
+	.marga-exam-images{
+		flex-wrap: wrap;
+	}
+
+	.marga-glos-block img{
+		width: 100%;
+		height: auto;
+	}
 		
 }
 
 
 @media only screen and (min-width : 576px) and (max-width : 767px) {
 
-	.isg-banner-top{
+	.banner-mob{
 		height: auto;
 		min-height: 100px;
+	}
+
+	.isg-banner-top{		
 		background-position: right -200px center;
 	}
+	
 
 	.isg-about-block{
 		flex-wrap: wrap;
@@ -183,6 +221,37 @@
 	.isg-terms-imp span{
 		flex: 0 0 100%;		
 	}
+
+	.marga-types-image img, .marga-exam-images img{
+		width: 100%;
+		height: auto;
+		max-width: 520px;
+	}
+
+	.marga-exam-images img{
+		max-width: 498px;
+	}
+
+	.marga-num-block p {
+   		width: 100%;
+	}
+
+	.marga-fields-wrap{
+		flex-wrap: wrap;
+	}
+
+	.marga-types-cost-field{
+		flex: 0 0 80%;
+	}
+
+	.marga-exam-images{
+		flex-wrap: wrap;
+	}
+
+	.marga-glos-block img{
+		width: 100%;
+		height: auto;
+	}
 	
 }
 
@@ -243,6 +312,18 @@
 		flex: 0 0 92px;
 	}
 
+	.marga-exam-images{
+		flex-wrap: wrap;
+	}
+
+	.marga-fields-wrap{
+		flex-wrap: wrap;
+	}
+
+	.marga-types-cost-field{
+		flex: 0 0 50%;
+	}
+
 }
 
 @media only screen and (min-width : 992px) and (max-width : 1199px) {
@@ -279,6 +360,10 @@
     -webkit-box-flex: 0;
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
+	}
+
+	.marga-exam-images{
+		flex-wrap: wrap;
 	}
 
 
