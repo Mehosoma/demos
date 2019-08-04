@@ -1,0 +1,409 @@
+@media only screen and (min-width : 0px) and (max-width : 999px) {
+
+	.crown-image-1920{
+		display: none;		
+	}
+
+	.crown-image-1000{
+		top: -60px;
+		left: -350px;
+	}
+
+	#questions-form{
+		margin-left: 0px;
+	}
+
+	.money-table-pay-col-first {
+	    -webkit-box-flex: 0;
+	    -ms-flex: 0 0 200px;
+	    flex: 0 0 23%;
+	}
+
+	.money-table-pay-col-sec {
+	    -webkit-box-flex: 0;
+	    -ms-flex: 0 0 470px;
+	    flex: 0 0 38%;
+	}
+
+	.sales-att-block{
+		width: 90%;
+		margin: 0 auto;
+	}
+
+
+}
+
+
+
+@media only screen and (min-width : 1000px) and (max-width : 1399px) {
+
+	.btn-gen a{		
+		font-size: 16px;
+	}
+
+	.feedback-btn a{
+		padding: 9px 15px;
+	}
+
+	.logo img{
+		width: 150px;
+		height: auto;
+	}
+
+	.main-menu a {
+		font-size: 20px;
+	}
+
+	.main-menu{
+		margin-left: -10px;
+	}
+
+	.main-menu li {
+	    display: inline-block;
+	    padding: 0 10px;
+	}
+
+	.top-banner{
+		background-position: center right -150px;		
+	}
+
+	.top-banner h1{
+		font-size: 50px;
+		line-height: 68px;
+	}
+
+	.top-banner .col-9{
+		flex: 0 0 80%;
+		max-width: 80%;
+	}
+
+	h2{
+		font-size: 40px;
+	}
+
+	.partner-info {
+		min-height: 830px;
+	}
+
+	.crown-image{
+		width: 350px;
+		height: auto;
+		top: 100px;
+		left: -100px
+	}
+
+	.partner-info-textblock{
+		margin-left: 140px;
+	}
+
+	.partner-info-textblock p {
+		font-size: 24px;
+
+	}
+
+	.partner-info span {
+		font-size: 32px;
+	}
+
+	.partner-info-icon-block img{
+		width: 80%;
+		height: auto;
+	}
+
+	.partner-info-icon-block span{
+		font-size: 18px;
+	}
+	
+	.partner-info-icon-block p{
+		font-size: 16px;
+	}
+
+	.terms-block-field-left {
+		-webkit-box-flex: 0;
+	    -ms-flex: 0 0 30%;
+	    flex: 0 0 30%;
+	}
+
+	.terms-block-field-right {
+		-webkit-box-flex: 0; 
+	    -ms-flex: 0 0 60%;
+	    flex: 0 0 60%;
+	}
+
+	.terms{
+		background-position: center right -150px;
+	}
+
+	.terms-block-field span {
+		font-size: 24px;
+	}
+
+	.terms-block-field p {
+		font-size: 20px;
+	}
+
+	.money-table-pay{
+		width: 100%;
+	}
+
+	.money-table-pay-col-first {
+	    -webkit-box-flex: 0;
+	    -ms-flex: 0 0 200px;
+	    flex: 0 0 23%;
+	}
+
+	.money-table-pay-col-sec {
+	    -webkit-box-flex: 0;
+	    -ms-flex: 0 0 470px;
+	    flex: 0 0 38%;
+	}
+
+	.money span {
+		font-size: 36px;
+	}
+
+	.money-table span {
+		font-size: 30px;
+	}
+
+	.money-table p {
+		font-size: 19px;
+	}
+
+	.money-table-header span, .money-table-row span{
+		font-size: 16px;
+	}
+
+	.money-table .fix-desc{
+		display: none;
+	}
+
+	.sales-att p, .sales-bottom p {
+		font-size: 17px;
+	}
+
+	.sales{
+		padding-bottom: 30px;
+		min-height: 400px;
+	}
+
+	.sales-decor{
+		z-index: 0;
+	}
+
+	.sales-att-block{
+		width: 90%;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.sales-icon img{
+		width: 120px;
+		height: 120px;
+	}
+
+	.sales-icon span{
+		font-size: 20px;
+	}
+
+	#questions-form{
+		margin-left: 0px;
+	}
+
+	.l-container {
+		font-size: 13px;
+	}
+
+	.questions-left span {
+		font-size: 28px;
+	}
+
+	.questions-left p {
+		font-size: 20px;
+	}
+
+	.footer-block a {
+		font-size: 20px;
+		line-height: 30px;
+	}
+
+	.footer-block .polite {
+		font-size: 14px;
+		line-height: normal;
+	}
+
+	#questions-form button {
+		font-size: 18px;
+	}
+
+	#questions-form input{
+		font-size: 18px;
+	}
+
+	#questions-form ::-webkit-input-placeholder {	   
+	    font-size: 18px;	   
+	}
+
+	#questions-form ::-moz-placeholder{
+		font-size: 18px;
+	}
+
+	#questions-form :-moz-placeholder{
+		font-size: 18px;
+	}
+
+	#questions-form :-ms-input-placeholder{
+		font-size: 18px;
+	}
+
+	.footer-social li img{
+		width: 50px;
+		height: 50px;
+	}
+
+	#questions-form{
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	#questions-form button, #questions-form input{
+ 		width: 48%;
+	}
+
+	.crown-image-1920{
+		display: none;		
+	}
+
+	.crown-image-1000{
+		top: -60px;
+		left: -280px;
+	}
+
+}
+
+@media only screen and (min-width : 1400px) and (max-width : 1919px) {
+	.main-menu li{
+		padding: 0 15px;
+	}
+
+	.main-menu{
+		margin-left: -20px;
+	}
+
+	.top-banner h1{
+		font-size: 56px;
+	}
+
+	h2{
+		font-size: 44px;
+	}
+
+	.partner-info-textblock p {
+		font-size: 30px;
+	}
+
+	.partner-info-textblock {
+		margin-left: 140px;
+	}
+
+	.partner-info-icon-block span{
+		font-size: 26px;
+	}
+
+	.partner-info-icon-block p{
+		font-size: 22px;
+	}
+
+	.terms-block-field p, .terms-block-field span {
+		font-size: 26px;
+	}
+
+	.crown-image{
+		left: -200px;
+	}
+
+	.money-table-pay-col-first {
+	    -webkit-box-flex: 0;
+	    -ms-flex: 0 0 200px;
+	    flex: 0 0 200px;
+	}
+
+	.money-table-pay-col-sec {
+	    -webkit-box-flex: 0;
+	    -ms-flex: 0 0 470px;
+	    flex: 0 0 470px;
+	}
+
+	.money-table span {
+		font-size: 33px;
+	}
+
+	.money-table-header span, .money-table-row span{
+		font-size: 16px;
+	}
+
+	.money-table .fix-desc{
+		display: none;
+	}
+
+	.sales-att p, .sales-bottom p {
+		font-size: 24px;
+	}
+
+	.sales{
+		padding-bottom: 30px;
+	}
+
+	.sales-att-block{
+		width: 90%;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.sales-icon img{
+		width: 150px;
+		height: 150px;
+	}
+
+	#questions-form{
+		margin-left: 0px;
+	}
+
+	.l-container {
+		font-size: 15px;
+	}
+
+	.questions-left span {
+		font-size: 32px;
+	}
+
+	.questions-left p {
+		font-size: 20px;
+	}
+
+	.footer-block a {
+		font-size: 24px;
+	}
+
+	.footer-block .polite {
+		font-size: 20px;
+	}
+
+	.crown-image-1920{
+		display: none;		
+	}
+
+	.crown-image-1000{
+		top: -60px;
+		left: -422px;
+	}
+}
+
+@media only screen and (min-width : 1920px){
+
+	.crown-image-1000{
+		display: none;
+	}
+
+}
