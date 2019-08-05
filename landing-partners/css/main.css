@@ -5,7 +5,7 @@ html {
 }
 
 body {
-  min-width: 1000px;
+  min-width: 320px;
   width: 100%;
   height: auto;
   margin: 0 auto;
@@ -101,6 +101,7 @@ h2 {
 header {
   min-height: 100px;
   background-color: #000;
+  position: relative;
 }
 
 .main-menu {
@@ -239,6 +240,7 @@ header {
   font-family: "lazurskicyrillic", sans-serif;
   font-size: 24px;
   text-align: center;
+  margin-bottom: 0px;
 }
 
 /***************************************************Single-btn******************************************/
@@ -436,6 +438,9 @@ header {
   align-items: center;
   height: 108px;
   padding: 0 15px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .money-table-pay-col-sec {
@@ -899,4 +904,106 @@ footer {
   margin-bottom: 30px;
   font-family: "lazurskibold", sans-serif;
   font-size: 30px;
+}
+
+/***********************************************ButtonMobile************************************/
+.menu-toggle-button {
+  width: 70px;
+  height: 40px;
+  float: right;
+  background-color: transparent;
+  border-radius: 7px;
+  padding-top: 5px;
+  border: none;
+  text-indent: -9999px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  float: left;
+}
+
+.menu-toggle-button span {
+  display: block;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  top: 15px;
+  left: 16px;
+  right: 16px;
+  -webkit-transition: background 0s 0.3;
+  -o-transition: background 0s 0.3;
+  transition: background 0s 0.3;
+}
+
+.menu-toggle-button span::before, .menu-toggle-button span::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  left: 0px;
+  -webkit-transition-duration: 0.3s, 1s;
+  -o-transition-duration: 0.3s, 1s;
+  transition-duration: 0.3s, 1s;
+  -webkit-transition-delay: 0s, 0.3s;
+  -o-transition-delay: 0s, 0.3s;
+  transition-delay: 0s, 0.3s;
+}
+
+.menu-toggle-button span::before {
+  top: -9px;
+}
+
+.menu-toggle-button span::after {
+  bottom: -9px;
+}
+
+.menu-toggle-button.is-active span {
+  background: none;
+}
+
+.menu-toggle-button.is-active span::before {
+  top: 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition-property: top, -webkit-transform;
+  transition-property: top, -webkit-transform;
+  -o-transition-property: top, transform;
+  transition-property: top, transform;
+  transition-property: top, transform, -webkit-transform;
+  -webkit-transition-delay: 0s, 0.3s;
+  -o-transition-delay: 0s, 0.3s;
+  transition-delay: 0s, 0.3s;
+  -webkit-transition-duration: 0.3s, 0.3s;
+  -o-transition-duration: 0.3s, 0.3s;
+  transition-duration: 0.3s, 0.3s;
+  background: #fff;
+}
+
+.menu-toggle-button.is-active span::after {
+  bottom: 0;
+  background: #fff;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-transition-property: bottom, -webkit-transform;
+  transition-property: bottom, -webkit-transform;
+  -o-transition-property: bottom, transform;
+  transition-property: bottom, transform;
+  transition-property: bottom, transform, -webkit-transform;
+  -webkit-transition-delay: 0s, 0.3s;
+  -o-transition-delay: 0s, 0.3s;
+  transition-delay: 0s, 0.3s;
+  -webkit-transition-duration: 0.3s, 0.3s;
+  -o-transition-duration: 0.3s, 0.3s;
+  transition-duration: 0.3s, 0.3s;
+}
+
+.menu-toggle-button:focus {
+  outline: none !important;
 }

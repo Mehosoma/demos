@@ -10,7 +10,8 @@
 	
 	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
 
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<meta name="format-detection" content="telephone=no">
 
 	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.css">
@@ -30,12 +31,12 @@
 <header>
 	<div class="container">
 		<div class="row">
-			<div class="col-3 align-items-center d-flex">
+			<div class="col-6 col-md-3 align-items-center d-flex order-1">
 				<div class="logo">
 					<a href="index.html"><img src="images/logo.png" alt="logo-image"></a>
 				</div>
 			</div>
-			<div class="col-6 align-items-center d-flex">
+			<div class="col-lg-6 col-12 align-items-center d-flex order-4 order-lg-2">				
 				<nav class="main-menu">
 					<ul class="align-items-center d-flex">
 						<li><a href=".partner-info">Для кого</a></li>
@@ -43,12 +44,20 @@
 						<li><a href=".money">Доходность</a></li>
 						<li><a href=".sales">Учет</a></li>
 					</ul>
+					<div class="feedback-btn btn-gen d-block d-md-none">
+						<a href="#modal" class="popup-modal">перезвонить мне</a>
+					</div>
 				</nav>
 			</div>
-			<div class="col-3 align-items-center d-flex justify-content-end">
+			<div class="d-none d-md-flex col-md-7 col-lg-3 align-items-center justify-content-end justify-content-md-center order-3 order-md-2 order-lg-3">
 				<div class="feedback-btn btn-gen">
 					<a href="#modal" class="popup-modal">перезвонить мне</a>
 				</div>
+			</div>
+			<div class="col-6 col-md-2 d-lg-none order-2 order-md-3 d-flex align-items-center justify-content-md-center justify-content-end">
+				<button class="menu-toggle-button click-mobile hidden-lg">
+					<span></span>					
+				</button>
 			</div>
 		</div>
 	</div>
@@ -58,7 +67,7 @@
 <section class="top-banner">
 	<div class="container">
 		<div class="row">
-			<div class="col-9">
+			<div class="col-lg-9 col-12">
 				<h1>ПАРТНЕРСКАЯ ПРОГРАММА<br> «ЭПЛ. ЯКУТСКИЕ БРИЛЛИАНТЫ»</h1>
 			</div>
 		</div>
@@ -84,25 +93,35 @@
 				<div class="partner-info-icons">
 					<div class="partner-info-icon-block">
 						<img src="images/icon-1.png" alt="icon-image">
-						<span>Владельцы сайтов</span>
-						<p>рекомендуемая тематика: ювелирные украшения, путешествия, региональные порталы, женские сайты, форумы и т.д.</p>
+						<div class="partner-info-content">
+							<span>Владельцы сайтов</span>
+							<p>рекомендуемая тематика: ювелирные украшения, путешествия, региональные порталы, женские сайты, форумы и т.д.</p>
+						</div>
 					</div>
 					<div class="partner-info-icon-block">
 						<img src="images/icon-2.png" alt="icon-image">
-						<span>Блогеры</span>						
+						<div class="partner-info-content">
+							<span>Блогеры</span>
+						</div>						
 					</div>
 					<div class="partner-info-icon-block">
 						<img src="images/icon-3.png" alt="icon-image">
-						<span>Владельцы групп в социальных сетях </span>
-						<p>Twitter, VK, Facebook, Одноклассники и т.д.</p>						
+						<div class="partner-info-content">
+							<span>Владельцы групп в социальных сетях </span>
+							<p>Twitter, VK, Facebook, Одноклассники и т.д.</p>
+						</div>					
 					</div>
 					<div class="partner-info-icon-block">
 						<img src="images/icon-4.png" alt="icon-image">
-						<span>SEO-специалисты</span>						
+						<div class="partner-info-content">
+							<span>SEO-специалисты</span>
+						</div>						
 					</div>
 					<div class="partner-info-icon-block">
-						<img src="images/icon-5.png" alt="icon-image">						
-						<p>А также все, кто хочет зарабатывать на продаже ювелирных украшений.</p>						
+						<img src="images/icon-5.png" alt="icon-image">
+						<div class="partner-info-content">						
+							<p>А также все, кто хочет зарабатывать на продаже ювелирных украшений.</p>
+						</div>						
 					</div>
 				</div>
 			</div>
@@ -194,16 +213,16 @@
 					<span>Выплата комиссии производится с 11 по 20 число каждого месяца за предыдущий.</span>
 					<p>Подробнее о способах выплаты комисси можно узнать в личном кабинете.</p>
 					<div class="money-table-pay d-flex">
-						<div class="money-table-pay-col money-table-pay-col-first">
+						<div class="money-table-pay-col money-table-pay-col-first mb-4 mb-lg-0">
 							<div class="money-table-header">
 								<span>Доход epldiamond.ru (за месяц)</span>
 							</div>
 							<div class="money-table-row">
 								<span>до 100 000 руб.</span>
-								<span>от 100 000 руб. и более</span>
+								<span>от 100 000 руб.</span>
 							</div>
 						</div>
-						<div class="money-table-pay-col money-table-pay-col-sec">
+						<div class="money-table-pay-col money-table-pay-col-sec mb-4 mb-lg-0">
 							<div class="money-table-header">
 								<span>Webmoney, Яндекс.Деньги</span>
 							</div>
@@ -284,7 +303,7 @@
 		<div class="row">
 			<div class="col-12">
 				<div class="sales-att">
-					<p>Для учета продаж мы используем партнерские идентификаторы и cookie. Мы храним cookie пользователей в течение 30 дней. Это означает, что даже если пользователь совершил покупку не сразу, а в течение месяца после первого перехода<br> c Вашего сайта epldiamond.ru, мы засчитаем продажу, а Вы получите комиссию.</p>
+					<p>Для учета продаж мы используем партнерские идентификаторы и cookie. Мы храним cookie пользователей в течение 30 дней. Это означает, что даже если пользователь совершил покупку не сразу, а в течение месяца после первого перехода<br class="d-none d-lg-block"> c Вашего сайта epldiamond.ru, мы засчитаем продажу, а Вы получите комиссию.</p>
 					<div class="sales-att-block">
 						<p><b>Важный момент:</b> если пользователь выполняет поиски украшений в течение 30 дней, то при каждом поиске мы продляем куки пользователя еще на 30 дней. Таким образом, срок хранения куки в нашей партнерской программе может быть вечным  – этого не предлагает ни одна ювелирная партнерка!</p>
 					</div>
@@ -297,7 +316,7 @@
 					<span>КАК СМОТРЕТЬ СТАТИСТИКУ ПРОДАЖ?</span>
 					<p>Статистику покупок Ваших посетителей можно смотреть в режиме on-line в личном кабинете для партнёров. Вы получите возможность анализировать количество поисков, бронирований и продаж. Улучшая свой сайт, и концентрируясь на наиболее прибыльных источниках трафика, вы сможете видеть, как увеличивается ваш доход.</p>
 					<div class="row">
-						<div class="col-6">
+						<div class="col-12 col-lg-6">
 							<div class="sales-icon">
 								<img src="images/sales-icon.png" alt="sales-icon">
 								<div class="sales-icon-content">
@@ -306,7 +325,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-6">
+						<div class="col-12 col-lg-6">
 							<div class="sales-icon">
 								<img src="images/sales-icon-2.png" alt="sales-icon">
 								<div class="sales-icon-content">
@@ -326,13 +345,13 @@
 <section class="questions">
 	<div class="container">
 		<div class="row">
-			<div class="col-5">
+			<div class="col-12 col-lg-5">
 				<div class="questions-left">
 					<span>ОСТАЛИСЬ ВОПРОСЫ<br> ПО ПАРТНЕРСКОЙ ПРОГРАММЕ?</span>
 					<p>Заполните форму и наш специалист свяжется с вами в течение 10 минут и ответит на интересующие вопросы</p>
 				</div>
 			</div>
-			<div class="col-7">
+			<div class="col-12 col-lg-7">
 				<div class="questions-right">
 					<form id="questions-form">
 						<input type="text" name="phone" required="" placeholder="Введите номер телефона">

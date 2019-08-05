@@ -555,20 +555,19 @@ pre code {
   margin-left: auto;
 }
 
-@media (min-width: 320px) and (max-width : 999px) {
-
-  body, html{
-    width: 1920px!important;
-    overflow-x: scroll!important;
-  }
-
+@media (min-width: 576px) {
   .container {
-    width: 1920px;
-    max-width: 1920px;
+    max-width: 540px;
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
   .container {
     width: 100%!important;
     max-width: 1200px;
