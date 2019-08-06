@@ -598,6 +598,62 @@ body {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 50%;
   flex: 0 0 50%;
+  position: relative;
+}
+
+.marga-note {
+  position: absolute;
+  top: 93px;
+  left: 58px;
+}
+
+.marga-note span {
+  font-size: 11px;
+  display: block;
+  width: 202px;
+  background-color: #fff;
+  display: none;
+  -webkit-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  transition: 0.3s all;
+  -webkit-box-shadow: 0 2px 15px 0 #656885;
+  box-shadow: 0 2px 15px 0 #656885;
+  padding: 5px;
+  text-align: center;
+  position: absolute;
+  top: -45px;
+  left: -10px;
+}
+
+.marga-note:hover span {
+  display: block;
+}
+
+.marga-note-2 {
+  top: 146px;
+  left: 207px;
+}
+
+.marga-note-2 span {
+  top: -60px;
+}
+
+.marga-note-3 {
+  top: 146px;
+  left: 58px;
+}
+
+.marga-note-3 span {
+  top: 30px;
+}
+
+.marga-note-4 {
+  top: 146px;
+  left: 361px;
+}
+
+.marga-note-4 span {
+  top: 30px;
 }
 
 /***************************************************Marga-Glos************************************/

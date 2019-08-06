@@ -104,7 +104,7 @@
 	.marga-types-image img, .marga-exam-images img{
 		width: 100%;
 		height: auto;
-		max-width: 520px;
+		max-width: 462px;
 	}
 
 	.marga-num-block p {
@@ -126,6 +126,26 @@
 	.marga-glos-block img{
 		width: 100%;
 		height: auto;
+	}
+
+	.banner-marga span{
+		line-height: 1.5
+	}
+
+	.marga-types h2 {
+		line-height: 1.29
+	}
+
+	.marga-types-cost .font-size-35{
+		line-height: 1.17
+	}
+
+	.marga-exam h2{
+		line-height: 1.29
+	}
+
+	.marga-glos h2{
+		line-height: 1.33
 	}
 		
 }
@@ -229,7 +249,7 @@
 	}
 
 	.marga-exam-images img{
-		max-width: 498px;
+		max-width: 462px;
 	}
 
 	.marga-num-block p {
@@ -251,6 +271,26 @@
 	.marga-glos-block img{
 		width: 100%;
 		height: auto;
+	}
+
+	.banner-marga span{
+		line-height: 1.5
+	}
+
+	.marga-types h2 {
+		line-height: 1.29
+	}
+
+	.marga-types-cost .font-size-35{
+		line-height: 1.17
+	}
+
+	.marga-exam h2{
+		line-height: 1.29
+	}
+
+	.marga-glos h2{
+		line-height: 1.33
 	}
 	
 }

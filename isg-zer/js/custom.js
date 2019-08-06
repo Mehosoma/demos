@@ -115,3 +115,9 @@ $(document).on('click', ".programs-list-dots ul li", function() {
 
 
 });
+
+//Marga-Note Visible
+$(document).ready(function() {
+
+});
+
