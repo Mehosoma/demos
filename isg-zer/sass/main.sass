@@ -132,80 +132,55 @@ body
 	li span:nth-child(1)
 		opacity: 0.6
 		flex: 0 0 220px
-.programs-list
+.cascade-slider_container 
 	position: relative
-	transform-style: preserve-3d
-.programs-list-slide
-	position: absolute
-	cursor: pointer
-.programs-list-slide-active
-	position: relative
-.programs-list-slide:not(.programs-list-slide-active):hover
-	margin-top: -5px
-.transition
-	transition: 0.5s ease-out
-.show 
-	animation: show 1s linear
-@keyframes show
-	25% 
-		top: -150px	 
-	50% 
-		z-index: 1000
-		top: -100px	 
-	70% 
-		z-index: 1000
-		top: -50px	 
-	100% 
-		z-index: 1000
-		top: 0px
-.programs-list .programs-list-slide.item-0 
-	z-index: 10
-	transform: scale(1) 
-.programs-list .programs-list-slide.item-1 
-	z-index: 9
-	top: -30px
-	transform: scale(0.95) 
-.programs-list .programs-list-slide.item-2 
-	z-index: 8
-	top: -60px
-	transform: scale(0.90)
-.programs-list .programs-list-slide.item-3
-	z-index: 7
-	top: -90px
-	transform: scale(0.85)
-.programs-list .programs-list-slide.item-4
-	z-index: 6
-	top: -120px
-	transform: scale(0.80)
-.programs-list .programs-list-slide.item-5
-	z-index: 5
-	top: -150px
-	transform: scale(0.75)
-.programs-list .programs-list-slide.item-6
-	z-index: 4
-	top: -180px
-	transform: scale(0.70)
-.programs-list-dots
-	position: relative
-	z-index: 10000
-	text-align: center
-	display: block
 	width: 100%
-	ul
-		padding: 0px
-		margin: 0px
-	li
-		list-style-type: none
-		width: 12px
-		height: 12px
-		border: 2px solid gray
-		border-radius: 50%
-		display: inline-block
-		margin: 5px
-	li:hover
-		cursor: pointer
-.programs-list-dots	#dotp0
-		border: 2px solid #4753d1
+	height: 565px
+	margin: 0 auto
+.cascade-slider_item 
+	position: absolute
+	top: 50%
+	left: 50%
+	transform: translateY(-50%) translateX(-50%) scale(0.3)
+	transition: all 0.5s ease
+	opacity: 0
+	z-index: -1
+.cascade-slider_item.now 
+	top: 50%
+	left: 50%
+	transform: translateY(-50%) translateX(-50%) scale(1)
+	opacity: 1
+	z-index: 10
+.cascade-slider_item.next
+	left: 0%
+	transform: translateY(-55%) scale(0.95)
+	opacity: 1
+	z-index: 9	 
+.cascade-slider_item.prev
+	left: 0%
+	transform: translateY(-60%) scale(0.90)
+	opacity: 1
+	z-index: 8	
+.cascade-slider_nav 
+	position: absolute
+	top: -90px
+	width: 100%
+	text-align: center
+	z-index: 5
+.cascade-slider_dot 
+	display: inline-block
+	width: 1em
+	height: 1em
+	margin: 1em
+	background: #ddd
+	list-style: none
+	cursor: pointer
+	transition: 0.3s all
+	border-radius: 50%
+.cascade-slider_dot:hover 
+	background: #4753d1
+.cascade-slider_dot.cur
+	background: #4753d1
 
 
 /***************************************************ISG-Partners************************************/

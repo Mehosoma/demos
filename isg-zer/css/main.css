@@ -207,156 +207,83 @@ body {
   flex: 0 0 220px;
 }
 
-.programs-list {
+.cascade-slider_container {
   position: relative;
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-}
-
-.programs-list-slide {
-  position: absolute;
-  cursor: pointer;
-}
-
-.programs-list-slide-active {
-  position: relative;
-}
-
-.programs-list-slide:not(.programs-list-slide-active):hover {
-  margin-top: -5px;
-}
-
-.transition {
-  -webkit-transition: 0.5s ease-out;
-  -o-transition: 0.5s ease-out;
-  transition: 0.5s ease-out;
-}
-
-.show {
-  -webkit-animation: show 1s linear;
-  animation: show 1s linear;
-}
-
-@-webkit-keyframes show {
-  25% {
-    top: -150px;
-  }
-  50% {
-    z-index: 1000;
-    top: -100px;
-  }
-  70% {
-    z-index: 1000;
-    top: -50px;
-  }
-  100% {
-    z-index: 1000;
-    top: 0px;
-  }
-}
-
-@keyframes show {
-  25% {
-    top: -150px;
-  }
-  50% {
-    z-index: 1000;
-    top: -100px;
-  }
-  70% {
-    z-index: 1000;
-    top: -50px;
-  }
-  100% {
-    z-index: 1000;
-    top: 0px;
-  }
-}
-
-.programs-list .programs-list-slide.item-0 {
-  z-index: 10;
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-}
-
-.programs-list .programs-list-slide.item-1 {
-  z-index: 9;
-  top: -30px;
-  -webkit-transform: scale(0.95);
-  -ms-transform: scale(0.95);
-  transform: scale(0.95);
-}
-
-.programs-list .programs-list-slide.item-2 {
-  z-index: 8;
-  top: -60px;
-  -webkit-transform: scale(0.9);
-  -ms-transform: scale(0.9);
-  transform: scale(0.9);
-}
-
-.programs-list .programs-list-slide.item-3 {
-  z-index: 7;
-  top: -90px;
-  -webkit-transform: scale(0.85);
-  -ms-transform: scale(0.85);
-  transform: scale(0.85);
-}
-
-.programs-list .programs-list-slide.item-4 {
-  z-index: 6;
-  top: -120px;
-  -webkit-transform: scale(0.8);
-  -ms-transform: scale(0.8);
-  transform: scale(0.8);
-}
-
-.programs-list .programs-list-slide.item-5 {
-  z-index: 5;
-  top: -150px;
-  -webkit-transform: scale(0.75);
-  -ms-transform: scale(0.75);
-  transform: scale(0.75);
-}
-
-.programs-list .programs-list-slide.item-6 {
-  z-index: 4;
-  top: -180px;
-  -webkit-transform: scale(0.7);
-  -ms-transform: scale(0.7);
-  transform: scale(0.7);
-}
-
-.programs-list-dots {
-  position: relative;
-  z-index: 10000;
-  text-align: center;
-  display: block;
   width: 100%;
+  height: 565px;
+  margin: 0 auto;
 }
 
-.programs-list-dots ul {
-  padding: 0px;
-  margin: 0px;
+.cascade-slider_item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%) scale(0.3);
+  -ms-transform: translateY(-50%) translateX(-50%) scale(0.3);
+  transform: translateY(-50%) translateX(-50%) scale(0.3);
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  opacity: 0;
+  z-index: -1;
 }
 
-.programs-list-dots li {
-  list-style-type: none;
-  width: 12px;
-  height: 12px;
-  border: 2px solid gray;
-  border-radius: 50%;
+.cascade-slider_item.now {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%) scale(1);
+  -ms-transform: translateY(-50%) translateX(-50%) scale(1);
+  transform: translateY(-50%) translateX(-50%) scale(1);
+  opacity: 1;
+  z-index: 10;
+}
+
+.cascade-slider_item.next {
+  left: 0%;
+  -webkit-transform: translateY(-55%) scale(0.95);
+  -ms-transform: translateY(-55%) scale(0.95);
+  transform: translateY(-55%) scale(0.95);
+  opacity: 1;
+  z-index: 9;
+}
+
+.cascade-slider_item.prev {
+  left: 0%;
+  -webkit-transform: translateY(-60%) scale(0.9);
+  -ms-transform: translateY(-60%) scale(0.9);
+  transform: translateY(-60%) scale(0.9);
+  opacity: 1;
+  z-index: 8;
+}
+
+.cascade-slider_nav {
+  position: absolute;
+  top: -90px;
+  width: 100%;
+  text-align: center;
+  z-index: 5;
+}
+
+.cascade-slider_dot {
   display: inline-block;
-  margin: 5px;
-}
-
-.programs-list-dots li:hover {
+  width: 1em;
+  height: 1em;
+  margin: 1em;
+  background: #ddd;
+  list-style: none;
   cursor: pointer;
+  -webkit-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  transition: 0.3s all;
+  border-radius: 50%;
 }
 
-.programs-list-dots #dotp0 {
-  border: 2px solid #4753d1;
+.cascade-slider_dot:hover {
+  background: #4753d1;
+}
+
+.cascade-slider_dot.cur {
+  background: #4753d1;
 }
 
 /***************************************************ISG-Partners************************************/

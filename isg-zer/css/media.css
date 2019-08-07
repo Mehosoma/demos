@@ -28,7 +28,7 @@
 
 	.isg-about-block img{
 		width: 100%;
-		max-width: 400px;
+		max-width: 319px;
 		height: auto;
 	}
 
@@ -147,6 +147,39 @@
 	.marga-glos h2{
 		line-height: 1.33
 	}
+
+	.marga-types-image img{
+		max-width: 242px;
+	}
+
+	.marga-note img{
+		width: 15px;
+		height: auto;
+	}
+
+	.marga-note{
+		top: 35px;
+		left: 58px;
+	}
+
+	.marga-note-3{
+		top: 60px;
+		left: 58px;
+	}
+
+	.marga-note-2{
+		top: 60px;
+		left: 127px;
+	}
+
+	.marga-note-4{
+		top: 60px;
+		left: 200px;
+	}
+
+	.marga-note-4 span{
+		left: -87px;
+	}
 		
 }
 
@@ -169,7 +202,7 @@
 
 	.isg-about-block img{
 		width: 100%;
-		max-width: 400px;
+		max-width: 319px;
 		height: auto;
 	}
 
@@ -245,7 +278,7 @@
 	.marga-types-image img, .marga-exam-images img{
 		width: 100%;
 		height: auto;
-		max-width: 520px;
+		max-width: 490px;
 	}
 
 	.marga-exam-images img{
@@ -291,6 +324,26 @@
 
 	.marga-glos h2{
 		line-height: 1.33
+	}
+
+	.marga-note{
+		top: 84px;
+		left: 58px;
+	}
+
+	.marga-note-3{
+		top: 135px;
+		left: 58px;
+	}
+
+	.marga-note-2{
+		top: 135px;
+		left: 198px;
+	}
+
+	.marga-note-4{
+		top: 135px;
+		left: 343px;
 	}
 	
 }
@@ -368,30 +421,10 @@
 
 @media only screen and (min-width : 992px) and (max-width : 1199px) {
 
-	.programs-list .programs-list-slide.item-1 {
-	  top: -40px;	 
+	.cascade-slider_container{
+		height: 641px;
 	}
-
-	.programs-list .programs-list-slide.item-2 {
-	   top: -80px;	 
-	}
-
-	.programs-list .programs-list-slide.item-3 {	
-	  top: -120px;	
-	}
-
-	.programs-list .programs-list-slide.item-4 {	
-	  top: -160px;	 
-	}
-
-	.programs-list .programs-list-slide.item-5 {	
-	  top: -200px;	
-	}
-
-	.programs-list .programs-list-slide.item-6 {	
-	  top: -240px;	 
-	}
-
+	
 	.isg-partners-block .isg-partners-drop ul{
 		min-height: 440px;
 	}
