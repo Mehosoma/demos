@@ -101,6 +101,23 @@
 		flex: 0 0 100%;
 	}
 
+	.fix-mob-font{
+		line-height: normal;
+		margin-bottom: 10px;
+		display: block;
+	}
+
+	.isg-adv-block::before{
+		width: 33px;
+		height: 33px;
+		border: 4px solid #d7e4ef;
+	}
+
+	.isg-adv-block::after{
+		top: 8px;
+		left: 12px;
+	}
+
 	.marga-types-image img, .marga-exam-images img{
 		width: 100%;
 		height: auto;
@@ -421,10 +438,6 @@
 
 @media only screen and (min-width : 992px) and (max-width : 1199px) {
 
-	.cascade-slider_container{
-		height: 641px;
-	}
-	
 	.isg-partners-block .isg-partners-drop ul{
 		min-height: 440px;
 	}
