@@ -1,19 +1,161 @@
-@media only screen and (min-width : 0px) and (max-width : 575px) {	
+@media only screen and (min-width : 0px) and (max-width : 575px) {
+
+	
+	.fix-fontsize-bond{
+		font-size: 24px;
+	}
+
+	.bond-result-top{
+		flex-wrap: wrap;
+	}
+
+	.bond-banner-block{
+		margin: 0 auto;
+	}
+
+	.bond-result-wrap{
+		flex-wrap: wrap;
+	}
+
+	.bond-result-wrap .bond-result-in:nth-child(2){
+		flex-basis: 70%;
+	}
+
+	.bond-arr{
+		position: absolute;
+		right: 40px;
+	}
+
+	.bond-result-drop-block{
+		width: 100%;
+	}
+
+	.bond-result-drop .pr-0{
+		padding-right: 15px!important;
+	}
+
+	.bond-result-drop .pl-0{
+		padding-left: 15px!important;
+	}
+
+	.bond-btn-wrap{
+		justify-content: center!important;
+		padding-top: 0px!important;
+
+	}
+
+	.bond-result-drop .slick-slider{
+		padding-bottom: 0px!important;
+	}
+
+	.bond-result-drop-block{
+		margin-left: auto;
+		margin-right: auto;
+	}
 	
 }
 
 
 @media only screen and (min-width : 576px) and (max-width : 767px) {
+
+	.fix-fontsize-bond{
+		font-size: 24px;
+	}
+
+	.bond-result-top{
+		flex-wrap: wrap;
+	}
+
+	.bond-banner-block{
+		margin: 0 auto;
+	}
+
+	.bond-result-wrap{
+		flex-wrap: wrap;
+	}
+
+	.bond-result-wrap .bond-result-in:nth-child(2){
+		flex-basis: 70%;
+	}
+
+	.bond-arr{
+		position: absolute;
+		right: 40px;
+	}
+
+	.bond-result-drop-block{
+		width: 100%;
+	}
+
+	.bond-result-drop .pr-0{
+		padding-right: 15px!important;
+	}
+
+	.bond-result-drop .pl-0{
+		padding-left: 15px!important;
+	}
+
+	.bond-btn-wrap{
+		justify-content: center!important;
+		padding-top: 0px!important;
+
+	}
+
+	.bond-result-drop .slick-slider{
+		padding-bottom: 0px!important;
+	}
+
+	.bond-result-drop-block{
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.bond-banner-block i{
+		font-size: 30px!important;
+	}
 	
 	
 }
 
 @media only screen and (min-width : 768px) and (max-width : 991px) {	
 
+	.bond-banner-block{
+		max-width: 100%;
+	}
+
+	.bond-result-wrap{
+		flex-wrap: wrap;
+	}
+
+	.bond-result-wrap .bond-result-in:nth-child(2){
+		flex-basis: 70%;
+	}
+
+	.bond-result-drop{
+		background-position: center right;
+	}
+
+	.bond-result-drop-block{
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+
 
 }
 
 @media only screen and (min-width : 992px) and (max-width : 1199px) {
-	
+
+	.bond-banner-block{
+		height: 140px;
+	}		
+
+	.bond-result-drop-block{
+		width: 95%;
+	}
+
+	.bond-result-wrap .bond-result-in:nth-child(1) {
+		flex-basis: 300px;
+	}
 
 }

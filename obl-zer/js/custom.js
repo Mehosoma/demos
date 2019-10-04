@@ -6,7 +6,7 @@ $(window).on('load resize', function() {
       dots: true,  
       speed: 300,
       arrows: false, 
-      slidesToShow: 1,
+      slidesToShow: 2,
       slidesToScroll: 1,
       adaptiveHeight: true,
       responsive: [       
@@ -30,29 +30,72 @@ $(window).on('load resize', function() {
 $(window).on('load resize', function() {
 
    if ($(window).width() < 992) {
-    $('.bond-result-slider:not(.slick-initialized)').slick({
-      infinite: false,   
-      dots: true,  
-      speed: 300,
-      arrows: false, 
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      adaptiveHeight: true,
-      responsive: [       
-        {
-          breakpoint: 576,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
+
+     $('.bond-result-slider:not(.slick-initialized)').slick({
+        infinite: false,   
+        dots: true,  
+        speed: 300,
+        arrows: false, 
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        adaptiveHeight: true,
+        responsive: [       
+          {
+            breakpoint: 576,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
           }
-        }
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
-      ]   
-    });
-  } else {
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ]   
+      });
+  
+    } else {
+      $(".bond-result-slider.slick-initialized").slick("unslick");
+   }   
+
+});
+
+
+$(window).on('load resize', function() {
+
+   if ($(window).width() < 992) {
+
+     $('.bond-result-drop').on('shown.bs.collapse', function () {
+      $(this).parent().find(".bond-result-slider.slick-initialized").slick("unslick");
+      $(this).parent().find('.bond-result-slider:not(.slick-initialized)').slick({
+        infinite: false,   
+        dots: true,  
+        speed: 300,
+        arrows: false, 
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        adaptiveHeight: true,
+        responsive: [       
+          {
+            breakpoint: 576,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ]   
+      });
+    })
+
+   } else {
     $(".bond-result-slider.slick-initialized").slick("unslick");
   }
 });
+
+
+$('.bond-result-drop').on('hidden.bs.collapse', function () {
+  $(this).parent().find(".bond-result-slider.slick-initialized").slick("unslick");
+})
 
