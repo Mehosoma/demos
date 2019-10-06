@@ -62,10 +62,10 @@ $(window).on('load resize', function() {
 
 $(window).on('load resize', function() {
 
-   if ($(window).width() < 992) {
-
-     $('.bond-result-drop').on('shown.bs.collapse', function () {
-      $(this).parent().find(".bond-result-slider.slick-initialized").slick("unslick");
+ 
+  $('.bond-result-drop').on('shown.bs.collapse', function () {
+    if ($(window).width() < 992) {
+      $('.bond-result-drop').parent().find(".bond-result-slider.slick-initialized").slick("unslick")
       $(this).parent().find('.bond-result-slider:not(.slick-initialized)').slick({
         infinite: false,   
         dots: true,  
@@ -86,16 +86,15 @@ $(window).on('load resize', function() {
           // settings: "unslick"
           // instead of a settings object
         ]   
-      });
-    })
+      })
+    } else {
+      $(".bond-result-slider.slick-initialized").slick("unslick");
+    }
+  }); 
 
-   } else {
-    $(".bond-result-slider.slick-initialized").slick("unslick");
-  }
-
-$('.bond-result-drop').on('hidden.bs.collapse', function () {
-  $(this).parent().find(".bond-result-slider.slick-initialized").slick("unslick");
-})
+  $('.bond-result-drop').on('hide.bs.collapse', function () {
+    $(this).parent().find(".bond-result-slider.slick-initialized").slick("unslick");
+  })
 
 });
 
