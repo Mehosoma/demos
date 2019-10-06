@@ -92,10 +92,13 @@ $(window).on('load resize', function() {
    } else {
     $(".bond-result-slider.slick-initialized").slick("unslick");
   }
-});
-
 
 $('.bond-result-drop').on('hidden.bs.collapse', function () {
   $(this).parent().find(".bond-result-slider.slick-initialized").slick("unslick");
 })
+
+});
+
+
+
 
