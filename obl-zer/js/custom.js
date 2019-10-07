@@ -31,7 +31,7 @@ $(window).on('load resize', function() {
 
    if ($(window).width() < 992) {
 
-     $('.bond-result-slider:not(.slick-initialized)').slick({
+    $('.bond-result-drop.show').find('.bond-result-slider:not(.slick-initialized)').slick({
         infinite: false,   
         dots: true,  
         speed: 300,
@@ -61,12 +61,10 @@ $(window).on('load resize', function() {
 
 
 $(window).on('load resize', function() {
-
- 
-  $('.bond-result-drop').on('shown.bs.collapse', function () {
+  $('.bond-result-drop').on('show.bs.collapse', function () {
     if ($(window).width() < 992) {
-      $('.bond-result-drop').parent().find(".bond-result-slider.slick-initialized").slick("unslick")
-      $(this).parent().find('.bond-result-slider:not(.slick-initialized)').slick({
+      $(this).find(".bond-result-slider.slick-initialized").slick("unslick");
+      $(this).find('.bond-result-slider:not(.slick-initialized)').slick({
         infinite: false,   
         dots: true,  
         speed: 300,

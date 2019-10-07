@@ -1,5 +1,16 @@
 @media only screen and (min-width : 0px) and (max-width : 575px) {
 
+	.bond-banner-top{
+		background-position: top right -250px;
+		min-height: 815px;
+	}
+
+	.bond-banner-block{
+		max-width: 350px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
 	
 	.fix-fontsize-bond{
 		font-size: 24px;
@@ -53,6 +64,14 @@
 		margin-right: auto;
 	}
 	
+}
+
+@media only screen and (min-width : 449px) and (max-width : 575px) {
+
+	.bond-banner-top{		
+		min-height: 715px;
+	}
+
 }
 
 
