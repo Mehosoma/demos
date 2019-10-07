@@ -63,13 +63,25 @@
 		margin-left: auto;
 		margin-right: auto;
 	}
+
+	.bond-slider {
+		height: 384px!important;
+	}
+
+	.bond-slider .slick-dots{
+		position: absolute;
+		bottom: -40px;
+		right: 0px;
+		left: 0px;
+		margin: auto;
+	}
 	
 }
 
 @media only screen and (min-width : 449px) and (max-width : 575px) {
 
 	.bond-banner-top{		
-		min-height: 715px;
+		min-height: 720px;
 	}
 
 }

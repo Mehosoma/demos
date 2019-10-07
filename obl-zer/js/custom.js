@@ -61,7 +61,7 @@ $(window).on('load resize', function() {
 
 
 $(window).on('load resize', function() {
-  $('.bond-result-drop').on('show.bs.collapse', function () {
+  $('.bond-result-drop').on('shown.bs.collapse', function () {
     if ($(window).width() < 992) {
       $(this).find(".bond-result-slider.slick-initialized").slick("unslick");
       $(this).find('.bond-result-slider:not(.slick-initialized)').slick({
@@ -91,7 +91,7 @@ $(window).on('load resize', function() {
   }); 
 
   $('.bond-result-drop').on('hide.bs.collapse', function () {
-    $(this).parent().find(".bond-result-slider.slick-initialized").slick("unslick");
+    $(this).find(".bond-result-slider.slick-initialized").slick("unslick");
   })
 
 });
