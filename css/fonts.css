@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "lazurskicyrillic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/lazurskicyrillic.eot?#iefix") format("embedded-opentype"), url("../fonts/lazurskicyrillic.woff") format("woff"), url("../fonts/lazurskicyrillic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "lazurskibold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/lazurskibold.eot?#iefix") format("embedded-opentype"), url("../fonts/lazurskibold.woff") format("woff"), url("../fonts/lazurskibold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "cyrillicgaramond";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/cyrillicgaramond.eot?#iefix") format("embedded-opentype"), url("../fonts/cyrillicgaramond.woff") format("woff"), url("../fonts/cyrillicgaramond.ttf") format("truetype");
+}
