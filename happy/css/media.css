@@ -67,14 +67,13 @@
 
 	.ill-one{		
 		margin: 0 auto;
+		top: 0px;
 	}
 
 	.double-medium-desc{
 		padding-top: 17px;
 		padding-left: 0px;
-		text-align: center;
-		height: auto;
-		min-height: 280px;
+		text-align: center;		
 	}
 
 	.double-medium-desc p {
@@ -177,8 +176,8 @@
 
 	.ill-one{
 		width: 100%;
-		height: auto;
-		margin-top: -170px;
+		height: auto;	
+		top: -230px;	
 	}
 
 	.double-medium-desc{
@@ -187,13 +186,9 @@
 
 	.double{
 		height: auto;
-		min-height: 1000px;
+		min-height: 1650px;
 	}
 
-	.double-medium-desc{
-		height: auto;
-		min-height: 700px;
-	}
 
 	.photo-three{
 		margin-left: 0px;
@@ -232,7 +227,7 @@
 @media only screen and (min-width : 992px) and (max-width : 1199px) {
 	.right-decor{
 		width: 74%;
-		top: 40px;
+		top: 80px;		
 	}
 
 	h1{
@@ -256,18 +251,18 @@
 	.ill-one{
 		width: 100%;
 		height: auto;
-		margin-top: -170px;
+		
 	}
 
 	.phone-abs-one {
 		width: 320px;
 		left: -50px;
-		top: 560px;
+		
 	}
 
 	.phone-abs-sec {
 		width: 350px;
-		top: 600px;
+	
 	}
 
 	.bottom{

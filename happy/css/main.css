@@ -184,8 +184,9 @@ h2 {
     line-height: 30px; }
 
 .ill-one {
-  margin-top: -100px;
-  margin-left: -23px; }
+  margin-left: -23px;
+  position: relative;
+  top: -180px; }
 
 .double-med-left, .double-medium-desc {
   position: relative; }
@@ -206,13 +207,12 @@ h2 {
 
 .right-decor {
   position: absolute;
-  top: 104px;
+  top: 204px;
   left: 130px; }
 
 .double-medium-desc {
   padding-top: 178px;
-  padding-left: 75px;
-  min-height: 900px; }
+  padding-left: 75px; }
   .double-medium-desc h2, .double-medium-desc p {
     position: relative;
     z-index: 100; }
