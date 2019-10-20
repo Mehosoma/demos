@@ -176,8 +176,7 @@
 
 	.ill-one{
 		width: 100%;
-		height: auto;	
-		top: -230px;	
+		height: auto;		
 	}
 
 	.double-medium-desc{
@@ -227,7 +226,7 @@
 @media only screen and (min-width : 992px) and (max-width : 1199px) {
 	.right-decor{
 		width: 74%;
-		top: 80px;		
+		top: 150px;		
 	}
 
 	h1{
@@ -282,6 +281,7 @@
 
 .right-decor{
 	width: 80%;
+	top: 230px;
 }
 
 }
@@ -289,8 +289,12 @@
 
 @media only screen and (min-width : 1920px) {
 
-.ill-one{
-	top: -100px;
-}
+	.ill-one{
+		top: -100px;
+	}
+
+	.right-decor{		
+		top: 230px;
+	}
 
 }

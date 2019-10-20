@@ -1,5 +1,4 @@
 //Hover-Animation Btn
-
 function animate(elem){
     var effect = elem.data("effect");
     if(!effect || elem.hasClass(effect)) return false;
