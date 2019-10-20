@@ -285,3 +285,12 @@
 }
 
 }
+
+
+@media only screen and (min-width : 1920px) {
+
+.ill-one{
+	top: -100px;
+}
+
+}

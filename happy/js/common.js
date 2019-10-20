@@ -1,3 +1,5 @@
+//Hover-Animation Btn
+
 function animate(elem){
     var effect = elem.data("effect");
     if(!effect || elem.hasClass(effect)) return false;
@@ -9,4 +11,21 @@ function animate(elem){
  
 $(".animated").mouseenter(function() {
     animate($(this));
+});
+
+//Wow-init
+$( document ).ready(function() {
+     new WOW().init();
+});
+
+//Parallax
+$( document ).ready(function() {
+    var rellax = new Rellax('.relax', {
+    speed: -2,
+    center: false,
+    wrapper: null,
+    round: true,
+    vertical: true,
+    horizontal: false
+   });
 });
