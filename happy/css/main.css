@@ -111,7 +111,13 @@ h2 {
   font-size: 20px;
   line-height: 35px; }
 
-.anim_right_400 {
+.anim_600 {
+  -webkit-animation-delay: 400ms;
+  -moz-animation-delay: 400ms;
+  -o-animation-delay: 400ms;
+  animation-delay: 400ms; }
+
+.anim_400 {
   -webkit-animation-delay: 400ms;
   -moz-animation-delay: 400ms;
   -o-animation-delay: 400ms;
@@ -147,7 +153,9 @@ h2 {
   background-image: url("../images/bg 1.png");
   background-repeat: no-repeat;
   background-position: center top;
-  background-size: 100% 100%; }
+  background-size: 100% 100%;
+  position: relative;
+  z-index: 100; }
 
 .comment-block span {
   font-family: "Conv_Raleway-Bold", sans-serif;
@@ -176,7 +184,7 @@ h2 {
     line-height: 30px; }
 
 .ill-one {
-  margin-top: 20px;
+  margin-top: -100px;
   margin-left: -23px; }
 
 .double-med-left, .double-medium-desc {
@@ -198,13 +206,16 @@ h2 {
 
 .right-decor {
   position: absolute;
-  bottom: 3px;
+  top: 104px;
   left: 130px; }
 
 .double-medium-desc {
   padding-top: 178px;
   padding-left: 75px;
   min-height: 900px; }
+  .double-medium-desc h2, .double-medium-desc p {
+    position: relative;
+    z-index: 100; }
   .double-medium-desc p {
     margin-top: 30px; }
 

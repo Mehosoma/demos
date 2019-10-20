@@ -43,7 +43,7 @@
 			<div class="row fix-mt">
 				<div class="col-4">
 					<div class="double-top-left">
-						<h1>Mental Health support network</h1>					
+						<h1 class="wow fadeInLeft anim_200" data-wow-offset="150">Mental Health support network</h1>					
 						<div class="shop-icons d-flex">
 							<a href="">
 								<div class="google-store-btn store-btn animated"  data-effect="bounce">
@@ -61,14 +61,14 @@
 					</div>
 				</div>
 				<div class="col-4">
-					<img src="images/Phone 1.png" alt="happy-screen-image" class="phone-one wow fadeInRight" data-wow-offset="150">
+					<img src="images/Phone 1.png" alt="happy-screen-image" class="phone-one wow fadeInRight anim_200" data-wow-offset="150">
 				</div>
 				<div class="col-4">
-					<div class="comment-block">
+					<div class="comment-block wow zoomIn anim_600" data-wow-offset="150">
 						<img src="images/Chat.svg" alt="chat-image">
 						<span>Connect and chat with<br> people just like you</span>
 					</div>
-					<img src="images/Phone 2.png" alt="happy-screen-image" class="phone-sec wow fadeInRight anim_right_400" data-wow-offset="150">
+					<img src="images/Phone 2.png" alt="happy-screen-image" class="phone-sec wow fadeInRight anim_600" data-wow-offset="150">
 				</div>
 			</div>
 		</div>
@@ -78,14 +78,14 @@
 			<div class="row">
 				<div class="col-6">
 					<div class="double-med-left">
-						<img src="images/illustration1.png" alt="image-decor" class="ill-one">
-						<img src="images/scr-1.png" alt="screenshot-image" class="phone-abs phone-abs-one wow fadeInLeft anim_right_400" data-wow-offset="200">
+						<img src="images/illustration1.png" alt="image-decor" class="ill-one relax">
+						<img src="images/scr-1.png" alt="screenshot-image" class="phone-abs phone-abs-one wow fadeInLeft anim_400" data-wow-offset="200">
 						<img src="images/scr-2.png" alt="screenshot-image" class="phone-abs phone-abs-sec wow fadeInLeft" data-wow-offset="200">
 					</div>
 				</div>
 				<div class="col-6">
 					<div class="double-medium-desc">
-						<img src="images/decor.png" alt="decor-image" class="right-decor">
+						<img src="images/decor.png" alt="decor-image" class="right-decor relax">
 						<h2 class="wow zoomIn" data-wow-offset="150">Offer<br> support<br> and share<br> your story</h2>
 						<p class="gen-text wow zoomIn anim_200" data-wow-offset="50">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor<br>  ut labore et dolore magna aliqua. Ut enim<br> ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea<br> commodo consequat. </p>
 					</div>
@@ -119,7 +119,7 @@
 				</div>
 			</div>
 			<div class="col-6">
-				<img src="images/cont-grow.png" alt="Continue-grow-image" class="photo-three wow fadeInRight anim_right_400" data-wow-offset="200">
+				<img src="images/cont-grow.png" alt="Continue-grow-image" class="photo-three wow fadeInRight anim_400" data-wow-offset="200">
 			</div>
 		</div>
 	</div>
@@ -132,11 +132,24 @@
 	<script src="libs/waypoints/waypoints.min.js"></script>
 	<script src="libs/animate/animate-css.js"></script>
 	<script src="libs/wow.js"></script>
+	<script src="libs/rellax.min.js"></script>
 	<script src="js/common.js"></script>
 
 	<script>
         new WOW().init();
     </script>
+
+    <script>
+  // Also can pass in optional settings block
+  var rellax = new Rellax('.relax', {
+    speed: -2,
+    center: false,
+    wrapper: null,
+    round: true,
+    vertical: true,
+    horizontal: false
+  });
+</script>
 	
 </body>
 </html>
