@@ -1,4 +1,137 @@
-@media only screen and (min-width : 0px) and (max-width : 479px) {
+@media only screen and (min-width : 0px) and (max-width : 767px) {
+
+	.logo{
+		margin-top: 28px;
+	}
+
+	.logo img{
+		width: 88px;
+		height: auto;
+	}
+
+	.fix-mt {
+		margin-top: 31px;
+	}
+
+	.comment-block{
+		margin-left: 0px;
+	}
+
+	.comment-block span {
+		margin-top: 3px;
+	}
+
+	.double-top{
+		height: 919px;
+		background-size: cover;
+	}
+
+	.phone-one{
+		margin-left: -15px;
+		margin-top: 3px;
+	}
+
+	.phone-sec{
+		margin-left: -44px;
+	}
+
+	.double .shop-icons{
+		justify-content: center;
+		margin-top: 20px;
+	}
+
+	.double-top-left{
+		text-align: center;
+		margin-left: 0px;
+		padding-left: 0px;
+	}
+
+	h1{
+		font-size: 50px;
+		line-height: 55px;
+	}
+
+	h2{
+		font-size: 35px;
+		line-height: 45px;
+	}
+
+	.gen-text{
+		font-size: 15px;
+		line-height: 25px;
+	}
+
+	.double-med-left{
+		margin-top: 85px;
+	}
+
+	.ill-one{		
+		margin: 0 auto;
+	}
+
+	.double-medium-desc{
+		padding-top: 17px;
+		padding-left: 0px;
+		text-align: center;
+		height: auto;
+		min-height: 280px;
+	}
+
+	.double-medium-desc p {
+		margin-top: 21px;
+		width: 98%;
+	}
+
+	.double{
+		height: auto;
+		min-height: 1000px;
+	}
+	
+
+	.photo-three{
+		width: 100%;
+		max-width: 320px;
+		height: auto; 		
+		display: block;
+		margin: 0 auto;
+	}
+
+	.bottom{
+		padding-top: 0px;
+		min-height: 780px;
+		padding-bottom: 60px;
+		background-size: 145% 182px;
+	}
+
+	.bottom-left{
+		margin-top: 28px;
+		text-align: center;
+		margin-left: 0px;
+	}
+
+	.bottom-left p {
+		margin-top: 15px;
+		width: 98%;
+	}
+
+	.bottom-left .shop-icons{
+		margin-top: 0px;
+		justify-content: center;
+	}
+
+	.store-btn{
+		width: 75px;
+		height: 140px;
+		padding-top: 78px;
+	}
+
+	.store-name, .store-desc{
+		font-size: 12px;
+	}
+
+	.google-store-btn, .apple-store-btn{
+		background-position: center top 21px;
+	}
 
 }
 
@@ -6,9 +139,148 @@
 }
 
 @media only screen and (min-width : 768px) and (max-width : 991px) {
+
+	.double-top{
+		height: auto;
+		background-size: cover;
+	}
+
+	.phone-sec, .phone-one{
+		margin-left: 0px;
+	}
+
+	.double .shop-icons{
+		justify-content: center;
+		margin-top: 20px;
+	}
+
+	.double-top-left{
+		text-align: center;
+		margin-left: 0px;
+		padding-left: 0px;
+	}
+
+	h1{
+		font-size: 50px;
+		line-height: 55px;
+	}
+
+	h2{
+		font-size: 35px;
+		line-height: 45px;
+	}
+
+	.gen-text{
+		font-size: 15px;
+		line-height: 25px;
+	}
+
+	.ill-one{
+		width: 100%;
+		height: auto;
+		margin-top: -170px;
+	}
+
+	.double-medium-desc{
+		padding-top: 70px;
+	}
+
+	.double{
+		height: auto;
+		min-height: 1000px;
+	}
+
+	.double-medium-desc{
+		height: auto;
+		min-height: 700px;
+	}
+
+	.photo-three{
+		margin-left: 0px;
+		width: 500px;
+		height: auto;
+		display: block;
+		margin: 0 auto;
+	}
+
+	.bottom{
+		padding-top: 30px;
+		min-height: 780px;
+		padding-bottom: 60px;
+	}
+
+	.bottom-left{
+		margin-top: 40px;
+		text-align: center;
+		margin-left: 0px;
+	}
+
+	.bottom-left .shop-icons{
+		margin-top: 40px;
+		justify-content: center;
+	}
+
+	.bottom{
+		padding-top: 0px;
+		min-height: 780px;
+		padding-bottom: 60px;
+		background-size: 145% 282px;
+	}
+
 }
 
 @media only screen and (min-width : 992px) and (max-width : 1199px) {
+	.right-decor{
+		width: 74%;
+		top: 40px;
+	}
+
+	h1{
+		font-size: 50px;
+		line-height: 60px;
+	}
+
+	h2{
+		font-size: 40px;
+		line-height: 55px;
+	}
+
+	.gen-text{
+		font-size: 17px;
+	}
+
+	.phone-one {
+		margin-left: -88px;
+	}
+
+	.ill-one{
+		width: 100%;
+		height: auto;
+		margin-top: -170px;
+	}
+
+	.phone-abs-one {
+		width: 320px;
+		left: -50px;
+		top: 560px;
+	}
+
+	.phone-abs-sec {
+		width: 350px;
+		top: 600px;
+	}
+
+	.bottom{
+		padding-top: 0px;
+		min-height: 780px;
+	}
+
+	.photo-three {
+		width: 550px;
+		height: auto;
+	}
+
+	
 }
 
 @media only screen and (min-width : 1200px) and (max-width : 1400px) {
