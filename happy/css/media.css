@@ -66,8 +66,7 @@
 	}
 
 	.ill-one{		
-		margin: 0 auto;
-		top: 0px;
+		margin: 0 auto;		
 	}
 
 	.double-medium-desc{
@@ -176,7 +175,8 @@
 
 	.ill-one{
 		width: 100%;
-		height: auto;		
+		height: auto;	
+		margin-top: 80px;	
 	}
 
 	.double-medium-desc{
@@ -225,8 +225,7 @@
 
 @media only screen and (min-width : 992px) and (max-width : 1199px) {
 	.right-decor{
-		width: 74%;
-		top: 150px;		
+		width: 74%;				
 	}
 
 	h1{
@@ -277,24 +276,3 @@
 	
 }
 
-@media only screen and (min-width : 1200px) and (max-width : 1400px) {
-
-.right-decor{
-	width: 80%;
-	top: 230px;
-}
-
-}
-
-
-@media only screen and (min-width : 1920px) {
-
-	.ill-one{
-		top: -100px;
-	}
-
-	.right-decor{		
-		top: 230px;
-	}
-
-}

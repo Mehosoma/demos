@@ -172,8 +172,7 @@ h2 {
 
 .ill-one {
   margin-left: -23px;
-  position: relative;
-  top: -180px; }
+  position: relative; }
 
 .double-med-left, .double-medium-desc {
   position: relative; }
@@ -194,7 +193,7 @@ h2 {
 
 .right-decor {
   position: absolute;
-  top: 150px;
+  bottom: -100px;
   left: 130px; }
 
 .double-medium-desc {
