@@ -47,14 +47,16 @@ body {
     border: none; }
 
 .pixel {
-  background: url(../images/menu.png) no-repeat top center;
-  width: 390px;
+  background: url(../images/index.jpg) no-repeat top center;
+  width: 1440px;
   height: 12800px;
   position: absolute;
   z-index: 1000000;
   display: none;
   right: 0px;
-  top: 0px;
+  top: 75px;
+  left: 50%;
+  margin-left: -720px;
   opacity: 0.5;
   margin-top: 0px; }
 
@@ -113,16 +115,13 @@ h4 {
   .container__small h3 {
     margin-left: 15px; }
 
+.sect-pad-top {
+  padding-top: 120px; }
+
 /***************************************************Header************************************/
 .site-header {
   width: 100%;
   height: 75px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   -webkit-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
   position: relative;
@@ -130,7 +129,7 @@ h4 {
 
 .logo-image {
   width: 121px;
-  height: 63px; }
+  height: auto; }
 
 .main-drop {
   width: 5px;
@@ -230,6 +229,28 @@ h4 {
 
 .arrow-menu {
   margin-left: 20px; }
+
+.btn-burger {
+  width: 100%;
+  height: 100%;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.logo {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
 
 /***************************************************Main-block************************************/
 .main-block {
@@ -358,7 +379,6 @@ h4 {
 .benefits {
   width: 100%;
   height: auto;
-  padding-top: 122px;
   padding-bottom: 60px; }
 
 .hr-wrap {
@@ -457,7 +477,6 @@ h4 {
 
 /***************************************************Benefits-List********************************************/
 .benefits-list {
-  padding-top: 120px;
   padding-bottom: 74px; }
 
 .benefits-list_image {
@@ -488,7 +507,8 @@ h4 {
 
 .for-whom_list {
   margin-top: 28px;
-  padding-left: 20px; }
+  padding-left: 20px;
+  padding-right: 20px; }
   .for-whom_list li {
     position: relative;
     padding-left: 30px;
@@ -506,7 +526,6 @@ h4 {
 /***************************************************Teachers********************************************/
 .teachers {
   overflow: hidden;
-  padding-top: 120px;
   padding-bottom: 27px; }
 
 .teachers-block {
@@ -572,7 +591,6 @@ h4 {
 .discount {
   -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
-  padding-top: 120px;
   padding-bottom: 137px; }
 
 .discount-block-wrapper .col-12 {
@@ -592,8 +610,7 @@ h4 {
 
 /*****************************************************Responsive***************************************/
 .responsive {
-  padding-bottom: 110px;
-  padding-top: 120px; }
+  padding-bottom: 110px; }
 
 .responsive-slider {
   margin: 0 -10px;
@@ -682,7 +699,6 @@ h4 {
 .faq {
   -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
-  padding-top: 120px;
   padding-bottom: 48px; }
 
 .faq-wrapper {
@@ -733,7 +749,7 @@ h4 {
 
 .faq-list_drop {
   display: none;
-  padding: 10px 0px; }
+  padding: 20px 0px 0px 0px; }
   .faq-list_drop img {
     width: 400px;
     height: auto;
@@ -753,10 +769,11 @@ h4 {
 
 /*****************************************************Footer********************************************/
 .page-footer {
-  padding-top: 120px;
   padding-bottom: 40px; }
   .page-footer .main-menu_social {
     margin-top: 22px; }
+  .page-footer .container__small {
+    position: relative; }
 
 #footer-form {
   margin-top: 40px;
@@ -807,14 +824,13 @@ h4 {
   width: 121px;
   height: 63px;
   position: absolute;
-  top: 0px;
+  top: 15px;
   left: -150px; }
 
 /*****************************************************Burger*******************************************/
 .menu-toggle-button {
   width: 40px;
-  height: 40px;
-  float: right;
+  height: 30px;
   background-color: transparent;
   border-radius: 7px;
   padding-top: 5px;
@@ -825,10 +841,7 @@ h4 {
   appearance: none;
   position: relative;
   display: block;
-  overflow: hidden;
-  margin-top: 10px;
-  float: right;
-  margin-left: -17px; }
+  overflow: hidden; }
 
 .menu-toggle-button span {
   display: block;

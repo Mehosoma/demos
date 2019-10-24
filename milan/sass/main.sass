@@ -64,15 +64,16 @@ body
 		border: none	
 
 .pixel
-	background: url(../images/menu.png) no-repeat top center
-	width: 390px
+	background: url(../images/index.jpg) no-repeat top center
+	width: 1440px
 	height: 12800px
 	position: absolute
 	z-index: 1000000
 	display: none
 	right: 0px
-	top: 0px
-	
+	top: 75px
+	left: 50%
+	margin-left: -720px
 	opacity: 0.5
 	margin-top: 0px
 
@@ -119,20 +120,19 @@ h4
 	max-width: 1020px
 	h3
 		margin-left: 15px
-
+.sect-pad-top
+	padding-top: 120px
 
 /***************************************************Header************************************/
 .site-header
 	width: 100%
 	height: 75px
-	display: flex
-	align-items: center
 	box-shadow: 0 1px 5px 0 rgba(0,0,0,0.2)
 	position: relative
 	z-index: 100
 .logo-image
 	width: 121px
-	height: 63px
+	height: auto
 .main-drop
 	width: 5px
 	height: 900px
@@ -215,8 +215,16 @@ h4
 	margin-top: 190px
 .arrow-menu
 	margin-left: 20px
-
-
+.btn-burger
+	width: 100%
+	height: 100%
+	justify-content: flex-end
+	display: flex
+	align-items: center
+.logo
+	height: 100%
+	display: flex
+	align-items: center
 
 
 /***************************************************Main-block************************************/
@@ -322,7 +330,6 @@ h4
 .benefits
 	width: 100%
 	height: auto
-	padding-top: 122px
 	padding-bottom: 60px			
 .hr-wrap
 	width: 100%
@@ -402,8 +409,7 @@ h4
 		margin-top: 29px
 
 /***************************************************Benefits-List********************************************/
-.benefits-list
-	padding-top: 120px
+.benefits-list	
 	padding-bottom: 74px	
 .benefits-list_image
 	text-align: center
@@ -428,6 +434,7 @@ h4
 .for-whom_list
 	margin-top: 28px
 	padding-left: 20px
+	padding-right: 20px
 	li
 		position: relative
 		padding-left: 30px
@@ -444,8 +451,7 @@ h4
 
 /***************************************************Teachers********************************************/
 .teachers
-	overflow: hidden
-	padding-top: 120px
+	overflow: hidden	
 	padding-bottom: 27px
 .teachers-block
 	display: flex
@@ -503,7 +509,6 @@ h4
 /*****************************************************Discount*******************************************/
 .discount
 	box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25)
-	padding-top: 120px
 	padding-bottom: 137px
 .discount-block-wrapper
 	.col-12
@@ -520,8 +525,7 @@ h4
 
 /*****************************************************Responsive***************************************/
 .responsive
-	padding-bottom: 110px
-	padding-top: 120px
+	padding-bottom: 110px	
 .responsive-slider
 	margin: 0 -10px
 	margin-top: 31px
@@ -601,8 +605,7 @@ h4
 
 /*****************************************************Faq***************************************/
 .faq
-	box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25)
-	padding-top: 120px
+	box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25)	
 	padding-bottom: 48px
 .faq-wrapper
 	padding-top: 44px
@@ -647,7 +650,7 @@ h4
 		z-index: 10
 .faq-list_drop
 	display: none
-	padding: 10px 0px
+	padding: 20px 0px 0px 0px
 	img
 		width: 400px
 		height: auto
@@ -665,11 +668,12 @@ h4
 		display: none
 
 /*****************************************************Footer********************************************/
-.page-footer
-	padding-top: 120px
+.page-footer	
 	padding-bottom: 40px
 	.main-menu_social
 		margin-top: 22px
+	.container__small
+		position: relative
 #footer-form
 	margin-top: 40px
 	width: 97%
@@ -713,15 +717,14 @@ h4
 	width: 121px
 	height: 63px
 	position: absolute
-	top: 0px
+	top: 15px
 	left: -150px
 
 
 /*****************************************************Burger*******************************************/
 .menu-toggle-button
 	width: 40px
-	height: 40px
-	float: right
+	height: 30px	
 	background-color: transparent
 	border-radius: 7px
 	padding-top: 5px
@@ -732,11 +735,8 @@ h4
 	appearance: none
 	position: relative
 	display: block
-	overflow: hidden
-	margin-top: 10px
-	float: right
-	margin-left: -17px
-
+	overflow: hidden		
+	
 
 .menu-toggle-button span 
 	display: block
