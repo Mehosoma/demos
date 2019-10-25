@@ -4,8 +4,13 @@
 		width: 300px;
 	}
 
-	.main-block-image, .main-block__inverse .main-block-image{
-		max-height: 300px;
+	.main-block{
+		min-height: 500px;
+	}
+
+	.main-block-image, .main-block__inverse .main-block-image{	
+		
+		min-height: 400px;
 	}
 
 	.main-drop{
@@ -39,7 +44,8 @@
 
 	.main-block-text{
 		padding: 40px 0px;
-		background-image: none;
+		background-image: none;		
+		min-height: auto;
 	}
 
 	.main-menu_bottom{
@@ -114,27 +120,27 @@
 	}
 
 	.titles-block-wrapper{
-		position: relative;
+		position: relative;		
+	}
+
+	.titles .col-12{
 		margin-bottom: 40px;
 	}
 
 	.titles-block-image{
+		position: absolute;
+		top: 0px;
+		left: 0px;
 		width: 100%;
-		height: 100%
+		height: 100%;
 	}
 
 	.titles-block-text{
 		width: 100%;
-		height: 100%;
-		position: absolute;
-		top: 0px;
-		left: 0px;
+		height: 100%;		
 		background-color: rgba(220,42,42,0.8);
-		padding: 40px 34px;
-	}
-
-	.titles-btn{
-		bottom: 40px;
+		position: relative;
+		z-index: 100;
 	}
 
 	.benefits-list-wrapper .col-12{
@@ -210,14 +216,11 @@
 		padding: 0px 20px;
 	}
 
-	.main-teacher .main-teacher-image{
-		max-height: 300px;
-	}
-
 	.main-teacher-desc{
 		padding-top: 50px;
 		padding-left: 20px;
 		padding-bottom: 50px;
+		min-height: auto;
 	}
 
 	.teacher-public_list{
@@ -229,10 +232,6 @@
 	.teacher-public_list img{
 		margin-bottom: 10px;
 		margin-right: 20px;
-	}
-
-	.course-teachers-image img{
-		margin-top: -70%;
 	}
 
 	.course-teachers-wrapper .teachers-block_desc{
@@ -247,16 +246,20 @@
 		padding-left: 0px;
 	}
 
-	.main-teacher .main-teacher-image img{
-		margin-top: -10%;
-	}
-
-	.april-page .course-sec-block-image img {
-      margin-top: -150px;
-	}
-
 	.cost-course span{
 		margin-top: 30px;
+	}
+
+	.course-block-text{
+		min-height: auto;
+	}
+
+	.course-teachers-wrapper{
+		min-height: auto;
+	}
+
+	.april-page .course-teachers-image{
+		background-position: center center;
 	}
 
 
@@ -268,8 +271,12 @@
 		width: 300px;
 	}
 
+	.main-block{
+		min-height: auto;
+	}
+
 	.main-block-image, .main-block__inverse .main-block-image{
-		max-height: 400px;
+		min-height: 400px;
 	}
 
 	.main-drop{
@@ -303,7 +310,8 @@
 
 	.main-block-text{
 		padding: 40px 0px;
-		background-image: none;
+		background-image: none;		
+		min-height: auto;
 	}
 
 	.main-menu_bottom{
@@ -370,28 +378,27 @@
 	}
 
 	.titles-block-wrapper{
-		position: relative;
+		position: relative;		
+	}
+
+	.titles .col-12{
 		margin-bottom: 40px;
 	}
 
 	.titles-block-image{
+		position: absolute;
+		top: 0px;
+		left: 0px;
 		width: 100%;
 		height: 100%;
-		max-height: 300px;
 	}
 
 	.titles-block-text{
 		width: 100%;
-		height: 100%;
-		position: absolute;
-		top: 0px;
-		left: 0px;
+		height: 100%;		
 		background-color: rgba(220,42,42,0.8);
-		padding: 40px 34px;
-	}
-
-	.titles-btn{
-		bottom: 40px;
+		position: relative;
+		z-index: 100;
 	}
 
 	.benefits-list-wrapper .col-12{
@@ -400,6 +407,10 @@
 
 	.for-whom .main-block-image{
 		max-height: 400px;
+	}
+
+	.for-whom .main-block-text{
+		min-height: auto;
 	}
 
 	.teachers-block{
@@ -463,14 +474,11 @@
 		padding: 0px 20px;
 	}
 
-	.main-teacher .main-teacher-image{
-		max-height: 500px;
-	}
-
 	.main-teacher-desc{
 		padding-top: 50px;
 		padding-left: 20px;
 		padding-bottom: 50px;
+		min-height: auto;
 	}
 
 	.teacher-public_list{
@@ -484,12 +492,12 @@
 		margin-right: 20px;
 	}
 
-	.course-teachers-image img{
-		margin-top: -70%;
-	}
-
 	.course-teachers-wrapper .teachers-block_desc{
 		width: 100%;
+	}
+
+	.main-teacher-image{
+		height: 500px;
 	}
 
 	.cost-course span{
@@ -500,8 +508,16 @@
 		padding-left: 0px;
 	}
 
-	.main-teacher .main-teacher-image img{
-		margin-top: -10%;
+	.course-block-text{
+		min-height: auto;
+	}
+
+	.course-teachers-wrapper{
+		min-height: auto;
+	}
+
+	.course-teachers-image{
+		min-height: 600px;
 	}
 
 
@@ -510,12 +526,13 @@
 @media only screen and (min-width : 768px) and (max-width : 991px) {
 
 	.main-block-image, .main-block__inverse .main-block-image{
-		max-height: 500px;
+		height: 500px;
 	}
 
 	.main-block-text{
 		padding: 40px 0px;
 		background-image: none;
+		min-height: auto;
 	}
 
 	.main-block__inverse .main-block-text{
@@ -551,6 +568,11 @@
 		margin-bottom: 10px;
 	}
 
+	.for-whom .main-block-image{
+		height: 100%;
+		background-position: center center;
+	}
+
 	.responsive-slider{
 		width: 500px;
 		margin-left: auto;
@@ -582,12 +604,8 @@
 		padding-bottom: 100px;
 	}
 
-	.main-teacher .main-teacher-image{
-		max-height: 600px;
-	}
-
-	.main-teacher .main-teacher-image img{
-		margin-top: -10%;
+	.main-teacher .main-teacher-desc{
+		min-height: auto;
 	}
 
 	.main-teacher-desc{
@@ -595,12 +613,20 @@
 		padding-left: 20px;
 	}
 
-	.course-teachers-image{
-		max-height: 400px;
+	.titles-block-text, .titles-block-image{
+		width: 50%;
 	}
 
-	.course-teachers-image img{
-		margin-top: -70%;
+	.course-block-text{
+		min-height: auto;
+	}
+
+	.course-teachers-image{
+		min-height: 600px;
+	}
+
+	.course-teachers-wrapper{
+		min-height: auto;
 	}
 
 }
@@ -628,17 +654,19 @@
 	}
 
 	.titles-block-image{
+		position: absolute;
+		top: 0px;
+		left: 0px;
 		width: 100%;
-		height: 100%
+		height: 100%;
 	}
 
 	.titles-block-text{
 		width: 100%;
-		height: 100%;
-		position: absolute;
-		top: 0px;
-		left: 0px;
+		height: 100%;		
 		background-color: rgba(220,42,42,0.8);
+		position: relative;
+		z-index: 100;
 	}
 
 	h2{
@@ -664,6 +692,11 @@
 	.main-teacher-desc {
 	    padding-top: 30px;
 	    padding-left: 45px;
+	    min-height: auto;
+	}
+
+	.main-teacher{
+		min-height: auto;
 	}
 
 	.teacher-exp {
@@ -699,25 +732,14 @@
 
 @media only screen and (min-width : 1200px) and (max-width : 1399px) {
 
-	.titles-block-image img{
-		height: 100%;
+	.titles-block-text{
+		width: 45%;
 	}
 
 	.titles-block-image{
-		min-height: 380px;
+		width: 56%;
 	}
 
-	.titles-block-text {
-		width: 50%;
-	}
-
-	.titles-block-image{
-		width: 50%;
-	}
-
-	.titles-btn{
-		bottom: 40px;
-	}
 
 	.footer-logo{
 		left: -80px;
@@ -728,6 +750,10 @@
 
 	.course-teachers-wrapper .teachers-block_desc{
 		width: 100%;
+	}
+
+	.main-teacher-desc{
+		padding-left: 30px;
 	}
 }
 
@@ -740,11 +766,15 @@
 	#footer-form {
 		width: 100%;
 	}
+
+	.main-teacher hr{
+		width: 2000px;
+	}
 }
 
 @media only screen and (min-width : 3000px){
 
-	.main-block-image{
+	.main-block .main-block-text{
 		min-height: 1100px;
 	}
 
@@ -792,8 +822,12 @@
 		font-size: 20px;
 	}
 
-	.titles-block-image {
-		max-height: 600px;
+	.titles-block-wrapper {
+		min-height: 600px;
+	}
+
+	.titles-block-text i{
+		font-size: 50px;
 	}
 
 	.container__small{
@@ -816,6 +850,10 @@
 		font-size: 45px;
 	}
 
+	.for-whom .main-block-text{
+		min-height: 900px;
+	}
+
 	.responsive-slider .slick-slide, .responsive-slide{
 		height: auto;
 	}
@@ -824,5 +862,21 @@
 		top: 10px;
 	}
 
+	.course-block-text{
+		min-height: 1000px
+	}
+
+	.main-teacher-desc{
+		min-height: 1300px;
+	}
+
+	.course-teachers-wrapper{
+		min-height: 1300px;
+		padding-top: 120px;
+	}
+
+	.course-teachers-wrapper .teachers-block{
+		margin-bottom: 100px;
+	}
 
 }

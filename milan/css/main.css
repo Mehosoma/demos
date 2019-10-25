@@ -258,16 +258,16 @@ h4 {
 /***************************************************Main-block************************************/
 .main-block {
   width: 100%;
-  position: relative; }
+  position: relative;
+  min-height: 825px; }
 
 .main-block-image {
   width: 100%;
-  height: auto;
-  max-height: 825px;
-  overflow: hidden; }
-  .main-block-image img {
-    width: 100%;
-    height: auto; }
+  height: 100%;
+  overflow: hidden;
+  background-image: url("../images/first-block.jpg");
+  background-position: top center;
+  background-size: cover; }
 
 .main-header h1 {
   font-family: "TTNorms-Regular", sans-serif;
@@ -297,7 +297,8 @@ h4 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
+  min-height: 825px;
+  height: 100%;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -308,6 +309,8 @@ h4 {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   background-image: url("../images/arrow.png");
   background-repeat: no-repeat;
   background-position: center bottom 14px; }
@@ -319,16 +322,26 @@ h4 {
   align-items: flex-start;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
-  justify-content: start;
+  justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   padding-top: 119px;
-  padding-left: 88px; }
+  padding-left: 88px;
+  width: 100%; }
 
 .main-block__inverse .main-block-image {
-  max-height: 845px; }
+  background-image: url("../images/first-block-sec.jpg");
+  background-position: top center;
+  background-size: cover; }
+
+.main-block__inverse h2 {
+  padding-right: 30px;
+  width: 100%; }
 
 .main-block__inverse .gen-text {
   margin-top: 32px;
-  padding-right: 30px; }
+  padding-right: 30px;
+  width: 100%; }
   .main-block__inverse .gen-text p {
     margin-bottom: 19px; }
 
@@ -438,12 +451,15 @@ h4 {
 .titles-block-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  min-height: 400px;
+  height: 100%;
+  width: 100%; }
 
 .titles-block-text {
   width: 42%;
   background-color: #DC2A2A;
-  padding: 105px 33px 30px 33px;
+  padding: 105px 33px 125px 33px;
   position: relative; }
   .titles-block-text p {
     color: #ffffff;
@@ -459,12 +475,15 @@ h4 {
 
 .titles-block-image {
   width: 59%;
-  height: auto;
-  max-height: 400px;
-  overflow: hidden; }
-  .titles-block-image img {
-    width: 100%;
-    height: auto; }
+  background-image: url("../images/titles-1.jpg");
+  background-position: center center;
+  background-size: cover; }
+
+.titles-block-image__second {
+  background-image: url("../images/titles-2.jpg"); }
+
+.titles-block-image__third {
+  background-image: url("../images/titles-3.jpg"); }
 
 .titles-btn {
   position: absolute;
@@ -497,16 +516,22 @@ h4 {
 /***************************************************For-whom********************************************/
 .for-whom {
   -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
-  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25); }
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  min-height: 612px; }
   .for-whom .main-block-image {
-    max-height: 612px; }
+    background-image: url("../images/for-whom.jpg");
+    background-position: top -20px center;
+    background-size: cover;
+    background-repeat: no-repeat; }
   .for-whom .main-block-text {
     background-image: none;
     padding-left: 16px;
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
-    padding-top: 30px; }
+    padding-top: 30px;
+    min-height: 612px;
+    height: 100%; }
 
 .marker-list {
   margin-top: 28px;
@@ -831,6 +856,54 @@ h4 {
   left: -150px; }
 
 /*****************************************************Main-Block-Course********************************************/
+.september-page .main-block .main-block-image {
+  background-image: url("../images/september.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover; }
+
+.september-page .course-sec-block {
+  min-height: 540px; }
+
+.september-page .course-sec-block .main-block-image {
+  background-image: url("../images/first-block-sec-september.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover; }
+
+.main-teacher-image {
+  background-image: url("../images/main-teacher_milan.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover; }
+
+.course-teachers-image {
+  background-image: url("../images/course-teachers.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover; }
+
+.april-page .main-block .main-block-image {
+  background-image: url("../images/april-main.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover; }
+
+.april-page .course-sec-block .main-block-image {
+  background-image: url("../images/april-sec.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; }
+
+.april-page .course-teachers-image {
+  background-image: url("../images/april-image.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover; }
+
+.main-block__course .main-block-text {
+  width: 100%; }
+
 .main-block__course h1 {
   font-size: 60px;
   line-height: normal; }
@@ -845,33 +918,32 @@ h4 {
 .main-block__course hr {
   margin-top: 35px; }
 
-.course-sec-block-image {
-  max-height: 540px; }
-
 .course-block-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 50px 0px;
+  min-height: 540px;
+  height: 100%;
+  width: 100%;
+  padding: 40px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-  flex-direction: column;
-  padding: 50px 0px; }
+  flex-direction: column; }
   .course-block-text .gen-text {
-    padding: 0 40px 0px 100px; }
+    width: 100%; }
   .course-block-text .course-header {
-    -ms-flex-item-align: start;
-    align-self: flex-start;
-    padding: 0 40px 0px 100px;
-    margin-bottom: 40px; }
+    margin-bottom: 40px;
+    width: 100%; }
 
 .course-page .benefits-list {
   padding-bottom: 17px; }
@@ -879,18 +951,24 @@ h4 {
     padding-right: 20px; }
 
 /*****************************************************Main-Teacher********************************************/
-.main-teacher .main-teacher-image {
-  max-height: 910px; }
-
-.main-teacher hr {
-  width: 1200px;
-  height: 2px;
-  position: absolute;
-  right: 55px; }
+.main-teacher {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 910px;
+  width: 100%; }
+  .main-teacher hr {
+    width: 1200px;
+    height: 2px;
+    position: absolute;
+    right: 55px; }
 
 .main-teacher-desc {
   padding-top: 120px;
-  padding-left: 100px; }
+  padding-left: 100px;
+  min-height: 910px;
+  height: 100%;
+  padding-bottom: 40px; }
   .main-teacher-desc .teachers-block_desc {
     padding-left: 0px;
     padding-top: 30px; }
@@ -923,18 +1001,22 @@ h4 {
 
 /*****************************************************Course-Teachers********************************************/
 .course-teachers {
-  overflow: hidden; }
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 738px; }
 
 .section-shadow {
   -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25); }
 
-.course-teachers-image {
-  max-height: 738px; }
-
 .course-teachers-wrapper {
   padding-top: 60px;
-  padding-left: 19px; }
+  padding-left: 19px;
+  padding-bottom: 40px;
+  min-height: 738px;
+  height: 100%; }
   .course-teachers-wrapper h3 {
     margin-bottom: 30px; }
   .course-teachers-wrapper .teachers-block_desc {
@@ -946,7 +1028,7 @@ h4 {
     margin-bottom: 35px;
     background-position: top 10px right 30px; }
   .course-teachers-wrapper .teachers-block {
-    margin-bottom: 0px; }
+    margin-bottom: 20px; }
 
 /*****************************************************Course-Programm********************************************/
 .programm {
