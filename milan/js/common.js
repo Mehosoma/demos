@@ -60,7 +60,7 @@ $(document).ready(function() {
 $(document).ready(function(){
     $('.faq-list li').on('click',function(e){
       $(this).children('.faq-list_drop').slideToggle();   
-        $(this).toggleClass('faq-list_drop__active');                       
+      $(this).toggleClass('faq-list_drop__active');                       
     });
 });
 

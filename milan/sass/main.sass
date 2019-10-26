@@ -124,6 +124,13 @@ h4
 	padding-top: 120px
 .red-line
 	background-color: $red!important
+.section-shadow
+	box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25)
+.block-trans
+	-moz-transition: all 0.3s ease-out
+	-o-transition: all 0.3s ease-out
+	-webkit-transition: all 0.3s ease-out
+	transition: all 0.3s ease-out
 
 /***************************************************Header************************************/
 .site-header
@@ -145,10 +152,6 @@ h4
 	z-index: 1000
 	padding: 33px 0px 33px 0px
 	overflow: hidden	
-	-moz-transition: all 0.3s ease-out
-	-o-transition: all 0.3s ease-out
-	-webkit-transition: all 0.3s ease-out
-	transition: all 0.3s ease-out
 .main-drop.main-drop-active
 	width: 390px
 	.main-menu_list
@@ -171,11 +174,7 @@ h4
 	max-height: 1px
 	opacity: 0px
 	overflow: hidden
-	margin-top: 15px
-	-moz-transition: all 0.3s ease-out
-	-o-transition: all 0.3s ease-out
-	-webkit-transition: all 0.3s ease-out
-	transition: all 0.3s ease-out
+	margin-top: 15px	
 	a
 		font-size: 20px
 	li
@@ -246,7 +245,8 @@ h4
 		font-family: $tt
 		font-size: 96px
 		line-height: 113px
-		text-transform: uppercase		
+		text-transform: uppercase
+		text-align: center		
 	i
 		font-style: normal
 		color: $red
@@ -382,7 +382,7 @@ h4
 
 /*****************************************************Titles*******************************************/
 .titles
-	box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25)	
+
 .titles-block-wrapper
 	display: flex
 	min-height: 400px
@@ -438,9 +438,7 @@ h4
 	margin-bottom: 20px
 
 /***************************************************For-whom********************************************/
-.for-whom 
-	box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25)
-	min-height: 612px
+.for-whom 		
 	.main-block-image
 		background-image: url('../images/for-whom.jpg')
 		background-position: top -20px center
@@ -453,14 +451,16 @@ h4
 		padding-top: 30px
 		min-height: 612px
 		height: 100%
+		width: 100%
 .marker-list
 	margin-top: 28px
 	padding-left: 20px
-	padding-right: 20px
+	padding-right: 20px	
+	width: 100%
 	li
 		position: relative
 		padding-left: 30px
-		margin-bottom: 41px
+		margin-bottom: 41px	
 	li:after
 		position: absolute
 		content: ''
@@ -515,6 +515,7 @@ h4
 	padding-left: 55px
 	padding-top: 2px
 	position: relative	
+	width: 100%
 	a
 		color: $black
 		text-decoration: underline
@@ -529,8 +530,7 @@ h4
 	padding-top: 41px
 
 /*****************************************************Discount*******************************************/
-.discount
-	box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25)
+.discount	
 	padding-bottom: 137px
 .discount-block-wrapper
 	.col-12
@@ -627,7 +627,6 @@ h4
 
 /*****************************************************Faq***************************************/
 .faq
-	box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25)	
 	padding-bottom: 48px
 .faq-wrapper
 	padding-top: 44px
@@ -781,6 +780,36 @@ h4
 	background-repeat: no-repeat
 	background-position: bottom center
 	background-size: cover
+.february-page .main-block .main-block-image
+	background-image: url('../images/february-main.jpg') 
+	background-repeat: no-repeat
+	background-position: top center
+	background-size: cover
+.february-page .course-sec-block .main-block-image
+	background-image: url('../images/february-sec.jpg') 
+	background-repeat: no-repeat
+	background-position: center center
+	background-size: cover
+.february-page .course-teachers-image
+	background-image: url('../images/february-teachers.jpg') 
+	background-repeat: no-repeat
+	background-position: top center
+	background-size: cover
+.november-page .main-block .main-block-image
+	background-image: url('../images/november-main.jpg') 
+	background-repeat: no-repeat
+	background-position: top center
+	background-size: cover
+.november-page .course-sec-block .main-block-image
+	background-image: url('../images/november-sec.jpg') 
+	background-repeat: no-repeat
+	background-position: center center
+	background-size: cover
+.november-page .course-teachers-image
+	background-image: url('../images/november-teachers.jpg') 
+	background-repeat: no-repeat
+	background-position: top center
+	background-size: cover
 .main-block__course 
 	.main-block-text
 		width: 100%
@@ -799,12 +828,11 @@ h4
 	display: flex	
 	align-items: flex-start
 	justify-content: center
-	flex-wrap: wrap
-	padding: 50px 0px
+	flex-wrap: wrap	
 	min-height: 540px
 	height: 100%
 	width: 100%
-	padding: 40px
+	padding: 40px 40px 40px 60px
 	flex-direction: column
 	.gen-text
 		width: 100%			
@@ -852,16 +880,19 @@ h4
 	display: flex
 	justify-content: space-between
 	width: 88%
+	flex-wrap: wrap
 	li
 		display: inline-block
+		margin-bottom: 20px
+		margin-right: 20px
+	li:last-child
+		margin-right: 0px
 
 /*****************************************************Course-Teachers********************************************/
 .course-teachers
 	overflow: hidden
 	display: flex
 	min-height: 738px
-.section-shadow
-	box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25)	
 .course-teachers-wrapper
 	padding-top: 60px
 	padding-left: 19px
@@ -884,7 +915,7 @@ h4
 
 /*****************************************************Course-Programm********************************************/
 .programm
-	padding-bottom: 20px
+	padding-bottom: 40px
 .programm-block
 	margin-top: 33px	
 	a

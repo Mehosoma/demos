@@ -8,8 +8,7 @@
 		min-height: 500px;
 	}
 
-	.main-block-image, .main-block__inverse .main-block-image{	
-		
+	.main-block-image, .main-block__inverse .main-block-image{			
 		min-height: 400px;
 	}
 
@@ -212,10 +211,6 @@
 		font-size: 20px;
 	}
 
-	.course-block-text .gen-text, .course-block-text .course-header{
-		padding: 0px 20px;
-	}
-
 	.main-teacher-desc{
 		padding-top: 50px;
 		padding-left: 20px;
@@ -227,12 +222,7 @@
 		flex-wrap: wrap;
 		justify-content: flex-start;
 		width: 100%;
-	}
-
-	.teacher-public_list img{
-		margin-bottom: 10px;
-		margin-right: 20px;
-	}
+	}	
 
 	.course-teachers-wrapper .teachers-block_desc{
 		width: 100%;
@@ -252,6 +242,7 @@
 
 	.course-block-text{
 		min-height: auto;
+		padding: 40px 10px 40px 30px;
 	}
 
 	.course-teachers-wrapper{
@@ -260,6 +251,10 @@
 
 	.april-page .course-teachers-image{
 		background-position: center center;
+	}
+
+	.marker-list__teacher{
+		padding-left: 20px;
 	}
 
 
@@ -405,10 +400,6 @@
 		margin-bottom: 30px;
 	}
 
-	.for-whom .main-block-image{
-		max-height: 400px;
-	}
-
 	.for-whom .main-block-text{
 		min-height: auto;
 	}
@@ -520,6 +511,14 @@
 		min-height: 600px;
 	}
 
+	.february-page .main-block .main-block-image{
+		background-position: top -100px center;		
+	}
+
+	.november-page .course-sec-block .main-block-image{
+		background-position: top -100px center;	
+	}
+
 
 }
 
@@ -621,12 +620,20 @@
 		min-height: auto;
 	}
 
-	.course-teachers-image{
+	.course-teachers-image, .main-teacher-image{
 		min-height: 600px;
 	}
 
 	.course-teachers-wrapper{
 		min-height: auto;
+	}
+
+	.february-page .main-block .main-block-image{
+		background-position: top -100px center;		
+	}
+
+	.november-page .course-sec-block .main-block-image{
+		background-position: top -100px center;	
 	}
 
 }
@@ -705,10 +712,6 @@
 
 	.teacher-public {
     	margin-top: 20px;
-	}
-
-	.teacher-public_list img{
-		width: 80%;
 	}
 
 	.course-teachers-wrapper .teachers-block_desc{
@@ -877,6 +880,14 @@
 
 	.course-teachers-wrapper .teachers-block{
 		margin-bottom: 100px;
+	}
+
+	.course-teachers-wrapper h3{
+		margin-bottom: 60px;
+	}
+
+	.footer-logo{
+		top: 30px;
 	}
 
 }
