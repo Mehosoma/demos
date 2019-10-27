@@ -44,7 +44,7 @@
 	.main-block-text{
 		padding: 40px 0px;
 		background-image: none;		
-		min-height: auto;
+		min-height: 100px;
 	}
 
 	.main-menu_bottom{
@@ -108,6 +108,10 @@
 
 	.benefits-wrapper .col-12{
 		margin-bottom: 40px;
+	}
+
+	.benefits-wrapper .col-12:last-child{
+		margin-bottom: 0px;
 	}
 
 	.benefits-block span{
@@ -288,6 +292,10 @@
 
 	.report-wrapper h4 {
 		font-size: 14px;
+	}
+
+	.all-cources-block{
+		flex-basis: auto;
 	}
 
 
@@ -586,6 +594,10 @@
 		font-size: 14px;
 	}
 
+	.all-cources-block{
+		flex-basis: auto;
+	}
+
 
 
 }
@@ -727,6 +739,10 @@
 
 	.photo-block-content__all .all-cources-wrap:nth-child(2) {
     	margin-bottom: 60px;
+	}
+
+	.video-block_bg .main-block-text{
+		min-height: 700px;
 	}
 
 }

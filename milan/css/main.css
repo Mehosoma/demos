@@ -82,7 +82,8 @@ h2 {
 
 h3 {
   font-family: "TTNorms-Regular", sans-serif;
-  font-size: 30px; }
+  font-size: 30px;
+  width: 100%; }
 
 h4 {
   font-family: "TTNorms-Regular", sans-serif;
@@ -1118,7 +1119,8 @@ h4 {
 
 /*****************************************************Milan-Page********************************************/
 .video-block_bg .main-header {
-  color: #ffffff; }
+  color: #ffffff;
+  width: 100%; }
 
 .video-block_bg hr {
   background-color: #ffffff;
@@ -1206,7 +1208,11 @@ h4 {
   flex-basis: 41%;
   position: relative;
   padding-bottom: 68px;
-  padding-left: 10px; }
+  padding-left: 10px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
   .all-cources-block h4 {
     margin-top: 30px;
     margin-bottom: 13px; }
