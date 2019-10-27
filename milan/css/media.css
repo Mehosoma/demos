@@ -123,7 +123,8 @@
 	}
 
 	.titles-block-wrapper{
-		position: relative;		
+		position: relative;	
+		display: block;	
 	}
 
 	.titles .col-12{
@@ -219,7 +220,7 @@
 		padding-top: 50px;
 		padding-left: 20px;
 		padding-bottom: 50px;
-		min-height: auto;
+		min-height: 100px;
 	}
 
 	.teacher-public_list{
@@ -245,12 +246,12 @@
 	}
 
 	.course-block-text{
-		min-height: auto;
+		min-height: 100px;
 		padding: 40px 10px 40px 30px;
 	}
 
 	.course-teachers-wrapper{
-		min-height: auto;
+		min-height: 100px;
 	}
 
 	.april-page .course-teachers-image{
@@ -270,7 +271,7 @@
 	}
 
 	.video-block_bg, .milan-page .course-sec-block .course-block-text{
-		min-height: auto;
+		min-height: 100px;
 	}
 
 	.profit-block span {
@@ -282,7 +283,7 @@
 	}
 
 	.photo-block-content__all{
-		min-height: auto;
+		min-height: 100px;
 		padding: 40px;
 	}
 
@@ -309,7 +310,7 @@
 	}
 
 	.main-block{
-		min-height: auto;
+		min-height: 100px;
 	}
 
 	.main-block-image, .main-block__inverse .main-block-image{
@@ -348,7 +349,7 @@
 	.main-block-text{
 		padding: 40px 0px;
 		background-image: none;		
-		min-height: auto;
+		min-height: 100px;
 	}
 
 	.main-menu_bottom{
@@ -443,7 +444,7 @@
 	}
 
 	.for-whom .main-block-text{
-		min-height: auto;
+		min-height: 100px;
 	}
 
 	.teachers-block{
@@ -511,7 +512,7 @@
 		padding-top: 50px;
 		padding-left: 20px;
 		padding-bottom: 50px;
-		min-height: auto;
+		min-height: 100px;
 	}
 
 	.teacher-public_list{
@@ -542,11 +543,11 @@
 	}
 
 	.course-block-text{
-		min-height: auto;
+		min-height: 100px;
 	}
 
 	.course-teachers-wrapper{
-		min-height: auto;
+		min-height: 100px;
 	}
 
 	.course-teachers-image{
@@ -570,7 +571,7 @@
 	}
 
 	.video-block_bg, .milan-page .course-sec-block .course-block-text{
-		min-height: auto;
+		min-height: 100px;
 	}
 
 	.profit-block span {
@@ -582,7 +583,7 @@
 	}
 
 	.photo-block-content__all{
-		min-height: auto;
+		min-height: 100px;
 		padding: 40px;
 	}
 
@@ -611,7 +612,7 @@
 	.main-block-text{
 		padding: 40px 0px;
 		background-image: none;
-		min-height: auto;
+		min-height: 100px;
 	}
 
 	.main-block__inverse .main-block-text{
@@ -684,7 +685,7 @@
 	}
 
 	.main-teacher .main-teacher-desc{
-		min-height: auto;
+		min-height: 100px;
 	}
 
 	.main-teacher-desc{
@@ -697,7 +698,7 @@
 	}
 
 	.course-block-text{
-		min-height: auto;
+		min-height: 100px;
 	}
 
 	.course-teachers-image, .main-teacher-image{
@@ -705,7 +706,7 @@
 	}
 
 	.course-teachers-wrapper{
-		min-height: auto;
+		min-height: 100px;
 	}
 
 	.february-page .main-block .main-block-image{
@@ -717,7 +718,7 @@
 	}
 
 	.video-block_bg, .milan-page .course-sec-block .course-block-text{
-		min-height: auto;
+		min-height: 100px;
 	}
 
 	.profit-block span {
@@ -733,7 +734,7 @@
 	}
 
 	.photo-block-content__all{
-		min-height: auto;
+		min-height: 100px;
 		padding: 40px;
 	}
 
@@ -808,11 +809,11 @@
 	.main-teacher-desc {
 	    padding-top: 30px;
 	    padding-left: 45px;
-	    min-height: auto;
+	    min-height: 100px;
 	}
 
 	.main-teacher{
-		min-height: auto;
+		min-height: 100px;
 	}
 
 	.teacher-exp {
@@ -838,11 +839,7 @@
 	.course-page .main-header span {
 		font-size: 34px;
 	}
-
-	.report-video {
-		min-height: auto;
-	}
-
+	
 
 }
 
