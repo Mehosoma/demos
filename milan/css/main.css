@@ -539,6 +539,8 @@ h4 {
     top: 5px;
     left: -1px;
     background-color: #DC2A2A; }
+  .marker-list li:last-child {
+    margin-bottom: 0px; }
 
 /***************************************************Teachers********************************************/
 .teachers {
