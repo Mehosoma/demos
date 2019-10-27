@@ -73,7 +73,7 @@ $('document').ready(function() {
 
 
  window.onload = function () {
-    document.body.classList.add('loaded_hiding');
+    $('.video-block_bg').add('loaded_hiding');
     window.setTimeout(function () {
       document.body.classList.add('loaded');
       document.body.classList.remove('loaded_hiding');

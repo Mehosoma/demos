@@ -1124,25 +1124,24 @@ h4 {
   margin-bottom: 40px; }
 
 /*****************************************************Milan-Page********************************************/
-.video-block_bg .main-header {
-  color: #ffffff;
-  width: 100%; }
-
-.video-block_bg hr {
-  background-color: #ffffff;
-  margin-top: 21px; }
-
-.video-block_bg h1 {
-  font-family: "TTNorms-Medium", sans-serif;
-  font-size: 72px;
-  color: #ffffff;
-  text-transform: none;
-  line-height: 85px;
-  margin-bottom: 40px; }
-
-.video-block_bg .main-block-text {
-  background-image: url("../images/arrow-down-white.png");
-  background-position: center bottom 40px; }
+.video-block_bg {
+  position: relative; }
+  .video-block_bg .main-header {
+    color: #ffffff;
+    width: 100%; }
+  .video-block_bg hr {
+    background-color: #ffffff;
+    margin-top: 21px; }
+  .video-block_bg h1 {
+    font-family: "TTNorms-Medium", sans-serif;
+    font-size: 72px;
+    color: #ffffff;
+    text-transform: none;
+    line-height: 85px;
+    margin-bottom: 40px; }
+  .video-block_bg .main-block-text {
+    background-image: url("../images/arrow-down-white.png");
+    background-position: center bottom 40px; }
 
 .milan-page .course-sec-block .course-block-text {
   min-height: 666px; }
