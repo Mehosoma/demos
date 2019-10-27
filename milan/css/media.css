@@ -257,6 +257,40 @@
 		padding-left: 20px;
 	}
 
+	.video-block_bg .main-block-text{
+		min-height: 700px;
+	}
+
+	.all-cources-wrap{
+		flex-direction: column;
+	}
+
+	.video-block_bg, .milan-page .course-sec-block .course-block-text{
+		min-height: auto;
+	}
+
+	.profit-block span {
+		flex-basis: 60px;
+	}
+
+	.profit-block p{
+		width: 80%;
+	}
+
+	.photo-block-content__all{
+		min-height: auto;
+		padding: 40px;
+	}
+
+	.photo-block-content__all .all-cources-wrap:nth-child(2) {
+    	margin-bottom: 60px;
+	}
+
+	.report-wrapper h4 {
+		font-size: 14px;
+	}
+
+
 
 }
 
@@ -519,6 +553,40 @@
 		background-position: top -100px center;	
 	}
 
+	.video-block_bg .main-block-text{
+		min-height: 700px;
+	}
+
+	.all-cources-wrap{
+		flex-direction: column;
+	}
+
+	.video-block_bg, .milan-page .course-sec-block .course-block-text{
+		min-height: auto;
+	}
+
+	.profit-block span {
+		flex-basis: 60px;
+	}
+
+	.profit-block p{
+		width: 80%;
+	}
+
+	.photo-block-content__all{
+		min-height: auto;
+		padding: 40px;
+	}
+
+	.photo-block-content__all .all-cources-wrap:nth-child(2) {
+    	margin-bottom: 60px;
+	}
+
+	.report-wrapper h4 {
+		font-size: 14px;
+	}
+
+
 
 }
 
@@ -636,6 +704,31 @@
 		background-position: top -100px center;	
 	}
 
+	.video-block_bg, .milan-page .course-sec-block .course-block-text{
+		min-height: auto;
+	}
+
+	.profit-block span {
+		flex-basis: 20%;
+	}
+
+	.profit-block p{
+		width: 80%;
+	}
+
+	.profits-wrapper .fix-tab-pad{
+		margin-bottom: 0px;
+	}
+
+	.photo-block-content__all{
+		min-height: auto;
+		padding: 40px;
+	}
+
+	.photo-block-content__all .all-cources-wrap:nth-child(2) {
+    	margin-bottom: 60px;
+	}
+
 }
 
 @media only screen and (min-width : 992px) and (max-width : 1199px) {
@@ -730,6 +823,10 @@
 		font-size: 34px;
 	}
 
+	.report-video {
+		min-height: auto;
+	}
+
 
 }
 
@@ -772,6 +869,14 @@
 
 	.main-teacher hr{
 		width: 2000px;
+	}
+
+	.video-block_bg .main-block-text {
+    	min-height: 1200px;
+	}
+
+	.milan-page .course-sec-block .course-block-text{
+		min-height: 800px;
 	}
 }
 
@@ -888,6 +993,18 @@
 
 	.footer-logo{
 		top: 30px;
+	}
+
+	.video-block_bg .main-block-text {
+    	min-height: 1560px;
+	}
+
+	.milan-page .course-sec-block .course-block-text, .photo-block-content__all{
+		min-height: 1400px;
+	}
+
+	.report-wrapper .responsive-slide_desc {
+		height: 86px;
 	}
 
 }
