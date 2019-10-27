@@ -434,11 +434,13 @@ h4 {
     padding-left: 13px; }
 
 /*****************************************************Titles*******************************************/
+.titles {
+  min-height: 400px; }
+
 .titles-block-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-height: 400px;
   height: 100%;
   width: 100%; }
 
@@ -446,7 +448,9 @@ h4 {
   width: 42%;
   background-color: #DC2A2A;
   padding: 105px 33px 125px 33px;
-  position: relative; }
+  position: relative;
+  min-height: 400px;
+  height: 100%; }
   .titles-block-text p {
     color: #ffffff;
     margin-bottom: 10px; }
