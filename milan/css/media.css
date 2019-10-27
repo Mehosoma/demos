@@ -175,7 +175,7 @@
 	}
 
 	.responsive-slider .slick-slide, .responsive-slide{
-		height: auto;
+		height: 250px;		
 	}
 
 	.responsive-slide a{
@@ -475,7 +475,7 @@
 	}
 
 	.responsive-slider .slick-slide, .responsive-slide{
-		height: auto;
+		height: 400px;
 	}
 
 	.responsive-slide a{
