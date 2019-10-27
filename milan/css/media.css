@@ -298,6 +298,10 @@
 		flex-basis: auto;
 	}
 
+	.for-whom .main-block-text{
+		min-height: 100px;
+	}
+
 
 
 }
