@@ -302,6 +302,8 @@
 		min-height: 100px;
 	}
 
+	
+
 
 
 }
@@ -896,9 +898,6 @@
 		min-height: 800px;
 	}
 
-	.video-block_bg hr{
-		width: 800px;
-	}
 }
 
 @media only screen and (min-width : 3000px){

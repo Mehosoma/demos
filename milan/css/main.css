@@ -1114,7 +1114,7 @@ h4 {
   position: relative; }
   .video-block_bg .main-header {
     color: #ffffff;
-    width: 100%; }
+    max-width: 100%; }
   .video-block_bg hr {
     background-color: #ffffff;
     margin-top: 21px; }
