@@ -889,10 +889,15 @@
 
 	.video-block_bg .main-block-text {
     	min-height: 1200px;
+    	background-position: center bottom 60px;
 	}
 
 	.milan-page .course-sec-block .course-block-text{
 		min-height: 800px;
+	}
+
+	.video-block_bg hr{
+		width: 800px;
 	}
 }
 
