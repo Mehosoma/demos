@@ -1129,24 +1129,6 @@ h4 {
     top: 0px;
     left: 0px;
     background-color: rgba(0, 0, 0, 0.7); }
-  .video-block_bg .btn-play {
-    width: 94px;
-    height: 94px;
-    background-color: #ffffff;
-    border-radius: 50%;
-    margin: 30px 0px; }
-  .video-block_bg .btn-play:hover {
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -o-transform: scale(1.1); }
-  .video-block_bg .tr-right {
-    width: 0;
-    height: 0;
-    border-top: 14px solid transparent;
-    border-left: 20px solid black;
-    border-bottom: 14px solid transparent;
-    margin-left: 42px;
-    margin-top: 33px; }
   .video-block_bg .gen-text p {
     color: #ffffff; }
   .video-block_bg .main-block-text {
@@ -1188,6 +1170,28 @@ h4 {
 
 .milan-page .benefits-list {
   padding-bottom: 26px; }
+
+.btn-play {
+  width: 94px;
+  height: 94px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  margin: 30px 0px; }
+
+.btn-play:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  cursor: pointer; }
+
+.tr-right {
+  width: 0;
+  height: 0;
+  border-top: 14px solid transparent;
+  border-left: 20px solid black;
+  border-bottom: 14px solid transparent;
+  margin-left: 42px;
+  margin-top: 33px; }
 
 /*****************************************************All-Cources********************************************/
 .photo-block__all {
@@ -1338,6 +1342,20 @@ h4 {
   padding-left: 50px; }
   .report-desc p {
     font-size: 22px; }
+
+.video-link-wrapper {
+  position: relative;
+  text-align: center; }
+  .video-link-wrapper .btn-play {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin: auto; }
+  .video-link-wrapper img {
+    width: 100%;
+    height: auto; }
 
 /*****************************************************Burger*************************************************/
 .menu-toggle-button {

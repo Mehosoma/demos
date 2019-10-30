@@ -325,13 +325,7 @@
 	.report-desc{
 		padding-left: 0px;
 	}
-
-	.video-link-mob{
-		display: block!important;
-	}
-
-
-
+	
 }
 
 @media only screen and (min-width : 576px) and (max-width : 767px) {
