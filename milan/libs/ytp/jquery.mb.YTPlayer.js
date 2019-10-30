@@ -79,6 +79,8 @@ function iOSversion()
 			 */
 			videoURL: null,
 
+			mobileFallbackImage: null,
+
 			/**
 			 containment (string)
 			 default containment for the player
@@ -603,6 +605,22 @@ function iOSversion()
 					}
 					return $YTPlayer
 				}
+
+				if (jQuery.mbBrowser.mobile && !YTPlayer.opt.useOnMobile) {
+		          if (YTPlayer.opt.mobileFallbackImage) {
+		            YTPlayer.wrapper.css({		              
+		              backgroundImage: 'url(' + YTPlayer.opt.mobileFallbackImage + ')',
+		              backgroundPosition: "center center",
+		              backgroundSize: "cover",
+		              backgroundRepeat: "no-repeat",
+		              opacity: 1
+		            });
+		            YTPlayer.wrapper.css({opacity: 1})
+		          }
+		          return $YTPlayer;
+        		}
+
+
 
 				/**
 				 If is on device start playing on first touch
