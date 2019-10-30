@@ -1159,6 +1159,8 @@ h4 {
     background-image: none;
     padding-top: 75px;
     text-align: center; }
+  .video-block_bg .gen-text {
+    max-width: 100%; }
   .video-block_bg .main-header {
     color: #ffffff;
     max-width: 100%;
@@ -1294,7 +1296,7 @@ h4 {
 
 .report-video {
   width: 100%;
-  height: auto;
+  height: 300px;
   max-height: 645px;
   position: relative;
   overflow: hidden;
@@ -1327,17 +1329,6 @@ h4 {
 
 .responsive-slide:hover {
   opacity: 0.9; }
-
-.report-wrapper {
-  padding-top: 30px;
-  width: 97%;
-  margin: 0 auto; }
-  .report-wrapper h4 {
-    color: #ffffff; }
-  .report-wrapper .responsive-slide_desc {
-    padding-top: 19px;
-    padding-left: 22px;
-    height: 63px; }
 
 /*****************************************************Burger*************************************************/
 .menu-toggle-button {
