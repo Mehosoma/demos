@@ -124,8 +124,9 @@ h4 {
   height: 75px;
   -webkit-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
-  position: relative;
-  z-index: 100; }
+  position: fixed;
+  z-index: 100;
+  background-color: #ffffff; }
 
 .logo-image {
   width: 121px;
@@ -133,26 +134,17 @@ h4 {
 
 .main-drop {
   width: 5px;
-  height: 900px;
+  height: 100vh;
   position: absolute;
   top: 0px;
   right: 0px;
   background-color: #DC2A2A;
   z-index: 1000;
-  padding: 33px 0px 33px 0px;
-  overflow: hidden; }
-
-.main-drop.main-drop-active {
-  width: 390px; }
-  .main-drop.main-drop-active .main-menu_list {
-    width: 100%; }
+  padding: 33px 0px 33px 0px; }
 
 .main-menu_list {
-  width: 50%;
-  text-align: center;
-  width: 0px;
-  overflow: hidden;
-  display: inline-block; }
+  display: none;
+  text-align: center; }
   .main-menu_list a {
     font-size: 30px;
     color: #fff; }
@@ -164,15 +156,17 @@ h4 {
 .main-menu_drop {
   max-height: 1px;
   opacity: 0px;
-  overflow: hidden;
-  margin-top: 15px; }
+  overflow: hidden; }
   .main-menu_drop a {
     font-size: 20px; }
   .main-menu_drop li {
     margin-bottom: 15px; }
+  .main-menu_drop li:last-child {
+    margin-bottom: 0px; }
 
 .main-menu_list li:hover .main-menu_drop {
-  max-height: 300px; }
+  max-height: 300px;
+  padding-top: 15px; }
 
 .main-menu_phone {
   font-size: 16px;
@@ -208,7 +202,8 @@ h4 {
   align-items: center;
   position: absolute;
   bottom: 20px;
-  width: 100%; }
+  width: 100%;
+  display: none; }
   .main-menu_bottom .main-menu_phone {
     margin-left: 20px; }
   .main-menu_bottom .main-menu_social {
@@ -217,7 +212,8 @@ h4 {
     display: inline-block; }
 
 .main-menu {
-  margin-top: 190px; }
+  margin-top: 0px;
+  padding-top: 40%; }
 
 .arrow-menu {
   margin-left: 20px; }
@@ -228,6 +224,16 @@ h4 {
 
 .logo {
   margin-top: 9px; }
+
+.main-drop.main-drop-active {
+  width: 390px; }
+  .main-drop.main-drop-active .main-menu_list {
+    display: inline-block;
+    width: 100%; }
+  .main-drop.main-drop-active .main-menu_bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
 
 /***************************************************Main-block************************************/
 .main-block {
@@ -1111,10 +1117,51 @@ h4 {
 
 /*****************************************************Milan-Page********************************************/
 .video-block_bg {
-  position: relative; }
+  position: relative;
+  height: 100vh; }
+  .video-block_bg #ytp-video {
+    height: 100vh !important;
+    padding-bottom: 0px !important; }
+  .video-block_bg .video-block-over {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.7); }
+  .video-block_bg .btn-play {
+    width: 94px;
+    height: 94px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    margin: 30px 0px; }
+  .video-block_bg .btn-play:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1); }
+  .video-block_bg .tr-right {
+    width: 0;
+    height: 0;
+    border-top: 14px solid transparent;
+    border-left: 20px solid black;
+    border-bottom: 14px solid transparent;
+    margin-left: 42px;
+    margin-top: 33px; }
+  .video-block_bg .gen-text p {
+    color: #ffffff; }
+  .video-block_bg .main-block-text {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 0;
+    right: 0;
+    background-image: none;
+    padding-top: 75px; }
   .video-block_bg .main-header {
     color: #ffffff;
-    max-width: 100%; }
+    max-width: 100%;
+    position: relative; }
   .video-block_bg hr {
     background-color: #ffffff;
     margin-top: 21px; }
@@ -1125,9 +1172,6 @@ h4 {
     text-transform: none;
     line-height: 85px;
     margin-bottom: 40px; }
-  .video-block_bg .main-block-text {
-    background-image: url("../images/arrow-down-white.png");
-    background-position: center bottom 40px; }
 
 .milan-page .course-sec-block .course-block-text {
   min-height: 666px; }

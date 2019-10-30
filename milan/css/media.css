@@ -302,7 +302,9 @@
 		min-height: 100px;
 	}
 
-	
+	.feedback{
+		padding-left: 0px;
+	}
 
 
 
@@ -872,6 +874,14 @@
 
 	.main-teacher-desc{
 		padding-left: 30px;
+	}
+
+	.main-menu{
+		padding-top: 20%;
+	}
+
+	.main-menu_list li{
+		margin-bottom: 20px;
 	}
 }
 

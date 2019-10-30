@@ -72,4 +72,6 @@ $('document').ready(function() {
 });
 
 
- 
+ jQuery(function(){
+    jQuery("#ytp-video").YTPlayer();
+});
