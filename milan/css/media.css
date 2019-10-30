@@ -4,10 +4,6 @@
 		width: 300px;
 	}
 
-	.main-block{
-		min-height: 500px;
-	}
-
 	.main-block-image, .main-block__inverse .main-block-image{			
 		min-height: 400px;
 	}
@@ -41,12 +37,6 @@
 		margin-right: 0px;
 	}
 
-	.main-block-text{
-		padding: 40px 0px;
-		background-image: none;		
-		min-height: 100px;
-	}
-
 	.main-menu_bottom{
 		width: 0px;
 		overflow: hidden;
@@ -56,6 +46,14 @@
 	.main-drop.main-drop-active .main-menu_bottom{
 		width: 100%;
 	}
+
+	.main-block-text{
+		padding: 40px 0px;
+		background-image: none;		
+		min-height: 100px;
+		height: auto;
+	}
+	
 
 	.main-header h1 {
 		font-size: 50px;
@@ -77,6 +75,8 @@
 
 	.main-block__inverse .main-block-text{
 		padding: 40px 20px;
+		min-height: 100px;
+		height: auto;
 	}
 
 	h2{
@@ -325,17 +325,13 @@
 	.report-desc{
 		padding-left: 0px;
 	}
-	
+
 }
 
 @media only screen and (min-width : 576px) and (max-width : 767px) {
 
 	.main-drop.main-drop-active{
 		width: 300px;
-	}
-
-	.main-block{
-		min-height: 100px;
 	}
 
 	.main-block-image, .main-block__inverse .main-block-image{
@@ -371,12 +367,6 @@
 		margin-right: 0px;
 	}
 
-	.main-block-text{
-		padding: 40px 0px;
-		background-image: none;		
-		min-height: 100px;
-	}
-
 	.main-menu_bottom{
 		width: 0px;
 		overflow: hidden;
@@ -386,6 +376,13 @@
 	.main-drop.main-drop-active .main-menu_bottom{
 		width: 100%;
 	}
+
+	.main-block-text{
+		padding: 40px 0px;
+		background-image: none;		
+		min-height: 100px;
+		height: auto;
+	}	
 
 	.main-header h1 {
 		font-size: 50px;
@@ -407,10 +404,16 @@
 
 	.main-block__inverse .main-block-text{
 		padding: 40px 20px;
+		height: auto;
+		min-height: 100px;
 	}
 
 	h2{
 		font-size: 24px;
+	}
+
+	.feedback{
+		padding-left: 0px;
 	}
 
 	.main-form{
@@ -658,10 +661,13 @@
 		padding: 40px 0px;
 		background-image: none;
 		min-height: 100px;
+		height: auto;
 	}
 
 	.main-block__inverse .main-block-text{
 		padding: 50px;
+		height: auto;
+		min-height: 100px;
 	}
 
 	h2{
@@ -906,6 +912,14 @@
 	.course-page .main-header span {
 		font-size: 34px;
 	}
+
+	.main-menu{
+		padding-top: 20%;
+	}
+
+	.main-menu_list li{
+		margin-bottom: 20px;
+	}
 	
 
 }
@@ -943,6 +957,8 @@
 	.main-menu_list li{
 		margin-bottom: 20px;
 	}
+
+	
 }
 
 @media only screen and (min-width : 1920px){
@@ -963,17 +979,9 @@
 		min-height: 800px;
 	}
 
-	.report-video{
-		max-width: 100%!important;
-	}
-
 }
 
 @media only screen and (min-width : 3000px){
-
-	.main-block .main-block-text{
-		min-height: 1100px;
-	}
 
 	.main-header h1 {
 		font-size: 150px;
@@ -1016,6 +1024,18 @@
 	}
 
 	.main-form ::-webkit-input-placeholder{
+		font-size: 20px;
+	}
+
+	.main-form ::-moz-placeholder{
+		font-size: 20px;
+	}
+
+	.main-form :-moz-placeholder{
+		font-size: 20px;
+	}
+
+	.main-form :-ms-input-placeholder{
 		font-size: 20px;
 	}
 
@@ -1085,11 +1105,8 @@
 	}
 
 	.milan-page .course-sec-block .course-block-text, .photo-block-content__all{
-		min-height: 1400px;
+		min-height: 1200px;
 	}
 
-	.report-wrapper .responsive-slide_desc {
-		height: 86px;
-	}
 
 }
