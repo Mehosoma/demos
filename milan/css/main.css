@@ -1157,7 +1157,8 @@ h4 {
     left: 0;
     right: 0;
     background-image: none;
-    padding-top: 75px; }
+    padding-top: 75px;
+    text-align: center; }
   .video-block_bg .main-header {
     color: #ffffff;
     max-width: 100%;
