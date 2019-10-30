@@ -326,6 +326,10 @@
 		padding-left: 0px;
 	}
 
+	.video-link-mob{
+		display: block!important;
+	}
+
 
 
 }
