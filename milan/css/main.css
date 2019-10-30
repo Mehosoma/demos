@@ -1330,6 +1330,15 @@ h4 {
 .responsive-slide:hover {
   opacity: 0.9; }
 
+.report-video {
+  max-width: 550px !important; }
+
+.report-desc {
+  padding-top: 60px;
+  padding-left: 50px; }
+  .report-desc p {
+    font-size: 22px; }
+
 /*****************************************************Burger*************************************************/
 .menu-toggle-button {
   width: 40px;

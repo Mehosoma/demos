@@ -322,6 +322,10 @@
 		background-size: cover;
 	}
 
+	.report-desc{
+		padding-left: 0px;
+	}
+
 
 
 }
@@ -638,6 +642,10 @@
 		background-size: cover;
 	}
 
+	.report-desc{
+		padding-left: 0px;
+	}
+
 
 
 }
@@ -801,6 +809,10 @@
 		background-size: cover;
 	}
 
+	.report-desc{
+		padding-left: 0px;
+	}
+
 
 
 }
@@ -951,6 +963,10 @@
 
 	.milan-page .course-sec-block .course-block-text{
 		min-height: 800px;
+	}
+
+	.report-video{
+		max-width: 100%!important;
 	}
 
 }
