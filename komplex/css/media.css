@@ -309,10 +309,6 @@
 		font-size: 24px;
 	}
 
-	.product-block__first{
-		height: 100%;	
-	}
-
 	.fix-col-mt{
 		margin-top: 20px;
 	}
@@ -320,6 +316,8 @@
 	.product .col-md-4{
 		padding-right: 0px;
 		padding-left: 10px;
+		align-items: stretch;
+		display: flex;
 	}
 
 	.product .col-md-8{
@@ -527,8 +525,9 @@
 		margin-left: -36px;
 	}
 
-	.product-block__first{
-		height: 100%;	
+	.product .col-md-4{		
+		align-items: stretch;
+		display: flex;
 	}
 
 	.fix-col-mt{
