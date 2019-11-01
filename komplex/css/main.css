@@ -525,7 +525,8 @@ h2 {
   color: #333; }
 
 .modal_header {
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 40px; }
   .modal_header span {
     display: block;
     font-family: "Montserrat-Medium", sans-serif;
@@ -549,7 +550,7 @@ h2 {
     width: 100%;
     height: 40px;
     padding: 0px 15px;
-    border: 1px solid gray;
+    border: 1px solid #999;
     -moz-transition: all 0.3s ease-out;
     -o-transition: all 0.3s ease-out;
     -webkit-transition: all 0.3s ease-out;
@@ -565,16 +566,17 @@ h2 {
   #modal-form textarea {
     width: 100%;
     height: 100px;
-    resize: none; }
+    resize: none;
+    border: 1px solid #999; }
 
 .btn__form {
   text-align: center;
-  margin-bottom: 20px; }
+  margin: 40px 0px 10px 0px; }
   .btn__form button {
     width: 250px; }
 
 .modal-form_field {
-  margin-bottom: 20px; }
+  margin-bottom: 10px; }
 
 .disclaim {
   text-align: center; }
