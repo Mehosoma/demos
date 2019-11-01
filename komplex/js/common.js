@@ -72,7 +72,7 @@ $(document).ready(function(){
     });
 });
 
-//Show-hide Drop-Down Menu
+//Show-hide Drop-Down Menu on Mobile
 $(document).ready(function(){
     $('.click-mobile').on('click',function(e){
       $('.main-menu-list').slideToggle();                              
@@ -117,4 +117,12 @@ $('.disclaim').on('click',function(e){
   } else {
      $('.btn__modal').attr('disabled','disabled');
   }
+});
+
+//ScrollToSection
+$('.menu-scroll').click(function(){
+  //Сохраняем значение атрибута href в переменной:
+  var target = $(this).attr('href');
+  $('html, body').animate({scrollTop: $(target).offset().top-100}, 1000);
+return false;
 });
