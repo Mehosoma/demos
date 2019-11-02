@@ -1,5 +1,18 @@
 @media only screen and (min-width : 0px) and (max-width : 575px) {
 
+	.header-wrap{
+	overflow-y: auto;
+
+	}
+
+	.main-menu_list a{
+		font-size: 24px;
+	}
+
+	.main-menu_drop a{
+		font-size: 16px;
+	}
+
 	.main-drop.main-drop-active{
 		width: 300px;
 	}
@@ -9,11 +22,13 @@
 	}
 
 	.main-drop{
-		height: 720px;
+		height: auto;
+		overflow: hidden;	
+		padding-bottom: 160px;
 	}
 
 	.main-menu{
-		margin-top: 80px;
+		padding-top: 50px;
 	}
 
 	.main-menu_bottom{
@@ -316,9 +331,9 @@
 	}
 
 	.video-block_bg{
-		background-image: url('../images/april-main.jpg');
+		background-image: url('../images/first-block.jpg');
 		background-repeat: no-repeat;
-		background-position: top center;
+		background-position: top 50px center;
 		background-size: cover;
 	}
 
@@ -330,6 +345,19 @@
 
 @media only screen and (min-width : 576px) and (max-width : 767px) {
 
+	.header-wrap{
+	overflow-y: auto;
+	
+	}
+
+	.main-menu_list a{
+		font-size: 24px;
+	}
+
+	.main-menu_drop a{
+		font-size: 16px;
+	}
+
 	.main-drop.main-drop-active{
 		width: 300px;
 	}
@@ -339,11 +367,13 @@
 	}
 
 	.main-drop{
-		height: 720px;
+		height: auto;
+		overflow: hidden;	
+		padding-bottom: 160px;
 	}
 
 	.main-menu{
-		margin-top: 80px;
+		padding-top: 50px;
 	}
 
 	.main-menu_bottom{
@@ -637,9 +667,9 @@
 	}
 
 	.video-block_bg{
-		background-image: url('../images/april-main.jpg');
+		background-image: url('../images/first-block.jpg');
 		background-repeat: no-repeat;
-		background-position: top center;
+		background-position: top 50px center;
 		background-size: cover;
 	}
 
@@ -652,6 +682,22 @@
 }
 
 @media only screen and (min-width : 768px) and (max-width : 991px) {
+
+	.header-wrap{
+	overflow-y: auto;
+	
+	}
+
+	.main-drop{
+		height: auto;
+		overflow: hidden;	
+		padding-bottom: 160px;
+		width: 0px;
+	}
+
+	.main-menu{
+		padding-top: 50px;
+	}
 
 	.main-block-image, .main-block__inverse .main-block-image{
 		height: 500px;
@@ -807,9 +853,9 @@
 	}
 
 	.video-block_bg{
-		background-image: url('../images/april-main.jpg');
+		background-image: url('../images/first-block.jpg');
 		background-repeat: no-repeat;
-		background-position: top center;
+		background-position: top 50px center;
 		background-size: cover;
 	}
 
@@ -956,6 +1002,14 @@
 
 	.main-menu_list li{
 		margin-bottom: 20px;
+	}
+
+	.main-menu_list a{
+		font-size: 24px;
+	}
+
+	.main-menu_drop a{
+		font-size: 16px;
 	}
 
 	

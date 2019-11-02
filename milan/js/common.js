@@ -5,6 +5,12 @@ $(document).ready(function(){
     });
 });
 
+//Main-menu drop submenu
+$(document).ready(function(){
+    $('.link-drop').on('click',function(e){
+        $(this).next('.main-menu_drop').slideToggle('');                       
+    });
+});
 
 //Slider-Response
 $(document).ready(function(){
@@ -72,10 +78,8 @@ $('document').ready(function() {
 });
 
 
+//YTP Player
 jQuery(function(){
   jQuery("#ytp-video").YTPlayer();
 });
 
-jQuery(function(){
-  jQuery("#small-video").YTPlayer();
-});
