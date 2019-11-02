@@ -1,7 +1,8 @@
 //Show-hide menu
 $(document).ready(function(){
     $('.click-mobile, .arrow-menu').on('click',function(e){
-        $(".main-drop").toggleClass('main-drop-active');                       
+        $(".main-drop").toggleClass('main-drop-active'); 
+        $(".header-wrap").toggleClass('header-site-height');                      
     });
 });
 
