@@ -68,14 +68,15 @@ $(function () {
 //Show-hide Drop-Down Menu
 $(document).ready(function(){
     $('.menu-dropdown').on('click',function(e){
-      $(this).parent().children('.main-menu_drop').slideToggle();                              
+      $(this).parent().children('.main-menu_drop').slideToggle();                                    
     });
 });
 
 //Show-hide Drop-Down Menu on Mobile
 $(document).ready(function(){
     $('.click-mobile').on('click',function(e){
-      $('.main-menu-list').slideToggle();                              
+      $('.main-menu-list').slideToggle(); 
+      $(this).parent().find('.main-menu_drop').toggleClass('menu-open');                              
     });
 });
 

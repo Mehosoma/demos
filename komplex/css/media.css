@@ -20,6 +20,7 @@
 
 	.main-menu-list li{
 		padding: 10px 0px;
+		height: auto;
 	}
 
 	.main-menu-list li:first-child{
@@ -238,7 +239,7 @@
 }
 
 @media only screen and (min-width : 576px) and (max-width : 767px) {
-		.main-menu .col-12{
+	.main-menu .col-12{
 		height: 70px;
 		display: flex;
 		align-items: center;
@@ -258,6 +259,7 @@
 
 	.main-menu-list li{
 		padding: 10px 0px;
+		height: auto;
 	}
 
 	.main-menu-list li:first-child{
@@ -480,6 +482,7 @@
 
 	.main-menu-list li{
 		padding: 10px 0px;
+		height: auto;
 	}
 
 	.main-menu-list li:first-child{
@@ -549,4 +552,13 @@
 	.site-footer .contacts {
 		margin-left: -75px;
 	}
+}
+
+@media only screen and (min-width : 992px) {
+
+	.main-menu-list{
+		display: flex!important;
+	}
+
+	
 }

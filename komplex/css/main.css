@@ -225,7 +225,8 @@ h2 {
     font-family: "Montserrat-Regular", sans-serif;
     font-size: 12px; }
   .main-menu_drop li {
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    height: auto; }
   .main-menu_drop li:hover {
     background-color: #ffffff; }
     .main-menu_drop li:hover a {
@@ -234,6 +235,9 @@ h2 {
 .btn-gen__header {
   margin-top: 29px;
   margin-left: -25px; }
+
+.main-menu_drop.menu-open {
+  display: block !important; }
 
 /***************************************************Main-banner******************************************/
 .main-banner {
