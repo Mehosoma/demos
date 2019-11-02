@@ -9,6 +9,10 @@
 		height: 100vh;
 	}
 
+	.video-block_bg .main-header span{
+		padding: 0 10px;
+	}
+
 	.main-menu_list a{
 		font-size: 24px;
 	}
@@ -193,10 +197,6 @@
 		padding-left: 0px;
 	}
 
-	.responsive-slider .slick-slide, .responsive-slide{
-		height: 250px;		
-	}
-
 	.responsive-slide a{
 		background-position: center bottom 65%;
 	}
@@ -338,6 +338,34 @@
 		background-image: url('../images/first-block.jpg');
 		background-repeat: no-repeat;
 		background-position: top 50px center;
+		background-size: cover;
+	}
+
+	.september-page .video-block_bg{
+		background-image: url('../images/september.jpg');
+		background-repeat: no-repeat;
+		background-position: top 50px center;
+		background-size: cover;
+	}
+
+	.november-page .video-block_bg{
+		background-image: url('../images/november-main.jpg');
+		background-repeat: no-repeat;
+		background-position: top 50px center;
+		background-size: cover;
+	}
+
+	.february-page .video-block_bg{
+		background-image: url('../images/february-main.jpg');
+		background-repeat: no-repeat;
+		background-position: top center;
+		background-size: cover;
+	}
+
+	.april-page .video-block_bg{
+		background-image: url('../images/april-main.jpg');
+		background-repeat: no-repeat;
+		background-position: top 70px right;
 		background-size: cover;
 	}
 
@@ -537,10 +565,6 @@
 		padding-left: 0px;
 	}
 
-	.responsive-slider .slick-slide, .responsive-slide{
-		height: 400px;
-	}
-
 	.responsive-slide a{
 		background-position: center bottom 60%;
 	}
@@ -678,6 +702,34 @@
 		background-image: url('../images/first-block.jpg');
 		background-repeat: no-repeat;
 		background-position: top 50px center;
+		background-size: cover;
+	}
+
+	.september-page .video-block_bg{
+		background-image: url('../images/september.jpg');
+		background-repeat: no-repeat;
+		background-position: top 50px center;
+		background-size: cover;
+	}
+
+	.november-page .video-block_bg{
+		background-image: url('../images/november-main.jpg');
+		background-repeat: no-repeat;
+		background-position: top 50px center;
+		background-size: cover;
+	}
+
+	.february-page .video-block_bg{
+		background-image: url('../images/february-main.jpg');
+		background-repeat: no-repeat;
+		background-position: top center;
+		background-size: cover;
+	}
+
+	.april-page .video-block_bg{
+		background-image: url('../images/april-main.jpg');
+		background-repeat: no-repeat;
+		background-position: top 70px right;
 		background-size: cover;
 	}
 
@@ -868,6 +920,34 @@
 		background-image: url('../images/first-block.jpg');
 		background-repeat: no-repeat;
 		background-position: top 50px center;
+		background-size: cover;
+	}
+
+	.september-page .video-block_bg{
+		background-image: url('../images/september.jpg');
+		background-repeat: no-repeat;
+		background-position: top 50px center;
+		background-size: cover;
+	}
+
+	.november-page .video-block_bg{
+		background-image: url('../images/november-main.jpg');
+		background-repeat: no-repeat;
+		background-position: top 50px center;
+		background-size: cover;
+	}
+
+	.february-page .video-block_bg{
+		background-image: url('../images/february-main.jpg');
+		background-repeat: no-repeat;
+		background-position: top center;
+		background-size: cover;
+	}
+
+	.april-page .video-block_bg{
+		background-image: url('../images/april-main.jpg');
+		background-repeat: no-repeat;
+		background-position: top 70px right;
 		background-size: cover;
 	}
 

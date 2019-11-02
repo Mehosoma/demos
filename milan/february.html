@@ -16,7 +16,8 @@
 
 	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.css">
 	<link rel="stylesheet" href="libs/magnific/magnific-popup.css">
-	<link rel="stylesheet" href="libs/slick/slick.css">		
+	<link rel="stylesheet" href="libs/slick/slick.css">
+	<link rel="stylesheet" href="libs/ytp/css/jquery.mb.YTPlayer.min.css">
 
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/main.css">
@@ -27,14 +28,32 @@
 <body class="february-page course-page">
 
 <!--Header-->
-<header class="site-header">
+<div class="header-wrap">
+	<header class="site-header">
+		<div class="container h-100">
+			<div class="row h-100">
+				<div class="col-6">
+					<div class="logo">
+						<a href="index.html"><img src="images/logo.png" alt="logo-image" class="logo-image"></a>
+					</div>
+				</div>
+				<div class="col-6">
+					<div class="btn-burger">
+						<button class="menu-toggle-button click-mobile">
+							<span></span>					
+						</button>
+					</div>				
+				</div>
+			</div>
+		</div>	
+	</header>
 	<div class="main-drop block-trans">
 		<img src="images/arrow-white.png" alt="arrow-menu" class="arrow-menu">
 		<nav class="main-menu">			
 			<ul class="main-menu_list">
 				<li>
-					<a href="">Милан</a>
-					<ul class="main-menu_drop block-trans">
+					<a href="#" class="link-drop">Милан</a>
+					<ul class="main-menu_drop">
 						<li><a href="">Fashion History</a></li>
 						<li><a href="">Fashion & Styling</a></li>
 						<li><a href="">Shooting Expierience</a></li>
@@ -53,12 +72,12 @@
 				<li>
 					<a href="">
 						<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-							 viewBox="0 0 25 25" style="enable-background:new 0 0 25 25;" xml:space="preserve">
+								 viewBox="0 0 25 25" style="enable-background:new 0 0 25 25;" xml:space="preserve">
 							<path d="M21.3,0H3.7C1.6,0,0,1.6,0,3.7v17.7c0,2,1.6,3.7,3.7,3.7h17.7c2,0,3.7-1.6,3.7-3.7V3.7C25,1.6,23.4,0,21.3,0z M12.5,19
-								c-3.6,0-6.6-3-6.6-6.6c0-3.6,3-6.6,6.6-6.6c3.6,0,6.6,3,6.6,6.6C19.1,16.1,16.2,19,12.5,19z M19.9,7.3c-1.2,0-2.2-1-2.2-2.2
-								c0-1.2,1-2.2,2.2-2.2c1.2,0,2.2,1,2.2,2.2C22.1,6.3,21.1,7.3,19.9,7.3z"/>
+									c-3.6,0-6.6-3-6.6-6.6c0-3.6,3-6.6,6.6-6.6c3.6,0,6.6,3,6.6,6.6C19.1,16.1,16.2,19,12.5,19z M19.9,7.3c-1.2,0-2.2-1-2.2-2.2
+									c0-1.2,1-2.2,2.2-2.2c1.2,0,2.2,1,2.2,2.2C22.1,6.3,21.1,7.3,19.9,7.3z"/>
 							<path d="M19.9,4.4c-0.4,0-0.7,0.3-0.7,0.7c0,0.4,0.3,0.7,0.7,0.7c0.4,0,0.7-0.3,0.7-0.7C20.6,4.7,20.3,4.4,19.9,4.4z"/>
-							<path d="M12.5,7.3c-2.8,0-5.1,2.3-5.1,5.1c0,2.8,2.3,5.1,5.1,5.1c2.8,0,5.1-2.3,5.1-5.1C17.7,9.6,15.4,7.3,12.5,7.3z"/>
+								<path d="M12.5,7.3c-2.8,0-5.1,2.3-5.1,5.1c0,2.8,2.3,5.1,5.1,5.1c2.8,0,5.1-2.3,5.1-5.1C17.7,9.6,15.4,7.3,12.5,7.3z"/>
 						</svg>
 					</a>
 				</li>
@@ -66,67 +85,49 @@
 					<a href="">
 						<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 25 25" style="enable-background:new 0 0 25 25;" xml:space="preserve">
 							<path d="M21.3,0H3.7C1.6,0,0,1.6,0,3.7v17.7c0,2,1.6,3.7,3.7,3.7H11v-8.8H8.1v-4.4H11v-3c0-2.4,2-4.4,4.4-4.4h4.4v4.4h-4.4v3h4.4
-								l-0.7,4.4h-3.7V25h5.9c2,0,3.7-1.6,3.7-3.7V3.7C25,1.6,23.4,0,21.3,0z"/>
+									l-0.7,4.4h-3.7V25h5.9c2,0,3.7-1.6,3.7-3.7V3.7C25,1.6,23.4,0,21.3,0z"/>
 						</svg>
 					</a>
 				</li>
 				<li>
 					<a href="">
 						<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-							 viewBox="0 0 30 30" style="enable-background:new 0 0 30 30;" xml:space="preserve">
+								 viewBox="0 0 30 30" style="enable-background:new 0 0 30 30;" xml:space="preserve">
 							<path d="M25.6,3.6H4.4C2,3.6,0,5.5,0,8V22c0,2.4,2,4.4,4.4,4.4h21.2c2.4,0,4.4-2,4.4-4.4V8C30,5.5,28,3.6,25.6,3.6z M10.6,21.1V9.1
-							L21.2,15L10.6,21.1z"/>
-						<path d="M12.4,12.1V18l5.2-3L12.4,12.1z"/>
+								L21.2,15L10.6,21.1z"/>
+							<path d="M12.4,12.1V18l5.2-3L12.4,12.1z"/>
 						</svg>
 					</a>
 				</li>
 			</ul>
 		</div>
 	</div>
-	<div class="container h-100">
-		<div class="row h-100">
-			<div class="col-6">
-				<div class="logo">
-					<a href="index.html"><img src="images/logo.png" alt="logo-image" class="logo-image"></a>
-				</div>
-			</div>
-			<div class="col-6">
-				<div class="btn-burger">
-					<button class="menu-toggle-button click-mobile">
-						<span></span>					
-					</button>
-				</div>				
-			</div>
-		</div>
-	</div>
-</header>
+</div>
 
-<!--Main-block-->
-<section class="main-block main-block__course">	
-	<div class="container-fluid">
-		<div class="row m-0">
-			<div class="col-12 col-lg-6 p-0">
-				<div class="main-block-image"></div>
-			</div>		
-			<div class="col-12 col-lg-6 p-0">
-				<div class="main-block-text">
-					<div class="main-header">						
-						<h1><i>Research</i></h1>
-						<hr />
-						<span>Бизнес-интенсив<br>в рамках Milan Fashion Week</span>
-						<p>17-22 февраля</p>
-					</div>					
-				</div>
-			</div>
+<!--Main-Video-->
+<section class="video-block_bg">
+	<div id="ytp-video" class="player" data-property="{videoURL:'http://https://www.youtube.com/watch?v=-zXd0_S7Y1o', containment:'self', autoPlay:true, showControls:false, useOnMobile: false, mute:true, startAt:0, opacity:1}"></div>
+	<div class="video-block-over"></div>		
+	<div class="main-block-text">
+		<div class="main-header">
+			<h1><i>Research</i></h1>
+			<hr />
+			<span>Бизнес-интенсив в рамках Milan Fashion Week</span>						
 		</div>
-	</div>
+		<a href="https://www.youtube.com/watch?v=-zXd0_S7Y1o" class="popup-youtube click btn-play">
+			<div class="tr-right"></div>
+		</a>
+		<div class="gen-text">
+			<p>Смотрите ролик с нашего последнего интенсива в сентябре 2019</p>
+		</div>			
+	</div>	
 </section>
 
 <!--Course-sec-block-->
 <section class="course-sec-block">	
 	<div class="container-fluid">
 		<div class="row m-0">
-			<div class="col-12 col-lg-6 d-flex p-0 order-2 order-lg-1">
+			<div class="col-12 col-lg-6 d-flex p-0">
 				<div class="course-block-text">
 					<div class="course-header">
 						<h2>“Research”</h2>
@@ -137,7 +138,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-12 col-lg-6 p-0 order-1 order-lg-2">
+			<div class="col-12 col-lg-6 p-0">
 				<div class="course-sec-block-image main-block-image"></div>
 			</div>
 		</div>
@@ -424,6 +425,37 @@
 	</div>
 </section>
 
+<!--Report-->
+<section class="report sect-pad-top">
+	<div class="container container__small">		
+		<div class="row">
+			<div class="report-wrapper hr-wrap">
+				<hr />
+				<div class="col-12 col-lg-6">
+					<div class="video-link-wrapper">						
+						<a href="https://www.youtube.com/watch?v=xixwQK6-NZY" class="video-link-mob popup-youtube click">
+							<img src="//img.youtube.com/vi/xixwQK6-NZY/sddefault.jpg">	
+							<div class=" btn-play block-trans">
+								<div class="tr-right"></div>
+							</div>					
+						</a>	
+					</div>	
+				</div>
+				<div class="col-12 col-lg-6">
+					<div class="report-desc">
+						<div class="gent-text">
+							<p>Создатель и куратор NOI STUDY</p>
+							<p><strong>Оксана Кутепова</strong></p>
+							<p>-о коммерческом стайлинге и интенсиве</p>
+							<p>18-23 ноября 2019</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
 <!--Footer-->
 <footer class="page-footer sect-pad-top">
 	<div class="container container__small">
@@ -502,7 +534,7 @@
 	<script src="libs/bootstrap/js/bootstrap.js"></script>
 	<script src="libs/magnific/jquery.magnific-popup.min.js"></script>
 	<script src="libs/slick/slick.js"></script>
-	<script src="libs/jquery.vide.min.js"></script>
+	<script src="libs/ytp/jquery.mb.YTPlayer.js"></script>
 	<script src="js/common.js"></script>
 	
 </body>
