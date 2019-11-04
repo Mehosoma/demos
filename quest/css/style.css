@@ -288,7 +288,6 @@ header {
 
 .geo-list {
   font-size: 16px;
-  color: #000;
 }
 
 .geo-item {
@@ -462,7 +461,7 @@ header {
 .better-item-four {
   position: absolute;
   top: 122px;
-  left: 1048px;
+  left: 1040px;
 }
 
 .better-item-four .better-text {
@@ -497,7 +496,7 @@ header {
 
 .better-icon-four {
   background-image: url(../img/better-icon-four.png);
-  width: 61px;
+  width: 80px;
   height: 62px;
 }
 

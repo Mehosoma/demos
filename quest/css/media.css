@@ -10,7 +10,7 @@
   .better-item-three {
     left: 645px; }
   .better-item-four {
-    left: 900px; } }
+    left: 890px; } }
 
 @media (max-width: 1220px) {
   .who-list {
@@ -43,8 +43,8 @@
     left: 520px;
     top: 312px; }
   .better-item-four {
-    left: 710px;
-    top: 55px; }
+    left: 700px;
+    top: 52px; }
   .better-item-four .better-text {
     margin-top: 90px;
     margin-left: 10px; } }
@@ -178,7 +178,7 @@
     margin-left: -70px; }
   .better-item-four {
     left: 378px;
-    top: 30px; }
+    top: 27px; }
   .better-item-four .better-text {
     margin-top: 70px;
     margin-left: -75px; }
