@@ -1,0 +1,681 @@
+@import "bourbon/bourbon"
+
+$blue: #456DAA
+$gray-gen: #333333
+$white: #ffffff
+$link-blue: #4576BF
+$light-gray: #454545
+$montserrat: 'Montserrat-Regular', sans-serif
+$montserrat-m: 'Montserrat-Medium', sans-serif
+$montserrat-b: 'Montserrat Bold', sans-serif
+
+
+html
+	width: 100%
+	height: 100%
+	overflow-x: hidden
+body
+	width: 100%
+	height: auto
+	min-width: 320px	
+	margin: 0 auto
+	position: relative
+	font-family: $montserrat
+	color: $gray-gen
+	line-height: 1.2
+	-webkit-font-smoothing: antialiased
+	background-color: #F8F8F8	
+	
+
+	a:hover, a:focus, a:active
+		text-decoration: none
+		outline: none
+	input:focus, input:active
+		text-decoration: none
+		outline: none
+	button:focus, button:active
+		text-decoration: none
+		outline: none
+	textarea:focus, textarea:active
+		text-decoration: none
+		outline: none
+	a
+		display: inline-block
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out
+	ul, ol
+		padding: 0px
+		margin: 0px
+		list-style-type: none
+	button
+		border: none
+		cursor: pointer
+	hr
+		border: none	
+
+
+/***************************************************GeneralStyles************************************/
+.btn-gen
+	a, button
+		width: 155px
+		height: 44px
+		font-size: 14px
+		color: $white
+		background-color: $blue
+		text-align: center
+		line-height: 44px
+		border: 1px solid $blue
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out
+	a:hover, button:hover
+		color: $white
+		background-color: #2e4a75
+		border: 1px solid #2e4a75
+.arr-left-gen
+	width: 40px
+	height: 40px	
+	background-color: #fff
+	position: absolute
+	bottom: 23px	
+	left: 15px
+	text-align: center
+	padding: 10px 0px
+	-moz-transition: all 0.3s ease-out
+	-o-transition: all 0.3s ease-out
+	-webkit-transition: all 0.3s ease-out
+	transition: all 0.3s ease-out
+	.st0, .st1
+		stroke: #424242
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out
+	svg
+		width: 8px
+		height: 20px		
+.arr-right-gen
+	width: 40px
+	height: 40px	
+	background-color: #fff
+	position: absolute
+	bottom: 23px	
+	left: 64px
+	text-align: center
+	padding: 10px 0px
+	-moz-transition: all 0.3s ease-out
+	-o-transition: all 0.3s ease-out
+	-webkit-transition: all 0.3s ease-out
+	transition: all 0.3s ease-out
+	.st0, .st1
+		stroke: #424242
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out
+	svg
+		width: 8px
+		height: 20px
+.arr-left-gen:hover, .arr-right-gen:hover
+	cursor: pointer
+	background-color: $blue
+	.st0, .st1
+		stroke: $white
+h2
+	font-size: 30px
+
+/***************************************************Header*******************************************/
+.site-header
+	color: $light-gray
+.first-row
+	height: 102px
+.logo	
+	display: flex
+	margin-top: 29px
+	margin-left: -11px
+	span
+		flex: 1 1 auto		
+		display: block
+		font-family: $montserrat-b
+		color: $light-gray
+		font-size: 17px
+		padding-left: 3px
+	img
+		margin-top: 7px
+.firm-adr
+	margin-top: 29px
+	padding-left: 84px
+	span
+		font-size: 14px
+		line-height: 17px
+.contacts
+	margin-top: 29px
+	margin-left: -31px
+.contacts_phone	
+	a
+		font-size: 24px
+		color: $light-gray
+	a:hover
+		color: $link-blue
+.contacts_mail
+	a
+		font-size: 14px
+		color: $link-blue
+	a:hover
+		color: $light-gray
+.main-menu
+	width: 100%
+	min-height: 70px
+	background-color: $blue
+.main-menu-list
+	display: flex
+	height: 70px
+	align-items: center
+	li
+		height: 100%	
+		margin-right: 12px
+	li:hover
+		background-color: #5C85C4
+		cursor: pointer
+	a
+		font-family: $montserrat-m
+		font-size: 14px
+		color: $white
+		height: 100%
+		display: flex
+		align-items: center	
+		padding: 0 35px
+.main-menu_drop
+	position: absolute
+	top: 70px
+	width: 50%	
+	z-index: 100
+	background-color: $white
+	display: none
+	padding: 20px
+	a
+		color: $blue
+		font-family: $montserrat
+		font-size: 12px
+	li
+		margin-bottom: 10px
+		height: auto
+	li:hover
+		background-color: $white
+		a
+			color: $gray-gen
+.btn-gen__header
+	margin-top: 29px
+	margin-left: -25px
+.main-menu_drop.menu-open
+	display: block!important
+
+/***************************************************Main-banner******************************************/
+.main-banner
+	position: relative
+.main-slide
+	width: 100%
+	height: 430px
+	background-image: url('../images/main-banner.jpg')
+	background-repeat: no-repeat
+	background-position: center center
+	background-size: cover
+	position: relative
+.main-header
+	margin-top: 101px
+	padding-left: 15px
+	span
+		background-color: $blue		
+		font-family: $montserrat-m
+		display: inline		
+		font-size: 36px	
+		line-height: 48px
+		padding: 10px 5px	
+		color: $white
+		box-shadow: -15px 1px 0px $blue, -15px -1px 0px $blue, 15px 1px 0px $blue, 15px -1px 0px $blue	
+		box-decoration-break: clone
+		outline: 1px solid $blue
+
+
+
+/***************************************************Product******************************************/
+.product
+	padding-top: 42px
+	padding-bottom: 30px
+	.col-6
+		margin-top: 40px
+.product-block
+	width: 100%
+	min-height: 383px
+	background-color: $blue
+	box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.04)
+	position: relative
+	display: block	
+.product-block:hover
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3)
+.product-block__first
+	background-image: url('../images/product-1.png')
+	background-repeat: no-repeat
+	background-position: center center
+	background-size: cover
+.product-block__second
+	background-image: url('../images/product-2.jpg')
+	background-repeat: no-repeat
+	background-position: center center
+	background-size: cover
+.product-block__third
+	background-image: url('../images/product-3.png')
+	background-repeat: no-repeat
+	background-position: center center
+	background-size: cover
+.product-block_desc
+	background-color: $blue
+	position: absolute	
+	padding: 20px
+	bottom: 0px
+	width: 100%
+	height: 123px
+	display: flex
+	text-align: center
+	align-items: center		
+	p
+		font-size: 16px
+		line-height: 20px
+		color: $white 
+		margin-bottom: 0px
+		width: 100%
+
+/***************************************************About****************************************************/
+.about
+	padding-top: 45px
+	padding-bottom: 85px
+.about-text
+	margin-top: 40px
+	p
+		font-size: 16px
+		line-height: 130%
+		text-align: justify
+
+
+/***************************************************Docs****************************************************/
+.docs
+	background-color: #EEEEEE
+	padding-top: 20px
+.docs-arrows 
+	padding-top: 22px
+	position: relative
+	.arrows
+		position: relative
+		height: 40px
+		margin-top: 49px
+		.arr-left-gen, .arr-right-gen
+			bottom: 0px	
+		.arr-left-gen
+			left: 0px
+		.arr-right-gen
+			left: 52px
+.docs-slider-wrapper
+	width: 105%
+.docs-slider
+	margin: 0 -5px
+	width: 98%
+	margin: 0 auto
+	.slick-list
+		padding: 0px 5px	
+	.slick-slide
+		margin: 0 5px
+		padding: 25px 0px		
+		.docs-slide
+			box-shadow: none
+			transition: box-shadow 0.1s ease-in-out		
+.docs-slide
+	height: 323px
+	background-color: #fff	
+.docs-image-wrapper
+	padding: 20px
+	width: 100%
+	height: 100%
+	a
+		display: block
+		width: 100%
+		height: 100%
+	img
+		width: 100%
+		height: 100%
+
+/***************************************************Responses***************************************************/
+.responses
+	position: relative
+	padding-bottom: 124px
+	padding-top: 45px
+	.arrows
+		position: relative
+		height: 40px
+		margin-top: 0px
+		float: right
+		margin-right: 90px
+		.arr-left-gen, .arr-right-gen
+			bottom: 0px	
+		.arr-left-gen
+			left: 0px
+		.arr-right-gen
+			left: 52px
+.responses-slider
+	margin: 0 -10px
+	margin-top: 42px
+	.slick-slide
+		margin: 0 10px
+.responses-slide
+	width: 100%
+	height: auto
+	background-color: #fff		
+.responses-slide_logo
+	width: 100%
+	height: 140px
+	position: relative
+	overflow: hidden
+	img
+		width: auto
+		height: 90%
+		position: absolute
+		top: 0px
+		bottom: 0px
+		left: 0px
+		right: 0px
+		margin: auto
+.responses-slide_desc
+	text-align: center
+	padding: 0px 20px
+.company-name
+	height: 58px
+	margin-bottom: 20px
+	overflow: hidden
+	padding: 0px 20px
+	span
+		font-size: 14px
+		color: $link-blue
+.company-position	
+	span
+		font-size: 13px
+		color: #999
+.company-delegate
+	height: 60px
+	margin-bottom: 20px
+	overflow: hidden
+	span
+		font-size: 24px
+.company-response
+	height: 142px
+	overflow: hidden
+	p
+		font-size: 14px
+		line-height: 130%
+
+/***************************************************Footer***************************************************/	
+.site-footer
+	width: 100%
+	height: auto
+	background-color: #444
+	padding: 76px 0px 40px 0px
+	.firm-adr
+		padding-left: 0px
+	.contacts
+		margin-left: -63px
+	.contacts_mail
+		padding-left: 23px
+.footer-links
+	a
+		font-family: $montserrat-m
+		font-size: 14px
+		color: #B9B9B9
+		letter-spacing: -0.05em	
+	a:hover
+		text-decoration: underline
+.footer-links__mid
+	margin-left: -20px
+.footer-links__right
+	padding-left: 45px
+.footer-row-sec
+	margin-top: 65px
+	margin-bottom: 65px
+.logo__footer
+	span
+		color: #949494
+		flex: 0 0 50%
+.firm-adr__footer
+	span
+		color: #949494
+.contacts__footer
+	display: flex
+	align-items: flex-end
+	a
+		color: #949494
+	a:hover
+		color: $blue
+.footer-bottom
+	span, a
+		color: #949494
+		font-family: $montserrat-m
+		font-size: 13px
+	a:hover
+		color: $blue
+
+/***************************************************Modal******************************************/
+#modal
+	width: 700px
+	height: auto
+	background-color: #fff
+	position: relative
+	margin: 0 auto
+	padding: 40px	
+.mfp-close
+	color: #333
+.modal_header
+	text-align: center
+	margin-bottom: 40px
+	span
+		display: block
+		font-family: $montserrat-m
+		font-size: 20px
+.field-header
+	font-size: 12px
+	font-family: $montserrat-m
+	display: block
+	margin-bottom: 5px
+	color: #bbb
+#modal-form
+	width: 90%
+	margin: 0 auto
+	input
+		width: 100%
+		height: 40px
+		padding: 0px 15px
+		border: 1px solid #999
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out
+	::-webkit-input-placeholder 
+		color: #7f7f7f		
+		font-size: 14px		
+	::-moz-placeholder
+		color: #7f7f7f		
+		font-size: 14px		
+	:-moz-placeholder 
+		color: #7f7f7f		
+		font-size: 14px		
+	:-ms-input-placeholder      
+		color: #7f7f7f		
+		font-size: 14px
+	input:hover, input:focus
+		border: 1px solid $blue
+	textarea
+		width: 100%
+		height: 100px
+		resize: none
+		border: 1px solid #999
+.btn__form
+	text-align: center
+	margin: 40px 0px 10px 0px
+	button		
+		width: 250px
+.modal-form_field
+	margin-bottom: 10px
+.disclaim
+	text-align: center
+.l-container
+	display: inline-block
+	position: relative
+	padding-left: 20px	
+	cursor: pointer	
+	font-size: 12px
+	line-height: 24px
+	color: #000
+	font-weight: normal	
+	-webkit-user-select: none
+	-moz-user-select: none
+	-ms-user-select: none
+	user-select: none
+.l-container input
+	position: absolute
+	opacity: 0
+	cursor: pointer
+	display: none
+.checkmark
+	position: absolute
+	top: 0px
+	left: 0
+	height: 15px
+	width: 15px
+	background-color: #fff
+	border-radius: 3px
+	border: 1px solid gray
+.polite-d .checkmark
+	top: 4px
+.check-gen input:checked ~ .checkmark
+	background-color: $blue
+	border: 1px solid $blue
+.check-gen .checkmark:after
+	content: ""
+	position: absolute
+	display: none
+.check-gen input:checked ~ .checkmark:after
+	display: block
+.check-gen .checkmark:after
+	left: 4px
+	top: 1px
+	width: 6px
+	height: 9px
+	border: solid white
+	border-width: 0 2px 2px 0
+	-webkit-transform: rotate(45deg)
+	-ms-transform: rotate(45deg)
+	transform: rotate(45deg)
+.btn__modal:disabled:hover
+	background-color: gray
+	color: $white
+	border: 1px solid gray
+.btn__modal:disabled
+	background-color: gray
+	border: 1px solid transparent
+
+
+/***************************************************Toggle-drop-button******************************************/
+.menu-toggle-button
+	width: 20px
+	height: 30px	
+	background-color: transparent
+	border-radius: 7px
+	padding-top: 0px
+	border: none
+	text-indent: -9999px
+	-webkit-appearance: none
+	-moz-appearance: none
+	appearance: none
+	position: relative
+	display: block
+	overflow: hidden
+	margin-top: 0px	
+	margin-left: 0px
+	margin-right: 20px
+
+.menu-toggle-button span 
+	display: block
+	height: 2px
+	background: $white
+	position: absolute
+	top: 15px
+	left: 0px
+	right: 0px
+	-webkit-transition: background 0s 0.3
+	-o-transition: background 0s 0.3
+	transition: background 0s 0.3
+
+
+.menu-toggle-button span::before, .menu-toggle-button span::after
+	content: ""
+	display: block
+	width: 100%
+	height: 2px
+	background: $white
+	position: absolute
+	left: 0px
+	-webkit-transition-duration: 0.3s, 1s
+	-o-transition-duration: 0.3s, 1s
+	transition-duration: 0.3s, 1s
+	-webkit-transition-delay: 0s, 0.3s
+	-o-transition-delay: 0s, 0.3s
+	transition-delay: 0s, 0.3s
+
+
+.menu-toggle-button span::before 
+	top: -5px
+
+.menu-toggle-button span::after 
+	bottom: -5px
+
+.menu-toggle-button.is-active span
+	background: none
+
+.menu-toggle-button.is-active span::before
+	top: 0
+	-webkit-transform: rotate(45deg)
+	-ms-transform: rotate(45deg)
+	transform: rotate(45deg)
+	-webkit-transition-property: top, -webkit-transform
+	transition-property: top, -webkit-transform
+	-o-transition-property: top, transform
+	transition-property: top, transform
+	transition-property: top, transform, -webkit-transform
+	-webkit-transition-delay: 0s, 0.3s
+	-o-transition-delay: 0s, 0.3s
+	transition-delay: 0s, 0.3s
+	-webkit-transition-duration: 0.3s, 0.3s
+	-o-transition-duration: 0.3s, 0.3s
+	transition-duration: 0.3s, 0.3s
+	background: $blue
+
+
+.menu-toggle-button.is-active span::after 
+	bottom: 0
+	background: $blue
+	-webkit-transform: rotate(-45deg)
+	-ms-transform: rotate(-45deg)
+	transform: rotate(-45deg)
+	-webkit-transition-property: bottom, -webkit-transform
+	transition-property: bottom, -webkit-transform
+	-o-transition-property: bottom, transform
+	transition-property: bottom, transform
+	transition-property: bottom, transform, -webkit-transform
+	-webkit-transition-delay: 0s, 0.3s
+	-o-transition-delay: 0s, 0.3s
+	transition-delay: 0s, 0.3s
+	-webkit-transition-duration: 0.3s, 0.3s
+	-o-transition-duration: 0.3s, 0.3s
+	transition-duration: 0.3s, 0.3s
+
+.menu-toggle-button:focus
+	outline: none !important
