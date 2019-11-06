@@ -75,9 +75,22 @@ $(document).ready(function(){
 //Show-hide Drop-Down Menu on Mobile
 $(document).ready(function(){
     $('.click-mobile').on('click',function(e){
-      $('.main-menu-list').slideToggle(); 
-      $(this).parent().find('.main-menu_drop').toggleClass('menu-open');                              
+      $('.main-menu-list').slideToggle();                               
     });
+});
+
+//Fixes menu on tablet and mobile
+$(window).on('load resize', function() {
+  
+  if ($(window).width() < 992) {
+
+    $('.main-menu_drop').removeAttr("style");
+    $('.main-menu-list').removeAttr("style");
+  }else{
+     
+  }
+
+
 });
 
 
