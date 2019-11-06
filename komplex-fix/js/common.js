@@ -80,14 +80,12 @@ $(document).ready(function(){
 });
 
 //Fixes menu on tablet and mobile
-$(window).on('resize', function() {
+$(window).on('load resize', function() {
   
   if ($(window).width() < 992) {
-
-    $('.main-menu_drop').removeAttr("style");
-    $('.main-menu-list').removeAttr("style");
+    $('.main-menu_drop').addClass("menu-open");    
   }else{
-     
+     $('.main-menu_drop').removeClass("menu-open");
   }
 
 
