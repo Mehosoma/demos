@@ -230,6 +230,14 @@
 		margin: 10px 0px 20px 0px;
 	}
 
+	.main-menu-list li:hover{
+		background-color: #fff;
+	}
+
+	.main-menu-list  a:hover {
+      color: #333333; 
+    }
+
 }
 
 @media only screen and (min-width : 480px) and (max-width : 575px) {
@@ -458,6 +466,14 @@
 		padding-left: 0px;
 		margin: 10px 0px 20px 0px;
 	}
+
+	.main-menu-list li:hover{
+		background-color: #fff;
+	}
+
+	.main-menu-list  a:hover {
+      color: #333333; 
+    }
 }
 
 @media only screen and (min-width : 768px) and (max-width : 991px) {
@@ -540,6 +556,14 @@
 	.footer-links__mid{
 		margin-left: 0px;
 	}
+
+	.main-menu-list li:hover{
+		background-color: #fff;
+	}
+
+	.main-menu-list  a:hover {
+      color: #333333; 
+    }
 
 }
 
