@@ -80,7 +80,7 @@ $(document).ready(function(){
 });
 
 //Fixes menu on tablet and mobile
-$(window).on('load resize', function() {
+$(window).on('resize', function() {
   
   if ($(window).width() < 992) {
 
