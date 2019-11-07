@@ -68,6 +68,7 @@
 
 	.main-slider .main-slide{
 		height: 100%;
+		max-height: 275px;
 	}
 
 	.services-block{
@@ -137,6 +138,10 @@
 
 	.buttons{
 		padding: 50px 0px;
+	}
+
+	.form-wrapper p {
+		font-size: 15px;
 	}
 
 }
@@ -211,6 +216,7 @@
 
 	.main-slider .main-slide{
 		height: 100%;
+		max-height: 480px;
 	}
 
 	.services-block{
@@ -271,6 +277,10 @@
 
 	.btn-gen__form{
 		margin-bottom: 20px;
+	}
+
+	.form-wrapper p {
+		font-size: 15px;
 	}
 
 }
