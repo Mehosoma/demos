@@ -21,7 +21,31 @@ $(document).ready(function(){
   		slidesToScroll: 1,  
   		autoplay: false,  		
   		arrows: false, 
-  		dots: false,  		
+  		dots: false,
+  		responsive: [ 
+		    {
+		      breakpoint: 1200,
+		      settings: {
+		        slidesToShow: 5,
+		        slidesToScroll: 1,       
+		      }
+		    },
+		    {
+		      breakpoint: 992,
+		      settings: {
+		        slidesToShow: 3,
+		        slidesToScroll: 1,       
+		      }
+		    },
+
+		     {
+		      breakpoint: 768,
+		      settings: {
+		        slidesToShow: 1,
+		        slidesToScroll: 1,       
+		      }
+		    }
+	    ]   		
 	});
 });
 
@@ -80,4 +104,16 @@ $(document).ready(function() {
       $(".site-header").removeClass("scrolled");
     }
   });
+});
+
+
+//Show-hide menu
+$(document).ready(function(){
+    $('.click-mobile').on('click',function(e){
+        e.preventDefault();        
+          $('.main-menu').animate({
+              height: 'toggle'
+            }, 600, function() {
+          });                    
+    });
 });
