@@ -217,12 +217,11 @@ h3 {
 }
 
 .logo {
-  width: 100%;
-  height: auto;
+  margin-top: -10px;
 }
 
 .logo img {
-  width: 100%;
+  width: 300px;
   height: auto;
   -moz-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
@@ -267,11 +266,12 @@ h3 {
 }
 
 .site-header.scrolled .logo {
-  margin-top: 5px;
+  margin-top: 0px;
 }
 
 .site-header.scrolled .logo img {
   width: 240px;
+  height: auto;
 }
 
 .site-header.scrolled .main-menu {
