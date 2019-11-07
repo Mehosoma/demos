@@ -22,10 +22,9 @@
 	.main-menu{
 		position: absolute;		
 		top: 70px;
-		right: 0px;
-		margin-left: 0px;	
-		margin-top: 0px;
-		width: 200px;
+		right: 0px;		
+		margin: 0px;
+		width: 100vw;
 		background-color: #fff;				
 		padding: 0px;
 		display: none;
@@ -162,6 +161,7 @@
 
 	.logo{
 		margin-top: 0px;
+		margin-left: 5%;
 	}
 
 	.logo img{
@@ -169,13 +169,16 @@
 		height: auto;
 	}
 
+	.site-header .container{
+		max-width: 100%;
+	}
+
 	.main-menu{
 		position: absolute;		
 		top: 70px;
-		right: 0px;
-		margin-left: 0px;	
-		margin-top: 0px;
-		width: 200px;
+		right: 0px;		
+		margin: 0px;
+		width: 100vw;
 		background-color: #fff;				
 		padding: 0px;
 		display: none;
@@ -210,6 +213,7 @@
 
 	.menu-toggle-button{
 		margin-top: 20px;
+		margin-right: 5%;
 	}
 
 	.main-slider{
@@ -312,13 +316,16 @@
 		margin-top: 0px;
 	}
 
+	.site-header .container{
+		max-width: 100%;
+	}
+
 	.main-menu{
 		position: absolute;		
 		top: 70px;
-		right: 0px;
-		margin-left: 0px;	
-		margin-top: 0px;
-		width: 200px;
+		right: 0px;		
+		margin: 0px;
+		width: 100vw;
 		background-color: #fff;				
 		padding: 0px;
 		display: none;
