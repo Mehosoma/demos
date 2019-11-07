@@ -13,7 +13,8 @@ $(document).ready(function(){
   		slidesToScroll: 1,  
   		autoplay: false,  		
   		arrows: false, 
-  		dots: true,  		
+  		dots: true, 
+  		adaptiveHeight: true 		
 	});
 	$('.gallery-slider').slick({
   		infinite: true,
@@ -70,6 +71,7 @@ $(function () {
 });
 
 
+//Gallery
 $(document).ready(function() {
   $('.popup-gallery').magnificPopup({
     delegate: 'a',
@@ -94,6 +96,7 @@ $('.main-menu a[href^="."], .buttons_btn a').click(function(){
 return false;
 });
 
+//Fixed Menu
 $(document).ready(function() {
   $(window).scroll(function() {    
     var scroll = $(window).scrollTop();

@@ -137,8 +137,10 @@
 	}
 
 	.buttons{
-		padding: 50px 0px;
+		height: auto;
+		padding-bottom: 100px;
 	}
+
 
 	.form-wrapper p {
 		font-size: 15px;
