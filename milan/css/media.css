@@ -102,6 +102,10 @@
 		height: auto;
 	}
 
+	.main-block__inverse .gen-text{
+		padding-right: 0px;
+	}
+
 	h2{
 		font-size: 24px;
 	}
@@ -125,8 +129,12 @@
 		padding-bottom: 100px;
 	}
 
-	.benefits-wrapper .col-12:nth-child(4) .benefits-block, .benefits-wrapper .col-12:nth-child(3) .benefits-block, .benefits-wrapper .col-12:nth-child(6) .benefits-block {
-		padding-left: 0px;
+	.benefits-wrapper .benefits-block{
+		padding-left: 0px!important;		
+	}
+
+	.benefits-wrapper .benefits-block p{
+		padding-right: 5px;		
 	}
 
 	.benefits-wrapper .col-12{
@@ -265,7 +273,7 @@
 
 	.course-block-text{
 		min-height: 100px;
-		padding: 40px 10px 40px 30px;
+		padding: 40px 30px;
 	}
 
 	.course-teachers-wrapper{
@@ -469,7 +477,7 @@
 	}
 
 	.main-block__inverse .main-block-text{
-		padding: 40px 20px;
+		padding: 50px 40px;
 		height: auto;
 		min-height: 100px;
 	}
@@ -501,8 +509,12 @@
 		padding-bottom: 100px;
 	}
 
-	.benefits-wrapper .col-12:nth-child(4) .benefits-block, .benefits-wrapper .col-12:nth-child(3) .benefits-block, .benefits-wrapper .col-12:nth-child(6) .benefits-block {
-		padding-left: 0px;
+	.benefits-wrapper .benefits-block{
+		padding-left: 0px!important;		
+	}
+
+	.benefits-wrapper .benefits-block p{
+		padding-right: 5px;		
 	}
 
 	.benefits-wrapper .col-12{
@@ -592,10 +604,6 @@
 
 	.benefits-block span{
 		flex-basis: 100%;
-	}
-
-	.course-block-text .gen-text, .course-block-text .course-header{
-		padding: 0px 20px;
 	}
 
 	.main-teacher-desc{
@@ -775,7 +783,7 @@
 	}
 
 	.main-block__inverse .main-block-text{
-		padding: 50px;
+		padding: 50px 40px;
 		height: auto;
 		min-height: 100px;
 	}
@@ -793,9 +801,11 @@
 		margin: 20px auto 0px;
 	}
 
-	.benefits-wrapper .col-12:nth-child(4) .benefits-block, .benefits-wrapper .col-12:nth-child(3) .benefits-block{
-		padding-left: 0px;
+	.benefits-wrapper .benefits-block{
+		padding-left: 20px!important;
+		width: 95%;
 	}
+
 
 	.benefits-wrapper .col-12{
 		margin-bottom: 40px;
@@ -955,6 +965,14 @@
 		padding-left: 0px;
 	}
 
+	#footer-form{
+		max-width: 750px;
+	}
+
+	.discount-block-wrapper .col-12:nth-child(4) .discount-block{
+		padding-left: 0px;
+	}
+
 
 
 }
@@ -967,10 +985,6 @@
 
 	.main-header hr{
 		margin-top: 20px;
-	}
-
-	.main-block__inverse .main-block-text{
-		padding-left: 50px;
 	}
 
 	.main-form{
@@ -1058,6 +1072,12 @@
 	.main-menu_list li{
 		margin-bottom: 20px;
 	}
+
+	.footer_right{
+		padding-left: 85px;
+	}
+
+
 	
 
 }
@@ -1103,8 +1123,15 @@
 	.main-menu_drop a{
 		font-size: 16px;
 	}
-
 	
+}
+
+@media only screen and (min-width : 1400px){
+
+	.logo{
+		margin-left: -40px;
+	}
+
 }
 
 @media only screen and (min-width : 1920px){
@@ -1123,6 +1150,10 @@
 
 	.milan-page .course-sec-block .course-block-text{
 		min-height: 800px;
+	}
+
+	.footer-logo {
+		left: -250px;
 	}
 
 }
