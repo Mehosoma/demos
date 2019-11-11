@@ -1,0 +1,709 @@
+html {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden; }
+
+body {
+  width: 100%;
+  height: auto;
+  min-width: 320px;
+  margin: 0 auto;
+  position: relative;
+  line-height: 1.2;
+  -webkit-font-smoothing: antialiased;
+  background-color: #fff; }
+  body a:hover, body a:focus, body a:active {
+    text-decoration: none;
+    outline: none; }
+  body input:focus, body input:active {
+    text-decoration: none;
+    outline: none; }
+  body button:focus, body button:active {
+    text-decoration: none;
+    outline: none; }
+  body textarea:focus, body textarea:active {
+    text-decoration: none;
+    outline: none; }
+  body a {
+    display: inline-block;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out; }
+  body ul, body ol {
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none; }
+  body button {
+    border: none;
+    cursor: pointer; }
+  body hr {
+    border: none; }
+
+.pixel {
+  background: url(../images/main.jpg) no-repeat top center;
+  width: 1920px;
+  height: 12800px;
+  position: absolute;
+  z-index: 1000000;
+  display: none;
+  left: 50%;
+  top: 0;
+  margin-left: -960px;
+  opacity: 0.5;
+  margin-top: 0px; }
+
+/***************************************************GeneralStyles************************************/
+h1 {
+  font-family: "Averta CY", sans-serif;
+  font-size: 34px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 5px; }
+
+h2 {
+  font-family: "Averta CY Semibold", sans-serif;
+  font-size: 52px;
+  color: #000;
+  text-align: center;
+  letter-spacing: 1px; }
+
+h3 {
+  font-family: "Averta CY Semibold", sans-serif;
+  font-size: 26px;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 1px; }
+
+h4 {
+  font-family: "Averta CY", sans-serif;
+  font-size: 22px;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 1px; }
+
+.btn-gen {
+  font-family: "Averta CY Light", sans-serif;
+  font-size: 17px;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 11px 30px;
+  border: 1px solid #fff;
+  border-radius: 45px;
+  letter-spacing: 1px; }
+
+.btn-gen:hover {
+  background-color: #fff;
+  color: #58595b; }
+
+.btn__black {
+  border: 1px solid #000;
+  background-color: #000;
+  font-family: "Averta CY", sans-serif;
+  font-size: 18px; }
+
+.btn__black:hover {
+  background-color: transparent;
+  border-color: #000;
+  color: #000; }
+
+.btn-gen__gray {
+  background-color: #8d8d8d;
+  color: #000;
+  border-color: #8d8d8d;
+  padding: 14px 55px; }
+
+.btn-gen__gray:hover {
+  color: #000; }
+
+.slider-header {
+  text-align: center; }
+
+.product-colors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 6px;
+  padding-right: 6px; }
+  .product-colors span {
+    color: #808285;
+    font-family: "Averta CY Light", sans-serif;
+    font-size: 17px;
+    text-transform: uppercase;
+    letter-spacing: 1px; }
+
+.colors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 34px; }
+  .colors li {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    margin-left: 14px; }
+
+.colors__blue {
+  background-color: #193769; }
+
+.colors__red {
+  background-color: #cd1316; }
+
+.colors__gray {
+  background-color: #3b3b38; }
+
+.arr-left-gen {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  position: absolute;
+  top: 50%;
+  left: -60px;
+  text-align: center;
+  padding: 10px 17px;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out; }
+  .arr-left-gen .st0, .arr-left-gen .st1 {
+    stroke: #58595b;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out; }
+  .arr-left-gen svg {
+    width: 20px;
+    height: 30px; }
+
+.arr-right-gen {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  position: absolute;
+  top: 50%;
+  right: -60px;
+  text-align: center;
+  padding: 10px 0px;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out; }
+  .arr-right-gen .st0, .arr-right-gen .st1 {
+    stroke: #424242;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out; }
+  .arr-right-gen svg {
+    width: 20px;
+    height: 30px; }
+
+.arr-left-gen:hover, .arr-right-gen:hover {
+  cursor: pointer; }
+  .arr-left-gen:hover .st0, .arr-left-gen:hover .st1, .arr-right-gen:hover .st0, .arr-right-gen:hover .st1 {
+    stroke: #808285; }
+
+.slick-dots {
+  text-align: center;
+  margin-top: 50px;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: -69px;
+  margin: auto; }
+  .slick-dots li {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 0px; }
+  .slick-dots button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: transparent;
+    border: 1px solid #cfd0d0;
+    position: relative;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out; }
+  .slick-dots button:after {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    display: block;
+    content: '';
+    border: 1px solid #c6a97e;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    border-radius: 50%;
+    opacity: 0;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out; }
+  .slick-dots .slick-active button {
+    border: 1px solid #c6a97e; }
+  .slick-dots .slick-active button:after {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    display: block;
+    content: '';
+    border: 1px solid #c6a97e;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    border-radius: 50%;
+    opacity: 1; }
+
+.slick-dots:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: #f6f6f6;
+  position: absolute;
+  top: 5px;
+  left: 0px; }
+
+.border-bottom-line {
+  border-bottom: 1px solid #b1b2b3; }
+
+.gen-text p {
+  font-family: "Averta CY Light", sans-serif;
+  color: #58595b; }
+
+.gray-back {
+  background-color: #f6f6f6; }
+
+/***************************************************Header*******************************************/
+.poko-header {
+  width: 100%;
+  height: 121px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  padding-top: 20px;
+  z-index: 100; }
+
+.logo {
+  margin-top: 20px;
+  margin-left: -16px; }
+
+.main-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  margin-top: 45px;
+  padding-right: 108px; }
+  .main-menu li {
+    display: inline-block;
+    margin-left: 39px; }
+  .main-menu a {
+    font-family: "Averta CY Extrathin", sans-serif;
+    font-size: 17px;
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+    letter-spacing: 1.1px; }
+  .main-menu a:before {
+    position: absolute;
+    display: block;
+    content: '';
+    top: 30px;
+    width: 10px;
+    height: 10px;
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    visibility: hidden;
+    opacity: 0; }
+  .main-menu a:hover {
+    text-shadow: 1px 0px 0px #fff; }
+  .main-menu a:hover:before {
+    opacity: 1;
+    visibility: visible;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out; }
+
+.social-icons {
+  margin-top: 30px;
+  text-align: right;
+  margin-right: -20px; }
+  .social-icons li {
+    display: inline-block;
+    margin-left: 12px; }
+  .social-icons a:hover path {
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    fill: #fff; }
+
+.btn-header {
+  margin-top: 34px;
+  margin-left: -7px; }
+
+/***************************************************Main-Banner************************************/
+.main-banner {
+  width: 100%;
+  height: 908px;
+  background-image: url("../images/main-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; }
+
+.main-header-wrap {
+  margin-top: 332px;
+  padding-left: 89px; }
+  .main-header-wrap span {
+    font-family: "Averta CY Light", sans-serif;
+    font-size: 29px;
+    color: #fff;
+    letter-spacing: 1px; }
+
+.btn-main {
+  margin-top: 33px; }
+
+.btn__main {
+  padding: 14px 47px; }
+
+/***************************************************Quote************************************/
+.quote {
+  padding: 107px 50px 97px 50px; }
+
+.quote-block p {
+  font-family: "Averta CY", sans-serif;
+  font-size: 30px;
+  line-height: 50px;
+  color: #000;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px; }
+
+/***************************************************Woman-C************************************/
+.woman-c {
+  width: 100%;
+  padding-bottom: 74px; }
+
+.catalog-back {
+  padding-top: 66px;
+  padding-bottom: 125px; }
+
+.catalog-bottom {
+  width: 100%;
+  height: 77px; }
+
+.product-slide {
+  height: 900px;
+  display: block; }
+
+.product-image {
+  width: 100%;
+  height: 731px; }
+  .product-image img {
+    width: 100%;
+    height: 100%;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out; }
+  .product-image img:hover {
+    filter: none;
+    -webkit-filter: none;
+    -moz-filter: none;
+    -ms-filter: none;
+    -o-filter: none; }
+
+.product-desc {
+  display: block; }
+
+.product-desc-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  .product-desc-info h4 {
+    margin-bottom: 0px; }
+  .product-desc-info span {
+    font-family: "Averta CY Thin", sans-serif;
+    font-size: 17px;
+    color: #808285;
+    display: block;
+    margin-top: -3px; }
+  .product-desc-info hr {
+    width: 64px;
+    height: 1px;
+    background-color: #808285;
+    margin: 16px 0px 10px 0px; }
+
+.product-desc-more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.product-cost span {
+  font-family: "Averta CY ExtraBold", sans-serif;
+  font-size: 26px;
+  color: #000;
+  text-transform: uppercase; }
+
+.product-cost i {
+  font-style: normal;
+  letter-spacing: 6px; }
+
+.gen-slider {
+  margin: 0 -15px;
+  margin-top: 32px; }
+  .gen-slider .slick-slide {
+    margin: 0 15px; }
+
+.btn__black {
+  padding: 14px 55px; }
+
+/***************************************************Man-C************************************/
+.man-c {
+  padding-bottom: 50px; }
+  .man-c .catalog-back {
+    background-color: #000; }
+  .man-c h3 {
+    color: #fff; }
+  .man-c h4 {
+    color: #fff; }
+  .man-c .slick-dots:after {
+    background-color: #000; }
+  .man-c .product-cost span {
+    color: #fff; }
+
+/***************************************************About***********************************/
+.about {
+  padding-top: 22px;
+  padding-bottom: 110px; }
+  .about p {
+    text-align: center;
+    font-family: "Averta CY Light", sans-serif;
+    font-size: 30px;
+    color: #58595b;
+    letter-spacing: 1px;
+    line-height: 52px; }
+  .about img {
+    width: 100%;
+    height: auto;
+    max-height: 323px; }
+  .about h2 {
+    margin-bottom: 30px; }
+  .about .col-4 {
+    margin-top: 157px;
+    padding-bottom: 40px; }
+
+/***************************************************Benefits***********************************/
+.benefits {
+  padding-bottom: 50px; }
+  .benefits .gen-text p {
+    color: #000; }
+  .benefits .arr-left-gen {
+    top: 90%;
+    left: 85%; }
+  .benefits .arr-right-gen {
+    top: 90%;
+    left: 95%; }
+
+.benefits-back {
+  width: 100%;
+  height: 872px; }
+
+.benefit-slider {
+  margin-top: 146px;
+  padding-bottom: 100px; }
+  .benefit-slider img {
+    height: 510px; }
+
+.benefits-content-wrapper {
+  padding-top: 138px; }
+  .benefits-content-wrapper h2 {
+    text-align: left; }
+  .benefits-content-wrapper p {
+    font-family: "Averta CY Light", sans-serif;
+    font-size: 30px;
+    color: #58595b;
+    letter-spacing: 1px;
+    line-height: 52px;
+    margin-top: 55px; }
+
+.btn-about {
+  margin-top: 92px; }
+
+/***************************************************Terms***********************************/
+.terms {
+  padding-bottom: 76px;
+  padding-top: 20px; }
+  .terms h3 {
+    text-align: center; }
+
+.terms-list-header span {
+  font-family: "Averta CY Thin", sans-serif;
+  font-size: 20px;
+  color: #58595b;
+  text-transform: uppercase; }
+
+.terms-list_drop {
+  display: none; }
+
+.terms-list {
+  margin-top: 54px;
+  width: 68%;
+  margin-right: auto;
+  margin-left: auto; }
+  .terms-list li {
+    border-bottom: 1px solid #d3d3d4;
+    margin-bottom: 46px;
+    padding-bottom: 5px; }
+    .terms-list li p {
+      margin-top: 10px; }
+  .terms-list li:hover {
+    cursor: pointer; }
+  .terms-list li:last-child {
+    margin-bottom: 0px; }
+
+/***************************************************Footer***********************************/
+.poko-footer {
+  background-color: #000;
+  padding-top: 25px; }
+
+.footer_top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: 113px; }
+
+.footer-block {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 33px; }
+  .footer-block span {
+    font-family: "Averta CY", sans-serif;
+    color: #fff;
+    font-size: 17px;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 26px; }
+  .footer-block a, .footer-block p {
+    font-family: "Averta CY Light", sans-serif;
+    color: #a7a9ac;
+    font-size: 17px;
+    margin-bottom: 0px; }
+  .footer-block a:hover {
+    color: #fff; }
+
+.footer_middle {
+  padding-bottom: 33px; }
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 39px;
+  padding-bottom: 28px; }
+  .footer-bottom p {
+    font-family: "Averta CY Light", sans-serif;
+    color: #a7a9ac;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 1px; }
+
+.footer-menu {
+  text-align: right; }
+  .footer-menu li {
+    display: inline-block;
+    margin-left: 28px; }
+
+.fix-width {
+  width: 37%; }
+
+.footer-menu-wrap {
+  text-align: right;
+  display: block;
+  padding-right: 50px; }
+  .footer-menu-wrap span {
+    display: block;
+    padding-right: 300px; }
+
+/***************************************************Inner-Page***********************************************/
+.inner-page .poko-header {
+  position: relative; }
+  .inner-page .poko-header .social-icons a:hover path {
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    fill: #000; }
+
+.inner-page .btn-gen {
+  border-color: #a7a9ac;
+  color: #a7a9ac; }
+
+.inner-page .btn-gen:hover {
+  border-color: #000;
+  color: #000; }
+
+.inner-page .main-menu a {
+  color: #a7a9ac; }
+
+.inner-page .main-menu a:hover {
+  color: #000;
+  text-shadow: 1px 0px 0px #000; }
+
+.inner-page .main-menu a:hover:before {
+  opacity: 1;
+  visibility: visible;
+  border-bottom: 1px solid #000;
+  border-right: 1px solid #000; }
+
+.product-slider-wrapper {
+  position: relative; }
+
+.order-slider .slick-dots {
+  display: none; }
+
+.order .container {
+  position: relative; }
+
+.order .arr-left-gen {
+  top: 0px;
+  left: 94%;
+  right: 60px; }
+
+.order .arr-right-gen {
+  top: 0px;
+  right: 0px; }
+
+.product-slider img {
+  width: 100%;
+  height: 100%; }

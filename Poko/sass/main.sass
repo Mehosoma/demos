@@ -1,0 +1,650 @@
+@import "bourbon/bourbon"
+
+$gray-l: #808285
+$gray-d: #58595b
+$averta-r: 'Averta CY', sans-serif
+$averta-et: 'Averta CY Extrathin', sans-serif
+$averta-l: 'Averta CY Light', sans-serif
+$averta-sb: 'Averta CY Semibold', sans-serif
+$averta-t: 'Averta CY Thin', sans-serif
+$averta-eb: 'Averta CY ExtraBold', sans-serif
+
+
+html
+	width: 100%
+	height: 100%
+	overflow-x: hidden
+body
+	width: 100%
+	height: auto
+	min-width: 320px	
+	margin: 0 auto
+	position: relative
+	font-family: 
+	line-height: 1.2
+	-webkit-font-smoothing: antialiased
+	background-color: #fff	
+	
+
+	a:hover, a:focus, a:active
+		text-decoration: none
+		outline: none
+	input:focus, input:active
+		text-decoration: none
+		outline: none
+	button:focus, button:active
+		text-decoration: none
+		outline: none
+	textarea:focus, textarea:active
+		text-decoration: none
+		outline: none
+	a
+		display: inline-block
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out
+	ul, ol
+		padding: 0px
+		margin: 0px
+		list-style-type: none
+	button
+		border: none
+		cursor: pointer
+	hr
+		border: none	
+
+.pixel
+	background: url(../images/main.jpg) no-repeat top center
+	width: 1920px
+	height: 12800px
+	position: absolute
+	z-index: 1000000
+	display: none
+	left: 50%
+	top: 0
+	margin-left: -960px
+	opacity: 0.5
+	margin-top: 0px
+
+
+/***************************************************GeneralStyles************************************/
+h1
+	font-family: $averta-r
+	font-size: 34px
+	color: #fff
+	text-transform: uppercase
+	letter-spacing: 1px
+	margin-bottom: 5px
+h2
+	font-family: $averta-sb
+	font-size: 52px
+	color: #000
+	text-align: center
+	letter-spacing: 1px
+h3
+	font-family: $averta-sb
+	font-size: 26px
+	color: #000
+	text-transform: uppercase
+	letter-spacing: 1px
+h4
+	font-family: $averta-r
+	font-size: 22px
+	color: #000
+	text-transform: uppercase
+	letter-spacing: 1px
+.btn-gen
+	font-family: $averta-l
+	font-size: 17px
+	color: #fff
+	text-transform: uppercase
+	padding: 11px 30px
+	border: 1px solid #fff
+	border-radius: 45px
+	letter-spacing: 1px
+.btn-gen:hover
+	background-color: #fff
+	color: $gray-d
+.btn__black
+	border: 1px solid #000
+	background-color: #000
+	font-family: $averta-r
+	font-size: 18px
+.btn__black:hover
+	background-color: transparent
+	border-color: #000
+	color: #000
+.btn-gen__gray
+	background-color: #8d8d8d
+	color: #000
+	border-color: #8d8d8d
+	padding: 14px 55px
+.btn-gen__gray:hover
+	color: #000
+.slider-header
+	text-align: center
+.product-colors
+	display: flex
+	margin-top: 6px
+	padding-right: 6px
+	span
+		color: #808285
+		font-family: $averta-l
+		font-size: 17px
+		text-transform: uppercase
+		letter-spacing: 1px
+.colors
+	display: flex
+	margin-right: 34px
+	li
+		width: 28px
+		height: 28px
+		border-radius: 50%
+		margin-left: 14px
+.colors__blue
+	background-color: #193769
+.colors__red
+	background-color: #cd1316
+.colors__gray
+	background-color: #3b3b38
+.arr-left-gen
+	width: 40px
+	height: 40px	
+	background-color: transparent
+	position: absolute
+	top: 50%	
+	left: -60px
+	text-align: center
+	padding: 10px 17px
+	-moz-transition: all 0.3s ease-out
+	-o-transition: all 0.3s ease-out
+	-webkit-transition: all 0.3s ease-out
+	transition: all 0.3s ease-out
+	.st0, .st1
+		stroke: $gray-d
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out
+	svg
+		width: 20px
+		height: 30px		
+.arr-right-gen
+	width: 40px
+	height: 40px	
+	background-color: transparent
+	position: absolute
+	top: 50%	
+	right: -60px
+	text-align: center
+	padding: 10px 0px
+	-moz-transition: all 0.3s ease-out
+	-o-transition: all 0.3s ease-out
+	-webkit-transition: all 0.3s ease-out
+	transition: all 0.3s ease-out
+	.st0, .st1
+		stroke: #424242
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out
+	svg
+		width: 20px
+		height: 30px
+.arr-left-gen:hover, .arr-right-gen:hover
+	cursor: pointer	
+	.st0, .st1
+		stroke: $gray-l
+.slick-dots
+	text-align: center
+	margin-top: 50px
+	position: absolute
+	left: 0px
+	right: 0px
+	bottom: -69px
+	margin: auto
+	li
+		display: inline-block
+		margin: 0 10px
+		font-size: 0px
+	button
+		width: 30px
+		height: 30px
+		border-radius: 50%
+		background: transparent
+		border: 1px solid #cfd0d0
+		position: relative
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out
+	button:after
+		position: absolute
+		width: 10px
+		height: 10px
+		display: block
+		content: ''
+		border: 1px solid #c6a97e
+		top: 0px
+		bottom: 0px
+		left: 0px
+		right: 0px
+		margin: auto
+		border-radius: 50%
+		opacity: 0
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out
+	.slick-active
+		button			
+			border: 1px solid #c6a97e		
+		button:after
+			position: absolute
+			width: 10px
+			height: 10px
+			display: block
+			content: ''
+			border: 1px solid #c6a97e
+			top: 0px
+			bottom: 0px
+			left: 0px
+			right: 0px
+			margin: auto
+			border-radius: 50%
+			opacity: 1
+.slick-dots:after
+	content: ''
+	display: block
+	width: 100%
+	height: 4px
+	background-color: #f6f6f6	
+	position: absolute
+	top: 5px
+	left: 0px
+.border-bottom-line
+	border-bottom: 1px solid #b1b2b3
+.gen-text p
+	font-family: $averta-l
+	color: $gray-d
+.gray-back
+	background-color: #f6f6f6
+
+/***************************************************Header*******************************************/
+.poko-header
+	width: 100%
+	height: 121px
+	position: absolute
+	top: 0px
+	left: 0px
+	padding-top: 20px
+	z-index: 100
+.logo
+	margin-top: 20px
+	margin-left: -16px
+.main-menu
+	display: flex
+	justify-content: flex-end
+	margin-top: 45px
+	padding-right: 108px
+	li
+		display: inline-block
+		margin-left: 39px
+	a
+		font-family: $averta-et
+		font-size: 17px
+		color: #fff
+		text-transform: uppercase
+		position: relative
+		letter-spacing: 1.1px
+	a:before
+		position: absolute
+		display: block
+		content: ''
+		top: 30px
+		width: 10px 
+		height: 10px
+		border-bottom: 1px solid #fff
+		border-right: 1px solid #fff
+		transform: rotate(45deg)
+		left: 0px
+		right: 0px
+		margin: auto
+		visibility: hidden
+		opacity: 0
+	a:hover
+		text-shadow: 1px 0px 0px #fff
+	a:hover:before
+		opacity: 1
+		visibility: visible
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out
+.social-icons
+	margin-top: 30px
+	text-align: right
+	margin-right: -20px
+	li
+		display: inline-block
+		margin-left: 12px
+	a:hover
+		path
+			-moz-transition: all 0.3s ease-out
+			-o-transition: all 0.3s ease-out
+			-webkit-transition: all 0.3s ease-out
+			transition: all 0.3s ease-out
+			fill: #fff
+.btn-header
+	margin-top: 34px
+	margin-left: -7px
+
+/***************************************************Main-Banner************************************/
+.main-banner
+	width: 100%
+	height: 908px
+	background-image: url('../images/main-bg.jpg')
+	background-repeat: no-repeat
+	background-position: center center
+	background-size: cover
+.main-header-wrap
+	margin-top: 332px
+	padding-left: 89px
+	span
+		font-family: $averta-l
+		font-size: 29px
+		color: #fff
+		letter-spacing: 1px
+.btn-main
+	margin-top: 33px
+.btn__main
+	padding: 14px 47px
+
+/***************************************************Quote************************************/
+.quote
+	padding: 107px 50px 97px 50px
+.quote-block
+	p
+		font-family: $averta-r
+		font-size: 30px
+		line-height: 50px
+		color: #000
+		text-align: center
+		text-transform: uppercase
+		letter-spacing: 1px
+
+/***************************************************Woman-C************************************/
+.woman-c
+	width: 100%
+	padding-bottom: 74px
+.catalog-back
+	padding-top: 66px
+	padding-bottom: 125px
+.catalog-bottom
+	width: 100%
+	height: 77px
+.product-slide
+	height: 900px
+	display: block
+.product-image
+	width: 100%
+	height: 731px
+	img
+		width: 100%
+		height: 100%
+		filter: grayscale(100%)
+		-webkit-filter: grayscale(100%)
+		-moz-filter: grayscale(100%)
+		-ms-filter: grayscale(100%)
+		-o-filter: grayscale(100%)
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out
+	img:hover
+		filter: none
+		-webkit-filter: none
+		-moz-filter: none
+		-ms-filter: none
+		-o-filter: none
+.product-desc
+	display: block	
+.product-desc-info
+	display: flex
+	justify-content: space-between
+	h4
+		margin-bottom: 0px
+	span
+		font-family: $averta-t
+		font-size: 17px
+		color: $gray-l
+		display: block
+		margin-top: -3px
+	hr
+		width: 64px
+		height: 1px
+		background-color: $gray-l
+		margin: 16px 0px 10px 0px
+.product-desc-more
+	display: flex
+	justify-content: space-between
+.product-cost
+	span
+		font-family: $averta-eb
+		font-size: 26px
+		color: #000
+		text-transform: uppercase	
+	i
+		font-style: normal
+		letter-spacing: 6px
+.gen-slider
+	margin: 0 -15px
+	margin-top: 32px
+	.slick-slide
+		margin: 0 15px
+.btn__black
+	padding: 14px 55px
+
+/***************************************************Man-C************************************/
+.man-c	
+	padding-bottom: 50px
+	.catalog-back
+		background-color: #000	
+	h3
+		color: #fff
+	h4
+		color: #fff
+	.slick-dots:after
+		background-color: #000
+	.product-cost span
+		color: #fff
+
+/***************************************************About***********************************/
+.about
+	padding-top: 22px
+	padding-bottom: 110px
+	p
+		text-align: center
+		font-family: $averta-l
+		font-size: 30px
+		color: #58595b	
+		letter-spacing: 1px
+		line-height: 52px
+	img
+		width: 100%
+		height: auto
+		max-height: 323px
+	h2
+		margin-bottom: 30px
+	.col-4
+		margin-top: 157px
+		padding-bottom: 40px
+
+/***************************************************Benefits***********************************/
+.benefits
+	padding-bottom: 50px
+	.gen-text p
+		color: #000
+	.arr-left-gen
+		top: 90%
+		left: 85%
+	.arr-right-gen
+		top: 90%
+		left: 95%
+.benefits-back
+	width: 100%
+	height: 872px
+.benefit-slider
+	margin-top: 146px
+	padding-bottom: 100px
+	img
+		height: 510px
+.benefits-content-wrapper
+	padding-top: 138px
+	h2
+		text-align: left
+	p
+		font-family: $averta-l
+		font-size: 30px
+		color: #58595b	
+		letter-spacing: 1px
+		line-height: 52px
+		margin-top: 55px
+.btn-about
+	margin-top: 92px
+
+	
+
+/***************************************************Terms***********************************/
+.terms
+	padding-bottom: 76px
+	padding-top: 20px
+	h3
+		text-align: center
+.terms-list-header
+	span
+		font-family: $averta-t
+		font-size: 20px
+		color: $gray-d
+		text-transform: uppercase
+.terms-list_drop
+	display: none
+.terms-list
+	margin-top: 54px
+	width: 68%
+	margin-right: auto
+	margin-left: auto
+	li
+		border-bottom: 1px solid #d3d3d4
+		margin-bottom: 46px
+		padding-bottom: 5px
+		p
+			margin-top: 10px
+	li:hover
+		cursor: pointer
+	li:last-child
+		margin-bottom: 0px
+
+
+/***************************************************Footer***********************************/
+.poko-footer
+	background-color: #000
+	padding-top: 25px
+.footer_top
+	display: flex
+	justify-content: space-between
+	height: 113px
+.footer-block
+	display: inline-block
+	vertical-align: top
+	margin-top: 33px
+	span
+		font-family: $averta-r
+		color: #fff
+		font-size: 17px
+		text-transform: uppercase
+		display: block
+		margin-bottom: 26px
+	a, p
+		font-family: $averta-l
+		color: #a7a9ac
+		font-size: 17px
+		margin-bottom: 0px
+	a:hover
+		color: #fff
+.footer_middle
+	padding-bottom: 33px
+.footer-bottom
+	text-align: center
+	padding-top: 39px
+	padding-bottom: 28px
+	p
+		font-family: $averta-l
+		color: #a7a9ac
+		font-size: 14px
+		line-height: 20px
+		letter-spacing: 1px
+.footer-menu
+	text-align: right
+	li
+		display: inline-block
+		margin-left: 28px
+.fix-width
+	width: 37%
+.footer-menu-wrap
+	text-align: right
+	display: block
+	padding-right: 50px
+	span
+		display: block
+		padding-right: 300px
+
+
+/***************************************************Inner-Page***********************************************/
+.inner-page
+	.poko-header
+		position: relative
+		.social-icons a:hover
+			path
+				-moz-transition: all 0.3s ease-out
+				-o-transition: all 0.3s ease-out
+				-webkit-transition: all 0.3s ease-out
+				transition: all 0.3s ease-out
+				fill: #000
+	.btn-gen
+		border-color: #a7a9ac
+		color: #a7a9ac
+	.btn-gen:hover
+		border-color: #000
+		color: #000
+	.main-menu 
+		a
+			color: #a7a9ac
+		a:hover
+			color: #000
+			text-shadow: 1px 0px 0px #000		
+		a:hover:before
+			opacity: 1
+			visibility: visible
+			border-bottom: 1px solid #000
+			border-right: 1px solid #000			
+.product-slider-wrapper
+	position: relative
+.order-slider
+	.slick-dots
+		display: none
+.order
+	.container
+		position: relative
+	.arr-left-gen
+		top: 0px
+		left: 94%
+		right: 60px
+	.arr-right-gen
+		top: 0px
+		right: 0px
+.product-slider
+	img
+		width: 100%
+		height: 100%
