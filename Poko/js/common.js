@@ -5,15 +5,30 @@ $(document).ready(function(){
   		slidesToScroll: 1,  
   		autoplay: false,  		
   		arrows: false, 
-  		dots: true,  		
+  		dots: true,
+  		centerMode: true,
+  		centerPadding: '0px',
+  		speed: 1000, 		
 	});
+
+	$('.top-slider').slick({
+  		infinite: true,
+  		slidesToShow: 1,
+  		slidesToScroll: 1,  
+  		autoplay: true,  		
+  		arrows: false, 
+  		dots: true,
+  		speed: 1500,  				
+	});
+
 	$('.benefit-slider').slick({
   		infinite: true,
   		slidesToShow: 1,
   		slidesToScroll: 1,  
   		autoplay: false,  		
   		arrows: false, 
-  		dots: true,  		
+  		dots: true, 
+  		speed: 1000,  		
 	});
 
 	$('.order-slider').slick({
@@ -56,12 +71,11 @@ $(function () {
 
 });
 
-
 //Show-hide drop accordeon
 $(document).ready(function(){
     $('.terms-list li').on('click',function(e){
-      $(this).children('.terms-list_drop').slideToggle(); 
-      $(this).toggleClass('faq-list_drop__active');                             
+      $(this).children('.terms-list_drop').slideToggle();
+         $(this).toggleClass('faq-list_drop__active');                                  
     });
 });
 

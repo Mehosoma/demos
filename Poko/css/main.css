@@ -54,14 +54,6 @@ body {
   margin-top: 0px; }
 
 /***************************************************GeneralStyles************************************/
-h1 {
-  font-family: "Averta CY", sans-serif;
-  font-size: 34px;
-  color: #fff;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-bottom: 5px; }
-
 h2 {
   font-family: "Averta CY Semibold", sans-serif;
   font-size: 52px;
@@ -86,16 +78,17 @@ h4 {
 .btn-gen {
   font-family: "Averta CY Light", sans-serif;
   font-size: 17px;
-  color: #fff;
+  color: #a7a9ac;
   text-transform: uppercase;
   padding: 11px 30px;
-  border: 1px solid #fff;
+  border: 1px solid #a7a9ac;
   border-radius: 45px;
   letter-spacing: 1px; }
 
 .btn-gen:hover {
   background-color: #fff;
-  color: #58595b; }
+  color: #58595b;
+  border-color: #fff; }
 
 .btn__black {
   border: 1px solid #000;
@@ -130,8 +123,7 @@ h4 {
     color: #808285;
     font-family: "Averta CY Light", sans-serif;
     font-size: 17px;
-    text-transform: uppercase;
-    letter-spacing: 1px; }
+    text-transform: uppercase; }
 
 .colors {
   display: -webkit-box;
@@ -158,8 +150,8 @@ h4 {
   height: 40px;
   background-color: transparent;
   position: absolute;
-  top: 50%;
-  left: -60px;
+  top: 44%;
+  left: -86px;
   text-align: center;
   padding: 10px 17px;
   -moz-transition: all 0.3s ease-out;
@@ -167,22 +159,23 @@ h4 {
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out; }
   .arr-left-gen .st0, .arr-left-gen .st1 {
-    stroke: #58595b;
+    stroke: #b2b3b4;
+    fill: #b2b3b4;
     -moz-transition: all 0.3s ease-out;
     -o-transition: all 0.3s ease-out;
     -webkit-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out; }
   .arr-left-gen svg {
     width: 20px;
-    height: 30px; }
+    height: 44px; }
 
 .arr-right-gen {
   width: 40px;
   height: 40px;
   background-color: transparent;
   position: absolute;
-  top: 50%;
-  right: -60px;
+  top: 44%;
+  right: -74px;
   text-align: center;
   padding: 10px 0px;
   -moz-transition: all 0.3s ease-out;
@@ -190,14 +183,15 @@ h4 {
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out; }
   .arr-right-gen .st0, .arr-right-gen .st1 {
-    stroke: #58595b;
+    stroke: #b2b3b4;
+    fill: #b2b3b4;
     -moz-transition: all 0.3s ease-out;
     -o-transition: all 0.3s ease-out;
     -webkit-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out; }
   .arr-right-gen svg {
     width: 20px;
-    height: 30px; }
+    height: 44px; }
 
 .arr-left-gen:hover, .arr-right-gen:hover {
   cursor: pointer; }
@@ -249,8 +243,8 @@ h4 {
     border: 1px solid #c6a97e; }
   .slick-dots .slick-active button:after {
     position: absolute;
-    width: 10px;
-    height: 10px;
+    width: 8px;
+    height: 8px;
     display: block;
     content: '';
     border: 1px solid #c6a97e;
@@ -311,7 +305,7 @@ h4 {
   .main-menu a {
     font-family: "Averta CY Extrathin", sans-serif;
     font-size: 17px;
-    color: #fff;
+    color: #a7a9ac;
     text-transform: uppercase;
     position: relative;
     letter-spacing: 1.1px; }
@@ -319,11 +313,11 @@ h4 {
     position: absolute;
     display: block;
     content: '';
-    top: 30px;
-    width: 10px;
-    height: 10px;
-    border-bottom: 1px solid #fff;
-    border-right: 1px solid #fff;
+    top: 27px;
+    width: 6px;
+    height: 6px;
+    border-bottom: 1px solid #a7a9ac;
+    border-right: 1px solid #a7a9ac;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
@@ -333,10 +327,13 @@ h4 {
     visibility: hidden;
     opacity: 0; }
   .main-menu a:hover {
-    text-shadow: 1px 0px 0px #fff; }
+    text-shadow: 1px 0px 0px #fff;
+    color: #fff; }
   .main-menu a:hover:before {
     opacity: 1;
     visibility: visible;
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff;
     -moz-transition: all 0.3s ease-out;
     -o-transition: all 0.3s ease-out;
     -webkit-transition: all 0.3s ease-out;
@@ -369,9 +366,23 @@ h4 {
   background-position: center center;
   background-size: cover; }
 
+.top-slider {
+  position: relative; }
+  .top-slider .slick-dots {
+    bottom: 50px; }
+  .top-slider .slick-dots:after {
+    display: none; }
+
 .main-header-wrap {
   margin-top: 332px;
   padding-left: 89px; }
+  .main-header-wrap p {
+    font-family: "Averta CY", sans-serif;
+    font-size: 34px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 5px; }
   .main-header-wrap span {
     font-family: "Averta CY Light", sans-serif;
     font-size: 29px;
@@ -382,7 +393,13 @@ h4 {
   margin-top: 33px; }
 
 .btn__main {
-  padding: 14px 47px; }
+  padding: 14px 47px;
+  border-color: #c7aa7e;
+  color: #fff; }
+
+.btn__main:hover {
+  background-color: #c7aa7e;
+  color: #fff; }
 
 /***************************************************Quote************************************/
 .quote {
@@ -429,15 +446,14 @@ h4 {
     -o-transition: all 0.3s ease-out;
     -webkit-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out; }
-  .product-image img:hover {
-    filter: none;
-    -webkit-filter: none;
-    -moz-filter: none;
-    -ms-filter: none;
-    -o-filter: none; }
 
 .product-desc {
-  display: block; }
+  visibility: hidden;
+  opacity: 0;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out; }
 
 .product-desc-info {
   display: -webkit-box;
@@ -476,7 +492,7 @@ h4 {
 
 .product-cost i {
   font-style: normal;
-  letter-spacing: 6px; }
+  letter-spacing: 4px; }
 
 .gen-slider {
   margin: 0 -15px;
@@ -486,6 +502,21 @@ h4 {
 
 .btn__black {
   padding: 14px 55px; }
+
+.slick-center .product-desc {
+  visibility: visible;
+  opacity: 1;
+  -moz-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out; }
+
+.slick-center img {
+  filter: none;
+  -webkit-filter: none;
+  -moz-filter: none;
+  -ms-filter: none;
+  -o-filter: none; }
 
 /***************************************************Man-C************************************/
 .man-c {
@@ -525,14 +556,16 @@ h4 {
 /***************************************************Benefits***********************************/
 .benefits {
   padding-bottom: 50px; }
+  .benefits .container {
+    position: relative; }
   .benefits .gen-text p {
     color: #000; }
   .benefits .arr-left-gen {
-    top: 90%;
-    left: 85%; }
+    top: 88%;
+    left: 93%; }
   .benefits .arr-right-gen {
-    top: 90%;
-    left: 95%; }
+    top: 88%;
+    left: 98.5%; }
 
 .benefits-back {
   width: 100%;
@@ -540,9 +573,16 @@ h4 {
 
 .benefit-slider {
   margin-top: 146px;
-  padding-bottom: 100px; }
+  padding-bottom: 100px;
+  margin: 0 -15px;
+  position: relative; }
   .benefit-slider img {
-    height: 510px; }
+    height: 510px;
+    position: relative;
+    top: 146px;
+    width: 100%; }
+  .benefit-slider .slick-dots {
+    bottom: -49px; }
 
 .benefits-content-wrapper {
   padding-top: 138px; }
@@ -577,14 +617,15 @@ h4 {
 
 .terms-list {
   margin-top: 54px;
-  width: 68%;
+  width: 70%;
   margin-right: auto;
   margin-left: auto; }
   .terms-list li {
     border-bottom: 1px solid #d3d3d4;
-    margin-bottom: 46px;
+    margin-bottom: 40px;
     padding-bottom: 5px;
-    position: relative; }
+    position: relative;
+    padding-left: 17px; }
     .terms-list li p {
       margin-top: 10px;
       padding-right: 50px; }
@@ -672,7 +713,7 @@ h4 {
     color: #fff; }
 
 .footer_middle {
-  padding-bottom: 33px; }
+  padding-bottom: 50px; }
 
 .footer-bottom {
   text-align: center;
