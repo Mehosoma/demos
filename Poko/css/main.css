@@ -190,7 +190,7 @@ h4 {
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out; }
   .arr-right-gen .st0, .arr-right-gen .st1 {
-    stroke: #424242;
+    stroke: #58595b;
     -moz-transition: all 0.3s ease-out;
     -o-transition: all 0.3s ease-out;
     -webkit-transition: all 0.3s ease-out;
@@ -595,6 +595,10 @@ h4 {
 .poko-footer {
   background-color: #000;
   padding-top: 25px; }
+  .poko-footer .logo {
+    margin-left: 0px; }
+  .poko-footer .social-icons {
+    margin-right: 0px; }
 
 .footer_top {
   display: -webkit-box;
