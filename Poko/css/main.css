@@ -583,13 +583,56 @@ h4 {
   .terms-list li {
     border-bottom: 1px solid #d3d3d4;
     margin-bottom: 46px;
-    padding-bottom: 5px; }
+    padding-bottom: 5px;
+    position: relative; }
     .terms-list li p {
-      margin-top: 10px; }
+      margin-top: 10px;
+      padding-right: 50px; }
   .terms-list li:hover {
     cursor: pointer; }
   .terms-list li:last-child {
     margin-bottom: 0px; }
+
+.faq-list_plus {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  position: absolute;
+  top: -8px;
+  right: 0px;
+  border-radius: 50%; }
+
+.faq-list_plus:before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 2px;
+  position: absolute;
+  top: 18px;
+  left: 9px;
+  background-color: #808285;
+  z-index: 10;
+  opacity: 0.5; }
+
+.faq-list_plus:after {
+  content: '';
+  display: block;
+  width: 2px;
+  height: 20px;
+  position: absolute;
+  top: 9px;
+  left: 18px;
+  background-color: #808285;
+  z-index: 10;
+  opacity: 0.5; }
+
+.terms li.faq-list_drop__active .faq-list_plus {
+  background-color: transparent; }
+
+.terms li.faq-list_drop__active .faq-list_plus:after {
+  display: none; }
 
 /***************************************************Footer***********************************/
 .poko-footer {

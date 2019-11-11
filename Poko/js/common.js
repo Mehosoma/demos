@@ -57,12 +57,11 @@ $(function () {
 });
 
 
-
-
 //Show-hide drop accordeon
 $(document).ready(function(){
     $('.terms-list li').on('click',function(e){
-      $(this).children('.terms-list_drop').slideToggle();                              
+      $(this).children('.terms-list_drop').slideToggle(); 
+      $(this).toggleClass('faq-list_drop__active');                             
     });
 });
 
