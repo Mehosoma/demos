@@ -10,3 +10,97 @@
 
 @media only screen and (min-width : 992px) and (max-width : 1199px) {
 }
+
+@media only screen and (min-width : 1400px) and (max-width : 1799px) {
+
+	.main-menu a{
+		font-size: 15px;
+	}
+
+	.main-menu{
+		padding-right: 36px;
+	}
+
+	.btn-gen{
+		font-size: 15px;
+		padding: 11px 20px;
+	}
+
+	.main-banner{
+		height: 750px;
+	}
+
+	.product-image{
+		height: 560px;
+	}
+
+	.product-slide {
+		height: 740px;
+	}
+
+	.arr-right-gen {
+		right: -20px;
+	}
+
+	.arr-left-gen{
+		left: -30px;
+	}
+
+	.product-cost span {
+		font-size: 22px;
+	}
+
+	.product-colors span {
+		font-size: 15px;
+	}
+
+	.colors {
+		margin-right: 20px;
+	}
+
+	.product-colors{
+		margin-top: 0px;
+	}
+
+	.about p, .benefits-content-wrapper p{
+		font-size: 22px;
+	}
+
+	.about .col-4{
+		margin-top: 100px;
+	}
+
+	.gen-slider .slick-slide{
+		margin: 0 10px;
+	}
+
+	.gen-slider{
+		margin: 0 -10px;
+	}
+
+	.benefit-slider img{
+		height: 390px;
+	}
+
+	.benefits-back {
+		height: 718px;
+	}
+
+	.benefit-slider .slick-dots {
+		bottom: 70px;
+	}
+
+	.benefits .arr-right-gen {
+		top: 73%;
+		left: 97%;
+	}
+
+	.benefits .arr-left-gen{
+		top: 73%;
+	}
+
+	.btn-about{
+		margin-top: 70px;
+	}
+
+}
