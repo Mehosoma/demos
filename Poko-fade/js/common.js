@@ -18,7 +18,8 @@ $(document).ready(function(){
   		autoplay: true,  		
   		arrows: false, 
   		dots: true,
-  		speed: 1500, 				
+  		speed: 1500,
+  		fade: true 				
 	});
 
 	$('.benefit-slider').slick({
