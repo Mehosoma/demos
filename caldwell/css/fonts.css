@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "SpinnakerRegular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/SpinnakerRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/SpinnakerRegular.woff") format("woff"), url("../fonts/SpinnakerRegular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Avenir Next Cyr Demi";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/AvenirNextCyr-Demi.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirNextCyr-Demi.woff") format("woff"), url("../fonts/AvenirNextCyr-Demi.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins Light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/Poppins-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Poppins-Light.woff") format("woff"), url("../fonts/Poppins-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/Poppins-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Poppins-Regular.woff") format("woff"), url("../fonts/Poppins-Regular.ttf") format("truetype");
+}
