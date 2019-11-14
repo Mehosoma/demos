@@ -332,16 +332,12 @@ h2 {
   -ms-flex-align: center;
   align-items: center;
   margin: auto;
-  -webkit-box-flex: 0;
-  -ms-flex: 0 0 100%;
-  flex: 0 0 100%;
 }
 
 .main-header span {
   font-family: "Avenir Next Cyr Demi", sans-serif;
   color: #fff;
   text-transform: uppercase;
-  display: block;
 }
 
 .main-header hr {
@@ -350,13 +346,11 @@ h2 {
   background-color: #fff;
   margin-top: 24px;
   margin-bottom: 16px;
-  display: block;
 }
 
 .main-header h2 {
   letter-spacing: -3px;
   margin-bottom: 43px;
-  display: block;
 }
 
 .main-overlay {
@@ -933,12 +927,12 @@ h2 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  position: relative;
+  position: absolute;
+  top: 0px;
   display: block;
   overflow: hidden;
   background-color: #325b75;
-  position: absolute;
-  top: -50px;
+  right: 0px;
 }
 
 .menu-toggle-button span {
