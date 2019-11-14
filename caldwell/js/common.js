@@ -191,5 +191,3 @@ $(document).ready(function(){
         $("header .main-menu").toggleClass('is-active');               
     });
 });
-
-
