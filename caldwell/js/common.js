@@ -60,7 +60,15 @@ $(document).ready(function(){
   		speed: 1500,
   		draggable: false,
   		pauseOnFocus: false,
-  		pauseOnHover: false, 		
+  		pauseOnHover: false, 
+  		responsive: [ 
+		    {
+		      breakpoint: 768,
+		      settings: {
+		        speed: 1000,      
+		      }
+		    },
+	    ]   						
 	});
 
 	$('.single-slider').slick({
