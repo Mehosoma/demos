@@ -8,6 +8,7 @@
 	.logo-header{
 		margin-top: -1px;
 		margin-left: -5px;
+		margin-bottom: 0px!important;
 	}
 
 	.main-block{
@@ -31,7 +32,7 @@
 
 	.main-menu{
 		position: absolute;
-		top: -90px;
+		top: -50px;
 		left: 0px;
 		background-color: rgba(0,0,0,0.9);
 		width: 100vw;
