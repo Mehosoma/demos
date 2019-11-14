@@ -341,6 +341,7 @@ h2 {
   font-family: "Avenir Next Cyr Demi", sans-serif;
   color: #fff;
   text-transform: uppercase;
+  display: block;
 }
 
 .main-header hr {
@@ -349,11 +350,13 @@ h2 {
   background-color: #fff;
   margin-top: 24px;
   margin-bottom: 16px;
+  display: block;
 }
 
 .main-header h2 {
   letter-spacing: -3px;
   margin-bottom: 43px;
+  display: block;
 }
 
 .main-overlay {
