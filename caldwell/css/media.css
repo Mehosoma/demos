@@ -1,5 +1,15 @@
 @media only screen and (min-width : 0px) and (max-width : 575px) {
 
+	.logo-header img{
+		width: auto;
+		height: 50px;
+	}
+
+	.logo-header{
+		margin-top: -1px;
+		margin-left: -5px;
+	}
+
 	.main-block{
 		height: auto;
 	}
@@ -14,7 +24,7 @@
 		z-index: 1000000;
 	}
 
-	.cald-header .row, .cald-header .container-fluid, .cald-header .col-12{
+	.cald-header .row, .cald-header .container-fluid, .cald-header .col-12, .cald-header .col-3, .cald-header .col-9{
 		margin: 0px;
 		padding: 0px;
 	}

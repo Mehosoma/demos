@@ -331,6 +331,7 @@ h2 {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  margin: auto;
 }
 
 .main-header span {
@@ -930,6 +931,8 @@ h2 {
   display: block;
   overflow: hidden;
   background-color: #325b75;
+  position: absolute;
+  top: -90px;
 }
 
 .menu-toggle-button span {
