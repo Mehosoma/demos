@@ -844,6 +844,8 @@ and (orientation: portrait) {
 	    max-width: 33.333333%;
 	}
 
+
+
 	.form-field {
 		flex: 0 0 30%;
 	}
@@ -965,6 +967,20 @@ and (orientation: portrait) {
 	    -ms-flex: 0 0 33.333333%;
 	    flex: 0 0 33.333333%;
 	    max-width: 33.333333%;
+	}
+
+	.services-block .col-lg-7{
+		-ms-flex: 0 0 58.333333%;
+	    flex: 0 0 58.333333%;
+	    max-width: 58.333333%;
+	}
+
+	.services-block .col-lg-5{
+	
+		    -ms-flex: 0 0 41.666667%;
+		    flex: 0 0 41.666667%;
+		    max-width: 41.666667%;
+	
 	}
 
 	.form-field {
