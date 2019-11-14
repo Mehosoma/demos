@@ -23,7 +23,31 @@ $(document).ready(function(){
   		speed: 1500,
   		draggable: false,
   		pauseOnFocus: false,
-  		pauseOnHover: false, 		
+  		pauseOnHover: false,
+  		responsive: [ 
+		    {
+		      breakpoint: 1440,
+		      settings: {
+		        slidesToShow: 3,
+		        slidesToScroll: 1,       
+		      }
+		    },
+		    {
+		      breakpoint: 992,
+		      settings: {
+		        slidesToShow: 2,
+		        slidesToScroll: 1,       
+		      }
+		    },
+
+		     {
+		      breakpoint: 576,
+		      settings: {
+		        slidesToShow: 1,
+		        slidesToScroll: 1,       
+		      }
+		    }
+	    ]   				
 	});
 
 	$('.services-slider').slick({
@@ -49,7 +73,15 @@ $(document).ready(function(){
   		speed: 1500,
   		draggable: false,
   		pauseOnFocus: false,
-  		pauseOnHover: false, 		
+  		pauseOnHover: false,
+  		responsive: [ 
+		    {
+		      breakpoint: 768,
+		      settings: {
+		     	adaptiveHeight: true      
+		      }
+		    },		
+	    ]   				
 	});
 });
 
@@ -71,11 +103,39 @@ $('.services-slider').on('afterChange', function (event, slick, currentSlide) {
         }  
 })
 
+
+//Sevices-slide link navigation
 $('a[data-slide]').click(function(e) {
    e.preventDefault();
    var slideno = $(this).data('slide');
    $('.services-slider').slick('slickGoTo', slideno);
+   $('.action a').removeClass('active-link');
+   $(this).addClass('active-link');
  });
+
+//Slider-Arrows for Services-slider
+$(function () {
+
+	var $arrows = $('.arrows');
+    var $next = $arrows.children(".arr-right-gen");    
+    var $prev = $arrows.children(".arr-left-gen");
+    
+
+    $('.services-main .arr-right-gen').on('click', function (e) {     
+       var i = $('.services-slider').slick('slickCurrentSlide');
+       var sn=i+1;
+       $('.action a').removeClass('active-link');
+       $('.action a[data-slide="'+sn+'"]').addClass('active-link');
+    });
+    $('.arr-left-gen').on('click', function (e) {
+    	var i = $('.services-slider').slick('slickCurrentSlide');
+       var sn=i-1;
+       $('.action a').removeClass('active-link');
+       $('.action a[data-slide="'+sn+'"]').addClass('active-link');
+    });
+
+});
+
 
 //Slider-Arrows
 $(function () {
@@ -102,15 +162,19 @@ $(document).ready(function(){
  $(".js-range-slider").ionRangeSlider({
        min: 0,
         max: 1000000,
-        from: 100000,
+        from: 300000,
         step: 50000,
         hide_min_max: true,
         prefix: "$",
     });
  });
 
-
-$(window).on('load', function () {
-    $('.hidden-c').css("display", "block"); // показываем блок с контентом 
-    $('.preloader').delay(350).fadeOut(2000); // и скрываем сам блок прелоудера.
+//Show-hide menu
+$(document).ready(function(){
+    $('.click-mobile').on('click',function(e){
+        e.preventDefault();        
+        $("header .main-menu").toggleClass('is-active');               
+    });
 });
+
+

@@ -61,7 +61,7 @@ body hr {
 }
 
 .pixel {
-  background: url(../images/contact.jpg) no-repeat top center;
+  background: url(../images/services-pi.jpg) no-repeat top center;
   width: 1920px;
   height: 12800px;
   position: absolute;
@@ -97,7 +97,6 @@ h2 {
   position: absolute;
   top: 50%;
   margin-top: -20px;
-  left: 103px;
   text-align: center;
   padding: 10px 17px;
   -moz-transition: all 0.3s ease-out;
@@ -126,7 +125,6 @@ h2 {
   position: absolute;
   top: 50%;
   margin-top: -20px;
-  right: 103px;
   text-align: center;
   padding: 10px 0px;
   -moz-transition: all 0.3s ease-out;
@@ -240,6 +238,14 @@ h2 {
 
 .arr-disable {
   pointer-events: none;
+}
+
+.general-block .arr-left-gen {
+  left: 103px;
+}
+
+.general-block .arr-right-gen {
+  right: 103px;
 }
 
 /***************************************************Header*****************************************/
@@ -545,6 +551,12 @@ h2 {
   color: #888;
   font-family: "Poppins", sans-serif;
   font-size: 13px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  background: transparent url("../images/arrow_b2.png") no-repeat right 17px top 22px !important;
 }
 
 .form-gen textarea {
@@ -593,7 +605,7 @@ h2 {
 
 .checkmark {
   position: absolute;
-  top: 6px;
+  top: 5px;
   left: 0px;
   height: 13px;
   width: 13px;
@@ -629,16 +641,21 @@ h2 {
   transform: rotate(45deg);
 }
 
+.check-gen {
+  float: left;
+  position: relative;
+  top: 15px;
+}
+
+.wpcf7-submit7 {
+  float: right;
+}
+
+.mc4wp-checkbox-contact-form-7 label span {
+  font-size: 13px;
+}
+
 .form-bottom {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   width: 100%;
 }
 
@@ -698,9 +715,13 @@ h2 {
   height: 14px;
 }
 
+.bootstrap-select > .dropdown-toggle {
+  color: red;
+}
+
 /***************************************************Services************************************/
 .services-main .arr-left-gen, .single-main .arr-left-gen {
-  left: 93.6%;
+  right: 103px;
 }
 
 .services-main .arr-right-gen, .single-main .arr-right-gen {
@@ -727,6 +748,11 @@ h2 {
 .action {
   height: 30px;
   margin-bottom: 53px;
+  position: absolute;
+  top: 193px;
+  left: 85px;
+  z-index: 100;
+  width: 46%;
 }
 
 .action a {
@@ -779,6 +805,14 @@ h2 {
   border-bottom: 1px solid #325b75;
 }
 
+.services-block {
+  position: relative;
+}
+
+.services-left .gen-text {
+  margin-top: 100px;
+}
+
 /***************************************************Portfolio************************************/
 .portfolio-slide {
   position: relative;
@@ -792,6 +826,7 @@ h2 {
 
 .portfolio-slide a {
   position: relative;
+  display: block;
 }
 
 .portfolio-slide a:hover .portfolio-image:after {
@@ -844,7 +879,7 @@ h2 {
 }
 
 .single-main .arr-left-gen {
-  left: 84%;
+  right: 183px;
 }
 
 .single-main .arr-right-gen {
@@ -877,4 +912,65 @@ h2 {
   height: 100%;
   background-color: #000;
   z-index: 1000;
+}
+
+/***********************************************ButtonMobile************************************/
+.menu-toggle-button {
+  width: 50px;
+  height: 50px;
+  float: right;
+  background-color: transparent;
+  padding-top: 5px;
+  border: none;
+  text-indent: -9999px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  background-color: #325b75;
+}
+
+.menu-toggle-button span {
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  top: 20px;
+  left: 23px;
+  right: 16px;
+  -webkit-transition: background 0s 0.3;
+  -o-transition: background 0s 0.3;
+  transition: background 0s 0.3;
+  display: inline-block;
+}
+
+.menu-toggle-button span::before, .menu-toggle-button span::after {
+  content: "";
+  display: block;
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  -webkit-transition-duration: 0.3s, 1s;
+  -o-transition-duration: 0.3s, 1s;
+  transition-duration: 0.3s, 1s;
+  -webkit-transition-delay: 0s, 0.3s;
+  -o-transition-delay: 0s, 0.3s;
+  transition-delay: 0s, 0.3s;
+}
+
+.menu-toggle-button span::before {
+  left: -12px;
+}
+
+.menu-toggle-button span::after {
+  right: -12px;
+}
+
+.menu-toggle-button.is-active span {
+  background: none;
 }
