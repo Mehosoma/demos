@@ -26,7 +26,7 @@ $(document).ready(function(){
   		pauseOnHover: false,
   		responsive: [ 
 		    {
-		      breakpoint: 1440,
+		      breakpoint: 1200,
 		      settings: {
 		        slidesToShow: 3,
 		        slidesToScroll: 1,       
@@ -101,6 +101,13 @@ $('.services-slider').on('afterChange', function (event, slick, currentSlide) {
         else {
             $('.services-main .arr-left-gen').removeClass('arr-disable');
         }  
+
+          var i = $('.services-slider').slick('slickCurrentSlide');
+       var sn=i;
+       $('.action a').removeClass('active-link');
+       $('.action a[data-slide="'+sn+'"]').addClass('active-link');
+
+
 })
 
 
