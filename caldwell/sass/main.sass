@@ -1,0 +1,717 @@
+@import "bourbon/bourbon"
+
+$gray: #939598
+$blue: #325b75
+$text: #112a39
+$form: #325b75
+$spin: 'SpinnakerRegular', sans-serif
+$avenir: 'Avenir Next Cyr Demi', sans-serif
+$pop: 'Poppins Light', sans-serif
+$pop-r: 'Poppins', sans-serif
+
+html
+	width: 100%
+	height: 100%
+	overflow-x: hidden
+body
+	width: 100%
+	height: auto
+	min-width: 320px	
+	margin: 0 auto
+	position: relative
+	font-family: $spin
+	font-size: 14px
+	line-height: 1.2
+	-webkit-font-smoothing: antialiased
+	background-color: #fff		
+
+	a:hover, a:focus, a:active
+		text-decoration: none
+		outline: none
+	input:focus, input:active, select:focus, select:active
+		text-decoration: none
+		outline: none
+	button:focus, button:active
+		text-decoration: none
+		outline: none
+	textarea:focus, textarea:active
+		text-decoration: none
+		outline: none
+	a
+		display: inline-block
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out
+	ul, ol
+		padding: 0px
+		margin: 0px
+		list-style-type: none
+	button
+		border: none
+		cursor: pointer
+	hr
+		border: none	
+
+/***************************************************GeneralStyles************************************/
+.main-block
+	width: 100%
+	height: 100vh
+	position: relative
+	z-index: 10
+	overflow: hidden
+h2
+	font-family: $pop
+	font-size: 88px
+	color: #fff
+	text-transform: uppercase
+.arr-left-gen
+	width: 40px
+	height: 40px	
+	background-color: #fff
+	position: absolute
+	top: 50%
+	margin-top: -20px	
+	text-align: center
+	padding: 10px 17px
+	-moz-transition: all 0.3s ease-out
+	-o-transition: all 0.3s ease-out
+	-webkit-transition: all 0.3s ease-out
+	transition: all 0.3s ease-out
+	.st0, .st1
+		stroke: #424242
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out
+	svg
+		width: 8px
+		height: 20px		
+.arr-right-gen
+	width: 40px
+	height: 40px	
+	background-color: #fff
+	position: absolute
+	top: 50%
+	margin-top: -20px
+	text-align: center
+	padding: 10px 0px
+	-moz-transition: all 0.3s ease-out
+	-o-transition: all 0.3s ease-out
+	-webkit-transition: all 0.3s ease-out
+	transition: all 0.3s ease-out
+	.st0, .st1
+		stroke: #424242
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out
+	svg
+		width: 8px
+		height: 20px
+.arr-left-gen:hover, .arr-right-gen:hover
+	background-color: rgba(255,255,255,0.23)
+	cursor: pointer	
+	.st0, .st1
+		stroke: #fff		
+	svg
+.inner-page
+	h2
+		font-size: 42px
+		color: $blue
+	.main-menu
+		a:hover
+			color: $blue
+	.contacts-header
+		a
+			color: $blue
+		a:hover
+			color: $gray
+			opacity: 1
+		a:first-child
+			border-right: 1px solid $blue
+		a:first-child:hover
+			border-right: 1px solid $blue
+	.footer-left
+		p
+			color: $blue
+	.social
+		a
+			opacity: 0.92
+		.st0
+			fill: $blue
+		a:hover .st0
+			fill: $gray
+	.main-block
+		display: flex
+		align-items: center
+	.logo .st0
+		fill: $gray
+.gen-text
+	p
+		font-size: 16px
+		line-height: 30px
+		color: $text
+		letter-spacing: -0.5px
+.btn-gen
+	font-family: $avenir
+	font-size: 14px
+	padding: 15px 25px
+	background-color: $blue
+	border: 1px solid $blue
+	color: #fff
+	border-radius: 25px
+	-moz-transition: all 0.3s ease-out
+	-o-transition: all 0.3s ease-out
+	-webkit-transition: all 0.3s ease-out
+	transition: all 0.3s ease-out
+.btn-gen:hover
+	background-color: $text
+	color: #fff
+.arr-disable
+	pointer-events: none
+.general-block
+	.arr-left-gen
+		left: 103px
+	.arr-right-gen
+		right: 103px
+
+/***************************************************Header*****************************************/
+.cald-header
+	width: 100%
+	height: 100px
+	position: absolute
+	top: 0px
+	left: 0px
+	z-index: 100
+.logo
+	margin-top: 14px
+.main-menu
+	margin-top: 35px
+	margin-left: 36px
+	li
+		display: inline-block
+		margin-right: 12px
+	a
+		font-family: $spin
+		font-size: 14px
+		color: $gray
+		text-transform: uppercase
+	a:hover
+		color: #fff
+.contacts-header
+	display: flex
+	justify-content: flex-end
+	margin-top: 35px
+	margin-right: 5px
+	a
+		color: #fff
+		text-transform: uppercase
+		padding: 0px 6px
+		letter-spacing: -0.3px
+	a:first-child
+		border-right: 1px solid #fff
+	a:hover
+		opacity: 0.23
+
+/***************************************************MainSlider************************************/
+.main-slider
+	width: 100%
+	height: 100%
+	.main-slide
+		display: flex
+	.main-slide .col-12
+		display: flex
+.main-header
+	width: 100%
+	display: flex
+	flex-direction: column
+	flex: 1
+	justify-content: center
+	align-items: center
+	span
+		font-family: $avenir
+		color: #fff
+		text-transform: uppercase
+	hr
+		width: 80px
+		height: 1px
+		background-color: #fff
+		margin-top: 24px
+		margin-bottom: 16px
+	h2
+		letter-spacing: -3px
+		margin-bottom: 43px
+.main-overlay
+	width: 100%
+	height: 100%
+	position: absolute
+	top: 0px
+	left: 0px
+	background: -moz-linear-gradient(top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 30%, rgba(0,0,0,0) 100%)
+	background: -webkit-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 30%,rgba(0,0,0,0) 100%)
+	background: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 30%,rgba(0,0,0,0) 100%)
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 )
+.main-overlay-black
+	width: 100%
+	height: 100%
+	position: absolute
+	top: 0px
+	left: 0px
+	background-color: rgba(0,0,0,0.57)
+.main-slide
+	width: 100%
+	height: 100vh	
+	background-repeat: no-repeat
+	background-position: center center
+	background-size: cover
+	position: relative
+
+
+/***************************************************Footer************************************/
+.cald-footer
+	width: 100%
+	height: 95px
+	position: absolute
+	bottom: 0px
+	left: 0px
+	z-index: 100
+.footer-left
+	display: flex
+	margin-top: 40px
+	margin-left: 9px
+	p
+		font-family: $avenir
+		color: #fff
+		opacity: 0.23
+		padding: 0px 6px
+	p:first-child
+		border-right: 1px solid #fff
+.social
+	display: flex
+	justify-content: flex-end
+	margin-top: 38px
+	margin-right: 15px
+	li
+		margin-left: 20px
+	a
+		opacity: 0.23	
+	a:hover
+		opacity: 1
+	.st0, .st1
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out
+
+/***************************************************About************************************/
+.inner-main-block
+	width: 100%
+	height: calc(100vh - 195px)
+	overflow: hidden
+.inner-left
+	padding-top: 167px
+	padding-left: 85px
+	h2
+		margin-bottom: 28px
+	p
+		margin-bottom: 35px		
+.inner-left
+	.float-image
+		width: 200px
+		height: 200px
+		float: right
+		margin-left: 30px
+		margin-bottom: 10px
+.image-right
+	img
+		width: 100%
+		height: 100%
+		height: calc(100vh - 195px)
+.sign-image
+	margin-top: 48px
+
+/***************************************************Contacts************************************/
+.map-wrapper
+	width: 100%
+	height: calc(100vh - 195px)
+	iframe
+		width: 100%
+		height: 100%
+.contacts-block
+	.inner-left
+		padding-top: 43px
+.form-field
+	flex: 0 0 47%
+	margin-bottom: 12px
+	justify-content: space-between
+	span
+		display: block
+		font-family: $pop-r
+		font-size: 13px
+		color: #555
+		margin-bottom: 10px
+.form-gen
+	margin-top: 12px
+	width: 100%
+	display: flex
+	flex-wrap: wrap
+	padding-right: 126px
+	justify-content: space-between
+	input, select
+		width: 100%
+		height: 50px
+		background-color: transparent
+		box-shadow: none
+		border: 1px solid #ebebeb
+		margin-bottom: 10px
+		font-family: $pop-r
+		font-size: 13px
+		color: $form
+		padding: 0 12px
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out
+	select
+		color: #888
+		font-family: $pop-r
+		font-size: 13px	
+		-webkit-appearance: none
+		-moz-appearance: none
+		-ms-appearance: none
+		-o-appearance: none
+		appearance: none		
+		background-color: transparent
+		background-repeat: no-repeat
+		background-position: right 17px top 22px !important
+	textarea
+		width: 100%
+		height: 170px
+		resize: none
+		font-family: $pop-r
+		font-size: 13px
+		color: $form
+		padding: 20px 12px
+		border: 1px solid #ebebeb
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out
+.field-100
+	flex: 1 1 100%
+.l-container
+	display: inline-block
+	position: relative
+	padding-left: 20px	
+	cursor: pointer
+	font-family: $pop-r
+	font-size: 13px
+	line-height: 24px
+	color: #555
+	margin-bottom: 0px
+	-webkit-user-select: none
+	-moz-user-select: none
+	-ms-user-select: none
+	user-select: none
+.l-container input
+	position: absolute
+	opacity: 0
+	cursor: pointer
+	display: none
+.checkmark
+	position: absolute
+	top: 5px
+	left: 0px
+	height: 13px
+	width: 13px
+	background-color: #fff
+	border-radius: 0px
+	border: 1px solid gray
+.check-gen input:checked ~ .checkmark
+	background-color: $blue
+	border: 1px solid $blue
+.check-gen .checkmark:after
+	content: ""
+	position: absolute
+	display: none
+.check-gen input:checked ~ .checkmark:after
+	display: block
+.check-gen .checkmark:after
+	left: 3px
+	top: 0px
+	width: 6px
+	height: 9px
+	border: solid white
+	border-width: 0 2px 2px 0
+	-webkit-transform: rotate(45deg)
+	-ms-transform: rotate(45deg)
+	transform: rotate(45deg)
+.check-gen
+	float: left
+	position: relative
+	top: 15px
+.wpcf7-submit7
+	float: right
+.mc4wp-checkbox-contact-form-7 label span
+  font-size: 13px
+.form-bottom
+	width: 100%
+	.btn-gen
+		margin-top: 0px
+.form-gen input:hover, .form-gen input:active, .form-gen input:focus,  .form-gen textarea:hover, .form-gen textarea:active, .form-gen textarea:focus, .form-gen select:hover, .form-gen select:active, .form-gen select:focus
+	border: 1px solid #dae1e6
+.form-gen input:active, .form-gen input:focus, .form-gen textarea:active, .form-gen textarea:focus, .form-gen select:active, .form-gen select:focus
+	box-shadow: 0px 0px 14px rgba(0,0,0,0.1)
+.irs--flat .irs-line 
+	height: 4px
+	top: 5px
+.irs--flat .irs-bar
+	height: 4px
+	background-color: $blue
+	top: 5px
+.irs--flat .irs-handle
+	width: 22px
+	height: 22px
+	background-color: $blue
+	border-radius: 50%
+	top: -4px
+	border: 1px solid #fff
+	box-shadow: 0px 0px 13px rgba(0,0,0,0.29)
+.irs--flat .irs-handle>i:first-child
+	display: none
+.irs--flat .irs-single
+	background-color: transparent
+	font-family: $pop-r
+	color: $blue
+	font-size: 12px
+	font-weight: bold
+	margin-top: 24px
+.irs--flat .irs-single:before
+	display: none
+.irs--flat
+	height: 14px
+.bootstrap-select>.dropdown-toggle
+	color: red
+
+/***************************************************Services************************************/
+.services-main, .single-main
+	.arr-left-gen
+		right: 103px
+	.arr-right-gen
+		right: 28px
+	.arr-left-gen:hover, .arr-right-gen:hover
+		background-color: #fff
+		.st0
+			stroke: $gray
+.services-main 
+	.inner-left
+		padding-top: 128px
+		padding-right: 90px
+	h2
+		margin-bottom: 14px
+.action
+	height: 30px
+	margin-bottom: 53px
+	position: absolute
+	top: 193px
+	left: 85px
+	z-index: 100
+	width: 46%
+	a
+		font-family: $avenir
+		font-size: 14px
+		color: $gray
+		text-transform: uppercase
+		margin: 0px 17px
+		line-height: 18px
+		border-bottom: 1px solid transparent
+	a:first-child
+		margin-left: 0px
+	a:nth-child(2)
+		position: relative
+	a:nth-child(2):after
+		content: ''
+		display: block
+		position: absolute
+		width: 2px
+		height: 15px
+		top: 2px
+		left: 0px
+		background-color: $blue
+		left: -17px
+	a:nth-child(2):before
+		content: ''
+		display: block
+		position: absolute
+		width: 2px
+		height: 15px
+		top: 2px
+		right: 0px
+		background-color: $blue
+		right: -17px
+	a:hover
+		color: $blue
+	.active-link
+		color: $blue
+		border-bottom: 1px solid $blue
+.services-block
+	position: relative
+.services-left
+	.gen-text
+		margin-top: 100px
+.services-slider
+	.container-fluid
+		position: relative
+
+/***************************************************Portfolio************************************/
+.portfolio-slide
+	position: relative
+	img
+		width: 100%
+		height: 100%
+		height: calc(100vh - 195px)
+	a
+		position: relative
+		display: block
+	a:hover .portfolio-image:after
+		visibility: hidden
+		opacity: 0
+.project-name
+	position: absolute
+	bottom: 26px
+	text-align: center
+	width: 100%	
+	span
+		font-family: $avenir
+		color: #fff
+		font-size: 14px
+		text-transform: uppercase
+		display: block
+.portfolio-image:after
+	display: block
+	content: ''
+	position: absolute
+	top: 0px
+	left: 0px
+	width: 100%
+	height: 100%
+	background-color: rgba(0,0,0,0.43)
+	visibility: visible
+	opacity: 1
+	-moz-transition: all 0.3s ease-out
+	-o-transition: all 0.3s ease-out
+	-webkit-transition: all 0.3s ease-out
+	transition: all 0.3s ease-out
+
+
+/***************************************************Single************************************/
+.single-left-block
+	span
+		font-family: $avenir
+		color: #b4b6b8
+		font-size: 14px
+		text-transform: uppercase
+	h2
+		letter-spacing: -1px
+.single-main .arr-left-gen
+	right: 183px
+.single-main .arr-right-gen
+	right: 118px
+.auto-flex
+	display: flex
+	width: 100%
+	height: 100%
+	justify-content: center
+	align-items: center
+	flex-direction: column
+	flex-wrap: wrap
+
+
+.preloader
+	position: absolute
+	width: 100%
+	height: 100%
+	background-color: #000
+	z-index: 1000
+
+
+/***********************************************ButtonMobile************************************/
+.menu-toggle-button
+	width: 50px
+	height: 50px
+	float: right
+	background-color: transparent
+	padding-top: 5px
+	border: none
+	text-indent: -9999px
+	-webkit-appearance: none
+	-moz-appearance: none
+	appearance: none
+	position: absolute
+	top: 0px
+	display: block
+	overflow: hidden
+	background-color: $blue
+	right: 0px
+
+
+.menu-toggle-button span
+	height: 7px
+	width: 7px
+	border-radius: 50%
+	background: #fff
+	position: absolute
+	top: 20px
+	left: 23px
+	right: 16px
+	-webkit-transition: background 0s 0.3
+	-o-transition: background 0s 0.3
+	transition: background 0s 0.3
+	display: inline-block
+
+
+.menu-toggle-button span::before, .menu-toggle-button span::after
+	content: ""
+	display: block
+	height: 7px
+	width: 7px
+	border-radius: 50%
+	background: #fff
+	position: absolute
+	-webkit-transition-duration: 0.3s, 1s
+	-o-transition-duration: 0.3s, 1s
+	transition-duration: 0.3s, 1s
+	-webkit-transition-delay: 0s, 0.3s
+	-o-transition-delay: 0s, 0.3s
+	transition-delay: 0s, 0.3s
+
+
+.menu-toggle-button span::before 
+	left: -12px
+
+.menu-toggle-button span::after 
+	right: -12px
+
+.menu-toggle-button.is-active span
+	background: none
+
+
+#page-preloader
+	position: fixed
+	left: 0
+	top: 0
+	right: 0
+	bottom: 0
+	background: #000
+	z-index: 100500
+
+
+#page-preloader .spinner 
+	width: 32px
+	height: 32px
+	position: absolute
+	left: 50%
+	top: 50%
+	background: url('/images/spinner.gif') no-repeat 50% 50%
+	margin: -16px 0 0 -16px

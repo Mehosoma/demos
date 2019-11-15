@@ -1,0 +1,1004 @@
+html {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  width: 100%;
+  height: auto;
+  min-width: 320px;
+  margin: 0 auto;
+  position: relative;
+  font-family: "SpinnakerRegular", sans-serif;
+  font-size: 14px;
+  line-height: 1.2;
+  -webkit-font-smoothing: antialiased;
+  background-color: #fff;
+}
+
+body a:hover, body a:focus, body a:active {
+  text-decoration: none;
+  outline: none;
+}
+
+body input:focus, body input:active, body select:focus, body select:active {
+  text-decoration: none;
+  outline: none;
+}
+
+body button:focus, body button:active {
+  text-decoration: none;
+  outline: none;
+}
+
+body textarea:focus, body textarea:active {
+  text-decoration: none;
+  outline: none;
+}
+
+body a {
+  display: inline-block;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+body ul, body ol {
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none;
+}
+
+body button {
+  border: none;
+  cursor: pointer;
+}
+
+body hr {
+  border: none;
+}
+
+/***************************************************GeneralStyles************************************/
+.main-block {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+}
+
+h2 {
+  font-family: "Poppins Light", sans-serif;
+  font-size: 88px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.arr-left-gen {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  margin-top: -20px;
+  text-align: center;
+  padding: 10px 17px;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.arr-left-gen .st0, .arr-left-gen .st1 {
+  stroke: #424242;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.arr-left-gen svg {
+  width: 8px;
+  height: 20px;
+}
+
+.arr-right-gen {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  margin-top: -20px;
+  text-align: center;
+  padding: 10px 0px;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.arr-right-gen .st0, .arr-right-gen .st1 {
+  stroke: #424242;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.arr-right-gen svg {
+  width: 8px;
+  height: 20px;
+}
+
+.arr-left-gen:hover, .arr-right-gen:hover {
+  background-color: rgba(255, 255, 255, 0.23);
+  cursor: pointer;
+}
+
+.arr-left-gen:hover .st0, .arr-left-gen:hover .st1, .arr-right-gen:hover .st0, .arr-right-gen:hover .st1 {
+  stroke: #fff;
+}
+
+.inner-page h2 {
+  font-size: 42px;
+  color: #325b75;
+}
+
+.inner-page .main-menu a:hover {
+  color: #325b75;
+}
+
+.inner-page .contacts-header a {
+  color: #325b75;
+}
+
+.inner-page .contacts-header a:hover {
+  color: #939598;
+  opacity: 1;
+}
+
+.inner-page .contacts-header a:first-child {
+  border-right: 1px solid #325b75;
+}
+
+.inner-page .contacts-header a:first-child:hover {
+  border-right: 1px solid #325b75;
+}
+
+.inner-page .footer-left p {
+  color: #325b75;
+}
+
+.inner-page .social a {
+  opacity: 0.92;
+}
+
+.inner-page .social .st0 {
+  fill: #325b75;
+}
+
+.inner-page .social a:hover .st0 {
+  fill: #939598;
+}
+
+.inner-page .main-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.inner-page .logo .st0 {
+  fill: #939598;
+}
+
+.gen-text p {
+  font-size: 16px;
+  line-height: 30px;
+  color: #112a39;
+  letter-spacing: -0.5px;
+}
+
+.btn-gen {
+  font-family: "Avenir Next Cyr Demi", sans-serif;
+  font-size: 14px;
+  padding: 15px 25px;
+  background-color: #325b75;
+  border: 1px solid #325b75;
+  color: #fff;
+  border-radius: 25px;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.btn-gen:hover {
+  background-color: #112a39;
+  color: #fff;
+}
+
+.arr-disable {
+  pointer-events: none;
+}
+
+.general-block .arr-left-gen {
+  left: 103px;
+}
+
+.general-block .arr-right-gen {
+  right: 103px;
+}
+
+/***************************************************Header*****************************************/
+.cald-header {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 100;
+}
+
+.logo {
+  margin-top: 14px;
+}
+
+.main-menu {
+  margin-top: 35px;
+  margin-left: 36px;
+}
+
+.main-menu li {
+  display: inline-block;
+  margin-right: 12px;
+}
+
+.main-menu a {
+  font-family: "SpinnakerRegular", sans-serif;
+  font-size: 14px;
+  color: #939598;
+  text-transform: uppercase;
+}
+
+.main-menu a:hover {
+  color: #fff;
+}
+
+.contacts-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  margin-top: 35px;
+  margin-right: 5px;
+}
+
+.contacts-header a {
+  color: #fff;
+  text-transform: uppercase;
+  padding: 0px 6px;
+  letter-spacing: -0.3px;
+}
+
+.contacts-header a:first-child {
+  border-right: 1px solid #fff;
+}
+
+.contacts-header a:hover {
+  opacity: 0.23;
+}
+
+/***************************************************MainSlider************************************/
+.main-slider {
+  width: 100%;
+  height: 100%;
+}
+
+.main-slider .main-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-slider .main-slide .col-12 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.main-header span {
+  font-family: "Avenir Next Cyr Demi", sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.main-header hr {
+  width: 80px;
+  height: 1px;
+  background-color: #fff;
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+
+.main-header h2 {
+  letter-spacing: -3px;
+  margin-bottom: 43px;
+}
+
+.main-overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0) 100%);
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.65)), color-stop(30%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0)));
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 );
+}
+
+.main-overlay-black {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.57);
+}
+
+.main-slide {
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+
+/***************************************************Footer************************************/
+.cald-footer {
+  width: 100%;
+  height: 95px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  z-index: 100;
+}
+
+.footer-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 40px;
+  margin-left: 9px;
+}
+
+.footer-left p {
+  font-family: "Avenir Next Cyr Demi", sans-serif;
+  color: #fff;
+  opacity: 0.23;
+  padding: 0px 6px;
+}
+
+.footer-left p:first-child {
+  border-right: 1px solid #fff;
+}
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  margin-top: 38px;
+  margin-right: 15px;
+}
+
+.social li {
+  margin-left: 20px;
+}
+
+.social a {
+  opacity: 0.23;
+}
+
+.social a:hover {
+  opacity: 1;
+}
+
+.social .st0, .social .st1 {
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+/***************************************************About************************************/
+.inner-main-block {
+  width: 100%;
+  height: calc(100vh - 195px);
+  overflow: hidden;
+}
+
+.inner-left {
+  padding-top: 167px;
+  padding-left: 85px;
+}
+
+.inner-left h2 {
+  margin-bottom: 28px;
+}
+
+.inner-left p {
+  margin-bottom: 35px;
+}
+
+.inner-left .float-image {
+  width: 200px;
+  height: 200px;
+  float: right;
+  margin-left: 30px;
+  margin-bottom: 10px;
+}
+
+.image-right img {
+  width: 100%;
+  height: 100%;
+  height: calc(100vh - 195px);
+}
+
+.sign-image {
+  margin-top: 48px;
+}
+
+/***************************************************Contacts************************************/
+.map-wrapper {
+  width: 100%;
+  height: calc(100vh - 195px);
+}
+
+.map-wrapper iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.contacts-block .inner-left {
+  padding-top: 43px;
+}
+
+.form-field {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 47%;
+  flex: 0 0 47%;
+  margin-bottom: 12px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.form-field span {
+  display: block;
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.form-gen {
+  margin-top: 12px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding-right: 126px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.form-gen input, .form-gen select {
+  width: 100%;
+  height: 50px;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: 1px solid #ebebeb;
+  margin-bottom: 10px;
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  color: #325b75;
+  padding: 0 12px;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.form-gen select {
+  color: #888;
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: right 17px top 22px !important;
+}
+
+.form-gen textarea {
+  width: 100%;
+  height: 170px;
+  resize: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  color: #325b75;
+  padding: 20px 12px;
+  border: 1px solid #ebebeb;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.field-100 {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 100%;
+  flex: 1 1 100%;
+}
+
+.l-container {
+  display: inline-block;
+  position: relative;
+  padding-left: 20px;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  color: #555;
+  margin-bottom: 0px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.l-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  display: none;
+}
+
+.checkmark {
+  position: absolute;
+  top: 5px;
+  left: 0px;
+  height: 13px;
+  width: 13px;
+  background-color: #fff;
+  border-radius: 0px;
+  border: 1px solid gray;
+}
+
+.check-gen input:checked ~ .checkmark {
+  background-color: #325b75;
+  border: 1px solid #325b75;
+}
+
+.check-gen .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.check-gen input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.check-gen .checkmark:after {
+  left: 3px;
+  top: 0px;
+  width: 6px;
+  height: 9px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.check-gen {
+  float: left;
+  position: relative;
+  top: 15px;
+}
+
+.wpcf7-submit7 {
+  float: right;
+}
+
+.mc4wp-checkbox-contact-form-7 label span {
+  font-size: 13px;
+}
+
+.form-bottom {
+  width: 100%;
+}
+
+.form-bottom .btn-gen {
+  margin-top: 0px;
+}
+
+.form-gen input:hover, .form-gen input:active, .form-gen input:focus, .form-gen textarea:hover, .form-gen textarea:active, .form-gen textarea:focus, .form-gen select:hover, .form-gen select:active, .form-gen select:focus {
+  border: 1px solid #dae1e6;
+}
+
+.form-gen input:active, .form-gen input:focus, .form-gen textarea:active, .form-gen textarea:focus, .form-gen select:active, .form-gen select:focus {
+  -webkit-box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.1);
+}
+
+.irs--flat .irs-line {
+  height: 4px;
+  top: 5px;
+}
+
+.irs--flat .irs-bar {
+  height: 4px;
+  background-color: #325b75;
+  top: 5px;
+}
+
+.irs--flat .irs-handle {
+  width: 22px;
+  height: 22px;
+  background-color: #325b75;
+  border-radius: 50%;
+  top: -4px;
+  border: 1px solid #fff;
+  -webkit-box-shadow: 0px 0px 13px rgba(0, 0, 0, 0.29);
+  box-shadow: 0px 0px 13px rgba(0, 0, 0, 0.29);
+}
+
+.irs--flat .irs-handle > i:first-child {
+  display: none;
+}
+
+.irs--flat .irs-single {
+  background-color: transparent;
+  font-family: "Poppins", sans-serif;
+  color: #325b75;
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 24px;
+}
+
+.irs--flat .irs-single:before {
+  display: none;
+}
+
+.irs--flat {
+  height: 14px;
+}
+
+.bootstrap-select > .dropdown-toggle {
+  color: red;
+}
+
+/***************************************************Services************************************/
+.services-main .arr-left-gen, .single-main .arr-left-gen {
+  right: 103px;
+}
+
+.services-main .arr-right-gen, .single-main .arr-right-gen {
+  right: 28px;
+}
+
+.services-main .arr-left-gen:hover, .services-main .arr-right-gen:hover, .single-main .arr-left-gen:hover, .single-main .arr-right-gen:hover {
+  background-color: #fff;
+}
+
+.services-main .arr-left-gen:hover .st0, .services-main .arr-right-gen:hover .st0, .single-main .arr-left-gen:hover .st0, .single-main .arr-right-gen:hover .st0 {
+  stroke: #939598;
+}
+
+.services-main .inner-left {
+  padding-top: 128px;
+  padding-right: 90px;
+}
+
+.services-main h2 {
+  margin-bottom: 14px;
+}
+
+.action {
+  height: 30px;
+  margin-bottom: 53px;
+  position: absolute;
+  top: 193px;
+  left: 85px;
+  z-index: 100;
+  width: 46%;
+}
+
+.action a {
+  font-family: "Avenir Next Cyr Demi", sans-serif;
+  font-size: 14px;
+  color: #939598;
+  text-transform: uppercase;
+  margin: 0px 17px;
+  line-height: 18px;
+  border-bottom: 1px solid transparent;
+}
+
+.action a:first-child {
+  margin-left: 0px;
+}
+
+.action a:nth-child(2) {
+  position: relative;
+}
+
+.action a:nth-child(2):after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 2px;
+  height: 15px;
+  top: 2px;
+  left: 0px;
+  background-color: #325b75;
+  left: -17px;
+}
+
+.action a:nth-child(2):before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 2px;
+  height: 15px;
+  top: 2px;
+  right: 0px;
+  background-color: #325b75;
+  right: -17px;
+}
+
+.action a:hover {
+  color: #325b75;
+}
+
+.action .active-link {
+  color: #325b75;
+  border-bottom: 1px solid #325b75;
+}
+
+.services-block {
+  position: relative;
+}
+
+.services-left .gen-text {
+  margin-top: 100px;
+}
+
+.services-slider .container-fluid {
+  position: relative;
+}
+
+/***************************************************Portfolio************************************/
+.portfolio-slide {
+  position: relative;
+}
+
+.portfolio-slide img {
+  width: 100%;
+  height: 100%;
+  height: calc(100vh - 195px);
+}
+
+.portfolio-slide a {
+  position: relative;
+  display: block;
+}
+
+.portfolio-slide a:hover .portfolio-image:after {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.project-name {
+  position: absolute;
+  bottom: 26px;
+  text-align: center;
+  width: 100%;
+}
+
+.project-name span {
+  font-family: "Avenir Next Cyr Demi", sans-serif;
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  display: block;
+}
+
+.portfolio-image:after {
+  display: block;
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.43);
+  visibility: visible;
+  opacity: 1;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+/***************************************************Single************************************/
+.single-left-block span {
+  font-family: "Avenir Next Cyr Demi", sans-serif;
+  color: #b4b6b8;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.single-left-block h2 {
+  letter-spacing: -1px;
+}
+
+.single-main .arr-left-gen {
+  right: 183px;
+}
+
+.single-main .arr-right-gen {
+  right: 118px;
+}
+
+.auto-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.preloader {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  z-index: 1000;
+}
+
+/***********************************************ButtonMobile************************************/
+.menu-toggle-button {
+  width: 50px;
+  height: 50px;
+  float: right;
+  background-color: transparent;
+  padding-top: 5px;
+  border: none;
+  text-indent: -9999px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
+  top: 0px;
+  display: block;
+  overflow: hidden;
+  background-color: #325b75;
+  right: 0px;
+}
+
+.menu-toggle-button span {
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  top: 20px;
+  left: 23px;
+  right: 16px;
+  -webkit-transition: background 0s 0.3;
+  -o-transition: background 0s 0.3;
+  transition: background 0s 0.3;
+  display: inline-block;
+}
+
+.menu-toggle-button span::before, .menu-toggle-button span::after {
+  content: "";
+  display: block;
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  -webkit-transition-duration: 0.3s, 1s;
+  -o-transition-duration: 0.3s, 1s;
+  transition-duration: 0.3s, 1s;
+  -webkit-transition-delay: 0s, 0.3s;
+  -o-transition-delay: 0s, 0.3s;
+  transition-delay: 0s, 0.3s;
+}
+
+.menu-toggle-button span::before {
+  left: -12px;
+}
+
+.menu-toggle-button span::after {
+  right: -12px;
+}
+
+.menu-toggle-button.is-active span {
+  background: none;
+}
+
+#page-preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #000;
+  z-index: 100500;
+}
+
+#page-preloader .spinner {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background: url("/images/spinner.gif") no-repeat 50% 50%;
+  margin: -16px 0 0 -16px;
+}
