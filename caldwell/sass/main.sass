@@ -525,6 +525,7 @@ h2
 		text-transform: uppercase
 		margin: 0px 17px
 		line-height: 18px
+		border-bottom: 1px solid transparent
 	a:first-child
 		margin-left: 0px
 	a:nth-child(2)
@@ -559,6 +560,9 @@ h2
 .services-left
 	.gen-text
 		margin-top: 100px
+.services-slider
+	.container-fluid
+		position: relative
 
 /***************************************************Portfolio************************************/
 .portfolio-slide
@@ -701,10 +705,13 @@ h2
 	bottom: 0
 	background: #000
 	z-index: 100500
-.spinner
+
+
+#page-preloader .spinner 
+	width: 32px
+	height: 32px
 	position: absolute
-	top: 0px
-	bottom: 0px
-	left: 0px
-	right: 0px
-	margin: auto
+	left: 50%
+	top: 50%
+	background: url('/images/spinner.gif') no-repeat 50% 50%
+	margin: -16px 0 0 -16px

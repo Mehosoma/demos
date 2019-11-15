@@ -140,7 +140,7 @@
 	}
 
 	.action{
-		top: 60px;
+		top: -30px;
 		width: 100%;
 		left: 5px;
 		text-align: center;
@@ -162,7 +162,11 @@
 	}
 
 	.services-slider{
-		margin-top: 90px;
+		margin-top: 50px;
+	}
+
+	.services-slider .slick-track{
+		padding-top: 40px;
 	}
 
 	.services-left .gen-text{

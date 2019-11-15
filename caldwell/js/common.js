@@ -122,33 +122,8 @@ $('a[data-slide]').click(function(e) {
    e.preventDefault();
    var slideno = $(this).data('slide');
    $('.services-slider').slick('slickGoTo', slideno);
-   $('.action a').removeClass('active-link');
-   $(this).addClass('active-link');
+  
  });
-
-//Slider-Arrows for Services-slider
-$(function () {
-
-	var $arrows = $('.arrows');
-    var $next = $arrows.children(".arr-right-gen");    
-    var $prev = $arrows.children(".arr-left-gen");
-    
-
-    $('.services-main .arr-right-gen').on('click', function (e) {     
-       var i = $('.services-slider').slick('slickCurrentSlide');
-       var sn=i+1;
-       $('.action a').removeClass('active-link');
-       $('.action a[data-slide="'+sn+'"]').addClass('active-link');
-    });
-    $('.arr-left-gen').on('click', function (e) {
-    	var i = $('.services-slider').slick('slickCurrentSlide');
-       var sn=i-1;
-       $('.action a').removeClass('active-link');
-       $('.action a[data-slide="'+sn+'"]').addClass('active-link');
-    });
-
-});
-
 
 //Slider-Arrows
 $(function () {
@@ -190,10 +165,3 @@ $(document).ready(function(){
     });
 });
 
-
-$(window).on('load', function () {
-    var $preloader = $('#page-preloader'),
-        $spinner   = $preloader.find('.spinner');
-    $spinner.fadeOut();
-    $preloader.delay(350).fadeOut('slow');
-});
