@@ -143,15 +143,28 @@
 		top: 60px;
 		width: auto;
 		left: 5px;
+		margin-right: 5px;
 		text-align: center;
 		display: flex;
 		overflow: scroll;
+		height: 20px;	
+	}
+
+	.action-overlay{
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		width: 60px;
 		height: 20px;
+		top: 60px;
+		z-index: 10000000;
+		background: url('../images/arr.svg') center right 10px no-repeat, linear-gradient(to right,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,1) 100%) 0 0 no-repeat;
+		
+
 	}
 
 	.action a{
-		font-size: 10px;
-	
+		font-size: 10px;	
 		display: flex;
 		flex: 0 0 auto;
 	}
