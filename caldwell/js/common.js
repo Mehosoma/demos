@@ -112,17 +112,24 @@ $('.services-slider').on('afterChange', function (event, slick, currentSlide) {
 
           var i = $('.services-slider').slick('slickCurrentSlide');
        var sn=i;
-       $('.action a').removeClass('active-link');
+      
        $('.action a[data-slide="'+sn+'"]').addClass('active-link');
 })
 
+//Disable arrows
+$('.services-slider').on('beforeChange', function (event, slick, currentSlide) {
+   $('.action a').removeClass('active-link');
+ });
 
+$(window).on('load resize', function() {
 //Sevices-slide link navigation
 $('a[data-slide]').click(function(e) {
    e.preventDefault();
    var slideno = $(this).data('slide');
    $('.services-slider').slick('slickGoTo', slideno);
-   $('.action a').removeClass('active-link');
+  
+ });
+
  });
 
 
