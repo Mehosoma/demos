@@ -169,6 +169,12 @@
 		flex: 0 0 auto;
 	}
 
+	.action a:nth-child(3){
+	
+		flex: 0 0 180px;
+	}
+
+
 
 	.services-slider{
 		margin-top: 90px;
