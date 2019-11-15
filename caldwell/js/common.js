@@ -122,8 +122,9 @@ $('a[data-slide]').click(function(e) {
    e.preventDefault();
    var slideno = $(this).data('slide');
    $('.services-slider').slick('slickGoTo', slideno);
-  
+   $('.action a').removeClass('active-link');
  });
+
 
 //Slider-Arrows
 $(function () {
