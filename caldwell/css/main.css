@@ -977,3 +977,22 @@ h2 {
 .menu-toggle-button.is-active span {
   background: none;
 }
+
+#page-preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #000;
+  z-index: 100500;
+}
+
+.spinner {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+}
