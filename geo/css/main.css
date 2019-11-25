@@ -58,7 +58,8 @@ body {
 /***************************************************GeneralStyles************************************/
 h2 {
   font-size: 40px;
-  color: #5dadb9; }
+  color: #5dadb9;
+  text-align: center; }
   h2 i {
     font-style: normal;
     color: #000; }
@@ -67,7 +68,8 @@ h3 {
   font-size: 30px;
   color: #5dadb9;
   margin: 30px 0px 0px 0px;
-  font-weight: 700; }
+  font-weight: 700;
+  text-align: center; }
 
 .btn-red {
   width: 300px;
@@ -91,7 +93,8 @@ h3 {
 .login-wrapper {
   width: 100%;
   height: 100vh;
-  position: relative; }
+  position: relative;
+  text-align: center; }
 
 #login-form {
   width: 600px;
@@ -117,7 +120,7 @@ h3 {
     display: block;
     margin-bottom: 20px; }
   #login-form input {
-    width: 100%;
+    width: 280px;
     height: 50px;
     border-radius: 5px;
     padding: 0px 40px 0px 10px;
@@ -127,9 +130,10 @@ h3 {
     background-repeat: no-repeat;
     background-position: center right 10px;
     background-size: 30px 30px;
-    margin-bottom: 40px; }
+    margin-bottom: 20px;
+    margin-top: 30px; }
   #login-form button {
-    width: 70%;
+    width: 280px;
     height: 50px;
     border-radius: 30px;
     background-color: #ff3f3f;
@@ -238,9 +242,6 @@ h3 {
     font-size: 16px;
     margin-bottom: 0px; }
 
-.red-text p {
-  color: #ff3f3f; }
-
 /***************************************************Info************************************/
 .quest-info {
   width: 600px;
@@ -268,7 +269,8 @@ h3 {
     border-radius: 0px 30px 0px 30px; }
 
 .mark-list {
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  text-align: center; }
   .mark-list li {
     display: inline-block;
     margin: 10px 5px;
@@ -293,8 +295,6 @@ h3 {
 
 .quest-info-icons_block {
   padding-left: 60px;
-  -ms-flex-preferred-size: 33.33%;
-  flex-basis: 33.33%;
   margin: 20px 0px;
   padding-bottom: 20px; }
   .quest-info-icons_block span {
@@ -337,3 +337,6 @@ h3 {
     font-size: 16px;
     line-height: 24px;
     color: #000; }
+
+.red-text p {
+  color: #ff3f3f; }
