@@ -2,16 +2,13 @@
 
 	.login-wrapper{
 		width: 100%;
-		height: 100%;
-		min-height: 568px;
 	}
 
 	#login-form{
 		width: 100%;
-		padding-left: 10px;
-		padding-right: 10px;
+		padding: 100px 10px;
 		border-radius: 0px;
-		height: 100%;		
+		height: auto;		
 	}
 
 	h2{
@@ -55,19 +52,23 @@
 		padding: 5px 40px;
 	}
 
-	.mark-list li{
-		display: block;
-		max-width: 300px;
+	h3{
+		margin-bottom: 10px;
+	}
+
+	.mark-list li{	
 		margin-left: auto;
 		margin-right: auto;
+		margin: 5px 10px
 	}
 
 	.quest-info-icons_block{
-		flex-basis: 100%;
+		flex-basis: 50%;
 	}
 
 	.quest-info-icons{
 		flex-wrap: wrap;
+		padding: 0px;
 	}
 
 	.quest-info-content{
@@ -83,23 +84,27 @@
 		max-width: 320px;
 	}
 
-
 }
 
 @media only screen and (min-width : 480px) and (max-width : 767px) {
 
+.quest-info-icons_block{
+		flex-basis: 33%;
+	}
+
+}
+
+@media only screen and (min-width : 575px) and (max-width : 767px) {
+
 	.login-wrapper{
 		width: 100%;
-		height: 100%;
-		min-height: 568px;
 	}
 
 	#login-form{
 		width: 100%;
-		padding-left: 10px;
-		padding-right: 10px;
+		padding: 100px 10px;
 		border-radius: 0px;
-		height: 100%;		
+		height: auto;		
 	}
 
 	.quests-block{
