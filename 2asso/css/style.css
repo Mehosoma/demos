@@ -1,0 +1,313 @@
+/* fonts */
+@font-face {
+	font-family: 'georgia';
+	src: url('../fonts/georgia.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+/* reset */
+* {
+	font-family: 'georgia';
+	padding: 0;
+	margin: 0;
+	outline: 0;
+	list-style: none;
+    text-decoration: none;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+/* main */
+html,body {
+	position: relative;
+	overflow-x: hidden;
+	width: 100%;
+	margin: 0;
+	z-index: 0;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.game-page {
+	font-size: 0;
+	position: relative;
+	width: 1000px;
+	height: 700px;
+	margin: 0 auto;
+	background: url(../img/panel.png);
+	overflow: hidden;
+}
+.game-page .start-word {
+	color: #fff;
+	font-size: 18px;
+	position: absolute;
+	top: 60px;
+    left: 65px;
+}
+.game-page .end-word {
+	color: #fff;
+	font-size: 18px;
+	position: absolute;
+	bottom: 75px;
+	left: 65px;
+}
+.game-page .text-block {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 150px;
+    right: 90px;
+    width: 320px;
+    height: 255px;
+    overflow: hidden;
+}
+.game-page .txt-box {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+	right: 85px;
+    width: 330px;
+    bottom: 65px;
+    height: 40px;
+}
+.game-page .txt-box input {
+    color: #fff;
+    font-size: 18px;
+    line-height: 40px;
+    height: 100%;
+    width: 100%;
+    padding: 0 10px;
+    background: 0;
+    border: 0;
+}
+.game-page .btn-add {
+	position: absolute;
+    right: 100px;
+    bottom: 20px;
+    height: 45px;
+    width: 180px;
+	background: url(../img/button.png);
+	background-position: 0 0;
+	cursor: pointer;
+}
+.game-page .btn-add:hover {
+	background-position: 0 -48px;
+}
+.game-page .btn-add:active {
+	background-position: 0 -96px;
+}
+.game-page .button {
+	position: absolute;
+    height: 45px;
+    width: 180px;
+	background-position: 0 0;
+	cursor: pointer;
+}
+.game-page .b1 {
+	background-image: url(../img/button1.png);
+    right: 248px;
+    bottom: 190px;
+}
+.game-page .b2 {
+	background-image: url(../img/button2.png);
+    right: 248px;
+    bottom: 155px;
+}
+.game-page .b3 {
+	background-image: url(../img/button3.png);
+    right: 78px;
+    bottom: 183px;
+}
+.game-page .b4 {
+	background-image: url(../img/button4.png);
+    right: 78px;
+    bottom: 148px;
+}
+.game-page .button:hover {
+	background-position: 0 -48px;
+}
+.game-page .button:active {
+	background-position: 0 -96px;
+}
+/*scrollbar-block*/
+.game-page .main-block {
+	color: #fff;
+	font-size: 18px;
+    position: absolute;
+	top: 150px;
+    left: 65px;
+    width: 445px;
+    height: 380px;
+    overflow: hidden;
+}
+.game-page .main-block p {
+	padding: 5px 0 10px;
+}
+/*scroll-box*/
+.game-page .scroll-box {
+	transition: 0.15s;
+	-webkit-transition: 0.15s;
+	-moz-transition: 0.15s;
+	-ms-transition: 0.15s;
+	-o-transition: 0.15s;
+}
+/*scrollbar*/
+.game-page .scrollbar {
+    position: absolute;
+	top: 200px;
+    right: 455px;
+    width: 11px;
+    height: 300px;
+}
+.game-page .scrollbar:before {
+	content: "";
+	position: absolute;
+    top: -60px;
+    left: -10px;
+    right: -10px;
+    bottom: -60px;
+    background: url(../img/scroll.png) no-repeat center center;
+    background-size: 35px 100%;
+}
+.game-page .scrollbar.scrlbr-2 {
+	right: 50px;
+    top: 185px;
+    height: 200px;
+}
+.game-page .scrollbar.scrlbr-2:before {
+    top: -55px;
+    bottom: -55px;
+}
+.game-page .scrollbar .ball {
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+}
+.game-page .scrollbar .ball:after {
+	content: "";
+	position: absolute;
+	top: -45px;
+    left: -9.5px;
+    width: 30px;
+    height: 90px;
+	display: block;
+    background: url(../img/ball.png) no-repeat center center;
+}
+/*btns-block*/
+.game-page .btns-block {
+	position: absolute;
+    top: 5px;
+    right: 50px;
+	z-index: 3;
+}
+.game-page .btns-block .btn-nav {
+	margin: 10px 0;
+	height: 103px;
+	display: inline-block;
+	overflow: hidden;
+	cursor: pointer;
+}
+.game-page .btns-block .btn-nav:hover img {
+	transform: translateY(-103px);
+}
+.game-page .btns-block .btn-nav:active img {
+	transform: translateY(-206px);
+}
+/*popup*/
+.game-page .overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0,0,0,0.4);
+	z-index: 4;
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.15s;
+	-webkit-transition: 0.15s;
+	-moz-transition: 0.15s;
+	-ms-transition: 0.15s;
+	-o-transition: 0.15s;
+}
+.game-page .popup {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 985px;
+	height: 633px;
+	margin: auto auto;
+	background: url(../img/card.png) no-repeat center center;
+	z-index: 5;
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.15s;
+	-webkit-transition: 0.15s;
+	-moz-transition: 0.15s;
+	-ms-transition: 0.15s;
+	-o-transition: 0.15s;
+}
+.game-page .overlay.active,
+.game-page .popup.active {
+	visibility: visible;
+	opacity: 1;
+}
+.game-page .popup .close {
+	position: absolute;
+    right: 151px;
+    bottom: 27px;
+	width: 130px;
+	height: 80px;
+	background: url(../img/close.png) no-repeat center center;
+	cursor: pointer;
+}
+.game-page .popup .txt {
+	display: none;
+}
+.game-page .popup .txt.active {
+	display: block;
+}
+.game-page .popup .inner {
+    padding-top: 70px;
+    max-width: 610px;
+    margin: 0 auto;
+}
+.game-page .popup p {
+	color: #fff;
+	font-size: 21px;
+	line-height: 25px;
+	padding-bottom: 10px;
+}
+.game-page .popup p.sbl {
+	padding-top: 30px;
+}
+.game-page .popup .Bl {
+	color: #fff;
+	font-size: 21px;
+	text-align: center;
+	line-height: 25px;
+	position: absolute;
+	left: 0;
+	right: 30px;
+	bottom: 150px;
+}
+.game-page .popup .Bl.center {
+	bottom: 300px;
+}
+
+.input-text{
+	position: absolute;
+	left: 0px;
+	top: -29px;
+	font-family: 'Candara', sans-serif;
+	text-transform: uppercase;
+	text-shadow: 0px 0px 5px rgba(16,254,252,1), 1px 0px 1px rgba(255,255,255,1);
+	font-size: 18px;
+	color: rgba(160,254,252,1);
+}
+	
