@@ -18,8 +18,10 @@ var windowHeight = window.innerHeight;
 
  if (windowHeight < 538) {
       $(".first-btn").addClass("fix-btn");
+      $(".first-bg").addClass("fix-bg");
     } else {
       $(".first-btn").removeClass("fix-btn");
+      $(".first-bg").removeClass("fix-bg");
     }
 });
 

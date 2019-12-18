@@ -73,6 +73,10 @@ body hr {
   position: relative;
 }
 
+.first-bg.fix-bg {
+  background-size: 70%;
+}
+
 .first-btn {
   position: absolute;
   bottom: 60px;
