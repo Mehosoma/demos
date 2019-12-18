@@ -14,7 +14,7 @@ window.addEventListener('resize', () => {
 //Adaptive height
 $(document).ready(function(){
 
-var height = window.innerHeight ? window.innerHeight : $(window).height();
+var height = $('.first').height();
 
 alert(height);
 
