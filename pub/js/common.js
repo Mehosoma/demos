@@ -18,7 +18,7 @@ var height = $('.first').height();
 
 alert(height);
 
-if (height < 538) {
+if (height < 3000) {
       $(".first-btn").addClass("fix-btn");
       $(".first-bg").addClass("fix-bg");
     } else {
