@@ -14,9 +14,11 @@ window.addEventListener('resize', () => {
 //Adaptive height
 $(window).on('load resize', function () {
 
-height = screen.height;
+height = document.body.clientHeight;
 
- if (height < 538) {
+alert(height);
+
+if (height < 538) {
       $(".first-btn").addClass("fix-btn");
       $(".first-bg").addClass("fix-bg");
     } else {
@@ -26,7 +28,7 @@ height = screen.height;
 });
 
 
-	$('.play-pause-btn').on('click',function(e){
-		$('.play-pause-btn').toggleClass('change');
-	});
+$('.play-pause-btn').on('click',function(e){
+	$('.play-pause-btn').toggleClass('change');
+});
 
