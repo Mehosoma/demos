@@ -16,7 +16,7 @@ $(window).on('load resize', function () {
 
 height = window.innerHeight ? window.innerHeight : $(window).height();
 
- if (height < 538) {
+ if (height < 1000) {
       $(".first-btn").addClass("fix-btn");
       $(".first-bg").addClass("fix-bg");
     } else {
@@ -25,4 +25,8 @@ height = window.innerHeight ? window.innerHeight : $(window).height();
     }
 });
 
+
+	$('.play-pause-btn').on('click',function(e){
+		$('.play-pause-btn').toggleClass('change');
+	});
 
