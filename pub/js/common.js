@@ -14,9 +14,9 @@ window.addEventListener('resize', () => {
 //Adaptive height
 $(window).on('load resize', function () {
 
-var windowHeight = window.innerHeight;
+height = window.innerHeight ? window.innerHeight : $(window).height();
 
- if (windowHeight < 538) {
+ if (height < 538) {
       $(".first-btn").addClass("fix-btn");
       $(".first-bg").addClass("fix-bg");
     } else {
