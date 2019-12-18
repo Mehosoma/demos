@@ -12,7 +12,7 @@ window.addEventListener('resize', () => {
 
 
 //Adaptive height
-$(window).on('load resize', function () {
+$(document).ready(function(){
 
 height = document.body.clientHeight;
 
