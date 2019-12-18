@@ -9,3 +9,18 @@ window.addEventListener('resize', () => {
   let vh = window.innerHeight * 0.01;
   document.documentElement.style.setProperty('--vh', `${vh}px`);
 });
+
+
+//Adaptive height
+$(window).on('load resize', function () {
+
+var windowHeight = window.innerHeight;
+
+ if (windowHeight < 538) {
+      $(".first-btn").addClass("fix-btn");
+    } else {
+      $(".first-btn").removeClass("fix-btn");
+    }
+});
+
+

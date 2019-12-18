@@ -92,6 +92,10 @@ body hr {
   letter-spacing: 2px;
 }
 
+.first-btn.fix-btn {
+  bottom: 30px;
+}
+
 /***************************************************Second************************************/
 .second-bg {
   width: 100%;
