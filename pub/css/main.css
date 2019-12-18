@@ -59,26 +59,12 @@ body hr {
   border: none;
 }
 
-.pixel {
-  background: url(../img/main.jpg) no-repeat top center;
-  width: 1920px;
-  height: 12800px;
-  position: absolute;
-  z-index: 1000000;
-  display: none;
-  left: 50%;
-  top: 0;
-  margin-left: -960px;
-  opacity: 0.5;
-  margin-top: 0px;
-}
-
 /***************************************************GeneralStyles************************************/
 /***************************************************First************************************/
 .first-bg {
   width: 100%;
   height: 100vh;
-  min-height: 568px;
+  height: calc(var(--vh, 1vh) * 100);
   background-color: #000000;
   background-image: url("../images/first-bg.png");
   background-repeat: no-repeat;
@@ -110,7 +96,7 @@ body hr {
 .second-bg {
   width: 100%;
   height: 100vh;
-  min-height: 568px;
+  height: calc(var(--vh, 1vh) * 100);
   background-image: url("../images/wine.png");
   background-repeat: no-repeat;
   background-position: top center;
