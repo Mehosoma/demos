@@ -203,3 +203,11 @@ $('.b4').on('click', function(e){
 	$('.input-text').html('Напишите ассоциацию:');
 });
 });
+
+//Change input value
+$(document).ready(function(){
+	$('.popup-load .button').on('click', function(e){
+		$('.popup-load .button').removeClass('popupload-btn-active');
+		$(this).toggleClass('popupload-btn-active');
+	});
+});

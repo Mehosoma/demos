@@ -176,6 +176,10 @@ html,body {
 	background-position: 0 -115px;
 }
 
+.game-page .popup-load  .popupload-btn-active {
+	background-position: 0 -115px;
+}
+
 /*scrollbar-block*/
 .game-page .main-block {
 	color: #fff;
