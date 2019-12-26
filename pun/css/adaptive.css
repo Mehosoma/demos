@@ -95,6 +95,10 @@
 	.menu .col .inner-box {
     	width: 25%;
 	}
+
+	.menu .texture-tab .inner-box{
+		width: 90%;
+	}
 }
 @media (max-width: 520px) {
 	.img-block {
