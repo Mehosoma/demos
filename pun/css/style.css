@@ -214,7 +214,7 @@ html,body {
 	top: 0;
 	bottom: 0;
 	left: -460px;
-	width: 600px;
+	width: 655px;
 	z-index: -1;
 	transition: 0.15s;
 	-webkit-transition: 0.15s;
@@ -459,8 +459,8 @@ html,body {
 }
 
 .menu .texture-tab .inner-box{
-	width: 256px;
-	height: 256px;
+	width: 128px;
+	height: 128px;
 	margin-bottom: 30px;
 	margin: 30px 15px 10px;
 
