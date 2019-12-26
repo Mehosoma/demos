@@ -97,7 +97,8 @@
 	}
 
 	.menu .texture-tab .inner-box{
-		width: 90%;
+		width: 40%;
+
 	}
 }
 @media (max-width: 520px) {
@@ -160,5 +161,9 @@
     	width: 330px;
     	display: inline-block;
     	margin: 0 5px;
+	}
+
+	.menu .texture-tab .inner-box{
+		width: 90%;
 	}
 }
