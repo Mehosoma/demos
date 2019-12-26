@@ -97,7 +97,8 @@
 	}
 
 	.menu .texture-tab .inner-box{
-		width: 40%;
+		width: 35vw;
+		height: 35vw;
 
 	}
 }
@@ -164,6 +165,7 @@
 	}
 
 	.menu .texture-tab .inner-box{
-		width: 90%;
+		width: 70vw;
+		height: 70vw;
 	}
 }

@@ -76,18 +76,3 @@ jQuery(document).ready(function(){
 	});
 });
 
-$(window).on('resize ready', function() {
-	var cw = $('.menu .texture-tab .inner-box').width();
-	$('.menu .texture-tab .inner-box').css({
-	    'height': cw + 'px'
-	});
-});
-
-jQuery(document).ready(function(){
-
-	var cw = $('.menu .texture-tab .inner-box').width();
-	$('.menu .texture-tab .inner-box').css({
-	    'height': cw + 'px'
-	});
-
-});
