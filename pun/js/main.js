@@ -62,21 +62,26 @@ jQuery(document).on("click",".menu .inner-pug",function(){
 	jQuery(this).closest(".inner-pugs").find(".inner-pug").removeClass("active");
 	jQuery(this).addClass("active");
 });
-// scrollbar
-jQuery(document).ready(function(){
-	if (window.innerWidth > 768) {
-		jQuery(".scrollbar-inner").scrollbar();
-		var scrll = true;
-	}
-	jQuery(window).resize(function(){
-		if (window.innerWidth < 769 && scrll) {
-			jQuery(".scrollbar-inner").scrollbar("onDestroy");
-			scrll = false;
+
+
+//
+jQuery(document).on("click",".menu .tab-sleeve .inner-box",function(){
+	if (jQuery(this).hasClass("short"))
+			jQuery('.mangets').css('display','none');
+		else{
+			jQuery('.mangets').css('display','flex');
 		}
-		else if (!scrll) {
-			jQuery(".scrollbar-inner").scrollbar();
-			scrll = true;
-		}
-	});
+
 });
 
+//
+jQuery(document).on("click",".menu .tab-sil .inner-box",function(){
+	if (jQuery(this).hasClass("sil-gen")){
+			$('.bottom-hid').css('display','flex')
+			$('.back-hid').css('display','none');
+		}else{
+			jQuery('.bottom-hid').css('display','none')
+			jQuery('.back-hid').css('display','flex');
+		}
+
+});
