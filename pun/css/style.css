@@ -202,12 +202,15 @@ html,body {
 }
 .menu.active li span {
 	font-size: 8px;
-	line-height: 10px;
-	position: absolute;
-	bottom: 4px;
-	left: 0;
-	width: 100%;
+	flex: 1 1 100%;
 }
+
+
+
+.menu.active li{
+	flex-wrap: wrap;
+}
+
 /*tabs*/
 .menu .tabs {
 	position: absolute;
@@ -239,7 +242,13 @@ html,body {
 	-moz-transition: 0.15s;
 	-ms-transition: 0.15s;
 	-o-transition: 0.15s;
+	visibility: hidden;
 }
+
+.menu .close-active{
+	visibility: visible;
+}
+
 .menu .close:hover {
 	color: #fff;
 	background: #c3a37e;
@@ -462,15 +471,39 @@ html,body {
 	width: 128px;
 	height: 128px;
 	margin-bottom: 30px;
-	margin: 30px 15px 10px;
-
+	margin: 30px 15px 20px;
+	position: relative;
+	border: 0px;
 }
 
 .menu .texture-tab .inner-box{
 	background-size: 12.5% 12.5%!important;
 }
 
-.menu .texture-tab .inner-box
+.menu .texture-tab .inner-box p{
+	position: absolute;
+	bottom: -30px;
+	line-height: 30px;
+	text-align: center;
+	width: 100%;
+	background-color: #e2e0dd;
+	left: 0px;
+	margin: 0px;
+	padding: 0px;
+}
+
+.menu .texture-tab .inner-box.active, .menu .texture-tab .inner-box p.active{
+	outline: 1px solid #c3a37e;
+}
+
+.canvas-div{
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	background-color: red;
+}
 
 .menu .inner-box.long {
 	height: 186px;

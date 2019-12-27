@@ -6,12 +6,14 @@ jQuery(document).on("click",".menu li",function(){
 	jQuery(".menu .tab").removeClass("active");
 	jQuery(".menu .tab").eq(jQuery(this).index()).addClass("active");
 	jQuery(".img-block").addClass("active");
+	jQuery(".menu .close").addClass("close-active");
 });
 jQuery(document).on("click",".menu .close",function(){
 	jQuery(".menu").removeClass("active");
 	jQuery(".menu li").removeClass("active");
 	jQuery(".menu .tab").removeClass("active");
 	jQuery(".img-block").removeClass("active");
+	jQuery(".menu .close").removeClass("close-active");
 });
 // list
 jQuery(document).on("click",".menu .list .list-title",function(){
@@ -38,7 +40,9 @@ jQuery(document).on("click",".menu .color-block .color-box",function(){
 // inner-box
 jQuery(document).on("click",".menu .inner-box",function(){
 	jQuery(this).closest(".inner-block").find(".inner-box").removeClass("active");
+	jQuery(this).closest(".inner-block").find("p").removeClass("active");
 	jQuery(this).addClass("active");
+	jQuery(this).find('p').addClass("active");
 });
 // inner-tab
 jQuery(document).on("click",".menu .inner-tab",function(){
