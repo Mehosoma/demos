@@ -1,0 +1,374 @@
+@import "bourbon/bourbon"
+
+$blue: #475A73
+$dark-blue: #0F213A
+$yellow: #FFA354
+$roboto: 'Roboto Condensed', sans-serif
+$open: 'Open Sans', sans-serif
+$text-300: 300
+$text-400: 400
+$text-600: 600
+$text-700: 700
+
+
+html
+	width: 100%
+	height: 100%
+	overflow-x: hidden
+body
+	width: 100%
+	height: auto
+	min-width: 320px	
+	margin: 0 auto
+	position: relative
+	font-family: $roboto
+	font-size: 16px
+	color: $dark-blue
+	line-height: 1.2
+	-webkit-font-smoothing: antialiased
+	background-color: #fff	
+	
+
+	a:hover, a:focus, a:active
+		text-decoration: none
+		outline: none
+	input:focus, input:active
+		text-decoration: none
+		outline: none
+	button:focus, button:active
+		text-decoration: none
+		outline: none
+	textarea:focus, textarea:active
+		text-decoration: none
+		outline: none
+	a
+		display: inline-block
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out
+	ul, ol
+		padding: 0px
+		margin: 0px
+		list-style-type: none
+	button
+		border: none
+		cursor: pointer
+	hr
+		border: none	
+
+
+
+/*****************************************************Main*******************************************/
+.main
+	width: 100%
+	min-height: 784px
+	background-image: url('../images/back-main.jpg')
+	background-repeat: no-repeat
+	background-position: center center
+	background-size: cover
+	position: relative
+	padding-top: 60px
+.main-decor_left
+	position: absolute
+	width: 265px
+	height: 152px
+	background: linear-gradient(131.97deg, #0A1627 6.42%, rgba(10, 22, 39, 0) 91.01%)
+	border-radius: 0px 0px 20px 0px
+	top: 0px
+	left: 0px
+	z-index: 10
+.main-decor_right
+	position: absolute
+	width: 329px
+	height: 129px
+	background: linear-gradient(141.02deg, #0A1627 6.42%, rgba(10, 22, 39, 0) 91.01%)
+	border-radius: 0px 0px 20px 0px
+	transform: matrix(-1, 0, 0, 1, 0, 0)
+	top: 0px
+	right: 0px
+	z-index: 10
+.main-decor_center
+	position: absolute
+	width: 100%
+	max-width: 1298px
+	height: 670px
+	top: 0px
+	right: 0px
+	left: 0px
+	right: 0px
+	margin: auto
+	z-index: 10
+	background: radial-gradient(50% 50% at 50% 50%, #101E30 38.02%, rgba(14, 31, 49, 0) 100%)
+.site-header
+	text-align: center
+	width: 100%
+	position: relative
+	z-index: 100
+	hr
+		width: 707px
+		height: 1px
+		background: #fff
+		opacity: 0.3
+		margin-top: 23px
+		margin-bottom: 33px
+.main-header
+	margin-top: 123px
+	h1
+		font-family: $roboto
+		font-size: 64px
+		line-height: 75px
+		color: $yellow
+		font-weight: $text-700
+		letter-spacing: 0.1em
+		text-transform: uppercase
+.main-subheader
+	margin-top: 15px
+	span
+		font-family: $roboto
+		font-size: 24px
+		line-height: 28px
+		color: #fff
+		opacity: 0.7
+		font-weight: $text-300
+		letter-spacing: 0.2em
+		text-transform: uppercase
+.results
+	span
+		font-family: $roboto
+		font-size: 24px
+		line-height: 41px
+		color: #fff
+		font-weight: $text-700
+		text-transform: uppercase
+.header-buttons
+	margin-top: 28px
+.header-buttons__left
+	width: 200px
+	height: 50px
+	line-height: 50px
+	background-color: $yellow
+	font-family: $open
+	font-size: 16px
+	color: $dark-blue
+	border-radius: 99px
+	border: 1px solid transparent
+	margin-right: 10px
+.header-buttons__left:hover
+	border: 1px solid $yellow
+	color: $yellow
+	background-color: transparent
+.header-buttons__right
+	width: 200px
+	height: 50px
+	line-height: 50px
+	background-color: transparent
+	font-family: $open
+	font-size: 16px
+	color: $yellow
+	border-radius: 99px
+	border: 1px solid $yellow
+.header-buttons__right:hover
+	border: 1px solid transparent
+	color: $dark-blue
+	background-color: $yellow
+.marker
+	margin-top: 82px
+	span
+		font-family: $roboto
+		font-size: 24px
+		line-height: 28px
+		color: #fff
+		font-weight: $text-700
+		text-transform: uppercase
+		background-image: url('../images/marker.png')
+		background-repeat: no-repeat
+		background-position: left center
+		padding-left: 45px
+
+
+/***************************************************Video************************************/
+.video
+	width: 100%
+	min-height: 750px
+	padding-top: 84px
+.video-content
+	text-align: center
+	span
+		font-family: $open
+		font-size: 24px
+		line-height: 38px
+		color: #091423
+		font-weight: $text-300
+.video-wr
+	width: 720px
+	height: 450px
+	margin: 0 auto
+	position: relative
+	margin-top: 31px
+.youtube-btn
+	position: absolute
+	top: 0px
+	bottom: 0px
+	left: 0px
+	right: 0px
+	margin: auto
+
+
+/***************************************************Stat************************************/
+.stat
+	width: 100%
+	min-height: 528px
+	background-color: #f7f7f7
+	img
+		margin-top: 77px
+		margin-left: 61px
+.stat-desc
+	margin-top: 135px
+	p
+		font-family: $open
+		font-size: 18px
+		line-height: 29px
+		color: $blue
+		font-weight: $text-300
+.stat-numbers
+	margin-top: 22px
+.stat-numbers .stat-numbers_block:nth-child(1)
+	margin-right: 36px
+.stat-numbers_block
+	display: inline-block
+	p
+		font-family: $open
+		font-size: 12px
+		line-height: 20px
+		color: $dark-blue
+		font-weight: $text-600
+		text-transform: uppercase
+		margin-bottom: 10px
+	span
+		font-family: $open
+		font-size: 48px
+		color: $dark-blue
+		font-weight: $text-700
+
+
+
+/***************************************************Graphs************************************/
+.graphs
+	padding-top: 62px
+	padding-bottom: 20px
+	img
+		width: 100%
+		height: auto
+	.row
+		margin-bottom: 38px
+.graph-block
+	margin-top: 113px
+	margin-left: 26px
+.graph-block-header
+	margin-bottom: 16px
+	span
+		font-family: $open
+		font-size: 24px
+		color: $dark-blue
+		font-weight: $text-400
+.graph-block-subheader
+	margin-bottom: 18px
+	span
+		font-family: $open
+		font-size: 16px
+		line-height: 26px
+		color: $blue
+		font-weight: $text-300
+.graph-list
+	li
+		font-family: $open
+		font-size: 16px
+		line-height: 33px
+		color: $dark-blue
+		font-weight: $text-300
+		position: relative
+		padding-left: 30px
+	li:before
+		display: block
+		content: ''
+		position: absolute
+		width: 14px
+		height: 14px
+		background: rgba(255, 163, 84, 0.2)
+		border-radius: 50%
+		left: 0px
+		top: 10px
+	li:after
+		display: block
+		content: ''
+		position: absolute
+		width: 6px
+		height: 6px
+		background: #FFA354
+		border-radius: 50%
+		left: 4px
+		top: 14px
+
+
+/***************************************************Icons************************************/
+.icons
+	padding-top: 23px
+	padding-bottom: 50px
+.icon-block
+	text-align: center
+	display: flex
+	justify-content: center
+	flex-direction: column
+	img
+		display: block
+		margin-bottom: 22px
+	span
+
+		font-family: $open
+		font-size: 22px
+		line-height: 36px
+		color: $dark-blue
+		font-weight: $text-300
+
+
+
+/***************************************************Teleg************************************/
+.teleg
+	width: 100%
+	height: 450px
+	background-color: #f7f7f7
+	img
+		margin-top: 46px
+		margin-right: 42px
+.teleg-block
+	margin-top: 158px
+	margin-left: 40px
+	span
+		font-family: $open
+		font-size: 30px
+		line-height: 48px
+		color: #091423
+		font-weight: $text-300
+	a
+		color: #2D9CDB
+
+
+
+/***************************************************Footer************************************/
+.site-footer
+	padding-top: 100px
+	padding-bottom: 100px
+.footer-block
+	width: 100%
+	text-align: center
+	min-height: 100px
+	span
+		display: block
+		font-family: $open
+		font-size: 24px
+		line-height: 38px
+		color: #091423
+		font-weight: $text-300
+	.header-buttons__left
+		margin-top: 20px
