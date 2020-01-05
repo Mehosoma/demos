@@ -23,7 +23,7 @@ body
 	line-height: 1.2
 	-webkit-font-smoothing: antialiased
 	background-color: #fff	
-	
+	font-size: 100%
 
 	a:hover, a:focus, a:active
 		text-decoration: none
@@ -73,12 +73,11 @@ body
 	width: 100%
 	height: 100vh
 	height: calc(var(--vh, 1vh) * 100)
-	background-color: #BEBEBE
-	flex-direction: column
-	flex-wrap: wrap	
+	background-color: #BEBEBE	
 	background-image: url('../images/dots.png')
 	background-repeat: no-repeat
 	background-position: center bottom 120px
+	flex-direction: column
 .inner .main-sc
 	background-image: none
 .main-sc_top
@@ -86,9 +85,10 @@ body
 	justify-content: center
 	position: relative
 	margin-top: 20px
+	width: 100%
 .brand
-	width: 80px
-	height: 80px
+	width: 10vh
+	height: 10vh
 	background: red
 	img
 		height: 100%
@@ -103,9 +103,10 @@ body
 	bottom: 0px
 	margin: auto
 .tuc
-	margin-top: 30px
+	margin-top: 4vh
+	width: 100%
 	span
-		font-size: 24px
+		font-size: 2.9vh
 		line-height: 28px
 		font-weight: $font-600
 		text-align: center
@@ -113,13 +114,12 @@ body
 .main-desc
 	margin-top: 40px
 .mans-desc
-	margin-top: 20px
-.mans-second-desc
-	margin-bottom: 130px
+	margin-top: 3vh
 .small-text
+	width: 100%
 	span
-		font-size: 16px
-		line-height: 26px
+		font-size: 2vh
+		line-height: 3vh
 		font-weight: $font-300
 		text-align: center
 		display: block
@@ -141,19 +141,18 @@ body
 .mans
 	display: flex
 	justify-content: center
-	margin-top: 30px
-	display: flex
-	flex: 1 1 auto
-	img
-		height: auto
-		width: 90%
+	margin-top: 3.5vh
+	width: 100%
+	img		
+		width: auto
+		height: 44vh
 .inner-four .small-text
 	margin-top: 10px
 .circle-icons
 	display: flex
 	justify-content: center
-	margin-top: 30px	
-	margin-bottom: 50px
+	flex-grow: 1
+	align-items: center
 	a
 		width: 45px
 		height: 45px
@@ -170,12 +169,10 @@ body
 		background-repeat: no-repeat
 		background-position: center center
 .self
-	display: flex
-	flex: 1 1 auto
 	width: 100%
+	height: 40vh
 	background: url('../images/dzuba.png') no-repeat left bottom, url('../images/user.png') no-repeat right bottom
-	min-height: 300px
-	max-height: 400px
+	background-size: 55%, 55%
 .btn-group
 	margin-top: 15px
 	width: 90%
@@ -200,16 +197,25 @@ body
 		font-size: 20px!important
 		color: rgba(0,0,0,1)!important
 .end-scu
-	margin: 20px 0px
-	width: 100%
-	height: 50px
+	display: flex
+	align-items: center
+	flex-direction: column
+	margin: 2.5vh 0px
+.end-scu-icons img
+	margin: 10px
+	width: 8vh
+	height: auto
 .inner-end
 	.btn-gen
 		flex-wrap: wrap
 		flex-direction: column
 		align-items: center
+		margin: 0px
+		flex-grow: 1
 		a
-			margin: 10px 0px
+			margin: 1vh 0px
+			height: 5.5vh
+			line-height: 5.5vh
 
 
 /***************************************************Modal************************************/
@@ -240,32 +246,33 @@ body
 	flex-wrap: wrap
 	flex-direction: column
 	.brand
-		margin: 10px 0px
+		margin: 2vh 0px
 	.tuc
-		margin-top: 20px
+		margin-top: 2vh
 		span
-			font-size: 18px
-			line-height: 21px
-	.circle-icons
-		margin-bottom: 20px
+			font-size: 2.2vh
+			line-height: 2.2vh
 	.circle-icons_one
 		background-image: url('../images/save.png')
 	.circle-icons_two
 		background-image: url('../images/share.png')
-	.mans
-		max-height: 220px
-		width: 75%
-		margin-top: 40px
 	.self
-		min-height: 160px
-		max-height: 220px
-		margin-top: 50px
-		background-size: 60%, 60%
+		height: 26vh
+		margin-top: 3vh
+		background-size: 23vh, 23vh
+	.mans
+		display: flex
+		justify-content: center
+		margin-top: 3vh
+		width: 100%
+		img		
+			width: auto
+			height: 26vh
 .modal-text
-	margin-top: 7px
+	margin-top: 1vh
 	span
-		font-size: 14px
-		line-height: 14px
+		font-size: 1.8vh
+		line-height: 1.8vh
 		font-weight: $font-300
 		text-align: center
 		display: block
