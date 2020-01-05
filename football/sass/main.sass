@@ -1,0 +1,271 @@
+@import "bourbon/bourbon"
+
+$blue: #4c4f6c
+$roboto: 'Roboto', sans-serif
+$font-300: 300
+$font-400: 400
+$font-500: 500
+$font-600: 600
+$font-700: 700
+
+html
+	width: 100%
+	height: 100%
+	overflow-x: hidden
+body
+	width: 100%
+	height: 100%
+	height: auto
+	min-width: 320px	
+	margin: 0 auto
+	position: relative
+	font-family: $roboto
+	line-height: 1.2
+	-webkit-font-smoothing: antialiased
+	background-color: #fff	
+	
+
+	a:hover, a:focus, a:active
+		text-decoration: none
+		outline: none
+	input:focus, input:active
+		text-decoration: none
+		outline: none
+	button:focus, button:active
+		text-decoration: none
+		outline: none
+	textarea:focus, textarea:active
+		text-decoration: none
+		outline: none
+	a
+		display: inline-block
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out
+	ul, ol
+		padding: 0px
+		margin: 0px
+		list-style-type: none
+	button
+		border: none
+		cursor: pointer
+	hr
+		border: none	
+
+.pixel
+	background: url(../img/main.jpg) no-repeat top center
+	width: 1920px
+	height: 12800px
+	position: absolute
+	z-index: 1000000
+	display: none
+	left: 50%
+	top: 0
+	margin-left: -960px
+	opacity: 0.5
+	margin-top: 0px
+
+
+/***************************************************GeneralStyles************************************/
+.main-sc
+	display: flex
+	width: 100%
+	height: 100vh
+	height: calc(var(--vh, 1vh) * 100)
+	background-color: #BEBEBE
+	flex-direction: column
+	flex-wrap: wrap	
+	background-image: url('../images/dots.png')
+	background-repeat: no-repeat
+	background-position: center bottom 120px
+.inner .main-sc
+	background-image: none
+.main-sc_top
+	display: flex
+	justify-content: center
+	position: relative
+	margin-top: 20px
+.brand
+	width: 80px
+	height: 80px
+	background: red
+	img
+		height: 100%
+		width: auto
+		max-width: 80px
+.marker
+	position: absolute
+	width: 28px
+	height: 28px
+	right: 20px
+	top: 0px
+	bottom: 0px
+	margin: auto
+.tuc
+	margin-top: 30px
+	span
+		font-size: 24px
+		line-height: 28px
+		font-weight: $font-600
+		text-align: center
+		display: block
+.main-desc
+	margin-top: 40px
+.mans-desc
+	margin-top: 20px
+.mans-second-desc
+	margin-bottom: 130px
+.small-text
+	span
+		font-size: 16px
+		line-height: 26px
+		font-weight: $font-300
+		text-align: center
+		display: block
+.btn-gen
+	display: flex
+	margin-top: auto
+	justify-content: center
+	margin-bottom: 48px
+	a
+		width: 167px
+		height: 44px
+		background-color: #fff
+		border-radius: 8px
+		line-height: 44px
+		text-align: center
+		font-size: 16px
+		font-weight: $font-600
+		color: #000
+.mans
+	display: flex
+	justify-content: center
+	margin-top: 30px
+	display: flex
+	flex: 1 1 auto
+	img
+		height: auto
+		width: 90%
+.inner-four .small-text
+	margin-top: 10px
+.circle-icons
+	display: flex
+	justify-content: center
+	margin-top: 30px	
+	margin-bottom: 50px
+	a
+		width: 45px
+		height: 45px
+		background-color: #fff
+		border-radius: 50%
+		margin-left: 10px
+		margin-right: 10px
+	.circle-icons_one
+		background-image: url('../images/camera.png')
+		background-repeat: no-repeat
+		background-position: center center
+	.circle-icons_two
+		background-image: url('../images/rotate.png')
+		background-repeat: no-repeat
+		background-position: center center
+.self
+	display: flex
+	flex: 1 1 auto
+	width: 100%
+	background: url('../images/dzuba.png') no-repeat left bottom, url('../images/user.png') no-repeat right bottom
+	min-height: 300px
+	max-height: 400px
+.btn-group
+	margin-top: 15px
+	width: 90%
+	height: 31px
+	margin-left: auto
+	margin-right: auto
+	border: 1px solid rgba(0, 0, 0, 0.25)
+	border-radius: 8px
+	button, button:hover, button:active, button:focus
+		width: 33.33%
+		height: 100%
+		line-height: 0px
+		font-size: 16px
+		color: rgba(0,0,0,0.3)
+		background-color: transparent
+		border: none
+		font-weight: $font-500	
+	.btn-active
+		background: #EFEFEF!important
+		border: 1px solid rgba(0, 0, 0, 0.25)!important
+		border-radius: 8px!important
+		font-size: 20px!important
+		color: rgba(0,0,0,1)!important
+.end-scu
+	margin: 20px 0px
+	width: 100%
+	height: 50px
+.inner-end
+	.btn-gen
+		flex-wrap: wrap
+		flex-direction: column
+		align-items: center
+		a
+			margin: 10px 0px
+
+
+/***************************************************Modal************************************/
+.first-modal
+
+.modal-gen
+	width: 100%
+	height: 100%
+	background-color: rgba(0,0,0,0.5)
+	position: absolute
+	top: 0px
+	left: 0px
+	right: 0px
+	bottom: 0px
+	margin: auto
+.modal-main
+	width: 80%
+	height: 70%
+	background-color: #BEBEBE
+	position: absolute
+	top: 0px
+	left: 0px
+	right: 0px
+	bottom: 0px
+	margin: auto
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+	flex-direction: column
+	.brand
+		margin: 10px 0px
+	.tuc
+		margin-top: 20px
+		span
+			font-size: 18px
+			line-height: 21px
+	.circle-icons
+		margin-bottom: 20px
+	.circle-icons_one
+		background-image: url('../images/save.png')
+	.circle-icons_two
+		background-image: url('../images/share.png')
+	.mans
+		max-height: 220px
+		width: 75%
+		margin-top: 40px
+	.self
+		min-height: 160px
+		max-height: 220px
+		margin-top: 50px
+		background-size: 60%, 60%
+.modal-text
+	margin-top: 7px
+	span
+		font-size: 14px
+		line-height: 14px
+		font-weight: $font-300
+		text-align: center
+		display: block
