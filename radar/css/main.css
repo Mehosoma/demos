@@ -319,6 +319,17 @@ body hr {
   font-weight: 700;
 }
 
+.r-gex {
+  margin-top: 40px;
+}
+
+.r-gex span {
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+  line-height: 39px;
+  color: #0F213A;
+}
+
 /***************************************************Graphs************************************/
 .graphs {
   padding-top: 62px;
