@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 185.2799988 51.3600006" style="enable-background:new 0 0 185.2799988 51.3600006;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#1D273B;}
+	.st1{font-family:'QTypeSquare-Book';}
+	.st2{font-size:48px;}
+	.st3{fill:url(#SVGID_1_);}
+</style>
+<g>
+	<text transform="matrix(1 0 0 1 8.1302643 45.4261246)" class="st0 st1 st2">AL</text>
+	<text transform="matrix(1 0 0 1 99.0515289 45.4256363)" class="st0 st1 st2">DA</text>
+	<g>
+		<path class="st0" d="M89.7248535,27.4937725l-3.50914-4.3427181l-0.0359192,22.2745552h6.8299942l0.0359192-22.214035
+			L89.7248535,27.4937725z"/>
+	</g>
+	
+		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="89.5961075" y1="-17421.75" x2="89.5961075" y2="-17400.984375" gradientTransform="matrix(1 0 0 -1 0 -17395.1992188)">
+		<stop  offset="0" style="stop-color:#FF9100"/>
+		<stop  offset="0.128265" style="stop-color:#FF8800"/>
+		<stop  offset="0.335615" style="stop-color:#FF7000"/>
+		<stop  offset="0.596126" style="stop-color:#FF4900"/>
+		<stop  offset="0.8968029" style="stop-color:#FF1400"/>
+		<stop  offset="1" style="stop-color:#FF0000"/>
+	</linearGradient>
+	<path class="st3" d="M97.5481567,13.7394161c0,1.5927916-0.4730835,3.0830727-1.2852173,4.3288727l-0.2996368,0.4337158l0,0
+		l-6.2388229,8.0478077l-6.3535919-7.8585739l0,0l-0.4257736-0.5992699l-0.0236816-0.0236797
+		c-0.8121338-1.2458-1.2773666-2.7360811-1.2773666-4.3288727c0-4.3919668,3.5561523-7.9559674,7.9481201-7.9559674
+		S97.5481567,9.3474493,97.5481567,13.7394161z"/>
+	<path class="st0" d="M93.7008438,13.6591311c0,1.7995729-1.1974182,3.3222933-2.8377914,3.8137083
+		c-0.3599243,0.1072807-0.7440567,0.1661072-1.1385803,0.1661072c-0.3945084,0-0.7786636-0.0588264-1.1385651-0.1661072
+		c-1.6403732-0.4879723-2.8377914-2.0106716-2.8377914-3.8137083c0-2.1940784,1.7788086-3.9763517,3.9763565-3.9763517
+		C91.9185715,9.6827793,93.7008438,11.4650526,93.7008438,13.6591311z"/>
+</g>
+</svg>
