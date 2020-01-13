@@ -1,11 +1,254 @@
-@media only screen and (min-width : 0px) and (max-width : 479px) {
+@media only screen and (min-width : 0px) and (max-width : 575px) {
+
+
+	section{
+		padding: 20px 0px;
+	}
+
+	.main-header{
+		max-width: 360px;
+		margin-bottom: 20px;
+	}
+
+	.first{
+		min-height: 200px;
+	}
+
+	.main-menu{
+		position: absolute;
+		top: 40px;
+		right: 0px;
+		background-color: #dcf5fb;
+		width: 100vw;
+		height: auto;
+		display: none;
+		z-index: 1000;
+		-moz-transition: all 0.3s ease-out;
+		-o-transition: all 0.3s ease-out;
+		-webkit-transition: all 0.3s ease-out;
+		transition: all 0.3s ease-out;
+		text-align: center;
+	}
+
+	.main-menu li{
+		display: block;
+		padding: 20px 0px;
+		margin-left: 0px;
+	}
+
+	.main-header h1{
+		font-size: 40px;
+		line-height: 46px;
+	}
+
+	.first{
+		background-position: center right;
+	}
+
+	h2{
+		font-size: 32px;
+		line-height: 36px;
+	}
+
+	.geo-image{
+		flex: 0 0 80%;
+		margin: 0 auto;
+	}
+
+	.geo-block{
+		flex-wrap: wrap;
+	}
+
+	.geo-list{
+		margin-top: 30px;
+		margin-left: 0px;
+	}
+
+	.geo-list li, .subheader span{
+		font-size: 18px;
+		line-height: 30px;
+	}
+
+	.geo-list li:before {
+		top: 10px;
+	}
+
+	.video-wr{
+		width: 100%;
+		height: auto;
+	}
+
+	#contact-form input, #contact-form textarea{
+		font-size: 14px;
+	}
+
+	.fields{
+		flex: 0 0 100%;
+		flex-wrap: wrap;
+	}
+
+	#contact-form input{
+		flex: 0 0 100%;
+		margin-bottom: 20px;
+	}
+
+	#contact-form button{
+		width: 100%;
+	}
+
+	#contact-form textarea{
+		height: 150px;
+	}
 
 }
 
-@media only screen and (min-width : 480px) and (max-width : 767px) {
+@media only screen and (min-width : 576px) and (max-width : 767px) {
+
+	section{
+		padding: 20px 0px;
+	}
+
+	.main-header{
+		margin-bottom: 20px;
+		max-width: 600px;
+	}
+
+	.first{
+		min-height: 200px;
+	}
+
+	.main-menu{
+		position: absolute;
+		top: 40px;
+		right: 0px;
+		background-color: #dcf5fb;
+		width: 100vw;
+		height: auto;
+		display: none;
+		z-index: 1000;
+		-moz-transition: all 0.3s ease-out;
+		-o-transition: all 0.3s ease-out;
+		-webkit-transition: all 0.3s ease-out;
+		transition: all 0.3s ease-out;
+		text-align: center;
+	}
+
+	.main-menu li{
+		display: block;
+		padding: 20px 0px;
+		margin-left: 0px;
+	}
+
+	.main-header h1{
+		font-size: 50px;
+		line-height: 60px;
+	}
+
+	.first{
+		background-position: center right;
+	}
+
+	h2{
+		font-size: 32px;
+		line-height: 36px;
+	}
+
+	.geo-image{
+		flex: 0 0 80%;
+		margin: 0 auto;
+	}
+
+	.geo-block{
+		flex-wrap: wrap;
+	}
+
+	.geo-list{
+		margin-top: 30px;
+		margin-left: 0px;
+	}
+
+	.geo-list li, .subheader span{
+		font-size: 18px;
+		line-height: 30px;
+	}
+
+	.geo-list li:before {
+		top: 10px;
+	}
+
+	.video-wr{
+		width: 100%;
+		height: auto;
+	}
+
+	#contact-form input, #contact-form textarea{
+		font-size: 14px;
+	}
+
+	.fields{
+		flex: 0 0 100%;
+		flex-wrap: wrap;
+	}
+
+	#contact-form input{
+		flex: 0 0 100%;
+		margin-bottom: 20px;
+	}
+
+	#contact-form button{
+		width: 100%;
+	}
+
+	#contact-form textarea{
+		height: 150px;
+	}
 }
 
 @media only screen and (min-width : 768px) and (max-width : 991px) {
+
+	.main-menu{
+		position: absolute;
+		top: 40px;
+		right: 0px;
+		background-color: #dcf5fb;
+		width: 100vw;
+		height: auto;
+		display: none;
+		z-index: 1000;
+		-moz-transition: all 0.3s ease-out;
+		-o-transition: all 0.3s ease-out;
+		-webkit-transition: all 0.3s ease-out;
+		transition: all 0.3s ease-out;
+		text-align: center;
+	}
+
+	.main-menu li{
+		display: block;
+		padding: 20px 0px;
+		margin-left: 0px;
+	}
+
+	.geo-block{
+		flex-wrap: wrap;
+	}
+
+	.geo-image{
+		flex: 0 0 50%;
+	}
+
+	.geo-list{
+		margin-top: 30px;
+		margin-left: 0px;
+	}
+
+	.video-wr{
+		width: 100%;
+		height: auto;
+	}
+
+	#contact-form input, #contact-form textarea{
+		font-size: 14px;
+	}
 }
 
 @media only screen and (min-width : 992px) and (max-width : 1199px) {
