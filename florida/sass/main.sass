@@ -1,0 +1,824 @@
+@import "bourbon/bourbon"
+
+$blue: #00aef0
+$yellow: #ffcb26
+$green: #23621f
+$black: #000000
+$gray-l: #8d8d8d
+$pop-r: 'Poppins Regular', sans-serif
+$pop-el: 'Poppins ExtraLight', sans-serif
+$pop-m: 'Poppins Medium', sans-serif
+$pop-b: 'Poppins Bold', sans-serif
+$pop-l: 'Poppins Light', sans-serif
+$pop-sb: 'Poppins SemiBold', sans-serif
+$pop-bl: 'Poppins Black', sans-serif
+$pop-eb: 'Poppins ExtraBold', sans-serif
+$c-m: 'CalibreMedium', sans-serif
+$c-r: 'CalibreRegular', sans-serif
+$c-b: 'CalibreBold', sans-serif
+$font-15: 15px
+
+
+html
+	width: 100%
+	height: 100%
+	overflow-x: hidden
+body
+	width: 100%
+	height: auto
+	min-width: 320px	
+	margin: 0 auto
+	position: relative
+	font-family: $pop-r
+	line-height: 1.2
+	-webkit-font-smoothing: antialiased
+	background-color: #fff	
+	
+
+	a:hover, a:focus, a:active
+		text-decoration: none
+		outline: none
+	input:focus, input:active
+		text-decoration: none
+		outline: none
+	button:focus, button:active
+		text-decoration: none
+		outline: none
+	textarea:focus, textarea:active
+		text-decoration: none
+		outline: none
+	a
+		display: inline-block
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out
+	ul, ol
+		padding: 0px
+		margin: 0px
+		list-style-type: none
+	button
+		border: none
+		cursor: pointer
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out
+	hr
+		border: none	
+
+.pixel
+	background: url('../images/main.jpg') no-repeat top center
+	width: 1600px
+	height: 12800px
+	position: absolute
+	z-index: 1000000
+	display: none
+	left: 50%
+	top: 0
+	margin-left: -800px
+	opacity: 0.5
+	margin-top: 0px
+
+
+/***************************************************GeneralStyles************************************/
+.btn-gen
+	font-family: $pop-sb
+	font-size: 16px
+	color: #000
+	background-color: $yellow
+	padding: 20px 40px
+	border-radius: 3px
+.btn-gen:hover
+	color: #000
+	background-color: #f9b00b
+.btn-gen__blue
+	width: 100%
+	font-size: 15px
+	color: #fff
+	background-color: $blue
+	box-shadow: 0px 0px 5px rgba(0,0,0,0.3)
+	padding: 15px 40px
+.btn-gen__blue:hover
+	color: #fff
+.btn-inner
+	a
+		font-family: $pop-sb
+		font-size: 15px
+		border: 1px solid $blue
+		border-radius: 3px
+		background-color: #eef5fb
+		padding: 14px 48px
+		color: $blue
+	a:hover
+		color: #fff
+		background-color: $blue
+.section-subheader-lines
+	width: 50px
+	margin: 0 auto
+	margin-top: 30px
+	hr
+		width: 36px
+		height: 2px
+		background: $blue
+		margin: 5px 0px
+	hr:nth-child(1)
+		margin-left: 16px
+	hr:nth-child(2)
+		background: $yellow
+		margin-left: 0px
+.gen-text
+	p, span
+		font-family: $pop-r
+		font-size: 15px
+		line-height: 28px
+		color: #202020
+	b
+		font-weight: normal
+		font-family: $pop-b
+.text-blue
+	p, span
+		color: $blue
+.section-subheader__blue
+	i
+		color: $blue
+		font-family: $pop-eb
+		font-style: normal
+.gen-text-18
+	p, span
+		font-family: $pop-r
+		font-size: 18px
+		color: #747474
+	b
+		font-weight: normal
+		font-family: $pop-b
+		font-size: 18px
+		color: #636363
+.section-subheader
+	text-align: center
+	h2
+		font-family: $pop-l
+		font-size: 40px
+		color: rgba(0,0,0,0.8)
+		margin-bottom: 23px
+	span
+		font-family: $pop-r
+		font-size: 18px
+		color: $blue
+.section-subheader__left
+	text-align: left
+	.section-subheader-lines
+		margin-left: 0px
+.gen-text-14
+	p, span
+		font-family: $pop-r
+		font-size: 14px
+		line-height: 26px
+		color: #5e5e5e
+	a
+		color: $blue
+.text-upper
+	text-transform: uppercase
+.section-back-gray
+	background-color: #f5f6f7
+.slider-dots
+	.slick-dots
+		position: absolute
+		bottom: 35px
+		left: 8.4%
+		li
+			display: inline-block
+		button
+			width: 17px
+			height: 3px
+			background-color: $gray-l
+			margin-left: 0px
+			margin-right: 10px		
+			font-size: 0px
+		.slick-active button
+			background-color: $blue
+	.slick-dots li:hover
+		cursor: pointer
+
+/***************************************************Header*******************************************/
+.florida-header
+	position: fixed
+	z-index: 100
+	background-color: #fff
+	width: 100%
+.header-wrap
+	display: flex
+	width: 100%
+	height: 125px
+	padding-left: 58px
+	-moz-transition: all 0.3s ease-out
+	-o-transition: all 0.3s ease-out
+	-webkit-transition: all 0.3s ease-out
+	transition: all 0.3s ease-out
+.logo
+	display: flex
+	flex: 0 0 149px
+	align-items: center
+	-moz-transition: all 0.3s ease-out
+	-o-transition: all 0.3s ease-out
+	-webkit-transition: all 0.3s ease-out
+	transition: all 0.3s ease-out
+	img
+		width: 100%
+		height: 100%
+.menu-wrap
+	display: flex
+	flex-grow: 1
+	padding: 0 38px 0px 80px
+.main-menu
+	width: 100%
+	ul 
+		width: 100%
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		align-items: center
+		height: 100%
+	li
+		position: relative
+	a
+		font-family: $pop-m
+		color: #8d8d8d
+		font-size: 15px
+	a:hover
+		color: $blue
+		svg
+			fill: $blue
+.main-menu .menu-drop-active
+	color: $blue
+	svg
+		fill: $blue
+.social-icons
+	display: flex
+	flex: 0 0 16.8%
+	padding-right: 87px
+	ul
+		display: flex
+		height: 100%
+		width: 100%
+		align-items: center
+		justify-content: space-between
+	svg
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out
+	li:hover
+		svg
+			fill: $blue
+.call-us
+	height: 100%
+	display: flex
+	flex: 0 0 276px
+	flex-direction: column	
+	align-items: flex-end
+	justify-content: center	
+	background-color: $blue
+	padding-right: 58px
+	span
+		font-family: $pop-r
+		font-size: 15px
+		color: #fff
+.call-us-phone
+	display: flex
+	flex-direction: row
+	flex-wrap: no-wrap
+	margin-top: 9px
+	span
+		font-family: $c-b
+		font-size: 24px
+	svg
+		margin-right: 10px
+		margin-top: 5px
+.main-menu_drop
+	position: absolute
+	top: 40px
+	width: 280px	
+	z-index: 100
+	background-color: #fff
+	display: none
+	padding: 10px 0px
+	border-radius: 3px
+	border-bottom: 5px solid $blue
+	box-shadow: 0 0 18px rgba(0,0,0,0.14)
+	ul
+		display: block
+	a
+		font-family: $pop-r
+		color: rgba(0,0,0,0.6)
+	li
+		height: auto
+		display: block
+		line-height: 65px
+		padding: 0 20px
+	li:hover
+		background-color: #eef5fb
+		cursor: pointer
+		a
+			color: $blue
+.florida-header.scrolled
+	position: fixed
+	.header-wrap
+		height: 70px
+		box-shadow: 0 0 10px rgba(0,0,0,0.3)
+	.logo
+		flex: 0 0 100px
+	.main-menu_drop
+		top: 30px
+.menu-dropdown
+	svg
+		margin-left: 3px
+
+/***************************************************Top-Banner************************************/
+.container-slider
+	max-width: 1380px
+.top-banner
+	padding-top: 125px
+.top-banner, .top-slider
+	width: 100%
+	position: relative
+.top-banner-overlay
+	width: 100%
+	height: 100%
+	position: absolute
+	top: 0px
+	left: 0px
+	background-color: #302b2b
+	opacity: 0.3
+	z-index: 1
+.top-slide
+	height: 757px
+	display: block!important
+	.main-header-wrap, .form-wrapper
+		position: relative
+		z-index: 100
+.main-header-wrap
+	width: 100%
+	height: 100%
+	padding-top: 272px
+.main-header
+	span
+		font-family: $pop-bl
+		font-size: 60px
+		color: #fff
+.main-subheader
+	margin-top: 10px
+	span
+		font-family: $pop-l
+		font-size: 40px
+		line-height: 36px
+		color: #fff
+		border-bottom: 2px solid #fff
+.main-header-desc
+	margin-top: 50px
+	span
+		font-family: $pop-l
+		font-size: 20px
+		line-height: 26px
+		color: #fff
+	i
+		font-family: $pop-sb
+		font-size: 20px
+		color: $yellow
+		font-style: normal
+.main-header-btn
+	margin-top: 62px
+.form-wrapper
+	width: 100%	
+	height: 560px
+	text-align: center
+	background-color: #fff
+	padding: 41px 15px 40px 15px
+	margin-top: 101px
+	margin-left: -10px
+	border-radius: 3px
+.form-header
+	i
+		color: $blue
+		font-style: normal
+	span
+		font-family: $pop-sb
+		color: #000		
+		font-size: 22px
+		padding-right: 0px
+.form-gen
+	padding: 0px 25px 0px 25px
+	margin-top: 37px
+	input, select
+		width: 100%
+		height: 50px
+		background-color: #f8f8f8
+		box-shadow: none
+		border: 1px solid $blue
+		margin-bottom: 12px
+		font-family: $pop-m
+		font-size: 12px
+		color: #717171
+		padding: 0 22px
+		border-radius: 3px
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out
+	select
+		background-color: #f8f8f8
+		-webkit-appearance: none
+		-moz-appearance: none
+		-ms-appearance: none
+		-o-appearance: none
+		appearance: none
+		background-repeat: no-repeat
+		background-position: right 17px top 22px !important
+	::-webkit-input-placeholder 
+		color: #717171
+		font-family: $pop-m
+		font-size: 12px		
+	::-moz-placeholder
+		color: #717171
+		font-family: $pop-m
+		font-size: 12px			
+	:-moz-placeholder 
+		color: #717171
+		font-family: $pop-m
+		font-size: 12px				
+	:-ms-input-placeholder      
+		color: #717171
+		font-family: $pop-m
+		font-size: 12px	
+	textarea
+		width: 100%
+		height: 100%
+		resize: none
+		color: #717171
+		font-family: $pop-m
+		font-size: 12px	
+		padding: 20px 12px
+		border: 1px solid $blue
+		background-color: #f8f8f8
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out
+.shot-field
+	display: flex
+	justify-content: space-between
+	.field-wrap
+		flex: 0 0 48%
+.field-wrap
+	position: relative
+	label
+		position: absolute
+		top: 17px 
+		left: 22px
+		font-family: $pop-m
+		font-size: 12px
+		color: #717171
+.form-bottom
+	margin-top: 24px
+.textarea-field
+	height: 86px
+	label
+		top: 60%
+.form-gen input:hover, .form-gen input:active, .form-gen input:focus,  .form-gen textarea:hover, .form-gen textarea:active, .form-gen textarea:focus, .form-gen select:hover, .form-gen select:active, .form-gen select:focus
+	border: 1px solid $yellow
+	background-color: #f8f8f8
+.form-gen input:active, .form-gen input:focus, .form-gen textarea:active, .form-gen textarea:focus, .form-gen select:active, .form-gen select:focus
+	box-shadow: 0px 0px 14px rgba(0,0,0,0.1)
+
+
+/***************************************************Reasons************************************/
+.reasons
+	min-height: 824px
+	padding: 117px 0px 84px 0px
+.reasons-block
+	width: 100%
+	height: auto
+	margin-bottom: 32px
+	display: flex
+	background-color: #fff
+	box-shadow: 0 0 20px rgba(0,0,0,0.2)
+	padding-left: 30px
+	padding-right: 42px
+	padding-bottom: 26px
+	img
+		margin-top: 32px
+	.gen-text
+		margin-top: 22px
+	p
+		margin-bottom: 0px
+.reasons-block-image
+	flex: 0 0 76px
+.reason-subheader-desc
+	margin-top: 30px
+	p
+		line-height: 30px
+.reason-row
+	margin-top: 30px
+
+/***************************************************About************************************/
+.about
+	padding: 90px 0px 75px 0px
+	.section-subheader-lines
+		margin-top: 33px
+	.btn-inner
+		margin-top: 51px
+.about-left
+	margin-top: 35px
+	padding-right: 20px
+	.text-blue
+		p
+			line-height: 30px
+	.gen-text
+		line-height: 28px
+		margin-top: 23px
+.about-right
+	display: flex
+	padding: 13px 10px 10px 34px
+.about-img-col
+	flex-direction: column
+	img
+		margin-bottom: 25px
+.about-image-col__first
+	flex: 0 0 34%
+.about-img-col__second
+	flex: 0 0 36%
+
+/***************************************************Services************************************/
+.services
+	width: 100%
+	min-height: 898px
+	padding: 110px 0px 60px 0px
+.services-subheader
+	margin-top: 156px
+	h2
+		margin-bottom: 30px
+	.gen-text-18
+		p
+			line-height: 36px
+	.section-subheader-lines
+		margin-top: 43px
+.btn__services
+	margin-top: 46px
+	a
+		padding: 15px 40px
+		width: auto
+.services-header
+	h4
+		font-family: $pop-m
+		font-size: 16px
+		color: $blue
+		text-transform: uppercase
+.services-col-wrap
+	display: flex
+	margin-left: 37px
+	justify-content: space-between
+.services-col
+	flex: 0 0 47%
+.services-col-right
+	padding-top: 33px
+.services-block
+	background-color: #fff
+	height: 305px
+	width: 100%
+	overflow: hidden
+	box-shadow: 0 0 10px rgba(0,0,0,0.2)
+	margin-bottom: 38px
+.services-block-content
+	padding: 23px 10px 25px 25px
+
+/***************************************************Main-Video************************************/
+.main-video
+	padding: 100px 0px 105px 0px
+.video-wr
+	width: 100%
+	height: 430px
+	position: relative
+.video-btn
+	position: absolute
+	top: 0px
+	bottom: 0px
+	left: 0px
+	right: 0px
+	margin: auto
+	width: 82px
+	height: 82px
+	background-color: #ff0000
+	border-radius: 50%
+	-moz-transition: all 0.3s ease-out
+	-o-transition: all 0.3s ease-out
+	-webkit-transition: all 0.3s ease-out
+	transition: all 0.3s ease-out
+	svg
+		width: 21px
+		height: 21px
+		fill: #fff
+		position: absolute
+		top: 0px
+		bottom: 0px
+		left: 10px
+		right: 0px
+		margin: auto
+.video-btn:hover
+	box-shadow: 0px 0px 1px 40px rgba(255,0,0,0.2)
+
+/***************************************************Responsives************************************/
+.responsives
+	width: 100%
+	min-height: 839px
+	padding: 106px 0px 67px 0px
+	.section-subheader-lines
+		margin-top: 45px
+.responsives-slider
+	position: relative
+	margin: 0px -15px
+	padding: 25px 0px
+	.slick-slide
+		margin: 0 15px
+		padding: 20px 0px
+	.slick-dots
+		position: relative
+		bottom: 0px
+		text-align: center
+		margin-top: 23px
+		left: 0px
+.responsives-slide
+	width: 100%
+	height: 428px
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.2)
+	background-color: #fff
+	position: relative
+	padding: 92px 30px 20px 30px
+	display: block
+	.quote-icon
+		position: absolute
+		top: 40px
+		left: 32px
+	span
+		font-family: $pop-sb
+		font-size: 18px
+		color: #000
+	i
+		font-family: $pop-m
+		font-size: 14px
+		color: $blue
+		font-style: normal
+		display: block
+	p
+		margin-top: 20px
+		line-height: 29px
+.stars
+	position: absolute
+	bottom: 35px
+	left: 30px
+	li
+		display: inline-block
+
+/***************************************************Posts************************************/
+.posts
+	width: 100%
+	min-height: 856px
+	padding: 110px 0px 60px 0px
+	.section-subheader
+		h2
+			margin-top: 17px
+.posts-block
+	width: 100%
+	height: 460px
+	overflow: hidden
+	background-color: #fff
+	box-shadow: 0 0 20px rgba(0,0,0,0.2)
+	position: relative
+	.posts-image
+		width: 100%
+		height: 207px
+	h5
+		font-family: $pop-m
+		font-size: 18px
+		line-height: 28px
+		color: #000
+		margin-bottom: 20px
+	p
+		font-family: $pop-l
+		font-size: 14px
+		line-height: 25px
+		color: #000
+.posts-wrap
+	margin-top: 45px
+	.col-xl-4:nth-child(1)
+		.posts-block
+			border-bottom: 5px solid $blue
+		.posts-more
+			a
+				color: $blue
+	.col-xl-4:nth-child(2)
+		.posts-block
+			border-bottom: 5px solid $green
+		.posts-more
+			a
+				color: $green
+	.col-xl-4:nth-child(3)
+		.posts-block
+			border-bottom: 5px solid $yellow
+		.posts-more
+			a
+				color: $yellow
+.posts-block-desc
+	padding: 26px 28px 45px 13px
+.posts-more
+	position: absolute
+	bottom: 31px
+	left: 13px
+	img
+		margin-left: 13px
+
+
+/***************************************************Footer************************************/
+.florida-footer
+	width: 100%
+	min-height: 537px
+	background-color: #1f2223
+	padding: 99px 0px 0px 0px
+.footer-header
+	margin-bottom: 42px
+	span
+		font-family: $pop-b
+		font-size: 16px
+		color: #fff
+		text-transform: uppercase
+.footer-content
+	a, span, p
+		font-family: $pop-el
+		font-size: 13px
+		color: #bbb
+	a:hover
+		color: $blue
+.footer-contacts-field
+	span
+		color: #fff
+.footer-mail-field
+	a
+		color: #00aef0
+.footer-hours-field
+	i
+		color: $blue
+		font-style: normal
+.footer-wrap
+	display: flex
+	padding-bottom: 53px
+	border-bottom: 1px solid #777
+.footer-col-left
+	flex: 0 0 17%
+	li
+		margin-bottom: 14px
+.footer-col-second
+	flex: 0 0 24.4%
+	.footer-content
+		span
+			line-height: 25px
+.footer-contacts
+	margin-top: 24px
+.footer-col-third
+	flex: 0 0 29%
+	li
+		margin-bottom: 14px
+.footer-areas
+	display: flex
+	ul:nth-child(2)
+		margin-left: 36px
+.footer-col-fourth
+	flex: 0 0 21%
+.footer-hours-field
+	margin-bottom: 14px
+	display: flex
+	i
+		flex: 0 0 82px
+.footer-col-right
+	li
+		margin-bottom: 14px
+.footer-right-images
+	margin-top: 20px
+	img:nth-child(1)
+		margin-bottom: 20px
+.footer-bottom
+	display: flex
+	justify-content: space-between
+	height: 80px
+	align-items: center
+	.copy
+		span
+			font-size: 14px
+	.social-icons
+		padding-right: 0px
+		flex: 0 0 13.3%
+
+
+/***************************************************Animation************************************/
+.hidden
+	opacity: 0
+.visible
+	opacity: 1
