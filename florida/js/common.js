@@ -132,7 +132,7 @@ $(document).ready(function(){
 
 	$('.form-field').blur(function() {
 		if ($(this).val().trim() === '') {
-		    $('.hint').show();
+		    $(this).parent().find(".hint").show();
 		}
 	});
 });

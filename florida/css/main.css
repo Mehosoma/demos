@@ -21,7 +21,7 @@ body a:hover, body a:focus, body a:active {
   outline: none;
 }
 
-body input:focus, body input:active, body select:focus, body select:active {
+body input:focus, body input:active, body select:focus, body select:active, body option:focus, body option:active {
   text-decoration: none;
   outline: none;
 }
