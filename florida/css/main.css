@@ -21,7 +21,7 @@ body a:hover, body a:focus, body a:active {
   outline: none;
 }
 
-body input:focus, body input:active {
+body input:focus, body input:active, body select:focus, body select:active {
   text-decoration: none;
   outline: none;
 }
@@ -660,12 +660,11 @@ body hr {
 }
 
 .form-gen select {
-  padding-left: 15px;
+  padding: 0 18px;
 }
 
 .form-gen option {
   font-size: 14px;
-  padding-left: 20px;
 }
 
 .form-gen textarea {
@@ -723,6 +722,21 @@ body hr {
 
 .textarea-field label {
   top: 60%;
+}
+
+.label-select {
+  position: absolute;
+  height: 96%;
+  width: 50px;
+  top: 1px;
+  right: 1px;
+  background-color: #f8f8f8;
+  background-size: 9px 7px;
+  background-repeat: no-repeat;
+  z-index: 100;
+  background-position: center center;
+  border-radius: 0px 3px 3px 0px;
+  pointer-events: none;
 }
 
 .form-gen input:hover, .form-gen input:active, .form-gen input:focus, .form-gen textarea:hover, .form-gen textarea:active, .form-gen textarea:focus, .form-gen select:hover, .form-gen select:active, .form-gen select:focus {
