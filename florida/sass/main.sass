@@ -203,17 +203,24 @@ body
 .florida-header
 	position: fixed
 	z-index: 100
-	background-color: #fff
+
 	width: 100%
+.florida-header-height
+	min-height: 100vh
+	overflow-y: auto
 .header-wrap
 	display: flex
 	width: 100%
 	height: 125px
-	padding-left: 58px
+	padding-left: 43px
+	background-color: #fff
 	-moz-transition: all 0.3s ease-out
 	-o-transition: all 0.3s ease-out
 	-webkit-transition: all 0.3s ease-out
 	transition: all 0.3s ease-out
+.menu-mobile
+	display: flex
+	width: 100%
 .logo
 	display: flex
 	flex: 0 0 149px
@@ -228,7 +235,7 @@ body
 .menu-wrap
 	display: flex
 	flex-grow: 1
-	padding: 0 38px 0px 80px
+	padding: 0 38px 0px 75px
 .main-menu
 	width: 100%
 	ul 
@@ -254,7 +261,7 @@ body
 		fill: $blue
 .social-icons
 	display: flex
-	flex: 0 0 16.8%
+	flex: 0 0 18.5%
 	padding-right: 87px
 	ul
 		display: flex
@@ -273,12 +280,12 @@ body
 .call-us
 	height: 100%
 	display: flex
-	flex: 0 0 276px
+	flex: 0 0 261px
 	flex-direction: column	
 	align-items: flex-end
 	justify-content: center	
 	background-color: $blue
-	padding-right: 58px
+	padding-right: 43px
 	span
 		font-family: $pop-r
 		font-size: 15px
@@ -340,7 +347,7 @@ body
 	padding-top: 125px
 	.slick-dots
 		left: 50%
-		margin-left: -670px
+		margin-left: -675px
 .top-banner, .top-slider
 	width: 100%
 	position: relative
@@ -516,8 +523,11 @@ body
 .reasons
 	min-height: 824px
 	padding: 117px 0px 84px 0px
+.reasons-wrap
+	display: flex
+	justify-content: space-between
 .reasons-block
-	width: 100%
+	flex: 0 0 49%
 	height: auto
 	margin-bottom: 32px
 	display: flex
@@ -888,3 +898,107 @@ body
 	opacity: 1
 .animate-block
 	animation-duration: 1.2s
+
+
+/***********************************************ButtonMobile************************************/
+
+.menu-btn-wrap
+	flex-grow: 1
+	align-items: center
+	padding-right: 0px
+	justify-content: flex-end
+	flex-direction: row
+	display: flex
+.menu-toggle-button
+	width: 60px
+	height: 40px
+	background-color: transparent
+	border-radius: 7px
+	padding-top: 5px
+	border: none
+	text-indent: -9999px
+	-webkit-appearance: none
+	-moz-appearance: none
+	appearance: none
+	position: relative
+	display: block
+	overflow: hidden
+
+
+.menu-toggle-button span 
+	display: block
+	height: 4px
+	background: $blue
+	position: absolute
+	top: 15px
+	left: 16px
+	right: 16px
+	-webkit-transition: background 0s 0.3
+	-o-transition: background 0s 0.3
+	transition: background 0s 0.3
+
+
+.menu-toggle-button span::before, .menu-toggle-button span::after
+	content: ""
+	display: block
+	width: 100%
+	height: 4px
+	background: $blue
+	position: absolute
+	left: 0px
+	-webkit-transition-duration: 0.3s, 1s
+	-o-transition-duration: 0.3s, 1s
+	transition-duration: 0.3s, 1s
+	-webkit-transition-delay: 0s, 0.3s
+	-o-transition-delay: 0s, 0.3s
+	transition-delay: 0s, 0.3s
+
+
+.menu-toggle-button span::before 
+	top: -8px
+
+.menu-toggle-button span::after 
+	bottom: -8px
+
+.menu-toggle-button.is-active span
+	background: none
+
+.menu-toggle-button.is-active span::before
+	top: 0
+	-webkit-transform: rotate(45deg)
+	-ms-transform: rotate(45deg)
+	transform: rotate(45deg)
+	-webkit-transition-property: top, -webkit-transform
+	transition-property: top, -webkit-transform
+	-o-transition-property: top, transform
+	transition-property: top, transform
+	transition-property: top, transform, -webkit-transform
+	-webkit-transition-delay: 0s, 0.3s
+	-o-transition-delay: 0s, 0.3s
+	transition-delay: 0s, 0.3s
+	-webkit-transition-duration: 0.3s, 0.3s
+	-o-transition-duration: 0.3s, 0.3s
+	transition-duration: 0.3s, 0.3s
+	background: $blue
+
+
+.menu-toggle-button.is-active span::after 
+	bottom: 0
+	background: $blue
+	-webkit-transform: rotate(-45deg)
+	-ms-transform: rotate(-45deg)
+	transform: rotate(-45deg)
+	-webkit-transition-property: bottom, -webkit-transform
+	transition-property: bottom, -webkit-transform
+	-o-transition-property: bottom, transform
+	transition-property: bottom, transform
+	transition-property: bottom, transform, -webkit-transform
+	-webkit-transition-delay: 0s, 0.3s
+	-o-transition-delay: 0s, 0.3s
+	transition-delay: 0s, 0.3s
+	-webkit-transition-duration: 0.3s, 0.3s
+	-o-transition-duration: 0.3s, 0.3s
+	transition-duration: 0.3s, 0.3s
+
+.menu-toggle-button:focus
+	outline: none !important

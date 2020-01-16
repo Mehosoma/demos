@@ -1,12 +1,1093 @@
-@media only screen and (min-width : 0px) and (max-width : 479px) {
+@media only screen and (min-width : 0px) and (max-width : 575px) {
+
+		.menu-mobile{
+		position: absolute;		
+		top: 125px;
+		right: 0px;		
+		margin: 0px;
+		width: 100vw;
+		background-color: #fff;				
+		padding: 0px;
+		display: none;
+	}
+
+	.container-slider{
+		max-width: 720px;
+	}
+
+	.logo{
+		flex: 0 0 200px;
+	}
+
+	.header-wrap{
+		padding: 0px;
+		width: 100%;
+		padding: 0 15px 0px 30px;
+		overflow-y: auto;
+	}
+
+	.menu-wrap{
+		padding-left: 0px;
+		padding-right: 0px;
+		border-top: 4px solid #f8f8f8;
+	}
+
+	.main-menu ul{
+		display: block;
+	}
+
+	.main-menu ul li{
+		padding: 15px 0px;
+		text-align: center;
+		flex-grow: 1;
+		flex-shrink: 1;
+	}
+
+	.main-menu a {
+		font-size: 16px;
+		display: block;
+	}
+
+	.main-menu_drop{
+		position: relative;
+		box-shadow: none;
+		width: 100vw;
+		top: 0px;
+		background-color: #f8f8f8;
+		margin-top: 10px;
+	}
+
+	.main-menu_drop li{
+		padding: 0px;
+		line-height: normal;
+	}
+
+	.florida-header.scrolled .menu-mobile{
+		top: 70px;
+	}
+
+	.florida-header.scrolled .main-menu_drop{
+		top: 0px;
+	}
+
+	.social-icons{
+		display: block;
+		padding-right: 0px;
+		height: 70px;
+	}
+
+	.social-icons ul {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.call-us{
+		align-items: center;
+		padding: 20px 0px;
+	}
+
+	.call-us-phone svg{
+		margin-top: 0px;
+	}
+
+	.social-icons svg{
+		width: 200%;
+		height: 200%;
+	}
+
+
+
+	.top-banner .slick-dots{
+		margin-left: -465px;
+	}
+
+	.call-us-phone span {
+		font-size: 20px;
+	}
+
+	.main-header-wrap{
+		padding-top: 100px;
+		text-align: center;
+	}
+
+	.form-header span {
+		font-size: 19px;
+	}
+
+	.top-banner .slick-dots{
+		top: 20px;
+		transform: translateX(-50%);
+		margin-left: 0px;
+	}
+
+	.top-banner .slick-dots button{
+		background-color: #ffcb26;
+	}
+
+	.top-slide{
+		height: 1190px;
+	}
+
+	.form-wrapper{
+		margin-top: 0px;
+		margin: 0 auto;
+	}
+
+	.form-gen{
+		padding: 0px;
+	}
+
+	.reasons, .about, .services, .main-video, .responsives, .posts {
+		padding: 60px 0px;
+	}
+
+	.section-subheader h2{
+		font-size: 34px;
+	}
+
+	.reasons-block p{
+		font-size: 13px;
+	}
+
+	.reason-subheader-desc p {
+		font-size: 11px;
+	}
+
+	.reasons-block {
+		padding-right: 30px;
+	}
+
+	.main-header span {
+		font-size: 40px;
+	}
+
+	.main-subheader span {
+		font-size: 24px;
+	}
+
+	.main-header-desc span, .main-header-desc i{
+		font-size: 14px;
+	}
+
+	.btn-gen{
+		font-size: 12px;
+	}
+
+	.main-header-btn{
+		text-align: center;
+	}
+
+	.about-right{
+		padding-left: 0px;
+		margin-top: 30px;
+	}
+
+	.about-img-col{
+		flex: 0 0 33.3%;
+	}
+
+	.about-img-col img{
+		width: 95%;
+		height: auto;
+	}
+
+	.services-col{
+		flex: 0 0 100%;
+	}
+
+	.services-col-wrap{
+		flex-wrap: wrap;
+	}
+
+	.services-block-image{
+		height: auto;
+	}
+
+	.services-col-right{
+		padding-top: 0px;
+	}
+
+	.services-subheader{
+		margin-top: 0px;
+		margin-bottom: 60px;
+	}
+
+	.services-col-wrap{
+		margin-left: 0px;
+	}
+
+	.services-block{
+		height: auto;
+	}	
+
+	.video-wr{
+		height: auto;
+	}
+
+	.video-wr img{
+		width: 100%;
+		height: auto;
+	}
+
+	.responsives{
+		min-height: 100px;
+	}
+
+	.responsives-slider .slick-slide{
+		text-align: center;
+	}
+
+	.responsives-slide{
+		max-width: 420px;
+		text-align: left;
+	}
+	
+
+	.responsives-slide p {
+		line-height: 24px;
+	}
+
+	.posts-block h5 {
+		font-size: 14px;
+		line-height: 20px;
+	}
+
+	.posts-block p {
+		font-size: 13px;
+		line-height: 20px;
+	}
+
+	.posts-block{
+		margin-bottom: 40px;
+		max-width: 420px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.florida-footer{
+		padding: 60px 0px;
+	}
+
+	.footer-wrap{
+		flex-wrap: wrap;
+		padding-bottom: 30px;
+	}
+
+	.footer-col-left, .footer-col-second {
+		flex: 0 0 100%;
+		text-align: center;
+		margin-bottom: 30px;
+	}
+
+	.footer-content a, .footer-content span, .footer-content p, .footer-hours-field i {
+		font-size: 11px;
+	}
+
+	.footer-hours{
+		padding-top: 5px;
+	}
+
+	.footer-areas ul:nth-child(2) {
+		margin-left: 25px;
+	}
+
+	.footer-col-third {
+		flex: 0 0 36%;
+	}
+
+	.copy{
+		order: 2;
+		text-align: center;
+		flex: 0 0 100%;
+	}
+
+	.footer-bottom{
+		flex-wrap: wrap;
+	}
+
+	.footer-bottom .social-icons{
+		flex: 0  0 100%;
+		order: 1;
+	}
+
+	.footer-bottom .social-icons ul{
+		justify-content: space-between;
+		width: 100%;
+	}
+
+	.footer-bottom .social-icons svg{
+		width: 150%;
+		height: 150%;
+	}
+
+	.reasons-block{
+		flex: 0 0 100%;
+	}
+
+	.reasons-wrap{
+		flex-wrap: wrap;
+	}
+
 
 }
 
-@media only screen and (min-width : 480px) and (max-width : 767px) {
+@media only screen and (min-width : 576px) and (max-width : 767px) {
+
+			.menu-mobile{
+		position: absolute;		
+		top: 125px;
+		right: 0px;		
+		margin: 0px;
+		width: 100vw;
+		background-color: #fff;				
+		padding: 0px;
+		display: none;
+	}
+
+	.container-slider{
+		max-width: 720px;
+	}
+
+	.logo{
+		flex: 0 0 200px;
+	}
+
+	.header-wrap{
+		padding: 0px;
+		width: 100%;
+		padding: 0 15px 0px 30px;
+		overflow-y: auto;
+	}
+
+	.menu-wrap{
+		padding-left: 0px;
+		padding-right: 0px;
+		border-top: 4px solid #f8f8f8;
+	}
+
+	.main-menu ul{
+		display: block;
+	}
+
+	.main-menu ul li{
+		padding: 15px 0px;
+		text-align: center;
+		flex-grow: 1;
+		flex-shrink: 1;
+	}
+
+	.main-menu a {
+		font-size: 16px;
+		display: block;
+	}
+
+	.main-menu_drop{
+		position: relative;
+		box-shadow: none;
+		width: 100vw;
+		top: 0px;
+		background-color: #f8f8f8;
+		margin-top: 10px;
+	}
+
+	.main-menu_drop li{
+		padding: 0px;
+		line-height: normal;
+	}
+
+	.florida-header.scrolled .menu-mobile{
+		top: 70px;
+	}
+
+	.florida-header.scrolled .main-menu_drop{
+		top: 0px;
+	}
+
+	.social-icons{
+		display: block;
+		padding-right: 0px;
+		height: 70px;
+	}
+
+	.social-icons ul {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.call-us{
+		align-items: center;
+		padding: 20px 0px;
+	}
+
+	.call-us-phone svg{
+		margin-top: 0px;
+	}
+
+	.social-icons svg{
+		width: 200%;
+		height: 200%;
+	}
+
+
+
+	.top-banner .slick-dots{
+		margin-left: -465px;
+	}
+
+	.call-us-phone span {
+		font-size: 20px;
+	}
+
+	.main-header-wrap{
+		padding-top: 100px;
+		text-align: center;
+	}
+
+	.form-header span {
+		font-size: 19px;
+	}
+
+	.top-banner .slick-dots{
+		top: 20px;
+		transform: translateX(-50%);
+		margin-left: 0px;
+	}
+
+	.top-banner .slick-dots button{
+		background-color: #ffcb26;
+	}
+
+	.top-slide{
+		height: 1190px;
+	}
+
+	.form-wrapper{
+		margin-top: 0px;
+		margin: 0 auto;
+	}
+
+	.form-gen{
+		padding: 0px;
+	}
+
+	.reasons, .about, .services, .main-video, .responsives, .posts {
+		padding: 60px 0px;
+	}
+
+	.section-subheader h2{
+		font-size: 34px;
+	}
+
+	.reasons-block p{
+		font-size: 13px;
+	}
+
+	.reason-subheader-desc p {
+		font-size: 11px;
+	}
+
+	.reasons-block {
+		padding-right: 30px;
+	}
+
+	.main-header span {
+		font-size: 40px;
+	}
+
+	.main-subheader span {
+		font-size: 24px;
+	}
+
+	.main-header-desc span, .main-header-desc i{
+		font-size: 14px;
+	}
+
+	.main-header-desc{
+		padding: 0px 100px;
+	}
+
+	.btn-gen{
+		font-size: 12px;
+	}
+
+	.main-header-btn{
+		text-align: center;
+	}
+
+	.about-right{
+		padding-left: 0px;
+		margin-top: 30px;
+	}
+
+	.about-img-col{
+		flex: 0 0 33.3%;
+	}
+
+	.about-img-col img{
+		width: 95%;
+		height: auto;
+	}
+
+	.services-col{
+		flex: 0 0 100%;
+	}
+
+	.services-col-wrap{
+		flex-wrap: wrap;
+	}
+
+	.services-block-image{
+		height: auto;
+
+	}
+
+	.services-col-right{
+		padding-top: 0px;
+	}
+
+	.services-subheader{
+		margin-top: 0px;
+		margin-bottom: 60px;
+	}
+
+	.services-col-wrap{
+		margin-left: 0px;
+	}
+
+	.services-block{
+		height: auto;
+		max-width: 450px;
+		margin-right: auto;
+		margin-left: auto;
+	}	
+
+	.video-wr{
+		height: auto;
+	}
+
+	.video-wr img{
+		width: 100%;
+		height: auto;
+	}
+
+	.responsives{
+		min-height: 100px;
+	}
+
+	.responsives-slider .slick-slide{
+		text-align: center;
+	}
+
+	.responsives-slide{
+		max-width: 420px;
+		text-align: left;
+
+	}
+	
+
+	.responsives-slide p {
+		line-height: 24px;
+	}
+
+	.posts-block h5 {
+		font-size: 14px;
+		line-height: 20px;
+	}
+
+	.posts-block p {
+		font-size: 13px;
+		line-height: 20px;
+	}
+
+	.posts-block{
+		margin-bottom: 40px;
+		max-width: 420px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.florida-footer{
+		padding: 60px 0px;
+	}
+
+	.footer-wrap{
+
+		padding-bottom: 30px;
+	}
+
+	.footer-col-left, .footer-col-second {
+		flex: 0 0 50%;
+		text-align: center;
+		margin-bottom: 30px;
+	}
+
+	.footer-content a, .footer-content span, .footer-content p, .footer-hours-field i {
+		font-size: 11px;
+	}
+
+	.footer-hours{
+		padding-top: 5px;
+	}
+
+	.footer-areas ul:nth-child(2) {
+		margin-left: 25px;
+	}
+
+	.footer-col-third {
+		flex: 0 0 36%;
+	}
+
+	.copy{
+		order: 2;
+		text-align: center;
+		flex: 0 0 100%;
+	}
+
+	.footer-bottom{
+		flex-wrap: wrap;
+	}
+
+	.footer-bottom .social-icons{
+		flex: 0  0 100%;
+		order: 1;
+	}
+
+	.footer-bottom .social-icons ul{
+		justify-content: space-between;
+		width: 100%;
+	}
+
+	.footer-bottom .social-icons svg{
+		width: 150%;
+		height: 150%;
+	}
+
+	.reasons-block{
+		flex: 0 0 100%;
+	}
+
+	.reasons-wrap{
+		flex-wrap: wrap;
+	}
+
 }
 
 @media only screen and (min-width : 768px) and (max-width : 991px) {
+
+	.menu-mobile{
+		position: absolute;		
+		top: 125px;
+		right: 0px;		
+		margin: 0px;
+		width: 100vw;
+		background-color: #fff;				
+		padding: 0px;
+		display: none;
+	}
+
+	.container-slider{
+		max-width: 720px;
+	}
+
+	.logo{
+		flex: 0 0 300px;
+	}
+
+	.header-wrap{
+		padding: 0px;
+		width: 100%;
+		padding: 0 15px 0px 30px;
+		overflow-y: auto;
+	}
+
+	.menu-wrap{
+		padding-left: 0px;
+		padding-right: 0px;
+		border-top: 4px solid #f8f8f8;
+	}
+
+	.main-menu ul{
+		display: block;
+	}
+
+	.main-menu ul li{
+		padding: 15px 0px;
+		text-align: center;
+		flex-grow: 1;
+		flex-shrink: 1;
+	}
+
+	.main-menu a {
+		font-size: 16px;
+		display: block;
+	}
+
+	.main-menu_drop{
+		position: relative;
+		box-shadow: none;
+		width: 100vw;
+		top: 0px;
+		background-color: #f8f8f8;
+		margin-top: 10px;
+	}
+
+	.main-menu_drop li{
+		padding: 0px;
+		line-height: normal;
+	}
+
+	.florida-header.scrolled .menu-mobile{
+		top: 70px;
+	}
+
+	.florida-header.scrolled .main-menu_drop{
+		top: 0px;
+	}
+
+	.social-icons{
+		display: block;
+		padding-right: 0px;
+		height: 70px;
+	}
+
+	.social-icons ul {
+		width: 50%;
+		margin: 0 auto;
+	}
+
+	.call-us{
+		align-items: center;
+		padding: 20px 0px;
+	}
+
+	.call-us-phone svg{
+		margin-top: 0px;
+	}
+
+	.social-icons svg{
+		width: 200%;
+		height: 200%;
+	}
+
+
+
+	.top-banner .slick-dots{
+		margin-left: -465px;
+	}
+
+	.call-us-phone span {
+		font-size: 20px;
+	}
+
+	.main-header-wrap{
+		padding-top: 100px;
+	}
+
+	.top-banner .slick-dots{
+		top: 20px;
+		transform: translateX(-50%);
+		margin-left: 0px;
+	}
+
+	.top-banner .slick-dots button{
+		background-color: #ffcb26;
+	}
+
+	.top-slide{
+		height: 1190px;
+	}
+
+	.form-wrapper{
+		margin-top: 0px;
+		margin-left: 0px;
+	}
+
+	.reasons-block p{
+		font-size: 13px;
+	}
+
+	.reason-subheader-desc p {
+		font-size: 15px;
+	}
+
+	.main-header span {
+		font-size: 50px;
+	}
+
+	.main-subheader span {
+		font-size: 30px;
+	}
+
+	.main-header-desc span, .main-header-desc i{
+		font-size: 16px;
+	}
+
+	.about-right{
+		padding-left: 0px;
+	}
+
+	.about-img-col{
+		flex: 0 0 33.3%;
+	}
+
+	.about-img-col img{
+		width: 95%;
+		height: auto;
+	}
+
+	.services-subheader{
+		margin-top: 0px;
+		margin-bottom: 60px;
+	}
+
+	.services-col-wrap{
+		margin-left: 0px;
+	}
+
+	.services-block{
+		height: auto;
+	}	
+
+	.video-wr{
+		height: auto;
+	}
+
+	.video-wr img{
+		width: 100%;
+		height: auto;
+	}
+	
+
+	.responsives-slide p {
+		line-height: 24px;
+	}
+
+	.posts-block h5 {
+		font-size: 14px;
+		line-height: 20px;
+	}
+
+	.posts-block p {
+		font-size: 13px;
+		line-height: 20px;
+	}
+
+	.posts-block{
+		margin-bottom: 40px;
+	}
+
+	.footer-col-left {
+		flex: 0 0 16%;
+	}
+
+	.footer-content a, .footer-content span, .footer-content p, .footer-hours-field i {
+		font-size: 11px;
+	}
+
+	.footer-hours{
+		padding-top: 5px;
+	}
+
+	.footer-areas ul:nth-child(2) {
+		margin-left: 25px;
+	}
+
+	.footer-col-fourth, .footer-col-second {
+		flex: 0 0 25%;
+	}
+
+	.footer-col-third {
+		flex: 0 0 36%;
+	}
+
+	.footer-bottom .social-icons{
+		flex: 0  0 30%;
+	}
+
+	.footer-bottom .social-icons ul{
+		justify-content: space-between;
+		width: 100%;
+	}
+
+	.footer-bottom .social-icons svg{
+		width: 150%;
+		height: 150%;
+	}
+
+
 }
 
 @media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+	.container-slider{
+		max-width: 960px;
+	}
+
+	.logo{
+		flex: 0 0 100px;
+	}
+
+	.top-banner .slick-dots{
+		margin-left: -465px;
+	}
+
+	.social-icons{
+		padding-right: 10px;
+		flex: 0 0 13%;
+	}
+
+	.header-wrap{
+		padding-left: 15px;
+	}
+
+	.menu-wrap{
+		padding: 0 15px;
+	}
+
+	.call-us {
+		flex: 0 0 200px;
+		padding-right: 35px;
+	}
+
+	.call-us-phone span {
+		font-size: 20px;
+	}
+
+	.call-us-phone svg{
+		margin-top: 2px
+	}
+
+	.main-menu a {
+		font-size: 12px;
+	}
+
+	.video-wr{
+		height: auto;
+	}
+
+	.video-wr img{
+		width: 100%;
+		height: auto;
+	}
+
+	.main-header span {
+		font-size: 50px;
+	}
+
+	.main-subheader span {
+		font-size: 30px;
+	}
+
+	.main-header-desc span, .main-header-desc i{
+		font-size: 16px;
+	}
+
+	.main-header-wrap{
+		padding-top: 200px;
+	}
+
+	.about-right{
+		padding-left: 0px;
+	}
+
+	.about-img-col{
+		flex: 0 0 33.3%;
+	}
+
+	.about-img-col img{
+		width: 95%;
+		height: auto;
+	}
+
+	.services-col-wrap{
+		margin-left: 0px;
+	}
+
+	.services-block{
+		height: auto;
+	}
+
+	.responsives-slide p {
+		line-height: 24px;
+	}
+
+	.posts-block h5 {
+		font-size: 14px;
+		line-height: 20px;
+	}
+
+	.posts-block p {
+		font-size: 13px;
+		line-height: 20px;
+	}
+
+	.footer-col-left {
+		flex: 0 0 16%;
+	}
+
+	.footer-content a, .footer-content span, .footer-content p, .footer-hours-field i {
+		font-size: 11px;
+	}
+
+	.footer-hours{
+		padding-top: 5px;
+	}
+
+	.footer-areas ul:nth-child(2) {
+		margin-left: 25px;
+	}
+
+	.footer-col-fourth {
+		flex: 0 0 20%;
+	}
+}
+
+@media only screen and (min-width : 1200px) and (max-width : 1439px) {
+
+	.container-slider{
+		max-width: 1170px;
+	}
+
+	.top-banner .slick-dots{
+		margin-left: -570px;
+	}
+
+	.social-icons{
+		padding-right: 30px;
+		flex: 0 0 13%;
+	}
+
+	.header-wrap{
+		padding-left: 15px;
+	}
+
+	.menu-wrap{
+		padding: 0 40px;
+	}
+
+	.call-us {
+		flex: 0 0 220px;
+		padding-right: 35px;
+	}
+
+	.call-us-phone span {
+		font-size: 20px;
+	}
+
+	.call-us-phone svg{
+		margin-top: 2px
+	}
+
+	.main-menu a {
+		font-size: 14px;
+	}
+
+}
+
+@media only screen and (min-width : 1440px) and (max-width : 1599px) {
+
+	.social-icons{
+		padding-right: 30px;
+		flex: 0 0 13%;
+	}
 }
