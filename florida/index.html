@@ -17,7 +17,7 @@
 	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.css">
 	<link rel="stylesheet" href="libs/magnific/magnific-popup.css">
 	<link rel="stylesheet" href="libs/slick/slick.css">	
-	<link rel="stylesheet" href="libs/animate.min.css">	
+	<link rel="stylesheet" href="libs/animate.css">	
 
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/main.css">
@@ -141,12 +141,12 @@
 								<span>Request a <i>Free Estimate</i></span>
 							</div>
 							<form id="main-form" class="form-gen">
-								<select type="text" class="form-control myselect" name="service" required="" placeholder="Click to see list" style="background-image: url('images/sort.svg'); background-size: 9px 7px">
+								<select type="text" class="form-control myselect" name="service" required="" placeholder="Choose Pest" style="background-image: url('images/sort.svg'); background-size: 9px 7px">
 									<option hidden>Choose Pest</option>
-								    <option>2</option>
-								    <option>3</option>
-								    <option>4</option>
-								    <option>5</option>
+								    <option>&nbsp; 2</option>
+								    <option>&nbsp; 3</option>
+								    <option>&nbsp; 4</option>
+								    <option>&nbsp; 5</option>
 								</select>
 								<div class="field-wrap">
 									<input type="text" name="name" required="" class="form-field">
@@ -188,11 +188,55 @@
 		<div class="top-slide" style="background-image: url('images/main-slider-2.jpg'); background-repeat: no-repeat; background-position: center top; background-size: cover">
 			<div class="container container-slider">
 				<div class="row">
-					<div class="col-6">
+					<div class="col-8">
 						
 					</div>
-					<div class="col-6">
-						
+					<div class="col-4">
+						<div class="form-wrapper">
+							<div class="form-header">
+								<span>Request a <i>Free Estimate</i></span>
+							</div>
+							<form id="main-form" class="form-gen">
+								<select type="text" class="form-control myselect" name="service" required="" placeholder="Choose Pest" style="background-image: url('images/sort.svg'); background-size: 9px 7px">
+									<option hidden>Choose Pest</option>
+								    <option>&nbsp; 2</option>
+								    <option>&nbsp; 3</option>
+								    <option>&nbsp; 4</option>
+								    <option>&nbsp; 5</option>
+								</select>
+								<div class="field-wrap">
+									<input type="text" name="name" required="" class="form-field">
+									<label for="text" class="hint">Name<span style="color: red">*</span></label>
+								</div>
+								<div class="shot-field">
+									<div class="field-wrap">
+										<input type="text" name="phone" required="" class="form-field">
+										<label for="text" class="hint">Phone Number<span style="color: red">*</span></label>
+									</div>
+									<div class="field-wrap">
+										<input type="text" name="mail" required="" class="form-field">
+										<label for="text" class="hint">E-mail<span style="color: red">*</span></label>
+									</div>								
+								</div>	
+								<div class="shot-field">
+									<div class="field-wrap">
+										<input type="text" name="city" required="" class="form-field">
+										<label for="text" class="hint">City<span style="color: red">*</span></label>
+									</div>
+									<div class="field-wrap">
+										<input type="text" name="zip" required="" class="form-field">
+										<label for="text" class="hint">Zip<span style="color: red">*</span></label>
+									</div>								
+								</div>
+								<div class="field-wrap textarea-field">								
+									<textarea name="comment" class="form-field"></textarea>
+									<label for="text" class="hint">Comment</label>
+								</div>
+								<div class="form-bottom">
+									<button type="submit" class="btn-gen__blue btn-gen">Get Started</button>
+								</div>
+							</form>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -201,8 +245,8 @@
 </section>
 
 <!--Reasons-->
-<section class="reasons section-back-gray animate-block">
-	<div class="container">
+<section class="reasons section-back-gray">
+	<div class="container animate-block">
 		<div class="row">
 			<div class="col-12">
 				<div class="section-subheader">
@@ -311,8 +355,8 @@
 </section>
 
 <!--Services-->
-<section class="services section-back-gray animate-block">
-	<div class="container">
+<section class="services section-back-gray">
+	<div class="container animate-block">
 		<div class="row">
 			<div class="col-5">
 				<div class="section-subheader services-subheader section-subheader__left section-subheader__blue">
@@ -331,44 +375,60 @@
 			</div>
 			<div class="col-7">
 				<div class="services-col-wrap">
-					<div class="services-col">
+					<div class="services-col">						
 						<div class="services-block gen-text-14">
-							<img src="images/services-1.jpg">
-							<div class="services-block-content">
-								<div class="services-header">
-									<h4>TERMITE CONTROL</h4>
+							<a href="" class="test-link">
+								<div class="services-block-image">
+									<img src="images/services-1.jpg" alt="services">
 								</div>
-								<p>Has your home been taken over by termites? We offer effective solutions for invasive... <a href="">Read More</a></p>
-							</div>
+								<div class="services-block-content">
+									<div class="services-header">
+										<h4>TERMITE CONTROL</h4>
+									</div>
+									<p>Has your home been taken over by termites? We offer effective solutions for invasive... <i>Read More</i></p>
+								</div>
+							</a>
 						</div>
 						<div class="services-block gen-text-14">
-							<img src="images/services-2.jpg">
-							<div class="services-block-content">
-								<div class="services-header">
-									<h4>LAWN CARE TREATMENT</h4>
+							<a href="" class="test-link">
+								<div class="services-block-image">
+									<img src="images/services-2.jpg" alt="services">
 								</div>
-								<p>If you have unwanted pests in your home, FEPM is here to get rid of unwanted... <a href="">Read More</a></p>
-							</div>
+								<div class="services-block-content">
+									<div class="services-header">
+										<h4>LAWN CARE TREATMENT</h4>
+									</div>
+									<p>If you have unwanted pests in your home, FEPM is here to get rid of unwanted... <i>Read More</i></p>
+								</div>
+							</a>
 						</div>
 					</div>
 					<div class="services-col services-col-right">
 						<div class="services-block gen-text-14">
-							<img src="images/services-3.jpg">
-							<div class="services-block-content">
-								<div class="services-header">
-									<h4>PEST CONTROL</h4>
+							<a href="" class="test-link">
+								<div class="services-block-image">
+									<img src="images/services-3.jpg" alt="services">
 								</div>
-								<p>From ornament spraying to tree beautification, FEPM is here for all your lawn... <a href="">Read More</a></p>
-							</div>
+								<div class="services-block-content">
+									<div class="services-header">
+										<h4>PEST CONTROL</h4>
+									</div>
+									<p>From ornament spraying to tree beautification, FEPM is here for all your lawn... <i>Read More</i></p>
+								</div>
+							</a>
 						</div>
 						<div class="services-block gen-text-14">
-							<img src="images/services-4.jpg">
-							<div class="services-block-content">
-								<div class="services-header">
-									<h4>MOSQUITO CONTROL</h4>
+							<a href="" class="test-link">
+								<div class="services-block-image">
+									<img src="images/services-4.jpg" alt="services">
 								</div>
-								<p>For significant mosquito reduction and freedom to enjoy your yard, contact... <a href="">Read More</a></p>
-							</div>
+								<div class="services-block-content">
+									<div class="services-header">
+										<h4>MOSQUITO CONTROL</h4>
+									</div>
+									<p>For significant mosquito reduction and freedom to enjoy your yard, contact... <i>Read More</i></p>
+								</div>
+							</a>
 						</div>
 					</div>
 				</div>
@@ -396,8 +456,8 @@
 </section>
 
 <!--Responsives-->
-<section class="responsives section-back-gray animate-block">
-	<div class="container">
+<section class="responsives section-back-gray">
+	<div class="container animate-block">
 		<div class="row">
 			<div class="col-12">
 				<div class="section-subheader">
@@ -499,41 +559,53 @@
 			<div class="row posts-wrap">
 				<div class="col-xl-4">
 					<div class="posts-block">
-						<img src="images/posts-1.jpg" alt="posts-image" class="posts-image">
-						<div class="posts-block-desc">
-							<h5>Termite Control West Palm Beach | When Termites Swarm</h5>
-							<p>Its that time of year again when termite control in West Palm Beach is just about to begin to pick up since termites will....</p>
-							<div class="posts-more">
-								<a href="">Read More</a>
-								<img src="images/more-blue.png" alt="read-more-image">
+						<a href="" class="test-link">
+							<div class="posts-image">
+								<img src="images/posts-1.jpg" alt="posts-image">
 							</div>
-						</div>
+							<div class="posts-block-desc">
+								<h5>Termite Control West Palm Beach | When Termites Swarm</h5>
+								<p>Its that time of year again when termite control in West Palm Beach is just about to begin to pick up since termites will....</p>
+								<div class="posts-more">
+									<i>Read More</i>
+									<img src="images/more-blue.png" alt="read-more-image">
+								</div>
+							</div>
+						</a>
 					</div>
 				</div>
 				<div class="col-xl-4">
 					<div class="posts-block">
-						<img src="images/posts-2.jpg" alt="posts-image" class="posts-image">
-						<div class="posts-block-desc">
-							<h5>Fortifying Your West Palm Beach Property from Termite Invaders</h5>
-							<p>West Palm Beach’s humid, warm climate attracts termites, increasing your chances of having them in your home....</p>
-							<div class="posts-more">
-								<a href="">Read More</a>
-								<img src="images/more-green.png" alt="read-more-image">
+						<a href="" class="test-link">
+							<div class="posts-image">
+								<img src="images/posts-2.jpg" alt="posts-image">
 							</div>
-						</div>
+							<div class="posts-block-desc">
+								<h5>Fortifying Your West Palm Beach Property from Termite Invaders</h5>
+								<p>West Palm Beach’s humid, warm climate attracts termites, increasing your chances of having them in your home....</p>
+								<div class="posts-more">
+									<i>Read More</i>
+									<img src="images/more-green.png" alt="read-more-image">
+								</div>
+							</div>
+						</a>
 					</div>
 				</div>
 				<div class="col-xl-4">
 					<div class="posts-block">
-						<img src="images/posts-3.jpg" alt="posts-image" class="posts-image">
-						<div class="posts-block-desc">
-							<h5>Pest Control West Palm Beach FL | Things Your Pest Control Service Provider Wishes You Knew</h5>
-							<p>Most of us tend to freak out at the sight of an insect or a rodent that pops ...</p>
-							<div class="posts-more">
-								<a href="">Read More</a>
-								<img src="images/more-yellow.png" alt="read-more-image">
+						<a href="" class="test-link">
+							<div class="posts-image">
+								<img src="images/posts-3.jpg" alt="posts-image">
 							</div>
-						</div>
+							<div class="posts-block-desc">
+								<h5>Pest Control West Palm Beach FL | Things Your Pest Control Service Provider Wishes You Knew</h5>
+								<p>Most of us tend to freak out at the sight of an insect or a rodent that pops ...</p>
+								<div class="posts-more">
+									<i>Read More</i>
+									<img src="images/more-yellow.png" alt="read-more-image">
+								</div>
+							</div>
+						</a>
 					</div>
 				</div>
 			</div>
@@ -553,8 +625,8 @@
 </section>
 
 <!--Footer-->
-<footer class="florida-footer animate-block">
-	<div class="container container-slider">
+<footer class="florida-footer">
+	<div class="container container-slider animate-block">
 		<div class="row">
 			<div class="col-12">
 				<div class="footer-wrap">

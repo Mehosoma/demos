@@ -152,7 +152,7 @@ $(document).ready(function() {
 //Animate Section
 jQuery(document).ready(function() {
 jQuery('.animate-block').addClass("hidden").viewportChecker({
-classToAdd: 'visible animated zoomIn',
-offset: 300
+classToAdd: 'visible  fadeInUp',
+offset: 200
 });
 });
