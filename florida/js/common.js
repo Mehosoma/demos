@@ -45,7 +45,7 @@ $(document).ready(function(){
   		autoplaySpeed: 2000,
   		speed: 2000,
   		draggable: true,
-  		pauseOnFocus: false,
+  		pauseOnFocus: true,
   		pauseOnHover: false, 		
 	});
 });
