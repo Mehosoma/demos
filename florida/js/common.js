@@ -50,6 +50,7 @@ $(document).ready(function(){
 	});
 });
 
+$(document).ready(function(){
 $('.responsives-slider').slick({
   		infinite: true,
   		slidesToShow: 3,
@@ -82,6 +83,96 @@ $('.responsives-slider').slick({
 		    }
 	    ]   		
 	});
+});
+
+//About-inner-slider
+$(window).on('load resize', function() {	
+  if ($(window).width() < 992) {
+  	if (!$('.about-inner-slider').hasClass('slick-initialized')){	  					
+			$('.about-inner-slider:not(.slick-initialized)').slick({
+			    infinite: true,
+			    slidesToShow: 2,
+			    slidesToScroll: 1,
+			    arrows: false,
+			    responsive: [ 
+		     {
+		      breakpoint: 576,
+		      settings: {
+		        slidesToShow: 1,
+		        slidesToScroll: 1,       
+		      }
+		    }
+	    ]   		
+			 });
+    	}else{
+    		$('.about-inner-slider').slick('refresh');
+    	}
+  } else {
+  	$(".about-inner-slider.slick-initialized").slick("unslick");  	  	
+  }
+});
+
+$(document).ready(function(){
+$('.team-slider').slick({
+  		infinite: true,
+  		slidesToShow: 4,
+  		slidesToScroll: 1,  
+  		autoplay: false,  		
+  		arrows: false, 
+  		dots: false,
+  		responsive: [ 
+		    {
+		      breakpoint: 1200,
+		      settings: {
+		        slidesToShow: 3,
+		        slidesToScroll: 1,       
+		      }
+		    },
+		    {
+		      breakpoint: 992,
+		      settings: {
+		        slidesToShow: 3,
+		        slidesToScroll: 1,       
+		      }
+		    },
+		     {
+		      breakpoint: 768,
+		      settings: {
+		        slidesToShow: 2,
+		        slidesToScroll: 1,       
+		      }
+		    },
+
+		     {
+		      breakpoint: 576,
+		      settings: {
+		        slidesToShow: 1,
+		        slidesToScroll: 1,       
+		      }
+		    }
+	    ]   		
+	});
+});
+
+
+//Slider-Arrows
+$(function () {
+    
+    var $arrows = $('.arrows');
+    var $next = $arrows.children(".arr-right-gen");    
+    var $prev = $arrows.children(".arr-left-gen");
+    
+    var slick = $('.slider-main');
+
+    $('.arr-right-gen').on('click', function (e) {
+        var i = $next.index( this )
+        slick.eq(i).slick('slickNext');
+    });
+    $('.arr-left-gen').on('click', function (e) {
+        var i = $prev.index( this )
+        slick.eq(i).slick('slickPrev');
+    });
+});
 
 //Show-hide Drop-Down Menu
 $(document).ready(function(){
@@ -107,7 +198,6 @@ $(document).ready(function(){
 $(document).ready(function(){
    $( ".main-menu_drop" ).mouseleave(function() {
     	event.preventDefault();
-
       	  $('.menu-dropdown').removeClass('menu-drop-active');
 	      $('.menu-open').slideToggle();
 	      $('.main-menu_drop').removeClass('menu-open');                                

@@ -113,6 +113,8 @@ body
 	a:hover
 		color: #fff
 		background-color: $blue
+.btn-sh
+	box-shadow: 0px 2px 3px rgba(0,0,0,0.3)
 .section-subheader-lines
 	width: 50px
 	margin: 0 auto
@@ -165,6 +167,16 @@ body
 		font-family: $pop-r
 		font-size: 18px
 		color: $blue
+		text-transform: uppercase
+.subheader-add
+	text-align: center
+	p
+		color: #000
+	hr
+		width: 71px
+		height: 1px
+		margin: 0 auto
+		background-color: $blue
 .section-subheader__left
 	text-align: left
 	.section-subheader-lines
@@ -179,6 +191,12 @@ body
 		color: $blue
 .text-upper
 	text-transform: uppercase
+.text-opacity
+	p, span
+		opacity: 0.8
+.header-opacity
+	h2
+		opacity: 0.8
 .section-back-gray
 	background-color: #f5f6f7
 .slider-dots
@@ -202,8 +220,7 @@ body
 /***************************************************Header*******************************************/
 .florida-header
 	position: fixed
-	z-index: 100
-
+	z-index: 100000
 	width: 100%
 .florida-header-height
 	min-height: 100vh
@@ -238,7 +255,7 @@ body
 	padding: 0 38px 0px 75px
 .main-menu
 	width: 100%
-	ul 
+	.main-menu-list
 		width: 100%
 		display: flex
 		flex-direction: row
@@ -251,6 +268,7 @@ body
 		font-family: $pop-m
 		color: #8d8d8d
 		font-size: 15px
+		padding-right: 13px
 	a:hover
 		color: $blue
 		svg
@@ -312,8 +330,6 @@ body
 	border-radius: 3px
 	border-bottom: 5px solid $blue
 	box-shadow: 0 0 18px rgba(0,0,0,0.14)
-	ul
-		display: block
 	a
 		font-family: $pop-r
 		color: rgba(0,0,0,0.6)
@@ -336,9 +352,6 @@ body
 		flex: 0 0 100px
 	.main-menu_drop
 		top: 30px
-.menu-dropdown
-	svg
-		margin-left: 3px
 
 /***************************************************Top-Banner************************************/
 .container-slider
@@ -732,12 +745,12 @@ body
 	p
 		margin-top: 20px
 		line-height: 29px
-.stars
-	position: absolute
-	bottom: 35px
-	left: 30px
-	li
-		display: inline-block
+	.stars
+		position: absolute
+		bottom: 35px
+		left: 30px
+		li
+			display: inline-block
 
 /***************************************************Posts************************************/
 .posts
@@ -901,6 +914,497 @@ body
 	opacity: 1
 .animate-block
 	animation-duration: 1.2s
+
+/***********************************************TopBannerInner************************************/
+.top-banner-inner
+	width: 100%
+	height: 441px
+	display: flex
+	position: relative
+.top-banner-inner-wrap
+	padding-top: 125px
+.header-inner-wrap
+	display: flex
+	width: 100%
+	height: 100%
+	justify-content: space-between
+	align-items: center
+	position: relative
+	z-index: 10
+.header-inner_main
+	h1
+		font-family: $pop-bl
+		font-size: 60px
+		color: #fff
+.header-inner_nav
+	ol
+		display: flex
+	li, a
+		font-family: $pop-l
+		font-size: 18px
+		color: #fff
+	a:hover
+		color: $blue
+.header-inner_nav
+	li
+		margin: 0 15px
+
+/***********************************************About-Page************************************/
+.about-desc-text
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	margin-top: 60px
+	p
+		flex: 0 0 47%
+		max-width: 47%
+		margin-bottom: 26px
+.about-desc
+	padding: 99px 0px 108px 0px
+.about-desc-btn
+	text-align: center
+	margin-top: 49px
+.about-inner-slider
+	display: flex
+	.about-inner-slide
+		flex: 0 0 33.33%
+	img
+		width: 100%
+		height: 100%
+.about-review
+	padding: 94px 0px 84px 0px
+.about-review-wrap
+	display: flex
+	height: 655px
+	flex-wrap: wrap
+	flex-direction: column
+	margin-top: 40px
+	justify-content: space-between
+	align-content: space-between
+.about-review-block
+	height: 197px
+	width: 32%
+	box-shadow: 2px 3px 3px rgba(0,0,0,0.14)
+	background-color: #f5f6f7
+	position: relative
+	padding: 30px 20px 20px 27px
+	span
+		font-family: $pop-sb
+		font-size: 18px
+		color: #000
+		display: block
+		margin-bottom: 5px
+	i
+		font-family: $pop-m
+		font-size: 14px
+		color: $blue
+		font-style: normal
+		display: block
+	p
+		line-height: 29px
+		margin-top: 19px
+	.stars
+		position: absolute
+		top: 30px
+		right: 25px
+		li
+			display: inline-block
+.about-review-form-wrap
+	flex: 0 0 62%
+	width: 360px
+#about-review-form
+	margin-top: 0px
+	height: 425px
+	border: 2px solid rgba(0,174,240,0.25)
+	border-radius: 3px
+	box-shadow: 0px 0px 7px rgba(46,46,46,0.14)
+	padding: 37px 26px 30px 26px
+	.form-header
+		margin-bottom: 20px
+		span
+			font-size: 18px
+	input
+		width: 100%
+		height: 50px
+		background-color: #f8f8f8
+		box-shadow: none
+		border: 1px solid $blue
+		margin-bottom: 15px
+		font-family: $pop-m
+		font-size: 12px
+		color: #717171
+		padding: 0 22px
+		border-radius: 3px
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out
+	::-webkit-input-placeholder 
+		color: #717171
+		font-family: $pop-m
+		font-size: 12px		
+	::-moz-placeholder
+		color: #717171
+		font-family: $pop-m
+		font-size: 12px			
+	:-moz-placeholder 
+		color: #717171
+		font-family: $pop-m
+		font-size: 12px				
+	:-ms-input-placeholder      
+		color: #717171
+		font-family: $pop-m
+		font-size: 12px	
+	textarea
+		width: 100%
+		height: 82px
+		resize: none
+		color: #717171
+		font-family: $pop-m
+		font-size: 12px	
+		padding: 20px 12px
+		border: 1px solid $blue
+		background-color: #f8f8f8
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out
+.about-review-form-bottom
+	display: flex
+	justify-content: space-between
+	align-items: center
+	margin-top: 21px
+.about-review-form-link
+	a
+		font-family: $pop-sb
+		font-size: 19px
+		color: $blue
+		text-transform: uppercase
+	a:hover
+		color: $yellow
+.stars-wrap
+	display: flex
+	align-items: center	
+	span
+		font-family: $pop-sb
+		font-size: 14px
+		color: #000
+		opacity: 0.7
+	.stars
+		margin-top: -5px
+		margin-left: 15px
+		ul
+			display: flex
+		svg
+			fill: #cccccc
+		li
+			margin-right: 3px
+		li:hover
+			cursor: pointer			
+			svg
+				fill: $yellow
+.about-team
+	padding: 97px 0px 97px 0px
+.team-slider-container
+	margin-top: 44px
+.team-slider 
+	margin: 0 -15px
+	.slick-slide
+		margin: 0 15px
+.team-slide
+	-moz-transition: all 0.3s ease-out
+	-o-transition: all 0.3s ease-out
+	-webkit-transition: all 0.3s ease-out
+	transition: all 0.3s ease-out
+	border-bottom: 2px solid transparent
+	text-align: center
+	.team-slide-image
+		width: 100%
+		height: auto
+		img
+			width: 100%
+			height: 100%
+	.team-slide-content
+		padding: 20px 20px 8px 20px
+		span
+			font-family: $pop-sb
+			font-size: 16px
+			color: #000
+			text-transform: uppercase
+			display: block
+			margin-bottom: 5px
+		p
+			font-family: $pop-r
+			font-size: 14px
+			color: $blue
+.team-slide:hover
+	background-color: #bce6f9
+	border-bottom: 2px solid $blue
+.about-partners
+	padding: 107px 0px 0px 0px
+	.section-subheader h2
+		margin-top: 16px
+	.subheader-add
+		margin-top: 17px
+		padding: 0px 40px
+	hr
+		margin-top: 40px
+		margin-bottom: 20px
+.about-partners-block
+	display: flex
+	border-bottom: 1px solid #f2f2f2
+	padding-bottom: 57px
+	margin-bottom: 57px
+.about-partners-content
+	padding: 0px 10px 74px 54px
+	position: relative
+	span
+		font-family: $pop-b
+		font-size: 20px
+		display: block
+		margin-bottom: 25px
+	p
+		line-height: 28px
+.about-partners-block-wrap	
+	margin-top: 60px
+	.about-partners-btn
+		position: absolute
+		bottom: 10px 
+		left: 54px
+		a
+			padding: 14px 38px
+	.about-partners-block:nth-child(1)
+		span
+			color: #7c63c6
+		.btn-inner
+			a
+				background-color: #7c63c6
+	.about-partners-block:nth-child(2)
+		span
+			color: #0168a6
+		.btn-inner
+			a
+				background-color: #0168a6
+		.about-partners-content
+			padding: 0px 60px 60px 0px
+		.about-partners-btn
+			position: absolute
+			bottom: 10px 
+			left: 0px
+	.about-partners-block:nth-child(3)
+		border-bottom: none
+		span
+			color: #cd242b
+		.btn-inner
+			a
+				background-color: #cd242b
+	.btn-inner
+		a
+			background-color: transparent
+			box-shadow: 0px 2px 3px rgba(0,0,0,0.3)
+			color: #fff
+			border-color: transparent
+		a:hover
+			color: #fff
+			background-color: $blue!important
+
+/***********************************************Blog Page************************************/
+.blog
+	width: 100%
+	padding: 80px 0px 136px 0px
+.blog-wrap
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+.blog-block
+	flex: 0 0 31.5%
+	height: auto
+	background-color: #f9f9f9
+	position: relative
+	box-shadow: 0px 0px 15px 0px rgba(183,183,183,0.5)
+	padding-bottom: 56px
+	margin-bottom: 30px
+.blog-image
+	width: 100%
+	height: 193px
+	overflow: hidden
+	img
+		width: 100%
+		height: 100%
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out
+.blog-block:hover
+	cursor: pointer 
+	.blog-image img
+		transform: scale(1.1)
+.blog-desc
+	background-color: #fff
+	padding-left: 25px
+	padding-right: 25px
+	padding-bottom: 18px
+.blog-top
+	display: flex
+	padding-top: 25px	
+	align-items: center
+	margin-bottom: 15px
+.blog-author
+	position: relative
+	padding-right: 16px
+	span
+		font-family: $pop-r
+		font-size: 14.5px
+		color: #202020
+	i
+		color: $blue
+		font-style: normal
+.blog-author:after
+	display: block
+	content: ''
+	position: absolute
+	width: 2px 
+	height: 12px
+	background-color: #818181
+	top: 4px
+	right: 0px
+.blog-date
+	display: flex
+	margin-left: 18px
+	align-items: center
+	svg
+		width: 16px
+		height: 16px
+		fill: #818181
+	span
+		font-family: $pop-r
+		font-size: 14.5px
+		color: #818181
+		padding-left: 10px
+.blog-title
+	span
+		font-family: $pop-sb
+		font-size: 18px
+		line-height: 28px
+		opacity: 0.8
+		color: #000
+.blog-bottom
+	display: flex
+	position: absolute
+	width: 100%
+	justify-content: space-between
+	align-items: center
+	bottom: 18px
+.read
+	padding-left: 25px
+	span
+		font-family: $pop-m
+		font-size: 14.5px
+		color: $blue
+.comment-wrap
+	padding-right: 20px
+.comment-wrap, .comment, .like
+	 display: flex
+	 align-items: center
+	 span
+	 	font-family: $pop-r
+		font-size: 12.21px
+		color: #000
+		opacity: 0.8
+.comment
+	margin-right: 12px
+	svg
+		width: 12px
+		height: 12px
+		fill: #000
+		margin-right: 7px
+.like
+	svg
+		width: 12px
+		height: 12px
+		fill: #000
+		margin-right: 6px
+.blog-nav
+	width: 100%
+	margin-top: 46px
+	ul
+		display: flex
+		width: 100%
+		justify-content: center
+	li
+		width: 38px
+		height: 38px
+		background-color: #ebebeb
+		border-radius: 5px
+		color: rgba(0,0,0,0.5)
+		text-align: center
+		line-height: 38px
+		margin: 0px 4px
+	li:hover
+		color: $blue
+		cursor: pointer
+		svg
+			fill: $blue
+	.page-block-active
+		background-color: $blue
+		color: #fff		
+	.page-block-active:hover
+		color: #fff
+	svg
+		width: 8px
+		height: 12px
+		fill: rgba(0,0,0,0.5)
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out
+
+	
+
+/***********************************************SliderArrows************************************/
+.about-slider-container .arrows
+	svg
+		width: 20px
+		height: 20px
+		fill: #fff
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out
+	.arr-left-gen, .arr-right-gen
+		position: absolute
+		top: 50%
+		margin-top: -10px
+	.arr-left-gen:hover, .arr-right-gen:hover
+		cursor: pointer
+		svg
+			fill: $blue
+	.arr-left-gen
+		left: 0px
+	.arr-right-gen
+		right: 0px
+.slider-container
+	position: relative
+.team-slider-container .arrows
+	svg
+		width: 29px
+		height: 29px
+		fill: #bec4c9
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out
+	.arr-left-gen, .arr-right-gen
+		position: absolute
+		top: -127px
+	.arr-left-gen:hover, .arr-right-gen:hover
+		cursor: pointer
+		svg
+			fill: $blue
+	.arr-left-gen
+		right: 44px
+	.arr-right-gen
+		right: 0px
 
 
 /***********************************************ButtonMobile************************************/
