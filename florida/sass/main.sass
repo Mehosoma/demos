@@ -141,6 +141,11 @@ body
 .text-blue
 	p, span
 		color: $blue
+.link-blue 
+	a
+		color: $blue!important
+	a:hover
+		color: $yellow!important
 .section-subheader__blue
 	i
 		color: $blue
@@ -525,10 +530,10 @@ body
 	border-radius: 0px 3px 3px 0px
 	pointer-events: none
 .form-gen input:hover, .form-gen input:active, .form-gen input:focus,  .form-gen textarea:hover, .form-gen textarea:active, .form-gen textarea:focus, .form-gen select:hover, .form-gen select:active, .form-gen select:focus
-	border: 1px solid $yellow
-	background-color: #f8f8f8
+	border: 1px solid $yellow!important
+	background-color: #f8f8f8!important
 .form-gen input:active, .form-gen input:focus, .form-gen textarea:active, .form-gen textarea:focus, .form-gen select:active, .form-gen select:focus
-	box-shadow: 0px 0px 14px rgba(0,0,0,0.1)
+	box-shadow: 0px 0px 14px rgba(0,0,0,0.1)!important
 
 
 
@@ -979,7 +984,7 @@ body
 	flex-wrap: wrap
 	flex-direction: column
 	margin-top: 40px
-	justify-content: space-between
+	justify-content: flex-start
 	align-content: space-between
 .about-review-block
 	height: 197px
@@ -988,6 +993,7 @@ body
 	background-color: #f5f6f7
 	position: relative
 	padding: 30px 20px 20px 27px
+	margin-bottom: 20px
 	span
 		font-family: $pop-sb
 		font-size: 18px
@@ -1011,10 +1017,10 @@ body
 			display: inline-block
 .about-review-form-wrap
 	flex: 0 0 62%
-	width: 360px
+	width: 356px
 #about-review-form
 	margin-top: 0px
-	height: 425px
+	height: 417px
 	border: 2px solid rgba(0,174,240,0.25)
 	border-radius: 3px
 	box-shadow: 0px 0px 7px rgba(46,46,46,0.14)
@@ -1062,7 +1068,7 @@ body
 		color: #717171
 		font-family: $pop-m
 		font-size: 12px	
-		padding: 20px 12px
+		padding: 20px 22px
 		border: 1px solid $blue
 		background-color: #f8f8f8
 		-moz-transition: all 0.3s ease-out
@@ -1073,7 +1079,7 @@ body
 	display: flex
 	justify-content: space-between
 	align-items: center
-	margin-top: 21px
+	margin-top: 13px
 .about-review-form-link
 	a
 		font-family: $pop-sb
@@ -1359,7 +1365,133 @@ body
 		-webkit-transition: all 0.3s ease-out
 		transition: all 0.3s ease-out
 
-	
+/*********************************************Contacts-page************************************/
+.contacts-page
+	padding: 100px 0px 100px 0px
+	h2
+		font-size: 35px
+.contacts-page-wrap
+	width: 100%
+	display: flex
+.contacts-page-left
+	flex: 0 0 54.8%
+	flex-direction: column
+	justify-content: space-between
+	display: flex
+#contacts-page-form
+	margin-top: 0px
+	padding: 41px 0px 30px 0px
+	input
+		height: 57px
+		background-color: #f8f8f8
+		box-shadow: none
+		border: 1px solid transparent
+		margin-bottom: 23px
+		font-family: $pop-m
+		font-size: 13px
+		color: #717171
+		padding: 0 22px
+		border-radius: 3px
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out
+	::-webkit-input-placeholder 
+		color: #717171
+		font-family: $pop-m
+		font-size: 13px		
+	::-moz-placeholder
+		color: #717171
+		font-family: $pop-m
+		font-size: 13px			
+	:-moz-placeholder 
+		color: #717171
+		font-family: $pop-m
+		font-size: 13px				
+	:-ms-input-placeholder      
+		color: #717171
+		font-family: $pop-m
+		font-size: 13px	
+	textarea
+		width: 100%
+		height: 133px
+		resize: none
+		color: #717171
+		font-family: $pop-m
+		font-size: 13px	
+		padding: 20px 22px
+		border: 1px solid transparent
+		background-color: #f8f8f8
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out
+	.form-bottom
+		margin-top: 36px
+		button
+			width: auto
+			padding: 16px 36px
+.contacts-page-form-field
+	display: flex
+	justify-content: space-between
+	input
+		flex: 0 0 48%
+		max-width: 48%
+.contacts-quote-block
+	width: 100%
+	background-color: #eef5fb
+	padding: 60px 55px 38px 42px
+	position: relative
+	.contacts-page-btn
+		margin-top: 27px
+	.quote-icon
+		position: absolute
+		top: -24px
+		left: 41px
+		width: 57px
+		height: 49px
+	span
+		font-family: $pop-r
+		font-size: 22px
+		line-height: 36px
+		opacity: 0.8
+	b
+		font-family: $pop-sb
+.contacts-page-right
+	margin-left: 57px
+	margin-top: -14px
+	.contacts-page-block:last-child
+		margin-bottom: 0px
+.contacts-page-block
+	border: 1px solid #d9d9d9
+	margin-bottom: 36px
+	padding: 36px 41px 28px 48px
+.contacts-page-block_header
+	margin-bottom: 6px
+	span
+		font-family: $pop-b
+		font-size: 20px
+		color: $blue
+		line-height: 36px
+		border-bottom: 1px solid $blue
+.contacts-page-block_field
+	padding: 24px 20px 20px 41px
+	border-bottom: 1px solid #d9d9d9
+	span
+		font-family: $pop-r
+		font-size: 16px
+		line-height: 26px
+		color: #000
+	a
+		font-family: $pop-r
+		font-size: 15px
+		color: #000
+	a:hover
+		color: $blue
+	li
+		margin-bottom: 6px
+.contacts-banner-inner
+	height: 423px
 
 /***********************************************SliderArrows************************************/
 .about-slider-container .arrows

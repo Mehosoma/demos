@@ -164,6 +164,14 @@ body hr {
   color: #00aef0;
 }
 
+.link-blue a {
+  color: #00aef0 !important;
+}
+
+.link-blue a:hover {
+  color: #ffcb26 !important;
+}
+
 .section-subheader__blue i {
   color: #00aef0;
   font-family: "Poppins ExtraBold", sans-serif;
@@ -774,13 +782,13 @@ body hr {
 }
 
 .form-gen input:hover, .form-gen input:active, .form-gen input:focus, .form-gen textarea:hover, .form-gen textarea:active, .form-gen textarea:focus, .form-gen select:hover, .form-gen select:active, .form-gen select:focus {
-  border: 1px solid #ffcb26;
-  background-color: #f8f8f8;
+  border: 1px solid #ffcb26 !important;
+  background-color: #f8f8f8 !important;
 }
 
 .form-gen input:active, .form-gen input:focus, .form-gen textarea:active, .form-gen textarea:focus, .form-gen select:active, .form-gen select:focus {
-  -webkit-box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.1) !important;
 }
 
 /***************************************************Reasons************************************/
@@ -1525,9 +1533,9 @@ body hr {
   -ms-flex-direction: column;
   flex-direction: column;
   margin-top: 40px;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -ms-flex-line-pack: justify;
   align-content: space-between;
 }
@@ -1540,6 +1548,7 @@ body hr {
   background-color: #f5f6f7;
   position: relative;
   padding: 30px 20px 20px 27px;
+  margin-bottom: 20px;
 }
 
 .about-review-block span {
@@ -1577,12 +1586,12 @@ body hr {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 62%;
   flex: 0 0 62%;
-  width: 360px;
+  width: 356px;
 }
 
 #about-review-form {
   margin-top: 0px;
-  height: 425px;
+  height: 417px;
   border: 2px solid rgba(0, 174, 240, 0.25);
   border-radius: 3px;
   -webkit-box-shadow: 0px 0px 7px rgba(46, 46, 46, 0.14);
@@ -1642,7 +1651,7 @@ body hr {
   color: #717171;
   font-family: "Poppins Medium", sans-serif;
   font-size: 12px;
-  padding: 20px 12px;
+  padding: 20px 22px;
   border: 1px solid #00aef0;
   background-color: #f8f8f8;
   -moz-transition: all 0.3s ease-out;
@@ -1661,7 +1670,7 @@ body hr {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-top: 21px;
+  margin-top: 13px;
 }
 
 .about-review-form-link a {
@@ -2131,6 +2140,207 @@ body hr {
   -o-transition: all 0.3s ease-out;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
+}
+
+/*********************************************Contacts-page************************************/
+.contacts-page {
+  padding: 100px 0px 100px 0px;
+}
+
+.contacts-page h2 {
+  font-size: 35px;
+}
+
+.contacts-page-wrap {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contacts-page-left {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 54.8%;
+  flex: 0 0 54.8%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#contacts-page-form {
+  margin-top: 0px;
+  padding: 41px 0px 30px 0px;
+  -moz-placeholder-color: #717171;
+  -moz-placeholder-font-family: "Poppins Medium", sans-serif;
+  -moz-placeholder-font-size: 13px;
+  -ms-input-placeholder-color: #717171;
+  -ms-input-placeholder-font-family: "Poppins Medium", sans-serif;
+  -ms-input-placeholder-font-size: 13px;
+}
+
+#contacts-page-form input {
+  height: 57px;
+  background-color: #f8f8f8;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: 1px solid transparent;
+  margin-bottom: 23px;
+  font-family: "Poppins Medium", sans-serif;
+  font-size: 13px;
+  color: #717171;
+  padding: 0 22px;
+  border-radius: 3px;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+#contacts-page-form ::-webkit-input-placeholder {
+  color: #717171;
+  font-family: "Poppins Medium", sans-serif;
+  font-size: 13px;
+}
+
+#contacts-page-form ::-moz-placeholder {
+  color: #717171;
+  font-family: "Poppins Medium", sans-serif;
+  font-size: 13px;
+}
+
+#contacts-page-form textarea {
+  width: 100%;
+  height: 133px;
+  resize: none;
+  color: #717171;
+  font-family: "Poppins Medium", sans-serif;
+  font-size: 13px;
+  padding: 20px 22px;
+  border: 1px solid transparent;
+  background-color: #f8f8f8;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+#contacts-page-form .form-bottom {
+  margin-top: 36px;
+}
+
+#contacts-page-form .form-bottom button {
+  width: auto;
+  padding: 16px 36px;
+}
+
+.contacts-page-form-field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.contacts-page-form-field input {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 48%;
+  flex: 0 0 48%;
+  max-width: 48%;
+}
+
+.contacts-quote-block {
+  width: 100%;
+  background-color: #eef5fb;
+  padding: 60px 55px 38px 42px;
+  position: relative;
+}
+
+.contacts-quote-block .contacts-page-btn {
+  margin-top: 27px;
+}
+
+.contacts-quote-block .quote-icon {
+  position: absolute;
+  top: -24px;
+  left: 41px;
+  width: 57px;
+  height: 49px;
+}
+
+.contacts-quote-block span {
+  font-family: "Poppins Regular", sans-serif;
+  font-size: 22px;
+  line-height: 36px;
+  opacity: 0.8;
+}
+
+.contacts-quote-block b {
+  font-family: "Poppins SemiBold", sans-serif;
+}
+
+.contacts-page-right {
+  margin-left: 57px;
+  margin-top: -14px;
+}
+
+.contacts-page-right .contacts-page-block:last-child {
+  margin-bottom: 0px;
+}
+
+.contacts-page-block {
+  border: 1px solid #d9d9d9;
+  margin-bottom: 36px;
+  padding: 36px 41px 28px 48px;
+}
+
+.contacts-page-block_header {
+  margin-bottom: 6px;
+}
+
+.contacts-page-block_header span {
+  font-family: "Poppins Bold", sans-serif;
+  font-size: 20px;
+  color: #00aef0;
+  line-height: 36px;
+  border-bottom: 1px solid #00aef0;
+}
+
+.contacts-page-block_field {
+  padding: 24px 20px 20px 41px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.contacts-page-block_field span {
+  font-family: "Poppins Regular", sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  color: #000;
+}
+
+.contacts-page-block_field a {
+  font-family: "Poppins Regular", sans-serif;
+  font-size: 15px;
+  color: #000;
+}
+
+.contacts-page-block_field a:hover {
+  color: #00aef0;
+}
+
+.contacts-page-block_field li {
+  margin-bottom: 6px;
+}
+
+.contacts-banner-inner {
+  height: 423px;
 }
 
 /***********************************************SliderArrows************************************/
