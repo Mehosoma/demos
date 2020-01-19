@@ -270,3 +270,31 @@ $(window).on('load resize', function () {
    		$(".menu-mobile").css('display','none');
   	}
 });
+
+//Radio-Button Click
+$('.packages-block .checkbox-cus').change(function(){
+ 	var value = $(this).val();
+	if (value == '2') {
+		$(this).closest('.packages-block-cost-wrap').find('.packages-block-cost').css('display', 'none')
+		$(this).closest('.packages-block-cost-wrap').find('.packages-block-cost-bi').css('display', 'flex')
+	} else{
+	    $(this).closest('.packages-block-cost-wrap').find('.packages-block-cost').css('display', 'flex')
+		$(this).closest('.packages-block-cost-wrap').find('.packages-block-cost-bi').css('display', 'none')
+	}
+});
+
+
+//Select Packages Column
+$(document).ready(function(){
+   $('.packages-block').on('click',function(e){
+   		$('.packages-block').removeClass('packages-col-selected');
+   		$(this).addClass('packages-col-selected');
+   });
+
+});
+
+//Radio-Button Tarifs Click
+$('.tarifs-header-block .checkbox-cus').change(function(){ 
+	$('.tarifs-header-block').removeClass('tarifs-header-block-active');
+	$(this).closest('.tarifs-header-block').addClass('tarifs-header-block-active');
+});

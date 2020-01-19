@@ -941,6 +941,10 @@ body
 		font-family: $pop-bl
 		font-size: 60px
 		color: #fff
+	span
+		font-family: $pop-r
+		font-size: 30px
+		color: #fff
 .header-inner_nav
 	ol
 		display: flex
@@ -1492,6 +1496,457 @@ body
 		margin-bottom: 6px
 .contacts-banner-inner
 	height: 423px
+
+/*********************************************PAckages-Page************************************/
+.packages
+	background-color: #f5f6f7
+	padding: 100px 0px 110px 0px
+.section-subheader__packages
+	span
+		line-height: 36px
+.packages-wrap
+	display: flex
+	justify-content: space-between
+	box-shadow: 0 0 15px rgba(0,0,0,0.1)
+	margin-top: 46px
+	.packages-block:nth-child(1)
+	.packages-block:nth-child(2)
+		.packages-block-cost-wrap
+			background-color: #f9f9f9
+		.packages-block-cost, .packages-block-cost-bi
+			span
+				color: $blue
+	.packages-block:nth-child(3)
+		.packages-block-cost, .packages-block-cost-bi
+			span, b
+				color: #355897	
+	.packages-block:nth-child(4)
+		.packages-block-cost-wrap
+			background-color: #f9f9f9
+		.packages-block-cost, .packages-block-cost-bi
+			span, b
+				color: #f36321
+		.packages-block
+			border-right: none
+.packages-block
+	background-color: #fff
+	position: relative
+	flex: 0 0 25%
+	max-width: 25%
+	border-right: 1px solid rgba(0,0,0,0.1)
+	-moz-transition: all 0.3s ease-out
+	-o-transition: all 0.3s ease-out
+	-webkit-transition: all 0.3s ease-out
+	transition: all 0.3s ease-out
+.packages-block:hover
+	transform: translateY(-30px)
+	cursor: pointer
+.packages-logo
+	position: absolute
+	left: 0px
+	right: 0px
+	margin: auto
+	top: -20px
+.packages-block-header
+	text-align: center
+	span
+		font-family: $pop-m
+		font-size: 22.76px
+		line-height: 80px
+		color: #000
+		opacity: 0.8
+.packages-block-cost-wrap
+	background-color: #f3f3f3
+	width: 100%	
+	padding: 20px 0px 20px 0px
+.packages-block-cost, .packages-block-cost-bi
+	display: flex
+	align-items: center
+	justify-content: center
+	border-bottom: 1px solid #d9d9d9
+	width: 90%
+	margin: 0 auto
+	padding-bottom: 14px
+	i
+		font-style: normal
+		font-family: $pop-r
+		font-size: 20.87px
+		color: #000
+		opacity: 0.6
+		align-self: flex-start
+		margin-top: 10px
+		margin-right: 5px
+	span
+		font-style: normal
+		font-family: $pop-m
+		font-size: 52px
+		color: #7cb319
+	b
+		font-family: $pop-el
+		font-size: 34px
+		margin: 0px 5px
+	p
+		margin-bottom: 0px
+		font-family: $pop-r
+		font-size: 16px
+		color: #000
+		opacity: 0.66
+.packages-block-cost-bi
+	display: none
+.packages-block-radio
+	height: 102px
+	display: flex
+	align-items: center
+	justify-content: center
+	flex-wrap: wrap
+	padding: 18px 48px 20px 67px
+.packages-radio-monthly
+	display: flex
+	justify-content: space-between
+	align-items: center
+	flex: 0 0 100%
+	margin: 11px 0px
+	span
+		font-style: normal
+		font-family: $pop-r
+		font-size: 14.24px
+		color: #000
+.packages-block-desc
+	text-align: center
+	padding: 28px 0px 14px 0px
+	li
+		font-family: $pop-r
+		font-size: 12.5px
+		color: #000
+		margin-bottom: 15px
+	.through
+		text-decoration: line-through
+		color: #b8b8b8
+.packages-block-btn
+	text-align: center
+	margin: 0 auto
+	a
+		width: auto
+		padding: 17px 35px
+.packages-block-bottom
+	text-align: center
+	height: 160px
+	padding: 20px 0px
+	span
+		font-family: $pop-m
+		font-size: 14px
+		color: #000
+		display: block
+		margin-bottom: 10px
+	p
+		font-family: $pop-m
+		font-size: 11px
+		color: #747474
+		line-height: 18px
+		margin-bottom: 8px
+.packages-col-selected
+	transform: translateY(-30px)
+.section-subheader__packages-about
+	margin-top: 105px
+.packages-desc-wrap
+	display: flex
+	justify-content: space-between
+.packages-text
+	flex: 0 0 50%
+	margin-top: 61px
+	p
+		margin-bottom: 29px
+.packages-images
+	display: flex
+	flex-direction: column
+	height: 320px
+	flex-wrap: wrap
+	align-items: flex-end
+	align-content: flex-end
+	flex: 0 0 50%
+	margin-top: 17px
+.packages-images-block
+	width: 210px
+	height: 48%
+.packages-images-block:last-child
+	flex-grow: 1
+	margin-left: 20px	
+.tarifs
+	background-color: #fafafa
+	padding: 94px 0px 63px 0px
+.section-subheader__tarifs
+	position: relative
+	span
+		text-transform: none
+		display: block
+	h2
+		display: inline-block
+		padding-right: 72px
+		opacity: 0.9
+.tarifs-block
+	border: 1px solid #d9d9d9
+	box-shadow: 0px 0px 15px rgba(0,0,0,0.3)
+	background-color: #fff
+	padding: 28px 25px 30px 25px
+	margin-top: 40px	
+.tarifs-header
+	display: flex
+	align-items: center	
+	justify-content: space-between
+.tarifs-block-wrapper
+	margin-bottom: 72px
+.tarifs-header-block
+	flex: 0 0 49%
+	display: flex
+	justify-content: space-between
+	align-items: center
+	background-color: #f5f6f7
+	padding: 30px 30px
+	border: 1px solid transparent
+	-moz-transition: all 0.3s ease-out
+	-o-transition: all 0.3s ease-out
+	-webkit-transition: all 0.3s ease-out
+	transition: all 0.3s ease-out
+	.packages-block-cost
+		justify-content: flex-start
+		align-items: flex-end
+		border: none
+		flex-wrap: wrap
+		padding-bottom: 0px
+		span
+			line-height: 40px
+		p
+			opacity: 1
+			font-size: 14px
+		b
+			font-size: 14px	
+			margin: 0px 10px
+		i
+			margin-top: -1px
+	.checkbox-custom
+		.checkbox-cus + label:before
+			height: 18px
+			width: 50px
+		.checkbox-cus + label:after
+			width: 26px
+			height: 26px
+			top: -8px	
+			border-radius: 50%
+		.checkbox-cus:checked + label:after 
+			left: 30px	
+.tarifs-header-block-active
+	border: 1px solid $blue
+.tarifs-block-hidden
+	padding: 36px 0px 25px
+	span
+		font-family: $pop-sb
+		font-size: 18px
+		color: #000
+		opacity: 0.7
+	ul
+		display: flex
+		justify-content: flex-start
+		flex-wrap: wrap
+		margin-top: 26px
+	li
+		flex: 0 0 25%
+		font-family: $pop-r
+		font-size: 14px
+		color: #000
+		position: relative
+		padding-left: 27px
+		margin-bottom: 14px
+	li:after
+		display: block
+		content: ''
+		width: 7px
+		height: 7px
+		background-color: #94ddf9
+		border-radius: 50%
+		position: absolute
+		left: 0px
+		top: 5px
+.tarifs-hidden-buttons
+	display: flex
+	align-items: center
+	justify-content: flex-end
+	margin-top: 0px
+	.btn-gen
+		padding: 18px 27px
+	.btn-gen__blue
+		width: auto
+		padding: 18px 40px
+		border-radius: 3px
+		text-align: center
+		margin-left: 20px
+.tarifs-block-wrapper-blue
+	.packages-block-cost
+		span
+			color: $blue
+.tarifs-block-wrapper-dark
+		.packages-block-cost
+			span
+				color: #355897			
+.tarifs-block-wrapper-orange
+	.packages-block-cost
+		span
+			color: #f36321
+.tarifs-block-wrapper-add
+	.packages-block-cost
+		p:last-child
+			flex: 0 0 100%
+			font-family: $pop-m
+			font-size: 14px
+			color: #000
+			opacity: 0.7
+			margin-top: 10px
+			margin-left: 10px
+.tarifs-block-wrapper-add .tarifs-header .tarifs-header-block:nth-child(2)
+	p:last-child
+		margin-left: 22px
+.tarifs-block-hidden__high
+	display: none
+.packages-form
+	background-color: #eef5fb
+	padding: 89px 0px 89px 0px
+.section-subheader__packages-form
+	span
+		font-family: $pop-r
+		font-size: 18px
+		line-height: 30px
+		color: #000
+		opacity: 0.8
+		text-transform: none
+		display: block
+		margin: 0px
+	h2
+		margin-bottom: 30px
+	i
+		font-style: normal
+		color: $blue
+.packages-form-wrapper
+	margin-top: 52px
+#packages-form-main
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	padding: 0px
+	.field-wrap
+		flex: 0 0 32%
+		margin-bottom: 14px
+	.field-wrap-long
+		flex: 0 0 66%
+		input
+			height: 58px
+		label
+			top: 23px
+	.form-bottom
+		margin-top: 0px
+		flex: 0 0 32%
+		button
+			padding: 20px 53px
+.packages-form-radio-wrap
+	display: flex
+	flex: 0 0 100%
+	margin-top: 5px
+.packages-form-radio
+	display: flex
+	flex: 0 0 24%
+	align-items: center
+	justify-content: flex-start
+	flex-wrap: wrap
+	span
+		flex: 0 0 100%
+		font-family: $pop-m
+		font-size: 14px
+		color: #000
+		opacity: 0.7
+		display: block
+		margin-bottom: 11px
+	input
+		flex: 0 0 10%
+	label
+		font-family: $pop-m
+		font-size: 14px
+		color: #000
+		opacity: 0.5
+
+
+
+
+
+
+
+/***********************************************Custom Checkbox************************************/
+.checkbox-cus
+	position: absolute
+	z-index: -1
+	opacity: 0
+	margin: 10px 0 0 20px
+.checkbox-cus + label
+	position: relative
+	padding: 0 0 0 60px
+	cursor: pointer
+.checkbox-cus + label:before
+	content: ''
+	position: absolute
+	top: -4px
+	left: 0
+	width: 40px
+	height: 13px
+	border-radius: 13px
+	background: #CDD1DA
+	transition: .2s
+.checkbox-cus + label:after 
+	content: ''
+	position: absolute
+	top: -9px
+	left: 0px
+	width: 22px
+	height: 22px
+	border-radius: 10px
+	background: #FFF
+	transition: .2s
+	box-shadow: 0px 0px 20px rgba(0,0,0,0.2)
+.checkbox-cus:checked + label:before
+	background: $blue
+.checkbox-cus:checked + label:after 
+	left: 20px
+
+.radio-cus
+	position: absolute
+	z-index: -1
+	opacity: 0
+	margin: 10px 0 0 7px
+.radio-cus + label
+	position: relative
+	padding: 0 0 0 28px
+	cursor: pointer
+	margin-right: 20px
+.radio-cus + label:before 
+	content: ''
+	position: absolute
+	top: -1px
+	left: 0
+	width: 18px
+	height: 18px
+	border: 1px solid #77d0f5
+	border-radius: 50%
+	background: #FFF
+.radio-cus + label:after 
+	content: ''
+	position: absolute
+	top: 2px
+	left: 3px
+	width: 12px
+	height: 12px
+	border-radius: 50%
+	background: $blue
+	opacity: 0
+	transition: .2s
+.radio-cus:checked + label:after 
+	opacity: 1
+
 
 /***********************************************SliderArrows************************************/
 .about-slider-container .arrows
