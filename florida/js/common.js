@@ -303,5 +303,5 @@ $('.tarifs-header-block .checkbox-cus').change(function(){
 //Contact banner click
 $('.contacts-banner-inner-wrap').on('click', function(e){
 	$(this).find('.top-banner-overlay').fadeOut('slow');
-	$(this).find('.header-inner-wrap').fadeOut('slow');
+	$(this).find('.header-inner-container').fadeOut('slow');
 });
