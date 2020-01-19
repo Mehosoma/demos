@@ -309,11 +309,13 @@ $(document).ready(function(){
 	$('.contacts-banner-inner-wrap').on('click', function(e){
 		$(this).find('.top-banner-overlay').fadeOut('slow');
 		$(this).find('.header-inner-container').fadeOut('slow');
+		$(this).find('.map-wrapper').removeClass('gray-map');
 	});
 
 	$( ".contacts-banner-inner-wrap" ).mouseleave(function() {
     	event.preventDefault();
       	 $(this).find('.top-banner-overlay').fadeIn('slow');
-		 $(this).find('.header-inner-container').fadeIn('slow');                               
+		 $(this).find('.header-inner-container').fadeIn('slow'); 
+		 $(this).find('.map-wrapper').addClass('gray-map');                              
     });
 });

@@ -2355,11 +2355,17 @@ body hr {
   height: 100%;
 }
 
-.contacts-banner-inner .map-wrapper iframe {
+.contacts-banner-inner .gray-map iframe {
   width: 100%;
   height: 100%;
+  webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
+  -webkit-filter: gray;
+  filter: gray;
 }
 
 .contacts-banner-inner .header-inner-container {
