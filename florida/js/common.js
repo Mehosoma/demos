@@ -272,15 +272,17 @@ $(window).on('load resize', function () {
 });
 
 //Radio-Button Click
-$('.packages-block .checkbox-cus').change(function(){
- 	var value = $(this).val();
-	if (value == '2') {
-		$(this).closest('.packages-block-cost-wrap').find('.packages-block-cost').css('display', 'none')
-		$(this).closest('.packages-block-cost-wrap').find('.packages-block-cost-bi').css('display', 'flex')
-	} else{
-	    $(this).closest('.packages-block-cost-wrap').find('.packages-block-cost').css('display', 'flex')
-		$(this).closest('.packages-block-cost-wrap').find('.packages-block-cost-bi').css('display', 'none')
-	}
+$(document).ready(function(){
+	$('.packages-block .checkbox-cus').change(function(){
+	 	var value = $(this).val();
+		if (value == '2') {
+			$(this).closest('.packages-block-cost-wrap').find('.packages-block-cost').css('display', 'none')
+			$(this).closest('.packages-block-cost-wrap').find('.packages-block-cost-bi').css('display', 'flex')
+		} else{
+		    $(this).closest('.packages-block-cost-wrap').find('.packages-block-cost').css('display', 'flex')
+			$(this).closest('.packages-block-cost-wrap').find('.packages-block-cost-bi').css('display', 'none')
+		}
+	});
 });
 
 
@@ -294,14 +296,24 @@ $(document).ready(function(){
 });
 
 //Radio-Button Tarifs Click
-$('.tarifs-header-block .checkbox-cus').change(function(){ 
-	$(this).closest('.tarifs-header'). find('.tarifs-header-block').removeClass('tarifs-header-block-active');
-	$(this).closest('.tarifs-header-block').addClass('tarifs-header-block-active');
+$(document).ready(function(){
+	$('.tarifs-header-block .checkbox-cus').change(function(){ 
+		$(this).closest('.tarifs-header'). find('.tarifs-header-block').removeClass('tarifs-header-block-active');
+		$(this).closest('.tarifs-header-block').addClass('tarifs-header-block-active');
+	});
 });
 
 
 //Contact banner click
-$('.contacts-banner-inner-wrap').on('click', function(e){
-	$(this).find('.top-banner-overlay').fadeOut('slow');
-	$(this).find('.header-inner-container').fadeOut('slow');
+$(document).ready(function(){
+	$('.contacts-banner-inner-wrap').on('click', function(e){
+		$(this).find('.top-banner-overlay').fadeOut('slow');
+		$(this).find('.header-inner-container').fadeOut('slow');
+	});
+
+	$( ".contacts-banner-inner-wrap" ).mouseleave(function() {
+    	event.preventDefault();
+      	 $(this).find('.top-banner-overlay').fadeIn('slow');
+		 $(this).find('.header-inner-container').fadeIn('slow');                               
+    });
 });
