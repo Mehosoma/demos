@@ -507,6 +507,114 @@
 		padding: 20px;
 	}
 
+	.header-inner_main h1 {
+		font-size: 50px;
+	}
+
+	.packages-wrap, .packages-desc-wrap, .tarifs-header{
+		flex-wrap: wrap;
+	}
+
+	.packages-block-bottom{
+		height: auto;
+	}
+
+	.packages-block{
+		flex: 0 0 100%;
+		max-width: 100%;
+		margin-bottom: 60px;
+		border: 1px solid rgba(0, 0, 0, 0.1);
+	}
+
+	.packages-wrap{
+		box-shadow: none;		
+	}
+
+	.packages-wrap .packages-block:last-child{
+		margin-bottom: 0px;
+	}
+
+	.packages-text, .packages-images{
+		flex: 0 0 100%;
+		max-width: 100%;
+		
+	}
+
+	.packages-images{
+		height: 75vw;
+	}
+
+	.packages{
+		padding-bottom: 40px;
+	}
+
+	.tarifs, .packages-form{
+		padding-top: 40px;
+		padding-bottom: 0px;
+	}
+
+	.packages-images-block {
+		width: 48%;
+	}
+
+	.packages-images-block:last-child{
+		margin-left: 10px;
+	}
+
+	.tarifs-block-hidden li{
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
+
+	.tarifs-header-block{
+		flex: 0 0 100%;
+		max-width: 100%;
+		margin-bottom: 10px;
+		flex-wrap: wrap;
+	}
+
+	.tarifs-header-block .checkbox-custom
+	{
+		margin-top: 20px;
+	}
+
+	#packages-form-main .form-bottom {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+
+	.tarifs-hidden-buttons{
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.tarifs-hidden-buttons a{
+		flex: 0 0 100%;
+		max-width: 100%;
+		text-align: center;
+	}
+
+	.tarifs-hidden-buttons .btn-gen__blue{
+		margin-left: 0px;
+		margin-top: 30px;
+	}
+
+	#packages-form-main .field-wrap{
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+
+	.packages-form-radio {
+		flex: 0 0 100%;
+		max-width: 100%;
+		margin: 30px 0px 0px;
+	}
+
+	.packages-form-radio-wrap{
+		flex-wrap: wrap;
+		padding-bottom: 30px;
+	}
+
 
 }
 
@@ -1017,6 +1125,84 @@
 		padding: 20px;
 	}
 
+	.packages-wrap, .packages-desc-wrap, .tarifs-header{
+		flex-wrap: wrap;
+	}
+
+	.packages-block{
+		flex: 0 0 50%;
+		max-width: 50%;
+		margin-bottom: 60px;
+		border: 1px solid rgba(0, 0, 0, 0.1);
+	}
+
+	.packages-wrap{
+		box-shadow: none;		
+	}
+
+	.packages-text, .packages-images{
+		flex: 0 0 100%;
+		max-width: 100%;
+		
+	}
+
+	.packages{
+		padding-bottom: 40px;
+	}
+
+	.tarifs, .packages-form{
+		padding-top: 40px;
+		padding-bottom: 0px;
+	}
+
+	.tarifs-block-hidden li{
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
+
+	.tarifs-header-block{
+		flex: 0 0 100%;
+		max-width: 100%;
+		margin-bottom: 10px;
+	}
+
+	#packages-form-main .form-bottom {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+
+	.tarifs-hidden-buttons{
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.tarifs-hidden-buttons a{
+		flex: 0 0 100%;
+		max-width: 100%;
+		text-align: center;
+	}
+
+	.tarifs-hidden-buttons .btn-gen__blue{
+		margin-left: 0px;
+		margin-top: 30px;
+	}
+
+	#packages-form-main .field-wrap{
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+
+	.packages-form-radio {
+		flex: 0 0 100%;
+		max-width: 100%;
+		margin: 30px 0px 0px;
+	}
+
+	.packages-form-radio-wrap{
+		flex-wrap: wrap;
+		padding-bottom: 30px;
+	}
+
 }
 
 @media only screen and (min-width : 768px) and (max-width : 991px) {
@@ -1345,6 +1531,47 @@
 	    padding: 24px 9px 20px 25px;
 	}
 
+	.packages-wrap, .packages-desc-wrap, .tarifs-header{
+		flex-wrap: wrap;
+	}
+
+	.packages-block{
+		flex: 0 0 50%;
+		max-width: 50%;
+		margin-bottom: 60px;
+		border: 1px solid rgba(0, 0, 0, 0.1);
+	}
+
+	.packages-wrap{
+		box-shadow: none;		
+	}
+
+	.packages-text, .packages-images{
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+
+	.tarifs-block-hidden li{
+		flex: 0 0 33%;
+		max-width: 33%;
+	}
+
+	.tarifs-header-block{
+		flex: 0 0 100%;
+		max-width: 100%;
+		margin-bottom: 10px;
+	}
+
+	#packages-form-main .form-bottom button {
+		padding: 20px 10px;
+	}
+
+	.packages-form-radio {
+		flex: 0 0 34%;
+	}
+
+
+
 
 }
 
@@ -1505,6 +1732,10 @@
 
 	.contacts-quote-block span {
 		font-size: 20px;
+	}
+
+	.packages-block-radio{
+		padding: 18px 40px 20px 40px;
 	}
 
 }
