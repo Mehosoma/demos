@@ -295,6 +295,13 @@ $(document).ready(function(){
 
 //Radio-Button Tarifs Click
 $('.tarifs-header-block .checkbox-cus').change(function(){ 
-	$('.tarifs-header-block').removeClass('tarifs-header-block-active');
+	$(this).closest('.tarifs-header'). find('.tarifs-header-block').removeClass('tarifs-header-block-active');
 	$(this).closest('.tarifs-header-block').addClass('tarifs-header-block-active');
+});
+
+
+//Contact banner click
+$('.contacts-banner-inner-wrap').on('click', function(e){
+	$(this).find('.top-banner-overlay').fadeOut('slow');
+	$(this).find('.header-inner-wrap').fadeOut('slow');
 });
