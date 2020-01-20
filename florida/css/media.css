@@ -379,6 +379,11 @@
 		justify-content: center;
 	}
 
+
+	.header-inner-wrap{
+		text-align: center;
+	}
+
 	.about-desc-text{
 		flex-wrap: wrap;
 	}
@@ -571,6 +576,23 @@
 		max-width: 100%;
 		margin-bottom: 10px;
 		flex-wrap: wrap;
+		padding: 20px 10px;
+	}
+
+	.packages-block-cost span{
+		font-size: 40px;	
+	}
+
+	.tarifs-header-block .packages-block-cost span {
+    	line-height: 28px;
+	}
+
+	.tarifs-header-block .packages-block-cost p{
+		font-size: 12px;
+	}
+
+	.tarifs-block-wrapper-add .tarifs-header .tarifs-header-block:nth-child(2) p:last-child {
+		margin-left: 15px;
 	}
 
 	.tarifs-header-block .checkbox-custom
@@ -604,7 +626,18 @@
 		max-width: 100%;
 	}
 
-	.packages-form-radio {
+	.packages-form-radio-my {
+		flex: 0 0 100%;
+		max-width: 100%;
+		margin: 30px 0px 0px;
+	}
+
+	.packages-form-radio-wrap-my{
+		flex-wrap: wrap;
+		padding-bottom: 30px;
+	}
+
+	.packages-form-radio{
 		flex: 0 0 100%;
 		max-width: 100%;
 		margin: 30px 0px 0px;
@@ -612,6 +645,31 @@
 
 	.packages-form-radio-wrap{
 		flex-wrap: wrap;
+		padding-bottom: 30px;
+	}
+
+	.pests-page-block{
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+
+	.pests-page-block img{
+		height: auto;
+	}
+
+	.pests-upload span {
+		font-size: 32px;
+	}
+
+	.pests-upload-buttons{
+		flex-wrap: wrap;
+	}
+
+	.pests-upload-buttons a{
+		margin-bottom: 20px;
+	}
+
+	.pests-upload{
 		padding-bottom: 30px;
 	}
 
@@ -1192,7 +1250,18 @@
 		max-width: 100%;
 	}
 
-	.packages-form-radio {
+	.packages-form-radio-my {
+		flex: 0 0 100%;
+		max-width: 100%;
+		margin: 30px 0px 0px;
+	}
+
+	.packages-form-radio-wrap-my{
+		flex-wrap: wrap;
+		padding-bottom: 30px;
+	}
+
+	.packages-form-radio{
 		flex: 0 0 100%;
 		max-width: 100%;
 		margin: 30px 0px 0px;
@@ -1200,6 +1269,31 @@
 
 	.packages-form-radio-wrap{
 		flex-wrap: wrap;
+		padding-bottom: 30px;
+	}
+
+	.pests-page-block{
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+
+	.pests-page-block img{
+		height: auto;
+	}
+
+	.pests-upload span {
+		font-size: 32px;
+	}
+
+	.pests-upload-buttons{
+		flex-wrap: wrap;
+	}
+
+	.pests-upload-buttons a{
+		margin-bottom: 20px;
+	}
+
+	.pests-upload{
 		padding-bottom: 30px;
 	}
 
@@ -1566,12 +1660,26 @@
 		padding: 20px 10px;
 	}
 
-	.packages-form-radio {
+	.packages-form-radio-my {
 		flex: 0 0 34%;
 	}
 
+	.packages-form-radio{
+		flex: 0 0 34%;
+	}
 
+	.packages-form-radio-wrap{
+		margin-top: 30px;
+	}
 
+	.pests-menu li {
+		padding: 0px 11px;
+	}
+
+	.pests-page-block{
+		flex: 0 0 47%;
+		max-width: 47%;
+	}
 
 }
 

@@ -1871,11 +1871,11 @@ body
 		flex: 0 0 32%
 		button
 			padding: 20px 53px
-.packages-form-radio-wrap
+.packages-form-radio-wrap-my
 	display: flex
 	flex: 0 0 100%
 	margin-top: 5px
-.packages-form-radio
+.packages-form-radio-my
 	display: flex
 	flex: 0 0 24%
 	align-items: center
@@ -1899,8 +1899,136 @@ body
 		opacity: 0.5
 
 
-
-
+/*********************************************Pests-Page************************************/
+.pests-page
+	padding: 100px 0px 58px 0px
+	background-color: #f5f6f7
+.pests-menu
+	margin-top: 54px
+	ul
+		display: flex
+		flex-wrap: wrap
+		justify-content: center
+	li
+		padding: 0px 14px
+		margin-bottom: 27px
+	a
+		font-family: $pop-m
+		font-size: 14px
+		line-height: 20px
+		color: #717171
+		border-bottom: 1px solid transparent
+	a:hover
+		color: $blue
+		border-bottom: 1px solid $blue
+.pests-page-blocks-wrap
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	margin-top: 30px
+.pests-page-block
+	flex: 0 0 31.5%
+	max-width: 31.5%
+	padding: 20px
+	margin-bottom: 24px
+	background-color: transparent
+	text-align: center
+	position: relative
+	-moz-transition: all 0.3s ease-out
+	-o-transition: all 0.3s ease-out
+	-webkit-transition: all 0.3s ease-out
+	transition: all 0.3s ease-out
+	span
+		font-family: $pop-m
+		font-size: 18px
+		line-height: 20px
+		color: $blue
+		padding: 20px 0px 3px 0px
+		display: block
+	img
+		width: 100%
+		height: 186px
+.pests-page-block:hover
+	background-color: #fff
+	box-shadow: 0 0 10px rgba(0,0,0,0.2)
+.pests-page-block:hover .pests-page-block_hidden
+	opacity: 1
+	visibility: visible
+.pests-page-block_hidden
+	position: absolute
+	width: 100%
+	height: 100%
+	top: 0px
+	left: 0px
+	right: 0px
+	margin: auto
+	opacity: 0
+	visibility: hidden
+	padding-top: 100px
+	-moz-transition: all 0.3s ease-out
+	-o-transition: all 0.3s ease-out
+	-webkit-transition: all 0.3s ease-out
+	transition: all 0.3s ease-out
+	span
+		font-family: $pop-sb
+		font-size: 13px
+		color: #fff
+		background-color: rgba(0,174,240,0.8)
+		padding: 10px 20px
+		border-radius: 3px
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out
+		display: inline-block
+	span:hover
+		background-color: $yellow
+.pests-upload
+	width: 100%
+	min-height: 533px
+	background-color: $blue
+	text-align: center
+	padding-top: 89px
+	span
+		font-family: $pop-m
+		font-size: 40px
+		color: #fff
+		display: block
+		margin-bottom: 34px
+	p
+		font-family: $pop-r
+		font-size: 18px
+		color: #fff
+.pests-upload-block
+	margin-top: 41px
+.pests-upload-circle
+	width: 107px
+	height: 107px
+	border: 5px solid #7bd2f4
+	border-radius: 50%
+	overflow: hidden
+	margin: 0 auto
+	margin-bottom: 40px
+.pests-upload-buttons
+	font-family: $pop-sb
+	font-size: 14.54px
+	color: #000
+	display: flex
+	justify-content: center
+	a
+		margin: 0px 17px
+		padding: 17px 0px
+		width: 250px
+.section-subheader__pests
+	span
+		line-height: 36px
+	h2
+		margin-bottom: 19px
+	hr
+		margin-top: 20px
+		width: 40px
+.btn-gen__white
+	background-color: #fff
 
 
 
@@ -1940,17 +2068,17 @@ body
 .checkbox-cus:checked + label:after 
 	left: 20px
 
-.radio-cus
+.radio-cus-my
 	position: absolute
 	z-index: -1
 	opacity: 0
 	margin: 10px 0 0 7px
-.radio-cus + label
+.radio-cus-my + label
 	position: relative
 	padding: 0 0 0 28px
 	cursor: pointer
 	margin-right: 20px
-.radio-cus + label:before 
+.radio-cus-my + label:before 
 	content: ''
 	position: absolute
 	top: -1px
@@ -1960,7 +2088,7 @@ body
 	border: 1px solid #77d0f5
 	border-radius: 50%
 	background: #FFF
-.radio-cus + label:after 
+.radio-cus-my + label:after 
 	content: ''
 	position: absolute
 	top: 2px
@@ -1971,8 +2099,45 @@ body
 	background: $blue
 	opacity: 0
 	transition: .2s
-.radio-cus:checked + label:after 
+.radio-cus-my:checked + label:after 
 	opacity: 1
+
+
+.packages-form-radio-wrap
+	display: flex
+	width: 100%
+
+
+.packages-form-radio
+	display: flex
+	flex-direction: column
+	margin-right: 30px
+.packages-form-radio span
+    font-family: "Poppins Medium", sans-serif
+    font-size: 14px
+    color: #000
+.wpcf7-list-item label
+	display: flex
+.wpcf7-list-item label span
+	order: 2
+	font-family: "Poppins Medium", sans-serif
+    font-size: 14px
+    color: #000
+    display: inline-block
+.wpcf7-list-item label input
+	width: 18px
+    height: 18px
+    order: 1
+    margin-right: 10px
+.wpcf7-list-item.first
+	margin-right: 20px
+.wpcf7-list-item
+	opacity: 0.8
+.radio-header
+	opacity: 0.8
+
+
+
 
 
 /***********************************************SliderArrows************************************/

@@ -225,6 +225,15 @@ $(document).ready(function(){
 		    $(this).parent().find(".hint").show();
 		}
 	});
+
+	$('.date-change').focus(function() {
+		$(this).attr('type','date');		
+	});
+
+	$('.date-change').blur(function() {
+		$(this).attr('type','text');
+		
+	});
 });
 
 //Video-link
