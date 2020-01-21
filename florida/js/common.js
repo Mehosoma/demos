@@ -154,6 +154,18 @@ $('.team-slider').slick({
 	});
 });
 
+$(document).ready(function(){
+$('.single-slider').slick({
+  		infinite: true,
+  		slidesToShow: 1,
+  		slidesToScroll: 1,  
+  		autoplay: false,  		
+  		arrows: false, 
+  		dots: false,
+  		speed: 1500,
+	});
+});
+
 
 //Slider-Arrows
 $(function () {

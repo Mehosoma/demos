@@ -1529,11 +1529,15 @@ body
 	justify-content: space-between
 	box-shadow: 0 0 15px rgba(0,0,0,0.1)
 	margin-top: 46px
+	.packages-block:nth-child(1)
+		.packages-block-cost, .packages-block-cost-bi
+			span, b
+				color: $blue
 	.packages-block:nth-child(2)
 		.packages-block-cost-wrap
 			background-color: #f9f9f9
 		.packages-block-cost, .packages-block-cost-bi
-			span
+			span, b
 				color: $blue
 	.packages-block:nth-child(3)
 		.packages-block-cost, .packages-block-cost-bi
@@ -1739,12 +1743,17 @@ body
 		padding-bottom: 0px
 		span
 			line-height: 40px
+			display: flex
+			flex-direction: column
+			align-items: center
 		p
 			opacity: 1
 			font-size: 14px
+
 		b
 			font-size: 14px	
 			margin: 0px 10px
+
 		i
 			margin-top: -1px
 	.checkbox-custom
@@ -1816,19 +1825,6 @@ body
 	.packages-block-cost
 		span
 			color: #f36321
-.tarifs-block-wrapper-add
-	.packages-block-cost
-		p:last-child
-			flex: 0 0 100%
-			font-family: $pop-m
-			font-size: 14px
-			color: #000
-			opacity: 0.7
-			margin-top: 10px
-			margin-left: 10px
-.tarifs-block-wrapper-add .tarifs-header .tarifs-header-block:nth-child(2)
-	p:last-child
-		margin-left: 22px
 .tarifs-block-hidden__high
 	display: none
 .packages-form
@@ -2271,6 +2267,123 @@ body
 		width: auto
 		padding: 20px 40px
 
+/*********************************************Single-Pests-Page************************************/
+.pests-desc
+	padding: 115px 0px 112px 0px
+.pests-desc-text
+	margin-top: 11px
+	flex: 0 0 50%
+	max-width: 50%
+	p
+		font-family: $pop-r
+		font-size: 16px
+		line-height: 28px
+		color: #000
+		margin-bottom: 28px
+		padding-right: 20px
+	.section-subheader
+		margin-bottom: 47px
+.pests-desc-wrap
+	display: flex
+	justify-content: space-between
+.pests-desc-image
+	flex: 0 0 50%
+	max-width: 450px
+	height: auto
+	position: relative
+	img
+		width: 100%
+		height: 100%
+		position: relative
+		z-index: 10
+.pests-desc-image:after
+	position: absolute
+	display: block
+	content: ''
+	width: 100%
+	height: 78%
+	bottom: -15px
+	right: -15px
+	background-color: $blue
+.species
+	padding: 84px 0px 65px 0px
+.species-wrap
+	width: 100%
+	display: flex
+	flex-wrap: wrap
+	justify-content: flex-start
+	margin-top: 58px
+.species-block
+	flex: 0 0 23%
+	max-width: 23%
+	text-align: center
+	margin: 0px 1%
+	overflow: hidden
+	margin-bottom: 15px
+	a
+		display: block
+	.species-block-image
+		width: 100%
+		height: 151px
+		overflow: hidden
+		img
+			width: 100%
+			height: 100%
+			-moz-transition: all 0.3s ease-out
+			-o-transition: all 0.3s ease-out
+			-webkit-transition: all 0.3s ease-out
+			transition: all 0.3s ease-out
+	span
+		font-family: $pop-sb
+		font-size: 16px
+		line-height: 36px
+		color: #000
+		opacity: 0.8
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out
+.single-slider-container
+	position: relative
+.single-slider-section
+	padding: 90px 0px 100px 0px
+.single-about
+	margin-top: 41px
+	p
+		margin-bottom: 28px
+.species-block:hover
+	span
+		color: $blue
+	img
+		transform: scale(1.1)
+.single-slider
+	margin: 0px -10px
+	.slick-slide
+		margin: 0 10px
+.single-slide
+	display: flex!important
+	position: relative
+	justify-content: space-between
+	align-items: flex-end
+.single-slide-left
+	flex: 0 0 53%
+	max-width: 53%
+	position: relative
+	padding-right: 30px
+.single-slide-right
+	flex: 0 0 39%
+	max-width: 39%
+	margin-right: 30px
+	height: 420px
+.single-slide-buttons
+	display: flex
+	margin-top: 40px
+	.btn-gen__blue
+		width: auto
+		padding: 20px 42px
+	.btn-gen
+		padding: 20px 25px
+		margin-right: 20px
 
 /***********************************************Custom Checkbox************************************/
 .checkbox-cus
@@ -2424,6 +2537,27 @@ body
 		right: 44px
 	.arr-right-gen
 		right: 0px
+.single-slider-section .arrows
+	svg
+		width: 29px
+		height: 29px
+		fill: $blue
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out
+	.arr-left-gen, .arr-right-gen
+		position: absolute
+		top: 10px
+		z-index: 10
+	.arr-left-gen:hover, .arr-right-gen:hover
+		cursor: pointer
+		svg
+			fill: $yellow
+	.arr-left-gen
+		right: 74px
+	.arr-right-gen
+		right: 30px
 
 
 /***********************************************ButtonMobile************************************/
