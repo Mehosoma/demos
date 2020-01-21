@@ -960,14 +960,13 @@ body
 
 /***********************************************About-Page************************************/
 .about-desc-text
-	display: flex
-	flex-wrap: wrap
-	justify-content: space-between
+	-webkit-columns: 2
+	-moz-columns: 2
+	columns: 2
 	margin-top: 60px
 	p
-		flex: 0 0 47%
-		max-width: 47%
 		margin-bottom: 26px
+		break-inside: avoid
 .about-desc
 	padding: 99px 0px 108px 0px
 .about-desc-btn
@@ -2030,6 +2029,247 @@ body
 .btn-gen__white
 	background-color: #fff
 
+/***********************************************Template-Page************************************/
+.template-desc
+	padding: 100px 0px 100px 0px
+.template-text
+	-webkit-columns: 2
+	-moz-columns: 2
+	columns: 2
+	margin-top: 52px
+	p
+		margin-bottom: 26px
+		break-inside: avoid 
+.template-desc-btn
+	margin-top: 38px
+.template-service
+	padding: 98px 0px 71px 0px
+.section-subheader__template-service
+	h2
+		margin-top: 20px
+	hr
+		margin-top: 37px
+.template-service-wrap
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	margin-top: 30px
+.template-service-block
+	flex: 0 0 31.5%
+	max-width: 31.5%
+	padding-bottom: 8px
+	margin-bottom: 35px
+	background-color: #fff
+	box-shadow: 0 0 10px rgba(0,0,0,0.2)
+	border-bottom: 4px solid transparent
+	text-align: center
+	position: relative
+	-moz-transition: all 0.3s ease-out
+	-o-transition: all 0.3s ease-out
+	-webkit-transition: all 0.3s ease-out
+	transition: all 0.3s ease-out
+	span
+		font-family: $pop-m
+		font-size: 16.54px
+		line-height: 20px
+		color: $blue
+		padding: 35px 0px 15px 0px
+		display: block
+	p
+		font-family: $pop-r
+		font-size: 14.54px
+		line-height: 25px
+		color: #202020
+		padding: 0px 20px
+.template-service-image-wrap
+	width: 100%
+	height: 193px
+	position: relative
+	-moz-transition: all 0.3s ease-out
+	-o-transition: all 0.3s ease-out
+	-webkit-transition: all 0.3s ease-out
+	transition: all 0.3s ease-out
+	img
+		width: 100%
+		height: 100%
+.template-service-image-wrap:after
+	display: block
+	content: ''
+	position: absolute
+	width: 100%
+	height: 100%
+	top: 0px
+	left: 0px
+	background-color: rgba(79,79,79,0.65)
+	z-index: 1
+	opacity: 0
+	-moz-transition: all 0.3s ease-out
+	-o-transition: all 0.3s ease-out
+	-webkit-transition: all 0.3s ease-out
+	transition: all 0.3s ease-out
+.template-service-block:hover
+	border-bottom: 4px solid $blue
+.template-service-block:hover .template-service-image-wrap:after
+	opacity: 1
+.template-service-block:hover .template-block_hidden
+	opacity: 1
+	visibility: visible
+.template-block_hidden
+	position: absolute
+	width: 100%
+	height: 100%
+	top: 0px
+	left: 0px
+	right: 0px
+	margin: auto
+	opacity: 0
+	visibility: hidden
+	padding-top: 100px
+	-moz-transition: all 0.3s ease-out
+	-o-transition: all 0.3s ease-out
+	-webkit-transition: all 0.3s ease-out
+	transition: all 0.3s ease-out
+	z-index: 90
+	span
+		font-family: $pop-sb
+		font-size: 13px
+		color: #fff
+		background-color: rgba(0,174,240,0.8)
+		padding: 10px 20px
+		border-radius: 3px
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out
+		display: inline-block
+	span:hover
+		background-color: $yellow
+.template-video
+	width: 100%
+	min-height: 622px
+	position: relative
+	padding: 111px 0px 50px 0px
+.banner-overlay
+	width: 100%
+	height: 100%
+	position: absolute
+	top: 0px
+	left: 0px
+	background-color: rgba(48,43,43,0.5)
+.template-video-wrap
+	display: flex
+	background-color: rgba(0,174,240,0.75)
+	height: 400px
+.template-video-left
+	padding: 0px 60px 50px 38px
+	flex: 0 0 50%
+	max-width: 50%
+	display: flex
+	flex-wrap: wrap
+	align-content: flex-end
+	span
+		font-family: $pop-bl
+		font-size: 45px
+		color: #fff
+	p
+		font-family: $pop-r
+		font-size: 20px
+		color: #fff
+		margin-top: 20px
+		margin-bottom: 0px
+	i
+		font-style: normal
+		font-family: $pop-b
+.template-video-btn
+	margin-top: 35px
+	a
+		padding: 15px 33px
+.template-video-right
+	position: relative
+	flex: 0 0 50%
+	max-width: 50%
+	img
+		width: 100%
+		height: 100%
+.template-content
+	padding: 104px 0px 11px 0px
+	.subheader-add
+		margin-top: 6px
+		hr
+			margin-top: 55px
+.section-subheader__template-content
+	h2
+		margin-top: 16px
+		line-height: 58px
+.template-content-wrap	
+	margin-top: 77px
+.template-content-block
+	display: flex
+	margin-bottom: 83px
+.template-content-text
+	flex-grow: 1
+	padding: 0px 10px 30px 56px
+	span
+		font-family: $pop-sb
+		font-size: 25px
+		color: #000
+		line-height: 37px
+	.gen-text-14
+		margin-top: 20px
+		p
+			font-family: $pop-l
+			line-height: 28px
+			color: #000
+.template-content-wrap
+	.template-content-block:nth-child(2)
+		.template-content-text
+			flex-grow: 1
+			padding: 55px 30px 30px 10px
+.template-content-image
+	flex: 0 0 50%
+	max-width: 50%
+	img
+		width: 100%
+		height: auto
+.template-content-images
+	display: flex
+	flex-direction: column
+	height: 390px
+	flex-wrap: wrap
+	align-items: flex-end
+	align-content: flex-end
+	flex: 0 0 50%
+	margin-top: 17px
+.template-images-block
+	width: 48%
+	height: 48%
+.template-images-block:last-child
+	flex-grow: 1
+	margin-left: 20px	
+.template-bottom
+	padding: 100px 0px 108px 0px
+.section-subheader__template-bottom
+	h2
+		margin-top: 27px
+.template-bottom-text
+	padding-top: 17px
+	text-align: center
+.template-content-buttons
+	font-family: $pop-sb
+	font-size: 14.54px
+	color: #000
+	display: flex
+	justify-content: center
+	margin-top: 59px
+	a
+		margin: 0px 20px		
+		text-align: center
+		flex-grow: 0
+	.btn-gen
+		padding: 20px 40px
+	.btn-gen__blue
+		width: auto
+		padding: 20px 40px
 
 
 /***********************************************Custom Checkbox************************************/

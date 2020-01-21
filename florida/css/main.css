@@ -1478,23 +1478,16 @@ body hr {
 
 /***********************************************About-Page************************************/
 .about-desc-text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  columns: 2;
   margin-top: 60px;
 }
 
 .about-desc-text p {
-  -webkit-box-flex: 0;
-  -ms-flex: 0 0 47%;
-  flex: 0 0 47%;
-  max-width: 47%;
   margin-bottom: 26px;
+  -webkit-column-break-inside: avoid;
+  break-inside: avoid;
 }
 
 .about-desc {
@@ -3227,6 +3220,396 @@ body hr {
 
 .btn-gen__white {
   background-color: #fff;
+}
+
+/***********************************************Template-Page************************************/
+.template-desc {
+  padding: 100px 0px 100px 0px;
+}
+
+.template-text {
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  columns: 2;
+  margin-top: 52px;
+}
+
+.template-text p {
+  margin-bottom: 26px;
+  -webkit-column-break-inside: avoid;
+  break-inside: avoid;
+}
+
+.template-desc-btn {
+  margin-top: 38px;
+}
+
+.template-service {
+  padding: 98px 0px 71px 0px;
+}
+
+.section-subheader__template-service h2 {
+  margin-top: 20px;
+}
+
+.section-subheader__template-service hr {
+  margin-top: 37px;
+}
+
+.template-service-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.template-service-block {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 31.5%;
+  flex: 0 0 31.5%;
+  max-width: 31.5%;
+  padding-bottom: 8px;
+  margin-bottom: 35px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-bottom: 4px solid transparent;
+  text-align: center;
+  position: relative;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.template-service-block span {
+  font-family: "Poppins Medium", sans-serif;
+  font-size: 16.54px;
+  line-height: 20px;
+  color: #00aef0;
+  padding: 35px 0px 15px 0px;
+  display: block;
+}
+
+.template-service-block p {
+  font-family: "Poppins Regular", sans-serif;
+  font-size: 14.54px;
+  line-height: 25px;
+  color: #202020;
+  padding: 0px 20px;
+}
+
+.template-service-image-wrap {
+  width: 100%;
+  height: 193px;
+  position: relative;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.template-service-image-wrap img {
+  width: 100%;
+  height: 100%;
+}
+
+.template-service-image-wrap:after {
+  display: block;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(79, 79, 79, 0.65);
+  z-index: 1;
+  opacity: 0;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.template-service-block:hover {
+  border-bottom: 4px solid #00aef0;
+}
+
+.template-service-block:hover .template-service-image-wrap:after {
+  opacity: 1;
+}
+
+.template-service-block:hover .template-block_hidden {
+  opacity: 1;
+  visibility: visible;
+}
+
+.template-block_hidden {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+  opacity: 0;
+  visibility: hidden;
+  padding-top: 100px;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  z-index: 90;
+}
+
+.template-block_hidden span {
+  font-family: "Poppins SemiBold", sans-serif;
+  font-size: 13px;
+  color: #fff;
+  background-color: rgba(0, 174, 240, 0.8);
+  padding: 10px 20px;
+  border-radius: 3px;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  display: inline-block;
+}
+
+.template-block_hidden span:hover {
+  background-color: #ffcb26;
+}
+
+.template-video {
+  width: 100%;
+  min-height: 622px;
+  position: relative;
+  padding: 111px 0px 50px 0px;
+}
+
+.banner-overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(48, 43, 43, 0.5);
+}
+
+.template-video-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: rgba(0, 174, 240, 0.75);
+  height: 400px;
+}
+
+.template-video-left {
+  padding: 0px 60px 50px 38px;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-line-pack: end;
+  align-content: flex-end;
+}
+
+.template-video-left span {
+  font-family: "Poppins Black", sans-serif;
+  font-size: 45px;
+  color: #fff;
+}
+
+.template-video-left p {
+  font-family: "Poppins Regular", sans-serif;
+  font-size: 20px;
+  color: #fff;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+.template-video-left i {
+  font-style: normal;
+  font-family: "Poppins Bold", sans-serif;
+}
+
+.template-video-btn {
+  margin-top: 35px;
+}
+
+.template-video-btn a {
+  padding: 15px 33px;
+}
+
+.template-video-right {
+  position: relative;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.template-video-right img {
+  width: 100%;
+  height: 100%;
+}
+
+.template-content {
+  padding: 104px 0px 11px 0px;
+}
+
+.template-content .subheader-add {
+  margin-top: 6px;
+}
+
+.template-content .subheader-add hr {
+  margin-top: 55px;
+}
+
+.section-subheader__template-content h2 {
+  margin-top: 16px;
+  line-height: 58px;
+}
+
+.template-content-wrap {
+  margin-top: 77px;
+}
+
+.template-content-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 83px;
+}
+
+.template-content-text {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  padding: 0px 10px 30px 56px;
+}
+
+.template-content-text span {
+  font-family: "Poppins SemiBold", sans-serif;
+  font-size: 25px;
+  color: #000;
+  line-height: 37px;
+}
+
+.template-content-text .gen-text-14 {
+  margin-top: 20px;
+}
+
+.template-content-text .gen-text-14 p {
+  font-family: "Poppins Light", sans-serif;
+  line-height: 28px;
+  color: #000;
+}
+
+.template-content-wrap .template-content-block:nth-child(2) .template-content-text {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  padding: 55px 30px 30px 10px;
+}
+
+.template-content-image {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.template-content-image img {
+  width: 100%;
+  height: auto;
+}
+
+.template-content-images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 390px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -ms-flex-line-pack: end;
+  align-content: flex-end;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  margin-top: 17px;
+}
+
+.template-images-block {
+  width: 48%;
+  height: 48%;
+}
+
+.template-images-block:last-child {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  margin-left: 20px;
+}
+
+.template-bottom {
+  padding: 100px 0px 108px 0px;
+}
+
+.section-subheader__template-bottom h2 {
+  margin-top: 27px;
+}
+
+.template-bottom-text {
+  padding-top: 17px;
+  text-align: center;
+}
+
+.template-content-buttons {
+  font-family: "Poppins SemiBold", sans-serif;
+  font-size: 14.54px;
+  color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 59px;
+}
+
+.template-content-buttons a {
+  margin: 0px 20px;
+  text-align: center;
+  -webkit-box-flex: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+}
+
+.template-content-buttons .btn-gen {
+  padding: 20px 40px;
+}
+
+.template-content-buttons .btn-gen__blue {
+  width: auto;
+  padding: 20px 40px;
 }
 
 /***********************************************Custom Checkbox************************************/
