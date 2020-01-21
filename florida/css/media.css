@@ -385,7 +385,7 @@
 	}
 
 	.about-desc-text{
-		flex-wrap: wrap;
+		columns: 1;
 	}
 
 	.about-desc-text p{
