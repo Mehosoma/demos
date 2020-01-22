@@ -879,6 +879,8 @@
 
 	.service-about .decor-image-block{
 		order: 1;
+		flex: 0 0 80%;
+   		max-width: 350px;
 	}
 
 	.service-about{
@@ -897,8 +899,8 @@
 
 	.blog-main .social-icons {
 		flex: 0 0 100%;
-		padding-right: 20px;
-		padding-left: 20px;
+		padding: 20px 0px;
+		height: auto;
 	}
 
 	.blog-main-header{
@@ -946,10 +948,6 @@
 		height: auto;
 	}
 
-	.blog-main-footer .social-icons{
-		padding: 0px;
-	}
-
 	.blog-main-comment{
 		flex-wrap: wrap;
 	}
@@ -980,6 +978,10 @@
 	.blog-slider-container .arrows .arr-right-gen{
 		right: 50%;
 		margin-right: -50px;
+	}
+
+	.service-benefits-quote ul{
+		padding: 40px 20px;
 	}
 
 
@@ -1813,6 +1815,8 @@
 
 	.service-about .decor-image-block{
 		order: 1;
+		flex: 0 0 80%;
+    	max-width: 350px;
 	}
 
 	.service-about{
@@ -2433,7 +2437,6 @@
 
 	.blog-main .social-icons {
 		flex: 0 0 36.5%;
-		padding-right: 20px;
 	}
 
 }
