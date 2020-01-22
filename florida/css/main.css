@@ -3983,6 +3983,192 @@ body hr {
   left: -15px;
 }
 
+/******************************************************Blog************************************/
+.single-blog {
+  padding: 205px 0px 54px 0px;
+  background-color: #f9f9f9;
+}
+
+.blog-main {
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.blog-main .social-icons {
+  padding-right: 43px;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 19.5%;
+  flex: 0 0 19.5%;
+}
+
+.blog-main-image {
+  width: 100%;
+  height: auto;
+}
+
+.blog-main-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.blog-main-header {
+  width: 100%;
+  height: 83px;
+  background-color: #f9f9f9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.blog-main-header .blog-top {
+  margin: 0px;
+  padding: 0px;
+  padding-left: 40px;
+}
+
+.blog-main-header .blog-author {
+  padding-right: 23px;
+}
+
+.blog-main-header .blog-author span {
+  font-size: 16px;
+}
+
+.blog-body {
+  padding-bottom: 38px;
+}
+
+.blog-body h2 {
+  font-family: "Poppins SemiBold", sans-serif;
+  font-size: 35px;
+  color: #000;
+  opacity: 0.8;
+}
+
+.blog-body p {
+  font-family: "Poppins Regular", sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  color: #000;
+  opacity: 0.8;
+  margin-bottom: 26px;
+}
+
+.blog-main-footer {
+  width: 100%;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  border-top: 1px solid #e3e3e3;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.blog-main-footer .social-icons {
+  padding-right: 0px;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 17.5%;
+  flex: 0 0 17.5%;
+}
+
+.blog-main-comment-wrap {
+  background-color: #f9f9f9;
+  padding: 31px 30px 28px 31px;
+  margin-top: 35px;
+}
+
+.blog-main-comment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.blog-main-comment-text {
+  padding-left: 25px;
+  padding-top: 10px;
+}
+
+.blog-main-comment-text span {
+  font-family: "Poppins SemiBold", sans-serif;
+  font-size: 16px;
+  color: #000;
+  display: block;
+  margin-bottom: 14px;
+}
+
+.blog-main-comment-text i {
+  color: #00aef0;
+  font-style: normal;
+}
+
+.blog-main-comment-text p {
+  font-family: "Poppins Regular", sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  color: #000;
+  opacity: 0.7;
+}
+
+.blog-main-content {
+  padding: 40px 40px 44px 40px;
+}
+
+.blog-body-text-wrap {
+  margin-top: 30px;
+}
+
+.blog-slider-section {
+  padding-bottom: 97px;
+  padding-top: 50px;
+}
+
+.blog-slider-section h2 {
+  font-family: "Poppins Regular", sans-serif;
+  font-size: 35px;
+  color: #000;
+  opacity: 0.8;
+  margin-bottom: 0px;
+}
+
+.blog-slider {
+  margin: 0 -10px;
+}
+
+.blog-slider .slick-list {
+  padding: 33px 10px 60px 0px;
+  overflow: visible;
+}
+
+.blog-slider .slick-slide {
+  margin: 0px 10px;
+}
+
+.blog-slider-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.blog-block {
+  display: inline-block;
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+
 /***********************************************Custom Checkbox************************************/
 .checkbox-cus {
   position: absolute;
@@ -4237,6 +4423,37 @@ body hr {
 
 .single-slider-section .arrows .arr-right-gen {
   right: 30px;
+}
+
+.blog-slider-container .arrows svg {
+  width: 29px;
+  height: 29px;
+  fill: #bec4c9;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.blog-slider-container .arrows .arr-left-gen, .blog-slider-container .arrows .arr-right-gen {
+  position: absolute;
+  bottom: 0px;
+}
+
+.blog-slider-container .arrows .arr-left-gen:hover, .blog-slider-container .arrows .arr-right-gen:hover {
+  cursor: pointer;
+}
+
+.blog-slider-container .arrows .arr-left-gen:hover svg, .blog-slider-container .arrows .arr-right-gen:hover svg {
+  fill: #00aef0;
+}
+
+.blog-slider-container .arrows .arr-left-gen {
+  right: 44px;
+}
+
+.blog-slider-container .arrows .arr-right-gen {
+  right: 0px;
 }
 
 /***********************************************ButtonMobile************************************/
