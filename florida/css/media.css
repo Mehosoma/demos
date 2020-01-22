@@ -899,8 +899,12 @@
 
 	.blog-main .social-icons {
 		flex: 0 0 100%;
-		padding: 20px 0px;
+		padding: 20px 20px;
 		height: auto;
+	}
+
+	.blog-main-footer .social-icons{
+		padding: 20px 0px;
 	}
 
 	.blog-main-header{
@@ -983,6 +987,8 @@
 	.service-benefits-quote ul{
 		padding: 40px 20px;
 	}
+
+
 
 
 }
