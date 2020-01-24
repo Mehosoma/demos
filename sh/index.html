@@ -1,0 +1,391 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<title>Puntuale</title>
+		<!-- style -->
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/adaptive.css">
+		<!-- js -->
+		<script src="js/jquery-2.2.2.min.js"></script>
+		<script src="js/three.min.js"></script>
+		<script src="js/orbitcontrols.min.js"></script>
+		<script src="js/objloader.min.js"></script>
+		<script src="js/EffectComposer.js"></script>
+		<script src="js/SSAOPass.js"></script>
+		<script src="js/SimplexNoise.js"></script>
+		<script src="js/SSAOShader.js"></script>
+		
+		<script src="js/CopyShader.js"></script>
+		<script src="js/ShaderPass.js"></script>
+		<script src="js/RenderPass.js"></script>
+		<script src="js/MaskPass.js"></script>
+		<script src="js/FXAAShader.js"></script>
+		<script src="js/view.js"></script>
+		<script src="js/main.js"></script>
+		
+	</head>
+	<body>
+		
+		<div class="canvas-div"></div>
+		<div class="page-wraper">			
+			<!-- menu -->
+			<div class="menu">
+				<!-- main-menu -->
+				<ul>
+					<li>
+						<div class="img">
+							<img src="img/imgs/m-1.svg">
+						</div>
+						<span>Tissus</span>
+					</li>
+					<li>
+						<div class="img">
+							<img src="img/imgs/m-2.svg">
+						</div>
+						<span>Silhouette</span>
+					</li>
+					<li>
+						<div class="img">
+							<img src="img/imgs/m-3.svg">
+						</div>
+						<span>Col</span>
+					</li>
+					<li>
+						<div class="img">
+							<img src="img/imgs/m-4.svg">
+						</div>
+						<span>Manche</span>
+					</li>
+					<li class="mangets">
+						<div class="img">
+							<img src="img/imgs/m-5.svg">
+						</div>
+						<span>Poignet mousquetaire</span>
+					</li>
+					<li>
+						<div class="img">
+							<img src="img/imgs/m-6.svg">
+						</div>
+						<span>Poche gauche</span>
+					</li>
+					<li>
+						<div class="img">
+							<img src="img/imgs/m-6.svg">
+						</div>
+						<span>Poche droite</span>
+					</li>
+					<li>
+						<div class="img">
+							<img src="img/imgs/m-7.svg">
+						</div>
+						<span>Front </span>
+					</li>					
+					<li class="bottom-hid">
+						<div class="img">
+							<img src="img/imgs/m-15.svg">
+						</div>
+						<span>Bas devant</span>
+					</li>
+					<li  class="back-hid">
+						<div class="img">
+							<img src="img/imgs/m-18.svg">
+						</div>
+						<span>Dos</span>
+					</li>
+					<li>
+						<div class="img">
+							<img src="img/imgs/m-10.svg">
+						</div>
+						<span>Boutons</span>
+					</li>				
+				</ul>
+				<!-- main-tabs -->
+				<div class="tabs">
+					<div class="close">←</div>
+					<!-- tab-1 -->
+					<div class="tab texture-tab">
+						<div class="title">Tissus</div>						
+						<div id="TEXTURE" class="inner-block">
+							<!--<div class="inner-box active" data-texture="textures/02011426.JPG">
+								<p class="active">02011426</p>						
+							</div>	
+							<div class="inner-box" data-texture="textures/02011463.JPG">
+								<p>02011463</p>						
+							</div>	
+							<div class="inner-box" data-texture="textures/02011477.JPG">
+								<p>02011477</p>						
+							</div>	
+							<div class="inner-box" data-texture="textures/02011488.JPG">
+								<p>02011488</p>						
+							</div>-->						
+						</div>
+					</div>
+					<!-- tab-2 -->
+					<div class="tab tab-sil">
+						<div class="title">Silhouette</div>
+						<div id="FIT" class="inner-block">							
+							<div class="inner-box active" data-value="Regular">
+								<p>Ordinaire</p>
+								<img src="img/imgs/b2/2.svg" style="height: 110px;">
+							</div>
+							<div class="inner-box" data-value="Slim">
+								<p>Slim</p>
+								<img src="img/imgs/b2/3.svg" style="height: 110px;">
+							</div>
+						</div>
+					</div>
+					<!-- tab-3 -->
+					<div class="tab">
+						<div class="title">Col</div>
+						<div id="COLLAR" class="inner-block">
+							<div class="inner-box long" data-obj="Collars/Butterfly.obj">
+								<p>Le papillon</p>
+								<img src="img/imgs/b3/7.svg">
+							</div>
+							<div class="inner-box long active" data-obj="Collars/Standard.obj">
+								<p>Standard</p>
+								<img src="img/imgs/b3/9.svg">
+							</div>
+							<div class="inner-box long" data-obj="Collars/Standard_Cropped.obj">
+								<p>Standard raccourci</p>
+								<img src="img/imgs/b3/12.svg">
+							</div>
+							<div class="inner-box long" data-obj="Collars/Shark_Mini.obj">
+								<p>Requin Mini</p>
+								<img src="img/imgs/b3/4.svg">
+							</div>
+							<div class="inner-box long" data-obj="Collars/Shark_Maxi.obj">
+								<p>Requin Maxi</p>
+								<img src="img/imgs/b3/3.svg">
+							</div>
+							
+							<div class="inner-box long" data-obj="Collars/Hooded.obj">
+								<p>Fermé</p>
+								<img src="img/imgs/b3/6.svg">
+							</div>
+							<div class="inner-box long" data-obj="Collars/Rounded.obj">
+								<p>Arrondi</p>
+								<img src="img/imgs/b3/5.svg">
+							</div>
+							
+							<div class="inner-box long" data-obj="Collars/Cropped.obj">
+								<p>Raccourci</p>
+								<img src="img/imgs/b3/11.svg">
+							</div>							
+						</div>										
+					</div>
+					<!-- tab-4 -->
+					<div class="tab tab-sleeve">
+						<div class="title">Manche</div>
+						<div id ="SLEEVE" class="inner-block">
+							<div class="inner-box long active" data-value="Long">
+								<p>Long</p>
+								<img src="img/imgs/b4/1.svg">
+							</div>							
+							<div class="inner-box long" data-value="Short">
+								<p>Court</p>
+								<img src="img/imgs/b4/4.svg">
+							</div>
+							<div class="inner-box long" data-value="Safari">
+								<p>Safari</p>
+								<img src="img/imgs/b4/5.svg">
+							</div>
+						</div>
+					</div>
+					<!-- tab-5 -->
+					<div class="tab">
+						<div class="title">Poignet mousquetaire</div>	
+						<div id="CUFF" class="inner-block">
+							<div class="inner-box" data-obj="Sloping.obj">
+								<div class="pl p-3">
+									<p>Biseauté</p>
+								</div>
+								<img src="img/imgs/b5/1.svg" style="height: 79px;" alt="" />
+							</div>
+							<div class="inner-box active" data-obj="Cut.obj">
+								<div class="pl p-3">
+									<p>Coupé</p>
+								</div>
+								<img src="img/imgs/b5/2.svg"  style="height: 79px;" alt="" />
+							</div>
+							<div class="inner-box" data-obj="Direct.obj">
+								<div class="pl p-3">
+									<p>Direct</p>
+								</div>
+								<img src="img/imgs/b5/3.svg"  style="height: 79px;" alt="" />
+							</div>
+							<div class="inner-box" data-obj="Figure.obj">
+								<div class="pl p-3">
+									<p>Bouclés</p>
+								</div>
+								<img src="img/imgs/b5/4.svg"  style="height: 79px;" alt="" />
+							</div>
+							<div class="inner-box" data-obj="Rounded.obj">
+								<div class="pl p-3">
+									<p>Arrondi</p>
+								</div>
+								<img src="img/imgs/b5/5.svg"  style="height: 79px;" alt="" />
+							</div>							
+							<div class="inner-box" data-obj="Neapolitan.obj">
+								<div class="pl p-3">
+									<p>Napolitaine</p>
+								</div>
+								<img src="img/imgs/b5/8.svg"  style="height: 79px;" alt="" />
+							</div>
+						</div>
+					</div>
+					<!-- tab-6 -->
+					<div class="tab">
+						<div class="title">Poche gauche</div>						
+						<div id="LEFT_POCKET" class="inner-block">
+							<div class="inner-box" data-obj="Rounded.obj">
+								<img src="img/imgs/b6/1.svg" style="height: 86px;" alt="" />
+								<span>Arrondi</span>
+							</div>
+							<div class="inner-box" data-obj="Sloping.obj">
+								<img src="img/imgs/b6/2.svg" style="height: 86px;" alt="" />
+								<span>Biseauté</span>
+							</div>
+							<div class="inner-box" data-obj="Corner.obj">
+								<img src="img/imgs/b6/3.svg" style="height: 86px;" alt="" />
+								<span>Un coin</span>
+							</div>
+							<div class="inner-box" data-obj="Direct.obj">
+								<img src="img/imgs/b6/4.svg" style="height: 86px;" alt="" />
+								<span>Direct</span>
+							</div>
+							<div class="inner-box active">
+								<img src="img/imgs/b6/5.svg" style="height: 86px;" alt="" />
+								<span>sans</span>
+							</div>
+						</div>
+					</div>
+					<!-- tab-6 -->
+					<div class="tab">
+						<div class="title">Poche droite</div>						
+						<div id="RIGHT_POCKET" class="inner-block">
+							<div class="inner-box" data-obj="Rounded.obj">
+								<img src="img/imgs/b6/1.svg" style="height: 86px;" alt="" />
+								<span>Arrondi</span>
+							</div>
+							<div class="inner-box" data-obj="Sloping.obj">
+								<img src="img/imgs/b6/2.svg" style="height: 86px;" alt="" />
+								<span>Biseauté</span>
+							</div>
+							<div class="inner-box" data-obj="Corner.obj">
+								<img src="img/imgs/b6/3.svg" style="height: 86px;" alt="" />
+								<span>Un coin</span>
+							</div>
+							<div class="inner-box" data-obj="Direct.obj">
+								<img src="img/imgs/b6/4.svg" style="height: 86px;" alt="" />
+								<span>Direct</span>
+							</div>
+							<div class="inner-box active">
+								<img src="img/imgs/b6/5.svg" style="height: 86px;" alt="" />
+								<span>sans</span>
+							</div>
+						</div>
+					</div>
+					<!-- tab-7 -->
+					<div class="tab">
+						<div class="title">Front</div>
+						<div id="FRONT" class="inner-block">
+							<div class="inner-box" data-obj="NoPlacket.obj">
+								<div class="pl p-2">
+									<p>Barre implicite</p>
+								</div>
+								<img src="img/imgs/b7/1.svg">
+							</div>							
+							<div class="inner-box" data-obj="Placket.obj">
+								<div class="pl p-2">
+									<p>Avec barre</p>
+								</div>
+								<img src="img/imgs/b7/3.svg">
+							</div>
+							<div class="inner-box active" data-obj="HidenPlacket.obj">
+								<div class="pl p-2">
+									<p>Avec barre cachée</p>
+								</div>
+								<img src="img/imgs/b7/4.svg">
+							</div>
+						</div>						
+					</div>				
+					<!-- tab-9 -->
+					<div class="tab">
+						<div class="title">Bas devant</div>
+						<div id="FRONT_BOTTOM" class="inner-block">
+							<div class="inner-box" data-value="Rounded">
+								<p>Arrondi</p>
+								<img src="img/imgs/m-16.svg">
+							</div>
+							<div class="inner-box active" data-value="Direct">
+								<p>Direct</p>
+								<img src="img/imgs/m-17.svg">
+							</div>
+						</div>
+					</div>
+					<!-- tab-10 -->
+					<div class="tab">
+						<div class="title">Dos</div>
+						<div id="BACK" class="inner-block">
+							<div class="inner-box" data-obj="Smooth.obj">
+								<p>Lisse</p>
+								<img src="img/imgs/m-19.svg">
+							</div>
+							<div class="inner-box active" data-obj="Center.obj">
+								<p>Centré</p>
+								<img src="img/imgs/m-20.svg">
+							</div>
+							<div class="inner-box" data-obj="Edges.obj">
+								<p>Sur les bords</p>
+								<img src="img/imgs/m-21.svg">
+							</div>
+							<div class="inner-box" data-obj="Two_Darts.obj">
+								<p>Deux contre-dépouilles</p>
+								<img src="img/imgs/m-22.svg">
+							</div>
+						</div>
+					</div>
+					<!-- tab-11 -->
+					<div class="tab">
+						<div class="title">Boutons</div>
+						<div class="inner-tabs l4 m">
+						<div class="color-block">
+							<div class="color-box">
+								<img src="img/but/20180720J428.jpg">
+							</div>
+							<div class="color-box">
+								<img src="img/but/201807200ZP6.jpg">
+							</div>
+							<div class="color-box">
+								<img src="img/but/20180720P004.jpg">
+							</div>	
+							<div class="color-box">
+								<img src="img/but/20180720V2BX.jpg">
+							</div>	
+							<div class="color-box">
+								<img src="img/but/20180720VJTX.jpg">
+							</div>	
+							<div class="color-box">
+								<img src="img/but/201807200ZL4.jpg">
+							</div>	
+							<div class="color-box">
+								<img src="img/but/201807204P46.jpg">
+							</div>							
+							<div class="color-box">
+								<img src="img/but/201807204P46.jpg">
+							</div>	
+							<div class="color-box">
+								<img src="img/but/201807204P46.jpg">
+							</div>	
+						</div>
+					</div>					
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
