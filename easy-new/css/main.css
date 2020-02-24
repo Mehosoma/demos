@@ -67,7 +67,7 @@ body hr {
 }
 
 .pixel {
-  background: url(../images/main.jpg) no-repeat top center;
+  background: url(../images/shop.jpg) no-repeat top center;
   width: 1920px;
   height: 12800px;
   position: absolute;
@@ -156,7 +156,7 @@ header {
 }
 
 .header-menu {
-  margin-top: 20px;
+  margin-top: 13px;
   width: 89%;
 }
 
@@ -728,13 +728,22 @@ header {
 .portfolio {
   position: relative;
   height: auto;
-  padding: 80px 0px 20px 0px;
+  padding: 80px 0px 100px 0px;
 }
 
 .top-decor {
   position: absolute;
   height: 300px;
   top: 0px;
+  left: 0px;
+  background-color: #f7fafc;
+  width: 100%;
+}
+
+.bottom-port-decor {
+  position: absolute;
+  height: 80px;
+  bottom: 0px;
   left: 0px;
   background-color: #f7fafc;
   width: 100%;
@@ -786,7 +795,7 @@ header {
 
 /***************************************************List-Sec************************************/
 .list-sec {
-  padding: 234px 0px 100px 0px;
+  padding: 154px 0px 100px 0px;
 }
 
 .list-sec-left {
@@ -1922,7 +1931,7 @@ header {
 }
 
 .faq {
-  padding-top: 100px;
+  padding-top: 94px;
   padding-bottom: 100px;
 }
 
