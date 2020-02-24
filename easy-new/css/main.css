@@ -67,7 +67,7 @@ body hr {
 }
 
 .pixel {
-  background: url(../images/support.jpg) no-repeat top center;
+  background: url(../images/main.jpg) no-repeat top center;
   width: 1920px;
   height: 12800px;
   position: absolute;
@@ -171,6 +171,7 @@ header {
 
 .main-menu li {
   position: relative;
+  padding: 10px 0px;
 }
 
 .main-menu a {
@@ -186,7 +187,7 @@ header {
 
 .main-menu .main-menu_drop {
   position: absolute;
-  top: 20px;
+  top: 40px;
   width: 280px;
   z-index: 100;
   background-color: #fff;
@@ -932,6 +933,7 @@ header {
   -ms-flex-positive: 1;
   flex-grow: 1;
   background-color: #fff;
+  border-radius: 8px;
   -moz-placeholder-color: #717a88;
   -moz-placeholder-font-family: "Proxima Nova Light", sans-serif;
   -moz-placeholder-font-size: 16px;
