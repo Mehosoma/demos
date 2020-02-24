@@ -1,0 +1,1496 @@
+@import "bourbon/bourbon"
+
+$blue: #4c4f6c
+$blogger: 'Blogger Sans', sans-serif
+$blogger-m: '8878', sans-serif
+$bah: 'Bahnschrift', sans-serif
+$pn-r: 'Proxima Nova Regular', sans-serif
+$pn-b: 'Proxima Nova Bold', sans-serif
+$pn-l: 'Proxima Nova Light', sans-serif
+$pn-t: 'Proxima Nova Thin', sans-serif
+$green: #aed581
+$fil: #333399
+$blue-dark: #092a44
+$gray: #717a88
+$link: #3ba8f2
+$icon-circle-blue: #157bce
+
+
+html
+	width: 100%
+	height: 100%
+	overflow-x: hidden
+body
+	width: 100%
+	height: auto
+	min-width: 320px	
+	margin: 0 auto
+	position: relative
+	font-family: $blogger
+	line-height: 1.2
+	-webkit-font-smoothing: antialiased
+	background-color: #fff		
+
+	a:hover, a:focus, a:active
+		text-decoration: none
+		outline: none
+	input:focus, input:active
+		text-decoration: none
+		outline: none
+	button:focus, button:active
+		text-decoration: none
+		outline: none
+	textarea:focus, textarea:active
+		text-decoration: none
+		outline: none
+	a
+		display: inline-block
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out
+	svg
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out
+	ul, ol
+		padding: 0px
+		margin: 0px
+		list-style-type: none
+	button
+		border: none
+		cursor: pointer
+	hr
+		border: none	
+
+.pixel
+	background: url(../images/support.jpg) no-repeat top center
+	width: 1920px
+	height: 12800px
+	position: absolute
+	z-index: 1000000
+	display: none
+	left: 50%
+	top: 0
+	margin-left: -960px
+	opacity: 0.5
+	margin-top: 0px
+
+
+/***************************************************GeneralStyles************************************/
+header
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+	position: absolute
+	width: 100%
+	z-index: 100
+	padding-top: 35px
+	max-width: 1380px
+.logo
+	svg
+		width: 189px
+		height: auto
+.header-right
+	display: flex
+	flex-direction: column
+	align-items: flex-end
+.header-phone
+	margin-right: 38px
+	svg
+		fill: #fff
+		opacity: 0.45
+		margin-top: -7px
+	a
+		font-family: $blogger
+		font-size: 22px
+		color: #fff
+	a:hover
+		opacity: 0.45
+.header-contacts
+	display: flex
+	justify-content: space-between
+	padding-top: 4px
+.back-tel
+	a
+		color: $green
+		font-family: $blogger
+		font-size: 21px
+	a:hover
+		color: #fff
+.header-menu
+	margin-top: 20px
+	width: 89%
+.main-menu
+	ul
+		display: flex
+		justify-content: space-between
+	li
+		position: relative
+	a
+		color: #fff
+		font-family: $blogger-m
+		font-size: 19px
+		text-transform: uppercase
+	a:hover
+		color: $green
+.main-menu .main-menu_drop
+	position: absolute
+	top: 20px
+	width: 280px	
+	z-index: 100
+	background-color: #fff
+	display: none
+	padding: 10px 0px
+	border-radius: 3px
+	border-bottom: 5px solid $link
+	box-shadow: 0 0 18px rgba(0,0,0,0.14)
+	a
+		font-family: $pn-r
+		color: rgba(0,0,0,0.6)
+		font-size: 14px
+	li
+		height: auto
+		display: block
+		line-height: 35px
+		padding: 0 20px!important
+	li:hover
+		background-color: #eef5fb
+		cursor: pointer
+		a
+			color: $blue
+.btn-gen
+	a
+		background: #4caf50
+		background: -moz-linear-gradient(left, #4caf50 0%, #8bc34a 100%)
+		background: -webkit-linear-gradient(left, #4caf50 0%,#8bc34a 100%)
+		background: linear-gradient(to right, #4caf50 0%,#8bc34a 100%)
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4caf50', endColorstr='#8bc34a',GradientType=1 )
+		padding: 11px 28px
+		font-family: $bah
+		font-size: 18px
+		color: #fff
+		text-transform: uppercase
+		border-radius: 20px
+		text-shadow: 0px 1px 0px rgba(0,0,0,0.12)
+.bg-blue
+	background-color: #f7fafc
+.bg-blue-dark
+	background-color: #ecf3f9
+.section-header
+	text-align: center
+	h2
+		font-family: $bah
+		font-size: 30px
+		color: $blue-dark
+		text-transform: uppercase
+		margin-bottom: 16px
+	span
+		font-family: $pn-r
+		font-size: 20px
+		line-height: 30px
+		color: $gray
+		padding: 0 56px
+		display: block
+.icons-gen-wrap
+	background-position: left center, right center
+	background-repeat: no-repeat, no-repeat
+	padding: 0px 200px
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+.icons-gen-block
+	flex: 0 0 28%
+	height: 420px
+	background-color: #fff
+	box-shadow: 0px 0px 8px rgba(236,243,249,0.75)
+	position: relative
+	text-align: center
+.icons-gen-block_icon
+	width: 100%
+	height: 120px
+	display: flex
+	justify-content: center
+	align-items: center
+	background-repeat: no-repeat
+	background-position: center center
+	margin-top: 60px
+	margin-bottom: 24px
+.icons-gen-circle
+	width: 120px
+	height: 120px
+	background: #8bc34a
+	border-radius: 50%
+	position: relative
+	svg
+		position: absolute
+		top: 0px
+		bottom: 0px
+		left: 0px
+		right: 0px
+		margin: auto
+		fill: #ffffff
+.icons-gen-wrap .icons-gen-block:nth-child(2) .icons-gen-circle
+	background: $icon-circle-blue
+.icons-gen-wrap .icons-gen-block:nth-child(3) .icons-gen-circle
+	background: $link
+.icons-gen-block_content
+	span
+		font-family: $bah
+		font-size: 20px
+		line-height: 30px
+		color: $blue-dark
+		display: block
+		margin-bottom: 10px
+	p
+		font-family: $pn-r
+		font-size: 14px
+		line-height: 30px
+		color: $gray
+		padding: 0px 30px
+.icons-gen-block_link
+	position: absolute
+	bottom: 28px
+	text-align: center
+	width: 100%
+	a
+		font-family: $pn-r
+		font-size: 14px
+		line-height: 30px
+		color: $link
+	a:hover
+		color: $green
+.gen-text
+	p
+		font-family: $pn-r
+		font-size: 14px
+		line-height: 30px
+		color: $gray
+.text-20
+	p
+		font-family: $pn-r
+		font-size: 20px
+		line-height: 30px
+		color: $gray
+.header-20
+	span
+		font-family: $bah
+		font-size: 20px
+		line-height: 30px
+		color: $blue-dark
+.header-25
+	span
+		font-family: $bah
+		font-size: 25px
+		line-height: 30px
+		color: $blue-dark
+.header-30
+	span
+		font-family: $bah
+		font-size: 30px
+		line-height: 45px
+		color: $blue-dark
+.gen-list
+	li
+		position: relative
+		padding-left: 30px
+		margin-bottom: 26px
+	li:after
+		position: absolute
+		display: block
+		content: ''
+		width: 10px
+		height: 10px
+		background-color: $icon-circle-blue
+		border-radius: 50%
+		top: 7px
+		left: 0px
+
+/***************************************************Top-Main************************************/
+.top-main
+	width: 100%
+	height: 860px
+	position: relative
+	display: flex
+	box-shadow: 0px 5px 25px rgba(9,70,162,0.45)
+.top-slider
+	width: 100%
+	height: 100%
+	position: absolute
+	top: 0px
+	left: 0px
+	background-repeat: no-repeat
+	background-position: center center
+	.slick-track, .slick-list
+		height: 100%
+	.slick-slide
+		position: relative
+		div
+			height: 100%
+		.btn-gen
+			height: auto
+		.top-slide
+			width: 100%
+			height: 100%
+.top-slide-image
+	width: 100%
+	height: 100%
+	filter: grayscale(100%)
+	position: absolute
+	top: 0px
+	left: 0px
+.top-slide:after
+	content: ''
+	display: block
+	width: 100%
+	height: 100%
+	position: absolute
+	top: 0px
+	left: 0px
+	background: #0a5ebe
+	background: -moz-radial-gradient(center, ellipse cover, #0a5ebe 37%, #0946a2 100%)
+	background: -webkit-radial-gradient(center, ellipse cover, #0a5ebe 37%,#0946a2 100%)
+	background: radial-gradient(ellipse at center, #0a5ebe 37%,#0946a2 100%)
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a5ebe', endColorstr='#0946a2',GradientType=1 )
+	opacity: 0.8
+.top-slide-content
+	height: 100%
+	position: relative
+	z-index: 300
+	display: flex	
+	flex-direction: column	
+	align-items: center
+	justify-content: center
+	text-align: center
+	span
+		font-family: $pn-r
+		font-size: 42.71px
+		line-height: 51.25px
+		color: #fff
+	p
+		font-family: $pn-r
+		font-size: 20px
+		line-height: 27px
+		color: #fff
+		letter-spacing: 2px
+		opacity: 0.50
+.slider-wrapper
+	width: 100%
+	height: 100%
+	position: absolute
+	top: 0px
+	left: 0px
+	z-index: 100
+.icons-wrap__top
+	position: absolute
+	bottom: -38px
+	height: 200px
+	z-index: 200
+	width: 100%
+	left: 0px
+.top-icon-block	
+	display: block	
+	position: relative
+	text-align: center
+	width: 222px
+	padding: 27px 20px
+	svg
+		fill: #fff
+		z-index: 100
+		position: relative
+		margin-bottom: 10px
+	span
+		font-family: $blogger-m
+		font-size: 19px
+		z-index: 100
+		position: relative
+		color: #fff
+		text-transform: uppercase
+.top-icon-block_content
+	position: absolute
+	width: 100%
+	height: 286px
+	background: #fff
+	top: 0px
+	left: 0px
+	visibility: hidden
+	opacity: 0
+	border-radius: 5px	
+	box-shadow: 0px 9px 7px rgba(0,0,0,0.26)
+	-moz-transition: all 0.3s ease-out
+	-o-transition: all 0.3s ease-out
+	-webkit-transition: all 0.3s ease-out
+	transition: all 0.3s ease-out
+	padding: 130px 20px 0px
+	p
+		font-family: $pn-l
+		font-size: 16px
+		line-height: 21px
+		color: $fil
+		pointer-events: none
+		max-height: 63px
+		overflow: hidden
+		margin-bottom: 34px
+	i
+		font-style: normal
+		font-family: $bah
+		font-size: 22px
+		line-height: 26px
+		color: #9e9e9e
+		pointer-events: none
+.top-icon-block-active 
+	span
+		color: $fil
+		pointer-events: none
+	svg
+		fill: $fil
+		pointer-events: none
+.top-icon-block-active .top-icon-block_content
+		display: block
+		opacity: 1
+		visibility: visible
+.top-icon-block-header
+	display: inline
+	svg
+		height: 55px
+
+/***************************************************Services************************************/
+.services
+	padding: 100px 0px 200px 0px
+.icons-gen-wrap__main
+	margin-top: 76px
+
+/***************************************************Desc************************************/
+.desc
+	position: relative
+	height: auto
+.bg-blue-grad
+	position: absolute
+	width: 100%
+	height: 100%
+	top: 0px
+	left: 0px
+	background: red
+	background: #f7fafc
+	background: -moz-linear-gradient(top, #f7fafc 50%, #ecf3f9 99%)
+	background: -webkit-linear-gradient(top, #f7fafc 50%,#ecf3f9 99%)
+	background: linear-gradient(to bottom, #f7fafc 50%,#ecf3f9 99%)
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7fafc', endColorstr='#ecf3f9',GradientType=0 )
+.desc-content
+	position: relative
+	bottom: -10px
+	padding: 49px 0px 0px 193px
+	p
+		margin-top: 13px
+		margin-bottom: 22px
+	.btn-gen
+		position: relative
+		bottom: -10px
+.desc-image
+	position: absolute
+	top: -54px
+	left: 0px
+
+
+/***************************************************Benefits************************************/
+.benefits
+	height: auto
+	padding: 140px 0px 80px 0px
+.gen-list__benef.gen-text
+	p
+		line-height: 25px
+		text-transform: uppercase
+.gen-list__benef
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	margin-top: 25px
+	ul
+		flex: 0 0 49%
+		padding-right: 75px
+.benefits-block
+	padding-left: 75px
+
+/***************************************************Portfolio************************************/
+.portfolio
+	position: relative
+	height: auto
+	padding: 80px 0px 20px 0px
+.top-decor
+	position: absolute
+	height: 300px
+	top: 0px
+	left: 0px
+	background-color: #f7fafc
+	width: 100%
+.portfolio-block
+	text-align: center
+	-moz-transition: all 0.3s ease-out
+	-o-transition: all 0.3s ease-out
+	-webkit-transition: all 0.3s ease-out
+	transition: all 0.3s ease-out
+	margin-top: 40px
+	padding-top: 16px
+	margin-bottom: 15px
+.portfolio-image
+	width: 230px
+	height: 230px
+	border-radius: 50%
+	background-color: #dae4ea
+	position: relative
+	overflow: hidden
+	margin: 0 auto
+	background-position: center center
+	background-repeat: no-repeat
+	margin-bottom: 30px
+.portfolio-desc
+	padding: 0px 110px
+.btn-gen__port
+	position: relative
+	bottom: -44px
+	a
+		padding: 11px 40px
+.portfolio-block:hover
+	background-color: #fff
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.2)
+	border-radius: 10px
+
+
+/***************************************************List-Sec************************************/
+.list-sec
+	padding: 234px 0px 100px 0px
+.list-sec-left
+	padding-left: 45px
+	padding-top: 12px
+	a
+		color: $link
+		font-family: $bah
+		font-size: 20px
+		line-height: 24px
+	a:hover
+		color: $green
+	.header-30
+		margin-bottom: 27px
+	.gen-text
+		padding-right: 115px
+		margin-bottom: 31px
+.list-sec-image
+	margin-top: 85px
+	img
+		width: 100%
+		height: auto
+.list-sec-right
+	padding-left: 34px
+	ul
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+	li
+		flex: 0 0 47%
+		display: flex
+		margin-bottom: 40px
+.list-sec-desc
+	padding-left: 21px
+	padding-top: 15px
+	padding-right: 34px
+	p
+		margin-top: 10px
+		line-height: 25px
+.list-sec-icon
+	width: 65px
+	height: 65px
+	box-shadow: 0px 0px 8px rgba(236,243,249,0.75)
+	border-radius: 50%
+	background-color: #fff
+	flex: 0 0 65px
+
+
+/***************************************************Form-Sec************************************/
+.form-sec
+	position: relative
+	padding: 40px 0px 0px 0px
+.bottom-sec-decor
+	position: absolute
+	bottom: 0px
+	left: 0px
+	background-color: #ecf3f9
+	height: 240px
+	width: 100%
+.form-gen-wrap
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+	width: 72%
+	height: 500px
+	margin: 0 auto
+.form-gen-image
+	flex: 0 0 410px
+	background: #157bce
+	background: -moz-linear-gradient(top, #157bce 0%, #3ba8f2 100%)
+	background: -webkit-linear-gradient(top, #157bce 0%,#3ba8f2 100%)
+	background: linear-gradient(to bottom, #157bce 0%,#3ba8f2 100%)
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#157bce', endColorstr='#3ba8f2',GradientType=0 )
+	text-align: center
+	padding: 50px 0px
+	span
+		font-family: $blogger-m
+		font-size: 22px
+		line-height: 28px
+		color: #fff
+	svg
+		fill: #fff
+		margin-top: 50px
+.form-gen
+	padding: 46px 42px 37px 42px
+	flex-grow: 1
+	background-color: #fff
+	input, select
+		width: 100%
+		height: 50px
+		background-color: transparent
+		box-shadow: none
+		border: 1px solid $gray
+		margin-bottom: 34px
+		font-family: $pn-l
+		font-size: 16px
+		color: $gray
+		padding: 0 22px
+		border-radius: 3px
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out
+	select
+		background-color: transparent
+		-webkit-appearance: none
+		-moz-appearance: none
+		-ms-appearance: none
+		-o-appearance: none
+		appearance: none
+		background-repeat: no-repeat
+		background-position: right 17px top 22px !important
+	::-webkit-input-placeholder 
+		color: $gray
+		font-family: $pn-l
+		font-size: 16px		
+	::-moz-placeholder
+		color: $gray
+		font-family: $pn-l
+		font-size: 16px				
+	:-moz-placeholder 
+		color: $gray
+		font-family: $pn-l
+		font-size: 16px					
+	:-ms-input-placeholder      
+		color: $gray
+		font-family: $pn-l
+		font-size: 16px		
+	select
+		padding: 0 18px
+	option
+		font-size: 14px
+	textarea
+		width: 100%
+		height: 100%
+		resize: none
+		color: #717171
+		font-family: $bah
+		font-size: 12px	
+		padding: 12px 22px
+		border: 1px solid $blue
+		border-radius: 3px
+		background-color: transparent
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out
+.shot-field
+	display: flex
+	justify-content: space-between
+	.field-wrap
+		flex: 0 0 48%
+.form-bottom
+	margin-top: 24px
+	text-align: right
+	button
+		background: #4caf50
+		background: -moz-linear-gradient(left, #4caf50 0%, #8bc34a 100%)
+		background: -webkit-linear-gradient(left, #4caf50 0%,#8bc34a 100%)
+		background: linear-gradient(to right, #4caf50 0%,#8bc34a 100%)
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4caf50', endColorstr='#8bc34a',GradientType=1 )
+		padding: 11px 64px
+		font-family: $bah
+		font-size: 18px
+		color: #fff
+		text-transform: uppercase
+		border-radius: 20px
+		text-shadow: 0px 1px 0px rgba(0,0,0,0.12)
+.textarea-field
+	height: 98px
+.label-select
+	position: absolute
+	height: 96%
+	width: 50px
+	top: 1px
+	right: 1px
+	background-color: transparent
+	background-size: 9px 7px
+	background-repeat: no-repeat
+	z-index: 100
+	background-position: center center
+	border-radius: 0px 3px 3px 0px
+	pointer-events: none
+.field-wrap
+	position: relative
+.form-gen input:hover, .form-gen input:active, .form-gen input:focus,  .form-gen textarea:hover, .form-gen textarea:active, .form-gen textarea:focus, .form-gen select:hover, .form-gen select:active, .form-gen select:focus
+	border: 1px solid $link!important
+	background-color: #f8f8f8!important
+.form-gen input:active, .form-gen input:focus, .form-gen textarea:active, .form-gen textarea:focus, .form-gen select:active, .form-gen select:focus
+	box-shadow: 0px 0px 14px rgba(0,0,0,0.1)!important
+
+
+
+/***************************************************Partners************************************/
+.partners
+	padding: 52px 0px
+.partners-icons
+	width: 71%
+	margin: 20px auto 13px
+	ul
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+
+/***************************************************Footer************************************/
+.easy-footer
+	background-color: #092a44
+	padding: 50px 0px 0px 0px
+.footer-wrap
+	display: flex
+	flex-wrap: wrap
+	padding-bottom: 30px
+.footer-left
+	padding-left: 44px
+	width: 22.7%
+	padding-right: 30px
+	border-right: 1px solid $gray
+	.logo
+		svg
+			width: 145px
+			height: auto
+	p
+		color: $gray
+		font-family: $pn-r
+		font-size: 14px
+		line-height: 25px
+		margin-top: 26px
+		margin-bottom: 21px	
+	a
+		color: #fff
+		font-family: $pn-r	
+.footer-contacts-link
+	margin-bottom: 8px
+	a
+		font-family: $blogger
+		font-size: 22px
+	a:hover
+		opacity: 0.45
+	svg
+		fill: #fff
+		opacity: 0.45
+		position: relative
+		margin-right: 5px
+		top: -4px
+.footer-middle
+	display: flex
+	flex-wrap: wrap
+	padding: 33px 30px 0px 68px
+	border-right: 1px solid $gray
+	flex: 0 0 54.6%
+	span
+		color: #fff
+		font-family: $blogger
+		font-size: 22px
+		line-height: 26px
+	a
+		color: $gray
+		font-family: $pn-r
+		font-size: 14px
+		line-height: 25px
+	a:hover
+		color: #fff
+	ul
+		margin-top: 15px
+	li
+		margin-bottom: 5px
+.footer-middle-block
+	flex: 0 0 33%
+.footer-right	
+	flex-grow: 1
+	flex: 0 0 22%
+	padding: 32px 30px 20px 35px
+	.feed-link
+		color: $green
+		font-family: $blogger
+		font-size: 22px
+		line-height: 26px
+		padding-left: 42px
+	.feed-link:hover
+		color: #fff
+	span
+		color: $gray
+		font-family: $pn-r
+		font-size: 12px
+		line-height: 14px
+.footer-social
+	margin-top: 20px
+	ul
+		display: flex
+		width: 100%
+		justify-content: space-between
+	svg
+		fill: #fff
+		opacity: 0.45
+	svg:hover
+		opacity: 1
+#subscribe-form
+	position: relative
+	width: 100%
+	margin-top: 42px
+	margin-bottom: 13px
+	input
+		background-color: transparent
+		border: 2px solid #fff
+		border-radius: 20px
+		height: 40px
+		width: 100%
+	button
+		position: absolute
+		right: 0px
+		height: 0px
+		width: 60px
+		height: 40px
+		background-color: #fff
+		border-radius: 20px
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out
+	svg
+		position: absolute
+		right: 20px
+		top: 14px
+		fill: $link
+		pointer-events: none
+	button:hover
+		background-color: $link
+	button:hover ~ svg
+		fill: #fff
+.footer-bottom
+	background-color: #061c2b
+	width: 100%
+	height: 40px
+	text-align: center
+	span
+		color: $gray
+		font-family: $pn-r
+		font-size: 14px
+		line-height: 40px
+
+/***************************************************Shop************************************/
+.inner-page
+	.top-main
+		height: auto
+		box-shadow: none
+	header
+		position: relative
+		height: 162px
+		z-index: 10000
+	.header-phone a
+		color: #000
+	.header-phone svg
+		fill: #000
+	.logo
+		path
+			fill: $icon-circle-blue!important
+	.main-menu a
+		color: $icon-circle-blue
+	.main-menu a:hover
+		color: $green
+	.back-tel a:hover
+		color: $icon-circle-blue
+.inner-banner
+	width: 100%
+	height: 206px
+	background-repeat: no-repeat
+	background-position: center center
+	background-size: cover
+	position: relative
+.inner-banner:after
+	content: ''
+	display: block
+	width: 100%
+	height: 100%
+	position: absolute
+	top: 0px
+	left: 0px
+	background: #0a5ebe
+	background: -moz-radial-gradient(center, ellipse cover, #0a5ebe 37%, #0946a2 100%)
+	background: -webkit-radial-gradient(center, ellipse cover, #0a5ebe 37%,#0946a2 100%)
+	background: radial-gradient(ellipse at center, #0a5ebe 37%,#0946a2 100%)
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a5ebe', endColorstr='#0946a2',GradientType=1 )
+	opacity: 0.8
+.main-inner-wrapper
+	position: relative
+	z-index: 300
+	width: 100%
+	height: 100%
+	display: flex
+	flex-direction: column
+	justify-content: center
+	h1
+		color: #fff
+		font-family: $pn-r
+		font-size: 42px
+		line-height: 51px
+.inner-breadcrumb
+	ul
+		display: flex
+	li
+		margin: 0 3px
+		color: $link
+	a, span
+		color: $link
+		font-family: $pn-r
+		font-size: 14px
+	a:hover
+		color: #fff
+	li:first-child
+		margin-left: 0px
+.inner-desc-wrap
+	display: flex
+	flex-wrap: wrap
+	padding-top: 82px
+.inner-desc-list
+	flex: 0 0 55%
+	ul
+		margin-top: 38px
+		margin-bottom: 38px
+.inner-desc-form
+	flex: 0 0 45%
+	text-align: center	
+	padding-right: 40px
+	display: flex
+	justify-content: flex-end
+	.form-gen
+		box-shadow: 0px 0px 8px rgba(0,0,0,0.2)
+		position: relative
+		top: -115px
+		width: 460px
+		flex-grow: 0
+		padding: 32px 42px 37px 42px
+	img
+		height: 176px
+		width: auto
+		margin-bottom: 48px
+.top-decor-dark
+	position: relative
+	.top-decor
+		background-color: #ecf3f9
+		height: 228px
+.inner-list-sec
+	padding-top: 85px
+	padding-bottom: 0px
+	.list-sec-left
+		padding-top: 78px
+		padding-left: 18px
+	.list-sec-image
+		margin-top: 50px
+	.list-sec-right
+		padding-left: 43px
+		padding-top: 82px
+	.list-sec-right li
+		margin-bottom: 130px
+.benef-serv
+	padding-top: 0px
+	padding-bottom: 80px
+	.icons-gen-wrap
+		margin-top: 50px
+.icons-gen-wrap__inner
+	width: 100%
+	padding: 0px 38px
+	.icons-gen-block
+		flex: 0 0 22%
+	.icons-gen-block_icon
+		height: 160px
+	.icons-gen-block_icon
+		margin-top: 44px
+		margin-bottom: 6px
+	.icons-gen-block_content p
+		padding: 0px
+	.icons-gen-block_content
+		padding: 0 30px
+.icons-gen-wrap__inner .icons-gen-block:nth-child(2) .icons-gen-circle
+	background: $icon-circle-blue
+.icons-gen-wrap__inner .icons-gen-block:nth-child(3) .icons-gen-circle
+	background: $link
+.icons-gen-wrap__inner .icons-gen-block:nth-child(4) .icons-gen-circle
+	background: $icon-circle-blue
+.portfolio__inner
+	padding-bottom: 170px
+	position: relative
+.order
+	width: 100%
+	height: 320px
+	position: relative
+.order:after
+	content: ''
+	display: block
+	width: 100%
+	height: 100%
+	position: absolute
+	top: 0px
+	left: 0px
+	background: #0a5ebe
+	background: -moz-radial-gradient(center, ellipse cover, #0a5ebe 37%, #0946a2 100%)
+	background: -webkit-radial-gradient(center, ellipse cover, #0a5ebe 37%,#0946a2 100%)
+	background: radial-gradient(ellipse at center, #0a5ebe 37%,#0946a2 100%)
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a5ebe', endColorstr='#0946a2',GradientType=1 )
+	opacity: 0.8
+.order-content
+	position: relative
+	z-index: 300
+	width: 100%
+	height: 100%
+	display: flex
+	align-items: center
+	flex-direction: column
+	justify-content: center
+	span
+		color: #fff
+		font-family: $blogger-m
+		font-size: 45px
+		line-height: 54px
+	p
+		color: #fff
+		font-family: $pn-r
+		font-size: 30px
+		line-height: 57px
+.form-sec__inner
+	padding-top: 140px
+
+/***************************************************Support-Page************************************/
+.inner-desc__icons
+	padding-bottom: 30px
+	.inner-desc-wrap
+		padding-top: 50px
+.inner-decor-list
+	flex: 0 0 55%
+	li
+		display: flex
+		margin-bottom: 20px
+.inner-decor-list_content
+	padding-top: 16px
+	padding-left: 18px
+	p
+		margin-top: 11px
+		line-height: 25px
+.tarifs
+	padding-top: 110px
+	padding-bottom: 100px
+	.top-decor
+		height: 480px
+.packages-block-radio
+	height: 102px
+	display: flex
+	align-items: center
+	justify-content: center
+	flex-wrap: wrap
+	padding: 18px 48px 20px 67px
+.checkbox-block
+	display: flex
+	justify-content: center
+	align-items: center
+	flex: 0 0 100%
+	margin: 20px 0px
+	span
+		font-style: normal
+		font-family: $pn-b
+		font-size: 16px
+		color: $icon-circle-blue
+.checkbox-custom
+	margin: 0 20px
+.checkbox-cus
+	position: absolute
+	z-index: -1
+	opacity: 0
+	margin: 10px 0 0 20px
+.checkbox-cus + label
+	position: relative
+	padding: 0 0 0 52px
+	cursor: pointer
+.checkbox-cus + label:before
+	content: ''
+	position: absolute
+	top: -9px
+	left: 0
+	width: 52px
+	height: 26px
+	border-radius: 13px
+	background: #157bce
+	background: -moz-radial-gradient(center, ellipse cover, #157bce 0%, #005ba4 65%, #005ba4 100%)
+	background: -webkit-radial-gradient(center, ellipse cover, #157bce 0%,#005ba4 65%,#005ba4 100%)
+	background: radial-gradient(ellipse at center, #157bce 0%,#005ba4 65%,#005ba4 100%)
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#157bce', endColorstr='#005ba4',GradientType=1 )
+	transition: .2s
+.checkbox-cus + label:after 
+	content: ''
+	position: absolute
+	top: -7px
+	left: 4px
+	width: 22px
+	height: 22px
+	border-radius: 10px
+	background: #FFF
+	transition: .2s
+	box-shadow: 0px 0px 20px rgba(0,0,0,0.2)
+.checkbox-cus:checked + label:before
+
+.checkbox-cus:checked + label:after 
+	left: 26px
+.checkbox-block .checkbox-active
+	color: $link
+.tarifs-wrap
+	display: flex
+	flex-wrap: wrap
+	width: 100%
+	justify-content: space-between
+	margin-top: 60px
+	padding: 0px 40px
+.tarifs-block
+	flex: 0 0 21%
+	height: 425px
+	background-color: #fff
+	box-shadow: 0 0 8px rgba(0,0,0,0.2)
+	text-align: center
+	border-radius: 5px
+	border-bottom: 5px solid $link
+	position: relative
+	padding: 42px 0px 150px 0px
+.tarifs-block_header
+	span
+		text-transform: uppercase
+		display: block
+		margin-bottom: 14px
+	p
+
+		margin-bottom: 0px
+.tarifs-block_bottom
+	position: absolute
+	bottom: 23px
+	width: 100%
+	span
+		font-family: $bah
+		font-size: 15px
+		line-height: 20px
+		color: $gray
+		display: block
+		margin-bottom: 30px	
+	i
+		font-style: normal
+		font-size: 40px
+		color: $link
+		display: block
+		line-height: 42px
+	a
+		color: $link
+		font-family: $pn-r
+		font-size: 18px
+	a:hover
+		color: $icon-circle-blue
+.tarifs-wrap .tarifs-block:nth-child(3) 
+	border-bottom: 5px solid $green
+	i, a
+		color: $green
+	a:hover
+		color: $icon-circle-blue
+.tarifs-wrap .tarifs-block:nth-child(4) 
+	border-bottom: 5px solid $icon-circle-blue
+	i, a
+		color: $icon-circle-blue
+	a:hover
+		color: $green
+.tarifs-bottom
+	margin-top: 63px
+	p
+		margin-bottom: 0px
+		line-height: 18px
+.scheme
+	padding-top: 76px
+	padding-bottom: 20px
+	.section-header span
+		padding: 0px 190px
+.scheme-wrap
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	background-repeat: no-repeat
+	background-position: left 274px top 7px
+	margin-top: 61px
+	padding: 0px 152px
+.scheme-block
+	flex: 0 0 20%
+	text-align: center
+.scheme-image
+	height: 130px
+	overflow: hidden
+.scheme-content
+	margin-top: 20px
+	padding: 0px 38px
+	p
+		line-height: 25px
+.faq
+	padding-top: 100px
+	padding-bottom: 100px
+.ac-wrap
+	height: auto
+	background-color: #fff
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.2)
+	border-radius: 5px
+	margin-top: 40px
+	width: 72%
+	margin-left: auto
+	margin-right: auto
+.acc-block
+	width: 100%
+	height: auto
+	border-bottom: 1px solid #ecf3f9
+	min-height: 138px
+	padding: 55px 50px 50px 50px
+	span
+		color: $blue-dark
+		font-family: $pn-r
+		font-size: 16px
+		line-height: 25px
+		padding-left: 20px
+		display: block
+.acc-block:hover
+	cursor: pointer
+.acc-header-wrap
+	display: flex
+	align-items: center
+.acc-plus
+	width: 30px
+	height: 3px
+	background-color: $blue-dark
+	border-radius: 3px
+	position: relative
+	flex: 0 0 30px
+.acc-plus:after
+	position: absolute
+	display: block
+	content: ''
+	width: 30px
+	height: 3px
+	top: 0px 
+	left: 0px
+	background-color: $blue-dark
+	border-radius: 3px
+	transform: rotate(90deg)
+	-moz-transition: all 0.2s ease-out
+	-o-transition: all 0.2s ease-out
+	-webkit-transition: all 0.2s ease-out
+	transition: all 0.2s ease-out
+.acc-block-hidden
+	display: none
+	padding-top: 30px
+	padding-left: 90px
+	p
+		margin-bottom: 0px
+.acc-block.acc-block-active
+	.acc-plus:after
+		opacity: 0
+
+/***************************************************Create*******************************************/
+.inner-desc-add-list
+	ul
+		display: flex
+		flex-wrap: wrap
+		margin-top: 101px
+	li
+		flex: 0 0 33%
+		margin-bottom: 65px
+	.inner-desc-wrap
+		padding-top: 51px
+	.inner-decor-list
+		flex: 0 0 64%
+	.inner-desc-form
+		flex: 0 0 33%
+		padding-right: 0px
+.add-list-header
+	span
+		display: block
+		margin-bottom: 10px
+	p
+		line-height: 25px
+		padding-right: 145px
+.add-list-image
+	margin-top: 2px
+	flex: 0 0 80px
+.add-list-content
+	span
+		font-family: $bah
+		font-size: 15px
+		line-height: 30px
+		color: $blue-dark
+	p
+		line-height: 20px
+		padding-right: 30px
+.cost
+	padding: 140px 0px 10px 0px
+.cost-block-wrap
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+	padding: 0 210px
+	margin-top: 70px
+.cost-block
+	text-align: center
+	flex: 0 0 29%
+	height: 420px
+	background-color: #fff
+	box-shadow: 0px 0px 8px rgba(0,0,0,0.2)
+	position: relative
+	border-radius: 8px
+	padding: 56px 0px
+	margin-bottom: 66px
+.cost-block-image
+	height: 130px
+	overflow: hidden
+	margin-bottom: 20px
+.cost-block-content
+	p
+		font-family: $bah
+		font-size: 15px
+		line-height: 20px
+		color: $gray
+		margin-top: 20px
+	i
+		font-style: normal
+		display: block
+		font-size: 40px
+		line-height: 40px
+		color: $icon-circle-blue
+	a
+		font-family: $pn-r
+		font-size: 18px
+		line-height: 22px
+		color: $icon-circle-blue
+	a:hover
+		color: $green
+.cost-block-bottom
+	position: absolute
+	bottom: 47px
+	width: 100%
+.cost-block-wrap .cost-block:last-child
+	a
+		color: $green
+	a:hover
+		color: $icon-circle-blue
+	p
+		font-family: $bah
+		font-size: 25px
+		color: $green
+.middle-decor
+	position: relative
+.middle-decor-block
+	width: 100%
+	height: 480px
+	background-color: #ecf3f9
+	position: absolute
+	top: 50%
+	margin-top: -240px
+
+/***************************************************About*******************************************/
+.inner-desc__text
+	.inner-desc-wrap
+		padding-top: 52px
+	.inner-decor-list
+		span
+			display: block
+			margin-bottom: 10px
+		p
+			line-height: 25px
+			margin-bottom: 32px
+.services__add
+	width: 100%
+	height: 1000px
+	background-repeat: no-repeat
+	background-position: center center
+	background-size: cover
+	position: relative
+	padding: 0px
+	.icons-gen-block
+		height: auto
+		padding-bottom: 90px
+		border-radius: 8px
+	.icons-gen-block_content p
+		text-align: left
+	.icons-gen-block_link a
+		background-color: $green
+		padding: 11px 0px
+		border-radius: 30px
+		font-family: $bah
+		font-size: 18px
+		color: #fff
+		text-transform: uppercase
+		width: 70%
+	.icons-gen-block_link a:hover
+		background-color: $blue-dark!important
+.icons-gen-wrap__sa .icons-gen-block:nth-child(2)
+	a
+		background-color: $icon-circle-blue
+.icons-gen-wrap__sa .icons-gen-block:nth-child(3)
+	a
+		background-color: $link
+.white-overlay
+	position: absolute
+	width: 100%
+	height: 100%
+	background-color: #fff
+	opacity: 0.85
+.icons-gen-wrap__sa
+	padding: 0px
+	padding-top: 130px
+.single
+	width: 100%
+	height: 200px
+
+/***************************************************Arrows*******************************************/
+.arrows	
+	max-width: 1400px
+	left: 0px
+	right: 0px
+	margin: auto
+	position: absolute
+	top: 50%
+	svg
+		width: 26px
+		height: 32px
+		position: absolute
+		z-index: 1000
+		top: 50%
+		fill: #fff
+		opacity: 0.3
+	.arr-right-gen svg
+		right: 0px
+	.arr-right-gen:hover, .arr-left-gen:hover
+		cursor: pointer
+		svg
+			opacity: 1
+			-moz-transition: all 0.3s ease-out
+			-o-transition: all 0.3s ease-out
+			-webkit-transition: all 0.3s ease-out
+			transition: all 0.3s ease-out
+
