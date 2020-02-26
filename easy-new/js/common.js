@@ -111,3 +111,21 @@ $(document).ready(function(){
 
     }
 });
+
+
+//Checkbox-Button Click
+$(document).ready(function(){
+	$('.checkbox-cus').change(function(){
+	 	if ($(this).is(':checked')){
+			$('.tarif-month').css('display','none');
+			$('.tarif-year').css('display','block');
+			$('.checkbox-block p').removeClass('checkbox-active');
+			$('.checkbox-block span').addClass('checkbox-active');
+		} else {
+			$('.tarif-month').css('display','block');
+			$('.tarif-year').css('display','none');
+			$('.checkbox-block p').addClass('checkbox-active');
+			$('.checkbox-block span').removeClass('checkbox-active');
+		}
+	});
+});
