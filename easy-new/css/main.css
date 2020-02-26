@@ -468,7 +468,7 @@ header {
   height: 100%;
 }
 
-.top-slide:after {
+.top-main:after {
   content: '';
   display: block;
   width: 100%;
