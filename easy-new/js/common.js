@@ -43,6 +43,7 @@ $('.slider-main').on('init', function(event, slick){
 });
 
 
+//Service-Slider
 $(document).ready(function() {
   var timer;
   $(window).on('resize', function() {
@@ -52,7 +53,7 @@ $(document).ready(function() {
     }, 100);
   });
   handleSlick();
-});
+
 
 function handleSlick() {
   if ($(window).width() <= 1199) {
@@ -125,7 +126,7 @@ function loadfix() {
   
 }
 
-
+});
 
 
 
@@ -241,5 +242,4 @@ $(document).ready(function(){
          });     
        $("header .menu-toggle-button").toggleClass('is-active');
    });
-
 });

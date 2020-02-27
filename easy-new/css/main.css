@@ -2337,10 +2337,10 @@ header {
 
 .menu-toggle-button {
   width: 60px;
-  height: 30px;
+  height: 33px;
   background-color: transparent;
   border-radius: 7px;
-  padding-top: 5px;
+  padding-top: 0px;
   border: none;
   text-indent: -9999px;
   -webkit-appearance: none;
@@ -2349,7 +2349,7 @@ header {
   position: relative;
   display: block;
   overflow: hidden;
-  z-index: 100000000000000000000;
+  z-index: 1100;
 }
 
 .menu-toggle-button span {
