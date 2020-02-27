@@ -9,11 +9,11 @@
 		background-color: #fff;
 		left: 0px;
 		z-index: 1000;
-		padding-top: 40px;
 	}
 
 	.main-menu ul{
 		display: block;
+		padding-top: 40px;
 	}
 
 	.main-menu a{
