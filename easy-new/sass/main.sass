@@ -207,11 +207,12 @@ header
 	flex-wrap: wrap
 .icons-gen-block
 	flex: 0 0 28%
-	height: 420px
+	height: auto
 	background-color: #fff
 	box-shadow: 0px 0px 8px rgba(236,243,249,0.75)
 	position: relative
 	text-align: center
+	padding-bottom: 70px
 .icons-gen-block_icon
 	width: 100%
 	height: 120px
@@ -916,7 +917,8 @@ header
 	header
 		position: relative
 		height: 162px
-		z-index: 10000
+		z-index: 1000
+		width: 100%
 	.header-phone a
 		color: #000
 	.header-phone svg
@@ -953,6 +955,8 @@ header
 	background: radial-gradient(ellipse at center, #0a5ebe 37%,#0946a2 100%)
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a5ebe', endColorstr='#0946a2',GradientType=1 )
 	opacity: 0.8
+.inner-desc
+	padding-bottom: 80px
 .main-inner-wrapper
 	position: relative
 	z-index: 300
@@ -998,7 +1002,7 @@ header
 	.form-gen
 		box-shadow: 0px 0px 8px rgba(0,0,0,0.2)
 		position: relative
-		top: -115px
+		margin-top: -115px
 		width: 460px
 		flex-grow: 0
 		padding: 32px 42px 37px 42px
@@ -1199,8 +1203,7 @@ header
 		display: block
 		margin-bottom: 14px
 	p
-
-		margin-bottom: 0px
+		line-height: 18px
 .tarifs-block_bottom
 	position: absolute
 	bottom: 23px
@@ -1447,8 +1450,7 @@ header
 	position: relative
 	padding: 0px
 	.icons-gen-block
-		height: auto
-		padding-bottom: 90px
+		padding-bottom: 100px
 		border-radius: 8px
 	.icons-gen-block_content p
 		text-align: left
@@ -1626,4 +1628,8 @@ header
 
 .menu-toggle-button.is-active
 	span:after, span:before
+		background-color: $blue-dark
+
+.header-menu__inner
+	span, span:after, span:before
 		background-color: $blue-dark
