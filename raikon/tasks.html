@@ -16,7 +16,8 @@
 
 	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.css">
 	<link rel="stylesheet" href="libs/magnific/magnific-popup.css">
-	<link rel="stylesheet" href="libs/slick/slick.css">		
+	<link rel="stylesheet" href="libs/slick/slick.css">
+	<link rel="stylesheet" href="libs/gijgo/css/gijgo.css">	
 
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/main.css">
@@ -52,7 +53,7 @@
 						<a href="tel:+7-351-230-05-99">+7 (351) 230-05-99</a>
 					</div>
 					<div class="call">
-						<a href="#">Заказать звонок</a>
+						<a href="#modal" class="popup-modal">Заказать звонок</a>
 					</div>
 				</div>
 			</div>
@@ -260,10 +261,44 @@
 	</div>
 </footer>
 
+<!--Modal-->
+<form id="modal" class="mfp-hide white-popup-block inner">
+	<div class="mfp-close-wrap">
+		<div  class="mfp-close popup-modal-dismiss" title="Закрыть окно">
+			<img src="images/close.png">
+		</div>
+	</div>
+	<div class="modal_header ">
+		<div class="section-subheader section-subheader__white">
+			<h2>Заказать звонок:</h2>
+		</div>
+	</div>				
+	<div class="modal-form-wrap">
+		<div class="feed-left">
+			<input type="text" name="name" placeholder="Имя" required="">
+			<input type="text" name="surname" placeholder="Фамилия" required="">
+			<input type="text" name="phone" placeholder="Ваш телефон" required="">
+		</div>
+		<div class="feed-right">
+			<span>Когда вам позвонить?</span>
+			<div class="date-inputs">
+				<input id="datepicker" placeholder="Дата" />
+				<input id="timepicker" placeholder="Время" role="right-icon" class="clock" />
+			</div>
+			<button type="submit">Отправить</button>
+		</div>	
+		<div class="check">
+			<span>Нажимая кнопку «Отправить», вы соглашаетесь<br>с <a href="">Политикой конфиденциальности ООО «Рейкон»</a></span>
+		</div>				
+	</div>
+</form>
+
 	<script src="libs/jquery/jquery-3.3.1.js"></script>
 	<script src="libs/bootstrap/js/bootstrap.js"></script>
 	<script src="libs/magnific/jquery.magnific-popup.min.js"></script>
 	<script src="libs/slick/slick.js"></script>
+	<script src="libs/gijgo/js/gijgo.min.js"></script>
+	<script src="libs/gijgo/js/messages/messages.ru-ru.min.js"></script>
 	<script src="js/common.js"></script>
 	
 </body>
