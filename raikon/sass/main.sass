@@ -1,0 +1,657 @@
+@import "bourbon/bourbon"
+
+$blue: #256acc
+$red: #ff4561
+$geom: 'Geometria', sans-serif
+$geom-m: 'Conv_Geometria-Medium', sans-serif
+$geom-b: 'Conv_Geometria-Bold', sans-serif
+$geom-ex: 'Conv_Geometria-ExtaBlack', sans-serif
+
+
+html
+	width: 100%
+	height: 100%
+	overflow-x: hidden
+body
+	width: 100%
+	height: auto
+	min-width: 320px	
+	margin: 0 auto
+	position: relative
+	font-family: $geom
+	line-height: 1.2
+	-webkit-font-smoothing: antialiased
+	background-color: #fff	
+	overflow: hidden
+
+	a:hover, a:focus, a:active
+		text-decoration: none
+		outline: none
+	input:focus, input:active
+		text-decoration: none
+		outline: none
+	button:focus, button:active
+		text-decoration: none
+		outline: none
+	textarea:focus, textarea:active
+		text-decoration: none
+		outline: none
+	a
+		display: inline-block
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out
+	ul, ol
+		padding: 0px
+		margin: 0px
+		list-style-type: none
+	button
+		border: none
+		cursor: pointer
+	hr
+		border: none	
+
+.pixel
+	background: url(../images/main.jpg) no-repeat top center
+	width: 2494px
+	height: 12800px
+	position: absolute
+	z-index: 1000000
+	display: none
+	left: 50%
+	top: 0
+	margin-left: -1247px
+	opacity: 0.5
+	margin-top: 0px
+
+
+/***************************************************GeneralStyles************************************/
+.main-header
+	h1
+		font-family: $geom-ex
+		font-size: 24px
+		line-height: normal
+		color: $blue
+		text-align: center
+		text-transform: uppercase
+.inner 
+	.main-header
+		h1
+			font-family: $geom-b
+			font-size: 36px
+		span
+			font-family: $geom
+			font-size: 18px
+			line-height: normal
+			color: $blue
+			text-align: center
+			display: block
+			padding: 0px 75px
+			margin-top: 27px
+	.section-subheader
+		h2
+			font-family: $geom-b
+			font-size: 36px
+.section-subheader
+	h2
+		font-family: $geom-ex
+		font-size: 24px
+		line-height: normal
+		color: $blue
+		text-align: center
+		text-transform: uppercase
+.section-subheader__white
+	h2
+		color: #fff
+.menu-sub
+	width: 100%
+	height: 40px
+	background: $blue
+	ul
+		width: 100%
+		height: 100%
+		display: flex
+		justify-content: space-between
+		align-items: center
+	li
+		flex: 1 1 auto
+		text-align: center
+	a
+		color: #fff
+		font-family: $geom
+		font-size: 14px
+		border-bottom: 5px solid transparent
+		padding: 13px 10px 5px 10px
+	a:hover, .active-page
+		border-bottom: 5px solid $red
+
+
+/***************************************************Header************************************/
+.raikon-header
+	width: 100%
+	min-height: 143px
+	padding: 35px 0px 15px 0px
+.logo
+	margin-top: 13px
+.header-desc
+	margin-top: 30px
+	margin-left: 60px
+	padding-right: 60px
+	span
+		font-family: $geom
+		font-size: 18px
+		line-height: 22px
+		color: $blue
+.contacts
+	display: flex
+	flex-direction: column
+	align-items: flex-end
+	padding-right: 2px
+.address
+	width: 100%
+	display: flex
+	justify-content: space-between
+	padding-left: 99px
+	span
+		font-family: $geom
+		font-size: 14px
+		line-height: 22px
+		color: $blue
+.phone
+	margin-top: 9px
+	a
+		font-family: $geom-m
+		font-size: 29px
+		line-height: auto
+		color: $blue
+	a:hover
+		opacity: 0.7
+.call
+	margin-top: 7px
+	a
+		font-family: $geom
+		font-size: 14px
+		line-height: auto
+		color: $blue
+		border-bottom: 1px solid transparent
+	a:hover
+		border-bottom: 1px solid $blue
+
+/***************************************************Menu************************************/
+.site-menu
+	width: 100%
+.site-menu-wrapper
+	background: #e8f1ff
+.nav-wrap
+	display: flex
+	justify-content: space-between
+	height: 100%
+	align-items: center
+.main-menu-wrap
+	flex: 0 0 75%
+	max-width: 75%
+	height: 100%
+.main-menu
+	width: 100%
+	height: 100%
+	height: 40px
+	ul
+		width: 100%
+		height: 100%
+		display: flex
+		justify-content: space-between
+	a
+		font-family: $geom
+		font-size: 14px
+		line-height: normal
+		color: $blue
+		width: 100%
+		height: 100%
+		display: flex
+		justify-content: center
+		align-items: center
+	a:hover
+		background: #d9e8ff
+	li
+		flex: 1 1 auto
+		position: relative
+	li:first-child
+		flex: 0 0 24%
+	li:nth-child(2)
+		flex: 0 0 28%
+	li:nth-child(3)
+		flex: 0 0 28%
+	li:last-child
+		flex: 0 0 20%
+	li:hover 
+		background: #d9e8ff
+		.drop-menu
+			opacity: 1
+			visibility: visible
+.drop-menu
+	position: absolute
+	width: 100%
+	top: 99%
+	display: block!important
+	height: auto!important
+	padding: 10px 44px
+	background: #d9e8ff
+	z-index: 1000
+	opacity: 0
+	visibility: hidden
+	li
+		padding: 12px 0px
+	a
+		justify-content: flex-start
+		-moz-transition: all 0s ease-out
+		-o-transition: all 0s ease-out
+		-webkit-transition: all 0s ease-out
+		transition: all 0s ease-out
+	a:hover
+		color: #ff4561
+.search-field
+	flex: 0 0 23%
+#search
+	text-align: right
+	input
+		width: 100%
+		height: 29px
+		border: 1px solid #e8f1ff
+		font-family: $geom
+		font-size: 14px
+		color: #dcdcdd
+		padding: 0px 5px
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out
+		box-shadow: none
+	::-webkit-input-placeholder 
+		font-family: $geom
+		font-size: 14px
+		color: #dcdcdd		
+	::-moz-placeholder
+		font-family: $geom
+		font-size: 14px
+		color: #dcdcdd		
+	:-moz-placeholder 
+		font-family: $geom
+		font-size: 14px
+		color: #dcdcdd			
+	:-ms-input-placeholder      
+		font-family: $geom
+		font-size: 14px
+		color: #dcdcdd
+#search input:hover, #search input:active, #search input:focus
+	border: 1px solid #9abef1
+
+
+/***************************************************Banner************************************/
+.main-banner
+	padding: 56px 0px
+.banner-wrap
+	width: 100%
+	height: 488px
+	background: #dfdddd
+	margin-top: 20px
+
+
+/***************************************************Stages************************************/
+.stages
+	padding: 15px 0px 40px 0px
+.stages-wrap
+	display: flex
+	flex-direction: row
+	flex-wrap: wrap
+	justify-content: space-between
+	margin-top: 91px
+	width: 98%
+.stages-block
+	text-align: center
+	flex: 0 0 20%
+.stages-decor
+	position: relative
+.stages-decor:after
+	position: absolute
+	display: block
+	content: ''
+	width: 100%
+	height: 6px
+	background: $blue
+	top: 50%
+	margin-top: -3px
+.stages-decor_circle
+	width: 33px
+	height: 33px
+	border-radius: 50%
+	border: 8px solid $blue
+	margin: 0 auto
+	position: relative
+	z-index: 10
+	background: #fff
+.stages-number
+	display: inline-block
+	padding: 0px 5px
+	border-bottom: 5px solid $red
+	margin-left: 7px
+	padding-bottom: 11px
+	i
+		font-family: $geom-b
+		font-size: 34px
+		color: $blue
+		font-style: normal
+.stages-desc
+	margin-top: 16px	
+	span
+		font-family: $geom
+		font-size: 14px
+		line-height: 22px
+		text-align: left
+		display: flex
+		justify-content: center
+		margin-left: 7px
+.stages-content
+	margin-top: 13px
+.stages-block:first-child
+	.stages-decor:after
+		right: 0px
+		width: 46%
+	.stages-number
+		padding-left: 0px
+		padding-right: 10px
+		margin-left: 0px
+	.stages-content
+		text-align: left
+		padding-left: 44%
+	.stages-desc	
+		span
+			justify-content: flex-start
+			margin-left: 0px
+.stages-block:last-child
+	img
+		position: absolute
+		top: -63px
+		right: -44px
+	.stages-decor:after
+		left: 0px
+		width: 46%
+
+/***************************************************Benefits************************************/
+.benefits
+	padding: 67px 0px 88px 0px
+.benefits-wrapper
+	display: flex
+	flex-direction: row
+	flex-wrap: wrap
+	padding: 0 72px 0px 197px
+	margin-top: 78px
+.benefits-block	
+	flex: 0 0 33%
+	max-width: 33%
+	padding-right: 50px
+	margin-bottom: 38px
+	.stages-number
+		margin-left: 0px
+		padding-left: 0px
+		padding-right: 10px
+	span
+		display: block
+		font-family: $geom
+		font-size: 16px
+		line-height: 22px
+		display: block
+		margin-top: 27px
+		padding-right: 70px
+	p
+		display: block
+		font-family: $geom
+		font-size: 14px
+		line-height: 22px
+		margin-top: 15px
+		padding-right: 10px
+		color: #404040
+
+
+/***************************************************Footer************************************/
+.raikon-footer
+	width: 100%
+	min-height: 190px
+	background: #19488a
+	padding: 26px 0px
+	a, span
+		font-family: $geom
+		font-size: 14px
+		line-height: normal
+		color: #5b82ba
+	a:hover
+		color: #fff
+	span
+		display: block
+.footer-menu
+	display: flex
+	ul:last-child
+		margin-left: 73px
+	li
+		margin-bottom: 3px
+.footer-address
+	padding-left: 34px
+	a
+		margin-top: 5px
+.social-icons
+	display: flex
+	margin-top: 46px
+	li
+		margin-right: 17px
+	a:hover
+		opacity: 0.7
+.footer-copy
+	span
+		margin-bottom: 30px
+
+
+/***************************************************Services-Image************************************/
+.inner-block
+	padding: 40px 0px
+.service-image
+	position: relative
+	margin-top: 28px
+	img
+		width: 100%
+		height: auto
+.sevice-image-desc
+	position: absolute
+	bottom: 0px
+	background-color: $blue
+	width: 100%
+	padding: 10px 20px
+	span
+		font-family: $geom
+		font-size: 14px
+		line-height: normal
+		color: #fff
+.service-desc
+	margin-top: 40px
+	padding-left: 10px
+	p
+		font-family: $geom
+		font-size: 14px
+		line-height: 22px
+		color: #404040
+		margin-bottom: 22px
+	.service-image
+		float: right
+		width: 48%
+		margin-top: 5px
+		margin-left: 30px
+
+
+/***************************************************Feed************************************/
+.feed
+	width: 100%
+	min-height: 446px
+	background: $blue
+	margin-top: 79px
+	margin-bottom: 166px
+	padding: 40px 0px 20px 0px
+#feed
+	display: flex
+	flex-wrap: wrap
+	width: 49%
+	margin: 34px auto 0px
+	justify-content: space-between
+	input
+		width: 100%
+		height: 40px
+		font-family: $geom
+		font-size: 12px
+		color: #a8a8a8
+		padding: 0px 17px
+		margin-bottom: 26px
+		border: none
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out
+	::-webkit-input-placeholder 
+		font-family: $geom
+		font-size: 12px
+		color: #a8a8a8		
+	::-moz-placeholder
+		font-family: $geom
+		font-size: 12px
+		color: #a8a8a8		
+	:-moz-placeholder 
+		font-family: $geom
+		font-size: 12px
+		color: #a8a8a8			
+	:-ms-input-placeholder      
+		font-family: $geom
+		font-size: 12px
+		color: #a8a8a8
+	textarea
+		width: 100%
+		height: 106px
+		resize: none
+		border: none
+		font-family: $geom
+		font-size: 12px
+		color: #a8a8a8
+		padding: 10px
+		margin-bottom: 22px
+		box-shadow: none
+	button
+		width: 100%
+		height: 40px
+		border: 3px solid #fff
+		background: transparent
+		color: #fff
+		font-family: $geom-m
+		font-size: 12px
+		text-transform: uppercase
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out
+	button:hover
+		background: #80b4ff
+		color: $blue 
+.feed-left, .feed-right
+	flex: 0 0 47%
+	max-width: 47%
+#feed .file-dialog
+	position: relative
+	input
+		position: absolute
+		z-index: -1
+	label
+		border: 3px solid #80b4ff
+		background: transparent
+		padding: 0px 10px 0px 54px
+		font-family: $geom
+		font-size: 12px
+		line-height: 34px
+		color: #80b4ff
+		width: 100%
+		height: 40px
+		margin-bottom: 22px
+		overflow: hidden
+.plus
+	width: 40px 
+	height: 38px
+	background: #80b4ff
+	position: absolute
+	top: 2px
+	left: 0px
+.plus:after
+	display: block
+	content: ''
+	width: 18px
+	height: 4px
+	background: $blue
+	top: 18px
+	left: 11px
+	position: absolute
+.plus:before
+	display: block
+	content: ''
+	width: 4px
+	height: 18px
+	background: $blue
+	top: 11px
+	left: 18px
+	position: absolute
+.check
+	flex: 0 0 100%
+	text-align: center
+	margin-top: -10px
+	span, a		
+		font-family: $geom
+		font-size: 12px
+		line-height: normal
+		color: #80b4ff
+	a
+		border-bottom: 1px solid #80b4ff
+	a:hover
+		border-bottom: 1px solid transparent
+
+/***************************************************Tasks************************************/
+.tasks-wrapper
+	width: 100%
+	height: auto
+	display: flex
+	flex-direction: row
+	flex-wrap: wrap
+	justify-content: space-between
+	margin-top: 60px
+.tasks-block
+	flex: 0 0 49%
+	max-width: 49%
+	background: $blue
+	position: relative
+	height: 217px
+	padding: 37px 290px 20px 22px
+	margin-bottom: 20px
+	span
+		font-family: $geom-m
+		font-size: 18px
+		line-height: normal
+		color: #fff
+		text-transform: uppercase
+	.arrow
+		position: absolute
+		top: 20px 
+		right: 20px
+		z-index: 100
+	.arrow:hover
+		background: #dae9ff
+.task-image
+	position: absolute
+	top: 0px
+	right: 0px
+	width: 273px
+	height: 100%
+	overflow: hidden
+	img
+		width: 100%
+		height: 100%

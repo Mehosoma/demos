@@ -1,0 +1,977 @@
+html {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  width: 100%;
+  height: auto;
+  min-width: 320px;
+  margin: 0 auto;
+  position: relative;
+  font-family: "Geometria", sans-serif;
+  line-height: 1.2;
+  -webkit-font-smoothing: antialiased;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+body a:hover, body a:focus, body a:active {
+  text-decoration: none;
+  outline: none;
+}
+
+body input:focus, body input:active {
+  text-decoration: none;
+  outline: none;
+}
+
+body button:focus, body button:active {
+  text-decoration: none;
+  outline: none;
+}
+
+body textarea:focus, body textarea:active {
+  text-decoration: none;
+  outline: none;
+}
+
+body a {
+  display: inline-block;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+body ul, body ol {
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none;
+}
+
+body button {
+  border: none;
+  cursor: pointer;
+}
+
+body hr {
+  border: none;
+}
+
+.pixel {
+  background: url(../images/main.jpg) no-repeat top center;
+  width: 2494px;
+  height: 12800px;
+  position: absolute;
+  z-index: 1000000;
+  display: none;
+  left: 50%;
+  top: 0;
+  margin-left: -1247px;
+  opacity: 0.5;
+  margin-top: 0px;
+}
+
+/***************************************************GeneralStyles************************************/
+.main-header h1 {
+  font-family: "Conv_Geometria-ExtaBlack", sans-serif;
+  font-size: 24px;
+  line-height: normal;
+  color: #256acc;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.inner .main-header h1 {
+  font-family: "Conv_Geometria-Bold", sans-serif;
+  font-size: 36px;
+}
+
+.inner .main-header span {
+  font-family: "Geometria", sans-serif;
+  font-size: 18px;
+  line-height: normal;
+  color: #256acc;
+  text-align: center;
+  display: block;
+  padding: 0px 75px;
+  margin-top: 27px;
+}
+
+.inner .section-subheader h2 {
+  font-family: "Conv_Geometria-Bold", sans-serif;
+  font-size: 36px;
+}
+
+.section-subheader h2 {
+  font-family: "Conv_Geometria-ExtaBlack", sans-serif;
+  font-size: 24px;
+  line-height: normal;
+  color: #256acc;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.section-subheader__white h2 {
+  color: #fff;
+}
+
+.menu-sub {
+  width: 100%;
+  height: 40px;
+  background: #256acc;
+}
+
+.menu-sub ul {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.menu-sub li {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  text-align: center;
+}
+
+.menu-sub a {
+  color: #fff;
+  font-family: "Geometria", sans-serif;
+  font-size: 14px;
+  border-bottom: 5px solid transparent;
+  padding: 13px 10px 5px 10px;
+}
+
+.menu-sub a:hover, .menu-sub .active-page {
+  border-bottom: 5px solid #ff4561;
+}
+
+/***************************************************Header************************************/
+.raikon-header {
+  width: 100%;
+  min-height: 143px;
+  padding: 35px 0px 15px 0px;
+}
+
+.logo {
+  margin-top: 13px;
+}
+
+.header-desc {
+  margin-top: 30px;
+  margin-left: 60px;
+  padding-right: 60px;
+}
+
+.header-desc span {
+  font-family: "Geometria", sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  color: #256acc;
+}
+
+.contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  padding-right: 2px;
+}
+
+.address {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-left: 99px;
+}
+
+.address span {
+  font-family: "Geometria", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  color: #256acc;
+}
+
+.phone {
+  margin-top: 9px;
+}
+
+.phone a {
+  font-family: "Conv_Geometria-Medium", sans-serif;
+  font-size: 29px;
+  line-height: auto;
+  color: #256acc;
+}
+
+.phone a:hover {
+  opacity: 0.7;
+}
+
+.call {
+  margin-top: 7px;
+}
+
+.call a {
+  font-family: "Geometria", sans-serif;
+  font-size: 14px;
+  line-height: auto;
+  color: #256acc;
+  border-bottom: 1px solid transparent;
+}
+
+.call a:hover {
+  border-bottom: 1px solid #256acc;
+}
+
+/***************************************************Menu************************************/
+.site-menu {
+  width: 100%;
+}
+
+.site-menu-wrapper {
+  background: #e8f1ff;
+}
+
+.nav-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: 100%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.main-menu-wrap {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 75%;
+  flex: 0 0 75%;
+  max-width: 75%;
+  height: 100%;
+}
+
+.main-menu {
+  width: 100%;
+  height: 100%;
+  height: 40px;
+}
+
+.main-menu ul {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.main-menu a {
+  font-family: "Geometria", sans-serif;
+  font-size: 14px;
+  line-height: normal;
+  color: #256acc;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.main-menu a:hover {
+  background: #d9e8ff;
+}
+
+.main-menu li {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  position: relative;
+}
+
+.main-menu li:first-child {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 24%;
+  flex: 0 0 24%;
+}
+
+.main-menu li:nth-child(2) {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 28%;
+  flex: 0 0 28%;
+}
+
+.main-menu li:nth-child(3) {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 28%;
+  flex: 0 0 28%;
+}
+
+.main-menu li:last-child {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 20%;
+  flex: 0 0 20%;
+}
+
+.main-menu li:hover {
+  background: #d9e8ff;
+}
+
+.main-menu li:hover .drop-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.drop-menu {
+  position: absolute;
+  width: 100%;
+  top: 99%;
+  display: block !important;
+  height: auto !important;
+  padding: 10px 44px;
+  background: #d9e8ff;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.drop-menu li {
+  padding: 12px 0px;
+}
+
+.drop-menu a {
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -moz-transition: all 0s ease-out;
+  -o-transition: all 0s ease-out;
+  -webkit-transition: all 0s ease-out;
+  transition: all 0s ease-out;
+}
+
+.drop-menu a:hover {
+  color: #ff4561;
+}
+
+.search-field {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 23%;
+  flex: 0 0 23%;
+}
+
+#search {
+  text-align: right;
+  -moz-placeholder-font-family: "Geometria", sans-serif;
+  -moz-placeholder-font-size: 14px;
+  -moz-placeholder-color: #dcdcdd;
+  -ms-input-placeholder-font-family: "Geometria", sans-serif;
+  -ms-input-placeholder-font-size: 14px;
+  -ms-input-placeholder-color: #dcdcdd;
+}
+
+#search input {
+  width: 100%;
+  height: 29px;
+  border: 1px solid #e8f1ff;
+  font-family: "Geometria", sans-serif;
+  font-size: 14px;
+  color: #dcdcdd;
+  padding: 0px 5px;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+#search ::-webkit-input-placeholder {
+  font-family: "Geometria", sans-serif;
+  font-size: 14px;
+  color: #dcdcdd;
+}
+
+#search ::-moz-placeholder {
+  font-family: "Geometria", sans-serif;
+  font-size: 14px;
+  color: #dcdcdd;
+}
+
+#search input:hover, #search input:active, #search input:focus {
+  border: 1px solid #9abef1;
+}
+
+/***************************************************Banner************************************/
+.main-banner {
+  padding: 56px 0px;
+}
+
+.banner-wrap {
+  width: 100%;
+  height: 488px;
+  background: #dfdddd;
+  margin-top: 20px;
+}
+
+/***************************************************Stages************************************/
+.stages {
+  padding: 15px 0px 40px 0px;
+}
+
+.stages-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: 91px;
+  width: 98%;
+}
+
+.stages-block {
+  text-align: center;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 20%;
+  flex: 0 0 20%;
+}
+
+.stages-decor {
+  position: relative;
+}
+
+.stages-decor:after {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 100%;
+  height: 6px;
+  background: #256acc;
+  top: 50%;
+  margin-top: -3px;
+}
+
+.stages-decor_circle {
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  border: 8px solid #256acc;
+  margin: 0 auto;
+  position: relative;
+  z-index: 10;
+  background: #fff;
+}
+
+.stages-number {
+  display: inline-block;
+  padding: 0px 5px;
+  border-bottom: 5px solid #ff4561;
+  margin-left: 7px;
+  padding-bottom: 11px;
+}
+
+.stages-number i {
+  font-family: "Conv_Geometria-Bold", sans-serif;
+  font-size: 34px;
+  color: #256acc;
+  font-style: normal;
+}
+
+.stages-desc {
+  margin-top: 16px;
+}
+
+.stages-desc span {
+  font-family: "Geometria", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: 7px;
+}
+
+.stages-content {
+  margin-top: 13px;
+}
+
+.stages-block:first-child .stages-decor:after {
+  right: 0px;
+  width: 46%;
+}
+
+.stages-block:first-child .stages-number {
+  padding-left: 0px;
+  padding-right: 10px;
+  margin-left: 0px;
+}
+
+.stages-block:first-child .stages-content {
+  text-align: left;
+  padding-left: 44%;
+}
+
+.stages-block:first-child .stages-desc span {
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-left: 0px;
+}
+
+.stages-block:last-child img {
+  position: absolute;
+  top: -63px;
+  right: -44px;
+}
+
+.stages-block:last-child .stages-decor:after {
+  left: 0px;
+  width: 46%;
+}
+
+/***************************************************Benefits************************************/
+.benefits {
+  padding: 67px 0px 88px 0px;
+}
+
+.benefits-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 0 72px 0px 197px;
+  margin-top: 78px;
+}
+
+.benefits-block {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 33%;
+  flex: 0 0 33%;
+  max-width: 33%;
+  padding-right: 50px;
+  margin-bottom: 38px;
+}
+
+.benefits-block .stages-number {
+  margin-left: 0px;
+  padding-left: 0px;
+  padding-right: 10px;
+}
+
+.benefits-block span {
+  display: block;
+  font-family: "Geometria", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  display: block;
+  margin-top: 27px;
+  padding-right: 70px;
+}
+
+.benefits-block p {
+  display: block;
+  font-family: "Geometria", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  margin-top: 15px;
+  padding-right: 10px;
+  color: #404040;
+}
+
+/***************************************************Footer************************************/
+.raikon-footer {
+  width: 100%;
+  min-height: 190px;
+  background: #19488a;
+  padding: 26px 0px;
+}
+
+.raikon-footer a, .raikon-footer span {
+  font-family: "Geometria", sans-serif;
+  font-size: 14px;
+  line-height: normal;
+  color: #5b82ba;
+}
+
+.raikon-footer a:hover {
+  color: #fff;
+}
+
+.raikon-footer span {
+  display: block;
+}
+
+.footer-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer-menu ul:last-child {
+  margin-left: 73px;
+}
+
+.footer-menu li {
+  margin-bottom: 3px;
+}
+
+.footer-address {
+  padding-left: 34px;
+}
+
+.footer-address a {
+  margin-top: 5px;
+}
+
+.social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 46px;
+}
+
+.social-icons li {
+  margin-right: 17px;
+}
+
+.social-icons a:hover {
+  opacity: 0.7;
+}
+
+.footer-copy span {
+  margin-bottom: 30px;
+}
+
+/***************************************************Services-Image************************************/
+.inner-block {
+  padding: 40px 0px;
+}
+
+.service-image {
+  position: relative;
+  margin-top: 28px;
+}
+
+.service-image img {
+  width: 100%;
+  height: auto;
+}
+
+.sevice-image-desc {
+  position: absolute;
+  bottom: 0px;
+  background-color: #256acc;
+  width: 100%;
+  padding: 10px 20px;
+}
+
+.sevice-image-desc span {
+  font-family: "Geometria", sans-serif;
+  font-size: 14px;
+  line-height: normal;
+  color: #fff;
+}
+
+.service-desc {
+  margin-top: 40px;
+  padding-left: 10px;
+}
+
+.service-desc p {
+  font-family: "Geometria", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  color: #404040;
+  margin-bottom: 22px;
+}
+
+.service-desc .service-image {
+  float: right;
+  width: 48%;
+  margin-top: 5px;
+  margin-left: 30px;
+}
+
+/***************************************************Feed************************************/
+.feed {
+  width: 100%;
+  min-height: 446px;
+  background: #256acc;
+  margin-top: 79px;
+  margin-bottom: 166px;
+  padding: 40px 0px 20px 0px;
+}
+
+#feed {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 49%;
+  margin: 34px auto 0px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -moz-placeholder-font-family: "Geometria", sans-serif;
+  -moz-placeholder-font-size: 12px;
+  -moz-placeholder-color: #a8a8a8;
+  -ms-input-placeholder-font-family: "Geometria", sans-serif;
+  -ms-input-placeholder-font-size: 12px;
+  -ms-input-placeholder-color: #a8a8a8;
+}
+
+#feed input {
+  width: 100%;
+  height: 40px;
+  font-family: "Geometria", sans-serif;
+  font-size: 12px;
+  color: #a8a8a8;
+  padding: 0px 17px;
+  margin-bottom: 26px;
+  border: none;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+#feed ::-webkit-input-placeholder {
+  font-family: "Geometria", sans-serif;
+  font-size: 12px;
+  color: #a8a8a8;
+}
+
+#feed ::-moz-placeholder {
+  font-family: "Geometria", sans-serif;
+  font-size: 12px;
+  color: #a8a8a8;
+}
+
+#feed textarea {
+  width: 100%;
+  height: 106px;
+  resize: none;
+  border: none;
+  font-family: "Geometria", sans-serif;
+  font-size: 12px;
+  color: #a8a8a8;
+  padding: 10px;
+  margin-bottom: 22px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+#feed button {
+  width: 100%;
+  height: 40px;
+  border: 3px solid #fff;
+  background: transparent;
+  color: #fff;
+  font-family: "Conv_Geometria-Medium", sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+#feed button:hover {
+  background: #80b4ff;
+  color: #256acc;
+}
+
+.feed-left, .feed-right {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 47%;
+  flex: 0 0 47%;
+  max-width: 47%;
+}
+
+#feed .file-dialog {
+  position: relative;
+}
+
+#feed .file-dialog input {
+  position: absolute;
+  z-index: -1;
+}
+
+#feed .file-dialog label {
+  border: 3px solid #80b4ff;
+  background: transparent;
+  padding: 0px 10px 0px 54px;
+  font-family: "Geometria", sans-serif;
+  font-size: 12px;
+  line-height: 34px;
+  color: #80b4ff;
+  width: 100%;
+  height: 40px;
+  margin-bottom: 22px;
+  overflow: hidden;
+}
+
+.plus {
+  width: 40px;
+  height: 38px;
+  background: #80b4ff;
+  position: absolute;
+  top: 2px;
+  left: 0px;
+}
+
+.plus:after {
+  display: block;
+  content: '';
+  width: 18px;
+  height: 4px;
+  background: #256acc;
+  top: 18px;
+  left: 11px;
+  position: absolute;
+}
+
+.plus:before {
+  display: block;
+  content: '';
+  width: 4px;
+  height: 18px;
+  background: #256acc;
+  top: 11px;
+  left: 18px;
+  position: absolute;
+}
+
+.check {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  text-align: center;
+  margin-top: -10px;
+}
+
+.check span, .check a {
+  font-family: "Geometria", sans-serif;
+  font-size: 12px;
+  line-height: normal;
+  color: #80b4ff;
+}
+
+.check a {
+  border-bottom: 1px solid #80b4ff;
+}
+
+.check a:hover {
+  border-bottom: 1px solid transparent;
+}
+
+/***************************************************Tasks************************************/
+.tasks-wrapper {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+
+.tasks-block {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 49%;
+  flex: 0 0 49%;
+  max-width: 49%;
+  background: #256acc;
+  position: relative;
+  height: 217px;
+  padding: 37px 290px 20px 22px;
+  margin-bottom: 20px;
+}
+
+.tasks-block span {
+  font-family: "Conv_Geometria-Medium", sans-serif;
+  font-size: 18px;
+  line-height: normal;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.tasks-block .arrow {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 100;
+}
+
+.tasks-block .arrow:hover {
+  background: #dae9ff;
+}
+
+.task-image {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 273px;
+  height: 100%;
+  overflow: hidden;
+}
+
+.task-image img {
+  width: 100%;
+  height: 100%;
+}
