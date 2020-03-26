@@ -30,3 +30,19 @@ $('#datepicker').datepicker({
 $('#timepicker').timepicker({
 	locale: 'ru-ru'
 });
+
+
+//Show-hide menu
+
+$(document).ready(function(){
+   $('.click-mobile').on('click',function(e){
+       e.preventDefault();  
+         $('.main-menu-wrap').animate({
+             height: 'toggle'
+           }, 600, function() {
+         }); 
+       $("header .menu-toggle-button").toggleClass('is-active');
+ 
+   });
+
+});
