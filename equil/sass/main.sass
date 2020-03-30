@@ -1,0 +1,902 @@
+@import "bourbon/bourbon"
+
+$back: #D72D24
+$gr96: #969696
+$grf9: #f9f9f9
+$gref: #efefef
+$gr35: #353535
+$gr74: #747474
+$grd3: #d3d3d3
+$gr87: #878787
+$georgia: 'Georgia', sans-serif
+$georgia-b: 'Georgia-Bold', sans-serif
+$roboto: 'Roboto', sans-serif
+$roboto-m: 'Roboto-Medium', sans-serif
+$roboto-b: 'Roboto-Bold', sans-serif
+$roboto-l: 'Roboto-Light', sans-serif
+
+
+html
+	width: 100%
+	height: 100%
+	overflow-x: hidden
+body
+	width: 100%
+	height: auto
+	min-width: 320px	
+	margin: 0 auto
+	position: relative
+	font-family: $georgia
+	line-height: 1.2
+	-webkit-font-smoothing: antialiased
+	background-color: #fff
+
+	
+
+	a:hover, a:focus, a:active
+		text-decoration: none
+		outline: none
+	input:focus, input:active
+		text-decoration: none
+		outline: none
+	button:focus, button:active
+		text-decoration: none
+		outline: none
+	textarea:focus, textarea:active
+		text-decoration: none
+		outline: none
+	a
+		display: inline-block
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out
+	ul, ol
+		padding: 0px
+		margin: 0px
+		list-style-type: none
+	button
+		border: none
+		cursor: pointer
+	hr
+		border: none	
+
+.pixel
+	background: url(../images/main.jpg) no-repeat top center
+	width: 1440px
+	height: 12800px
+	position: absolute
+	z-index: 1000000
+	display: none
+	left: 50%
+	top: 0
+	margin-left: -720px
+	opacity: 0.5
+	margin-top: 0px
+
+
+/***************************************************GeneralStyles************************************/
+.main-header
+	h1
+		font-family: 'Times New Roman'
+		font-size: 48px
+		line-height: 110%
+		color: #000
+		font-weight: bold
+.section-subheader
+	display: flex
+	h2
+		font-family: $georgia-b
+		font-size: 36px
+		line-height: 120%
+		color: #000
+	span
+		font-family: $georgia-b
+		font-size: 18px
+		line-height: 120%
+		color: $back
+.rob-24
+	span, p
+		font-family: $roboto-l
+		font-size: 24px
+.rob-18
+	span, p
+		font-family: $roboto-l
+		font-size: 18px
+.rob-18-r
+	span, p
+		font-family: $roboto
+		font-size: 18px
+.rob-16-r
+	span, p
+		font-family: $roboto
+		font-size: 16px
+.rob-16
+	span, p
+		font-family: $roboto-l
+		font-size: 16px
+.rob-14
+	span, p
+		font-family: $roboto
+		font-size: 14px
+.rob-12
+	span, p
+		font-family: $roboto-l
+		font-size: 12px
+.georg-26
+	span, p
+		font-family: $georgia
+		font-size: 26px
+.georg-20
+	span, p
+		font-family: $georgia
+		font-size: 20px
+.line-140
+	span, p
+		line-height: 140%
+.line-160
+	span, p
+		line-height: 160%
+.line-180
+	span, p
+		line-height: 180%
+.text-white
+	span, p, h1, h2
+		color: #fff
+.text-35
+	span, p
+		color: $gr35
+.text-87
+	span, p
+		color: $gr87
+.small-header
+	span
+		font-family: $georgia-b
+		font-size: 24px
+		line-height: 100%
+		color: #000
+.main-list
+	li
+		position: relative
+		padding-left: 25px
+		margin-bottom: 16px
+	li:after
+		position: absolute
+		display: block
+		content: ''
+		width: 9px
+		height: 3px
+		background-color: $back
+		top: 9px
+		left: 0px
+	li:before
+		position: absolute
+		display: block
+		content: ''
+		width: 3px
+		height: 9px
+		background-color: $back
+		top: 6px
+		left: 3px
+.btn-gen
+	a
+		font-family: $georgia
+		font-size: 16px
+		line-height: 120%
+		letter-spacing: 0.02em
+		border: 1px solid #D72D24
+		border-radius: 5px
+		padding: 12px 29px
+.btn-gen__red
+	a
+		color: $back
+	a:hover
+		border: 1px solid #000
+		color: #000
+.back-double
+	background: linear-gradient(to right, $back 50%, $gref 50%)
+.footer-nav .active-link
+	color: $back
+
+/***************************************************Header************************************/
+.equil-header
+	height: 91px
+	border-bottom: 1px solid #e3e3e3
+.header-wrap
+	display: flex
+	flex-direction: row
+	flex-wrap: wrap
+	justify-content: space-between
+	align-items: center
+.logo-wrap
+	display: flex
+	margin-left: 17px
+	align-items: center
+	span
+		font-family: $georgia
+		font-size: 10px
+		line-height: 140%
+		color: $gr96
+.logo-image
+	margin-right: 29px
+.main-menu-wrap ul
+	display: flex
+	display: flex
+	flex-direction: row
+	flex-wrap: wrap
+	justify-content: space-between
+	align-items: center
+.main-menu
+	a
+		font-family: $georgia
+		font-size: 18px
+		line-height: 20px
+		color: #000
+	a:hover
+		color: $gr74
+	li
+		margin-left: 24px
+.bootstrap-select > .dropdown-toggle:after
+	border: none
+.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn)
+	width: 108px
+	outline: none!important
+.bootstrap-select button
+	background-image: url('../images/arrow-db.svg')
+	background-repeat: no-repeat
+	background-position: center right 15px
+	background-color: transparent
+	border: none
+	height: 50px!important
+	box-shadow: none
+.bootstrap-select button:hover, .bootstrap-select button:active, .bootstrap-select button:focus
+	background-color: transparent
+	box-shadow: none
+	border: none
+.btn-light:not(:disabled):not(.disabled):active, .btn-light:not(:disabled):not(.disabled).active, .show > .btn-light.dropdown-toggle
+	background-color: transparent
+	box-shadow: none
+	border: none
+.btn-light:hover, .btn-light:active, .btn-light:focus
+	background-color: transparent
+	box-shadow: none
+	border: none
+.btn-light:not(:disabled):not(.disabled):active:focus, .btn-light:not(:disabled):not(.disabled).active:focus, .show > .btn-light.dropdown-toggle:focus
+	background-color: transparent
+	box-shadow: none
+	border: none
+.bootstrap-select > select.mobile-device:focus + .dropdown-toggle, .bootstrap-select .dropdown-toggle:focus
+	outline: none!important
+.bootstrap-select > .dropdown-toggle.bs-placeholder, .bootstrap-select > .dropdown-toggle.bs-placeholder:hover, .bootstrap-select > .dropdown-toggle.bs-placeholder:focus, .bootstrap-select > .dropdown-toggle.bs-placeholder:active
+	font-family: $georgia
+	font-size: 16px
+	line-height: 18px
+	color: #000
+.bootstrap-select .dropdown-menu .selected a
+	color: #fff
+.bootstrap-select .dropdown-toggle .filter-option-inner-inner span
+	margin-left: 4px
+.bootstrap-select .dropdown-menu
+	li
+		margin-left: 0px!important
+
+/***************************************************Main************************************/
+.main
+	width: 100%
+	min-height: 560px
+	background-color: $grf9
+.main-left
+	margin-top: 104px
+	margin-left: 121px
+	.main-list
+		margin-top: 30px
+.btn-gen__main
+	margin-top: 34px
+.main-image
+	margin-top: 20px
+	margin-left: -15px
+
+/***************************************************Double************************************/
+.double
+	width: 100%
+	margin-bottom: 80px
+.platon-image
+	img
+		mix-blend-mode: lighten
+.double-left
+	min-height: 560px
+	padding: 82px 106px 40px 39px
+.platon-image
+	margin-bottom: 26px
+.double-right
+	min-height: 560px
+	padding: 143px 50px 40px 120px
+	p
+		margin-bottom: 27px
+
+/***************************************************Filters************************************/
+.filters
+	width: 100%
+	height: auto
+	padding: 20px 0px 16px 0px
+.filters-nav
+	margin-top: 22px
+.nav-tabs
+	border: none
+.nav-tabs .nav-link
+	border: 1px solid #D3D3D3
+	border-radius: 5px
+	font-family: $georgia
+	font-size: 18px
+	color: #000
+	line-height: 20px
+	margin-right: 12px
+	margin-bottom: 10px
+	padding: 12px 19px
+.nav-tabs .nav-link:hover
+	color: #000
+	border: 1px solid #000
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link
+	background: #F4F4F4
+	border: 1px solid #D3D3D3
+	box-sizing: border-box
+	box-shadow: inset 0px 2px 8px rgba(0, 0, 0, 0.15)
+	border-radius: 5px
+	color: $back
+.nav-tabs .nav-item:last-child
+	margin-right: 0px
+.tab-content
+	margin-top: 40px
+.filters-block
+	position: relative
+	padding-bottom: 50px
+	margin-bottom: 64px
+.filters-block_image
+	width: 100%
+	height: 150px	
+	-webkit-filter: grayscale(100%)
+	-moz-filter: grayscale(100%)
+	-ms-filter: grayscale(100%)
+	-o-filter: grayscale(100%)
+	filter: grayscale(100%)
+	-moz-transition: all 0.3s ease-out
+	-o-transition: all 0.3s ease-out
+	-webkit-transition: all 0.3s ease-out
+	transition: all 0.3s ease-out
+	overflow: hidden
+	img
+		width: 100%
+		height: auto
+		margin-top: -40px
+.filters-block:hover .filters-block_image
+	-webkit-filter: grayscale(0%)
+	-moz-filter: grayscale(0%)
+	-ms-filter: grayscale(0%)
+	-o-filter: grayscale(0%)
+	filter: grayscale(0%)
+.filters-block_content
+	padding: 20px 22px
+	span
+		font-family: $georgia-b
+		font-size: 18px
+		line-height: 150%
+		color: #000
+.filters-block_list
+	margin-top: 18px
+.filters-list_field
+	display: flex
+	span
+		font-family: $roboto
+		font-size: 14px
+		line-height: 31px
+		color: #878787
+		flex: 0 0 62%
+		max-width: 62%
+	p
+		font-family: $roboto-b
+		font-size: 14px
+		line-height: 31px
+		color: #000
+		margin-bottom: 0px
+.risk-list
+	ul
+		display: flex
+	li
+		margin-right: 4px
+.btn-gen__filters
+	position: absolute
+	bottom: 0px
+	a:hover
+		color: $back
+		border-color: $back
+
+/***************************************************Benefits************************************/
+.benefits
+	width: 100%
+	min-height: 623px
+	background-color: $grf9
+	padding: 80px 0px
+	.section-subheader
+		align-items: center
+		span
+			margin-left: 16px
+.benefits-block
+	margin-top: 22px
+	img
+		display: block
+		margin-bottom: 24px
+	span
+		font-family: $georgia
+		font-size: 24px
+		line-height: 160%
+		color: #000
+.benefits-desc
+	margin-top: 12px
+
+.benef-row .col-12:nth-child(2) .benefits-block
+	padding-left: 20px
+.benef-row .col-12:nth-child(3) .benefits-block
+	padding-left: 32px
+
+
+
+/***************************************************Footer************************************/
+.equil-footer
+	border-top: 1px solid #e3e3e3
+	padding: 31px 0px
+.footer-nav
+	ul
+		display: flex
+	li
+		margin-right: 30px
+	span
+		font-family: $roboto-b
+		font-size: 14px
+		line-height: 160%
+		color: #000
+	a
+		font-family: $georgia
+		font-size: 14px
+		line-height: 16px
+		color: #000
+	a:hover
+		color: $gr74
+.footer-desc
+	margin-top: 26px
+	p
+		margin-bottom: 0px
+
+
+/***************************************************Main-inner************************************/
+.main-inner
+	width: 100%
+	min-height: 400px
+	background-image: url('../images/main-inner.jpg')
+	background-position: center center
+	background-repeat: no-repeat
+	background-size: cover
+	-webkit-filter: grayscale(100%)
+	-moz-filter: grayscale(100%)
+	-ms-filter: grayscale(100%)
+	-o-filter: grayscale(100%)
+	filter: grayscale(100%)
+	position: relative
+.main-inner-content
+	text-align: center
+	margin-top: 109px
+	p
+		margin-top: 22px
+		padding: 0 205px
+.main-inner-over
+	position: absolute
+	width: 100%
+	height: 100%
+	top: 0px
+	left: 0px
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))
+
+
+/***************************************************Strategy************************************/
+.strategy
+	padding: 20px 0px 20px 0px
+.strategy-wrap
+	display: flex
+	flex-direction: row
+	flex-wrap: wrap
+	justify-content: space-between
+	padding: 0px 16px
+	width: 100%
+.strategy-block
+	flex: 0 0 49%
+	max-width: 49%
+	border: 1px solid #E3E3E3
+	padding: 39px 100px 8px 39px
+	.filters-block_content
+		padding: 10px 0px 10px 0px
+	.filters-block_list
+		margin-top: 13px
+	.filters-list_field span
+		flex: 0 0 58%
+		max-width: 58%
+	.filters-list_field
+		margin-bottom: 4px
+.strategy-desc
+	margin-top: 16px
+.who
+	margin-top: 33px
+	p
+		margin-top: 16px
+.strategy-block .strategy-list
+	margin-top: 26px
+	.filters-list_field
+		padding-left: 23px
+		margin-bottom: 0px
+	.filters-list_field span
+		flex: 0 0 56%
+		max-width: 56%
+.strategy-list
+	.filters-list_field
+		position: relative
+		padding-left: 30px
+	.filters-list_field:after
+		width: 10px
+		height: 10px
+		background: #C72A2A
+		position: absolute
+		display: block
+		content: ''
+		top: 10px
+		left: 0px
+		border-radius: 50%
+	.filters-list_field:nth-child(2):after
+		background: #DB942B
+	.filters-list_field:nth-child(3):after
+		background: #F5E023
+	.filters-list_field:nth-child(4):after
+		background: #44CB9B
+	.filters-list_field:nth-child(5):after
+		background: #89D96D
+	.filters-list_field:nth-child(6):after
+		background: #1F8AC6
+	.filters-list_field:nth-child(7):after
+		background: #E97AC3
+	.filters-list_field:nth-child(8):after
+		background: #A17CD1
+	.filters-list_field:nth-child(9):after
+		background: #97E4FD
+.strategy-graph
+	margin-top: 40px
+
+/***************************************************Contacts************************************/
+.contacts
+	padding: 20px 0px 40px 0px
+.main-left__contacts
+	margin-top: 128px
+	.main-desc
+		margin-top: 20px
+.contacts-wrap
+	display: flex
+	flex-direction: row
+	flex-wrap: wrap
+	justify-content: space-between
+.contacts-block
+	flex: 0 0 49%
+	max-width: 49%
+	border: 1px solid #E3E3E3
+.contacts-info
+	padding: 40px 0px 40px 57px
+	.small-header
+		margin-bottom: 25px
+	span
+		display: block
+		margin-bottom: 22px
+	a
+		font-family: $roboto
+		font-size: 16px
+		color: #353535
+	a:hover
+		color: $gr74
+.contacts-form-wrap
+	padding: 40px 123px 45px 123px
+.form-gen
+	margin-top: 34px
+	input
+		width: 100%
+		height: 39px
+		background-color: #fff!important
+		box-shadow: none
+		border: 1px solid #747474
+		margin-bottom: 30px
+		font-family: $roboto
+		font-size: 14px
+		color: #747474
+		padding: 0 12px
+		border-radius: 5px
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out	
+	textarea
+		width: 100%
+		height: 126px
+		resize: none
+		font-family: $roboto
+		font-size: 14px
+		color: #747474
+		padding: 20px 12px
+		border-radius: 5px
+		border: 1px solid #747474
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out
+.l-container
+	display: inline-block
+	position: relative
+	padding-left: 28px	
+	cursor: pointer
+	font-family: $roboto
+	font-size: 14px
+	color: #333
+	font-weight: normal	
+	margin-bottom: 0px
+	-webkit-user-select: none
+	-moz-user-select: none
+	-ms-user-select: none
+	user-select: none
+.l-container a
+	font-family: $roboto
+	font-size: 14px
+	color: #333
+	border-bottom: 1px solid #333
+.l-container a:hover
+	color: $gr74
+	border-bottom: 1px solid $gr74
+.l-container input
+	position: absolute
+	opacity: 0
+	cursor: pointer
+	display: none
+.checkmark
+	position: absolute
+	top: -4px
+	left: 0px
+	height: 20px
+	width: 20px
+	background-color: #f4f4f4
+	border-radius: 3px
+.check-gen input:checked ~ .checkmark
+	border: 1px solid $gr74
+.check-gen .checkmark:after
+	content: ""
+	position: absolute
+	display: none
+.check-gen input:checked ~ .checkmark:after
+	display: block
+.check-gen .checkmark:after
+	left: 6px
+	top: 2px
+	width: 7px
+	height: 11px
+	border: solid black
+	border-width: 0 2px 2px 0
+	-webkit-transform: rotate(45deg)
+	-ms-transform: rotate(45deg)
+	transform: rotate(45deg)
+.btn-form
+	width: 122px 
+	height: 46px
+	background-color: $back
+	font-family: $georgia
+	font-size: 16px
+	color: #fff
+	margin-top: 30px
+	border-radius: 5px
+.form-gen input:hover, .form-gen input:active, .form-gen input:focus, .form-gen textarea:hover, .form-gen textarea:active, .form-gen textarea:focus
+	border: 1px solid #b4b4b4!important
+.contacts-form-field
+	position: relative
+	span
+		font-family: $roboto
+		font-size: 14px
+		color: #b4b4b4
+		background-color: #fff
+		position: absolute
+		top: -7px
+		left: 10px
+		padding: 0 12px 0px 8px
+.contacts-form-field
+	p
+		opacity: 0
+		visibility: hidden
+		position: absolute
+		font-family: $roboto
+		font-size: 11px
+		color: #fff
+		background: $back
+		padding: 5px 10px
+		top: 38px
+		right: 0px
+		z-index: 10
+	p:after
+		content: ''
+		position: absolute
+		right: 20px
+		top: -20px
+		border: 10px solid transparent
+		border-bottom: 10px solid $back
+	.show-att
+		opacity: 1
+		visibility: visible
+.form-bottom
+	margin-top: 16px
+
+/***************************************************Main-Content************************************/
+.main-content
+	width: 56%
+	margin: 0 auto
+	h1
+		font-family: $georgia-b
+		font-size: 36px
+		color: #000
+		margin-bottom: 20px
+	h2
+		font-family: $georgia-b
+		font-size: 24px
+		color: #000
+		margin-bottom: 15px
+	h3
+		font-family: $georgia-b
+		font-size: 18px
+		color: #000
+		margin-bottom: 20px
+	i
+		font-style: normal
+		color: $back
+		font-family: $roboto-b
+	b
+		color: #000
+	img
+		width: 100%
+		height: auto
+		margin-top: 10px
+		margin-bottom: 43px
+	.main-list 
+		margin-bottom: 20px
+		li
+			padding-left: 16px
+			margin-bottom: 12px
+.content-block
+	margin-bottom: 20px
+.another-list
+	margin: 26px 0px 35px 0px
+	li
+		counter-increment: step-counter
+		margin-bottom: 23px
+	li:before
+		content: counter(step-counter)
+		margin-right: 5px
+		font-family: $roboto
+		font-size: 14px
+		color: #353535
+		border: 1px solid $back
+		border-radius: 50%
+		padding: 5px 10px
+
+
+/***************************************************About************************************/
+.main-left__about
+	margin-top: 157px
+	.main-desc
+		margin-top: 20px
+.double__about 
+	.double-left
+		padding-top: 122px
+	.double-right
+		padding-top: 113px
+.about-block
+	padding-bottom: 67px
+.about-text
+	padding-left: 10px
+	padding-top: 5px
+	p
+		margin-bottom: 30px
+
+/***************************************************Polite************************************/
+.polite-block
+	padding-top: 56px
+.main-left__polite
+	margin-top: 170px
+	.main-desc
+		margin-top: 20px
+.main-content
+	padding-bottom: 33px
+
+/***************************************************Docs************************************/
+.main-left__docs
+	margin-top: 192px
+	.main-desc
+		margin-top: 20px
+.docs
+	padding: 57px 0px 40px 0px
+.main-content__large
+	width: 100%
+	padding: 0px 0px 0px 62px
+.side-menu
+	margin-top: 13px
+	li
+		padding: 12px 0px
+		border-bottom: 1px solid #e3e3e3
+	li:first-child
+		border-top: 1px solid #e3e3e3
+	a
+		font-family: $georgia-b
+		font-size: 14px
+		line-height: 160%
+		color: #353535
+	a:hover
+		color: $back
+.docs-images
+	display: flex
+	flex-direction: row
+	flex-wrap: wrap
+	justify-content: space-between
+	img
+		margin-bottom: 0px
+.docs-images-block
+	flex: 0 0 45%
+	max-width: 45%
+	position: relative
+	margin-bottom: 34px
+	a
+		display: block
+		width: 100%
+		height: 400px
+	img
+		width: 100%
+		height: 100%
+	span
+		display: block
+		font-family: $roboto
+		font-size: 14px
+		font-style: italic
+		color: $gr74
+		line-height: 160%
+		margin-top: 20px
+.search-icon
+	width: 30px
+	height: 30px
+	background-color: #fff
+	position: absolute
+	top: 0px
+	right: 0px
+	pointer-events: none
+	svg
+		position: relative
+		left: 5px
+		top: 5px
+.docs-download-block
+	display: flex
+	margin-bottom: 16px
+.docs-download
+	padding: 4px 0px 23px 0px
+.docs-download_image
+	margin-right: 19px
+	img
+		margin-bottom: 0px
+.docs-download_desc
+	padding-top: 19px
+	span
+		font-family: $roboto-m
+		font-size: 16px
+		line-height: 160%
+		color: #353535
+		display: block
+		margin-bottom: 10px
+	p
+		font-family: $roboto-m
+		font-size: 12px
+		line-height: 100%
+		color: $gr74
+		margin-bottom: 0px
+
