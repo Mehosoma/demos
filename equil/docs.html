@@ -42,16 +42,34 @@
 						<span>Инвестиционный<br> портфель для вашего<br> будущего</span>
 					</div>
 					<div class="main-menu-wrap">
-						<button class="menu-toggle-button click-mobile d-block d-lg-none">
+						<button class="menu-toggle-button click-mobile d-block d-md-none">
 							<span></span>					
 						</button>													
-						<nav class="main-menu">
-							<ul>								
-								<li><a href="about.html">О компании</a></li>
-								<li><a href="contacts.html">Контакты</a></li>
-								<li>
-									<select class="selectpicker">
-										<option data-content='<img src="images/ru.svg" class="svg"> <span>Rus</span>'></option>
+						<nav class="main-menu">							
+							<ul>
+								<li class="order-1 d-block d-md-none">
+									<div class="logo-wrap">
+										<div class="logo-image">
+											<a href="index.html"><img src="images/logo.svg" alt="logo-image" class="svg"></a>
+										</div>
+										<span>Инвестиционный портфель для вашего будущего</span>
+									</div>
+								</li>			
+								<li class="order-3 order-md-1"><a href="about.html">О компании</a></li>
+								<li class="order-4 order-md-2"><a href="contacts.html">Контакты</a></li>
+								<li class="order-2 order-md-3">
+									<div class="lang-choice d-flex d-md-none">
+										<a href="" class="lang-choice-block lang-choice-block__active">
+											<img src="images/ru.svg" class="svg">
+											<span>Рус</span>
+										</a>
+										<a href="" class="lang-choice-block">
+											<img src="images/eng.svg" class="svg">
+											<span>Eng</span>
+										</a>
+									</div>
+									<select class="selectpicker d-none d-md-block">
+										<option data-content='<img src="images/ru.svg" class="svg"> <span>Рус</span>'></option>
 										<option data-content='<img src="images/eng.svg" class="svg"> <span>Eng</span>'></option>
 									</select>
 								</li>						
@@ -68,17 +86,19 @@
 <section class="main">
 	<div class="container">
 		<div class="row">
-			<div class="col-6">
-				<div class="main-left main-left__docs">
-					<div class="main-header">
-						<h1>Документы</h1>
-					</div>
-					<div class="main-desc rob-24 line-160 text-35">
-						<p>Все необходимы документы для вас. Мы ведем прозрачный бизнес.</p>
+			<div class="col-12 col-md-10 offset-md-1 offset-lg-0 col-lg-6 order-2 order-lg-1">
+				<div class="main-left-wrap">
+					<div class="main-left main-left__inner">
+						<div class="main-header">
+							<h1>Документы</h1>
+						</div>
+						<div class="main-desc rob-24 line-160 text-35">
+							<p>Все необходимы документы для вас. Мы ведем прозрачный бизнес.</p>
+						</div>
 					</div>
 				</div>
 			</div>
-			<div class="col-6">
+			<div class="col-12 col-md-8 offset-md-2 offset-lg-0 col-lg-6 order-1 order-lg-2">
 				<div class="main-image">
 					<img src="images/main-decor.png" alt="decor-image">
 				</div>
@@ -91,7 +111,7 @@
 <section class="docs">
 	<div class="container">
 		<div class="row">
-			<div class="col-4">
+			<div class="col-12 col-lg-4">
 				<div class="side-menu">
 					<ul>
 						<li><a href="">Наши лицензии и сертификаты</a></li>
@@ -103,7 +123,7 @@
 					</ul>
 				</div>
 			</div>
-			<div class="col-7">
+			<div class="col-12 col-lg-8">
 				<div class="main-content main-content__large text-35 rob-14 line-160">
 					<div class="content-block ">
 						<h1>Заголовок 1</h1>

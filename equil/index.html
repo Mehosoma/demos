@@ -42,16 +42,34 @@
 						<span>Инвестиционный<br> портфель для вашего<br> будущего</span>
 					</div>
 					<div class="main-menu-wrap">
-						<button class="menu-toggle-button click-mobile d-block d-lg-none">
+						<button class="menu-toggle-button click-mobile d-block d-md-none">
 							<span></span>					
 						</button>													
-						<nav class="main-menu">
-							<ul>								
-								<li><a href="about.html">О компании</a></li>
-								<li><a href="contacts.html">Контакты</a></li>
-								<li>
-									<select class="selectpicker">
-										<option data-content='<img src="images/ru.svg" class="svg"> <span>Rus</span>'></option>
+						<nav class="main-menu">							
+							<ul>
+								<li class="order-1 d-block d-md-none">
+									<div class="logo-wrap">
+										<div class="logo-image">
+											<a href="index.html"><img src="images/logo.svg" alt="logo-image" class="svg"></a>
+										</div>
+										<span>Инвестиционный портфель для вашего будущего</span>
+									</div>
+								</li>			
+								<li class="order-3 order-md-1"><a href="about.html">О компании</a></li>
+								<li class="order-4 order-md-2"><a href="contacts.html">Контакты</a></li>
+								<li class="order-2 order-md-3">
+									<div class="lang-choice d-flex d-md-none">
+										<a href="" class="lang-choice-block lang-choice-block__active">
+											<img src="images/ru.svg" class="svg">
+											<span>Рус</span>
+										</a>
+										<a href="" class="lang-choice-block">
+											<img src="images/eng.svg" class="svg">
+											<span>Eng</span>
+										</a>
+									</div>
+									<select class="selectpicker d-none d-md-block">
+										<option data-content='<img src="images/ru.svg" class="svg"> <span>Рус</span>'></option>
 										<option data-content='<img src="images/eng.svg" class="svg"> <span>Eng</span>'></option>
 									</select>
 								</li>						
@@ -68,24 +86,26 @@
 <section class="main">
 	<div class="container">
 		<div class="row">
-			<div class="col-6">
-				<div class="main-left">
-					<div class="main-header">
-						<h1>Доверительное управление</h1>
-					</div>
-					<div class="main-list rob-18 line-140">
-						<ul>
-							<li><span>Индивидуальные инвестиционные решения</span></li>
-							<li><span>Портфели бумаг российских и зарубежных компаний</span></li>
-							<li><span> Стратегии с различной степенью риска и дохода</span></li>
-						</ul>
-					</div>
-					<div class="btn-gen btn-gen__red btn-gen__main">
-						<a href="about.html">Подробнее о компании</a>
+			<div class="col-12 col-md-10 offset-md-1 offset-lg-0 col-lg-6 order-2 order-lg-1">
+				<div class="main-left-wrap">
+					<div class="main-left">
+						<div class="main-header">
+							<h1>Доверительное управление</h1>
+						</div>
+						<div class="main-list rob-18 line-140">
+							<ul>
+								<li><span>Индивидуальные инвестиционные решения</span></li>
+								<li><span>Портфели бумаг российских и зарубежных компаний</span></li>
+								<li><span> Стратегии с различной степенью риска и дохода</span></li>
+							</ul>
+						</div>
+						<div class="btn-gen btn-gen__red btn-gen__main">
+							<a href="about.html">Подробнее о компании</a>
+						</div>
 					</div>
 				</div>
 			</div>
-			<div class="col-6">
+			<div class="col-12 col-md-8 offset-md-2 offset-lg-0 col-lg-6 order-1 order-lg-2">
 				<div class="main-image">
 					<img src="images/main-decor.png" alt="decor-image">
 				</div>
@@ -95,31 +115,41 @@
 </section>
 
 <!--Double-->
-<section class="double back-double">
-	<div class="double-wrap">
+<section class="double">
+	<div class="double-back-left">
 		<div class="container">		
 			<div class="row">				
-				<div class="col-6">
-					<div class="double-left">
-						<div class="platon-image">
-							<img src="images/platon.png" alt="platon-image">
-						</div>
-						<div class="text-white georg-26 line-140">
-							<p>Инвестирование в ценные бумаги — это работа, которой нужно заниматься профессионально. Для этого необходимы знание рынка и опыт инвестирования, которые приобретаются годами.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-6">
-					<div class="double-right">	
-						<div class="rob-18 line-160 text-35">
-							<p>Решив заняться операциями с ценными бумагами самостоятельно, вам придется посвящать этому практически все свое время, иначе эффективность вложений будет крайне низкой, а риск потери вложенных средств велик.</p>
-							<p>Вы можете существенно снизить риски и сохранить время для основного рода деятельности, передав свои средства в доверительное управление «Equilibris Management AG».</p>
+				<div class="col-12">
+					<div class="double-wrap double-wrap__left">
+						<div class="double-left">
+							<div class="platon-image">
+								<img src="images/platon.png" alt="platon-image" class="d-block d-md-none d-lg-block">
+								<img src="images/platon-mob.png" alt="platon-image" class="d-none d-md-block d-lg-none">
+							</div>
+							<div class="text-white georg-26 line-140 double-content">
+								<p>Инвестирование в ценные бумаги — это работа, которой нужно заниматься профессионально. Для этого необходимы знание рынка и опыт инвестирования, которые приобретаются годами.</p>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+	<div class="double-back-right">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="double-wrap">
+						<div class="double-right">	
+							<div class="rob-18 line-160 text-35 double-content">
+								<p>Решив заняться операциями с ценными бумагами самостоятельно, вам придется посвящать этому практически все свое время, иначе эффективность вложений будет крайне низкой, а риск потери вложенных средств велик.</p>
+								<p>Вы можете существенно снизить риски и сохранить время для основного рода деятельности, передав свои средства в доверительное управление «Equilibris Management AG».</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
 </section>
 
 <!--Filters-->
@@ -147,7 +177,7 @@
 				<div class="tab-content" id="nav-tabContent">
 					<div class="tab-pane fade show active" id="all" role="tabpanel">
 						<div class="row">
-							<div class="col-4">
+							<div class="col-12 col-md-6 col-xl-4">
 								<div class="filters-block">
 									<div class="filters-block_image">
 										<img src="images/filter-1.jpg" alt="filters-image">
@@ -190,7 +220,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-4">
+							<div class="col-12 col-md-6 col-xl-4">
 								<div class="filters-block">
 									<div class="filters-block_image">
 										<img src="images/filter-2.jpg" alt="filters-image">
@@ -233,7 +263,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-4">
+							<div class="col-12 col-md-6 col-xl-4">
 								<div class="filters-block">
 									<div class="filters-block_image">
 										<img src="images/filter-3.jpg" alt="filters-image">
@@ -276,7 +306,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-4">
+							<div class="col-12 col-md-6 col-xl-4">
 								<div class="filters-block">
 									<div class="filters-block_image">
 										<img src="images/filter-4.jpg" alt="filters-image">
@@ -319,7 +349,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-4">
+							<div class="col-12 col-md-6 col-xl-4">
 								<div class="filters-block">
 									<div class="filters-block_image">
 										<img src="images/filter-5.jpg" alt="filters-image">
@@ -362,7 +392,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-4">
+							<div class="col-12 col-md-6 col-xl-4">
 								<div class="filters-block">
 									<div class="filters-block_image">
 										<img src="images/filter-6.jpg" alt="filters-image">
@@ -405,7 +435,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-4">
+							<div class="col-12 col-md-6 col-xl-4">
 								<div class="filters-block">
 									<div class="filters-block_image">
 										<img src="images/filter-1.jpg" alt="filters-image">
@@ -448,7 +478,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-4">
+							<div class="col-12 col-md-6 col-xl-4">
 								<div class="filters-block">
 									<div class="filters-block_image">
 										<img src="images/filter-2.jpg" alt="filters-image">
@@ -491,7 +521,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-4">
+							<div class="col-12 col-md-6 col-xl-4">
 								<div class="filters-block">
 									<div class="filters-block_image">
 										<img src="images/filter-3.jpg" alt="filters-image">
@@ -534,7 +564,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-4">
+							<div class="col-12 col-md-6 col-xl-4">
 								<div class="filters-block">
 									<div class="filters-block_image">
 										<img src="images/filter-4.jpg" alt="filters-image">
@@ -577,7 +607,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-4">
+							<div class="col-12 col-md-6 col-xl-4">
 								<div class="filters-block">
 									<div class="filters-block_image">
 										<img src="images/filter-5.jpg" alt="filters-image">
@@ -670,12 +700,12 @@
 			<div class="col-12">
 				<div class="section-subheader">
 					<h2>Equilibris Management AG</h2>
-					<span>/ Почему нас выбирают клиенты?</span>
+					<span><i class="d-none d-md-inline-block">/</i> Почему нас выбирают клиенты?</span>
 				</div>
 			</div>
 		</div>
 		<div class="row benef-row">
-			<div class="col-12 col-xl-4">
+			<div class="col-12 col-lg-4">
 				<div class="benefits-block">
 					<img src="images/benef-1.png" alt="benefits-icon">
 					<span>Индивидуальный подход</span>
@@ -684,7 +714,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-12 col-xl-4">
+			<div class="col-12 col-lg-4">
 				<div class="benefits-block">
 					<img src="images/benef-2.png" alt="benefits-icon">
 					<span>Честность и ответственность</span>
@@ -693,7 +723,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-12 col-xl-4">
+			<div class="col-12 col-lg-4">
 				<div class="benefits-block">
 					<img src="images/benef-3.png" alt="benefits-icon">
 					<span>Конфиденциальность</span>

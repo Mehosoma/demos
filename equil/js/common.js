@@ -46,7 +46,7 @@ $(function () {
 $(document).ready(function(){
    $('.click-mobile').on('click',function(e){
        e.preventDefault();  
-         $('.main-menu-wrap').animate({
+         $('.main-menu').animate({
              height: 'toggle'
            }, 600, function() {
          }); 
@@ -78,8 +78,6 @@ $('.selectpicker')
 
   //Validation
 $(document).ready(function(){
-
-
   $('.btn-form').on('click',function(e){
     $( ".form-gen" ).submit();
   });
@@ -98,7 +96,6 @@ $(document).ready(function(){
       });
 
         return formvalid;
-
    });
 });
 
