@@ -1,0 +1,274 @@
+@import "bourbon/bourbon"
+
+$blue: #377ebc
+$red: #f45531
+$orange: #f77823
+$geom: 'Geometria', sans-serif
+
+
+html
+	width: 100%
+	height: 100%
+	overflow-x: hidden
+body
+	width: 100%
+	height: 100%
+	min-width: 320px	
+	margin: 0 auto
+	position: relative
+	font-family: $geom
+	line-height: 1.2
+	-webkit-font-smoothing: antialiased
+	background-color: #fff	
+	overflow: hidden
+
+	a:hover, a:focus, a:active
+		text-decoration: none
+		outline: none
+	input:focus, input:active
+		text-decoration: none
+		outline: none
+	button:focus, button:active
+		text-decoration: none
+		outline: none
+	textarea:focus, textarea:active
+		text-decoration: none
+		outline: none
+	a
+		display: inline-block
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out
+	ul, ol
+		padding: 0px
+		margin: 0px
+		list-style-type: none
+	button
+		border: none
+		cursor: pointer
+	hr
+		border: none	
+
+.pixel
+	background: url(../img/main.jpg) no-repeat top center
+	width: 1920px
+	height: 12800px
+	position: absolute
+	z-index: 1000000
+	display: none
+	left: 50%
+	top: 0
+	margin-left: -960px
+	opacity: 0.5
+	margin-top: 0px
+
+
+/***************************************************GeneralStyles************************************/
+
+.absolute-fill
+	width: 100%
+	height: 100%
+	position: absolute
+	top: 0px
+	left: 0px
+	bottom: 0px
+	right: 0px
+	background: #efefef
+
+
+/***************************************************Main************************************/
+.counters
+	display: flex
+	justify-content: space-between
+	margin-top: 30px
+.viruses, .scores
+	width: 130px
+	height: 50px
+	background: $blue
+	border-radius: 30px
+	display: flex
+	align-items: center
+	padding: 0px 10px
+	span
+		font-family: $geom
+		font-size: 26px
+		color: #fff
+		line-height: 26px
+.virus-image
+	width: 40px
+	height: 40px
+	background-color: #684683
+	border-radius: 50%
+	display: flex
+	justify-content: center
+	align-items: center
+	margin-right: 10px
+	svg
+		width: 35px
+		height: 35px
+.viruses
+	span
+		margin-top: -5px
+.scores
+	background: $orange
+	justify-content: center
+.bullets-wrap
+	position: absolute
+	bottom: 30px
+	left: 50%
+	margin-left: -38px
+	ul
+		display: flex
+		align-items: center
+	li
+		margin-right: 5px
+	svg
+		width: 50px
+		height: auto
+.bullets
+	li:nth-child(2)
+		img
+			width: 60px
+			height: auto
+			opacity: 0.8
+	li:nth-child(3)
+		img
+			width: 44px
+			height: auto
+			opacity: 0.6
+
+/***************************************************Rules************************************/
+.inner-wrap
+	width: 100%
+	height: 100%
+	display: flex
+	justify-content: center
+	align-items: center
+.rules-block
+	width: 270px
+	text-align: center
+.inner-content
+	background: #fff
+	border-radius: 10px
+	padding: 20px 15px
+	text-align: center
+	position: relative
+	span
+		font-family: $geom
+		text-transform: uppercase
+		color: $blue
+		font-size: 20px
+		display: block
+	p
+		font-family: 'Montserrat', sans-serif
+		color: #000
+		font-size: 14px
+		margin-bottom: 0px
+		font-weight: 600
+	li
+		display: flex
+		text-align: left
+		align-items: center
+		margin-bottom: 20px
+	svg
+		flex: 0 0 40px
+		margin-right: 10px
+	ul
+		margin: 20px 0px 30px 0px
+.target
+	margin-bottom: 20px
+	svg
+		width: 80px
+		height: 80px
+.btn-gen
+	width: 70%
+	margin: 0px auto
+	a
+		font-family: $geom
+		text-transform: uppercase
+		color: #fff
+		font-size: 16px
+		background-color: $blue
+		padding: 0px 20px
+		display: block
+		line-height: 40px
+		border-radius: 10px
+
+
+/***************************************************Rules-Add************************************/
+.rules-add
+	.inner-content
+		span
+			font-size: 14px
+			line-height: 20px
+
+/***************************************************Win************************************/
+.win
+	.btn-gen
+		width: 100%
+.win-header
+	span
+		text-transform: none
+		font-size: 20px
+		color: $red
+		margin-bottom: 10px
+	p
+		font-family: $geom
+		color: $blue
+		font-size: 14px
+		margin-bottom: 0px
+		font-weight: 500
+	i
+		font-style: normal
+		color: $red
+.win-image-wrap
+	margin-top: 20px
+	p
+		font-size: 14px
+.win-image-outer
+	margin: 20px auto
+	background: #eaeaea
+	border-radius: 10px
+	width: 200px
+	padding: 10px
+.win-image-inner
+	border: 2px solid $red
+	border-radius: 10px
+	padding: 20px
+	img
+		width: 100%
+		height: auto
+.text-link
+	margin-top: 20px
+	span
+		font-family: 'Montserrat', sans-serif
+		color: #000
+		font-size: 14px
+		margin-bottom: 0px
+		font-weight: 600
+		text-transform: none
+		line-height: 20px
+	a
+		text-transform: uppercase
+		color: $red
+
+/***************************************************Selfie-Block************************************/
+.selfie-block
+	height: 70vh
+	display: flex
+	flex-direction: column
+	justify-content: flex-start
+	position: relative
+.selfie-image
+	width: 80%
+	flex: 1 1 100%
+	margin: 20px auto
+	border: 2px solid $red
+	border-radius: 10px
+.exit
+	position: absolute
+	top: -20px
+	right: -20px
+	width: 50px
+	height: 50px
