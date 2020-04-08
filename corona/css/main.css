@@ -86,6 +86,22 @@ body hr {
   background: #efefef;
 }
 
+.main-target {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+  width: 80px;
+  height: 80px;
+}
+
+.main-target svg {
+  width: 80px;
+  height: 80px;
+}
+
 /***************************************************Main************************************/
 .counters {
   display: -webkit-box;
@@ -138,10 +154,6 @@ body hr {
 .virus-image svg {
   width: 35px;
   height: 35px;
-}
-
-.viruses span {
-  margin-top: -5px;
 }
 
 .scores {
@@ -280,6 +292,10 @@ body hr {
   border-radius: 10px;
 }
 
+.btn-gen__red a {
+  background-color: #f45531;
+}
+
 /***************************************************Rules-Add************************************/
 .rules-add .inner-content span {
   font-size: 14px;
@@ -389,4 +405,180 @@ body hr {
   right: -20px;
   width: 50px;
   height: 50px;
+}
+
+/***************************************************Start************************************/
+.start svg {
+  margin-right: 0px;
+}
+
+.start .btn-gen {
+  margin-bottom: 20px;
+}
+
+.start .logo {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.start-header span {
+  font-family: "Geometria", sans-serif;
+  color: #f45531;
+  font-size: 15px;
+  display: block;
+  text-transform: none;
+  font-weight: 600;
+  margin: 10px 0px;
+}
+
+.start-header p {
+  font-family: 'Montserrat';
+  color: #000;
+  font-size: 14px;
+  display: block;
+  text-transform: none;
+  font-weight: 600;
+}
+
+.arrows {
+  width: 50px;
+  height: 50px;
+  margin: 20px auto;
+}
+
+.start-virus {
+  width: 40%;
+  margin: 0 auto;
+}
+
+.start-virus img {
+  width: 100%;
+  height: auto;
+}
+
+/***************************************************Hellow************************************/
+.hellow-header span {
+  font-family: "Geometria", sans-serif;
+  color: #f45531;
+  font-size: 24px;
+  display: block;
+  text-transform: none;
+  font-weight: 600;
+  margin: 20px 0px;
+}
+
+.hellow-header p {
+  font-family: 'Montserrat';
+  color: #377ebc;
+  font-size: 18px;
+  display: block;
+  text-transform: none;
+  font-weight: 600;
+  margin: 10px 0px;
+}
+
+.hellow-content {
+  margin: 20px auto;
+}
+
+.hellow-content p {
+  font-family: 'Montserrat';
+  color: #000;
+  font-size: 16px;
+  display: block;
+  text-transform: none;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.hellow-content i {
+  font-style: normal;
+  color: #f45531;
+}
+
+.hellow-content b {
+  color: #377ebc;
+}
+
+.hellow-arrows p {
+  font-family: 'Montserrat';
+  color: #377ebc;
+  font-size: 18px;
+  display: block;
+  text-transform: none;
+  font-weight: 600;
+}
+
+.hellow-arrows .arrows {
+  margin: 20px auto;
+}
+
+.hellow-arrows svg {
+  margin-right: 0px;
+}
+
+/***************************************************Scan************************************/
+.scan .inner-content {
+  background: transparent;
+}
+
+.scan .logo {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.code-wrap {
+  background: #fff;
+  border-radius: 10px;
+}
+
+.absolute-fill__blue {
+  background: #377ebc;
+}
+
+.absolute-fill__blue .code-wrap {
+  position: relative;
+  padding-top: 80px;
+  padding-bottom: 20px;
+  padding: 60px 40px 20px;
+  width: 70%;
+  margin: 80px auto 0px;
+}
+
+.absolute-fill__blue .code-wrap p {
+  font-family: 'Montserrat';
+  color: #377ebc;
+  font-size: 18px;
+  display: block;
+  text-transform: none;
+  font-weight: 600;
+}
+
+.absolute-fill__blue .code-image {
+  position: absolute;
+  background: #f45531;
+  border: 3px solid #fff;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  padding: 5px;
+  top: -50px;
+  right: 0px;
+  left: 0px;
+  margin: auto;
+}
+
+.absolute-fill__blue .code-image img {
+  width: 100%;
+  height: auto;
+}
+
+.qr-image {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.qr-image img {
+  width: 100%;
 }
