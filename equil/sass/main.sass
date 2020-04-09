@@ -83,6 +83,18 @@ body
 		line-height: 110%
 		color: #000
 		font-weight: bold
+.main-header__main
+	h1
+		font-size: 36px
+		padding-right: 40px
+	span
+		font-family: 'Times New Roman'
+		font-size: 20px
+		line-height: 140%
+		color: $back
+		padding-right: 20px
+		margin-top: 30px
+		display: block
 .section-subheader
 	display: flex
 	h2
@@ -340,13 +352,15 @@ body
 	width: 100%
 	height: auto
 	padding: 20px 0px 16px 0px
+.filters__main
+	padding-top: 50px
 .filters-nav
 	margin-top: 22px
-.nav-tabs
+.filters-nav-main
 	border: none
 	display: flex
 	justify-content: space-between
-.nav-tabs .nav-link
+.filters-nav-main .nav-link
 	border: 1px solid #D3D3D3
 	border-radius: 5px
 	font-family: $georgia
@@ -355,24 +369,24 @@ body
 	line-height: 20px
 	margin-bottom: 10px
 	padding: 12px 19px
-.nav-tabs .nav-link:hover
+.filters-nav-main .nav-link:hover
 	color: #000
 	border: 1px solid #000
-.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link
+	cursor: pointer
+.filters-nav-main .nav-link.active, .filters-nav-main .nav-link:focus, .filters-nav-main .nav-link:active,
 	background: #F4F4F4
 	border: 1px solid #D3D3D3
 	box-sizing: border-box
 	box-shadow: inset 0px 2px 8px rgba(0, 0, 0, 0.15)
 	border-radius: 5px
-	color: $back
-.nav-tabs .nav-item:last-child
-	margin-right: 0px
-.tab-content
+	color: $back!important
+.filters-content-wrap
 	margin-top: 40px
 .filters-block
 	position: relative
-	padding-bottom: 50px
+	padding-bottom: 80px
 	margin-bottom: 64px
+	border: 1px solid #d3d3d3
 .filters-block_image
 	width: 100%
 	height: 150px	
@@ -397,12 +411,15 @@ body
 	-o-filter: grayscale(0%)
 	filter: grayscale(0%)
 .filters-block_content
-	padding: 20px 22px
+	padding: 20px 22px 35px 22px
 	span
 		font-family: $georgia-b
 		font-size: 18px
 		line-height: 150%
 		color: #000
+.filters-block_content_header
+	height: 54px
+	overflow: hidden
 .filters-block_list
 	margin-top: 18px
 .filters-list_field
@@ -427,41 +444,42 @@ body
 		margin-right: 4px
 .btn-gen__filters
 	position: absolute
-	bottom: 0px
+	bottom: 30px
 	a:hover
-		color: $back
-		border-color: $back
+		color: #000
+		border-color: #000
 
 /***************************************************Benefits************************************/
 .benefits
 	width: 100%
 	min-height: 623px
 	background-color: $grf9
-	padding: 80px 0px
+	padding: 60px 0px 46px 0px
 	.section-subheader
 		align-items: center
 		span
 			margin-left: 16px
 		i
 			margin-right: 3px
+.benef-row
+	margin-top: 60px
 .benefits-block
-	margin-top: 80px
-	img
+	margin-bottom: 44px
+	svg
 		display: block
-		margin-bottom: 24px
+		margin-bottom: 18px
+		height: 76px
 	span
 		font-family: $georgia
 		font-size: 24px
 		line-height: 160%
 		color: #000
+		display: block
 .benefits-desc
 	margin-top: 12px
 	p
 		margin-bottom: 0px
-.benef-row .col-12:nth-child(2) .benefits-block
-	padding-left: 20px
-.benef-row .col-12:nth-child(3) .benefits-block
-	padding-left: 32px
+		padding-right: 30px
 
 
 
@@ -910,6 +928,33 @@ body
 		color: $gr74
 		margin-bottom: 0px
 
+.filters-nav__mob
+	position: relative
+	border: 1px solid #747474
+	border-radius: 5px
+	.bootstrap-select
+		width: 100%!important
+	.filter-option-inner-inner
+		font-family: $roboto
+		font-size: 14px
+		color: #353535
+	.bootstrap-select button
+		height: 40px!important
+.slick-dots
+	display: flex
+	justify-content: center
+	button
+		font-size: 0px
+		display: none
+	li
+		width: 6px 
+		height: 6px
+		border-radius: 50%
+		background: transparent
+		border: 1px solid #000
+		margin: 0px 2px
+	.slick-active
+		background: #000
 
 
 /***********************************************ButtonMobile************************************/

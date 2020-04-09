@@ -82,6 +82,21 @@ body hr {
   font-weight: bold;
 }
 
+.main-header__main h1 {
+  font-size: 36px;
+  padding-right: 40px;
+}
+
+.main-header__main span {
+  font-family: 'Times New Roman';
+  font-size: 20px;
+  line-height: 140%;
+  color: #D72D24;
+  padding-right: 20px;
+  margin-top: 30px;
+  display: block;
+}
+
 .section-subheader {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -493,11 +508,15 @@ body hr {
   padding: 20px 0px 16px 0px;
 }
 
+.filters__main {
+  padding-top: 50px;
+}
+
 .filters-nav {
   margin-top: 22px;
 }
 
-.nav-tabs {
+.filters-nav-main {
   border: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -507,7 +526,7 @@ body hr {
   justify-content: space-between;
 }
 
-.nav-tabs .nav-link {
+.filters-nav-main .nav-link {
   border: 1px solid #D3D3D3;
   border-radius: 5px;
   font-family: "Georgia", sans-serif;
@@ -518,12 +537,13 @@ body hr {
   padding: 12px 19px;
 }
 
-.nav-tabs .nav-link:hover {
+.filters-nav-main .nav-link:hover {
   color: #000;
   border: 1px solid #000;
+  cursor: pointer;
 }
 
-.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+.filters-nav-main .nav-link.active, .filters-nav-main .nav-link:focus, .filters-nav-main .nav-link:active {
   background: #F4F4F4;
   border: 1px solid #D3D3D3;
   -webkit-box-sizing: border-box;
@@ -531,21 +551,18 @@ body hr {
   -webkit-box-shadow: inset 0px 2px 8px rgba(0, 0, 0, 0.15);
   box-shadow: inset 0px 2px 8px rgba(0, 0, 0, 0.15);
   border-radius: 5px;
-  color: #D72D24;
+  color: #D72D24 !important;
 }
 
-.nav-tabs .nav-item:last-child {
-  margin-right: 0px;
-}
-
-.tab-content {
+.filters-content-wrap {
   margin-top: 40px;
 }
 
 .filters-block {
   position: relative;
-  padding-bottom: 50px;
+  padding-bottom: 80px;
   margin-bottom: 64px;
+  border: 1px solid #d3d3d3;
 }
 
 .filters-block_image {
@@ -578,7 +595,7 @@ body hr {
 }
 
 .filters-block_content {
-  padding: 20px 22px;
+  padding: 20px 22px 35px 22px;
 }
 
 .filters-block_content span {
@@ -586,6 +603,11 @@ body hr {
   font-size: 18px;
   line-height: 150%;
   color: #000;
+}
+
+.filters-block_content_header {
+  height: 54px;
+  overflow: hidden;
 }
 
 .filters-block_list {
@@ -629,12 +651,12 @@ body hr {
 
 .btn-gen__filters {
   position: absolute;
-  bottom: 0px;
+  bottom: 30px;
 }
 
 .btn-gen__filters a:hover {
-  color: #D72D24;
-  border-color: #D72D24;
+  color: #000;
+  border-color: #000;
 }
 
 /***************************************************Benefits************************************/
@@ -642,7 +664,7 @@ body hr {
   width: 100%;
   min-height: 623px;
   background-color: #f9f9f9;
-  padding: 80px 0px;
+  padding: 60px 0px 46px 0px;
 }
 
 .benefits .section-subheader {
@@ -659,13 +681,18 @@ body hr {
   margin-right: 3px;
 }
 
-.benefits-block {
-  margin-top: 80px;
+.benef-row {
+  margin-top: 60px;
 }
 
-.benefits-block img {
+.benefits-block {
+  margin-bottom: 44px;
+}
+
+.benefits-block svg {
   display: block;
-  margin-bottom: 24px;
+  margin-bottom: 18px;
+  height: 76px;
 }
 
 .benefits-block span {
@@ -673,6 +700,7 @@ body hr {
   font-size: 24px;
   line-height: 160%;
   color: #000;
+  display: block;
 }
 
 .benefits-desc {
@@ -681,14 +709,7 @@ body hr {
 
 .benefits-desc p {
   margin-bottom: 0px;
-}
-
-.benef-row .col-12:nth-child(2) .benefits-block {
-  padding-left: 20px;
-}
-
-.benef-row .col-12:nth-child(3) .benefits-block {
-  padding-left: 32px;
+  padding-right: 30px;
 }
 
 /***************************************************Footer************************************/
@@ -1375,6 +1396,53 @@ body hr {
   line-height: 100%;
   color: #747474;
   margin-bottom: 0px;
+}
+
+.filters-nav__mob {
+  position: relative;
+  border: 1px solid #747474;
+  border-radius: 5px;
+}
+
+.filters-nav__mob .bootstrap-select {
+  width: 100% !important;
+}
+
+.filters-nav__mob .filter-option-inner-inner {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #353535;
+}
+
+.filters-nav__mob .bootstrap-select button {
+  height: 40px !important;
+}
+
+.slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.slick-dots button {
+  font-size: 0px;
+  display: none;
+}
+
+.slick-dots li {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: transparent;
+  border: 1px solid #000;
+  margin: 0px 2px;
+}
+
+.slick-dots .slick-active {
+  background: #000;
 }
 
 /***********************************************ButtonMobile************************************/

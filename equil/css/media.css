@@ -181,11 +181,34 @@
 		font-size: 24px;
 	}
 
-	.nav-tabs{
-		justify-content: flex-start;
+	.main-header__main h1{
+		padding-right: 0px;
+		font-size: 24px;
 	}
 
-	.nav-tabs .nav-link {
+	.main-header__main span{
+		padding-right: 0px;
+	}
+
+	.filters-nav-main{
+		justify-content: flex-start;
+		flex-wrap: wrap;
+	}
+
+	.filters-block_content{
+		padding: 20px 0px;
+	}
+
+	.filters-block{
+		border: none;
+		margin-bottom: 10px;
+	}
+
+	.benef-row{
+		margin-top: 40px;
+	}
+
+	.filters-nav-main .nav-link {
 		margin-right: 10px;
 		font-size: 14px;
 		padding: 10px 19px;
@@ -201,8 +224,8 @@
 	}
 
 	.filters-list_field span{
-		flex: 0 0 65%;
-		max-width: 65%;
+		flex: 0 0 60%;
+		max-width: 60%;
 	}
 
 	.filters-block_list {
@@ -222,22 +245,30 @@
 	}
 
 	.benefits{
-		padding: 40px 0px;
+		padding-top: 40px;
+		padding-bottom: 30px;
+	}
+
+	.benefits-block svg{
+		flex: 0 0 46px;
+		height: auto;
+		margin-bottom: 0px;
 	}
 
 	.benefits .section-subheader{
 		display: block;
 		text-align: center;
-		padding: 0px 40px;
 	}
 
 	.benefits .section-subheader span{
 		margin-left: 0px;
-		font-size: 14px;
 	}
 
 	.benefits-block{
-		text-align: center;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		margin-bottom: 30px;
 	}
 
 	.benefits-desc{
@@ -245,16 +276,15 @@
 		max-width: 100%;
 	}
 
-	.benefits-block img{
-		margin: 0 auto 20px;
-	}
-
 	.benefits-block span{
-		margin-top: 40px;
+		margin-top: 0px;
+		margin-left: 20px;
+		font-size: 18px;
 	}
 
-	.benef-row .col-12:nth-child(2) .benefits-block, .benef-row .col-12:nth-child(3) .benefits-block{
-		padding-left: 0px;
+	.benefits-desc p{
+		padding-right: 0px;
+		font-size: 14px;
 	}
 
 	.footer-nav ul{
@@ -382,6 +412,26 @@
 		align-items: center;
 	}
 
+	.filters__main{
+		padding-bottom: 40px;
+	}
+
+	.filters__main .section-subheader{
+		text-align: center;
+	}
+
+
+	.btn-gen__filters{
+		right: 0px;
+		left: 0px;
+		margin: auto;
+		text-align: center;
+	}
+
+	.filters-nav__mob .bootstrap-select .dropdown-menu{
+		max-width: 100%;
+	}
+
 }
 
 @media only screen and (min-width : 576px) and (max-width : 767px) {
@@ -442,16 +492,26 @@
 		height: auto;
 	}
 
-	.nav-tabs{
+	.filters-nav-main{
 		justify-content: flex-start;
+		flex-wrap: wrap;
 	}
 
-	.nav-tabs .nav-link {
+	.filters-nav-main .nav-link {
 		margin-right: 10px;
 	}
 
 	.filters-block_content{
 		padding: 20px 0px;
+	}
+
+	.filters-block{
+		border: none;
+		margin-bottom: 10px;
+	}
+
+	.benef-row{
+		margin-top: 40px;
 	}
 
 	.filters-list_field span{
@@ -485,10 +545,6 @@
 	.benefits-block span{
 		margin-top: 0px;
 		margin-left: 20px;
-	}
-
-	.benef-row .col-12:nth-child(2) .benefits-block, .benef-row .col-12:nth-child(3) .benefits-block{
-		padding-left: 0px;
 	}
 
 	.main-inner-content p{
@@ -607,7 +663,7 @@
 		padding: 0px 50px;
 	}
 
-	.nav-tabs .nav-link {
+	.filters-nav-main .nav-link {
 		font-size: 16px;
 		margin-right: 20px;
 	}
@@ -624,8 +680,9 @@
 		font-size: 14px;
 	}
 
-	.nav-tabs{
+	.filters-nav-main{
 		justify-content: flex-start;
+		flex-wrap: wrap;
 	}
 
 	.benefits-block span{
@@ -682,6 +739,11 @@
 		padding-left: 0px;
 	}
 
+	.main-header__main h1{
+		padding-right: 10px;
+		font-size: 32px;
+	}
+
 }
 
 @media only screen and (min-width : 1200px) and (max-width : 1439px) {
@@ -695,11 +757,15 @@
 		text-align: center;
 	}
 
+	.main-header__main h1{
+		padding-right: 50px;
+	}
+
 	.double-left, .double-right{
 		padding: 0px 50px;
 	}
 
-	.nav-tabs .nav-link {
+	.filters-nav-main .nav-link {
 		font-size: 16px;
 	}
 

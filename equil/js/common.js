@@ -117,3 +117,79 @@ $(document).ready(function() {
     }
   });
 });
+
+
+//Filters
+$(window).on('load resize', function() {  
+
+  if ($(window).width() > 767) {
+          var fActive = '';
+     
+    function filterColor(color){
+     if(fActive != color){
+     $('.filters-content-wrap .col-12').filter('.'+color).show();
+     $('.filters-content-wrap .col-12').filter(':not(.'+color+')').hide();
+     fActive = color;
+     }
+    }
+
+     $('.nav-link').on('click',function(e){
+         e.preventDefault();  
+        $('.filters-nav-main .nav-link').removeClass('active');
+        $(this).addClass('active');
+        $(".filters-slider.slick-initialized").slick("unslick");  
+
+     });
+     
+    $('.f-obl').click(function(){ filterColor('obl'); });
+    $('.f-stocks').click(function(){ filterColor('stocks'); });
+    $('.f-strat').click(function(){ filterColor('strat'); });
+     $('.f-crypto').click(function(){ filterColor('crypto'); });
+    $('.f-forex').click(function(){ filterColor('forex'); });
+     
+    $('.f-all').click(function(){
+     $('.filters-content-wrap .col-12').show();
+     fActive = 'all';
+    });
+    
+    }else{
+      
+    }
+    
+});
+
+
+//About-inner-slider
+$(window).on('load resize', function() {  
+  if ($(window).width() < 768) {
+
+      $(function() {
+        $('.selectpicker-mob').selectpicker();
+      });
+               
+      $('.filters-slider:not(.slick-initialized)').slick({
+          infinite: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+          dots: true
+       });
+
+         $('.selectpicker-mob').on('change', function() {
+         
+          var filter = $(this).val();
+          var key = "."+filter;
+          $('.filters-slider').slick('slickUnfilter');
+          $('.filters-slider').slick('slickFilter', function() { return $(key, this).length === 1; });            
+          $('.filters-slider').slick('slickGoTo', 0);
+  
+        });
+
+
+  } else {
+    $('.filters-slider.slick-initialized').slick('slickUnfilter');
+    $(".filters-slider.slick-initialized").slick("unslick");        
+  }
+
+  
+});
