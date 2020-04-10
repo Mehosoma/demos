@@ -122,7 +122,7 @@ $(document).ready(function() {
 //Filters
 $(window).on('load resize', function() {  
 
-  if ($(window).width() > 767) {
+  if ($(window).width() > 991) {
           var fActive = '';
      
     function filterColor(color){
@@ -146,6 +146,7 @@ $(window).on('load resize', function() {
     $('.f-strat').click(function(){ filterColor('strat'); });
      $('.f-crypto').click(function(){ filterColor('crypto'); });
     $('.f-forex').click(function(){ filterColor('forex'); });
+    $('.f-structure').click(function(){ filterColor('structure'); });
      
     $('.f-all').click(function(){
      $('.filters-content-wrap .col-12').show();
@@ -161,11 +162,15 @@ $(window).on('load resize', function() {
 
 //About-inner-slider
 $(window).on('load resize', function() {  
-  if ($(window).width() < 768) {
+  if ($(window).width() < 992) {
+
+    if ($(window).width() < 768) {
 
       $(function() {
         $('.selectpicker-mob').selectpicker();
       });
+
+      $(".filters-slider.slick-initialized").slick("unslick");
                
       $('.filters-slider:not(.slick-initialized)').slick({
           infinite: true,
@@ -185,6 +190,33 @@ $(window).on('load resize', function() {
   
         });
 
+        }else{
+
+             $(function() {
+              $('.selectpicker-mob').selectpicker();
+            });
+
+             $(".filters-slider.slick-initialized").slick("unslick");
+                 
+              $('.filters-slider:not(.slick-initialized)').slick({
+                  infinite: true,
+                  slidesToShow: 2,
+                  slidesToScroll: 1,
+                  arrows: false,
+                  dots: true
+               });
+
+                 $('.selectpicker-mob').on('change', function() {
+                 
+                  var filter = $(this).val();
+                  var key = "."+filter;
+                  $('.filters-slider').slick('slickUnfilter');
+                  $('.filters-slider').slick('slickFilter', function() { return $(key, this).length === 1; });            
+                  $('.filters-slider').slick('slickGoTo', 0);
+          
+                });
+
+              }
 
   } else {
     $('.filters-slider.slick-initialized').slick('slickUnfilter');
