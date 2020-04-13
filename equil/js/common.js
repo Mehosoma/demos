@@ -58,10 +58,6 @@ $(document).ready(function(){
 
 
 //Select
-$(function() {
-    $('.selectpicker').selectpicker();
-});
-
 $('.selectpicker')
   .on('show.bs.select', function() {
     $(this).parent().find('.dropdown-menu').first().stop(true, true).slideDown(300);
@@ -224,4 +220,24 @@ $(window).on('load resize', function() {
   }
 
   
+});
+
+
+
+//Show-hide Drop-Down Menu
+$(document).ready(function(){ 
+
+  if ($(window).width() >= 768) {    
+      $('.lang-choice a').on('mouseenter',function(e){
+        event.preventDefault();       
+          $(this).parent('').addClass('show-lang')
+                                     
+      });
+      $('.lang-choice').on('mouseleave',function(e){
+        event.preventDefault();    
+          $(this).removeClass('show-lang')
+      });
+    }else{
+
+    }
 });
