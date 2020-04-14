@@ -431,6 +431,19 @@
 		margin-bottom: 30px;
 	}
 
+	.filters-block_image{
+		position: relative;
+	}
+
+	.filters-block_image img{
+		position: absolute;
+		top: 0px;
+		bottom: 0px;
+		right: 0px;
+		left: 0px;
+		margin: auto;
+
+	}
 
 }
 
