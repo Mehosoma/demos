@@ -277,6 +277,7 @@
 
 	.main-inner .main-left-wrap{
 		padding-bottom: 0px;
+		justify-content: center;
 	}
 
 	.strategy-block {
