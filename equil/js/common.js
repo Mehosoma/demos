@@ -196,21 +196,16 @@ $(window).on('load resize', function() {
           slidesToShow: 1,
           slidesToScroll: 1,
           arrows: false,
-          dots: true,
-          speed: 0,
-          touchMove: false,
-          waitForAnimate: false
+          dots: true
        });
 
           $('.selectpicker-mob').on('change', function filterSlider(filter) {
-
+            filter.preventDefault();  
             $('.filters-slider').slick('slickGoTo', 0); 
             $('.filters-slider').slick('slickUnfilter');         
             var filter = $(this).val();
             var key = "."+filter;
-            $('.filters-slider').slick('slickFilter', function() { return $(key, this).length === 1; });            
-                   
-  
+            $('.filters-slider').slick('slickFilter', function() { return $(key, this).length === 1; }); 
           });
 
         }else{            
