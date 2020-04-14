@@ -180,7 +180,7 @@ $(window).on('load resize', function() {
 
 
 //About-inner-slider
-$(window).on('load resize', function() {  
+$(document).ready(function() {
   if ($(window).width() < 992) {
 
     $(function() {
@@ -188,8 +188,6 @@ $(window).on('load resize', function() {
     });
 
     if ($(window).width() < 768) {
-
-      $(".filters-slider.slick-initialized").slick("unslick");
                
       $('.filters-slider:not(.slick-initialized)').slick({
           infinite: false,
