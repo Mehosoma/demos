@@ -2,24 +2,47 @@
 //Svg to inline
 $(document).ready(function(){
 // Replace all SVG images with inline SVG  
-$('img.svg').each(function(){
- var $img = $(this);
- var imgID = $img.attr('id');
- var imgClass = $img.attr('class');
- var imgURL = $img.attr('src');
+  $('img.svg').each(function(){
+   var $img = $(this);
+   var imgID = $img.attr('id');
+   var imgClass = $img.attr('class');
+   var imgURL = $img.attr('src');
 
- $.get(imgURL, function(data) {
-   var $svg = $(data).find('svg');
-   if (typeof imgID !== 'undefined') {
-     $svg = $svg.attr('id', imgID);
-   }
-   if (typeof imgClass !== 'undefined') {
-     $svg = $svg.attr('class', imgClass+' replaced-svg');
-   }
-   $svg = $svg.removeAttr('xmlns:a');
-   $img.replaceWith($svg);
- });
+   $.get(imgURL, function(data) {
+     var $svg = $(data).find('svg');
+     if (typeof imgID !== 'undefined') {
+       $svg = $svg.attr('id', imgID);
+     }
+     if (typeof imgClass !== 'undefined') {
+       $svg = $svg.attr('class', imgClass+' replaced-svg');
+     }
+     $svg = $svg.removeAttr('xmlns:a');
+     $img.replaceWith($svg);
+   });
+  });
+
+$('.filters-slider').on('init', function(event, slick){
+    // Replace all SVG images with inline SVG  
+  $('img.svg').each(function(){
+   var $img = $(this);
+   var imgID = $img.attr('id');
+   var imgClass = $img.attr('class');
+   var imgURL = $img.attr('src');
+
+   $.get(imgURL, function(data) {
+     var $svg = $(data).find('svg');
+     if (typeof imgID !== 'undefined') {
+       $svg = $svg.attr('id', imgID);
+     }
+     if (typeof imgClass !== 'undefined') {
+       $svg = $svg.attr('class', imgClass+' replaced-svg');
+     }
+     $svg = $svg.removeAttr('xmlns:a');
+     $img.replaceWith($svg);
+   });
+  });
 });
+
 });
 
 //ModalWindow
@@ -173,16 +196,20 @@ $(window).on('load resize', function() {
           slidesToShow: 1,
           slidesToScroll: 1,
           arrows: false,
-          dots: true
+          dots: true,
+          speed: 0,
+          touchMove: false,
+          waitForAnimate: false
        });
 
           $('.selectpicker-mob').on('change', function filterSlider(filter) {
 
+            $('.filters-slider').slick('slickGoTo', 0); 
             $('.filters-slider').slick('slickUnfilter');         
             var filter = $(this).val();
             var key = "."+filter;
             $('.filters-slider').slick('slickFilter', function() { return $(key, this).length === 1; });            
-            $('.filters-slider').slick('slickGoTo', 0);        
+                   
   
           });
 
