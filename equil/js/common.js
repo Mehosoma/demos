@@ -169,7 +169,7 @@ $(window).on('load resize', function() {
       $(".filters-slider.slick-initialized").slick("unslick");
                
       $('.filters-slider:not(.slick-initialized)').slick({
-          infinite: true,
+          infinite: false,
           slidesToShow: 1,
           slidesToScroll: 1,
           arrows: false,
