@@ -299,7 +299,8 @@ h3
 					&:hover
 						&:after
 							width: 5px
-		&__active__submenu
+		&__active__submenu,
+		&__active__submenu--mobile
 			position: relative
 			&:after
 				content: ""
@@ -316,13 +317,14 @@ h3
 				-webkit-transition: all 0.3s ease-out
 				transition: all 0.3s ease-out
 				transform: rotate(135deg)
+		&__active__submenu
 			&:hover
 				cursor: pointer
 				&:after
 					border-color: $or-3
 				.nav__wrap__menu__submenu
 					visibility: visible
-					opacity: 1				
+					opacity: 1		
 		&__phone
 			background-color: $blue
 			display: flex
@@ -443,12 +445,14 @@ h3
 			text-transform: uppercase
 			letter-spacing: 2.1px
 			margin-bottom: 26px
+			text-align: center
 		span
 			font-family: $crimson
 			font-size: 20px
 			font-weight: $regular
 			color: $white
 			margin-bottom: 39px
+			text-align: center
 
 /***************************************************Logos************************************/
 .logos
@@ -639,6 +643,8 @@ h3
 			padding: 3px 27px 0px
 			line-height: 64px
 			color: $blue-d
+			&:hover
+				color: $white
 
 
 /***************************************************Slider************************************/
@@ -975,6 +981,8 @@ h3
 			margin-right: 43px
 			h3
 				margin-bottom: 0px
+				height: 68px
+				overflow: hidden
 			&:last-child
 				margin-right: 0px
 		&__more
@@ -1072,5 +1080,109 @@ h3
 		padding: 0px 58px
 		margin-bottom: 25px
 
+
+/***********************************************ButtonMobile************************************/
+
+.menu-btn-wrap
+	flex-grow: 0
+	align-items: center
+	padding-right: 0px
+	justify-content: flex-end
+	flex-direction: row
+	display: flex
+	margin-top: 5px
+.menu-toggle-button
+	width: 60px
+	height: 40px
+	background-color: transparent
+	border-radius: 7px
+	padding-top: 5px
+	border: none
+	text-indent: -9999px
+	-webkit-appearance: none
+	-moz-appearance: none
+	appearance: none
+	position: relative
+	display: block
+	overflow: hidden
+
+
+.menu-toggle-button span 
+	display: block
+	height: 4px
+	background: $blue
+	position: absolute
+	top: 15px
+	left: 16px
+	right: 16px
+	-webkit-transition: background 0s 0.3
+	-o-transition: background 0s 0.3
+	transition: background 0s 0.3
+
+
+.menu-toggle-button span::before, .menu-toggle-button span::after
+	content: ""
+	display: block
+	width: 100%
+	height: 4px
+	background: $blue
+	position: absolute
+	left: 0px
+	-webkit-transition-duration: 0.3s, 1s
+	-o-transition-duration: 0.3s, 1s
+	transition-duration: 0.3s, 1s
+	-webkit-transition-delay: 0s, 0.3s
+	-o-transition-delay: 0s, 0.3s
+	transition-delay: 0s, 0.3s
+
+
+.menu-toggle-button span::before 
+	top: -8px
+
+.menu-toggle-button span::after 
+	bottom: -8px
+
+.menu-toggle-button.is-active span
+	background: none
+
+.menu-toggle-button.is-active span::before
+	top: 0
+	-webkit-transform: rotate(45deg)
+	-ms-transform: rotate(45deg)
+	transform: rotate(45deg)
+	-webkit-transition-property: top, -webkit-transform
+	transition-property: top, -webkit-transform
+	-o-transition-property: top, transform
+	transition-property: top, transform
+	transition-property: top, transform, -webkit-transform
+	-webkit-transition-delay: 0s, 0.3s
+	-o-transition-delay: 0s, 0.3s
+	transition-delay: 0s, 0.3s
+	-webkit-transition-duration: 0.3s, 0.3s
+	-o-transition-duration: 0.3s, 0.3s
+	transition-duration: 0.3s, 0.3s
+	background: $blue
+
+
+.menu-toggle-button.is-active span::after 
+	bottom: 0
+	background: $blue
+	-webkit-transform: rotate(-45deg)
+	-ms-transform: rotate(-45deg)
+	transform: rotate(-45deg)
+	-webkit-transition-property: bottom, -webkit-transform
+	transition-property: bottom, -webkit-transform
+	-o-transition-property: bottom, transform
+	transition-property: bottom, transform
+	transition-property: bottom, transform, -webkit-transform
+	-webkit-transition-delay: 0s, 0.3s
+	-o-transition-delay: 0s, 0.3s
+	transition-delay: 0s, 0.3s
+	-webkit-transition-duration: 0.3s, 0.3s
+	-o-transition-duration: 0.3s, 0.3s
+	transition-duration: 0.3s, 0.3s
+
+.menu-toggle-button:focus
+	outline: none !important
 
 
