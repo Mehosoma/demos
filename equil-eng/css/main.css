@@ -373,6 +373,11 @@ body hr {
   align-items: center;
 }
 
+.logo-wrap svg {
+  width: 180px;
+  height: auto;
+}
+
 .logo-wrap span {
   font-family: "Georgia", sans-serif;
   font-size: 10px;
@@ -1078,7 +1083,7 @@ body hr {
 }
 
 .contacts-info {
-  padding: 40px 0px 40px 57px;
+  padding: 40px 15px 40px 57px;
 }
 
 .contacts-info .small-header {

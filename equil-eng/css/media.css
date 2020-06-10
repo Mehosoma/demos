@@ -58,10 +58,11 @@
 
 	.logo-wrap{
 		margin-left: 0px;
+		flex-grow: 1;
 	}
 
 	.logo-image{
-		width: 84px;
+		width: 120px;
 		height: auto;
 		margin-right: 20px;
 	}
@@ -75,7 +76,7 @@
 	}
 
 	.main-menu .logo-image svg{
-		width: 100%!important;
+		width: 140px!important;
 		margin-bottom: 10px;
 	}
 
@@ -915,6 +916,8 @@
 		-o-filter: grayscale(0%);
 		filter: grayscale(0%);
 	}
+
+
 }
 
 @media only screen and (min-width : 768px){
