@@ -845,8 +845,8 @@
 		padding: 10px 0px;
 	}
 
-	.no-decor:after{
-		display: none!important;
+	.top-decor:after{
+		display: none;
 	}
 
 	.top-banner{
@@ -1019,6 +1019,20 @@
 	.nav.scrolled .gpl-header__search:hover input{
 		width: 235px;
 		padding: 10px 40px 10px 10px;
+	}
+
+}
+
+@media only screen and (min-width : 1440px){
+
+	.gpl-header .container, .top-line .container{
+		max-width: 100%;
+		padding: 0px 60px;
+	}
+
+	.areas__left{
+		flex: 0 0 37%;
+		max-width: 37%;
 	}
 
 }

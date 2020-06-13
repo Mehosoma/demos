@@ -1270,7 +1270,7 @@ h3 {
 }
 
 .areas__right__block p {
-  max-height: 92px;
+  height: 92px;
   overflow: hidden;
 }
 
@@ -1482,6 +1482,9 @@ h3 {
 
 .info__contacts {
   padding-left: 20px;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
 }
 
 .info__contacts span {

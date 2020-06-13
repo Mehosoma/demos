@@ -130,6 +130,8 @@ $(window).on('load resize', function() {
     $('.nav__wrap__menu__submenu').parent('li').addClass('nav__wrap__active__submenu'); 
    } else {   
 
+    $('.nav__wrap__menu__submenu').parent('li').addClass('nav__wrap__active__submenu--mobile'); 
+
     $('.nav__wrap__active__submenu--mobile').off('click'); 
 
     $(".menu-toggle-button").removeClass('is-active');
@@ -142,7 +144,7 @@ $(window).on('load resize', function() {
 
     $('.nav__wrap__menu').css('display','none');
 
-    $('.nav__wrap__menu__submenu').parent('li').addClass('nav__wrap__active__submenu--mobile'); 
+    
 
     $('.nav__wrap__active__submenu--mobile').on('click',function(e){
        e.preventDefault();  
