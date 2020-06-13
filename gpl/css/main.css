@@ -437,7 +437,7 @@ h3 {
   border-color: #D9BE79;
 }
 
-.nav__wrap__active__submenu:hover .nav__wrap__menu__submenu {
+.nav__wrap .nav__wrap__menu__submenu.submenu-open {
   visibility: visible;
   opacity: 1;
 }
@@ -576,13 +576,8 @@ h3 {
   max-width: 50px;
 }
 
-.nav.scrolled .nav__wrap .gpl-header__search:hover input {
-  width: 235px;
-  padding: 10px 40px 10px 10px;
-}
-
 .nav.scrolled .nav__wrap__menu {
-  padding: 0 20px;
+  padding: 0 40px;
 }
 
 /***************************************************Top-Banner************************************/
@@ -923,7 +918,7 @@ h3 {
   letter-spacing: 2px;
   padding: 3px 27px 0px;
   line-height: 64px;
-  color: #1B3967;
+  color: #101E3D;
 }
 
 .more__button .btn-gen:hover {
@@ -935,6 +930,7 @@ h3 {
   background-color: #F9F9F9;
   padding: 48px 0px;
   position: relative;
+  overflow: hidden;
 }
 
 .slider .slick-list {
@@ -1024,7 +1020,15 @@ h3 {
   transition: all 0.3s ease-out;
 }
 
-.slider .arrows .arr-left:before,
+.slider .arrows .arr-right {
+  background-color: #1B3967;
+  border-radius: 0px 2px 2px 0px;
+}
+
+.slider .arrows .arr-right:after {
+  opacity: 1;
+}
+
 .slider .arrows .arr-right:before {
   display: block;
   position: absolute;
@@ -1040,28 +1044,22 @@ h3 {
   font-weight: 400;
   color: #D9BE79;
   text-transform: uppercase;
-  visibility: hidden;
-  opacity: 0;
   -moz-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
 
-.slider .arrows .arr-left:hover,
 .slider .arrows .arr-right:hover {
-  background-color: #1B3967;
+  background-color: #545C6B;
 }
 
-.slider .arrows .arr-left:hover:after,
 .slider .arrows .arr-right:hover:after {
   opacity: 1;
 }
 
-.slider .arrows .arr-left:hover:before,
 .slider .arrows .arr-right:hover:before {
-  visibility: visible;
-  opacity: 1;
+  background-color: #545C6B;
 }
 
 .slider .arrows .arr-left {
@@ -1070,7 +1068,11 @@ h3 {
 }
 
 .slider .arrows .arr-left:hover {
-  border-radius: 2px 0px 0px 2px;
+  background-color: #1B3967;
+}
+
+.slider .arrows .arr-left:hover:after {
+  opacity: 1;
 }
 
 .slider .arrows .arr-left:after {
@@ -1078,12 +1080,6 @@ h3 {
   -ms-transform: rotate(-135deg);
   transform: rotate(-135deg);
   left: 24px;
-}
-
-.slider .arrows .arr-left:before {
-  content: "Prev";
-  left: 60px;
-  padding-left: 45px;
 }
 
 .slider .arrows .arr-right {
@@ -1195,6 +1191,9 @@ h3 {
   flex: 0 0 532px;
   max-width: 532px;
   position: relative;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
 .areas__left h2 {
@@ -1295,7 +1294,8 @@ h3 {
 /***************************************************Quiz************************************/
 .quiz {
   width: 100%;
-  min-height: 800px;
+  height: auto;
+  padding: 107px 0px;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -1311,7 +1311,6 @@ h3 {
 }
 
 .quiz__main {
-  height: 586px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1327,8 +1326,8 @@ h3 {
   -ms-flex: 0 0 324px;
   flex: 0 0 324px;
   max-width: 324px;
+  min-height: 586px;
   position: relative;
-  height: 100%;
   padding: 40px 24px 29px 12px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1388,6 +1387,7 @@ h3 {
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
+  min-height: 586px;
 }
 
 /***************************************************Info************************************/
@@ -1626,7 +1626,7 @@ h3 {
 }
 
 .menu-toggle-button {
-  width: 60px;
+  width: 25px;
   height: 40px;
   background-color: transparent;
   border-radius: 7px;
@@ -1639,16 +1639,18 @@ h3 {
   position: relative;
   display: block;
   overflow: hidden;
+  padding: 0px;
 }
 
 .menu-toggle-button span {
   display: block;
-  height: 4px;
-  background: #2788D2;
+  height: 2px;
+  background: #545C6B;
   position: absolute;
   top: 15px;
-  left: 16px;
-  right: 16px;
+  left: 0px;
+  right: 0px;
+  width: 100%;
   -webkit-transition: background 0s 0.3;
   -o-transition: background 0s 0.3;
   transition: background 0s 0.3;
@@ -1658,8 +1660,8 @@ h3 {
   content: "";
   display: block;
   width: 100%;
-  height: 4px;
-  background: #2788D2;
+  height: 2px;
+  background: #545C6B;
   position: absolute;
   left: 0px;
   -webkit-transition-duration: 0.3s, 1s;
@@ -1698,12 +1700,12 @@ h3 {
   -webkit-transition-duration: 0.3s, 0.3s;
   -o-transition-duration: 0.3s, 0.3s;
   transition-duration: 0.3s, 0.3s;
-  background: #2788D2;
+  background: #545C6B;
 }
 
 .menu-toggle-button.is-active span::after {
   bottom: 0;
-  background: #2788D2;
+  background: #545C6B;
   -webkit-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);

@@ -322,7 +322,7 @@ h3
 				cursor: pointer
 				&:after
 					border-color: $or-3
-				.nav__wrap__menu__submenu
+		.nav__wrap__menu__submenu.submenu-open
 					visibility: visible
 					opacity: 1		
 		&__phone
@@ -410,12 +410,8 @@ h3
 		.gpl-header__search
 			flex: 0 0 50px
 			max-width: 50px
-			&:hover
-				input
-					width: 235px
-					padding: 10px 40px 10px 10px
 		&__menu
-			padding: 0 20px
+			padding: 0 40px
 
 
 
@@ -642,7 +638,7 @@ h3
 			letter-spacing: 2px
 			padding: 3px 27px 0px
 			line-height: 64px
-			color: $blue-d
+			color: $dark-v
 			&:hover
 				color: $white
 
@@ -652,6 +648,7 @@ h3
 	background-color: $gray-l
 	padding: 48px 0px
 	position: relative
+	overflow: hidden
 	.slick-list
 		overflow: visible
 		margin: 0px -100px
@@ -711,6 +708,11 @@ h3
 				-o-transition: all 0.3s ease-out
 				-webkit-transition: all 0.3s ease-out
 				transition: all 0.3s ease-out
+		.arr-right
+			background-color: $blue-d
+			border-radius: 0px 2px 2px 0px
+			&:after
+				opacity: 1
 			&:before				
 				display: block
 				position: absolute
@@ -726,31 +728,26 @@ h3
 				font-weight: $regular
 				color: $or-3
 				text-transform: uppercase
-				visibility: hidden
-				opacity: 0
 				-moz-transition: all 0.3s ease-out
 				-o-transition: all 0.3s ease-out
 				-webkit-transition: all 0.3s ease-out
 				transition: all 0.3s ease-out
 			&:hover
-				background-color: $blue-d
+				background-color: $gray-d
 				&:after
 					opacity: 1
 				&:before
-					visibility: visible
-					opacity: 1
+					background-color: $gray-d
 		.arr-left
 			left: 82px
 			position: absolute
 			&:hover
-				border-radius: 2px 0px 0px 2px
+				background-color: $blue-d
+				&:after
+					opacity: 1
 			&:after
 				transform: rotate(-135deg)
 				left: 24px
-			&:before
-				content: "Prev"
-				left: 60px
-				padding-left: 45px
 		.arr-right
 			right: 88px
 			position: absolute
@@ -824,6 +821,9 @@ h3
 		flex: 0 0 532px
 		max-width: 532px
 		position: relative
+		background-repeat: no-repeat
+		background-position: center center
+		background-size: cover
 		h2
 			margin-bottom: 40px
 		&__block
@@ -887,7 +887,8 @@ h3
 /***************************************************Quiz************************************/
 .quiz
 	width: 100%
-	min-height: 800px
+	height: auto
+	padding: 107px 0px
 	background-repeat: no-repeat
 	background-position: center center
 	background-size: cover
@@ -895,7 +896,6 @@ h3
 	align-items: center
 	justify-content: center
 	&__main
-		height: 586px
 		display: flex
 		justify-content: space-between
 		width: 71%
@@ -903,8 +903,8 @@ h3
 		&__left
 			flex: 0 0 324px
 			max-width: 324px
+			min-height: 586px
 			position: relative
-			height: 100%
 			padding: 40px 24px 29px 12px
 			display: flex
 			align-content: space-between
@@ -940,6 +940,7 @@ h3
 		&__right
 			background-color: #fff
 			flex-grow: 1
+			min-height: 586px
 
 /***************************************************Info************************************/
 .info
@@ -1092,7 +1093,7 @@ h3
 	display: flex
 	margin-top: 5px
 .menu-toggle-button
-	width: 60px
+	width: 25px
 	height: 40px
 	background-color: transparent
 	border-radius: 7px
@@ -1105,16 +1106,17 @@ h3
 	position: relative
 	display: block
 	overflow: hidden
-
+	padding: 0px
 
 .menu-toggle-button span 
 	display: block
-	height: 4px
-	background: $blue
+	height: 2px
+	background: $gray-d
 	position: absolute
 	top: 15px
-	left: 16px
-	right: 16px
+	left: 0px
+	right: 0px
+	width: 100%
 	-webkit-transition: background 0s 0.3
 	-o-transition: background 0s 0.3
 	transition: background 0s 0.3
@@ -1124,8 +1126,8 @@ h3
 	content: ""
 	display: block
 	width: 100%
-	height: 4px
-	background: $blue
+	height: 2px
+	background: $gray-d
 	position: absolute
 	left: 0px
 	-webkit-transition-duration: 0.3s, 1s
@@ -1161,12 +1163,12 @@ h3
 	-webkit-transition-duration: 0.3s, 0.3s
 	-o-transition-duration: 0.3s, 0.3s
 	transition-duration: 0.3s, 0.3s
-	background: $blue
+	background: $gray-d
 
 
 .menu-toggle-button.is-active span::after 
 	bottom: 0
-	background: $blue
+	background: $gray-d
 	-webkit-transform: rotate(-45deg)
 	-ms-transform: rotate(-45deg)
 	transform: rotate(-45deg)
