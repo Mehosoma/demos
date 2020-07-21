@@ -1402,16 +1402,21 @@ h3 {
   padding: 0px 58px;
 }
 
-.info__blog {
+.info__articles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-flex: 0;
   -ms-flex: 0 0 67.4%;
   flex: 0 0 67.4%;
   max-width: 67.4%;
   border-right: 1px solid #E7E7E7;
-  padding-bottom: 32px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
-.info__blog span {
+.info__articles span {
   font-family: "Crimson Pro", sans-serif;
   font-size: 18px;
   font-weight: 300;
@@ -1422,72 +1427,48 @@ h3 {
   margin-bottom: 38px;
 }
 
-.info__blog__wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.info__blog__wrap span {
-  font-family: "Crimson Pro", sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  color: #747B8B;
-  font-style: italic;
-  text-transform: uppercase;
-  letter-spacing: -0.5px;
-  margin-bottom: 19px;
-}
-
-.info__blog__wrap p {
-  max-height: 155px;
-  overflow: hidden;
-}
-
-.info__blog__article {
+.info__articles__article {
   -webkit-box-flex: 0;
-  -ms-flex: 0 0 46%;
-  flex: 0 0 46%;
-  max-width: 46%;
-  margin-right: 43px;
+  -ms-flex: 0 0 33.3%;
+  flex: 0 0 33.3%;
+  max-width: 33%;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  border-right: 1px solid #E7E7E7;
+  padding: 0px 10px;
 }
 
-.info__blog__article h3 {
-  margin-bottom: 0px;
-  height: 68px;
-  overflow: hidden;
+.info__articles__article:last-child {
+  border-right: none;
 }
 
-.info__blog__article:last-child {
-  margin-right: 0px;
+.info__articles__article ul {
+  padding: 0px 30px 0px 20px;
 }
 
-.info__blog__more {
-  text-align: right;
-  margin-top: 28px;
+.info__articles__article li {
+  margin-bottom: 20px;
 }
 
-.info__blog__more a {
+.info__articles__article a {
   font-family: "Crimson Pro", sans-serif;
   font-size: 16px;
   font-weight: 400;
   color: #174998;
-  text-transform: uppercase;
-  letter-spacing: 1.2px;
 }
 
-.info__blog__more a:hover {
+.info__articles__article a:hover {
   color: #D9BE79;
 }
 
-.info__contacts {
+.info__new {
   padding-left: 20px;
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
 }
 
-.info__contacts span {
+.info__new span {
   font-family: "Crimson Pro", sans-serif;
   font-size: 18px;
   font-weight: 300;
@@ -1496,11 +1477,11 @@ h3 {
   letter-spacing: 2.1px;
 }
 
-.info__contacts__wrap {
-  padding-top: 46px;
+.info__new__wrap {
+  padding-top: 10px;
 }
 
-.info__contacts__wrap span {
+.info__new__wrap span {
   font-family: "Crimson Pro", sans-serif;
   font-size: 22.5px;
   font-weight: 400;
@@ -1509,17 +1490,17 @@ h3 {
   letter-spacing: 0px;
 }
 
-.info__contacts__map {
+.info__new__map {
   position: relative;
   margin-top: 26px;
 }
 
-.info__contacts__map img {
+.info__new__map img {
   width: 100%;
   height: auto;
 }
 
-.info__contacts__map a {
+.info__new__map a {
   position: absolute;
   width: 270px;
   top: 0px;
@@ -1533,25 +1514,25 @@ h3 {
   line-height: 31px;
 }
 
-.info__contacts__map a:hover {
+.info__new__map a:hover {
   color: #D9BE79;
 }
 
-.info__contacts__block {
+.info__new__block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-top: 31px;
 }
 
-.info__contacts__block__field {
+.info__new__block__field {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 45%;
   flex: 0 0 45%;
   max-width: 45%;
 }
 
-.info__contacts__block__field span {
+.info__new__block__field span {
   font-family: "Crimson Pro", sans-serif;
   font-size: 14px;
   font-weight: 200;
@@ -1561,7 +1542,7 @@ h3 {
   margin-bottom: 7px;
 }
 
-.info__contacts__block__field a {
+.info__new__block__field a {
   font-family: "Crimson Pro", sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -1569,11 +1550,11 @@ h3 {
   text-transform: uppercase;
 }
 
-.info__contacts__block__field a:hover {
+.info__new__block__field a:hover {
   color: #D9BE79;
 }
 
-.info__contacts__block__field:last-child {
+.info__new__block__field:last-child {
   margin-left: 46px;
 }
 

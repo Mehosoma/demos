@@ -193,3 +193,22 @@ $(window).on('load resize', function() {
        $('.nav__wrap__active__submenu').off('mouseleave');   
   }
 });
+
+//Bottom-menu
+$(window).on('load resize', function() {  
+ if ($(window).width() < 768) {
+    $('.info__articles__article span').off('click'); 
+    $('.info__articles__article span').on('click',function(e){
+       e.preventDefault();  
+       $(this).next('ul').animate({
+             height: 'toggle'
+           }, 600, function() {
+         }); 
+       $(this).parent().toggleClass('article-open');
+   });
+
+
+  } else {
+      $('.info__articles__article span').off('click');      
+  }
+});
