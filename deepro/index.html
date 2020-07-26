@@ -30,12 +30,12 @@
 <header class="header">
 	<div class="container h-100">
 		<div class="row h-100">
-			<div class="col-12 col-lg-3">
+			<div class="col-12 col-md-2 col-lg-3">
 				<div class="header__logo">
 					<a href="index.html"><img src="images/logo.png" alt="site-logo"></a>
 				</div>
 			</div>
-			<div class="col-12 col-lg-6">
+			<div class="col-12 col-md-7 col-lg-6">
 				<nav class="header__menu">
 					<ul>
 						<li><a href=""><i>PRO</i>екты</a></li>
@@ -44,16 +44,16 @@
 					</ul>
 				</nav>
 			</div>
-			<div class="col-12 col-lg-3">
+			<div class="col-12 col-md-3 col-lg-3">
 				<div class="header__phone">
 					 <div class="header__phone__number">
 					 	<a href="tel:7(919)123-21-79">+7(919)123-21-79</a>
 					 </div>
 					 <div class="header__phone__social">
 					 	<ul>
-					 		<li><a href=""><img src="images/insta.png" alt="social-icon"></a></li>
-					 		<li><a href=""><img src="images/vk.png" alt="social-icon"></a></li>
-					 		<li><a href=""><img src="images/face.png" alt="social-icon"></a></li>
+					 		<li><a href=".form__modal" class="popup-modal"><img src="images/insta.png" alt="social-icon"></a></li>
+					 		<li><a href=".form__modal__p" class="popup-modal"><img src="images/vk.png" alt="social-icon"></a></li>
+					 		<li><a href=".form__product" class="popup-modal"><img src="images/face.png" alt="social-icon"></a></li>
 					 		<li><a href=""><img src="images/twitter.png" alt="social-icon"></a></li>
 					 		<li><a href=""><img src="images/app.png" alt="social-icon"></a></li>
 					 	</ul>
@@ -68,10 +68,10 @@
 <section class="main">
 	<div class="main__slider slider-main">
 		<div class="main__slider__slide">
-			
+			<img src="images/main.jpg" alt="slide-image">
 		</div>
 		<div class="main__slider__slide main__slider__slide--second">
-			
+			<img src="images/main.jpg" alt="slide-image">
 		</div>
 	</div>
 	<div class="arrows">
@@ -170,13 +170,15 @@
 <section class="add">
 	<div class="add__slider slider-main">
 		<div class="add__slider__slide">
-			<div class="add__slider__slide-content">
+			<img src="images/add.jpg" alt="about-slider-image">
+			<div class="add__slider__slide-content">				
 				<span>права на земельный участок</span>
 				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
 			</div>
 		</div>
-		<div class="add__slider__slide add__slider__slide--second">
-			<div class="add__slider__slide-content">
+		<div class="add__slider__slide">
+			<img src="images/add.jpg" alt="about-slider-image">
+			<div class="add__slider__slide-content">				
 				<span>права на земельный участок</span>
 				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
 			</div>
@@ -197,9 +199,9 @@
 
 <!--Footer-->
 <footer class="footer">
-	<div class="container">
+	<div class="container container--footer">
 		<div class="row">
-			<div class="col-3">
+			<div class="col-12 col-md-3">
 				<div class="footer__contacts">
 					<span>Контакты</span>
 					<p>Челябинск, пр.Победы д.288, оф.504/505</p>
@@ -208,12 +210,12 @@
 					<p>&copy; Все права защищены</p>
 				</div>
 			</div>
-			<div class="col-6">
+			<div class="col-12 col-md-6">
 				<div class="btn-gen">
 					<a href="">Выполненные проекты</a>
 				</div>
 			</div>
-			<div class="col-3">
+			<div class="col-12 col-md-3 p-0">
 				<div class="footer__decor">
 					<img src="images/footer-decor.png" alt="footer-decor">
 				</div>
@@ -221,6 +223,81 @@
 		</div>
 	</div>
 </footer>
+
+<!--Modals-->
+<div class="form__modal white-popup-block mfp-hide">
+	<div class="mfp-close-wrap">
+		<button  class="mfp-close" type="button" title="Close (Esc)">X</button>
+	</div>
+	<div class="form__modal__block">
+		<div class="form__modal__content">
+			<span>ИССЛЕДОВАНИЕ рынка частного домострения за 2020 год</span>
+			<p>Формат: PDF</p>
+			<p>Объем: 30 страниц</p>
+			<form>
+				<div class="form-fields">
+					<input type="text" name="name" placeholder="*Имя">
+					<input type="text" name="email" placeholder="*Email">
+					<span><i>*</i> - поля, обязательные для заполнения</span>
+					<p>Стоимость: 250р</p>
+				</div>
+				<button type="submit">Оплатить</button>
+				<span>Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь с <a href="">политикой конфиденциальности</a></span>
+			</form>			
+		</div>
+	</div>
+</div>
+
+<div class="form__modal__p white-popup-block mfp-hide">
+	<div class="mfp-close-wrap">
+		<button  class="mfp-close" type="button" title="Close (Esc)">X</button>
+	</div>
+	<div class="form__modal__p__block">
+		<div class="form__modal__p__content">
+			<span>ИССЛЕДОВАНИЕ рынка частного домострения за 2020 год</span>
+			<form>
+				<div class="form-fields">
+					<input type="text" name="name" placeholder="*Имя">
+					<input type="text" name="phone" placeholder="*Телефон">
+					<input type="text" name="email" placeholder="*Email">
+					<span><i>*</i> - поля, обязательные для заполнения</span>
+				</div>
+				<button type="submit">Оплатить</button>
+				<span>Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь с <a href="">политикой конфиденциальности</a></span>
+			</form>			
+		</div>
+	</div>
+</div>
+
+<div class="form__product white-popup-block mfp-hide">
+	<div class="mfp-close-wrap">
+		<button  class="mfp-close" type="button" title="Close (Esc)">X</button>
+	</div>
+	<div class="products__block">
+		<div class="products__block_image">
+			<img src="images/modal-product.jpg" alt="products-image">
+			<span>Увеличение доходности земельного участка до 300% при помощи лучших мировых практик</span>
+		</div>
+		<div class="products__block_content">
+			<div class="products__block_left">
+				<span>Исследование рынка частного домострения за 2020 год</span>
+				<p>Вы получите:</p>
+				<ul>
+					<li>новые идеи по освоению участка</li>
+					<li>понимание рыночной ситуации</li>
+					<li>инструменты для увеличения рыночной стоимости</li>
+				</ul>
+			</div>
+			<div class="products__block_right">
+				<div class="btn-gen--red">
+					<a href="">Получить</a>								
+				</div>
+				<span>Формат PDF</span>
+				<span>Объем 30 страниц</span>
+			</div>
+		</div>
+	</div>
+</div>
 
 	<script src="libs/jquery/jquery-3.3.1.js"></script>
 	<script src="libs/bootstrap/js/bootstrap.js"></script>

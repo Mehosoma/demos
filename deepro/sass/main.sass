@@ -120,6 +120,8 @@ body
 		background: $red
 		&:hover
 			background: $main
+.container--footer
+	max-width: 100%
 
 
 
@@ -192,13 +194,18 @@ body
 	position: relative
 	.arrows
 		top: 55%
+		.arr-left
+			left: 40px
+		.arr-right
+			right: 40px
 	&__slider
 		&__slide
 			width: 100%
-			min-height: 530px
-			background-image: url('../images/main.jpg')
-			background-repeat: no-repeat
-			background-size: 100% 100%
+			img
+				width: 100%
+				height: auto
+	
+
 
 
 /***************************************************About************************************/
@@ -243,14 +250,13 @@ body
 .news
 	width: 100%
 	background: $main
-	padding: 40px 0px 23px 0px
-
+	padding: 60px 0px 23px 0px
 	&__wrap
 		display: flex
 		width: 100%
 		min-height: 200px
 		justify-content: space-between
-		align-items: center
+		align-items: flex-start
 		padding: 0px 18px
 	&__block
 		flex: 0 0 20%
@@ -258,6 +264,7 @@ body
 		padding-right: 20px
 		img
 			width: auto
+			max-width: 100%
 			height: 120px
 			margin-bottom: 7px
 		a
@@ -277,22 +284,16 @@ body
 	&__slider
 		&__slide
 			width: 100%
-			height: 402px
-			background-image: url('../images/add.jpg')
-			background-repeat: no-repeat
-			background-position: center center
-			background-size: cover
 			display: flex
 			align-items: flex-end
+			position: relative
+			img
+				width: 100%
+				height: auto
 			&-content
-				flex: 0 0 60%
-				max-width: 60%
-				height: 100%
-				display: flex
-				align-items: flex-end
-				align-content: flex-end
-				flex-wrap: wrap
-				padding: 0px 100px 18px 100px
+				position: absolute
+				bottom: 20px
+				padding: 0px 100px 20px 100px
 				span,p
 					font-family: $friz
 					font-size: 16px
@@ -310,6 +311,7 @@ body
 
 /***************************************************Plan************************************/
 .plan
+	margin-top: -5px
 	img
 		width: 100%
 		height: auto
@@ -399,6 +401,7 @@ body
 				a
 					font-family: $friz
 					font-size: 16px
+					line-height: 20px
 					color: $main
 					text-transform: uppercase
 					&:hover
@@ -427,9 +430,10 @@ body
 			padding: 27px 0px 60px 38px
 			background-image: url('../images/products-decor.jpg')
 			background-repeat: no-repeat
-			background-position: top right			
+			background-position: bottom right			
 		&_left
 			flex-grow: 1
+			padding-right: 30px
 			span
 				font-family: $friz
 				font-size: 27px
@@ -450,7 +454,7 @@ body
 				li
 					position: relative
 					padding-left: 14px
-					font-size: 20px
+					font-size: 18px
 					margin-right: 20px
 					width: 48%
 					&:nth-child(3)
@@ -544,7 +548,7 @@ body
 			i
 				font-style: normal
 				font-size: 12px
-				line-height: 10px
+				line-height: 0px
 				text-transform: uppercase
 		&__check
 			background-image: url('../images/check.png')
@@ -567,8 +571,10 @@ body
 				margin-top: 35px
 		&--second
 			padding: 116px 30px 20px 30px
+			.project__icons
+				justify-content: center
 			.project__icons-block
-				margin-bottom: 20px				
+				margin-bottom: 20px			
 			.project__icons:nth-child(2)
 				margin-top: 32px
 				span
@@ -586,13 +592,32 @@ body
 		&--first
 			padding-top: 26px
 			padding: 26px 40px 20px 40px
+			.project__icons
+				.project__icons-block:nth-child(2)
+					img
+						margin-left: -20px
+				.project__icons-block:nth-child(3)
+					img
+						margin-left: -30px
+				.project__icons-block:nth-child(4)
+					img
+						margin-left: -10px
+				.project__icons-block:nth-child(6)
+					img
+						margin-left: -20px
+				.project__icons-block:nth-child(7)
+					img
+						margin-left: -20px
+				.project__icons-block:nth-child(8)
+					img
+						margin-left: -10px
 		.project__icons
 			margin-top: 24px
 		.project__icons-block
-			margin-bottom: 27px
+			margin-bottom: 32px
 	&__icons
 		display: flex
-		justify-content: center
+		justify-content: space-between
 		flex-wrap: wrap
 		&-block
 			text-align: center
@@ -608,7 +633,7 @@ body
 				text-transform: uppercase
 			i
 				font-style: normal
-				font-size: 35px
+				font-size: 30px
 			&--white
 				span
 					color: $main
@@ -736,3 +761,225 @@ body
 			text-decoration: underline
 			&:hover
 				color: $red
+
+
+/***************************************************Modals************************************/
+.news__modal
+	position: relative
+	width: 1000px
+	height: 450px
+	background: #fff
+	margin: 0 auto
+	padding: 0px 50px
+	background-image: url('../images/products-decor.jpg')
+	background-repeat: no-repeat
+	background-position: bottom right
+	.mfp-close
+		position: absolute
+		top: -40px
+		right: -40px
+		color: #fff
+		opacity: 1
+	&__block
+		width: 100%
+		height: 100%
+		display: flex
+		align-items: center
+	&__photo
+		display: flex
+		height: 250px
+		width: auto
+	&__content
+		max-height: 250px
+		overflow: hidden
+		padding: 0px 20px
+		align-items: flex-start
+		align-content: flex-start
+		display: flex
+		height: 100%
+		flex-direction: row
+		flex-wrap: wrap
+		span
+			font-family: $friz
+			font-size: 22px
+			color: $main
+			text-transform: uppercase
+		p
+			font-family: $friz
+			font-size: 16px
+			line-height: 24px
+			color: $main
+			margin-top: 10px
+
+
+.form__modal
+	position: relative
+	width: 500px
+	height: 517px
+	background: #fff
+	margin: 0 auto
+	padding: 50px 50px 30px 50px
+	background-image: url('../images/products-decor-left.jpg'), url('../images/products-decor.jpg')
+	background-repeat: no-repeat, no-repeat
+	background-position: bottom left, bottom right
+	.mfp-close
+		position: absolute
+		top: -40px
+		right: -40px
+		color: #fff
+		opacity: 1
+	&__content
+		text-align: center
+		span
+			font-family: $friz
+			font-size: 28px
+			color: #000
+			text-transform: uppercase
+			text-align: center
+			display: block
+			margin-bottom: 20px
+		p
+			font-family: $friz
+			font-size: 16px
+			color: $main
+			margin-bottom: 0px
+			align-items: center
+			display: block
+		form
+			span
+				font-size: 12px
+				text-transform: none
+				margin-bottom: 0px
+			input
+				width: 100%
+				height: 40px
+				margin: 5px 0px
+				padding: 0px 15px
+				&:nth-child(1)
+					margin-top: 20px
+			button
+				width: 180px
+				height: 40px
+				background-color: $red
+				color: #fff
+				font-size: 18px
+				text-transform: uppercase
+				margin: 10px auto 20px
+				-moz-transition: all 0.3s ease-out
+				-o-transition: all 0.3s ease-out
+				-webkit-transition: all 0.3s ease-out
+				transition: all 0.3s ease-out
+				&:hover
+					background-color: $main
+			a
+				color: $red
+				text-decoration: underline
+				&:hover
+					color: $main
+			.form-fields
+				width: 80%
+				margin: 0 auto
+				span
+					text-align: right
+					i
+						color: red
+						font-size: 18px
+						font-style: normal
+						font-family: 'Arial', sans-serif
+				p
+					font-family: $friz
+					font-size: 20px
+					color: $main
+					margin-top: 10px
+
+.form__modal__p
+	position: relative
+	width: 500px
+	height: 517px
+	background: #fff
+	margin: 0 auto
+	padding: 50px 50px 30px 50px
+	background-image: url('../images/products-decor-left.jpg'), url('../images/products-decor.jpg')
+	background-repeat: no-repeat, no-repeat
+	background-position: bottom left, bottom right
+	.mfp-close
+		position: absolute
+		top: -40px
+		right: -40px
+		color: #fff
+		opacity: 1
+	&__content
+		text-align: center
+		span
+			font-family: $friz
+			font-size: 28px
+			color: #000
+			text-transform: uppercase
+			text-align: center
+			display: block
+			margin-bottom: 20px
+		form
+			span
+				font-size: 12px
+				text-transform: none
+				margin-bottom: 0px
+			input
+				width: 100%
+				height: 40px
+				margin: 10px 0px
+				padding: 0px 15px
+				&:nth-child(1)
+					margin-top: 20px
+				&:nth-child(3)
+					margin-bottom: 5px
+			button
+				width: 180px
+				height: 40px
+				background-color: $red
+				color: #fff
+				font-size: 18px
+				text-transform: uppercase
+				margin: 10px auto 20px
+				-moz-transition: all 0.3s ease-out
+				-o-transition: all 0.3s ease-out
+				-webkit-transition: all 0.3s ease-out
+				transition: all 0.3s ease-out
+				&:hover
+					background-color: $main
+			a
+				color: $red
+				text-decoration: underline
+				&:hover
+					color: $main
+			.form-fields
+				width: 80%
+				margin: 0 auto
+				span
+					text-align: right
+					i
+						color: red
+						font-size: 18px
+						font-style: normal
+						font-family: 'Arial', sans-serif
+
+.form__product
+	position: relative
+	width: 1000px
+	height: auto
+	margin: 0 auto
+	background: #fff
+	.mfp-close
+		position: absolute
+		top: -40px
+		right: -40px
+		color: #fff
+		opacity: 1
+	.products__block_content
+		padding-bottom: 20px
+	.products__block_right
+		flex: 0 0 20%
+		max-width: 20%
+	.products__block_right .btn-gen--red a
+		padding: 10px 30px
+	.products__block_image span
+		font-size: 28px
