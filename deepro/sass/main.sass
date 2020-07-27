@@ -121,7 +121,7 @@ body
 		&:hover
 			background: $main
 .container--footer
-	max-width: 100%
+	max-width: 100%!important
 
 
 
@@ -398,6 +398,19 @@ body
 				display: inline-block
 				padding: 0px 20px
 				vertical-align: top
+				position: relative
+				&:after
+					display: block
+					content: ''
+					position: absolute
+					top: 0px
+					right: 0px
+					width: 1px
+					height: 20px
+					background: #000
+				&:last-child
+					&:after
+						display: none
 				a
 					font-family: $friz
 					font-size: 16px

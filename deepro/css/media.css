@@ -360,7 +360,13 @@
 		font-size: 12px;
 	}
 
+	.products__menu ul li{
+		display: block;
+	}
 
+	.products__menu ul li:after{
+		display: none;
+	}
 
 }
 
@@ -688,6 +694,14 @@
 
 	.form__product .products__block_image span {
 		font-size: 24px;
+	}
+
+	.products__menu ul li{
+		display: block;
+	}
+
+	.products__menu ul li:after{
+		display: none;
 	}
 
 
