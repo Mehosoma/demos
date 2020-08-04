@@ -854,13 +854,14 @@ body {
 .news__modal {
   position: relative;
   width: 1000px;
-  height: 450px;
+  height: auto;
+  padding: 100px 50px;
   background: #fff;
   margin: 0 auto;
-  padding: 0px 50px;
   background-image: url("../images/products-decor.jpg");
   background-repeat: no-repeat;
-  background-position: bottom right; }
+  background-position: bottom right;
+  margin-top: 50px; }
   .news__modal .mfp-close {
     position: absolute;
     top: -40px;
@@ -873,18 +874,20 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center; }
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start; }
   .news__modal__photo {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 250px;
-    width: auto; }
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 380px;
+    flex: 0 0 380px;
+    height: auto; }
+    .news__modal__photo img {
+      width: 100%; }
   .news__modal__content {
-    max-height: 250px;
-    overflow: hidden;
     padding: 0px 20px;
     -webkit-box-align: start;
     -ms-flex-align: start;
