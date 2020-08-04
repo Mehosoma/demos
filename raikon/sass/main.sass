@@ -757,6 +757,198 @@ body
 		max-width: 46%
 
 
+/***********************************************Projects******************************************/
+.projects
+	padding: 50px 0px
+	&__filters
+		display: flex
+		padding: 40px 0px 60px 0px
+		justify-content: space-between
+		&_block
+			flex: 0 0 auto
+			max-width: auto
+			text-align: center
+			span
+				font-family: $geom-m
+				font-size: 21px
+				color: $blue
+				padding-left: 15px
+			img
+				margin-top: -5px
+	&__block
+		position: relative
+		height: 240px
+		background: $blue
+		display: block
+		margin-bottom: 20px
+		&_image
+			width: 50%
+			height: 100%
+			position: absolute
+			top: 0px
+			right: 0px
+			img
+				width: 100%
+				height: 100%
+		&_content
+			width: 50%
+			height: 100%
+			display: flex
+			flex-wrap: wrap
+			justify-content: center
+			align-items: flex-start
+			align-content: center
+			padding: 20px
+			span
+				font-family: $geom-b
+				font-size: 16px
+				text-transform: uppercase
+				color: #fff
+				text-align: center
+			ul
+				display: flex
+				margin-top: 20px
+				li
+					margin: 0 5px
+		&:hover
+			.projects__block_content
+				span
+					text-decoration: underline
+					text-decoration-color: $red
+.check-gen
+	position: relative
+	z-index: 10
+.l-container
+	display: inline-block
+	position: relative
+	font-weight: normal
+	cursor: pointer
+	margin-bottom: 0px
+	-webkit-user-select: none
+	-moz-user-select: none
+	-ms-user-select: none
+	user-select: none
+.l-container input
+	position: absolute
+	opacity: 0
+	cursor: pointer
+	z-index: -1
+	top: 0px
+	left: 0px
+.checkmark
+	position: absolute
+	top: -4px
+	left: 0px
+	height: 20px
+	width: 20px
+	background-color: #f4f4f4
+	border-radius: 3px
+	border: 1px solid $blue	
+.check-gen .checkmark:after
+	content: ""
+	position: absolute
+	display: none
+.check-gen input:checked ~ .checkmark:after
+	display: block
+.check-gen .checkmark:after
+	left: 6px
+	top: 2px
+	width: 7px
+	height: 11px
+	border: solid $red
+	border-width: 0 2px 2px 0
+	-webkit-transform: rotate(45deg)
+	-ms-transform: rotate(45deg)
+	transform: rotate(45deg)
+
+
+/***********************************************Project*******************************************/
+.project
+	padding: 50px 0px
+	&__slider
+		.slick-slide
+			height: 730px
+			display: flex!important
+			div
+				width: 100%
+				height: 100%
+			img
+				width: 100%
+				height: 100%
+				flex-grow: 1
+		&__wrap
+			margin-top: 30px
+	.slider-nav
+		margin: 0 -10px
+		margin-top: 20px
+		height: 183px
+		.slick-slide
+			margin: 0 10px
+			height: 183px			
+			display: flex!important
+			div
+				width: 100%
+				height: 100%
+			img
+				width: 100%
+				height: 100%
+				flex-grow: 1
+		.slick-prev
+			position: absolute
+			top: 50%
+			font-size: 0px
+			width: 15px
+			height: 15px
+			border-top: 2px solid #999
+			border-right: 2px solid #999
+			position: absolute
+			-moz-transition: all 0.3s ease-out
+			-o-transition: all 0.3s ease-out
+			-webkit-transition: all 0.3s ease-out
+			transition: all 0.3s ease-out
+			transform: rotate(-135deg)
+			z-index: 1000
+			left: -20px
+			background: transparent
+			&:hover
+				border-top: 2px solid $red
+				border-right: 2px solid $red
+		.slick-next
+			position: absolute
+			top: 50%
+			font-size: 0px
+			width: 15px
+			height: 15px
+			border-bottom: 2px solid #999
+			border-left: 2px solid #999
+			position: absolute
+			-moz-transition: all 0.3s ease-out
+			-o-transition: all 0.3s ease-out
+			-webkit-transition: all 0.3s ease-out
+			transition: all 0.3s ease-out
+			transform: rotate(-135deg)
+			z-index: 1000
+			right: -20px
+			background: transparent
+			&:hover
+				border-bottom: 2px solid $red
+				border-left: 2px solid $red
+	&__desc
+		margin-top: 40px
+		p,li,i
+			font-family: $geom
+			font-size: 14px
+		p
+			margin-bottom: 30px
+		i
+			font-style: normal
+			font-weight: bold
+			color: #000
+		ul
+			margin-bottom: 30px
+
+
+
 /***********************************************ButtonMobile************************************/
 
 .menu-toggle-button

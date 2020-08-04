@@ -46,3 +46,35 @@ $(document).ready(function(){
    });
 
 });
+
+
+$(document).ready(function(){
+  $('.project__slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.slider-nav'
+  });
+  $('.slider-nav').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    asNavFor: '.project__slider',
+    centerMode: false,
+    focusOnSelect: true
+  });
+});
+
+
+//Projects Filters
+
+$(".projects__filters :checkbox").click(function() {
+       $(".projects__block__col").hide();
+       if ($('.projects__filters input[type="checkbox"]:checked').length > 0) {
+         $(".projects__filters :checkbox:checked").each(function() {
+             $("." + $(this).val()).show();
+         });
+       }else{
+          $(".projects__block__col").show();
+       }
+    });
