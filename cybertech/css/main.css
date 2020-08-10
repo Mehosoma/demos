@@ -1257,7 +1257,7 @@ body hr {
 }
 
 .other-products .main-header {
-  max-width: 600px;
+  max-width: 540px;
 }
 
 .main-page .main-inner-content p {
@@ -2337,6 +2337,22 @@ body hr {
 
 .docs-down .docs-down-block:hover span{
   color: #D72D24;
+}
+
+.filters-list_field--add{
+  align-items: center;
+}
+
+.filters-list_field--add span{
+  font-size: 13px;
+}
+
+.filters-list_field--add i{
+  font-size: 14px;
+  color: #333;
+  line-height: 31px;
+  font-style: normal;
+  font-family: "Roboto-Bold", sans-serif;
 }
 
 
