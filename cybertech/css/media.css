@@ -26,6 +26,9 @@
 
 	.equil-header{
 		height: 60px;
+		position: fixed;
+		width: 100%;
+		top: 0px;
 	}
 
 	.main-menu{
@@ -135,7 +138,7 @@
 		margin-left: 0px;
 		text-align: center;
 		width: 100%;
-		margin-bottom: 60px;
+		margin-bottom: 20px;
 	}
 
 	.main-list.rob-18 span, .main-list.rob-18 p{
@@ -226,8 +229,8 @@
 	}
 
 	.filters-list_field span{
-		flex: 0 0 69%;
-		max-width: 69%;
+		flex: 0 0 51%;
+		max-width: 51%;
 	}
 
 	.filters-block_list {
@@ -425,7 +428,7 @@
 	}
 
 	.main-contacts img{
-		margin-bottom: 30px;
+		margin-bottom: 0px;
 	}
 
 	.filters-block_image{
@@ -467,7 +470,7 @@
 	.main-left-wrap {
 		height: auto;
     	min-height: auto;
-    	padding-top: 30px;
+    	padding-top: 0px;
 	}
 
 	.work .block .pic:after {
@@ -528,6 +531,7 @@
 	.main-inner-wide {
 		min-height: auto;
 		padding: 60px 0;
+		margin-top: 60px;
 	}
 
 	.robots .block {
@@ -536,6 +540,7 @@
 
 	.main-page{
 		padding: 50px 0px;
+		margin-top: 60px; 
 	}
 
 	.contacts-form-wrap--main{
@@ -569,7 +574,7 @@
 	}
 
 	.footer-nav__menu{
-		display: block!important;
+		display: none!important;
 		margin: 30px 0px;
 	}
 
@@ -582,6 +587,7 @@
 
 	.main{
 		padding: 30px 0px;
+		margin-top: 60px;
 	}
 
 	.main-account{
@@ -613,6 +619,7 @@
 	.main-account{
 		width: 250px;
 		height: 250px;
+		margin-bottom: 30px;
 	}
 
 	.docs-down-block{
@@ -627,6 +634,22 @@
 
 	.docs-down .docs-down-block span{
 		font-size: 14px;
+	}
+
+	.docs-down{
+		padding: 30px 0px 10px;
+	}
+
+	.account-desc_content p{
+		font-size: 14px;
+	}
+
+	.main-left__inner--docs{
+		padding-top: 30px;
+	}
+
+	.strategy-page .main-inner{
+		margin-top: 60px;
 	}
 
 
