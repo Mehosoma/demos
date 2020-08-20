@@ -18,17 +18,14 @@ $box = trim($box);
 $phone = trim($phone);
 $comment = trim($comment);
 
-$address = "info@cybertech.rs";
-$sub = "Ð¡Ð¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ðµ Ñ ÑÐ°Ð¹Ñ‚Ð° Cybertech";
+$address = "mehosoma@yandex.ru";
+$sub = "Ñîîáùåíèå ñ ñàéòà Cybertech";
 
-$mes = "Ð¡Ð¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ðµ Ñ ÑÐ°Ð¹Ñ‚Ð° Cybertech \n
-Ð˜Ð¼Ñ Ð¾Ñ‚Ð¿Ñ€Ð°Ð²Ð¸Ñ‚ÐµÐ»Ñ: $name
-Ð¢ÐµÐ»ÐµÑ„Ð¾Ð½: $phone
-E-mail: $box
-ÐŸÑ€Ð¸Ñ‡Ð¸Ð½Ð° Ð¾Ð±Ñ€Ð°Ñ‰ÐµÐ½Ð¸Ñ: $comment 
+$mes = "Ñîîáùåíèå ñ ñàéòà Cybertech \n
+Èìÿ îòïðàâèòåëÿ: $name
+Òåëåôîí: $phone 
 ";
 
 mail($address, $sub, $mes);
  
 echo 'ok';
-?>

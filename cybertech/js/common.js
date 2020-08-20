@@ -142,7 +142,7 @@ $(document).ready(function () {
                        $(".contacts").css('display','none');
                        $(".main-contacts").css('display','none');
                        $(".contacts-add").css('display','flex');
-                        $(".contacts-page").css('height','100vh');
+                        $(".contacts-page").css('height','100%');
                        $(".contacts-page footer").addClass('pos-abs');
                     }
                 });
@@ -154,7 +154,7 @@ $(document).ready(function () {
             return false;
         });
 
-         //option A
+         //option B
         $("#main-form").unbind('submit').on('submit', function(event) {
             checkFormValidity("#main-form");
             if(isFormValid){
@@ -162,15 +162,14 @@ $(document).ready(function () {
                 var formNm = $('#' + formID);            
                 $.ajax({
                     type: 'POST',
-                    url: 'send.php', // Обработчик формы отправки
+                    url: 'send-main.php', // Обработчик формы отправки
                     data: formNm.serialize(),
                     success: function (data) {
                        jQuery(formNm)[0].reset();
-                       $(".contacts").css('display','none');
-                       $(".main-contacts").css('display','none');
+                       $(".after-submit").css('display','none');
                        $(".contacts-add").css('display','flex');
-                        $(".contacts-page").css('height','100vh');
-                       $(".contacts-page footer").addClass('pos-abs');
+                        $(".main-page-after").css('height','100%');
+                       $(".main-page-after footer").addClass('pos-abs');
                     }
                 });
             }else{
@@ -351,4 +350,38 @@ more.onclick = function () {
 // Карточки
 $('.card').click(function(){
   $(this).toggleClass('flipped');
+});
+
+//Validation Numbers
+$(document).ready(function() {
+  $('[name=phone]').bind("change keyup input click", function() {
+  if (this.value.match(/[^0-9]/g)) {
+  this.value = this.value.replace(/[^0-9+]/ig, '');
+  }
+  })
+});
+
+//Validation Symbols
+$(document).ready(function() {
+  $('[name=name]').bind("change keyup input click", function() {
+  if (this.value.match(/[^a-zA-ZА-Яа-яЁё]/g)) {
+  this.value = this.value.replace(/[^a-zA-ZА-Яа-яЁё]/ig, '');
+  }
+  })
+});
+
+//Packages-Select
+$(document).ready(function() {
+    $(function() {
+      $('.select-packages').selectpicker();
+    });
+});
+
+//Packages-Select-Open
+$(document).ready(function(){
+  $('.packages__select_block').on('click',function(e){
+       e.preventDefault();  
+    $('.packages__select_block').not(this).closest('.packages__select_body').removeClass('packages__select_block--open');
+    $(this).closest('.packages__select_body').toggleClass('packages__select_block--open');
+  });
 });

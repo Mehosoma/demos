@@ -652,6 +652,11 @@
 		margin-top: 60px;
 	}
 
+	.contacts-add{
+		height: auto;
+		padding: 100px 0px 50px 0px;
+	}
+
 
 }
 
@@ -1083,7 +1088,22 @@
 		font-size: 11px;
 	}
 
+	.contacts-add{
+		height: auto;
+		padding: 100px 0px 50px 0px;
+	}
 
+	.pos-abs .footer-nav__menu{
+  		display: none!important;
+	}
+
+	.pos-abs .disclaimer{
+  		display: none!important;
+	}
+
+	.contacts-add span{
+		font-size: 28px;
+	}
 
 }
 
