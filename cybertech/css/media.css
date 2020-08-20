@@ -682,6 +682,14 @@
 		padding-left: 10px;
 	}
 
+	.packages__select_hidden{
+		position: relative;
+	}
+
+	.packages__select_body{
+		margin-bottom: 0px;
+	}
+
 
 }
 
