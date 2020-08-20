@@ -2424,7 +2424,7 @@ body hr {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  padding: 60px 0px;
+  padding: 60px 0px 90px 0px;
 }
 
 
@@ -2606,7 +2606,7 @@ body hr {
 }
 
 .packages__wrap .packages__block:nth-child(1), .packages__wrap .packages__block:nth-child(3) {
-  height: 587px;
+  height: 510px;
 }
 
 .packages__wrap .packages__block:nth-child(2) {
