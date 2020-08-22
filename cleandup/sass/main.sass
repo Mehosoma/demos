@@ -1,0 +1,1675 @@
+@import "bourbon/bourbon"
+
+$light-blue: #0AF1D4
+$blue: #0D93EC
+$d-gray: #3B485D
+$l-gray: #CDD1D5
+$gray: #5D6879
+$light: #EEEFF0
+$white: #FFFFFF
+$orange: #FF6600
+$green: #00FF5D
+$blue-decor: #00FFFF
+$purple: #FF00EE
+$nunito-eb: 'NunitoExtraBold', sans-serif
+$nunito-el: 'NunitoExtraLight', sans-serif
+$nunito-l: 'NunitoLight', sans-serif
+$nunito-b: 'NunitoBold', sans-serif
+$nunito-i: 'NunitoItalic', sans-serif
+$nunito-sb: 'NunitoSemiBold', sans-serif
+$nunito-li: 'NunitoLightItalic', sans-serif
+$nunito-r: 'NunitoRegular', sans-serif
+
+$grad: #0C96EA
+$grad-e: #00FCCB
+
+@mixin linear-gradient($direction, $fromColor, $toColor)
+  background-color: $toColor /* Fallback Color */
+  background-image: -webkit-linear-gradient($direction, $fromColor, $toColor) /* Chrome 10+, Saf5.1+, iOS 5+ */
+  background-image:    -moz-linear-gradient($direction, $fromColor, $toColor) /* FF3.6 */
+  background-image:     -ms-linear-gradient($direction, $fromColor, $toColor) /* IE10 */
+  background-image:      -o-linear-gradient($direction, $fromColor, $toColor) /* Opera 11.10+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1,StartColorStr='#{$fromColor}', EndColorStr='#{$toColor}')
+
+
+@mixin gradient-border($color1, $color2, $border-width, $direction) 
+	border: none
+	background-repeat: no-repeat
+	background-image: linear-gradient(#{$direction}, $color1 0%, $color2 100%), linear-gradient(#{$direction}, $color1 0%, $color2 100%)
+	@if $direction == 'to right' or $direction == 'to left' 
+	@if $direction == 'to right' 
+		border-left: $border-width solid $color1
+		border-right: $border-width solid $color2
+	@else 
+		border-left: $border-width solid $color2
+		border-right: $border-width solid $color1
+    
+	background-position: 0 0, 0 100%
+	background-size: 100% $border-width
+ 
+@mixin gradient-check($color1, $color2, $border-width, $direction) 
+	border: none
+	background-repeat: no-repeat
+	background-image: linear-gradient(#{$direction}, $color1 0%, $color2 100%), linear-gradient(#{$direction}, $color1 0%, $color2 100%)
+	@if $direction == 'to right' or $direction == 'to left' 
+	@if $direction == 'to right' 
+		
+		border-right: $border-width solid $color2
+	@else 
+		
+		border-right: $border-width solid $color1
+    
+	background-size: 100% $border-width
+
+
+
+
+html
+	width: 100%
+	height: 100%
+	overflow-x: hidden
+body
+	width: 100%
+	height: auto
+	min-width: 320px	
+	margin: 0 auto
+	position: relative
+	font-family: $nunito-r
+	line-height: 1.2
+	-webkit-font-smoothing: antialiased
+	background-color: #fff	
+	
+
+	a:hover, a:focus, a:active
+		text-decoration: none
+		outline: none
+	input:focus, input:active
+		text-decoration: none
+		outline: none
+	button:focus, button:active
+		text-decoration: none
+		outline: none
+	textarea:focus, textarea:active
+		text-decoration: none
+		outline: none
+	a
+		display: inline-block
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out
+	ul, ol
+		padding: 0px
+		margin: 0px
+		list-style-type: none
+	button
+		border: none
+		cursor: pointer
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out
+	hr
+		border: none	
+
+.pixel
+	background: url(../images/main.jpg) no-repeat top center
+	width: 1366px
+	height: 12800px
+	position: absolute
+	z-index: 1000000
+	display: none
+	left: 50%
+	top: 0
+	margin-left: -683px
+	opacity: 0.5
+	margin-top: 0px
+
+
+/***************************************************GeneralStyles************************************/
+.gen-btn
+	@include linear-gradient(left, $grad, $grad-e)
+	padding: 2px 2px
+	border-radius: 30px
+	a
+		background: #fff
+		border-radius: 30px
+		padding: 0px 34px
+		color: $blue
+		font-family: $nunito-r
+		font-size: 15px
+		line-height: 30px
+		&:hover
+			@include linear-gradient(left, $grad, $grad-e)
+			color: $white
+
+.gen-btn--fill
+	@include linear-gradient(left, $grad, $grad-e)
+	padding: 2px 2px
+	border-radius: 30px
+	display: inline-block
+	a
+		@include linear-gradient(left, $grad, $grad-e)
+		border-radius: 30px
+		padding: 0px 29px
+		color: $white
+		font-family: $nunito-r
+		font-size: 15px
+		line-height: 30px
+		&:hover
+			background: $white
+			color: $blue
+
+.gen-btn--solo
+	a
+		background: $light-blue
+		border-radius: 30px
+		padding: 0px 20px
+		color: #fff
+		font-family: $nunito-l
+		font-size: 20px
+		line-height: 60px
+		box-shadow: 0px 3px 6px rgba(0,0,0,0.16)
+		&:hover
+			background: $blue
+.main__header
+	text-align: center
+	h1, h2
+		font-family: $nunito-l
+		font-size: 50px
+		line-height: 60px
+		color: $d-gray
+	span
+		font-family: $nunito-l
+		font-size: 25px
+		line-height: 32px
+		color: $d-gray
+		display: block
+		margin-top: 26px
+.section__subheader
+	text-align: center
+	position: relative
+	z-index: 10
+	h2
+		font-family: $nunito-l
+		font-size: 50px
+		color: $d-gray
+	span
+		font-family: $nunito-l
+		font-size: 20px
+		line-height: 32px
+		color: $d-gray
+		padding: 0px 207px
+		display: block
+		margin-top: 23px
+	&_wrap
+		position: relative
+	&_decor
+		width: 160px
+		height: 160px
+		position: absolute
+		border: 10px solid $light-blue
+		border-radius: 50%
+		top: -33px
+		left: 53%
+		margin-left: -80px	
+	&--decor
+		h2
+			height: 100px
+			margin-bottom: 0px
+			line-height: 100px
+		span
+			display: block
+			margin-top: 49px
+			padding: 0px 247px
+	&--white
+		h2
+			color: $white
+	&--small
+		h2
+			font-size: 35px
+			line-height: 40px
+			line-height: 60px
+			text-align: center
+		h1
+			font-family: $nunito-l
+			font-size: 35px
+			line-height: 40px
+			color: $d-gray
+			text-align: center
+		span
+			font-family: $nunito-l
+			font-size: 25px
+			line-height: 32px
+			color: $d-gray
+			text-align: center
+			display: block
+.back__bottom
+	width: 100%
+	height: 200px
+	position: absolute
+	bottom: 0px
+	background: rgba(59,72,93,0.06)
+.section-gray
+	background: rgba(59,72,93,0.06)
+.arrows
+		position: absolute
+		top: -11px
+		right: 0px
+		width: 100%
+		.arr-left,
+		.arr-right
+			width: 50px
+			height: 50px
+			background-color: $white
+			position: relative
+			border-radius: 5px
+			box-shadow: 0px 0px 6px rgba(0,0,0,0.16)
+			-moz-transition: all 0.3s ease-out
+			-o-transition: all 0.3s ease-out
+			-webkit-transition: all 0.3s ease-out
+			transition: all 0.3s ease-out
+			&:hover
+				cursor: pointer
+			&:after
+				content: ""
+				display: block
+				width: 20px
+				height: 20px
+				border-top: 3px solid $l-gray
+				border-right: 3px solid $l-gray		
+				position: absolute
+				top: 16px
+				left: 8px
+				-moz-transition: all 0.3s ease-out
+				-o-transition: all 0.3s ease-out
+				-webkit-transition: all 0.3s ease-out
+				transition: all 0.3s ease-out
+		.arr-left
+			right: 107px
+			position: absolute
+			&:hover
+				&:after
+					border-top: 3px solid $light-blue
+					border-right: 3px solid $light-blue
+			&:after
+				transform: rotate(-135deg)
+				left: 24px
+		.arr-right
+			right: 40px
+			position: absolute
+			&:hover
+				&:after
+					border-top: 3px solid $light-blue
+					border-right: 3px solid $light-blue
+			&:after
+				transform: rotate(45deg)
+.slick-dots
+	text-align: center
+	margin-top: 30px
+	li
+		display: inline-block
+		margin: 0px 30px
+	.slick-active
+		button
+			background: $light-blue
+	button
+		width: 15px
+		height: 15px
+		background: #AAAFB9
+		border-radius: 50%
+		font-size: 0px
+		border: 1px solid $light-blue
+.line-decor
+	width: 120%
+	height: 240px
+	top: 48%
+	margin-left: -10%
+	transform: rotate(-11deg)
+	position: absolute
+	@include linear-gradient(right, $grad, $grad-e)
+
+/***************************************************TopLine************************************/
+.top-line	
+	width: 100%
+	border-bottom: 1px solid $light-blue
+	background: #fff
+	position: relative
+	z-index: 1000
+	&__menu
+		ul
+			display: flex
+			width: 100%
+			height: 40px
+			justify-content: flex-end
+			align-items: center
+			li
+				margin-right: 21px
+			li:last-child
+				margin-right: 0px
+			a
+				font-family: $nunito-b
+				font-size: 13px
+				color: $blue
+				opacity: 0.6
+				&:hover
+					opacity: 1
+
+
+/***************************************************Header************************************/
+.civil-header
+	box-shadow: 0px 3px 6px rgba(0,0,0,0.16)
+	position: relative
+	z-index: 10000
+	background: #fff
+	&__wrap
+		display: flex
+		justify-content: space-between
+		align-items: center
+	&__menu
+		flex-grow: 1
+		margin-right: 20px
+		ul
+			height: 80px
+			display: flex
+			align-items: center
+			justify-content: flex-end
+			a
+				font-family: $nunito-b
+				font-size: 15px
+				color: $d-gray
+				&:hover
+					color: $blue
+		li
+			margin: 0 8px
+	&__btns
+		display: flex
+		align-items: center
+		.gen-btn--fill
+			margin: 0px 20px
+.scrolled
+	position: fixed
+	z-index: 100000
+	top: 0px
+	width: 100%
+
+/***************************************************Main************************************/
+.main
+	position: relative
+	padding: 86px 0px 50px 0px
+	.bottom-back
+		position: absolute
+		width: 100%
+		height: 187px
+		bottom: 0px
+		background: rgba(59,72,93,0.06)
+	&__wrap
+		text-align: center
+	.gen-btn--fill
+		position: relative
+		margin-top: 27px
+		a
+			line-height: 60px
+			padding: 0 45px
+			font-size: 20px
+	&__icons
+		display: flex
+		background: #fff
+		padding: 80px 30px 52px 30px
+		box-shadow: 0px 3px 6px rgba(0,0,0,0.16)
+		width: 95%
+		margin: 20px 0px 0px 20px
+		&_block
+			text-align: center
+			img
+				display: block
+				margin: 0 auto
+				margin-bottom: 30px
+			span
+				font-family: $nunito-b
+				font-size: 18px
+				line-height: 24px
+				color: $blue
+				display: block
+				padding: 0px 40px		
+
+/***************************************************Main-Slider************************************/
+.main-slider
+	width: 100%
+	height: auto
+	position: relative
+	&__wrap
+		padding: 70px 0px 48px 20px
+		position: relative	
+	&__slider
+		margin: 0px -15px
+		.slick-slide
+			margin: 0 15px
+	&__slide
+		padding: 72px 20px 20px 34px
+		background: #fff
+		position: relative
+		box-shadow: 0px 0px 6px rgba(0,0,0,0.16)
+		img
+			position: absolute
+			top: 28px
+			left: 33px
+		p
+			font-family: $nunito-sb
+			font-size: 16px
+			line-height: 26px
+			color: #192841
+			margin-bottom: 22px
+		span
+			font-family: $nunito-b
+			font-size: 18px
+			line-height: 24px
+			color: $blue
+	
+
+
+/***************************************************Principles************************************/
+.principles
+	width: 100%
+	height: auto
+	position: relative
+	padding: 88px 0px 50px 0px
+	.container
+		position: relative
+		z-index: 15
+	&__icons
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		margin-top: 80px
+		padding: 0px 32px
+		&_block
+			text-align: center
+			flex: 0 0 17%
+			max-width: 17%
+			box-shadow: 0px 0px 12px rgba(0,0,0,0.16)
+			background: $white
+			padding: 30px 10px 20px 10px
+			img
+				display: block
+				margin: 0 auto
+				margin-bottom: 26px
+			span
+				font-family: $nunito-b
+				font-size: 15px
+				line-height: 20px
+				color: #192841
+				text-transform: uppercase
+				height: 40px 
+				overflow: hidden
+				display: block
+			p
+				font-family: $nunito-sb
+				font-size: 14px
+				line-height: 19px
+				color: $d-gray
+				margin: 10px 0px 28px 0px
+				height: 95px
+				overflow: hidden
+			a
+				font-family: $nunito-b
+				font-size: 14px
+				line-height: 19px
+				color: $blue
+				&:hover
+					color: $light-blue
+	.gen-btn
+		display: inline-block
+		margin-top: 42px
+		margin-right: 36px
+		a
+			padding: 0px 17px
+			line-height: 40px
+			font-size: 18px
+
+
+/***************************************************Trial************************************/
+.trial
+	position: relative
+	padding: 159px 0px 66px 0px
+	.section__subheader--decor
+		h2
+			background: #fff
+	.gen-btn--fill
+		position: relative
+		margin-top: 38px
+		a
+			font-size: 20px
+			padding: 0 47px
+			line-height: 60px
+	&__pass
+		text-align: center
+		margin-top: 70px
+		margin-left: -64px
+		span
+			font-family: $nunito-b
+			font-size: 34px
+			line-height: 46px
+			color: $blue
+		img
+			position: relative
+			left: -25px
+			top: -13px
+
+/***************************************************Why************************************/
+.why
+	position: relative
+	padding: 85px 0px 8px 0px
+	.main__header
+		margin-bottom: 125px
+		span
+			display: block
+			padding: 0px 121px
+	&__block
+		display: flex
+		justify-content: space-between
+		align-items: center
+		width: 68%
+		margin: 0px auto 87px
+		&_image
+			position: relative
+			flex: 0 0 37%
+			max-width: 37%
+		&_text
+			p
+				font-family: $nunito-sb
+				font-size: 18px
+				line-height: 32px
+				color: $gray
+			span
+				font-family: $nunito-sb
+				font-size: 34px
+				line-height: 60px
+				color: $blue
+.why-row .col-12:nth-child(even) .why__block_image
+	text-align: right
+
+
+
+/***************************************************Trial-Bottom************************************/
+.section__gradient
+	@include linear-gradient(left, $grad, $grad-e)
+	background-color: transparent
+	background-size: 100% 100%
+	background-repeat: no-repeat
+	position: relative
+.trial--bottom
+	padding: 88px 0px 80px 0px
+	.section__gradient
+		position: absolute
+		width: 100%
+		height: 400px
+		top: 0px
+		left: 0px
+	.section__subheader_wrap
+		width: 66%
+		margin: 34px auto 0px
+		background: #fff
+		box-shadow: 0px 0px 12px rgba(0,0,0,0.16)
+		border-radius: 5px
+		padding: 74px 0px 40px 0px
+		.section__subheader_decor
+			top: 44px
+			left: 54%
+		.section__subheader--decor span
+			padding: 0px 40px
+
+
+/***************************************************FAQ************************************/
+.faq
+	position: relative
+	padding: 76px 0px 80px 0px
+	z-index: 1000
+	background: #fff
+	&__accordeon
+		margin-bottom: 30px
+		&_wrap
+			width: 69%
+			margin: 45px auto 20px
+		&_header
+			line-height: 64px
+			background: #F3F4F5
+			position: relative
+			border: 1px solid $light-blue
+			border-radius: 5px
+			&:hover
+				cursor: pointer
+			&:after
+				content: ""
+				display: block
+				width: 20px
+				height: 20px
+				border-top: 3px solid #000
+				border-right: 3px solid #000
+				position: absolute
+				top: 20px
+				right: 24px
+				opacity: 1
+				-moz-transition: all 0.3s ease-out
+				-o-transition: all 0.3s ease-out
+				-webkit-transition: all 0.3s ease-out
+				transition: all 0.3s ease-out
+				transform: rotate(-225deg)
+				@include gradient-check($grad, $grad-e, 2px, 'to right');
+			span
+				font-family: $nunito-sb
+				font-size: 20px
+				line-height: 64px
+				padding-left: 20px
+		&_hidden
+			background: #F3F4F5
+			display: none
+			border: 1px solid $light-blue
+			border-top: none
+			padding: 20px 20px
+			p
+		&_wrap
+			.faq__accordeon:nth-child(1)
+				.faq__accordeon_header
+			.faq__accordeon:nth-child(2)
+				.faq__accordeon_header
+			.faq__accordeon:nth-child(3)
+				.faq__accordeon_header
+	.accordeon_open
+		.faq__accordeon_header
+			border-bottom: none
+			border-radius: 5px 5px 0px 0px
+			&:after
+				content: ""
+				display: block
+				width: 2px
+				height: 34px
+				position: absolute
+				top: 15px
+				right: 34px
+				opacity: 1
+				-moz-transition: all 0.3s ease-out
+				-o-transition: all 0.3s ease-out
+				-webkit-transition: all 0.3s ease-out
+				transition: all 0.3s ease-out
+				transform: rotate(-45deg)
+				@include linear-gradient(left, $grad, $grad-e)
+			&:before
+				content: ""
+				display: block
+				width: 34px
+				height: 2px
+				position: absolute
+				top: 31px
+				right: 17px
+				opacity: 1
+				-moz-transition: all 0.3s ease-out
+				-o-transition: all 0.3s ease-out
+				-webkit-transition: all 0.3s ease-out
+				transition: all 0.3s ease-out
+				transform: rotate(135deg)
+				@include linear-gradient(left, $grad, $grad-e)
+
+
+/***************************************************Footer************************************/
+.civil-footer
+	width: 100%
+	height: auto
+	background: #192841
+	padding: 40px 0px 20px
+	position: relative
+	z-index: 1000
+	&__wrap
+		display: flex
+		border-bottom: 1px solid $light-blue
+		span
+			font-family: $nunito-l
+			font-size: 18px
+			line-height: 32px
+			color: $white
+	&__menu
+		flex: 0 0 50%
+		max-width: 50%
+		border-right: 1px solid $light-blue
+		padding-bottom: 25px
+		span
+			display: block
+		a
+			font-family: $nunito-r
+			font-size: 14px
+			color: $blue
+			&:hover
+				color: $white
+		ul
+			display: inline-block
+			margin-top: 16px
+		ul:nth-child(3)
+			margin-left: 50px
+		li
+			margin-bottom: 13px
+	&__form
+		padding-left: 25px
+		&_field
+			margin-bottom: 13px		
+		input
+			width: 288px
+			height: 41px
+			background: $gray
+			border: 1px solid $light-blue
+			padding: 0px 10px
+		::-webkit-input-placeholder 
+			color: $d-gray
+			font-family: $nunito-sb
+			font-size: 14px		
+		::-moz-placeholder
+			color: $d-gray
+			font-family: $nunito-sb
+			font-size: 14px		
+		:-moz-placeholder 
+			color: $d-gray
+			font-family: $nunito-sb
+			font-size: 14px				
+		:-ms-input-placeholder      
+			color: $d-gray
+			font-family: $nunito-sb
+			font-size: 14px
+		textarea
+			width: 426px
+			height: 70px
+			background: $gray
+			border: 1px solid $light-blue
+			resize: none
+			padding: 13px 10px
+		button
+			width: 137px
+			height: 41px
+			background: $blue
+			color: $white
+			margin-left: 20px
+			&:hover
+				background: $light-blue
+	.form-gen input:hover, .form-gen input:active, .form-gen input:focus, .form-gen textarea:hover, .form-gen textarea:active, .form-gen textarea:focus
+		border: 1px solid #b4b4b4!important
+	&__bottom
+		display: flex
+		align-items: center
+		justify-content: space-between
+		.logo
+			margin-right: 48px
+		span
+			font-family: $nunito-b
+			font-size: 13px
+			line-height: 17px
+			color: $gray
+			display: block
+	#footer-form
+		margin-top: 5px
+		.civil-footer__form_field:last-child
+			margin-bottom: 0px
+			display: flex
+			align-items: flex-end
+
+
+/***************************************************Questions************************************/
+.questions
+	background: #F3F4F5
+	padding: 83px 0px 0px 0px
+	.line-decor
+		width: 150%
+		height: 643px
+		top: 21%
+		margin-left: -25%
+		transform: rotate(-31deg)
+	.row-header
+		h1
+			padding-left: 22px
+			margin-bottom: 27px
+			i
+				font-family: $nunito-sb
+				font-style: normal
+		span
+			opacity: 0.7
+	.container
+		max-width: 1245px
+	.small-logo, .btn-close
+		background: #fff
+	.btn-close
+		line-height: 94px
+		border-left: 1px solid #F3F4F5
+		border-radius: 0px 5px 0px 0px
+		flex-grow: 1
+		a
+			font-family: $nunito-l
+			font-size: 14px
+			line-height: 94px
+			color: $gray
+			display: block
+			position: relative
+			padding-left: 30px
+			&:after
+				content: ""
+				display: block
+				width: 2px
+				height: 34px
+				position: absolute
+				top: 30px
+				right: 60px
+				opacity: 1
+				-moz-transition: all 0.3s ease-out
+				-o-transition: all 0.3s ease-out
+				-webkit-transition: all 0.3s ease-out
+				transition: all 0.3s ease-out
+				transform: rotate(-45deg)
+				@include linear-gradient(left, $grad, $grad-e)
+			&:before
+				content: ""
+				display: block
+				width: 34px
+				height: 2px
+				position: absolute
+				top: 46px
+				right: 44px
+				opacity: 1
+				-moz-transition: all 0.3s ease-out
+				-o-transition: all 0.3s ease-out
+				-webkit-transition: all 0.3s ease-out
+				transition: all 0.3s ease-out
+				transform: rotate(135deg)
+				@include linear-gradient(left, $grad, $grad-e)
+			&:hover
+				color: $blue
+	&__wrap
+		box-shadow: 0px 0px 12px rgba(0,0,0,0.16)
+		background: #fff
+		width: 97%
+		margin: 40px auto 40px
+		padding: 0px
+		border-radius: 5px
+		.m-0
+			border-bottom: 1px solid #F3F4F5
+	&__header
+		height: 100%
+		display: flex
+		justify-content: space-between
+		.small-logo
+			display: flex
+			padding-left: 20px
+			align-items: center
+			height: 100%
+			border-radius: 5px 0px 0px 0px
+			flex: 0 0 74%
+			max-width: 74%
+			span
+				font-family: $nunito-l
+				font-size: 25px
+				line-height: 33px
+				color: $blue
+				padding-left: 24px
+	&__block 
+		background-color: #fff
+		border: 1px solid #F3F4F5
+		padding: 21px 0px 0px 0px
+		margin-bottom: 30px
+		span
+			font-family: $nunito-sb
+			font-size: 18px
+			line-height: 24px
+			color: $d-gray
+			padding: 0px 33px
+		&_hidden
+			display: none
+		&_list
+			position: relative
+			margin-top: 41px
+			padding: 0px 15px 0px 33px
+		li
+			font-family: $nunito-r
+			font-size: 16px
+			line-height: 21px
+			color: $gray
+			position: relative
+			padding-left: 30px
+			margin-bottom: 10px
+			&:after
+				content: ''
+				display: block
+				left: 6px
+				top: 2px
+				width: 7px
+				height: 11px
+				border: solid $light-blue
+				border-width: 0 2px 2px 0
+				-webkit-transform: rotate(45deg)
+				-ms-transform: rotate(45deg)
+				transform: rotate(45deg)
+				position: absolute
+		a
+			display: block
+			line-height: 34px
+			text-align: center
+			font-family: $nunito-eb
+			font-size: 14px
+			color: #192841
+			text-transform: uppercase
+			position: relative
+			border-top: 1px solid #F3F4F5
+			&:after
+				content: ""
+				display: block
+				width: 2px
+				height: 10px
+				position: absolute
+				top: 10px
+				right: 11px
+				opacity: 1
+				background: $light-blue
+			&:before
+				content: ""
+				display: block
+				width: 10px
+				height: 2px
+				position: absolute
+				top: 14px
+				right: 7px
+				opacity: 1
+				background: $light-blue
+			&:hover
+				color: $light-blue
+		&_gradient
+			width: 100%
+			height: 60px
+			position: absolute
+			bottom: 0px
+			left: 0px
+			background: -moz-linear-gradient(bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%)
+			background: -webkit-linear-gradient(bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%)
+			background: linear-gradient(to top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%)
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 )
+	.faq
+		position: relative
+		padding-top: 0px
+		padding-bottom: 50px
+		width: 97%
+		margin: 0px auto
+		&__accordeon
+			&_wrap
+				width: 100%
+				margin-top: 0px
+			&_header
+				display: flex
+				justify-content: space-between
+				line-height: 103px
+				padding-left: 30px
+				&:after
+					display: none
+				&:before
+					display: none
+				span
+					font-family: $nunito-l
+					font-size: 25px
+					line-height: 60px
+					color: $gray
+		.accordeon_open 
+			.faq__accordeon_header
+				&:after
+					display: none
+				&:before
+					display: none
+	.accordeon__header_right
+		position: relative
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out
+		padding-right: 50px
+		flex: 0 0 330px
+		max-width: 330px
+		padding-left: 36px
+		span
+			font-family: $nunito-l
+			font-size: 14px
+			line-height: 60px
+			color: $gray
+		&:after
+			content: ""
+			display: block
+			width: 20px
+			height: 20px
+			border-top: 3px solid #000
+			border-right: 3px solid #000
+			position: absolute
+			top: 35px
+			right: 55px
+			opacity: 1	
+			transform: rotate(135deg)
+			@include gradient-check($grad, $grad-e, 2px, 'to right')
+		&:hover
+			background: $blue
+			&:after
+				background-image: none
+				border-right: 2px solid #fff
+				border-top: 2px solid #fff
+			span
+				color: $white
+.questions__block--open
+	.questions__block_gradient
+	 	display: none
+.fix-test
+	padding: 0px 40px
+	display: flex
+	flex-wrap: wrap
+	padding-bottom: 30px
+.trial--inner
+	padding-bottom: 20px	
+	.section__subheader_wrap
+		margin-top: 0px
+.main--inner
+	padding-top: 0px
+	.main__icons
+		padding-top: 10px
+
+
+/***************************************************Video************************************/
+.video
+	@include linear-gradient(left, $grad, $grad-e)
+	background-color: transparent
+	background-size: 100% 50%
+	background-repeat: no-repeat
+	position: relative
+	padding: 80px 0px
+	.section__subheader--small
+		span
+			margin-top: 26px
+	&__block
+		margin-top: 82px
+		img
+			padding-left: 50px
+			margin-bottom: 4px
+		span
+			font-family: $nunito-l
+			font-size: 25px
+			line-height: 32px
+			color: $blue
+			display: block
+			text-align: center
+	.line-decor
+		top: 80%
+		transform: rotate(15deg)
+		height: 300px
+	&__wrap
+		background: #fff
+		box-shadow: 0px 0px 12px rgba(0,0,0,0.16)
+		width: 100%
+		margin: 0px 0px 0px 0px
+		border-radius: 5px
+		&_inner
+			padding: 35px 30px 43px 30px
+	&__list
+		display: flex
+		margin-top: 42px
+		li
+			position: relative
+			padding-left: 30px
+			background-image: url('../images/check-decor.svg')
+			background-repeat: no-repeat
+			background-position: top 5px left
+			font-family: $nunito-sb
+			font-size: 18px
+			line-height: 32px
+			color: #192841
+			margin-bottom: 20px
+		&_left
+			padding-left: 5px
+			flex: 0 0 59%
+			max-width: 59%
+			p
+				font-family: $nunito-sb
+				font-size: 18px
+				line-height: 32px
+				color: $gray
+		&_right
+			padding-left: 10px
+	&__btn
+		width: 100%
+		text-align: center
+		margin-top: 28px
+	.gen-btn--fill
+		text-align: center
+		a
+			font-size: 20px
+			width: 300px
+			line-height: 60px
+	&__bottom
+		border-top: 1px solid $l-gray
+		padding: 33px 22px 30px 22px
+		span
+			font-family: $nunito-sb
+			font-size: 16px
+			line-height: 32px
+			color: $l-gray
+		p
+			font-family: $nunito-sb
+			font-size: 14px
+			line-height: 20px
+			color: $gray
+
+
+/***************************************************About************************************/
+.trial--rotate
+	.line-decor
+		top: 20%
+		transform: rotate(15deg)
+		height: 450px
+.about
+	padding: 80px 0px 17px 0px
+	.main__header span
+		margin-top: 15px
+	&__contacts
+		display: flex
+		width: 95%
+		margin: 48px auto
+		align-items: flex-start
+	&__text
+		flex: 0 0 59%
+		max-width: 59%
+		p
+			font-family: $nunito-sb
+			font-size: 18px
+			line-height: 32px
+			color: $d-gray
+			margin-bottom: 30px
+	&__links
+		padding-top: 37px
+		span
+			font-family: $nunito-sb
+			font-size: 28px
+			line-height: 60px
+			color: $d-gray
+		a
+			font-family: $nunito-b
+			font-size: 16px
+			line-height: 40px
+			color: $blue
+		ul
+			margin-top: 5px
+		li
+			padding-left: 47px
+			margin-bottom: 20px
+			a
+				position: relative
+				&:after
+					content: ""
+					display: block
+					width: 10px
+					height: 10px
+					border-top: 2px solid $blue
+					border-right: 2px solid $blue
+					position: absolute
+					top: 15px
+					left: -33px
+					opacity: 1	
+					transform: rotate(45deg)
+					-moz-transition: all 0.3s ease-out
+					-o-transition: all 0.3s ease-out
+					-webkit-transition: all 0.3s ease-out
+					transition: all 0.3s ease-out
+				&:hover
+					color: $light-blue
+					&:after
+						border-top: 2px solid $light-blue
+						border-right: 2px solid $light-blue
+	&__form
+		flex-grow: 1
+		display: flex
+		justify-content: flex-end
+		.form-gen
+			background: #fff
+		&_header
+			border-bottom: 2px solid $light-blue
+			margin-bottom: 20px
+			span
+				font-family: $nunito-l
+				font-size: 22px
+				line-height: 71px
+				color: $d-gray
+		&_field
+			margin-bottom: 25px
+			span
+				font-family: $nunito-sb
+				font-size: 15px
+				color: $d-gray
+				display: block
+				margin-bottom: 10px
+			input
+				width: 100%
+				height: 40px
+				background: #F3F4F5
+				border: 1px solid #F3F4F5
+				padding: 0px 10px
+			textarea
+				width: 100%
+				height: 190px
+				background: #F3F4F5
+				border: 1px solid #F3F4F5
+				resize: none
+				padding: 10px 20px
+		.form-gen input:hover, .form-gen input:active, .form-gen input:focus, .form-gen textarea:hover, .form-gen textarea:active, .form-gen textarea:focus
+			border: 1px solid $light-blue!important
+		&_btn
+			text-align: right
+			.gen-btn
+				display: inline-block
+			a
+				line-height: 24px
+				padding: 0px 40px
+#contacts-form
+	width: 451px
+	padding: 0px 20px 30px 20px
+
+
+
+/***************************************************Form-Bottom************************************/
+.form-bottom
+	padding: 90px 0px 158px 0px
+	#form-bottom
+		width: 80%
+		margin: 0 auto
+		margin-left: 139px
+		background: #fff
+		box-shadow: 0px 0px 12px rgba(0,0,0,0.16)
+		padding: 55px 0px 64px 0px
+	.form-gen
+		background: #fff
+	&__header
+		text-align: center
+		span
+			font-family: $nunito-l
+			font-size: 35px
+			color: $d-gray
+			display: block
+			margin-bottom: 37px
+		p
+			font-family: $nunito-l
+			font-size: 25px
+			line-height: 32px
+			color: $d-gray
+			i
+				font-style: normal
+				color: $blue
+	&__wrap
+		display: flex
+		justify-content: space-between
+		padding: 0px 89px 0px 29px
+		margin-top: 38px
+	&__left,
+	&__right
+		flex: 0 0 44%
+		max-width: 44%
+	&__logos
+		display: flex
+		align-items: center
+		margin-top: 20px
+		img:nth-child(2)
+			margin-left: 70px
+	.about__form_btn
+		margin-top: 33px
+		a
+			padding: 0px 50px
+
+
+/***************************************************Read************************************/
+.read
+	background: $light-blue
+	padding: 86px 0px 80px 0px
+	&__wrap
+		display: flex
+		width: 95%
+		margin: 35px auto 0px
+		justify-content: space-between
+	&__left,
+	&__right
+		flex: 0 0 48%
+		max-width: 48%
+			
+	&__block	
+		margin-bottom: 54px	
+		background: $white
+		padding: 92px 32px 28px 32px
+		border-radius: 5px
+		p
+			font-family: $nunito-li
+			font-size: 16px
+			line-height: 26px
+			color: $d-gray
+			margin-bottom: 26px
+	&__author
+		background-image: url('../images/author.png')
+		background-repeat: no-repeat
+		background-position: top left
+		padding-left: 56px
+		height: 32px
+		margin-top: 56px
+		span
+			font-family: $nunito-b
+			font-size: 18px
+			line-height: 24px
+			color: $blue
+
+/***************************************************Store-Main************************************/
+.store-main
+	width: 100%
+	min-height: 356px
+	@include linear-gradient(left, $grad, $grad-e)
+	padding: 83px 0px 60px 0px
+	.main__header
+		h1,
+		span
+			color: #fff
+	.gen-btn--fill
+		position: relative
+		margin-top: 26px
+		a
+			font-size: 20px
+			padding: 0 47px
+			line-height: 60px
+.store
+	padding: 64px 0px 80px 0px
+	position: relative
+	z-index: 1000
+	background-repeat: no-repeat, no-repeat
+	background-position: top 100px left, bottom right 
+	.container 
+		max-width: 1260px
+	&__header
+		margin-bottom: 38px
+		span
+			font-family: $nunito-l
+			font-size: 35px
+			line-height: 40px
+			color: $gray
+	&__menu
+		background: #fff
+		box-shadow: 0px 0px 12px rgba(0,0,0,0.16)
+		width: 250px
+		padding: 20px 0px 0px 0px
+		span
+			font-family: $nunito-sb
+			font-size: 14px
+			line-height: 19px
+			color: #CDD1D5
+			padding: 0px 20px
+		ul
+			margin-top: 28px
+		li
+			display: flex
+			justify-content: space-between
+			border-bottom: 1px solid $light
+			align-items: center
+			padding: 0px 18px 10px 10px
+			margin-bottom: 7px
+			span
+				font-family: $nunito-sb
+				font-size: 18px
+				line-height: 24px
+				color: $gray
+			p
+				font-family: $nunito-sb
+				font-size: 14px
+				line-height: 19px
+				color: #CDD1D5
+				margin-bottom: 0px
+	&__wrap
+		background: #fff
+		box-shadow: 0px 0px 12px rgba(0,0,0,0.16)
+		margin-left: -23px
+		width: 101%
+		padding: 38px 28px 10px 25px
+	&__block
+		border-bottom: 1px solid $light
+		margin-bottom: 43px
+		padding-bottom: 18px
+		&_header
+			display: flex
+		&_desc
+			display: flex
+			align-content: space-between
+			flex-wrap: wrap
+			padding-left: 20px
+			span
+				font-family: $nunito-r
+				font-size: 16px
+				line-height: 21px
+				color: $gray
+				opacity: 0.5
+			p
+				font-family: $nunito-b
+				font-size: 22px
+				line-height: 30px
+				color: #192841
+				margin-bottom: 0px
+		&_good
+			flex: 0 0 80px
+			max-width: 80px
+			height: 107px
+			img
+				width: 100%
+				height: 100%
+	&__cost
+		display: flex
+		justify-content: space-between
+		align-items: center
+		margin-top: 18px
+		a
+			font-family: $nunito-sb
+			font-size: 18px
+			line-height: 24px
+			color: $blue
+		span
+			font-family: $nunito-b
+			font-size: 22px
+			line-height: 30px
+			color: $blue
+	.about__form_btn
+		margin-top: 22px
+		a
+			line-height: 32px
+.pages
+	ul
+		display: flex
+		padding-bottom: 30px
+	li
+		width: 40px
+		height: 40px
+		background: #fff
+		border: 1px solid $light
+		border-radius: 4px
+		box-shadow: 0px 1px 2px rgba(0,0,0,0.4)
+		margin-right: 10px
+		text-align: center
+		&:hover
+			cursor: pointer
+			span
+				color: $blue
+	li:last-child
+		width: 60px
+	span
+		font-family: $nunito-sb
+		font-size: 20px
+		line-height: 40px
+		color: $d-gray
+.store--page
+	.line-decor
+		top: 10%
+		width: 130%
+		transform: rotate(30deg)
+		margin-left: -20%
+
+.product--page
+	.line-decor
+		top: 20%
+		width: 140%
+		height: 400px
+		transform: rotate(20deg)
+		margin-left: -20%
+
+.trial--store
+	padding-bottom: 80px
+
+/***************************************************Product************************************/
+.product
+	padding: 76px 0px 50px 0px
+	position: relative
+	.container
+		max-width: 1055px
+	&__wrap
+		background: #fff
+		box-shadow: 0px 0px 12px rgba(0,0,0,0.16)
+		padding: 40px 30px 36px 40px
+		border: 5px
+	&__block
+		display: flex
+	&__image
+		flex: 0 0 284px
+		max-width: 284px
+		img
+			width: 100%
+			max-width: 250px
+			height: auto
+	&__header
+		display: flex
+		justify-content: space-between
+		width: 100%
+		span
+			font-family: $nunito-eb
+			font-size: 16px
+			line-height: 21px
+			color: $blue
+		i
+			font-family: $nunito-r
+			font-size: 15px
+			line-height: 24px
+			color: $white
+			text-transform: uppercase
+			font-style: normal
+			background: #00C8FF
+			border-radius: 30px
+			padding: 0px 10px
+	&__name
+		margin-top: 17px
+		span
+			font-family: $nunito-b
+			font-size: 28px
+			line-height: 37px
+			color: $d-gray
+	&__cost
+		margin-top: 40px
+		span
+			font-family: $nunito-b
+			font-size: 25px
+			line-height: 33px
+			color: $blue
+		span:nth-child(1)
+			font-family: $nunito-b
+			font-size: 25px
+			line-height: 33px
+			color: $gray
+			position: relative
+			margin-right: 30px
+			&:after
+				content: ''
+				display: block
+				position: absolute
+				width: 100%
+				height: 1px
+				background: $gray
+				transform: rotate(-11deg)
+				bottom: 17px
+				left: 0px
+			&:before
+				content: ''
+				display: block
+				position: absolute
+				width: 100%
+				height: 1px
+				background: $gray
+				transform: rotate(11deg)
+				top: 13px
+				left: 0px
+	&__btn
+		margin-top: 30px
+		.gen-btn--fill
+			margin-right: 30px
+		a
+			padding: 0px 40px
+	&__synopsis
+		margin-top: 80px
+		span
+			font-family: $nunito-eb
+			font-size: 12px
+			line-height: 16px
+			color: $d-gray
+			opacity: 0.3
+			display: block
+			margin-bottom: 14px
+		p
+			font-family: $nunito-sb
+			font-size: 16px
+			line-height: 21px
+			color: $gray
+			margin-bottom: 21px
+
+/***************************************************Product-Slider************************************/
+.product-slider
+	padding: 50px 0px 100px 0px
+	.container
+		max-width: 1055px
+	&__wrap
+		position: relative
+		.arrows
+			top: -50px
+			.arr-right
+				right: 0px
+			.arr-left
+				right: 70px
+	&__slider
+		margin: 0 -15px		
+		.slick-slide
+			margin: 0 15px
+			background: #FFF
+			padding-top: 50px
+		.store__block
+			background: #fff
+			box-shadow: 0px 0px 12px rgba(0,0,0,0.16)
+			padding: 20px
+		.product__header
+			padding-left: 20px
+			margin-bottom: 15px
+			align-items: center
+			span
+				font-family: $nunito-r
+				font-size: 12px
+				line-height: 16px
+				color: $d-gray
+				opacity: 0.3
+			i
+				font-size: 12px
+		.store__block_desc
+			p
+				font-family: $nunito-b
+				font-size: 14px
+				line-height: 19px
+				color: #192841
+		.product__cost
+			text-align: right
+			margin-top: 30px
+			span
+				font-size: 18px
+		.store__cost
+			margin-top: 30px
+			a
+				font-size: 14px
+			.gen-btn--fill
+				a
+					color: $white
+					&:hover
+						color: $blue

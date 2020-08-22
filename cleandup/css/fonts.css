@@ -1,0 +1,55 @@
+@font-face {
+  font-family: "NunitoExtraBold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/NunitoExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/NunitoExtraBold.woff") format("woff"), url("../fonts/NunitoExtraBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "NunitoExtraLight";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/NunitoExtraLight.eot?#iefix") format("embedded-opentype"), url("../fonts/NunitoExtraLight.woff") format("woff"), url("../fonts/NunitoExtraLight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "NunitoLight";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/NunitoLight.eot?#iefix") format("embedded-opentype"), url("../fonts/NunitoLight.woff") format("woff"), url("../fonts/NunitoLight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "NunitoBold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/NunitoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/NunitoBold.woff") format("woff"), url("../fonts/NunitoBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "NunitoItalic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/NunitoItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/NunitoItalic.woff") format("woff"), url("../fonts/NunitoItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "NunitoSemiBold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/NunitoSemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/NunitoSemiBold.woff") format("woff"), url("../fonts/NunitoSemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "NunitoLightItalic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/NunitoLightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/NunitoLightItalic.woff") format("woff"), url("../fonts/NunitoLightItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "NunitoRegular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/NunitoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/NunitoRegular.woff") format("woff"), url("../fonts/NunitoRegular.ttf") format("truetype");
+}
