@@ -1989,12 +1989,19 @@ body hr {
 .store-main .gen-btn--fill {
   position: relative;
   margin-top: 26px;
+  background-image: none;
 }
 
 .store-main .gen-btn--fill a {
   font-size: 20px;
   padding: 0 47px;
   line-height: 60px;
+  background: #0AF1D4;
+}
+
+.store-main .gen-btn--fill a:hover {
+  color: #FFFFFF;
+  background: #0D93EC;
 }
 
 .store {

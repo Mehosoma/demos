@@ -152,7 +152,7 @@ $(window).on('load resize', function() {
   if ($(window).width() >= 1200) {
     $(window).scroll(function() {    
       var scroll = $(window).scrollTop();
-      if (scroll >= 100) {
+      if (scroll >= 30) {
         $(".civil-header").addClass("scrolled");
       } else {
         $(".civil-header").removeClass("scrolled");
