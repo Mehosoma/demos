@@ -78,7 +78,7 @@ body
 	line-height: 1.2
 	-webkit-font-smoothing: antialiased
 	background-color: #fff	
-	
+	overflow: hidden
 
 	a:hover, a:focus, a:active
 		text-decoration: none
@@ -255,7 +255,8 @@ body
 .arrows
 		position: absolute
 		top: -11px
-		right: 0px
+		right: 50%
+		margin-right: -634px
 		width: 100%
 		.arr-left,
 		.arr-right
@@ -271,55 +272,58 @@ body
 			transition: all 0.3s ease-out
 			&:hover
 				cursor: pointer
-			&:after
-				content: ""
-				display: block
-				width: 20px
-				height: 20px
-				border-top: 3px solid $l-gray
-				border-right: 3px solid $l-gray		
+			svg
 				position: absolute
-				top: 16px
-				left: 8px
+				top: 0px
+				bottom: 0px
+				left: 0px
+				right: 0px
+				margin: auto
+				fill: #3B485D
+				opacity: 0.2
 				-moz-transition: all 0.3s ease-out
 				-o-transition: all 0.3s ease-out
 				-webkit-transition: all 0.3s ease-out
-				transition: all 0.3s ease-out
+				transition: all 0.3s ease-out	
 		.arr-left
 			right: 107px
 			position: absolute
+			svg
+				transform: rotate(180deg)
 			&:hover
-				&:after
-					border-top: 3px solid $light-blue
-					border-right: 3px solid $light-blue
-			&:after
-				transform: rotate(-135deg)
-				left: 24px
+				svg
+					fill: url(#linear-gradient)
+					opacity: 1
 		.arr-right
 			right: 40px
 			position: absolute
 			&:hover
-				&:after
-					border-top: 3px solid $light-blue
-					border-right: 3px solid $light-blue
-			&:after
-				transform: rotate(45deg)
+				svg
+					fill: url(#linear-gradient)
+					opacity: 1
+
 .slick-dots
 	text-align: center
 	margin-top: 30px
 	li
 		display: inline-block
 		margin: 0px 30px
+		padding: 0px
 	.slick-active
 		button
+			width: 55px
 			background: $light-blue
+			border-radius: 10px
+			@include linear-gradient(left, $grad, $grad-e)
 	button
 		width: 15px
 		height: 15px
 		background: #AAAFB9
-		border-radius: 50%
+		border-radius: 100%
 		font-size: 0px
 		border: 1px solid $light-blue
+		padding: 0px
+		text-indent: -9999px
 .line-decor
 	width: 120%
 	height: 240px
@@ -328,6 +332,22 @@ body
 	transform: rotate(-11deg)
 	position: absolute
 	@include linear-gradient(right, $grad, $grad-e)
+.line-decor--left
+	height: 500px
+	right: 70px
+	width: 170%
+	top: 25%
+	z-index: 1
+	transform: rotate(-20deg)
+
+.line-decor--right
+	height: 400px
+	left: 120px
+	width: 170%
+	top: 15%
+	z-index: 1
+	transform: rotate(-20deg)
+	background: $light-blue
 
 /***************************************************TopLine************************************/
 .top-line	
@@ -362,6 +382,13 @@ body
 	position: relative
 	z-index: 10000
 	background: #fff
+	-moz-transition: all 0.3s ease-out
+	-o-transition: all 0.3s ease-out
+	-webkit-transition: all 0.3s ease-out
+	transition: all 0.3s ease-out
+	position: fixed
+	top: 41px
+	width: 100%
 	&__wrap
 		display: flex
 		justify-content: space-between
@@ -374,12 +401,17 @@ body
 			display: flex
 			align-items: center
 			justify-content: flex-end
+			-moz-transition: all 0.3s ease-out
+			-o-transition: all 0.3s ease-out
+			-webkit-transition: all 0.3s ease-out
+			transition: all 0.3s ease-out
 			a
 				font-family: $nunito-b
 				font-size: 15px
 				color: $d-gray
+				opacity: 0.7
 				&:hover
-					color: $blue
+					opacity: 1
 		li
 			margin: 0 8px
 	&__btns
@@ -391,12 +423,44 @@ body
 	position: fixed
 	z-index: 100000
 	top: 0px
-	width: 100%
+	width: 100%	
+	ul
+		height: 60px
+.logo__wrap,
+.civil-footer .logo__wrap
+	display: flex
+	align-items: center
+	span
+		font-family: $nunito-r
+		font-size: 15px
+		text-transform: uppercase
+		color: $blue
+		i
+			font-style: normal
+			color: $d-gray
+.civil-footer .logo__wrap 
+	span
+		i
+			color: $white
+.civil-header__basket
+	path
+		fill: rgba(59,72,93,0.8)
+		stroke: transparent
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out
+.civil-header__basket:hover
+	cursor: pointer
+	path
+		fill: #00fccb
+		stroke: rgba(59,72,93,0.8)
 
 /***************************************************Main************************************/
 .main
 	position: relative
 	padding: 86px 0px 50px 0px
+	margin-top: 80px
 	.bottom-back
 		position: absolute
 		width: 100%
@@ -438,11 +502,21 @@ body
 	width: 100%
 	height: auto
 	position: relative
+	.container
+			max-width: 100%
 	&__wrap
-		padding: 70px 0px 48px 20px
-		position: relative	
+		padding: 70px 0px 48px 0px
+		position: relative
 	&__slider
 		margin: 0px -15px
+		.slick-track
+			padding-bottom: 10px
+		.slick-list.draggable			
+			padding: 0 70% 0 0
+			position: relative
+			z-index: 0
+			left: 50%
+			margin-left: -630px
 		.slick-slide
 			margin: 0 15px
 	&__slide
@@ -460,6 +534,8 @@ body
 			line-height: 26px
 			color: #192841
 			margin-bottom: 22px
+			height: 130px
+			overflow: hidden
 		span
 			font-family: $nunito-b
 			font-size: 18px
@@ -509,7 +585,7 @@ body
 				line-height: 19px
 				color: $d-gray
 				margin: 10px 0px 28px 0px
-				height: 95px
+				height: 80px
 				overflow: hidden
 			a
 				font-family: $nunito-b
@@ -655,7 +731,7 @@ body
 				-webkit-transition: all 0.3s ease-out
 				transition: all 0.3s ease-out
 				transform: rotate(-225deg)
-				@include gradient-check($grad, $grad-e, 2px, 'to right');
+				@include gradient-check($grad, $grad-e, 3px, 'to right');
 			span
 				font-family: $nunito-sb
 				font-size: 20px
@@ -682,7 +758,7 @@ body
 			&:after
 				content: ""
 				display: block
-				width: 2px
+				width: 3px
 				height: 34px
 				position: absolute
 				top: 15px
@@ -698,7 +774,7 @@ body
 				content: ""
 				display: block
 				width: 34px
-				height: 2px
+				height: 3px
 				position: absolute
 				top: 31px
 				right: 17px
@@ -716,12 +792,12 @@ body
 	width: 100%
 	height: auto
 	background: #192841
-	padding: 40px 0px 20px
+	padding: 40px 0px 0px
 	position: relative
 	z-index: 1000
 	&__wrap
 		display: flex
-		border-bottom: 1px solid $light-blue
+		border-bottom: 1px solid $d-gray
 		span
 			font-family: $nunito-l
 			font-size: 18px
@@ -730,7 +806,7 @@ body
 	&__menu
 		flex: 0 0 50%
 		max-width: 50%
-		border-right: 1px solid $light-blue
+		border-right: 1px solid $d-gray
 		padding-bottom: 25px
 		span
 			display: block
@@ -755,7 +831,7 @@ body
 			width: 288px
 			height: 41px
 			background: $gray
-			border: 1px solid $light-blue
+			border: 1px solid $d-gray
 			padding: 0px 10px
 		::-webkit-input-placeholder 
 			color: $d-gray
@@ -777,7 +853,7 @@ body
 			width: 426px
 			height: 70px
 			background: $gray
-			border: 1px solid $light-blue
+			border: 1px solid $d-gray
 			resize: none
 			padding: 13px 10px
 		button
@@ -789,7 +865,7 @@ body
 			&:hover
 				background: $light-blue
 	.form-gen input:hover, .form-gen input:active, .form-gen input:focus, .form-gen textarea:hover, .form-gen textarea:active, .form-gen textarea:focus
-		border: 1px solid #b4b4b4!important
+		border: 1px solid $blue!important
 	&__bottom
 		display: flex
 		align-items: center
@@ -814,12 +890,18 @@ body
 .questions
 	background: #F3F4F5
 	padding: 83px 0px 0px 0px
+	margin-top: 80px
 	.line-decor
 		width: 150%
 		height: 643px
 		top: 21%
 		margin-left: -25%
 		transform: rotate(-31deg)
+		opacity: 0.24
+	.section__subheader--small
+		h1,
+		span
+			text-align: left
 	.row-header
 		h1
 			padding-left: 22px
@@ -849,7 +931,7 @@ body
 			&:after
 				content: ""
 				display: block
-				width: 2px
+				width: 3px
 				height: 34px
 				position: absolute
 				top: 30px
@@ -859,13 +941,13 @@ body
 				-o-transition: all 0.3s ease-out
 				-webkit-transition: all 0.3s ease-out
 				transition: all 0.3s ease-out
-				transform: rotate(-45deg)
+				transform: rotate(-225deg)
 				@include linear-gradient(left, $grad, $grad-e)
 			&:before
 				content: ""
 				display: block
 				width: 34px
-				height: 2px
+				height: 3px
 				position: absolute
 				top: 46px
 				right: 44px
@@ -962,7 +1044,11 @@ body
 				top: 10px
 				right: 11px
 				opacity: 1
-				background: $light-blue
+				background: $blue
+				-moz-transition: all 0.3s ease-out
+				-o-transition: all 0.3s ease-out
+				-webkit-transition: all 0.3s ease-out
+				transition: all 0.3s ease-out
 			&:before
 				content: ""
 				display: block
@@ -972,9 +1058,16 @@ body
 				top: 14px
 				right: 7px
 				opacity: 1
-				background: $light-blue
+				background: $blue
+				-moz-transition: all 0.3s ease-out
+				-o-transition: all 0.3s ease-out
+				-webkit-transition: all 0.3s ease-out
+				transition: all 0.3s ease-out
 			&:hover
 				color: $light-blue
+				&:after,
+				&:before
+					background: $light-blue
 		&_gradient
 			width: 100%
 			height: 60px
@@ -991,7 +1084,9 @@ body
 		padding-bottom: 50px
 		width: 97%
 		margin: 0px auto
+		background: transparent
 		&__accordeon
+			box-shadow: 0px 0px 12px rgba(0,0,0,0.16)
 			&_wrap
 				width: 100%
 				margin-top: 0px
@@ -1000,6 +1095,7 @@ body
 				justify-content: space-between
 				line-height: 103px
 				padding-left: 30px
+				background: $white
 				&:after
 					display: none
 				&:before
@@ -1009,6 +1105,17 @@ body
 					font-size: 25px
 					line-height: 60px
 					color: $gray
+				&:hover
+					.accordeon__header_right
+						background: $blue
+						&:after
+							background-image: none
+							border-right: 3px solid #fff
+							border-top: 3px solid #fff
+						span
+							color: $white
+			.faq__accordeon_hidden
+				background: $white
 		.accordeon_open 
 			.faq__accordeon_header
 				&:after
@@ -1042,15 +1149,8 @@ body
 			right: 55px
 			opacity: 1	
 			transform: rotate(135deg)
-			@include gradient-check($grad, $grad-e, 2px, 'to right')
-		&:hover
-			background: $blue
-			&:after
-				background-image: none
-				border-right: 2px solid #fff
-				border-top: 2px solid #fff
-			span
-				color: $white
+			@include gradient-check($grad, $grad-e, 3px, 'to right')
+		
 .questions__block--open
 	.questions__block_gradient
 	 	display: none
@@ -1065,6 +1165,7 @@ body
 		margin-top: 0px
 .main--inner
 	padding-top: 0px
+	margin-top: 0px
 	.main__icons
 		padding-top: 10px
 
@@ -1077,6 +1178,7 @@ body
 	background-repeat: no-repeat
 	position: relative
 	padding: 80px 0px
+	margin-top: 80px
 	.section__subheader--small
 		span
 			margin-top: 26px
@@ -1162,6 +1264,7 @@ body
 		height: 450px
 .about
 	padding: 80px 0px 17px 0px
+	margin-top: 80px
 	.main__header span
 		margin-top: 15px
 	&__contacts
@@ -1232,8 +1335,10 @@ body
 				font-size: 22px
 				line-height: 71px
 				color: $d-gray
+				padding: 0px 20px
 		&_field
 			margin-bottom: 25px
+			padding: 0px 20px
 			span
 				font-family: $nunito-sb
 				font-size: 15px
@@ -1257,6 +1362,7 @@ body
 			border: 1px solid $light-blue!important
 		&_btn
 			text-align: right
+			padding: 0px 20px
 			.gen-btn
 				display: inline-block
 			a
@@ -1264,13 +1370,15 @@ body
 				padding: 0px 40px
 #contacts-form
 	width: 451px
-	padding: 0px 20px 30px 20px
+	padding: 0px 0px 30px 0px
 
 
 
 /***************************************************Form-Bottom************************************/
 .form-bottom
 	padding: 90px 0px 158px 0px
+	.form-bottom__logos
+		padding: 0px 20px
 	#form-bottom
 		width: 80%
 		margin: 0 auto
@@ -1310,7 +1418,7 @@ body
 		align-items: center
 		margin-top: 20px
 		img:nth-child(2)
-			margin-left: 70px
+			margin-left: 50px
 	.about__form_btn
 		margin-top: 33px
 		a
@@ -1321,6 +1429,7 @@ body
 .read
 	background: $light-blue
 	padding: 86px 0px 80px 0px
+	@include linear-gradient(45deg, $grad, $grad-e)
 	&__wrap
 		display: flex
 		width: 95%
@@ -1329,19 +1438,57 @@ body
 	&__left,
 	&__right
 		flex: 0 0 48%
-		max-width: 48%
-			
+		max-width: 48%	
+		position: relative		
 	&__block	
 		margin-bottom: 54px	
 		background: $white
 		padding: 92px 32px 28px 32px
 		border-radius: 5px
+		position: relative
+		z-index: 100
 		p
 			font-family: $nunito-li
 			font-size: 16px
 			line-height: 26px
 			color: $d-gray
 			margin-bottom: 26px
+		&_header
+			position: absolute
+			top: 40px
+			left: 0px
+			display: flex
+			justify-content: space-between
+			width: 100%
+			padding: 0px 32px
+		&_date
+			position: relative
+			width: 30px
+			height: 32px
+			span
+				font-family: $nunito-r
+				font-size: 12px
+				color: $d-gray
+				opacity: 0.23
+			span:nth-child(1)
+				position: absolute
+				top: 0px
+				left: 0px
+			span:nth-child(2)
+				position: absolute
+				bottom: 0px
+				right: 0px
+			&:after
+				content: ''
+				display: block
+				width: 20px
+				height: 1px
+				background: $d-gray
+				opacity: 0.23
+				top: 15px
+				left: 5px
+				position: absolute
+				transform: rotate(-45deg)
 	&__author
 		background-image: url('../images/author.png')
 		background-repeat: no-repeat
@@ -1361,6 +1508,7 @@ body
 	min-height: 356px
 	@include linear-gradient(left, $grad, $grad-e)
 	padding: 83px 0px 60px 0px
+	margin-top: 80px
 	.main__header
 		h1,
 		span
@@ -1387,11 +1535,20 @@ body
 		max-width: 1260px
 	&__header
 		margin-bottom: 38px
+		display: flex
+		align-items: center
+		svg
+			margin: 0 10px
 		span
+			color: $l-gray
+		a
+			color: $gray
+		span,
+		a
 			font-family: $nunito-l
 			font-size: 35px
 			line-height: 40px
-			color: $gray
+		
 	&__menu
 		background: #fff
 		box-shadow: 0px 0px 12px rgba(0,0,0,0.16)
@@ -1417,12 +1574,25 @@ body
 				font-size: 18px
 				line-height: 24px
 				color: $gray
+				-moz-transition: all 0.3s ease-out
+				-o-transition: all 0.3s ease-out
+				-webkit-transition: all 0.3s ease-out
+				transition: all 0.3s ease-out
 			p
 				font-family: $nunito-sb
 				font-size: 14px
 				line-height: 19px
 				color: #CDD1D5
 				margin-bottom: 0px
+				-moz-transition: all 0.3s ease-out
+				-o-transition: all 0.3s ease-out
+				-webkit-transition: all 0.3s ease-out
+				transition: all 0.3s ease-out
+			&:hover
+				cursor: pointer
+				span,
+				p
+					color: $blue
 	&__wrap
 		background: #fff
 		box-shadow: 0px 0px 12px rgba(0,0,0,0.16)
@@ -1497,6 +1667,43 @@ body
 				color: $blue
 	li:last-child
 		width: 60px
+		position: relative
+		&:after
+			content: ""
+			display: block
+			width: 10px
+			height: 10px
+			border-top: 2px solid $d-gray
+			border-right: 2px solid $d-gray
+			position: absolute
+			top: 15px
+			left: 28px
+			opacity: 1	
+			transform: rotate(45deg)
+			-moz-transition: all 0.3s ease-out
+			-o-transition: all 0.3s ease-out
+			-webkit-transition: all 0.3s ease-out
+			transition: all 0.3s ease-out
+		&:before
+			content: ""
+			display: block
+			width: 10px
+			height: 10px
+			border-top: 2px solid $d-gray
+			border-right: 2px solid $d-gray
+			position: absolute
+			top: 15px
+			left: 18px
+			opacity: 1	
+			transform: rotate(45deg)
+			-moz-transition: all 0.3s ease-out
+			-o-transition: all 0.3s ease-out
+			-webkit-transition: all 0.3s ease-out
+			transition: all 0.3s ease-out
+		&:hover
+			&:after,
+			&:before
+				border-color: $blue
 	span
 		font-family: $nunito-sb
 		font-size: 20px
@@ -1524,6 +1731,9 @@ body
 .product
 	padding: 76px 0px 50px 0px
 	position: relative
+	margin-top: 80px
+	.line-decor
+		@include linear-gradient(left, $grad, $grad-e)
 	.container
 		max-width: 1055px
 	&__wrap
@@ -1625,23 +1835,36 @@ body
 
 /***************************************************Product-Slider************************************/
 .product-slider
-	padding: 50px 0px 100px 0px
+	padding: 0px 0px 100px 0px
 	.container
 		max-width: 1055px
+	.slider-container
+			max-width: 100%
 	&__wrap
 		position: relative
 		.arrows
-			top: -50px
-			.arr-right
-				right: 0px
-			.arr-left
-				right: 70px
+			top: -40px
+			margin-right: -554px
+	&__header
+		span
+			font-family: $nunito-b
+			font-size: 22px
+			line-height: 30px
+			color: $d-gray
 	&__slider
-		margin: 0 -15px		
+		margin: 0px -15px
+		.slick-track
+			padding-bottom: 10px
+		.slick-list.draggable			
+			padding: 0 60% 0 0
+			position: relative
+			z-index: 0
+			left: 50%
+			margin-left: -526px
 		.slick-slide
 			margin: 0 15px
 			background: #FFF
-			padding-top: 50px
+			padding-top: 40px
 		.store__block
 			background: #fff
 			box-shadow: 0px 0px 12px rgba(0,0,0,0.16)

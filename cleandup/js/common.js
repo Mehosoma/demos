@@ -78,7 +78,7 @@ $(function () {
 $(document).ready(function(){
   $('.main-slider__slider').slick({
       infinite: true,
-      slidesToShow: 3,
+      slidesToShow: 2,
       slidesToScroll: 1,       
       arrows: false, 
       dots: true,
@@ -147,15 +147,17 @@ $(document).ready(function(){
 });
 
 
-//Fixed Menu
+  //Fixed Menu
 $(window).on('load resize', function() {  
   if ($(window).width() >= 1200) {
     $(window).scroll(function() {    
       var scroll = $(window).scrollTop();
-      if (scroll >= 30) {
+      if (scroll >= 35) {
         $(".civil-header").addClass("scrolled");
+        
       } else {
         $(".civil-header").removeClass("scrolled");
+       
       }
     });
    } else {
