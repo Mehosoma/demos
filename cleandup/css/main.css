@@ -305,10 +305,16 @@ body hr {
   margin: auto;
   fill: #3B485D;
   opacity: 0.2;
+  stroke-width: 0;
   -moz-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
+}
+
+.arrows .arr-left svg path,
+.arrows .arr-right svg path {
+  stroke-width: 0;
 }
 
 .arrows .arr-left {
@@ -366,7 +372,6 @@ body hr {
   background: #AAAFB9;
   border-radius: 100%;
   font-size: 0px;
-  border: 1px solid #0AF1D4;
   padding: 0px;
   text-indent: -9999px;
 }
@@ -1280,6 +1285,10 @@ body hr {
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 .questions .btn-close a {
@@ -1295,67 +1304,33 @@ body hr {
 .questions .btn-close a:after {
   content: "";
   display: block;
-  width: 3px;
-  height: 34px;
+  width: 20px;
+  height: 20px;
+  border-top: 3px solid #000;
+  border-right: 3px solid #000;
   position: absolute;
   top: 30px;
-  right: 60px;
+  right: 55px;
   opacity: 1;
-  -moz-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-  -webkit-transform: rotate(-225deg);
-  -ms-transform: rotate(-225deg);
-  transform: rotate(-225deg);
-  background-color: #00FCCB;
-  background-image: -webkit-linear-gradient(left, #0C96EA, #00FCCB);
-  background-image: -moz-linear-gradient(left, #0C96EA, #00FCCB);
-  background-image: -ms-linear-gradient(left, #0C96EA, #00FCCB);
-  background-image: -o-linear-gradient(left, #0C96EA, #00FCCB);
-  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1,StartColorStr='#0C96EA', EndColorStr='#00FCCB');
-}
-
-.questions .btn-close a:before {
-  content: "";
-  display: block;
-  width: 34px;
-  height: 3px;
-  position: absolute;
-  top: 46px;
-  right: 44px;
-  opacity: 1;
-  -moz-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
   -webkit-transform: rotate(135deg);
   -ms-transform: rotate(135deg);
   transform: rotate(135deg);
-  background-color: #00FCCB;
-  background-image: -webkit-linear-gradient(left, #0C96EA, #00FCCB);
-  background-image: -moz-linear-gradient(left, #0C96EA, #00FCCB);
-  background-image: -ms-linear-gradient(left, #0C96EA, #00FCCB);
-  background-image: -o-linear-gradient(left, #0C96EA, #00FCCB);
-  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1,StartColorStr='#0C96EA', EndColorStr='#00FCCB');
+  border: none;
+  background-repeat: no-repeat;
+  background-image: -webkit-gradient(linear, left top, right top, from(#0C96EA), to(#00FCCB)), -webkit-gradient(linear, left top, right top, from(#0C96EA), to(#00FCCB));
+  background-image: -webkit-linear-gradient(left, #0C96EA 0%, #00FCCB 100%), -webkit-linear-gradient(left, #0C96EA 0%, #00FCCB 100%);
+  background-image: -o-linear-gradient(left, #0C96EA 0%, #00FCCB 100%), -o-linear-gradient(left, #0C96EA 0%, #00FCCB 100%);
+  background-image: linear-gradient(to right, #0C96EA 0%, #00FCCB 100%), linear-gradient(to right, #0C96EA 0%, #00FCCB 100%);
+  border-right: 3px solid #00FCCB;
+  background-size: 100% 3px;
 }
 
 .questions .btn-close a:hover {
   color: #0D93EC;
 }
 
-.questions__wrap {
-  -webkit-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.16);
-  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.16);
-  background: #fff;
-  width: 97%;
-  margin: 40px auto 40px;
-  padding: 0px;
-  border-radius: 5px;
-}
-
-.questions__wrap .m-0 {
-  border-bottom: 1px solid #F3F4F5;
+.questions .btn-close a:nth-child(2) {
+  display: none;
 }
 
 .questions__header {
@@ -1387,9 +1362,35 @@ body hr {
 .questions__header .small-logo span {
   font-family: "NunitoLight", sans-serif;
   font-size: 25px;
-  line-height: 33px;
-  color: #0D93EC;
+  line-height: 60px;
+  color: #5D6879;
   padding-left: 24px;
+}
+
+.questions__header:hover {
+  cursor: pointer;
+}
+
+.questions__header:hover span {
+  color: #0D93EC;
+}
+
+.questions__header:hover .btn-close {
+  background: #00C8FF;
+}
+
+.questions__header:hover .btn-close a {
+  color: #FFFFFF;
+}
+
+.questions__header:hover .btn-close a:after {
+  background-image: none;
+  border-right: 3px solid #fff;
+  border-top: 3px solid #fff;
+}
+
+.questions__blocks_hidden {
+  display: none;
 }
 
 .questions__block {
@@ -1508,121 +1509,80 @@ body hr {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 );
 }
 
-.questions .faq {
-  position: relative;
-  padding-top: 0px;
-  padding-bottom: 50px;
-  width: 97%;
-  margin: 0px auto;
-  background: transparent;
-}
-
-.questions .faq__accordeon {
+.questions__wrap {
   -webkit-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.16);
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.16);
+  background: #fff;
+  width: 97%;
+  margin: 40px auto 40px;
+  padding: 0px;
+  border-radius: 5px;
 }
 
-.questions .faq__accordeon_wrap {
-  width: 100%;
-  margin-top: 0px;
+.questions__wrap .m-0 {
+  border-bottom: 1px solid #F3F4F5;
 }
 
-.questions .faq__accordeon_header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  line-height: 103px;
-  padding-left: 30px;
-  background: #FFFFFF;
-}
-
-.questions .faq__accordeon_header:after {
+.questions__wrap--open .btn-close a:nth-child(1) {
   display: none;
 }
 
-.questions .faq__accordeon_header:before {
-  display: none;
+.questions__wrap--open .btn-close a:nth-child(2) {
+  display: block;
 }
 
-.questions .faq__accordeon_header span {
-  font-family: "NunitoLight", sans-serif;
-  font-size: 25px;
-  line-height: 60px;
-  color: #5D6879;
-}
-
-.questions .faq__accordeon_header:hover .accordeon__header_right {
-  background: #0D93EC;
-}
-
-.questions .faq__accordeon_header:hover .accordeon__header_right:after {
-  background-image: none;
-  border-right: 3px solid #fff;
-  border-top: 3px solid #fff;
-}
-
-.questions .faq__accordeon_header:hover .accordeon__header_right span {
-  color: #FFFFFF;
-}
-
-.questions .faq__accordeon .faq__accordeon_hidden {
-  background: #FFFFFF;
-}
-
-.questions .faq .accordeon_open .faq__accordeon_header:after {
-  display: none;
-}
-
-.questions .faq .accordeon_open .faq__accordeon_header:before {
-  display: none;
-}
-
-.questions .accordeon__header_right {
-  position: relative;
+.questions__wrap--open .btn-close a:after {
+  content: "";
+  display: block;
+  width: 3px;
+  height: 34px;
+  position: absolute;
+  top: 30px;
+  right: 60px;
+  opacity: 1;
   -moz-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
-  padding-right: 50px;
-  -webkit-box-flex: 0;
-  -ms-flex: 0 0 330px;
-  flex: 0 0 330px;
-  max-width: 330px;
-  padding-left: 36px;
+  -webkit-transform: rotate(-225deg);
+  -ms-transform: rotate(-225deg);
+  transform: rotate(-225deg);
+  background-color: #00FCCB;
+  background-image: -webkit-linear-gradient(left, #0C96EA, #00FCCB);
+  background-image: -moz-linear-gradient(left, #0C96EA, #00FCCB);
+  background-image: -ms-linear-gradient(left, #0C96EA, #00FCCB);
+  background-image: -o-linear-gradient(left, #0C96EA, #00FCCB);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1,StartColorStr='#0C96EA', EndColorStr='#00FCCB');
 }
 
-.questions .accordeon__header_right span {
-  font-family: "NunitoLight", sans-serif;
-  font-size: 14px;
-  line-height: 60px;
-  color: #5D6879;
-}
-
-.questions .accordeon__header_right:after {
+.questions__wrap--open .btn-close a:before {
   content: "";
   display: block;
-  width: 20px;
-  height: 20px;
-  border-top: 3px solid #000;
-  border-right: 3px solid #000;
+  width: 34px;
+  height: 3px;
   position: absolute;
-  top: 35px;
-  right: 55px;
+  top: 46px;
+  right: 44px;
   opacity: 1;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
   -webkit-transform: rotate(135deg);
   -ms-transform: rotate(135deg);
   transform: rotate(135deg);
-  border: none;
-  background-repeat: no-repeat;
-  background-image: -webkit-gradient(linear, left top, right top, from(#0C96EA), to(#00FCCB)), -webkit-gradient(linear, left top, right top, from(#0C96EA), to(#00FCCB));
-  background-image: -webkit-linear-gradient(left, #0C96EA 0%, #00FCCB 100%), -webkit-linear-gradient(left, #0C96EA 0%, #00FCCB 100%);
-  background-image: -o-linear-gradient(left, #0C96EA 0%, #00FCCB 100%), -o-linear-gradient(left, #0C96EA 0%, #00FCCB 100%);
-  background-image: linear-gradient(to right, #0C96EA 0%, #00FCCB 100%), linear-gradient(to right, #0C96EA 0%, #00FCCB 100%);
-  border-right: 3px solid #00FCCB;
-  background-size: 100% 3px;
+  background-color: #00FCCB;
+  background-image: -webkit-linear-gradient(left, #0C96EA, #00FCCB);
+  background-image: -moz-linear-gradient(left, #0C96EA, #00FCCB);
+  background-image: -ms-linear-gradient(left, #0C96EA, #00FCCB);
+  background-image: -o-linear-gradient(left, #0C96EA, #00FCCB);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1,StartColorStr='#0C96EA', EndColorStr='#00FCCB');
+}
+
+.questions__wrap--open .questions__header:hover .btn-close a:before {
+  background-image: none;
+  border-right: 3px solid #fff;
+  border-top: 3px solid #fff;
 }
 
 .questions__block--open .questions__block_gradient {

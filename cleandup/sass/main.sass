@@ -281,10 +281,13 @@ body
 				margin: auto
 				fill: #3B485D
 				opacity: 0.2
+				stroke-width: 0
 				-moz-transition: all 0.3s ease-out
 				-o-transition: all 0.3s ease-out
 				-webkit-transition: all 0.3s ease-out
-				transition: all 0.3s ease-out	
+				transition: all 0.3s ease-out
+				path
+					stroke-width: 0	
 		.arr-left
 			right: 107px
 			position: absolute
@@ -321,7 +324,6 @@ body
 		background: #AAAFB9
 		border-radius: 100%
 		font-size: 0px
-		border: 1px solid $light-blue
 		padding: 0px
 		text-indent: -9999px
 .line-decor
@@ -920,6 +922,10 @@ body
 		border-left: 1px solid #F3F4F5
 		border-radius: 0px 5px 0px 0px
 		flex-grow: 1
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out
 		a
 			font-family: $nunito-l
 			font-size: 14px
@@ -927,48 +933,24 @@ body
 			color: $gray
 			display: block
 			position: relative
-			padding-left: 30px
+			padding-left: 30px			
 			&:after
 				content: ""
 				display: block
-				width: 3px
-				height: 34px
+				width: 20px
+				height: 20px
+				border-top: 3px solid #000
+				border-right: 3px solid #000
 				position: absolute
 				top: 30px
-				right: 60px
-				opacity: 1
-				-moz-transition: all 0.3s ease-out
-				-o-transition: all 0.3s ease-out
-				-webkit-transition: all 0.3s ease-out
-				transition: all 0.3s ease-out
-				transform: rotate(-225deg)
-				@include linear-gradient(left, $grad, $grad-e)
-			&:before
-				content: ""
-				display: block
-				width: 34px
-				height: 3px
-				position: absolute
-				top: 46px
-				right: 44px
-				opacity: 1
-				-moz-transition: all 0.3s ease-out
-				-o-transition: all 0.3s ease-out
-				-webkit-transition: all 0.3s ease-out
-				transition: all 0.3s ease-out
+				right: 55px
+				opacity: 1	
 				transform: rotate(135deg)
-				@include linear-gradient(left, $grad, $grad-e)
+				@include gradient-check($grad, $grad-e, 3px, 'to right')
 			&:hover
 				color: $blue
-	&__wrap
-		box-shadow: 0px 0px 12px rgba(0,0,0,0.16)
-		background: #fff
-		width: 97%
-		margin: 40px auto 40px
-		padding: 0px
-		border-radius: 5px
-		.m-0
-			border-bottom: 1px solid #F3F4F5
+		a:nth-child(2)
+			display: none	
 	&__header
 		height: 100%
 		display: flex
@@ -982,11 +964,26 @@ body
 			flex: 0 0 74%
 			max-width: 74%
 			span
-				font-family: $nunito-l
+				font-family: "NunitoLight", sans-serif
 				font-size: 25px
-				line-height: 33px
-				color: $blue
+				line-height: 60px
+				color: #5D6879
 				padding-left: 24px
+		&:hover
+			cursor: pointer
+			span
+				color: $blue
+			.btn-close
+				background: #00C8FF
+				a
+					color: $white
+					&:after
+						background-image: none
+						border-right: 3px solid #fff
+						border-top: 3px solid #fff
+	&__blocks
+		&_hidden
+			display: none
 	&__block 
 		background-color: #fff
 		border: 1px solid #F3F4F5
@@ -1078,79 +1075,60 @@ body
 			background: -webkit-linear-gradient(bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%)
 			background: linear-gradient(to top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%)
 			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 )
-	.faq
-		position: relative
-		padding-top: 0px
-		padding-bottom: 50px
+	&__wrap
+		box-shadow: 0px 0px 12px rgba(0,0,0,0.16)
+		background: #fff
 		width: 97%
-		margin: 0px auto
-		background: transparent
-		&__accordeon
-			box-shadow: 0px 0px 12px rgba(0,0,0,0.16)
-			&_wrap
-				width: 100%
-				margin-top: 0px
-			&_header
-				display: flex
-				justify-content: space-between
-				line-height: 103px
-				padding-left: 30px
-				background: $white
-				&:after
-					display: none
-				&:before
-					display: none
-				span
-					font-family: $nunito-l
-					font-size: 25px
-					line-height: 60px
-					color: $gray
-				&:hover
-					.accordeon__header_right
-						background: $blue
-						&:after
+		margin: 40px auto 40px
+		padding: 0px
+		border-radius: 5px
+		.m-0
+			border-bottom: 1px solid #F3F4F5
+		&--open
+		
+			.btn-close 
+				a:nth-child(1)
+					display: none	
+				a:nth-child(2)
+					display: block
+				a
+					&:after
+						content: ""
+						display: block
+						width: 3px
+						height: 34px
+						position: absolute
+						top: 30px
+						right: 60px
+						opacity: 1
+						-moz-transition: all 0.3s ease-out
+						-o-transition: all 0.3s ease-out
+						-webkit-transition: all 0.3s ease-out
+						transition: all 0.3s ease-out
+						transform: rotate(-225deg)
+						@include linear-gradient(left, $grad, $grad-e)
+					&:before
+						content: ""
+						display: block
+						width: 34px
+						height: 3px
+						position: absolute
+						top: 46px
+						right: 44px
+						opacity: 1
+						-moz-transition: all 0.3s ease-out
+						-o-transition: all 0.3s ease-out
+						-webkit-transition: all 0.3s ease-out
+						transition: all 0.3s ease-out
+						transform: rotate(135deg)
+						@include linear-gradient(left, $grad, $grad-e)
+			.questions__header:hover
+				.btn-close 
+					a
+						&:before
 							background-image: none
 							border-right: 3px solid #fff
 							border-top: 3px solid #fff
-						span
-							color: $white
-			.faq__accordeon_hidden
-				background: $white
-		.accordeon_open 
-			.faq__accordeon_header
-				&:after
-					display: none
-				&:before
-					display: none
-	.accordeon__header_right
-		position: relative
-		-moz-transition: all 0.3s ease-out
-		-o-transition: all 0.3s ease-out
-		-webkit-transition: all 0.3s ease-out
-		transition: all 0.3s ease-out
-		padding-right: 50px
-		flex: 0 0 330px
-		max-width: 330px
-		padding-left: 36px
-		span
-			font-family: $nunito-l
-			font-size: 14px
-			line-height: 60px
-			color: $gray
-		&:after
-			content: ""
-			display: block
-			width: 20px
-			height: 20px
-			border-top: 3px solid #000
-			border-right: 3px solid #000
-			position: absolute
-			top: 35px
-			right: 55px
-			opacity: 1	
-			transform: rotate(135deg)
-			@include gradient-check($grad, $grad-e, 3px, 'to right')
-		
 .questions__block--open
 	.questions__block_gradient
 	 	display: none

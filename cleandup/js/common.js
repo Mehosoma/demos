@@ -140,9 +140,10 @@ $(document).ready(function(){
 
 //Btn-Close
 $(document).ready(function(){
-  $('.btn-close').on('click',function(e){
+  $('.questions__header').on('click',function(e){
        e.preventDefault();  
-    $(this).closest('.questions__wrap').find('.questions_blocks_hidden').slideToggle();
+    $(this).closest('.questions__wrap').find('.questions__blocks_hidden').slideToggle();
+     $(this).closest('.questions__wrap').toggleClass('questions__wrap--open');
   });
 });
 
