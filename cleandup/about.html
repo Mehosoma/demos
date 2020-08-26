@@ -29,7 +29,7 @@
 <div class="pixel"></div>
 
 <!--Top-Line-->
-<section class="top-line">
+<section class="top-line d-none d-xl-block">
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
@@ -60,24 +60,39 @@
 							</div>
 						</a>
 					</div>
-					<nav class="civil-header__menu">
-						<ul>
-							<li>
-								<a href="">Topics covered</a>
-							</li>
-							<li>
-								<a href="">Essential exam resources</a>
-							</li>
-							<li>
-								<a href="">Video course bundle</a>
-							</li>
-							<li>
-								<a href="">Testimonials</a>
-							</li>
-						</ul>
+					<nav class="civil-header__menu order-3 order-xl-2">
+						<button class="menu-toggle-button click-mobile d-block d-xl-none">
+							<span></span>					
+						</button>
+						<div class="civil-footer__menu_wrap">
+							<ul>
+								<li>
+									<a href="">Topics covered</a>
+								</li>
+								<li>
+									<a href="">Essential exam resources</a>
+								</li>
+								<li>
+									<a href="">Video course bundle</a>
+								</li>
+								<li>
+									<a href="">Testimonials</a>
+								</li>
+							</ul>
+							<ul class="d-xl-none">
+								<li><a href="">Contact us</a></li>
+								<li><a href="">FAQ</a></li>
+								<li><a href="">About us</a></li>
+								<li><a href="">Redeem your amazon voucher</a></li>
+							</ul>
+							<div class="civil-header__sign d-flex d-xl-none">
+								<a href="">Sign in</a>
+								<img src="images/face.svg" class="svg">
+							</div>
+						</div>
 					</nav>
-					<div class="civil-header__btns">
-						<div class="gen-btn">
+					<div class="civil-header__btns order-2 order-xl-3">
+						<div class="gen-btn d-none d-md-block">
 							<a href="">Sign in</a>
 						</div>
 						<div class="gen-btn--fill">
@@ -102,8 +117,10 @@
 				</div>
 				<div class="about__contacts">
 					<div class="about__text">
-						<p>We felt there was a shortage of high quality, online practice problems. As a result we developed this website. Our goal is to weed out the excess information and present the useful information in a clear, concise manner. We strive to produce the most comprehensive and representative PE practice problems available. Each of our problems meet the latest NCEES standards and cover topics found on the NCEES specification page.</p>
-						<p>We love feedback and are eager to improve our site. Please reach out to us with your questions and feedback so that we can make this the best PE Exam site available. Good luck on your upcoming PE Exam.</p>
+						<div class="about__text_wrap">
+							<p>We felt there was a shortage of high quality, online practice problems. As a result we developed this website. Our goal is to weed out the excess information and present the useful information in a clear, concise manner. We strive to produce the most comprehensive and representative PE practice problems available. Each of our problems meet the latest NCEES standards and cover topics found on the NCEES specification page.</p>
+							<p>We love feedback and are eager to improve our site. Please reach out to us with your questions and feedback so that we can make this the best PE Exam site available. Good luck on your upcoming PE Exam.</p>
+						</div>
 						<div class="about__links">
 							<span>Useful links</span>
 							<ul>
@@ -218,34 +235,36 @@
 				<form id="form-bottom" class="form-gen">
 					<div class="form-bottom__header">
 						<span>Redeem your amazon voucher</span>
-						<p>With your amazon purchase of the CIVIL PE Practice Hardcopy get<br> <i>14 days free</i> access to the CIVIL PE Practice platform</p>
+						<p>With your amazon purchase of the CIVIL PE Practice Hardcopy get<br class="d-none d-xl-block"> <i>14 days free</i> access to the CIVIL PE Practice platform</p>
 					</div>
 					<div class="form-bottom__wrap">
-						<div class="form-bottom__left">
+						<div class="form-bottom__block">
 							<div class="about__form_field">
 								<span>First name</span>
 								<input type="text" name="name" required="">
 							</div>
 							<div class="about__form_field">
+								<span>Last name</span>
+								<input type="text" name="last-name" required="">
+							</div>	
+						</div>
+						<div class="form-bottom__block">
+							<div class="about__form_field">
 								<span>Email adress</span>
 								<input type="text" name="email" required="">
 							</div>
-							<div class="form-bottom__logos">
+							<div class="about__form_field">
+								<span>Attach your invoice</span>
+								<input type="text" name="invoice" required="">
+							</div>
+						</div>
+						<div class="form-bottom__block">
+							<div class="form-bottom__logos about__form_field">
 								<div class="logo__wrap">
 									<img src="images/logo.svg" class="svg" alt="logo-image">
 									<span><i>CIVIL PE</i> PRACTICE</span>
 								</div>
 								<img src="images/amazon.png" alt="amazon-image">
-							</div>
-						</div>
-						<div class="form-bottom__right">
-							<div class="about__form_field">
-								<span>Last name</span>
-								<input type="text" name="last-name" required="">
-							</div>
-							<div class="about__form_field">
-								<span>Attach your invoice</span>
-								<input type="text" name="invoice" required="">
 							</div>
 							<div class="about__form_btn">
 								<div class="gen-btn">
@@ -350,6 +369,10 @@
 							<li><a href="">Contact us</a></li>
 							<li><a href="">Redeem your amazon voucher</a></li>
 						</ul>
+						<div class="logo__wrap d-flex d-lg-none">
+							<img src="images/logo.svg" class="svg" alt="logo-image">
+							<span><i>CIVIL PE</i> PRACTICE</span>
+						</div>
 					</nav>
 					<div class="civil-footer__form form-gen">
 						<span>Get in Touch</span>
@@ -370,8 +393,9 @@
 			<div class="col-12">
 				<div class="civil-footer__bottom">
 					<span>Copyright &copy; 2019 Civil PE Practice, LLC | PO Box 1373, Bardstown, KY 40004 | All Rights Reserved.</span>
-					<div class="logo">
-						<a href="index.html"><img src="images/footer-logo.png" alt="logo-image"></a>
+					<div class="logo__wrap d-none d-lg-flex">
+						<img src="images/logo.svg" class="svg" alt="logo-image">
+						<span><i>CIVIL PE</i> PRACTICE</span>
 					</div>
 				</div>
 			</div>

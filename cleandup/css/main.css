@@ -7,7 +7,7 @@ html {
 body {
   width: 100%;
   height: auto;
-  min-width: 320px;
+  min-width: 375px;
   margin: 0 auto;
   position: relative;
   font-family: "NunitoRegular", sans-serif;
@@ -731,6 +731,10 @@ body hr {
   padding: 88px 0px 50px 0px;
 }
 
+.principles .line-decor {
+  opacity: 0.24;
+}
+
 .principles .container {
   position: relative;
   z-index: 15;
@@ -758,7 +762,8 @@ body hr {
   -webkit-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.16);
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.16);
   background: #FFFFFF;
-  padding: 30px 10px 20px 10px;
+  padding: 30px 10px 50px 10px;
+  position: relative;
 }
 
 .principles__icons_block img {
@@ -783,9 +788,7 @@ body hr {
   font-size: 14px;
   line-height: 19px;
   color: #3B485D;
-  margin: 10px 0px 28px 0px;
-  height: 80px;
-  overflow: hidden;
+  margin: 10px 0px 0px 0px;
 }
 
 .principles__icons_block a {
@@ -797,6 +800,13 @@ body hr {
 
 .principles__icons_block a:hover {
   color: #0AF1D4;
+}
+
+.principles__icons_link {
+  position: absolute;
+  bottom: 20px;
+  left: 0px;
+  width: 100%;
 }
 
 .principles .gen-btn {
@@ -972,7 +982,7 @@ body hr {
   line-height: 64px;
   background: #F3F4F5;
   position: relative;
-  border: 1px solid #0AF1D4;
+  border: 1px solid #EEEFF0;
   border-radius: 5px;
 }
 
@@ -1018,9 +1028,16 @@ body hr {
 .faq__accordeon_hidden {
   background: #F3F4F5;
   display: none;
-  border: 1px solid #0AF1D4;
+  border: 1px solid #EEEFF0;
   border-top: none;
   padding: 20px 20px;
+}
+
+.faq__accordeon_hidden p {
+  font-family: "NunitoSemiBold", sans-serif;
+  font-size: 18px;
+  line-height: 32px;
+  color: #5D6879;
 }
 
 .faq .accordeon_open .faq__accordeon_header {
@@ -1289,19 +1306,10 @@ body hr {
   -o-transition: all 0.3s ease-out;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
-}
-
-.questions .btn-close a {
-  font-family: "NunitoLight", sans-serif;
-  font-size: 14px;
-  line-height: 94px;
-  color: #5D6879;
-  display: block;
   position: relative;
-  padding-left: 30px;
 }
 
-.questions .btn-close a:after {
+.questions .btn-close:after {
   content: "";
   display: block;
   width: 20px;
@@ -1323,6 +1331,16 @@ body hr {
   background-image: linear-gradient(to right, #0C96EA 0%, #00FCCB 100%), linear-gradient(to right, #0C96EA 0%, #00FCCB 100%);
   border-right: 3px solid #00FCCB;
   background-size: 100% 3px;
+}
+
+.questions .btn-close a {
+  font-family: "NunitoLight", sans-serif;
+  font-size: 14px;
+  line-height: 94px;
+  color: #5D6879;
+  display: block;
+  position: relative;
+  padding-left: 30px;
 }
 
 .questions .btn-close a:hover {
@@ -1364,7 +1382,8 @@ body hr {
   font-size: 25px;
   line-height: 60px;
   color: #5D6879;
-  padding-left: 24px;
+  padding: 0px 24px;
+  display: block;
 }
 
 .questions__header:hover {
@@ -1379,14 +1398,14 @@ body hr {
   background: #00C8FF;
 }
 
-.questions__header:hover .btn-close a {
-  color: #FFFFFF;
-}
-
-.questions__header:hover .btn-close a:after {
+.questions__header:hover .btn-close:after {
   background-image: none;
   border-right: 3px solid #fff;
   border-top: 3px solid #fff;
+}
+
+.questions__header:hover .btn-close a {
+  color: #FFFFFF;
 }
 
 .questions__blocks_hidden {
@@ -1406,6 +1425,7 @@ body hr {
   line-height: 24px;
   color: #3B485D;
   padding: 0px 33px;
+  display: block;
 }
 
 .questions__block_hidden {
@@ -1523,15 +1543,7 @@ body hr {
   border-bottom: 1px solid #F3F4F5;
 }
 
-.questions__wrap--open .btn-close a:nth-child(1) {
-  display: none;
-}
-
-.questions__wrap--open .btn-close a:nth-child(2) {
-  display: block;
-}
-
-.questions__wrap--open .btn-close a:after {
+.questions__wrap--open .btn-close:after {
   content: "";
   display: block;
   width: 3px;
@@ -1555,7 +1567,7 @@ body hr {
   filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1,StartColorStr='#0C96EA', EndColorStr='#00FCCB');
 }
 
-.questions__wrap--open .btn-close a:before {
+.questions__wrap--open .btn-close:before {
   content: "";
   display: block;
   width: 34px;
@@ -1579,7 +1591,15 @@ body hr {
   filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1,StartColorStr='#0C96EA', EndColorStr='#00FCCB');
 }
 
-.questions__wrap--open .questions__header:hover .btn-close a:before {
+.questions__wrap--open .btn-close a:nth-child(1) {
+  display: none;
+}
+
+.questions__wrap--open .btn-close a:nth-child(2) {
+  display: block;
+}
+
+.questions__wrap--open .questions__header:hover .btn-close:before {
   background-image: none;
   border-right: 3px solid #fff;
   border-top: 3px solid #fff;
@@ -1643,6 +1663,8 @@ body hr {
 .video__block img {
   padding-left: 50px;
   margin-bottom: 4px;
+  width: 100%;
+  height: auto;
 }
 
 .video__block span {
@@ -1951,7 +1973,22 @@ body hr {
   background: #fff;
   -webkit-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.16);
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.16);
-  padding: 55px 0px 64px 0px;
+  padding: 55px 0px 35px 0px;
+  border: none;
+  background-repeat: no-repeat;
+  background-image: -webkit-gradient(linear, right top, left top, from(#0C96EA), to(#00FCCB)), -webkit-gradient(linear, right top, left top, from(#0C96EA), to(#00FCCB));
+  background-image: -webkit-linear-gradient(right, #0C96EA 0%, #00FCCB 100%), -webkit-linear-gradient(right, #0C96EA 0%, #00FCCB 100%);
+  background-image: -o-linear-gradient(right, #0C96EA 0%, #00FCCB 100%), -o-linear-gradient(right, #0C96EA 0%, #00FCCB 100%);
+  background-image: linear-gradient(to left, #0C96EA 0%, #00FCCB 100%), linear-gradient(to left, #0C96EA 0%, #00FCCB 100%);
+  border-left: 1px solid #00FCCB;
+  border-right: 1px solid #0C96EA;
+  background-position: 0 0, 0 100%;
+  background-size: 100% 1px;
+  background-size: 100% 5px;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  background-position: 0 0, 0 0;
 }
 
 .form-bottom .form-gen {
@@ -1960,6 +1997,7 @@ body hr {
 
 .form-bottom__header {
   text-align: center;
+  padding: 0px 40px;
 }
 
 .form-bottom__header span {
@@ -1991,9 +2029,24 @@ body hr {
   justify-content: space-between;
   padding: 0px 89px 0px 29px;
   margin-top: 38px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
-.form-bottom__left, .form-bottom__right {
+.form-bottom__block {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.form-bottom__block .about__form_field {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 44%;
   flex: 0 0 44%;
@@ -2285,6 +2338,31 @@ body hr {
   color: #0D93EC;
 }
 
+.store__menu_btn {
+  width: 100%;
+  max-width: 157px;
+  height: 40px;
+  background: #fff;
+  border-radius: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.16);
+  padding: 0px 20px;
+}
+
+.store__menu_btn p {
+  font-family: "NunitoSemiBold", sans-serif;
+  font-size: 12px;
+  color: #3B485D;
+  margin-bottom: 0px;
+  margin-left: 20px;
+}
+
 .store__wrap {
   background: #fff;
   -webkit-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.16);
@@ -2375,6 +2453,7 @@ body hr {
 
 .store .about__form_btn {
   margin-top: 22px;
+  padding: 0px;
 }
 
 .store .about__form_btn a {
@@ -2541,6 +2620,9 @@ body hr {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 100%;
 }
 
@@ -2635,7 +2717,12 @@ body hr {
 }
 
 .product__synopsis {
-  margin-top: 80px;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding-left: 284px;
+  margin-top: -40px;
 }
 
 .product__synopsis span {
@@ -2764,4 +2851,116 @@ body hr {
 
 .product-slider__slider .store__cost .gen-btn--fill a:hover {
   color: #0D93EC;
+}
+
+/***********************************************ButtonMobile************************************/
+.menu-toggle-button {
+  width: 50px;
+  height: 40px;
+  float: right;
+  background-color: transparent;
+  border-radius: 7px;
+  padding-top: 5px;
+  border: none;
+  text-indent: -9999px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin-top: 8px;
+  float: left;
+  margin-left: 25px;
+  z-index: 1000;
+  opacity: 0.8;
+}
+
+.menu-toggle-button span {
+  display: block;
+  height: 2px;
+  background: #5D6879;
+  position: absolute;
+  top: 15px;
+  left: 0px;
+  right: 0px;
+  width: 20px;
+  border-radius: 10px;
+  margin: auto;
+  -webkit-transition: background 0s 0.3;
+  -o-transition: background 0s 0.3;
+  transition: background 0s 0.3;
+}
+
+.menu-toggle-button span::before, .menu-toggle-button span::after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: #5D6879;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+  border-radius: 10px;
+  -webkit-transition-duration: 0.3s, 1s;
+  -o-transition-duration: 0.3s, 1s;
+  transition-duration: 0.3s, 1s;
+  -webkit-transition-delay: 0s, 0.3s;
+  -o-transition-delay: 0s, 0.3s;
+  transition-delay: 0s, 0.3s;
+}
+
+.menu-toggle-button span::before {
+  top: -6px;
+}
+
+.menu-toggle-button span::after {
+  bottom: -6px;
+}
+
+.menu-toggle-button.is-active span {
+  background: none;
+}
+
+.menu-toggle-button.is-active span::before {
+  top: 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition-property: top, -webkit-transform;
+  transition-property: top, -webkit-transform;
+  -o-transition-property: top, transform;
+  transition-property: top, transform;
+  transition-property: top, transform, -webkit-transform;
+  -webkit-transition-delay: 0s, 0.3s;
+  -o-transition-delay: 0s, 0.3s;
+  transition-delay: 0s, 0.3s;
+  -webkit-transition-duration: 0.3s, 0.3s;
+  -o-transition-duration: 0.3s, 0.3s;
+  transition-duration: 0.3s, 0.3s;
+  background: #0D93EC;
+}
+
+.menu-toggle-button.is-active span::after {
+  bottom: 0;
+  background: #0D93EC;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-transition-property: bottom, -webkit-transform;
+  transition-property: bottom, -webkit-transform;
+  -o-transition-property: bottom, transform;
+  transition-property: bottom, transform;
+  transition-property: bottom, transform, -webkit-transform;
+  -webkit-transition-delay: 0s, 0.3s;
+  -o-transition-delay: 0s, 0.3s;
+  transition-delay: 0s, 0.3s;
+  -webkit-transition-duration: 0.3s, 0.3s;
+  -o-transition-duration: 0.3s, 0.3s;
+  transition-duration: 0.3s, 0.3s;
+}
+
+.menu-toggle-button:focus {
+  outline: none !important;
 }

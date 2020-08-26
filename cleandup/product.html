@@ -29,7 +29,7 @@
 <div class="pixel"></div>
 
 <!--Top-Line-->
-<section class="top-line">
+<section class="top-line d-none d-xl-block">
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
@@ -60,24 +60,39 @@
 							</div>
 						</a>
 					</div>
-					<nav class="civil-header__menu">
-						<ul>
-							<li>
-								<a href="">Topics covered</a>
-							</li>
-							<li>
-								<a href="">Essential exam resources</a>
-							</li>
-							<li>
-								<a href="">Video course bundle</a>
-							</li>
-							<li>
-								<a href="">Testimonials</a>
-							</li>
-						</ul>
+					<nav class="civil-header__menu order-3 order-xl-2">
+						<button class="menu-toggle-button click-mobile d-block d-xl-none">
+							<span></span>					
+						</button>
+						<div class="civil-footer__menu_wrap">
+							<ul>
+								<li>
+									<a href="">Topics covered</a>
+								</li>
+								<li>
+									<a href="">Essential exam resources</a>
+								</li>
+								<li>
+									<a href="">Video course bundle</a>
+								</li>
+								<li>
+									<a href="">Testimonials</a>
+								</li>
+							</ul>
+							<ul class="d-xl-none">
+								<li><a href="">Contact us</a></li>
+								<li><a href="">FAQ</a></li>
+								<li><a href="">About us</a></li>
+								<li><a href="">Redeem your amazon voucher</a></li>
+							</ul>
+							<div class="civil-header__sign d-flex d-xl-none">
+								<a href="">Sign in</a>
+								<img src="images/face.svg" class="svg">
+							</div>
+						</div>
 					</nav>
-					<div class="civil-header__btns">
-						<div class="gen-btn">
+					<div class="civil-header__btns order-2 order-xl-3">
+						<div class="gen-btn d-none d-md-block">
 							<a href="">Sign in</a>
 						</div>
 						<div class="gen-btn--fill">
@@ -119,15 +134,15 @@
 									<a href="">Purchase in on Amazon</a>
 								</div>
 								<img src="images/amazon.png">
-							</div>
-							<div class="product__synopsis">
+							</div>							
+						</div>						
+					</div>
+					<div class="product__synopsis">
 								<span>Synopsis</span>
 								<p>The Roadside Design Guide presents a synthesis of current information and operating practices related to roadside safety and is written in dual units—metric and U.S. Customary.</p>
 								<p>The guide is intended to be used as a resource document from which individual highway agencies can develop standards and policies. It includes a synthesis of current information and operating practices related to roadside safety. It focuses on safety treatments that can minimize the likelihood of serious injuries when a motorist leaves the roadway. This guide was written for use by design engineers and professionals involved in roadside safety and is considered a significant toll that combines current research with practical experience.</p>
 								<p>The 2011 edition of the AASHTO Roadside Design Guide has been updated to include hardware that has met the evaluation criteria contained in the National Cooperative Highway Research Program (NCHRP) Report 350: Recommended Procedures for the Safety Performance Evaluation of Highway Features and begins to detail the most current evaluation criteria contained under the Manual for Assessing Safety Hardware, 2009(MASH). For the most part, roadside hardware tested and accepted under older guidelines that are no longer applicable has not been excluded in this edition.</p>
 							</div>
-						</div>
-					</div>
 				</div>
 			</div>
 		</div>
@@ -368,6 +383,10 @@
 							<li><a href="">Contact us</a></li>
 							<li><a href="">Redeem your amazon voucher</a></li>
 						</ul>
+						<div class="logo__wrap d-flex d-lg-none">
+							<img src="images/logo.svg" class="svg" alt="logo-image">
+							<span><i>CIVIL PE</i> PRACTICE</span>
+						</div>
 					</nav>
 					<div class="civil-footer__form form-gen">
 						<span>Get in Touch</span>
@@ -388,8 +407,9 @@
 			<div class="col-12">
 				<div class="civil-footer__bottom">
 					<span>Copyright &copy; 2019 Civil PE Practice, LLC | PO Box 1373, Bardstown, KY 40004 | All Rights Reserved.</span>
-					<div class="logo">
-						<a href="index.html"><img src="images/footer-logo.png" alt="logo-image"></a>
+					<div class="logo__wrap d-none d-lg-flex">
+						<img src="images/logo.svg" class="svg" alt="logo-image">
+						<span><i>CIVIL PE</i> PRACTICE</span>
 					</div>
 				</div>
 			</div>

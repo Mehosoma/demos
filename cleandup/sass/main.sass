@@ -71,7 +71,7 @@ html
 body
 	width: 100%
 	height: auto
-	min-width: 320px	
+	min-width: 375px	
 	margin: 0 auto
 	position: relative
 	font-family: $nunito-r
@@ -552,6 +552,8 @@ body
 	height: auto
 	position: relative
 	padding: 88px 0px 50px 0px
+	.line-decor
+		opacity: 0.24
 	.container
 		position: relative
 		z-index: 15
@@ -567,7 +569,8 @@ body
 			max-width: 17%
 			box-shadow: 0px 0px 12px rgba(0,0,0,0.16)
 			background: $white
-			padding: 30px 10px 20px 10px
+			padding: 30px 10px 50px 10px
+			position: relative
 			img
 				display: block
 				margin: 0 auto
@@ -586,9 +589,7 @@ body
 				font-size: 14px
 				line-height: 19px
 				color: $d-gray
-				margin: 10px 0px 28px 0px
-				height: 80px
-				overflow: hidden
+				margin: 10px 0px 0px 0px
 			a
 				font-family: $nunito-b
 				font-size: 14px
@@ -596,6 +597,11 @@ body
 				color: $blue
 				&:hover
 					color: $light-blue
+		&_link
+			position: absolute
+			bottom: 20px
+			left: 0px
+			width: 100%
 	.gen-btn
 		display: inline-block
 		margin-top: 42px
@@ -713,7 +719,7 @@ body
 			line-height: 64px
 			background: #F3F4F5
 			position: relative
-			border: 1px solid $light-blue
+			border: 1px solid #EEEFF0
 			border-radius: 5px
 			&:hover
 				cursor: pointer
@@ -742,10 +748,14 @@ body
 		&_hidden
 			background: #F3F4F5
 			display: none
-			border: 1px solid $light-blue
+			border: 1px solid #EEEFF0
 			border-top: none
 			padding: 20px 20px
 			p
+				font-family: $nunito-sb
+				font-size: 18px
+				line-height: 32px
+				color: $gray
 		&_wrap
 			.faq__accordeon:nth-child(1)
 				.faq__accordeon_header
@@ -926,6 +936,20 @@ body
 		-o-transition: all 0.3s ease-out
 		-webkit-transition: all 0.3s ease-out
 		transition: all 0.3s ease-out
+		position: relative
+		&:after
+			content: ""
+			display: block
+			width: 20px
+			height: 20px
+			border-top: 3px solid #000
+			border-right: 3px solid #000
+			position: absolute
+			top: 30px
+			right: 55px
+			opacity: 1	
+			transform: rotate(135deg)
+			@include gradient-check($grad, $grad-e, 3px, 'to right')
 		a
 			font-family: $nunito-l
 			font-size: 14px
@@ -933,20 +957,7 @@ body
 			color: $gray
 			display: block
 			position: relative
-			padding-left: 30px			
-			&:after
-				content: ""
-				display: block
-				width: 20px
-				height: 20px
-				border-top: 3px solid #000
-				border-right: 3px solid #000
-				position: absolute
-				top: 30px
-				right: 55px
-				opacity: 1	
-				transform: rotate(135deg)
-				@include gradient-check($grad, $grad-e, 3px, 'to right')
+			padding-left: 30px
 			&:hover
 				color: $blue
 		a:nth-child(2)
@@ -968,19 +979,20 @@ body
 				font-size: 25px
 				line-height: 60px
 				color: #5D6879
-				padding-left: 24px
+				padding: 0px 24px
+				display: block
 		&:hover
 			cursor: pointer
 			span
 				color: $blue
 			.btn-close
 				background: #00C8FF
+				&:after
+					background-image: none
+					border-right: 3px solid #fff
+					border-top: 3px solid #fff
 				a
-					color: $white
-					&:after
-						background-image: none
-						border-right: 3px solid #fff
-						border-top: 3px solid #fff
+					color: $white					
 	&__blocks
 		&_hidden
 			display: none
@@ -995,6 +1007,8 @@ body
 			line-height: 24px
 			color: $d-gray
 			padding: 0px 33px
+			display: block
+
 		&_hidden
 			display: none
 		&_list
@@ -1085,50 +1099,49 @@ body
 		.m-0
 			border-bottom: 1px solid #F3F4F5
 		&--open
-		
+			
 			.btn-close 
+				&:after
+					content: ""
+					display: block
+					width: 3px
+					height: 34px
+					position: absolute
+					top: 30px
+					right: 60px
+					opacity: 1
+					-moz-transition: all 0.3s ease-out
+					-o-transition: all 0.3s ease-out
+					-webkit-transition: all 0.3s ease-out
+					transition: all 0.3s ease-out
+					transform: rotate(-225deg)
+					@include linear-gradient(left, $grad, $grad-e)
+				&:before
+					content: ""
+					display: block
+					width: 34px
+					height: 3px
+					position: absolute
+					top: 46px
+					right: 44px
+					opacity: 1
+					-moz-transition: all 0.3s ease-out
+					-o-transition: all 0.3s ease-out
+					-webkit-transition: all 0.3s ease-out
+					transition: all 0.3s ease-out
+					transform: rotate(135deg)
+					@include linear-gradient(left, $grad, $grad-e)
 				a:nth-child(1)
 					display: none	
 				a:nth-child(2)
-					display: block
-				a
-					&:after
-						content: ""
-						display: block
-						width: 3px
-						height: 34px
-						position: absolute
-						top: 30px
-						right: 60px
-						opacity: 1
-						-moz-transition: all 0.3s ease-out
-						-o-transition: all 0.3s ease-out
-						-webkit-transition: all 0.3s ease-out
-						transition: all 0.3s ease-out
-						transform: rotate(-225deg)
-						@include linear-gradient(left, $grad, $grad-e)
-					&:before
-						content: ""
-						display: block
-						width: 34px
-						height: 3px
-						position: absolute
-						top: 46px
-						right: 44px
-						opacity: 1
-						-moz-transition: all 0.3s ease-out
-						-o-transition: all 0.3s ease-out
-						-webkit-transition: all 0.3s ease-out
-						transition: all 0.3s ease-out
-						transform: rotate(135deg)
-						@include linear-gradient(left, $grad, $grad-e)
+					display: block					
 			.questions__header:hover
 				.btn-close 
-					a
-						&:before
-							background-image: none
-							border-right: 3px solid #fff
-							border-top: 3px solid #fff
+					&:before
+						background-image: none
+						border-right: 3px solid #fff
+						border-top: 3px solid #fff
+						
 .questions__block--open
 	.questions__block_gradient
 	 	display: none
@@ -1165,6 +1178,8 @@ body
 		img
 			padding-left: 50px
 			margin-bottom: 4px
+			width: 100%
+			height: auto
 		span
 			font-family: $nunito-l
 			font-size: 25px
@@ -1355,6 +1370,7 @@ body
 /***************************************************Form-Bottom************************************/
 .form-bottom
 	padding: 90px 0px 158px 0px
+	
 	.form-bottom__logos
 		padding: 0px 20px
 	#form-bottom
@@ -1363,11 +1379,18 @@ body
 		margin-left: 139px
 		background: #fff
 		box-shadow: 0px 0px 12px rgba(0,0,0,0.16)
-		padding: 55px 0px 64px 0px
+		padding: 55px 0px 35px 0px
+		@include gradient-border($grad, $grad-e, 1px, 'to left')
+		background-size: 100% 5px
+		border-left: none
+		border-right: none
+		border-bottom: none
+		background-position: 0 0, 0 0
 	.form-gen
 		background: #fff
 	&__header
 		text-align: center
+		padding: 0px 40px
 		span
 			font-family: $nunito-l
 			font-size: 35px
@@ -1387,10 +1410,15 @@ body
 		justify-content: space-between
 		padding: 0px 89px 0px 29px
 		margin-top: 38px
-	&__left,
-	&__right
-		flex: 0 0 44%
-		max-width: 44%
+		flex-wrap: wrap
+	&__block
+		flex: 0 0 100%
+		max-width: 100%
+		display: flex
+		justify-content: space-between
+		.about__form_field
+			flex: 0 0 44%
+			max-width: 44%
 	&__logos
 		display: flex
 		align-items: center
@@ -1571,6 +1599,22 @@ body
 				span,
 				p
 					color: $blue
+		&_btn
+			width: 100%
+			max-width: 157px
+			height: 40px
+			background: #fff
+			border-radius: 6px
+			display: flex
+			align-items: center
+			box-shadow: 0px 0px 12px rgba(0,0,0,0.16)
+			padding: 0px 20px
+			p
+				font-family: $nunito-sb
+				font-size: 12px
+				color: #3B485D
+				margin-bottom: 0px
+				margin-left: 20px
 	&__wrap
 		background: #fff
 		box-shadow: 0px 0px 12px rgba(0,0,0,0.16)
@@ -1624,6 +1668,7 @@ body
 			color: $blue
 	.about__form_btn
 		margin-top: 22px
+		padding: 0px
 		a
 			line-height: 32px
 .pages
@@ -1731,6 +1776,7 @@ body
 	&__header
 		display: flex
 		justify-content: space-between
+		align-items: center
 		width: 100%
 		span
 			font-family: $nunito-eb
@@ -1795,7 +1841,10 @@ body
 		a
 			padding: 0px 40px
 	&__synopsis
-		margin-top: 80px
+		flex: 0 0 100%
+		max-width: 100%
+		padding-left: 284px
+		margin-top: -40px
 		span
 			font-family: $nunito-eb
 			font-size: 12px
@@ -1879,3 +1928,111 @@ body
 					color: $white
 					&:hover
 						color: $blue
+
+
+/***********************************************ButtonMobile************************************/
+
+.menu-toggle-button
+	width: 50px
+	height: 40px
+	float: right
+	background-color: transparent
+	border-radius: 7px
+	padding-top: 5px
+	border: none
+	text-indent: -9999px
+	-webkit-appearance: none
+	-moz-appearance: none
+	appearance: none
+	position: relative
+	display: block
+	overflow: hidden
+	margin-top: 8px
+	float: left
+	margin-left: 25px
+	z-index: 1000
+	opacity: 0.8
+
+
+.menu-toggle-button span
+	display: block
+	height: 2px
+	background: $gray
+	position: absolute
+	top: 15px
+	left: 0px
+	right: 0px
+	width: 20px
+	border-radius: 10px
+	margin: auto
+	-webkit-transition: background 0s 0.3
+	-o-transition: background 0s 0.3
+	transition: background 0s 0.3
+
+
+.menu-toggle-button span::before, .menu-toggle-button span::after
+	content: ""
+	display: block
+	width: 20px
+	height: 2px
+	background: $gray
+	position: absolute
+	left: 0px
+	right: 0px
+	margin: auto
+	border-radius: 10px
+	-webkit-transition-duration: 0.3s, 1s
+	-o-transition-duration: 0.3s, 1s
+	transition-duration: 0.3s, 1s
+	-webkit-transition-delay: 0s, 0.3s
+	-o-transition-delay: 0s, 0.3s
+	transition-delay: 0s, 0.3s
+
+
+.menu-toggle-button span::before  
+	top: -6px
+
+.menu-toggle-button span::after
+	bottom: -6px
+
+.menu-toggle-button.is-active span
+	background: none
+
+.menu-toggle-button.is-active span::before
+	top: 0
+	-webkit-transform: rotate(45deg)
+	-ms-transform: rotate(45deg)
+	transform: rotate(45deg)
+	-webkit-transition-property: top, -webkit-transform
+	transition-property: top, -webkit-transform
+	-o-transition-property: top, transform
+	transition-property: top, transform
+	transition-property: top, transform, -webkit-transform
+	-webkit-transition-delay: 0s, 0.3s
+	-o-transition-delay: 0s, 0.3s
+	transition-delay: 0s, 0.3s
+	-webkit-transition-duration: 0.3s, 0.3s
+	-o-transition-duration: 0.3s, 0.3s
+	transition-duration: 0.3s, 0.3s
+	background: $blue
+
+.menu-toggle-button.is-active span::after 
+	bottom: 0
+	background: $blue
+	-webkit-transform: rotate(-45deg)
+	-ms-transform: rotate(-45deg)
+	transform: rotate(-45deg)
+	-webkit-transition-property: bottom, -webkit-transform
+	transition-property: bottom, -webkit-transform
+	-o-transition-property: bottom, transform
+	transition-property: bottom, transform
+	transition-property: bottom, transform, -webkit-transform
+	-webkit-transition-delay: 0s, 0.3s
+	-o-transition-delay: 0s, 0.3s
+	transition-delay: 0s, 0.3s
+	-webkit-transition-duration: 0.3s, 0.3s
+	-o-transition-duration: 0.3s, 0.3s
+	transition-duration: 0.3s, 0.3s
+
+.menu-toggle-button:focus
+	outline: none !important
