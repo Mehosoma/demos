@@ -449,7 +449,7 @@
 			<div class="col-12">
 				<div class="civil-footer__wrap">
 					<nav class="civil-footer__menu">
-						<span>Quick links</span>
+						<span class="civil-footer--click">Quick links</span>
 						<ul>
 							<li><a href="">Topics covered</a></li>
 							<li><a href="">Essential exam resources</a></li>
@@ -468,7 +468,7 @@
 						</div>
 					</nav>
 					<div class="civil-footer__form form-gen">
-						<span>Get in Touch</span>
+						<span class="civil-footer--click">Get in Touch</span>
 						<form id="footer-form">
 							<div class="civil-footer__form_field">
 								<input type="text" name="email" required="" placeholder="Email Address">
@@ -495,6 +495,189 @@
 		</div>
 	</div>
 </footer>
+
+<div class="modal__links">
+	<ul>
+		<li><a href=".modal-one" class="popup-modal popup-modal--color">Modal 1</a></li>
+		<li><a href=".modal-two" class="popup-modal">Modal 2</a></li>
+		<li><a href=".modal-three" class="popup-modal">Modal 3</a></li>
+		<li><a href=".modal-four" class="popup-modal">Modal 4</a></li>
+	</ul>
+</div>
+
+<!--Modal-->
+<div class="modal-one mfp-hide white-popup-block">
+	<div class="modal-one__wrap">
+		<div class="modal-one__header">
+			<div class="logo">
+				<a href="index.html">
+					<div class="logo__wrap">
+						<img src="images/logo.svg" class="svg" alt="logo-image">
+						<span><i>CIVIL PE</i> PRACTICE</span>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="modal-one__form" >
+				<form id="modal-one__form" class="form-gen">
+					<div class="modal-one__form_field">
+						<span>Email adress</span>
+						<input type="text" name="email" required="">
+					</div>
+					<div class="modal-one__form_field">
+						<span>Password</span>
+						<input type="text" name="pass" required="">
+					</div>	
+					<div class="modal-one__form_bottom">
+						<div class="check-gen">
+							<label class="l-container active-checked">Remember me
+								<input type="checkbox" checked="">
+								<span class="checkmark"></span>
+							</label>
+						</div>
+						<div class="about__form_btn">
+							<div class="gen-btn">
+								<button type="submit">Log in</button>
+							</div>
+						</div>
+					</div>				
+				</form>
+		</div>
+		<div class="modal-one__form_rem">
+			<a href="">Lost your password?</a>
+		</div>					
+	</div>
+	<div class="modal-one__back">
+		<a href="">Back to Civil PE Practice</a>
+	</div>
+</div>
+
+<!--Modal-->
+<div class="modal-two mfp-hide white-popup-block">
+	<div class="about__form">
+		<form id="contacts-form" class="form-gen">
+							<div class="about__form_header">
+								<span>Contact us</span>
+							</div>
+							<div class="about__form_field">
+								<span>First name</span>
+								<input type="text" name="name" required="">
+							</div>
+							<div class="about__form_field">
+								<span>Email adress</span>
+								<input type="text" name="email" required="">
+							</div>
+							<div class="about__form_field">
+								<span>Message</span>
+								<textarea></textarea>
+							</div>
+			<div class="about__form_btn">
+				<div class="gen-btn">
+					<a href="">Send email</a>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
+
+<!--Modal-->
+<div class="modal-three mfp-hide white-popup-block">
+	<section class="form-bottom section-gray">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<form id="form-bottom" class="form-gen">
+					<div class="form-bottom__header">
+						<span>Redeem your amazon voucher</span>
+						<p>With your amazon purchase of the CIVIL PE Practice Hardcopy get<br class="d-none d-xl-block"> <i>14 days free</i> access to the CIVIL PE Practice platform</p>
+					</div>
+					<div class="form-bottom__wrap">
+						<div class="form-bottom__block">
+							<div class="about__form_field">
+								<span>First name</span>
+								<input type="text" name="name" required="">
+							</div>
+							<div class="about__form_field">
+								<span>Last name</span>
+								<input type="text" name="last-name" required="">
+							</div>	
+						</div>
+						<div class="form-bottom__block">
+							<div class="about__form_field">
+								<span>Email adress</span>
+								<input type="text" name="email" required="">
+							</div>
+							<div class="about__form_field">
+								<span>Attach your invoice</span>
+								<input type="text" name="invoice" required="">
+							</div>
+						</div>
+						<div class="form-bottom__block">
+							<div class="form-bottom__logos about__form_field">
+								<div class="logo__wrap">
+									<img src="images/logo.svg" class="svg" alt="logo-image">
+									<span><i>CIVIL PE</i> PRACTICE</span>
+								</div>
+								<img src="images/amazon.png" alt="amazon-image">
+							</div>
+							<div class="about__form_btn">
+								<div class="gen-btn">
+									<a href="">Redeem</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
+</div>
+
+<!--Modal-->
+<div class="modal-four mfp-hide white-popup-block">
+	<section class="faq">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="section__subheader section__subheader--small">
+					<h2>Frequently asked questions</h2>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12">
+				<div class="faq__accordeon_wrap">
+					<div class="faq__accordeon">
+						<div class="faq__accordeon_header">
+							<span>Are your questions similar in difficulty to the actual PE Exam?</span>
+						</div>
+						<div class="faq__accordeon_hidden">
+							<p>We strive to mimic the difficulty of the actual PE Exam. Our questions cover the topics listed on the NCEES syllabus. We have received lots of positive feedback pertaining to the difficulty of our questions. However, we have no way of predicting how difficult the test makers will be for future exams.</p>
+						</div>
+					</div>
+					<div class="faq__accordeon">
+						<div class="faq__accordeon_header">
+							<span>Are your questions similar in difficulty to the actual PE Exam?</span>
+						</div>
+						<div class="faq__accordeon_hidden">
+							<p>We strive to mimic the difficulty of the actual PE Exam. Our questions cover the topics listed on the NCEES syllabus. We have received lots of positive feedback pertaining to the difficulty of our questions. However, we have no way of predicting how difficult the test makers will be for future exams.</p>
+						</div>
+					</div>
+					<div class="faq__accordeon">
+						<div class="faq__accordeon_header">
+							<span>Are your questions similar in difficulty to the actual PE Exam?</span>
+						</div>
+						<div class="faq__accordeon_hidden">
+							<p>We strive to mimic the difficulty of the actual PE Exam. Our questions cover the topics listed on the NCEES syllabus. We have received lots of positive feedback pertaining to the difficulty of our questions. However, we have no way of predicting how difficult the test makers will be for future exams.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+</div>
 
 	<script src="libs/jquery/jquery-3.3.1.js"></script>
 	<script src="libs/bootstrap/js/bootstrap.js"></script>
