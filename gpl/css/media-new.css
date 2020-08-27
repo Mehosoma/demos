@@ -25,9 +25,16 @@
 		width: 100%;
 	}
 
+	.quiz__main__left__footer{
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
 	.quiz--wide .quiz__main__left__footer span{
-		font-size: 15px;
+		font-size: 20px;
 		padding-right: 0px;
+		margin-top: 15px;
+		margin-left: 0px;
 	}
 
 	.form-gen .form-gen__field .form-gen__field-input{
@@ -180,7 +187,8 @@
 	}
 
 	.quiz--wide .quiz__main__left__footer span{
-		padding-right: 55px;
+		padding-right: 100px;
+		font-size: 22px;
 	}
 
 }
