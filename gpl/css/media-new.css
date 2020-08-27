@@ -14,6 +14,7 @@
 		flex: 0 0 100%;
 		max-width: 100%;
 		min-height: 420px;
+		padding: 80px 15px 37px 15px
 	}
 
 	.form-gen .form-gen__field{
@@ -25,12 +26,8 @@
 	}
 
 	.quiz--wide .quiz__main__left__footer span{
-		font-size: 16px;
-	}
-
-	.quiz--wide .quiz__main__left__footer img{
-		width: 80px;
-		height: 80px;
+		font-size: 15px;
+		padding-right: 0px;
 	}
 
 	.form-gen .form-gen__field .form-gen__field-input{
@@ -68,6 +65,8 @@
 	.consult__block_image{
 		flex: 0 0 100%;
 		max-width: 100%;
+		text-align: center;
+		margin-right: 0px;
 	}
 
 	.consult__block_image img{
@@ -151,6 +150,8 @@
 	.consult__block_image{
 		flex: 0 0 100%;
 		max-width: 100%;
+		text-align: center;
+		margin-right: 0px;
 	}
 
 	.consult__block_image img{
@@ -176,6 +177,10 @@
 		min-height: 500px;
 		margin-left: 0px;
 		margin-top: 40px;
+	}
+
+	.quiz--wide .quiz__main__left__footer span{
+		padding-right: 55px;
 	}
 
 }
