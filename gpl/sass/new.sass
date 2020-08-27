@@ -1,0 +1,279 @@
+
+@import "bourbon/bourbon"
+
+
+/***************************************************Quiz-Wide************************************/
+.quiz--wide
+	padding: 33px 0px 57px 0px
+	.quiz__main
+		width: 1200px
+	.quiz__main__left
+		flex: 0 0 580px
+		max-width: 580px
+		padding: 80px 24px 37px 24px
+		text-align: center
+		min-height: 540px
+	.quiz__main__right
+		min-height: 540px
+	.quiz__main__left__header
+		width: 100%
+		h4
+			font-size: 35px
+			margin-bottom: 15px
+		p
+			font-size: 22px
+	.quiz__main__left__footer
+		img
+			width: 100px
+			height: 100px
+		span
+			font-size: 22px
+			text-align: left
+			margin-left: 10px
+.form-gen
+	padding: 46px 30px 37px 30px
+	.form-gen__field
+		display: flex
+		justify-content: space-between
+		.form-gen__field-input
+			flex: 0 0 47%
+			max-width: 47%
+			margin-bottom: 15px
+		p
+			font-family: "Crimson Pro"
+			font-size: 18px
+			line-height: 31px
+			font-style: italic
+			color: #545C6B
+			opacity: 0.7
+			margin-bottom: 3px
+		input,
+		textarea
+			font-family: "Crimson Pro"
+			font-size: 16px
+			width: 100%
+			background: #f9f9f9
+			border: 1px solid #ccc
+			border-radius: 2px
+			padding: 0px 15px
+			-moz-transition: all 0.3s ease-out
+			-o-transition: all 0.3s ease-out
+			-webkit-transition: all 0.3s ease-out
+			transition: all 0.3s ease-out
+		input
+			height: 40px
+		textarea
+			padding: 15px
+			resize: none
+			height: 156px
+	.form-gen__field--long
+		width: 100%
+		.form-gen__field-input
+			flex: 0 0 100%
+			max-width: 100%
+	.form-gen__button
+		text-align: right
+		margin-top: 22px
+		input
+			width: 277px
+			height: 48px
+			background: #2788D2
+			box-shadow: none
+			border: 1px solid #2788D2
+			border-radius: 2px
+			-moz-transition: all 0.3s ease-out
+			-o-transition: all 0.3s ease-out
+			-webkit-transition: all 0.3s ease-out
+			transition: all 0.3s ease-out
+			font-family: "Crimson Pro"
+			font-size: 14px
+			text-transform: uppercase
+			color: #fff
+			font-weight: 500
+			letter-spacing: 3px
+			&:hover
+				background: transparent
+				box-shadow: none
+				border: 1px solid #2788D2!important
+				cursor: pointer
+				color: #2788D2
+.form-gen input:hover, .form-gen input:active, .form-gen input:focus, .form-gen textarea:hover, .form-gen textarea:active, .form-gen textarea:focus
+	border: 1px solid #b4b4b4!important
+		
+
+/***************************************************Consult************************************/
+.section__subheader
+	position: relative
+	z-index: 1
+	h2
+		font-family: "Crimson Pro"
+		font-size: 44px
+		line-height: 48px
+		color: #1C263D
+		text-align: center
+	span
+		font-family: "Crimson Pro"
+		font-size: 20px
+		line-height: 31px
+		color: #fff
+		display: block
+		text-align: center
+	&--white
+		h2,
+		span
+			color: #fff
+.content-text
+	p
+		font-family: "Crimson Pro"
+		font-size: 25px
+		line-height: 32px
+		color: #545C6B
+		text-align: center
+.consult
+	padding: 51px 0px 40px 30px
+	.content-text
+		margin-top: 30px
+		padding:: 0px 80px
+		p
+			margin-bottom: 22px
+	&__block
+		display: flex
+		justify-content: space-between
+		margin-bottom: 64px
+		&_wrap
+			width: 90%
+			margin: 80px auto 20px
+		&_text
+			display: flex
+			flex-direction: column			
+		&_quote
+			width: 100%
+			flex-grow: 1
+			background: #F9F9F9
+			display: flex
+			align-items: center
+			justify-content: center
+			padding: 30px 60px
+			p
+				font-family: "Crimson Pro"
+				font-size: 22px
+				line-height: 31px
+				color: #1B3967
+				font-style: italic
+				text-align: center
+		&_image
+			flex: 0 0 375px
+			max-width: 375px
+			margin-right: 44px
+			img
+				width: 100%
+				height: auto
+.content__block_text_common
+	span
+		font-family: "Crimson Pro"
+		font-size: 28px
+		line-height: 31px
+		color: #2788D2
+		display: block
+		margin-bottom: 15px
+	p
+		font-family: "Crimson Pro"
+		font-size: 20px
+		line-height: 31px
+		color: #1C263D
+		margin-bottom: 22px
+.consult__block_wrap
+	.consult__block:nth-child(even)
+		.consult__block_image
+			order: 2
+			margin-right: 0px
+			margin-left: 36px
+		.consult__block_text
+			order: 1
+
+
+/***************************************************Contact-Us************************************/
+.contact-us
+	width: 100%
+	height: auto
+	background-repeat: no-repeat
+	background-position: top center
+	background-size: 100% 400px
+	position: relative
+	padding: 40px 0px 20px 0px
+	&:after
+		content: ''
+		display: block
+		width: 100%
+		height: 400px
+		position: absolute
+		top: 0px
+		left: 0px
+		background: #1B3967
+		opacity: 0.84
+	.section__subheader h2
+		margin-bottom: 24px
+	&__wrap
+		display: flex
+	&__left
+		flex: 0 0 50%
+		max-width: 50%
+	&__right
+		width: 100%
+		background: gray
+		margin-left: 23px
+	&__map
+		position: relative
+		width: 100%
+		height: 100%
+		&_address
+			position: absolute
+			background: #fff
+			bottom: 12px
+			left: 11px
+			padding: 20px 63px 24px 24px
+			span
+				font-family: "Crimson Pro"
+				font-size: 22px
+				line-height: 25px
+				color: #CCCCCC
+				display: block
+				margin-bottom: 10px
+			p
+				font-family: "Crimson Pro"
+				font-size: 22px
+				line-height: 25px
+				color: #545C6B
+			a
+				font-family: "Crimson Pro"
+				font-size: 22px
+				line-height: 25px
+				color: #2788D2
+	&__main
+		position: relative
+		z-index: 1
+		background: #fff
+		box-shadow: 0px 3px 10px rgba(0,0,0,0.16)
+		width: 85%
+		margin: 58px auto 0px
+		padding: 37px 24px 20px 24px
+		&_header
+			font-family: "Crimson Pro"
+			font-size: 44px
+			line-height: 48px
+			color: #101E3D
+			margin-bottom: 44px
+		.form-gen
+			padding: 0px 19px 10px 0px
+
+
+/***************************************************Text-Block************************************/
+.text-block
+	padding: 60px 0px 60px 0px
+	.container
+		max-width: 1240px
+	.section__subheader h2
+		margin-bottom: 55px
+	.content-text
+		padding: 0px 100px
+		margin-bottom: 100px

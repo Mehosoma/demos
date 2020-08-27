@@ -506,6 +506,10 @@
     	top: 14px;
 	}
 
+	.info__articles__article span:hover{
+		cursor: pointer;
+	}
+
 
 
 }

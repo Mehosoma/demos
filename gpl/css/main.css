@@ -67,14 +67,14 @@ body hr {
 }
 
 .pixel {
-  background: url(../images/main.jpg) no-repeat top center;
+  background: url(../images/main.png) no-repeat top center;
   width: 1366px;
   height: 12800px;
   position: absolute;
   z-index: 1000000;
   display: none;
   left: 50%;
-  top: 0;
+  top: 1795px;
   margin-left: -683px;
   opacity: 0.5;
   margin-top: 0px;
@@ -344,7 +344,7 @@ h3 {
 .nav__wrap__menu a {
   font-family: "Crimson Pro", sans-serif;
   font-size: 15px;
-  font-weight: 300;
+  font-weight: 500;
   color: #1C263D;
   text-transform: uppercase;
   letter-spacing: 1.5px;
@@ -379,7 +379,7 @@ h3 {
 .nav__wrap__menu__submenu a {
   font-family: "Crimson Pro", sans-serif;
   font-size: 15px;
-  font-weight: 300;
+  font-weight: 500;
   color: #545C6B;
   text-transform: none;
   position: relative;
@@ -1419,7 +1419,7 @@ h3 {
 .info__articles span {
   font-family: "Crimson Pro", sans-serif;
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 500;
   color: #1C263D;
   text-transform: uppercase;
   letter-spacing: 2.1px;
@@ -1471,7 +1471,7 @@ h3 {
 .info__new span {
   font-family: "Crimson Pro", sans-serif;
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 500;
   color: #1C263D;
   text-transform: uppercase;
   letter-spacing: 2.1px;
