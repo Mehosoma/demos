@@ -386,7 +386,7 @@
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.16);
   width: 85%;
   margin: 58px auto 0px;
-  padding: 37px 24px 20px 24px;
+  padding: 37px 24px 30px 24px;
 }
 
 .contact-us__main_header {
@@ -398,7 +398,7 @@
 }
 
 .contact-us__main .form-gen {
-  padding: 0px 19px 10px 0px;
+  padding: 0px 19px 0px 0px;
 }
 
 /***************************************************Text-Block************************************/
@@ -415,6 +415,6 @@
 }
 
 .text-block .content-text {
-  padding: 0px 100px;
+  padding: 0px 50px;
   margin-bottom: 100px;
 }
