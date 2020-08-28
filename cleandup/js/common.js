@@ -78,6 +78,12 @@ $(function () {
 });
 
 
+$('.main-slider__slider').on('swipe', function() {
+   $('.main-slider__hidden').removeClass('hidden-height');
+   $('.main-slider__slide').removeClass('hidden-height');
+});
+
+
 //Slider
 $(document).ready(function(){
   $('.main-slider__slider').slick({

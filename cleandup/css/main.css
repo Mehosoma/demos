@@ -714,6 +714,10 @@ body hr {
   transition: all 0.3s ease-out;
 }
 
+.main-slider__hidden.hidden-height .main-slider__more {
+  background: none;
+}
+
 .main-slider__hidden.hidden-height .main-slider__more span:nth-child(1) {
   display: none;
 }
