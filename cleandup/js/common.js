@@ -228,7 +228,6 @@ function readmore(){
   $('.main-slider__slide').removeClass('hidden-height');
 
   $(".main-slider__cont").each(function() {
-
     if($(this).height() > 156){
       $(this).addClass('main-slider__hidden')
       $(this).append("<div class='main-slider__more'></div");
