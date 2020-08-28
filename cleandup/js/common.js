@@ -220,6 +220,18 @@ function readmore(){
   $('.main-slider__more span').off('click');
   $('.main-slider__hidden').removeClass('hidden-height');
   $('.main-slider__slide').removeClass('hidden-height');
+
+  $(".main-slider__cont").each(function() {
+
+    if($(this).height() > 156){
+      $(this).addClass('main-slider__hidden')
+      $(this).append("<div class='main-slider__more'></div");
+      $(this).find('.main-slider__more').append("<span>Read more</span");
+      $(this).find('.main-slider__more').append("<span>Close</span");
+    }  
+   });
+
+
   $('.main-slider__more span').on('click',function(e){
        e.preventDefault();  
     $(this).closest('.main-slider__hidden').toggleClass('hidden-height');
