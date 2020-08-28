@@ -114,6 +114,10 @@ body hr {
   color: #FFFFFF;
 }
 
+.gen-btn input {
+  border: none;
+}
+
 .gen-btn--fill {
   background-color: #00FCCB;
   background-image: -webkit-linear-gradient(left, #0C96EA, #00FCCB);
@@ -667,6 +671,10 @@ body hr {
   position: relative;
 }
 
+.main-slider .hidden-height {
+  height: auto;
+}
+
 .main-slider .container {
   max-width: 100%;
 }
@@ -696,12 +704,69 @@ body hr {
   margin: 0 15px;
 }
 
+.main-slider__hidden {
+  height: 196px;
+  overflow: hidden;
+  position: relative;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.main-slider__hidden.hidden-height .main-slider__more span:nth-child(1) {
+  display: none;
+}
+
+.main-slider__hidden.hidden-height .main-slider__more span:nth-child(2) {
+  display: block;
+}
+
+.main-slider__more {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 80px;
+  text-align: right;
+  background: -moz-linear-gradient(bottom, white 30%, rgba(255, 255, 255, 0) 100%);
+  background: -webkit-linear-gradient(bottom, white 30%, rgba(255, 255, 255, 0) 100%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(30%, white), to(rgba(255, 255, 255, 0)));
+  background: -o-linear-gradient(bottom, white 30%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(to top, white 30%, rgba(255, 255, 255, 0) 100%);
+  background-position: center bottom;
+  overflow: visible;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.main-slider__more span {
+  font-size: 14px !important;
+}
+
+.main-slider__more span:hover {
+  cursor: pointer;
+}
+
+.main-slider__more span:last-child {
+  display: none;
+}
+
 .main-slider__slide {
-  padding: 72px 20px 20px 34px;
+  padding: 72px 20px 70px 34px;
   background: #fff;
   position: relative;
   -webkit-box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.16);
   box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.16);
+  height: 340px;
+  position: relative;
 }
 
 .main-slider__slide img {
@@ -716,8 +781,6 @@ body hr {
   line-height: 26px;
   color: #192841;
   margin-bottom: 22px;
-  height: 130px;
-  overflow: hidden;
 }
 
 .main-slider__slide span {
@@ -725,6 +788,29 @@ body hr {
   font-size: 18px;
   line-height: 24px;
   color: #0D93EC;
+}
+
+.main-slider__date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 20px;
+  width: 100%;
+  position: absolute;
+  bottom: 20px;
+  left: 0px;
+  padding-left: 30px;
+  padding-right: 20px;
+}
+
+.main-slider__date .read__block_date span {
+  line-height: normal;
 }
 
 /***************************************************Principles************************************/
@@ -1104,7 +1190,7 @@ body hr {
   background: #192841;
   padding: 40px 0px 0px;
   position: relative;
-  z-index: 1000;
+  z-index: 999;
 }
 
 .civil-footer__wrap {
@@ -1953,8 +2039,8 @@ body hr {
 
 .about__form_btn a,
 .about__form_btn input {
-  line-height: 24px;
   padding: 0px 40px;
+  line-height: 28px;
 }
 
 #contacts-form {
@@ -2238,7 +2324,7 @@ body hr {
 .store {
   padding: 64px 0px 80px 0px;
   position: relative;
-  z-index: 1000;
+  z-index: 999;
   background-repeat: no-repeat, no-repeat;
   background-position: top 100px left, bottom right;
 }
@@ -2293,7 +2379,7 @@ body hr {
 }
 
 .store__menu ul {
-  margin-top: 28px;
+  margin-top: 18px;
 }
 
 .store__menu li {
@@ -2307,8 +2393,7 @@ body hr {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 0px 18px 10px 10px;
-  margin-bottom: 7px;
+  padding: 10px 18px 10px 10px;
 }
 
 .store__menu li span {
@@ -2336,11 +2421,12 @@ body hr {
 
 .store__menu li:hover {
   cursor: pointer;
+  background: #0D93EC;
 }
 
 .store__menu li:hover span,
 .store__menu li:hover p {
-  color: #0D93EC;
+  color: #FFFFFF;
 }
 
 .store__menu_btn {
