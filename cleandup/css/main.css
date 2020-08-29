@@ -431,10 +431,6 @@ body hr {
   background: #fff;
   position: relative;
   z-index: 1000;
-  -moz-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
 }
 
 .top-line__menu ul {
@@ -481,6 +477,8 @@ body hr {
   -o-transition: all 0.3s ease-out;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
+  position: fixed;
+  top: 41px;
   width: 100%;
 }
 
@@ -555,12 +553,8 @@ body hr {
   width: 100%;
 }
 
-.scrolled .civil-header ul {
+.scrolled ul {
   height: 60px;
-}
-
-.scrolled .top-line {
-  margin-top: -40px;
 }
 
 .logo__wrap,

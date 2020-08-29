@@ -361,10 +361,6 @@ body
 	background: #fff
 	position: relative
 	z-index: 1000
-	-moz-transition: all 0.3s ease-out
-	-o-transition: all 0.3s ease-out
-	-webkit-transition: all 0.3s ease-out
-	transition: all 0.3s ease-out
 	&__menu
 		ul
 			display: flex
@@ -395,6 +391,8 @@ body
 	-o-transition: all 0.3s ease-out
 	-webkit-transition: all 0.3s ease-out
 	transition: all 0.3s ease-out
+	position: fixed
+	top: 41px
 	width: 100%
 	&__wrap
 		display: flex
@@ -431,11 +429,8 @@ body
 	z-index: 1000
 	top: 0px
 	width: 100%	
-	.civil-header
-		ul
-			height: 60px
-	.top-line
-		margin-top: -40px
+	ul
+		height: 60px
 .logo__wrap,
 .civil-footer .logo__wrap
 	display: flex
@@ -2407,6 +2402,8 @@ button.mfp-close
 
 .woocommerce-cart .cart-collaterals .cart_totals table th
 	width: 60%
+.product-price
+
 
 /***********************************************ButtonMobile************************************/
 

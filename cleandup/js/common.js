@@ -264,11 +264,11 @@ function scrolled(){
 
     $(window).scroll(function() {    
       var scroll = $(window).scrollTop();
-      if (scroll >= 40) {
-        $(".test-add").addClass("scrolled");
+      if (scroll >= 1) {
+        $(".civil-header").addClass("scrolled");
         
       } else {
-        $(".test-add").removeClass("scrolled");
+        $(".civil-header").removeClass("scrolled");
        
       }
     });
