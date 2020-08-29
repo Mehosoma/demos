@@ -158,7 +158,7 @@ $(document).ready(function(){
 
 //See All Link
 
-$(window).on('load resize', function() {  
+function questions(){ 
   if ($(window).width() >= 767) {
       $('.questions__block span').off('click'); 
       $('.questions__block a').off('click');
@@ -181,7 +181,10 @@ $(window).on('load resize', function() {
       $(this).closest('.questions__block').toggleClass('questions__block--open');
     });  
   }
-});
+}
+
+$(document).ready(questions);
+$(window).resize(questions);
 
 
 //Btn-Close
@@ -257,26 +260,21 @@ $(document).ready(function(){
 
 
   //Fixed Menu
-$(window).on('load resize', function() {  
-  if ($(window).width() >= 1200) {
+function scrolled(){ 
+
     $(window).scroll(function() {    
       var scroll = $(window).scrollTop();
-      if (scroll >= 35) {
-        $(".civil-header").addClass("scrolled");
+      if (scroll >= 40) {
+        $(".test-add").addClass("scrolled");
         
       } else {
-        $(".civil-header").removeClass("scrolled");
+        $(".test-add").removeClass("scrolled");
        
       }
     });
-   } else {
-     $(window).scroll(function() {    
-      var scroll = $(window).scrollTop();
-      if (scroll >= 50) {
-        $(".civil-header").addClass("scrolled");
-      } else {
-        $(".civil-header").removeClass("scrolled");
-      }
-    });     
-  }
-});
+  
+
+}
+
+$(document).ready(scrolled);
+$(window).resize(scrolled);

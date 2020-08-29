@@ -1,0 +1,766 @@
+/**
+Theme Name: CivilPE
+Author: ExceptionalWeb
+Text Domain: civilpe
+*/
+
+.civil-header{
+  z-index: 999;
+}
+
+.civil-footer__form .wpcf7-submit{
+  width: 137px;
+  height: 41px;
+  background: #0D93EC;
+  color: #FFFFFF;
+  margin-left: 20px;
+}
+
+.civil-footer__form .wpcf7-submit:hover{
+  background: #0AF1D4;
+  cursor: pointer;
+}
+
+.civil-footer__wrap span {
+  line-height: 0;
+}
+
+.civil-footer #footer-form .civil-footer__form_field.last{
+  margin-bottom: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+
+.gen-btn .wpcf7-submit {
+  background: #fff;
+  border-radius: 30px;
+  padding: 0px 34px;
+  color: #0D93EC;
+  font-family: "NunitoRegular", sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.gen-btn input.wpcf7-submit:hover {
+  background-color: #00FCCB;
+  background-image: -webkit-linear-gradient(left, #0C96EA, #00FCCB);
+  background-image: -moz-linear-gradient(left, #0C96EA, #00FCCB);
+  background-image: -ms-linear-gradient(left, #0C96EA, #00FCCB);
+  background-image: -o-linear-gradient(left, #0C96EA, #00FCCB);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1,StartColorStr='#0C96EA', EndColorStr='#00FCCB');
+  color: #FFFFFF;
+  cursor: pointer;
+  border: none !important;
+}
+
+.principles .gen-btn .wpcf7-submit {
+  padding: 0px 17px;
+  line-height: 40px;
+  font-size: 18px;
+}
+
+.questions .row-header h1 b {
+  font-family: "NunitoSemiBold", sans-serif;
+  font-style: normal;
+}
+
+.questions .row-header h1 {
+    padding-left: 0;
+}
+
+.gen-btn a,
+.gen-btn button,
+.gen-btn input {
+  background: #fff;
+  border-radius: 30px;
+  padding: 0px 34px;
+  color: #0D93EC;
+  font-family: "NunitoRegular", sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.gen-btn a:hover,
+.gen-btn button:hover,
+.gen-btn input:hover {
+  background-color: #00FCCB;
+  background-image: -webkit-linear-gradient(left, #0C96EA, #00FCCB);
+  background-image: -moz-linear-gradient(left, #0C96EA, #00FCCB);
+  background-image: -ms-linear-gradient(left, #0C96EA, #00FCCB);
+  background-image: -o-linear-gradient(left, #0C96EA, #00FCCB);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1,StartColorStr='#0C96EA', EndColorStr='#00FCCB');
+  color: #FFFFFF;
+}
+
+.gen-btn input {
+  border: none;
+}
+
+.about__form_btn a, .about__form_btn input {
+    line-height: 24px;
+    padding: 0px 40px;
+}
+
+.store {
+    padding: 64px 0px 80px 0px;
+    position: relative;
+    z-index: 999;
+    background-repeat: no-repeat, no-repeat;
+    background-position: top 100px left, bottom right;
+}
+
+.store__menu li{
+    border-bottom: 1px solid #EEEFF0;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 10px 18px 10px 10px;
+}
+
+.store__menu a{
+  display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.store__menu li:hover {
+    cursor: pointer;
+    background: #0D93EC;
+}
+
+.store__menu li.active {
+    cursor: pointer;
+    background: #0D93EC;
+}
+
+.store__menu li.active span,
+.store__menu li.active p {
+    color: #FFFFFF;
+}
+
+
+.store__menu li:hover span, .store__menu li:hover p {
+    color: #FFFFFF;
+}
+
+.store__menu ul {
+    margin-top: 18px;
+}
+
+/*---------- Pagination ----------*/
+.pages .pagination .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 30px;
+}
+
+.pages .pagination .nav-links > a,
+.pages .pagination .nav-links > span{
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  border: 1px solid #EEEFF0;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4);
+  margin-right: 10px;
+  text-align: center;
+}
+
+.pages .pagination .nav-links > span {
+    color: #0D93EC;
+}
+
+.pages .pagination .nav-links > a {
+  font-family: "NunitoSemiBold", sans-serif;
+  font-size: 20px;
+  line-height: 40px;
+  color: #3B485D;
+}
+
+.pages .pagination .nav-links > a:hover {
+    cursor: pointer;
+    color: #0D93EC;
+}
+
+.pages .pagination .nav-links a.next,
+.pages .pagination .nav-links a.prev{
+  width: 60px;
+  position: relative;
+}
+
+.pages .pagination .nav-links a.next:after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #3B485D;
+  border-right: 2px solid #3B485D;
+  position: absolute;
+  top: 15px;
+  left: 28px;
+  opacity: 1;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.pages .pagination .nav-links a.next:before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #3B485D;
+  border-right: 2px solid #3B485D;
+  position: absolute;
+  top: 15px;
+  left: 18px;
+  opacity: 1;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.pages .pagination .nav-links a.next:hover:after, 
+.pages .pagination .nav-links a.next:hover:before,
+.pages .pagination .nav-links a.prev:hover:after, 
+.pages .pagination .nav-links a.prev:hover:before{
+  border-color: #0D93EC;
+}
+
+.pages .pagination .nav-links a.prev:after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #3B485D;
+  border-right: 2px solid #3B485D;
+  position: absolute;
+  top: 15px;
+  left: 28px;
+  opacity: 1;
+  -webkit-transform: rotate(225deg);
+  -ms-transform: rotate(225deg);
+  transform: rotate(225deg);
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.pages .pagination .nav-links a.prev:before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #3B485D;
+  border-right: 2px solid #3B485D;
+  position: absolute;
+  top: 15px;
+  left: 18px;
+  opacity: 1;
+  -webkit-transform: rotate(225deg);
+  -ms-transform: rotate(225deg);
+  transform: rotate(225deg);
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+
+
+.pages ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 30px;
+}
+
+.pages li {
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  border: 1px solid #EEEFF0;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4);
+  margin-right: 10px;
+  text-align: center;
+}
+
+.pages li:hover {
+  cursor: pointer;
+}
+
+.pages li:hover span {
+  color: #0D93EC;
+}
+
+.pages li:last-child {
+  width: 60px;
+  position: relative;
+}
+
+.pages li:last-child:after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #3B485D;
+  border-right: 2px solid #3B485D;
+  position: absolute;
+  top: 15px;
+  left: 28px;
+  opacity: 1;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.pages li:last-child:before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #3B485D;
+  border-right: 2px solid #3B485D;
+  position: absolute;
+  top: 15px;
+  left: 18px;
+  opacity: 1;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.pages li:last-child:hover:after, .pages li:last-child:hover:before {
+  border-color: #0D93EC;
+}
+
+.pages span {
+  font-family: "NunitoSemiBold", sans-serif;
+  font-size: 20px;
+  line-height: 40px;
+  color: #3B485D;
+}
+
+.product__cost span:nth-child(1):after {
+    display: none;
+}
+.product__cost span:nth-child(1):before {
+    display: none;
+}
+
+.product__cost span.price {
+  font-family: "NunitoBold", sans-serif;
+  font-size: 25px;
+  line-height: 33px;
+  color: #0D93EC;
+}
+
+.product__cost span.sale {
+  font-family: "NunitoBold", sans-serif;
+  font-size: 25px;
+  line-height: 33px;
+  color: #5D6879;
+  position: relative;
+  margin-right: 30px;
+}
+
+.product__cost span.sale:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: #5D6879;
+  -webkit-transform: rotate(-11deg);
+  -ms-transform: rotate(-11deg);
+  transform: rotate(-11deg);
+  bottom: 17px;
+  left: 0px;
+}
+
+.product__cost span.sale:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: #5D6879;
+  -webkit-transform: rotate(11deg);
+  -ms-transform: rotate(11deg);
+  transform: rotate(11deg);
+  top: 13px;
+  left: 0px;
+}
+
+.product__header i {
+    margin-left: 10px;
+}
+
+.store__cost span {
+    height: 22px;
+}
+
+.product-slider__slider .product__cost span {
+    font-size: 18px;
+}
+
+@media only screen and (min-width : 0px) and (max-width : 767px) {
+    .civil-footer__form .wpcf7-submit{
+		margin-top: 13px;
+	}
+	
+	.principles .gen-btn .wpcf7-submit{
+		width: 100%;
+	}
+}
+
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+    .civil-footer__form .wpcf7-submit{
+		flex-grow: 1;
+	}
+}
+
+
+
+/***************************************************Woocommerce************************************/
+.woocommerce {
+  padding: 80px 100px;
+  background-color: #00FCCB;
+  background-image: -webkit-linear-gradient(left, #0C96EA, #00FCCB);
+  background-image: -moz-linear-gradient(left, #0C96EA, #00FCCB);
+  background-image: -ms-linear-gradient(left, #0C96EA, #00FCCB);
+  background-image: -o-linear-gradient(left, #0C96EA, #00FCCB);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1,StartColorStr='#0C96EA', EndColorStr='#00FCCB');
+}
+
+.woocommerce__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.16);
+  border-radius: 5px;
+  padding: 30px;
+}
+
+.woocommerce__back {
+  margin-bottom: 30px;
+}
+
+.woocommerce__back a {
+  font-family: "NunitoSemiBold", sans-serif;
+  font-size: 15px;
+  line-height: normal;
+  color: #FFFFFF !important;
+  position: relative;
+  padding-left: 28px;
+}
+
+.woocommerce__back a:after {
+  content: "";
+  display: block;
+  width: 14px;
+  height: 14px;
+  border-top: 2px solid #FFFFFF;
+  border-right: 2px solid #FFFFFF;
+  position: absolute;
+  top: 2px;
+  left: 0px;
+  opacity: 1;
+  -webkit-transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.woocommerce__header {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.woocommerce__header span {
+  font-family: "NunitoSemiBold", sans-serif;
+  font-size: 28px;
+  line-height: normal;
+  color: #5D6879;
+}
+
+.woocommerce-cart-form {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  border-radius: 5px;
+}
+
+.woocommerce-cart-form thead th {
+  font-family: "NunitoSemiBold", sans-serif;
+  font-size: 16px;
+  line-height: normal;
+  color: #CDD1D5;
+}
+
+.cart-collaterals {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 270px;
+  flex: 0 0 270px;
+  max-width: 270px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin-left: 20px;
+}
+
+.cart-collaterals .shop_table {
+  border: none !important;
+}
+
+.woocommerce .cart-collaterals .cart_totals, .woocommerce-page .cart-collaterals .cart_totals {
+  float: none;
+  width: auto;
+}
+
+.woocommerce a.remove {
+  position: relative;
+}
+
+.woocommerce a.remove:after {
+  content: "";
+  display: block;
+  width: 3px;
+  height: 26px;
+  position: absolute;
+  top: 0px;
+  right: 5px;
+  opacity: 1;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  -webkit-transform: rotate(-225deg);
+  -ms-transform: rotate(-225deg);
+  transform: rotate(-225deg);
+  background-color: #00FCCB;
+  background-image: -webkit-linear-gradient(left, #0C96EA, #00FCCB);
+  background-image: -moz-linear-gradient(left, #0C96EA, #00FCCB);
+  background-image: -ms-linear-gradient(left, #0C96EA, #00FCCB);
+  background-image: -o-linear-gradient(left, #0C96EA, #00FCCB);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1,StartColorStr='#0C96EA', EndColorStr='#00FCCB');
+}
+
+.woocommerce a.remove:before {
+  content: "";
+  display: block;
+  width: 26px;
+  height: 3px;
+  position: absolute;
+  top: 11px;
+  right: -7px;
+  opacity: 1;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  -webkit-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  transform: rotate(135deg);
+  background-color: #00FCCB;
+  background-image: -webkit-linear-gradient(left, #0C96EA, #00FCCB);
+  background-image: -moz-linear-gradient(left, #0C96EA, #00FCCB);
+  background-image: -ms-linear-gradient(left, #0C96EA, #00FCCB);
+  background-image: -o-linear-gradient(left, #0C96EA, #00FCCB);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1,StartColorStr='#0C96EA', EndColorStr='#00FCCB');
+}
+
+.woocommerce a.remove:hover {
+  background: transparent;
+  color: transparent;
+}
+
+.product-name a {
+  font-family: "NunitoSemiBold", sans-serif;
+  font-size: 16px;
+  line-height: 21px;
+  color: #192841;
+}
+
+.product-price span,
+.product-subtotal span,
+.cart-subtotal td span,
+.tax-total td span {
+  font-family: "NunitoSemiBold", sans-serif;
+  font-size: 16px;
+  line-height: 21px;
+  color: #5D6879;
+}
+
+.woocommerce .quantity .qty {
+  width: 75px;
+  height: 41px;
+  border: none;
+  background: #F3F4F5;
+  font-family: "NunitoSemiBold", sans-serif;
+  font-size: 16px;
+  line-height: 21px;
+  color: #5D6879;
+}
+
+#add_payment_method table.cart .product-thumbnail, .woocommerce-cart table.cart .product-thumbnail, .woocommerce-checkout table.cart .product-thumbnail {
+  width: 58px;
+  height: auto;
+}
+
+#add_payment_method table.cart .product-thumbnail img, .woocommerce-cart table.cart .product-thumbnail img, .woocommerce-checkout table.cart .product-thumbnail img {
+  width: 100%;
+  height: auto;
+}
+
+.cart_totals h2 {
+  padding: 9px 12px;
+  font-family: "NunitoSemiBold", sans-serif;
+  font-size: 16px;
+  line-height: 23px;
+  color: #CDD1D5;
+  margin-bottom: 0px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.cart-subtotal th, .tax-total th {
+  font-family: "NunitoSemiBold", sans-serif;
+  font-size: 16px;
+  line-height: 21px;
+  color: #CDD1D5;
+}
+
+.order-total {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-collapse: separate !important;
+}
+
+.order-total th {
+  font-family: "NunitoSemiBold", sans-serif;
+  font-size: 21px;
+  line-height: 21px;
+  color: #3B485D;
+}
+
+.order-total td {
+  font-family: "NunitoSemiBold", sans-serif;
+  font-size: 16px;
+  line-height: 21px;
+  color: #0D93EC;
+  vertical-align: middle;
+}
+
+.woocommerce-cart .cart-collaterals .cart_totals tr th, .woocommerce-cart .cart-collaterals .cart_totals tr td {
+  border-top: none;
+}
+
+.cart-subtotal td, .tax-total td, .order-total td {
+  text-align: right;
+}
+
+.wc-proceed-to-checkout {
+  background-color: #00FCCB;
+  background-image: -webkit-linear-gradient(left, #0C96EA, #00FCCB);
+  background-image: -moz-linear-gradient(left, #0C96EA, #00FCCB);
+  background-image: -ms-linear-gradient(left, #0C96EA, #00FCCB);
+  background-image: -o-linear-gradient(left, #0C96EA, #00FCCB);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1,StartColorStr='#0C96EA', EndColorStr='#00FCCB');
+  border-radius: 25px !important;
+  display: block !important;
+  padding: 0px !important;
+  margin: 20px;
+}
+
+.wc-proceed-to-checkout a {
+  background-color: #00FCCB;
+  background-image: -webkit-linear-gradient(left, #0C96EA, #00FCCB);
+  background-image: -moz-linear-gradient(left, #0C96EA, #00FCCB);
+  background-image: -ms-linear-gradient(left, #0C96EA, #00FCCB);
+  background-image: -o-linear-gradient(left, #0C96EA, #00FCCB);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1,StartColorStr='#0C96EA', EndColorStr='#00FCCB');
+  border-radius: 25px !important;
+  padding: 0px 29px !important;
+  color: #FFFFFF !important;
+  font-family: "NunitoRegular", sans-serif !important;
+  font-size: 15px !important;
+  line-height: 40px !important;
+  margin: 0px !important;
+  background-color: transparent !important;
+}
+
+.woocommerce .cart-collaterals table.shop_table {
+  border-collapse: collapse;
+}
+
+.woocommerce-cart table.cart td.actions .coupon .input-text {
+  width: 144px;
+  height: 41px;
+  border: none;
+  background: #F3F4F5;
+  font-family: "NunitoSemiBold", sans-serif;
+  font-size: 16px;
+  line-height: 21px;
+  color: #5D6879;
+  font-family: "NunitoSemiBold", sans-serif;
+  font-size: 16px;
+  color: #5D6879;
+  padding: 0px 15px;
+}
+
+.woocommerce-cart table.cart td.actions .coupon button, .woocommerce-page table.cart .actions button {
+  height: 41px;
+  font-family: "NunitoSemiBold", sans-serif;
+  font-size: 16px;
+  color: #FFFFFF;
+  background: #0D93EC;
+}
+
+.woocommerce button.button:disabled, .woocommerce button.button:disabled[disabled] {
+  color: #fff;
+}

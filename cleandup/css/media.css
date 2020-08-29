@@ -375,14 +375,6 @@
 		display: inline-block;
 	}
 
-	.faq__accordeon_header{
-		display: flex;
-		align-items: center;
-		padding: 10px 0px;
-		padding-right: 80px;
-		min-height: 67px;
-	}
-
 	.faq__accordeon_hidden p{
 		font-size: 16px;
 		line-height: 25px;
@@ -444,6 +436,7 @@
 		display: block;
 		margin-bottom: 20px;
 		position: relative;
+		width: 100%;
 	}
 
 	.civil-footer--click:after{
@@ -854,6 +847,7 @@
 		width: 100%;
 		flex-wrap: wrap;
 		padding: 15px 0px;
+		margin-top: 30px;
 	}
 
 	.store--page .line-decor{
@@ -864,6 +858,14 @@
 
 	.store__header span{
 		display: none;
+	}
+
+	 .store__header a{
+	 	font-size: 20px;
+	 }
+
+	.store__header svg{
+		transform: rotate(-180deg)
 	}
 
 	.store__menu_btn{
@@ -892,7 +894,6 @@
 	}
 
 	.store .about__form_btn .gen-btn--fill{
-		width: 50%;
 		text-align: center;
 	}
 
@@ -959,10 +960,6 @@
 		text-align: center;
 		line-height: 35px;
 		font-size: 14px;
-	}
-
-	.product__cost span, .product__cost span:nth-child(1){
-		font-size: 18px;
 	}
 
 	.product__cost span:nth-child(1):after{
@@ -1052,10 +1049,33 @@
 		margin-top: 0px;
 	}
 
+	.product__header i{
+		display: none;
+	}
+
+
+	.product__cost span{
+		font-size: 20px!important;
+	}
+
+
+
 }
 
 
 @media only screen and (min-width : 768px) and (max-width : 991px) {
+
+	.store__header span{
+		display: none;
+	}
+
+	 .store__header a{
+	 	font-size: 22px;
+	 }
+
+	.store__header svg{
+		transform: rotate(-180deg)
+	}
 
 	.civil-header__menu{
 		flex-grow: 0;
@@ -1491,10 +1511,6 @@
 		top: 0px;
 	}
 
-	.store__header span{
-		display: none;
-	}
-
 	.store__block_desc p{
 		font-size: 18px;
 		line-height: 24px;
@@ -1557,6 +1573,10 @@
 		padding-top: 0px;
 	}
 
+	.product__header i{
+		display: none;
+	}
+
 }
 
 @media only screen and (min-width : 768px){
@@ -1597,6 +1617,8 @@
 	.modal-four .faq{
 		padding: 20px 0px;
 	}
+
+
 }
 
 @media only screen and (min-width : 992px) and (max-width : 1199px) {

@@ -431,6 +431,10 @@ body hr {
   background: #fff;
   position: relative;
   z-index: 1000;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 .top-line__menu ul {
@@ -471,14 +475,12 @@ body hr {
   -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
   position: relative;
-  z-index: 10000;
+  z-index: 1000;
   background: #fff;
   -moz-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
-  position: fixed;
-  top: 41px;
   width: 100%;
 }
 
@@ -553,8 +555,12 @@ body hr {
   width: 100%;
 }
 
-.scrolled ul {
+.scrolled .civil-header ul {
   height: 60px;
+}
+
+.scrolled .top-line {
+  margin-top: -40px;
 }
 
 .logo__wrap,
@@ -1073,11 +1079,17 @@ body hr {
 }
 
 .faq__accordeon_header {
-  line-height: 64px;
   background: #F3F4F5;
   position: relative;
   border: 1px solid #EEEFF0;
   border-radius: 5px;
+  min-height: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .faq__accordeon_header:hover {
@@ -1115,8 +1127,8 @@ body hr {
 .faq__accordeon_header span {
   font-family: "NunitoSemiBold", sans-serif;
   font-size: 20px;
-  line-height: 64px;
-  padding-left: 20px;
+  padding: 10px 70px 10px 20px;
+  display: block;
 }
 
 .faq__accordeon_hidden {
@@ -1195,6 +1207,10 @@ body hr {
   padding: 40px 0px 0px;
   position: relative;
   z-index: 999;
+}
+
+.civil-footer .civil-footer--click {
+  line-height: 32px !important;
 }
 
 .civil-footer__wrap {
@@ -2345,6 +2361,8 @@ body hr {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .store__header svg {
@@ -2663,7 +2681,6 @@ body hr {
 }
 
 .gen-btn--added {
-  width: 100%;
   display: inline-block;
 }
 
@@ -2671,15 +2688,17 @@ body hr {
   font-family: "NunitoBold", sans-serif;
   color: #fff;
   font-size: 14px;
-  line-height: 40px !important;
+  line-height: 36px !important;
   margin-bottom: 0px;
   width: 157px;
   background: #0AF1D4;
   border-radius: 30px;
-  -webkit-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.16);
-  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.16);
   text-align: center;
   position: relative;
+}
+
+.gen-btn--added a:hover {
+  background: #0D93EC;
 }
 
 .gen-btn--added a:after {
@@ -2687,7 +2706,7 @@ body hr {
   display: block;
   position: absolute;
   left: 16px;
-  top: 10px;
+  top: 8px;
   width: 9px;
   height: 14px;
   border: solid #fff;
@@ -2745,6 +2764,12 @@ body hr {
   height: auto;
 }
 
+.product__desc {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
 .product__header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2752,9 +2777,9 @@ body hr {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   width: 100%;
 }
 
@@ -2775,6 +2800,12 @@ body hr {
   background: #00C8FF;
   border-radius: 30px;
   padding: 0px 10px;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 84px;
+  flex: 0 0 84px;
+  max-width: 84px;
+  margin-top: -3px;
+  text-align: center;
 }
 
 .product__name {
@@ -2878,6 +2909,11 @@ body hr {
 /***************************************************Product-Slider************************************/
 .product-slider {
   padding: 0px 0px 100px 0px;
+}
+
+.product-slider .store__block_desc {
+  height: 76px;
+  overflow: hidden;
 }
 
 .product-slider .container {
@@ -3201,6 +3237,323 @@ button.mfp-close {
 
 .modal-four .faq__accordeon_wrap {
   width: 90%;
+}
+
+/***************************************************Woocommerce************************************/
+.woocommerce {
+  padding: 80px 100px;
+  background-color: #00FCCB;
+  background-image: -webkit-linear-gradient(left, #0C96EA, #00FCCB);
+  background-image: -moz-linear-gradient(left, #0C96EA, #00FCCB);
+  background-image: -ms-linear-gradient(left, #0C96EA, #00FCCB);
+  background-image: -o-linear-gradient(left, #0C96EA, #00FCCB);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1,StartColorStr='#0C96EA', EndColorStr='#00FCCB');
+}
+
+.woocommerce__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.16);
+  border-radius: 5px;
+  padding: 30px;
+}
+
+.woocommerce__back {
+  margin-bottom: 30px;
+}
+
+.woocommerce__back a {
+  font-family: "NunitoSemiBold", sans-serif;
+  font-size: 15px;
+  line-height: normal;
+  color: #FFFFFF !important;
+  position: relative;
+  padding-left: 28px;
+}
+
+.woocommerce__back a:after {
+  content: "";
+  display: block;
+  width: 14px;
+  height: 14px;
+  border-top: 2px solid #FFFFFF;
+  border-right: 2px solid #FFFFFF;
+  position: absolute;
+  top: 2px;
+  left: 0px;
+  opacity: 1;
+  -webkit-transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.woocommerce__header {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.woocommerce__header span {
+  font-family: "NunitoSemiBold", sans-serif;
+  font-size: 28px;
+  line-height: normal;
+  color: #5D6879;
+}
+
+.woocommerce-cart-form {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  border-radius: 5px;
+}
+
+.woocommerce-cart-form thead th {
+  font-family: "NunitoSemiBold", sans-serif;
+  font-size: 16px;
+  line-height: normal;
+  color: #CDD1D5;
+}
+
+.cart-collaterals {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 270px;
+  flex: 0 0 270px;
+  max-width: 270px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin-left: 20px;
+}
+
+.cart-collaterals .shop_table {
+  border: none !important;
+}
+
+.woocommerce .cart-collaterals .cart_totals, .woocommerce-page .cart-collaterals .cart_totals {
+  float: none;
+  width: auto;
+}
+
+.woocommerce a.remove {
+  position: relative;
+}
+
+.woocommerce a.remove:after {
+  content: "";
+  display: block;
+  width: 3px;
+  height: 26px;
+  position: absolute;
+  top: 0px;
+  right: 5px;
+  opacity: 1;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  -webkit-transform: rotate(-225deg);
+  -ms-transform: rotate(-225deg);
+  transform: rotate(-225deg);
+  background-color: #00FCCB;
+  background-image: -webkit-linear-gradient(left, #0C96EA, #00FCCB);
+  background-image: -moz-linear-gradient(left, #0C96EA, #00FCCB);
+  background-image: -ms-linear-gradient(left, #0C96EA, #00FCCB);
+  background-image: -o-linear-gradient(left, #0C96EA, #00FCCB);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1,StartColorStr='#0C96EA', EndColorStr='#00FCCB');
+}
+
+.woocommerce a.remove:before {
+  content: "";
+  display: block;
+  width: 26px;
+  height: 3px;
+  position: absolute;
+  top: 11px;
+  right: -7px;
+  opacity: 1;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  -webkit-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  transform: rotate(135deg);
+  background-color: #00FCCB;
+  background-image: -webkit-linear-gradient(left, #0C96EA, #00FCCB);
+  background-image: -moz-linear-gradient(left, #0C96EA, #00FCCB);
+  background-image: -ms-linear-gradient(left, #0C96EA, #00FCCB);
+  background-image: -o-linear-gradient(left, #0C96EA, #00FCCB);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1,StartColorStr='#0C96EA', EndColorStr='#00FCCB');
+}
+
+.woocommerce a.remove:hover {
+  background: transparent;
+  color: transparent;
+}
+
+.product-name a {
+  font-family: "NunitoSemiBold", sans-serif;
+  font-size: 16px;
+  line-height: 21px;
+  color: #192841;
+}
+
+.product-price span,
+.product-subtotal span,
+.cart-subtotal td span,
+.tax-total td span {
+  font-family: "NunitoSemiBold", sans-serif;
+  font-size: 16px;
+  line-height: 21px;
+  color: #5D6879;
+}
+
+.woocommerce .quantity .qty {
+  width: 75px;
+  height: 41px;
+  border: none;
+  background: #F3F4F5;
+  font-family: "NunitoSemiBold", sans-serif;
+  font-size: 16px;
+  line-height: 21px;
+  color: #5D6879;
+}
+
+#add_payment_method table.cart .product-thumbnail, .woocommerce-cart table.cart .product-thumbnail, .woocommerce-checkout table.cart .product-thumbnail {
+  width: 58px;
+  height: auto;
+}
+
+#add_payment_method table.cart .product-thumbnail img, .woocommerce-cart table.cart .product-thumbnail img, .woocommerce-checkout table.cart .product-thumbnail img {
+  width: 100%;
+  height: auto;
+}
+
+.cart_totals h2 {
+  padding: 9px 12px;
+  font-family: "NunitoSemiBold", sans-serif;
+  font-size: 16px;
+  line-height: 23px;
+  color: #CDD1D5;
+  margin-bottom: 0px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.cart-subtotal th, .tax-total th {
+  font-family: "NunitoSemiBold", sans-serif;
+  font-size: 16px;
+  line-height: 21px;
+  color: #CDD1D5;
+}
+
+.order-total {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-collapse: separate !important;
+}
+
+.order-total th {
+  font-family: "NunitoSemiBold", sans-serif;
+  font-size: 21px;
+  line-height: 21px;
+  color: #3B485D;
+}
+
+.order-total td {
+  font-family: "NunitoSemiBold", sans-serif;
+  font-size: 16px;
+  line-height: 21px;
+  color: #0D93EC;
+  vertical-align: middle;
+}
+
+.woocommerce-cart .cart-collaterals .cart_totals tr th, .woocommerce-cart .cart-collaterals .cart_totals tr td {
+  border-top: none;
+}
+
+.cart-subtotal td, .tax-total td, .order-total td {
+  text-align: right;
+}
+
+.wc-proceed-to-checkout {
+  background-color: #00FCCB;
+  background-image: -webkit-linear-gradient(left, #0C96EA, #00FCCB);
+  background-image: -moz-linear-gradient(left, #0C96EA, #00FCCB);
+  background-image: -ms-linear-gradient(left, #0C96EA, #00FCCB);
+  background-image: -o-linear-gradient(left, #0C96EA, #00FCCB);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1,StartColorStr='#0C96EA', EndColorStr='#00FCCB');
+  border-radius: 25px !important;
+  display: block !important;
+  padding: 0px !important;
+  margin: 20px;
+}
+
+.wc-proceed-to-checkout a {
+  background-color: #00FCCB;
+  background-image: -webkit-linear-gradient(left, #0C96EA, #00FCCB);
+  background-image: -moz-linear-gradient(left, #0C96EA, #00FCCB);
+  background-image: -ms-linear-gradient(left, #0C96EA, #00FCCB);
+  background-image: -o-linear-gradient(left, #0C96EA, #00FCCB);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1,StartColorStr='#0C96EA', EndColorStr='#00FCCB');
+  border-radius: 25px !important;
+  padding: 0px 29px !important;
+  color: #FFFFFF !important;
+  font-family: "NunitoRegular", sans-serif !important;
+  font-size: 15px !important;
+  line-height: 40px !important;
+  margin: 0px !important;
+  background-color: transparent !important;
+}
+
+.woocommerce .cart-collaterals table.shop_table {
+  border-collapse: collapse;
+}
+
+.woocommerce-cart table.cart td.actions .coupon .input-text {
+  width: 144px;
+  height: 41px;
+  border: none;
+  background: #F3F4F5;
+  font-family: "NunitoSemiBold", sans-serif;
+  font-size: 16px;
+  line-height: 21px;
+  color: #5D6879;
+  font-family: "NunitoSemiBold", sans-serif;
+  font-size: 16px;
+  color: #5D6879;
+  padding: 0px 15px;
+}
+
+.woocommerce-cart table.cart td.actions .coupon button, .woocommerce-page table.cart .actions button {
+  height: 41px;
+  font-family: "NunitoSemiBold", sans-serif;
+  font-size: 16px;
+  color: #FFFFFF;
+  background: #0D93EC;
+}
+
+.woocommerce button.button:disabled, .woocommerce button.button:disabled[disabled] {
+  color: #fff;
+}
+
+.woocommerce-cart .cart-collaterals .cart_totals table th {
+  width: 60%;
 }
 
 /***********************************************ButtonMobile************************************/
