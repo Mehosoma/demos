@@ -264,12 +264,12 @@ function scrolled(){
 
     $(window).scroll(function() {    
       var scroll = $(window).scrollTop();
-      if (scroll >= 1) {
+      if (scroll >= 40) {
         $(".civil-header").addClass("scrolled");
-        
+         $(".menu-fake").css('display', 'block')
       } else {
         $(".civil-header").removeClass("scrolled");
-       
+        $(".menu-fake").css('display', 'none')
       }
     });
   

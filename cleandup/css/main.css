@@ -477,8 +477,6 @@ body hr {
   -o-transition: all 0.3s ease-out;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
-  position: fixed;
-  top: 41px;
   width: 100%;
 }
 
@@ -544,6 +542,11 @@ body hr {
 
 .civil-header__btns .gen-btn--fill {
   margin: 0px 20px;
+}
+
+.menu-fake {
+  display: none;
+  height: 80px;
 }
 
 .scrolled {
