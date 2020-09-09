@@ -163,11 +163,9 @@ function questions(){
       $('.questions__block span').off('click'); 
       $('.questions__block a').off('click');
       $('.questions__block_list').css('display', 'block');
-      $('.questions__block_hidden').css('display', 'none');
       $('.questions__block').removeClass('questions__block--open');
     $('.questions__block a').on('click',function(e){
-         e.preventDefault();  
-      $(this).closest('.questions__block').find('.questions__block_hidden').slideToggle();
+         e.preventDefault();       
       $(this).closest('.questions__block').toggleClass('questions__block--open');    
     });
    } else {
@@ -229,6 +227,7 @@ function readmore(){
   $('.main-slider__more span').off('click');
   $('.main-slider__hidden').removeClass('hidden-height');
   $('.main-slider__slide').removeClass('hidden-height');
+  $('.main-slider__more').detach();
 
   $(".main-slider__cont").each(function() {
     if($(this).height() > 156){
@@ -240,12 +239,15 @@ function readmore(){
    });
 
 
-  $('.main-slider__more span').on('click',function(e){
-       e.preventDefault();  
+
+}
+
+ $(document).on('click', '.main-slider__more span', function (e) {
+       e.preventDefault(); 
+       e.stopPropagation(); 
     $(this).closest('.main-slider__hidden').toggleClass('hidden-height');
     $(this).closest('.main-slider__slide').toggleClass('hidden-height');
   });
-}
 
 $(document).ready(readmore);
 $(window).resize(readmore);
@@ -259,18 +261,32 @@ $(document).ready(function(){
 });
 
 
-  //Fixed Menu
+
+
+
+//Fixed Menu
 function scrolled(){ 
+
+  if ($("#wpadminbar").length){
+    $(".civil-header").addClass("civil--admin");
+     $(".top-line").addClass("top-line--admin");
+     $("body").addClass("body--admin-fix");
+  }else{
+    $("body").addClass("body--admin");
+  }
 
     $(window).scroll(function() {    
       var scroll = $(window).scrollTop();
-      if (scroll >= 40) {
-        $(".civil-header").addClass("scrolled");
-         $(".menu-fake").css('display', 'block')
-      } else {
-        $(".civil-header").removeClass("scrolled");
-        $(".menu-fake").css('display', 'none')
-      }
+      
+        if (scroll >= 1) {
+            $(".civil-header").addClass("scrolled");
+             $(".top-line").addClass("fix-margin");  
+             $(".fake-menu").css('display','block'); 
+        } else {
+          $(".civil-header").removeClass("scrolled");     
+          $(".top-line").removeClass("fix-margin");
+          $(".fake-menu").css('display','none');
+        }
     });
   
 
@@ -278,3 +294,4 @@ function scrolled(){
 
 $(document).ready(scrolled);
 $(window).resize(scrolled);
+

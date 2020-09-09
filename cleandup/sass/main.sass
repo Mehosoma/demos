@@ -112,6 +112,8 @@ body
 	hr
 		border: none	
 
+
+
 .pixel
 	background: url(../images/main.jpg) no-repeat top center
 	width: 1366px
@@ -353,6 +355,28 @@ body
 	z-index: 1
 	transform: rotate(-20deg)
 	background: $light-blue
+.gen-btn--shadow
+	box-shadow: 0 3px 6px 0px rgba(0,0,0,0.2)
+
+.current-menu-item
+	position: relative
+	&:after
+		content: ''
+		display: block
+		position: absolute
+		width: 90%
+		height: 5px
+		bottom: -10px
+		left: 0px
+		right: 0px
+		margin: auto
+		@include linear-gradient(left, $grad, $grad-e)
+		border-radius: 5px 5px 0px 0px
+.civil-header__menu
+	.current-menu-item
+		&:after
+			bottom: -30px
+
 
 /***************************************************TopLine************************************/
 .top-line	
@@ -360,7 +384,8 @@ body
 	border-bottom: 1px solid $light-blue
 	background: #fff
 	position: relative
-	z-index: 1000
+	z-index: 990
+	margin-bottom: 80px
 	&__menu
 		ul
 			display: flex
@@ -379,20 +404,27 @@ body
 				opacity: 0.6
 				&:hover
 					opacity: 1
+	&--admin
+	
+.top-line.fix-margin
+	margin-bottom: 0px
+.top-line--admin.fix-margin
+	position: relative
+	top: 0px
 
 
 /***************************************************Header************************************/
 .civil-header
 	box-shadow: 0px 3px 6px rgba(0,0,0,0.16)
-	position: relative
+	position: fixed
 	z-index: 1000
 	background: #fff
 	-moz-transition: all 0.3s ease-out
 	-o-transition: all 0.3s ease-out
 	-webkit-transition: all 0.3s ease-out
 	transition: all 0.3s ease-out
-
 	width: 100%
+	top: 41px
 	&__wrap
 		display: flex
 		justify-content: space-between
@@ -423,16 +455,27 @@ body
 		align-items: center
 		.gen-btn--fill
 			margin: 0px 20px
-.menu-fake
-	display: none
+.fake-menu
 	height: 80px
-.scrolled
+	display: none
+.civil-header.scrolled
 	position: fixed
 	z-index: 1000
 	top: 0px
 	width: 100%	
 	ul
 		height: 60px
+	.civil-header__menu
+		.current-menu-item
+			&:after
+				bottom: -21px
+.civil-header.civil--admin
+	top: 73px
+.civil--admin.scrolled
+	top: 32px
+	ul
+		height: 60px
+
 .logo__wrap,
 .civil-footer .logo__wrap
 	display: flex
@@ -450,6 +493,7 @@ body
 		i
 			color: $white
 .civil-header__basket
+	position: relative
 	path
 		fill: rgba(59,72,93,0.8)
 		stroke: transparent
@@ -457,17 +501,31 @@ body
 		-o-transition: all 0.3s ease-out
 		-webkit-transition: all 0.3s ease-out
 		transition: all 0.3s ease-out
+	&_number
+		display: block
+		width: 17px
+		height: 17px
+		background: $light-blue
+		border: 1px solid #5D6879
+		border-radius: 50%
+		position: absolute
+		top: -5px
+		right: -5px
+		text-align: center
+		line-height: 17px
+		font-family: $nunito-sb
+		font-size: 10px
 .civil-header__basket:hover
 	cursor: pointer
 	path
 		fill: #00fccb
 		stroke: rgba(59,72,93,0.8)
 
+
 /***************************************************Main************************************/
 .main
 	position: relative
 	padding: 86px 0px 50px 0px
-	margin-top: 80px
 	.bottom-back
 		position: absolute
 		width: 100%
@@ -479,6 +537,7 @@ body
 	.gen-btn--fill
 		position: relative
 		margin-top: 27px
+
 		a
 			line-height: 60px
 			padding: 0 45px
@@ -486,10 +545,10 @@ body
 	&__icons
 		display: flex
 		background: #fff
-		padding: 80px 30px 52px 30px
+		padding: 50px 30px 52px 30px
 		box-shadow: 0px 3px 6px rgba(0,0,0,0.16)
 		width: 95%
-		margin: 20px 0px 0px 20px
+		margin: 80px 0px 0px 20px
 		&_block
 			text-align: center
 			img
@@ -810,6 +869,7 @@ body
 			border: 1px solid #EEEFF0
 			border-top: none
 			padding: 20px 20px
+			border-top: 1px solid #CDD1D5
 			p
 				font-family: $nunito-sb
 				font-size: 18px
@@ -964,7 +1024,6 @@ body
 .questions
 	background: #F3F4F5
 	padding: 83px 0px 40px 0px
-	margin-top: 80px
 	.line-decor
 		width: 150%
 		height: 643px
@@ -1063,6 +1122,8 @@ body
 		border: 1px solid #F3F4F5
 		padding: 21px 0px 0px 0px
 		margin-bottom: 30px
+		height: 372px
+		position: relative
 		span
 			font-family: $nunito-sb
 			font-size: 18px
@@ -1070,13 +1131,14 @@ body
 			color: $d-gray
 			padding: 0px 33px
 			display: block
-
 		&_hidden
 			display: none
 		&_list
 			position: relative
 			margin-top: 41px
 			padding: 0px 15px 0px 33px
+			height: 240px
+			overflow: hidden
 		li
 			font-family: $nunito-r
 			font-size: 16px
@@ -1108,6 +1170,9 @@ body
 			text-transform: uppercase
 			position: relative
 			border-top: 1px solid #F3F4F5
+			position: absolute
+			bottom: 0px
+			width: 100%
 			&:after
 				content: ""
 				display: block
@@ -1115,7 +1180,7 @@ body
 				height: 10px
 				position: absolute
 				top: 10px
-				right: 11px
+				right: 13px
 				opacity: 1
 				background: $blue
 				-moz-transition: all 0.3s ease-out
@@ -1129,7 +1194,7 @@ body
 				height: 2px
 				position: absolute
 				top: 14px
-				right: 7px
+				right: 9px
 				opacity: 1
 				background: $blue
 				-moz-transition: all 0.3s ease-out
@@ -1161,7 +1226,6 @@ body
 		.m-0
 			border-bottom: 1px solid #F3F4F5
 		&--open
-			
 			.btn-close 
 				&:after
 					content: ""
@@ -1205,8 +1269,12 @@ body
 						border-top: 3px solid #fff
 						
 .questions__block--open
+	height: auto
+	padding-bottom: 40px
 	.questions__block_gradient
 	 	display: none
+	.questions__block_list
+		height: auto
 .fix-test
 	padding: 0px 40px
 	display: flex
@@ -1221,6 +1289,7 @@ body
 	margin-top: 0px
 	.main__icons
 		padding-top: 10px
+		margin-top: 20px
 
 
 /***************************************************Video************************************/
@@ -1231,7 +1300,6 @@ body
 	background-repeat: no-repeat
 	position: relative
 	padding: 80px 0px
-	margin-top: 80px
 	.section__subheader--small
 		span
 			margin-top: 26px
@@ -1277,6 +1345,7 @@ body
 			margin-bottom: 20px
 		&_left
 			padding-left: 5px
+			padding-right: 40px
 			flex: 0 0 59%
 			max-width: 59%
 			p
@@ -1319,7 +1388,6 @@ body
 		height: 450px
 .about
 	padding: 80px 0px 17px 0px
-	margin-top: 80px
 	.main__header span
 		margin-top: 15px
 	&__contacts
@@ -1577,7 +1645,6 @@ body
 	min-height: 356px
 	@include linear-gradient(left, $grad, $grad-e)
 	padding: 83px 0px 60px 0px
-	margin-top: 80px
 	.main__header
 		h1,
 		span
@@ -1849,7 +1916,6 @@ body
 .product
 	padding: 76px 0px 50px 0px
 	position: relative
-	margin-top: 80px
 	.line-decor
 		@include linear-gradient(left, $grad, $grad-e)
 	.container
@@ -2195,6 +2261,7 @@ button.mfp-close
 		box-shadow: 0px 0px 12px rgba(0,0,0,0.16)
 		border-radius: 5px
 		padding: 30px
+		margin: 0px -10px
 	&__back
 		margin-bottom: 30px
 		a
@@ -2232,6 +2299,7 @@ button.mfp-close
 .woocommerce-cart-form
 	flex-grow: 1
 	border-radius: 5px
+	margin: 0px 5px
 	thead
 		th
 			font-family: $nunito-sb
@@ -2243,7 +2311,7 @@ button.mfp-close
 	max-width: 270px
 	border: 1px solid rgba(0,0,0,.1)
 	border-radius: 5px
-	margin-left: 20px
+	margin: 0px 5px
 	.shop_table
 		border: none!important
 .woocommerce .cart-collaterals .cart_totals, .woocommerce-page .cart-collaterals .cart_totals
@@ -2323,6 +2391,8 @@ button.mfp-close
 		color: #CDD1D5
 		margin-bottom: 0px
 		border-bottom: 1px solid rgba(0,0,0,.1)
+	tbody
+		margin-top: 20px
 .cart-subtotal th, .tax-total th
 	font-family: $nunito-sb
 	font-size: 16px
@@ -2342,7 +2412,7 @@ button.mfp-close
 		font-size: 16px
 		line-height: 21px
 		color: $blue
-		vertical-align: middle
+		vertical-align: middle!important
 .woocommerce-cart .cart-collaterals .cart_totals tr th, .woocommerce-cart .cart-collaterals .cart_totals tr td
 	border-top: none
 .cart-subtotal td, .tax-total td, .order-total td
@@ -2404,8 +2474,107 @@ button.mfp-close
 
 .woocommerce-cart .cart-collaterals .cart_totals table th
 	width: 60%
-.product-price, .product-quantity 
 
+td.product-price, td.product-quantity, td.product-subtotal
+	padding: 40px 12px!important
+	vertical-align: middle!important
+
+td.product-remove, td.product-thumbnail, td.product-name
+	vertical-align: top!important
+	padding: 20px 12px
+
+.woocommerce-cart .cart-collaterals .cart_totals tr th
+	vertical-align: middle
+
+.cart-subtotal th, .cart-subtotal td
+	padding: 30px 12px 4px 12px!important
+
+.tax-total th, .tax-total td
+	padding: 4px 12px 20px 12px!important
+
+
+/***************************************************Single************************************/
+.single
+	@include linear-gradient(left, $grad, $grad-e)
+	background-color: transparent
+	background-size: 100% 300px
+	background-repeat: no-repeat
+	position: relative
+	padding: 80px 0px
+	.line-decor
+		top: 80%
+		transform: rotate(15deg)
+		height: 400px
+		@include linear-gradient(left, $grad, $grad-e)
+	&__wrap
+		padding: 40px
+		background: $white
+		box-shadow: 0px 0px 12px rgba(0,0,0,0.16)
+	.main__header
+		margin-bottom: 20px
+		h1
+			margin-bottom: 0px
+	&__image
+		width: 100%
+		height: auto
+		img
+			width: 100%
+			height: auto
+	&__content
+		margin-top: 80px
+		width: 70%
+		margin-left: auto
+		margin-right: auto
+		h2
+			font-family: $nunito-sb
+			font-size: 32px
+			line-height: 40px
+			color: #3B485D
+			margin-bottom: 20px
+		h3
+			font-family: $nunito-sb
+			font-size: 22px
+			line-height: 40px
+			color: #3B485D
+			margin-bottom: 10px
+		p,
+		li
+			font-family: $nunito-sb
+			font-size: 18px
+			line-height: 34px
+			color: #5D6879
+			margin-bottom: 30px
+		ul
+			padding-bottom: 15px
+		li
+			margin-bottom: 15px
+			position: relative
+			padding-left: 40px
+			&:after
+				content: ''
+				display: block
+				border: 1px solid $l-gray
+				width: 20px
+				height: 20px
+				border-radius: 50%
+				position: absolute
+				top: 6px
+				left: 0px
+			&:before
+				content: ''
+				display: block
+				border: 2px solid $white
+				width: 18px
+				height: 18px
+				background: $light-blue
+				border-radius: 50%
+				position: absolute
+				top: 7px
+				left: 1px
+		a
+			color: $blue
+			&:hover
+				color: $light-blue
 
 /***********************************************ButtonMobile************************************/
 
