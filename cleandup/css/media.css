@@ -1,5 +1,31 @@
 @media only screen and (min-width : 0px) and (max-width : 767px) {
 
+	.single__wrap{
+		padding: 20px;
+	}
+
+	.single__content{
+		width: 100%;
+	}
+
+	.single{
+		padding: 40px 0px;
+	}
+
+	.single__content h2 {
+		font-size: 28px;
+		line-height: 34px;
+	}
+
+	.single__content p, .single__content li {
+		font-size: 16px;
+		line-height: 30px;
+	}
+
+	.single__content h3{
+		font-size: 20px;
+	}
+
 	.about .about__form{
 		justify-content: center;
 	}
@@ -1158,6 +1184,10 @@
 
 
 @media only screen and (min-width : 768px) and (max-width : 991px) {
+
+	.single__content{
+		width: 90%;
+	}
 
 	.civil-footer__menu_wrap{
 		box-shadow: 0px 4px 4px rgba(0,0,0,.2);
