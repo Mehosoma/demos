@@ -1,11 +1,66 @@
 @media only screen and (min-width : 0px) and (max-width : 767px) {
 
+	.orders__wrap{
+		width: 95%;
+	}
+
+	.orders__table_row{
+		flex-wrap: wrap;
+	}
+
+	.orders__table_header{
+		flex: 0 0 42%;
+		max-width: 42%;
+		border-right: 1px solid rgba(0,0,0,.1);
+		border-bottom: none;
+	}
+
+	.orders__table_header span{
+		padding: 20px 10px;
+		height: auto;
+		border-bottom: none;
+	}
+
+	.orders__table--main{
+		flex: 0 0 80%;
+		max-width: 80%;
+		border-bottom: none
+	}
+
+	.orders__table_row .orders__table_field{
+		flex: 0 0 100%;
+		max-width: 100%;
+		display: flex;
+		border-bottom: 1px solid rgba(0,0,0,.1);
+		border-right: none;
+	}
+
+	.orders__table__bottom{
+		flex-wrap: wrap;
+	}
+
+	.orders__table_show{
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+
+	.orders__table_row .orders__table_field:last-child{
+			border-bottom: none;
+	}
+
+	.orders__table_buttons{
+		margin-top: 20px;
+	}
+
+
 	.single__wrap{
 		padding: 20px;
 	}
 
 	.single__content{
 		width: 100%;
+		margin-top: 40px;
+
 	}
 
 	.single{
@@ -1184,6 +1239,45 @@
 
 
 @media only screen and (min-width : 768px) and (max-width : 991px) {
+
+	.orders__wrap{
+		width: 95%;
+	}
+
+	.orders__table_row{
+		flex-wrap: wrap;
+	}
+
+	.orders__table_header{
+		flex: 0 0 20%;
+		max-width: 20%;
+		border-right: 1px solid rgba(0,0,0,.1);
+		border-bottom: none;
+	}
+
+	.orders__table_header span{
+		padding: 20px 10px;
+		height: auto;
+		border-bottom: none;
+	}
+
+	.orders__table--main{
+		flex: 0 0 80%;
+		max-width: 80%;
+		border-bottom: none
+	}
+
+	.orders__table_row .orders__table_field{
+		flex: 0 0 100%;
+		max-width: 100%;
+		display: flex;
+		border-bottom: 1px solid rgba(0,0,0,.1);
+	}
+
+	.orders__table_row .orders__table_field:last-child{
+			border-bottom: none;
+	}
+
 
 	.single__content{
 		width: 90%;

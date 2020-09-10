@@ -545,6 +545,7 @@ Text Domain: civilpe
   flex-grow: 1;
   border-radius: 5px;
   margin: 0px 5px;
+  flex: 1;
 }
 
 .woocommerce-cart-form thead th {
@@ -1042,6 +1043,147 @@ form.woocommerce-checkout .product-total{
     bottom: -21px;
 }
 
+
+/***************************************************Woocommerce-Login************************************/
+.woocommerce-account .woocommerce{
+  background-image: none;
+  background: #fff;
+  padding: 80px 0px;
+  width: 100%;
+
+  background-image: -webkit-linear-gradient(left, #0C96EA, #00FCCB);
+    background-image: -moz-linear-gradient(left, #0C96EA, #00FCCB);
+    background-image: -ms-linear-gradient(left, #0C96EA, #00FCCB);
+    background-image: -o-linear-gradient(left, #0C96EA, #00FCCB);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1,StartColorStr='#0C96EA', EndColorStr='#00FCCB');
+    background-color: transparent;
+    background-size: 100% 300px;
+    background-repeat: no-repeat;
+}
+
+.woocommerce-account .woocommerce .account-wrapper{
+   background-image: none;
+  background: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px;
+  width: 80%;
+    margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.16);
+  border-radius: 10px;
+  justify-content: center;
+}
+
+
+.woocommerce-account .woocommerce-MyAccount-navigation{
+  float: none;
+  flex: 0 0 100%;
+}
+
+.woocommerce-account .woocommerce-MyAccount-navigation ul{
+  display: flex;
+  height: 40px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 100px;
+  background: #F3F4F5;
+}
+
+.woocommerce-account .woocommerce-MyAccount-navigation ul a{
+    font-family: "NunitoBold", sans-serif;
+    font-size: 15px;
+    color: #3B485D;
+    opacity: 0.7;
+}
+
+.woocommerce-account .woocommerce-MyAccount-navigation ul a:hover{
+  opacity: 1;
+}
+
+.woocommerce-account .woocommerce-MyAccount-content{
+  float: none;
+  flex: 0 0 60%;
+  max-width: 60%;
+  padding: 80px 0px;
+}
+
+.woocommerce-account .woocommerce form .form-row label{
+    font-family: "NunitoSemiBold", sans-serif;
+    font-size: 15px;
+    color: #3B485D;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.woocommerce-account .woocommerce fieldset{
+  margin-top: 40px;
+}
+
+.woocommerce-account .woocommerce button{
+  min-width: 270px;
+  background-color: #00FCCB;
+    background-image: -webkit-linear-gradient(left, #0C96EA, #00FCCB);
+    background-image: -moz-linear-gradient(left, #0C96EA, #00FCCB);
+    background-image: -ms-linear-gradient(left, #0C96EA, #00FCCB);
+    background-image: -o-linear-gradient(left, #0C96EA, #00FCCB);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1,StartColorStr='#0C96EA', EndColorStr='#00FCCB');
+    border-radius: 30px;
+    padding: 0px 50px;
+    color: #FFFFFF;
+    font-family: "NunitoRegular", sans-serif;
+    font-size: 15px;
+    line-height: 54px;
+    margin-top: 30px;
+    border: 1px solid transparent;
+    box-shadow: 0 3px 6px 0px rgba(0, 0, 0, 0.2);
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    position: relative;
+}
+
+
+
+.woocommerce-account .woocommerce button:hover{
+  background-image: none;
+  color: #0C96EA;
+  border: 1px solid #0C96EA;
+  background: #fff;
+  box-shadow: none;
+}
+
+
+
+
+.woocommerce-account .woocommerce em{
+   font-family: "NunitoSemiBold", sans-serif;
+    font-size: 13px;
+    color: #3B485D;
+    display: block;
+    font-style: normal;
+    margin-top: 5px;
+}
+
+.woocommerce-account .woocommerce legend{
+  font-family: "NunitoSemiBold", sans-serif;
+    font-size: 22px;
+    color: #3B485D;
+    display: block;
+    font-style: normal;
+    margin-bottom: 40px;
+    opacity: 0.7;
+}
+
+
+
+
+
+
+
+/***************************************************Media-New************************************/
+
 @media only screen and (min-width : 0px) and (max-width : 1199px) {
   .current-menu-item:after{
     display: none!important;
@@ -1205,13 +1347,37 @@ form.woocommerce-checkout .product-total{
     margin-top: -3px;
   }
 
+  .woocommerce-account .woocommerce-MyAccount-navigation ul{
+    display: block;
+    height: auto;
+    padding: 0px;
+    text-align: center;
+  }
 
+  .woocommerce-account .woocommerce-MyAccount-navigation ul li{
+    padding: 10px 0px;
+  }
+
+  .woocommerce-account .woocommerce-MyAccount-content{
+    flex: 0 0 90%;
+    max-width: 90%;
+      padding: 40px 0px;
+  }
+
+  .woocommerce form .form-row {
+    margin-bottom: 20px;
+    flex: 0 0 100%;
+    max-width: 100%;
+    width: 100%;
+}
   
 
 }
 
 
 @media only screen and (min-width : 768px) and (max-width : 991px) {
+
+
 
   .woocommerce__wrap{
     justify-content: flex-end;
@@ -1277,6 +1443,19 @@ form.woocommerce-checkout .product-total{
   background: none!important;
  }
 
+ .woocommerce-account .woocommerce-MyAccount-navigation ul a{
+  font-size: 13px;
+ }
+
+  .woocommerce-account .woocommerce-MyAccount-navigation ul{
+    padding: 0px 20px;
+  }
+
+  .woocommerce-account .woocommerce-MyAccount-content{
+    flex: 0 0 80%;
+    max-width: 80%;
+  }
+
 
 
 }
@@ -1286,6 +1465,15 @@ form.woocommerce-checkout .product-total{
 
   .woocommerce__wrap{
     justify-content: flex-end;
+  }
+
+  .woocommerce-account .woocommerce-MyAccount-navigation ul{
+    padding: 0px 20px;
+  }
+
+  .woocommerce-account .woocommerce-MyAccount-content{
+    flex: 0 0 80%;
+    max-width: 80%;
   }
 
  

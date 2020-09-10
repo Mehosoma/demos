@@ -2576,6 +2576,98 @@ td.product-remove, td.product-thumbnail, td.product-name
 			&:hover
 				color: $light-blue
 
+/***********************************************Login-Account************************************/
+.civil-header__acc
+	margin-right: 20px
+	margin-left: 60px
+	display: flex
+	align-items: center
+	a
+		font-family: $nunito-b
+		font-size: 15px
+		color: $d-gray
+		opacity: 0.7
+		margin-right: 20px
+		&:hover
+			opacity: 1
+	svg
+		margin-top: -2px
+
+
+/***********************************************Orders-Account************************************/
+.orders
+	&__wrap
+		width: 80%
+		margin: 0px auto
+		padding: 40px 0px
+	&__table
+		border: 1px solid rgba(0,0,0,.1)
+		border-radius: 5px
+		margin-top: 80px
+		&--main
+			padding: 20px 10px
+		&_header
+			span
+				text-align: center
+				height: 40px
+				display: flex
+				justify-content: center
+				align-items: center
+				font-family: $nunito-b
+				font-size: 15px
+				color: $d-gray
+				opacity: 0.7
+				border-bottom: 1px solid rgba(0,0,0,.1)
+		&_row
+			display: flex
+			justify-content: space-between
+			.orders__table_field
+				flex: 0 0 25%
+				max-width: 25%
+				border-right: 1px solid rgba(0,0,0,.1)
+				&:last-child
+					border-right: none
+				a,
+				span
+					font-family: $nunito-b
+					font-size: 15px
+					color: $d-gray
+				a
+					color: $blue
+					&:hover
+						color: $light-blue
+		&__bottom
+			display: flex
+			justify-content: space-between
+			margin-top: 10px
+			align-items: center
+		&_show
+			padding-left: 15px
+			span
+				font-family: $nunito-b
+				font-size: 15px
+				color: $d-gray
+				opacity: 0.7
+		&_buttons
+			button
+				height: 41px
+				font-family: "NunitoSemiBold", sans-serif
+				font-size: 16px
+				color: #FFFFFF
+				background: #0D93EC
+				border-radius: 5px
+				padding: 0px 40px
+				margin-left: 10px
+				-moz-transition: all 0.3s ease-out
+				-o-transition: all 0.3s ease-out
+				-webkit-transition: all 0.3s ease-out
+				transition: all 0.3s ease-out
+				border: 1px solid transparent
+				&:hover
+					color: $blue
+					border: 1px solid $blue
+					background: transparent
+
 /***********************************************ButtonMobile************************************/
 
 .menu-toggle-button

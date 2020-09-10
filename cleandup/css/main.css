@@ -3802,6 +3802,152 @@ td.product-remove, td.product-thumbnail, td.product-name {
   color: #0AF1D4;
 }
 
+/***********************************************Login-Account************************************/
+.civil-header__acc {
+  margin-right: 20px;
+  margin-left: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.civil-header__acc a {
+  font-family: "NunitoBold", sans-serif;
+  font-size: 15px;
+  color: #3B485D;
+  opacity: 0.7;
+  margin-right: 20px;
+}
+
+.civil-header__acc a:hover {
+  opacity: 1;
+}
+
+.civil-header__acc svg {
+  margin-top: -2px;
+}
+
+/***********************************************Orders-Account************************************/
+.orders__wrap {
+  width: 80%;
+  margin: 0px auto;
+  padding: 40px 0px;
+}
+
+.orders__table {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin-top: 80px;
+}
+
+.orders__table--main {
+  padding: 20px 10px;
+}
+
+.orders__table_header span {
+  text-align: center;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: "NunitoBold", sans-serif;
+  font-size: 15px;
+  color: #3B485D;
+  opacity: 0.7;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.orders__table_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.orders__table_row .orders__table_field {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 25%;
+  flex: 0 0 25%;
+  max-width: 25%;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.orders__table_row .orders__table_field:last-child {
+  border-right: none;
+}
+
+.orders__table_row .orders__table_field a,
+.orders__table_row .orders__table_field span {
+  font-family: "NunitoBold", sans-serif;
+  font-size: 15px;
+  color: #3B485D;
+}
+
+.orders__table_row .orders__table_field a {
+  color: #0D93EC;
+}
+
+.orders__table_row .orders__table_field a:hover {
+  color: #0AF1D4;
+}
+
+.orders__table__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: 10px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.orders__table_show {
+  padding-left: 15px;
+}
+
+.orders__table_show span {
+  font-family: "NunitoBold", sans-serif;
+  font-size: 15px;
+  color: #3B485D;
+  opacity: 0.7;
+}
+
+.orders__table_buttons button {
+  height: 41px;
+  font-family: "NunitoSemiBold", sans-serif;
+  font-size: 16px;
+  color: #FFFFFF;
+  background: #0D93EC;
+  border-radius: 5px;
+  padding: 0px 40px;
+  margin-left: 10px;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  border: 1px solid transparent;
+}
+
+.orders__table_buttons button:hover {
+  color: #0D93EC;
+  border: 1px solid #0D93EC;
+  background: transparent;
+}
+
 /***********************************************ButtonMobile************************************/
 .menu-toggle-button {
   width: 50px;
