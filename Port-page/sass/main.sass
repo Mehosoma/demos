@@ -1,0 +1,280 @@
+@import "bourbon/bourbon"
+
+$font: 'Source Sans Pro', sans-serif
+
+
+html
+	width: 100%
+	height: 100%
+	
+body
+	width: 100%
+	height: auto
+	min-width: 320px	
+	margin: 0 auto
+	position: relative
+	font-family: $font
+	line-height: 1.2
+	-webkit-font-smoothing: antialiased
+	background-color: #fff
+	overflow-x: hidden
+	
+
+	a:hover, a:focus, a:active
+		text-decoration: none
+		outline: none
+	input:focus, input:active
+		text-decoration: none
+		outline: none
+	button:focus, button:active
+		text-decoration: none
+		outline: none
+	textarea:focus, textarea:active
+		text-decoration: none
+		outline: none
+	a
+		display: inline-block
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out
+	ul, ol
+		padding: 0px
+		margin: 0px
+		list-style-type: none
+	button
+		border: none
+		cursor: pointer
+	hr
+		border: none	
+
+.pixel
+	background: url(../img/main.jpg) no-repeat top center
+	width: 1920px
+	height: 12800px
+	position: absolute
+	z-index: 1000000
+	display: none
+	left: 50%
+	top: 0
+	margin-left: -960px
+	opacity: 0.5
+	margin-top: 0px
+
+
+/***************************************************GeneralStyles************************************/
+.section
+	width: 100%
+	height: auto
+	&--portfolio,
+	&--project
+		padding: 100px 0px
+	&__portfolio
+		&-content
+			padding: 0px 30px
+		&-main
+			display: flex
+			justify-content: space-between
+			flex-wrap: wrap
+			margin-top: 40px
+		&-block
+			flex: 0 0 49%
+			max-width: 49%
+			position: relative
+			margin-bottom: 20px
+			img
+				width: 100%
+				height: auto
+			&:hover
+				.section__portfolio-description
+					z-index: 10
+					opacity: 1
+				.section__portfolio-description-border
+					&:after,
+					&:before
+						transform: scale3d(1,1,1)
+						transition: transform 0.5s
+		&-description
+			width: 100%
+			height: 100%
+			position: absolute
+			top: 0px
+			left: 0px
+			opacity: 0
+			z-index: -1
+			padding: 30px
+			-moz-transition: all 0.3s ease-out
+			-o-transition: all 0.3s ease-out
+			-webkit-transition: all 0.3s ease-out
+			transition: all 0.3s ease-out			
+			&:after
+				content: ''
+				display: block
+				width: 100%
+				height: 100%
+				background-color: rgba(0,0,0,0.7)
+				position: absolute
+				top: 0px
+				left: 0px
+			h3,
+			p,
+			span
+				color: #fff				
+			h3
+				font-size: 30px
+				margin-bottom: 20px
+				font-weight: bold
+				letter-spacing: 4px	
+			p
+				font-size: 20px	
+				margin-bottom: 30px
+			span
+				display: block
+				padding: 10px 40px 
+				border: 1px solid #fff	
+				text-transform: uppercase
+				font-size: 20px
+			&-border
+				display: flex
+				justify-content: center
+				align-items: center
+				flex-direction: column
+				width: 100%
+				height: 100%
+				padding: 30px
+				position: relative
+				z-index: 20	
+				&:after,
+				&:before
+					content: ''
+					display: block
+					transform-origin: center
+					top: 0px
+					left: 0px
+					width: 100%
+					height: 100%
+					position: absolute
+				&:before
+					border-top: 1px solid #fff
+					border-bottom: 1px solid #fff
+					transform: scale3d(0,1,1)
+				&:after
+					border-left: 1px solid #fff
+					border-right: 1px solid #fff
+					transform: scale3d(1,0,1)
+.section__title
+	font-size: 48px
+	padding: 0 0 40px
+	font-weight: 700
+	line-height: 52px
+.section__title--centered
+	width: 100%
+	text-align: center
+	position: relative
+.section__title--centered:after
+	content: ''
+	position: absolute
+	left: 0
+	right: 0
+	top: 80%
+	margin: auto
+	width: 50px
+	height: 1px
+	background: #454545
+
+/***************************************************Project************************************/
+.section
+	&__project
+		&-bottom
+			margin-top: 80px
+		&--black
+			background-image: url('../images/bg-black.png')
+			width: 100%
+			height: 300px
+			background-repeat: no-repeat
+			background-size: cover
+		&-content
+			max-width: 1170px
+			margin: 0 auto
+			h2
+				margin-bottom: 40px
+			p
+				font-size: 18px
+				line-height: 26px
+			i
+				font-weight: 700
+				font-style: normal
+				font-size: 22px
+			&--black
+				width: 100%
+				height: 100%
+				display: flex
+				justify-content: center
+				align-items: center
+				p
+					color: #fff
+					text-align: center
+					font-size: 22px
+					line-height: 40px
+			&--bottom
+				display: flex
+				justify-content: space-between
+		&-main
+			background-image: url('../images/bg.jpg')
+			width: 100%
+			height: 720px
+			margin: 80px 0px 0px 0px
+			background-repeat: repeat
+			background-size: cover
+			&-images
+				width: 1000px
+				height: 100%
+				margin: 0px auto
+				display: flex
+				justify-content: center
+				align-items: center
+				position: relative
+				img:nth-child(1)
+					width: 600px
+					height: auto
+				img:nth-child(2)
+					width: 280px
+					height: auto
+					position: absolute
+					bottom: 100px 
+					left: 50px
+				img:nth-child(3)
+					width: 340px
+					height: auto
+					position: absolute
+					bottom: 60px 
+					left: -100px
+				img:nth-child(4)
+					width: 600px
+					height: auto
+					position: absolute
+					bottom: 70px 
+					right: -80px
+				img:nth-child(5)
+					width: 110px
+					height: auto
+					position: absolute
+					bottom: 70px 
+					right: -80px
+			&--second
+				margin-top: 0px
+				img:nth-child(1)
+					width: 100%
+					height: auto
+					margin-left: -20px
+	&__bottom
+		&-left,
+		&-right
+			flex: 0 0 49%
+			max-width: 49%
+			box-shadow: 0px 0px 6px rgba(0,0,0,0.2)
+			align-items: flex-start
+			img
+				width: 100%
+				height: auto
+				margin-bottom: 40px
