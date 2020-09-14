@@ -3948,6 +3948,66 @@ td.product-remove, td.product-thumbnail, td.product-name {
   background: transparent;
 }
 
+/***********************************************Courses-Account************************************/
+.courses__wrap {
+  width: 80%;
+  margin: 80px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.courses__block {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 22.9%;
+  flex: 0 0 22.9%;
+  max-width: 22.9%;
+  background-color: #EEEFF0;
+  text-align: center;
+  padding: 20px;
+  margin: 0px 10px 20px 10px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+
+.courses__block:hover {
+  border: 1px solid #0D93EC;
+}
+
+.courses__block_image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 150px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.courses__block_image svg {
+  width: 80px;
+  height: 80px;
+}
+
+.courses__block_image img {
+  width: 80px;
+  height: auto;
+}
+
+.courses__block_name span {
+  font-family: "NunitoBold", sans-serif;
+  font-size: 15px;
+  color: #3B485D;
+}
+
 /***********************************************ButtonMobile************************************/
 .menu-toggle-button {
   width: 50px;

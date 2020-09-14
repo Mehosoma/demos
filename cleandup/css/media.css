@@ -1,5 +1,16 @@
 @media only screen and (min-width : 0px) and (max-width : 767px) {
 
+	.courses__wrap{
+		width: 95%;
+		justify-content: center;
+	}
+
+		.courses__block{
+		flex: 0 0 100%;
+		max-width: 100%;
+		max-width: 320px;
+	}
+
 	.orders__wrap{
 		width: 95%;
 	}
@@ -1240,6 +1251,15 @@
 
 @media only screen and (min-width : 768px) and (max-width : 991px) {
 
+	.courses__wrap{
+		width: 95%;
+	}
+
+		.courses__block{
+		flex: 0 0 46.5%;
+		max-width: 46.5%;
+	}
+
 	.orders__wrap{
 		width: 95%;
 	}
@@ -1969,6 +1989,11 @@
 
 @media only screen and (min-width : 992px) and (max-width : 1199px) {
 
+	.courses__block{
+		flex: 0 0 30.3%;
+		max-width: 30.3%;
+	}
+
 	.fake-menu{
 		position: relative;
 		top: 0px;
@@ -2240,6 +2265,11 @@
 
 	.store__menu{
 		display: block!important;
+	}
+
+	.courses__block{
+		flex: 0 0 22.5%;
+		max-width: 22.5%;
 	}
 
 }
