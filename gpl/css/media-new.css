@@ -35,6 +35,8 @@
 		padding-right: 0px;
 		margin-top: 15px;
 		margin-left: 0px;
+		text-align: center;
+		display: block;
 	}
 
 	.form-gen .form-gen__field .form-gen__field-input{
