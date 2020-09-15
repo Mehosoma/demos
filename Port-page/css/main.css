@@ -162,6 +162,7 @@ body hr {
 .section__portfolio-description p,
 .section__portfolio-description span {
   color: #fff;
+  text-align: center;
 }
 
 .section__portfolio-description h3 {
@@ -268,6 +269,13 @@ body hr {
 .section__description {
   font-size: 18px;
   line-height: 32px;
+}
+
+.images-separator {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
 }
 
 /***************************************************Project************************************/
@@ -390,7 +398,7 @@ body hr {
   right: -80px;
 }
 
-.section__project-main-images img:nth-child(5) {
+.section__project-main-images img:nth-child(6) {
   width: 110px;
   height: auto;
   position: absolute;
