@@ -45,7 +45,7 @@
 						</button>
 						<div class="probate-header__buttons d-md-flex">						
 							<a href="" class="gen-btn__fill">Register</a>
-							<a href="" class="gen-btn__stroke"><img src="images/sign-in.svg" class="svg"> Sign in</a>
+							<a href=".sign-form" class="gen-btn__stroke popup-modal"><img src="images/sign-in.svg" class="svg"> Sign in</a>
 						</div>
 					</nav>
 				</div>
@@ -148,6 +148,39 @@
 		</div>
 	</div>
 </footer>
+
+
+<!--Modal-->
+<div class="sign-form mfp-hide white-popup-block">
+	<div class="sign-form__wrap">
+		<div class="sign-form__form">
+			<div class="sign-form__header">
+				<span>You are never on your own</span>
+				<span>Help is only one call away.</span>
+			</div>
+			<form id="sign-form" class="form-gen">
+				<img src="images/logo.svg" class="svg" alt="logo-image">
+				<input type="text" name="email" placeholder="Email Address">
+				<input type="password" name="pass" placeholder="Password">
+				<div class="check-gen">
+					<label class="l-container active-checked">Remember Me
+						<input type="checkbox" checked="">
+						<span class="checkmark"></span>
+					</label>
+				</div>
+				<div class="sign-form__button">
+					<input type="sibmit" value="Sign in">
+				</div>
+				<div class="sign-form__back">
+					<span>Back to home</span>
+				</div>
+			</form>
+		</div>
+		<div class="sign-form__image">
+			<img src="images/sign-form.jpg" alt="form-image">
+		</div>
+	</div>
+</div>
 
 	<script src="libs/jquery/jquery-3.3.1.js"></script>
 	<script src="libs/bootstrap/js/bootstrap.js"></script>

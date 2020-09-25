@@ -32,6 +32,7 @@
 		margin-top: 10px;
 		width: 127px;
 		margin-bottom: 20px;
+		padding-right: 30px;
 	}
 
 	.main-banner__wrap p {
@@ -122,6 +123,36 @@
 		padding: 0px;
 	}
 
+	.sign-form__wrap{
+		flex-wrap: wrap;
+	}
+
+	.sign-form__image{
+		order: 1;
+		height: auto;
+	}
+
+	.sign-form__image img{
+		width: 100%;
+		height: auto;
+	}
+
+	.sign-form__form{
+		order: 2;
+		margin: 0px auto;
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+
+	.sign-form__form form{
+		padding: 0px;
+	}
+
+	.sign-form__header span {
+		font-size: 6vw;
+		line-height: 8vw;
+	}
+
 }
 
 @media only screen and (min-width : 576px) and (max-width : 767px) {
@@ -180,6 +211,25 @@
 	.main-bottom__text {
 		flex: 0 0 68%;
 		max-width: 68%;
+	}
+
+	.sign-form__wrap{
+		flex-wrap: wrap;
+	}
+
+	.sign-form__image{
+		order: 1;
+		height: auto;
+	}
+
+	.sign-form__image img{
+		width: 100%;
+		height: auto;
+	}
+
+	.sign-form__form{
+		order: 2;
+		margin: 0px auto;
 	}
 
 

@@ -30,12 +30,12 @@ $(function () {
 		preloader: false,
 		focus: '#username',
 	
-   		fixedContentPos: false,
+   		fixedContentPos: true,
     	fixedBgPos: true,
    		closeOnBgClick: true,
 
 	});
-	$(document).on('click', '.popup-modal-dismiss', function (e) {
+	$(document).on('click', '.popup-modal-dismiss, .sign-form__back span', function (e) {
 		e.preventDefault();
 		$.magnificPopup.close();
 	});

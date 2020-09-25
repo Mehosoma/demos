@@ -485,6 +485,258 @@ h2 {
   padding: 0px 50px 0px 44px;
 }
 
+/***************************************************Modal************************************/
+.sign-form {
+  margin: 40px auto;
+  width: 90%;
+  background: #fff;
+  overflow: hidden;
+}
+
+.sign-form .mfp-close {
+  display: none;
+}
+
+.sign-form__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sign-form__header span {
+  font-family: "Crimson Pro", sans-serif;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 45px;
+  color: #545C6B;
+  display: block;
+}
+
+.sign-form__header span:nth-child(2) {
+  color: #2788D2;
+}
+
+.sign-form__back {
+  text-align: right;
+  margin-top: 20px;
+}
+
+.sign-form__back span {
+  font-family: "Crimson Pro", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 31px;
+  color: #545C6B;
+  font-style: italic;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  position: relative;
+}
+
+.sign-form__back span:hover {
+  cursor: pointer;
+  color: #2788D2;
+}
+
+.sign-form__back span:hover:after {
+  border-color: #2788D2;
+}
+
+.sign-form__back span:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: -20px;
+  top: 3px;
+  width: 15px;
+  height: 15px;
+  border: solid #545C6B;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  transform: rotate(135deg);
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.sign-form__form {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 475px;
+  flex: 0 0 475px;
+  max-width: 475px;
+  background: #fff;
+  padding: 60px 30px;
+}
+
+.sign-form__form form {
+  margin-top: 40px;
+  padding: 0px 65px 0px 30px;
+  -moz-placeholder-color: #747B8B;
+  -moz-placeholder-font-family: "Crimson Pro", sans-serif;
+  -moz-placeholder-font-size: 18px;
+  -moz-placeholder-font-style: italic;
+  -moz-placeholder-opacity: 0.5;
+  -ms-input-placeholder-color: #747B8B;
+  -ms-input-placeholder-font-family: "Crimson Pro", sans-serif;
+  -ms-input-placeholder-font-size: 18px;
+  -ms-input-placeholder-font-style: italic;
+  -ms-input-placeholder-opacity: 0.5;
+}
+
+.sign-form__form form svg {
+  margin-bottom: 20px;
+}
+
+.sign-form__form form input[type="text"],
+.sign-form__form form input[type="password"] {
+  width: 100%;
+  height: 60px;
+  background: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  margin-bottom: 20px;
+  padding: 0px 20px;
+  color: #747B8B;
+  font-family: "Crimson Pro", sans-serif;
+  font-size: 18px;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.sign-form__form form ::-webkit-input-placeholder {
+  color: #747B8B;
+  font-family: "Crimson Pro", sans-serif;
+  font-size: 18px;
+  font-style: italic;
+  opacity: 0.5;
+}
+
+.sign-form__form form ::-moz-placeholder {
+  color: #747B8B;
+  font-family: "Crimson Pro", sans-serif;
+  font-size: 18px;
+  font-style: italic;
+  opacity: 0.5;
+}
+
+.sign-form__form form .sign-form__button {
+  margin-top: 30px;
+}
+
+.sign-form__form form .sign-form__button input {
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  background: #2788D2;
+  font-family: "Crimson Pro", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #ffffff;
+  text-align: center;
+  border: 1px solid #2788D2;
+  border-radius: 3px;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.sign-form__form form .sign-form__button input:hover {
+  cursor: pointer;
+  background: transparent;
+  color: #2788D2;
+}
+
+.sign-form__image {
+  height: 770px;
+  max-height: 800px;
+}
+
+.sign-form__image img {
+  height: 100%;
+  width: auto;
+}
+
+.l-container {
+  display: inline-block;
+  position: relative;
+  padding-left: 38px;
+  cursor: pointer;
+  font-family: "Crimson Pro", sans-serif;
+  font-size: 14px;
+  color: #333;
+  font-weight: normal;
+  margin-bottom: 0px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: "Crimson Pro", sans-serif;
+  font-size: 14px;
+  color: #545C6B;
+  font-style: italic;
+}
+
+.l-container a:hover {
+  color: #545C6B;
+  border-bottom: 1px solid transparent;
+}
+
+.l-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  z-index: -1;
+  top: 0px;
+  left: 0px;
+}
+
+.checkmark {
+  position: absolute;
+  top: -4px;
+  left: 0px;
+  height: 30px;
+  width: 30px;
+  background: #f1f1f1;
+  border: 1px solid #ccc;
+}
+
+.check-gen input:checked ~ .checkmark {
+  border: 1px solid #ccc;
+}
+
+.check-gen .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.check-gen input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.check-gen .checkmark:after {
+  left: 9px;
+  top: 2px;
+  width: 11px;
+  height: 17px;
+  border: solid #ccc;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.form-gen input:hover, .form-gen input:active, .form-gen input:focus, .form-gen textarea:hover, .form-gen textarea:active, .form-gen textarea:focus {
+  border: 1px solid #2788D2 !important;
+}
+
 /***********************************************ButtonMobile************************************/
 .menu-toggle-button {
   width: 50px;
