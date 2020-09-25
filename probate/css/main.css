@@ -489,6 +489,7 @@ h2 {
 .sign-form {
   margin: 40px auto;
   width: 90%;
+  max-width: 1300px;
   background: #fff;
   overflow: hidden;
 }
@@ -518,7 +519,7 @@ h2 {
 
 .sign-form__back {
   text-align: right;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .sign-form__back span {
