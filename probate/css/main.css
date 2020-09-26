@@ -651,8 +651,7 @@ body hr {
 
 .sign-form__form form .sign-form__button input:hover {
   cursor: pointer;
-  background: transparent;
-  color: #2788D2;
+  background: #2F9FF5;
 }
 
 .sign-form__image {
