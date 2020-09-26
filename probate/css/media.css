@@ -41,7 +41,9 @@
 	}
 
 	.gen-btn__fill--big{
-		width: 250px;
+		padding: 0px 20px;
+		width: 100%;
+		max-width: 300px;
 	}
 
 	.guarantee span {
@@ -58,7 +60,7 @@
 		width: 95%;
 	}
 
-	h2{
+	.single-text h2{
 		font-size: 35px;
 	}
 
@@ -69,6 +71,9 @@
 
 	.main-image__text{
 		padding: 5vw 5vw 5vw 8vw!important;
+		min-height: 1px!important;
+		height: auto!important;
+
 	}
 
 	.single-text__wrap p{
@@ -81,6 +86,7 @@
 
 	.main-bottom__text{
 		padding-left: 10vw;
+		padding-right: 10vw;
 	}
 
 	.main-image{
@@ -161,6 +167,15 @@
 	    flex: 0 0 80%;
 	    max-width: 80%;
 	}
+
+	.guarantee span {
+		font-size: 22px;
+	}
+
+	.guarantee svg{
+		width: 50px;
+		height: 50px;
+	}
 }
 
 @media only screen and (min-width : 768px) and (max-width : 991px) {
@@ -205,7 +220,9 @@
 	}
 
 	.main-image__text{
-		padding: 3vw 4vw 3vw 4vw;
+		padding: 3vw 4vw 3vw 4vw!important;
+		min-height: 1px!important;
+		height: auto!important;
 	}
 
 	.main-bottom__text {
@@ -250,8 +267,18 @@
 	}
 
 	.main-bottom__text{
-		padding-left: 10vw;
+		padding-left: 8vw;
+		padding-right: 8vw;
 	}
+}
+
+
+@media only screen and (min-width : 1200px) and (max-width : 1439px) {
+
+	.single-text__wrap p {
+		width: 70%;
+	}
+
 }
 
 @media only screen and (min-width : 1440px) {
@@ -261,9 +288,9 @@
 	}
 }
 
-@media only screen and (min-width : 1500px) {
+@media only screen and (min-width : 1920px) {
 
-	.main-image__image img{
-		width: 100%;
+	.container{
+		max-width: 90%;
 	}
 }

@@ -75,40 +75,39 @@ body hr {
 
 /***************************************************GeneralStyles************************************/
 .gen-btn__fill {
-  width: 127px;
-  height: 36px;
-  line-height: 36px;
+  height: 38px;
+  line-height: 38px;
   background: #2788D2;
   font-family: "Crimson Pro", sans-serif;
   font-weight: 400;
   font-size: 16px;
   color: #ffffff;
   text-align: center;
-  border: 1px solid #2788D2;
   border-radius: 3px;
+  padding: 0px 38px;
 }
 
 .gen-btn__fill:hover {
-  background: transparent;
-  color: #2788D2;
+  background: #2F9FF5;
+  color: #ffffff;
 }
 
 .gen-btn__fill--big {
-  width: 313px;
   border-radius: 5px;
-  height: 57px;
-  line-height: 57px;
+  height: 60px;
+  line-height: 60px;
   font-size: 18px;
+  padding: 0px 106px;
 }
 
-.gen-btn__fill--italic {
+.gen-btn--italic {
   font-style: italic;
 }
 
 .gen-btn__stroke {
   width: 113px;
-  height: 36px;
-  line-height: 36px;
+  height: 38px;
+  line-height: 38px;
   background: transparent;
   font-family: "Crimson Pro", sans-serif;
   font-weight: 400;
@@ -126,26 +125,19 @@ body hr {
   color: #ffffff;
 }
 
-.gen-btn__stroke:hover svg circle {
+.gen-btn__stroke:hover svg {
   fill: #fff;
 }
 
 .gen-btn__stroke svg {
   position: absolute;
   top: 0px;
-  left: 0px;
-}
-
-.gen-btn__stroke svg circle {
+  left: 4px;
   -moz-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
-}
-
-.gen-btn__white-hover:hover {
-  color: #ffffff;
-  border: 1px solid #ffffff;
+  fill: #2788D2;
 }
 
 .section-overlay {
@@ -154,14 +146,6 @@ body hr {
   position: absolute;
   background: #1C263D;
   opacity: 0.73;
-}
-
-h2 {
-  font-family: "Crimson Pro", sans-serif;
-  font-weight: 300;
-  font-size: 50px;
-  color: #545C6B;
-  text-align: center;
 }
 
 .gen-text p {
@@ -187,6 +171,10 @@ h2 {
 
 .gen-text--white p {
   color: #ffffff;
+}
+
+.section-gray {
+  background: #F9F9F9;
 }
 
 /***************************************************Header************************************/
@@ -281,7 +269,19 @@ h2 {
 
 /***************************************************Single-Text************************************/
 .single-text {
-  padding: 58px 0px 340px 0px;
+  padding: 60px 0px 60px 0px;
+}
+
+.single-text h2 {
+  font-family: "Crimson Pro", sans-serif;
+  font-weight: 300;
+  font-size: 50px;
+  color: #545C6B;
+  text-align: center;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
 }
 
 .single-text__wrap {
@@ -317,7 +317,7 @@ h2 {
 }
 
 .main-image__image {
-  min-height: 38vw;
+  width: auto;
 }
 
 .main-image__image img {
@@ -337,6 +337,8 @@ h2 {
   -ms-flex-pack: center;
   justify-content: center;
   padding: 3vw 5vw 3vw 8vw;
+  min-height: 570px;
+  height: 38vw;
 }
 
 .main-image__text-wrap {
@@ -350,7 +352,6 @@ h2 {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  max-height: 450px;
   overflow: hidden;
 }
 
@@ -368,15 +369,12 @@ h2 {
 }
 
 .main-image--left .main-image__text {
-  padding: 3vw 8vw 3vw 4vw;
+  padding: 3vw 8vw 3vw 5vw;
 }
 
-.main-image--short .main-image__image {
-  min-height: 29vw;
-}
-
-.main-image--short .main-image__text-wrap {
-  max-height: 336px;
+.main-image--short .main-image__text {
+  min-height: 416px;
+  height: 29vw;
 }
 
 /***************************************************Main-Back************************************/
@@ -425,6 +423,7 @@ h2 {
 
 .main-bottom__text {
   min-height: 560px;
+  max-height: 39vw;
   -webkit-box-flex: 0;
   -ms-flex: 0 0 50%;
   flex: 0 0 50%;
@@ -440,7 +439,10 @@ h2 {
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  padding: 12vw 5vw 40px 17vw;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  padding: 100px 70px 100px 70px;
 }
 
 .main-bottom__text-wrap {
@@ -454,7 +456,6 @@ h2 {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  max-height: 350px;
   overflow: hidden;
 }
 
