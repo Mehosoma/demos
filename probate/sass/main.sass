@@ -9,6 +9,15 @@ $footer: #1C263D
 $yellow: #D9BE79
 $gray-form: #f1f1f1
 $fill-hover: #2F9FF5
+$ccc: #cccccc
+$green: #20977E
+$green-d: #1B6267
+$red: #9A2038
+$gold: #D9BE79
+$green-l: #27D2D2
+$h3: #1B3967
+$quote: #747B8B
+$gray-l: #F9F9F9
 $crimson: 'Crimson Pro', sans-serif
 
 
@@ -64,8 +73,8 @@ body
 	z-index: 1000000
 	display: none
 	left: 50%
-	top: 0
-	margin-left: -683px
+	top: -96px
+	margin-left: -768px
 	opacity: 0.5
 	margin-top: 0px
 
@@ -149,8 +158,43 @@ body
 	&--white
 		p
 			color: $white
-.section-gray
-	background: #F9F9F9
+.section--gray
+	background: $gray-l
+	&_dark
+		background: #F1F1F1
+.block-white
+	background: $white
+.block-blue
+	background: $blue
+.border-block
+	border: 1px solid $ccc
+.italic-style
+	p,
+	a,
+	span
+		font-style: italic
+.line-through-style,
+.text-block.line-through-style
+	p,
+	a,
+	span
+		text-decoration: line-through
+		color: $ccc
+.block-shadow
+	box-shadow: 0px 3px 6px rgba(0,0,0,0.16)
+.locked-style
+	p,
+	a,
+	span,
+	h3
+		color: $ccc!important
+		border-color: $ccc!important
+.locked-style.gen-icon	
+	border-color: $ccc
+	background: #f1f1f1
+	svg
+		display: inline
+
 
 /***************************************************Header************************************/
 .probate-header
@@ -166,6 +210,68 @@ body
 		align-items: center
 		a
 			margin-left: 22px
+	&--login
+		.probate-header__menu
+			display: none
+		.probate-header__menu.probate-header__menu--login
+			display: block
+		.probate-header__buttons
+			justify-content: flex-end
+	&--inner
+		.container
+			max-width: 100%
+			padding-right: 0px
+		.row
+			margin: 0px
+		.col-12
+			padding: 0px
+.nav__wrap__phone
+	background-color: $blue
+	display: flex
+	flex-direction: column
+	align-self: stretch
+	justify-content: center
+	flex: 0 0 208px
+	max-width: 208px
+	height: 100%
+	padding-right: 30px
+	align-items: flex-end
+	-moz-transition: all 0.3s ease-out
+	-o-transition: all 0.3s ease-out
+	-webkit-transition: all 0.3s ease-out
+	transition: all 0.3s ease-out
+	span
+		font-family: $crimson
+		font-size: 11px
+		font-weight: 400
+		color: $white
+		text-transform: uppercase
+		display: block
+	a
+		font-family: $crimson
+		font-size: 18px
+		font-weight: 400
+		color: $white
+		&:hover
+			color: $white
+			opacity: 0.8
+	&__link
+		display: flex
+		justify-content: space-between
+		align-items: center	
+.probate-header__menu.probate-header__menu--login
+	display: none
+	ul
+		display: flex
+		flex: 1 0 auto
+		margin-right: 40px
+		a
+			font-family: $crimson
+			font-weight: 500
+			font-size: 16px
+			color: $text
+			&:hover
+				color: $blue
 
 /***************************************************Main-Banner************************************/
 .main-banner
@@ -527,7 +633,637 @@ body
 	border: 1px solid $blue!important
 
 
-/***********************************************ButtonMobile************************************/
+/***************************************************Components************************************/
+.components
+	padding: 80px 0px
+	img
+		width: 100%
+		height: auto
+.container--short
+	max-width: 798px	
+
+
+/***************************************************Components Phase Breadcrumbs************************************/
+.phase-breadcrumbs
+	display: flex
+	justify-content: space-between
+	border-bottom: 1px solid rgba(27,57,103,0.03)
+	padding: 22px 20px 0px 20px
+	&--completed
+		.phase-breadcrumbs__status p
+			color: $green
+		.phase-breadcrumbs__name span
+			color: $green
+			text-decoration: line-through
+	&--progress
+		.phase-breadcrumbs__status p
+			color: $blue
+		.phase-breadcrumbs__name span
+			color: $blue
+	&__main
+		min-height: 68px
+		display: flex
+		align-items: center
+	&__status
+		border-left: 1px solid rgba(27,57,103,0.03)
+		flex: 0 0 127px
+		max-width: 127px
+		padding-left: 6px
+		padding-top: 8px
+		span
+			padding-left: 10px
+			font-family: $crimson
+			font-weight: 500
+			font-size: 12px
+			color: $ccc
+		p
+			font-family: $crimson
+			font-weight: 500
+			font-size: 14px
+			color: $text
+	&__number
+		position: relative
+		flex: 0 0 auto
+		&:after
+			content: ''
+			display: block
+			position: absolute
+			right: -20px
+			top: 3px
+			width: 15px
+			height: 15px
+			border: solid $blue
+			border-width: 0 2px 2px 0
+			-webkit-transform: rotate(-45deg)
+			-ms-transform: rotate(-45deg)
+			transform: rotate(-45deg)
+			-moz-transition: all 0.3s ease-out
+			-o-transition: all 0.3s ease-out
+			-webkit-transition: all 0.3s ease-out
+			transition: all 0.3s ease-out
+		a
+			font-family: $crimson
+			font-weight: 400
+			font-size: 18px
+			color: $text
+			font-style: italic
+			&:hover
+				color: $blue
+	&__name
+		margin-left: 35px
+		span
+			font-family: $crimson
+			font-weight: 400
+			font-size: 18px
+			color: $ccc
+			font-style: italic
+
+
+/***************************************************Components Phase Buttons************************************/
+.btn-fill
+	a
+		font-family: $crimson
+		font-weight: 400
+		font-size: 18px
+		font-style: italic
+		color: #fff
+		background: $blue
+		height: 40px
+		line-height: 40px
+		text-align: center
+		border-radius: 5px
+		padding: 0px 20px
+		&:hover
+			background: $fill-hover
+	&--stroke
+		a
+			border: 1px solid $blue
+			background: #fff
+			color: $blue
+			position: relative
+			padding: 0px 39px 0px 20px
+			background: transparent
+			&:after
+				content: ''
+				display: block
+				position: absolute
+				right: 16px
+				top: 16px
+				width: 10px
+				height: 10px
+				border: solid $blue
+				border-width: 0 2px 2px 0
+				-webkit-transform: rotate(-45deg)
+				-ms-transform: rotate(-45deg)
+				transform: rotate(-45deg)
+				-moz-transition: all 0.3s ease-out
+				-o-transition: all 0.3s ease-out
+				-webkit-transition: all 0.3s ease-out
+				transition: all 0.3s ease-out
+			&:hover
+				background: $blue
+				color: $white
+				&:after
+					border-color: $white
+		&--back
+			a
+				padding: 0px 20px 0px 40px
+				&:after
+					left: 16px
+					-webkit-transform: rotate(135deg)
+					-ms-transform: rotate(135deg)
+					transform: rotate(135deg)
+	&--wide
+		a
+			padding: 0px 40px
+	&--green
+		a
+			background: $green-d
+			&:hover
+				background: $green
+	&--locked
+		a
+			background: transparent
+			color: $text
+			&:hover
+				background: #ECECEC
+	&--inactive
+		a
+			background: $ccc
+			color: $text
+			pointer-events: none
+			cursor: default
+			&:hover
+				background: $ccc
+	&--completed
+		a
+			background: transparent
+			color: $green
+			&:hover
+				background: #ECECEC
+	&--red
+		a
+			background: $red
+			color: $white
+			&:hover
+				background: $red
+				color: $white
+	&--gold
+		a
+			background: $gold
+			color: $text
+			&:hover
+				background: $blue
+				color: $white
+
+/***********************************************Icons*******************************************/
+.gen-icon
+	width: 40px
+	height: 40px
+	border: 2px solid $text
+	border-radius: 50%
+	position: relative
+	svg
+		display: none
+	&--progress
+		border-color: $blue
+		&:after
+			content: ''
+			display: block
+			position: absolute
+			left: 9px
+			top: 12px
+			width: 12px
+			height: 12px
+			border: solid $blue
+			border-width: 0 2px 2px 0
+			-webkit-transform: rotate(-45deg)
+			-ms-transform: rotate(-45deg)
+			transform: rotate(-45deg)
+			-moz-transition: all 0.3s ease-out
+			-o-transition: all 0.3s ease-out
+			-webkit-transition: all 0.3s ease-out
+			transition: all 0.3s ease-out
+	&--wait
+		border-color: $green-l
+		&:after
+			content: ''
+			display: block
+			position: absolute
+			width: 10px
+			height: 2px
+			background: $green-l
+			top: 20px
+			left: 12px
+		&:before
+			content: ''
+			display: block
+			position: absolute
+			width: 2px
+			height: 10px
+			background: $green-l
+			top: 10px
+			left: 20px
+	&--complete
+		border-color: $green
+		&:after
+			content: ''
+			display: block
+			position: absolute
+			left: 16px
+			top: 11px
+			width: 7px
+			height: 12px
+			border: solid $green
+			border-width: 0 2px 2px 0
+			-webkit-transform: rotate(45deg)
+			-ms-transform: rotate(45deg)
+			transform: rotate(45deg)
+			-moz-transition: all 0.3s ease-out
+			-o-transition: all 0.3s ease-out
+			-webkit-transition: all 0.3s ease-out
+			transition: all 0.3s ease-out
+
+
+/***********************************************Headers*******************************************/
+.phase-header
+	h1
+		font-family: $crimson
+		font-weight: 600
+		font-size: 35px
+		color: $back
+		margin-bottom: 26px
+	h2
+		font-family: $crimson
+		font-weight: 400
+		font-size: 28px
+		color: $back
+		margin-bottom: 26px
+	h3
+		font-family: $crimson
+		font-weight: 700
+		font-size: 25px
+		color: $h3
+		margin-bottom: 26px
+
+/***********************************************Text-Block*******************************************/
+.text-block
+	padding-bottom: 20px
+	p,
+	span
+		font-family: $crimson
+		font-weight: 400
+		font-size: 22px
+		line-height: 28px
+		color: $text
+	p
+		margin-bottom: 22px
+	p:last-child
+		margin-bottom: 0px
+
+/***********************************************Lists*******************************************/
+.list-gen
+	li
+		font-family: $crimson
+		font-weight: 400
+		font-size: 22px
+		line-height: 28px
+		color: $text
+		padding-left: 40px
+		position: relative
+		margin-bottom: 21px
+	&--numbers
+		ol
+			counter-reset: number
+			li
+				&:before
+					content: counter(number, decimal) ". "
+					counter-increment: number
+					display: inline-block
+					position: absolute
+					left: 0px
+					top: 0px
+			ol
+				counter-reset: letter
+				margin-top: 28px
+				li
+					padding-left: 60px
+					&:before
+						content: counter(number, decimal) " - " counter(letter, lower-alpha) " "
+						counter-increment: letter
+	&--unsorted
+		li
+			&:before
+				content: ''
+				display: block
+				position: absolute
+				width: 6px
+				height: 6px
+				border-radius: 2px
+				background: $text
+				left: 0px
+				top: 12px
+				-webkit-transform: rotate(45deg)
+				-ms-transform: rotate(45deg)
+				transform: rotate(45deg)
+
+/********************************************************HR************************************/
+.hr-line
+	hr
+		width: 100%
+		height: 1px
+		background: $ccc
+		margin: 15px 0px
+
+/******************************************************Quote************************************/
+.quote-block
+	blockquote
+		font-family: $crimson
+		font-weight: 400
+		font-size: 18px
+		line-height: 26px
+		color: $quote
+		font-style: italic
+
+
+/**************************************************Widgets************************************/
+.gen-widget
+	display: flex
+	justify-content: space-between
+	padding: 25px 35px 10px 17px
+	max-width: 600px
+	&__icon
+		flex: 0 0 72px
+		max-width: 72px
+		padding-top: 4px
+		svg
+			flex-grow: 0
+	&__text
+		p
+			font-family: $crimson
+			font-weight: 600
+			font-size: 18px
+			line-height: 28px
+			color: $text
+		a
+			display: inline
+			color: $blue
+			&:hover
+				color: $fill-hover
+	&--warning
+		border: 1px solid $red
+		p
+			color: $red
+	&--success
+		border: 1px solid $green
+		p
+			color: $green
+	&--info
+		border: 1px solid $ccc
+		p
+			color: $text
+	&--caution
+		border: 1px solid $gold
+		p
+			color: $gold
+
+
+/**************************************************Widget-Image************************************/
+.widget-image
+	width: 100%
+	padding: 23px 19px
+	border: 1px solid $ccc
+	&__header
+		border-bottom: 1px solid $ccc
+		margin-bottom: 18px
+		span
+			line-height: 0px
+			padding-bottom: 23px
+			display: block
+			font-family: $crimson
+			font-weight: 400
+			font-size: 18px
+			color: $text
+	&--wide
+		width: 90vw
+		margin: 0px auto
+		position: relative
+		right: -50%
+		span
+			text-align: center
+		.widget-image
+			position: relative
+			left: -50%
+
+
+/**************************************************File************************************/
+.file-block
+	&__header
+		span
+			font-family: $crimson
+			font-weight: 400
+			font-size: 16px
+			color: $ccc
+			display: block
+			margin-bottom: 10px
+	&__file
+		padding: 10px 22px
+		min-height: 44px
+		display: flex
+		align-items: center
+		span
+			display: block
+			font-family: $crimson
+			font-weight: 500
+			font-size: 18px
+			color: $blue
+
+/**************************************************Widget-Steps************************************/
+.widget-steps
+	&__wrap
+		padding: 20px 20px 0px 20px
+	&__nav
+		display: flex
+		justify-content: space-between
+		margin-bottom: 15px
+		&-block
+			flex: 0 0 33%
+			max-width: 33%
+			height: 10px
+			background: $ccc
+			&--green
+				background: $green-d
+.completed-steps
+	padding: 15px 0px 20px 0px
+
+
+/**************************************************Widget-Completed*********************************/
+.completed-steps
+	display: flex
+	span,
+	p
+		font-family: $crimson
+		font-weight: 400
+		font-size: 16px
+		color: $text
+		margin-bottom: 0px
+	.completed-steps__circle
+		span
+			display: block
+			width: 30px 
+			height: 30px
+			border: 1px solid $text
+			border-radius: 50%
+			text-align: center
+			line-height: 28px
+		&--green
+			span
+				border: 2px solid $green
+				line-height: 26px
+	p
+		margin: 0px 5px
+	&__start
+		display: flex
+		align-items: center
+	&__end
+		display: flex
+		align-items: center
+	&__both
+		display: flex
+		align-items: center
+		justify-content: space-between
+		padding: 0px 20px
+		.italic-style
+			span
+				font-family: $crimson
+				font-weight: 400
+				font-size: 18px
+				color: $ccc
+
+/**************************************************Phase-Block-Header*********************************/
+.phase-block__header
+	margin-bottom: 40px
+	h3
+		font-family: $crimson
+		font-weight: 400
+		font-size: 26px
+		color: $text
+	&--blue
+		h3
+			color: $blue
+
+/**************************************************Steps-Main*********************************/
+.steps-main
+	display: flex
+	&__left
+		flex: 0 0 100px
+		max-width: 100px
+		position: relative
+		.gen-icon
+			position: absolute
+			top: 14px
+			left: 0px
+			right: 0px
+			margin: auto
+			z-index: 10
+			text-align: center
+			line-height: 30px
+			background: #f1f1f1
+		hr
+			position: absolute
+			top: 0px
+			left: 0px
+			right: 0px
+			bottom: 0px
+			margin: auto
+			width: 1px 
+			height: 100%
+			background: $ccc
+	&__right
+		flex-grow: 1
+		margin-bottom: 20px
+		border-radius: 6px
+		.steps-block
+			padding: 25px 20px 0px 20px	
+	&--substeps
+		.steps-block
+			padding-bottom: 20px		
+
+
+/***********************************************Text-Block With Icon****************************************/
+.steps-block-icon
+	display: flex
+	padding: 20px 0px
+	border-bottom: 1px solid $ccc
+	&:last-child
+		border-bottom: none
+	.gen-icon
+		flex: 0 0 auto
+	.text-block
+		margin-left: 30px
+		padding-bottom: 0px
+		p
+			margin-bottom: 0px
+
+/***********************************************Phase-Complete****************************************/
+.phase-complete
+	display: flex
+	justify-content: space-between
+	border-radius: 6px
+	align-items: center
+	height: 43px	
+	.steps-block-icon
+		align-items: center
+		border-bottom: none	
+	&--big
+		border-radius: 6px
+		.phase-complete
+			margin-bottom: 30px
+.phase-complete__wrap
+	padding: 20px
+	border-radius: 6px
+
+/***********************************************Block-Special****************************************/
+.block-special
+	background: #1B3967
+	padding: 20px
+	h3
+		color: $white
+	.text-block
+		span,
+		p
+			color: $gold
+	.btn-fill
+		display: flex
+		justify-content: flex-end
+
+/***********************************************Sub-Steps-Blue****************************************/
+.steps-main__right.block-blue
+	padding: 20px
+
+/***********************************************Sub Steps Locked*********************************/
+.sub-steps-locked
+	border-radius: 6px
+	padding: 20px
+	&__header
+		display: flex
+		.phase-block__header
+			margin-left: 20px
+	.gen-icon
+		position: relative!important
+		text-align: center
+		line-height: 30px
+		background: #f9f9f9
+
+
+/**************************************************Footer--Single*********************************/	
+.footer-single
+	&__wrap
+		display: flex
+		justify-content: space-between
+		align-items: center
+
+/***********************************************ButtonMobile****************************************/
 
 .menu-toggle-button
 	width: 50px

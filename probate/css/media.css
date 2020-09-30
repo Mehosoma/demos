@@ -35,6 +35,29 @@
 		padding-right: 30px;
 	}
 
+	.probate-header--login .probate-header__buttons{
+		width: 208px;
+		right: 0px;
+	}
+
+	.probate-header__menu.probate-header__menu--login ul{
+		display: block;
+		margin-right: 0px;
+	}
+
+	.probate-header__menu.probate-header__menu--login ul li{
+		margin: 20px 0px;
+		padding: 0px 20px;
+	}
+
+	.nav__wrap__phone{
+		height: 50px;
+	}
+
+	.nav__wrap__phone a{
+		margin-left: 22px;
+	}
+
 	.main-banner__wrap p {
 		font-size: 20px;
 		line-height: 28px;
@@ -285,6 +308,10 @@
 
 	.container{
 		max-width: 1322px;
+	}
+
+	.container--short{
+		max-width: 760px;
 	}
 }
 
