@@ -194,7 +194,19 @@ body
 	background: #f1f1f1
 	svg
 		display: inline
-
+.container--small
+	max-width: 760px!important
+.section-back
+	background-repeat: no-repeat
+	background-position: top center
+	background-size: 100% 28vw
+	min-height: 500px
+	padding: 50px 0px 100px 0px
+.block-border__top
+	border-top: 1px solid #ccc
+.block__wrap
+	display: flex
+	margin-bottom: 20px
 
 /***************************************************Header************************************/
 .probate-header
@@ -648,7 +660,7 @@ body
 	display: flex
 	justify-content: space-between
 	border-bottom: 1px solid rgba(27,57,103,0.03)
-	padding: 22px 20px 0px 20px
+	padding: 0px 20px 0px 20px
 	&--completed
 		.phase-breadcrumbs__status p
 			color: $green
@@ -710,7 +722,7 @@ body
 			&:hover
 				color: $blue
 	&__name
-		margin-left: 35px
+		padding: 0px 5px 0px 35px
 		span
 			font-family: $crimson
 			font-weight: 400
@@ -908,7 +920,7 @@ body
 
 /***********************************************Text-Block*******************************************/
 .text-block
-	padding-bottom: 20px
+	margin-bottom: 30px
 	p,
 	span
 		font-family: $crimson
@@ -918,11 +930,15 @@ body
 		color: $text
 	p
 		margin-bottom: 22px
-	p:last-child
-		margin-bottom: 0px
 
 /***********************************************Lists*******************************************/
 .list-gen
+	span
+		font-family: $crimson
+		font-weight: 500
+		font-size: 22px
+		line-height: 28px
+		color: $text
 	li
 		font-family: $crimson
 		font-weight: 400
@@ -951,6 +967,21 @@ body
 					&:before
 						content: counter(number, decimal) " - " counter(letter, lower-alpha) " "
 						counter-increment: letter
+	&--alpha
+		margin-bottom: 30px
+		ol
+			counter-reset: number
+			padding-left: 30px
+			li
+				padding-left: 20px
+				margin-bottom: 10px
+				&:before
+					content: counter(number, lower-alpha) ". "
+					counter-increment: number
+					display: inline-block
+					position: absolute
+					left: 0px
+					top: 0px
 	&--unsorted
 		li
 			&:before
@@ -1058,6 +1089,7 @@ body
 
 /**************************************************File************************************/
 .file-block
+	margin-bottom: 30px
 	&__header
 		span
 			font-family: $crimson
@@ -1080,6 +1112,7 @@ body
 
 /**************************************************Widget-Steps************************************/
 .widget-steps
+	border-radius: 5px
 	&__wrap
 		padding: 20px 20px 0px 20px
 	&__nav
@@ -1093,9 +1126,6 @@ body
 			background: $ccc
 			&--green
 				background: $green-d
-.completed-steps
-	padding: 15px 0px 20px 0px
-
 
 /**************************************************Widget-Completed*********************************/
 .completed-steps
@@ -1112,10 +1142,10 @@ body
 			display: block
 			width: 30px 
 			height: 30px
-			border: 1px solid $text
+			border: 2px solid $ccc
 			border-radius: 50%
 			text-align: center
-			line-height: 28px
+			line-height: 26px
 		&--green
 			span
 				border: 2px solid $green
@@ -1132,17 +1162,25 @@ body
 		display: flex
 		align-items: center
 		justify-content: space-between
-		padding: 0px 20px
+		padding: 20px 0px
 		.italic-style
 			span
 				font-family: $crimson
 				font-weight: 400
 				font-size: 18px
 				color: $ccc
+		&--top
+			padding: 0px 40px 0px 75px
+			margin: 20px 0px
+	&--complete
+		span,
+		p
+			color: $green
+			border-color: $green!important
 
 /**************************************************Phase-Block-Header*********************************/
 .phase-block__header
-	margin-bottom: 40px
+	margin-bottom: 30px
 	h3
 		font-family: $crimson
 		font-weight: 400
@@ -1156,9 +1194,10 @@ body
 .steps-main
 	display: flex
 	&__left
-		flex: 0 0 100px
-		max-width: 100px
+		flex: 0 0 40px
+		max-width: 40px
 		position: relative
+		margin-right: 35px
 		.gen-icon
 			position: absolute
 			top: 14px
@@ -1182,19 +1221,55 @@ body
 	&__right
 		flex-grow: 1
 		margin-bottom: 20px
-		border-radius: 6px
+		border-radius: 6px	
+	&--active	
+		.steps-main__right
+			border-left: 6px solid $blue
+	.btn-fill
+		text-align: right
+	&__bottom
+		margin: 20px 0px
+		padding: 0px 20px
+	&__bottom.block-border__top
+			padding: 20px 20px 
+			margin: 0px
+	&--first
+		.steps-main__left
+			hr
+				height: 90%
+				bottom: 0px
+				top: 10%
+	&--last
+		.gen-icon
+			&:after
+				border-color: $ccc
+	&--congrats
 		.steps-block
-			padding: 25px 20px 0px 20px	
-	&--substeps
-		.steps-block
-			padding-bottom: 20px		
-
+			background: $green
+			text-align: center
+			padding-bottom: 5px
+			span
+				display: block
+				font-family: $crimson
+				font-weight: 400
+				font-size: 26px
+				color: $white
+				margin: 30px 0px
+			p
+				font-family: $crimson
+				font-weight: 400
+				font-size: 22px
+				line-height: 28px
+				color: $white
+				margin-bottom: 20px
+.steps-block
+	padding: 25px 20px 0px 20px	
 
 /***********************************************Text-Block With Icon****************************************/
 .steps-block-icon
 	display: flex
-	padding: 20px 0px
 	border-bottom: 1px solid $ccc
+	padding: 20px 0px
 	&:last-child
 		border-bottom: none
 	.gen-icon
@@ -1202,6 +1277,7 @@ body
 	.text-block
 		margin-left: 30px
 		padding-bottom: 0px
+		margin-bottom: 0px
 		p
 			margin-bottom: 0px
 
@@ -1211,22 +1287,30 @@ body
 	justify-content: space-between
 	border-radius: 6px
 	align-items: center
-	height: 43px	
+	min-height: 43px	
 	.steps-block-icon
 		align-items: center
-		border-bottom: none	
+		border-bottom: none
+		padding-right: 20px
 	&--big
 		border-radius: 6px
 		.phase-complete
-			margin-bottom: 30px
+			margin-bottom: 10px
+	.text-block
+		margin-bottom: 0px
 .phase-complete__wrap
-	padding: 20px
+	padding: 0px 20px
 	border-radius: 6px
+	margin-bottom: 20px
+	&--inner
+		opacity: 0.5
+	&--main
+		margin-bottom: 40px
 
 /***********************************************Block-Special****************************************/
 .block-special
 	background: #1B3967
-	padding: 20px
+	border-radius: 6px
 	h3
 		color: $white
 	.text-block
@@ -1234,8 +1318,7 @@ body
 		p
 			color: $gold
 	.btn-fill
-		display: flex
-		justify-content: flex-end
+		text-align: right
 
 /***********************************************Sub-Steps-Blue****************************************/
 .steps-main__right.block-blue
@@ -1244,16 +1327,22 @@ body
 /***********************************************Sub Steps Locked*********************************/
 .sub-steps-locked
 	border-radius: 6px
-	padding: 20px
+	padding: 20px 20px 0px 20px
+	margin-bottom: 30px
 	&__header
 		display: flex
 		.phase-block__header
 			margin-left: 20px
+			h3
+				margin-bottom: 0px
 	.gen-icon
 		position: relative!important
 		text-align: center
 		line-height: 30px
 		background: #f9f9f9
+	.steps-main__bottom
+		padding-left: 0px
+		padding-right: 0px
 
 
 /**************************************************Footer--Single*********************************/	
@@ -1262,6 +1351,31 @@ body
 		display: flex
 		justify-content: space-between
 		align-items: center
+
+
+/**************************************************Phase-Page*********************************/
+.phase-main	
+	&__top
+		padding: 44px 64px 0px 75px
+	&__stages
+		width: 92%
+		.phase-complete__wrap
+			margin-left: 75px
+
+
+/**************************************************Dashboard-Page*********************************/	
+.dashboard
+	&__main
+		padding: 44px 0px
+	&__header
+		margin-bottom: 50px
+		h1
+			font-family: $crimson
+			font-size: 18px
+			color: #101E3D
+			text-align: center
+			margin-bottom: 0px
+
 
 /***********************************************ButtonMobile****************************************/
 
