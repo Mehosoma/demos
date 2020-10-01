@@ -793,6 +793,11 @@ body
 			background: $green-d
 			&:hover
 				background: $green
+	&--green-l
+		a
+			background: $green
+			&:hover
+				background: $green-d
 	&--locked
 		a
 			background: transparent
@@ -1137,12 +1142,12 @@ body
 		font-size: 16px
 		color: $text
 		margin-bottom: 0px
-	.completed-steps__circle
+	&__circle
 		span
 			display: block
 			width: 30px 
 			height: 30px
-			border: 2px solid $ccc
+			border: 2px solid $text
 			border-radius: 50%
 			text-align: center
 			line-height: 26px
@@ -1150,6 +1155,15 @@ body
 			span
 				border: 2px solid $green
 				line-height: 26px
+		&--fill
+			span
+				border: 2px solid $ccc
+				background: $ccc
+			&--green
+				span
+					border: 2px solid $green
+					background: $green
+					color: $white
 	p
 		margin: 0px 5px
 	&__start
@@ -1177,6 +1191,7 @@ body
 		p
 			color: $green
 			border-color: $green!important
+	
 
 /**************************************************Phase-Block-Header*********************************/
 .phase-block__header
@@ -1243,6 +1258,9 @@ body
 		.gen-icon
 			&:after
 				border-color: $ccc
+		hr
+			height: 30px
+			margin-top: 0px
 	&--congrats
 		.steps-block
 			background: $green
@@ -1375,7 +1393,39 @@ body
 			color: #101E3D
 			text-align: center
 			margin-bottom: 0px
-
+	&__next
+		max-width: 577px
+		margin: 0 auto
+		padding-bottom: 40px
+		border-bottom: 1px solid $ccc
+	&__subheader
+		margin-bottom: 20px
+		span
+			font-family: $crimson
+			font-size: 18px
+			font-weight: 600
+			color: $h3
+		&--green
+			span
+				color: $green
+	&__progress
+		margin-top: 60px
+		width: 90%
+		.steps-main__right
+			margin-bottom: 40px
+		.dashboard__subheader
+			margin-left: 75px
+		&-subheader
+			padding-top: 20px
+			span
+				font-family: $crimson
+				font-size: 18px
+				font-weight: 600
+				color: $h3
+				opacity: 0.20
+	&__complete
+		max-width: 577px
+		margin: 0 auto
 
 /***********************************************ButtonMobile****************************************/
 

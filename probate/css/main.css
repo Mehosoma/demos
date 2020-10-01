@@ -1136,6 +1136,14 @@ body hr {
   background: #20977E;
 }
 
+.btn-fill--green-l a {
+  background: #20977E;
+}
+
+.btn-fill--green-l a:hover {
+  background: #1B6267;
+}
+
 .btn-fill--locked a {
   background: transparent;
   color: #545C6B;
@@ -1610,19 +1618,30 @@ body hr {
   margin-bottom: 0px;
 }
 
-.completed-steps .completed-steps__circle span {
+.completed-steps__circle span {
   display: block;
   width: 30px;
   height: 30px;
-  border: 2px solid #cccccc;
+  border: 2px solid #545C6B;
   border-radius: 50%;
   text-align: center;
   line-height: 26px;
 }
 
-.completed-steps .completed-steps__circle--green span {
+.completed-steps__circle--green span {
   border: 2px solid #20977E;
   line-height: 26px;
+}
+
+.completed-steps__circle--fill span {
+  border: 2px solid #cccccc;
+  background: #cccccc;
+}
+
+.completed-steps__circle--fill--green span {
+  border: 2px solid #20977E;
+  background: #20977E;
+  color: #ffffff;
 }
 
 .completed-steps p {
@@ -1768,6 +1787,11 @@ body hr {
 
 .steps-main--last .gen-icon:after {
   border-color: #cccccc;
+}
+
+.steps-main--last hr {
+  height: 30px;
+  margin-top: 0px;
 }
 
 .steps-main--congrats .steps-block {
@@ -1974,6 +1998,58 @@ body hr {
   color: #101E3D;
   text-align: center;
   margin-bottom: 0px;
+}
+
+.dashboard__next {
+  max-width: 577px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #cccccc;
+}
+
+.dashboard__subheader {
+  margin-bottom: 20px;
+}
+
+.dashboard__subheader span {
+  font-family: "Crimson Pro", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #1B3967;
+}
+
+.dashboard__subheader--green span {
+  color: #20977E;
+}
+
+.dashboard__progress {
+  margin-top: 60px;
+  width: 90%;
+}
+
+.dashboard__progress .steps-main__right {
+  margin-bottom: 40px;
+}
+
+.dashboard__progress .dashboard__subheader {
+  margin-left: 75px;
+}
+
+.dashboard__progress-subheader {
+  padding-top: 20px;
+}
+
+.dashboard__progress-subheader span {
+  font-family: "Crimson Pro", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #1B3967;
+  opacity: 0.20;
+}
+
+.dashboard__complete {
+  max-width: 577px;
+  margin: 0 auto;
 }
 
 /***********************************************ButtonMobile****************************************/
