@@ -1839,9 +1839,10 @@ body hr {
 }
 
 .steps-main--first .steps-main__left hr {
-  height: 90%;
   bottom: 0px;
-  top: 10%;
+  top: 20px;
+  margin: 0px auto;
+  height: calc(100% - 20px);
 }
 
 .steps-main--last .gen-icon:after {
