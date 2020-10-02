@@ -164,14 +164,24 @@ body
 		background: #F1F1F1
 .block-white
 	background: $white
+	border-radius: 6px
 .block-blue
 	background: $blue
+	padding: 20px
+	border-radius: 6px
+	margin-bottom: 30px
+.block-locked
+	margin-bottom: 30px
+	border-radius: 6px
 .border-block
 	border: 1px solid $ccc
 .italic-style
 	p,
 	a,
-	span
+	span,
+	h1,
+	h2,
+	h3
 		font-style: italic
 .line-through-style,
 .text-block.line-through-style
@@ -206,7 +216,8 @@ body
 	border-top: 1px solid #ccc
 .block__wrap
 	display: flex
-	margin-bottom: 20px
+	margin-bottom: 30px
+	border-radius: 6px
 
 /***************************************************Header************************************/
 .probate-header
@@ -729,7 +740,11 @@ body
 			font-size: 18px
 			color: $ccc
 			font-style: italic
-
+	&--withoutstatus
+		padding: 40px 75px 0px 75px
+		border-bottom: none
+		.phase-breadcrumbs__main
+			min-height: 20px
 
 /***************************************************Components Phase Buttons************************************/
 .btn-fill
@@ -788,6 +803,9 @@ body
 	&--wide
 		a
 			padding: 0px 40px
+	&--max
+		a
+			padding: 0px 60px
 	&--green
 		a
 			background: $green-d
@@ -904,24 +922,28 @@ body
 
 /***********************************************Headers*******************************************/
 .phase-header
+	margin-bottom: 26px
 	h1
 		font-family: $crimson
 		font-weight: 600
 		font-size: 35px
-		color: $back
-		margin-bottom: 26px
+		color: $back		
 	h2
 		font-family: $crimson
 		font-weight: 400
 		font-size: 28px
 		color: $back
-		margin-bottom: 26px
 	h3
 		font-family: $crimson
 		font-weight: 700
 		font-size: 25px
 		color: $h3
-		margin-bottom: 26px
+	h4
+		font-family: $crimson
+		font-weight: 500
+		font-size: 22px
+		color: $text
+
 
 /***********************************************Text-Block*******************************************/
 .text-block
@@ -935,9 +957,14 @@ body
 		color: $text
 	p
 		margin-bottom: 22px
+	&--big
+		p
+			font-size: 25px
+			line-height: 36px
 
 /***********************************************Lists*******************************************/
 .list-gen
+	margin-bottom: 30px
 	span
 		font-family: $crimson
 		font-weight: 500
@@ -973,7 +1000,6 @@ body
 						content: counter(number, decimal) " - " counter(letter, lower-alpha) " "
 						counter-increment: letter
 	&--alpha
-		margin-bottom: 30px
 		ol
 			counter-reset: number
 			padding-left: 30px
@@ -1013,6 +1039,7 @@ body
 
 /******************************************************Quote************************************/
 .quote-block
+	margin-bottom: 30px
 	blockquote
 		font-family: $crimson
 		font-weight: 400
@@ -1027,7 +1054,7 @@ body
 	display: flex
 	justify-content: space-between
 	padding: 25px 35px 10px 17px
-	max-width: 600px
+	margin-bottom: 30px
 	&__icon
 		flex: 0 0 72px
 		max-width: 72px
@@ -1069,6 +1096,11 @@ body
 	width: 100%
 	padding: 23px 19px
 	border: 1px solid $ccc
+	margin-bottom: 30px
+	border-radius: 6px
+	img
+		width: 100%
+		height: auto
 	&__header
 		border-bottom: 1px solid $ccc
 		margin-bottom: 18px
@@ -1118,6 +1150,7 @@ body
 /**************************************************Widget-Steps************************************/
 .widget-steps
 	border-radius: 5px
+	margin-bottom: 30px
 	&__wrap
 		padding: 20px 20px 0px 20px
 	&__nav
@@ -1204,6 +1237,13 @@ body
 	&--blue
 		h3
 			color: $blue
+.text-blue
+	h1,
+	h2,
+	h3,
+	p,
+	span
+		color: $blue!important
 
 /**************************************************Steps-Main*********************************/
 .steps-main
@@ -1266,6 +1306,7 @@ body
 			background: $green
 			text-align: center
 			padding-bottom: 5px
+			border-radius: 6px 6px 0px 0px
 			span
 				display: block
 				font-family: $crimson
@@ -1319,11 +1360,12 @@ body
 .phase-complete__wrap
 	padding: 0px 20px
 	border-radius: 6px
-	margin-bottom: 20px
+	margin-bottom: 30px
 	&--inner
 		opacity: 0.5
 	&--main
 		margin-bottom: 40px
+		margin-left: 75px
 
 /***********************************************Block-Special****************************************/
 .block-special
@@ -1369,6 +1411,7 @@ body
 		display: flex
 		justify-content: space-between
 		align-items: center
+		padding: 20px 0px
 
 
 /**************************************************Phase-Page*********************************/
@@ -1377,8 +1420,8 @@ body
 		padding: 44px 64px 0px 75px
 	&__stages
 		width: 92%
-		.phase-complete__wrap
-			margin-left: 75px
+		
+			
 
 
 /**************************************************Dashboard-Page*********************************/	
@@ -1416,7 +1459,7 @@ body
 		.dashboard__subheader
 			margin-left: 75px
 		&-subheader
-			padding-top: 20px
+			margin-bottom: 20px
 			span
 				font-family: $crimson
 				font-size: 18px
@@ -1426,6 +1469,39 @@ body
 	&__complete
 		max-width: 577px
 		margin: 0 auto
+		padding-top: 20px
+
+
+/***************************************************Section-Intro************************************/
+.section-intro
+	padding-top: 160px
+	&__header
+		margin-bottom: 60px
+		h1
+			font-family: $crimson
+			font-weight: 400
+			font-size: 35px
+			color: $back
+	&__wrap
+		padding: 60px 80px	
+	&__main
+		padding-top: 40px
+		.btn-fill
+			text-align: right
+			width: 100%
+
+
+/***************************************************Block-Small************************************/
+.block__small
+	border-radius: 6px
+	padding: 20px 20px 0px 20px
+	.phase-header
+		margin-bottom: 10px
+	.text-block
+		p
+			font-size: 18px
+			line-height: 25px
+
 
 /***********************************************ButtonMobile****************************************/
 

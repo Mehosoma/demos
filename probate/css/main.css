@@ -183,10 +183,19 @@ body hr {
 
 .block-white {
   background: #ffffff;
+  border-radius: 6px;
 }
 
 .block-blue {
   background: #2788D2;
+  padding: 20px;
+  border-radius: 6px;
+  margin-bottom: 30px;
+}
+
+.block-locked {
+  margin-bottom: 30px;
+  border-radius: 6px;
 }
 
 .border-block {
@@ -195,7 +204,10 @@ body hr {
 
 .italic-style p,
 .italic-style a,
-.italic-style span {
+.italic-style span,
+.italic-style h1,
+.italic-style h2,
+.italic-style h3 {
   font-style: italic;
 }
 
@@ -251,7 +263,8 @@ body hr {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  border-radius: 6px;
 }
 
 /***************************************************Header************************************/
@@ -1057,6 +1070,15 @@ body hr {
   font-style: italic;
 }
 
+.phase-breadcrumbs--withoutstatus {
+  padding: 40px 75px 0px 75px;
+  border-bottom: none;
+}
+
+.phase-breadcrumbs--withoutstatus .phase-breadcrumbs__main {
+  min-height: 20px;
+}
+
 /***************************************************Components Phase Buttons************************************/
 .btn-fill a {
   font-family: "Crimson Pro", sans-serif;
@@ -1126,6 +1148,10 @@ body hr {
 
 .btn-fill--wide a {
   padding: 0px 40px;
+}
+
+.btn-fill--max a {
+  padding: 0px 60px;
 }
 
 .btn-fill--green a {
@@ -1279,12 +1305,15 @@ body hr {
 }
 
 /***********************************************Headers*******************************************/
+.phase-header {
+  margin-bottom: 26px;
+}
+
 .phase-header h1 {
   font-family: "Crimson Pro", sans-serif;
   font-weight: 600;
   font-size: 35px;
   color: #1C263D;
-  margin-bottom: 26px;
 }
 
 .phase-header h2 {
@@ -1292,7 +1321,6 @@ body hr {
   font-weight: 400;
   font-size: 28px;
   color: #1C263D;
-  margin-bottom: 26px;
 }
 
 .phase-header h3 {
@@ -1300,7 +1328,13 @@ body hr {
   font-weight: 700;
   font-size: 25px;
   color: #1B3967;
-  margin-bottom: 26px;
+}
+
+.phase-header h4 {
+  font-family: "Crimson Pro", sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  color: #545C6B;
 }
 
 /***********************************************Text-Block*******************************************/
@@ -1321,7 +1355,16 @@ body hr {
   margin-bottom: 22px;
 }
 
+.text-block--big p {
+  font-size: 25px;
+  line-height: 36px;
+}
+
 /***********************************************Lists*******************************************/
+.list-gen {
+  margin-bottom: 30px;
+}
+
 .list-gen span {
   font-family: "Crimson Pro", sans-serif;
   font-weight: 500;
@@ -1368,10 +1411,6 @@ body hr {
   counter-increment: letter;
 }
 
-.list-gen--alpha {
-  margin-bottom: 30px;
-}
-
 .list-gen--alpha ol {
   counter-reset: number;
   padding-left: 30px;
@@ -1415,6 +1454,10 @@ body hr {
 }
 
 /******************************************************Quote************************************/
+.quote-block {
+  margin-bottom: 30px;
+}
+
 .quote-block blockquote {
   font-family: "Crimson Pro", sans-serif;
   font-weight: 400;
@@ -1433,7 +1476,7 @@ body hr {
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 25px 35px 10px 17px;
-  max-width: 600px;
+  margin-bottom: 30px;
 }
 
 .gen-widget__icon {
@@ -1504,6 +1547,13 @@ body hr {
   width: 100%;
   padding: 23px 19px;
   border: 1px solid #cccccc;
+  margin-bottom: 30px;
+  border-radius: 6px;
+}
+
+.widget-image img {
+  width: 100%;
+  height: auto;
 }
 
 .widget-image__header {
@@ -1573,6 +1623,7 @@ body hr {
 /**************************************************Widget-Steps************************************/
 .widget-steps {
   border-radius: 5px;
+  margin-bottom: 30px;
 }
 
 .widget-steps__wrap {
@@ -1713,6 +1764,14 @@ body hr {
   color: #2788D2;
 }
 
+.text-blue h1,
+.text-blue h2,
+.text-blue h3,
+.text-blue p,
+.text-blue span {
+  color: #2788D2 !important;
+}
+
 /**************************************************Steps-Main*********************************/
 .steps-main {
   display: -webkit-box;
@@ -1798,6 +1857,7 @@ body hr {
   background: #20977E;
   text-align: center;
   padding-bottom: 5px;
+  border-radius: 6px 6px 0px 0px;
 }
 
 .steps-main--congrats .steps-block span {
@@ -1889,7 +1949,7 @@ body hr {
 .phase-complete__wrap {
   padding: 0px 20px;
   border-radius: 6px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .phase-complete__wrap--inner {
@@ -1898,6 +1958,7 @@ body hr {
 
 .phase-complete__wrap--main {
   margin-bottom: 40px;
+  margin-left: 75px;
 }
 
 /***********************************************Block-Special****************************************/
@@ -1968,6 +2029,7 @@ body hr {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 20px 0px;
 }
 
 /**************************************************Phase-Page*********************************/
@@ -1977,10 +2039,6 @@ body hr {
 
 .phase-main__stages {
   width: 92%;
-}
-
-.phase-main__stages .phase-complete__wrap {
-  margin-left: 75px;
 }
 
 /**************************************************Dashboard-Page*********************************/
@@ -2036,7 +2094,7 @@ body hr {
 }
 
 .dashboard__progress-subheader {
-  padding-top: 20px;
+  margin-bottom: 20px;
 }
 
 .dashboard__progress-subheader span {
@@ -2050,6 +2108,51 @@ body hr {
 .dashboard__complete {
   max-width: 577px;
   margin: 0 auto;
+  padding-top: 20px;
+}
+
+/***************************************************Section-Intro************************************/
+.section-intro {
+  padding-top: 160px;
+}
+
+.section-intro__header {
+  margin-bottom: 60px;
+}
+
+.section-intro__header h1 {
+  font-family: "Crimson Pro", sans-serif;
+  font-weight: 400;
+  font-size: 35px;
+  color: #1C263D;
+}
+
+.section-intro__wrap {
+  padding: 60px 80px;
+}
+
+.section-intro__main {
+  padding-top: 40px;
+}
+
+.section-intro__main .btn-fill {
+  text-align: right;
+  width: 100%;
+}
+
+/***************************************************Block-Small************************************/
+.block__small {
+  border-radius: 6px;
+  padding: 20px 20px 0px 20px;
+}
+
+.block__small .phase-header {
+  margin-bottom: 10px;
+}
+
+.block__small .text-block p {
+  font-size: 18px;
+  line-height: 25px;
 }
 
 /***********************************************ButtonMobile****************************************/
