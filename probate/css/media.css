@@ -182,6 +182,196 @@
 		line-height: 8vw;
 	}
 
+	.phase-breadcrumbs__number a, .phase-breadcrumbs__status{
+		display: none;
+	}
+
+	.phase-breadcrumbs__number{
+		background: #fff;
+		width: 40px;
+		height: 40px;
+	}
+
+	.phase-breadcrumbs__number:after{
+		top: 0px;
+		bottom: 0px;
+		margin: auto;
+		-webkit-transform: rotate(135deg);
+	    -ms-transform: rotate(135deg);
+	    transform: rotate(135deg);
+	    right: 10px;
+	}
+
+	.phase-main__top{
+		padding: 44px 20px 0px 20px;
+	}
+
+	.phase-header h1{
+		font-size: 25px;
+		line-height: 35px;
+	}
+
+	.text-block p{
+		font-size: 16px;
+		line-height: 22px;
+	}
+
+	.completed-steps__both--top{
+		padding: 0px 20px;
+	}
+
+	.steps-main__left{
+		display: none;
+	}
+
+	.phase-main__stages{
+		width: 100%;
+	}
+
+	.phase-block__header h3{
+		font-size: 20px;
+		line-height: 26px;
+	}
+
+	.list-gen span{
+		font-size: 20px;
+	}
+
+	.list-gen li{
+		font-size: 18px;
+		line-height: 22px;
+	}
+
+	.steps-main__right{
+		width: 100%;
+		max-width: 100%;
+	}
+
+	.section-back{
+		padding-bottom: 50px;
+	}
+
+	.phase-complete__wrap--main{
+		margin-left: 0px;
+	}
+
+	.steps-block-icon{
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.steps-block-icon, .phase-complete{
+		flex: 0 0 100%;
+		max-width: 100%;
+		flex-wrap: wrap;
+	}
+
+	.phase-complete .steps-block-icon{
+		padding-right: 0px;
+	}
+
+	.phase-complete .text-block{
+		margin-left: 0px;
+		margin-top: 10px;
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+
+	.phase-complete{
+		padding-bottom: 20px;
+	}
+
+	.steps-main--congrats .steps-block span {
+		font-size: 24px;
+	}
+
+	.steps-main--congrats .steps-block p{
+		font-size: 20px;
+		line-height: 26px;
+	}
+
+	.completed-steps__both{
+		flex-wrap: wrap;
+	}
+
+    .btn-fill, .steps-main .btn-fill{
+		margin-top: 20px;
+		flex: 0 0 100%;
+		max-width: 100%;
+		text-align: center;
+	}
+
+	.phase-breadcrumbs--withoutstatus{
+		padding: 40px 20px 0px 20px;
+	}
+
+	.widget-steps__wrap{
+		padding: 10px;
+	}
+
+	.widget-steps__wrap .steps-block-icon{
+		flex-wrap: nowrap;
+	}
+
+	.phase-header h2{
+		font-size: 22px;
+	}
+
+	.gen-widget{
+		flex-wrap: wrap;
+	}
+
+	.gen-widget__icon{
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+
+	.sub-steps-locked__header{
+		flex-wrap: wrap;
+	}
+
+	.sub-steps-locked__header .phase-block__header{
+		margin-left: 0px;
+		margin-top: 20px;
+	}
+
+	.block-blue{
+		padding: 10px;
+	}
+
+	.dashboard__progress{
+		width: 100%;
+	}
+
+	.section-intro__wrap{
+		padding: 40px 20px;
+	}
+
+	.section-intro{
+		padding-top: 20px;
+	}
+
+	.section-intro__main .btn-fill{
+		text-align: center;
+	}
+
+	.steps-block{
+		padding: 20px 10px 0px 10px;
+	}
+
+	.btn-fill--margin a{
+		margin-right: 0px;
+	}
+
+	.dashboard__subheader, .dashboard__progress .dashboard__subheader{
+		margin-left: 20px;
+	}
+
+	.section-intro__header h1{
+		font-size: 25px;
+	}
+
+
 }
 
 @media only screen and (min-width : 576px) and (max-width : 767px) {
@@ -199,6 +389,181 @@
 		width: 50px;
 		height: 50px;
 	}
+
+	.phase-breadcrumbs__status{
+		display: block;
+	}
+
+	.phase-main__top{
+		padding: 44px 40px 0px 40px;
+	}
+
+	.phase-header h1{
+		font-size: 30px;
+		line-height: 38px;
+	}
+
+	.text-block p{
+		font-size: 20px;
+		line-height: 26px;
+	}
+
+	.completed-steps__both--top{
+		padding: 0px 20px;
+	}
+
+	.steps-main__left{
+		display: block;
+	}
+
+	.phase-main__stages{
+		width: 100%;
+	}
+
+	.phase-block__header h3, .phase-header h3{
+		font-size: 22px;
+		line-height: 26px;
+	}
+
+	.list-gen span{
+		font-size: 20px;
+	}
+
+	.list-gen li{
+		font-size: 20px;
+		line-height: 24px;
+	}
+
+	.steps-main__right{
+		width: 100%;
+		max-width: 100%;
+	}
+
+	.section-back{
+		padding-bottom: 50px;
+	}
+
+	.phase-complete__wrap--main{
+		margin-left: 0px;
+	}
+
+	.steps-block-icon{
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.steps-block-icon, .phase-complete{
+		flex: 0 0 100%;
+		max-width: 100%;
+		flex-wrap: wrap;
+	}
+
+	.phase-complete .steps-block-icon{
+		padding-right: 0px;
+	}
+
+	.phase-complete .text-block{
+		margin-left: 30px;
+		margin-top: 0px;
+		flex: 0 0 80%;
+		max-width: 80%;
+	}
+
+	.phase-complete{
+		padding-bottom: 20px;
+	}
+
+	.steps-main--congrats .steps-block span {
+		font-size: 24px;
+	}
+
+	.steps-main--congrats .steps-block p{
+		font-size: 20px;
+		line-height: 26px;
+	}
+
+	.completed-steps__both{
+		flex-wrap: wrap;
+	}
+
+    .btn-fill, .steps-main .btn-fill{
+		margin-top: 20px;
+		flex: 0 0 100%;
+		max-width: 100%;
+		text-align: center;
+	}
+
+	.phase-breadcrumbs--withoutstatus{
+		padding: 40px 20px 0px 20px;
+	}
+
+	.widget-steps__wrap{
+		padding: 10px;
+	}
+
+	.widget-steps__wrap .steps-block-icon{
+		flex-wrap: nowrap;
+	}
+
+	.phase-header h2{
+		font-size: 24px;
+	}
+
+	.gen-widget{
+		flex-wrap: nowrap;
+	}
+
+	.gen-widget__icon{
+		flex: 0 0 72px;
+		max-width: 72px;
+	}
+
+	.sub-steps-locked__header{
+		flex-wrap: wrap;
+	}
+
+	.sub-steps-locked__header .phase-block__header{
+		margin-left: 0px;
+		margin-top: 20px;
+	}
+
+	.block-blue{
+		padding: 10px;
+	}
+
+	.dashboard__progress{
+		width: 90%;
+		margin: 60px auto 0px;
+	}
+
+	.section-intro__wrap{
+		padding: 40px 20px;
+	}
+
+	.section-intro{
+		padding-top: 20px;
+	}
+
+	.section-intro__main .btn-fill{
+		text-align: center;
+	}
+
+	.steps-block{
+		padding: 20px 10px 0px 10px;
+	}
+
+	.btn-fill--margin a{
+		margin-right: 0px;
+	}
+
+	.dashboard__subheader, .dashboard__progress .dashboard__subheader{
+		margin-left: 20px;
+	}
+
+	.dashboard__next, .dashboard__complete{
+		max-width: 90%;
+	}
+
 }
 
 @media only screen and (min-width : 768px) and (max-width : 991px) {

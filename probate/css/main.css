@@ -1151,7 +1151,13 @@ body hr {
 }
 
 .btn-fill--max a {
-  padding: 0px 60px;
+  height: 60px;
+  line-height: 60px;
+  padding: 0px 90px;
+}
+
+.btn-fill--margin a {
+  margin-right: -60px;
 }
 
 .btn-fill--green a {
@@ -1360,6 +1366,11 @@ body hr {
   line-height: 36px;
 }
 
+.text-block--35 p {
+  font-size: 35px;
+  line-height: 46px;
+}
+
 /***********************************************Lists*******************************************/
 .list-gen {
   margin-bottom: 30px;
@@ -1382,6 +1393,17 @@ body hr {
   padding-left: 40px;
   position: relative;
   margin-bottom: 21px;
+}
+
+.list-gen--numbers span {
+  display: block;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  font-family: "Crimson Pro", sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 36px;
+  color: #1C263D;
 }
 
 .list-gen--numbers ol {
@@ -1472,11 +1494,11 @@ body hr {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   padding: 25px 35px 10px 17px;
   margin-bottom: 30px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .gen-widget__icon {
@@ -1484,7 +1506,7 @@ body hr {
   -ms-flex: 0 0 72px;
   flex: 0 0 72px;
   max-width: 72px;
-  padding-top: 4px;
+  margin-bottom: 15px;
 }
 
 .gen-widget__icon svg {
@@ -1499,6 +1521,7 @@ body hr {
   font-size: 18px;
   line-height: 28px;
   color: #545C6B;
+  margin-bottom: 15px;
 }
 
 .gen-widget__text a {
@@ -1562,7 +1585,6 @@ body hr {
 }
 
 .widget-image__header span {
-  line-height: 0px;
   padding-bottom: 23px;
   display: block;
   font-family: "Crimson Pro", sans-serif;
@@ -1642,9 +1664,9 @@ body hr {
 
 .widget-steps__nav-block {
   -webkit-box-flex: 0;
-  -ms-flex: 0 0 33%;
-  flex: 0 0 33%;
-  max-width: 33%;
+  -ms-flex: 0 0 32%;
+  flex: 0 0 32%;
+  max-width: 32%;
   height: 10px;
   background: #cccccc;
 }
@@ -2012,6 +2034,9 @@ body hr {
   text-align: center;
   line-height: 30px;
   background: #f9f9f9;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
 }
 
 .sub-steps-locked .steps-main__bottom {
@@ -2034,6 +2059,10 @@ body hr {
 }
 
 /**************************************************Phase-Page*********************************/
+.phase-main {
+  overflow: hidden;
+}
+
 .phase-main__top {
   padding: 44px 64px 0px 75px;
 }
@@ -2112,9 +2141,14 @@ body hr {
   padding-top: 20px;
 }
 
+.dashboard__complete .phase-complete__wrap--main {
+  margin-left: 0px;
+}
+
 /***************************************************Section-Intro************************************/
 .section-intro {
   padding-top: 160px;
+  overflow: hidden;
 }
 
 .section-intro__header {

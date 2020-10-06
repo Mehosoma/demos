@@ -151,6 +151,7 @@ body
 	&--22
 		p
 			font-size: 22px
+
 	&--medium
 		p
 			font-weight: 500
@@ -805,7 +806,12 @@ body
 			padding: 0px 40px
 	&--max
 		a
-			padding: 0px 60px
+			height: 60px
+			line-height: 60px
+			padding: 0px 90px
+	&--margin
+		a
+			margin-right: -60px
 	&--green
 		a
 			background: $green-d
@@ -961,6 +967,10 @@ body
 		p
 			font-size: 25px
 			line-height: 36px
+	&--35
+		p
+			font-size: 35px
+			line-height: 46px
 
 /***********************************************Lists*******************************************/
 .list-gen
@@ -981,6 +991,15 @@ body
 		position: relative
 		margin-bottom: 21px
 	&--numbers
+		span
+			display: block
+			margin-top: 50px
+			margin-bottom: 30px
+			font-family: $crimson
+			font-weight: 500
+			font-size: 25px
+			line-height: 36px
+			color: $footer
 		ol
 			counter-reset: number
 			li
@@ -1052,13 +1071,13 @@ body
 /**************************************************Widgets************************************/
 .gen-widget
 	display: flex
-	justify-content: space-between
 	padding: 25px 35px 10px 17px
 	margin-bottom: 30px
+	align-items: center
 	&__icon
 		flex: 0 0 72px
 		max-width: 72px
-		padding-top: 4px
+		margin-bottom: 15px
 		svg
 			flex-grow: 0
 	&__text
@@ -1068,6 +1087,7 @@ body
 			font-size: 18px
 			line-height: 28px
 			color: $text
+			margin-bottom: 15px
 		a
 			display: inline
 			color: $blue
@@ -1105,7 +1125,6 @@ body
 		border-bottom: 1px solid $ccc
 		margin-bottom: 18px
 		span
-			line-height: 0px
 			padding-bottom: 23px
 			display: block
 			font-family: $crimson
@@ -1158,8 +1177,8 @@ body
 		justify-content: space-between
 		margin-bottom: 15px
 		&-block
-			flex: 0 0 33%
-			max-width: 33%
+			flex: 0 0 32%
+			max-width: 32%
 			height: 10px
 			background: $ccc
 			&--green
@@ -1402,6 +1421,7 @@ body
 		text-align: center
 		line-height: 30px
 		background: #f9f9f9
+		flex: 0 0 auto
 	.steps-main__bottom
 		padding-left: 0px
 		padding-right: 0px
@@ -1417,7 +1437,8 @@ body
 
 
 /**************************************************Phase-Page*********************************/
-.phase-main	
+.phase-main
+	overflow: hidden
 	&__top
 		padding: 44px 64px 0px 75px
 	&__stages
@@ -1472,11 +1493,14 @@ body
 		max-width: 577px
 		margin: 0 auto
 		padding-top: 20px
+		.phase-complete__wrap--main
+			margin-left: 0px
 
 
 /***************************************************Section-Intro************************************/
 .section-intro
 	padding-top: 160px
+	overflow: hidden
 	&__header
 		margin-bottom: 60px
 		h1
