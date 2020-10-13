@@ -2111,6 +2111,7 @@ body hr {
 /**************************************************Phase-Page*********************************/
 .phase-main {
   overflow: hidden;
+  min-height: calc(100vh - 160px);
 }
 
 .phase-main__top {
