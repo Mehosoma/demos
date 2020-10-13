@@ -1,5 +1,26 @@
 @media only screen and (min-width : 0px) and (max-width : 767px) {
 
+	.completed-steps__both--nowrap{
+		flex-wrap: wrap!important;
+		justify-content: center!important;
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+
+	.completed-steps__both--nowrap .btn-fill{
+		flex: 0 0 100%!important;
+		max-width: 100%!important;
+	}
+
+	.completed-steps__both--nowrap .btn-fill:last-child{
+		margin-left: 0px;
+	}
+
+	.completed-steps{
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+
 	.probate-header .container{
 		max-width: 100%;
 	}
@@ -375,6 +396,23 @@
 }
 
 @media only screen and (min-width : 576px) and (max-width : 767px) {
+
+	.completed-steps__both--nowrap{
+		flex-wrap: nowrap!important;
+		justify-content: space-between!important;
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+
+	.completed-steps__both--nowrap .btn-fill{
+		flex: 0 0 auto!important;
+		max-width: 100%!important;
+	}
+
+	.completed-steps{
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
 
 	.main-bottom__text {
 	    flex: 0 0 80%;

@@ -1146,6 +1146,34 @@ body hr {
   transform: rotate(135deg);
 }
 
+.btn-fill--stroke--gold a {
+  border: 1px solid #D9BE79;
+  color: #D9BE79;
+  padding: 0px 40px;
+}
+
+.btn-fill--stroke--gold a:after {
+  display: none;
+}
+
+.btn-fill--stroke--gold a:hover {
+  background: #D9BE79;
+}
+
+.btn-fill--stroke--green a {
+  border: 1px solid #1B6267;
+  color: #1B6267;
+  padding: 0px 40px;
+}
+
+.btn-fill--stroke--green a:after {
+  display: none;
+}
+
+.btn-fill--stroke--green a:hover {
+  background: #1B6267;
+}
+
 .btn-fill--wide a {
   padding: 0px 40px;
 }
@@ -1764,6 +1792,24 @@ body hr {
   margin: 20px 0px;
 }
 
+.completed-steps__both--nowrap {
+  -ms-flex-wrap: nowrap !important;
+  flex-wrap: nowrap !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.completed-steps__both--nowrap .btn-fill {
+  -webkit-box-flex: 0 !important;
+  -ms-flex: 0 0 auto !important;
+  flex: 0 0 auto !important;
+}
+
+.completed-steps__both--nowrap .btn-fill:last-child {
+  margin-left: 20px;
+}
+
 .completed-steps--complete span,
 .completed-steps--complete p {
   color: #20977E;
@@ -1832,6 +1878,10 @@ body hr {
   width: 1px;
   height: 100%;
   background: #cccccc;
+}
+
+.steps-main--special .steps-main__left hr {
+  display: none;
 }
 
 .steps-main__right {
