@@ -725,12 +725,19 @@ body
 			-o-transition: all 0.3s ease-out
 			-webkit-transition: all 0.3s ease-out
 			transition: all 0.3s ease-out
-		a
+		&:hover
+			&:after
+				border-color: $blue
+		span
 			font-family: $crimson
 			font-weight: 400
 			font-size: 18px
 			color: $text
 			font-style: italic
+			-moz-transition: all 0.3s ease-out
+			-o-transition: all 0.3s ease-out
+			-webkit-transition: all 0.3s ease-out
+			transition: all 0.3s ease-out
 			&:hover
 				color: $blue
 	&__name
@@ -1193,15 +1200,19 @@ body
 		padding: 20px 20px 0px 20px
 	&__nav
 		display: flex
-		justify-content: space-between
+		justify-content: flex-start
 		margin-bottom: 15px
 		&-block
-			flex: 0 0 32%
-			max-width: 32%
+			flex: 1 0 auto
+			max-width: 100%
 			height: 10px
 			background: $ccc
+			margin-right: 2%
 			&--green
 				background: $green-d
+			&:last-child
+				margin-right: 0px
+
 
 /**************************************************Widget-Completed*********************************/
 .completed-steps
@@ -1257,6 +1268,10 @@ body
 		&--top
 			padding: 0px 40px 0px 75px
 			margin: 20px 0px
+			flex-wrap: nowrap!important
+			justify-content: space-between
+			.completed-steps
+				flex: 0 0 auto
 		&--nowrap
 			flex-wrap: nowrap!important
 			display: flex
@@ -1383,13 +1398,15 @@ body
 	&:last-child
 		border-bottom: none
 	.gen-icon
-		flex: 0 0 auto
+		flex: 0 0 20%
+		max-width: 40px
 	.text-block
-		margin-left: 30px
+		padding-left: 20px
 		padding-bottom: 0px
 		margin-bottom: 0px
 		p
 			margin-bottom: 0px
+			font-size: 22px
 
 /***********************************************Phase-Complete****************************************/
 .phase-complete
@@ -1442,8 +1459,11 @@ body
 	margin-bottom: 30px
 	&__header
 		display: flex
+		margin-bottom: 30px
+		align-items: center
 		.phase-block__header
 			margin-left: 20px
+			margin-bottom: 0px
 			h3
 				margin-bottom: 0px
 	.gen-icon
