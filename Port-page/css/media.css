@@ -23,10 +23,38 @@
 		padding: 5px 40px;
 	}
 
-	
+	.section__content--top h1{
+		font-size: 46px;
+	}
 
-	
+	.section__content--top img{
+		width: 100%;
+	}
 
+	.section__blog__col{
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+
+	.section__blog__block .block-gradient__overlay__text p{
+		font-size: 12px;
+
+	}
+
+	.section__post__info{
+		flex-wrap: wrap;
+	}
+
+	.section__post__info-block{
+		flex: 0 0 100%;
+		max-width: 100%;
+		margin-bottom: 30px;
+	}
+
+	.section__post__table th, .section__post__table td{
+		font-size: 18px;
+	}
+	
 }
 
 @media only screen and (min-width : 576px) and (max-width : 767px) {
@@ -39,6 +67,26 @@
 
 	.section__portfolio-description{
 		padding: 20px;
+	}
+
+	.section__blog__col{
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+
+	.section__blog__block .block-gradient__overlay__text p{
+		font-size: 14px;
+	
+	}
+
+	.section__post__info{
+		flex-wrap: wrap;
+	}
+
+	.section__post__info-block{
+		flex: 0 0 50%;
+		max-width: 50%;
+		margin-bottom: 30px;
 	}
 
 }
@@ -111,6 +159,64 @@
 		margin-bottom: 20px;
 	}
 
+	
+
+	.section__blog--top-post .section__content--top img{
+		width: auto;
+	}
+
+	.section__post__image{
+		padding: 20px;
+	}
+
+	.section__post__header h2 {
+	    font-size: 30px;
+	    line-height: 40px;
+	    color: #1d1d1d;
+	    font-weight: 600;
+	}
+
+	.section__post__header--special h3{
+		font-size: 30px;
+	    line-height: 40px;
+	}
+
+	.section__post__list--ol ol, .section__post__list--ul ul{
+		padding-left: 0px;
+	}
+
+	.section__post__special{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.section__post__quote blockquote {
+		font-size: 14px;
+		line-height: 20px;
+	}
+
+	.section__post__quote span{
+		font-size: 26px;
+	}
+
+	.section__blog__text p {
+	    font-size: 18px;
+	    line-height: 26px;
+	}
+
+	.section__post__list li {
+	    font-size: 16px;
+	    line-height: 26px;
+	}
+
+	.section__post__table__wrap{
+		overflow: scroll;
+	}
+
+	.section__post__table__icon{
+		display: block;
+	}
+
 }
 
 
@@ -161,6 +267,16 @@
 
 	.section__project-main--second .section__project-main-images img:nth-child(1){
 		width: 90%;
+	}
+
+	.section__post__info{
+		flex-wrap: wrap;
+	}
+
+	.section__post__info-block{
+		flex: 0 0 50%;
+		max-width: 50%;
+		margin-bottom: 30px;
 	}
 
 }
