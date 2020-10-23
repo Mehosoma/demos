@@ -619,6 +619,10 @@ body hr {
   margin-top: 35px;
 }
 
+.section__content--top--mod {
+  background: rgba(44, 228, 155, 0.95);
+}
+
 .section__blog--top {
   width: 100%;
   position: relative;
