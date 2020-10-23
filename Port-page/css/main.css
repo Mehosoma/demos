@@ -418,6 +418,16 @@ body hr {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007773', endColorstr='#005e59',GradientType=1 );
 }
 
+.block-gradient--light-green {
+  background: #92ddbe;
+  background: -moz-radial-gradient(center, ellipse cover, #92ddbe 0%, #2ce49b 100%);
+  background: -webkit-radial-gradient(center, ellipse cover, #92ddbe 0%, #2ce49b 100%);
+  background: -webkit-radial-gradient(center, ellipse, #92ddbe 0%, #2ce49b 100%);
+  background: -o-radial-gradient(center, ellipse, #92ddbe 0%, #2ce49b 100%);
+  background: radial-gradient(ellipse at center, #92ddbe 0%, #2ce49b 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#92ddbe', endColorstr='#2ce49b',GradientType=1 );
+}
+
 /***************************************************Project************************************/
 .section__project-bottom {
   margin-top: 80px;
@@ -599,7 +609,7 @@ body hr {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   padding: 50px 30px;
-  background: rgba(16, 177, 97, 0.95);
+  background: rgba(44, 228, 155, 0.95);
 }
 
 .section__content--top h1 {
@@ -617,10 +627,6 @@ body hr {
   width: 380px;
   max-width: 380px;
   margin-top: 35px;
-}
-
-.section__content--top--mod {
-  background: rgba(44, 228, 155, 0.95);
 }
 
 .section__blog--top {
@@ -740,7 +746,7 @@ body hr {
 }
 
 .section__blog__block:hover .section__blog__header span {
-  color: #005e59;
+  color: #2ce49b;
 }
 
 .section__blog__block:hover .block-gradient__overlay {
@@ -841,7 +847,7 @@ body hr {
 }
 
 .section__post a {
-  color: #2dc1a7;
+  color: #2ce49b;
 }
 
 .section__post a:hover {
@@ -1003,7 +1009,7 @@ body hr {
   position: absolute;
   left: 0px;
   top: 5px;
-  background: #2dc1a7;
+  background: #2ce49b;
   height: 20px;
   width: 20px;
   line-height: 20px;
@@ -1025,7 +1031,7 @@ body hr {
 .section__post__list--ul li:before {
   padding-right: 10px;
   font-weight: bold;
-  color: #2dc1a7;
+  color: #2ce49b;
   content: "\2714";
   -webkit-transition-duration: 0.5s;
   -o-transition-duration: 0.5s;
@@ -1051,7 +1057,7 @@ body hr {
 .section__post__quote {
   margin-bottom: 30px;
   padding: 20px;
-  background: rgba(39, 173, 166, 0.95);
+  background: #2ce49b;
 }
 
 .section__post__quote blockquote {
@@ -1083,25 +1089,25 @@ body hr {
 .section__post__btn a {
   padding: 0px 30px;
   line-height: 38px;
-  background: #2dc1a7;
+  background: #2ce49b;
   color: #fff;
   border-radius: 30px;
-  border: 1px solid #2dc1a7;
+  border: 1px solid #2ce49b;
   display: inline-block;
 }
 
 .section__post__btn a:hover {
   background: transparent;
-  color: #2dc1a7;
+  color: #2ce49b;
 }
 
 .section__post__btn--stroke a {
   background: transparent;
-  color: #2dc1a7;
+  color: #2ce49b;
 }
 
 .section__post__btn--stroke a:hover {
-  background: #2dc1a7;
+  background: #2ce49b;
   color: #fff;
 }
 
@@ -1138,14 +1144,14 @@ body hr {
 .section__post__btn--shadow a {
   border-color: transparent;
   background: none;
-  -webkit-box-shadow: inset 0 -5px 0 #2dc1a7;
-  box-shadow: inset 0 -5px 0 #2dc1a7;
+  -webkit-box-shadow: inset 0 -5px 0 #2ce49b;
+  box-shadow: inset 0 -5px 0 #2ce49b;
   color: #2dc1a7;
 }
 
 .section__post__btn--shadow a:hover {
-  -webkit-box-shadow: inset 0 -60px 0 #2dc1a7;
-  box-shadow: inset 0 -60px 0 #2dc1a7;
+  -webkit-box-shadow: inset 0 -60px 0 #2ce49b;
+  box-shadow: inset 0 -60px 0 #2ce49b;
   color: #fff;
 }
 
