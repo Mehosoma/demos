@@ -288,6 +288,13 @@ body
 		background: -webkit-radial-gradient(center, ellipse cover, #92ddbe 0%,#2ce49b 100%)
 		background: radial-gradient(ellipse at center, #92ddbe 0%,#2ce49b 100%)
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#92ddbe', endColorstr='#2ce49b',GradientType=1 )
+	&--solo
+		background: #009803
+		background: -moz-linear-gradient(top, #009803 0%, #016702 100%)
+		background: -webkit-linear-gradient(top, #009803 0%,#016702 100%)
+		background: linear-gradient(to bottom, #009803 0%,#016702 100%)
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#009803', endColorstr='#016702',GradientType=0 )
+
 
 /***************************************************Project************************************/
 .section
@@ -512,7 +519,13 @@ body
 			-moz-transition: all 0.3s ease-out
 			-o-transition: all 0.3s ease-out
 			-webkit-transition: all 0.3s ease-out
-			transition: all 0.3s ease-out
+			transition: all 0.3s ease-out		
+			&__wrap
+				width: 100%
+				height: 100%
+				background-repeat: no-repeat
+				background-position: top 10px center
+				background-size: calc(min(300px, 100%))
 			img
 				position: absolute
 				width: 50px
@@ -787,3 +800,17 @@ body
 						padding-left: 10px
 						padding-right: 10px
 						color: #fff
+
+/***************************************************Similar-Posts************************************/
+.similar
+	padding-top: 30px
+	&__wrap
+		display: flex
+		flex-wrap: wrap
+		.section__blog__col
+			flex: 0 0 32%
+			max-width: 32%
+		.section__blog__col:nth-child(even)
+			margin-right: 2%
+		.section__blog__col:last-child
+			margin-right: 0px
