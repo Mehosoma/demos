@@ -864,6 +864,57 @@ body hr {
   line-height: 30px;
 }
 
+.section__blog__pagination {
+  width: 100%;
+  padding-top: 30px;
+}
+
+.section__blog__pagination ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.section__blog__pagination span {
+  font-size: 20px;
+  color: #fff;
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: rgba(44, 228, 155, 0.95);
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+  margin: 0px 5px;
+  border: 1px solid rgba(44, 228, 155, 0.95);
+  font-weight: 600;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.section__blog__pagination span:hover {
+  cursor: pointer;
+  background: #fff;
+  color: #2ce49b;
+}
+
+.section__blog__pagination--active span {
+  background: transparent;
+  border: 1px solid transparent;
+  color: #999;
+}
+
+.section__blog__pagination--active span:hover {
+  color: #999;
+  cursor: default;
+}
+
 .section__post a {
   color: #2ce49b;
 }

@@ -54,6 +54,13 @@
 	.section__post__table th, .section__post__table td{
 		font-size: 18px;
 	}
+
+	.section__blog__pagination span{
+		width: 30px;
+		height: 30px;
+		line-height: 28px;
+		font-size: 14px;
+	}
 	
 }
 
