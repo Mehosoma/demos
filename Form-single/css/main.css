@@ -1,0 +1,185 @@
+html {
+  width: 100%;
+  height: 100%; }
+
+body {
+  width: 100%;
+  height: auto;
+  min-width: 320px;
+  margin: 0 auto;
+  position: relative;
+  font-family: "RobotoRegular", sans-serif;
+  line-height: 1.2;
+  -webkit-font-smoothing: antialiased;
+  background-color: #fff;
+  overflow-x: hidden; }
+  body a:hover, body a:focus, body a:active {
+    text-decoration: none;
+    outline: none; }
+  body input:focus, body input:active {
+    text-decoration: none;
+    outline: none; }
+  body button:focus, body button:active {
+    text-decoration: none;
+    outline: none; }
+  body textarea:focus, body textarea:active {
+    text-decoration: none;
+    outline: none; }
+  body a {
+    display: inline-block;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out; }
+  body ul, body ol {
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none; }
+  body button {
+    border: none;
+    cursor: pointer; }
+  body hr {
+    border: none; }
+
+/***************************************************Quiz************************************/
+.form-s {
+  width: 100%;
+  height: auto;
+  padding: 107px 0px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: gray; }
+  .form-s__main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0px auto; }
+  .form-s__image {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 324px;
+    flex: 0 0 324px;
+    max-width: 324px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; }
+  .form-s__text {
+    background-color: #fff;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    min-height: 800px; }
+  .form-s__content span {
+    font-family: "CamphorPro", sans-serif;
+    font-size: 30px;
+    line-height: 42px;
+    font-weight: bold;
+    color: #005a87;
+    display: block;
+    margin-bottom: 20px; }
+  .form-s__content p {
+    font-family: "CamphorPro", sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    color: gray;
+    display: block;
+    margin-bottom: 20px; }
+  .form-s__header span {
+    font-family: "CamphorPro", sans-serif;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: bold;
+    color: #005a87;
+    display: block;
+    margin-bottom: 20px; }
+  .form-s__bottom {
+    width: 100%;
+    margin-top: 20px; }
+
+/***************************************************Quiz-Wide************************************/
+.form-s--wide {
+  padding: 50px 0px; }
+
+.form-gen {
+  padding: 46px 30px 37px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: justify;
+  align-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  height: 100%; }
+  .form-gen .form-gen__field {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 15px; }
+    .form-gen .form-gen__field p {
+      font-family: "CamphorPro", sans-serif;
+      font-size: 18px;
+      line-height: 31px;
+      color: #545C6B;
+      opacity: 0.7;
+      margin-bottom: 3px; }
+    .form-gen .form-gen__field input {
+      font-family: "CamphorPro", sans-serif;
+      font-size: 16px;
+      width: 100%;
+      background: #f9f9f9;
+      border: 1px solid transparent;
+      border-radius: 2px;
+      padding: 0px 15px;
+      color: gray;
+      -moz-transition: all 0.3s ease-out;
+      -o-transition: all 0.3s ease-out;
+      -webkit-transition: all 0.3s ease-out;
+      transition: all 0.3s ease-out; }
+    .form-gen .form-gen__field input {
+      height: 40px; }
+  .form-gen .form-gen__button {
+    text-align: right;
+    margin-top: 22px; }
+    .form-gen .form-gen__button input {
+      width: 100%;
+      height: 48px;
+      background: #005a87;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      border: 1px solid #005a87;
+      border-radius: 2px;
+      -moz-transition: all 0.3s ease-out;
+      -o-transition: all 0.3s ease-out;
+      -webkit-transition: all 0.3s ease-out;
+      transition: all 0.3s ease-out;
+      font-family: "CamphorPro", sans-serif;
+      font-size: 14px;
+      text-transform: uppercase;
+      color: #fff;
+      font-weight: bold;
+      letter-spacing: 3px; }
+      .form-gen .form-gen__button input:hover {
+        background: transparent;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        border: 1px solid #005a87 !important;
+        cursor: pointer;
+        color: #005a87; }
+
+.form-gen input:hover, .form-gen input:active, .form-gen input:focus, .form-gen textarea:hover, .form-gen textarea:active, .form-gen textarea:focus {
+  border: 1px solid #b4b4b4 !important; }
