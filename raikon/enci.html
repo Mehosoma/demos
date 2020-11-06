@@ -17,7 +17,8 @@
 	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.css">
 	<link rel="stylesheet" href="libs/magnific/magnific-popup.css">
 	<link rel="stylesheet" href="libs/slick/slick.css">
-	<link rel="stylesheet" href="libs/gijgo/css/gijgo.css">			
+	<link rel="stylesheet" href="libs/gijgo/css/gijgo.css">	
+	<link rel="stylesheet" href="libs/jquery-ui.css">
 
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/main.css">
@@ -25,8 +26,7 @@
 
 </head>
 
-<body>
-
+<body class="inner">
 
 <!--Header-->
 <header class="raikon-header">
@@ -101,179 +101,195 @@
 	</div>
 </section>
 
-<!--Main-Banner-->
-<section class="main-banner">
+<!--SubMenu-->
+<section class="sub-menu">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="menu-sub">
+					<ul>
+						<li><a href="" >Радиаторное отопление</a></li>
+						<li><a href="" class="active-page">Панельное отопление</a></li>
+						<li><a href="">Теплый пол</a></li>
+						<li><a href="">Автоматика</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--Projects-->
+<section class="projects-new section__enci">
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
 				<div class="main-header">
-					<h1>ПРОЕКТИРОВАНИЕ, МОНТАЖ, ЗАПУСК И ОБСЛУЖИВАНИЕ<br class="d-none d-md-block"> ИНЖЕНЕРНЫХ СИСТЕМ ЧАСТНЫХ ДОМОВ</h1>
+					<h1>ЭНЦИКЛОПЕДИЯ РЕЙКОН</h1>
 				</div>
 			</div>
 			<div class="col-12">
-				<div class="banner-wrap">
-				</div>
+				<div class="projects-new__filters__wrap projects-new__filters__wrap--enci categories">
+						<div class="projects-new__filters__col">
+							<div class="projects-new__filters__block">
+								<div class="check-gen">
+									<label class="l-container"> Отопление
+										<input type="checkbox" value="office">
+										<span class="checkmark"></span>
+									</label>
+								</div>
+							</div>
+							<div class="projects-new__filters__block">
+								<div class="check-gen">
+									<label class="l-container"> Котельные
+										<input type="checkbox" value="kotel">
+										<span class="checkmark"></span>
+									</label>
+								</div>
+							</div>
+							<div class="projects-new__filters__block">
+								<div class="check-gen">
+									<label class="l-container"> Тепловые насосы
+										<input type="checkbox" value="teplnasos">
+										<span class="checkmark"></span>
+									</label>
+								</div>
+							</div>
+							<div class="projects-new__filters__block">
+								<div class="check-gen">
+									<label class="l-container"> Водоснабжение
+										<input type="checkbox" value="vodos">
+										<span class="checkmark"></span>
+									</label>
+								</div>
+							</div>
+							<div class="projects-new__filters__block">
+								<div class="check-gen">
+									<label class="l-container"> Водоотведение
+										<input type="checkbox" value="vodootv">
+										<span class="checkmark"></span>
+									</label>
+								</div>
+							</div>
+						</div>						
+				</div>				
+			</div>
+			<div class="col-12 col-xl-3 projects-new__projects office otop">
+				<a href="" class="projects-new__projects__block">
+					<div class="projects-new__projects__image" style="background-image: url('images/enci.jpg');">
+					</div>					
+					<div class="projects-new__projects__desc">
+						<span>Что такое водяной теплый пол?</span>
+					</div>
+				</a>
+			</div>
+			<div class="col-12 col-xl-3 projects-new__projects house kotel">
+				<a href="" class="projects-new__projects__block">
+					<div class="projects-new__projects__image" style="background-image: url('images/enci-2.jpg');">
+					</div>					
+					<div class="projects-new__projects__desc">
+						<span>Сравнение тепловых насосов различных производителей</span>
+					</div>
+				</a>
+			</div>
+			<div class="col-12 col-xl-3 projects-new__projects flat teplnasos">
+				<a href="" class="projects-new__projects__block">
+					<div class="projects-new__projects__image" style="background-image: url('images/enci-3.jpg');">
+					</div>					
+					<div class="projects-new__projects__desc">
+						<span>Сварные кожухо-пластинчатые  теплообменник</span>
+					</div>
+				</a>
+			</div>
+			<div class="col-12 col-xl-3 projects-new__projects vodos">
+				<a href="" class="projects-new__projects__block">
+					<div class="projects-new__projects__image" style="background-image: url('images/enci-4.jpg');">
+					</div>					
+					<div class="projects-new__projects__desc">
+						<span>Солнечный коллектор</span>
+					</div>
+				</a>
+			</div>
+			<div class="col-12 col-xl-3 projects-new__projects vodootv">
+				<a href="" class="projects-new__projects__block">
+					<div class="projects-new__projects__image" style="background-image: url('images/enci-5.jpg');">
+					</div>					
+					<div class="projects-new__projects__desc">
+						<span>Земляной тепловой насос</span>
+					</div>
+				</a>
+			</div>
+			<div class="col-12 col-xl-3 projects-new__projects">
+				<a href="" class="projects-new__projects__block">
+					<div class="projects-new__projects__image" style="background-image: url('images/enci-6.jpg');">
+					</div>					
+					<div class="projects-new__projects__desc">
+						<span>Экономичные системы отпления</span>
+					</div>
+				</a>
+			</div>
+			<div class="col-12 col-xl-3 projects-new__projects">
+				<a href="" class="projects-new__projects__block">
+					<div class="projects-new__projects__image" style="background-image: url('images/enci-7.jpg');">
+					</div>					
+					<div class="projects-new__projects__desc">
+						<span>Настенное отопление или теплые водяные стены</span>
+					</div>
+				</a>
+			</div>
+			<div class="col-12 col-xl-3 projects-new__projects">
+				<a href="" class="projects-new__projects__block">
+					<div class="projects-new__projects__image" style="background-image: url('images/enci-8.jpg');">
+					</div>					
+					<div class="projects-new__projects__desc">
+						<span>Принцип действия теплового насоса</span>
+					</div>
+				</a>
 			</div>
 		</div>
 	</div>
 </section>
 
-<!--Stages-->
-<section class="stages">
+<!--CallBack-->
+<section class="feed">
+	<div class="feed-decor">
+		<img src="images/balls.png" alt="decor-image">
+	</div>
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
-				<div class="section-subheader">
-					<h2>Этапы реализации:</h2>
+				<div class="section-subheader section-subheader__white">
+					<h2>Оставьте заявку:</h2>
 				</div>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-12">
-				<div class="stages-wrap">
-					<div class="stages-block">
-						<div class="stages-decor">
-							<div class="stages-decor_circle">
-								
-							</div>
-						</div>
-						<div class="stages-content">
-							<div class="stages-number">
-								<i>1.</i>
-							</div>
-							<div class="stages-desc">
-								<span>Предварительный<br> расчет</span>
-							</div>
-						</div>
+				<form id="feed">
+					<div class="feed-left">
+						<input type="text" name="name" placeholder="Имя" required="">
+						<input type="text" name="surname" placeholder="Фамилия" required="">
+						<input type="text" name="phone" placeholder="Ваш телефон" required="">
+						<input type="text" name="mail" placeholder="Ваш e-mail" required="">
 					</div>
-					<div class="stages-block">
-						<div class="stages-decor">
-							<div class="stages-decor_circle">
-								
+					<div class="feed-right">
+						<textarea name="message" placeholder="Сообщение" required=""></textarea>
+						<div class="file-dialog">							
+							<label for="file-choice">Прикрепите документ</label>
+							<input type="file" name="file" id="file-choice">
+							<div class="plus">								
 							</div>
 						</div>
-						<div class="stages-content">
-							<div class="stages-number">
-								<i>2.</i>
-							</div>
-							<div class="stages-desc">
-								<span>Проектирование</span>
-							</div>
-						</div>
+						<button type="submit">Отправить</button>
 					</div>
-					<div class="stages-block">
-						<div class="stages-decor">
-							<div class="stages-decor_circle">
-								
-							</div>
-						</div>
-						<div class="stages-content">
-							<div class="stages-number">
-								<i>3.</i>
-							</div>
-							<div class="stages-desc">
-								<span>Монтаж</span>
-							</div>
-						</div>
+					<div class="check">
+						<span>Нажимая кнопку «Отправить», вы соглашаетесь<br>с <a href="">Политикой конфиденциальности ООО «Рейкон»</a></span>
 					</div>
-					<div class="stages-block">
-						<div class="stages-decor">
-							<div class="stages-decor_circle">
-								
-							</div>
-						</div>
-						<div class="stages-content">
-							<div class="stages-number">
-								<i>4.</i>
-							</div>
-							<div class="stages-desc">
-								<span>Пусконаладка,<br> испытания</span>
-							</div>
-						</div>
-					</div>
-					<div class="stages-block">
-						<div class="stages-decor">
-							<div class="stages-decor_circle">
-								<img src="images/flag.png" alt="stages-decor">
-							</div>
-						</div>
-						<div class="stages-content">
-							<div class="stages-number">
-								<i>5.</i>							
-							</div>
-							<div class="stages-desc">
-								<span>Гарантийное<br> обслуживание</span>
-							</div>
-						</div>
-					</div>
-				</div>
+				</form>
 			</div>
 		</div>
 	</div>
 </section>
-
-<!--Benefits-->
-<section class="benefits">
-	<div class="container">
-		<div class="row">
-			<div class="col-12">
-				<div class="section-subheader">
-					<h2>Наши преимущества:</h2>
-				</div>
-			</div>
-		</div>
-		<div class="row">			
-			<div class="col-12">
-				<div class="benefits-wrapper">
-					<div class="benefits-block">
-						<div class="stages-number">
-							<i>1.</i>								
-						</div>
-						<span>Расчет стоимости установки и монтажа с точностью до 3%</span>
-						<p>Мы бесплатно рассчитаем стоимость разработки и монтажа системы с вариантами конфигураций в течение 2-х дней.</p>
-					</div>
-					<div class="benefits-block">
-						<div class="stages-number">
-							<i>2.</i>								
-						</div>
-						<span>Эксперт в установке систем напольного водяного отопления</span>
-						<p>Установили множество объектов, которые вы можете увидеть в галерее проектов</p>
-					</div>
-					<div class="benefits-block">
-						<div class="stages-number">
-							<i>3.</i>								
-						</div>
-						<span>Система учета материалов</span>
-						<p>Все материалы и деньги, которые оказались лишними в работе, мы возвращаем клиенту.</p>
-					</div>
-					<div class="benefits-block">
-						<div class="stages-number">
-							<i>4.</i>								
-						</div>
-						<span>Широкий выбор оборудования</span>
-						<p>Мы предоставляем клиенту широкий спектр марок от европейских производителей до более бюджетных моделей.</p>
-					</div>
-					<div class="benefits-block">
-						<div class="stages-number">
-							<i>5.</i>								
-						</div>
-						<span>Собственные отделы проектирования и монтажа</span>
-						<p>В найшей команде работают опытные профессионалы про проектированию и монтажу.</p>
-					</div>
-					<div class="benefits-block">
-						<div class="stages-number">
-							<i>6.</i>								
-						</div>
-						<span>Гарантийное обслуживание</span>
-						<p>Мы предоставляем гарантию на установку - 2 года.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-
-
 
 <!--Footer-->
 <footer class="raikon-footer">
@@ -365,6 +381,7 @@
 	<script src="libs/slick/slick.js"></script>
 	<script src="libs/gijgo/js/gijgo.min.js"></script>
 	<script src="libs/gijgo/js/messages/messages.ru-ru.min.js"></script>
+	<script src="libs/jquery-ui.min.js"></script>
 	<script src="js/common.js"></script>
 	
 </body>

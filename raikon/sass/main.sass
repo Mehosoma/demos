@@ -295,8 +295,11 @@ body
 .banner-wrap
 	width: 100%
 	height: 488px
-	background: #dfdddd
 	margin-top: 20px
+	margin-bottom: 40px
+	text-align: center
+	img
+		margin: 0px auto
 
 
 /***************************************************Stages************************************/
@@ -381,7 +384,7 @@ body
 
 /***************************************************Benefits************************************/
 .benefits
-	padding: 67px 0px 88px 0px
+	padding: 67px 0px 0px 0px
 .benefits-wrapper
 	display: flex
 	flex-direction: row
@@ -947,6 +950,304 @@ body
 		ul
 			margin-bottom: 30px
 
+
+/***********************************************Main-New************************************/
+.services-new
+	padding-bottom: 100px
+	&__block
+		margin-top: 40px
+	&__number
+		margin-bottom: 25px
+		span
+			display: block
+			width: 65px
+			height: 65px
+			border-radius: 100%
+			background: $blue
+			padding-left: 5px
+			line-height: 65px
+			font-family: $geom-b
+			font-size: 35px
+			color: #fff
+			margin: 0px auto
+			text-align: center
+	&__desc
+		text-align: center
+		span
+			font-family: $geom
+			font-size: 18px
+			color: #000000
+	&__text
+		width: 100%
+		margin-top: 70px
+		p
+			font-family: $geom
+			font-size: 14px
+			color: #404040
+			text-align: center
+			line-height: 22px
+			margin-bottom: 20px
+.main-contacts
+	padding-bottom: 70px
+	margin-top: -50px
+	&__block
+		width: 100%
+		text-align: center
+		margin-top: 30px
+		margin-bottom: 40px
+		span
+			display: block
+		span,
+		a
+			font-family: $geom
+			font-size: 14px
+			line-height: 22px
+			color: #404040
+		a
+			&:hover
+				color: $blue
+	&__link
+		&--blue
+			color: $blue!important
+			border-bottom: 1px solid $blue
+			&:hover
+				border-bottom: 1px solid transparent
+	&__social
+		width: 100%
+		ul
+			width: 100%
+			text-align: center
+			display: flex
+			justify-content: center
+			li
+				margin: 0px 12px
+				a
+					&:hover
+						opacity: 0.7
+
+/***********************************************Projects-New************************************/
+.projects-new
+	padding-top: 30px
+	&__filters
+		&__wrap
+			display: flex
+			width: 100%
+			margin-top: 40px
+			justify-content: space-between
+			p
+				font-family: $geom-m
+				font-size: 24px
+				line-height: 22px
+				color: $blue
+				margin-bottom: 20px
+			&--enci
+				.projects-new__filters__col
+					display: flex
+					width: 80%
+					margin: 0px auto 70px
+					display: flex
+					justify-content: space-between
+		&__col
+			margin-bottom: 70px
+			&--last
+				min-width: 20%
+				p
+					padding-left: 20px
+		&__block
+			margin-bottom: 15px
+			.check-gen
+				position: relative
+				z-index: 10
+			.l-container
+				display: inline-block
+				position: relative
+				font-weight: normal
+				cursor: pointer
+				margin-bottom: 0px
+				-webkit-user-select: none
+				-moz-user-select: none
+				-ms-user-select: none
+				user-select: none
+				padding-left: 40px
+			.l-container input
+				position: absolute
+				opacity: 0
+				cursor: pointer
+				z-index: -1
+				top: 0px
+				left: 0px
+			.checkmark
+				position: absolute
+				top: 0px
+				left: 0px
+				height: 20px
+				width: 20px
+				background-color: #f4f4f4
+				border-radius: 3px
+				border: 1px solid $blue	
+			.check-gen .checkmark:after
+				content: ""
+				position: absolute
+				display: none
+			.check-gen input:checked ~ .checkmark:after
+				display: block
+			.check-gen .checkmark:after
+				left: 2px
+				top: -10px
+				width: 7px
+				height: 11px
+				content: '✔'
+				border: transparent
+				font-size: 26px
+				-webkit-transform: rotate(0deg)
+				-ms-transform: rotate(0deg)
+				transform: rotate(0deg)
+				color: $red
+	&__projects
+		&__desc
+			padding: 20px 15px
+			span
+				background: #fff
+				font-family: $geom
+				font-size: 15px
+				line-height: 24px
+				color: #404040
+		&__block
+			width: 100%
+			margin-bottom: 30px
+			&:hover
+				span
+					color: $blue!important
+		&__image
+			width: 100%
+			height: 203px
+			background-repeat: no-repeat
+			background-position: center center
+			background-size: cover
+	&__range
+		flex: 0 0 80%
+		max-width: 80%
+		margin-top: 10px
+		text-align: center
+		margin: 10px auto 0px
+		height: 10px
+		&__wrap
+			display: flex
+			justify-content: space-between
+			flex-wrap: wrap
+			margin-top: 50px
+			.ui-widget.ui-widget-content
+				border: none
+				background: #E8F1FF
+			.ui-widget-header
+				background: $blue
+			.ui-slider .ui-slider-handle
+				border-radius: 50%
+				background: $red
+				border: none
+				top: -6px
+				outline: none!important
+				&:hover
+					cursor: pointer
+.section__enci
+	padding-bottom: 50px
+
+/***********************************************Content-New************************************/
+.content-image
+	position: relative
+	margin-top: 28px
+	img
+		width: 100%
+		height: auto
+	&__wrap
+		margin: 30px 0px
+		display: flex
+		align-items: center
+		.content-image
+			flex: 0 0 50%
+			max-width: 50%
+			margin: 0px
+		.content-image__desc
+			padding-right: 30px
+			margin-bottom: 0px!important
+			p:last-child
+				margin-bottom: 0px
+			ul
+				margin: 0px
+		&--left
+			.content-image
+				flex: 0 0 46%
+				max-width: 46%
+			.content-image__desc
+				padding-right: 0px
+				padding-left: 30px
+		ul
+			justify-content: flex-start!important
+.service-desc
+	margin-top: 40px
+	padding-left: 10px
+	p,
+	ul
+		font-family: $geom
+		font-size: 14px
+		line-height: 22px
+		color: #404040
+		margin-bottom: 22px
+	li
+		padding: 10px 0px
+		padding-left: 30px
+		position: relative
+		&.list-check
+			background-image: url('../images/check.png')
+			background-repeat: no-repeat
+			background-position: left top 5px
+	ul
+		display: flex
+		flex-wrap: wrap
+		justify-content: center
+		margin: 50px 0px 50px 0px
+	.main-header
+		margin: 50px 0px 40px 0px
+		h2
+			font-family: $geom-ex
+			font-size: 24px
+			line-height: normal
+			color: $blue
+			text-align: center
+			text-transform: uppercase
+			margin-bottom: 0px
+	.services-new__desc 
+		span
+			font-family: $geom-b
+			font-size: 24px
+			line-height: normal
+			color: $blue
+			text-transform: uppercase
+			display: block
+			margin-bottom: 20px
+			width: 70%
+		p
+			font-family: $geom
+			font-size: 14px
+			line-height: 22px
+			color: #404040
+			margin-bottom: 22px
+			text-align: left
+	.services-new__block
+		margin-top: 0px
+	.services-new		
+		.services-new__text
+			margin-bottom: 0px
+			margin-top: 30px
+		.col-left
+			padding-left: 40px
+		.services-new__number
+			width: 70%
+	.services-new__text
+		margin-bottom: 50px
+	.services-new
+		margin: 40px 0px
+		padding-bottom: 0px
 
 
 /***********************************************ButtonMobile************************************/

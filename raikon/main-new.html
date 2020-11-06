@@ -17,7 +17,8 @@
 	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.css">
 	<link rel="stylesheet" href="libs/magnific/magnific-popup.css">
 	<link rel="stylesheet" href="libs/slick/slick.css">
-	<link rel="stylesheet" href="libs/gijgo/css/gijgo.css">			
+	<link rel="stylesheet" href="libs/gijgo/css/gijgo.css">		
+	<link rel="stylesheet" href="libs/jquery-ui.css">	
 
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/main.css">
@@ -112,9 +113,61 @@
 			</div>
 			<div class="col-12">
 				<div class="banner-wrap">
+					<img src="images/main-new.jpg" alt="main-image">
 				</div>
 			</div>
 		</div>
+	</div>
+</section>
+
+<!--Services-new-->
+<section class="services-new">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="section-subheader">
+					<h2>С НАШЕЙ ПОМОЩЬЮ ВЫ МОЖЕТЕ СПРОЕКТИРОВАТЬ, ЗАКУПИТЬ И СМОНТИРОВАТЬ В СВОЕМ ДОМЕ:</h2>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-4">
+				<div class="services-new__block">
+					<div class="services-new__number">
+						<span>1.</span>
+					</div>
+					<div class="services-new__desc">
+						<span>Систему  отопления и теплого пола</span>
+					</div>
+				</div>
+			</div>
+			<div class="col-4">
+				<div class="services-new__block">
+					<div class="services-new__number">
+						<span>2.</span>
+					</div>
+					<div class="services-new__desc">
+						<span>Котельную или тепловой насос</span>
+					</div>
+				</div>
+			</div>
+			<div class="col-4">
+				<div class="services-new__block">
+					<div class="services-new__number">
+						<span>3.</span>
+					</div>
+					<div class="services-new__desc">
+						<span>Системы водоснабжения и водоотведения</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="services-new__text">
+				<p>Также мы осуществляем оптовую и розничную продажу комплектующих для инженерных систем.<br> Наше правило - не экономить на исходных материалах и внедрять только проверенные на практике решения.</p>
+				<p>Мы отвечаем за безопасность и качество работ!</p>
+			</div>
+		</div>		
 	</div>
 </section>
 
@@ -273,7 +326,90 @@
 	</div>
 </section>
 
+<!--CallBack-->
+<section class="feed">
+	<div class="feed-decor">
+		<img src="images/balls.png" alt="decor-image">
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="section-subheader section-subheader__white">
+					<h2>Оставьте заявку:</h2>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12">
+				<form id="feed">
+					<div class="feed-left">
+						<input type="text" name="name" placeholder="Имя" required="">
+						<input type="text" name="surname" placeholder="Фамилия" required="">
+						<input type="text" name="phone" placeholder="Ваш телефон" required="">
+						<input type="text" name="mail" placeholder="Ваш e-mail" required="">
+					</div>
+					<div class="feed-right">
+						<textarea name="message" placeholder="Сообщение" required=""></textarea>
+						<div class="file-dialog">							
+							<label for="file-choice">Прикрепите документ</label>
+							<input type="file" name="file" id="file-choice">
+							<div class="plus">								
+							</div>
+						</div>
+						<button type="submit">Отправить</button>
+					</div>
+					<div class="check">
+						<span>Нажимая кнопку «Отправить», вы соглашаетесь<br>с <a href="">Политикой конфиденциальности ООО «Рейкон»</a></span>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
 
+<!--Main-Contacts-->
+<section class="main-contacts">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="section-subheader">
+					<h2>Контакты:</h2>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12">
+				<div class="main-contacts__block">
+					<span>г. Челябинск, ул. Каслинская, д. 77</span>
+					<span><a href="tel:+73512300599">+7 (351) 230-05-99</a></span>
+					<span><a href="mailto:chel@reikon.ru">chel@reikon.ru</a></span>
+					<span><a href="" class="main-contacts__link--blue">Скачать реквизиты</a></span>
+					<br>
+					<span>Режим работы:</span>
+					<span>ПН-ПТ: с 9:00 до 18:00</span>
+					<span>(СБ,ВС: по договоренности)</span>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12">
+				<div class="main-contacts__social">
+					<ul>
+						<li><a href=""><img src="images/face.png"></a></li>
+						<li><a href=""><img src="images/odn-new.png"></a></li>
+						<li><a href=""><img src="images/vk-new.png"></a></li>
+
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--Map-->
+<section class="main-map">
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18226.449701969686!2d61.37937278015285!3d55.177913440533786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43c5ed2fd56b4b63%3A0x5172a72b69c42a05!2z0YPQuy4g0JrQsNGB0LvQuNC90YHQutCw0Y8sIDc3LCDQp9C10LvRj9Cx0LjQvdGB0LosINCn0LXQu9GP0LHQuNC90YHQutCw0Y8g0L7QsdC7LiwgNDU0MDg0!5e0!3m2!1sru!2sru!4v1604657504120!5m2!1sru!2sru" width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+</section>
 
 <!--Footer-->
 <footer class="raikon-footer">
@@ -365,6 +501,7 @@
 	<script src="libs/slick/slick.js"></script>
 	<script src="libs/gijgo/js/gijgo.min.js"></script>
 	<script src="libs/gijgo/js/messages/messages.ru-ru.min.js"></script>
+	<script src="libs/jquery-ui.min.js"></script>
 	<script src="js/common.js"></script>
 	
 </body>

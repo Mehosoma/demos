@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">	
+
+	<title>Raikon</title>
+	<meta name="description" content="">
+	<meta name="keywords" content=""/>
+	
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="format-detection" content="telephone=no">
+
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="libs/magnific/magnific-popup.css">
+	<link rel="stylesheet" href="libs/slick/slick.css">
+	<link rel="stylesheet" href="libs/gijgo/css/gijgo.css">	
+	<link rel="stylesheet" href="libs/jquery-ui.css">
+
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+
+</head>
+
+<body class="inner">
+
+<!--Header-->
+<header class="raikon-header">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 col-md-3">
+				<div class="logo">
+					<a href="index.html"><img src="images/logo.png" alt="site-logo"></a>
+				</div>
+			</div>
+			<div class="col-12 col-md-5">
+				<div class="header-desc">
+					<span>Современные инженерные решения для Вашего дома</span>
+				</div>
+			</div>
+			<div class="col-12 col-md-4">
+				<div class="contacts">
+					<div class="address">
+						<span>Челябинск</span>
+						<span>ул. Работниц, 72</span>
+					</div>
+					<div class="phone">
+						<a href="tel:+7-351-230-05-99">+7 (351) 230-05-99</a>
+					</div>
+					<div class="call">
+						<a href="#modal" class="popup-modal">Заказать звонок</a>
+					</div>
+				</div>
+			</div>
+		</div>		
+	</div>
+</header>
+
+<!--Main-menu-->
+<section class="site-menu">
+	<div class="site-menu-wrapper">
+		<div class="container h-100">
+			<div class="row h-100">
+				<div class="col-12">					
+					<div class="nav-wrap">
+						<button class="menu-toggle-button click-mobile d-block d-lg-none">
+							<span></span>					
+						</button>
+						<div class="main-menu-wrap">							
+							<nav class="main-menu">
+								<ul>
+									<li>
+										<a href="#">Решения</a>
+										<ul class="drop-menu">
+											<li><a href="">Отопление</a></li>
+											<li><a href="">Котельные</a></li>
+											<li><a href="">Тепловые насосы</a></li>
+											<li><a href="">Водоснабжение</a></li>
+											<li><a href="">Водоотведение</a></li>
+										</ul>
+									</li>
+									<li><a href="">Интернет - магазин</a></li>
+									<li><a href="">Энциклопедия Рейкон</a></li>
+									<li><a href="">О нас</a></li>						
+								</ul>
+							</nav>
+						</div>
+						<div class="search-field">
+							<form id="search">
+								<input type="text" name="search" placeholder="Поиск...">
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--SubMenu-->
+<section class="sub-menu">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="menu-sub">
+					<ul>
+						<li><a href="" >Радиаторное отопление</a></li>
+						<li><a href="" class="active-page">Панельное отопление</a></li>
+						<li><a href="">Теплый пол</a></li>
+						<li><a href="">Автоматика</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--Projects-->
+<section class="projects-new">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="main-header">
+					<h1>Готовые проекты</h1>
+				</div>
+			</div>
+			<div class="col-12">
+				<div class="projects-new__filters__wrap categories">
+						<div class="projects-new__filters__col">
+							<p>Назначение помещения</p>
+							<div class="projects-new__filters__block">
+								<div class="check-gen">
+									<label class="l-container"> Офисное здание
+										<input type="checkbox" value="office">
+										<span class="checkmark"></span>
+									</label>
+								</div>
+							</div>
+							<div class="projects-new__filters__block">
+								<div class="check-gen">
+									<label class="l-container"> Жилой дом
+										<input type="checkbox" value="house">
+										<span class="checkmark"></span>
+									</label>
+								</div>
+							</div>
+							<div class="projects-new__filters__block">
+								<div class="check-gen">
+									<label class="l-container"> Квартира
+										<input type="checkbox" value="flat">
+										<span class="checkmark"></span>
+									</label>
+								</div>
+							</div>
+							<div class="projects-new__filters__block">
+								<div class="check-gen">
+									<label class="l-container"> Промышленный объект
+										<input type="checkbox" value="prom">
+										<span class="checkmark"></span>
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="projects-new__filters__col">
+							<p>Система</p>
+							<div class="projects-new__filters__block">
+								<div class="check-gen">
+									<label class="l-container"> Отопление
+										<input type="checkbox" value="otop">
+										<span class="checkmark"></span>
+									</label>
+								</div>
+							</div>
+							<div class="projects-new__filters__block">
+								<div class="check-gen">
+									<label class="l-container"> Котельные
+										<input type="checkbox" value="kotel">
+										<span class="checkmark"></span>
+									</label>
+								</div>
+							</div>
+							<div class="projects-new__filters__block">
+								<div class="check-gen">
+									<label class="l-container">Тепловые насосы
+										<input type="checkbox" value="nasos">
+										<span class="checkmark"></span>
+									</label>
+								</div>
+							</div>
+							<div class="projects-new__filters__block">
+								<div class="check-gen">
+									<label class="l-container"> Водоснабжение
+										<input type="checkbox" value="vodos">
+										<span class="checkmark"></span>
+									</label>
+								</div>
+							</div>
+							<div class="projects-new__filters__block">
+								<div class="check-gen">
+									<label class="l-container"> Водоотведение
+										<input type="checkbox" value="vodootv">
+										<span class="checkmark"></span>
+									</label>
+								</div>
+							</div>
+						</div>	
+						<div class="projects-new__filters__col">
+							<p>Источник тепла</p>
+							<div class="projects-new__filters__block">
+								<div class="check-gen">
+									<label class="l-container"> Электрический котел
+										<input type="checkbox" value="ekotel">
+										<span class="checkmark"></span>
+									</label>
+								</div>
+							</div>
+							<div class="projects-new__filters__block">
+								<div class="check-gen">
+									<label class="l-container"> Газовый котел
+										<input type="checkbox" value="gazkotel">
+										<span class="checkmark"></span>
+									</label>
+								</div>
+							</div>
+							<div class="projects-new__filters__block">
+								<div class="check-gen">
+									<label class="l-container">Твердотопливный котел
+										<input type="checkbox" value="tverkotel">
+										<span class="checkmark"></span>
+									</label>
+								</div>
+							</div>
+							<div class="projects-new__filters__block">
+								<div class="check-gen">
+									<label class="l-container"> Тепловой насос
+										<input type="checkbox" value="teplnasos">
+										<span class="checkmark"></span>
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="projects-new__filters__col projects-new__filters__col--last">
+							<p>Площадь</p>
+							<div class="projects-new__range__wrap">
+								<span>50m2</span>
+								<span>1000m2</span>
+								<div id="range" class="projects-new__range">
+								
+								</div>
+							</div>							
+						</div>						
+				</div>				
+			</div>
+			<div class="col-12 col-xl-3 projects-new__projects office otop">
+				<a href="" class="projects-new__projects__block">
+					<div class="projects-new__projects__image" style="background-image: url('images/projects-new-1.jpg');">
+					</div>					
+					<div class="projects-new__projects__desc">
+						<span>Гардеробные и помывочные помещения на Птицефабрике РАВИС</span>
+					</div>
+				</a>
+			</div>
+			<div class="col-12 col-xl-3 projects-new__projects house kotel">
+				<a href="" class="projects-new__projects__block">
+					<div class="projects-new__projects__image" style="background-image: url('images/projects-new-2.jpg');">
+					</div>					
+					<div class="projects-new__projects__desc">
+						<span>Офисное здание в г. Челябинск</span>
+					</div>
+				</a>
+			</div>
+			<div class="col-12 col-xl-3 projects-new__projects flat teplnasos">
+				<a href="" class="projects-new__projects__block">
+					<div class="projects-new__projects__image" style="background-image: url('images/projects-new-3.jpg');">
+					</div>					
+					<div class="projects-new__projects__desc">
+						<span>Жилой дом г. Екатеринбург</span>
+					</div>
+				</a>
+			</div>
+			<div class="col-12 col-xl-3 projects-new__projects prom">
+				<a href="" class="projects-new__projects__block">
+					<div class="projects-new__projects__image" style="background-image: url('images/projects-new-4.jpg');">
+					</div>					
+					<div class="projects-new__projects__desc">
+						<span>Жилой дом  в п. Княжий</span>
+					</div>
+				</a>
+			</div>
+			<div class="col-12 col-xl-3 projects-new__projects">
+				<a href="" class="projects-new__projects__block">
+					<div class="projects-new__projects__image" style="background-image: url('images/projects-new-5.jpg');">
+					</div>					
+					<div class="projects-new__projects__desc">
+						<span>Жилой дом в г. Снежинск</span>
+					</div>
+				</a>
+			</div>
+			<div class="col-12 col-xl-3 projects-new__projects">
+				<a href="" class="projects-new__projects__block">
+					<div class="projects-new__projects__image" style="background-image: url('images/projects-new-6.jpg');">
+					</div>					
+					<div class="projects-new__projects__desc">
+						<span>Таунхаус в п. Благодатово</span>
+					</div>
+				</a>
+			</div>
+			<div class="col-12 col-xl-3 projects-new__projects">
+				<a href="" class="projects-new__projects__block">
+					<div class="projects-new__projects__image" style="background-image: url('images/projects-new-7.jpg');">
+					</div>					
+					<div class="projects-new__projects__desc">
+						<span>Жилой дом в с. Калачево</span>
+					</div>
+				</a>
+			</div>
+			<div class="col-12 col-xl-3 projects-new__projects">
+				<a href="" class="projects-new__projects__block">
+					<div class="projects-new__projects__image" style="background-image: url('images/projects-new-8.jpg');">
+					</div>					
+					<div class="projects-new__projects__desc">
+						<span>Лоджия в многоэтажном доме г. Челябинск</span>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--CallBack-->
+<section class="feed">
+	<div class="feed-decor">
+		<img src="images/balls.png" alt="decor-image">
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="section-subheader section-subheader__white">
+					<h2>Оставьте заявку:</h2>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12">
+				<form id="feed">
+					<div class="feed-left">
+						<input type="text" name="name" placeholder="Имя" required="">
+						<input type="text" name="surname" placeholder="Фамилия" required="">
+						<input type="text" name="phone" placeholder="Ваш телефон" required="">
+						<input type="text" name="mail" placeholder="Ваш e-mail" required="">
+					</div>
+					<div class="feed-right">
+						<textarea name="message" placeholder="Сообщение" required=""></textarea>
+						<div class="file-dialog">							
+							<label for="file-choice">Прикрепите документ</label>
+							<input type="file" name="file" id="file-choice">
+							<div class="plus">								
+							</div>
+						</div>
+						<button type="submit">Отправить</button>
+					</div>
+					<div class="check">
+						<span>Нажимая кнопку «Отправить», вы соглашаетесь<br>с <a href="">Политикой конфиденциальности ООО «Рейкон»</a></span>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--Footer-->
+<footer class="raikon-footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 col-md-6 col-lg-2">
+				<div class="footer-logo">
+					<img src="images/logo-footer.png" alt="footer-logo-image">
+				</div>
+			</div>
+			<div class="col-12 col-md-6 col-lg-4 col-xl-3">
+				<div class="footer-menu">
+					<ul>
+						<li><a href="">Услуги</a></li>
+						<li><a href="">Купить</a></li>
+						<li><a href="">Блог</a></li>
+						<li><a href="">Документы</a></li>
+						<li><a href="">Видеоблог</a></li>
+						<li><a href="">Новости</a></li>
+					</ul>
+					<ul>
+						<li><a href="">Готовые проекты</a></li>
+						<li><a href="">РЕЙКОН в СМИ</a></li>
+						<li><a href="">Задать вопрос</a></li>
+						<li><a href="">Контакты</a></li>
+						<li><a href="">Карта сайта</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-12 col-md-6 col-lg-3">
+				<div class="footer-address">
+					<span>Челябинск, ул. Работниц, 72</span>
+					<a href="tel:+7351230-05-99">+7 (351) 230-05-99</a><br>
+					<a href="mailto:chel@reikon.ru">chel@reikon.ru</a>
+					<ul class="social-icons">
+						<li><a href=""><img src="images/facebook.png" alt="social-icon"></a></li>
+						<li><a href=""><img src="images/odn.png" alt="social-icon"></a></li>
+						<li><a href=""><img src="images/vk.png" alt="social-icon"></a></li>
+						<li><a href=""><img src="images/inst.png" alt="social-icon"></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-12 col-md-6 col-lg-3 col-xl-4">
+				<div class="footer-copy">
+					<span>Политика конфиденциальности ООО «Рейкон»</span>
+					<span>&copy; ООО Рейкон, 2017</span>
+					<span>Сайт создан Компанией АЕ Marketing</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<!--Modal-->
+<form id="modal" class="mfp-hide white-popup-block inner">
+	<div class="mfp-close-wrap">
+		<div  class="mfp-close popup-modal-dismiss" title="Закрыть окно">
+			<img src="images/close.png">
+		</div>
+	</div>
+	<div class="modal_header ">
+		<div class="section-subheader section-subheader__white">
+			<h2>Заказать звонок:</h2>
+		</div>
+	</div>				
+	<div class="modal-form-wrap">
+		<div class="feed-left">
+			<input type="text" name="name" placeholder="Имя" required="">
+			<input type="text" name="surname" placeholder="Фамилия" required="">
+			<input type="text" name="phone" placeholder="Ваш телефон" required="">
+		</div>
+		<div class="feed-right">
+			<span>Когда вам позвонить?</span>
+			<div class="date-inputs">
+				<input id="datepicker" placeholder="Дата" />
+				<input id="timepicker" placeholder="Время" role="right-icon" class="clock" />
+			</div>
+			<button type="submit">Отправить</button>
+		</div>	
+		<div class="check">
+			<span>Нажимая кнопку «Отправить», вы соглашаетесь<br>с <a href="">Политикой конфиденциальности ООО «Рейкон»</a></span>
+		</div>				
+	</div>
+</form>
+
+	<script src="libs/jquery/jquery-3.3.1.js"></script>
+	<script src="libs/bootstrap/js/bootstrap.js"></script>
+	<script src="libs/magnific/jquery.magnific-popup.min.js"></script>
+	<script src="libs/slick/slick.js"></script>
+	<script src="libs/gijgo/js/gijgo.min.js"></script>
+	<script src="libs/gijgo/js/messages/messages.ru-ru.min.js"></script>
+	<script src="libs/jquery-ui.min.js"></script>
+	<script src="js/common.js"></script>
+	
+</body>
+</html>
