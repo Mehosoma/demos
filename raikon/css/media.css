@@ -38,6 +38,7 @@
 
 	.main-menu ul li{
 		display: block;
+		max-width: 100%!important;
 	}
 
 	.main-menu a{
@@ -82,6 +83,15 @@
 
 	.main-header h1 {
 		font-size: 18px;
+	}
+
+	.section-subheader h2{
+		font-size: 16px;
+		line-height: 1.5;
+	}
+
+	.benefits{
+		padding-top: 30px;
 	}
 
 
@@ -151,6 +161,14 @@
 
 	.footer-address, .footer-copy{
 		text-align: center;
+	}
+
+	.footer-menu ul:last-child{
+		margin-left: 30px;
+	}
+
+	.feed {
+		margin-bottom: 100px;
 	}
 
 	#modal{
@@ -262,7 +280,74 @@
 		height: 30vw;
 	}
 
+	.projects-new__filters__wrap p{
+		font-size: 18px;
+	}
 
+	.projects-new__filters__wrap{
+		flex-wrap: wrap;
+	}
+
+	.projects-new__projects__image{
+		height: 50vw;
+	}
+
+	.projects-new__filters__col{
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+
+	.projects-new__range{
+		flex: 0 0 90%;
+		max-width: 90%;
+	}
+
+	.projects-new__filters__wrap--enci .projects-new__filters__col{
+		flex: 0 0 100%;
+		max-width: 100%;
+		padding-right: 0px;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin-bottom: 30px;
+	}
+
+	.projects-new__filters__wrap--enci .projects-new__filters__block{
+		flex: 0 0 100%;
+		max-width: 100%;
+		display: flex;
+		justify-content: flex-start;
+		margin-bottom: 30px;
+	}
+
+	.content-image__wrap{
+		flex-wrap: wrap;
+	}
+
+	.content-image__wrap .content-image{
+		flex: 0 0 100%;
+		max-width: 100%;
+		margin: 30px 0px;
+	}
+
+	.content-image__wrap--left .content-image__desc{
+		padding-left: 0px;
+	}
+
+	.service-desc .services-new .col-left{
+		padding-left: 0px;
+	}
+
+	.service-desc .services-new .services-new__number, .service-desc .services-new__desc span{
+		width: 100%;
+	}
+
+	.service-desc .services-new__desc p{
+		text-align: center;
+	}
+
+	.service-desc .services-new .col-left{
+		padding: 0px;
+	}
 
 }
 
@@ -306,6 +391,7 @@
 
 	.main-menu ul li{
 		display: block;
+		max-width: 100%!important;
 	}
 
 	.main-menu a{
@@ -348,9 +434,7 @@
 		padding-left: 0px;
 	}
 
-	.main-header h1 {
-		font-size: 18px;
-	}
+	
 
 	.stages-wrap{
 		justify-content: flex-start;
@@ -525,6 +609,65 @@
 	}
 
 
+	.projects-new__filters__wrap{
+		flex-wrap: wrap;
+	}
+
+	.projects-new__projects__image{
+		height: 50vw;
+	}
+
+	.projects-new__filters__col{
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+
+	.projects-new__filters__wrap--enci .projects-new__filters__col{
+		flex: 0 0 100%;
+		max-width: 100%;
+		padding-right: 0px;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		margin-bottom: 30px;
+	}
+
+	.projects-new__filters__wrap--enci .projects-new__filters__block{
+		flex: 0 0 50%;
+		max-width: 50%;
+		display: flex;
+		justify-content: flex-start;
+		margin-bottom: 30px;
+	}
+
+	.content-image__wrap{
+		flex-wrap: wrap;
+	}
+
+	.content-image__wrap .content-image{
+		flex: 0 0 100%;
+		max-width: 100%;
+		margin: 30px 0px;
+	}
+
+	.content-image__wrap--left .content-image__desc{
+		padding-left: 0px;
+	}
+
+	.service-desc .services-new .col-left{
+		padding-left: 0px;
+	}
+
+	.service-desc .services-new .services-new__number, .service-desc .services-new__desc span{
+		width: 100%;
+	}
+
+	.service-desc .services-new__desc p{
+		text-align: center;
+	}
+
+	.service-desc .services-new .col-left{
+		padding: 0px;
+	}
 
 }
 
@@ -568,11 +711,16 @@
 
 	.main-menu ul li{
 		display: block;
+		max-width: 100%!important;
 	}
 
 	.main-menu a{
 		padding: 10px 0px;
 		text-align: center;
+	}
+
+	.main-menu li:first-child{
+
 	}
 
 	.drop-menu{
@@ -701,6 +849,36 @@
 		margin-right: auto;
 	}
 
+	.projects-new__filters__wrap{
+		flex-wrap: wrap;
+	}
+
+	.projects-new__projects__image{
+		height: 30vw;
+	}
+
+	.projects-new__filters__col{
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
+
+	.projects-new__filters__wrap--enci .projects-new__filters__col{
+		flex: 0 0 100%;
+		max-width: 100%;
+		padding-right: 0px;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin-bottom: 30px;
+	}
+
+	.projects-new__filters__wrap--enci .projects-new__filters__block{
+		flex: 0 0 33%;
+		max-width: 33%;
+		display: flex;
+		justify-content: center;
+		margin-bottom: 30px;
+	}
+
 }
 
 @media only screen and (min-width : 992px) and (max-width : 1199px) {
@@ -750,7 +928,27 @@
 		height: 200px;
 	}
 
+	.footer-menu ul:last-child {
+    	margin-left: 30px;
+	}
 
+	.projects-new__filters__wrap{
+		flex-wrap: wrap;
+	}
+
+	.projects-new__projects__image{
+		height: 30vw;
+	}
+
+	.projects-new__filters__col{
+		flex: 0 0 33%;
+		max-width: 33%;
+	}
+
+	.projects-new__filters__wrap--enci .projects-new__filters__col{
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
 }
 
 @media only screen and (min-width : 1200px) and (max-width : 1399px) {
@@ -781,3 +979,5 @@
 	}
 
 }
+
+
