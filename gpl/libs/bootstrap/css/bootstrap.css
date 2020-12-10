@@ -587,13 +587,8 @@ pre code {
 
 @media (min-width: 1440px) {
   .container {
-    max-width: 1870px;
-  }
-}
-
-@media (min-width: 1920px) {
-  .container {
-    max-width: 1890px;
+    max-width: 100%;
+    padding: 0px 60px;
   }
 }
 

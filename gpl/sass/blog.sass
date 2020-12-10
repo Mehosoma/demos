@@ -1,0 +1,215 @@
+$crimson: 'Crimson Pro', sans-serif
+$crimson-text: 'Crimson Text', sans-serif
+$zilla: 'Zilla Slab', sans-serif
+$regular: 400
+$bold: 700
+$extralight: 200
+$light: 300
+$medium: 500
+$blue-d: #1B3967
+$border: #E7E7E7
+$or-3: #D9BE79
+$gray: #CCCCCC
+$gray-d: #545C6B
+$blue: #2788D2
+$dark: #1C263D
+
+
+/***************************************************Breadcrumb************************************/
+.breadcrumb
+	background: transparent	
+	border-top: 1px solid rgba(204,204,205,0.5)
+	margin-bottom: 0px
+	padding-top: 30px
+	padding-bottom: 0px
+	margin-bottom: 10px
+	&__list
+		border-bottom: 1px solid $border
+		padding-bottom: 15px
+		width: 100%
+		ul
+			display: flex
+			width: 100%
+		a,
+		span
+			font-family: $crimson
+			font-size: 18px
+			font-style: italic
+			color: $blue-d
+			opacity: 0.5
+		a:hover
+			color: $or-3
+		span
+			font-style: normal
+			opacity: 1
+		li
+			position: relative
+			padding: 0px 15px
+			&:first-child
+				padding-left: 0px
+			&:last-child
+				&:after
+					display: none
+			&:after
+				content: ""
+				display: block
+				width: 8px
+				height: 8px
+				border-top: 1px solid $gray
+				border-right: 1px solid $gray			
+				position: absolute
+				right: 0px
+				top: 3px
+				bottom: 0px
+				margin: auto
+				-moz-transition: all 0.3s ease-out
+				-o-transition: all 0.3s ease-out
+				-webkit-transition: all 0.3s ease-out
+				transition: all 0.3s ease-out
+				transform: rotate(45deg)
+				opacity: 0.5
+
+/***************************************************Awards************************************/
+.awards
+	padding: 15px 0px 25px 0px
+	&__btn
+		display: flex
+		width: 100%
+		justify-content: space-between
+		a
+			flex: 0 0 auto
+	&__header
+		span
+			font-size: 18px
+			color: $dark
+			text-transform: uppercase
+			font-weight: 500
+			display: block
+			flex: 0 0 auto
+	&__wrap
+		margin: 25px 0px 0px 0px
+		ul
+			display: flex
+			justify-content: space-between
+			flex-wrap: wrap
+			li
+				padding: 0px 5px 
+				margin-bottom: 20px
+			img
+				height: 90px
+				width: auto
+.line
+	display: inline-block
+	width: 100%
+	height: 1px
+	background-color: $border
+	margin-left: 15px
+	&__wrap
+		display: flex
+		align-items: center
+	&--left
+		margin-left: 0px
+		margin-right: 15px
+.btn-gen
+	&--dark-blue
+		background: $blue-d
+		color: $or-3
+		&:hover
+			background: $or-3
+			color: $blue-d
+
+/***************************************************Blog************************************/
+.blog
+	&__header
+		width: 100%
+		text-align: center
+		padding-top: 10px
+		padding-bottom: 20px
+		.section__subheader
+			h2
+				color: #545C6B
+				line-height: 48px
+				margin-top: 10px
+				margin-bottom: 15px
+		span,
+		a
+			font-family: $crimson
+			font-style: italic
+			font-size: 18px
+			color: #747B8B
+		a
+			color: $blue
+			&:hover
+				color: $or-3
+
+	&__main
+		padding: 25px 0px 15px 0px
+		.container
+			max-width: 77%
+		&__image
+			display: flex
+			justify-content: space-between
+			p
+				padding-right: 65px
+		.blog__main__picture
+			margin-bottom: 35px
+		p
+			font-family: $crimson
+			font-size: 24px
+			line-height: 35px
+			color: #545C6B
+			margin-bottom: 35px
+		ul
+			padding-left: 50px
+			p
+				padding-right: 20px
+		a
+			color: $blue
+			&:hover
+				color: $or-3
+	&__more
+		padding-bottom: 50px
+		&__wrap
+			border-top: 1px solid $border
+			padding-top: 40px
+		&__header
+			span
+				font-family: $crimson
+				font-size: 18px
+				font-weight: 500
+				text-transform: uppercase
+				color: $dark
+		&__block
+			margin-top: 35px
+			a:hover
+				color: $or-3
+			&_top
+				a
+					font-family: $crimson
+					font-size: 28px
+					color: #174998
+					line-height: 31px
+					height: 62px
+					overflow: hidden
+					display: block
+				span
+					font-family: $crimson
+					font-size: 18px
+					color: #747B8B
+					font-style: italic
+			&_content
+				height: 155px
+				overflow: hidden
+				margin: 25px 0px
+				p
+					font-family: $crimson
+					font-size: 18px
+					line-height: 31px
+					color: #545C6B
+			&_bottom
+				text-align: right				
+				a
+					font-family: $crimson
+					font-size: 16px
+					color: #174998
+					text-transform: uppercase
