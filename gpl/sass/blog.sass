@@ -144,13 +144,180 @@ $dark: #1C263D
 
 	&__main
 		padding: 25px 0px 15px 0px
-		.container
-			max-width: 77%
+		overflow: hidden
+		&--wide
+			width: 90vw
+			margin: 0px auto
+			position: relative
+			padding-left: 0px
+			right: -50%
+			&_inner
+				position: relative
+				left: -50%
+		&__wrap
+			max-width: 80%
+			margin-left: auto
+			margin-right: auto
+			padding: 0px 15px
+		p
+			a
+				display: inline
 		&__image
 			display: flex
 			justify-content: space-between
 			p
 				padding-right: 65px
+		&__lines
+			border-top: 1px solid $border
+			border-bottom: 1px solid $border
+			margin-bottom: 35px
+			padding: 10px 0px
+			p:last-child
+				margin-bottom: 0px
+		&__consult
+			width: 100%
+			height: 293px
+			background-repeat: no-repeat
+			background-position: center center
+			background-size: cover
+			position: relative
+			margin-bottom: 35px
+			.top-banner__overlay
+				background: rgba(16,30,61,0.91)
+			&_block
+				position: relative
+				z-index: 10
+				padding: 40px 80px
+				text-align: center
+				p
+					color: white!important
+					margin-bottom: 30px!important
+				span
+					display: block
+					font-family: $crimson
+					font-size: 18px
+					color: white
+					text-transform: uppercase
+					margin-bottom: 20px
+				a
+					line-height: 67px
+					color: #1B3967!important
+					&:hover
+						color: white!important
+		&__ebook
+			width: 100%
+			height: 350px
+			background: #E9EEF6
+			margin-bottom: 35px
+			position: relative
+			background-repeat: no-repeat
+			background-position: right bottom
+			padding: 20px 40px 110px 40px
+			h3
+				font-family: $crimson
+				font-size: 32px
+				line-height: 36px
+				color: $blue
+				font-weight: 500
+				margin-bottom: 10px
+			span
+				font-family: $crimson
+				font-size: 22px
+				line-height: 25px
+				color: #545C6B
+				display: block
+				margin-bottom: 20px
+				width: 70%
+			ul
+				padding-left: 0px!important
+				a
+					font-weight: 500!important
+					font-size: 18px!important
+				li
+					margin-bottom: 10px
+			.book__list
+				display: flex
+				flex: 0 0 60%
+				max-width: 60%
+				ul
+					margin-right: 20px
+				ul:last-child
+					margin-right: 0px
+			.book__list li:last-child:after
+				display: none
+			&--hero
+				padding: 50px 40px
+				h3
+					margin-bottom: 30px
+				span
+					margin-bottom: 30px
+				.blog__main__form
+					position: relative
+					background: transparent
+					padding: 0px
+					input
+						width: 200px
+						margin-right: 10px
+					.blog__main__form_button input
+						margin-left: 0px
+		&__form
+			position: absolute
+			bottom: 0px
+			width: 100%
+			height: 90px
+			background: rgba(27,57,103,0.9)
+			display: flex
+			align-items: center
+			padding: 0px 40px
+			left: 0px
+			form
+				display: flex
+			.form-gen
+				padding: 0px
+			input
+				width: 280px
+				height: 40px
+				padding: 0px 15px
+				margin-right: 15px
+				border: 1px solid $border
+				-moz-transition: all 0.3s ease-out
+				-o-transition: all 0.3s ease-out
+				-webkit-transition: all 0.3s ease-out
+				transition: all 0.3s ease-out
+			::-webkit-input-placeholder 
+				font-style: italic	
+			::-moz-placeholder
+				font-style: italic		
+			:-moz-placeholder 
+				font-style: italic			
+			:-ms-input-placeholder      
+				font-style: italic
+			&_button
+				input
+					background: #2788D2
+					box-shadow: none
+					border: none!important
+					border-radius: 2px
+					-moz-transition: all 0.3s ease-out
+					-o-transition: all 0.3s ease-out
+					-webkit-transition: all 0.3s ease-out
+					transition: all 0.3s ease-out
+					font-family: "Crimson Pro"
+					font-size: 14px
+					text-transform: uppercase
+					color: #fff
+					font-weight: 500
+					letter-spacing: 3px
+					font-size: 18px
+					margin-left: 15px
+					height: 39px
+					&:hover
+						background: $or-3
+						box-shadow: none
+						border: none!important
+						cursor: pointer
+						color: $dark
+
 		.blog__main__picture
 			margin-bottom: 35px
 		p
@@ -161,17 +328,21 @@ $dark: #1C263D
 			margin-bottom: 35px
 		ul
 			padding-left: 50px
-			p
-				padding-right: 20px
+			.blog__main--wide
+				margin-left: -25px
+			li
+				p
+					padding-right: 20px
 		a
 			color: $blue
+			font-weight: 700
 			&:hover
 				color: $or-3
 	&__more
 		padding-bottom: 50px
 		&__wrap
 			border-top: 1px solid $border
-			padding-top: 40px
+			padding-top: 40px			
 		&__header
 			span
 				font-family: $crimson

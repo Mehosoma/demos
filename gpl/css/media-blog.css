@@ -37,7 +37,7 @@
 		line-height: 30px;
 	}
 
-	.blog__main .container{
+	.blog__main .blog__main__wrap{
 		max-width: 540px;
 	}
 
@@ -47,6 +47,83 @@
 
 	.blog__more__block_content{
 		height: auto;
+	}
+
+	.blog__main__consult{
+		height: auto;
+	}
+
+	.blog__main__consult_block{
+		padding: 100px 30px;
+	}
+
+	.blog__main__consult_block a{
+		line-height: 1.5;
+		padding: 10px 52px 8px 52px;
+	}
+
+	.blog__main__ebook{
+		height: auto;
+		padding: 40px 20px 120px 20px;
+		background-size: 200px auto;
+	}
+
+	.blog__main__ebook .book__list{
+		flex: 0 0 100%;
+		max-width: 100%;
+		margin-bottom: 20px;
+		flex-wrap: wrap;
+	}
+
+	.blog__main__ebook .book__list ul{
+		display: block;
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+
+	.blog__main__ebook .book__list ul li{
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+
+	.blog__main__form{
+		position: relative;
+		height: auto;
+		padding: 30px;
+		background: transparent;
+		padding: 0px;
+	}
+
+	.blog__main__form form{
+		flex-wrap: wrap;
+	}
+
+	.blog__main__form_fields{
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+
+	.blog__main__form input, .blog__main__ebook--hero .blog__main__form input{
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	.blog__main__form_button{
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+
+	.blog__main__form_button input{
+		margin-left: 0px;
+		margin-bottom: 0px;
+	}
+
+	.blog__main__ebook span{
+		width: 100%;
+	}
+
+	.blog__main ul .blog__main--wide{
+		margin-left: -15px;
 	}
 
 }
@@ -76,8 +153,75 @@
 		padding-right: 0px;
 	}
 
-	.blog__main .container{
+	.blog__main .blog__main__wrap{
 		max-width: 90%;
+	}
+
+	.blog__main__consult{
+		height: auto;
+	}
+
+	.blog__main__ebook{
+		height: auto;
+		padding: 40px 40px;
+		background-size: 400px auto;
+	}
+
+	.blog__main__ebook--hero{
+		background-size: 300px auto;
+	}
+
+	.blog__main__ebook .book__list{
+		flex: 0 0 100%;
+		max-width: 100%;
+		margin-bottom: 20px;
+	}
+
+	.blog__main__ebook .book__list ul{
+		display: block;
+	}
+
+	.blog__main__ebook .book__list ul li{
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+
+	.blog__main__form{
+		position: relative;
+		height: auto;
+		padding: 30px;
+	}
+
+	.blog__main__form form{
+		flex-wrap: wrap;
+	}
+
+	.blog__main__form_fields{
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+
+	.blog__main__form input, .blog__main__ebook--hero .blog__main__form input{
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	.blog__main__form_button{
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+
+	.blog__main__form_button input{
+		margin-left: 0px;
+		margin-bottom: 0px;
+	}
+
+	.blog__main__ebook span{
+		width: 100%;
+	}
+
+	.blog__main__form .form-gen{
+		width: 100%;
 	}
 
 }
@@ -89,7 +233,7 @@
 		justify-content: flex-start;
 	}
 
-	.blog__main .container{
+	.blog__main .blog__main__wrap{
 		max-width: 90%;
 	}
 
@@ -97,9 +241,26 @@
 		padding-top: 80px;
 	}
 
+	.blog__main__consult{
+		height: auto;
+	}
+
+	.blog__main__ebook{
+		background-size: 400px auto;
+		height: auto;
+	}
+
+	.blog__main__form input{
+		width: 230px;
+	}
+
 }
 
 @media only screen and (min-width : 1200px) and (max-width : 1439px) {
 
+	.blog__main__ebook .book__list{
+		flex: 0 0 70%;
+		max-width: 70%;
+	}
 
 }
