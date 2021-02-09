@@ -1,0 +1,172 @@
+@import "bourbon/bourbon"
+
+$blue: #4c4f6c
+$roboto: 'RobotoRegular', sans-serif
+
+
+html
+	width: 100%
+	height: 100%
+	
+body
+	width: 100%
+	height: auto
+	min-width: 320px	
+	margin: 0 auto
+	position: relative
+	font-family: $roboto
+	line-height: 1.2
+	-webkit-font-smoothing: antialiased
+	background-color: #fff	
+	overflow-x: hidden
+
+	a:hover, a:focus, a:active
+		text-decoration: none
+		outline: none
+	input:focus, input:active
+		text-decoration: none
+		outline: none
+	button:focus, button:active
+		text-decoration: none
+		outline: none
+	textarea:focus, textarea:active
+		text-decoration: none
+		outline: none
+	a
+		display: inline-block
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out
+	ul, ol
+		padding: 0px
+		margin: 0px
+		list-style-type: none
+	button
+		border: none
+		cursor: pointer
+	hr
+		border: none	
+
+/***************************************************Quiz************************************/
+.form-s
+	width: 100%
+	height: auto
+	padding: 107px 0px
+	background-repeat: no-repeat
+	background-position: center center
+	background-size: cover
+	display: flex
+	align-items: center
+	justify-content: center
+	background: gray
+	&__main
+		display: flex
+		justify-content: space-between
+		width: 70%
+		margin: 0px auto
+	&__image
+			flex: 0 0 324px
+			max-width: 324px		
+			background-repeat: no-repeat
+			background-position: center center
+			background-size: cover
+	&__text
+		background-color: #fff
+		flex-grow: 1
+		min-height: 800px
+	&__content
+		span
+			font-family: "CamphorPro", sans-serif
+			font-size: 30px
+			line-height: 42px
+			font-weight: bold
+			color: #005a87
+			display: block
+			margin-bottom: 20px
+		p
+			font-family: "CamphorPro", sans-serif
+			font-size: 18px
+			line-height: 24px
+			font-weight: 400
+			color: gray
+			display: block
+			margin-bottom: 20px
+	&__header
+		span
+			font-family: "CamphorPro", sans-serif
+			font-size: 24px
+			line-height: 30px
+			font-weight: bold
+			color: #005a87
+			display: block
+			margin-bottom: 20px
+	&__bottom
+		width: 100%
+		margin-top: 20px
+
+/***************************************************Quiz-Wide************************************/
+.form-s--wide
+	padding: 50px 0px
+.form-gen
+	padding: 44px 30px 37px 30px
+	display: flex
+	align-content: space-between
+	flex-wrap: wrap
+	height: 100%
+	.form-gen__field
+		flex: 0 0 100%
+		max-width: 100%
+		margin-bottom: 15px
+		p
+			font-family: "CamphorPro", sans-serif
+			font-size: 18px
+			line-height: 31px
+			color: #545C6B
+			opacity: 0.7
+			margin-bottom: 3px
+		input
+			font-family: "CamphorPro", sans-serif
+			font-size: 16px
+			width: 100%
+			background: #f9f9f9
+			border: 1px solid transparent
+			border-radius: 2px
+			padding: 0px 15px
+			color: gray
+			-moz-transition: all 0.3s ease-out
+			-o-transition: all 0.3s ease-out
+			-webkit-transition: all 0.3s ease-out
+			transition: all 0.3s ease-out
+		input
+			height: 40px
+	.form-gen__button
+		text-align: right
+		margin-top: 22px
+		input
+			width: 100%
+			height: 48px
+			background: #005a87
+			box-shadow: none
+			border: 1px solid #005a87
+			border-radius: 2px
+			-moz-transition: all 0.3s ease-out
+			-o-transition: all 0.3s ease-out
+			-webkit-transition: all 0.3s ease-out
+			transition: all 0.3s ease-out
+			font-family: "CamphorPro", sans-serif
+			font-size: 14px
+			text-transform: uppercase
+			color: #fff
+			font-weight: bold
+			letter-spacing: 3px
+			&:hover
+				background: transparent
+				box-shadow: none
+				border: 1px solid #005a87!important
+				cursor: pointer
+				color: #005a87
+.form-gen input:hover, .form-gen input:active, .form-gen input:focus, .form-gen textarea:hover, .form-gen textarea:active, .form-gen textarea:focus
+	border: 1px solid #b4b4b4!important
+		
+

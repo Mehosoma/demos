@@ -1,0 +1,852 @@
+@import "bourbon/bourbon"
+
+$font: 'Source Sans Pro', sans-serif
+
+
+html
+	width: 100%
+	height: 100%
+	
+body
+	width: 100%
+	height: auto
+	min-width: 320px	
+	margin: 0 auto
+	position: relative
+	font-family: $font
+	line-height: 1.2
+	-webkit-font-smoothing: antialiased
+	background-color: #fff
+	overflow-x: hidden
+	
+
+	a:hover, a:focus, a:active
+		text-decoration: none
+		outline: none
+	input:focus, input:active
+		text-decoration: none
+		outline: none
+	button:focus, button:active
+		text-decoration: none
+		outline: none
+	textarea:focus, textarea:active
+		text-decoration: none
+		outline: none
+	a
+		display: inline-block
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out
+	ul, ol
+		padding: 0px
+		margin: 0px
+		list-style-type: none
+	button
+		border: none
+		cursor: pointer
+	hr
+		border: none	
+
+.pixel
+	background: url(../img/main.jpg) no-repeat top center
+	width: 1920px
+	height: 12800px
+	position: absolute
+	z-index: 1000000
+	display: none
+	left: 50%
+	top: 0
+	margin-left: -960px
+	opacity: 0.5
+	margin-top: 0px
+
+
+/***************************************************GeneralStyles************************************/
+.section
+	width: 100%
+	height: auto
+	&--portfolio,
+	&--project
+		padding: 100px 0px
+	&__content
+		&__main
+			padding: 100px 30px
+		&--overlay
+			position: absolute
+			width: 100%
+			height: 100%
+			background: rgba(39,173,166,0.95)			
+		&--top
+			width: 100%
+			height: 100%
+			display: flex
+			justify-content: center
+			align-items: flex-start
+			align-content: space-between
+			flex-wrap: wrap
+			padding: 50px 30px
+			h1
+				color: #fff
+				font-size: 60px
+				flex: 0 0 100%
+				max-width: 100%
+				text-align: center
+			img
+				height: 70%
+				width: auto
+	&__portfolio
+		&-content
+			padding: 0px 30px
+		&-main
+			display: flex
+			justify-content: space-between
+			flex-wrap: wrap
+			margin-top: 40px
+		&-block
+			flex: 0 0 49%
+			max-width: 49%
+			position: relative
+			margin-bottom: 2vw
+			height: 30vw
+			background-repeat: no-repeat
+			background-position: center center
+			background-size: cover
+			img
+				width: 100%
+				height: auto
+			&:hover
+				.section__portfolio-description
+					z-index: 10
+					opacity: 1
+				.section__portfolio-description-border
+					&:after,
+					&:before
+						transform: scale3d(1,1,1)
+						transition: transform 0.5s
+		&-description
+			width: 100%
+			height: 100%
+			position: absolute
+			top: 0px
+			left: 0px
+			opacity: 0
+			z-index: -1
+			padding: 30px
+			-moz-transition: all 0.3s ease-out
+			-o-transition: all 0.3s ease-out
+			-webkit-transition: all 0.3s ease-out
+			transition: all 0.3s ease-out			
+			&:after
+				content: ''
+				display: block
+				width: 100%
+				height: 100%
+				background-color: rgba(0,0,0,0.7)
+				position: absolute
+				top: 0px
+				left: 0px
+			h3,
+			p,
+			span
+				color: #fff
+				text-align: center		
+			h3
+				font-size: 30px
+				margin-bottom: 20px
+				font-weight: 700
+				letter-spacing: 4px	
+			p
+				font-size: 20px	
+				margin-bottom: 30px
+				text-align: center
+			span
+				display: block
+				padding: 10px 40px 
+				border: 1px solid #fff	
+				text-transform: uppercase
+				font-size: 20px
+			&-border
+				display: flex
+				justify-content: center
+				align-items: center
+				flex-direction: column
+				width: 100%
+				height: 100%
+				padding: 30px
+				position: relative
+				z-index: 20	
+				&:after,
+				&:before
+					content: ''
+					display: block
+					transform-origin: center
+					top: 0px
+					left: 0px
+					width: 100%
+					height: 100%
+					position: absolute
+				&:before
+					border-top: 1px solid #fff
+					border-bottom: 1px solid #fff
+					transform: scale3d(0,1,1)
+				&:after
+					border-left: 1px solid #fff
+					border-right: 1px solid #fff
+					transform: scale3d(1,0,1)
+
+.section__title
+	font-size: 48px
+	padding: 0 0 40px
+	font-weight: 700
+	line-height: 52px
+.section__title--centered
+	width: 100%
+	text-align: center
+	position: relative
+.section__title--centered:after
+	content: ''
+	position: absolute
+	left: 0
+	right: 0
+	top: 80%
+	margin: auto
+	width: 50px
+	height: 1px
+	background: #454545
+.section__description--centered
+	width: 60%
+	margin: auto
+	text-align: center
+	padding: 0 0 80px
+.section__description 
+	font-size: 18px
+	line-height: 32px
+.images-separator
+	flex: 0 0 100%
+	max-width: 100%
+.block-gradient
+	width: 100%
+	height: 100%
+	&--purple
+		background: #af6edd
+		background: -moz-radial-gradient(center, ellipse cover, #af6edd 0%, #7100bc 100%)
+		background: -webkit-radial-gradient(center, ellipse cover, #af6edd 0%,#7100bc 100%)
+		background: radial-gradient(ellipse at center, #af6edd 0%,#7100bc 100%)
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#af6edd', endColorstr='#7100bc',GradientType=1 )
+	&--purple-dark
+		background: #5b3989
+		background: -moz-radial-gradient(center, ellipse cover, #5b3989 0%, #3a008a 100%)
+		background: -webkit-radial-gradient(center, ellipse cover, #5b3989 0%,#3a008a 100%)
+		background: radial-gradient(ellipse at center, #5b3989 0%,#3a008a 100%)
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5b3989', endColorstr='#3a008a',GradientType=1 )
+	&--light-blue
+		background: #447199
+		background: -moz-radial-gradient(center, ellipse cover, #447199 0%, #00529b 100%)
+		background: -webkit-radial-gradient(center, ellipse cover, #447199 0%,#00529b 100%)
+		background: radial-gradient(ellipse at center, #447199 0%,#00529b 100%)
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#447199', endColorstr='#00529b',GradientType=1 )
+	&--yellow
+		background: #e0d57f
+		background: -moz-radial-gradient(center, ellipse cover, #f9ed81 0%, #FCE300 100%)
+		background: -webkit-radial-gradient(center, ellipse cover, #f9ed81 0%, #FCE300 100%)
+		background: radial-gradient(ellipse at center, #f9ed81 0%, #FCE300 100%)
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0d57f', endColorstr='#FCE300',GradientType=1 )
+	&--orange
+		background: #e5af52
+		background: -moz-radial-gradient(center, ellipse cover, #e5af52 0%, #ff9d00 100%)
+		background: -webkit-radial-gradient(center, ellipse cover, #e5af52 0%,#ff9d00 100%)
+		background: radial-gradient(ellipse at center, #e5af52 0%,#ff9d00 100%)
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5af52', endColorstr='#ff9d00',GradientType=1 )
+	&--brown
+		background: #c18251
+		background: -moz-radial-gradient(center, ellipse cover, #c18251 0%, #c45500 100%)
+		background: -webkit-radial-gradient(center, ellipse cover, #c18251 0%,#c45500 100%)
+		background: radial-gradient(ellipse at center, #c18251 0%,#c45500 100%)
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c18251', endColorstr='#c45500',GradientType=1 )
+	&--blue-dark
+		background: #6261a5
+		background: -moz-radial-gradient(center, ellipse cover, #6261a5 0%, #0500aa 100%)
+		background: -webkit-radial-gradient(center, ellipse cover, #6261a5 0%,#0500aa 100%)
+		background: radial-gradient(ellipse at center, #6261a5 0%,#0500aa 100%)
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6261a5', endColorstr='#0500aa',GradientType=1 )
+	&--dark
+		background: #3F3C84
+		background: -moz-radial-gradient(center, ellipse cover, #3F3C84 0%, #09008e 100%)
+		background: -webkit-radial-gradient(center, ellipse cover, #3F3C84 0%,#09008e 100%)
+		background: radial-gradient(ellipse at center, #3F3C84 0%,#09008e 100%)
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3F3C84', endColorstr='#09008e',GradientType=1 )
+	&--green
+		background: #007773
+		background: -moz-radial-gradient(center, ellipse cover, #007773 0%, #005e59 100%)
+		background: -webkit-radial-gradient(center, ellipse cover, #007773 0%,#005e59 100%)
+		background: radial-gradient(ellipse at center, #007773 0%,#005e59 100%)
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007773', endColorstr='#005e59',GradientType=1 )
+	&--light-green
+		background: #92ddbe
+		background: -moz-radial-gradient(center, ellipse cover, #92ddbe 0%, #2ce49b 100%)
+		background: -webkit-radial-gradient(center, ellipse cover, #92ddbe 0%,#2ce49b 100%)
+		background: radial-gradient(ellipse at center, #92ddbe 0%,#2ce49b 100%)
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#92ddbe', endColorstr='#2ce49b',GradientType=1 )
+	&--solo
+		background: #009803
+		background: -moz-linear-gradient(top, #009803 0%, #016702 100%)
+		background: -webkit-linear-gradient(top, #009803 0%,#016702 100%)
+		background: linear-gradient(to bottom, #009803 0%,#016702 100%)
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#009803', endColorstr='#016702',GradientType=0 )
+
+
+/***************************************************Project************************************/
+.section
+	&__project
+		&-bottom
+			margin-top: 80px
+		&--black
+			background-image: url('../images/bg-black.png')
+			width: 100%
+			background-repeat: no-repeat
+			background-size: cover
+			padding: 60px 0px
+			p
+				padding: 0px 60px
+		&-content
+			max-width: 1170px
+			margin: 0 auto
+			min-height: 180px
+			p
+				font-size: 20px
+				line-height: 34px
+				font-weight: 300
+			i
+				font-weight: 700
+				font-style: normal
+				font-size: 22px
+			&--black
+				width: 100%
+				height: 100%
+				display: flex
+				justify-content: center
+				align-items: center
+				p
+					color: #fff
+					text-align: center
+					font-size: 22px
+					line-height: 40px
+					margin-bottom: 0px
+			&--bottom
+				display: flex
+				justify-content: space-between
+		&-main
+			background-image: url('../images/bg.jpg')
+			width: 100%
+			height: 720px
+			margin: 80px 0px 0px 0px
+			background-repeat: repeat
+			background-size: cover
+			&-images
+				width: 1000px
+				height: 100%
+				margin: 0px auto
+				display: flex
+				justify-content: center
+				align-items: center
+				position: relative
+				img:nth-child(1)
+					width: 600px
+					height: auto
+				img:nth-child(2)
+					width: 280px
+					height: auto
+					position: absolute
+					bottom: 100px 
+					left: 50px
+				img:nth-child(3)
+					width: 340px
+					height: auto
+					position: absolute
+					bottom: 60px 
+					left: -100px
+				img:nth-child(4)
+					width: 600px
+					height: auto
+					position: absolute
+					bottom: 70px 
+					right: -80px
+				img:nth-child(6)
+					width: 110px
+					height: auto
+					position: absolute
+					bottom: 70px 
+					right: -80px
+			&--second
+				margin-top: 0px
+				img:nth-child(1)
+					width: 90%
+					height: auto
+					margin-left: -40px
+	&__bottom
+		&-left,
+		&-right
+			flex: 0 0 49%
+			max-width: 49%			
+			align-items: flex-start
+			img
+				width: 100%
+				height: auto
+				margin-bottom: 40px
+				box-shadow: 0px 0px 6px rgba(0,0,0,0.2)
+
+
+/***************************************************Blog************************************/
+.section		
+	&__content
+		&__main
+			padding: 100px 30px	
+			max-width: 1170px
+			margin: 0 auto				
+		&--top
+			width: 100%
+			height: auto
+			min-height: 240px
+			display: flex
+			justify-content: center
+			align-items: flex-start
+			align-content: space-between
+			flex-wrap: wrap
+			padding: 50px 30px
+			background: rgba(44,228,155,0.95)	
+			h1
+				color: #fff
+				font-size: 60px
+				flex: 0 0 100%
+				max-width: 100%
+				text-align: center
+			img
+				height: auto
+				width: 380px
+				max-width: 380px
+				margin-top: 35px
+
+	&__blog
+		&--top
+			width: 100%
+			position: relative
+			background-position: center center
+			background-size: cover
+			background-repeat: no-repeat
+			&-post
+				min-height: 240px
+				.section__content--top
+					align-content: flex-start
+				h1
+					font-size: 50px
+					margin-bottom: 30px
+				//.section--overlay
+					//background: rgba(58,0,138,0.95)
+				.section__content--top
+					img
+						margin-top: 0px
+		&__wrap
+			display: flex			
+			flex-wrap: wrap
+			margin-top: 30px
+		&__col
+			flex: 0 0 49%
+			max-width: 49%
+			margin-right: 2%
+			margin-bottom: 40px
+			&:nth-child(even)
+				margin-right: 0px
+		&__block
+			box-shadow: 0px 0px 10px rgba(0,0,0,0.1)
+			border-radius: 5px
+			width: 100%
+			.block-gradient__overlay
+				width: 100%
+				height: 100%
+				background: rgba(0,0,0,0.8)
+				opacity: 0
+				border-radius: 5px 5px 0px 0px
+				padding: 40px
+				-moz-transition: all 0.3s ease-out
+				-o-transition: all 0.3s ease-out
+				-webkit-transition: all 0.3s ease-out
+				transition: all 0.3s ease-out
+				&__text
+					width: 100%
+					height: 100%
+					position: relative
+					display: flex
+					justify-content: center
+					align-items: center
+					padding: 0px 20px
+					p
+						text-align: center
+						margin-bottom: 0px
+						color: #fff
+						max-height: 112px
+						overflow: hidden
+					&:after,
+					&:before
+						content: ''
+						display: block
+						transform-origin: center
+						top: 0px
+						left: 0px
+						width: 100%
+						height: 100%
+						position: absolute
+					&:before
+						border-top: 1px solid #fff
+						border-bottom: 1px solid #fff
+						transform: scale3d(0,1,1)		
+			&:hover
+				cursor: pointer
+				.section__blog__header
+					span
+						color: #2ce49b
+				.block-gradient__overlay
+					opacity: 1
+				.block-gradient__overlay__text
+					&:before
+						transform: scale3d(1,1,1)
+						transition: transform 0.5s
+		&__image
+			width: 100%
+			height: 270px
+			border-radius: 5px 5px 0px 0px
+			position: relative
+			-moz-transition: all 0.3s ease-out
+			-o-transition: all 0.3s ease-out
+			-webkit-transition: all 0.3s ease-out
+			transition: all 0.3s ease-out		
+			&__wrap
+				width: 100%
+				height: 100%
+				background-repeat: no-repeat
+				background-position: top 10px center
+				background-size: calc(min(300px, 100%))
+			img
+				position: absolute
+				width: 50px
+				height: 50px
+				background: #ccc
+				border-radius: 50%
+				margin: auto
+				left: 0px
+				right: 0px
+				bottom: -25px
+		&__header
+			text-align: center
+			padding: 40px 40px 25px 40px
+			span
+				font-size: 21px
+				line-height: 32px
+				font-weight: 600
+				color: #000
+				-moz-transition: all 0.3s ease-out
+				-o-transition: all 0.3s ease-out
+				-webkit-transition: all 0.3s ease-out
+				transition: all 0.3s ease-out	
+		&__date
+			border-top: 1px solid #e4dfdf
+			padding: 15px 30px
+			justify-content: center
+			display: flex
+			span
+				margin: 0px 10px
+				font-size: 14px
+				color: #adadad
+				position: relative
+				&:after
+					content: ''
+					display: block
+					position: absolute
+					width: 3px
+					height: 3px
+					border-radius: 50%
+					background: #adadad
+					top: 50%
+					margin-top: -1.5px
+					left: -10px
+				&:nth-child(1)
+					&:after
+						display: none
+		&__text
+			margin-bottom: 30px
+			p
+				font-size: 22px
+				line-height: 30px
+		&__pagination
+			width: 100%
+			padding-top: 30px
+			ul
+				width: 100%
+				display: flex
+				justify-content: center
+			span
+				font-size: 20px
+				color: #fff
+				display: block
+				width: 40px
+				height: 40px
+				background: rgba(44,228,155,0.95)
+				text-align: center
+				line-height: 38px
+				border-radius: 50%
+				margin: 0px 5px
+				border: 1px solid rgba(44,228,155,0.95)
+				font-weight: 600
+				-moz-transition: all 0.3s ease-out
+				-o-transition: all 0.3s ease-out
+				-webkit-transition: all 0.3s ease-out
+				transition: all 0.3s ease-out
+				&:hover
+					cursor: pointer
+					background: #fff
+					color: rgba(44,228,155,1)
+			&--active
+				span
+					background: transparent
+					border: 1px solid transparent
+					color: #999
+					&:hover
+						color: #999
+						cursor: default
+	&__post
+		a
+			color: #2ce49b
+			&:hover
+				color: #ffba00
+		&__info
+			display: flex
+			justify-content: space-between
+			&-block
+				padding: 0px 20px
+				display: flex
+				align-items: center
+				img
+					width: 20px
+					height: 20px
+				img.section__post__avatar
+					width: 40px
+					height: 40px
+					border-radius: 50%
+				span
+					color: #fff
+					font-size: 20px
+					margin-left: 10px
+					font-weight: 600
+		&__table
+			width: 100%
+			margin-bottom: 30px
+			table
+				width: 100%
+			th,
+			td
+				border: 1px solid #ccc
+				padding: 20px
+				font-size: 20px
+			td
+				font-weight: 500
+			&__icon
+				text-align: right
+				margin-bottom: 20px
+				display: none
+				img
+					width: 30px
+					height: auto
+		&__header
+			margin-top: 60px
+			text-align: center
+			border-bottom: 2px solid #ccc
+			margin-bottom: 30px
+			h2
+				font-size: 40px
+				line-height: 60px
+				color: #1d1d1d
+				font-weight: 600
+			&--special
+				margin-bottom: 30px				
+				display: inline-block
+				a
+					border-left: 5px solid #b21212
+				h3
+					color: #0971b2
+					padding-left: 10px
+					font-size: 40px
+					line-height: 60px
+					margin-bottom: 0px
+					-moz-transition: all 0.3s ease-out
+					-o-transition: all 0.3s ease-out
+					-webkit-transition: all 0.3s ease-out
+					transition: all 0.3s ease-out	
+				&:hover
+					h3
+						color: #2dc1a7
+		&__image
+			padding: 40px
+			box-shadow: rgba(23,43,99,.24) 0 0px 20px
+			margin-bottom: 30px
+			border-radius: 5px
+			img
+				width: 100%
+				height: auto
+		&__list
+			margin-bottom: 30px
+			span
+				font-size: 22px
+				line-height: 30px
+				display: block
+				margin-bottom: 10px
+			li
+				font-size: 20px
+				line-height: 30px
+			&--ol
+				ol
+					counter-reset: li
+					list-style: none
+					padding: 0
+					text-shadow: 0 1px 0 rgba(255,255,255,.5)
+					padding-left: 20px
+				li
+					position: relative
+					padding-left: 30px
+					&:after
+						content: counter(li)
+						counter-increment: li
+						position: absolute
+						left: 0px
+						top: 5px
+						background: #2ce49b
+						height: 20px
+						width: 20px
+						line-height: 20px
+						font-size: 14px
+						text-align: center
+						font-weight: bold
+						color: #fff
+			&--ul
+				ul
+					padding-left: 20px
+				li
+					position: relative
+					padding-left: 30px
+					&:before
+						padding-right: 10px
+						font-weight: bold
+						color: #2ce49b
+						content: "\2714"
+						transition-duration: 0.5s
+						position: absolute
+						left: 0px
+		&__special
+			border-top: 3px solid black
+			border-radius: 5px
+			box-shadow: rgba(23,43,99,.24) 0 0px 20px
+			padding: 30px 30px 1px 30px
+			margin-bottom: 30px
+			.section__post__image
+				box-shadow: rgba(23,43,99,.24) 0 3px 10px
+		&__quote
+			margin-bottom: 30px
+			padding: 20px
+			background: #2ce49b
+			blockquote
+				font-size: 20px
+				line-height: 30px
+				color: #fff
+				text-align: center
+				margin-bottom: 0px
+				i
+					font-style: normal
+					font-weight: 900
+					color: #1d1d1d
+			span
+				display: block
+				text-align: center
+				margin-bottom: 10px
+				color: #fff
+				font-size: 40px
+		&__btn
+			margin-bottom: 30px
+			a
+				padding: 0px 30px 
+				line-height: 38px
+				background: #2ce49b
+				color: #fff
+				border-radius: 30px
+				border: 1px solid #2ce49b
+				display: inline-block
+				&:hover
+					background: transparent
+					color: #2ce49b
+			&--stroke
+				a
+					background: transparent
+					color: #2ce49b
+					&:hover
+						background: #2ce49b
+						color: #fff
+			&--green-dark
+				a
+					background: transparent
+					border-color: #005e59
+					color: #005e59
+					&:hover
+						background: #005e59
+						color: #fff
+			&--orange
+				a
+					background: #ffba00
+					color: #fff
+					border-color: #ffba00 
+					&:hover
+						background: transparent
+						color: #ffba00
+						border-color: #ffba00
+			&--big
+				a
+					padding: 0px 60px
+					border-radius: 80px
+					line-height: 60px
+					font-size: 20px
+			&--shadow
+				a
+					border-color: transparent
+					background: none
+					box-shadow: inset 0 -5px 0 #2ce49b
+					color: #2dc1a7
+					&:hover
+						box-shadow: inset 0 -60px 0 #2ce49b
+						color: #fff
+			&--arrows
+				a
+					padding: 0px 10px
+				span
+					opacity: 0
+					padding-left: 5px
+					padding-right: 5px
+					font-weight: bold
+					transition: 0.4s ease-in-out
+					color: #fff
+				a:hover
+					span
+						opacity: 1
+						padding-left: 10px
+						padding-right: 10px
+						color: #fff
+
+/***************************************************Similar-Posts************************************/
+.similar
+	padding-top: 30px
+	&__wrap
+		display: flex
+		flex-wrap: wrap
+		.section__blog__col
+			flex: 0 0 32%
+			max-width: 32%
+		.section__blog__col:nth-child(even)
+			margin-right: 2%
+		.section__blog__col:last-child
+			margin-right: 0px
