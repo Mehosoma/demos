@@ -316,24 +316,6 @@ $(window).on('load resize', function() {
 
 
 
-//Show-hide Drop-Down Menu
-$(document).ready(function(){ 
-
-  if ($(window).width() >= 990) {    
-      $('.lang-choice a').on('mouseenter',function(e){
-        event.preventDefault();       
-          $(this).parent('').addClass('show-lang')
-                                     
-      });
-      $('.lang-choice').on('mouseleave',function(e){
-        event.preventDefault();    
-          $(this).removeClass('show-lang')
-      });
-    }else{
-
-    }
-});
-
 // Дисклеймер
 let more = document.querySelector('.more-disclaimer');
 let disclaimer = document.querySelector('.disclaimer');

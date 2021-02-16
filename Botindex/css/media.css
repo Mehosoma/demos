@@ -1111,7 +1111,12 @@
     .packages__wrap .packages__block:nth-child(3) {
         height: 575px;
     }
+
+
 }
+
+
+
 
 @media only screen and (min-width: 1200px) and (max-width: 1439px) {
 
@@ -1204,5 +1209,9 @@
 @media only screen and (min-width: 1200px) {
     .main-menu {
         display: block!important;
+    }
+
+     .conditions .block h4{
+        height: 56px;
     }
 }
