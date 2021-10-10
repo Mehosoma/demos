@@ -701,19 +701,16 @@ body hr {
 .footer_social {
   margin-right: 10px;
 }
-.footer_social li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
 .footer_social li a {
   font-size: 27px;
-  margin-left: 10px;
 }
-.footer_social li:hover svg path {
+.footer_social li a svg,
+.footer_social li a img {
+  margin-right: 10px;
+  position: relative;
+  top: -2px;
+}
+.footer_social li a:hover svg path {
   stroke: #6992d4;
 }
 .footer_social li.insta-svg svg path {

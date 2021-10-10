@@ -563,13 +563,15 @@ body
 	&_social
 		margin-right: 10px
 		li
-			display: flex
-			align-items: center
 			a
 				font-size: 27px
-				margin-left: 10px
-			&:hover
-				svg
+				svg,
+				img
+					margin-right: 10px
+					position: relative
+					top: -2px
+			a:hover
+				svg				
 					path
 						stroke: #6992d4
 			&.insta-svg
