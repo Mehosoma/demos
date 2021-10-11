@@ -512,10 +512,6 @@
 		font-size: 22px;
 	}
 
-	.gen-form{
-		top: 45px;
-		left: 65%;
-	}
 }
 
 @media only screen and (min-width : 1440px) and (max-width : 1919.5px) {
