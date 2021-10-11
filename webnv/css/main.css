@@ -729,6 +729,9 @@ body hr {
 .footer_links li {
   margin-bottom: 13px;
 }
+.footer_links a:hover {
+  color: #5584d1;
+}
 .footer_social {
   margin-right: 10px;
 }
