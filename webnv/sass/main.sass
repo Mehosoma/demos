@@ -21,6 +21,7 @@ body
 	line-height: 1.2
 	-webkit-font-smoothing: antialiased
 	background-color: #fff	
+	overflow: hidden
 	
 
 	a:hover, a:focus, a:active
@@ -139,9 +140,7 @@ body
 			padding: 0px 220px
 .arrows
 		position: absolute
-		top: 55%
-		right: 50%
-		margin-right: -634px
+		top: 50%
 		width: 100%
 		.arr-left,
 		.arr-right
@@ -149,6 +148,8 @@ body
 			height: 80px
 			position: absolute			
 			svg
+				width: 43px
+				height: 81px
 				-moz-transition: all 0.3s ease-out
 				-o-transition: all 0.3s ease-out
 				-webkit-transition: all 0.3s ease-out
@@ -158,13 +159,13 @@ body
 				svg
 					opacity: 0.3
 		.arr-right
-			left: 0px
+			left: -80px
 		.arr-left
-			left: 100%
+			right: -80px
 .gen-form
 	position: absolute
 	top: 89px
-	right: -203px
+	left: 85%
 	z-index: 10
 	background: #fff
 	border-radius: 5px
@@ -254,6 +255,7 @@ body
 		&__menu
 			display: flex
 			flex-grow: 1
+			order: 1
 			ul
 				display: flex
 				flex-grow: 1
@@ -269,6 +271,7 @@ body
 						color: $orange
 						border-bottom: 1px solid $orange
 		&__contacts
+			order: 2
 			svg
 				margin-right: 10px
 			a
@@ -299,20 +302,20 @@ body
 .banner
 	width: 100%
 	background-image: url('../images/banner.png')
-	background-position: right center
+	background-position: center center
 	background-repeat: no-repeat
 	position: relative
 	&_decor
 		position: absolute
 		width: 1100px
 		height: 429px
+		right: 48%
 		background: $orange
 		-webkit-transform: skewX(-12deg)
 		-moz-transform: skewX(-12deg)
 		-ms-transform: skewX(-12deg)
 		-o-transform: skewX(-12deg)
 		transform: skewX(-12deg)
-		left: -100px
 	&_text
 		margin-top: 37px
 		&_wrap
@@ -335,7 +338,6 @@ body
 		margin-bottom: 30px	
 	&_photo
 		margin-right: 55px
-		margin-left: 20px
 	&_content
 		padding: 18px 0px 0px 4px
 		&__text
@@ -385,6 +387,7 @@ body
 		&_wrap
 			width: 93%
 			margin: 0 auto
+			position: relative
 		.slick-slide
 			margin: 0px 30px			
 		&__slide
@@ -465,7 +468,7 @@ body
 					width: 2px
 					height: 14px
 					background: #fff
-					top: 5px
+					top: 4px
 					left: 11px
 					-moz-transition: all 0.3s ease-out
 					-o-transition: all 0.3s ease-out
@@ -536,7 +539,7 @@ body
 /***************************************************Footer************************************/
 .footer
 	width: 100%
-	height: 177px
+	min-height: 177px
 	background: $orange
 	padding: 25px 0px 20px 0px
 	a
@@ -593,3 +596,100 @@ body
 			font-size: 13px
 			font-weight: 300
 			color: #fff
+
+
+/***********************************************ButtonMobile************************************/
+.menu-toggle-button
+	width: 40px
+	height: 40px
+	background-color: transparent
+	padding: 10px
+	border: none
+	text-indent: -9999px
+	-webkit-appearance: none
+	-moz-appearance: none
+	appearance: none
+	position: relative
+	display: block
+	display: flex
+	align-items: center
+
+
+.menu-toggle-button span 
+	display: block
+	height: 2px
+	background: $blue
+	position: absolute
+	top: 19px
+	width: 20px
+	left: 50%
+	margin-left: -10px
+	-webkit-transition: background 0s 0.3
+	-o-transition: background 0s 0.3
+	transition: background 0s 0.3
+
+
+.menu-toggle-button span::before, .menu-toggle-button span::after
+	content: ""
+	display: block
+	width: 100%
+	height: 2px
+	background: $blue
+	position: absolute
+	left: 0px
+	-webkit-transition-duration: 0.3s, 1s
+	-o-transition-duration: 0.3s, 1s
+	transition-duration: 0.3s, 1s
+	-webkit-transition-delay: 0s, 0.3s
+	-o-transition-delay: 0s, 0.3s
+	transition-delay: 0s, 0.3s
+
+
+.menu-toggle-button span::before 
+	top: -5px
+
+.menu-toggle-button span::after 
+	bottom: -5px
+
+.menu-toggle-button.is-active span
+	background: none
+
+.menu-toggle-button.is-active span::before
+	top: 0
+	-webkit-transform: rotate(45deg)
+	-ms-transform: rotate(45deg)
+	transform: rotate(45deg)
+	-webkit-transition-property: top, -webkit-transform
+	transition-property: top, -webkit-transform
+	-o-transition-property: top, transform
+	transition-property: top, transform
+	transition-property: top, transform, -webkit-transform
+	-webkit-transition-delay: 0s, 0.3s
+	-o-transition-delay: 0s, 0.3s
+	transition-delay: 0s, 0.3s
+	-webkit-transition-duration: 0.3s, 0.3s
+	-o-transition-duration: 0.3s, 0.3s
+	transition-duration: 0.3s, 0.3s
+	background: $blue
+
+
+.menu-toggle-button.is-active span::after 
+	bottom: 0
+	background: $blue
+	-webkit-transform: rotate(-45deg)
+	-ms-transform: rotate(-45deg)
+	transform: rotate(-45deg)
+	-webkit-transition-property: bottom, -webkit-transform
+	transition-property: bottom, -webkit-transform
+	-o-transition-property: bottom, transform
+	transition-property: bottom, transform
+	transition-property: bottom, transform, -webkit-transform
+	-webkit-transition-delay: 0s, 0.3s
+	-o-transition-delay: 0s, 0.3s
+	transition-delay: 0s, 0.3s
+	-webkit-transition-duration: 0.3s, 0.3s
+	-o-transition-duration: 0.3s, 0.3s
+	transition-duration: 0.3s, 0.3s
+
+.menu-toggle-button:focus
+	outline: none !important

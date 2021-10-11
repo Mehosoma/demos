@@ -16,6 +16,7 @@ body {
   line-height: 1.2;
   -webkit-font-smoothing: antialiased;
   background-color: #fff;
+  overflow: hidden;
 }
 body a:hover, body a:focus, body a:active {
   text-decoration: none;
@@ -155,9 +156,7 @@ body hr {
 
 .arrows {
   position: absolute;
-  top: 55%;
-  right: 50%;
-  margin-right: -634px;
+  top: 50%;
   width: 100%;
 }
 .arrows .arr-left,
@@ -168,6 +167,8 @@ body hr {
 }
 .arrows .arr-left svg,
 .arrows .arr-right svg {
+  width: 43px;
+  height: 81px;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
@@ -180,16 +181,16 @@ body hr {
   opacity: 0.3;
 }
 .arrows .arr-right {
-  left: 0px;
+  left: -80px;
 }
 .arrows .arr-left {
-  left: 100%;
+  right: -80px;
 }
 
 .gen-form {
   position: absolute;
   top: 89px;
-  right: -203px;
+  left: 85%;
   z-index: 10;
   background: #fff;
   border-radius: 5px;
@@ -311,6 +312,9 @@ body hr {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
 }
 .header_right__menu ul {
   display: -webkit-box;
@@ -332,6 +336,11 @@ body hr {
 .header_right__menu ul a:hover {
   color: #D9A912;
   border-bottom: 1px solid #D9A912;
+}
+.header_right__contacts {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
 }
 .header_right__contacts svg {
   margin-right: 10px;
@@ -376,7 +385,7 @@ body hr {
 .banner {
   width: 100%;
   background-image: url("../images/banner.png");
-  background-position: right center;
+  background-position: center center;
   background-repeat: no-repeat;
   position: relative;
 }
@@ -384,10 +393,10 @@ body hr {
   position: absolute;
   width: 1100px;
   height: 429px;
+  right: 48%;
   background: #D9A912;
   -webkit-transform: skewX(-12deg);
   transform: skewX(-12deg);
-  left: -100px;
 }
 .banner_text {
   margin-top: 37px;
@@ -421,7 +430,6 @@ body hr {
 }
 .about_photo {
   margin-right: 55px;
-  margin-left: 20px;
 }
 .about_content {
   padding: 18px 0px 0px 4px;
@@ -482,6 +490,7 @@ body hr {
 .slider_main_wrap {
   width: 93%;
   margin: 0 auto;
+  position: relative;
 }
 .slider_main .slick-slide {
   margin: 0px 30px;
@@ -580,7 +589,7 @@ body hr {
   width: 2px;
   height: 14px;
   background: #fff;
-  top: 5px;
+  top: 4px;
   left: 11px;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
@@ -663,7 +672,7 @@ body hr {
 /***************************************************Footer************************************/
 .footer {
   width: 100%;
-  height: 177px;
+  min-height: 177px;
   background: #D9A912;
   padding: 25px 0px 20px 0px;
 }
@@ -731,4 +740,98 @@ body hr {
   font-size: 13px;
   font-weight: 300;
   color: #fff;
+}
+
+/***********************************************ButtonMobile************************************/
+.menu-toggle-button {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  padding: 10px;
+  border: none;
+  text-indent: -9999px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu-toggle-button span {
+  display: block;
+  height: 2px;
+  background: #8BAEE6;
+  position: absolute;
+  top: 19px;
+  width: 20px;
+  left: 50%;
+  margin-left: -10px;
+  -webkit-transition: background 0s 0.3;
+  transition: background 0s 0.3;
+}
+
+.menu-toggle-button span::before, .menu-toggle-button span::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #8BAEE6;
+  position: absolute;
+  left: 0px;
+  -webkit-transition-duration: 0.3s, 1s;
+  transition-duration: 0.3s, 1s;
+  -webkit-transition-delay: 0s, 0.3s;
+  transition-delay: 0s, 0.3s;
+}
+
+.menu-toggle-button span::before {
+  top: -5px;
+}
+
+.menu-toggle-button span::after {
+  bottom: -5px;
+}
+
+.menu-toggle-button.is-active span {
+  background: none;
+}
+
+.menu-toggle-button.is-active span::before {
+  top: 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition-property: top, -webkit-transform;
+  transition-property: top, -webkit-transform;
+  transition-property: top, transform;
+  transition-property: top, transform, -webkit-transform;
+  -webkit-transition-delay: 0s, 0.3s;
+  transition-delay: 0s, 0.3s;
+  -webkit-transition-duration: 0.3s, 0.3s;
+  transition-duration: 0.3s, 0.3s;
+  background: #8BAEE6;
+}
+
+.menu-toggle-button.is-active span::after {
+  bottom: 0;
+  background: #8BAEE6;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-transition-property: bottom, -webkit-transform;
+  transition-property: bottom, -webkit-transform;
+  transition-property: bottom, transform;
+  transition-property: bottom, transform, -webkit-transform;
+  -webkit-transition-delay: 0s, 0.3s;
+  transition-delay: 0s, 0.3s;
+  -webkit-transition-duration: 0.3s, 0.3s;
+  transition-duration: 0.3s, 0.3s;
+}
+
+.menu-toggle-button:focus {
+  outline: none !important;
 }

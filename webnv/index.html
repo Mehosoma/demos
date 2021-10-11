@@ -11,7 +11,7 @@
 	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, maximum-scale=1">
 	<meta name="format-detection" content="telephone=no">
 
 	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.css">
@@ -39,15 +39,28 @@
 						<a href="index.html"><span><i>WEB-</i><b>NV.</b>RU</span></a>
 					</div>
 					<div class="header_right">
-						<nav class="header_right__menu main-menu">
+						<button class="menu-toggle-button click-mobile d-lg-none">
+							<span></span>			
+						</button>
+						<nav class="header_right__menu main-menu d-lg-flex">
 							<ul>
 								<li><a href=".about">О студии</a></li>
 								<li><a href=".slider">Примеры работ</a></li>
 								<li><a href=".work">Цены и порядок работы</a></li>
 								<li><a href=".contacts">Контакты</a></li>
 							</ul>
+							<div class="header_right__contacts d-flex d-md-none">
+								<div class="header_right__contacts__phone">
+									<img src="images/phone.svg" class="svg" alt="phone-icon">
+									<a href="tel:+70955477678">+7095 547-76-78</a>
+								</div>
+								<div class="header_right__contacts__mail">
+									<img src="images/mail.svg" class="svg" alt="mail-icon">
+									<a href="mailto:info@nv.ru">info@nv.ru</a>
+								</div>
+							</div>
 						</nav>
-						<div class="header_right__contacts">
+						<div class="header_right__contacts d-none d-md-flex d-lg-block">
 							<div class="header_right__contacts__phone">
 								<img src="images/phone.svg" class="svg" alt="phone-icon">
 								<a href="tel:+70955477678">+7095 547-76-78</a>
@@ -90,18 +103,20 @@
 <section class="about">
 	<div class="container">
 		<div class="row">
-			<div class="about_wrap">
-				<div class="about_photo">
-					<img src="images/photo.png" alt="about-photo">
-				</div>
-				<div class="about_content">
-					<div class="header_subheader medium">
-						<h2>О студии</h2>
+			<div class="col-12">
+				<div class="about_wrap">
+					<div class="about_photo">
+						<img src="images/photo.png" alt="about-photo">
 					</div>
-					<div class="about_content__text light">
-						<p>Здравствуйте. Меня зовут Телюх Сергей. Я открыл веб-студию "Нижневартовск виртуальный" с простой, но, как я уверен, важной целью - расширения в Интернете виртуального пространства города Нижневартовска. В идеале я бы хотел, чтобы у каждых организации, фирмы, магазина Нижневартовска был свой сайт.</p>
-						<p>Студия берется за работу как над самыми простыми решениями, так и со сложным функционалом. И, конечно, нашей целью также является то, чтобы вы получили финансовую отдачу от сайта.</p>
-					</div>					
+					<div class="about_content">
+						<div class="header_subheader medium">
+							<h2>О студии</h2>
+						</div>
+						<div class="about_content__text light">
+							<p>Здравствуйте. Меня зовут Телюх Сергей. Я открыл веб-студию "Нижневартовск виртуальный" с простой, но, как я уверен, важной целью - расширения в Интернете виртуального пространства города Нижневартовска. В идеале я бы хотел, чтобы у каждых организации, фирмы, магазина Нижневартовска был свой сайт.</p>
+							<p>Студия берется за работу как над самыми простыми решениями, так и со сложным функционалом. И, конечно, нашей целью также является то, чтобы вы получили финансовую отдачу от сайта.</p>
+						</div>					
+					</div>
 				</div>
 			</div>
 		</div>
@@ -253,8 +268,10 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="btn_main btn_main--orange btn_main--transform btn_main--big text-center">
-				<a href="">Заказать сайт</a>
+			<div class="col-12">
+				<div class="btn_main btn_main--orange btn_main--transform btn_main--big text-center">
+					<a href="">Заказать сайт</a>
+				</div>
 			</div>
 		</div>
 	</div>
