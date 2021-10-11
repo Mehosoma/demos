@@ -285,11 +285,9 @@ body
 			order: 2
 			svg
 				margin-right: 10px
-			a
+			span
 				font-size: 27px
 				color: #000
-				&:hover
-					color: $orange
 			&__phone,
 			&__mail
 				display: flex
@@ -332,7 +330,7 @@ body
 			height: 429px
 			padding-top: 60px
 			.btn_main
-				margin-top: 50px
+				margin-top: 35px
 		span
 			font-size: 24px
 			line-height: 1
@@ -564,10 +562,9 @@ body
 	min-height: 177px
 	background: $orange
 	padding: 25px 0px 20px 0px
+	span,
 	a
 		color: #fff
-		&:hover
-			color: #6992d4
 	svg
 		path
 			stroke: #fff
@@ -588,15 +585,20 @@ body
 	&_social
 		margin-right: 10px
 		li
+			display: flex
+			align-items: center
+			span,
 			a
 				font-size: 27px
-				svg,
-				img
-					margin-right: 10px
-					position: relative
-					top: -2px
+			svg,
+			img
+				margin-right: 10px
+				position: relative
+				top: -2px
+			a
+				border-bottom: 2px solid transparent
 				&:hover
-					color: #fff
+					border-bottom: 2px solid #fff
 			&.insta-svg
 				svg
 					margin-left: 1px

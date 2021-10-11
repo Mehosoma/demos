@@ -92,6 +92,7 @@
 
 	.banner_text_wrap .btn_main{
 		text-align: center;
+		margin-top: 45px;
 	}
 
 	.about {
@@ -308,7 +309,7 @@
 		margin: 15px 0px;
 	}
 
-	header .header_right__contacts a{
+	header .header_right__contacts span{
 		font-size: 21px;
 	}
 
@@ -440,7 +441,7 @@
 		font-size: 30px;
 	}
 
-	.header_right__contacts a{
+	.header_right__contacts span{
 		font-size: 22px;
 	}
 
@@ -496,6 +497,10 @@
 
 	.contacts_left {
     	padding: 42px 20px 20px 100px;
+	}
+
+	.banner_text_wrap .btn_main {
+    	margin-top: 40px;
 	}
 }
 

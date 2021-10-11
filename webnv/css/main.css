@@ -362,12 +362,9 @@ body hr {
 .header_right__contacts svg {
   margin-right: 10px;
 }
-.header_right__contacts a {
+.header_right__contacts span {
   font-size: 27px;
   color: #000;
-}
-.header_right__contacts a:hover {
-  color: #D9A912;
 }
 .header_right__contacts__phone, .header_right__contacts__mail {
   display: -webkit-box;
@@ -421,7 +418,7 @@ body hr {
   padding-top: 60px;
 }
 .banner_text_wrap .btn_main {
-  margin-top: 50px;
+  margin-top: 35px;
 }
 .banner_text span {
   font-size: 24px;
@@ -703,11 +700,9 @@ body hr {
   background: #D9A912;
   padding: 25px 0px 20px 0px;
 }
+.footer span,
 .footer a {
   color: #fff;
-}
-.footer a:hover {
-  color: #6992d4;
 }
 .footer svg path {
   stroke: #fff;
@@ -737,17 +732,29 @@ body hr {
 .footer_social {
   margin-right: 10px;
 }
+.footer_social li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer_social li span,
 .footer_social li a {
   font-size: 27px;
 }
-.footer_social li a svg,
-.footer_social li a img {
+.footer_social li svg,
+.footer_social li img {
   margin-right: 10px;
   position: relative;
   top: -2px;
 }
+.footer_social li a {
+  border-bottom: 2px solid transparent;
+}
 .footer_social li a:hover {
-  color: #fff;
+  border-bottom: 2px solid #fff;
 }
 .footer_social li.insta-svg svg {
   margin-left: 1px;
