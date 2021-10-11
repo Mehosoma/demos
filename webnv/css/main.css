@@ -466,8 +466,11 @@ body hr {
 .about_content {
   padding: 18px 0px 0px 4px;
 }
+.about_content .header_subheader {
+  margin-bottom: 23px;
+}
 .about_content__text {
-  margin-top: 23px;
+  display: inline;
 }
 .about_content__text p {
   font-size: 24px;
@@ -484,15 +487,9 @@ body hr {
   top: -10px;
   content: url("../images/quote.svg");
 }
-.about_content__text p:last-child {
-  position: relative;
-  text-indent: 50px;
-  display: inline;
-}
 .about_content__text p:last-child:after {
   position: absolute;
-  right: -100px;
-  bottom: -10px;
+  margin-left: 10px;
   content: url("../images/quote.svg");
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
@@ -763,16 +760,17 @@ body hr {
 .footer_social li.insta-svg svg path {
   stroke: transparent;
 }
-.footer_social li.insta-svg:hover svg path {
+.footer_social li.insta-svg a:hover svg path {
   fill: #6992d4;
 }
 .footer_social li.vk-svg svg {
   margin-left: -5px;
+  margin-right: 7px;
 }
 .footer_social li.vk-svg svg path {
-  stroke: none;
+  stroke: transparent;
 }
-.footer_social li.vk-svg:hover svg path {
+.footer_social li.vk-svg a:hover svg path {
   fill: #6992d4;
 }
 .footer_logo span {

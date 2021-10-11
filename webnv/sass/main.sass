@@ -365,8 +365,10 @@ body
 		margin-right: 55px
 	&_content
 		padding: 18px 0px 0px 4px
+		.header_subheader
+			margin-bottom: 23px
 		&__text
-			margin-top: 23px
+			display: inline
 			p
 				font-size: 24px				
 				margin-bottom: 25px
@@ -379,14 +381,10 @@ body
 					left: -50px
 					top: -10px
 					content: url('../images/quote.svg')
-			p:last-child
-				position: relative
-				text-indent: 50px
-				display: inline
+			p:last-child				
 				&:after
 					position: absolute
-					right: -100px
-					bottom: -10px
+					margin-left: 10px
 					content: url('../images/quote.svg')
 					transform: rotate(180deg)
 
@@ -612,16 +610,17 @@ body
 				svg
 					path
 						stroke: transparent
-				&:hover
+				a:hover
 					svg
 						path
 							fill: #6992d4
 			&.vk-svg
 				svg
 					margin-left: -5px
+					margin-right: 7px
 					path
-						stroke: none
-				&:hover
+						stroke: transparent
+				a:hover
 					svg
 						path
 							fill: #6992d4
