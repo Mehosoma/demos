@@ -78,11 +78,11 @@
 		padding-top: 30px;
 	}
 
-	.header_main h1{
-		font-size: 24px;
+	.header_main h1, .header_main span{
+		font-size: 22px;
 	}
 
-	.header_main h1 i{
+	.header_main h1 i, .header_main span i{
 		font-size: 26px;
 	}
 
@@ -217,6 +217,11 @@
 
 	.work_acc_wrap{
 		margin-top: 50px;
+		width: 100%;
+	}
+
+	.work .main-text{
+		width: 100%;
 	}
 
 	.work_acc__header span{
@@ -252,12 +257,12 @@
     	padding-top: 50px;
 	}
 
-	.header_main h1 {
-    	font-size: 28px;
+	.header_main h1, .header_main span{
+		font-size: 26px;
 	}
 
-	.header_main h1 i {
-    	font-size: 30px;
+	.header_main h1 i, .header_main span i{
+		font-size: 29px;
 	}
 
 	.about_content__text p {

@@ -52,20 +52,6 @@ body hr {
   border: none;
 }
 
-.pixel {
-  background: url(../images/main.jpg) no-repeat top center;
-  width: 1366px;
-  height: 12800px;
-  position: absolute;
-  z-index: 1000000;
-  display: none;
-  left: 50%;
-  top: -103px;
-  margin-left: -683px;
-  opacity: 0.5;
-  margin-top: 0px;
-}
-
 /***************************************************GeneralStyles************************************/
 .scrollup {
   width: 40px;
@@ -110,11 +96,14 @@ body hr {
   font-weight: 700 !important;
 }
 
+.header_main span,
 .header_main h1 {
   font-size: 30px;
   color: #fff;
   text-transform: uppercase;
+  margin-bottom: 0px;
 }
+.header_main span i,
 .header_main h1 i {
   font-size: 37px;
 }
@@ -153,14 +142,13 @@ body hr {
   border: 1px solid transparent;
 }
 .btn_main a:hover {
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  background: #6a97e0;
 }
 .btn_main--orange a {
   background: #D9A912;
 }
 .btn_main--orange a:hover {
-  background: #8BAEE6;
+  background: #6a97e0;
 }
 .btn_main--transform a {
   text-transform: uppercase;
@@ -287,9 +275,7 @@ body hr {
   transition: all 0.3s ease-out;
 }
 .gen-form__btn button:hover {
-  background: #8BAEE6;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  background: #6a97e0;
 }
 
 .gen-form input:hover, .gen-form input:active, .gen-form input:focus {
@@ -431,8 +417,8 @@ body hr {
 }
 .banner_text_wrap {
   width: 100%;
-  height: 430px;
-  padding-top: 92px;
+  height: 429px;
+  padding-top: 60px;
 }
 .banner_text_wrap .btn_main {
   margin-top: 50px;
@@ -550,6 +536,12 @@ body hr {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.work .main-text {
+  width: 93%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
 }
 .work_acc {
   margin-bottom: 10px;
@@ -754,24 +746,21 @@ body hr {
   position: relative;
   top: -2px;
 }
-.footer_social li a:hover svg path {
-  stroke: #6992d4;
+.footer_social li a:hover {
+  color: #fff;
+}
+.footer_social li.insta-svg svg {
+  margin-left: 1px;
 }
 .footer_social li.insta-svg svg path {
   stroke: transparent;
 }
-.footer_social li.insta-svg a:hover svg path {
-  fill: #6992d4;
-}
 .footer_social li.vk-svg svg {
-  margin-left: -5px;
+  margin-left: -4px;
   margin-right: 7px;
 }
 .footer_social li.vk-svg svg path {
   stroke: transparent;
-}
-.footer_social li.vk-svg a:hover svg path {
-  fill: #6992d4;
 }
 .footer_logo span {
   font-size: 55px;
@@ -810,10 +799,10 @@ body hr {
 
 .menu-toggle-button span {
   display: block;
-  height: 2px;
+  height: 3px;
   background: #8BAEE6;
   position: absolute;
-  top: 19px;
+  top: 21px;
   width: 20px;
   left: 50%;
   margin-left: -10px;

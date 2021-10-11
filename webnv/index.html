@@ -29,8 +29,6 @@
 
 <body>
 
-<div class="pixel"></div>
-
 <!--Header-->
 <header class="header">
 	<div class="container">
@@ -87,10 +85,11 @@
 			<div class="col-12">
 				<div class="banner_text_wrap">
 					<div class="header_main bold">
-						<h1>Веб-студия<br> <i>"Нижневартовск виртуальный": <br>каждому свой сайт!</i></h1>
+						<h1>Веб-студия<br> <i>"Нижневартовск виртуальный":</i> <br></h1>
+						<span>Наш девиз:<br><i>каждому свой сайт!</i></span>
 					</div>
 					<div class="banner_text italic">
-						<span>Мы работаем для расширения в Интернете<br> электронного пространства города Нижневартовска</span>
+						<span>Мы работаем для расширения в Интернете<br class="d-none d-lg-block"> электронного пространства города Нижневартовска</span>
 					</div>					
 					<div class="btn_main">
 						<a href=".gen-modal" class="popup_form">Заказать сайт</a>
@@ -302,7 +301,7 @@
 										<input type="text" name="name" placeholder="Имя" required="">
 										<input type="text" name="phone" placeholder="Телефон" required="">
 										<input type="text" name="mail" placeholder="E-mail" required="">
-										<textarea placeholder="Сообщение"></textarea>
+										<textarea placeholder="Сообщение" name="message"></textarea>
 									</div>
 									<div class="gen-form__btn">
 										<button type="submit">Отправить</button>
@@ -326,7 +325,7 @@
 					<div class="footer_left">
 						<div class="footer_logo">
 							<a href="index.html"><span>WEB-<b>NV.</b>RU</span></a>
-							<p>&copy 2020-2021 WEB-NV.RU - All rights reserved</p>
+							<p>&copy 2021 WEB-NV.RU - All rights reserved</p>
 						</div>
 						<nav class="footer_links main-menu">
 							<ul>
@@ -360,7 +359,7 @@
 
 <!--Modal-Window-->
 <div class="gen-form gen-modal white-popup-block mfp-hide">
-	<form>
+	<form id="main-form">
 		<div class="gen-form__header">
 			<span>Форма обратной связи</span>
 		</div>
@@ -376,6 +375,24 @@
 		</div>
 	</form>						
 </div>
+
+	<script type="text/javascript">
+    $(document).ready(function () {
+        $('form').submit(function () {
+            var formID = $(this).attr('id'); // Получение ID формы
+            var formNm = $('#' + formID);
+            $.ajax({
+                type: 'POST',
+                url: 'send.php', // Обработчик формы отправки
+                data: formNm.serialize(),
+                success: function (data) {
+                    jQuery(formNm)[0].reset();
+                }
+            });
+            	return false;
+        	});
+    	});
+	</script>
 
 	<script src="libs/jquery/jquery-3.3.1.js"></script>
 	<script src="libs/bootstrap/js/bootstrap.js"></script>
