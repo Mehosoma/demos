@@ -1,5 +1,10 @@
 @media only screen and (min-width : 0px) and (max-width : 767.5px) {
 
+	.main-text span, .main-text p{
+		font-size: 18px;
+		line-height: 24px;
+	}
+
 	.header .container{
 		max-width: 100%;
 	}
@@ -298,6 +303,10 @@
 		margin: 15px 0px;
 	}
 
+	header .header_right__contacts a{
+		font-size: 21px;
+	}
+
 	.header_right__contacts{
 		order: 1;
 	}
@@ -507,25 +516,13 @@
 		top: 45px;
 		left: 65%;
 	}
-
-	.work_acc__hidden{
-		padding: 20px 380px 20px 30px;
-	}
 }
 
 @media only screen and (min-width : 1440px) and (max-width : 1919.5px) {
 
-	.gen-form{
-		top: 45px;
-		left: 72%;
-	}
-
-	.work_acc__hidden{
-		padding: 20px 366px 20px 30px;
-	}
 }
 
 
 @media only screen and (min-width : 992px){
-	
+
 }

@@ -67,6 +67,19 @@ body hr {
 }
 
 /***************************************************GeneralStyles************************************/
+.scrollup {
+  width: 40px;
+  height: 40px;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+  display: none;
+  text-indent: -9999px;
+  background: url("../images/icon_top.png") no-repeat;
+  z-index: 1000000000;
+}
+
 .italic p,
 .italic span,
 .italic h1,
@@ -112,6 +125,17 @@ body hr {
   font-weight: 500;
 }
 
+.main-text {
+  margin-top: 30px;
+  text-align: center;
+}
+.main-text span,
+.main-text p {
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 30px;
+}
+
 .btn_main {
   width: 100%;
 }
@@ -129,7 +153,6 @@ body hr {
   border: 1px solid transparent;
 }
 .btn_main a:hover {
-  background: #6992d4;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
@@ -188,10 +211,8 @@ body hr {
 }
 
 .gen-form {
-  position: absolute;
-  top: 89px;
-  left: 85%;
-  z-index: 10;
+  max-width: 400px;
+  z-index: 1000;
   background: #fff;
   border-radius: 5px;
   -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
@@ -254,6 +275,7 @@ body hr {
 .gen-form__btn button {
   width: 250px;
   height: 40px;
+  line-height: 40px;
   background: #D9A912;
   -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
           box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
@@ -266,12 +288,21 @@ body hr {
 }
 .gen-form__btn button:hover {
   background: #8BAEE6;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .gen-form input:hover, .gen-form input:active, .gen-form input:focus {
   border: 1px solid #D9A912;
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+
+.gen-modal {
+  position: relative;
+  margin: 0px auto;
+  top: 0px;
+  left: 0px;
 }
 
 /***************************************************Header************************************/
@@ -369,9 +400,6 @@ body hr {
 .header__logo a {
   color: #000;
 }
-.header__logo a:hover {
-  color: #8BAEE6;
-}
 .header__logo i {
   font-style: normal;
   color: #D9A912;
@@ -418,6 +446,10 @@ body hr {
 /***************************************************About************************************/
 .about {
   padding: 120px 0px 55px 0px;
+  background-image: url("../images/about-bg.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .about_wrap {
   display: -webkit-box;
@@ -517,6 +549,10 @@ body hr {
   z-index: 100;
   background: #fff;
   padding: 58px 0px 70px 0px;
+  background-image: url("../images/work-bg.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .work_acc {
   margin-bottom: 10px;
@@ -525,14 +561,12 @@ body hr {
   background: rgba(0, 0, 0, 0.25);
 }
 .work_acc_wrap {
-  width: 100%;
+  width: 93%;
   margin: 70px auto 20px;
   position: relative;
-  padding-left: 67px;
-  padding-right: 20px;
 }
 .work_acc__header {
-  background: #D9A912;
+  background: #212333;
   position: relative;
   border: none;
   border-radius: 5px;
@@ -553,13 +587,13 @@ body hr {
 }
 .work_acc__header span {
   font-size: 18px;
-  color: #fff;
+  color: #D9A912;
   padding: 10px 22px 10px 20px;
   display: block;
   text-transform: uppercase;
 }
-.work_acc__header span:last-child {
-  color: #000;
+.work_acc__header span:nth-child(2) {
+  color: #8BAEE6;
 }
 .work_acc__header__plus {
   position: absolute;
@@ -575,7 +609,7 @@ body hr {
   content: "";
   width: 14px;
   height: 2px;
-  background: #fff;
+  background: #8BAEE6;
   top: 50%;
   margin-top: -1px;
   left: 5px;
@@ -588,17 +622,17 @@ body hr {
   content: "";
   width: 2px;
   height: 14px;
-  background: #fff;
+  background: #8BAEE6;
   top: 4px;
   left: 11px;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
 .work_acc__hidden {
-  background: #D9A912;
+  background: #212333;
   display: none;
   border: none;
-  padding: 20px 200px 20px 30px;
+  padding: 20px 20px 20px 30px;
   border-radius: 0px 0px 5px 5px;
 }
 .work_acc__hidden p {
@@ -619,6 +653,10 @@ body hr {
 /***************************************************Contacts************************************/
 .contacts {
   padding: 66px 0px 84px 0px;
+  background-image: url("../images/contacts-bg.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .contacts_wrap {
   display: -webkit-box;
@@ -726,6 +764,15 @@ body hr {
   stroke: transparent;
 }
 .footer_social li.insta-svg:hover svg path {
+  fill: #6992d4;
+}
+.footer_social li.vk-svg svg {
+  margin-left: -5px;
+}
+.footer_social li.vk-svg svg path {
+  stroke: none;
+}
+.footer_social li.vk-svg:hover svg path {
   fill: #6992d4;
 }
 .footer_logo span {
