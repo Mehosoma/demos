@@ -1,5 +1,12 @@
 @font-face {
-  font-family: "RobotoRegular";
+  font-family: "Andika";
   font-style: normal;
   font-weight: normal;
-  src: url("../fonts/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular.ttf") format("truetype"); }
+  src: url("../fonts/Andika.eot?#iefix") format("embedded-opentype"), url("../fonts/Andika.woff2") format("woff2"), url("../fonts/Andika.woff") format("woff"), url("../fonts/Andika.ttf") format("truetype");
+}
+@font-face {
+  font-family: "BlagovestFourSerifC";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/BlagovestFourSerifC.eot?#iefix") format("embedded-opentype"), url("../fonts/BlagovestFourSerifC.woff2") format("woff2"), url("../fonts/BlagovestFourSerifC.woff") format("woff"), url("../fonts/BlagovestFourSerifC.ttf") format("truetype");
+}
