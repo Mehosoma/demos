@@ -285,8 +285,18 @@ body hr {
   width: 100%;
   min-height: 520px;
   background-image: url("../images/top-bg.jpg");
-  background-position: top -100px center;
+  background-position: top -300px center;
   background-repeat: no-repeat;
+  position: relative;
+}
+.banner_decor {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: #000;
+  opacity: 0.4;
 }
 .banner_wrap {
   display: -webkit-box;
@@ -304,7 +314,8 @@ body hr {
   font-family: "BlagovestFourSerifC", sans-serif;
   font-size: 64px;
   line-height: 74px;
-  color: #8E302B;
+  color: #fff;
+  text-shadow: 2px 2px 1px #8E302B;
   margin-bottom: 0px;
   font-weight: 400;
 }
@@ -385,7 +396,7 @@ body hr {
   width: 100%;
   height: 100%;
   background-color: #fff;
-  opacity: 0.85;
+  opacity: 0.7;
 }
 .about_wrap {
   display: -webkit-box;
@@ -638,6 +649,7 @@ body hr {
           flex: 0 0 300px;
   max-width: 300px;
   height: 345px;
+  border: 2px solid #D5BA5B;
 }
 .churches_block__image img {
   -o-object-fit: cover;
@@ -1065,6 +1077,7 @@ body hr {
   font-family: "BlagovestFourSerifC", sans-serif;
   font-size: 24px;
   text-transform: none;
+  font-weight: 400;
 }
 .footer_btn a:hover {
   opacity: 0.7;
@@ -1124,9 +1137,21 @@ body hr {
 .single_desc__text h2 {
   font-family: "BlagovestFourSerifC", sans-serif;
   font-size: 56px;
-  line-height: 74px;
+  line-height: 66px;
   font-weight: 400;
   color: #8E302B;
+}
+.single_desc__text__back {
+  margin-top: 10px;
+}
+.single_desc__text__back a {
+  font-size: 20px;
+  line-height: 30px;
+  color: #8E302B;
+  border-bottom: 1px solid #8E302B;
+}
+.single_desc__text__back a:hover {
+  border-bottom: 1px solid transparent;
 }
 .single_desc__text p,
 .single_desc__text ul li {
@@ -1151,6 +1176,11 @@ body hr {
   height: 7px;
   background: #8E302B;
   border-radius: 50%;
+}
+.single_desc__text--news span {
+  color: #C4C4C4;
+  display: block;
+  margin-bottom: 30px;
 }
 .single_desc__icons {
   display: -webkit-box;

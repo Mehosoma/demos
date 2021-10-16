@@ -265,8 +265,17 @@ body
 	width: 100%
 	min-height: 520px
 	background-image: url('../images/top-bg.jpg')
-	background-position: top -100px center
+	background-position: top -300px center
 	background-repeat: no-repeat
+	position: relative
+	&_decor
+		width: 100%
+		height: 100%
+		position: absolute
+		top: 0px
+		left: 0px
+		background: #000
+		opacity: 0.4
 	&_wrap
 		display: flex
 		justify-content: space-between
@@ -277,7 +286,8 @@ body
 			font-family: $blago
 			font-size: 64px
 			line-height: 74px
-			color: $red
+			color: #fff
+			text-shadow: 2px 2px 1px $red
 			margin-bottom: 0px
 			font-weight: 400
 		&__buttons
@@ -337,7 +347,7 @@ body
 		width: 100%
 		height: 100%
 		background-color: #fff
-		opacity: 0.85
+		opacity: 0.7
 	&_wrap
 		display: flex
 		justify-content: space-between
@@ -541,6 +551,7 @@ body
 			flex: 0 0 300px
 			max-width: 300px
 			height: 345px
+			border: 2px solid $gold
 			img
 				object-fit: cover
 				width: 100%
@@ -850,6 +861,7 @@ body
 			font-family: $blago
 			font-size: 24px
 			text-transform: none
+			font-weight: 400
 			&:hover
 				opacity: 0.7
 				background: $gold
@@ -895,9 +907,18 @@ body
 			h2
 				font-family: $blago
 				font-size: 56px
-				line-height: 74px
+				line-height: 66px
 				font-weight: 400
 				color: $red
+			&__back
+				margin-top: 10px
+				a
+					font-size: 20px
+					line-height: 30px
+					color: $red
+					border-bottom: 1px solid $red
+					&:hover
+						border-bottom: 1px solid transparent
 			p,
 			ul li
 				font-size: 22px
@@ -918,6 +939,11 @@ body
 					height: 7px
 					background: $red
 					border-radius: 50%
+			&--news
+				span
+					color: $gray
+					display: block
+					margin-bottom: 30px
 		&__icons
 			display: flex
 			align-items: center
