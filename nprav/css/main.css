@@ -1066,7 +1066,10 @@ body hr {
   border-bottom: 1px solid #D5BA5B;
 }
 .footer_menu__block:last-child {
-  margin-right: 0px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  max-width: 30%;
 }
 .footer_btn {
   margin-top: 45px;
@@ -1103,6 +1106,8 @@ body hr {
 .single {
   min-height: calc(100vh - 230px);
   padding-top: 60px;
+  background: #EEE9CA;
+  position: relative;
 }
 .single_desc__image {
   display: -webkit-box;
