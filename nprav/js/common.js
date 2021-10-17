@@ -35,7 +35,7 @@ return false;
 $(document).ready(function(){
     $('.click-mobile').on('click',function(e){
         e.preventDefault();        
-          $('.header .main-menu').animate({
+          $('.header .header_menu').animate({
               height: 'toggle'
             }, 600, function() {
           });         
@@ -74,12 +74,13 @@ $(document).ready(function() {
 
 //TopButton
 $(document).ready(function(){
+
  
   $(window).scroll(function(){
   if ($(this).scrollTop() > 100) {
-  $('.scrollup').fadeIn();
+  $('.scrollup').css({'opacity':'1', 'pointer-events':'all'});
   } else {
-  $('.scrollup').fadeOut();
+  $('.scrollup').css({'opacity':'0', 'pointer-events':'none'});
   }
   });
  

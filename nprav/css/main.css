@@ -67,16 +67,18 @@ body hr {
 .scrollup {
   width: 50px;
   height: 50px;
-  opacity: 0.8;
+  opacity: 0;
   position: fixed;
   bottom: 50px;
   right: 20px;
-  display: block;
   background: #D5BA5B;
   border-radius: 50%;
   z-index: 1000000000;
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
+  -webkit-transition: all 0.6s ease-out;
+  transition: all 0.6s ease-out;
+  pointer-events: none;
 }
 .scrollup svg {
   width: 30px;
@@ -114,7 +116,8 @@ body hr {
 
 .section_subheader {
   text-align: center;
-  margin: 60px 0px;
+  margin: 60px auto;
+  width: 100%;
 }
 .section_subheader h2 {
   font-family: "BlagovestFourSerifC", sans-serif;
@@ -313,6 +316,11 @@ body hr {
   color: #D5BA5B;
   border-bottom: 1px solid #D5BA5B;
 }
+.header_logo span {
+  font-family: "BlagovestFourSerifC", sans-serif;
+  font-size: 18px;
+  color: #fff;
+}
 
 /***************************************************Banner************************************/
 .banner {
@@ -367,7 +375,7 @@ body hr {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  margin-top: 40px;
+  margin-top: 45px;
   margin-right: 66px;
 }
 .banner_photos div {
@@ -692,6 +700,7 @@ body hr {
 }
 .churches_block__desc {
   padding-left: 25px;
+  width: 100%;
 }
 .churches_block__desc h3 {
   font-family: "BlagovestFourSerifC", sans-serif;
@@ -719,28 +728,35 @@ body hr {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  max-width: 100%;
   margin-top: 20px;
   margin-bottom: 5px;
 }
-.churches_block__desc__icons__field {
+.churches_block__desc__icons--left {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 40%;
-          flex: 0 0 40%;
-  max-width: 40%;
+      -ms-flex: 0 0 53%;
+          flex: 0 0 53%;
+  max-width: 53%;
+}
+.churches_block__desc__icons--right {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+.churches_block__desc__icons__field {
   margin-bottom: 15px;
-  padding-right: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 .churches_block__desc__icons__field span {
   font-size: 18px;
   display: block;
+  padding-right: 20px;
+  line-height: 24px;
 }
 .churches_block__desc__icons__field svg {
   margin-right: 10px;
@@ -748,12 +764,7 @@ body hr {
       -ms-flex: 0 0 26px;
           flex: 0 0 26px;
   max-width: 26px;
-}
-.churches_block__desc__icons__field:nth-child(odd) {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 60%;
-          flex: 0 0 60%;
-  max-width: 60%;
+  height: 26px;
 }
 .churches_block__desc__icons a {
   color: #212529;
@@ -811,9 +822,9 @@ body hr {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 350px;
-          flex: 0 0 350px;
-  max-width: 350px;
+      -ms-flex: 0 0 87%;
+          flex: 0 0 87%;
+  max-width: 87%;
   border: 2px solid #8E302B;
   height: 420px;
   border-radius: 10px;
@@ -923,13 +934,22 @@ body hr {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 .shedule_block__header span {
   font-family: "Roboto", sans-serif;
   font-size: 36px;
   font-weight: 700;
   color: #8E302B;
+}
+.shedule_block__mobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  max-width: 100%;
 }
 .shedule_block__gen {
   padding: 15px 0px;
@@ -1043,6 +1063,9 @@ body hr {
 .contacts_wrap .churches_block__desc__icons__field svg {
   position: relative;
 }
+.contacts_wrap .churches_block__desc__icons__field:first-child svg {
+  top: 3px;
+}
 .contacts_text p {
   font-size: 22px;
   line-height: 28px;
@@ -1072,7 +1095,7 @@ body hr {
 /***************************************************Footer************************************/
 .footer {
   width: 100%;
-  height: 150px;
+  height: 130px;
   background: #733828;
 }
 .footer_wrap {
@@ -1091,29 +1114,36 @@ body hr {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 35px;
-}
-.footer_menu__block {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 30%;
-          flex: 0 0 30%;
-  max-width: 30%;
+      -ms-flex: 0 0 33.33%;
+          flex: 0 0 33.33%;
+  max-width: 33.33%;
 }
-.footer_menu__block a {
+.footer_menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 80px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+}
+.footer_menu ul a {
   font-family: "BlagovestFourSerifC", sans-serif;
   color: #fff;
   font-size: 24px;
   border-bottom: 1px solid transparent;
   margin-bottom: 10px;
 }
-.footer_menu__block a:hover {
+.footer_menu ul a:hover {
   color: #D5BA5B;
   border-bottom: 1px solid #D5BA5B;
-}
-.footer_menu__block:last-child {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
-  max-width: 30%;
 }
 .footer_btn {
   margin-top: 45px;
@@ -1143,6 +1173,18 @@ body hr {
 .footer_copy p {
   font-size: 16px;
   line-height: 30px;
+  color: #fff;
+}
+.footer_copy a {
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  position: relative;
+  top: 1px;
+}
+.footer_copy a:hover {
+  border-bottom: 1px solid transparent;
+}
+.footer_copy a:hover, .footer_copy a:visited, .footer_copy a:active {
   color: #fff;
 }
 
@@ -1240,9 +1282,6 @@ body hr {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 .single_desc__icons .churches_block__desc__icons {
   -webkit-box-flex: 0;
@@ -1250,13 +1289,18 @@ body hr {
           flex: 0 0 60%;
   max-width: 60%;
 }
-.single_desc__icons .churches_block__desc__icons__field:nth-child(odd),
-.single_desc__icons .churches_block__desc__icons__field {
+.single_desc__icons .churches_block__desc__icons--left {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 50%;
-          flex: 0 0 50%;
-  max-width: 50%;
-  padding-right: 15px;
+      -ms-flex: 0 0 62%;
+          flex: 0 0 62%;
+  max-width: 62%;
+}
+.single_desc__icons .churches_block__desc__icons__field:first-child svg {
+  top: 0px;
+}
+.single_desc__icons__link {
+  margin-top: 37px;
+  margin-left: 30px;
 }
 .single_desc__icons__link span {
   font-family: "Roboto", sans-serif;
@@ -1273,4 +1317,66 @@ body hr {
 .single_map {
   width: 100%;
   height: 350px;
+}
+
+/***********************************************ButtonMobile************************************/
+.menu-toggle-button {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  padding: 10px;
+  border: none;
+  text-indent: -9999px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+  display: block;
+}
+
+.menu-toggle-button span {
+  display: block;
+  height: 0.1rem;
+  background: #fff;
+  position: absolute;
+  top: 20px;
+  width: 20px;
+  -webkit-transition: background 0s 0.3;
+  transition: background 0s 0.3;
+  -webkit-transition-property: top, -webkit-transform;
+  transition-property: top, -webkit-transform;
+  transition-property: top, transform;
+  transition-property: top, transform, -webkit-transform;
+  -webkit-transition-delay: 0s, 0.3s;
+  transition-delay: 0s, 0.3s;
+  -webkit-transition-duration: 0.3s, 0.3s;
+  transition-duration: 0.3s, 0.3s;
+}
+.menu-toggle-button span:nth-child(2) {
+  top: 15px;
+}
+.menu-toggle-button span:nth-child(3) {
+  top: 25px;
+}
+
+.menu-toggle-button.is-active span {
+  background: none;
+}
+
+.menu-toggle-button.is-active span:nth-child(2) {
+  top: 20px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background: #fff;
+}
+
+.menu-toggle-button.is-active span:nth-child(3) {
+  top: 20px;
+  background: #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.menu-toggle-button:focus {
+  outline: none !important;
 }
