@@ -1,3 +1,22 @@
+@media only screen and (min-width : 0px) and (max-width : 991.5px) {
+
+	.shedule_wrap{
+		background-image: url('../images/shedule-bg-mobile.jpg');
+		background-size: 100% 110%;
+		background-repeat: repeat;
+	}
+
+	.shedule_block__gen__event:nth-child(even) .shedule_block__note span {
+    	color: #7c6103;
+	}
+
+	.shedule_block__gen {
+	    padding: 15px 0px;
+	    border-bottom: 2px solid #8f7720;
+	}
+
+}
+
 
 @media only screen and (min-width : 0px) and (max-width : 575.6px) {
 
@@ -283,9 +302,14 @@
 		flex-direction: column;
 	}
 
-	.shedule_block__date, .shedule_block__time, .shedule_block__event{
+	.shedule_block__date, .shedule_block__time{
 		flex: 0 0 30px;
 		max-width: 100%;		
+	}
+
+	.shedule_block__event{
+		flex: 0 0 40px;
+		max-width: 100%;
 	}
 
 	.shedule_block__note{
@@ -313,7 +337,7 @@
 	}
 
 	.shedule_block__gen__event{
-		margin-bottom: 20px;
+		margin-bottom: 30px;
 	}
 
 	.gen-form__header span{
@@ -331,6 +355,8 @@
 		max-width: 100%;
 		padding-top: 10px;
 	}
+
+	
 
 }
 
