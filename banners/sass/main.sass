@@ -1,0 +1,182 @@
+@import "bourbon/bourbon"
+
+$blue: #4c4f6c
+$roboto: 'RobotoRegular', sans-serif
+
+
+html
+	width: 100%
+	height: 100%
+	overflow-x: hidden
+body
+	width: 100%
+	height: auto
+	min-width: 320px	
+	margin: 0 auto
+	position: relative
+	font-family: $roboto
+	line-height: 1.2
+	-webkit-font-smoothing: antialiased
+	background-color: #fff	
+	
+
+	a:hover, a:focus, a:active
+		text-decoration: none
+		outline: none
+	input:focus, input:active
+		text-decoration: none
+		outline: none
+	button:focus, button:active
+		text-decoration: none
+		outline: none
+	textarea:focus, textarea:active
+		text-decoration: none
+		outline: none
+	a
+		display: inline-block
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out
+	ul, ol
+		padding: 0px
+		margin: 0px
+		list-style-type: none
+	button
+		border: none
+		cursor: pointer
+	hr
+		border: none	
+
+.pixel
+	background: url(../img/main.jpg) no-repeat top center
+	width: 1920px
+	height: 12800px
+	position: absolute
+	z-index: 1000000
+	display: none
+	left: 50%
+	top: 0
+	margin-left: -960px
+	opacity: 0.5
+	margin-top: 0px
+
+
+/***************************************************GeneralStyles************************************/
+
+.banners
+	margin-top: 50px
+	&__wrap
+		display: flex
+		justify-content: space-between
+	&__block
+		flex: 0 0 24%
+		max-width: 24%
+		position: relative
+		transition: all 0.5s
+		display: flex
+		overflow: hidden
+		img
+			width: 100%
+			height: auto
+
+		svg
+			.st0
+			
+				transition: all 0.5s
+			stop
+				transition: all 0.5s
+			#svg1
+				stop:first-child
+					opacity: 0.14
+				stop:nth-child(2)
+					opacity: 0.53
+				stop:nth-child(3)
+					opacity: 0.93
+				stop:nth-child(4)
+					opacity: 1
+		&--red
+			rect
+				fill: url('#svg1')
+			&:hover
+				cursor: pointer
+				#svg1
+					stop:first-child
+						stop-color: #F7ADAD!important
+						opacity: 0.14
+					stop:nth-child(2)
+						stop-color: #F8AAAA!important
+						opacity: 0.36
+					stop:nth-child(3)
+						stop-color: #FAA0A0!important
+						opacity: 0.63
+					stop:nth-child(4)
+						stop-color: #faa1a1!important
+						opacity: 0.88
+		&--circle
+			
+			overflow: hidden
+			rect
+				fill: url('#svg2')
+			&:hover
+				cursor: pointer
+				border-radius: 100%
+				transition: all 1s
+				#svg2
+					stop:first-child
+						stop-color: #F7ADAD!important
+						opacity: 0.14
+					stop:nth-child(2)
+						stop-color: #F8AAAA!important
+						opacity: 0.36
+					stop:nth-child(3)
+						stop-color: #FAA0A0!important
+						opacity: 0.63
+					stop:nth-child(4)
+						stop-color: #faa1a1!important
+						opacity: 0.88
+		&--third
+			overflow: hidden
+			rect
+				fill: url('#svg4')
+			#image
+					transition: all 0.5s
+					.st0
+						opacity: 0
+			&:hover
+				cursor: pointer
+				#svg4
+					stop:first-child
+						stop-color: #F7ADAD!important
+						opacity: 0.14
+					stop:nth-child(2)
+						stop-color: #F8AAAA!important
+						opacity: 0.36
+					stop:nth-child(3)
+						stop-color: #FAA0A0!important
+						opacity: 0.63
+					stop:nth-child(4)
+						stop-color: #faa1a1!important
+						opacity: 0.88
+				#image
+					transition: all 0.5s
+					transform: scale(1.1)
+					.st0
+						opacity: 1
+		&--last
+			overflow: visible
+			.st1
+				opacity: 0
+				transition: all 0.5s
+			svg
+				position: absolute
+				top: 30px
+			&:hover
+				.st1
+					opacity: 1
+	&__image		
+		position: absolute
+		left: 0px
+		right: 0px
+		bottom: 0px
+		margin: auto
