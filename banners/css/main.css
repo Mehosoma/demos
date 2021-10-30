@@ -90,10 +90,12 @@ body hr {
   display: flex;
   overflow: hidden;
   margin-bottom: 20px;
+  border-radius: 50%;
 }
 .banners__block img {
   width: 100%;
   height: auto;
+  border-radius: 50%;
 }
 .banners__block svg stop {
   -webkit-transition: all 0.5s;
