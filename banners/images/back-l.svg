@@ -3,9 +3,9 @@
 	 viewBox="0 0 288 288" style="enable-background:new 0 0 288 288;" xml:space="preserve">
 <defs>
 	<radialGradient id="back-l" cx="144" cy="139.4042511" r="174.8811798" fx="144.8287964" fy="226.3598175" gradientTransform="matrix(1 0 0 0.9760638 0 3.3368039)" gradientUnits="userSpaceOnUse">
-		<stop  offset="0.014008" style="stop-color:#E9E9E9"/>
-		<stop  offset="0.5361933" style="stop-color:#E6E6E7"/>
-		<stop  offset="1" style="stop-color:#DADCDD"/>
+		<stop  offset="0.014008" style="stop-color:#fff"/>
+		<stop  offset="0.5361933" style="stop-color:#fff"/>
+		<stop  offset="1" style="stop-color:#fff"/>
 	</radialGradient>
 </defs>
 <rect y="0"  width="288" height="288" fill="url(#red)"/>
