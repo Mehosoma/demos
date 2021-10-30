@@ -74,6 +74,8 @@ body hr {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .banners__block {
   -webkit-box-flex: 0;
@@ -87,136 +89,167 @@ body hr {
   display: -ms-flexbox;
   display: flex;
   overflow: hidden;
+  margin-bottom: 20px;
 }
 .banners__block img {
   width: 100%;
   height: auto;
 }
-.banners__block svg .st0 {
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-}
 .banners__block svg stop {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
-.banners__block svg #svg1 stop:first-child {
-  opacity: 0.14;
-}
-.banners__block svg #svg1 stop:nth-child(2) {
-  opacity: 0.53;
-}
-.banners__block svg #svg1 stop:nth-child(3) {
-  opacity: 0.93;
-}
-.banners__block svg #svg1 stop:nth-child(4) {
-  opacity: 1;
+.banners__block--red {
+  overflow: hidden;
 }
 .banners__block--red rect {
-  fill: url("#svg1");
+  fill: url("#red");
 }
 .banners__block--red:hover {
   cursor: pointer;
+  border-radius: 100%;
 }
-.banners__block--red:hover #svg1 stop:first-child {
+.banners__block--red:hover #red stop:first-child {
   stop-color: #F7ADAD !important;
-  opacity: 0.14;
 }
-.banners__block--red:hover #svg1 stop:nth-child(2) {
+.banners__block--red:hover #red stop:nth-child(2) {
   stop-color: #F8AAAA !important;
-  opacity: 0.36;
 }
-.banners__block--red:hover #svg1 stop:nth-child(3) {
+.banners__block--red:hover #red stop:nth-child(3) {
   stop-color: #FAA0A0 !important;
-  opacity: 0.63;
 }
-.banners__block--red:hover #svg1 stop:nth-child(4) {
-  stop-color: #faa1a1 !important;
-  opacity: 0.88;
-}
-.banners__block--circle {
+.banners__block--f {
   overflow: hidden;
 }
-.banners__block--circle rect {
-  fill: url("#svg2");
+.banners__block--f rect {
+  fill: url("#back-f");
 }
-.banners__block--circle:hover {
+.banners__block--f:hover {
   cursor: pointer;
   border-radius: 100%;
-  -webkit-transition: all 1s;
-  transition: all 1s;
 }
-.banners__block--circle:hover #svg2 stop:first-child {
-  stop-color: #F7ADAD !important;
-  opacity: 0.14;
+.banners__block--f:hover #back-f stop:first-child {
+  stop-color: #F9C5E9 !important;
 }
-.banners__block--circle:hover #svg2 stop:nth-child(2) {
-  stop-color: #F8AAAA !important;
-  opacity: 0.36;
+.banners__block--f:hover #back-f stop:nth-child(2) {
+  stop-color: #FFAEEA !important;
 }
-.banners__block--circle:hover #svg2 stop:nth-child(3) {
-  stop-color: #FAA0A0 !important;
-  opacity: 0.63;
+.banners__block--f:hover #back-f stop:nth-child(3) {
+  stop-color: #E07ED2 !important;
 }
-.banners__block--circle:hover #svg2 stop:nth-child(4) {
-  stop-color: #faa1a1 !important;
-  opacity: 0.88;
-}
-.banners__block--third {
+.banners__block--blue {
   overflow: hidden;
 }
-.banners__block--third rect {
-  fill: url("#svg4");
+.banners__block--blue rect {
+  fill: url("#back-b");
 }
-.banners__block--third #image {
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-}
-.banners__block--third #image .st0 {
-  opacity: 0;
-}
-.banners__block--third:hover {
+.banners__block--blue:hover {
   cursor: pointer;
+  border-radius: 100%;
 }
-.banners__block--third:hover #svg4 stop:first-child {
-  stop-color: #F7ADAD !important;
-  opacity: 0.14;
+.banners__block--blue:hover #back-b stop:first-child {
+  stop-color: #8888FF !important;
 }
-.banners__block--third:hover #svg4 stop:nth-child(2) {
-  stop-color: #F8AAAA !important;
-  opacity: 0.36;
+.banners__block--blue:hover #back-b stop:nth-child(2) {
+  stop-color: #4545FF !important;
 }
-.banners__block--third:hover #svg4 stop:nth-child(3) {
-  stop-color: #FAA0A0 !important;
-  opacity: 0.63;
+.banners__block--blue:hover #back-b stop:nth-child(3) {
+  stop-color: #0600FF !important;
 }
-.banners__block--third:hover #svg4 stop:nth-child(4) {
-  stop-color: #faa1a1 !important;
-  opacity: 0.88;
+.banners__block--pink {
+  overflow: hidden;
 }
-.banners__block--third:hover #image {
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+.banners__block--pink rect {
+  fill: url("#back-p");
 }
-.banners__block--third:hover #image .st0 {
-  opacity: 1;
+.banners__block--pink:hover {
+  cursor: pointer;
+  border-radius: 100%;
 }
-.banners__block--last {
-  overflow: visible;
+.banners__block--pink:hover #back-p stop:first-child {
+  stop-color: #F49292 !important;
 }
-.banners__block--last .st1 {
-  opacity: 0;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+.banners__block--pink:hover #back-p stop:nth-child(2) {
+  stop-color: #EF6C6C !important;
 }
-.banners__block--last svg {
-  position: absolute;
-  top: 30px;
+.banners__block--pink:hover #back-p stop:nth-child(3) {
+  stop-color: #EF5252 !important;
 }
-.banners__block--last:hover .st1 {
-  opacity: 1;
+.banners__block--orange {
+  overflow: hidden;
+}
+.banners__block--orange rect {
+  fill: url("#back-o");
+}
+.banners__block--orange:hover {
+  cursor: pointer;
+  border-radius: 100%;
+}
+.banners__block--orange:hover #back-o stop:first-child {
+  stop-color: #EF8A5E !important;
+}
+.banners__block--orange:hover #back-o stop:nth-child(2) {
+  stop-color: #F2783B !important;
+}
+.banners__block--orange:hover #back-o stop:nth-child(3) {
+  stop-color: #F56A1C !important;
+}
+.banners__block--yellow {
+  overflow: hidden;
+}
+.banners__block--yellow rect {
+  fill: url("#back-y");
+}
+.banners__block--yellow:hover {
+  cursor: pointer;
+  border-radius: 100%;
+}
+.banners__block--yellow:hover #back-y stop:first-child {
+  stop-color: #F2C370 !important;
+}
+.banners__block--yellow:hover #back-y stop:nth-child(2) {
+  stop-color: #EFBB54 !important;
+}
+.banners__block--yellow:hover #back-y stop:nth-child(3) {
+  stop-color: #EDB332 !important;
+}
+.banners__block--green {
+  overflow: hidden;
+}
+.banners__block--green rect {
+  fill: url("#back-g");
+}
+.banners__block--green:hover {
+  cursor: pointer;
+  border-radius: 100%;
+}
+.banners__block--green:hover #back-g stop:first-child {
+  stop-color: #73CC44 !important;
+}
+.banners__block--green:hover #back-g stop:nth-child(2) {
+  stop-color: #53B725 !important;
+}
+.banners__block--green:hover #back-g stop:nth-child(3) {
+  stop-color: #3DA513 !important;
+}
+.banners__block--light {
+  overflow: hidden;
+}
+.banners__block--light rect {
+  fill: url("#back-l");
+}
+.banners__block--light:hover {
+  cursor: pointer;
+  border-radius: 100%;
+}
+.banners__block--light:hover #back-l stop:first-child {
+  stop-color: #89F4E9 !important;
+}
+.banners__block--light:hover #back-l stop:nth-child(2) {
+  stop-color: #5AE5DA !important;
+}
+.banners__block--light:hover #back-l stop:nth-child(3) {
+  stop-color: #3ECCC5 !important;
 }
 .banners__image {
   position: absolute;

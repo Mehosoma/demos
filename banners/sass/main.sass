@@ -69,6 +69,7 @@ body
 	&__wrap
 		display: flex
 		justify-content: space-between
+		flex-wrap: wrap
 	&__block
 		flex: 0 0 24%
 		max-width: 24%
@@ -76,104 +77,126 @@ body
 		transition: all 0.5s
 		display: flex
 		overflow: hidden
+		margin-bottom: 20px
 		img
 			width: 100%
 			height: auto
 
 		svg
-			.st0
-			
-				transition: all 0.5s
 			stop
 				transition: all 0.5s
-			#svg1
-				stop:first-child
-					opacity: 0.14
-				stop:nth-child(2)
-					opacity: 0.53
-				stop:nth-child(3)
-					opacity: 0.93
-				stop:nth-child(4)
-					opacity: 1
-		&--red
-			rect
-				fill: url('#svg1')
-			&:hover
-				cursor: pointer
-				#svg1
-					stop:first-child
-						stop-color: #F7ADAD!important
-						opacity: 0.14
-					stop:nth-child(2)
-						stop-color: #F8AAAA!important
-						opacity: 0.36
-					stop:nth-child(3)
-						stop-color: #FAA0A0!important
-						opacity: 0.63
-					stop:nth-child(4)
-						stop-color: #faa1a1!important
-						opacity: 0.88
-		&--circle
-			
+		&--red			
 			overflow: hidden
 			rect
-				fill: url('#svg2')
+				fill: url('#red')
 			&:hover
 				cursor: pointer
 				border-radius: 100%
-				transition: all 1s
-				#svg2
+				#red
 					stop:first-child
 						stop-color: #F7ADAD!important
-						opacity: 0.14
 					stop:nth-child(2)
 						stop-color: #F8AAAA!important
-						opacity: 0.36
 					stop:nth-child(3)
 						stop-color: #FAA0A0!important
-						opacity: 0.63
-					stop:nth-child(4)
-						stop-color: #faa1a1!important
-						opacity: 0.88
-		&--third
+		&--f		
 			overflow: hidden
 			rect
-				fill: url('#svg4')
-			#image
-					transition: all 0.5s
-					.st0
-						opacity: 0
+				fill: url('#back-f')
 			&:hover
 				cursor: pointer
-				#svg4
+				border-radius: 100%
+				#back-f
 					stop:first-child
-						stop-color: #F7ADAD!important
-						opacity: 0.14
+						stop-color: #F9C5E9!important
 					stop:nth-child(2)
-						stop-color: #F8AAAA!important
-						opacity: 0.36
+						stop-color: #FFAEEA!important
 					stop:nth-child(3)
-						stop-color: #FAA0A0!important
-						opacity: 0.63
-					stop:nth-child(4)
-						stop-color: #faa1a1!important
-						opacity: 0.88
-				#image
-					transition: all 0.5s
-					transform: scale(1.1)
-					.st0
-						opacity: 1
-		&--last
-			overflow: visible
-			.st1
-				opacity: 0
-				transition: all 0.5s
-			svg
-				position: absolute
-				top: 30px
+						stop-color: #E07ED2!important
+		&--blue		
+			overflow: hidden
+			rect
+				fill: url('#back-b')
 			&:hover
-				.st1
-					opacity: 1
+				cursor: pointer
+				border-radius: 100%
+				#back-b
+					stop:first-child
+						stop-color: #8888FF!important
+					stop:nth-child(2)
+						stop-color: #4545FF!important
+					stop:nth-child(3)
+						stop-color: #0600FF!important
+		&--pink		
+			overflow: hidden
+			rect
+				fill: url('#back-p')
+			&:hover
+				cursor: pointer
+				border-radius: 100%
+				#back-p
+					stop:first-child
+						stop-color: #F49292!important
+					stop:nth-child(2)
+						stop-color: #EF6C6C!important
+					stop:nth-child(3)
+						stop-color: #EF5252!important
+		&--orange		
+			overflow: hidden
+			rect
+				fill: url('#back-o')
+			&:hover
+				cursor: pointer
+				border-radius: 100%
+				#back-o
+					stop:first-child
+						stop-color: #EF8A5E!important
+					stop:nth-child(2)
+						stop-color: #F2783B!important
+					stop:nth-child(3)
+						stop-color: #F56A1C!important
+		&--yellow		
+			overflow: hidden
+			rect
+				fill: url('#back-y')
+			&:hover
+				cursor: pointer
+				border-radius: 100%
+				#back-y
+					stop:first-child
+						stop-color: #F2C370!important
+					stop:nth-child(2)
+						stop-color: #EFBB54!important
+					stop:nth-child(3)
+						stop-color: #EDB332!important
+		&--green		
+			overflow: hidden
+			rect
+				fill: url('#back-g')
+			&:hover
+				cursor: pointer
+				border-radius: 100%
+				#back-g
+					stop:first-child
+						stop-color: #73CC44!important
+					stop:nth-child(2)
+						stop-color: #53B725!important
+					stop:nth-child(3)
+						stop-color: #3DA513!important
+		&--light		
+			overflow: hidden
+			rect
+				fill: url('#back-l')
+			&:hover
+				cursor: pointer
+				border-radius: 100%
+				#back-l
+					stop:first-child
+						stop-color: #89F4E9!important
+					stop:nth-child(2)
+						stop-color: #5AE5DA!important
+					stop:nth-child(3)
+						stop-color: #3ECCC5!important
 	&__image		
 		position: absolute
 		left: 0px
