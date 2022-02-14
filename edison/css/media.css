@@ -121,9 +121,6 @@
 		margin-bottom: 10px;
 	}
 
-	.slider{
-		margin-bottom: 80px;
-	}
 
 	.slider .container--wide{
 		max-width: 100%;
@@ -352,10 +349,6 @@
 		margin-bottom: 10px;
 	}
 
-	.slider{
-		margin-bottom: 80px;
-	}
-
 	.slider .container--wide{
 		max-width: 540px;
 	}
@@ -581,9 +574,6 @@
 		margin-bottom: 40px;
 	}
 
-	.slider{
-		margin-bottom: 120px;
-	}
 }
 
 @media only screen and (min-width : 992px) and (max-width : 1199px) {
