@@ -58,15 +58,15 @@ body
 		border: none	
 
 .pixel
-	background: url('../img/main.jpg') no-repeat top center
-	width: 1920px
+	background: url('../images/main.jpg') no-repeat top center
+	width: 1440px
 	height: 12800px
 	position: absolute
 	z-index: 1000000
 	display: none
 	left: 50%
-	top: 0
-	margin-left: -960px
+	top: -40px
+	margin-left: -720px
 	opacity: 0.5
 	margin-top: 0px
 
@@ -76,7 +76,9 @@ body
 	&--wide
 		max-width: 1280px
 section
-	margin: 80px 0px
+	margin-bottom: 160px
+.section-subheader
+	margin-bottom: 80px
 h1
 	font-size: 50px
 	font-weight: 500
@@ -89,7 +91,7 @@ h1
 h2
 	font-size: 50px
 	font-weight: 500
-	line-height: 60px
+	line-height: 56px
 	color: $black
 	i
 		color: $gray
@@ -126,11 +128,13 @@ h4
 		p,
 		a
 			font-size: 26px
+			font-weight: 500
 .logo
 	span
-		font-size: 18px
+		font-size: 19px
 		color: $black
 		font-weight: 500
+		padding-left: 4px
 .btns
 	display: flex
 	a
@@ -138,7 +142,7 @@ h4
 		min-width: 180px		
 		padding: 0px 20px
 		font-size: 18px		
-		line-height: 52px
+		line-height: 50px
 		border-radius: 8px
 		text-align: center
 	&--fill
@@ -151,6 +155,7 @@ h4
 				color: $black
 				border: 1px solid $black
 	&--stroke
+		margin-left: 8px
 		a
 			background: transparent
 			border: 1px solid $black
@@ -167,18 +172,21 @@ h4
 	display: flex
 	flex-wrap: wrap
 	justify-content: space-between
+	&--start
+		justify-content: flex-start
 .form-gen
 	width: 100%
+	margin-top: 17px
 	input
 		width: 100%
 		height: 60px
 		background-color: #fff
 		box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1)
 		border: 1px solid #fff
-		margin-bottom: 10px
+		margin-bottom: 8px
 		font-size: 18px
 		color: $main-text
-		padding: 0 12px
+		padding: 0 20px
 		border-radius: 8px
 		-moz-transition: all 0.3s ease-out
 		-o-transition: all 0.3s ease-out
@@ -214,24 +222,66 @@ h4
 			&:hover
 				b
 					color: $main-text
+	&__text
+		padding: 40px 20px 72px 153px
+	&__header
+		margin: 30px 0px
+	.top__call
+		margin-top: 20px
+	&__picture
+		position: relative
+		img
+			position: absolute
+			bottom: 0px
+			left: 40px
 
 
 /***************************************************Services************************************/
 .serv		
 	&__block
-		flex: 0 0 49%
-		max-width: 49%
+		flex: 0 0 49.5%
+		max-width: 49.5%
 		background: $back
 		border-radius: 16px
+		padding: 14px 14px 44px 14px
+		margin-bottom: 10px
+		&_header
+			padding-left: 10px
+			h4
+				margin-bottom: 15px
+		&_text
+			padding-left: 10px
+			padding-right: 50px
+	.screen
+		margin-top: 60px
 
 
 /***************************************************Algorithms************************************/
 .alg
 	&__block
-		flex: 0 0 49%
-		max-width: 49%
+		flex: 0 0 49.5%
+		max-width: 49.5%
 		background: $back
 		border-radius: 16px
+		padding: 30px 20px 12px 25px
+		&_header
+			margin-top: 13px
+			h4
+				line-height: 34px
+				margin-bottom: 15px
+		.main-text
+			p
+				margin-bottom: 15px
+		&_note
+			margin-top: 35px
+			margin-left: -13px
+
+
+/***************************************************Slider************************************/
+.slider
+	margin-top: -20px
+	margin-bottom: 138px
+	margin-left: 50px
 
 
 /***************************************************Apps************************************/
@@ -241,11 +291,17 @@ h4
 		border-radius: 16px
 		display: flex
 		align-items: center
-		&-icon
-		&-text
+		padding: 20px 0px
+		&_icon
+		&_text
+			margin-left: -15px
 			a
 				&:hover
 					color: $black
+		.main-text--big
+			margin-top: 26px
+			p
+				margin-bottom: 0px
 
 
 
@@ -256,14 +312,21 @@ h4
 		max-width: 33%
 		background: $back
 		border-radius: 16px
+		margin-top: 10px
+		padding: 22px 20px 25px 17px
 		&--wide
 			flex: 0 0 100%
 			max-width: 100%
-		&-bottom
+		&_header
+			margin-top: 12px
+		&_image
+			margin-top: 18px
+		&_bottom
 			display: flex
 			justify-content: space-between
 			align-items: center
-		&-gen
+			margin-top: 24px
+		&_gen
 			span
 				font-size: 26px
 				color: $main-text
@@ -276,36 +339,59 @@ h4
 
 /***************************************************Plans************************************/
 .plans
+	.screen
+		margin-top: 13px
+		margin-bottom: 5px
 	&__block
-		flex: 0 0 49%
-		max-width: 49%
+		flex: 0 0 49.5%
+		max-width: 49.5%
 		background: $back
 		border-radius: 16px
-		&-header
+		padding: 27px 20px 40px 24px
+		&_header
 			display: flex
 			align-items: center
+			margin-top: 30px
+			margin-bottom: 34px
 			h4
 				margin-bottom: 0px
-		&-summ
+				margin-left: 17px
+		&_summ
 			background: #fff
-			border-radius: none
+			border-radius: 0px
+			padding: 21px 0px 60px 24px
 			span
 				display: block
 				b
-					font-size: 32px
+					font-size: 31px
 					font-weight: 500
+				&:nth-child(2)
+					margin-top: 6px
 
 
 /***************************************************Form************************************/
 .form
+	margin-bottom: 80px
 	&__back
 		background: radial-gradient(87.83% 150.88% at 55.04% 67.55%, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(98.44deg, #FCE8C9 0%, #D887FE 100%)
 		border-radius: 16px
 	&__main
+		padding: 80px 20px 76px 150px
+		flex: 0 0 49%
+		max-width: 49%
+	.top__call
+		margin-top: 37px
+	&__picture
+		position: relative
+		img
+			position: absolute
+			bottom: 0px
+			left: 170px
 
 
 /***************************************************Footer************************************/
 .footer
+	padding-bottom: 60px
 	a
 		&:hover
 			color: $black
