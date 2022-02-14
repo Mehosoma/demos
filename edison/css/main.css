@@ -320,12 +320,19 @@ h4 {
   margin-top: 35px;
   margin-left: -13px;
 }
+.alg__block_note img {
+  -webkit-transition: all 5s ease-out;
+  transition: all 5s ease-out;
+  width: 336px !important;
+}
 
 /***************************************************Slider************************************/
 .slider {
   margin-top: -20px;
   margin-bottom: 138px;
-  margin-left: 50px;
+}
+.slider__slick_slide img {
+  margin: 0 auto;
 }
 
 /***************************************************Apps************************************/

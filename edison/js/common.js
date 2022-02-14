@@ -31,29 +31,37 @@ $(document).ready(function(){
       slidesToScroll: 1,       
       arrows: false, 
       dots: false,
+      centerMode: false,
       responsive: [ 
               {
-                breakpoint: 1440,
+                breakpoint: 1200,
                 settings: {
                   adaptiveHeight:true,
-                  slidesToShow: 4,
+                  slidesToShow: 3,
                   slidesToScroll: 1     
                 }
               },
-
-               {
-                breakpoint: 1200,
+              {
+                breakpoint: 992,
                 settings: {
                   slidesToShow: 2,    
                 }
               },
-
-               {
+              {
                 breakpoint: 768,
                 settings: {
-                  slidesToShow: 1,    
+                  slidesToShow: 2,
+                  dots:true,  
                 }
               },
+              {
+                breakpoint: 576,
+                settings: {
+                  slidesToShow: 1,
+                  dots:true,  
+                }
+              },
+
 
             ]             
   });
@@ -61,4 +69,14 @@ $(document).ready(function(){
 
 
 
-
+$(document).ready(function(){
+  $('.alg__block_note').slick({
+      vertical: true,
+      infinite: true,
+      verticalSwiping: true,
+      slidesToShow: 1,
+      autoplay: true,
+      arrows: false, 
+      dots: false,
+});
+});
