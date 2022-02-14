@@ -144,11 +144,13 @@ h4 {
   font-weight: 500;
 }
 
-.logo span {
-  font-size: 19px;
-  color: #000000;
-  font-weight: 500;
-  padding-left: 4px;
+.logo {
+  width: 125px;
+  height: auto;
+}
+.logo svg {
+  width: 100%;
+  height: auto;
 }
 
 .btns {
@@ -171,9 +173,8 @@ h4 {
   border: 1px solid transparent;
 }
 .btns--fill a:hover {
-  background: transparent;
-  color: #000000;
-  border: 1px solid #000000;
+  background: #3A3A38;
+  border: 1px solid #3A3A38;
 }
 .btns--stroke {
   margin-left: 8px;
@@ -184,14 +185,7 @@ h4 {
   color: #000000;
 }
 .btns--stroke a:hover {
-  background: #000000;
-  color: #fff;
-  border: 1px solid transparent;
-}
-
-.screen img {
-  width: 100%;
-  height: auto;
+  background: #E4E3E1;
 }
 
 .main-wrap {
@@ -236,13 +230,11 @@ h4 {
   background: #000000;
   font-size: 18px;
   color: #fff;
-  border: 1px solid #000;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
 .form-gen button:hover {
-  background: #fff;
-  color: #000000;
+  background: #3A3A38;
 }
 
 .form-gen input:hover, .form-gen input:active, .form-gen input:focus {
@@ -301,6 +293,7 @@ h4 {
 }
 .serv .screen {
   margin-top: 60px;
+  margin-left: -10px;
 }
 
 /***************************************************Algorithms************************************/
@@ -363,9 +356,9 @@ h4 {
 /***************************************************Start************************************/
 .start__block {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 33%;
-          flex: 0 0 33%;
-  max-width: 33%;
+      -ms-flex: 0 0 32.8%;
+          flex: 0 0 32.8%;
+  max-width: 32.8%;
   background: #f5f5f5;
   border-radius: 16px;
   margin-top: 10px;

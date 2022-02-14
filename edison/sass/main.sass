@@ -130,11 +130,11 @@ h4
 			font-size: 26px
 			font-weight: 500
 .logo
-	span
-		font-size: 19px
-		color: $black
-		font-weight: 500
-		padding-left: 4px
+	width: 125px
+	height: auto
+	svg
+		width: 100%
+		height: auto
 .btns
 	display: flex
 	a
@@ -151,9 +151,8 @@ h4
 			color: #fff
 			border: 1px solid transparent
 			&:hover
-				background: transparent
-				color: $black
-				border: 1px solid $black
+				background: #3A3A38
+				border: 1px solid #3A3A38
 	&--stroke
 		margin-left: 8px
 		a
@@ -161,13 +160,7 @@ h4
 			border: 1px solid $black
 			color: $black
 			&:hover
-				background: $black
-				color: #fff
-				border: 1px solid transparent
-.screen
-	img
-		width: 100%
-		height: auto
+				background: #E4E3E1
 .main-wrap
 	display: flex
 	flex-wrap: wrap
@@ -199,14 +192,12 @@ h4
 		background: $black
 		font-size: 18px
 		color: #fff
-		border: 1px solid #000
 		-moz-transition: all 0.3s ease-out
 		-o-transition: all 0.3s ease-out
 		-webkit-transition: all 0.3s ease-out
 		transition: all 0.3s ease-out
 		&:hover
-			background: #fff
-			color: $black
+			background: #3A3A38
 .form-gen input:hover, .form-gen input:active, .form-gen input:focus
 	border: 1px solid $black
 
@@ -254,6 +245,7 @@ h4
 			padding-right: 50px
 	.screen
 		margin-top: 60px
+		margin-left: -10px
 
 
 /***************************************************Algorithms************************************/
@@ -308,8 +300,8 @@ h4
 /***************************************************Start************************************/
 .start
 	&__block
-		flex: 0 0 33%
-		max-width: 33%
+		flex: 0 0 32.8%
+		max-width: 32.8%
 		background: $back
 		border-radius: 16px
 		margin-top: 10px
