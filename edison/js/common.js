@@ -26,7 +26,7 @@ $(document).ready(function(){
 //Slider
 $(document).ready(function(){
   $('.slider__slick').slick({
-      infinite: true,     
+      infinite: false,     
       slidesToScroll: 4,
       swipeToSlide: true,
       variableWidth: true,    
@@ -36,37 +36,33 @@ $(document).ready(function(){
       responsive: [ 
               {
                 breakpoint: 1200,
-                settings: {
-                 
+                settings: {                 
                   slidesToScroll: 3,    
                 }
               },
               {
                 breakpoint: 992,
-                settings: {
-                  
+                settings: {                  
                   slidesToScroll: 2,    
                 }
               },
               {
                 breakpoint: 768,
-                settings: {
-                 
+                settings: {                 
                   slidesToScroll: 2,
                   dots:true,  
                 }
               },
               {
                 breakpoint: 576,
-                settings: {
-                 
+                settings: {                 
                   slidesToScroll: 1,
                   dots:true,  
                 }
               },
 
 
-            ]             
+          ]             
   });
 });
 
