@@ -139,10 +139,11 @@
 
 	.slick-dots button{
 		font-size: 0px;
-		width: 12px;
+		width: 14px;
 		height: 14px;
 		border:  1px solid #000;
 		border-radius: 50%;
+		background: #fff;
 	}
 
 	.slick-active button{
@@ -151,7 +152,7 @@
 
 	.apps__block{
 		flex-wrap: wrap;
-		padding-right: 30px;
+		padding: 0px 30px 30px 0px
 	}
 
 	.apps__block .main-text--big p, .apps__block .main-text--big a{
@@ -368,10 +369,11 @@
 
 	.slick-dots button{
 		font-size: 0px;
-		width: 12px;
+		width: 14px;
 		height: 14px;
 		border:  1px solid #000;
 		border-radius: 50%;
+		background: #fff;
 	}
 
 	.slick-active button{
