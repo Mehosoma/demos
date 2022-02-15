@@ -26,9 +26,10 @@ $(document).ready(function(){
 //Slider
 $(document).ready(function(){
   $('.slider__slick').slick({
-      infinite: false,
+      infinite: true,
       slidesToShow: 4,
-      slidesToScroll: 1,       
+      slidesToScroll: 4,
+      swipeToSlide: true,    
       arrows: false, 
       dots: false,
       centerMode: false,
