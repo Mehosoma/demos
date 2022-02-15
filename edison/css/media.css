@@ -647,4 +647,7 @@
 	.container--wide{
 		max-width: 1180px;
 	}
+	.top__text {
+    	padding: 40px 20px 72px 110px;
+	}
 }
