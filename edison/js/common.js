@@ -26,10 +26,10 @@ $(document).ready(function(){
 //Slider
 $(document).ready(function(){
   $('.slider__slick').slick({
-      infinite: true,
-      slidesToShow: 4,
+      infinite: true,     
       slidesToScroll: 4,
-      swipeToSlide: true,    
+      swipeToSlide: true,
+      variableWidth: true,    
       arrows: false, 
       dots: false,
       centerMode: false,
@@ -37,28 +37,30 @@ $(document).ready(function(){
               {
                 breakpoint: 1200,
                 settings: {
-                  adaptiveHeight:true,
-                  slidesToShow: 3,
-                  slidesToScroll: 1     
+                 
+                  slidesToScroll: 3,    
                 }
               },
               {
                 breakpoint: 992,
                 settings: {
-                  slidesToShow: 2,    
+                  
+                  slidesToScroll: 2,    
                 }
               },
               {
                 breakpoint: 768,
                 settings: {
-                  slidesToShow: 2,
+                 
+                  slidesToScroll: 2,
                   dots:true,  
                 }
               },
               {
                 breakpoint: 576,
                 settings: {
-                  slidesToShow: 1,
+                 
+                  slidesToScroll: 1,
                   dots:true,  
                 }
               },

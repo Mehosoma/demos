@@ -318,6 +318,9 @@ h4 {
 }
 
 /***************************************************Slider************************************/
+.slider__slick_slide {
+  margin: 0 15px;
+}
 .slider__slick_slide img {
   margin: 0 auto;
 }

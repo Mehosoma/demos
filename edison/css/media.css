@@ -1,5 +1,6 @@
 @media only screen and (min-width : 0px) and (max-width : 575px) {
 
+
 	.top{
 		overflow: hidden;
 	}
@@ -228,6 +229,8 @@
 }
 
 @media only screen and (min-width : 576px) and (max-width : 767px) {
+
+
 	.top{
 		overflow: hidden;
 	}
