@@ -144,15 +144,6 @@ h4 {
   font-weight: 500;
 }
 
-.logo {
-  width: 125px;
-  height: auto;
-}
-.logo svg {
-  width: 100%;
-  height: auto;
-}
-
 .btns {
   display: -webkit-box;
   display: -ms-flexbox;
