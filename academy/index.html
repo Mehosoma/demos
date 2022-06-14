@@ -30,15 +30,13 @@
 
 <body>
 
-
-
 <!--Header-->
 <header class="header">
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
 				<div class="cont-main">
-					<div class="logo">
+					<div class="logo order-1">
 						<a href="index.html" class="logo__main">
 							<img src="images/logo.svg" alt="logo-image">
 							<span>Академия Современных Технологий</span>
@@ -47,7 +45,12 @@
 							<span>Образовательное учреждение с государственной лицензией.</span>
 						</div>
 					</div>
-					<nav class="menu menu--link">
+					<div class="menu-toggle-button click-mobile d-lg-none order-2 order-sm-3">
+						<span></span>
+						<span></span>		
+						<span></span>
+					</div>
+					<nav class="menu menu--link order-3 order-lg-2">
 						<ul>
 							<li><a href=".desc">О компании</a></li>
 							<li><a href=".benef">Преимущества</a></li>
@@ -55,7 +58,7 @@
 							<li><a href=".contacts">Контакты</a></li>
 						</ul>
 					</nav>
-					<div class="phone">
+					<div class="phone order-3 order-sm-2 order-lg-3">
 						<a href="tel:+79222563689">8 922 256 36 89</a>
 					</div>
 				</div>
@@ -68,15 +71,15 @@
 <section class="main">
 	<div class="container">
 		<div class="row">
-			<div class="col-7">
+			<div class="col-12 col-md-7">
 				<div class="main_header">
-					<h1>Готовим специалистов по актуальным направлениям<div><i> и помогаем находить<br> хорошую работу.</i></div></h1>
+					<h1>Готовим специалистов по актуальным направлениям<br class="d-block d-md-none"><div><i> и помогаем находить<br> хорошую работу.</i></div></h1>
 				</div>
 				<div class="btn-main btn-main--banner menu--link">
 					<a href=".benef">Узнать подробнее</a>
 				</div>
 			</div>
-			<div class="col-5">
+			<div class="col-12 col-md-5">
 				<div class="main_image">
 					<img src="images/main.png">
 				</div>
@@ -89,10 +92,10 @@
 <section class="desc back-gray" id="desc">
 	<div class="container">
 		<div class="row">
-			<div class="col-5">
+			<div class="col-12 col-xl-5 order-2 order-xl-1">
 				<img src="images/flat-1.png" alt="flat-image">
 			</div>
-			<div class="col-7">
+			<div class="col-12 col-xl-7 order-1 order-xl-2">
 				<div class="desc_text">
 					<h3>Академия Современных  Технологий</h3>
 					<div class="main-text">
@@ -117,7 +120,7 @@
 			</div>
 		</div>
 		<div class="row benef_row">
-			<div class="col-4">
+			<div class="col-12 col-md-6 col-lg-4">
 				<div class="benef_block">
 					<div class="benef_block__image benef_block__image--shield">
 						<img src="images/shield.png" alt="benef-icon">
@@ -126,7 +129,7 @@
 					<span>Процесс обучения подтверждается наличием образовательной лицензии. Выпускникам выдается документ об образовании установленного образца.</span>
 				</div>
 			</div>
-			<div class="col-4">
+			<div class="col-12 col-md-6 col-lg-4">
 				<div class="benef_block">
 					<div class="benef_block__image benef_block__image--comp">
 						<img src="images/icon-2.png" alt="benef-icon">
@@ -135,7 +138,7 @@
 					<span>Отсутствует необходимость в посещении лекций и поездок для сдачи тестов. У нас современная образовательная платформа для дистанционного обучения.</span>
 				</div>
 			</div>
-			<div class="col-4">
+			<div class="col-12 col-md-6 col-lg-4 benef-fix--tablet">
 				<div class="benef_block">
 					<div class="benef_block__image benef_block__image--rocket">
 						<img src="images/icon-3.png" alt="benef-icon">
@@ -144,7 +147,7 @@
 					<span>Для тех, кто хочет быстрее получить диплом об обучении, предусмотрены ускоренные курсы. Ускоренный курс отличается большей нагрузкой.</span>
 				</div>
 			</div>
-			<div class="col-4 benef-fix">
+			<div class="col-12 col-md-6 col-lg-4 benef-fix">
 				<div class="benef_block">
 					<div class="benef_block__image benef_block__image--card">
 						<img src="images/icon-4.png" alt="benef-icon">
@@ -153,7 +156,7 @@
 					<span>Для начала обучения необходимо внести предоплату в размере 50%, оставшуюся половину необходимо будет оплатить по окончании обучения.</span>
 				</div>
 			</div>
-			<div class="col-4 benef-fix">
+			<div class="col-12 col-md-6 col-lg-4 benef-fix">
 				<div class="benef_block">
 					<div class="benef_block__image benef_block__image--gift">
 						<img src="images/icon-5.png" alt="benef-icon">
@@ -162,7 +165,7 @@
 					<span>Обеспечиваем высокое качество и эффективность обучения при низкой цене за весь курс.</span>
 				</div>
 			</div>
-			<div class="col-4 benef-fix">
+			<div class="col-12 col-md-6 col-lg-4 benef-fix">
 				<div class="benef_block">
 					<div class="benef_block__image benef_block__image--books">
 						<img src="images/icon-6.png" alt="benef-icon">
@@ -201,13 +204,13 @@
 			</div>
 			<div class="col-12">
 				<div class="services_block services_block--even services_block--2">
-					<div class="services_block__text">
+					<div class="services_block__text order-2 order-md-1">
 						<span>Профессиональная<br> переподготовка</span>
 						<div class="btn-main">
 							<a href="images/download/Профессиональная переподготовка.doc">Скачать перечень программ обучения</a>
 						</div>
 					</div>	
-					<div class="services_block__image">
+					<div class="services_block__image order-1 order-md-2">
 						<img src="images/services-2.png" alt="services-image">
 					</div>									
 				</div>
@@ -225,11 +228,11 @@
 			</div>
 			<div class="col-12">
 				<div class="services_block services_block--even services_block--4">
-					<div class="services_block__text">
+					<div class="services_block__text order-2 order-md-1">
 						<span>Подготовка к<br> аттестации</span>
 						<p>БДД, Промышленная безопасность,<br> Электробезопасность  и пр.</p>
 					</div>	
-					<div class="services_block__image">
+					<div class="services_block__image order-1 order-md-2">
 						<img src="images/services-4.png" alt="services-image">
 					</div>									
 				</div>
@@ -265,13 +268,13 @@
 		<div class="row">
 			<div class="col-12">
 				<div class="slider-wrap">
-					<div class="slider slider-main popup-gallery">
-						<div><a href="images/lic-1.jpg" class="popup_link"><img src="images/lic-1.jpg" alt="licence-image"></a></div>
+					<div class="slider slider-main popup-gallery">						
 						<div><a href="images/lic-2.jpg" class="popup_link"><img src="images/lic-2.jpg" alt="licence-image"></a></div>
 						<div><a href="images/lic-3.jpg" class="popup_link"><img src="images/lic-3.jpg" alt="licence-image"></a></div>
 						<div><a href="images/lic-4.jpg" class="popup_link"><img src="images/lic-4.jpg" alt="licence-image"></a></div>
 						<div><a href="images/lic-5.jpg" class="popup_link"><img src="images/lic-5.jpg" alt="licence-image"></a></div>
-						<div><a href="images/lic-6.jpg" class="popup_link"><img src="images/lic-6.jpg" alt="licence-image"></a></div>					
+						<div><a href="images/lic-6.jpg" class="popup_link"><img src="images/lic-6.jpg" alt="licence-image"></a></div>
+						<div><a href="images/lic-1.jpg" class="popup_link"><img src="images/lic-1.jpg" alt="licence-image"></a></div>					
 					</div>
 					<div class="arrows">
 						<div class="arr-left">
@@ -305,17 +308,17 @@
 		<div class="row">
 			<div class="col-12">
 				<div class="subheader subheader--decor">
-					<h2>Образцы выдаваемых<br> документов</h2>
+					<h2>Образцы выдаваемых<br class="d-none d-lg-block"> документов</h2>
 				</div>
 			</div>
 		</div>
 		<div class="row popup-gallery-two">
-			<div class="col-6">
+			<div class="col-12 col-md-6">
 				<div class="examples_block">
 					<div><a href="images/ex-1.png" class="popup_link"><img src="images/ex-1.png" alt="licence-image"></a></div>
 				</div>
 			</div>
-			<div class="col-6">
+			<div class="col-12 col-md-6">
 				<div class="examples_block">
 					<div><a href="images/ex-2.webp" class="popup_link"><img src="images/ex-2.webp" alt="licence-image"></a></div>
 				</div>
@@ -328,7 +331,7 @@
 <section class="contacts" id="contacts">
 	<div class="container">
 		<div class="row">
-			<div class="col-5">
+			<div class="col-12 col-lg-5">
 				<div class="subheader subheader--decor">
 					<h2>Контакты</h2>
 				</div>
@@ -360,7 +363,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-7">
+			<div class="col-12 col-lg-7">
 				<div class="contacts_map">
 					<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A7ea8379794d46aee219787b4c632abae91f4cbc96c990889aa1dca8b4a90ec02&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>
 				</div>
@@ -382,7 +385,7 @@
 		<div class="row">
 			<div class="col-12">
 				<div class="questions__header">
-					<span>Наши консультанты вам помогут, просто позвоните <i>8 922 256 36 89</i></span>
+					<span>Наши консультанты вам помогут, просто позвоните<br class="d-block d-lg-none"> <i>8 922 256 36 89</i></span>
 					<p>Или напишите нам</p>
 				</div>
 				<form class="questions_form" id="q-form">
@@ -419,12 +422,14 @@
 						</a>
 					</div>
 					<div class="general">
-						<a href="general.html">Основные сведения об организации</a>
-					</div>
-					<div class="copy">
+						<div>
+							<a href="general.html">Основные сведения об организации</a>
+						</div>
 						<a href="">Политика конфиденциальности</a>
-						<span>&copy; Все права защищены</span>
-					</div>
+					</div>					
+				</div>
+				<div class="copy">
+					<span>&copy; Все права защищены</span>						
 				</div>
 			</div>
 		</div>

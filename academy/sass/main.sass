@@ -25,6 +25,7 @@ body
 	line-height: 1.2
 	-webkit-font-smoothing: antialiased
 	background-color: #fff	
+	overflow: hidden
 	
 
 	a:hover, a:focus, a:active
@@ -158,7 +159,7 @@ section
 .header
 	padding: 15px
 	position: relative
-	z-index: 0
+	z-index: 100
 .logo
 	display: flex
 	flex-wrap: wrap
@@ -198,6 +199,7 @@ section
 				color: $red
 .phone
 	padding-top: 18px
+	flex-shrink: 0
 	a
 		font-size: 16px
 		color: $gray
@@ -208,21 +210,23 @@ section
 /***************************************************Main************************************/
 .main
 	min-height: 577px
-	position: relative
-	z-index: 10
 	&_image
 		position: relative
 		img
 			position: absolute
 			right: -97px
 			top: -104px
-		&__inner
+			z-index: -1
+		&--inner
 			img
 				position: absolute
 				right: -181px
 				top: -83px
+				z-index: -1
 .main_header
 	margin-top: 40px
+	position: relative
+	z-index: 10
 	div
 		margin-top: 15px
 
@@ -435,6 +439,7 @@ section
 .contacts
 	padding-top: 40px
 	padding-bottom: 40px
+	overflow: hidden
 	h2
 		margin-bottom: 48px
 	&_block
@@ -459,7 +464,7 @@ section
 			margin-top: 46px
 	&_map
 		position: absolute
-		width: 1000px
+		width: 1200px
 		height: 100%
 
 /***************************************************Qustions************************************/
@@ -574,6 +579,10 @@ section
 		span
 			margin-left: 0px
 .copy
+	flex: 0 0 100%
+	max-width: 100%
+	text-align: right
+	margin-top: -50px
 	span
 		display: block
 .copy,
@@ -585,23 +594,24 @@ section
 		color: #3D3D3D
 	a
 		&:hover
-			color: $blue
-.copy
-	margin-top: 44px
-	span
-		display: block
-		margin-top: 10px
+			color: $red
+	div
+		flex-grow: 1
+		text-align: center	
 .general
 	padding-top: 44px
 	flex-grow: 1
-	text-align: center
+	justify-content: space-between
+	display: flex
+	align-items: center
+
 
 /***************************************************Content************************************/
 .main_inner
 	margin-bottom: 60px
+	position: relative
+	z-index: 1
 	.subheader
-		position: relative
-		z-index: 100
 		h2
 			font-size: 50px
 			line-height: 61px
@@ -635,8 +645,8 @@ section
 					transition: all 0.3s ease-out
 				&:hover
 					a
-						text-shadow: 1px 0px $blue-d
-						color: $blue-d
+						text-shadow: 1px 0px $red
+						color: $red
 					&:before
 						background: $red
 			a
@@ -651,10 +661,10 @@ section
 			font-family: $font
 			font-size: 16px
 			line-height: 19px
-			color: #7A7A7A
+			color: #3D3D3D
 		a
 			&:hover
-				color: $blue
+				color: $red
 		span
 			font-family: $font
 			font-size: 16px
@@ -685,7 +695,7 @@ section
 			font-family: $font
 			font-size: 16px
 			line-height: 19px
-			color: #7A7A7A
+			color: #3D3D3D
 			margin-bottom: 5px
 			&:before
 				content: ''
@@ -706,3 +716,67 @@ section
 		text-align: center
 
 
+/***********************************************ButtonMobile************************************/
+.menu-toggle-button
+	width: 50px
+	height: 50px
+	background-color: transparent
+	padding: 10px
+	border: none
+	text-indent: -9999px
+	-webkit-appearance: none
+	-moz-appearance: none
+	appearance: none
+	position: relative
+	display: block
+	z-index: 1000000
+	margin-top: 3px
+
+.menu-toggle-button span 
+	display: block
+	height: 0.15rem
+	background: $blue-l
+	position: absolute
+	top: 21px
+	width: 30px
+	-webkit-transition: background 0s 0.3
+	-o-transition: background 0s 0.3
+	transition: background 0s 0.3
+	-webkit-transition-property: top, -webkit-transform
+	transition-property: top, -webkit-transform
+	-o-transition-property: top, transform
+	transition-property: top, transform
+	transition-property: top, transform, -webkit-transform
+	-webkit-transition-delay: 0s, 0.3s
+	-o-transition-delay: 0s, 0.3s
+	transition-delay: 0s, 0.3s
+	-webkit-transition-duration: 0.3s, 0.3s
+	-o-transition-duration: 0.3s, 0.3s
+	transition-duration: 0.3s, 0.3s
+	&:nth-child(2)
+		top: 15px
+	&:nth-child(3)
+		top: 27px
+
+.menu-toggle-button.is-active span
+	background: none
+
+
+.menu-toggle-button.is-active span:nth-child(2)
+	top: 20px
+	-webkit-transform: rotate(45deg)
+	-ms-transform: rotate(45deg)
+	transform: rotate(45deg)
+	background: $blue-l
+
+
+.menu-toggle-button.is-active span:nth-child(3)
+	top: 21px
+	background: $blue-l
+	-webkit-transform: rotate(-45deg)
+	-ms-transform: rotate(-45deg)
+	transform: rotate(-45deg)
+	
+
+.menu-toggle-button:focus
+	outline: none !important
