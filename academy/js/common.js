@@ -1,3 +1,16 @@
+
+//Close menu when resize and scroll top
+function menu(){
+ if($(".menu-toggle-button").hasClass("is-active")) {       
+    $('.menu').animate({
+      height: 'toggle'
+      }, 0, function() {
+    });         
+    $(".menu-toggle-button").toggleClass('is-active');
+    $(".menu").toggleClass('is-active'); 
+  }
+}
+
 //Slider-Arrows
 $(function () {
     
@@ -130,16 +143,8 @@ $(document).ready(function(){
  
   $('.scrollup').click(function(e){
     $("html, body").animate({ scrollTop: 0 }, 600);
-    if($(".menu-toggle-button").hasClass("is-active")) {
-      e.preventDefault();        
-            $('.menu').animate({
-                height: 'toggle'
-              }, 600, function() {
-            });         
-          $(".menu-toggle-button").toggleClass('is-active');
-          $(".menu").toggleClass('is-active'); 
-    }
-  return false;
+    e.preventDefault(); 
+    menu();
   });
 });
 
@@ -163,15 +168,7 @@ $(document).ready(function () {
 
 $(window).resize(function(e) {
   if(document.documentElement.clientWidth > 991) {
-    if($(".menu-toggle-button").hasClass("is-active")) {
-      e.preventDefault();        
-            $('.menu').animate({
-                height: 'toggle'
-              }, 600, function() {
-            });         
-          $(".menu-toggle-button").toggleClass('is-active');
-          $(".menu").toggleClass('is-active'); 
-    }
-  return false;
+    e.preventDefault(); 
+    menu();
   }
 });
