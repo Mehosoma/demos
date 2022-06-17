@@ -1145,6 +1145,8 @@
 	.copy{
 		margin-top: -20px;
 	}
+
+	
 }
 
 @media only screen and (min-width : 1200px) and (max-width : 1309px) {
@@ -1180,5 +1182,12 @@
 
 	.main_image--inner img{
 		top: -53px;
+	}
+}
+
+
+@media only screen and (min-width : 992px){
+	.menu{
+		display: flex!important;
 	}
 }

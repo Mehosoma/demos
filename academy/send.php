@@ -18,7 +18,9 @@ $phone = trim($phone);
 $mail = trim($mail);
 $mes = trim($mes);
 
-$address = "seregey-nv@mail.ru";
+$address = "sergey-nv@mail.ru";
+$from = "astnvru@vh287.sweb.ru";
+$headers = "From:" . $from;
 $sub = "Сообщение с сайта Академия образования";
 
 $message = "Сообщение с сайта Академия образования \n

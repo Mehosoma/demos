@@ -65,6 +65,22 @@ body hr {
 }
 
 /***************************************************GeneralStyles************************************/
+.scrollup {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 1000000000;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.scrollup img {
+  opacity: 0.7;
+  display: none;
+}
+.scrollup:hover img {
+  opacity: 1;
+}
+
 h1 {
   font-size: 40px;
   color: #1F5E97;
