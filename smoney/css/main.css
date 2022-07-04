@@ -195,7 +195,12 @@ label i {
   max-width: 50%;
 }
 .main__logo {
-  padding-left: 107px;
+  text-align: center;
+}
+.main__logo img {
+  max-width: 480px;
+  height: auto;
+  margin-bottom: 40px;
 }
 
 .header-main {
@@ -318,8 +323,7 @@ label i {
   height: 100%;
   position: relative;
   background: transparent;
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  background: rgba(0, 0, 0, 0.95);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
