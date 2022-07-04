@@ -1,0 +1,472 @@
+html {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  min-width: 320px;
+  margin: 0 auto;
+  position: relative;
+  font-family: "TT Norms Regular", sans-serif;
+  line-height: 1.2;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  background-color: #0C0C0C;
+  background-image: url("../images/back.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+body a:hover, body a:focus, body a:active {
+  text-decoration: none;
+  outline: none;
+}
+body input:focus, body input:active {
+  text-decoration: none;
+  outline: none;
+}
+body button:focus, body button:active {
+  text-decoration: none;
+  outline: none;
+}
+body textarea:focus, body textarea:active {
+  text-decoration: none;
+  outline: none;
+}
+body a {
+  display: inline-block;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+body ul, body ol {
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none;
+}
+body button {
+  border: none;
+  cursor: pointer;
+}
+body hr {
+  border: none;
+}
+
+.pixel {
+  background: url(../images/main.jpg) no-repeat top center;
+  width: 1920px;
+  height: 12800px;
+  position: absolute;
+  z-index: 1000000;
+  display: none;
+  left: 50%;
+  top: 0;
+  margin-left: -960px;
+  opacity: 0.5;
+  margin-top: 0px;
+}
+
+/***************************************************GeneralStyles************************************/
+span i,
+h1 i,
+label i {
+  color: #fff;
+  font-style: normal;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+}
+.content .container {
+  width: 100%;
+  height: 100%;
+}
+.content-wrapper {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header {
+  position: relative;
+  z-index: 3000;
+}
+.header__wrap {
+  width: 100%;
+  padding: 66px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header__logo span {
+  font-family: "TT Norms Bold", sans-serif;
+  font-size: 36px;
+  color: #0082C8;
+}
+.header__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header__menu li {
+  margin-left: 146px;
+}
+.header__menu li a {
+  font-family: "TT Norms Medium", sans-serif;
+  font-size: 21px;
+  color: #fff;
+  position: relative;
+}
+.header__menu li a:hover {
+  color: #0082C8;
+}
+.header__menu li a:hover:after {
+  background: #0082C8;
+}
+.header__menu li a:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50px;
+  width: 65%;
+  height: 2px;
+  left: 0px;
+  right: 0px;
+  background: transparent;
+  margin: auto;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+.main__wrap {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.main__logo, .main__header {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  max-width: 50%;
+}
+.main__logo {
+  padding-left: 107px;
+}
+
+.header-main {
+  padding-left: 13px;
+  padding-bottom: 30px;
+}
+.header-main h1 {
+  font-family: "TT Norms Bold", sans-serif;
+  font-size: 64px;
+  color: #0082C8;
+  line-height: 87px;
+  margin-bottom: 50px;
+}
+.header-main__desc {
+  font-family: "TT Norms Medium", sans-serif;
+  font-size: 26px;
+  color: #fff;
+  line-height: 39px;
+}
+.header-main__pay {
+  margin-top: 65px;
+}
+
+.pay-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.pay-info span {
+  font-family: "TT Norms Medium", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: #0082C8;
+}
+.pay-info__desc {
+  position: relative;
+  padding-left: 32px;
+  margin-left: 47px;
+}
+.pay-info__desc:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: #0082C8;
+  left: 5px;
+  top: 15px;
+}
+.pay-info__desc:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #0082C8;
+  left: 0px;
+  top: 10px;
+}
+
+.main-btn a,
+.main-btn button {
+  width: 266px;
+  line-height: 65px;
+  color: #fff;
+  font-family: "TT Norms Bold", sans-serif;
+  font-size: 24px;
+  text-align: center;
+  background: #0082C8;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.main-btn a:hover,
+.main-btn button:hover {
+  opacity: 0.7;
+}
+
+.footer {
+  position: relative;
+  z-index: 3000;
+}
+.footer span {
+  font-family: "TT Norms Medium", sans-serif;
+  font-size: 21px;
+  color: #0082C8;
+}
+.footer__wrap {
+  padding: 70px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+/***************************************************Modal************************************/
+.mfp-container {
+  padding: 0px;
+}
+
+.mfp-content {
+  width: 100%;
+  height: 100%;
+}
+
+.modalw {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: transparent;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.modalw__wrap {
+  height: auto;
+  position: relative;
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: -50px;
+  right: 15px;
+}
+.modal-close-btn:hover {
+  cursor: pointer;
+}
+.modal-close-btn span {
+  font-family: "TT Norms Medium", sans-serif;
+  font-size: 21px;
+  color: #0082C8;
+}
+.modal-close-btn span b {
+  font-weight: 500;
+  margin-left: 20px;
+}
+
+.fields-form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.fields-form__block {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 32%;
+          flex: 0 0 32%;
+  max-width: 32%;
+}
+.fields-form__block span {
+  font-family: "TT Norms Medium", sans-serif;
+  font-size: 24px;
+  color: #0082C8;
+}
+.fields-form__block input {
+  width: 100%;
+  height: 54px;
+  background: rgba(0, 130, 200, 0.1);
+  border: none;
+  padding: 0px 15px;
+  margin-top: 15px;
+  font-family: "TT Norms Medium", sans-serif;
+  font-size: 21px;
+  color: #0082C8;
+}
+.fields-form__block ::-webkit-input-placeholder {
+  font-family: "TT Norms Medium", sans-serif;
+  font-size: 21px;
+  color: #0082C8;
+}
+.fields-form__block ::-moz-placeholder {
+  font-family: "TT Norms Medium", sans-serif;
+  font-size: 21px;
+  color: #0082C8;
+}
+.fields-form__block :-moz-placeholder {
+  font-family: "TT Norms Medium", sans-serif;
+  font-size: 21px;
+  color: #0082C8;
+}
+.fields-form__block :-ms-input-placeholder {
+  font-family: "TT Norms Medium", sans-serif;
+  font-size: 21px;
+  color: #0082C8;
+}
+
+.pay-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 75px;
+}
+.pay-form__check .l-container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 0px;
+  cursor: pointer;
+  font-family: "TT Norms Medium", sans-serif;
+  font-size: 21px;
+  color: #0082C8;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.pay-form__check .l-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.pay-form__check .checkmark {
+  position: absolute;
+  top: 16px;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  background-color: transparent;
+  border: 2px solid #0082C8;
+}
+.pay-form__check .check-gen .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.pay-form__check .check-gen input:checked ~ .checkmark:after {
+  display: block;
+}
+.pay-form__check .check-gen .checkmark:after {
+  left: 4px;
+  top: 0px;
+  width: 6px;
+  height: 12px;
+  border: solid #0082C8;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.pay-form__btn {
+  margin-right: 37px;
+}
+.pay-form__btn button:disabled {
+  background-color: gray;
+}
+.pay-form__btn button:disabled:hover {
+  opacity: 1;
+}

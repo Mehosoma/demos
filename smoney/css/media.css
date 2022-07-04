@@ -1,0 +1,503 @@
+@media only screen and (min-width : 0px) and (max-width : 539px) {
+
+	body{
+		height: auto;
+	}
+
+	.header__menu{
+		flex: 0 0 100%;
+		max-width: 100%;
+		margin-top: 30px;
+		flex-wrap: wrap;
+	}
+
+	.main__logo {
+    	padding-left: 0px;
+    	flex: 0 0 100%;
+    	max-width: 100%;
+    	text-align: center;
+	}
+
+	.header__menu li a:after{
+		display: none;
+	}
+
+	.header__menu li{
+		margin-left: 0px;
+		display: block;
+		width:  100%;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+
+	.header, .footer{
+		z-index: 100;
+	}
+
+	.header-main{
+		flex: 0 0 100%;
+		max-width: 100%;
+		text-align: center;
+		padding-left: 0px;
+	}
+
+	.header__wrap{
+		padding: 40px 0px;
+		justify-content: center;
+
+	}
+
+	.footer__wrap{
+		padding: 50px 0px;
+		justify-content: center;
+	}
+
+	.footer__copy{
+		margin-top: 20px;
+	}
+
+	.footer__desc{
+		text-align: center;
+	}
+
+	.main__logo img{
+		width:  80vw;
+		height:  auto;
+		max-width: 360px;
+	}
+
+	.header-main h1{
+		font-size: 40px;
+		margin-bottom: 50px;
+		line-height: 46px;
+		margin-top: 30px;
+	}
+
+	.header-main__desc{
+		font-size: 19px;
+		line-height: 28px;
+	}
+
+	.main-btn a, .main-btn a, .main-btn button{
+		width: 230px;
+	}
+
+
+	.pay-info__desc{
+		margin-left: 0px;
+		text-align: left;
+		margin-top: 40px;
+	}
+
+	.pay-info{
+		margin-top: 50px;
+		justify-content: center;
+	}
+
+	.main-btn a, .main-btn button{
+		line-height: 46px;
+		font-size: 22px;
+	}
+
+	.fields-form__block{
+		flex: 0 0 100%;
+		max-width: 100%;
+		margin-bottom: 30px;
+	}
+
+	.pay-form__check .l-container{
+		font-size: 16px;
+		line-height: 22px;
+		margin-top: 30px;
+	}
+
+	.mfp-wrap{
+		background: #0b0b0b;
+	}
+
+	.pay-form{
+		margin-top: 40px;
+	}
+
+	.mfp-content{
+		min-height: 700px;
+	}
+
+}
+
+@media only screen and (min-width : 540px) and (max-width : 767px) {
+
+	.header, .footer{
+		z-index: 100;
+	}
+
+	.pay-form__check .l-container{
+		font-size: 16px;
+		line-height: 22px;
+		margin-top: 30px;
+	}
+
+	.modalw__wrap{
+		padding-bottom: 50px;
+	}
+
+	.modalw{
+		margin: 150px 0px;
+	}
+
+	.mfp-wrap{
+		background: #0b0b0b;
+	}
+
+	.pay-form{
+		margin-top: 40px;
+	}
+
+	.pay-info__desc{
+		margin-left: 0px;
+		text-align: left;
+		margin-top: 40px;
+	}
+
+	.main__logo {
+    	padding-left: 0px;
+    	flex: 0 0 100%;
+    	max-width: 100%;
+    	text-align: center;
+	}
+
+	.header__menu li a:after{
+		display: none;
+	}
+
+	.header__menu li{
+		margin-left: 60px;
+	}
+
+	.header-main{
+		flex: 0 0 100%;
+		max-width: 100%;
+		text-align: center;
+	}
+
+	.header__wrap{
+		padding: 40px 0px;
+
+	}
+
+	.footer__wrap{
+		padding: 50px 0px;
+		justify-content: center;
+	}
+
+	.footer__copy{
+		margin-top: 20px;
+	}
+
+	.main__logo img{
+		width:  50vw;
+		height:  auto;
+		max-width: 360px;
+	}
+
+	.header-main h1{
+		font-size: 48px;
+		margin-bottom: 50px;
+		line-height: 62px;
+		margin-top: 30px;
+	}
+
+	.header-main__desc{
+		font-size: 22px;
+		line-height: 32px;
+	}
+
+	.main-btn a, .main-btn a, .main-btn button{
+		width: 230px;
+	}
+
+	.pay-info{
+		margin-top: 70px;
+		justify-content: center;
+	}
+
+	.main-btn a, .main-btn button{
+		line-height: 46px;
+		font-size: 22px;
+	}
+
+	.fields-form__block{
+		flex: 0 0 100%;
+		max-width: 100%;
+		margin-bottom: 30px;
+	}
+
+	.pay-form__check .l-container{
+		font-size: 18px;
+		line-height: 24px;
+	}
+
+	.mfp-content{
+		min-height: 700px;
+	}
+}
+
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+	.main__logo {
+    	padding-left: 0px;
+    	flex: 0 0 100%;
+    	max-width: 100%;
+    	text-align: center;
+	}
+
+	.header__menu li a:after{
+		display: none;
+	}
+
+	.header__menu li{
+		margin-left: 60px;
+	}
+
+	.header-main{
+		flex: 0 0 100%;
+		max-width: 100%;
+		text-align: center;
+		padding-left: 0px;
+	}
+
+	.header__wrap{
+		padding: 40px 0px;
+
+	}
+
+	.footer__wrap{
+		padding: 50px 0px;
+		justify-content: center;
+	}
+
+	.footer__copy{
+		margin-top: 20px;
+	}
+
+	.main__logo img{
+		width:  35vw;
+		height:  auto;
+		max-width: 360px;
+	}
+
+	.header-main h1{
+		font-size: 48px;
+		margin-bottom: 50px;
+		line-height: 62px;
+		margin-top: 30px;
+	}
+
+	.header-main__desc{
+		font-size: 22px;
+		line-height: 32px;
+	}
+
+	.main-btn a, .main-btn a, .main-btn button{
+		width: 230px;
+	}
+
+	.pay-info{
+		margin-top: 70px;
+		justify-content: center;
+	}
+
+	.main-btn a, .main-btn button{
+		line-height: 46px;
+		font-size: 22px;
+	}
+
+	.fields-form__block{
+		flex: 0 0 100%;
+		max-width: 100%;
+		margin-bottom: 30px;
+	}
+
+	.pay-form__check .l-container{
+		font-size: 18px;
+		line-height: 24px;
+	}
+}
+
+@media only screen and (min-height : 0px) and (max-height : 599px) {
+	.header, .footer{
+		z-index: 100;
+	}
+
+	.mfp-content{
+		min-height: 700px;
+	}
+}
+
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+	.main__logo {
+    	padding-left: 0px;
+    	flex: 0 0 40%;
+    	max-width: 40%;
+	}
+
+	.header__menu li a:after{
+		display: none;
+	}
+
+	.header-main{
+		flex: 0 0 60%;
+		max-width: 60%;
+	}
+
+	.header__wrap{
+		padding: 20px 0px;
+	}
+
+	.footer__wrap{
+		padding: 30px 0px;
+	}
+
+	.main__logo img{
+		width:  35vw;
+		height:  auto;
+		max-width: 320px;
+	}
+
+	.header-main h1{
+		font-size: 44px;
+		margin-bottom: 30px;
+		line-height: 58px;
+	}
+
+	.header-main__desc{
+		font-size: 22px;
+		line-height: 32px;
+	}
+
+	.main-btn a{
+		width: 200px;
+	}
+
+	.pay-info span {
+		font-size: 14px;
+		line-height: 20px;
+	}
+
+	.pay-info__desc{
+		margin-left: 30px;
+	}
+
+	.pay-info{
+		margin-top: 40px;
+	}
+
+	.main-btn a, .main-btn button{
+		line-height: 46px;
+		font-size: 22px;
+	}
+}
+
+@media only screen and (min-width : 1200px) and (max-width : 1439px) {
+
+	.main__logo {
+    	padding-left: 0px;
+    	flex: 0 0 40%;
+    	max-width: 40%;
+	}
+
+	.header__menu li a:after{
+		top: 35px;
+	}
+
+	.header-main{
+		flex: 0 0 60%;
+		max-width: 60%;
+	}
+
+	.header__wrap{
+		padding: 20px 0px;
+	}
+
+	.footer__wrap{
+		padding: 30px 0px;
+	}
+
+	.main__logo img{
+		width:  35vw;
+		height:  auto;
+		max-width: 360px;
+	}
+
+	.header-main h1{
+		font-size: 48px;
+		margin-bottom: 30px;
+		line-height: 62px;
+	}
+
+	.header-main__desc{
+		font-size: 22px;
+		line-height: 32px;
+	}
+
+	.main-btn a{
+		width: 230px;
+	}
+
+	.pay-info{
+		margin-top: 40px;
+	}
+
+	.main-btn a, .main-btn button{
+		line-height: 46px;
+		font-size: 22px;
+	}
+
+	.header__menu li{
+		margin-left: 100px;
+	}
+}
+
+@media only screen and (min-width : 1440px) and (max-width : 1919px) {
+
+	.main__logo {
+    	padding-left: 50px;
+    	flex: 0 0 45%;
+    	max-width: 45%;
+	}
+
+	.header-main{
+		flex: 0 0 55%;
+		max-width: 55%;
+	}
+
+	.header__wrap{
+		padding: 40px 0px;
+	}
+
+	.footer__wrap{
+		padding: 40px 0px;
+	}
+
+	.main__logo img{
+		width:  35vw;
+		height:  auto;
+		max-width: 500px;
+	}
+
+	.header-main h1{
+		font-size: 56px;
+		margin-bottom: 40px;
+		line-height: 70px;
+	}
+
+	.header-main__desc{
+		font-size: 24px;
+		line-height: 34px;
+	}
+
+	.main-btn a{
+		width: 230px;
+	}
+}

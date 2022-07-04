@@ -1,0 +1,350 @@
+@import "bourbon/bourbon"
+
+$blue: #0082C8
+$tt-bold: 'TT Norms Bold', sans-serif
+$tt-medium: 'TT Norms Medium', sans-serif
+$tt-regular: 'TT Norms Regular', sans-serif
+
+
+html
+	width: 100%
+	height: 100%
+	overflow-x: hidden
+body
+	width: 100%
+	height: 100vh
+	min-width: 320px	
+	margin: 0 auto
+	position: relative
+	font-family: $tt-regular
+	line-height: 1.2
+	overflow-x: hidden
+	-webkit-font-smoothing: antialiased
+	background-color: #0C0C0C
+	background-image: url('../images/back.png')
+	background-repeat: no-repeat
+	background-position: center center
+	background-size: cover
+	
+
+	a:hover, a:focus, a:active
+		text-decoration: none
+		outline: none
+	input:focus, input:active
+		text-decoration: none
+		outline: none
+	button:focus, button:active
+		text-decoration: none
+		outline: none
+	textarea:focus, textarea:active
+		text-decoration: none
+		outline: none
+	a
+		display: inline-block
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out
+	ul, ol
+		padding: 0px
+		margin: 0px
+		list-style-type: none
+	button
+		border: none
+		cursor: pointer
+	hr
+		border: none	
+
+.pixel
+	background: url(../images/main.jpg) no-repeat top center
+	width: 1920px
+	height: 12800px
+	position: absolute
+	z-index: 1000000
+	display: none
+	left: 50%
+	top: 0
+	margin-left: -960px
+	opacity: 0.5
+	margin-top: 0px
+
+
+/***************************************************GeneralStyles************************************/
+span,
+h1,
+label
+	i
+		color: #fff
+		font-style: normal
+.content
+	width: 100%
+	height: 100%
+	.container
+		width: 100%
+		height: 100%
+	&-wrapper
+		width: 100%
+		height: 100%
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+.header
+	position: relative
+	z-index: 3000
+	&__wrap
+		width: 100%
+		padding: 66px 0px
+		display: flex
+		flex-direction: row
+		flex-wrap: wrap
+		justify-content: space-between
+		align-items: center
+	&__logo
+		span
+			font-family: $tt-bold
+			font-size: 36px
+			color: $blue			
+	&__menu
+		display: flex
+		li
+			margin-left: 146px
+				
+			a
+				font-family: $tt-medium
+				font-size: 21px
+				color: #fff
+				position: relative
+				&:hover
+					color: $blue
+					&:after
+						background: $blue
+				&:after
+					content: ""
+					display: block
+					position: absolute
+					top: 50px
+					width: 65%
+					height: 2px
+					left: 0px
+					right: 0px
+					background: transparent
+					margin: auto
+					-moz-transition: all 0.3s ease-out
+					-o-transition: all 0.3s ease-out
+					-webkit-transition: all 0.3s ease-out
+					transition: all 0.3s ease-out					
+.main
+	display: flex
+	flex-grow: 1
+	&__wrap
+		width: 100%
+		display: flex
+		flex-direction: row
+		flex-wrap: wrap
+		justify-content: space-between
+		align-items: center
+	&__logo,
+	&__header
+		flex: 0 0 50%
+		max-width: 50%
+	&__logo
+		padding-left: 107px
+.header-main
+	padding-left: 13px
+	padding-bottom: 30px
+	h1
+		font-family: $tt-bold
+		font-size: 64px
+		color: $blue
+		line-height: 87px
+		margin-bottom: 50px
+	&__desc
+		font-family: $tt-medium
+		font-size: 26px
+		color: #fff
+		line-height: 39px
+	&__pay
+		margin-top: 65px
+.pay-info
+	display: flex
+	flex-direction: row
+	flex-wrap: wrap
+	align-items: center
+	span
+		font-family: $tt-medium
+		font-size: 16px
+		line-height: 18px
+		color: $blue
+	&__desc
+		position: relative
+		padding-left: 32px
+		margin-left: 47px
+		&:after
+			content: ""
+			display: block
+			position: absolute
+			width: 8px
+			height: 8px
+			background: $blue
+			left: 5px
+			top: 15px
+		&:before
+			content: ""
+			display: block
+			position: absolute
+			width: 18px
+			height: 18px
+			border: 2px solid $blue
+			left: 0px
+			top: 10px
+.main-btn
+	a,
+	button
+		width: 266px
+		line-height: 65px
+		color: #fff
+		font-family: $tt-bold
+		font-size: 24px
+		text-align: center
+		background: $blue
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out
+		&:hover
+			opacity: 0.7
+.footer
+	position: relative
+	z-index: 3000
+	span
+		font-family: $tt-medium
+		font-size: 21px
+		color: $blue
+	&__wrap
+		padding: 70px 0px
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+
+
+/***************************************************Modal************************************/
+.mfp-container
+	padding: 0px
+.mfp-content
+	width: 100%
+	height: 100%
+.modalw
+	width: 100%
+	height: 100%
+	position: relative
+	background: transparent
+	backdrop-filter: blur(10px)
+	display: flex
+	align-items: center
+	&__wrap
+		height: auto
+		position: relative
+.modal-close-btn
+	position: absolute
+	top: -50px
+	right: 15px
+	&:hover
+		cursor: pointer
+	span
+		font-family: $tt-medium
+		font-size: 21px
+		color: $blue
+		b
+			font-weight: 500
+			margin-left: 20px
+.fields-form
+	width: 100%
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+	&__block
+		flex: 0 0 32%
+		max-width: 32%
+		span
+			font-family: $tt-medium
+			font-size: 24px
+			color: $blue
+		input
+			width: 100%
+			height: 54px
+			background: rgba(0, 130, 200, 0.1)
+			border: none
+			padding: 0px 15px
+			margin-top: 15px
+			font-family: $tt-medium
+			font-size: 21px
+			color: $blue
+		::-webkit-input-placeholder 
+			font-family: $tt-medium
+			font-size: 21px
+			color: $blue	
+		::-moz-placeholder
+			font-family: $tt-medium
+			font-size: 21px
+			color: $blue			
+		:-moz-placeholder 
+			font-family: $tt-medium
+			font-size: 21px
+			color: $blue		
+		:-ms-input-placeholder      
+			font-family: $tt-medium
+			font-size: 21px
+			color: $blue
+.pay-form
+	display: flex
+	flex-wrap: wrap
+	align-items: center
+	margin-top: 75px
+	&__check
+		.l-container
+			display: block
+			position: relative
+			padding-left: 35px
+			margin-bottom: 0px
+			cursor: pointer	
+			font-family: $tt-medium
+			font-size: 21px
+			color: $blue
+			-webkit-user-select: none
+			-moz-user-select: none
+			-ms-user-select: none
+			user-select: none
+		.l-container input
+			position: absolute
+			opacity: 0
+			cursor: pointer
+		.checkmark
+			position: absolute
+			top: 16px
+			left: 0
+			height: 18px
+			width: 18px
+			background-color: transparent
+			border: 2px solid $blue
+		.check-gen .checkmark:after
+			content: ""
+			position: absolute
+			display: none
+		.check-gen input:checked ~ .checkmark:after
+			display: block
+		.check-gen .checkmark:after
+			left: 4px
+			top: 0px
+			width: 6px
+			height: 12px
+			border: solid $blue
+			border-width: 0 2px 2px 0
+			-webkit-transform: rotate(45deg)
+			-ms-transform: rotate(45deg)
+			transform: rotate(45deg)
+	&__btn 
+		margin-right: 37px
+		button:disabled
+			background-color: gray
+			&:hover
+				opacity: 1
