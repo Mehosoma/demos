@@ -1,0 +1,530 @@
+@import "bourbon/bourbon"
+
+$color: #70009d
+$footer: #19002b
+$back: #290a3b
+$roboto: 'Roboto', sans-serif
+
+
+
+html
+	width: 100%
+	height: 100%
+	overflow-x: hidden
+body
+	width: 100%
+	height: auto
+	min-width: 320px	
+	margin: 0 auto
+	position: relative
+	font-family: $roboto
+	line-height: 1.2
+	-webkit-font-smoothing: antialiased
+	font-size: 18px
+
+	a:hover, a:focus, a:active
+		text-decoration: none
+		outline: none
+	input:focus, input:active
+		text-decoration: none
+		outline: none
+	button:focus, button:active
+		text-decoration: none
+		outline: none
+	textarea:focus, textarea:active
+		text-decoration: none
+		outline: none
+	a
+		display: inline-block
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out
+	ul, ol
+		padding: 0px
+		margin: 0px
+		list-style-type: none
+	button
+		border: none
+		cursor: pointer
+	hr
+		border: none	
+
+.pixel
+	background: url(../img/main.jpg) no-repeat top center
+	width: 1920px
+	height: 12800px
+	position: absolute
+	z-index: 1000000
+	display: none
+	left: 50%
+	top: 0
+	margin-left: -960px
+	opacity: 0.5
+	margin-top: 0px
+
+
+/***************************************************Header************************************/
+.header
+	width: 100%
+	height: 60px
+	background: #343a40
+	position: fixed
+	top: 0px
+	padding: 0px 20px
+	z-index: 100
+	&-wrap
+		height: 100%
+		display: flex
+		justify-content: space-between
+		
+.logo
+	display: flex
+	align-items: center
+	a
+		color: #fff
+		font-size: 1.25rem
+		text-transform: uppercase		
+	span
+		padding: 1px 0px
+		border: 3px solid $color
+		margin-right: 5px
+.menu
+	display: flex
+	align-items: center
+	ul
+		display: flex
+	li
+		margin-left: 20px
+	a
+		color: #fff
+		font-size: 1.25rem
+		text-transform: uppercase
+		padding: 5px 0px
+		border-bottom: 3px solid transparent
+		&:hover
+			border-bottom: 3px solid $color
+			color: $color
+
+/***************************************************Content************************************/
+.content
+	position: relative
+	&-block
+		width: 100%
+		min-height: 100vh
+		position: relative
+		padding-top: 60px
+		padding-bottom: 60px
+		display: flex
+		background-color: #351158
+		&--donate
+			align-items: flex-start
+		&__wrap
+			display: flex
+			width: 100%
+			height: 100%
+			justify-content: center
+			align-items: center
+			flex-wrap: wrap
+			position: relative
+			align-content: center
+			padding: 30px 0px
+			&--donate
+				align-items: flex-start
+		&--main
+			background-image: url("../images/back.jpg")
+			background-size: cover
+			background-blend-mode: soft-light
+		&--info
+			background-image: url("../images/act.png")
+			background-size: auto
+			background-repeat: repeat
+			background-color: #592685
+			background-blend-mode: soft-light
+		&__image
+			margin-left: 90px
+			margin-top: 30px
+			position: relative
+			&--main
+				width: 350px
+				height: auto
+				z-index: 10
+				position: relative
+			&--decor
+				position: absolute
+				left: -145px
+				top: -60px
+				z-index: 0
+				width: 345px
+		&__header
+			margin-left: -75px
+			position: relative
+			z-index: 20
+			margin-top: -10px
+			h1
+				font-size: 100px
+				color: #fff
+				font-weight: 700
+				text-transform: uppercase
+				line-height: 0.88
+				text-align: center
+				text-shadow: 2px 2px 3px rgb(0 0 0 / 80%)
+				i
+					display: block
+					font-style: normal
+					transform: rotate(2deg)
+					margin-top: 5px
+		&__play
+			flex: 0 0 100%
+			justify-content: center
+			display: flex
+			margin-top: -90px
+			margin-left: 45px
+			position: relative
+			z-index: 50
+			a
+				border-radius: 100%
+				background: linear-gradient(238deg, #d412df, #b615bf, #d412df, #dc2ae6, #ffffff, #d210dd, #be2cc6, #d210dd, #d210dd)
+				background-size: 1500% 1500%
+				box-shadow: 0px 0px 27px #8a1ec5
+				&:hover
+					box-shadow: 0px 0px 35px #cf8af5
+			span
+				display: block
+				font-size: 50px
+				color: #fff
+				font-weight: 700
+				text-transform: uppercase
+				line-height: 0.88
+
+				text-shadow: 2px 2px 3px rgb(0 0 0 / 80%)
+				transform: rotate(-10deg)
+				margin-left: 20px
+		&__circles
+			display: flex
+			height: calc(100% - 120px)
+			flex-direction: column
+			justify-content: space-between
+			align-items: flex-start
+			padding-top: 30px
+			position: absolute
+			img
+				&:nth-child(1)
+					width: 15vw
+				&:nth-child(2)
+					width: 12vw
+					margin-left: 140px
+					margin-top: -80px
+				&:nth-child(3)
+					width: 10vw
+					margin-top: -50px
+					margin-left: 20px
+				&:nth-child(4)
+					width: 8vw
+					margin-left: 140px
+					margin-top: -60px
+		&__subheader
+			position: absolute
+			top: 30px
+			left: 90px
+			h2
+				color: white
+				font-size: 4vw
+				border-bottom: 5px solid $color
+.item
+	flex: 0 0 25%
+	max-width: 25%
+	background: linear-gradient(30deg, rgba(68, 38, 117, 1) 0%, rgba(114, 51, 128, 1) 100%)
+	border-radius: 16px
+	margin: 0px 30px
+	padding-bottom: 30px
+	background-size: 100% 100%
+	background-repeat: no-repeat
+	background-blend-mode: multiply
+	&-header
+		margin-top: 30px
+		width: 100%
+		text-align: center
+		color: #f2f2f2
+		text-transform: uppercase
+		font-size: 36px
+		height: auto
+		margin-bottom: 40px	
+	&-info
+		width: 100%
+		text-align: center
+		color: #f2f2f2
+		text-transform: uppercase
+		font-size: 1.5vh
+	&-progressbar
+		text-align: center
+		width: 90%
+		margin-top: 70px
+		margin-left: auto
+		margin-right: auto
+		height: 1.5vh
+		position: relative
+		background: #411d60
+		border-radius: 1.2vh
+		align-items: center
+		box-shadow: inset 0px 4px 1em #0000008f
+	&-online
+		width: 100%
+		text-align: center
+		font-size: 1.5vh
+		color: #f2f2f2
+		margin-top: 0.5vh
+	&-ip
+		margin-top: 2vh
+		background: #411d60
+		margin-bottom: 0.4vh
+		border-radius: 0.7vh
+		width: 90%
+		height: 3vh
+		margin-left: auto
+		margin-right: auto
+		text-align: center
+		vertical-align: center
+		color: #f2f2f2
+		font-size: 2.2vh
+		box-shadow: inset 0px 4px 1em #0000008f
+		transition-timing-function: ease-in-out
+		transition: 0.5s
+		text-decoration: none
+		&:hover
+			background: #9d27c3
+			box-shadow: inset 0px 0px 0em #0000008f
+.content-block__wrap
+	.item
+		margin-top: 90px
+	.item:nth-child(2)
+		margin-top: 20px
+.info
+	flex: 0 0 100%
+	max-width: 100%
+	text-align: center
+	color: #fff
+	margin-top: 0px
+	span
+		font-size: 2.5rem
+.man
+	z-index: 0
+	background: url('../images/man.png')no-repeat
+	width: 18vw
+	opacity: 0.5
+	left: -8vw
+	position: absolute
+	height: 38vh
+	bottom: unset
+	top: 114px
+	transform: rotate(30deg)
+	background-size: 18vw
+.modl
+	background-color: #430076 !important
+.modltext
+	font-size: 25px
+	color: #fff
+.inpt
+	width: 100%
+	background-color: #282828
+	border: 1px solid #fff
+	height: 50px
+	text-align: center
+	color: #fff
+	border-radius: 10px
+.kup
+	border: 0px
+	border-radius: 50px
+	width: 215px
+	height: 55px
+	background-color: #5a009d
+	color: #fff
+	font-size: 25px
+.modal-header,
+.modal-footer
+	border: none
+
+/***************************************************Info************************************/
+.content-block__info
+	display: flex
+	flex-wrap: wrap
+	width: 100%
+.subheader
+	flex: 0 0 100%
+	max-width: 100%
+	text-align: center
+	margin-bottom: 40px
+	h2
+		font-size: 6vh
+		text-shadow: 0 0 2vh #000
+		color: #fff
+.info-block
+	width: 100%
+	display: flex
+	height: auto
+	background-color: #411d60
+	border-radius: 30px
+	align-items: center
+	padding: 10px 15px
+	justify-content: space-between
+	margin-bottom: 20px
+	&__desc
+		display: flex
+		align-items: center
+		img
+			height: 50px
+		span
+			color: #fff
+			margin-left: 20px
+			font-size: 24px
+			display: block
+	&__btn
+		a
+			font-size: 24px
+			color: #fff
+			background-color: transparent
+			line-height: 40px
+			padding: 0px 30px
+			background-image: linear-gradient(87deg, rgb(153, 41, 234) 0%, rgb(88, 8, 251) 100%)
+			border-radius: 16px
+			&:hover
+				background-image: linear-gradient(87deg, rgb(153, 41, 234) 0%, rgb(153, 41, 234) 100%)
+
+/***************************************************Donate************************************/
+.nav-tabs
+	width: 100%
+	padding: 0px 50px
+	border: none
+	display: flex
+	justify-content: space-between
+.nav-item
+	flex: 0 0 30%
+	max-width: 30%
+	height: 90px
+	display: flex
+	position: relative
+	.logobox
+		width: 90px
+		height: 90px
+		background: #fff
+		border-radius: 100%
+		position: absolute
+		left: -38px
+		top: 0px
+		display: flex
+		align-items: center
+		justify-content: center
+		img
+			position: absolute
+			margin: auto
+.nav-tabs .nav-link
+		display: block
+		flex-grow: 1
+		background-color: transparent
+		border: 1px solid #fff
+		border-radius: 15px
+		line-height: 90px
+		padding: 0px 50px 0px 70px
+		font-size: 30px
+		color: #fff
+		text-transform: uppercase
+		text-align: center
+.nav-tabs .nav-link.active
+	background: #6b1aa7
+	border: 1px solid #6b1aa7
+	color: #3f195c
+	.logobox
+		background: #6b1aa7
+.tab-content
+	max-width: 1140px
+	width: 100%
+	margin: 80px auto 40px	
+.cards-wrap
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+	&:after
+		content: ""
+		flex: auto
+		flex: 0 0 30%
+		max-width: 30%
+.card
+	flex: 0 0 30%
+	max-width: 30%
+	height: auto
+	border: 2px solid #fff
+	padding: 20px
+	background: transparent
+	border-radius: 10px
+	text-align: center
+	margin-bottom: 60px
+	img
+		width: 120px
+		height: auto
+		margin: 0px auto
+	span
+		color: #fff
+		display: block		
+	.cena
+		margin-top: 20px
+		font-size: 30px
+		text-transform: uppercase
+	.cost
+		margin: 20px 0px
+		font-size: 15px
+		text-transform: uppercase
+		color: #b0a4bb
+	.kup
+		border: 0px
+		border-radius: 50px
+		width: 100%
+		height: 55px
+		background-color: #5a009d
+		color: #fff
+		font-size: 25px
+		text-transform: uppercase
+		border: 2px solid transparent
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out
+		&:hover
+			border: 2px solid #fff
+
+
+
+
+/***************************************************Footer************************************/
+.footer
+	width: 100%
+	height: 60px
+	position: fixed
+	bottom: 0px
+	background: $footer
+	display: flex
+	align-items: center
+	z-index: 100
+	&-wrap
+		display: flex
+		justify-content: space-between
+.copy
+	span
+		color: #fff
+.icons
+	flex-grow: 1
+	text-align: center
+	a
+		padding: 0px 10px
+		&:hover
+			svg
+				.st0
+					fill: $color
+
+	svg
+		width: 24px
+		height: 24px
+		.st0
+			-moz-transition: all 0.3s ease-out
+			-o-transition: all 0.3s ease-out
+			-webkit-transition: all 0.3s ease-out
+			transition: all 0.3s ease-out

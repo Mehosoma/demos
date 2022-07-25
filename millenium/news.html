@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">	
+
+	<title>MP: ГЛАВНАЯ • НОВОСТИ</title>
+	<meta name="description" content="">
+	<meta name="keywords" content=""/>
+	
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+	<meta property="og:image" content="https://mp.ru.net/prev.png" />
+    <meta property="og:image:secure_url" content="https://mp.ru.net/prev.png" />
+    <meta property="og:title" content="Millemium Project" />
+    <meta property="og:description" content="Топовые игровые сервера Garry's Mod, с постоянной поддержкой и лучшей оптимизацией" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="100px" />
+    <meta property="og:image:height" content="100px" />
+    <meta charset="UTF-8">
+	<meta name="keywords" content=" darkrp, gmod, garrysmod, fustrp, фуст, nefedoni, fust, fast, gambit, galaxy, codi, gubke, soft, донат umbrella, донат fust, донат fast, сервер для натуралов, крутой сервер, купон">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="format-detection" content="telephone=no">
+
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.css">	
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+
+</head>
+
+<body>
+
+<!--Header-->
+<header class="header">
+	<div class="header-wrap">
+		<div class="logo">
+			<a href="index.html"><span>MP</span>Главная</a>
+		</div>
+		<nav class="menu">
+			<ul>
+				<li><a href="index.html">Главная</a></li>
+				<li><a href="info.html">Информация</a></li>
+				<li><a href="donate.html">Донат</a></li>
+				<li><a href="news.html">Новости</a></li>
+				<li><a href="https://vk.com/millenium_project" target="_blank">Группа VK</a></li>
+				<li><a href="https://vk.com/im?sel=-73433474" target="_blank">Помощь</a></li>
+			</ul>
+		</nav>
+	</div>
+</header>
+
+<!--Content-->
+<section class="content">	
+	<div class="content-block content-block--donate">
+		<div class="container-fluid d-flex justify-content-center">
+			<div class="row d-flex w-100">
+				<div class="col-12">
+					<div class="content-block__wrap content-block__wrap--donate">
+						<div class="subheader">
+							<h2>Новости</h2>
+						</div>
+					</div>					
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<!--Footer-->
+<footer class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="footer-wrap">
+					<div class="copy">
+						<span>&copy; Millenium Project & FustRP - Все права защищены - Garry’s Mod</span>
+					</div>
+					<div class="icons">
+						<a href=""><img src="images/discord.svg" class="svg" alt="discord-icon"></a>
+						<a href=""><img src="images/vk.svg" class="svg" alt="vk-icon"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<!--Modals-->
+
+<div class="modal fade" id="modal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content modl">
+    	<div class="modal-header">
+            <h5 class="modal-title mx-auto modltext" id="modalLabel5">ВЫ ВЫБРАЛИ: <span id="product"></span></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">×</span>
+            </button>
+        </div>
+        <form method="post" onsubmit="return window.submitModal(this)">
+           	<div class="modal-body">
+                <span id="errBox" style="color:red;"></span>
+                <input autocomplete="off" type="text" name="steamid" class="inpt" id="steamid" placeholder="ВАША ССЫЛКА НА ПРОФИЛЬ STEAM">
+            </div>
+            <input type="hidden" name="productId" id="productId">
+            <div class="modal-footer">
+                <button class="kup mt-0 intro mx-auto"><span id="sum"></span></button>
+            </div>
+        </form>
+    </div>
+  </div>
+</div>
+
+	<script src="libs/jquery/jquery-3.3.1.js"></script>
+	<script src="libs/bootstrap/js/bootstrap.js"></script>
+	<script src="js/common.js"></script>
+	
+</body>
+</html>
