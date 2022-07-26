@@ -35,6 +35,8 @@ $(document).ready(function(){
     });
 });
 
+
+//Animation blocks on donate page
 $('a[data-toggle="tab"]').on('hide.bs.tab', function (e) {
     var $old_tab = $($(e.target).attr("href"));
     var $new_tab = $($(e.relatedTarget).attr("href"));
@@ -70,3 +72,29 @@ $('a[data-toggle="tab"]').on('hide.bs.tab', function (e) {
   $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
     // your code on active tab shown
   });
+
+//News nav
+   $(document).ready(function () {
+            $("a#back").click(function(event) {
+                event.preventDefault()
+                pagenate = getGet('page');
+                if (pagenate != 0)
+                pagenate =+ Number(pagenate) - 1;
+                var url = location.pathname + "?page=" + pagenate;
+                $(location).attr('href',url);
+            });
+
+            $("a#next").click(function(event) {
+                event.preventDefault()
+                pagenate = getGet('page');
+                pagenate =+ Number(pagenate) + 1;
+                var url = location.pathname + "?page=" + pagenate;
+                $(location).attr('href',url);
+            });
+            function getGet(name) {
+                var s = window.location.search;
+                s = s.match(new RegExp(name + '=([^&=]+)'));
+                return s ? s[1] : false;
+            }
+
+        })

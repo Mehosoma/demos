@@ -1,3 +1,17 @@
+<?php
+$paginate = !empty($_GET["page"]) ? $_GET["page"] * 10 : 0 ;
+$request_params = array(
+    'owner_id' => "-73433474",
+    'offset' => $paginate,
+    'count' => '10',
+    'v' => '5.103',
+    'access_token' => 'c5cc81d7a1faf4ee5b3f748a7fa6ee76f6c16acd11f236d94f20e79da77b1c7a758d1bfd81a4506f96f6d'
+);
+$get_params = http_build_query($request_params);
+$result = json_decode(file_get_contents('https://api.vk.com/method/wall.get?'. $get_params));
+
+?>
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -41,14 +55,14 @@
 <header class="header">
 	<div class="header-wrap">
 		<div class="logo">
-			<a href="index.html"><span>MP</span>Главная</a>
+			<a href="#"><span>MP</span>Новости</a>
 		</div>
 		<nav class="menu">
 			<ul>
 				<li><a href="index.html">Главная</a></li>
 				<li><a href="info.html">Информация</a></li>
 				<li><a href="donate.html">Донат</a></li>
-				<li><a href="news.html">Новости</a></li>
+				<li><a href="news.php" class="active-link">Новости</a></li>
 				<li><a href="https://vk.com/millenium_project" target="_blank">Группа VK</a></li>
 				<li><a href="https://vk.com/im?sel=-73433474" target="_blank">Помощь</a></li>
 			</ul>
@@ -65,6 +79,39 @@
 					<div class="content-block__wrap content-block__wrap--donate">
 						<div class="subheader">
 							<h2>Новости</h2>
+						</div>
+						<div class="news col-4">
+							<?php foreach ($result -> response -> items as $key): ?>
+            				<div class="post">
+                				<?php if ($key->post_type != 'poll') :?>
+                    			<?php if (!empty($key->text)) : ?>
+                        		<div class="post-text">
+                            		<?= $key->text ?>
+                        		</div>
+                    			<?php endif;?>
+                    			<?php if (!empty($key->attachments[0]->photo)) : ?>
+                        		<div class="post-image ">
+                            		<img class="img-fluid" src='<?= end($key->attachments[0]->photo->sizes)->url?>'>
+                            	</div>
+			                    <?php endif;?>
+			                    <a href="https://vk.com/millenium_project?w=wall-73433474_<?=$key->id?>" target="_blank" style="text-decoration: none;" class="post-link">
+			                    	<div>Перейти к посту</div>
+			                    </a>
+			                	<?php endif;?>
+			            	</div>
+			            	<?php endforeach; ?>
+						</div>
+						<div class="news-nav col-12">
+							<nav aria-label="..." style="text-align: center; padding-left: 3.3vw;">
+				                <ul class="pagination">
+				                    <li class="page-item">
+				                        <a id="back" class="page-link" href="#">Назад</a>
+				                    </li>
+				                    <li class="page-item">
+				                        <a id="next" class="page-link" href="#">Далее</a>
+				                    </li>
+				                </ul>
+            				</nav>
 						</div>
 					</div>					
 				</div>
@@ -84,8 +131,8 @@
 						<span>&copy; Millenium Project & FustRP - Все права защищены - Garry’s Mod</span>
 					</div>
 					<div class="icons">
-						<a href=""><img src="images/discord.svg" class="svg" alt="discord-icon"></a>
-						<a href=""><img src="images/vk.svg" class="svg" alt="vk-icon"></a>
+						<a href="http://discord.gg/rE6H2EN" target="_blank"><img src="images/discord.svg" class="svg" alt="discord-icon"></a>
+						<a href="https://vk.com/millenium_project" target="_blank"><img src="images/vk.svg" class="svg" alt="vk-icon"></a>
 					</div>
 				</div>
 			</div>
@@ -93,30 +140,6 @@
 	</div>
 </footer>
 
-<!--Modals-->
-
-<div class="modal fade" id="modal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content modl">
-    	<div class="modal-header">
-            <h5 class="modal-title mx-auto modltext" id="modalLabel5">ВЫ ВЫБРАЛИ: <span id="product"></span></h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">×</span>
-            </button>
-        </div>
-        <form method="post" onsubmit="return window.submitModal(this)">
-           	<div class="modal-body">
-                <span id="errBox" style="color:red;"></span>
-                <input autocomplete="off" type="text" name="steamid" class="inpt" id="steamid" placeholder="ВАША ССЫЛКА НА ПРОФИЛЬ STEAM">
-            </div>
-            <input type="hidden" name="productId" id="productId">
-            <div class="modal-footer">
-                <button class="kup mt-0 intro mx-auto"><span id="sum"></span></button>
-            </div>
-        </form>
-    </div>
-  </div>
-</div>
 
 	<script src="libs/jquery/jquery-3.3.1.js"></script>
 	<script src="libs/bootstrap/js/bootstrap.js"></script>

@@ -97,7 +97,7 @@ body
 	li
 		margin-left: 20px
 	a
-		color: #fff
+		color: #b3b3b3
 		font-size: 1.25rem
 		text-transform: uppercase
 		padding: 5px 0px
@@ -105,6 +105,10 @@ body
 		&:hover
 			border-bottom: 3px solid $color
 			color: $color
+		&.active-link
+			color: #fff
+			&:hover
+				border-bottom: 3px solid transparent
 
 /***************************************************Content************************************/
 .content
@@ -491,7 +495,43 @@ body
 		&:hover
 			border: 2px solid #fff
 
-
+/***************************************************News************************************/
+.post
+	background-color: #2d3238
+	color: white
+	box-shadow: 0 0 7px rgb(0 0 0 / 50%)
+	padding: 13px
+	width: 100%
+	margin-bottom: 2vh
+	text-align: center
+.post-text
+	margin-bottom: 1vh
+	color: #fff
+.post-link
+	display: block
+	div
+		margin-top: 10px
+		background-color: #414850
+		border-radius: 4px
+		color: white
+		text-decoration: none
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out
+	&:hover
+		div
+			background: $color
+.pagination
+	justify-content: center
+	margin-top: 20px
+	li
+		margin: 0px 15px
+		a
+			border-radius: 5px!important
+			&:hover
+				background: $color
+				color: #fff
 
 
 /***************************************************Footer************************************/

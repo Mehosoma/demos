@@ -119,7 +119,7 @@ body hr {
   margin-left: 20px;
 }
 .menu a {
-  color: #fff;
+  color: #b3b3b3;
   font-size: 1.25rem;
   text-transform: uppercase;
   padding: 5px 0px;
@@ -128,6 +128,12 @@ body hr {
 .menu a:hover {
   border-bottom: 3px solid #70009d;
   color: #70009d;
+}
+.menu a.active-link {
+  color: #fff;
+}
+.menu a.active-link:hover {
+  border-bottom: 3px solid transparent;
 }
 
 /***************************************************Content************************************/
@@ -678,6 +684,56 @@ body hr {
 }
 .card .kup:hover {
   border: 2px solid #fff;
+}
+
+/***************************************************News************************************/
+.post {
+  background-color: #2d3238;
+  color: white;
+  -webkit-box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+  padding: 13px;
+  width: 100%;
+  margin-bottom: 2vh;
+  text-align: center;
+}
+
+.post-text {
+  margin-bottom: 1vh;
+  color: #fff;
+}
+
+.post-link {
+  display: block;
+}
+.post-link div {
+  margin-top: 10px;
+  background-color: #414850;
+  border-radius: 4px;
+  color: white;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.post-link:hover div {
+  background: #70009d;
+}
+
+.pagination {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+}
+.pagination li {
+  margin: 0px 15px;
+}
+.pagination li a {
+  border-radius: 5px !important;
+}
+.pagination li a:hover {
+  background: #70009d;
+  color: #fff;
 }
 
 /***************************************************Footer************************************/
