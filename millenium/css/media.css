@@ -108,10 +108,6 @@
 		margin-bottom: 30px;
 	}
 
-	.tab-content{
-		margin: 60px auto 30px;
-	}
-
 	.nav-tabs .nav-link{
 		line-height: 80px;
 	}
@@ -137,4 +133,5 @@
 		width: 80%;
 		height: auto;
 	}
+
 }

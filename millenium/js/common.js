@@ -98,3 +98,14 @@ $('a[data-toggle="tab"]').on('hide.bs.tab', function (e) {
             }
 
         })
+
+
+//Fix Modal
+jQuery('.modal').on('show.bs.modal', function (e) {
+    jQuery("header").addClass("modal-w-header");
+    jQuery("footer").addClass("modal-w-footer");
+});
+jQuery('.modal').on('hidden.bs.modal', function (e) {
+    jQuery("header").removeClass("modal-w-header");
+    jQuery("footer").removeClass("modal-w-footer");
+});
