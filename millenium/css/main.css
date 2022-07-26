@@ -529,6 +529,14 @@ body hr {
   border: none;
 }
 
+.modal-backdrop.show {
+  opacity: 0.8;
+}
+
+.modal-content {
+  padding: 20px;
+}
+
 /***************************************************Info************************************/
 .info-block {
   width: 100%;
