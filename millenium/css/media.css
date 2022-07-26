@@ -134,4 +134,8 @@
 		height: auto;
 	}
 
+	.item{
+		background-position-x: -10vw;
+	}
+
 }
