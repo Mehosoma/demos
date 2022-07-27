@@ -31,8 +31,9 @@
 		margin: 15px 0px;
 	}
 
-	.footer{
-		top:  calc(100vh - 113px);
+	.icons{
+		flex: 0 0 38%;
+		max-width: 38%;
 	}
 
 }
@@ -138,12 +139,6 @@
 
 	.content-wrap{
 		padding-bottom: 70px;
-	}
-
-	.icons{
-		margin-top: 10px;
-		flex:  0 0 100%;
-		max-width: 100%;
 	}
 
 	.copy span{

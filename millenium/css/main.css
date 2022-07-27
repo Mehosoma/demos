@@ -811,7 +811,7 @@ body hr {
   width: 100vw;
   padding: 18px 0px;
   position: fixed;
-  top: calc(100vh - 60px);
+  bottom: 0px;
   left: 0px;
   right: 0px;
   background: #19002b;
@@ -830,8 +830,6 @@ body hr {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
