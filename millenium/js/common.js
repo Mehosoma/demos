@@ -27,7 +27,7 @@ $(document).ready(function(){
 $(document).ready(function(){
     $('.click-mobile').on('click',function(e){
         e.preventDefault();        
-          $('.header .main-menu').animate({
+          $('.menu').animate({
               height: 'toggle'
             }, 600, function() {
           });         

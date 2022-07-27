@@ -57,6 +57,11 @@ $result = json_decode(file_get_contents('https://api.vk.com/method/wall.get?'. $
 		<div class="logo">
 			<a href="#"><span>MP</span>Новости</a>
 		</div>
+		<div class="menu-toggle-button click-mobile d-lg-none order-2 order-sm-3">
+			<span></span>
+			<span></span>		
+			<span></span>
+		</div>
 		<nav class="menu">
 			<ul>
 				<li><a href="index.html">Главная</a></li>
@@ -76,11 +81,11 @@ $result = json_decode(file_get_contents('https://api.vk.com/method/wall.get?'. $
 		<div class="container-fluid d-flex justify-content-center">
 			<div class="row d-flex w-100">
 				<div class="col-12">
-					<div class="content-block__wrap content-block__wrap--donate">
+					<div class="content-wrap">
 						<div class="subheader">
 							<h2>Новости</h2>
 						</div>
-						<div class="news col-4">
+						<div class="news col-12 col-lg-4">
 							<?php foreach ($result -> response -> items as $key): ?>
             				<div class="post">
                 				<?php if ($key->post_type != 'poll') :?>

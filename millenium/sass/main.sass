@@ -179,27 +179,27 @@ body
 			background-color: #7a4f9f
 			background-blend-mode: soft-light
 		&__image
-			margin-left: 90px
+			margin-left: 13vw
 			margin-top: 30px
 			position: relative
 			&--main
-				width: 350px
+				width: 18vw
 				height: auto
 				z-index: 10
 				position: relative
 			&--decor
 				position: absolute
-				left: -145px
-				top: -60px
+				left: -8.5vw
+				top: -4vw
 				z-index: 0
-				width: 345px
+				width: 21vw
 		&__header
-			margin-left: -75px
+			margin-left: -4vw
 			position: relative
 			z-index: 20
-			margin-top: -10px
+			margin-top: 0.3vw
 			h1
-				font-size: 100px
+				font-size: 5vw
 				color: #fff
 				font-weight: 700
 				text-transform: uppercase
@@ -215,20 +215,25 @@ body
 			flex: 0 0 100%
 			justify-content: center
 			display: flex
-			margin-top: -90px
-			margin-left: 45px
-			position: relative
+			bottom: -2vw
+			margin-left: 7vw
+			position: absolute
 			z-index: 50
 			a
 				border-radius: 100%
 				background: linear-gradient(238deg, #d412df, #b615bf, #d412df, #dc2ae6, #ffffff, #d210dd, #be2cc6, #d210dd, #d210dd)
 				background-size: 1500% 1500%
 				box-shadow: 0px 0px 27px #8a1ec5
+				width: 7.5vw
+				height: 7.5vw
+				margin-top: 0.3vw
 				&:hover
 					box-shadow: 0px 0px 35px #cf8af5
+				img
+					width: 100%
 			span
 				display: block
-				font-size: 50px
+				font-size: 3vw
 				color: #fff
 				font-weight: 700
 				text-transform: uppercase
@@ -254,19 +259,19 @@ body
 	position: absolute
 	img
 		&:nth-child(1)
-			width: 15vw
+			width: 32vh
 		&:nth-child(2)
-			width: 12vw
-			margin-left: 140px
-			margin-top: -80px
+			width: 24vh
+			margin-left: 155px
+			margin-top: -85px
 		&:nth-child(3)
-			width: 10vw
+			width: 21.5vh
 			margin-top: -50px
 			margin-left: 20px
 		&:nth-child(4)
-			width: 8vw
+			width: 17vh
 			margin-left: 140px
-			margin-top: -60px
+			margin-top: -40px
 .item
 	flex: 0 0 25%
 	max-width: 25%
@@ -407,6 +412,7 @@ body
 	padding: 10px 15px
 	justify-content: space-between
 	margin-bottom: 20px
+	flex-wrap: wrap
 	&__desc
 		display: flex
 		align-items: center
@@ -426,6 +432,7 @@ body
 			padding: 0px 30px
 			background-image: linear-gradient(87deg, rgb(153, 41, 234) 0%, rgb(88, 8, 251) 100%)
 			border-radius: 16px
+			text-align: center
 			&:hover
 				background-image: linear-gradient(87deg, rgb(153, 41, 234) 0%, rgb(153, 41, 234) 100%)
 	&-wrap
@@ -440,6 +447,7 @@ body
 	border: none
 	display: flex
 	justify-content: space-between
+	flex-wrap: wrap
 .nav-item
 	flex: 0 0 30%
 	max-width: 30%
@@ -576,7 +584,7 @@ body
 /***************************************************Footer************************************/
 .footer
 	width: 100%
-	height: 60px
+	padding: 18px 0px
 	position: fixed
 	bottom: 0px
 	background: $footer
@@ -586,6 +594,8 @@ body
 	&-wrap
 		display: flex
 		justify-content: space-between
+		flex-wrap: wrap
+		align-items: center
 .copy
 	span
 		color: #fff
@@ -607,3 +617,68 @@ body
 			-o-transition: all 0.3s ease-out
 			-webkit-transition: all 0.3s ease-out
 			transition: all 0.3s ease-out
+
+/***********************************************ButtonMobile************************************/
+.menu-toggle-button
+	width: 50px
+	height: 50px
+	background-color: transparent
+	padding: 10px
+	border: none
+	text-indent: -9999px
+	-webkit-appearance: none
+	-moz-appearance: none
+	appearance: none
+	position: relative
+	display: block
+	z-index: 1000000
+	margin-top: 3px
+
+.menu-toggle-button span 
+	display: block
+	height: 0.15rem
+	background: #fff
+	position: absolute
+	top: 21px
+	width: 30px
+	-webkit-transition: background 0s 0.3
+	-o-transition: background 0s 0.3
+	transition: background 0s 0.3
+	-webkit-transition-property: top, -webkit-transform
+	transition-property: top, -webkit-transform
+	-o-transition-property: top, transform
+	transition-property: top, transform
+	transition-property: top, transform, -webkit-transform
+	-webkit-transition-delay: 0s, 0.3s
+	-o-transition-delay: 0s, 0.3s
+	transition-delay: 0s, 0.3s
+	-webkit-transition-duration: 0.3s, 0.3s
+	-o-transition-duration: 0.3s, 0.3s
+	transition-duration: 0.3s, 0.3s
+	&:nth-child(2)
+		top: 15px
+	&:nth-child(3)
+		top: 27px
+
+.menu-toggle-button.is-active span
+	background: none
+
+
+.menu-toggle-button.is-active span:nth-child(2)
+	top: 20px
+	-webkit-transform: rotate(45deg)
+	-ms-transform: rotate(45deg)
+	transform: rotate(45deg)
+	background: #fff
+
+
+.menu-toggle-button.is-active span:nth-child(3)
+	top: 21px
+	background: #fff
+	-webkit-transform: rotate(-45deg)
+	-ms-transform: rotate(-45deg)
+	transform: rotate(-45deg)
+	
+
+.menu-toggle-button:focus
+	outline: none !important
