@@ -38,13 +38,7 @@ $(document).ready(function(){
 
 //Animation blocks on donate page
 
-$(window).on('load resize', function () {
-
-  var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ? true : false;
-
-  if(!isMobile) {
-
-  $('a[data-toggle="tab"]').on('hide.bs.tab', function (e) {
+$('a[data-toggle="tab"]').on('hide.bs.tab', function (e) {
       var $old_tab = $($(e.target).attr("href"));
       var $new_tab = $($(e.relatedTarget).attr("href"));
 
@@ -80,8 +74,6 @@ $(window).on('load resize', function () {
       // your code on active tab shown
     });
 
-  }
-});
 
   //News nav
      $(document).ready(function () {

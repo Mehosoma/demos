@@ -106,13 +106,15 @@ body hr {
 
 /***************************************************Header************************************/
 .header {
-  width: 100%;
+  width: 100vw;
   height: 60px;
   background: #343a40;
   position: fixed;
   top: 0px;
   padding: 0px 20px;
   z-index: 100;
+  left: 0px;
+  right: 0px;
 }
 .header-wrap {
   height: 100%;
@@ -806,10 +808,12 @@ body hr {
 
 /***************************************************Footer************************************/
 .footer {
-  width: 100%;
+  width: 100vw;
   padding: 18px 0px;
   position: fixed;
-  bottom: 0px;
+  top: calc(100vh - 60px);
+  left: 0px;
+  right: 0px;
   background: #19002b;
   display: -webkit-box;
   display: -ms-flexbox;
