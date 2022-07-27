@@ -117,3 +117,12 @@ jQuery('.modal').on('hidden.bs.modal', function (e) {
     jQuery("header").removeClass("modal-w-header");
     jQuery("footer").removeClass("modal-w-footer");
 });
+
+
+function setHeiHeight() {
+    $('.content-block--info').css({
+        "min-height": $(window).height() + 'px'
+    });
+}
+setHeiHeight(); // устанавливаем высоту окна при первой загрузке страницы
+$(window).resize( setHeiHeight ); // обновляем при изменении размеров окна

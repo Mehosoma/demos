@@ -242,6 +242,7 @@ body hr {
   background-repeat: repeat;
   background-color: #7a4f9f;
   background-blend-mode: soft-light;
+  min-height: 1px;
 }
 .content-block__image {
   margin-left: 13vw;
@@ -357,20 +358,20 @@ body hr {
   position: absolute;
 }
 .circles img:nth-child(1) {
-  width: 32vh;
+  width: 13vw;
 }
 .circles img:nth-child(2) {
-  width: 24vh;
+  width: 11vw;
   margin-left: 155px;
   margin-top: -85px;
 }
 .circles img:nth-child(3) {
-  width: 21.5vh;
+  width: 10vw;
   margin-top: -50px;
   margin-left: 20px;
 }
 .circles img:nth-child(4) {
-  width: 17vh;
+  width: 8vw;
   margin-left: 140px;
   margin-top: -40px;
 }
