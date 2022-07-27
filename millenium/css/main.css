@@ -234,6 +234,7 @@ body hr {
   background-image: url("../images/back.jpg");
   background-size: cover;
   background-blend-mode: soft-light;
+  background-position: center center;
 }
 .content-block--info {
   background-image: url("../images/act.png");
