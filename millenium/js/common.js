@@ -119,10 +119,33 @@ jQuery('.modal').on('hidden.bs.modal', function (e) {
 });
 
 
+//Fix height indo block
 function setHeiHeight() {
     $('.content-block--info').css({
         "min-height": $(window).height() + 'px'
     });
 }
-setHeiHeight(); // устанавливаем высоту окна при первой загрузке страницы
-$(window).resize( setHeiHeight ); // обновляем при изменении размеров окна
+setHeiHeight(); 
+$(window).resize( setHeiHeight ); 
+
+
+
+//Random image on load
+var description = [
+  "images/random/man1.png",
+  "images/random/man2.png",
+  "images/random/man3.png",
+  "images/random/man4.png",
+  "images/random/man5.png",
+  "images/random/man6.png"
+];
+
+var size = description.length;
+var x=0;
+
+$('.content-block__image--main').each(function() {
+   x = Math.floor(size*Math.random());
+
+       $(this).attr("src",description[x]);
+   
+});

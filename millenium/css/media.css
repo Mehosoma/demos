@@ -1,9 +1,17 @@
 @media only screen and (min-width : 0px) and (max-width : 991px) {
 
+	.mobile-menu{
+		display: flex;
+		align-items:  center;
+	}
+
 	.menu-toggle-button{
 		position: absolute;
 		right: 0px;
-		margin-top: 7px;
+	}
+
+	.logo a{
+		font-size: 2vh;
 	}
 
 	.menu{
@@ -32,8 +40,112 @@
 	}
 
 	.icons{
-		flex: 0 0 38%;
-		max-width: 38%;
+		flex: 0 0 33%;
+		max-width: 33%;
+	}
+
+	.item{
+		flex:  0 0 100%;
+		max-width: 500px;
+	}	
+
+	.circles{
+		display: none;
+	}	
+
+	.content-block__subheader{
+		position: relative;
+		flex:  0 0 auto;
+		max-width: 100%;
+		padding: 0px 30px;
+		left: 0px;
+		top:  0px;
+	}
+
+	.content-block{
+		flex-wrap: wrap;
+	}
+
+	.content-block__subheader h2{
+		font-size: 8vw;
+	}
+
+	.content-wrap--items{
+		padding-top: 30px;
+	}
+
+	.content-wrap--items .item:nth-child(1), .content-wrap--items .item:nth-child(3){
+		margin-top: 0px;
+	}
+
+	.item{
+		margin-bottom: 30px;
+		background-position-x:  0px;
+	}
+
+	.content-wrap{
+		padding-bottom: 70px;
+	}
+
+	.copy span{
+		font-size: 12px;
+	}
+
+	
+
+	.subheader h2{
+		font-size: 10vw;
+	}
+
+	
+
+	.nav-item{
+		flex:  0 0 100%;
+		max-width: 100%;
+	}
+
+	.nav-tabs{
+		padding: 0px 15px;
+		margin-left: 15px;
+	}
+
+	.nav-tabs .nav-link{
+		line-height: 60px;
+		font-size: 20px;
+		padding: 0px 12px 0px 40px;
+	}
+
+	.nav-tabs .nav-item{
+		height: 60px;
+		margin-bottom: 10px;
+	}
+
+	.nav-item .logobox{
+		width: 60px;
+		height: 60px;
+	}
+
+	.nav-item .logobox{
+		left:  -20px;
+	}
+
+	.nav-item .logobox img{
+		width: 80%;
+		height: auto;
+	}
+
+	.card{
+		flex: 0 0 100%;
+		max-width: 100%;
+		margin-top: 30px;
+	}
+
+	.subheader{
+		margin-bottom: 20px;
+	}
+
+	.inpt{
+		font-size: 14px;
 	}
 
 }
@@ -96,116 +208,6 @@
 }
 
 
-@media only screen and (min-width : 0px) and (max-width : 991px) {
-
-	
-
-	.item{
-		flex:  0 0 100%;
-		max-width: 500px;
-	}	
-
-	.circles{
-		display: none;
-	}	
-
-	.content-block__subheader{
-		position: relative;
-		flex:  0 0 auto;
-		max-width: 100%;
-		padding: 0px 30px;
-		left: 0px;
-		top:  0px;
-	}
-
-	.content-block{
-		flex-wrap: wrap;
-	}
-
-	.content-block__subheader h2{
-		font-size: 8vw;
-	}
-
-	.content-wrap--items{
-		padding-top: 30px;
-	}
-
-	.content-wrap--items .item:nth-child(1), .content-wrap--items .item:nth-child(3){
-		margin-top: 0px;
-	}
-
-	.item{
-		margin-bottom: 30px;
-		background-position-x:  0px;
-	}
-
-	.content-wrap{
-		padding-bottom: 70px;
-	}
-
-	.copy span{
-		font-size: 14px;
-	}
-
-	
-
-	.subheader h2{
-		font-size: 10vw;
-	}
-
-	
-
-	.nav-item{
-		flex:  0 0 100%;
-		max-width: 100%;
-	}
-
-	.nav-tabs{
-		padding: 0px 15px;
-		margin-left: 15px;
-	}
-
-	.nav-tabs .nav-link{
-		line-height: 60px;
-		font-size: 20px;
-		padding: 0px 12px 0px 40px;
-	}
-
-	.nav-tabs .nav-item{
-		height: 60px;
-		margin-bottom: 10px;
-	}
-
-	.nav-item .logobox{
-		width: 60px;
-		height: 60px;
-	}
-
-	.nav-item .logobox{
-		left:  -20px;
-	}
-
-	.nav-item .logobox img{
-		width: 80%;
-		height: auto;
-	}
-
-	.card{
-		flex: 0 0 100%;
-		max-width: 100%;
-		margin-top: 30px;
-	}
-
-	.subheader{
-		margin-bottom: 20px;
-	}
-
-	.inpt{
-		font-size: 14px;
-	}
-
-}
-
 @media only screen and (min-width : 576px) and (max-width : 991px) {
 
 	.subheader h2{
@@ -258,6 +260,20 @@
 	.man{
 		left: -16vw;
 	}
+
+	.copy span {
+    	font-size: 15px;
+	}
+
+	.icons{
+		flex: 0 0 20%;
+		max-width: 20%;
+	}
+
+	.copy span {
+    	font-size: 18px;
+	}
+
 }
 
 @media only screen and (min-width : 992px) and (max-width : 1199px) {
@@ -421,6 +437,8 @@
 	.content-block__header h1 {
     	font-size: 8vw;
 	}
+
+
 
 }
 

@@ -57,10 +57,12 @@ $result = json_decode(file_get_contents('https://api.vk.com/method/wall.get?'. $
 		<div class="logo">
 			<a href="#"><span>MP</span>Новости</a>
 		</div>
-		<div class="menu-toggle-button click-mobile d-lg-none order-2 order-sm-3">
-			<span></span>
-			<span></span>		
-			<span></span>
+		<div class="mobile-menu">
+			<div class="menu-toggle-button click-mobile d-lg-none order-2 order-sm-3">
+				<span></span>
+				<span></span>		
+				<span></span>
+			</div>
 		</div>
 		<nav class="menu">
 			<ul>
