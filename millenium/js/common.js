@@ -144,8 +144,6 @@ var size = description.length;
 var x=0;
 
 $('.content-block__image--main').each(function() {
-   x = Math.floor(size*Math.random());
-
-       $(this).attr("src",description[x]);
-   
+    x = Math.floor(size*Math.random());
+    $(this).attr("src",description[x]);  
 });
