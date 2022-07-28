@@ -49,7 +49,7 @@ $result = json_decode(file_get_contents('https://api.vk.com/method/wall.get?'. $
 
 </head>
 
-<body>
+<body style="opacity: 0">
 
 <!--Header-->
 <header class="header">

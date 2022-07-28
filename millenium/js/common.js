@@ -147,3 +147,9 @@ $('.content-block__image--main').each(function() {
     x = Math.floor(size*Math.random());
     $(this).attr("src",description[x]);  
 });
+
+
+//load page
+$(window).on('load', function () {
+ $('body').css('opacity','1');
+});
