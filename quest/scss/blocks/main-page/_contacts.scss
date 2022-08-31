@@ -1,0 +1,184 @@
+
+.contacts {
+	position: relative;
+	padding: 90px 0;
+
+	@include maxw(1280px) {
+		padding: 60px 0;
+	}
+
+	@include maxw(1024px) {
+		padding: 40px 0;
+	}
+
+	@include maxw(850px) {
+		padding: 61px 0;
+	}
+
+	@include maxw(480px) {
+		padding: 50px 0;
+	}
+
+	&__inline {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		@include maxw(850px) {
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+	}
+
+	&__main {
+		flex: 0 1 455px;
+		color: $white;
+
+		@include maxw(1024px) {
+			flex: 0 1 360px;
+		}
+
+		@include maxw(850px) {
+			flex: 0 1 100%;
+			text-align: center;
+			margin-bottom: 50px;
+		}
+
+		@include maxw(480px) {
+			margin-bottom: 40px;
+		}
+
+		h2 {
+			margin-bottom: 20px;
+			font-size: 36px;
+			font-weight: 400;
+
+			@include maxw(1024px) {
+				font-size: 28px;
+			}
+
+			@include maxw(850px) {
+				margin-bottom: 13px;
+				font-size: 24px;
+			}
+
+			@include maxw(480px) {
+				margin-bottom: 13px;
+				font-size: 20px;
+			}
+		}
+
+		p {
+			margin-bottom: 40px;
+			font-size: 20px;
+			font-weight: 600;
+
+			@include maxw(1024px) {
+				font-size: 16px;
+			}
+
+			@include maxw(850px) {
+				max-width: 460px;
+				margin: 0 auto;
+				margin-bottom: 23px;
+				font-size: 14px;
+			}
+
+			@include maxw(480px) {
+				margin-bottom: 20px;
+			}
+		}
+	}
+
+	&__list {
+		@include maxw(850px) {
+			display: flex;
+			justify-content: space-between;
+			max-width: 551px;
+			margin: 0 auto;
+		}
+
+		@include maxw(479px) {
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+
+	&__item {
+		display: flex;
+		align-items: center;
+		margin-bottom: 22px;
+		font-size: 16px;
+		font-weight: 500;
+
+		@include maxw(850px) {
+			margin-bottom: 0;
+		}
+
+		@include maxw(576px) {
+			font-size: 14px;
+		}
+
+		img {
+			flex-shrink: 0;
+			width: 24px;
+			margin-right: 16px;
+
+			@include maxw(576px) {
+				width: 20px;
+				margin-right: 10px;
+			}
+		}
+
+		@include maxw(479px) {
+			margin-bottom: 15px;
+		}
+	}
+
+	.form {
+		margin-right: 0;
+		padding: 60px;
+
+		@include maxw(1024px) {
+			padding: 50px;
+		}
+
+		@include maxw(850px) {
+			margin: 0 auto;
+		}
+
+		@include maxw(420px) {
+			padding: 30px 10px;
+		}
+
+		h2 {
+			font-size: 20px;
+			font-weight: 400;
+
+			@include maxw(1024px) {
+				margin-bottom: 20px;
+				font-size: 18px;
+			}
+
+			@include maxw(400px) {
+				white-space: pre-line;
+			}
+
+			span {
+				font-weight: 600;
+
+				@include maxw(400px){
+					display: block;
+				}
+			}
+		}
+
+		&__textarea {
+			margin-top: 38px;
+
+			@include maxw(1024px) {
+				margin-top: 28px;
+			}
+		}
+	}
+}

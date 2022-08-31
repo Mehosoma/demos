@@ -1,0 +1,198 @@
+
+.header {
+	position: relative;
+	z-index: 20;
+	display: flex;
+	align-items: center;
+	height: 170px;
+
+	@include maxw(1440px) {
+		height: 140px;
+	}
+
+	@include maxw(850px) {
+		height: 120px;
+	}
+
+	@include maxw(480px) {
+		height: 100px;
+	}
+
+	&__inline {
+		@include maxw(850px) {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			max-width: 708px;
+			margin: 0 auto;
+			padding: 0 15px;
+		}
+
+		@include maxw(480px) {
+			padding: 0 24px;
+		}
+
+		@include maxw(420px) {
+			padding: 0 20px;
+		}
+	}
+
+	.content {
+		@include maxw(850px) {
+			padding: 0;
+		}
+
+		@include maxw(768px) {
+			padding: 0;
+			max-width: 100%;
+		}
+	}
+
+	&__list {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-left: 70px;
+
+		@include maxw(850px) {
+			position: absolute;
+			top: 95px;
+			left: 0;
+			margin-left: 0;
+			background: #F5F5F5;
+			width: 100%;
+			flex-direction: column;
+			align-items: center;
+			display: none;
+		}
+
+		@include maxw(480px) {
+			top: 85px;
+		}
+
+		@include maxw(420px) {
+			top: 82px;
+		}
+	}
+
+	&__item {
+		margin-right: 60px;
+
+		@include maxw(1440px) {
+			margin-right: 49px;
+		}
+
+		@include maxw(1024px) {
+			margin-right: 20px;
+		}
+
+		@include maxw(850px) {
+			width: 100%;
+			margin-right: 0;
+		}
+
+		&:nth-child(3) {
+			margin-right: 213px;
+
+			@include maxw(1440px) {
+				margin-right: 197px;
+			}
+
+			@include maxw(1024px) {
+				margin-right: 130px;
+			}
+
+			@include maxw(850px) {
+				margin-right: 0;
+			}
+		}
+
+		a {
+			position: relative;
+			display: inline-block;
+			padding-bottom: 3px;
+			font-size: 18px;
+			line-height: 1;
+			text-transform: uppercase;
+
+			&::after {
+			  content: '';
+			  border-top: 1px solid #000;
+			  width: 100%;
+			  position: absolute;
+			  display: block;
+			  transform: rotateY(90deg);
+			  transition:transform 0.25s linear;
+
+				@include maxw(850px) {
+					display: none;
+				}
+			}
+
+			&:hover::after {
+			  transform: rotate(0deg);
+			}
+
+			@include maxw(1440px) {
+				font-size: 16px;
+			}
+
+			@include maxw(1440px) {
+				font-size: 14px;
+			}
+
+			@include maxw(850px) {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 64px;
+				font-size: 16px;
+
+				&:hover {
+					background-color: #F2E8D5;
+				}
+			}
+		}
+	}
+
+	.logo {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 100px;
+		height: 100px;
+
+		@include maxw(1440px) {
+			width: 90px;
+			left: 49.5%;
+		}
+
+		@include maxw(850px) {
+			position: static;
+			transform: translate(0);
+			width: 70px;
+			height: 70px;
+			margin-left: -65px;
+		}
+
+		@include maxw(420px) {
+			width: 65px;
+			height: 65px;
+		}
+	}
+
+	.logo__text {
+		display: none;
+
+		@include maxw(850px) {
+			display: block;
+			font-size: 16px;
+			text-transform: uppercase;
+		}
+
+		@include maxw(420px) {
+			font-size: 14px;
+		}
+	}
+}

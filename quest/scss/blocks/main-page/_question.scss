@@ -1,0 +1,101 @@
+
+.question {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	margin-bottom: 67px;
+	padding: 95px 20px 95px 0;
+
+	@include maxw(1280px) {
+		padding: 70px 0 70px 0;
+	}
+
+	@include maxw(1024px) {
+		padding: 40px 0;
+		margin-bottom: 50px;
+	}
+
+	@include maxw(850px) {
+		padding: 60px 0;
+	}
+
+	@include maxw(480px) {
+		padding: 66px 0;
+	}
+
+	@include maxw(420px) {
+		margin-bottom: 20px;
+	}
+}
+
+.form {
+	width: 524px;
+	margin: 0 auto;
+	padding: 65px;
+	background-color: $white;
+
+	@include maxw(1024px) {
+		width: 456px;
+		padding: 50px;
+	}
+
+	@include maxw(480px) {
+		width: 100%;
+		padding: 40px;
+	}
+
+	@include maxw(420px) {
+		padding: 30px 19px;
+	}
+
+	h2 {
+		margin-bottom: 32px;
+		font-size: 24px;
+		text-align: center;
+
+		@include maxw(1024px) {
+			font-size: 22px;
+		}
+
+		@include maxw(480px) {
+			font-size: 20px;
+		}
+
+		@include maxw(420px) {
+			font-size: 18px;
+		}
+	}
+
+	&__input {
+		margin-bottom: 16px;
+	}
+
+	.nice-select {
+		float: none !important;
+		height: 48px;
+		line-height: 48px !important;
+		width: 100%;
+		margin-bottom: 34px;
+		padding: 0 20px;
+		border: none;
+		background-color: $white_a;
+
+		@include maxw(420px) {
+			margin-bottom: 22px;
+		}
+	}
+
+	&__textarea {
+		margin-bottom: 52px;
+
+		@include maxw(420px) {
+			margin-bottom: 30px;
+		}
+	}
+
+	&__btn {
+		width: 100%;
+	}
+
+}
