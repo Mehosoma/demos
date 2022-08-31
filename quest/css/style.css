@@ -1415,7 +1415,24 @@ img {
   justify-content: center;
   align-items: flex-start;
   margin-bottom: 67px;
-  padding: 95px 20px 95px 0;
+  padding: 45px 20px 45px 0;
+}
+
+input{
+  height: 40px;
+}
+
+ textarea{
+  min-height: 120px;
+ 
+}
+
+.form__textarea{
+   margin-bottom: 34px;
+}
+
+ .form{
+  padding: 40px 65px;
 }
 @media (max-width: 1280px) {
   .question {
@@ -1519,7 +1536,7 @@ img {
 
 .answer__wrap{
   text-align: center;
-  margin-top: 40px;
+  margin-top: 30px;
 }
 
 .answer__link{
@@ -2389,8 +2406,9 @@ img {
   display: flex;
 }
 
-.faq__question img{
-  max-width: 100px;
+.faq-question__quote{
+  flex:  0 0 40px;
+  max-width: 40px;
 }
 
 .faq__question{
@@ -2419,4 +2437,44 @@ img {
   margin-top: 10px;
   color:  #82878a;
   font-size: 14px;
+}
+
+@media (min-width: 320px) and (max-width: 767px){
+  .faq__question img{
+    max-width: 30px;
+    margin-top: 5px;
+  }
+  .faq-question__quote{
+    flex: 0 0 30px;
+    max-width: 30px;
+  }
+
+  .faq-answer__clergyman{
+    display: flex;
+    flex:  0 0 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+    align-items: center;
+  }
+
+  .faq-answer__clergyman img {
+    width: 150px;
+    height: 150px;
+    flex: 0 0 150px;
+    max-width: 150px;
+  }
+  .faq-answer__clergyman span{
+    padding-left: 14px;
+    font-size: 13px;
+  }
+
+  .faq__answer{
+    flex-wrap: wrap;
+  }
+
+  .arrow-up {
+    opacity: 0.5;
+    right: 10px;
+  }
+
 }
