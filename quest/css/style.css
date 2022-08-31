@@ -2384,9 +2384,9 @@ input{
 }
 
 .faq{
-  padding: 60px 0px 30px 0px;
-  border-bottom: 1px solid #DCBB7C;
-  border-top: 1px solid #DCBB7C;
+  padding: 30px 0px;
+  /*border-bottom: 1px solid #DCBB7C;
+  border-top: 1px solid #DCBB7C;*/
 }
 
 .faq__block{
