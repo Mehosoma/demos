@@ -1,7 +1,7 @@
 *,
 html * {
   scrollbar-width: thin;
-  scrollbar-color: #1194F0 orange;
+  scrollbar-color: #1194F0 transparent;
   scrollbar-height: thin;
 }
 
