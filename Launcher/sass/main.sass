@@ -1,0 +1,567 @@
+@import "bourbon/bourbon"
+
+$blue: #1194F0
+
+
+*,
+html *
+	scrollbar-width: thin
+	scrollbar-color: $blue orange
+	scrollbar-height: thin
+
+*::-webkit-scrollbar,
+html *::-webkit-scrollbar
+	height: 3px
+	width: 3px
+
+*::-webkit-scrollbar-track,
+html *::-webkit-scrollbar-track
+	background: transparent
+
+*::-webkit-scrollbar-thumb,
+html *::-webkit-scrollbar-thumb
+	background-color: $blue
+	border-radius: 5px
+	border: 3px solid transparent
+	height: 30px
+
+
+html
+	width: 100%
+	height: 100%
+	overflow-x: hidden
+body
+	width: 100%
+	height: auto
+	min-width: 320px	
+	margin: 0 auto
+	position: relative
+	line-height: 1.2
+	-webkit-font-smoothing: antialiased
+	background-color: #fff	
+	
+
+	a:hover, a:focus, a:active
+		text-decoration: none
+		outline: none
+	input:focus, input:active
+		text-decoration: none
+		outline: none
+	button:focus, button:active
+		text-decoration: none
+		outline: none
+	textarea:focus, textarea:active
+		text-decoration: none
+		outline: none
+	a
+		display: inline-block
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out
+	ul, ol
+		padding: 0px
+		margin: 0px
+		list-style-type: none
+	button
+		border: none
+		cursor: pointer
+	hr
+		border: none	
+
+
+
+/***************************************************GeneralStyles************************************/
+.logo-svg
+	.st0
+		fill:url(#SVGID_1_)
+.main
+	width: 100vw
+	min-height: 100vh
+	background: #000
+	display: flex
+.link
+	a
+		color: #fff
+		&:hover
+			opacity: 0.7
+	&--gray
+		a
+			color: #3B3B3B
+			&:hover
+				color: $blue
+	&--active
+		&:after
+			content: ""
+			display: block
+			position: absolute
+			right: -15px
+			top: 6px
+			width: 10px
+			height: 10px
+			border: solid $blue
+			border-width: 0 3px 3px 0
+			transform: rotate(-225deg)
+		a
+			color: $blue
+			&:hover
+				color: $blue
+svg
+	width: 20px
+	height: auto
+span,
+h1,
+p
+	i
+		color: $blue
+		font-style: normal
+.button
+	padding: 0px
+	&--general
+		a
+			padding: 0px 40px
+			background: $blue
+			color: #fff
+			line-height: 40px
+			&:hover
+				background: #005c9d
+	&--outline
+		a
+			padding: 0px 30px
+			background: transparent
+			border: 1px solid $blue
+			line-height: 30px
+			color: #fff
+			font-size: 12px
+			&:hover
+				background: rgba(17, 148, 240, 0.5)
+.list
+	&__headers
+		display: flex
+		span
+			color: #fff
+			font-size: 13px
+			position: relative
+			display: flex
+			align-items: center
+			svg
+				margin-right: 7px
+				width: 10px
+	&__block
+		display: flex
+		height: 50px
+		background: rgba(0, 0, 0, 0.8)	
+		align-items: center
+		border-bottom: 2px solid $blue
+		margin-bottom: 10px
+		span
+			color: #fff
+			font-size: 13px
+			opacity: 0.8
+			display: flex
+		&--big
+			font-size: 16px!important
+			opacity: 1!important
+		&:last-child
+			margin-bottom: 0px
+	&__center
+		justify-content: center
+
+
+
+/***************************************************Sidebar************************************/
+.sidebar
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	height: 100%
+	&__top
+		width: 100%
+		height: auto
+		position: relative
+		img
+			width: 100%
+			height: auto
+		.svg
+			width: 150px
+			height: auto
+			position: absolute
+			margin: auto
+			top: 0px
+			bottom: 0px
+			left: 0px
+			right: 0px
+	&__menu
+		width: 100%
+		flex: 1 0 auto
+		padding: 50px 30px 0px 50px
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		li
+			margin-bottom: 20px
+			position: relative
+			svg
+				position: absolute
+				left: -30px
+				top: 5px			
+		&--top
+			font-size: 20px
+			svg
+				width: 15px
+				height: auto
+		&--bottom
+			font-size: 12px
+			li
+				svg
+					width: 10px
+					height: auto
+					left: -20px
+					top: 3px
+		&--main
+			padding-bottom: 60px
+			padding-left: 30px
+			padding-top: 40px
+			a
+				font-size: 18px
+	&__links
+		ul
+			display: flex
+			flex-wrap: wrap
+			padding: 30px 0px 20px 40px
+			li
+				flex: 0 0 auto
+				max-width: auto
+			li:nth-child(odd)
+				flex: 0 0 60%
+				max-width: 60%
+		a
+			font-size: 10px
+
+
+/***************************************************General************************************/
+.general
+	width: 100%
+	position: relative
+	padding-left: 50px
+	&__back
+		width: 100%
+		height: 60%
+		position: absolute
+		top: 0px
+		left: 0px
+		background: url('../images/back.jpg')
+		background-repeat: no-repeat
+		background-size: cover
+		background-position: center center
+		z-index: 0
+	&__desc
+		position: relative
+		z-index: 10
+		padding: 40px 50px 50px 0px
+		h1
+			font-size: 26px
+			color: #fff
+			margin-bottom: 20px
+		span
+			font-size: 14px
+			color: #fff
+			line-height: 24px
+			opacity: 0.7
+			display: block
+			margin-bottom: 30px
+	&__info
+		position: relative
+		z-index: 10
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+	&__news
+		flex: 0 0 72%
+		max-width: 72%
+		position: relative
+	&__serv
+		flex: 0 0 25%
+		max-width: 25%		
+.general-info
+	&__header
+		margin-bottom: 30px
+		span
+			color: #fff
+			font-size: 16px
+		&--servers
+			position: relative
+			display: flex
+			span
+				display: inline
+				position: relative
+				&:after
+					content: ""
+					display: block
+					position: absolute
+					right: -20px
+					top: 9px
+					width: 6px
+					height: 6px
+					border: solid #fff
+					border-width: 0 2px 2px 0
+					transform: rotate(-45deg)
+			p
+				padding-left: 40px
+				font-size: 16px
+.news-slider
+	display: flex
+	overflow-x: scroll
+	flex-wrap: nowrap
+	padding-bottom: 20px
+	&__image
+		img
+			width: 100%
+			height: 12vw
+			object-fit: cover
+	&__slide
+		background: #111212
+		height: inherit
+		position: relative
+		flex: 0 0 50%
+		max-width: 50%
+		margin-right: 20px
+		display: block
+		&:last-child
+			margin-right: 0px
+	&__content
+		padding: 30px 30px 60px 30px
+		display: flex
+		flex-direction: column
+		span
+			display: block
+			color: #fff
+			font-size: 20px
+			margin-bottom: 20px
+		p
+			font-size: 12px
+			color: #fff
+			line-height: 16px
+			opacity: 0.7
+		a
+			color: $blue
+			opacity: 0.7
+			&:hover
+				opacity: 1
+		.button--outline
+			position: absolute
+			left: 30px
+			bottom: 20px
+			a
+				opacity: 1
+				color: #fff
+				&:hover
+					opacity: 1
+.general-serv
+	padding-right: 30px
+	&__wrap
+		height: 361px
+		overflow-y: scroll
+		padding-right: 20px
+	&__block
+		width: 100%
+		min-height: 80px
+		position: relative
+		border-bottom: 1px solid $blue
+		margin-bottom: 10px
+		&:last-child
+			margin-bottom: 0px
+	&__image
+		position: absolute
+		width: 100%
+		height: 100%
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+			object-position: center top
+	&__overlay
+		width: 100%
+		height: 100%
+		position: absolute
+		background: rgba(0, 0, 0, 0.8)
+		z-index: 10
+	&__desc
+		position: relative
+		z-index: 100
+		padding: 15px 70px 15px 15px
+		p
+			font-size: 14px
+			color: #fff
+			font-weight: bold
+			margin-bottom: 5px
+			position: relative
+			padding-left: 15px
+			svg
+				position: absolute
+				left: 0px
+				top: 5px
+				width: 10px
+		span
+			font-size: 10px
+			color: #fff
+			display: block
+			margin-bottom: 3px
+			opacity: 0.7
+	&__play
+		position: absolute
+		right: 20px
+		top: 50%
+		margin-top: -10px
+		a
+			&:hover
+				opacity: 0.7
+
+
+/***********************************************Servers************************************/
+.servers
+	position: relative
+	z-index: 10
+	padding: 50px 150px 50px 0px
+	&-list
+		height: 52vh	
+		&__headers
+			padding-right: 13px
+			.list__headers
+				&--name
+					flex: 0 0 20%
+					max-width: 20%
+				&--ip
+					flex: 0 0 25%
+					max-width: 25%
+				&--map
+					flex: 0 0 10%
+					max-width: 10%
+				&--online
+					flex: 0 0 10%
+					max-width: 10%
+				&--ping
+					flex: 0 0 10%
+					max-width: 10%
+				&--rating
+					flex: 0 0 10%
+					max-width: 10%
+				&--fake
+					flex-grow: 1
+		&__blocks
+			height: calc(100% - 40px)
+			padding-right: 10px
+			overflow-y: auto
+			.list__block
+				padding: 10px 0px
+				&--name
+					flex: 0 0 20%
+					max-width: 20%
+					padding-left: 20px
+				&--ip
+					flex: 0 0 25%
+					max-width: 25%
+				&--map
+					flex: 0 0 10%
+					max-width: 10%
+				&--online
+					flex: 0 0 10%
+					max-width: 10%
+				&--ping
+					flex: 0 0 10%
+					max-width: 10%
+				&--rating
+					flex: 0 0 10%
+					max-width: 10%
+					display: flex
+					svg
+						width: 10px
+						margin: 0px 2px
+				&--play
+					display: flex
+					align-items: center
+					flex-grow: 1
+					svg
+						margin-left: 10px
+						width: 15px
+
+		&__blocks
+			margin-top: 20px
+.list-last
+	
+	margin-top: 30px
+	&__wrap		
+		display: flex	
+		padding-bottom: 10px
+		overflow-x: auto	
+	.general-serv__block
+		flex: 0 0 24%
+		max-width: 24%
+		margin-right: 15px
+		&:last-child
+			margin-right: 0px
+			margin-bottom: 10px
+
+
+/***********************************************ButtonMobile************************************/
+.menu-toggle-button
+	width: 40px
+	height: 40px
+	background-color: transparent
+	padding: 10px
+	border: none
+	text-indent: -9999px
+	-webkit-appearance: none
+	-moz-appearance: none
+	appearance: none
+	position: relative
+	display: block
+
+.menu-toggle-button span 
+	display: block
+	height: 0.1rem
+	background: #fff
+	position: absolute
+	top: 20px
+	width: 20px
+	-webkit-transition: background 0s 0.3
+	-o-transition: background 0s 0.3
+	transition: background 0s 0.3
+	-webkit-transition-property: top, -webkit-transform
+	transition-property: top, -webkit-transform
+	-o-transition-property: top, transform
+	transition-property: top, transform
+	transition-property: top, transform, -webkit-transform
+	-webkit-transition-delay: 0s, 0.3s
+	-o-transition-delay: 0s, 0.3s
+	transition-delay: 0s, 0.3s
+	-webkit-transition-duration: 0.3s, 0.3s
+	-o-transition-duration: 0.3s, 0.3s
+	transition-duration: 0.3s, 0.3s
+	&:nth-child(2)
+		top: 15px
+	&:nth-child(3)
+		top: 25px
+
+.menu-toggle-button.is-active span
+	background: none
+
+
+.menu-toggle-button.is-active span:nth-child(2)
+	top: 20px
+	-webkit-transform: rotate(45deg)
+	-ms-transform: rotate(45deg)
+	transform: rotate(45deg)
+	background: #fff
+
+
+.menu-toggle-button.is-active span:nth-child(3)
+	top: 20px
+	background: #fff
+	-webkit-transform: rotate(-45deg)
+	-ms-transform: rotate(-45deg)
+	transform: rotate(-45deg)
+	
+
+.menu-toggle-button:focus
+	outline: none !important
