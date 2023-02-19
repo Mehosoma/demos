@@ -16,7 +16,8 @@
 
 	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.css">
 	<link rel="stylesheet" href="libs/magnific/magnific-popup.css">
-	<link rel="stylesheet" href="libs/slick/slick.css">		
+	<link rel="stylesheet" href="libs/slick/slick.css">
+	<link rel="stylesheet" href="libs/bootstrap-select/bootstrap-select.css">	
 
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/media.css">
@@ -25,7 +26,7 @@
 
 <body>
 
-<section class="main">
+<section class="general">
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-2">
@@ -43,8 +44,8 @@
 							<ul class="sidebar__menu--main link--gray">
 								<li class="link--active"><a href="index.html">Главная</a></li>
 								<li><a href="servers.html">Сервера</a></li>
-								<li><a href="">Избранное</a></li>
-								<li><a href="">Дополнения</a></li>
+								<li><a href="fav.html">Избранное</a></li>
+								<li><a href="addons.html">Дополнения</a></li>
 							</ul>
 							<ul class="sidebar__menu--bottom link">
 								<li><img src="images/settings.svg" class="svg" alt="menu-icon-settings"><a href="">Настройки</a></li>
@@ -66,55 +67,55 @@
 			</div>
 			<div class="col-10">
 				<div class="row h-100">
-					<div class="general">
-						<div class="general__back"></div>
-						<div class="general__desc">
+					<div class="main">
+						<div class="main__back"></div>
+						<div class="main__desc">
 							<h1>Зарождение легенды - <i>M</i>Launcher</h1>
 							<span>Стань одним из первых пользователей, которые застанут <i>зарождение<br>легендарного лаунчера</i> по игре Garry's Mod</span>
 							<div class="button button--general">
 								<a href="">Начать использовать</a>
 							</div>
 						</div>
-						<div class="general__info general-info">
-							<div class="general__news general-news">
-								<div class="general-info__header">
+						<div class="main__wrap">
+							<div class="main__news">
+								<div class="main__subheader">
 									<span>Новости</span>
 								</div>
-								<div class="general-news__slider news-slider slider-main h-scroll">
-									<div class="news-slider__slide">
-										<div class="news-slider__image">
+								<div class="h-container h-scroll">
+									<div class="news__slide">
+										<div class="news__image">
 											<img src="images/sidebar-top.jpg" alt="slider-image">
 										</div>
-										<div class="news-slider__content">
+										<div class="news__content">
 											<span>Бонусы для Millenium Project</span>
 											<p><a href="">Уникальное предложение</a> для пользователей нашего лаунчера</p>
-											<p>Пользуйтесь нашим лаунчером - <i><a href="">получайте бонусы</a></i> на серверах <i>Millenium Project</i></p>
+											<p>Пользуйтесь нашим лаунчером - <a href="">получайте бонусы</a> на серверах <a href="">Millenium Project</a></p>
 											<div class="button button--outline">
 												<a href="">Подробнее</a>
 											</div>
 										</div>
 									</div>
-									<div class="news-slider__slide">
-										<div class="news-slider__image">
+									<div class="news__slide">
+										<div class="news__image">
 											<img src="images/slide-1.jpg" alt="slider-image">
 										</div>
-										<div class="news-slider__content">
+										<div class="news__content">
 											<span>Бонусы для Millenium Project</span>
 											<p><a href="">Уникальное предложение</a> для пользователей нашего лаунчера</p>
-											<p><i><a href="">Заходите</a></i> в наш лаунчер <i>Millenium Project</i> напрямую</p>
+											<p><a href="">Заходите</a> в наш лаунчер <a href="">Millenium Project</a> напрямую</p>
 											<div class="button button--outline">
 												<a href="">Подробнее</a>
 											</div>
 										</div>
 									</div>
-									<div class="news-slider__slide">
-										<div class="news-slider__image">
+									<div class="news__slide">
+										<div class="news__image">
 											<img src="images/slide-2.jpg" alt="slider-image">
 										</div>
-										<div class="news-slider__content">
+										<div class="news__content">
 											<span>Бонусы для Millenium Project</span>
 											<p><a href="">Уникальное предложение</a> для пользователей нашего лаунчера</p>
-											<p>Пользуйтесь нашим лаунчером - <i><a href="">получайте бонусы</a></i> на серверах <i>Millenium Project</i></p>
+											<p>Пользуйтесь нашим лаунчером - <a href="">получайте бонусы</a> на серверах <a href="">Millenium Project</a></p>
 											<div class="button button--outline">
 												<a href="">Подробнее</a>
 											</div>
@@ -122,91 +123,119 @@
 									</div>
 								</div>
 							</div>
-							<div class="general__serv general-serv">
-								<div class="general-info__header">
+							<div class="main__servers">
+								<div class="main__subheader">
 									<span>Избранные сервера</span>
 								</div>
-								<div class="general-serv__wrap">
-									<div class="general-serv__block">
-										<div class="general-serv__overlay"></div>
-										<div class="general-serv__image">
+								<div class="v-container v-container--server">
+									<div class="server__block">
+										<div class="server__overlay"></div>
+										<div class="server__image">
 											<img src="images/slide-1.jpg" alt="slider-image">
 										</div>
-										<div class="general-serv__desc">
+										<div class="server__desc">
 											<p><img src="images/diamond.svg" class="svg" alt="menu-icon-diamond">Русский FastRP #2</p>
 											<span>IP: <i>127.0.0.1</i></span>
 											<span>Онлайн <i>97</i> из <i>137</i> игроков</span>
-											<div class="general-serv__play">
+											<div class="server__play">
 												<a href=""><img src="images/play.svg" class="svg" alt="play-btn"></a>
 											</div>
 										</div>
 									</div>
-									<div class="general-serv__block">
-										<div class="general-serv__overlay"></div>
-										<div class="general-serv__image">
-											<img src="images/slide-2.jpg" alt="slider-image">
-										</div>
-										<div class="general-serv__desc">
-											<p><img src="images/diamond.svg" class="svg" alt="menu-icon-diamond">Русский FastRP #2</p>
-											<span>IP: <i>127.0.0.1</i></span>
-											<span>Онлайн <i>97</i> из <i>137</i> игроков</span>
-											<div class="general-serv__play">
-												<a href=""><img src="images/play.svg" class="svg" alt="play-btn"></a>
-											</div>
-										</div>
-									</div>
-									<div class="general-serv__block">
-										<div class="general-serv__overlay"></div>
-										<div class="general-serv__image">
-											<img src="images/sidebar-top.jpg" alt="slider-image">
-										</div>
-										<div class="general-serv__desc">
-											<p><img src="images/diamond.svg" class="svg" alt="menu-icon-diamond">Русский FastRP #2</p>
-											<span>IP: <i>127.0.0.1</i></span>
-											<span>Онлайн <i>97</i> из <i>137</i> игроков</span>
-											<div class="general-serv__play">
-												<a href=""><img src="images/play.svg" class="svg" alt="play-btn"></a>
-											</div>
-										</div>
-									</div>
-									<div class="general-serv__block">
-										<div class="general-serv__overlay"></div>
-										<div class="general-serv__image">
+									<div class="server__block">
+										<div class="server__overlay"></div>
+										<div class="server__image">
 											<img src="images/slide-1.jpg" alt="slider-image">
 										</div>
-										<div class="general-serv__desc">
+										<div class="server__desc">
 											<p><img src="images/diamond.svg" class="svg" alt="menu-icon-diamond">Русский FastRP #2</p>
 											<span>IP: <i>127.0.0.1</i></span>
 											<span>Онлайн <i>97</i> из <i>137</i> игроков</span>
-											<div class="general-serv__play">
+											<div class="server__play">
 												<a href=""><img src="images/play.svg" class="svg" alt="play-btn"></a>
 											</div>
 										</div>
 									</div>
-									<div class="general-serv__block">
-										<div class="general-serv__overlay"></div>
-										<div class="general-serv__image">
-											<img src="images/slide-2.jpg" alt="slider-image">
+									<div class="server__block">
+										<div class="server__overlay"></div>
+										<div class="server__image">
+											<img src="images/slide-1.jpg" alt="slider-image">
 										</div>
-										<div class="general-serv__desc">
+										<div class="server__desc">
 											<p><img src="images/diamond.svg" class="svg" alt="menu-icon-diamond">Русский FastRP #2</p>
 											<span>IP: <i>127.0.0.1</i></span>
 											<span>Онлайн <i>97</i> из <i>137</i> игроков</span>
-											<div class="general-serv__play">
+											<div class="server__play">
 												<a href=""><img src="images/play.svg" class="svg" alt="play-btn"></a>
 											</div>
 										</div>
 									</div>
-									<div class="general-serv__block">
-										<div class="general-serv__overlay"></div>
-										<div class="general-serv__image">
-											<img src="images/sidebar-top.jpg" alt="slider-image">
+									<div class="server__block">
+										<div class="server__overlay"></div>
+										<div class="server__image">
+											<img src="images/slide-1.jpg" alt="slider-image">
 										</div>
-										<div class="general-serv__desc">
+										<div class="server__desc">
 											<p><img src="images/diamond.svg" class="svg" alt="menu-icon-diamond">Русский FastRP #2</p>
 											<span>IP: <i>127.0.0.1</i></span>
 											<span>Онлайн <i>97</i> из <i>137</i> игроков</span>
-											<div class="general-serv__play">
+											<div class="server__play">
+												<a href=""><img src="images/play.svg" class="svg" alt="play-btn"></a>
+											</div>
+										</div>
+									</div>
+									<div class="server__block">
+										<div class="server__overlay"></div>
+										<div class="server__image">
+											<img src="images/slide-1.jpg" alt="slider-image">
+										</div>
+										<div class="server__desc">
+											<p><img src="images/diamond.svg" class="svg" alt="menu-icon-diamond">Русский FastRP #2</p>
+											<span>IP: <i>127.0.0.1</i></span>
+											<span>Онлайн <i>97</i> из <i>137</i> игроков</span>
+											<div class="server__play">
+												<a href=""><img src="images/play.svg" class="svg" alt="play-btn"></a>
+											</div>
+										</div>
+									</div>
+									<div class="server__block">
+										<div class="server__overlay"></div>
+										<div class="server__image">
+											<img src="images/slide-1.jpg" alt="slider-image">
+										</div>
+										<div class="server__desc">
+											<p><img src="images/diamond.svg" class="svg" alt="menu-icon-diamond">Русский FastRP #2</p>
+											<span>IP: <i>127.0.0.1</i></span>
+											<span>Онлайн <i>97</i> из <i>137</i> игроков</span>
+											<div class="server__play">
+												<a href=""><img src="images/play.svg" class="svg" alt="play-btn"></a>
+											</div>
+										</div>
+									</div>
+									<div class="server__block">
+										<div class="server__overlay"></div>
+										<div class="server__image">
+											<img src="images/slide-1.jpg" alt="slider-image">
+										</div>
+										<div class="server__desc">
+											<p><img src="images/diamond.svg" class="svg" alt="menu-icon-diamond">Русский FastRP #2</p>
+											<span>IP: <i>127.0.0.1</i></span>
+											<span>Онлайн <i>97</i> из <i>137</i> игроков</span>
+											<div class="server__play">
+												<a href=""><img src="images/play.svg" class="svg" alt="play-btn"></a>
+											</div>
+										</div>
+									</div>
+									<div class="server__block">
+										<div class="server__overlay"></div>
+										<div class="server__image">
+											<img src="images/slide-1.jpg" alt="slider-image">
+										</div>
+										<div class="server__desc">
+											<p><img src="images/diamond.svg" class="svg" alt="menu-icon-diamond">Русский FastRP #2</p>
+											<span>IP: <i>127.0.0.1</i></span>
+											<span>Онлайн <i>97</i> из <i>137</i> игроков</span>
+											<div class="server__play">
 												<a href=""><img src="images/play.svg" class="svg" alt="play-btn"></a>
 											</div>
 										</div>
@@ -222,9 +251,11 @@
 </section>
 
 	<script src="libs/jquery/jquery-3.3.1.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
 	<script src="libs/bootstrap/js/bootstrap.js"></script>
 	<script src="libs/magnific/jquery.magnific-popup.min.js"></script>
 	<script src="libs/slick/slick.js"></script>
+	<script src="libs/bootstrap-select/bootstrap-select.min.js"></script>
 	<script src="js/common.js"></script>
 	
 </body>

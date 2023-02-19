@@ -72,10 +72,7 @@ body
 
 
 /***************************************************GeneralStyles************************************/
-.logo-svg
-	.st0
-		fill:url(#SVGID_1_)
-.main
+.general
 	width: 100vw
 	min-height: 100vh
 	background: #000
@@ -134,39 +131,24 @@ p
 			color: #fff
 			font-size: 12px
 			&:hover
-				background: rgba(17, 148, 240, 0.5)
-.list
-	&__headers
-		display: flex
-		span
-			color: #fff
-			font-size: 13px
-			position: relative
-			display: flex
-			align-items: center
-			svg
-				margin-right: 7px
-				width: 10px
-	&__block
-		display: flex
-		height: 50px
-		background: rgba(0, 0, 0, 0.8)	
-		align-items: center
-		border-bottom: 2px solid $blue
-		margin-bottom: 10px
-		span
-			color: #fff
-			font-size: 13px
-			opacity: 0.8
-			display: flex
-		&--big
-			font-size: 16px!important
-			opacity: 1!important
-		&:last-child
-			margin-bottom: 0px
-	&__center
-		justify-content: center
-
+				background: rgba(17, 148, 240, 0.5)	
+	
+.v-container
+	overflow-y: auto
+	padding-right: 10px
+	&--server
+		height: 360px
+	&--list
+		height: calc(100% - 40px)
+		margin-top: 20px
+	&--fav
+		padding-left: 50px
+.h-container
+	display: flex	
+	padding-bottom: 10px
+	overflow-x: auto	
+	&__wrap		
+		margin-top: 30px
 
 
 /***************************************************Sidebar************************************/
@@ -239,8 +221,8 @@ p
 			font-size: 10px
 
 
-/***************************************************General************************************/
-.general
+/***************************************************Main************************************/
+.main
 	width: 100%
 	position: relative
 	padding-left: 50px
@@ -263,14 +245,19 @@ p
 			font-size: 26px
 			color: #fff
 			margin-bottom: 20px
+		h2
+			font-size: 22px
+			color: #fff
+			margin-bottom: 20px
 		span
 			font-size: 14px
 			color: #fff
 			line-height: 24px
-			opacity: 0.7
 			display: block
-			margin-bottom: 30px
-	&__info
+			margin-bottom: 5px
+		.button
+			margin-top: 30px
+	&__wrap
 		position: relative
 		z-index: 10
 		display: flex
@@ -280,16 +267,17 @@ p
 		flex: 0 0 72%
 		max-width: 72%
 		position: relative
-	&__serv
+	&__servers
 		flex: 0 0 25%
-		max-width: 25%		
-.general-info
-	&__header
+		max-width: 25%
+	&__subheader
 		margin-bottom: 30px
 		span
 			color: #fff
-			font-size: 16px
-		&--servers
+			font-size: 16px	
+		&--fav
+			padding-left: 50px
+		&--crumbs
 			position: relative
 			display: flex
 			span
@@ -309,60 +297,19 @@ p
 			p
 				padding-left: 40px
 				font-size: 16px
-.news-slider
-	display: flex
-	overflow-x: scroll
-	flex-wrap: nowrap
-	padding-bottom: 20px
-	&__image
-		img
-			width: 100%
-			height: 12vw
-			object-fit: cover
-	&__slide
-		background: #111212
-		height: inherit
-		position: relative
-		flex: 0 0 50%
-		max-width: 50%
-		margin-right: 20px
-		display: block
-		&:last-child
-			margin-right: 0px
-	&__content
-		padding: 30px 30px 60px 30px
-		display: flex
-		flex-direction: column
-		span
-			display: block
-			color: #fff
-			font-size: 20px
+		&--big
 			margin-bottom: 20px
-		p
-			font-size: 12px
-			color: #fff
-			line-height: 16px
-			opacity: 0.7
-		a
-			color: $blue
-			opacity: 0.7
-			&:hover
-				opacity: 1
-		.button--outline
-			position: absolute
-			left: 30px
-			bottom: 20px
-			a
-				opacity: 1
-				color: #fff
-				&:hover
-					opacity: 1
-.general-serv
+			span
+				font-size: 22px
+
+	&--fav
+		padding-left: 0px
+
+
+
+/***************************************************Server************************************/
+.server
 	padding-right: 30px
-	&__wrap
-		height: 361px
-		overflow-y: scroll
-		padding-right: 20px
 	&__block
 		width: 100%
 		min-height: 80px
@@ -371,6 +318,13 @@ p
 		margin-bottom: 10px
 		&:last-child
 			margin-bottom: 0px
+		&--hcont
+			flex: 0 0 24%
+			max-width: 24%
+			margin-right: 15px
+			&:last-child
+				margin-right: 0px
+				margin-bottom: 10px
 	&__image
 		position: absolute
 		width: 100%
@@ -407,7 +361,6 @@ p
 			color: #fff
 			display: block
 			margin-bottom: 3px
-			opacity: 0.7
 	&__play
 		position: absolute
 		right: 20px
@@ -417,90 +370,283 @@ p
 			&:hover
 				opacity: 0.7
 
+/***************************************************News************************************/
+.news
+	&__image
+		img
+			width: 100%
+			height: 12vw
+			object-fit: cover
+	&__slide
+		background: #111212
+		height: inherit
+		position: relative
+		flex: 0 0 50%
+		max-width: 50%
+		margin-right: 20px
+		display: block
+		&:last-child
+			margin-right: 0px
+	&__content
+		padding: 30px 30px 60px 30px
+		display: flex
+		flex-direction: column
+		span
+			display: block
+			color: #fff
+			font-size: 20px
+			margin-bottom: 20px
+		p
+			font-size: 12px
+			color: #fff
+			line-height: 16px
+		a
+			color: $blue
+		.button--outline
+			position: absolute
+			left: 30px
+			bottom: 20px
+			a
+				color: #fff
 
-/***********************************************Servers************************************/
-.servers
+
+/***********************************************List************************************/
+.list
+	height: 52vh
+	&--mode
+		height: 72vh
+	&--fav
+		height: 80vh
+	&__disc
+		font-size: 13px
+		padding-left: 50px
+		margin-top: 40px
+		color: #fff
+		display: flex
+		align-items: center
+		svg
+			width: 15px
+			position: relative
+			top: -2px
+			margin-left: 5px
+			.st50
+				fill: #fff
+				
+	&__wrap
+		position: relative
+		z-index: 10
+		padding: 50px 150px 50px 0px
+	&__headers
+		display: flex
+		padding-right: 13px
+		span
+			color: #fff
+			font-size: 13px
+			position: relative
+			display: flex
+			align-items: center
+			svg
+				margin-right: 7px
+				width: 10px		
+		&--name
+			flex: 0 0 20%
+			max-width: 20%
+		&--ip
+			flex: 0 0 25%
+			max-width: 25%
+		&--map
+			flex: 0 0 10%
+			max-width: 10%
+		&--online
+			flex: 0 0 10%
+			max-width: 10%
+		&--ping
+			flex: 0 0 10%
+			max-width: 10%
+		&--rating
+			flex: 0 0 10%
+			max-width: 10%
+		&--fake
+			flex-grow: 1
+		&--modes
+			.list__headers--mode
+				position: relative
+			.list__headers--mode
+				flex: 0 0 25%
+				max-width: 25%
+			.list__headers--servers
+				flex: 0 0 25%
+				max-width: 25%
+		&--fav
+			padding-left: 50px
+	&__block
+		display: flex
+		height: 50px
+		background: rgba(0, 0, 0, 0.8)	
+		align-items: center
+		border-bottom: 2px solid $blue
+		margin-bottom: 10px
+		padding: 10px 0px
+		span
+			color: #fff
+			font-size: 13px
+			display: flex
+		&--big
+			font-size: 16px!important
+		&:last-child
+			margin-bottom: 0px
+		&--name
+			flex: 0 0 20%
+			max-width: 20%
+			padding-left: 20px
+		&--ip
+			flex: 0 0 25%
+			max-width: 25%
+		&--map
+			flex: 0 0 10%
+			max-width: 10%
+		&--online
+			flex: 0 0 10%
+			max-width: 10%
+		&--ping
+			flex: 0 0 10%
+			max-width: 10%
+		&--rating
+			flex: 0 0 10%
+			max-width: 10%
+			display: flex
+			svg
+				width: 10px
+				margin: 0px 2px
+		&--play
+			display: flex
+			align-items: center
+			flex-grow: 1
+			svg
+				margin-left: 10px
+				width: 15px
+		.fav
+			display: none
+		&--fav
+			position: relative
+			.fav
+				display: block
+				position: absolute
+				left: -30px
+				width: 15px
+				.st50
+					fill: #fff
+		&--modes
+			.list__block--mode
+				flex: 0 0 25%
+				max-width: 25%
+			.list__block--servers
+				flex: 0 0 25%
+				max-width: 25%
+	&__center
+		justify-content: center
+
+
+/***********************************************Select************************************/
+.list__headers span.select-label
+	position: absolute
+	top: -5px
+	font-size: 13px
+	color: $blue
+	opacity: 0.7
+	font-size: 10px
+.bootstrap-select > .dropdown-toggle
+	background: transparent
+	border: none
+	color: $blue
+	font-size: 13px
+	width: auto
+	padding-left: 0px
+.filter-option-inner-inner
+	padding-right: 10px
+.dropdown-toggle::after, .bootstrap-select > .dropdown-toggle:after
+	right: 0px
+	top: 9px
+	width: 6px
+	height: 6px
+	border: solid #fff
+	border-width: 0 2px 2px 0
+	transform: rotate(45deg)
+	margin-top: 1px
+.btn-light:not(:disabled):not(.disabled):active, .btn-light:not(:disabled):not(.disabled).active, .show > .btn-light.dropdown-toggle
+	background: transparent
+	border: none
+	color: $blue
+	font-size: 13px
+	box-shadow: none
+	outline: none!important
+.btn-light:not(:disabled):not(.disabled):active:focus, .btn-light:not(:disabled):not(.disabled).active:focus, .show > .btn-light.dropdown-toggle:focus
+	box-shadow: none
+	background: transparent
+	border: none
+	color: $blue
+	font-size: 13px
+	outline: none!important
+.bootstrap-select > select.mobile-device:focus + .dropdown-toggle, .bootstrap-select .dropdown-toggle:focus
+	outline: none!important
+	outline-offset: 0px!important
+	box-shadow: none!important
+.dropdown-menu
+	background: rgba(0, 0, 0, 0.7)
+.dropdown-item:hover, .dropdown-item:focus
+	background-color: transparent
+	color: #fff
+
+/***********************************************Search************************************/
+.search
+	width: 160px
 	position: relative
-	z-index: 10
-	padding: 50px 150px 50px 0px
-	&-list
-		height: 52vh	
-		&__headers
-			padding-right: 13px
-			.list__headers
-				&--name
-					flex: 0 0 20%
-					max-width: 20%
-				&--ip
-					flex: 0 0 25%
-					max-width: 25%
-				&--map
-					flex: 0 0 10%
-					max-width: 10%
-				&--online
-					flex: 0 0 10%
-					max-width: 10%
-				&--ping
-					flex: 0 0 10%
-					max-width: 10%
-				&--rating
-					flex: 0 0 10%
-					max-width: 10%
-				&--fake
-					flex-grow: 1
-		&__blocks
-			height: calc(100% - 40px)
-			padding-right: 10px
-			overflow-y: auto
-			.list__block
-				padding: 10px 0px
-				&--name
-					flex: 0 0 20%
-					max-width: 20%
-					padding-left: 20px
-				&--ip
-					flex: 0 0 25%
-					max-width: 25%
-				&--map
-					flex: 0 0 10%
-					max-width: 10%
-				&--online
-					flex: 0 0 10%
-					max-width: 10%
-				&--ping
-					flex: 0 0 10%
-					max-width: 10%
-				&--rating
-					flex: 0 0 10%
-					max-width: 10%
-					display: flex
-					svg
-						width: 10px
-						margin: 0px 2px
-				&--play
-					display: flex
-					align-items: center
-					flex-grow: 1
-					svg
-						margin-left: 10px
-						width: 15px
+	input
+		width: 100%
+		background: #1a1a1a
+		border: none
+		box-shadow: none
+		color: #fff
+		font-size: 13px
+		padding: 5px 10px 6px 30px
+		border-radius: 5px
+	svg
+		width: 12px
+		position: absolute
+		top: 8px
+		left: 10px
+	&__wrap
+		display: flex
+		justify-content: space-between
 
-		&__blocks
-			margin-top: 20px
-.list-last
-	
-	margin-top: 30px
-	&__wrap		
-		display: flex	
-		padding-bottom: 10px
-		overflow-x: auto	
-	.general-serv__block
-		flex: 0 0 24%
-		max-width: 24%
+
+/***************************************************Addons************************************/
+.addons
+	width: 100%
+	padding-right: 20px
+	&__block
+		display: flex
+		flex: 0 0 11%
+		max-width: 11%
+		height: 10vw
 		margin-right: 15px
 		&:last-child
 			margin-right: 0px
-			margin-bottom: 10px
+		img
+			object-fit: cover
+			width: 100%
+		&:hover
+			.addons-block__overlay
+				background: rgba(47,162,246,0.6)
+	&-block
+		position: relative
+		&__overlay
+			position: absolute
+			width: 100%
+			height: 100%
+			background: transparent
+			transition: all 0.3s
+			
 
 
 /***********************************************ButtonMobile************************************/

@@ -102,3 +102,9 @@ $(document).ready(function () {
         return false;
     });
 });
+
+
+//Select
+$(document).ready(function () {
+  $('select').selectpicker();
+});
