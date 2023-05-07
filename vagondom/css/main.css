@@ -1,0 +1,507 @@
+html {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  width: 100%;
+  height: auto;
+  min-width: 320px;
+  margin: 0 auto;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  color: #2E363E;
+  line-height: 1.2;
+  -webkit-font-smoothing: antialiased;
+  background-color: #fff;
+}
+body a:hover, body a:focus, body a:active {
+  text-decoration: none;
+  outline: none;
+}
+body input:focus, body input:active {
+  text-decoration: none;
+  outline: none;
+}
+body button:focus, body button:active {
+  text-decoration: none;
+  outline: none;
+}
+body textarea:focus, body textarea:active {
+  text-decoration: none;
+  outline: none;
+}
+body a {
+  display: inline-block;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+body ul, body ol {
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none;
+}
+body button {
+  border: none;
+  cursor: pointer;
+}
+body hr {
+  border: none;
+}
+
+.pixel {
+  background: url(../img/main.jpg) no-repeat top center;
+  width: 1920px;
+  height: 12800px;
+  position: absolute;
+  z-index: 1000000;
+  display: none;
+  left: 50%;
+  top: 0;
+  margin-left: -960px;
+  opacity: 0.5;
+  margin-top: 0px;
+}
+
+/***************************************************GeneralStyles************************************/
+.vheight {
+  min-height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 60px 0px;
+}
+.vheight .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+h2 {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 50px;
+  line-height: 48px;
+}
+
+.btn {
+  padding: 0px;
+}
+.btn a {
+  padding: 0px 20px;
+  line-height: 60px;
+  background: #0087FB;
+  color: #fff;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 10px;
+}
+.btn a:hover {
+  background: #5D6AFB;
+}
+
+.back {
+  background: #E2EAF2;
+}
+
+/***************************************************Header************************************/
+.header {
+  padding: 40px 0px;
+  position: fixed;
+  top: 0px;
+  background: #fff;
+  width: 100%;
+  text-align: center;
+  z-index: 100;
+}
+.header__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.logo:hover span {
+  color: #0087FB;
+}
+.logo__text {
+  font-weight: 600;
+  color: #5D6AFB;
+  font-size: 24px;
+  margin-left: 7px;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 0px 50px;
+}
+.menu ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.menu ul a {
+  font-weight: 500;
+  font-size: 18px;
+  color: #2E363E;
+}
+.menu ul a:hover {
+  text-shadow: 1px 0px #2E363E;
+}
+.menu ul a.active {
+  text-shadow: 1px 0px #2E363E;
+}
+
+.phone__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.phone__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 15px;
+}
+.phone__text a {
+  font-weight: 600;
+  font-size: 24px;
+  color: #2E363E;
+}
+.phone__text a:hover {
+  color: #0087FB;
+}
+.phone__text span {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/***************************************************First************************************/
+.first {
+  width: 100%;
+  min-height: calc(100vh - 130px);
+  background-image: url("../images/back.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin-top: 130px;
+}
+.first__wrap p {
+  font-size: 21px;
+  color: #fff;
+  background: #0087FB;
+  line-height: 45px;
+  display: inline;
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 48px;
+  color: #fff;
+  background: #0087FB;
+  line-height: 80px;
+  display: inline;
+}
+
+/***************************************************Services************************************/
+.services-block {
+  background: #E2EAF2;
+}
+.services-block__desc {
+  padding: 50px 45px;
+}
+.services-block__desc span {
+  font-weight: 600;
+  font-size: 21px;
+  display: block;
+  margin-bottom: 15px;
+}
+.services-block__desc p {
+  font-size: 16px;
+  margin-bottom: 24px;
+}
+.services-block__image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 30vh;
+}
+.services-block__image img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/***************************************************Service************************************/
+.service--left .service__img {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.service--left .service-desc__list {
+  padding-right: 0px;
+}
+.service--left .service-desc {
+  padding-left: 100px;
+  padding-right: 60px;
+}
+.service h2 {
+  text-align: left;
+  margin-bottom: 30px;
+  line-height: 130%;
+}
+.service__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.service__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.service__img img {
+  border-radius: 10px;
+  width: auto;
+}
+.service-desc__tag {
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+.service-desc__tag span {
+  padding: 10px 20px;
+  background: #fff;
+  font-size: 11px;
+  text-transform: uppercase;
+}
+.service-desc__tag--grey span {
+  background: #E2EAF2;
+}
+.service-desc__list {
+  padding-right: 120px;
+}
+.service-desc__list li {
+  position: relative;
+  padding-left: 20px;
+  font-size: 18px;
+  margin-bottom: 35px;
+  line-height: 26px;
+}
+.service-desc__list li:before {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #0087FB;
+  border-radius: 100%;
+  top: 8px;
+  left: 0px;
+}
+.service-desc__list span {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 26px;
+}
+
+/***************************************************Contacts************************************/
+.contacts__wrap {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.contacts__map {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  max-width: 50%;
+}
+.contacts-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 90px;
+  margin-bottom: 50px;
+}
+.contacts-block:last-child {
+  margin-bottom: 0px;
+}
+.contacts-block__desc {
+  font-size: 21px;
+}
+.contacts-block__icon {
+  margin-right: 30px;
+}
+.contacts-block__icon svg {
+  width: 54px;
+  height: 54px;
+}
+
+/***************************************************Footer************************************/
+.footer {
+  padding: 60px 0px 50px 0px;
+}
+.footer__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footer__block {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 25%;
+          flex: 0 0 25%;
+  max-width: 25%;
+}
+.footer__block span {
+  font-size: 21px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  display: block;
+}
+.footer__block ul li {
+  margin-bottom: 20px;
+}
+.footer__block ul li a, .footer__block ul li p {
+  font-size: 14px;
+  color: #2E363E;
+}
+.footer__block ul li a:hover {
+  color: #0087FB;
+}
+.footer__block ul li span {
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 7px;
+}
+.footer__block ul li .big {
+  font-size: 18px;
+}
+.footer__block .copyright {
+  margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.footer__list--big ul li {
+  margin-bottom: 40px;
+}
+.footer__list--big ul li:last-child {
+  margin-bottom: 0px;
+}
+
+/***********************************************ButtonMobile************************************/
+.menu-toggle-button {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  padding: 10px;
+  border: none;
+  text-indent: -9999px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+  display: block;
+}
+
+.menu-toggle-button span {
+  display: block;
+  height: 0.1rem;
+  background: #fff;
+  position: absolute;
+  top: 20px;
+  width: 20px;
+  -webkit-transition: background 0s 0.3;
+  transition: background 0s 0.3;
+  -webkit-transition-property: top, -webkit-transform;
+  transition-property: top, -webkit-transform;
+  transition-property: top, transform;
+  transition-property: top, transform, -webkit-transform;
+  -webkit-transition-delay: 0s, 0.3s;
+  transition-delay: 0s, 0.3s;
+  -webkit-transition-duration: 0.3s, 0.3s;
+  transition-duration: 0.3s, 0.3s;
+}
+.menu-toggle-button span:nth-child(2) {
+  top: 15px;
+}
+.menu-toggle-button span:nth-child(3) {
+  top: 25px;
+}
+
+.menu-toggle-button.is-active span {
+  background: none;
+}
+
+.menu-toggle-button.is-active span:nth-child(2) {
+  top: 20px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background: #fff;
+}
+
+.menu-toggle-button.is-active span:nth-child(3) {
+  top: 20px;
+  background: #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.menu-toggle-button:focus {
+  outline: none !important;
+}

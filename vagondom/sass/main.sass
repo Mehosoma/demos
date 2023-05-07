@@ -1,0 +1,391 @@
+@import "bourbon/bourbon"
+
+$blue: #5D6AFB
+$btn: #0087FB
+$text: #2E363E
+$back: #E2EAF2
+$mont: 'Montserrat', sans-serif
+
+
+html
+	width: 100%
+	height: 100%
+	overflow-x: hidden
+body
+	width: 100%
+	height: auto
+	min-width: 320px	
+	margin: 0 auto
+	position: relative
+	font-family: $mont
+	color: $text
+	line-height: 1.2
+	-webkit-font-smoothing: antialiased
+	background-color: #fff	
+	
+
+	a:hover, a:focus, a:active
+		text-decoration: none
+		outline: none
+	input:focus, input:active
+		text-decoration: none
+		outline: none
+	button:focus, button:active
+		text-decoration: none
+		outline: none
+	textarea:focus, textarea:active
+		text-decoration: none
+		outline: none
+	a
+		display: inline-block
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		-webkit-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out
+	ul, ol
+		padding: 0px
+		margin: 0px
+		list-style-type: none
+	button
+		border: none
+		cursor: pointer
+	hr
+		border: none	
+
+.pixel
+	background: url(../img/main.jpg) no-repeat top center
+	width: 1920px
+	height: 12800px
+	position: absolute
+	z-index: 1000000
+	display: none
+	left: 50%
+	top: 0
+	margin-left: -960px
+	opacity: 0.5
+	margin-top: 0px
+
+
+/***************************************************GeneralStyles************************************/
+.vheight
+	min-height: 100vh
+	align-items: center
+	display: flex
+	padding: 60px 0px
+	.container
+		display: flex
+		align-items: stretch
+h2
+	text-align: center
+	font-size: 48px
+	font-weight: 600
+	margin-bottom: 50px
+	line-height: 48px
+.btn
+	padding: 0px
+
+	a
+		padding: 0px 20px
+		line-height: 60px
+		background: $btn
+		color: #fff
+		font-weight: 500
+		font-size: 18px
+		border-radius: 10px
+		&:hover
+			background: $blue
+.back
+	background: $back
+
+/***************************************************Header************************************/
+.header
+	padding: 40px 0px
+	position: fixed
+	top: 0px
+	background: #fff
+	width: 100%
+	text-align: center
+	z-index: 100
+	&__wrap
+		display: flex
+		justify-content: space-between
+		align-items: center
+.logo
+	display: flex
+	align-items: center
+	&:hover
+		span
+			color: $btn
+	&__text
+		font-weight: 600
+		color: $blue
+		font-size: 24px
+		margin-left: 7px
+.menu
+	display: flex
+	flex: 1
+	padding: 0px 50px
+	ul
+		width: 100%
+		display: flex
+		justify-content: space-between
+		a
+			font-weight: 500
+			font-size: 18px
+			color: $text
+			&:hover
+				text-shadow: 1px 0px $text
+			&.active
+				text-shadow: 1px 0px $text
+.phone
+	&__wrap
+		display: flex
+	&__text
+		display: flex
+		flex-direction: column
+		margin-left: 15px
+		a
+			font-weight: 600
+			font-size: 24px
+			color: $text
+			&:hover
+				color: $btn
+		span
+			font-size: 14px
+			margin-top: 5px
+
+/***************************************************First************************************/
+.first
+	width: 100%
+	min-height: calc(100vh - 130px)
+	background-image: url("../images/back.jpg")
+	background-repeat: no-repeat
+	background-position: center center
+	background-size: cover
+	margin-top: 130px
+	&__wrap
+		p
+			font-size: 21px
+			color: #fff
+			background: $btn
+			line-height: 45px
+			display: inline
+h1	
+	font-weight: 500
+	font-size: 48px
+	color: #fff
+	background: $btn
+	line-height: 80px
+	display: inline
+
+/***************************************************Services************************************/
+.services
+	&-block
+		background: $back
+		&__desc
+			padding: 50px 45px
+			span
+				font-weight: 600
+				font-size: 21px
+				display: block
+				margin-bottom: 15px
+			p
+				font-size: 16px
+				margin-bottom: 24px
+		&__image
+			display: flex
+			width: 100%
+			height: 30vh			
+			img
+				display: flex
+				width: 100%
+				object-fit: cover
+
+
+/***************************************************Service************************************/
+.service
+	&--left
+		.service__img
+			justify-content: flex-start
+		.service-desc__list
+			padding-right: 0px
+		.service-desc
+			padding-left: 100px
+			padding-right: 60px
+	h2
+		text-align: left
+		margin-bottom: 30px
+		line-height: 130%
+	&__wrap
+		display: flex
+		justify-content: space-between
+	&__img
+		display: flex
+		justify-content: flex-end
+		img	
+			border-radius: 10px
+			width: auto
+	&-desc
+		&__tag
+			margin-top: 5px
+			margin-bottom: 30px
+			span
+				padding: 10px 20px
+				background: #fff
+				font-size: 11px
+				text-transform: uppercase
+			&--grey
+				span
+					background: $back
+		&__list
+			padding-right: 120px
+			li
+				position: relative
+				padding-left: 20px
+				font-size: 18px
+				margin-bottom: 35px
+				line-height: 26px
+				&:before
+					display: block
+					content: ""
+					position: absolute
+					width: 10px
+					height: 10px
+					background: $btn
+					border-radius: 100%
+					top: 8px
+					left: 0px
+			span
+				font-size: 18px
+				font-weight: 600
+				line-height: 26px
+
+/***************************************************Contacts************************************/
+.contacts
+	&__wrap
+		width: 100%
+		display: flex
+		margin-bottom: 50px
+		align-items: center
+	&__map
+		flex: 0 0 50%
+		max-width: 50%
+	&-block
+		display: flex
+		align-items: center
+		margin-left: 90px
+		margin-bottom: 50px
+		&:last-child
+			margin-bottom: 0px
+		&__desc
+			font-size: 21px
+		&__icon
+			margin-right: 30px
+			svg
+				width: 54px
+				height: 54px
+
+/***************************************************Footer************************************/
+.footer
+	padding: 60px 0px 50px 0px
+	&__wrap
+		display: flex
+		justify-content: space-between
+	&__block
+		flex: 0 0 25%
+		max-width: 25%
+		span
+			font-size: 21px
+			font-weight: 600
+			margin-bottom: 40px
+			display: block
+		ul
+			li
+				margin-bottom: 20px
+				a,p
+					font-size: 14px
+					color: $text
+				a
+					&:hover
+						color: $btn
+				span
+					font-weight: 600
+					font-size: 14px
+					margin-bottom: 7px
+				.big
+					font-size: 18px
+		.copyright
+			margin-top: 15px
+			display: flex
+	&__list
+		&--big
+			ul
+				li
+					margin-bottom: 40px
+					&:last-child
+						margin-bottom: 0px
+
+
+
+/***********************************************ButtonMobile************************************/
+.menu-toggle-button
+	width: 40px
+	height: 40px
+	background-color: transparent
+	padding: 10px
+	border: none
+	text-indent: -9999px
+	-webkit-appearance: none
+	-moz-appearance: none
+	appearance: none
+	position: relative
+	display: block
+
+.menu-toggle-button span 
+	display: block
+	height: 0.1rem
+	background: #fff
+	position: absolute
+	top: 20px
+	width: 20px
+	-webkit-transition: background 0s 0.3
+	-o-transition: background 0s 0.3
+	transition: background 0s 0.3
+	-webkit-transition-property: top, -webkit-transform
+	transition-property: top, -webkit-transform
+	-o-transition-property: top, transform
+	transition-property: top, transform
+	transition-property: top, transform, -webkit-transform
+	-webkit-transition-delay: 0s, 0.3s
+	-o-transition-delay: 0s, 0.3s
+	transition-delay: 0s, 0.3s
+	-webkit-transition-duration: 0.3s, 0.3s
+	-o-transition-duration: 0.3s, 0.3s
+	transition-duration: 0.3s, 0.3s
+	&:nth-child(2)
+		top: 15px
+	&:nth-child(3)
+		top: 25px
+
+.menu-toggle-button.is-active span
+	background: none
+
+
+.menu-toggle-button.is-active span:nth-child(2)
+	top: 20px
+	-webkit-transform: rotate(45deg)
+	-ms-transform: rotate(45deg)
+	transform: rotate(45deg)
+	background: #fff
+
+
+.menu-toggle-button.is-active span:nth-child(3)
+	top: 20px
+	background: #fff
+	-webkit-transform: rotate(-45deg)
+	-ms-transform: rotate(-45deg)
+	transform: rotate(-45deg)
+	
+
+.menu-toggle-button:focus
+	outline: none !important
