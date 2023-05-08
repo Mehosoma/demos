@@ -64,7 +64,7 @@ body hr {
   margin-top: 0px;
 }
 
-/***************************************************GeneralStyles************************************/
+/***************************************************GeneralStyles************************************/	
 .vheight {
   min-height: 100vh;
   -webkit-box-align: center;
@@ -110,6 +110,13 @@ h2 {
 
 .back {
   background: #E2EAF2;
+}
+
+#to-top {
+  display: none;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
 }
 
 /***************************************************Header************************************/
@@ -224,8 +231,9 @@ h2 {
   font-size: 21px;
   color: #fff;
   background: #0087FB;
-  line-height: 45px;
+  line-height: 50px;
   display: inline;
+  padding: 5px 0px;
 }
 
 h1 {
@@ -238,8 +246,13 @@ h1 {
 }
 
 /***************************************************Services************************************/
+.services {
+  padding: 50px 0px 80px 0px;
+}
 .services-block {
   background: #E2EAF2;
+  border: 1px solid #d4d3d3;
+  border-radius: 10px;
 }
 .services-block__desc {
   padding: 50px 45px;
@@ -271,6 +284,9 @@ h1 {
 }
 
 /***************************************************Service************************************/
+.service {
+  padding: 60px 0px;
+}
 .service--left .service__img {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
@@ -317,6 +333,7 @@ h1 {
   background: #fff;
   font-size: 11px;
   text-transform: uppercase;
+  border-radius: 5px;
 }
 .service-desc__tag--grey span {
   background: #E2EAF2;
@@ -349,12 +366,17 @@ h1 {
 }
 
 /***************************************************Contacts************************************/
+.contacts {
+  padding: 70px 0px 100px 0px;
+}
+.contacts h2 {
+  margin-bottom: 70px;
+}
 .contacts__wrap {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 50px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;

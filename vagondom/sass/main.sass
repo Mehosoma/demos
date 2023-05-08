@@ -66,7 +66,7 @@ body
 	margin-top: 0px
 
 
-/***************************************************GeneralStyles************************************/
+/***************************************************GeneralStyles************************************/	
 .vheight
 	min-height: 100vh
 	align-items: center
@@ -96,6 +96,12 @@ h2
 			background: $blue
 .back
 	background: $back
+#to-top
+	display: none
+	position: fixed
+	right: 30px
+	bottom: 30px
+
 
 /***************************************************Header************************************/
 .header
@@ -168,8 +174,9 @@ h2
 			font-size: 21px
 			color: #fff
 			background: $btn
-			line-height: 45px
+			line-height: 50px
 			display: inline
+			padding: 5px 0px
 h1	
 	font-weight: 500
 	font-size: 48px
@@ -180,8 +187,11 @@ h1
 
 /***************************************************Services************************************/
 .services
+	padding: 50px 0px 80px 0px
 	&-block
 		background: $back
+		border: 1px solid #d4d3d3
+		border-radius: 10px
 		&__desc
 			padding: 50px 45px
 			span
@@ -204,6 +214,7 @@ h1
 
 /***************************************************Service************************************/
 .service
+	padding: 60px 0px
 	&--left
 		.service__img
 			justify-content: flex-start
@@ -234,6 +245,7 @@ h1
 				background: #fff
 				font-size: 11px
 				text-transform: uppercase
+				border-radius: 5px
 			&--grey
 				span
 					background: $back
@@ -262,10 +274,12 @@ h1
 
 /***************************************************Contacts************************************/
 .contacts
+	padding: 70px 0px 100px 0px
+	h2
+		margin-bottom: 70px
 	&__wrap
 		width: 100%
 		display: flex
-		margin-bottom: 50px
 		align-items: center
 	&__map
 		flex: 0 0 50%
