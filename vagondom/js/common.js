@@ -67,6 +67,7 @@ $(document).ready(function(){
   });
  
   $('.scrollup').click(function(){
+  $(".main-menu__link").removeClass('active'); 
   $("html, body").animate({ scrollTop: 0 }, 600);
   return false;
   });

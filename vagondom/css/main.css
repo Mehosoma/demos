@@ -247,7 +247,7 @@ h1 {
 
 /***************************************************Services************************************/
 .services {
-  padding: 50px 0px 80px 0px;
+  padding: 40px 0px 60px 0px;
 }
 .services-block {
   background: #E2EAF2;
@@ -255,11 +255,11 @@ h1 {
   border-radius: 10px;
 }
 .services-block__desc {
-  padding: 50px 45px;
+  padding: 50px 35px;
 }
 .services-block__desc span {
   font-weight: 600;
-  font-size: 21px;
+  font-size: 20px;
   display: block;
   margin-bottom: 15px;
 }
@@ -367,10 +367,7 @@ h1 {
 
 /***************************************************Contacts************************************/
 .contacts {
-  padding: 70px 0px 100px 0px;
-}
-.contacts h2 {
-  margin-bottom: 70px;
+  padding: 40px 0px 60px 0px;
 }
 .contacts__wrap {
   width: 100%;
@@ -413,7 +410,7 @@ h1 {
 
 /***************************************************Footer************************************/
 .footer {
-  padding: 60px 0px 50px 0px;
+  padding: 40px 0px 30px 0px;
 }
 .footer__wrap {
   display: -webkit-box;
