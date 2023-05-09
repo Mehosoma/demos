@@ -39,7 +39,7 @@
 		<div class="row">
 			<div class="col-12">
 				<div class="header__wrap">
-					<div class="menu__link">
+					<div class="menu__link order-2 order-lg-1">
 						<a href=".first" class="main-menu__link logo">
 							<div class="logo__img">
 								<img src="images/Logo.svg" class="svg" alt="logo">
@@ -49,8 +49,13 @@
 							</div>
 						</a>
 					</div>
-					<div class="menu menu__link">
-						<ul>
+					<div class="menu menu__link order-1 order-lg-2">
+						<div class="menu-toggle-button click-mobile d-lg-none">
+							<span></span>
+							<span></span>		
+							<span></span>
+						</div>
+						<ul class="main-menu">
 							<li><a href=".services" class="main-menu__link">Услуги</a> </li>
 							<li><a href=".service--repair" class="main-menu__link">Ремонт</a> </li>
 							<li><a href=".service--build" class="main-menu__link">Производство</a> </li>
@@ -58,7 +63,7 @@
 							<li><a href=".contacts" class="main-menu__link">Контакты</a> </li>
 						</ul>
 					</div>
-					<div class="phone">
+					<div class="phone order-3 order-lg-3">
 						<div class="phone__wrap">
 							<div class="phone__icon">
 								<img src="images/phone.svg" class="svg" alt="phobe-icon">
@@ -99,7 +104,7 @@
 			<div class="col-12">
 				<h2>Наши услуги</h2>
 			</div>
-			<div class="col-4 pr-0">
+			<div class="col-12 col-sm-6 col-md-4 pl-2 pr-2">
 				<div class="services__block services-block">
 					<div class="services-block__image">
 						<img src="images/services-1.jpg" alt="services-image">
@@ -113,7 +118,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-4">
+			<div class="col-12 col-sm-6 col-md-4 pl-2 pr-2">
 				<div class="services__block services-block">
 					<div class="services-block__image">
 						<img src="images/services-2.jpg" alt="services-image">
@@ -127,7 +132,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-4 pl-0">
+			<div class="col-12 col-sm-6 col-md-4 pl-2 pr-2 fix-mrgn">
 				<div class="services__block services-block">
 					<div class="services-block__image">
 						<img src="images/services-3.jpg" alt="services-image">
@@ -151,7 +156,7 @@
 		<div class="row">
 			<div class="col-12">
 				<div class="service__wrap">
-					<div class="service__desc service-desc">
+					<div class="service__desc service-desc order-2 order-md-1">
 						<div class="service-desc__tag">
 							<span>Наши услуги</span>
 						</div>
@@ -171,8 +176,9 @@
 							<span>Цена обговаривается индивидуально после осмотра и пожеланий заказчика</span>
 						</div>
 					</div>		
-					<div class="service__img">
-						<img src="images/service-1.jpg" alt="service-image">
+					<div class="service__img order-1 order-md-2">
+						<img src="images/service-1.jpg" alt="service-image" class="d-none d-md-flex">
+						<img src="images/service-mobile-1.jpg" alt="service-image" class="d-flex d-md-none">
 					</div>
 				</div>
 			</div>
@@ -187,7 +193,8 @@
 			<div class="col-12">
 				<div class="service__wrap">
 					<div class="service__img">
-						<img src="images/service-2.jpg" alt="service-image">
+						<img src="images/service-2.jpg" alt="service-image" class="d-none d-md-flex">
+						<img src="images/service-mobile-2.jpg" alt="service-image" class="d-flex d-md-none">
 					</div>
 					<div class="service__desc service-desc">
 						<div class="service-desc__tag service-desc__tag--grey">
@@ -219,7 +226,7 @@
 		<div class="row">
 			<div class="col-12">
 				<div class="service__wrap">
-					<div class="service__desc service-desc">
+					<div class="service__desc service-desc order-2 order-md-1">
 						<div class="service-desc__tag">
 							<span>Наши услуги</span>
 						</div>
@@ -234,8 +241,9 @@
 							<span>Цена обговаривается индивидуально после осмотра и пожеланий заказчика</span>
 						</div>
 					</div>		
-					<div class="service__img">
-						<img src="images/service-3.jpg" alt="service-image">
+					<div class="service__img order-1 order-md-2">
+						<img src="images/service-3.jpg" alt="service-image" class="d-none d-md-flex">
+						<img src="images/service-mobile-3.jpg" alt="service-image" class="d-flex d-md-none">
 					</div>
 				</div>
 			</div>
@@ -276,7 +284,7 @@
 							<img src="images/adr.svg" class="svg" alt="adress icon">
 						</div>
 						<div class="contacts-block__desc">
-							<span>г. Нижневартовск, ул. 9 П, д. 7, ст 1</span>
+							<span>г. Нижневартовск, ул. 9 П, д.&nbsp;7, ст 1</span>
 						</div>
 					</div>
 					<div class="contacts-info__block contacts-block">
@@ -345,12 +353,6 @@
 		</div>
 	</div>
 </footer>
-
-<div class="menu-toggle-button click-mobile d-md-none">
-	<span></span>
-	<span></span>		
-	<span></span>
-</div>
 
 	<script src="libs/jquery/jquery-3.3.1.js"></script>
 	<script src="libs/bootstrap/js/bootstrap.js"></script>

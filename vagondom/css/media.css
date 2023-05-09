@@ -1,12 +1,595 @@
-@media only screen and (min-width : 0px) and (max-width : 479px) {
+
+@media only screen and (min-width : 0px) and (max-width : 575.5px) {
+
+	.logo__img, .phone__icon{
+		display: none;
+	}
+
+	.phone__text a{
+		font-size: 12px!important;
+	}
+
+	.phone__text span{
+		font-size: 7px!important;
+	}
+
+	h1 {
+	    font-size: 22px!important;
+	    line-height: 41px!important;
+	}
+
+	.first__wrap p {
+	    font-size: 11px!important;
+	    line-height: 36px!important;
+	}
+
+	h2 {
+    	font-size: 34px!important;
+	}
+
+	.contacts-block {
+	    margin-left: 15px!important;
+	    margin-bottom: 30px;
+	}
+
+	.services-block{
+		max-width: 350px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.contacts__map iframe {
+    	height: 250px!important;
+	}
 
 }
 
-@media only screen and (min-width : 480px) and (max-width : 767px) {
+
+@media only screen and (min-width : 0px) and (max-width : 767.5px) {
+
+	header .container{
+		max-width: 100%;
+	}
+
+	.menu{
+		flex: 0;
+		padding: 0px;
+	}
+
+	.menu ul {
+	    display: none;
+	    position: absolute;
+	    top: 63px;
+	    left: 0;
+	    width: 100%;
+	    background-color: #fff;
+	    box-shadow: 0 2px 0 rgba(79, 84, 177, .6);
+	    margin-left: 0;
+	    padding: 0px;
+	}
+
+	.menu ul li{
+		padding: 15px 0px;
+	}
+	
+	.logo__img svg{
+		width: 30px;
+		height: auto;
+	}
+
+	.logo__text{
+		font-size: 14px;
+	}
+
+	.phone__text a{
+		font-size: 18px;
+	}
+
+	.phone__text span{
+		font-size: 11px;
+	}
+
+	.menu ul a{
+		font-size: 16px;
+	}
+
+	h2{
+		font-size: 42px;
+	}
+
+	.services-block{
+		margin-bottom: 20px;
+	}
+
+	.fix-mrgn .services-block{
+		margin-bottom: 0px;
+	}
+
+
+
+	.services-block__desc {
+    	padding: 20px;
+	}
+
+	.vheight{
+		padding: 20px 0px;
+	}
+
+	h1{
+		font-size: 38px;
+		line-height: 60px;
+	}
+
+	.first__wrap p{
+		font-size: 18px;
+		line-height: 44px;
+	}
+
+	.service-desc__list li, .service-desc__list span{
+		font-size: 14px;
+		line-height: 22px;
+		margin-bottom: 15px;
+	}
+
+	.service--left .service-desc{
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+	.service h2{
+		line-height: 110%;
+		font-size: 32px;
+	}
+
+	.header{
+		padding: 25px 0px;
+	}
+
+	.first{
+		min-height: calc(100vh - 89.8px);
+		margin-top: 89.8px;
+	}
+
+	.services-block__desc span{
+		font-size: 20px;
+		height: 43.2px;
+	}
+
+	.services-block__desc p{
+		font-size: 13px;
+		padding-right: 0px;
+	}
+
+	.btn a{
+		font-size: 16px;
+		line-height: 45px;
+	}
+
+	.service-desc__list{
+		padding-right: 30px;
+	}
+
+	.service__wrap{
+		flex-wrap: wrap;
+	}
+
+	.service-desc{
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+
+	.service__img{
+		flex: 0 0 60%;
+		max-width: 60%;
+	}
+
+	.service__img img{
+		width: 100%;
+		height: auto;
+		margin-bottom: 30px;
+	}
+
+	.contacts__map iframe{
+		height: 350px;
+	}
+
+	.contacts__info{
+		margin-top: 30px;
+	}
+
+	.contacts-block{
+		margin-left: 0px;
+		margin-bottom: 30px;
+	}
+
+	.contacts-block__icon svg{
+		width: 46px;
+		height: 46px;
+	}
+
+	.contacts-block__desc{
+		font-size: 16px;
+	}
+
+	.contacts__wrap{
+		flex-wrap: wrap;
+	}
+
+	.contacts__map{
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+
+	.footer__wrap{
+		flex-wrap: wrap;
+	}
+
+	.footer__block{
+		flex: 0 0 50%;
+		max-width: 50%;
+		margin-bottom: 30px;
+	}
+
+	.footer{
+		padding: 40px 0px 0px 0px;
+	}
+
+	.footer__block ul li a, .footer__block ul li p{
+		font-size: 13px;
+	}
+
+	.footer__block ul li{
+		margin-bottom: 15px;
+	}
+
+	.footer__block span{
+		margin-bottom: 30px;
+		font-size: 18px;
+	}
+
+	.footer__block ul li .big {
+    	font-size: 16px;
+	}
+
 }
 
-@media only screen and (min-width : 768px) and (max-width : 991px) {
+@media only screen and (min-width : 768px) and (max-width : 991.5px) {
+
+	header .container{
+		max-width: 100%;
+	}
+
+	.menu{
+		flex: 0;
+		padding: 0px;
+	}
+
+	.menu ul {
+	    display: none;
+	    position: absolute;
+	    top: 63px;
+	    left: 0;
+	    width: 100%;
+	    background-color: #fff;
+	    box-shadow: 0 2px 0 rgba(79, 84, 177, .6);
+	    margin-left: 0;
+	    padding: 0px;
+	}
+
+	.menu ul li{
+		padding: 15px 0px;
+	}
+	
+	.logo__img svg{
+		width: 30px;
+		height: auto;
+	}
+
+	.logo__text{
+		font-size: 14px;
+	}
+
+	.phone__text a{
+		font-size: 18px;
+	}
+
+	.phone__text span{
+		font-size: 11px;
+	}
+
+	.menu ul a{
+		font-size: 16px;
+	}
+
+	h2{
+		font-size: 42px;
+	}
+
+
+	.services-block__desc {
+    	padding: 20px;
+	}
+
+	.vheight{
+		padding: 20px 0px;
+	}
+
+	h1{
+		font-size: 38px;
+		line-height: 60px;
+	}
+
+	.first__wrap p{
+		font-size: 18px;
+		line-height: 44px;
+	}
+
+	.service-desc__list li, .service-desc__list span{
+		font-size: 14px;
+		line-height: 22px;
+		margin-bottom: 15px;
+	}
+
+	.service--left .service-desc{
+		padding-left: 40px;
+		padding-right: 0px;
+	}
+
+	.service h2{
+		line-height: 110%;
+		font-size: 32px;
+	}
+
+	.header{
+		padding: 25px 0px;
+	}
+
+	.first{
+		min-height: calc(100vh - 89.8px);
+		margin-top: 89.8px;
+	}
+
+	.services-block__desc span{
+		font-size: 18px;
+		height: 43.2px;
+	}
+
+	.services-block__desc p{
+		font-size: 15px;
+		padding-right: 5px;
+	}
+
+	.btn a{
+		font-size: 16px;
+		line-height: 45px;
+	}
+
+	.service-desc__list{
+		padding-right: 30px;
+	}
+
+	.service-desc{
+		flex: 0 0 60%;
+		max-width: 60%;
+	}
+
+	.service__img{
+		flex: 0 0 40%;
+		max-width: 40%;
+	}
+
+	.service__img img{
+		width: 100%;
+		height: auto;
+	}
+
+	.contacts__map iframe{
+		height: 350px;
+	}
+
+	.contacts-block{
+		margin-left: 50px;
+		margin-bottom: 30px;
+	}
+
+	.contacts-block__icon svg{
+		width: 46px;
+		height: 46px;
+	}
+
+	.contacts-block__desc{
+		font-size: 16px;
+	}
+
+	.footer__block ul li a, .footer__block ul li p{
+		font-size: 13px;
+	}
+
+	.footer__block ul li{
+		margin-bottom: 15px;
+	}
+
+	.footer__block span{
+		margin-bottom: 30px;
+		font-size: 18px;
+	}
+
+	.footer__block ul li .big {
+    	font-size: 16px;
+	}
 }
 
-@media only screen and (min-width : 992px) and (max-width : 1199px) {
+@media only screen and (min-width : 992px) and (max-width : 1199.5px) {
+
+	.logo__img svg{
+		width: 30px;
+		height: auto;
+	}
+
+	.logo__text{
+		font-size: 14px;
+	}
+
+	.phone__text a{
+		font-size: 18px;
+	}
+
+	.phone__text span{
+		font-size: 11px;
+	}
+
+	.menu ul a{
+		font-size: 16px;
+	}
+
+	.menu{
+		padding: 0px 40px;
+
+	}
+
+	h2{
+		font-size: 42px;
+	}
+
+	.services-block__desc {
+    	padding: 30px 20px;
+	}
+
+	.vheight{
+		padding: 20px 0px;
+	}
+
+	h1{
+		font-size: 38px;
+		line-height: 60px;
+	}
+
+	.first__wrap p{
+		font-size: 18px;
+		line-height: 44px;
+	}
+
+	.service-desc__list li, .service-desc__list span{
+		font-size: 16px;
+		line-height: 22px;
+	}
+
+	.service h2{
+		line-height: 110%;
+	}
+
+	.header{
+		padding: 25px 0px;
+	}
+
+	.first{
+		min-height: calc(100vh - 89.8px);
+		margin-top: 89.8px;
+	}
+
+	.services-block__desc span{
+		font-size: 18px;
+		height: 43.2px;
+	}
+
+	.services-block__desc p{
+		font-size: 15px;
+	}
+
+	.btn a{
+		font-size: 16px;
+		line-height: 45px;
+	}
+
+	.service-desc{
+		flex: 0 0 60%;
+		max-width: 60%;
+	}
+
+	.service__img{
+		flex: 0 0 40%;
+		max-width: 40%;
+	}
+
+	.service__img img{
+		width: 100%;
+		height: auto;
+	}
+
+	.contacts-block{
+		margin-left: 50px;
+	}
+
+	.contacts-block__icon svg{
+		width: 46px;
+		height: 46px;
+	}
+
+	.contacts-block__desc{
+		font-size: 18px;
+	}
+
+	.footer__block ul li a, .footer__block ul li p{
+		font-size: 13px;
+	}
+
+	.footer__block ul li{
+		margin-bottom: 15px;
+	}
+
+	.footer__block span{
+		margin-bottom: 30px;
+	}
+}
+
+@media only screen and (min-width : 1200px) and (max-width : 1499.5px) {
+	.menu ul a{
+		font-size: 16px;
+	}
+
+	h2{
+		font-size: 42px;
+	}
+
+	.services-block__desc {
+    	padding: 30px 25px;
+	}
+
+	.vheight{
+		padding: 40px 0px;
+	}
+
+	.service-desc__list li, .service-desc__list span{
+		font-size: 16px;
+		line-height: 22px;
+	}
+
+	.service h2{
+		line-height: 110%;
+	}
+
+	.header{
+		padding: 25px 0px;
+	}
+
+	.first{
+		min-height: calc(100vh - 100.6px);
+		margin-top: 100.6px;
+	}
+
+}
+
+@media only screen and (min-width : 1920px) {
+
+	.menu{
+		padding: 0px 80px;
+	}
+}
+
+@media only screen and (min-width : 992px) {
+
+	.menu ul{
+		display: flex!important;
+	}
+
 }
