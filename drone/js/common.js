@@ -25,9 +25,19 @@ $(document).ready(function(){
 $('.scrollsec a[href^="."]').click(function(){
   //Сохраняем значение атрибута href в переменной:
   var target = $(this).attr('href');
-  $('html, body').animate({scrollTop: $(target).offset().top-0}, 1000);
+  $('html, body').animate({scrollTop: $(target).offset().top-100}, 1000);
 return false;
 });
+
+  $('.scrollsec a').on('click touch', function() {
+        let href = $(this).attr('href');
+     
+        $('.menu_link')
+            .removeClass('active')
+            .filter('[href="'+ href +'"]')
+            .addClass('active');
+        });
+
 
 //TopButton
 $(document).ready(function(){
@@ -42,6 +52,7 @@ $(document).ready(function(){
  
   $('.scrollup').click(function(){
   $("html, body").animate({ scrollTop: 0 }, 600);
+  $(".menu_link").removeClass('active'); 
   return false;
   });
 });

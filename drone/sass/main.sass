@@ -54,15 +54,28 @@ body
 	hr
 		border: none
 
+.pixel
+	background: url(../images/main.jpg) no-repeat top center
+	width: 1920px
+	height: 12800px
+	position: absolute
+	z-index: 1000000
+	display: none
+	left: 50%
+	top: -743px
+	margin-left: -960px
+	opacity: 0.5
+	margin-top: 0px
+
 
 /***************************************************GeneralStyles************************************/
 h1
 	font-size: 64px
 	font-weight: $extra
 	color: #fff
-	background: $blue
-	display: inline
 	line-height: 100px
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+	margin-bottom: 0px
 h2
 	font-size: 46px
 	font-weight: $bold
@@ -82,19 +95,25 @@ h3
 
 /***************************************************Header************************************/
 .header
-	display: flex
-	justify-content: space-between
-	padding: 40px 0px
+	position: fixed
+	top: 0px
+	background: #fff
+	width: 100%
+	z-index: 100
+	&-box
+		display: flex
+		justify-content: space-between
+		padding: 40px 0px
 	&-main
 		span
 			font-size: 24px
 			color: #fff
 			font-weight: $semi
 			display: inline
-			background-color: $blue
-			line-height: 46px
+			line-height: 35px
+			text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
 	&-main
-		margin-top: 56px
+		margin-top: 182px
 .logo
 	display: flex
 	align-items: center
@@ -106,10 +125,10 @@ h3
 		letter-spacing: 0.1px
 	&:hover
 		span
-			color: #fff
+			color: #000
 	&:visited
 		span
-			color: #fff
+			color: #000
 	svg
 		height: 55px
 		width: auto
@@ -128,11 +147,16 @@ h3
 		border-radius: 50px
 		border: 1px solid #A6AEB6
 		&:hover
-			background-color: #A6AEB6
+			background-color: #1B9AD1
 			border: 1px solid #fff
 			color: #fff
+	a.active
+		background-color: #1B9AD1
+		border: 1px solid #fff
+		color: #fff
 .phone
 	display: flex
+	justify-content: flex-end
 	&-text
 		padding: 5px 8px 0px 10px
 		line-height: 1.3
@@ -140,23 +164,47 @@ h3
 			font-size: 18px
 			color: #11263A
 			font-weight: $bold
-		span
 			display: block
-			font-size: 12px
-			color: #11263A
 	&-icon
 		margin-right: 5px
+		align-self: center
+	&__footer
+		justify-content: flex-start
+		display: block
+		margin-top: 46px
+		margin-bottom: 40px
+		.phone-text
+			padding: 0px
+			a
+				color: #FF9217
+			span
+				color: #fff
+				font-size: 14px
+				display: block
+				margin-top: 10px
 
 
 
 /***************************************************First Block************************************/
 .first
+	margin-top: 135px
 	width: 100%
 	min-height: 804px
 	background-image: url('../images/banner.jpg')
 	background-position: center center
 	background-size: cover
 	position: relative
+	&-btn
+		margin-top: 57px
+		a
+			padding: 28px 50px
+			background: $blue
+			color: #fff
+			font-size: 18px
+			font-weight: $medium
+			border-radius: 5px
+			&:hover
+				background: #A6AEB6
 .decor
 	width: 100%
 	position: absolute
@@ -172,7 +220,9 @@ h3
 
 /***************************************************Services************************************/
 .services
-	padding: 40px 0px 13px 0px
+	padding: 57px 0px 13px 0px
+	&-height
+		margin-top: 57px
 	.col-4
 		margin-bottom: 52px
 	&-block
@@ -228,6 +278,15 @@ h3
 				border-right: none
 				background: transparent
 				transform: rotate(-45deg)
+			&__orange
+				background: #FF9217
+			&__book
+				background-image: url('../images/book.png')
+				background-position: center center
+				background-repeat: no-repeat
+				&:after
+					content: none
+			
 		&_text
 			padding-left: 50px
 			p
@@ -238,19 +297,18 @@ h3
 /***************************************************Price************************************/
 .price
 	width: 100%
-	min-height: 1122px
+	min-height: 1142px
 	background: $blue
 	position: relative
 	display: flex
 	align-items: center
 	h3
-		font-size: 44px
+		font-size: 42px
 		margin-bottom: 54px
 	&-main
 		display: flex
 		align-items: center
 	&-text
-		padding-left: 14px
 		p
 			font-size: 46px
 			color: #fff
@@ -265,7 +323,7 @@ h3
 
 /***************************************************Video************************************/
 .exam
-	padding: 44px 0px 34px 0px
+	padding: 62px 0px 34px 0px
 	h3
 		font-size: 48px
 	&-main
@@ -291,25 +349,33 @@ h3
 /***************************************************Footer************************************/
 .footer
 	width: 100%
-	min-height: 600px
+	min-height: 774px
 	background: $blue
 	position: relative
-	padding-top: 312px
+	padding-top: 400px
+	a:hover
+		opacity: 0.9
+	.container
+		max-width: 1248px
 	.logo
-		flex: 0 0 48%
-		margin-bottom: 70px
+		flex: 0 0 25%
+		flex-wrap: wrap
+		align-items: flex-start
+		span
+			font-size: 21px
+			color: #fff
+			display: block
+			margin-bottom: 38px
 	&-main
 		display: flex
 		padding: 0px 94px
+		align-items: flex-start
 	&-header
 		font-weight: $extra
 		font-size: 18px
 		color: #fff
 		margin-bottom: 26px
 		display: block
-	&-contacts,
-	&-menu
-		padding-top: 26px
 	&-phone
 		a
 			font-size: 14px
@@ -320,13 +386,39 @@ h3
 	&-menu
 		li
 			margin-bottom: 10px
+			margin-right: 20px
+		ul
+			display: flex
+			margin-top: 46px
+		.footer-contacts-add
+			margin-top: 70px
+			span
+				display: block
+				margin-bottom: 10px
+	&-links
+		flex: 0 0 26%
+		max-width: 26%
 		a
-			font-size: 15px
 			color: #fff
-			&:hover
-				opacity: 0.7
+			font-size: 14px
+		ul
+			margin-top: 46px
+			li
+				margin-bottom: 20px
 	&-contacts
-		flex: 0 0 30%
+		flex: 0 0 25%
+		max-width: 25%
+		&-add
+			span
+				font-size: 14px
+				color: #fff
+				font-weight: $semi
+				display: block
+				margin-bottom: 5px
+			a,p
+				font-size: 14px
+				color: #fff
+				margin-bottom: 10px
 	&-copy
 		display: flex
 		justify-content: center
