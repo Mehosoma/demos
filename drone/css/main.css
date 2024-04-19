@@ -255,7 +255,7 @@ h3 {
   border-radius: 5px;
 }
 .first-btn a:hover {
-  background: #A6AEB6;
+  background: #FF9217;
 }
 
 .decor {
@@ -704,7 +704,7 @@ h3 {
   transition: all 0.3s ease-out;
 }
 .gen-form__btn button:hover {
-  background: #6a97e0;
+  background: #FF9217;
 }
 .gen-form .mfp-close {
   font-size: 40px;
