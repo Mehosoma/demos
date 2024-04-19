@@ -33,9 +33,11 @@ return false;
 $('.scrollsec .fix-pos[href^="."]').click(function(){
   //Сохраняем значение атрибута href в переменной:
   var target = $(this).attr('href');
-  $('html, body').animate({scrollTop: $(target).offset().top+150}, 1000);
+  $('html, body').animate({scrollTop: $(target).offset().top - ($(window).height() - $('.price').outerHeight(true)) / 2 - 80}, 1000);
 return false;
 });
+
+
 
 
 //Menu item on scroll
